@@ -16,7 +16,7 @@ import { wireTextLinks } from '../glossary';
 import { knownPreviews } from '../previews';
 import { partNav, seriesLine } from '../series';
 import { cite, resetCitations, wireCitations } from '../cite';
-import { accessedNote, factsFor, webPage, webPageLink, withSources } from './detail-facts';
+import { accessedNote, factsFor, otherWebPage, webPage, webPageLink, withSources } from './detail-facts';
 import { wireWorkPictures } from './work-pictures';
 import { backlinks, crossedPaths, holdingsSections, relationshipSections, shownElsewhere } from './detail-sections';
 import { ownThumbsReady, privateImages, privateImagesSection } from '../account';
@@ -85,6 +85,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
             ${v.lead ? html`<p class="lead">${v.lead}</p>` : ''}
             ${v.leadHtml ? html`<p class="lead citation">${trusted(v.leadHtml)}</p>` : ''}
             ${v.text ? html`<div class="prose">${trusted(v.text)}</div>` : ''}
+            ${otherWebPage(e)}
             ${facts.length ? html`<dl class="facts">${facts.map(([k, value]) => html`<dt>${k}</dt><dd>${value}</dd>`)}</dl>` : ''}
             ${referenceRecords(e)}
             ${v.extra}

@@ -217,6 +217,19 @@ export function webPage(e: Entity): { url: string; where: string; accessed: stri
   const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(e.web_url_accessed ?? '');
   return { url: e.web_url, where: e.institution?.name ?? host, accessed: m ? `${Number(m[3])} ${MONTHS[Number(m[2]) - 1]} ${m[1]}` : null };
 }
+/**
+ * The other web page (API 250): a good page about the work that is not its holder's — "View at …" stays for the
+ * holder's own page (owner 2026-11-13). Without one: the note that no online page of the holder could be found.
+ */
+export function otherWebPage(e: Entity) {
+  if (e.type !== 'artwork' || !e.other_web_url || !/^https?:\/\//.test(e.other_web_url)) return '';
+  let site = e.other_web_name || e.other_web_url;
+  if (!e.other_web_name) { try { site = new URL(e.other_web_url).hostname.replace(/^www\./, ''); } catch { /* as written */ } }
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(e.other_web_accessed ?? '');
+  const what = e.other_web_note || 'This work';
+  return html`<p class="other-web">${e.web_url ? '' : html`<span class="muted">No online page of the museum or collection holding it could be found.</span> `}${what} ${e.web_url ? 'also ' : ''}at
+    <a href="${e.other_web_url}" target="_blank" rel="noopener">${site} ↗</a>${m ? html` <span class="muted small">(link accessed ${String(Number(m[3]))} ${MONTHS[Number(m[2]) - 1]} ${m[1]})</span>` : ''}.</p>`;
+}
 export function webPageLink(w: { url: string; where: string; accessed: string | null }) {
   return html`<a class="button-link web-link" href="${w.url}" target="_blank" rel="noopener">View at ${w.where} ↗</a>`;
 }

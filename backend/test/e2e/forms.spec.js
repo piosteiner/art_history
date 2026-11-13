@@ -57,6 +57,25 @@ test('an artwork\'s web page: saved, checked, in the API; the images section poi
   sql("UPDATE artworks SET web_url = NULL WHERE slug = 'plum-park-in-kameido'");
 });
 
+// 250: the other web page — a page that is not the holder's, below the text; its site and note only once it has an address
+test('an artwork\'s other web page: site and note appear with the address, saved with its day, in the API', async ({ userA, request }) => {
+  sql("UPDATE artworks SET other_web_url = NULL, other_web_name = NULL, other_web_note = NULL WHERE slug = 'plum-park-in-kameido'");
+  await userA.goto('/artworks/plum-park-in-kameido/edit');
+  await liveReady(userA);
+  await expect(userA.locator('#f-other_web_name')).toBeHidden();                       // waits for the address
+  await userA.fill('#f-other_web_url', 'https://www.wga.hu/html/h/hiroshig/plum.html');
+  await expect(userA.locator('#f-other_web_name')).toBeVisible();
+  await userA.fill('#f-other_web_name', 'Web Gallery of Art');
+  await userA.fill('#f-other_web_note', 'Another impression');
+  await submitForm(userA);
+  const w = await api(request, '/artworks/plum-park-in-kameido');
+  expect(w).toMatchObject({ other_web_url: 'https://www.wga.hu/html/h/hiroshig/plum.html', other_web_name: 'Web Gallery of Art',
+    other_web_note: 'Another impression', other_web_accessed: sql('SELECT current_date::text') });
+  // a note without an address is refused by the database
+  expect(() => sql("UPDATE artworks SET other_web_url = NULL WHERE slug = 'plum-park-in-kameido'")).toThrow(/artworks_other_web_needs_url/);
+  sql("UPDATE artworks SET other_web_url = NULL, other_web_name = NULL, other_web_note = NULL WHERE slug = 'plum-park-in-kameido'");
+});
+
 test('forms in sections: titles and jump links, short fields in pairs, every field once, help behind an ⓘ', async ({ userA }) => {
   await userA.setViewportSize({ width: 1280, height: 900 });
   await userA.goto('/artworks/new');

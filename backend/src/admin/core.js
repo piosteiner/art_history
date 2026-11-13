@@ -128,6 +128,10 @@ const RULES = {
   artworks_parent_check: 'An artwork cannot be part of itself.',
   artworks_parts_count_check: 'Number of parts: a whole number above 0.',
   artworks_web_url_check: 'Web page: a link starting with https:// (or http://), without spaces.',
+  artworks_other_web_url_check: 'Other web page: a link starting with https:// (or http://), without spaces.',
+  artworks_other_web_needs_url: 'Other web page: its site or note only with its address.',
+  artworks_other_web_name_check: 'Other web page: the site’s name, at most 120 characters.',
+  artworks_other_web_note_check: 'Other web page: what it shows, at most 120 characters.',
   movements_check: 'A movement cannot be its own parent.',
   glossary_parent_check: 'A term cannot be its own broader term.',
   artists_check: 'Death cannot be before birth.',
@@ -173,7 +177,7 @@ function friendly(err) {
 // ---------------------------------------------------------------------------------------------------------------
 // History (audit_log) — shared by the dashboard, the global page and each entity
 // ---------------------------------------------------------------------------------------------------------------
-const HIDDEN_KEYS = ['id', 'created_at', 'updated_at', 'lifespan', 'web_url_accessed'];  // the last follows web_url (trigger, 039)
+const HIDDEN_KEYS = ['id', 'created_at', 'updated_at', 'lifespan', 'web_url_accessed', 'other_web_accessed'];  // the last follows web_url (trigger, 039)
 
 // `where` is SQL on alias a (audit_log) and r (the row as jsonb). Geography values (location, area — not the roadmap's text area) are shown as WKT.
 // A deleted entity's name comes from its last recorded version (its table: entity_table(), migration 019).

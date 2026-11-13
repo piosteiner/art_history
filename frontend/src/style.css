@@ -858,6 +858,7 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .hands-holders > li.hands-flagged { box-shadow: inset 3px 0 0 -1px var(--prov-d); padding-left: .6rem; }
 .hands-works { font-size: .9rem; }
 /* an entry's numbers in Wikidata and authority files, folded (detail.ts referenceRecords, 2026-11-10) */
+.other-web { margin: .6rem 0 1rem; font-size: .95rem; }   /* the other web page (API 250), below the text */
 .ref-records { margin: .8rem 0; font-size: .9rem; }
 /* open questions about the entry (API 248) — under the title, before the buttons */
 .under-review { margin: .4rem 0 1rem; padding: .5rem .8rem; border: 1px solid var(--line); border-left: 4px solid var(--prov-c); background: var(--surface); border-radius: var(--radius); font-size: .92rem; }

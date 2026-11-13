@@ -79,6 +79,7 @@ const TYPES = [
     kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
     other_dimensions: 'dimsets',
     institution: 'ref:institution', inventory_number: 'text', web_url: 'text',  // its page at the museum (038)
+    other_web_url: 'text', other_web_name: 'text', other_web_note: 'text',  // a page elsewhere when the holder has none (250)
     on_loan: 'bool', on_loan_since: 'date',  // lent to the institution where it is; the owner is in the provenance (048)
     provenance_status: 'text', provenance_status_note: 'text',  // 1933–1945, the BAK categories A–D (074)
     fate: 'text', fate_date: 'date', fate_note: 'text',  // destroyed / partly destroyed / lost, when, how (103)

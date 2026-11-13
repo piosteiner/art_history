@@ -23,7 +23,7 @@ const WHOLES = ['series', 'versions', 'edition', 'cycle', 'pair', 'album', 'dipt
 // an artwork's fields that describe one physical object — none for a group of works (migration 132)
 const OBJECT_FIELDS = ['conceived', 'medium', 'materials', 'dimensions', 'dimensions_note', 'other_dimensions', 'institution',
   'inventory_number', 'on_loan', 'on_loan_since', 'location', 'area', 'provenance_status', 'provenance_status_note', 'fate',
-  'fate_date', 'fate_note', 'web_url'];
+  'fate_date', 'fate_note', 'web_url', 'other_web_url', 'other_web_name', 'other_web_note'];
 // the bibliography: the fields each kind of source uses, in the order of its citation pattern (KHIST guide §§ 8–9,
 // src/bibliography.js). `sections` = the order of the form's sections for that kind (forms.js SECTIONS.source): a web
 // page asks for its address right after the kind, a book for its authors — the browser reorders the sections.
@@ -102,6 +102,7 @@ const RULES = {
       { field: 'institution', filled: true, show: ['inventory_number', 'on_loan'], need: ['inventory_number', 'web_url'], note: 'In a museum: its inventory number and its page there.' },
       { field: 'parent', filled: true, need: ['part_number'] },
       { field: 'fate', filled: true, show: ['fate_date', 'fate_note'], need: ['fate_date'] },
+      { field: 'other_web_url', filled: true, show: ['other_web_name', 'other_web_note'], need: ['other_web_name'] },  // 250
       { field: 'provenance_status', filled: true, show: ['provenance_status_note'] },
       { field: 'completion', filled: true, show: ['completion_date', 'completion_note'], need: ['completion_date'] },
       { field: 'authenticity', filled: true, show: ['authenticity_date', 'authenticity_note'], need: ['authenticity_note'] },

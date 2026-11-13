@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Migration 250: an artwork's other web page
+- **What:** `artworks.other_web_url` / `other_web_name` / `other_web_note` (+ `other_web_accessed`, trigger
+  `set_other_web_accessed` like 039; CHECKs: http(s) address, ≤ 120 characters, name/note only with an address). CMS:
+  fields "Other web page", "Its site", "What it shows" under Web page (site and note shown once there is an address —
+  `relevance.js`), the help of "Web page" now says the holder's own page only. API detail; YAML keys; site
+  `otherWebPage()` below the text ("No online page of the museum or collection holding it could be found. This work at
+  … ↗"; "Another impression also at … ↗" beside a holder's page). Tests: e2e forms "other web page", site test.
+- **Why:** owner — "View at …" must always lead to the museum or collection holding the work, never to "lesser" links;
+  a good page elsewhere goes to its own field with a note. No Quality check (the editor's responsibility).
+- **Revert:** `ALTER TABLE artworks DROP COLUMN other_web_url, DROP COLUMN other_web_name, DROP COLUMN other_web_note,
+  DROP COLUMN other_web_accessed; DROP FUNCTION set_other_web_accessed() CASCADE;` + revert the commit.
+
 ### Test environment closed
 - **What:** pm2 `arthistory-test` deleted (`pm2 save`), cluster `18/test` stopped and `start.conf` → `manual` (backup
   `start.conf.bak-2026-11-13`), `arthistory-test-reset.timer` disabled, nginx `sites-enabled/arthistory-test` replaced by

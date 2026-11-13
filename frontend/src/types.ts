@@ -359,6 +359,8 @@ export interface Artwork extends DetailBase, Located, Titled {
   provenance?: ProvenanceStep[];
   /** The work's page at its museum / collection (migration 038) and the day the link was added (039, YYYY-MM-DD). */
   web_url?: string | null; web_url_accessed?: string | null;
+  /** A page about it that is not its holder's (API 250) — shown below the text, never as "View at …". */
+  other_web_url?: string | null; other_web_name?: string | null; other_web_note?: string | null; other_web_accessed?: string | null;
   /** Further numbers besides `inventory_number` (migration 048): the owner's, former ones, catalogue raisonné numbers. */
   numbers?: ArtworkNumber[];
   /** Lent to (deposited at) `institution` — since when; the lender is the provenance's last owner. */

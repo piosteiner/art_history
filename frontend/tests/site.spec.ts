@@ -3767,3 +3767,20 @@ test('open cases (API 248): "Being checked" under the title with each public not
   await expect(page.locator('h1')).toHaveText('Test Term');
   await expect(page.locator('aside.under-review')).toHaveCount(0);
 });
+
+test('the other web page (API 250): below the text, with the note that the holder has no page; "also" beside a holder\'s page', async ({ page }) => {
+  let body: Record<string, unknown> = {};
+  await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {
+    const res = await route.fetch();
+    await route.fulfill({ response: res, json: { ...(await res.json()), ...body } });
+  });
+  body = { web_url: null, other_web_url: 'https://www.wga.hu/test.html', other_web_name: 'Web Gallery of Art', other_web_note: null, other_web_accessed: '2026-11-13' };
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const p = page.locator('p.other-web');
+  await expect(p).toContainText('No online page of the museum or collection holding it could be found. This work at Web Gallery of Art ↗ (link accessed 13 November 2026).');
+  await expect(p.locator('a')).toHaveAttribute('href', 'https://www.wga.hu/test.html');
+  await expect(page.locator('a.web-link', { hasText: 'Web Gallery' })).toHaveCount(0);   // never the "View at …" button
+  body = { web_url: 'https://www.metmuseum.org/art/collection/search/36491', other_web_url: 'https://www.mfa.org/test', other_web_name: null, other_web_note: 'Another impression', other_web_accessed: null };
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(p).toHaveText('Another impression also at mfa.org ↗.');
+});

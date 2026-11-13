@@ -163,7 +163,9 @@ const ENTITIES = {
                        'institution', (SELECT jsonb_build_object('slug', i.slug, 'name', i.name) FROM institutions i WHERE i.id = n.institution_id),
                        'source', (SELECT jsonb_build_object('slug', b.slug, 'name', b.name) FROM bibliography b WHERE b.id = n.source_id))
                      ORDER BY n.position, n.id), '[]'::jsonb) FROM artwork_numbers n WHERE n.artwork_id = t.id) AS numbers,
-             t.web_url, iso_date(t.web_url_accessed) AS web_url_accessed, ${allImages('artwork_id')}, t.description_md, t.parts_count,
+             t.web_url, iso_date(t.web_url_accessed) AS web_url_accessed,
+             t.other_web_url, t.other_web_name, t.other_web_note, iso_date(t.other_web_accessed) AS other_web_accessed,  -- the other web page (250)
+             ${allImages('artwork_id')}, t.description_md, t.parts_count,
              t.materials,
              CASE WHEN t.height_cm IS NOT NULL THEN jsonb_build_object('height_cm', t.height_cm, 'width_cm', t.width_cm,
                'depth_cm', t.depth_cm, 'note', t.dimensions_note,
