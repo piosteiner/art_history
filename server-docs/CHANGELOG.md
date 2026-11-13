@@ -12,7 +12,8 @@ Format: date — what — why — how to revert.
   → 846–869 (range unchanged, + lecture slide 54), `depicts_person` Charles (fol. 38v), first provenance step
   "commission" by Charles 846–869 (probable, Wikidata P88) → new warning `provenance_last_owner` (the way to the
   Munich Residenz is unknown).
-- **Not done:** the GEO article the owner named blocks automated access — not read, not cited.
+- **GEO:** the gallery blocks automated access; the owner sent a screenshot of picture 8/11 — new source
+  `geo-karl-der-kahle` (level `other`), cited for the full hair and the landless son (with the 829 succession).
 - **Why / Revert:** owner's request; the entries' history pages (script `p228/charles.js`).
 
 ### Content: open case for the Gero Cross's dating; Lauer 2020 to read
