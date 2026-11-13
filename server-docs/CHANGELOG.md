@@ -4,7 +4,7 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
-### Content: works without a creator worked through with the owner (136 → 6)
+### Content: works without a creator worked through with the owner (136 → 0)
 - **What:** (data only, audited) attributions with their sources — the origin as each work's own text gives it,
   never its present place (owner: "careful … if an object was moved"); plain "Anonymous" where no place of making is
   known (e.g. the forked crucifixes of Andernach, Bocholt, St. Maria im Kapitol; the Göttingen altar). Wholes and their
@@ -14,7 +14,10 @@ Format: date — what — why — how to revert.
   Giuliano da Maiano + co-creators Antonio Manetti, Agnolo di Lazzaro; Lindau Gospels, De Lisle Psalter (Madonna
   Master, attributed), Bernward Gospels ("made for Bishop Bernward", no scriptorium claimed), Bayeux Tapestry
   ("Anonymous, English, probably for Bishop Odo"), Wechselburg (Saxon), Wolfstür (Carolingian). "Mito Kōmon" deleted
-  (a TV series, not an artwork). Open: the Lorch altar (2), the Pomeranian cabinet's contents (3), the True Cross cycle.
+  (a TV series, not an artwork). Then the last six: Lorch altar + shrine "Master of the Lorch High Altar, Middle
+  Rhine" (Habenicht p. 185), the Pomeranian cabinet's three contents "Augsburg craftsmen (commissioned through
+  Philipp Hainhofer)", the True Cross cycle "Gentile Bellini, Vittore Carpaccio and other Venetian painters" (cited
+  to en.wikipedia, Miracle of the Relic of the Cross at the Ponte di Rialto) — no work without a creator left.
 - **Why / Revert:** owner's round; the entries' history pages.
 
 ### Content: L. Schünzel — a second copy, active 1913–1927
