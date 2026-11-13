@@ -302,8 +302,14 @@ institution; the owner — the lender — is the last step of the provenance. `o
 Show it like a credit line: "Foundation E.G. Bührle Collection, on permanent loan to the Kunsthaus Zürich since 2021".
 
 ### Web page (artworks)
-`web_url` (detail): the work's page at the museum or collection that holds it, or another good page about it (migration
-038). Link it on the artwork page — most of all when `images` is empty: then it is the way to see the work.
+`web_url` (detail): the work's page at the museum or collection that holds it — where it is and where its best
+information is (migration 038; since 2026-11-13 only the holder's own page, its own online collection included). Link it
+on the artwork page — most of all when `images` is empty: then it is the way to see the work.
+`other_web_url`, `other_web_name`, `other_web_note`, `other_web_accessed` (migration 250): a good page about the work
+that is not its holder's (the Web Gallery of Art, a catalogue raisonné, another impression elsewhere) — `name` the site
+as shown (or `null`: its host), `note` what the page shows when not this object ("Another impression"). The site shows
+it below the text, never as "View at …"; without `web_url` with "No online page of the museum or collection holding it
+could be found."
 `web_url_accessed` (`YYYY-MM-DD`, migration 039): the day the link was added or last changed — set by the database,
 shown like a citation's "accessed on …".
 
