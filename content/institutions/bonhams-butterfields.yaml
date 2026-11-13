@@ -1,2 +1,8 @@
 public_id: 121321
 name: Bonhams & Butterfields
+place: san-francisco
+sources:
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6149/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

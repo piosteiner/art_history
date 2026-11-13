@@ -2,4 +2,43 @@ public_id: 120844
 name: Oskar Bernhard
 given_name: Oskar
 family_name: Bernhard
+kind: person
+birth: 1861
+death: 1939
 wikidata_id: Q2033564
+metadata:
+  sources: [Wikidata Q2033564 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2033564
+  - type: died_in
+    to: place/st-moritz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d8/Oscar_Bernhard_mit_Kinderpatienten.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Oscar_Bernhard_mit_Kinderpatienten.jpg
+    license: Public domain
+    credit: Unknown photographer
+identifiers:
+  gnd: "118656430"
+  hls: "014282"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q2033564
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3029/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

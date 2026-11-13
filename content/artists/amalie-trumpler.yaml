@@ -2,3 +2,26 @@ public_id: 121117
 name: Amalie Trümpler
 given_name: Amalie
 family_name: Trümpler
+birth: 1851
+death: 1911
+wikidata_id: Q131629580
+metadata:
+  sources: [Wikidata Q131629580 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/uster
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q131629580
+identifiers:
+  sikart: "11645978"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q131629580
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q131629580

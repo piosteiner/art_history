@@ -1,0 +1,28 @@
+public_id: 120360
+name: Martin Grosell
+given_name: Martin
+family_name: Grosell
+kind: person
+birth: 1882
+death: 1932
+wikidata_id: Q60326644
+metadata:
+  sources: [Wikidata Q60326644 (retrieved 2026-11-12)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Henrik_Lund_-_Portrait_of_the_Danish_Art_Dealer_M._Grosell_-_NG.M.00998_-_National_Museum_of_Art%2C_Architecture_and_Design.jpg/1280px-Henrik_Lund_-_Portrait_of_the_Danish_Art_Dealer_M._Grosell_-_NG.M.00998_-_National_Museum_of_Art%2C_Architecture_and_Design.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henrik_Lund_-_Portrait_of_the_Danish_Art_Dealer_M._Grosell_-_NG.M.00998_-_National_Museum_of_Art,_Architecture_and_Design.jpg
+    license: Public domain
+    credit: Henrik Lund
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q60326644
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q60326644
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q60326644

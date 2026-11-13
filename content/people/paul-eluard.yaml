@@ -2,3 +2,81 @@ public_id: 120560
 name: Paul Éluard
 given_name: Paul
 family_name: Éluard
+names:
+  - kind: birth
+    lang: fr
+    role: former
+    text: Eugène Émile Paul Grindel
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q152176
+  - kind: pseudonym
+    role: alternative
+    text: Didier Desroches
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q152176
+  - kind: pseudonym
+    role: alternative
+    text: Jean Du Haut
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q152176
+  - kind: pseudonym
+    role: alternative
+    text: Maurice Hervent
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q152176
+  - kind: pseudonym
+    role: alternative
+    text: Paul Edouard
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q152176
+kind: person
+birth: 1895
+death: 1952
+wikidata_id: Q152176
+metadata:
+  sources: [Wikidata Q152176 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q152176
+  - type: born_in
+    to: place/saint-denis-2
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q152176
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a8/Eluard_Harcourt_1945.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eluard_Harcourt_1945.jpg
+    license: Public domain
+    credit: Studio Harcourt
+identifiers:
+  bnf: 11886231m
+  gnd: "118530062"
+  idref: "026655195"
+  lc: n80044679
+  nlk: KAC201769039
+  rkd: "26115"
+  ulan: "500079198"
+  viaf: "73848255"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q152176
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

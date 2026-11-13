@@ -2,4 +2,42 @@ public_id: 120407
 name: Jan Krugier
 given_name: Jan
 family_name: Krugier
+kind: person
+birth: 1928
+death: 2008
 wikidata_id: Q122226
+metadata:
+  sources: [Wikidata Q122226 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q122226
+  - type: died_in
+    to: place/geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/181943/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  bnf: 14426982x
+  gnd: "121187519"
+  idref: "066886309"
+  lc: n85212724
+  rkd: "374516"
+  viaf: "45150837"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q122226
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/181943/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/181943/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

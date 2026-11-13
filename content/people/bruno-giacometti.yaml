@@ -2,4 +2,44 @@ public_id: 120121
 name: Bruno Giacometti
 given_name: Bruno
 family_name: Giacometti
+kind: person
+birth: 1907-08-24
+death: 2012-03-21
 wikidata_id: Q124171
+metadata:
+  sources: [Wikidata Q124171 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q124171
+  - type: died_in
+    to: place/zollikon
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q124171
+identifiers:
+  bnf: 13613133s
+  gnd: "136064787"
+  hls: "027341"
+  idref: 15491102X
+  lc: n94064181
+  rkd: "362772"
+  ulan: "500345462"
+  viaf: "95179192"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q124171
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q124171
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q124171

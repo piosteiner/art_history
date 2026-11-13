@@ -2,3 +2,31 @@ public_id: 120236
 name: Wynn Ellis
 given_name: Wynn
 family_name: Ellis
+kind: person
+birth: 1790
+death: 1875
+wikidata_id: Q94905061
+metadata:
+  sources: [Wikidata Q94905061 (retrieved 2026-11-12)]
+identifiers:
+  gnd: "1144877695"
+  viaf: "2151170863439090153"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q94905061
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q94905061
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1510/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q94905061

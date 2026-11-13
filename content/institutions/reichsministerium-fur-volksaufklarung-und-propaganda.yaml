@@ -1,2 +1,89 @@
 public_id: 112012
+name_lang: de
 name: Reichsministerium für Volksaufklärung und Propaganda
+names:
+  - text: Reich Ministry for Public Enlightenment and Propaganda
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q158689
+  - lang: fr
+    role: translation
+    text: ministère du Reich à l'Éducation du peuple et à la Propagande
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q158689
+  - lang: es
+    role: translation
+    text: Ministerio del Imperial para la Ilustración Popular y Propaganda
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q158689
+  - lang: ja
+    role: translation
+    text: 国民啓蒙・宣伝省
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q158689
+  - lang: en
+    role: translation
+    text: Ministry of Public Enlightenment and Propaganda
+kind: ministry
+founded: 1933-03-13
+dissolved: 1945
+place: berlin
+location: [13.38453, 52.51292]
+address: Wilhelmplatz 8/9, Berlin
+description_md: |-
+  The ministry that directed the press, literature, the visual arts, film, theatre, music and radio in National Socialist Germany. Reich President Hindenburg decreed its creation on 13 March 1933; [[person/joseph-goebbels|Joseph Goebbels]] headed it throughout, and it moved into the Prinz-Karl-Palais (Ordenspalais) on Wilhelmplatz in Berlin. Through the [[institution/reichskulturkammer|Reich Chamber of Culture]] (Reichskulturkammer), set up in the autumn of 1933, Goebbels also controlled everyone who worked in culture.[[source/wikipedia-de-reichsministerium-fur-volksaufklarung-und-propaganda|introduction; § Gründung und Aufgaben]]
+
+  For collections the ministry matters through the campaign against "degenerate art". Goebbels seized the initiative in art policy in June 1937 and arranged the *Entartete Kunst* exhibition in Munich.[[source/peters-2017|pp. 18–20]] On 30 June 1937 [[person/adolf-hitler|Hitler]] handed him a decree that authorised [[artist/adolf-ziegler|Adolf Ziegler]] — president of the Reich Chamber of the Fine Arts and Goebbels's subordinate — to impound "the products of the period of decay" in the museums, galleries and collections of the Reich, the states and the municipalities; the ministry's regional offices passed it on by circular. The seizures were legalised only afterwards, by the law of 31 May 1938.[[source/peters-2017|p. 17]] Nearly twenty-two thousand works, most of them on paper, were taken from German museums, and about a quarter of them were destroyed.[[source/peters-2017|p. 28]]
+
+  A commission chaired by Goebbels — with Franz Hofmann, head of a department in the ministry, Ziegler, the critic Robert Scholz, the dealer Karl Haberstock and the antiquities dealer Max Taeuber — was to turn the confiscated works into foreign currency. Four dealers, [[person/bernhard-a-bohmer|Bernhard A. Böhmer]], [[person/karl-buchholz|Karl Buchholz]], [[person/hildebrand-gurlitt|Hildebrand Gurlitt]] and [[person/ferdinand-moller|Ferdinand Möller]], sold or exchanged them for a commission of 10 to 25 percent.[[source/peters-2017|p. 26]] 125 works went to auction at Theodor Fischer's gallery in Lucerne on 30 June 1939; this "Verwertungsaktion" officially ended in 1941.[[source/peters-2017|pp. 28–29]]
+
+  Works taken in this way appear here with the ministry as holder from their confiscation until they were sold.
+wikidata_id: Q158689
+metadata:
+  sources: [Wikidata Q158689 (retrieved 2026-11-12)]
+relationships:
+  - type: participated_in
+    to: event/degenerate-art-exhibition
+    label: organiser (Goebbels)
+    sources:
+      - source: peters-2017
+        locator: p. 20
+        accessed: 2026-11-12
+  - type: participated_in
+    to: event/lucerne-auction-of-degenerate-art-1939
+    label: consignor (the commission for the "utilisation" of degenerate art)
+    sources:
+      - source: peters-2017
+        locator: pp. 26, 28
+        accessed: 2026-11-12
+identifiers:
+  gnd: 40239-4
+  viaf: "311217851"
+sources:
+  kind:
+    - source: wikipedia-de-reichsministerium-fur-volksaufklarung-und-propaganda
+      locator: introduction
+      accessed: 2026-11-12
+  place:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q158689
+  address:
+    - source: wikipedia-de-reichsministerium-fur-volksaufklarung-und-propaganda
+      locator: § Gründung und Aufgaben
+      accessed: 2026-11-12
+  founded:
+    - source: wikipedia-de-reichsministerium-fur-volksaufklarung-und-propaganda
+      locator: § Gründung und Aufgaben
+      accessed: 2026-11-12
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q158689
+  dissolved:
+    - accessed: 2026-11-12
+      property: P576
+      wikidata: Q158689

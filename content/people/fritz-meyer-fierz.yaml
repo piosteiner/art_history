@@ -2,3 +2,38 @@ public_id: 120053
 name: Fritz Meyer-Fierz
 given_name: Fritz
 family_name: Meyer-Fierz
+kind: person
+birth: 1847
+death: 1917
+wikidata_id: Q19502360
+metadata:
+  sources: [Wikidata Q19502360 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q19502360
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  gnd: "1205035699"
+  viaf: "7157158261788802540005"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q19502360
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1112/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

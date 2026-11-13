@@ -2,3 +2,48 @@ public_id: 120712
 name: Robert Stayner Holford
 given_name: Robert Stayner
 family_name: Holford
+kind: person
+birth: 1808
+death: 1892
+wikidata_id: Q7350013
+metadata:
+  sources: [Wikidata Q7350013 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q7350013
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q7350013
+identifiers:
+  gnd: "116961015"
+  idref: "137031831"
+  lc: n88244650
+  rkd: "449816"
+  ulan: "500059357"
+  viaf: "31101989"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q7350013
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q7350013
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q7350013

@@ -2,3 +2,27 @@ public_id: 115066
 name: Charles Albert de Burlet
 given_name: Charles Albert
 family_name: de Burlet
+birth: 1882
+death: 1956
+relationships:
+  - type: born_in
+    to: place/rotterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

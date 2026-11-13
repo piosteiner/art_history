@@ -2,3 +2,39 @@ public_id: 121570
 name: Willem van Dedem
 given_name: Willem
 family_name: van Dedem
+kind: person
+birth: 1929
+death: 2015
+wikidata_id: Q27888604
+metadata:
+  sources: [Wikidata Q27888604 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q27888604
+identifiers:
+  lc: nr2003010669
+  rkd: "424927"
+  viaf: "49169151"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q27888604
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7944/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q27888604
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7944/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q27888604

@@ -2,3 +2,14 @@ public_id: 121443
 name: Edward Foster Coulson
 given_name: Edward Foster
 family_name: Coulson
+birth: 1804
+death: 1889
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7308/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7308/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

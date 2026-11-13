@@ -2,3 +2,52 @@ public_id: 120586
 name: Martha Liebermann
 given_name: Martha
 family_name: Liebermann
+kind: person
+birth: 1857
+death: 1943
+wikidata_id: Q29053814
+metadata:
+  sources: [Wikidata Q29053814 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q29053814
+  - type: born_in
+    to: place/berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Martha_Marckwald.jpg/1280px-Martha_Marckwald.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Martha_Marckwald.jpg
+    license: Public domain
+    credit: Anders Zorn
+identifiers:
+  bnf: 12564118v
+  gnd: "119226634"
+  idref: "134470818"
+  lc: n95020661
+  viaf: "126249088"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q29053814
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

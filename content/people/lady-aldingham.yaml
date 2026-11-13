@@ -1,2 +1,13 @@
 public_id: 121564
 name: Lady Aldingham
+birth: 1923
+death: 1987
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7906/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

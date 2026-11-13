@@ -2,3 +2,51 @@ public_id: 120023
 name: Arnold Otto Meyer
 given_name: Arnold Otto
 family_name: Meyer
+kind: person
+birth: 1825
+death: 1913
+wikidata_id: Q15784024
+metadata:
+  sources: [Wikidata Q15784024 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q15784024
+  - type: born_in
+    to: place/hamburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/hamburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Arnold_Otto_Meyer_1905.jpg/1280px-Arnold_Otto_Meyer_1905.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arnold_Otto_Meyer_1905.jpg
+    license: Public domain
+    credit: Rudolf Dührkoop
+identifiers:
+  gnd: "117555703"
+  lc: no2008183246
+  rkd: "450387"
+  viaf: "64787391"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q15784024
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

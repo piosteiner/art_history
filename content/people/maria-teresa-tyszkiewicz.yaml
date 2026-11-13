@@ -2,3 +2,44 @@ public_id: 121193
 name: Maria Teresa Tyszkiewicz
 given_name: Maria Teresa
 family_name: Tyszkiewicz
+kind: person
+birth: 1760
+death: 1834
+wikidata_id: Q16574794
+metadata:
+  sources: [Wikidata Q16574794 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/tours
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6d/Maryja_Tereza_Ty%C5%A1kievi%C4%8D_%28Paniato%C5%ADskaja%29._%D0%9C%D0%B0%D1%80%D1%8B%D1%8F_%D0%A2%D1%8D%D1%80%D1%8D%D0%B7%D0%B0_%D0%A2%D1%8B%D1%88%D0%BA%D0%B5%D0%B2%D1%96%D1%87_%28%D0%9F%D0%B0%D0%BD%D1%8F%D1%82%D0%BE%D1%9E%D1%81%D0%BA%D0%B0%D1%8F%29_%28K._Wojniakowski%2C_1797%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maryja_Tereza_Ty%C5%A1kievi%C4%8D_(Paniato%C5%ADskaja)._%D0%9C%D0%B0%D1%80%D1%8B%D1%8F_%D0%A2%D1%8D%D1%80%D1%8D%D0%B7%D0%B0_%D0%A2%D1%8B%D1%88%D0%BA%D0%B5%D0%B2%D1%96%D1%87_(%D0%9F%D0%B0%D0%BD%D1%8F%D1%82%D0%BE%D1%9E%D1%81%D0%BA%D0%B0%D1%8F)_(K._Wojniakowski,_1797).jpg
+    license: Public domain
+    credit: Kazimierz Wojniakowski
+identifiers:
+  gnd: "1033827762"
+  lc: n91128949
+  viaf: "41027554"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q16574794
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

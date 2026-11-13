@@ -2,4 +2,54 @@ public_id: 120747
 name: Heinrich Schulthess-von Meiss
 given_name: Heinrich Schulthess-von
 family_name: Meiss
+kind: person
+birth: 1813
+death: 1898
 wikidata_id: Q59618315
+metadata:
+  sources: [Wikidata Q59618315 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q59618315
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b8/Schulthess-von_Meiss_Heinrich_%281813%E2%80%931898%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Schulthess-von_Meiss_Heinrich_(1813%E2%80%931898).jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 17099402z
+  gnd: "1017338744"
+  hls: "046243"
+  idref: "197124240"
+  lc: no2017013648
+  rkd: "450987"
+  viaf: "196840143"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q59618315
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2731/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -2,4 +2,47 @@ public_id: 121281
 name: Christina Foyle
 given_name: Christina
 family_name: Foyle
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Christina Agnes Lilian Foyle
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q5110781
+kind: person
+birth: 1911
+death: 1999
 wikidata_id: Q5110781
+metadata:
+  sources: [Wikidata Q5110781 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q5110781
+  - type: born_in
+    to: place/london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5782/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  bnf: 15109215s
+  gnd: "1021285234"
+  viaf: "232794455"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q5110781
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5782/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5782/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

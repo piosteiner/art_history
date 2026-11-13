@@ -1,0 +1,39 @@
+public_id: 120419
+name: Margarethe Greulich
+given_name: Margarethe Greulich (verehelicht
+family_name: van Hasz-Greulich)
+names:
+  - kind: married
+    role: alternative
+    text: Margarethe van Hasz-Greulich
+birth: 1867-07-19
+death: 1917-05-25
+wikidata_id: Q63485296
+metadata:
+  sources: [Wikidata Q63485296 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q63485296
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q63485296
+identifiers:
+  gnd: 108959724X
+  sikart: "4026693"
+  viaf: "685145857098122922125"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q63485296
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q63485296

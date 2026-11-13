@@ -34,6 +34,7 @@ provenance:
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-03
   - owner: institution/geheime-staatspolizei
+    role: possessor
     acquired: 1938-11-23
     ended: 1941-06-27
     method: confiscation

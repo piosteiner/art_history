@@ -2,3 +2,58 @@ public_id: 120630
 name: Jacob de Gheyn
 given_name: Jacob
 family_name: de Gheyn
+kind: person
+birth: 1565
+death: 1629
+wikidata_id: Q1347434
+metadata:
+  sources: [Wikidata Q1347434 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1347434
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1347434
+  - type: died_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1347434
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Portret_van_Jacques_de_Gheyn_Iacobus_de_Geyn%2C_Antverp._Pict._et_Sculpt._%28titel_op_object%29_Pictorum_Aliquot_Celebrium_Praecipuae_Germaniae_Inferioris_Effigies_%28serietitel%29%2C_RP-P-1907-365.jpg/1280px-thumbnail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portret_van_Jacques_de_Gheyn_Iacobus_de_Geyn,_Antverp._Pict._et_Sculpt._(titel_op_object)_Pictorum_Aliquot_Celebrium_Praecipuae_Germaniae_Inferioris_Effigies_(serietitel),_RP-P-1907-365.jpg
+    license: CC0
+    credit: Rijksmuseum
+identifiers:
+  bnf: 13516386g
+  gnd: "122094204"
+  idref: "028130464"
+  kulturnav: b1a52fd3-f20c-4603-8160-f0b32a3ea342
+  lc: n50030007
+  rkd: "31339"
+  ulan: "500115191"
+  viaf: "29688669"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q1347434
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2481/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1347434
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2481/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -2,3 +2,14 @@ public_id: 120087
 name: Marcel Nyffeler
 given_name: Marcel
 family_name: Nyffeler
+birth: 1890
+death: 1957
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

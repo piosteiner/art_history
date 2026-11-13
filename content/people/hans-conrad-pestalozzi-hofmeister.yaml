@@ -2,3 +2,27 @@ public_id: 121598
 name: Hans Conrad Pestalozzi-Hofmeister
 given_name: Hans Conrad
 family_name: Pestalozzi-Hofmeister
+birth: 1793
+death: 1860
+relationships:
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/863/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/863/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/863/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/863/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

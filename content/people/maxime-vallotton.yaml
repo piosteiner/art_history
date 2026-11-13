@@ -2,4 +2,31 @@ public_id: 121173
 name: Maxime Vallotton
 given_name: Maxime
 family_name: Vallotton
+kind: person
+birth: 1895
+death: 1980
 wikidata_id: Q136632766
+metadata:
+  sources: [Wikidata Q136632766 (retrieved 2026-11-12)]
+identifiers:
+  gnd: "1080164375"
+  viaf: "138145068582166631391"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q136632766
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q136632766
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/43883/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q136632766

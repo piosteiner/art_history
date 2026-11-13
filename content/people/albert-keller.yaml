@@ -2,3 +2,14 @@ public_id: 120097
 name: Albert Keller
 given_name: Albert
 family_name: Keller
+birth: 1800
+death: 1874
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1190/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1190/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,0 +1,22 @@
+public_id: 120571
+name: Andrew Hay
+given_name: Andrew
+family_name: Hay
+kind: person
+death: 1754
+wikidata_id: Q106395846
+metadata:
+  sources: [Wikidata Q106395846 (retrieved 2026-11-12)]
+identifiers:
+  rkd: "36630"
+  ulan: "500026535"
+  viaf: "95845519"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q106395846
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q106395846

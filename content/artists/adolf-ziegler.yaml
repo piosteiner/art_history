@@ -1,0 +1,70 @@
+public_id: 121678
+name: Adolf Ziegler
+given_name: Adolf
+family_name: Ziegler
+names:
+  - lang: ja
+    role: translation
+    text: アドルフ・ツィーグラー
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q364656
+  - lang: zh
+    role: translation
+    text: 阿道夫·齐格勒
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q364656
+  - lang: ru
+    role: translation
+    text: Адольф Циглер
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q364656
+birth: 1892-10-16
+death: 1959-09-18
+biography_md: |-
+  Adolf Ziegler was born in Bremen into a family of architects. He studied at the Weimar academy from 1910 and under Max Doerner at the Munich Academy, served as a front-line officer in the First World War, and from 1919 continued his studies in Munich under the Jugendstil painter Angelo Jank. A party member since the early 1920s, he met Hitler in 1925 and became one of his advisers on art; Hitler had him paint a memorial portrait of his niece Geli Raubal. In 1933 he became professor at the Munich Academy. Exiled museum director Alois Schardt recalled that Ziegler had once been a "zealous admirer" of [[artist/franz-marc|Franz Marc]] and "one of the most extreme modern painters, but one of inferior rank"; no such early works are known, and in the 1920s he turned to a smooth, representational manner — flowers, genre, allegories from Greek myth, portraits and above all static, pseudo-classical female nudes of the "Aryan" ideal. His *Judgement of Paris* (1937) was bought by Hitler, and his triptych *The Four Elements* hung above the fireplace of Hitler's Munich residence and became famous through countless reproductions. He showed eleven canvases at the Great German Art Exhibitions between 1937 and 1943 and received the Golden Party Badge.[[source/wikipedia-en-adolf-ziegler|§ Life]][[source/peters-2017|p. 16 n. 26]] Hermand reproduces his *Goddess of Art* (1938) as an example of the salon nude favoured by the regime's elite.[[source/hermand-1994|p. 50]]
+
+  ## The purge of modern art
+
+  As president of the Reich Chamber of the Fine Arts Ziegler was Goebbels's direct subordinate.[[source/peters-2017|p. 16]] He sat on the nine-member jury of the first Great German Art Exhibition of 1937, whose selection threw Hitler into a rage on 5 June; Goebbels noted that "only Prof. Ziegler still has courage", but also that he would "take Ziegler to task" — "he is entirely crushed". The jury was replaced.[[source/peters-2017|pp. 15–16]] Weeks later Hitler's decree of 30 June 1937 charged him with impounding "the products of the period of decay" in the museums, galleries and collections of the Reich, the states and the municipalities — over the head of the minister of culture, [[person/bernhard-rust|Bernhard Rust]], who was merely informed.[[source/peters-2017|p. 17]] On 19 July 1937, one day after Hitler had opened the Great German Art Exhibition, Ziegler opened the [[event/degenerate-art-exhibition|*Entartete Kunst* exhibition]]: "You see around us monstrosities of madness, of impudence, of inability, and degeneration. What this show has to offer causes shock and disgust in all of us." He called the modernists "pigs", was openly surprised that the museums were still full of modern art, and announced their comprehensive purge.[[source/peters-2017|p. 23]][[source/hermand-1994|p. 38]]
+
+  He sat on the commission chaired by Goebbels that sold the confiscated works abroad for foreign currency.[[source/peters-2017|p. 26]] As president of the chamber he expelled expressionists such as [[artist/karl-schmidt-rottluff|Karl Schmidt-Rottluff]], whom he forbade any artistic activity "professional or amateur",[[source/wikipedia-en-adolf-ziegler|§ Life]] and in August 1941 [[artist/emil-nolde|Emil Nolde]], "because of a lack of reliability".[[source/fulda-soika-2014|p. 193]]
+wikidata_id: Q364656
+metadata:
+  sources: [Wikidata Q364656 (retrieved 2026-11-12)]
+relationships:
+  - type: member_of
+    to: institution/reichskulturkammer
+    label: president of the Reich Chamber of the Fine Arts
+    sources:
+      - source: fulda-soika-2014
+        locator: p. 193
+        accessed: 2026-11-12
+  - type: participated_in
+    to: event/degenerate-art-exhibition
+    label: organiser
+    sources:
+      - source: hermand-1994
+        locator: p. 38
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/db/Adolf_Ziegler.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Adolf_Ziegler.jpg
+    license: CC BY-SA 2.0 de
+    credit: Marcus Reistenhofer
+identifiers:
+  gnd: "132652706"
+  rkd: "234408"
+  ulan: "500336313"
+  viaf: "28237631"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q364656
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q364656

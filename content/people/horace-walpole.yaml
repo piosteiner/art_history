@@ -2,3 +2,61 @@ public_id: 120573
 name: Horace Walpole
 given_name: Horace
 family_name: Walpole
+names:
+  - kind: pseudonym
+    role: alternative
+    text: Onuphrio Muralto
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q309903
+kind: person
+birth: 1717
+death: 1797
+wikidata_id: Q309903
+metadata:
+  sources: [Wikidata Q309903 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-great-britain
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q309903
+  - type: born_in
+    to: place/london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a0/Horace_Walpole.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Horace_Walpole.jpg
+    license: Public domain
+    credit: Joshua Reynolds
+identifiers:
+  bnf: 11985448t
+  gnd: "118628844"
+  idref: "027573427"
+  lc: n80126297
+  rkd: "295259"
+  ulan: "500126172"
+  viaf: "17231985"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q309903
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/229/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/229/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

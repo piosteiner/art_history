@@ -2,3 +2,14 @@ public_id: 115558
 name: Hannelore Müller-Behrendt
 given_name: Hannelore
 family_name: Müller-Behrendt
+birth: 1930
+death: 2013
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7664/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7664/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

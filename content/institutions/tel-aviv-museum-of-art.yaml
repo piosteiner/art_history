@@ -1,3 +1,47 @@
 public_id: 120597
 name: Tel Aviv Museum of Art
+kind: museum
+founded: 1932-04-02
+place: tel-aviv
+location: [34.78667, 32.0775]
+address: שד׳ שאול המלך 27, תל אביב-יפו
+website_url: https://www.tamuseum.org.il
 wikidata_id: Q1267958
+metadata:
+  sources: [Wikidata Q1267958 (retrieved 2026-11-12)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/TelAM.jpg/1280px-TelAM.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:TelAM.jpg
+    license: Public domain
+    credit: Itayba at Hebrew Wikipedia
+identifiers:
+  bnf: 12205888f
+  gnd: 5044320-3
+  idref: "030694140"
+  lc: n90723436
+  ulan: "500309540"
+  viaf: "129923188"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q1267958
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2376/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q1267958
+  address:
+    - accessed: 2026-11-12
+      property: P6375
+      wikidata: Q1267958
+  founded:
+    - accessed: 2026-11-12
+      property: P571
+      wikidata: Q1267958
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q1267958

@@ -2,3 +2,27 @@ public_id: 115105
 name: Carl Montag
 given_name: Carl
 family_name: Montag
+birth: 1880
+death: 1956
+relationships:
+  - type: born_in
+    to: place/winterthur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/meudon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/342/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

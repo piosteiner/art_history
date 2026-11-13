@@ -2,4 +2,53 @@ public_id: 120231
 name: Willy Russ
 given_name: Willy
 family_name: Russ
+kind: person
+birth: 1877
+death: 1959
 wikidata_id: Q108525875
+metadata:
+  sources: [Wikidata Q108525875 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q108525875
+  - type: born_in
+    to: place/neuchatel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1496/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/neuchatel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1496/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Hodler_-_Bildnis_Willy_Russ_-_1911.jpeg/1280px-Hodler_-_Bildnis_Willy_Russ_-_1911.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Hodler_-_Bildnis_Willy_Russ_-_1911.jpeg
+    license: Public domain
+    credit: Ferdinand Hodler
+identifiers:
+  bnf: 17018762r
+  gnd: "126877629"
+  hls: "027763"
+  idref: "189348232"
+  lc: n2016059769
+  viaf: "47767113"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q108525875
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1496/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1496/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

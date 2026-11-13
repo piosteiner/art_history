@@ -9,7 +9,10 @@ kind: furniture
 medium: Rahmen Eiche, Furnier Ebenholz; Silber; Steinschnitt
 materials: [oak, ebony, silver]
 institution: kunstgewerbemuseum-berlin
-description_md: "Aus dem Inhalt des Kunstschranks, der 1945 verbrannte: Holzarbeiten von Ulrich Baumgartner, Silberarbeiten von Matthias Walbaum, Steinschnitt von Daniel Griessbeck."
+description_md: |-
+  This writing and reading desk (Pultbrett) comes from the contents of the [[artwork/pommerscher-kunstschrank|Kunstschrank for Philipp II of Pomerania]], made in 1610–1617; the case of the cabinet itself burned in 1945 [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 40]] [[source/wikipedia-de-pommerscher-kunstschrank|§ Geschichte]]. The woodwork is by [[artist/ulrich-baumgartner|Ulrich Baumgartner]], the silverwork by [[artist/matthias-walbaum|Matthias Walbaum]] and the stone inlay by Daniel Griessbeck, among others [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 40]]. Its frame is of oak, veneered with ebony, palisander and other exotic woods, with agate, carnelian, lapis lazuli, silver plates and oil paint; it measures 34.7 × 43.8 cm and is in the [[institution/kunstgewerbemuseum-berlin|Kunstgewerbemuseum]] in Berlin [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 40]].
+
+  The cabinet was a luxurious writing desk fitted out like a miniature Kunstkammer [[source/wikipedia-de-pommerscher-kunstschrank|§ Einleitung]], and the desk board belonged to its practical core. Its veneers of tropical woods connect it with the lecture's theme of the colonial timber trade, in which ebony served as the "wrapping" of European luxury furniture [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 15]].
 relationships:
   - type: co_creator
     to: artist/matthias-walbaum

@@ -2,3 +2,33 @@ public_id: 120697
 name: Edward Aldam Leatham
 given_name: Edward Aldam
 family_name: Leatham
+kind: person
+birth: 1828
+death: 1900
+wikidata_id: Q5341531
+metadata:
+  sources: [Wikidata Q5341531 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q5341531
+identifiers:
+  gnd: "1155541928"
+  lc: n90637972
+  viaf: "93666994"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q5341531
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/266/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/266/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

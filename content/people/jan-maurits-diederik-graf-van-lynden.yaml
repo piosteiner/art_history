@@ -2,3 +2,14 @@ public_id: 120881
 name: Jan Maurits Diederik Graf van Lynden
 given_name: Jan Maurits Diederik Graf
 family_name: van Lynden
+birth: 1864
+death: 1930
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -2,3 +2,21 @@ public_id: 120561
 name: Simone Breton-Collinet
 given_name: Simone
 family_name: Breton-Collinet
+birth: 1897
+death: 1980
+relationships:
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2279/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

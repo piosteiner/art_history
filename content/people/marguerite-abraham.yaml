@@ -2,3 +2,14 @@ public_id: 121209
 name: Marguerite Abraham
 given_name: Marguerite
 family_name: Abraham
+birth: 1909
+death: 2002
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5034/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5034/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

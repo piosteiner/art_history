@@ -77,10 +77,13 @@ provenance:
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-03
   - owner: person/aldo-noseda
+    role: estate
     acquired: 1918
     ended: 1929-12-02
     method: inheritance
     direct: true
+    label: estate of Aldo Noseda
+    notes_md: 'The Kunsthaus: "1918 – 2.12.1929, Sammlung Aldo Noseda, Nachlass" and Noseda "+1918 Stresa"; the GND (via Wikidata) gives his death as 1916.'
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/586964/
         note: "Footnote: Wie oben Fussnote 7."

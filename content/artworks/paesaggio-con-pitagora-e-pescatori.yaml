@@ -1,4 +1,4 @@
-public_id: 120628
+public_id: 121652
 title_lang: it
 title: Paesaggio con Pitagora e pescatori
 names:
@@ -32,6 +32,8 @@ dimensions: [123, 198]
 institution: kunsthaus-zurich
 inventory_number: KS 53
 web_url: https://collection.kunsthaus.ch/de/collection/item/2476/
+on_loan: true
+on_loan_since: 1986
 wikidata_id: Q131585627
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/d8/Salvator_Rosa_-_Paesaggio_con_Pitagora_e_pescatori_-_KS_53_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
@@ -39,31 +41,26 @@ images:
     license: Public domain
     credit: Salvator Rosa
 provenance:
-  - owner_label: unknown
-    label: The Dukes of Devonshire (Sammler/-in); Chatsworth (1761 in Chiswick House)
+  - owner: person/the-dukes-of-devonshire
+    label: Chatsworth (1761 in Chiswick House)
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2476/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: the art trade
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1958-06-27
+    ended: 1958-06-27
+    method: auction
     direct: true
     place: london
-    label: Christie`s London (Kunsthandel); 27.VI.1958; Lot 16
+    label: Lot 16
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2476/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
+  - owner: person/david-koetser
     direct: true
-    label: David Koetser (Sammler/-in)
-    sources:
-      - url: https://collection.kunsthaus.ch/de/collection/item/2476/
-        source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-11-12
-  - owner_label: unknown
-    direct: true
-    place: zurich
-    label: Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum); ab 1986
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2476/
         source: kunsthaus-zurich-sammlung-online
@@ -82,6 +79,10 @@ sources:
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12
   creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2476/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/2476/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12

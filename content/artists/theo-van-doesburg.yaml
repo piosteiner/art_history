@@ -2,3 +2,128 @@ public_id: 121087
 name: Theo van Doesburg
 given_name: Theo
 family_name: van Doesburg
+birth: 1883-08-30
+death: 1931-03-07
+wikidata_id: Q160422
+metadata:
+  sources: [Wikidata Q160422 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q160422
+  - type: born_in
+    to: place/utrecht
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q160422
+  - type: died_in
+    to: place/davos
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q160422
+  - type: worked_in
+    to: place/auvers-sur-oise
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q160422
+  - type: worked_in
+    to: place/davos
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q160422
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q160422
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q160422
+  - type: worked_in
+    to: place/utrecht
+    period: September 1915 – 1916
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q160422
+  - type: worked_in
+    to: place/leiden
+    period: 1916/1921
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q160422
+  - type: worked_in
+    to: place/weimar
+    period: 1921/1924
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q160422
+  - type: worked_in
+    to: place/clamart
+    period: 1924/1930
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q160422
+  - type: worked_in
+    to: place/strasbourg
+    period: 1926-09/1928-02
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q160422
+  - type: worked_in
+    to: place/meudon
+    period: 1930-12/1931-02
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q160422
+  - type: influenced_by
+    to: artist/piet-mondrian
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q160422
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q160422
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Theo_van_Doesburg_in_military_service.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Theo_van_Doesburg_in_military_service.JPG
+    license: Public domain
+    credit: Anonymous (Netherlands) circa 1915
+identifiers:
+  bnf: "121903814"
+  dome: "13791"
+  gnd: "118526405"
+  idref: "030491517"
+  lc: n79133763
+  rkd: "23481"
+  ulan: "500007926"
+  viaf: "39646290"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q160422
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q160422

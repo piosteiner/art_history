@@ -1,0 +1,16 @@
+public_id: 121631
+name: Flanders
+kind: site
+location: [4.5, 51]
+wikidata_id: Q234
+metadata:
+  sources: [Wikidata Q234 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q234
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q234

@@ -2,4 +2,55 @@ public_id: 121143
 name: Richard Cosway
 given_name: Richard
 family_name: Cosway
+kind: person
+birth: 1742
+death: 1821
 wikidata_id: Q2539929
+metadata:
+  sources: [Wikidata Q2539929 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-great-britain
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2539929
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2539929
+  - type: died_in
+    to: place/london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Cosway%2C_Self-portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cosway,_Self-portrait.jpg
+    license: Public domain
+    credit: Richard Cosway
+identifiers:
+  bnf: "149545537"
+  gnd: "119547317"
+  idref: "035162449"
+  kulturnav: ed93955e-69c8-47a7-ba62-e6ae565a92ee
+  lc: n93108180
+  rkd: "18641"
+  ulan: "500115280"
+  viaf: "40191108"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q2539929
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

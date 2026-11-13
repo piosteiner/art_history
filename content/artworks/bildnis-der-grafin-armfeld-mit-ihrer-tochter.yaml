@@ -51,7 +51,7 @@ provenance:
         note: "Footnote: Waser 1903, S. 45: «bei Frau Clara von Raab geb. Schäffer in Dresden»; Berckenhagen 1967, S. 52, Nr. 24."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner: institution/moderne-galerie-heinrich-thannhauser
+  - owner: institution/galerie-thannhauser
     role: dealer
     ended: 1918-06
     place: berlin
@@ -94,11 +94,12 @@ provenance:
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
   - owner: person/annemarie-boveri
+    role: custodian
     acquired: 1972-03-20
     ended: 1990
     direct: true
     place: zurich
-    label: née Wydler
+    label: née Wydler; lent to her by the Kunsthaus after her husband’s bequest (Leihgabe)
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/1302/
         note: "Footnote: Wie oben Fussnote 8; Jahresbericht 1999, hrsg. von Zürcher Kunstgesellschaft, 2000, S. 5-6: «Das Bildnis der Gräfin Armfeld mit ihrer Tochter […] von Anton Graff, kam bereits 1990 noch zu Lebzeiten von Annemarie Boveri ins Kunsthaus. Dennoch wurde nachträglich die Zugehörigkeit zum Vermächtnis Annemarie und Walter Boveri angezweifelt. Nun konnte anhand neu zugänglicher Akten die Frage definitiv ge…"

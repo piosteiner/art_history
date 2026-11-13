@@ -2,4 +2,23 @@ public_id: 120566
 name: R. Molenaar
 given_name: R.
 family_name: Molenaar
+kind: person
+birth: 1842
 wikidata_id: Q108558286
+metadata:
+  sources: [Wikidata Q108558286 (retrieved 2026-11-12)]
+identifiers:
+  gnd: "1045288128"
+  viaf: "305440950"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q108558286
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q108558286

@@ -2,4 +2,47 @@ public_id: 121051
 name: Paul Cheramy
 given_name: Paul
 family_name: Cheramy
+kind: person
+birth: 1840
+death: 1912
 wikidata_id: Q66305875
+metadata:
+  sources: [Wikidata Q66305875 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q66305875
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q66305875
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/18-7-1912%2C_inauguration_de_la_plaque_Lamartine%2C_Ch%C3%A9ramy_%28pr%C3%A9sident_des_Lamartiniens_faisant_un_discours%29_-_btv1b6920633v.jpg/1280px-18-7-1912%2C_inauguration_de_la_plaque_Lamartine%2C_Ch%C3%A9ramy_%28pr%C3%A9sident_des_Lamartiniens_faisant_un_discours%29_-_btv1b6920633v.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:18-7-1912,_inauguration_de_la_plaque_Lamartine,_Ch%C3%A9ramy_(pr%C3%A9sident_des_Lamartiniens_faisant_un_discours)_-_btv1b6920633v.jpg
+    license: Public domain
+    credit: Agence Rol. Agence photographique (commanditaire)
+identifiers:
+  bnf: "133579845"
+  gnd: 105523036X
+  idref: "074722344"
+  lc: no2017069899
+  ulan: "500315787"
+  viaf: "263719148"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q66305875
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/356/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/356/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

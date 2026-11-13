@@ -2,4 +2,58 @@ public_id: 121103
 name: Heinrich Gomperz
 given_name: Heinrich
 family_name: Gomperz
+kind: person
+birth: 1873
+death: 1942
 wikidata_id: Q86073
+metadata:
+  sources: [Wikidata Q86073 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/austria
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q86073
+  - type: nationality
+    to: polity/austria-hungary
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q86073
+  - type: born_in
+    to: place/vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3823/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/los-angeles
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3823/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Schiele_-_Heinrich_Gomperz%2C_Univ.-Prof.%2C_Dr._Philosoph%2C_102021%2C_1918_%28cropped%29.jpg/1280px-Schiele_-_Heinrich_Gomperz%2C_Univ.-Prof.%2C_Dr._Philosoph%2C_102021%2C_1918_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Schiele_-_Heinrich_Gomperz,_Univ.-Prof.,_Dr._Philosoph,_102021,_1918_(cropped).jpg
+    license: Public domain
+    credit: Egon Schiele
+identifiers:
+  bnf: "123283124"
+  gnd: 11927146X
+  idref: "032207417"
+  lc: n83050276
+  viaf: "29604075"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q86073
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3823/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3823/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

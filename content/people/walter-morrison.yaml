@@ -2,3 +2,33 @@ public_id: 120714
 name: Walter Morrison
 given_name: Walter
 family_name: Morrison
+kind: person
+birth: 1836
+death: 1921
+wikidata_id: Q7965678
+metadata:
+  sources: [Wikidata Q7965678 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q7965678
+identifiers:
+  gnd: "1029636729"
+  lc: nb2006024452
+  viaf: "27454504"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q7965678
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

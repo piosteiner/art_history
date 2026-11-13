@@ -2,3 +2,42 @@ public_id: 120557
 name: Hans Conrad Hirzel
 given_name: Hans Conrad
 family_name: Hirzel
+kind: person
+birth: 1747
+death: 1824
+wikidata_id: Q136639794
+metadata:
+  sources: [Wikidata Q136639794 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q136639794
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q136639794
+identifiers:
+  gnd: "1074213904"
+  hls: "018153"
+  viaf: "316771555"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q136639794
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2269/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q136639794
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2269/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

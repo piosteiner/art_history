@@ -3,6 +3,8 @@ name: Theo van Gogh
 given_name: Theo
 family_name: van Gogh
 kind: person
+birth: 1857
+death: 1891
 active: 1880/1890
 description_md: |-
   Art dealer in Paris (Goupil & Cie, later Boussod, Valadon & Cie) and Vincent's younger brother[[source/wikipedia-en-theo-van-gogh-art-dealer|“a Dutch art dealer and a younger brother of Vincent van Gogh” · “By 1884, he was transferred to the Paris main office, which in 1884 took the name of Boussod, Valadon & Cie”]].
@@ -19,3 +21,12 @@ relationships:
   - type: patron_of
     to: artist/vincent-van-gogh
     period: 1880/1890
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -2,4 +2,43 @@ public_id: 121312
 name: Hugo Franz Altgraf zu Salm-Reifferscheidt-Raitz
 given_name: Hugo Franz Altgraf
 family_name: zu Salm-Reifferscheidt-Raitz
+kind: person
+birth: 1776
+death: 1836
 wikidata_id: Q1635032
+metadata:
+  sources: [Wikidata Q1635032 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/611/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/611/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Hugo_Franti%C5%A1ek_Salm-Reifferscheidt_starohrab%C4%9B.gif
+    source_url: https://commons.wikimedia.org/wiki/File:Hugo_Franti%C5%A1ek_Salm-Reifferscheidt_starohrab%C4%9B.gif
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "139645594"
+  viaf: "102509404"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q1635032
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/611/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/611/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

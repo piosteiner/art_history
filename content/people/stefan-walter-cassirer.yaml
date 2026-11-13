@@ -2,3 +2,38 @@ public_id: 120738
 name: Stefan Walter Cassirer
 given_name: Stefan Walter
 family_name: Cassirer
+kind: person
+birth: 1902
+death: 1973
+wikidata_id: Q137596267
+metadata:
+  sources: [Wikidata Q137596267 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/denmark
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q137596267
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q137596267
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q137596267

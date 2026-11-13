@@ -2,3 +2,54 @@ public_id: 121133
 name: Albert Neisser
 given_name: Albert
 family_name: Neisser
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Albert Ludwig Sigesmund Neisser
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q76713
+kind: person
+birth: 1855
+death: 1916
+wikidata_id: Q76713
+metadata:
+  sources: [Wikidata Q76713 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q76713
+  - type: died_in
+    to: place/wroc-aw
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q76713
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9a/AlbertNeisser.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AlbertNeisser.jpg
+    license: Public domain
+    credit: http://www.klinikum.uni-heidelberg.de/Albert-Neisser.4114.0.html
+identifiers:
+  bnf: "162474406"
+  gnd: "118738380"
+  idref: "113392036"
+  lc: no90007946
+  viaf: "27866555"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q76713
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,3 +1,14 @@
 public_id: 121432
 name: Robert Noortman Gallery
+kind: gallery
 wikidata_id: Q114347516
+metadata:
+  sources: [Wikidata Q114347516 (retrieved 2026-11-12)]
+identifiers:
+  lc: n80073197
+  viaf: "139864346"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q114347516

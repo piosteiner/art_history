@@ -25,11 +25,12 @@ provenance:
       - url: https://collection.kunsthaus.ch/de/collection/item/7833/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner: person/walter-feilchenfeldt
+  - owner: person/walter-feilchenfeldt-jun
     acquired: 1993
     ended: 2013
     direct: true
     place: zurich
+    label: the Kunsthaus gives the life dates of Walter Feilchenfeldt senior (1894–1953), who had died by 1993 — his son, born 1939, held it
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/7833/
         source: kunsthaus-zurich-sammlung-online

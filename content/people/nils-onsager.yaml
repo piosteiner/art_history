@@ -2,3 +2,40 @@ public_id: 120362
 name: Nils Onsager
 given_name: Nils
 family_name: Onsager
+kind: person
+birth: 1874
+death: 1953
+wikidata_id: Q11991500
+metadata:
+  sources: [Wikidata Q11991500 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/drammen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/oslo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/179960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Erik_Werenskiold_-_Nils_Orvar_Onsager_-_Norsk_portrettarkiv_-_Riksantikvaren_-_O000061_%28cropped%29.jpg/1280px-Erik_Werenskiold_-_Nils_Orvar_Onsager_-_Norsk_portrettarkiv_-_Riksantikvaren_-_O000061_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Erik_Werenskiold_-_Nils_Orvar_Onsager_-_Norsk_portrettarkiv_-_Riksantikvaren_-_O000061_(cropped).jpg
+    license: Public domain
+    credit: Erik Werenskiold
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q11991500
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/179960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

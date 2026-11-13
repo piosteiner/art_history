@@ -1,0 +1,21 @@
+public_id: 121665
+name: Villa of Agrippa Postumus
+kind: archaeological
+parent: boscotrecase
+location: [14.462036, 40.77431]
+wikidata_id: Q121922430
+metadata:
+  sources: [Wikidata Q121922430 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q121922430
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q121922430
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q121922430

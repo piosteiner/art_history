@@ -2,4 +2,41 @@ public_id: 121553
 name: Ernst Grosse
 given_name: Ernst
 family_name: Grosse
+kind: person
+birth: 1862
+death: 1927
 wikidata_id: Q1358369
+metadata:
+  sources: [Wikidata Q1358369 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1358369
+  - type: died_in
+    to: place/freiburg-im-breisgau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/787/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  bnf: 13014391q
+  gnd: "117564273"
+  idref: "075644436"
+  lc: n2004033791
+  viaf: "19812730"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q1358369
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/787/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/787/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

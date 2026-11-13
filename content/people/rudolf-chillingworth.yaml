@@ -2,3 +2,28 @@ public_id: 121579
 name: Rudolf Chillingworth
 given_name: Rudolf
 family_name: Chillingworth
+kind: person
+birth: 1865
+death: 1934-01-21
+wikidata_id: Q111344176
+metadata:
+  sources: [Wikidata Q111344176 (retrieved 2026-11-12)]
+identifiers:
+  gnd: "1078040303"
+  viaf: "134144782701467746348"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q111344176
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/80/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q111344176
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q111344176

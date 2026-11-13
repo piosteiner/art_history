@@ -2,4 +2,38 @@ public_id: 120281
 name: Thomas Roffler
 given_name: Thomas
 family_name: Roffler
+kind: person
+birth: 1897
+death: 1930
 wikidata_id: Q78070004
+metadata:
+  sources: [Wikidata Q78070004 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q78070004
+identifiers:
+  gnd: "1090165544"
+  hls: "048667"
+  idref: "067029019"
+  lc: nr98044827
+  rkd: "67686"
+  sikart: "4026430"
+  ulan: "500107261"
+  viaf: "189319958"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q78070004
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

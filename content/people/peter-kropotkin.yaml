@@ -28,12 +28,6 @@ relationships:
         property: P27
         wikidata: Q5752
   - type: nationality
-    to: polity/russian-socialist-federative-soviet-republic
-    sources:
-      - accessed: 2026-11-10
-        property: P27
-        wikidata: Q5752
-  - type: nationality
     to: polity/russian-soviet-federative-socialist-republic
     sources:
       - accessed: 2026-11-10

@@ -43,8 +43,10 @@ provenance:
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
   - owner: institution/hotel-de-bullion
+    role: agent
     acquired: 1826-05-22/1826-05-23
     ended: 1826-05-22/1826-05-23
+    method: auction
     place: paris
     label: Lot 33
     certainty: probable

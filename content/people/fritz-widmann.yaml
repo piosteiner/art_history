@@ -2,3 +2,49 @@ public_id: 120160
 name: Fritz Widmann
 given_name: Fritz
 family_name: Widmann
+kind: person
+birth: 1869
+death: 1937
+wikidata_id: Q52155929
+metadata:
+  sources: [Wikidata Q52155929 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q52155929
+  - type: born_in
+    to: place/bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1335/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/ruschlikon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1335/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  dome: "3309"
+  gnd: "130253928"
+  lc: nr2004005551
+  rkd: "84138"
+  sikart: "4024385"
+  ulan: "500070001"
+  viaf: "15872251"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q52155929
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1335/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1335/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

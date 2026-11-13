@@ -105,6 +105,7 @@ provenance:
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-03
   - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
     acquired: 1941-09-14
     method: confiscation
     direct: true

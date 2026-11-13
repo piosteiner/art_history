@@ -2,3 +2,41 @@ public_id: 121145
 name: Sarah Rogers
 given_name: Sarah
 family_name: Rogers
+kind: person
+birth: 1772
+death: 1855
+wikidata_id: Q116732246
+metadata:
+  sources: [Wikidata Q116732246 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-great-britain
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q116732246
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q116732246
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q116732246
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q116732246
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q116732246

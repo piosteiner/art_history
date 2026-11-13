@@ -1,2 +1,10 @@
 public_id: 121159
 name: Buchholz Gallery – Curt Valentin
+names: [Curt Valentin Gallery]
+place: new-york-city
+description_md: Gallery in New York, on 46th Street, founded by [[person/karl-buchholz|Karl Buchholz]] and [[person/curt-valentin|Curt Valentin]]. Valentin, a close associate of the emigrated dealer Alfred Flechtheim, had run the gallery of contemporary art above Buchholz's international bookshop in Leipziger Straße, Berlin, since 1934; as a Jew he could no longer work there, and after his emigration in March 1937 the New York gallery was opened under both their names. It helped to make German modernism known on the American market; contact with Buchholz broke off when the United States entered the war in 1942, and the business continued as the Valentin Gallery from 1951 to 1955.[[source/wikipedia-de-karl-buchholz-kunsthandler|§ Leben]]
+sources:
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/428/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

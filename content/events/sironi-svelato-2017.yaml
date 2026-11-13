@@ -7,7 +7,10 @@ names:
 kind: exhibition
 period: 2017-11-23/2018-01-21
 place: rome
-description_md: "*Sironi svelato. Il restauro del murale della Sapienza*, MLAC (Museo Laboratorio di Arte Contemporanea) in the Rettorato of the Sapienza, with a catalogue (Campisano): the restoration of [[artwork/sironi-italia-fra-le-arti-e-le-scienze]] [[source/sapienza-2017-sironi-restauro|p. 2]]."
+description_md: |-
+  *Sironi svelato. Il restauro del murale della Sapienza*, MLAC (Museo Laboratorio di Arte Contemporanea) in the Rettorato of the Sapienza, with a catalogue (Campisano): the restoration of [[artwork/sironi-italia-fra-le-arti-e-le-scienze]] [[source/sapienza-2017-sironi-restauro|p. 2]]. The exhibition ran from 23 November 2017 to 21 January 2018 [[source/sapienza-2017-sironi-restauro|p. 2]].
+
+  It presented the results of three years' work on [[artist/mario-sironi|Mario Sironi]]'s mural of 1935, which had been covered with wallpaper after the war and repainted over its whole surface in 1950 [[source/sapienza-2017-sironi-restauro|pp. 1–2]]. The restoration, a project of the [[institution/sapienza-university-of-rome|Sapienza]] and the Istituto superiore per la conservazione e il restauro under Marina Righetti and Gisella Capponi, removed the repainting completely [[source/sapienza-2017-sironi-restauro|pp. 1–2]]. A long documentary film by Salvatore Casaluci recorded the work [[source/sapienza-2017-sironi-restauro|p. 2]]. The unveiling brought back the Fascist symbols that had been painted over: the horseman on the arch, the numerals XIV and the eagle [[source/steiner-2025-mario-sironi|pp. 10–11]]. Flaminia Bartolini criticised that the event presented Fascism as a historical period with "no legacies in the present day" [[source/steiner-2025-mario-sironi|p. 11]] [[source/bartolini-2020|pp. 26–27]].
 relationships:
   - type: concerns
     to: artwork/sironi-italia-fra-le-arti-e-le-scienze

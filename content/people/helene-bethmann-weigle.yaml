@@ -2,3 +2,9 @@ public_id: 120059
 name: Hélène Bethmann-Weiglé
 given_name: Hélène
 family_name: Bethmann-Weiglé
+birth: 1872
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1120/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

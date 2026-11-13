@@ -2,4 +2,54 @@ public_id: 121394
 name: Marie Françoise Corot
 given_name: Marie Françoise
 family_name: Corot
+names:
+  - kind: birth
+    lang: fr
+    role: former
+    text: Marie Françoise Oberson
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q96272805
+kind: person
+birth: 1768
+death: 1851
 wikidata_id: Q96272805
+metadata:
+  sources: [Wikidata Q96272805 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q96272805
+  - type: born_in
+    to: place/versailles
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/687/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/57/Jean-Baptiste-Camille_Corot_%281796-1875%29_-_The_Artist%27s_Mother%2C_Marie_Fran%C3%A7oise_Oberson_%281769%E2%80%931851%29_-_NG_1852_-_National_Galleries_of_Scotland.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste-Camille_Corot_(1796-1875)_-_The_Artist%27s_Mother,_Marie_Fran%C3%A7oise_Oberson_(1769%E2%80%931851)_-_NG_1852_-_National_Galleries_of_Scotland.jpg
+    license: Public domain
+    credit: Jean-Baptiste Camille Corot
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q96272805
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/687/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/687/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

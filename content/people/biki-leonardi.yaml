@@ -2,3 +2,14 @@ public_id: 121105
 name: Biki Leonardi
 given_name: Biki
 family_name: Leonardi
+birth: 1906
+death: 1999
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3823/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3823/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

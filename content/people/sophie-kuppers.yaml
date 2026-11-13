@@ -2,4 +2,52 @@ public_id: 120615
 name: Sophie Küppers
 given_name: Sophie
 family_name: Küppers
+names:
+  - kind: birth
+    lang: mul
+    role: former
+    text: Sophie Schneider
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q1592391
+kind: person
+birth: 1891
+death: 1978
 wikidata_id: Q1592391
+metadata:
+  sources: [Wikidata Q1592391 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1592391
+  - type: born_in
+    to: place/kiel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2448/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  bnf: 12763018p
+  dodis: P22447
+  gnd: 12384052X
+  idref: "069897905"
+  lc: n83204173
+  rkd: "377905"
+  ulan: "500656291"
+  viaf: "113135077"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q1592391
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2448/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2448/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

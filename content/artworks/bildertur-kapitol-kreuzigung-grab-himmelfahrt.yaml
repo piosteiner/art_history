@@ -8,7 +8,7 @@ kind: relief
 medium: Nussbaum, Relief
 materials: [walnut wood]
 institution: st-maria-im-kapitol
-description_md: Rechter Flügel.
+description_md: "These walnut reliefs on the right leaf of the [[artwork/bildertur-st-maria-im-kapitol|wooden door of St. Maria im Kapitol]] in Cologne (1050/65) show the Crucifixion, the women at the tomb and the Ascension.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 104]][[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 105]][[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 106]] The right leaf shows Christ's ministry and Passion.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Ikonografie]] The panels are no longer in their original order: according to the painted tituli the Crucifixion should come first, then the women at the tomb and finally the Ascension.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Anordnung und Verlust]] The Crucifixion resembles the ivory cover of the Lyskirchen Gospels from St. Georg in Cologne, and crucifixes in the style of the reliefs were also made, such as the one from St. Georg of around 1067.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Vorbilder und Nachahmungen]]"
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/14/Holzt%C3%BCr_von_St._Maria_im_Kapitol_-_Tafel_19_Christus_am_Kreuz-0424.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Holzt%C3%BCr_von_St._Maria_im_Kapitol_-_Tafel_19_Christus_am_Kreuz-0424.jpg
@@ -17,22 +17,22 @@ images:
 sources:
   kind:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 104
   medium:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 104
   parent:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 104
   created:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 104
   materials:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 104
   institution:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 104
   title_status:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 104

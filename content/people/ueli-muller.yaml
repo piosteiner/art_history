@@ -2,3 +2,39 @@ public_id: 121504
 name: Ueli Müller
 given_name: Ueli
 family_name: Müller
+kind: person
+birth: 1937
+death: 2020
+wikidata_id: Q132237850
+metadata:
+  sources: [Wikidata Q132237850 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q132237850
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/762971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  gnd: "1251076041"
+  sikart: "14756600"
+  viaf: "5952164423011020530003"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q132237850
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/762971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/762971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

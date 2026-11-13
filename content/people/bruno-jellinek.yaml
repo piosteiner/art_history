@@ -2,3 +2,38 @@ public_id: 121194
 name: Bruno Jellinek
 given_name: Bruno
 family_name: Jellinek
+kind: person
+birth: 1880
+death: 1943
+wikidata_id: Q133634019
+metadata:
+  sources: [Wikidata Q133634019 (retrieved 2026-11-12)]
+relationships:
+  - type: died_in
+    to: place/new-york
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/471/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  gnd: "1023791447"
+  viaf: "250850426"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q133634019
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q133634019
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q133634019

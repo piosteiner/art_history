@@ -2,3 +2,54 @@ public_id: 121168
 name: Frank Buchser
 given_name: Frank
 family_name: Buchser
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Franz Buchser
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q329490
+birth: 1828-08-15
+death: 1890-11-22
+wikidata_id: Q329490
+metadata:
+  sources: [Wikidata Q329490 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q329490
+  - type: associated_with
+    to: movement/orientalism
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q329490
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/07/FrankBuchser.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:FrankBuchser.jpg
+    license: Public domain
+    credit: http://smasar.temp.powweb.com/Frank_Buchser/index1.htm
+identifiers:
+  bnf: 12190823b
+  dodis: P62413
+  gnd: "118664379"
+  hls: "021993"
+  idref: "030508029"
+  lc: n92006850
+  rkd: "13785"
+  sikart: "4022827"
+  ulan: "500027770"
+  viaf: "3264469"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q329490
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q329490

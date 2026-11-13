@@ -1,0 +1,21 @@
+public_id: 121664
+name: Boscotrecase
+kind: settlement
+parent: metropolitan-city-of-naples
+location: [14.466666666667, 40.783333333333]
+wikidata_id: Q71851
+metadata:
+  sources: [Wikidata Q71851 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q71851
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q71851
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q71851

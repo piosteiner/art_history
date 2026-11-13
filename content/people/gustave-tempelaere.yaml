@@ -2,3 +2,14 @@ public_id: 111910
 name: Gustave Tempelaere
 given_name: Gustave
 family_name: Tempelaere
+birth: 1840
+death: 1904
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/342/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

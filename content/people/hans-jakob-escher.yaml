@@ -2,3 +2,45 @@ public_id: 121112
 name: Hans Jakob Escher
 given_name: Hans Jakob
 family_name: Escher
+kind: person
+birth: 1783
+death: 1854
+wikidata_id: Q2479288
+metadata:
+  sources: [Wikidata Q2479288 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2479288
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3863/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3863/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  gnd: "1051586488"
+  hls: "013462"
+  viaf: "308727531"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q2479288
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3863/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3863/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

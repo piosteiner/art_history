@@ -2,3 +2,21 @@ public_id: 100438
 name: Leonie Tobler
 given_name: Leonie
 family_name: Tobler
+birth: 1909
+death: 2002
+relationships:
+  - type: died_in
+    to: place/uster
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/4457/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/4457/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/4457/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

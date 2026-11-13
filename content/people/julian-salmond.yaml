@@ -2,4 +2,22 @@ public_id: 120757
 name: Julian Salmond
 given_name: Julian
 family_name: Salmond
+kind: person
+birth: 1926
+death: 2006
 wikidata_id: Q75351270
+metadata:
+  sources: [Wikidata Q75351270 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q75351270
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

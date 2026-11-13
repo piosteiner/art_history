@@ -23,7 +23,7 @@ names:
       - url: https://collection.kunsthaus.ch/de/collection/item/5611/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-creator: copy-after-claude-lorrain
+attribution_label: copy after Claude Lorrain
 created: 1662
 kind: oil painting
 medium: Öl auf Kupfer
@@ -102,10 +102,6 @@ sources:
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12
   created:
-    - url: https://collection.kunsthaus.ch/de/collection/item/5611/
-      source: kunsthaus-zurich-sammlung-online
-      accessed: 2026-11-12
-  creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/5611/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12

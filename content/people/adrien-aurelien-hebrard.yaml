@@ -2,3 +2,44 @@ public_id: 120792
 name: Adrien-Aurélien Hébrard
 given_name: Adrien-Aurélien
 family_name: Hébrard
+kind: person
+birth: 1865
+death: 1937
+wikidata_id: Q106350089
+metadata:
+  sources: [Wikidata Q106350089 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q106350089
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q106350089
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Devanture_de_la_maison_H%C3%A9brard%2C_8_rue_Royale%2C_8%C3%A8me_arrondissement%2C_Paris._PH23412.jpg/1280px-Devanture_de_la_maison_H%C3%A9brard%2C_8_rue_Royale%2C_8%C3%A8me_arrondissement%2C_Paris._PH23412.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Devanture_de_la_maison_H%C3%A9brard,_8_rue_Royale,_8%C3%A8me_arrondissement,_Paris._PH23412.jpg
+    license: CC0
+    credit: Lansiaux, Charles Joseph Antoine (Aniche, 09–03–1855 - Paris, après 06–04–1939), photographe
+identifiers:
+  gnd: "1206010819"
+  ulan: "500334760"
+  viaf: "309815436"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q106350089
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2848/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

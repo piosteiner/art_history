@@ -2,3 +2,21 @@ public_id: 115557
 name: Oskar A. Müller
 given_name: Oskar A.
 family_name: Müller
+birth: 1899
+death: 1994
+relationships:
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7664/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7664/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7664/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

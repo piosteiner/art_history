@@ -2,3 +2,50 @@ public_id: 121023
 name: Konrad Escher
 given_name: Konrad
 family_name: Escher
+kind: person
+birth: 1882
+death: 1944
+wikidata_id: Q61957761
+metadata:
+  sources: [Wikidata Q61957761 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q61957761
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3492/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3492/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  bnf: "127142111"
+  dodis: P66009
+  gnd: "1015299733"
+  hls: "044904"
+  idref: "122942639"
+  lc: no2005098204
+  sikart: "4024877"
+  viaf: "122299896"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q61957761
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3492/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3492/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -2,3 +2,14 @@ public_id: 120038
 name: Louise-Henriette Wilhelmine Anhalt-Dessau
 given_name: Louise-Henriette Wilhelmine
 family_name: Anhalt-Dessau
+birth: 1750
+death: 1811
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1085/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

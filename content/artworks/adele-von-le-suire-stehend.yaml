@@ -114,9 +114,11 @@ provenance:
         accessed: 2026-11-03
   - owner: institution/zurcher-kunstgesellschaft
     acquired: 2010
+    method: settlement
     direct: true
     place: zurich
     label: gütliche Einigung mit den Erben und Schenkung der Erben und Hannelore Müller
+    notes_md: 'Amicable settlement with the heirs of Gertrud and Alfred Sommerguth and gift by the heirs and Hannelore Müller (the Kunsthaus: "gütliche Einigung mit den Erben und Schenkung der Erben und Hannelore Müller").'
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/6748/
         note: "Footnote: Eintrag auf Lost Art-Datenbank, http://www.lostart.de/DE/Verlust/275983, 27.02.2025."

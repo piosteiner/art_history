@@ -2,3 +2,47 @@ public_id: 120676
 name: Hal B. Wallis
 given_name: Hal B.
 family_name: Wallis
+kind: person
+birth: 1898
+death: 1986
+wikidata_id: Q472520
+metadata:
+  sources: [Wikidata Q472520 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q472520
+  - type: born_in
+    to: place/chicago
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/40/Hal_B._Wallis_-_Universal_Pictures%2C_c._1971.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hal_B._Wallis_-_Universal_Pictures,_c._1971.jpg
+    license: Public domain
+    credit: Universal Studios. Photographer not credited
+identifiers:
+  bnf: "141447207"
+  gnd: "129068454"
+  idref: "070755078"
+  lc: n80046148
+  ulan: "500449787"
+  viaf: "27275176"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q472520
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2585/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

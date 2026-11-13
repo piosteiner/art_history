@@ -2,3 +2,9 @@ public_id: 120717
 name: Geoffrey Mark Dent-Brocklehurst
 given_name: Geoffrey Mark
 family_name: Dent-Brocklehurst
+death: 1972
+sources:
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -2,3 +2,14 @@ public_id: 121195
 name: Peter Jay Sharp
 given_name: Peter Jay
 family_name: Sharp
+birth: 1930
+death: 1992
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

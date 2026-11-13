@@ -7,7 +7,10 @@ kind: woodcut
 medium: woodcut, hand-coloured
 dimensions: [26.6, 19]
 institution: guildhall-library
-description_md: An impression of the South German woodcut whose pear-wood block survives in the British Museum — block and print shown side by side in the lecture.
+description_md: |-
+  An impression of the South German woodcut whose pear-wood [[artwork/martyrium-des-sebastian-druckstock-bm|block]] survives in the [[institution/british-museum|British Museum]] — block and print were shown side by side in the lecture [[source/ganz-2024-aus-dem-wald|Sitzung 9 (28.11.2024), Folie 21]]. The print dates from about 1470/75, is coloured by hand, measures 26.6 × 19.0 cm and is kept in the [[institution/guildhall-library|Guildhall Library]], London (inv. Ws.I.26) [[source/ganz-2024-aus-dem-wald|Sitzung 9 (28.11.2024), Folie 21]].
+
+  Single-leaf woodcuts of this kind, made in western Europe from about 1400, were used above all in private prayer; they could be kept loose or pasted into manuscripts [[source/ganz-2024-aus-dem-wald|Sitzung 9 (28.11.2024), Folie 18]]. The colour was added by hand after printing, over the black lines printed from the block [[source/ganz-2024-aus-dem-wald|Sitzung 9 (28.11.2024), Folie 21]]. In the lecture the sheet was also compared with [[artist/albrecht-durer|Albrecht Dürer]]'s much larger woodcut [[artwork/durer-samson-und-der-lowe|Samson Rending the Lion]] of about 1497/98 [[source/ganz-2024-aus-dem-wald|Sitzung 9 (28.11.2024), Folie 22]].
 relationships:
   - type: printed_from
     to: artwork/martyrium-des-sebastian-druckstock-bm

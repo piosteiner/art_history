@@ -2,3 +2,45 @@ public_id: 121460
 name: Dmitri Michailowitsch Golizyn
 given_name: Dmitri Michailowitsch
 family_name: Golizyn
+kind: person
+birth: 1721
+death: 1793
+wikidata_id: Q443407
+metadata:
+  sources: [Wikidata Q443407 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q443407
+  - type: died_in
+    to: place/vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/738/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/53/%D0%90.%D0%91%D1%80%D0%B0%D1%83%D0%BD._%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%BA%D0%BD%D1%8F%D0%B7%D1%8F_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D1%8F_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87%D0%B0_%D0%93%D0%BE%D0%BB%D0%B8%D1%86%D1%8B%D0%BD%D0%B0_%E2%80%94%281721%E2%80%941793%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%D0%90.%D0%91%D1%80%D0%B0%D1%83%D0%BD._%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%BA%D0%BD%D1%8F%D0%B7%D1%8F_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D1%8F_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87%D0%B0_%D0%93%D0%BE%D0%BB%D0%B8%D1%86%D1%8B%D0%BD%D0%B0_%E2%80%94(1721%E2%80%941793).jpg
+    license: Public domain
+    credit: Adam Braun (1748-1827)
+identifiers:
+  gnd: "116357878"
+  lc: n2015009473
+  rkd: "439832"
+  viaf: "232059754"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q443407
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/738/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/738/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

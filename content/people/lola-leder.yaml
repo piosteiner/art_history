@@ -2,3 +2,43 @@ public_id: 120598
 name: Lola Leder
 given_name: Lola
 family_name: Leder
+kind: person
+birth: 1892
+death: 1977
+wikidata_id: Q125176732
+metadata:
+  sources: [Wikidata Q125176732 (retrieved 2026-11-12)]
+relationships:
+  - type: died_in
+    to: place/berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2376/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Lola_Leder_by_Max_Liebermann_1922.jpg/1280px-Lola_Leder_by_Max_Liebermann_1922.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lola_Leder_by_Max_Liebermann_1922.jpg
+    license: Public domain
+    credit: Max Liebermann
+identifiers:
+  gnd: "1272249638"
+  viaf: "2985166838909736200009"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q125176732
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2376/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q125176732
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2376/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q125176732

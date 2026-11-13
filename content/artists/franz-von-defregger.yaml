@@ -2,3 +2,62 @@ public_id: 121601
 name: Franz von Defregger
 given_name: Franz
 family_name: von Defregger
+birth: 1835-04-30
+death: 1921-01-02
+wikidata_id: Q78711
+metadata:
+  sources: [Wikidata Q78711 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/austria
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q78711
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q78711
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q78711
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q78711
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q78711
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Die_Gartenlaube_%281883%29_b_005.jpg/1280px-Die_Gartenlaube_%281883%29_b_005.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Die_Gartenlaube_(1883)_b_005.jpg
+    license: Public domain
+    credit: "Die_Gartenlaube_(1883)_005.jpg: Adolf Neumann derivative work: Frédéric (talk)"
+identifiers:
+  dome: "2719"
+  gnd: "118524283"
+  idref: 06993195X
+  kulturnav: 43ac0459-8482-4377-bfea-b0c0688190d4
+  lc: n83199652
+  rkd: "21399"
+  ulan: "500032976"
+  viaf: "77107318"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q78711
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q78711

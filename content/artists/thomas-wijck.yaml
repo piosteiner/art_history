@@ -2,3 +2,65 @@ public_id: 121518
 name: Thomas Wijck
 given_name: Thomas
 family_name: Wijck
+birth: c. 1616
+death: 1677-08-19
+wikidata_id: Q709404
+metadata:
+  sources: [Wikidata Q709404 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q709404
+  - type: died_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q709404
+  - type: worked_in
+    to: place/haarlem
+    period: 1642/1660
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q709404
+  - type: worked_in
+    to: place/great-britain
+    period: 1660/1666
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q709404
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q709404
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Portret_van_Thomas_Wijck%2C_RP-P-OB-22.626.jpg/1280px-Portret_van_Thomas_Wijck%2C_RP-P-OB-22.626.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portret_van_Thomas_Wijck,_RP-P-OB-22.626.jpg
+    license: CC0
+    credit: Rijksmuseum
+identifiers:
+  bnf: 14943420j
+  dome: "10648"
+  gnd: "122755383"
+  idref: "238310787"
+  kulturnav: 40c53d0b-ff73-4a78-ba7f-22cf0d10d4cc
+  lc: no2005117080
+  rkd: "84301"
+  ulan: "500014662"
+  viaf: "40268564"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q709404
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q709404

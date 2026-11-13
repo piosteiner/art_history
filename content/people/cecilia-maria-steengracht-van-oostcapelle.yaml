@@ -2,4 +2,43 @@ public_id: 120879
 name: Cecilia Maria Steengracht van Oostcapelle
 given_name: Cecilia Maria Steengracht
 family_name: van Oostcapelle
+kind: person
+birth: 1813
+death: 1899
 wikidata_id: Q60026489
+metadata:
+  sources: [Wikidata Q60026489 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q60026489
+  - type: born_in
+    to: place/the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  rkd: "426316"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q60026489
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

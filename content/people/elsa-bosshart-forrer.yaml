@@ -2,3 +2,14 @@ public_id: 121546
 name: Elsa Bosshart-Forrer
 given_name: Elsa
 family_name: Bosshart-Forrer
+birth: 1879
+death: 1953
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/784/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/784/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

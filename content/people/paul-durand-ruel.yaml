@@ -2,3 +2,27 @@ public_id: 100332
 name: Paul Durand-Ruel
 given_name: Paul
 family_name: Durand-Ruel
+birth: 1831
+death: 1922
+relationships:
+  - type: born_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

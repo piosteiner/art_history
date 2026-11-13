@@ -7,3 +7,10 @@ birth: 1868
 death: 1929
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18)]
+relationships:
+  - type: died_in
+    to: place/munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1105/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12

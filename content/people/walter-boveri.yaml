@@ -2,4 +2,45 @@ public_id: 120148
 name: Walter Boveri
 given_name: Walter
 family_name: Boveri
+kind: person
+birth: 1894
+death: 1972
 wikidata_id: Q64590007
+metadata:
+  sources: [Wikidata Q64590007 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q64590007
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Com_M04-0231-0010_Boveri_Junior.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Com_M04-0231-0010_Boveri_Junior.jpg
+    license: CC BY-SA 4.0
+    credit: Lindroos, Björn Erik
+identifiers:
+  dodis: P2503
+  gnd: "119528681"
+  hls: "029567"
+  viaf: "40190653"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q64590007
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1302/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

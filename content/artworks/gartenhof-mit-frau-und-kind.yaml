@@ -1,4 +1,4 @@
-public_id: 121189
+public_id: 121656
 title_lang: de
 title: Gartenhof mit Frau und Kind
 names:
@@ -32,6 +32,8 @@ dimensions: [59, 49.5]
 institution: kunsthaus-zurich
 inventory_number: KS 36
 web_url: https://collection.kunsthaus.ch/de/collection/item/470/
+on_loan: true
+on_loan_since: 1986
 wikidata_id: Q131585189
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/1c/Hendrick_van_der_Burgh_-_Gartenhof_mit_Frau_und_Kind_-_KS_36_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
@@ -39,51 +41,48 @@ images:
     license: Public domain
     credit: Hendrick van der Burgh
 provenance:
-  - owner_label: unknown
-    label: H. Ker Colville (Sammler/-in); Bristol
+  - owner: person/h-ker-colville
+    place: bristol
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/470/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: the art trade
+  - owner_label: unknown (auction)
+    role: agent
+    method: auction
     direct: true
-    label: dessen Versteigerung bei Market Drayton (Kunsthandel); Lot 928
+    label: «dessen Versteigerung bei Market Drayton»; Lot 928
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/470/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
-    label: 1929; via Colnaghi; Colnaghi, London
+  - owner: institution/p-d-colnaghi-co-ltd
+    acquired: 1929
+    ended: 1929
+    place: london
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/470/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
+  - owner: person/sir-harold-a-wernher
     direct: true
-    label: Sir Harold A. Wernher (Sammler/-in); Luton Hoo
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/470/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: the art trade
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1975-06-27
+    ended: 1975-06-27
+    method: auction
     direct: true
     place: london
-    label: Christie`s London (Kunsthandel); 27.VI.1975
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/470/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
+  - owner: person/david-koetser
     direct: true
-    label: David Koetser (Sammler/-in)
-    sources:
-      - url: https://collection.kunsthaus.ch/de/collection/item/470/
-        source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-11-12
-  - owner_label: unknown
-    direct: true
-    place: zurich
-    label: Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum); ab 1986
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/470/
         source: kunsthaus-zurich-sammlung-online
@@ -102,6 +101,10 @@ sources:
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12
   creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/470/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/470/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12

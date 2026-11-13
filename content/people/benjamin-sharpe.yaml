@@ -2,3 +2,14 @@ public_id: 115016
 name: Benjamin Sharpe
 given_name: Benjamin
 family_name: Sharpe
+birth: 1857
+death: 1942
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1170/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1170/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -2,3 +2,55 @@ public_id: 121305
 name: Alexander Leo Soldenhoff
 given_name: Alexander Leo
 family_name: Soldenhoff
+kind: person
+birth: 1882
+death: 1951
+wikidata_id: Q38005049
+metadata:
+  sources: [Wikidata Q38005049 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q38005049
+  - type: born_in
+    to: place/geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/607/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/607/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/SKKG_Alexander_Soldenhoff_-_Selbstportr%C3%A4t.jpg/1280px-SKKG_Alexander_Soldenhoff_-_Selbstportr%C3%A4t.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:SKKG_Alexander_Soldenhoff_-_Selbstportr%C3%A4t.jpg
+    license: Public domain
+    credit: Alexander Soldenhoff (1882–1951)
+identifiers:
+  dome: "933"
+  gnd: "117460400"
+  hls: "022646"
+  lc: n83131138
+  rkd: "73807"
+  sikart: "4000090"
+  ulan: "500027712"
+  viaf: "27849170"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q38005049
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/607/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/607/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

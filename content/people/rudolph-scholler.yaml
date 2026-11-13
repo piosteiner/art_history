@@ -2,3 +2,14 @@ public_id: 120723
 name: Rudolph Schöller
 given_name: Rudolph
 family_name: Schöller
+birth: 1827
+death: 1902
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2676/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2676/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

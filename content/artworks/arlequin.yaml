@@ -256,6 +256,7 @@ provenance:
 numbers:
   - number: "621"
     source: rewald-1996
+    label: Rewald (catalogue raisonné)
     sources:
       - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
         note: "Sotheby’s, literature: “John Rewald, The Paintings of Paul Cézanne, A Catalogue Raisonné, New York, 1996, no. 621, vol. I, pp. 408-11”"
@@ -263,6 +264,7 @@ numbers:
         accessed: 2026-10-31
   - number: "670"
     source: fwn-cezanne
+    label: FWN (catalogue raisonné)
     sources:
       - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
         note: 'Sotheby’s, literature: “Société Paul Cezanne, "Arlequin, 1888–90 (FWN 670)," The Paintings, Watercolors and Drawings of Paul Cezanne: An Online Catalogue Raisonné”'
@@ -270,6 +272,7 @@ numbers:
         accessed: 2026-10-31
   - number: "553"
     source: venturi-1936
+    label: Venturi (catalogue raisonné)
     sources:
       - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
         note: "Sotheby’s, literature: “Lionello Venturi, Cézanne, son art—son oeuvre, Paris, 1936, no. 553”"

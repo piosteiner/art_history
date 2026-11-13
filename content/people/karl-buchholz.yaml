@@ -1,0 +1,45 @@
+public_id: 121675
+name: Karl Buchholz
+given_name: Karl
+family_name: Buchholz
+kind: person
+occupations: [book dealer, art dealer, gallerist]
+birth: 1901-08-26
+death: 1992-01-06
+description_md: |-
+  Karl Buchholz was born in Göttingen in 1901 and grew up with an aunt in Frankfurt an der Oder, where he trained as a bookseller. In Berlin he set up on his own in 1925, opened shops in Mauerstraße, on the Kurfürstendamm and in Königstraße, and in 1934 his international bookshop in Leipziger Straße, with a gallery of contemporary art upstairs run by [[person/curt-valentin|Curt Valentin]], a close associate of the emigrated dealer [[person/alfred-flechtheim|Alfred Flechtheim]]; it showed sculpture by Gerhard Marcks, Georg Kolbe and Renée Sintenis among others. When Valentin, as a Jew, could no longer work in Berlin, the two founded the [[institution/buchholz-gallery-curt-valentin|Buchholz Gallery – Curt Valentin]] in New York after his emigration in March 1937, which helped to make German modernism known in America.[[source/wikipedia-de-karl-buchholz-kunsthandler|§ Leben]]
+
+  From 1938 Buchholz was one of the four dealers employed by the commission for the "utilisation" of degenerate art, with [[person/hildebrand-gurlitt|Hildebrand Gurlitt]], [[person/ferdinand-moller|Ferdinand Möller]] and [[person/bernhard-a-bohmer|Bernhard A. Böhmer]], to sell or exchange confiscated works abroad for a commission of 10 to 25 percent.[[source/peters-2017|p. 26]][[source/wikipedia-de-karl-buchholz-kunsthandler|§ Leben]] Contact with Valentin broke off when the United States entered the war in 1942. Buchholz died in Bogotá in 1992, a German-Colombian book and art dealer.[[source/wikipedia-de-karl-buchholz-kunsthandler|introduction; § Leben]]
+wikidata_id: Q15431273
+metadata:
+  sources: [Wikidata Q15431273 (retrieved 2026-11-12)]
+relationships:
+  - type: founded
+    to: institution/buchholz-gallery-curt-valentin
+    sources:
+      - source: wikipedia-de-karl-buchholz-kunsthandler
+        locator: § Leben
+        accessed: 2026-11-12
+identifiers:
+  bnf: 15650389b
+  gnd: "116818468"
+  idref: "080823874"
+  lc: no2006007230
+  viaf: "52451418"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q15431273
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q15431273
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q15431273
+  occupations:
+    - accessed: 2026-11-12
+      property: P106
+      wikidata: Q15431273

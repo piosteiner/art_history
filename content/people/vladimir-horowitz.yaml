@@ -2,4 +2,75 @@ public_id: 120917
 name: Vladimir Horowitz
 given_name: Vladimir
 family_name: Horowitz
+names:
+  - kind: birth
+    lang: ru
+    role: alternative
+    text: Владимир Самойлович Горовиц
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q192506
+kind: person
+birth: 1903
+death: 1989
 wikidata_id: Q192506
+metadata:
+  sources: [Wikidata Q192506 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q192506
+  - type: nationality
+    to: polity/soviet-union
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q192506
+  - type: nationality
+    to: polity/united-states
+    period: 1944
+    period_label: from 1944
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q192506
+  - type: died_in
+    to: place/new-york
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q192506
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Vladimir_Horowitz_C37292-1_%28cropped%29.jpg/1280px-Vladimir_Horowitz_C37292-1_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vladimir_Horowitz_C37292-1_(cropped).jpg
+    license: Public domain
+    credit: "President (1981-1989 : Reagan). White House Photographic Office. 1981-1989 (Most Recent)"
+identifiers:
+  bnf: 13895332g
+  gnd: "118892509"
+  idref: "027798569"
+  lc: n81042607
+  nlk: KAC199639399
+  viaf: "105144775"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q192506
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/317/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/317/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

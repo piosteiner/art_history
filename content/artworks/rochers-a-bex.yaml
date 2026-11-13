@@ -56,7 +56,8 @@ provenance:
         note: "Footnote: Wie oben Fussnote 2; Liste \"Esposition Felix Vallotton / Oeuvres retournées du Kunsthaus Zürich à Paul Vallotton SA, Lausanne\", o. D. [1938], Archiv ZKG/KHZ, 10.30.30.66; Etikette auf Werkrückseite des Musée national d'Art Moderne Paris zur Ausstellung \"Bonnard, Vuillard et les Nabis\", 08.06.1955 - 02.10.1955. Darauf wird als Eigentümer des Werks wird Paul Vallotton genannt."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner: person/walter-feilchenfeldt
+  - owner: institution/walter-feilchenfeldt-kunsthandel
+    role: dealer
     acquired: 1955
     place: zurich
     sources:

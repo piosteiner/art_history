@@ -2,3 +2,21 @@ public_id: 121176
 name: Gustav Adolf Steiger
 given_name: Gustav Adolf
 family_name: Steiger
+birth: 1862
+death: 1920
+relationships:
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/442959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

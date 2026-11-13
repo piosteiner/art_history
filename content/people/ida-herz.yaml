@@ -2,3 +2,14 @@ public_id: 120932
 name: Ida Herz
 given_name: Ida
 family_name: Herz
+birth: 1862
+death: 1943
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

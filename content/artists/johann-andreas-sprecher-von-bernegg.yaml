@@ -2,3 +2,28 @@ public_id: 121107
 name: Johann Andreas Sprecher von Bernegg
 given_name: Johann Andreas Sprecher
 family_name: von Bernegg
+birth: 1764-01-13
+death: 1841-08-25
+wikidata_id: Q112263980
+metadata:
+  sources: [Wikidata Q112263980 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q112263980
+identifiers:
+  gnd: "122098080"
+  sikart: "12627628"
+  viaf: "32869801"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q112263980
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q112263980

@@ -2,3 +2,55 @@ public_id: 120893
 name: Marcel Guérin
 given_name: Marcel
 family_name: Guérin
+kind: person
+birth: 1873
+death: 1948
+wikidata_id: Q3289015
+metadata:
+  sources: [Wikidata Q3289015 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3289015
+  - type: died_in
+    to: place/6th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q3289015
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3105/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  bnf: "124967382"
+  gnd: "116916362"
+  idref: "034183124"
+  lc: n81042631
+  rkd: "449652"
+  ulan: "500353810"
+  viaf: "54251295"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q3289015
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3105/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q3289015
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3105/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q3289015

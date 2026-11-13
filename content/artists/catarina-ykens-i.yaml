@@ -2,3 +2,72 @@ public_id: 121534
 name: Catarina Ykens (I)
 given_name: Catarina Ykens
 family_name: (I)
+names:
+  - kind: birth
+    lang: nl
+    role: former
+    text: Catarina Floquet
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q11465984
+birth: 1608
+death: 1666
+wikidata_id: Q11465984
+metadata:
+  sources: [Wikidata Q11465984 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q11465984
+  - type: born_in
+    to: place/ghent
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q11465984
+      - url: https://d-nb.info/gnd/1354758056
+        source: gnd
+        accessed: 2026-11-12
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q11465984
+      - url: https://d-nb.info/gnd/1354758056
+        source: gnd
+        accessed: 2026-11-12
+  - type: worked_in
+    to: place/flanders
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q11465984
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Catarina_Ykens_-_garland_painting_with_cavalry_officer.jpg/1280px-Catarina_Ykens_-_garland_painting_with_cavalry_officer.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Catarina_Ykens_-_garland_painting_with_cavalry_officer.jpg
+    license: Public domain
+    credit: Catarina Ykens (I)
+identifiers:
+  gnd: "1354758056"
+  rkd: "223327"
+  ulan: "500571996"
+  viaf: "3968167202639267930009"
+sources:
+  birth:
+    - url: https://d-nb.info/gnd/1354758056
+      source: gnd
+      accessed: 2026-11-12
+    - url: https://www.wikidata.org/wiki/Q11465984
+      source: wikidata-q109293376
+      accessed: 2026-11-12
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q11465984
+    - url: https://d-nb.info/gnd/1354758056
+      source: gnd
+      accessed: 2026-11-12

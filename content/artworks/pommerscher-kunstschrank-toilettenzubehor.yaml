@@ -5,7 +5,10 @@ parent: pommerscher-kunstschrank
 part_number: "3"
 created: 1610/1617
 institution: kunstgewerbemuseum-berlin
-description_md: Aus dem Inhalt des Kunstschranks.
+description_md: |-
+  This toilet set with iron instruments comes from the contents of the [[artwork/pommerscher-kunstschrank|Kunstschrank for Philipp II of Pomerania]], made in 1610–1617, and is in the [[institution/kunstgewerbemuseum-berlin|Kunstgewerbemuseum]] in Berlin [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folien 42–43]]. It corresponds to what the cabinet's inventory calls the "Balbierstube", a barber's set with surgical instruments, combs, scissors and the like [[source/wikipedia-de-pommerscher-kunstschrank|§ Ausstattung]].
+
+  The case of the cabinet burned in Berlin in 1945, while most of its contents survived and remain in the Kunstgewerbemuseum [[source/wikipedia-de-pommerscher-kunstschrank|§ Geschichte]]. The lecture showed the set together with the [[artwork/pommerscher-kunstschrank-spielkasten|games box]] from the same cabinet [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 43]].
 sources:
   parent:
     - source: ganz-2024-aus-dem-wald

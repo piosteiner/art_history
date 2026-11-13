@@ -1,7 +1,47 @@
 public_id: 116469
 name: Onoe Kikugorō VII
-occupations: [kabuki actor]
+names:
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 寺嶋 秀幸
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q11465093
+kind: person
+occupations: [kabuki actor, actor]
+birth: 1942-10-02
+wikidata_id: Q11465093
+metadata:
+  sources: [Wikidata Q11465093 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q11465093
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5d/Hideyuki_Terajima_cropped_2_Hideyuki_Terajima_20211103.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hideyuki_Terajima_cropped_2_Hideyuki_Terajima_20211103.jpg
+    license: CC BY 4.0
+    credit: 大臣官房人事課
+identifiers:
+  gnd: "1139799274"
+  lc: n97862912
+  viaf: "78079725"
 sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q11465093
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q11465093
   occupations:
     - source: british-museum-1992-1217-0-8
       accessed: 2026-11-06
+    - accessed: 2026-11-12
+      property: P106
+      wikidata: Q11465093

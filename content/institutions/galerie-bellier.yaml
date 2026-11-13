@@ -1,3 +1,16 @@
 public_id: 121264
 name: Galerie Bellier
+kind: gallery
+place: paris
 wikidata_id: Q72961469
+metadata:
+  sources: [Wikidata Q72961469 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q72961469
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5694/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

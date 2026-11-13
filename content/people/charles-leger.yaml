@@ -2,3 +2,47 @@ public_id: 121247
 name: Charles Léger
 given_name: Charles
 family_name: Léger
+kind: person
+birth: 1880
+death: 1948
+wikidata_id: Q104630964
+metadata:
+  sources: [Wikidata Q104630964 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q104630964
+  - type: born_in
+    to: place/versailles
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q104630964
+  - type: died_in
+    to: place/meudon
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q104630964
+identifiers:
+  bnf: 12765074n
+  gnd: "126252513"
+  idref: "128272732"
+  lc: nr90026208
+  viaf: "64993465"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q104630964
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/540/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/540/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

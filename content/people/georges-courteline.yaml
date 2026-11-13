@@ -2,4 +2,61 @@ public_id: 120533
 name: Georges Courteline
 given_name: Georges
 family_name: Courteline
+names:
+  - kind: birth
+    lang: fr
+    role: former
+    text: Georges Victor Marcel Moinaux
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q51107
+kind: person
+birth: 1858
+death: 1929
 wikidata_id: Q51107
+metadata:
+  sources: [Wikidata Q51107 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q51107
+  - type: born_in
+    to: place/tours
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Georges_Courteline_1921.jpg/1280px-Georges_Courteline_1921.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Georges_Courteline_1921.jpg
+    license: Public domain
+    credit: Agence de presse Meurisse
+identifiers:
+  bnf: 11897975m
+  gnd: "118670263"
+  idref: "026802961"
+  kulturnav: 7cdd84ad-df8f-4168-be76-0b1a56486c4b
+  lc: n50059881
+  viaf: "100266752"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q51107
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

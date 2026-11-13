@@ -2,3 +2,40 @@ public_id: 121512
 name: Justus de Verwer
 given_name: Justus
 family_name: de Verwer
+birth: 1625
+death: 1689-11-12
+wikidata_id: Q1714560
+metadata:
+  sources: [Wikidata Q1714560 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1714560
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1714560
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q1714560
+identifiers:
+  rkd: "80762"
+  ulan: "500009568"
+  viaf: "95739463"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1714560
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1714560

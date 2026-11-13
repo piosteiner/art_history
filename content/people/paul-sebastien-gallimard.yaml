@@ -2,3 +2,21 @@ public_id: 112143
 name: Paul Sébastien Gallimard
 given_name: Paul Sébastien
 family_name: Gallimard
+birth: 1850
+death: 1929
+relationships:
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/356/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/356/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/356/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

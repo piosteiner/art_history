@@ -1,0 +1,70 @@
+public_id: 121679
+name: Reichskulturkammer
+names:
+  - text: RKK
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q695805
+  - lang: fr
+    role: translation
+    text: chambre de la culture du Reich
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q695805
+  - lang: ja
+    role: translation
+    text: 帝国文化院
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q695805
+  - lang: zh
+    role: translation
+    text: 帝國文化院
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q695805
+  - lang: ru
+    role: translation
+    text: Имперская палата культуры
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q695805
+kind: government agency
+founded: 1933-09-22
+dissolved: 1945-10-10
+place: berlin
+description_md: |-
+  The Reich Chamber of Culture was the professional body to which every creative artist in National Socialist Germany had to belong. It was set up by the law of 22 September 1933, in the course of the *Gleichschaltung*, at the instigation of [[person/joseph-goebbels|Joseph Goebbels]] — against the ambitions of his rival Robert Ley's German Labour Front — to bring the whole of cultural life under control and promote "Aryan" art. Membership required an "Aryan certificate", and a rejection amounted to a ban on working.[[source/wikipedia-en-reich-chamber-of-culture|introduction]]
+
+  Goebbels headed it himself; it was attached to his [[institution/reichsministerium-fur-volksaufklarung-und-propaganda|ministry]] on Wilhelmplatz in Berlin, with a state secretary of the ministry as vice-president (Walther Funk 1933–1938, Karl Hanke 1938–1941, Leopold Gutterer 1941–1944, Werner Naumann 1944–1945); the SS officer Hans Hinkel was in charge of removing Jews from German cultural life. Its seven chambers covered film, music, the visual arts, theatre, literature, the press and radio — the Reich Music Chamber, for instance, was headed by Richard Strauss and from 1935 by Peter Raabe.[[source/wikipedia-en-reich-chamber-of-culture|§ Structure and organisation]]
+
+  For painters and sculptors the Reich Chamber of the Fine Arts under [[artist/adolf-ziegler|Adolf Ziegler]] mattered most. Its members on the jury of the first Great German Art Exhibition — Ziegler and the graphic artist Hans Schweitzer ("Mjölnir") — drew Hitler's anger in June 1937.[[source/peters-2017|pp. 15–16]] In the spring of that year the chamber had still hesitated over showing Brücke artists as "degenerate", against the ministry's propaganda section.[[source/peters-2017|p. 22]] Through it, artists were expelled and banned from work: [[artist/emil-nolde|Emil Nolde]] in August 1941 was forbidden "any professional [...] activity in the area of the fine arts", and his future works had to go before a "Committee for the Assessment of Inferior Artistic Products".[[source/fulda-soika-2014|pp. 186, 193]]
+wikidata_id: Q695805
+metadata:
+  sources: [Wikidata Q695805 (retrieved 2026-11-12)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3d/Reichskulturkammer_1937.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Reichskulturkammer_1937.jpg
+    license: CC0
+    credit: Handbuch der Reichskulturkammer, Berlin 1937
+identifiers:
+  gnd: 18668-5
+  lc: n86017708
+  viaf: "142482095"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q695805
+  place:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q695805
+  founded:
+    - accessed: 2026-11-12
+      property: P571
+      wikidata: Q695805
+  dissolved:
+    - accessed: 2026-11-12
+      property: P576
+      wikidata: Q695805

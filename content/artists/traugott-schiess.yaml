@@ -2,3 +2,43 @@ public_id: 121078
 name: Traugott Schiess
 given_name: Traugott
 family_name: Schiess
+birth: 1834-02-09
+death: 1869-11-14
+wikidata_id: Q44813844
+metadata:
+  sources: [Wikidata Q44813844 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q44813844
+  - type: born_in
+    to: place/st-gallen
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q44813844
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q44813844
+identifiers:
+  gnd: "117230626"
+  hls: "022625"
+  rkd: "126494"
+  sikart: "4023275"
+  ulan: "500170173"
+  viaf: "67237550"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q44813844
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q44813844

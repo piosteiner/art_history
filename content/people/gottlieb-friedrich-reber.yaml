@@ -7,3 +7,10 @@ birth: 1880
 death: 1959
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18)]
+relationships:
+  - type: died_in
+    to: place/lausanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12

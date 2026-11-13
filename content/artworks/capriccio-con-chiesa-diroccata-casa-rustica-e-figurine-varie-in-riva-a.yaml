@@ -1,4 +1,4 @@
-public_id: 120206
+public_id: 121638
 title_lang: it
 title: Capriccio con chiesa diroccata, casa rustica e figurine varie in riva alla laguna
 names:
@@ -48,8 +48,7 @@ provenance:
       - url: https://collection.kunsthaus.ch/de/collection/item/1469/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
-    label: Sir David Ross (Sammler/-in)
+  - owner: person/sir-david-ross
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/1469/
         source: kunsthaus-zurich-sammlung-online

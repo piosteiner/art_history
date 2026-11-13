@@ -29,6 +29,19 @@ death: 1906-03-08
 wikidata_id: Q524534
 metadata:
   sources: [Wikidata Q524534 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/delft
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/cf/%C3%89douard_Manet_-_Madame_Manet_ou_Piano_-_2.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_Madame_Manet_ou_Piano_-_2.jpg

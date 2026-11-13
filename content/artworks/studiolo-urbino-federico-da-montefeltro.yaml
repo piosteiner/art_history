@@ -8,7 +8,10 @@ created: 1474/1476
 kind: intarsia
 medium: intarsia
 institution: palazzo-ducale-urbino
-description_md: Das Bildnis des Herzogs in der Intarsienverkleidung des Studiolo.
+description_md: |-
+  This intarsia portrait of the duke in the panelling of the studiolo of [[person/federico-da-montefeltro|Federico da Montefeltro]] in the [[institution/palazzo-ducale-urbino|Palazzo Ducale]] of Urbino was made by [[artist/benedetto-da-maiano|Benedetto da Maiano]] in 1474–1476 [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 61]]. It is part of the wooden panelling of the [[artwork/studiolo-di-federico-da-montefeltro-urbino|studiolo]] [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 58]].
+
+  In the lecture it followed [[artwork/diptych-of-federico-da-montefeltro-and-battista-sforza|Piero della Francesca's double portrait]] of Battista Sforza and Federico da Montefeltro (1465–1472) [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 59]], and it was shown beside the intarsia of the duke's [[artwork/studiolo-urbino-rustung|armour]] [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folien 62–63]]. The portrait is made of fitted pieces of wood laid flush into a flat surface, a technique in which the visibility of the wood is decisive [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 35]].
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/3/3b/Studiolo_del_Duca_22_-_Ritratto_di_Federico.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Studiolo_del_Duca_22_-_Ritratto_di_Federico.jpg
@@ -17,22 +20,22 @@ images:
 sources:
   kind:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 10 (5.12.2024), Folie 59
+      locator: Sitzung 10 (5.12.2024), Folie 61
   medium:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 10 (5.12.2024), Folie 59
+      locator: Sitzung 10 (5.12.2024), Folie 61
   parent:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 10 (5.12.2024), Folie 59
+      locator: Sitzung 10 (5.12.2024), Folie 61
   created:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 10 (5.12.2024), Folie 59
+      locator: Sitzung 10 (5.12.2024), Folie 61
   creator:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 10 (5.12.2024), Folie 59
+      locator: Sitzung 10 (5.12.2024), Folie 61
   institution:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 10 (5.12.2024), Folie 59
+      locator: Sitzung 10 (5.12.2024), Folie 61
   title_status:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 10 (5.12.2024), Folie 59
+      locator: Sitzung 10 (5.12.2024), Folie 61

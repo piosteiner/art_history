@@ -8,7 +8,10 @@ kind: relief
 medium: Bronze
 materials: [bronze]
 institution: hildesheim-cathedral
-description_md: Rechter Flügel.
+description_md: |-
+  The fourth field from the bottom on the right leaf of the [[artwork/bernwardstur|Bernward door]] (around 1015) shows the presentation of the Christ Child in the Temple.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 45]] It is the last scene of Christ's childhood on the door; the following field already shows the Passion.[[source/wikipedia-de-bernwardstur|§ Ikonografie]]
+
+  Opposite it on the left leaf is the expulsion from paradise; the lecture listed the two as a typological pair, the first parents driven out of paradise set against the Child brought into the house of God.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 51]]
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/03/Bronzen_deuren_van_de_Dom_van_Hildesheim_Detail_Presentatie_in_de_tempel_en_Aanbidding_der_Koningen%2C_GD009387.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Bronzen_deuren_van_de_Dom_van_Hildesheim_Detail_Presentatie_in_de_tempel_en_Aanbidding_der_Koningen%2C_GD009387.jpg

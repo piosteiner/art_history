@@ -1,0 +1,45 @@
+public_id: 121677
+name: Bernhard A. Böhmer
+given_name: Bernhard A.
+family_name: Böhmer
+names:
+  - text: Bernhard Boehmer
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q824677
+  - text: Bernard Aloysius Böhmer
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q824677
+kind: person
+occupations: [sculptor, painter, art dealer]
+birth: 1892-06-10
+death: 1945-05-03
+description_md: Bernhard A. Böhmer (1892–1945) was a sculptor and painter who dealt in art in Güstrow in Mecklenburg. From 1938 he was one of the four dealers employed by the commission for the "utilisation" of degenerate art — with [[person/hildebrand-gurlitt|Hildebrand Gurlitt]], [[person/karl-buchholz|Karl Buchholz]] and [[person/ferdinand-moller|Ferdinand Möller]] — to sell or exchange the works confiscated from German museums abroad for foreign currency, for a commission of 10 to 25 percent.[[source/peters-2017|p. 26]][[source/wikipedia-en-hildebrand-gurlitt|§ Nazi era]]
+wikidata_id: Q824677
+metadata:
+  sources: [Wikidata Q824677 (retrieved 2026-11-12)]
+identifiers:
+  bnf: 16712502z
+  gnd: "142799815"
+  idref: "148441963"
+  lc: no2010188997
+  rkd: "446066"
+  viaf: "159992603"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q824677
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q824677
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q824677
+  occupations:
+    - accessed: 2026-11-12
+      property: P106
+      wikidata: Q824677

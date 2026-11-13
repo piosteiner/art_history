@@ -2,3 +2,42 @@ public_id: 121034
 name: David Sulzer
 given_name: David
 family_name: Sulzer
+birth: 1784-09-09
+death: 1864-09-14
+wikidata_id: Q18511601
+metadata:
+  sources: [Wikidata Q18511601 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q18511601
+  - type: born_in
+    to: place/winterthur
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q18511601
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c0/David_Sulzer_%26_Julius_Karl_Emil_Sulzer_-_Doppelselbstbildnis_%28cropped%29_David_Sulzer.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:David_Sulzer_%26_Julius_Karl_Emil_Sulzer_-_Doppelselbstbildnis_(cropped)_David_Sulzer.jpg
+    license: Public domain
+    credit: David Sulzer
+identifiers:
+  gnd: "1020827564"
+  hls: "048940"
+  rkd: "76048"
+  sikart: "4026586"
+  ulan: "500099611"
+  viaf: "96417990"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q18511601
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q18511601

@@ -2,3 +2,25 @@ public_id: 120604
 name: Emma Escher-Abegg
 given_name: Emma
 family_name: Escher-Abegg
+kind: person
+birth: 1869
+death: 1949
+wikidata_id: Q139022309
+metadata:
+  sources: [Wikidata Q139022309 (retrieved 2026-11-12)]
+identifiers:
+  gnd: "1289641471"
+  viaf: "9311168517325571980007"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q139022309
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2406/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2406/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

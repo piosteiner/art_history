@@ -2,3 +2,43 @@ public_id: 120956
 name: Heinrich Ludwig
 given_name: Heinrich
 family_name: Ludwig
+kind: person
+birth: 1829
+death: 1897
+wikidata_id: Q20978978
+metadata:
+  sources: [Wikidata Q20978978 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q20978978
+  - type: died_in
+    to: place/rome
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/332/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  bnf: 10530064w
+  gnd: "117283061"
+  idref: "121224252"
+  lc: no2013084671
+  rkd: "51231"
+  ulan: "500092117"
+  viaf: "40151893"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q20978978
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/332/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/332/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

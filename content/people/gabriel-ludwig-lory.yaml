@@ -2,3 +2,56 @@ public_id: 120903
 name: Gabriel Ludwig Lory
 given_name: Gabriel Ludwig
 family_name: Lory
+kind: person
+birth: 1763
+death: 1840
+wikidata_id: Q18511605
+metadata:
+  sources: [Wikidata Q18511605 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q18511605
+  - type: born_in
+    to: place/bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3118/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3118/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Sulzer%2C_Gabriel_Ludwig_Lory.JPG/1280px-Sulzer%2C_Gabriel_Ludwig_Lory.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Sulzer,_Gabriel_Ludwig_Lory.JPG
+    license: CC BY-SA 4.0
+    credit: David Sulzer
+identifiers:
+  bnf: 12727723b
+  gnd: "119240106"
+  hls: "022500"
+  idref: "112981712"
+  lc: n81097786
+  rkd: "50956"
+  sikart: "4023151"
+  ulan: "500017857"
+  viaf: "2596993"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q18511605
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3118/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3118/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

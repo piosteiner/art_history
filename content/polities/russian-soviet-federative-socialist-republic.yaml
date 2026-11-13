@@ -1,5 +1,9 @@
 public_id: 117591
 name: Russian Soviet Federative Socialist Republic
+names:
+  - lang: en
+    role: former
+    text: Russian Socialist Federative Soviet Republic
 period: 1917-11-07/1991-12-25
 wikidata_id: Q2184
 metadata:

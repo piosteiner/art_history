@@ -3,7 +3,7 @@ name: Zumikon
 kind: settlement
 parent: morocco
 country_code: CH
-location: [-3.88909, 35.11062]
+location: [8.6238228, 47.3324061]
 wikidata_id: Q66898
 metadata:
   sources: [Wikidata Q66898 (retrieved 2026-11-12)]
@@ -16,7 +16,4 @@ sources:
     - accessed: 2026-11-12
       property: P131
       wikidata: Q66898
-  location:
-    - accessed: 2026-11-12
-      property: P625
-      wikidata: Q66898
+  location: ["OpenStreetMap, Zumikon (relation 1682247), via Nominatim"]

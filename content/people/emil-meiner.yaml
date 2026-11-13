@@ -2,3 +2,31 @@ public_id: 120625
 name: Emil Meiner
 given_name: Emil
 family_name: Meiner
+kind: person
+birth: 1837
+death: 1911
+wikidata_id: Q55856137
+metadata:
+  sources: [Wikidata Q55856137 (retrieved 2026-11-12)]
+identifiers:
+  gnd: "127729747"
+  viaf: "62578185"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q55856137
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2462/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q55856137
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2462/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q55856137

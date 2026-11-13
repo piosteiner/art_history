@@ -2,4 +2,55 @@ public_id: 120668
 name: Carlo Böcklin
 given_name: Carlo
 family_name: Böcklin
+kind: person
+birth: 1870
+death: 1934
 wikidata_id: Q3659130
+metadata:
+  sources: [Wikidata Q3659130 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3659130
+  - type: born_in
+    to: place/basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2564/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2564/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q3659130
+identifiers:
+  dome: "12729"
+  gnd: "116217103"
+  lc: nr2005017004
+  rkd: "125314"
+  sikart: "4024022"
+  ulan: "500179278"
+  viaf: "10591631"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q3659130
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2564/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2564/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

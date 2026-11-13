@@ -1,2 +1,41 @@
 public_id: 120764
 name: Master of the legend of Saint Ursula
+birth: 1436
+death: 1504-06-24
+wikidata_id: Q617611
+metadata:
+  sources: [Wikidata Q617611 (retrieved 2026-11-12)]
+relationships:
+  - type: died_in
+    to: place/bruges
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q617611
+  - type: worked_in
+    to: place/bruges
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q617611
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q617611
+identifiers:
+  gnd: "140955321"
+  lc: n2004021964
+  rkd: "112129"
+  ulan: "500000158"
+  viaf: "293952999"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q617611
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q617611

@@ -2,3 +2,21 @@ public_id: 120284
 name: Rudolf Wismer-Meng
 given_name: Rudolf
 family_name: Wismer-Meng
+birth: 1911
+death: 1996
+relationships:
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1615/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

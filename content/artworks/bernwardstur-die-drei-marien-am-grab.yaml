@@ -8,7 +8,10 @@ kind: relief
 medium: Bronze
 materials: [bronze]
 institution: hildesheim-cathedral
-description_md: Rechter Flügel.
+description_md: |-
+  The seventh field from the bottom on the right leaf of the [[artwork/bernwardstur|Bernward door]] (around 1015) shows the three Marys at the empty tomb of Christ.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 48]] It follows the Crucifixion in the right leaf's rising sequence, which ends with the Resurrection.[[source/wikipedia-de-bernwardstur|§ Ikonografie]]
+
+  Opposite it on the left leaf is God leading Eve to Adam; the lecture listed the two as a typological pair.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 50]]
 sources:
   kind:
     - source: ganz-2024-aus-dem-wald

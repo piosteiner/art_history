@@ -2,3 +2,43 @@ public_id: 120488
 name: Richard Wilhelm Ludwig zu Dohna-Schlobitten
 given_name: Richard Wilhelm Ludwig
 family_name: zu Dohna-Schlobitten
+kind: person
+birth: 1843
+death: 1916
+wikidata_id: Q2151041
+metadata:
+  sources: [Wikidata Q2151041 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2151041
+  - type: born_in
+    to: place/turin
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q2151041
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/09/Richard_zu_Dohna_Schlobitten_1903.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Richard_zu_Dohna_Schlobitten_1903.jpg
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  gnd: "116171065"
+  viaf: "42582668"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q2151041
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2054/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -2,3 +2,52 @@ public_id: 121536
 name: Jean-Etienne Liotard
 given_name: Jean-Etienne
 family_name: Liotard
+birth: 1702-12-22
+death: 1789-06-12
+wikidata_id: Q123757
+metadata:
+  sources: [Wikidata Q123757 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q123757
+  - type: born_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q123757
+  - type: died_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q123757
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Jean-Etienne_Liotard_-_Self-portrait%2C_known_as_the_hand_on_the_chin.jpg/1280px-Jean-Etienne_Liotard_-_Self-portrait%2C_known_as_the_hand_on_the_chin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Etienne_Liotard_-_Self-portrait,_known_as_the_hand_on_the_chin.jpg
+    license: Public domain
+    credit: Jean-Étienne Liotard
+identifiers:
+  bnf: "128611148"
+  gnd: "118780115"
+  hls: "021960"
+  idref: 03056770X
+  kulturnav: 205a2399-631e-489e-a6ba-dce2090b63ae
+  lc: n50051951
+  rkd: "50314"
+  sikart: "4023353"
+  ulan: "500003329"
+  viaf: "61675695"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q123757
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q123757

@@ -1,2 +1,8 @@
 public_id: 120244
 name: Genossenschaft zum Baugarten
+place: zurich
+sources:
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1527/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

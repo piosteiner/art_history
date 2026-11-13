@@ -2,3 +2,49 @@ public_id: 120736
 name: Hugo Cassirer
 given_name: Hugo
 family_name: Cassirer
+kind: person
+birth: 1869
+death: 1920
+wikidata_id: Q1634926
+metadata:
+  sources: [Wikidata Q1634926 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1634926
+  - type: born_in
+    to: place/wroc-aw
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1634926
+  - type: died_in
+    to: place/berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/13/Lovis_Corinth_Hugo_Cassirer_1908.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lovis_Corinth_Hugo_Cassirer_1908.jpg
+    license: Public domain
+    credit: Lovis Corinth
+identifiers:
+  gnd: 11764840X
+  viaf: "45085666"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q1634926
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

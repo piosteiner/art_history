@@ -2,3 +2,49 @@ public_id: 121003
 name: Johann Balthasar Bullinger (the Elder)
 given_name: Johann Balthasar Bullinger (the
 family_name: Elder)
+birth: 1713-11-30
+death: 1793-03-31
+wikidata_id: Q119373
+metadata:
+  sources: [Wikidata Q119373 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q119373
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q119373
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q119373
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Zentralbibliothek_Solothurn_-_JOH_BALTHAZAR_BULLINGER_-_a1008.tif/lossy-page1-1280px-Zentralbibliothek_Solothurn_-_JOH_BALTHAZAR_BULLINGER_-_a1008.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Zentralbibliothek_Solothurn_-_JOH_BALTHAZAR_BULLINGER_-_a1008.tif
+    license: Public domain
+    credit: Johann Balthasar Bullinger
+identifiers:
+  gnd: "130268828"
+  hls: "021994"
+  lc: nr00022613
+  rkd: "13988"
+  sikart: "4022874"
+  ulan: "500044606"
+  viaf: "47864451"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q119373
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q119373

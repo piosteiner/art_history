@@ -1,3 +1,35 @@
 public_id: 121137
 name: Julien Levy Gallery
+kind: gallery
+founded: 1931
+dissolved: 1949
+place: new-york-city
 wikidata_id: Q72853783
+metadata:
+  sources: [Wikidata Q72853783 (retrieved 2026-11-12)]
+identifiers:
+  bnf: "150966015"
+  gnd: 4543559-5
+  idref: "167242989"
+  lc: nr97040665
+  viaf: "141645097"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q72853783
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/4115/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q72853783
+  founded:
+    - accessed: 2026-11-12
+      property: P571
+      wikidata: Q72853783
+  dissolved:
+    - accessed: 2026-11-12
+      property: P576
+      wikidata: Q72853783

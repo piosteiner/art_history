@@ -2,3 +2,78 @@ public_id: 120732
 name: Albert Wolff
 given_name: Albert
 family_name: Wolff
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Abraham Wolff
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q95971
+  - kind: pseudonym
+    role: alternative
+    text: Charles Brassac
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q95971
+  - kind: pseudonym
+    role: alternative
+    text: Gérôme
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q95971
+kind: person
+birth: 1825
+death: 1891
+wikidata_id: Q95971
+metadata:
+  sources: [Wikidata Q95971 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q95971
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q95971
+  - type: born_in
+    to: place/cologne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Albert_Wolff_BNF_Gallica_Atelier_Nadar.jpg/1280px-Albert_Wolff_BNF_Gallica_Atelier_Nadar.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Wolff_BNF_Gallica_Atelier_Nadar.jpg
+    license: Public domain
+    credit: Nadar
+identifiers:
+  bnf: "120176589"
+  gnd: "142818305"
+  idref: 02831526X
+  lc: nr96020233
+  viaf: "100246095"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q95971
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

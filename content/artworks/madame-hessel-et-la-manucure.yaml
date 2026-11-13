@@ -71,7 +71,8 @@ provenance:
         note: "Footnote: ZKG/KHZ, Inventarbogen/Werkdossier Slg., wie oben Fussnote 2; E-Mail-Korrespondenz mit dem Paul Cassirer & Walter Feilchenfeldt Archiv, Zürich, 14.08.2024."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner: person/walter-feilchenfeldt
+  - owner: institution/walter-feilchenfeldt-kunsthandel
+    role: dealer
     acquired: 1950
     ended: 1950-06-13
     method: purchase

@@ -2,3 +2,16 @@ public_id: 121506
 name: Erica A. Wipf
 given_name: Erica A.
 family_name: Wipf
+death: 2011
+relationships:
+  - type: died_in
+    to: place/hausen-am-albis
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/763/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/763/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

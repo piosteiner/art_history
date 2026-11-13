@@ -5,7 +5,10 @@ parent: pommerscher-kunstschrank
 part_number: "2"
 created: 1610/1617
 institution: kunstgewerbemuseum-berlin
-description_md: Aus dem Inhalt des Kunstschranks; der Schrank selbst verbrannte 1945.
+description_md: |-
+  This apothecary's set comes from the contents of the [[artwork/pommerscher-kunstschrank|Kunstschrank for Philipp II of Pomerania]], made in 1610–1617, and is in the [[institution/kunstgewerbemuseum-berlin|Kunstgewerbemuseum]] in Berlin [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 41]]. The cabinet itself burned in Berlin in 1945, but most of its contents survived [[source/wikipedia-de-pommerscher-kunstschrank|§ Geschichte]].
+
+  The cabinet held about 200 objects, described by Philipp Hainhofer when it was delivered in 1617 [[source/wikipedia-de-pommerscher-kunstschrank|§ Geschichte]]. Besides the apothecary's set they included a barber's set with surgical instruments, combs and scissors, tools, tableware, games, geometrical and astronomical instruments, a table clock and a telescope [[source/wikipedia-de-pommerscher-kunstschrank|§ Ausstattung]]. In this way the cabinet became, in Jeffrey Chipps Smith's words, "a world inside of a single cabinet" [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 63]].
 sources:
   parent:
     - source: ganz-2024-aus-dem-wald

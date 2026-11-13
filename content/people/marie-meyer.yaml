@@ -2,3 +2,14 @@ public_id: 121552
 name: Marie Meyer
 given_name: Marie
 family_name: Meyer
+birth: 1834
+death: 1915
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/787/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/787/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

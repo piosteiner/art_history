@@ -2,3 +2,45 @@ public_id: 121576
 name: Arnold Corrodi
 given_name: Arnold
 family_name: Corrodi
+birth: 1846-01-12
+death: 1874-05-07
+wikidata_id: Q20738668
+metadata:
+  sources: [Wikidata Q20738668 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/konigreich-italien
+    period: 1861-03-17
+    period_label: from 17 March 1861
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q20738668
+  - type: born_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q20738668
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q20738668
+identifiers:
+  gnd: "135724384"
+  hls: "022193"
+  rkd: "18486"
+  sikart: "4023007"
+  ulan: "500053658"
+  viaf: "50449167"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q20738668
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q20738668

@@ -2,3 +2,14 @@ public_id: 120311
 name: Heinrich Escher-Escher zum Wollenhof
 given_name: Heinrich Escher-Escher zum
 family_name: Wollenhof
+birth: 1776
+death: 1853
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1693/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1693/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

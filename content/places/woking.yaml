@@ -1,0 +1,47 @@
+public_id: 121641
+name: Woking
+names:
+  - lang: ja
+    role: translation
+    text: ウォキング
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q646225
+  - lang: zh
+    role: translation
+    text: 沃金
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q646225
+  - lang: ko
+    role: translation
+    text: 워킹
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q646225
+  - lang: ru
+    role: translation
+    text: Уокинг
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q646225
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-0.56111, 51.31611]
+wikidata_id: Q646225
+metadata:
+  sources: [Wikidata Q646225 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q646225
+  parent:
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q646225
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q646225

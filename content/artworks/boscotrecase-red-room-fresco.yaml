@@ -1,6 +1,25 @@
 public_id: 117231
 title_lang: it
 title: Affresco della stanza rossa di Boscotrecase (paesaggio sacro-idillico)
+names:
+  - lang: de
+    role: translation
+    text: Sakral-idyllische Landschaft mit Bäumen, Säulen und Statuen
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 3 (10.10.2024), Folie 84
+        accessed: 2026-11-12
+  - lang: it
+    role: alternative
+    text: Parete con paesaggio idillico-sacrale
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q129261441
+  - lang: en
+    role: translation
+    text: Wall with a sacral-idyllic landscape (Red Room, Boscotrecase)
+    status: own
+attribution_label: Anonymous, Roman
 created: late 1st century BCE
 created_span: uncertain
 kind: wall painting
@@ -8,6 +27,23 @@ medium: fresco
 dimensions: [303, 325]
 institution: museo-archeologico-nazionale-di-napoli
 inventory_number: "147501"
+description_md: |-
+  One of the large landscape panels of the Red Room (cubiculum 16) in the villa of Agrippa Postumus at Boscotrecase, on the slopes of Vesuvius: a sacral-idyllic landscape with trees, columns and statues, floating on a white ground in the middle of a red wall divided by slender painted columns, above a black dado.[[source/ganz-2024-aus-dem-wald|Sitzung 3 (10.10.2024), Folie 84]][[source/wikipedia-en-villa-of-agrippa-postumus|§ The Red Room]] The fresco measures 303 × 325 cm and is in the Museo Nazionale in Naples (inv. 147501).[[source/ganz-2024-aus-dem-wald|Sitzung 3 (10.10.2024), Folie 84]]
+
+  The villa was buried in the eruption of 79 CE and excavated in 1903–1905; its paintings are divided between the Museo Archeologico Nazionale in Naples and the Metropolitan Museum of Art in New York.[[source/wikipedia-en-villa-of-agrippa-postumus|introduction]] A roof tile naming the consuls of 11 BCE is commonly taken to date the decoration of the rooms, which belongs to the Third Pompeian Style. Who commissioned it is open: Agrippa before his death in 12 BCE, or his widow Julia for their infant son Agrippa Postumus.[[source/wikipedia-en-villa-of-agrippa-postumus|§ History; § Frescoes]] The painters are not known.
+
+  ## Trees, columns and statues
+
+  The lecture "Aus dem Wald" showed the panel in its section on the tree and the image of the god, after the Anaglypha Traiani with the sacred fig of the Forum.[[source/ganz-2024-aus-dem-wald|Sitzung 3 (10.10.2024), Folie 79]][[source/ganz-2024-aus-dem-wald|Sitzung 3 (10.10.2024), Folie 80]] Carole M. Cusack's study of sacred trees, the reading for this session, describes the setting of such cults: in early Greek times, as John Pedley observes in a passage she quotes, worship took place in sanctuaries "often marked only by a special spot hallowed by nature – a tree, a rock, a hilltop, a cave, a spring – and an altar".[[source/cusack-2011-the-sacred-tree|p. 33]] Greek vernacular religion venerated nature: the woodlands were full of nymphs and satyrs, and the rural landscape was filled with "simple rustic shrines and local festivals".[[source/cusack-2011-the-sacred-tree|p. 40]] Aniconic pillars that stood for deities were gradually replaced by anthropomorphic statues from the Archaic period onward.[[source/cusack-2011-the-sacred-tree|p. 33]]
+wikidata_id: Q129261441
+relationships:
+  - type: created_in
+    to: place/villa-of-agrippa-postumus
+    period: late 1st century BCE
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 3 (10.10.2024), Folie 84
+        accessed: 2026-11-12
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/b9/Roman_Fresco_Idyllic_rural_landscape%3B_from_Boscotrecase%2C_Villa_of_Agrippa_Postumus_%2848452525802%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Roman_Fresco_Idyllic_rural_landscape;_from_Boscotrecase,_Villa_of_Agrippa_Postumus_(48452525802).jpg

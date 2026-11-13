@@ -2,3 +2,57 @@ public_id: 121573
 name: Salomon Gessner
 given_name: Salomon
 family_name: Gessner
+kind: person
+birth: 1730
+death: 1788
+wikidata_id: Q123765
+metadata:
+  sources: [Wikidata Q123765 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q123765
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/797/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/797/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/81/Anton_Graff_Salomon_Gessner.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anton_Graff_Salomon_Gessner.jpg
+    license: Public domain
+    credit: Anton Graff
+identifiers:
+  bnf: 12413410g
+  gnd: "118538969"
+  hls: "011825"
+  idref: "033248613"
+  kulturnav: 32ed2c78-c191-4cc1-88e7-ff41f7a62ec3
+  lc: n50016527
+  rkd: "31215"
+  sikart: "4022807"
+  ulan: "500027308"
+  viaf: "19765806"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q123765
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/797/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/797/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

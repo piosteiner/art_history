@@ -2,4 +2,52 @@ public_id: 120536
 name: Charlotte von Wesdehlen
 given_name: Charlotte
 family_name: von Wesdehlen
+names:
+  - kind: birth
+    lang: fr
+    role: former
+    text: Charlotte Reichenheim
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q99452326
+kind: person
+birth: 1877
+death: 1946
 wikidata_id: Q99452326
+metadata:
+  sources: [Wikidata Q99452326 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q99452326
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q99452326
+  - type: died_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q99452326
+identifiers:
+  gnd: "116881135"
+  viaf: "57377975"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q99452326
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2194/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

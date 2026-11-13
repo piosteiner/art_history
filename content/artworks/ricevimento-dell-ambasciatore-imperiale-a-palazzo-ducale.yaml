@@ -1,4 +1,4 @@
-public_id: 121214
+public_id: 121659
 title_lang: en
 title: Ricevimento dell’ ambasciatore imperiale a Palazzo Ducale
 names:
@@ -32,6 +32,8 @@ dimensions: [152, 222]
 institution: kunsthaus-zurich
 inventory_number: KS 62
 web_url: https://collection.kunsthaus.ch/de/collection/item/516/
+on_loan: true
+on_loan_since: 1986
 wikidata_id: Q131587097
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/12/Giovanni_Antonio_Canaletto_-_Ricevimento_dell%E2%80%99_ambasciatore_imperiale_a_Palazzo_Ducale_-_KS_62_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
@@ -39,31 +41,25 @@ images:
     license: Public domain
     credit: Giovanni Antonio Canal
 provenance:
-  - owner_label: unknown
-    label: Earls of Warwick (Sammler/-in); Warwick Castle; vor 1809–1974
+  - owner: person/earls-of-warwick
+    label: Warwick Castle; vor 1809–1974
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/516/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: the art trade
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1974-12-11
+    ended: 1974-12-11
+    method: auction
     direct: true
     place: london
-    label: Sotheby`s (Kunsthandel); 11.XII.1974
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/516/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
+  - owner: person/david-koetser
     direct: true
-    label: David Koetser (Sammler/-in)
-    sources:
-      - url: https://collection.kunsthaus.ch/de/collection/item/516/
-        source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-11-12
-  - owner_label: unknown
-    direct: true
-    place: zurich
-    label: Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum); ab 1986
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/516/
         source: kunsthaus-zurich-sammlung-online
@@ -82,6 +78,10 @@ sources:
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12
   creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/516/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/516/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12

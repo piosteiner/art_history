@@ -58,7 +58,8 @@ provenance:
         note: "Footnote: Galerie Vallotton, Lausanne, Nr. 738."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner: person/walter-feilchenfeldt
+  - owner: institution/walter-feilchenfeldt-kunsthandel
+    role: dealer
     acquired: 1967
     ended: 1967
     place: zurich

@@ -14,12 +14,28 @@ kind: painting
 medium: Oil on canvas
 dimensions: [193.5, 259.5]
 institution: national-museum-of-modern-art-tokyo
-web_url: https://www.momat.go.jp/collection/X00120
+web_url: https://search.artmuseums.go.jp/records.php?sakuhin=11437
 on_loan: true
+on_loan_since: 1970-04-09
 description_md: One of the war record paintings (sensō kirokuga), signed and dated lower right; in the [[institution/national-museum-of-modern-art-tokyo]] on indefinite loan. [[source/artmuseums-syozo-11437]]
 wikidata_id: Q107342281
 metadata:
   sources: [Wikidata Q107342281 (retrieved 2026-11-06)]
+provenance:
+  - owner: place/united-states
+    method: confiscation
+    label: United States of America
+    notes_md: Confiscated by the US military after the Second World War with the other war record paintings, kept in the United States, and returned to Tokyo in 1970 "in the form of a 'permanent loan'" (Kikuhata 1972). The museum records it as an indefinite loan from the United States of America since 9 April 1970 ("1970/4/9, アメリカ合衆国無期限貸与").
+    sources:
+      - source: artmuseums-syozo-11437
+        locator: 昭和45年度 アメリカ合衆国 無期限貸与
+        accessed: 2026-11-12
+      - source: artplatform-w624278
+        locator: 1970/4/9, アメリカ合衆国無期限貸与
+        accessed: 2026-11-12
+      - source: kikuhata-1972-dear-foujita
+        locator: '"After WWII, they were confiscated by the US military … in 1970 they were returned in the form of a “permanent loan”"'
+        accessed: 2026-11-12
 sources:
   medium:
     - source: artmuseums-syozo-11437
@@ -39,6 +55,9 @@ sources:
   on_loan:
     - source: artmuseums-syozo-11437
       accessed: 2026-11-06
+    - source: artplatform-w624278
+      locator: 1970/4/9
+      accessed: 2026-11-12
   dimensions:
     - source: artmuseums-syozo-11437
       accessed: 2026-11-06

@@ -1,0 +1,47 @@
+public_id: 121676
+name: Ferdinand Möller
+given_name: Ferdinand
+family_name: Möller
+names:
+  - text: Ferdinand Moeller
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q15431419
+  - text: Ferdinand Moller
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q15431419
+kind: person
+occupations: [art dealer]
+birth: 1882-10-15
+death: 1956-01-12
+description_md: |-
+  Ferdinand Möller ran an art gallery in Berlin. In the summer of 1933 his gallery showed "30 German Artists", with works by [[artist/emil-nolde|Emil Nolde]] among others, organised by the young National Socialists Otto Andreas Schreiber and Hans Weidemann, Goebbels's assistant; the provocative show renewed the quarrel between [[person/joseph-goebbels|Goebbels]] and [[person/alfred-rosenberg|Rosenberg]] over modern art.[[source/fulda-soika-2014|p. 188]]
+
+  From 1938 he was one of the four dealers employed by the commission for the "utilisation" of degenerate art, with [[person/hildebrand-gurlitt|Hildebrand Gurlitt]], [[person/karl-buchholz|Karl Buchholz]] and [[person/bernhard-a-bohmer|Bernhard A. Böhmer]], to sell or exchange confiscated works abroad for a commission of 10 to 25 percent — work whose morality, Peters notes, is disputed to this day.[[source/peters-2017|p. 26]] Against the rules, he is known to have sold a number of the works to buyers inside Germany or to have kept them himself.[[source/wikipedia-de-karl-buchholz-kunsthandler|§ Leben]]
+wikidata_id: Q15431419
+metadata:
+  sources: [Wikidata Q15431419 (retrieved 2026-11-12)]
+identifiers:
+  bnf: 11970593h
+  dodis: P22468
+  gnd: "117081396"
+  rkd: "315017"
+  viaf: "62317071"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q15431419
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q15431419
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q15431419
+  occupations:
+    - accessed: 2026-11-12
+      property: P106
+      wikidata: Q15431419

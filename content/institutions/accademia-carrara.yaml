@@ -1,3 +1,46 @@
 public_id: 120113
 name: Accademia Carrara
+kind: museum
+founded: 1793
+place: bergamo
+location: [9.67561, 45.70386]
+address: Piazza Giacomo Carrara, 82/d - 24121 - Bergamo (BG)
+website_url: http://lacarrara.it/
 wikidata_id: Q338367
+metadata:
+  sources: [Wikidata Q338367 (retrieved 2026-11-12)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Bergamo_accademia_carrara_esterno.jpg/1280px-Bergamo_accademia_carrara_esterno.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bergamo_accademia_carrara_esterno.jpg
+    license: CC BY-SA 3.0
+    credit: No machine-readable author provided. Paolo da Reggio~commonswiki assumed (based on copyright claims).
+identifiers:
+  bnf: "121703675"
+  gnd: 2058436-2
+  idref: "030246369"
+  lc: n79079560
+  viaf: "173736003"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q338367
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1227/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q338367
+  address:
+    - accessed: 2026-11-12
+      property: P6375
+      wikidata: Q338367
+  founded:
+    - accessed: 2026-11-12
+      property: P571
+      wikidata: Q338367
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q338367

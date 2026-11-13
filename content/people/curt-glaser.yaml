@@ -2,3 +2,21 @@ public_id: 115510
 name: Curt Glaser
 given_name: Curt
 family_name: Glaser
+birth: 1879
+death: 1943
+relationships:
+  - type: born_in
+    to: place/leipzig
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

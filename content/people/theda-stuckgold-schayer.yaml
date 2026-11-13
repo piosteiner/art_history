@@ -2,3 +2,27 @@ public_id: 120933
 name: Theda Stückgold-Schayer
 given_name: Theda
 family_name: Stückgold-Schayer
+birth: 1890
+death: 1945
+relationships:
+  - type: born_in
+    to: place/berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3234/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

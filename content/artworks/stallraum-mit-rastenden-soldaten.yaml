@@ -1,4 +1,4 @@
-public_id: 120229
+public_id: 121640
 title_lang: de
 title: Stallraum mit rastenden Soldaten
 names:
@@ -26,6 +26,8 @@ dimensions: [77, 66]
 institution: kunsthaus-zurich
 inventory_number: KS 35
 web_url: https://collection.kunsthaus.ch/de/collection/item/1493/
+on_loan: true
+on_loan_since: 1986
 wikidata_id: Q20007071
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/1d/Pieter_de_Hooch_-_Stallraum_mit_rastenden_Soldaten_-_KS_35_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
@@ -33,62 +35,69 @@ images:
     license: Public domain
     credit: Pieter de Hooch
 provenance:
-  - owner_label: the art trade
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1793-03-05
+    ended: 1793-03-05
     method: auction
-    label: 5.III.1793; Lot 42 (?); Versteigerung, Paris
+    label: Lot 42 (?); Versteigerung, Paris
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/1493/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: the art trade
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1820-09-11
+    ended: 1820-09-11
     method: auction
     place: amsterdam
-    label: «Versteigerung H.A. Bauer u.a.»; 11.IX.1820; Lot 55; an Meusardt
+    label: «Versteigerung H.A. Bauer u.a.»; Lot 55; an Meusardt
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/1493/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: the art trade
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1830-05-24
+    ended: 1830-05-24
     method: auction
     place: brussels
-    label: «Versteigerung P.J. Marneffe»; 24.V.1830; Lot 148; an De Schrijver
+    label: «Versteigerung P.J. Marneffe»; Lot 148; an De Schrijver
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/1493/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: the art trade
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1855-04-28
+    ended: 1855-04-28
     method: auction
     place: london
-    label: «Versteigerung Dunford»; 28.IV.1855; Lot 87 (?)
+    label: «Versteigerung Dunford»; Lot 87 (?)
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/1493/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: the art trade
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1957-05-24
+    ended: 1957-05-24
     method: auction
     place: london
-    label: «Versteigerung Lord Blackford u.a.»; 24.V.1957; Lot 113; an Sabin
+    label: «Versteigerung Lord Blackford u.a.»; Lot 113; an Sabin
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/1493/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
-    label: Mrs. Hare; Mrs. Hare, Woking, Surrey
+  - owner_label: Mrs. Hare
+    place: woking
+    label: Woking, Surrey
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/1493/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
+  - owner: person/david-koetser
     direct: true
-    label: David Koetser (Sammler/-in)
-    sources:
-      - url: https://collection.kunsthaus.ch/de/collection/item/1493/
-        source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-11-12
-  - owner_label: unknown
-    direct: true
-    place: zurich
-    label: Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum); 1986
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/1493/
         source: kunsthaus-zurich-sammlung-online
@@ -107,6 +116,10 @@ sources:
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12
   creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1493/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/1493/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12

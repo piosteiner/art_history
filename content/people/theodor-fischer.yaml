@@ -2,4 +2,29 @@ public_id: 111971
 name: Theodor Fischer
 given_name: Theodor
 family_name: Fischer
-description_md: Art dealer and gallery owner in Lucerne, of the [[institution/galerie-fischer]] [[source/proveana-theodor-fischer]]. In 1942 he offered [[person/emil-georg-buhrle]] a share in the Coray collection of Old Masters, which Bührle had bought to sell at a profit, and sold him French Impressionists in turn [[source/buehrle-ch-the-collection]].
+birth: 1878-02-27
+death: 1957-06-05
+description_md: |-
+  Art dealer and gallery owner in Lucerne, of the [[institution/galerie-fischer]] [[source/proveana-theodor-fischer]]. In 1942 he offered [[person/emil-georg-buhrle]] a share in the Coray collection of Old Masters, which Bührle had bought to sell at a profit, and sold him French Impressionists in turn [[source/buehrle-ch-the-collection]].
+
+  On 30 June 1939, at the Grand Hôtel National in Lucerne, he auctioned 125 works of "degenerate art" confiscated from German museums, on behalf of Goebbels's commission for their "utilisation". The sale was meant to raise foreign currency from international buyers, who were assured that the proceeds would not go to rearmament; French works — Gauguin, Van Gogh, Picasso — fetched good prices, while German ones went cheaply, and Van Gogh's self-portrait was by far the most expensive lot at 175,000 Swiss francs.[[source/peters-2017|pp. 28–29]] One commentator saw "the gleeful atmosphere of a shooting match" among the bargain hunters.[[source/hermand-1994|p. 40]]
+relationships:
+  - type: born_in
+    to: place/lucerne
+    sources:
+      - source: proveana-theodor-fischer
+        accessed: 2026-11-12
+  - type: participated_in
+    to: event/lucerne-auction-of-degenerate-art-1939
+    label: auctioneer
+    sources:
+      - source: peters-2017
+        locator: p. 28, fig. 6
+        accessed: 2026-11-12
+sources:
+  birth:
+    - source: proveana-theodor-fischer
+      accessed: 2026-11-12
+  death:
+    - source: proveana-theodor-fischer
+      accessed: 2026-11-12

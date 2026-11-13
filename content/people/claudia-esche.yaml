@@ -2,3 +2,9 @@ public_id: 121556
 name: Claudia Esche
 given_name: Claudia
 family_name: Esche
+death: 2014
+sources:
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7897/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -17,6 +17,19 @@ death: 1963-06-11
 wikidata_id: Q215626
 metadata:
   sources: [Wikidata Q215626 (retrieved 2026-10-30)]
+relationships:
+  - type: born_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/266/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/266/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Wildenstein.nathan.und.georges.1908.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Wildenstein.nathan.und.georges.1908.jpg

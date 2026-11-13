@@ -2,3 +2,61 @@ public_id: 120301
 name: Martin Hürlimann
 given_name: Martin
 family_name: Hürlimann
+kind: person
+birth: 1897
+death: 1984
+wikidata_id: Q120296
+metadata:
+  sources: [Wikidata Q120296 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q120296
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zollikon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q120296
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Max_Oppenheimer_Bildnis_Martin_H%C3%BCrlimann_c1929.jpg/1280px-Max_Oppenheimer_Bildnis_Martin_H%C3%BCrlimann_c1929.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Max_Oppenheimer_Bildnis_Martin_H%C3%BCrlimann_c1929.jpg
+    license: Public domain
+    credit: Max Oppenheimer
+identifiers:
+  bnf: 12186063m
+  gnd: "118554433"
+  hls: "011968"
+  idref: "030448557"
+  lc: n50030304
+  rkd: "263632"
+  ulan: "500344150"
+  viaf: "110340069"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q120296
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1669/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

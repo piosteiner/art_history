@@ -2,4 +2,33 @@ public_id: 120323
 name: Johann Heinrich Landolt
 given_name: Johann Heinrich
 family_name: Landolt
+kind: person
+birth: 1763
+death: 1850
 wikidata_id: Q14326122
+metadata:
+  sources: [Wikidata Q14326122 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q14326122
+identifiers:
+  gnd: "136255523"
+  hls: "013498"
+  viaf: "308728396"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q14326122
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1738/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1738/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

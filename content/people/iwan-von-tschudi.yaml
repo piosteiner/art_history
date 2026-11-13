@@ -2,4 +2,34 @@ public_id: 120540
 name: Iwan von Tschudi
 given_name: Iwan
 family_name: von Tschudi
+kind: person
+birth: 1816
+death: 1887
 wikidata_id: Q55910966
+metadata:
+  sources: [Wikidata Q55910966 (retrieved 2026-11-12)]
+relationships:
+  - type: died_in
+    to: place/st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2203/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  gnd: 11743261X
+  hls: "042763"
+  lc: no2007145371
+  viaf: "57391962"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q55910966
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2203/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2203/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -2,3 +2,14 @@ public_id: 121200
 name: Mathilde Vogel
 given_name: Mathilde
 family_name: Vogel
+birth: 1862
+death: 1946
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/485/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/485/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

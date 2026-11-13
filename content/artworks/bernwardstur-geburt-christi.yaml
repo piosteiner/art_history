@@ -8,7 +8,10 @@ kind: relief
 medium: Bronze
 materials: [bronze]
 institution: hildesheim-cathedral
-description_md: Rechter Flügel.
+description_md: |-
+  The second field from the bottom on the right leaf of the [[artwork/bernwardstur|Bernward door]] (around 1015) shows the Nativity of Christ.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 43]] It follows the Annunciation in the right leaf's sequence, which rises from the bottom to the top.[[source/wikipedia-de-bernwardstur|§ Ikonografie]]
+
+  Opposite it on the left leaf are the offerings of Cain and Abel; the lecture listed the two as a typological pair.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 51]] On the right leaf, the Nativity and childhood of Christ are followed directly by the Passion; his public life is told on Bernward's bronze column in St. Michael.[[source/wikipedia-de-bernwardstur|§ Ikonografie]]
 sources:
   kind:
     - source: ganz-2024-aus-dem-wald

@@ -41,7 +41,7 @@ provenance:
       - url: https://collection.kunsthaus.ch/de/collection/item/3153/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner: person/johann-conrad-zeller
+  - owner: artist/johann-conrad-zeller
     role: estate
     method: inheritance
     direct: true

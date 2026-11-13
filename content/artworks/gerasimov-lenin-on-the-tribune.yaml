@@ -10,7 +10,12 @@ created: 1930
 kind: painting
 medium: Oil on canvas
 institution: state-historical-museum
-description_md: The image of the leader, the first theme of totalitarian art in the seminar, beside [[artwork/cascella-mussolini-harvesting-wheat]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 15]].
+description_md: |-
+  *Lenin on the Tribune* (1930), a picture of [[person/vladimir-lenin|Lenin]] by [[artist/aleksandr-gerasimov|Aleksandr Gerasimov]], opened in the seminar the image of the leader, the first theme of totalitarian art, beside Basilio Cascella's [[artwork/cascella-mussolini-harvesting-wheat]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 15]].
+
+  ## The image of the leader
+
+  Images of leaders were produced to spread their image through society, and the seminar asked how they spread and how they worked compared with the media and news reporting [[source/beatrice-marinho-2024-art-and-totalitarianism|class notes, 24 September 2024]]. After Lenin's death in 1924 a standing commission for the immortalisation of his memory commissioned and censored photo albums, death masks, busts and paintings of the leader [[source/kalashnikov-2023|p. 20]]. Gerasimov's "heroic realism" showed revolutionary leaders such as Lenin as larger-than-life heroes, combining academic realism with an Impressionistic light touch [[source/wikipedia-en-aleksandr-gerasimov-painter|§ Biography]]. Portraits of political leaders were, with the glorification of the army and the successes of industry and agriculture, the usual themes of the collective exhibitions through which Soviet art reached its public [[source/groys-1994|p. 159]].
 relationships:
   - type: depicts_person
     to: person/vladimir-lenin

@@ -2,4 +2,56 @@ public_id: 121231
 name: Carl Moll
 given_name: Carl
 family_name: Moll
+kind: person
+birth: 1861
+death: 1945
 wikidata_id: Q697780
+metadata:
+  sources: [Wikidata Q697780 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/austria
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q697780
+  - type: born_in
+    to: place/vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Carl_Moll%2C_attributed_to_Ludwig_Michalek.jpg/1280px-Carl_Moll%2C_attributed_to_Ludwig_Michalek.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carl_Moll,_attributed_to_Ludwig_Michalek.jpg
+    license: Public domain
+    credit: Ludwig Michalek
+identifiers:
+  bnf: "121467313"
+  dome: "496"
+  gnd: "118882368"
+  idref: "029950759"
+  kulturnav: 193e6d48-9223-44e6-90d9-3a5bb70213ad
+  lc: n86123787
+  rkd: "56722"
+  ulan: "500031489"
+  viaf: "25598172"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q697780
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5273/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

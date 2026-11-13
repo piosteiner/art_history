@@ -1,0 +1,125 @@
+public_id: 121671
+name: Joseph Goebbels
+given_name: Joseph
+family_name: Goebbels
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Paul Joseph Goebbels
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q41749
+  - kind: nickname
+    lang: de
+    role: alternative
+    text: Schrumpfgermane
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q41749
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: The Poison Dwarf
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q41749
+  - text: PJG
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q41749
+  - lang: ja
+    role: translation
+    text: ヨーゼフ・ゲッベルス
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q41749
+  - lang: zh
+    role: translation
+    text: 約瑟夫·戈培爾
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q41749
+  - lang: ko
+    role: translation
+    text: 요제프 괴벨스
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q41749
+  - lang: ru
+    role: translation
+    text: Йозеф Геббельс
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q41749
+kind: person
+occupations: [politician, propagandist, demagogue, Holocaust perpetrator, diarist, autobiographer, journalist, novelist, screenwriter, writer]
+birth: 1897-10-29
+death: 1945-05-01
+description_md: |-
+  Paul Joseph Goebbels, born in Rheydt, took a doctorate in philology at Heidelberg in 1922, joined the Nazi party in 1924, worked with Gregor Strasser in its northern wing and became Gauleiter of Berlin in 1926, where he began to use propaganda for the party. From 1933 until his suicide on 1 May 1945 he was Reich Minister of Public Enlightenment and Propaganda; his ministry took control of the news, the media and the arts, and he used radio and film with particular skill. One of Hitler's closest followers and an extreme antisemite, he called for ever harsher measures against the Jews, and from 1943 pressed for "total war".[[source/wikipedia-en-joseph-goebbels|introduction]] He also headed the [[institution/reichskulturkammer|Reich Chamber of Culture]], to which every artist had to belong.[[source/wikipedia-en-reich-chamber-of-culture|§ Structure and organisation]]
+
+  ## Art policy
+
+  Goebbels's own taste was more modern than his party's. He knew the harm that the mediocre völkisch art favoured by [[person/alfred-rosenberg|Alfred Rosenberg]] and the circle of Bettina Feistel-Rohmeder did to propaganda, and he and those around him believed that some German Expressionism could be declared German art.[[source/peters-2017|p. 13]] In 1933 he admired [[artist/emil-nolde|Emil Nolde]], tried to have Expressionism — as "Nordic Expressionism" — adopted by the regime, and his assistant Hans Weidemann hung Nolde, Barlach, Heckel and Schmidt-Rottluff in the ministry; Magda Goebbels tried out Nolde paintings for their residence, which were removed after Hitler's visit.[[source/fulda-soika-2014|pp. 187–189]] He wrote to the conductor Furtwängler in 1933 that art must not be autonomous but conscious of its "responsibility to the people", and in 1936 that works of art should be so "meaningful" that they could not be criticised, only appreciated.[[source/hermand-1994|pp. 40–41]] His struggle with Rosenberg for the lead in cultural policy ran through the first years of the regime.[[source/fulda-soika-2014|p. 190]]
+
+  ## The turn of 1937
+
+  In the spring of 1937 his ministry already showed "degenerate art" as a foil in the propaganda exhibition *Gebt mir vier Jahre Zeit*, chosen and hung by the amateur painters Wolfgang Willrich and Walter Hansen, who went through the Berlin Nationalgalerie with authorisations from the ministry and the Gestapo — against hesitation in his own Reich Chamber of Culture.[[source/peters-2017|pp. 21–22]] The decisive moment came in June. On 4 June he noted that he wanted the professors under the education minister [[person/bernhard-rust|Rust]] dismissed and an exhibition "from the era of decay" in Berlin; on 5 June Hitler, viewing the selection for the first Great German Art Exhibition in Munich, was "wild with rage" at the jury led by Goebbels's subordinate [[artist/adolf-ziegler|Ziegler]] — a heavy loss of prestige for the minister.[[source/peters-2017|pp. 15–16, 20]] Goebbels answered by seizing the initiative from Rosenberg and Rust with a radical line he knew Hitler would approve: on 19 June Munich was chosen as the site of the *Entartete Kunst* exhibition, which he arranged "in complete haste", unsure as late as 1 July whether it would open in time. "Führer wants to give a harsh speech against the art of decay," he wrote on 10 July. "And I will make my contribution through the exhibition on the art of decay." The initiative, Peters concludes, came from Goebbels, who had Hitler approve the show rather than receiving the task from him.[[source/peters-2017|pp. 18–22]] On 30 June 1937 Hitler handed him the decree that empowered Ziegler to impound "degenerate" works in the public collections.[[source/peters-2017|p. 17]]
+
+  The confiscated works became a source of foreign currency. Goebbels chaired the commission set up under the law of 31 May 1938 to "utilise" them, which had four dealers — [[person/bernhard-a-bohmer|Bernhard A. Böhmer]], [[person/karl-buchholz|Karl Buchholz]], [[person/hildebrand-gurlitt|Hildebrand Gurlitt]] and [[person/ferdinand-moller|Ferdinand Möller]] — sell or exchange them abroad.[[source/peters-2017|p. 26]] Some 125 works were auctioned in Lucerne on 30 June 1939, "under Goebbels's orders" as Hermand puts it, after more than a thousand paintings and nearly four thousand works on paper had been burned in Berlin that March.[[source/hermand-1994|p. 40]][[source/peters-2017|p. 28]] In 1938 Nolde appealed to him directly, and the ministry returned the painter's loans.[[source/fulda-soika-2014|p. 192]]
+wikidata_id: Q41749
+metadata:
+  sources: [Wikidata Q41749 (retrieved 2026-11-12)]
+relationships:
+  - type: member_of
+    to: institution/reichskulturkammer
+    label: president
+    sources:
+      - source: wikipedia-en-reich-chamber-of-culture
+        locator: § Structure and organisation
+        accessed: 2026-11-12
+  - type: member_of
+    to: institution/reichsministerium-fur-volksaufklarung-und-propaganda
+    label: minister
+    sources:
+      - source: wikipedia-en-joseph-goebbels
+        locator: introduction
+        accessed: 2026-11-12
+  - type: participated_in
+    to: event/degenerate-art-exhibition
+    label: organiser
+    sources:
+      - source: peters-2017
+        locator: pp. 18–20
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/35/Bundesarchiv_Bild_146-1968-101-20A%2C_Joseph_Goebbels.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1968-101-20A,_Joseph_Goebbels.jpg
+    license: CC BY-SA 3.0 de
+    credit: Heinrich Hoffmann
+identifiers:
+  bnf: 11905264v
+  dodis: P476
+  gnd: "118540041"
+  idref: "026895455"
+  lc: n79106293
+  nlk: KAC201716452
+  viaf: "49226219"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q41749
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q41749
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q41749
+  occupations:
+    - accessed: 2026-11-12
+      property: P106
+      wikidata: Q41749

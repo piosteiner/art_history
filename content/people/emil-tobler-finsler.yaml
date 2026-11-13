@@ -2,3 +2,14 @@ public_id: 120067
 name: Emil Tobler-Finsler
 given_name: Emil
 family_name: Tobler-Finsler
+birth: 1810
+death: 1898
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1159/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1159/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

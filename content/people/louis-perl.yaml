@@ -2,3 +2,14 @@ public_id: 121217
 name: Louis Perl
 given_name: Louis
 family_name: Perl
+birth: 1827
+death: 1889
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/521/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/521/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

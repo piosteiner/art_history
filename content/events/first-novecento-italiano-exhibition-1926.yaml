@@ -3,7 +3,10 @@ name: First Exhibition of the Novecento Italiano
 kind: exhibition
 period: 1926
 place: milan
-description_md: The first exhibition of the [[movement/novecento-italiano]] in Milan, opened with a speech by [[person/benito-mussolini]]; the seminar paired it with [[artist/mario-sironi]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slides 53, 67]].
+description_md: |-
+  The first exhibition of the [[movement/novecento-italiano|Novecento Italiano]] in Milan, opened with a speech by [[person/benito-mussolini|Benito Mussolini]]; the seminar paired it with [[artist/mario-sironi|Mario Sironi]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slides 53, 67]]. It was the first group show of the movement as refounded after Ubaldo Oppi's departure in 1924 [[source/wikipedia-en-novecento-italiano|§ History]]. Sironi designed its poster, *Prima Mostra del Novecento Italiano* [[source/braun-2000|p. viii, fig. 57]]. [[artist/arturo-tosi|Arturo Tosi]], a member of the movement's governing committee, took part, as he did in the second exhibition of 1929 [[source/wikipedia-en-arturo-tosi|§ Biography]].
+
+  The movement's earlier exhibition, *Sette Pittori del Novecento* in Milan, had been opened on 26 March 1923, when Mussolini declared that "Art belongs to the domain of the individual" and that the State would not "encourage anything like an art of the State" [[source/braun-2000|p. 1]]. Despite such official patronage, Mussolini divided support among rival groups and once reprimanded Margherita Sarfatti for using his name and that of Fascism to promote the Novecento [[source/wikipedia-en-novecento-italiano|§ History]].
 relationships:
   - type: concerns
     to: artist/mario-sironi

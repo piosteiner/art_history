@@ -2,3 +2,61 @@ public_id: 121603
 name: August Deusser
 given_name: August
 family_name: Deusser
+birth: 1870-02-15
+death: 1942-10-28
+wikidata_id: Q122979
+metadata:
+  sources: [Wikidata Q122979 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q122979
+  - type: born_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q122979
+  - type: died_in
+    to: place/constance
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q122979
+  - type: worked_in
+    to: place/wiesbaden
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q122979
+  - type: studied_at
+    to: institution/kunstakademie-dusseldorf
+    sources:
+      - accessed: 2026-11-12
+        property: P69
+        wikidata: Q122979
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d8/Augus_Deusser%2C_Selbstbildnis_im_gr%C3%BCnen_Rock%2C_um_1911.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Augus_Deusser,_Selbstbildnis_im_gr%C3%BCnen_Rock,_um_1911.jpg
+    license: Public domain
+    credit: August Deusser
+identifiers:
+  dome: "814"
+  gnd: 11931732X
+  idref: "152378847"
+  lc: nr96020082
+  rkd: "22341"
+  ulan: "500015603"
+  viaf: "59891653"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q122979
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q122979

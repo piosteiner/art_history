@@ -1,0 +1,72 @@
+public_id: 121672
+name: Alfred Rosenberg
+given_name: Alfred
+family_name: Rosenberg
+names:
+  - lang: ja
+    role: translation
+    text: アルフレート・ローゼンベルク
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q75849
+  - lang: zh
+    role: translation
+    text: 阿爾弗雷德·羅森堡
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q75849
+  - lang: ko
+    role: translation
+    text: 알프레트 로젠베르크
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q75849
+  - lang: ru
+    role: translation
+    text: Альфред Розенберг
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q75849
+kind: person
+occupations: [student, politician, administrator, opinion journalist, Nazi, functionary]
+birth: 1893-01-12
+death: 1946-10-16
+description_md: |-
+  Alfred Rosenberg was born on 12 January 1893 in Reval (Tallinn), then in the Russian Empire, the son of a merchant; his mother died two months after his birth.[[source/wikipedia-en-alfred-rosenberg|§ Early life]] Introduced to Hitler by Dietrich Eckart, he became the party's chief ideologue: author of *The Myth of the Twentieth Century* (1930), one of the main sources of its racial theory, antisemitism, the demand for *Lebensraum* and the rejection of "degenerate" modern art; editor of the *Völkischer Beobachter*; head of the party's office of foreign affairs (1933–1945) and of the "Amt Rosenberg" for cultural policy and surveillance (1934–1945); and during the war Reich Minister for the Occupied Eastern Territories, where he helped direct the crimes against the Slavs. Sentenced at Nuremberg, he was hanged on 16 October 1946.[[source/wikipedia-en-alfred-rosenberg|introduction]]
+
+  ## Art policy
+
+  In 1928 he founded the Combat League for German Culture (Kampfbund für deutsche Kultur), which, with the circle of Bettina Feistel-Rohmeder, stood for a reactionary völkisch art and was notorious for defaming the Expressionists; his books *The Myth of the Twentieth Century* and *Revolution in der bildenden Kunst?* (1934) saw in the modern city the root of the "mongrel art" of Expressionism.[[source/hermand-1994|pp. 36–37]][[source/peters-2017|p. 13]][[source/fulda-soika-2014|p. 188]] His rivalry with [[person/joseph-goebbels|Goebbels]], who favoured a "Nordic Expressionism", ran through the first years of the regime — in 1933 Goebbels's young followers turned the League's rejection of [[artist/emil-nolde|Nolde]] into a public attack on it.[[source/fulda-soika-2014|pp. 188, 190]] In 1937 Goebbels "threw his own convictions overboard" and made Rosenberg's line his own, seizing the initiative from him with the *Entartete Kunst* exhibition; Rosenberg's own campaigns, Peters notes, tended to come at inappropriate times and out of narrow-minded ideology.[[source/peters-2017|pp. 18, 20]] The critic Robert Scholz, who sat on the 1938 commission for the sale of the confiscated works, was Rosenberg's associate.[[source/peters-2017|p. 26]] During the war the [[institution/einsatzstab-reichsleiter-rosenberg]], named after him, looted cultural property throughout the occupied countries.
+wikidata_id: Q75849
+metadata:
+  sources: [Wikidata Q75849 (retrieved 2026-11-12)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c8/Nazi_party_member_Alfred_Rosenberg_in_cell_Nuremberg_Trials.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Nazi_party_member_Alfred_Rosenberg_in_cell_Nuremberg_Trials.jpeg
+    license: Public domain
+    credit: United States Army Signal Corps photographer
+identifiers:
+  bnf: 12057356m
+  dodis: P4614
+  gnd: "118602691"
+  idref: "035423358"
+  lc: n79095440
+  nlk: KAC202504565
+  viaf: "4950937"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q75849
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q75849
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q75849
+  occupations:
+    - accessed: 2026-11-12
+      property: P106
+      wikidata: Q75849

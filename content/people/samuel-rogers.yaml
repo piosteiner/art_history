@@ -2,3 +2,63 @@ public_id: 121146
 name: Samuel Rogers
 given_name: Samuel
 family_name: Rogers
+names:
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Bard of Memory
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q3471218
+kind: person
+birth: 1763
+death: 1855
+wikidata_id: Q3471218
+metadata:
+  sources: [Wikidata Q3471218 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3471218
+  - type: nationality
+    to: polity/kingdom-of-great-britain
+    period: 1801-01-01
+    period_label: until 1 January 1801
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3471218
+  - type: died_in
+    to: place/london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2c/Samuel_Rogers.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Samuel_Rogers.jpg
+    license: Public domain
+    credit: George Richmond
+identifiers:
+  bnf: "127577129"
+  gnd: "118810359"
+  idref: "030355222"
+  lc: n85067299
+  ulan: "500325044"
+  viaf: "34584260"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q3471218
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

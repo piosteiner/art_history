@@ -24,7 +24,7 @@ relationships:
         property: P27
         wikidata: Q3569677
   - type: nationality
-    to: polity/switzerland
+    to: polity/swiss-confederation-restoration
     period: 1815
     period_label: from 1815
     sources:

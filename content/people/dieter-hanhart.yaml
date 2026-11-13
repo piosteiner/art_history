@@ -2,4 +2,33 @@ public_id: 121345
 name: Dieter Hanhart
 given_name: Dieter
 family_name: Hanhart
+kind: person
+birth: 1929
+death: 2017
 wikidata_id: Q28369927
+metadata:
+  sources: [Wikidata Q28369927 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q28369927
+identifiers:
+  gnd: "123823889"
+  idref: "153972394"
+  viaf: "27988880"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q28369927
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/63941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/63941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

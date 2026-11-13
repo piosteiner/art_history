@@ -11,7 +11,16 @@ kind: painting
 medium: Oil on canvas
 dimensions: [234, 372]
 institution: tretyakov-gallery
-description_md: Socialist optimism, beside [[artwork/catarsini-the-wheat-of-luccas-reclamation]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slides 22–23]].
+description_md: |-
+  [[artist/sergey-gerasimov|Sergey Gerasimov]]'s *A Collective Farm Festival* of 1937 stood in the seminar for socialist optimism, beside Alfredo Catarsini's [[artwork/catarsini-the-wheat-of-luccas-reclamation]] (1940) [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slides 22–23]].
+
+  ## Socialist optimism
+
+  The painting belongs to the theme of rural plenty that socialist realism ([[movement/socialist-realism]]) cultivated: painters were to show happy, muscular peasants on collective farms, and the present and future were idealised to the point of a "forced optimism" later called "revolutionary romanticism" [[source/wikipedia-en-socialist-realism|§ Characteristics]]. The seminar paired it with Maxim Gorky's definition of 1934: "Myth is invention. To invent means to extract from the sum of the given its fundamental meaning and then embody this in an image – this gives us realism. But if to the meaning of what has been extracted from the given we add… what we desire, this gives us the romanticism which lies at the foundation of myth" [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 25]]. In Stalinist theory "realism" meant not mimesis of an external reality — that was dismissed as "naturalism" — but a readiness to make an artistic ideal real within reality itself [[source/groys-1994|p. 156]].
+
+  ## The painter
+
+  Gerasimov painted works sympathetic to the new government in the style later known as socialist realism, but was known as a liberal whose painting showed the influence of Impressionism [[source/wikipedia-en-sergey-vasilyevich-gerasimov|§ Biography]]. Many of his works are in the [[institution/tretyakov-gallery|Tretyakov Gallery]] [[source/wikipedia-en-sergey-vasilyevich-gerasimov|§ Biography]].
 relationships:
   - type: associated_with
     to: movement/socialist-realism

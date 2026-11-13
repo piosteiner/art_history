@@ -2,3 +2,48 @@ public_id: 120734
 name: Théodore Duret
 given_name: Théodore
 family_name: Duret
+kind: person
+birth: 1838
+death: 1927
+wikidata_id: Q720216
+metadata:
+  sources: [Wikidata Q720216 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q720216
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Portrait_de_Th%C3%A9odore_Duret_%281868%29_-_Edouard_Manet_%28_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris%29.jpg/1280px-Portrait_de_Th%C3%A9odore_Duret_%281868%29_-_Edouard_Manet_%28_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_de_Th%C3%A9odore_Duret_(1868)_-_Edouard_Manet_(_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris).jpg
+    license: Public domain
+    credit: https://www.parismuseescollections.paris.fr/fr/petit-palais/oeuvres/portrait-de-theodore-duret
+identifiers:
+  bnf: 12106014r
+  gnd: "121856321"
+  idref: "029431166"
+  lc: n86021765
+  rkd: "449269"
+  ulan: "500317121"
+  viaf: "46790804"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q720216
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

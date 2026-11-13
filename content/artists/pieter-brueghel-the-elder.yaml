@@ -88,6 +88,12 @@ relationships:
       - accessed: 2026-11-02
         property: P937
         wikidata: Q43270
+  - type: student_of
+    to: artist/pieter-coecke-van-aelst
+    sources:
+      - accessed: 2026-11-12
+        property: P802
+        wikidata: Q434006
   - type: associated_with
     to: movement/northern-renaissance
     sources:

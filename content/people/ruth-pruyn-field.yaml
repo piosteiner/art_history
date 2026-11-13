@@ -2,3 +2,21 @@ public_id: 120608
 name: Ruth Pruyn Field
 given_name: Ruth Pruyn
 family_name: Field
+birth: 1907
+death: 1994
+relationships:
+  - type: born_in
+    to: place/new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2422/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

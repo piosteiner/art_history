@@ -2,3 +2,14 @@ public_id: 121279
 name: Major Eric A. Knight
 given_name: Major Eric A.
 family_name: Knight
+birth: 1862
+death: 1944
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5782/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5782/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,4 +1,4 @@
-public_id: 120518
+public_id: 121648
 title: Nesso rapisce Deianira
 names:
   - lang: de
@@ -31,6 +31,8 @@ dimensions: [219, 267]
 institution: kunsthaus-zurich
 inventory_number: KS 56
 web_url: https://collection.kunsthaus.ch/de/collection/item/2100/
+on_loan: true
+on_loan_since: 1986
 wikidata_id: Q131586738
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/01/Sebastiano_Ricci_-_Nesso_rapisce_Deianira_-_KS_56_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
@@ -38,35 +40,31 @@ images:
     license: Public domain
     credit: Sebastiano Ricci
 provenance:
-  - owner_label: unknown
-    label: Baron Ferdinand von Stumm (Sammler/-in); Berlin und Florenz; um 1900
+  - owner: person/baron-ferdinand-von-stumm
+    acquired: c. 1900
+    ended: c. 1900
+    label: Berlin und Florenz
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2100/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
+  - owner: person/nikolaus-von-stumm
     direct: true
-    label: Nikolaus von Stumm (Sammler/-in); München; 1925–1954
+    place: munich
+    label: 1925–1954
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2100/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
-    label: private collection; Privatbesitz, England
+  - owner_label: private collection
+    place: england
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2100/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
-    label: David Koetser (Sammler/-in); 1973
-    sources:
-      - url: https://collection.kunsthaus.ch/de/collection/item/2100/
-        source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-11-12
-  - owner_label: unknown
-    direct: true
-    place: zurich
-    label: Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum); ab 1986
+  - owner: person/david-koetser
+    acquired: 1973
+    ended: 1973
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2100/
         source: kunsthaus-zurich-sammlung-online
@@ -85,6 +83,10 @@ sources:
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12
   creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2100/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/2100/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12

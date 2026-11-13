@@ -1,3 +1,9 @@
 public_id: 120025
 name: C.G. Boerner
+place: leipzig
 wikidata_id: Q47035171
+sources:
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

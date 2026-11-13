@@ -2,4 +2,44 @@ public_id: 120326
 name: Paul Ganz
 given_name: Paul
 family_name: Ganz
+kind: person
+birth: 1872
+death: 1954
 wikidata_id: Q19346243
+metadata:
+  sources: [Wikidata Q19346243 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q19346243
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  bnf: 12487205r
+  dodis: P2366
+  gnd: "116419261"
+  hls: "027720"
+  idref: "034079548"
+  lc: nr95033034
+  rkd: "449502"
+  viaf: "12409855"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q19346243
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1757/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

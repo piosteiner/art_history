@@ -2,3 +2,21 @@ public_id: 114984
 name: Paul Hürlimann
 given_name: Paul
 family_name: Hürlimann
+birth: 1878
+death: 1944
+relationships:
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

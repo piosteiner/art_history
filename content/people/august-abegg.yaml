@@ -2,3 +2,57 @@ public_id: 121494
 name: August Abegg
 given_name: August
 family_name: Abegg
+kind: person
+birth: 1861
+death: 1924
+wikidata_id: Q760758
+metadata:
+  sources: [Wikidata Q760758 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/konigreich-italien
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q760758
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q760758
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/759958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/turin
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q760758
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9d/August_Abegg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:August_Abegg.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  dodis: P7440
+  gnd: "1080249060"
+  hls: "045216"
+  viaf: "99145067174566630799"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q760758
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/759958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/759958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

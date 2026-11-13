@@ -2,3 +2,21 @@ public_id: 120735
 name: Michele Angelo Pasquale Manzi
 given_name: Michele Angelo Pasquale
 family_name: Manzi
+birth: 1849
+death: 1915
+relationships:
+  - type: born_in
+    to: place/naples
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

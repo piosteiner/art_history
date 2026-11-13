@@ -2,3 +2,27 @@ public_id: 120882
 name: Hans Schneider Christ
 given_name: Hans Schneider
 family_name: Christ
+birth: 1883
+death: 1953
+relationships:
+  - type: born_in
+    to: place/basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

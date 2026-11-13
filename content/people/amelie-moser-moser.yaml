@@ -2,3 +2,38 @@ public_id: 120167
 name: Amélie Moser-Moser
 given_name: Amélie
 family_name: Moser-Moser
+kind: person
+birth: 1839
+death: 1925
+wikidata_id: Q482212
+metadata:
+  sources: [Wikidata Q482212 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q482212
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Schweiz_-_Hommage_2021_-_50_Jahre_Frauenstimmrecht_29.jpg/1280px-Schweiz_-_Hommage_2021_-_50_Jahre_Frauenstimmrecht_29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Schweiz_-_Hommage_2021_-_50_Jahre_Frauenstimmrecht_29.jpg
+    license: CC0
+    credit: Hadi
+identifiers:
+  gnd: "137575572"
+  hls: "009360"
+  viaf: "81749302"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q482212
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1351/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1351/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

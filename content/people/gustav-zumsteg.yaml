@@ -9,6 +9,19 @@ death: 2005-06-17
 wikidata_id: Q1556588
 metadata:
   sources: [Wikidata Q1556588 (retrieved 2026-11-02)]
+relationships:
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1011/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
 identifiers:
   bnf: 16514065m
   gnd: "131847082"

@@ -2,3 +2,21 @@ public_id: 120512
 name: Alberto Rathgeb
 given_name: Alberto
 family_name: Rathgeb
+birth: 1841
+death: 1898
+relationships:
+  - type: died_in
+    to: place/bergamo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2094/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

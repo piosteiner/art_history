@@ -2,3 +2,94 @@ public_id: 121448
 name: Pieter Neefs (I)
 given_name: Pieter Neefs
 family_name: (I)
+names:
+  - lang: nl
+    role: original
+    text: Pieter Neefs
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q596352
+  - text: Peeter Neeffs the elder
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q596352
+  - text: Peeter Neefs Der Ältere
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q596352
+birth: 1578
+death: c. 1659
+wikidata_id: Q596352
+metadata:
+  sources: [Wikidata Q596352 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q596352
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q596352
+      - url: https://rkd.nl/en/explore/artists/59042
+        source: rkd
+        accessed: 2026-11-12
+      - url: https://data.bnf.fr/ark:/12148/cb149609705
+        source: bnf
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q596352
+      - url: https://rkd.nl/en/explore/artists/59042
+        source: rkd
+        accessed: 2026-11-12
+      - url: https://data.bnf.fr/ark:/12148/cb149609705
+        source: bnf
+        accessed: 2026-11-12
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q596352
+  - type: associated_with
+    to: movement/flemish-baroque-painting
+    sources:
+      - accessed: 2026-11-12
+        property: P135
+        wikidata: Q596352
+identifiers:
+  bnf: "149609705"
+  gnd: "130368792"
+  kulturnav: e28d2ae4-054c-412d-8045-d873f0883ead
+  rkd: "59042"
+  ulan: "500010047"
+  viaf: "10118800"
+sources:
+  birth:
+    - url: https://d-nb.info/gnd/130368792
+      source: gnd
+      accessed: 2026-11-12
+    - url: https://rkd.nl/en/explore/artists/59042
+      source: rkd
+      accessed: 2026-11-12
+    - url: https://data.bnf.fr/ark:/12148/cb149609705
+      source: bnf
+      accessed: 2026-11-12
+    - url: https://kulturnav.org/e28d2ae4-054c-412d-8045-d873f0883ead
+      source: kulturnav
+      accessed: 2026-11-12
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q596352
+    - url: https://data.bnf.fr/ark:/12148/cb149609705
+      source: bnf
+      accessed: 2026-11-12

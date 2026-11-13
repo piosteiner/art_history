@@ -2,4 +2,44 @@ public_id: 120916
 name: Oskar Charles Frederic Schmitz
 given_name: Oskar Charles Frederic
 family_name: Schmitz
+kind: person
+birth: 1861
+death: 1933
 wikidata_id: Q95004712
+metadata:
+  sources: [Wikidata Q95004712 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/austrian-empire
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q95004712
+  - type: born_in
+    to: place/prague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/317/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  gnd: 12327365X
+  viaf: "916904"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q95004712
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/317/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/317/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

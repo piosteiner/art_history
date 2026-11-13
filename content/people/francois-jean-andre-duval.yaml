@@ -2,3 +2,21 @@ public_id: 120870
 name: François Jean André Duval
 given_name: François Jean André
 family_name: Duval
+birth: 1776
+death: 1854
+relationships:
+  - type: died_in
+    to: place/geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3073/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

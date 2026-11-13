@@ -2,3 +2,50 @@ public_id: 121616
 name: Marcellus Coffermans
 given_name: Marcellus
 family_name: Coffermans
+birth: 1524
+death: 1581-11-27
+wikidata_id: Q935830
+metadata:
+  sources: [Wikidata Q935830 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q935830
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q935830
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q935830
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q935830
+identifiers:
+  bnf: "146288129"
+  gnd: "122701291"
+  idref: 07521637X
+  lc: nr2003020657
+  rkd: "17527"
+  ulan: "500001523"
+  viaf: "79195878"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q935830
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q935830

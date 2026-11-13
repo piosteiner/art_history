@@ -1,0 +1,70 @@
+public_id: 121674
+name: Hildebrand Gurlitt
+given_name: Hildebrand
+family_name: Gurlitt
+names:
+  - text: H. Gurlitt
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q15126735
+  - lang: ja
+    role: translation
+    text: ヒルデブラント・グルリット
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q15126735
+  - lang: zh
+    role: translation
+    text: 希爾德布蘭德·古爾利特
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q15126735
+  - lang: ru
+    role: translation
+    text: Хильдебранд Гурлитт
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q15126735
+kind: person
+occupations: [art dealer, art historian, art collector]
+birth: 1895-09-15
+death: 1956-11-09
+description_md: |-
+  Hildebrand Gurlitt was born in Dresden in 1895 into a family of artists and scholars: his father Cornelius was an architect and art historian, his sister Cornelia a painter, his cousin [[person/wolfgang-gurlitt|Wolfgang]] an art dealer. A Jewish grandmother made him a "quarter Jew" under the Nuremberg laws. Wounded on the Somme and in Champagne in the First World War, he took his doctorate in art history at Frankfurt in 1924. As first director of the König Albert Museum in Zwickau from 1925 he showed Pechstein, Kollwitz, Heckel, Schmidt-Rottluff and Nolde, had the Bauhaus design the museum and acquired works by Barlach, Feininger, Kandinsky, Kirchner, Klee and Kokoschka; press campaigns led to his dismissal in 1930. He then ran the Hamburg Kunstverein until the National Socialists forced him and its board to resign in 1933.[[source/wikipedia-en-hildebrand-gurlitt|§ Early life; § Early career]]
+
+  From the mid-1930s he bought works cheaply from private owners, among them Jewish owners forced to pay punitive taxes or to sell before fleeing. He was one of the four dealers appointed by the commission for the "utilisation" of degenerate art — with [[person/karl-buchholz|Karl Buchholz]], [[person/ferdinand-moller|Ferdinand Möller]] and [[person/bernhard-a-bohmer|Bernhard A. Böhmer]] — to market confiscated works abroad, for a commission of 10 to 25 percent; the works were kept for them in a trading depot at Schönhausen Palace near Berlin, and they did not always report what they sold. His name stands beside many entries in the ministry's list of the confiscated works, now in the Victoria and Albert Museum.[[source/wikipedia-en-hildebrand-gurlitt|§ Nazi era]][[source/peters-2017|p. 26]] In occupied France he bought works, many of them looted, for Hitler's planned Führermuseum in Linz and for himself.[[source/wikipedia-en-hildebrand-gurlitt|introduction]]
+
+  Captured with twenty crates of art in Aschbach in June 1945, he told the Americans that his collection and records had burned in the bombing of Dresden; he presented himself as a victim of persecution and recovered 115 works. From 1948 he directed the Kunstverein für die Rheinlande und Westfalen in Düsseldorf and staged more than seventy exhibitions of modern art. He died in a car accident in 1956. His son Cornelius kept more than 1,500 works in secret; they came to light in 2013, and Cornelius left them to the [[institution/kunstmuseum-bern|Kunstmuseum Bern]] in 2014.[[source/wikipedia-en-hildebrand-gurlitt|introduction; § Post-war]]
+wikidata_id: Q15126735
+metadata:
+  sources: [Wikidata Q15126735 (retrieved 2026-11-12)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bf/Philibert_Humbla_and_Hildebrand_Gurlitt_%28cropped%29.png
+    source_url: https://commons.wikimedia.org/wiki/File:Philibert_Humbla_and_Hildebrand_Gurlitt_(cropped).png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "111783805"
+  dodis: P22414
+  gnd: "116930683"
+  idref: "193697467"
+  lc: no2002000447
+  rkd: "465507"
+  viaf: "59848458"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q15126735
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q15126735
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q15126735
+  occupations:
+    - accessed: 2026-11-12
+      property: P106
+      wikidata: Q15126735

@@ -2,3 +2,40 @@ public_id: 121246
 name: Edouard Pasteur
 given_name: Edouard
 family_name: Pasteur
+kind: person
+birth: 1839
+death: 1920
+wikidata_id: Q50229301
+metadata:
+  sources: [Wikidata Q50229301 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q50229301
+  - type: born_in
+    to: place/milan
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q50229301
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/19/Pasteur%2C_Edouard_%28Revue_des_sports%2C_1892-07-02%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pasteur,_Edouard_(Revue_des_sports,_1892-07-02).jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q50229301
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/540/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/540/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

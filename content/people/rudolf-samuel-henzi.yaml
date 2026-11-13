@@ -2,3 +2,27 @@ public_id: 120877
 name: Rudolf Samuel Henzi
 given_name: Rudolf Samuel
 family_name: Henzi
+birth: 1732
+death: 1803
+relationships:
+  - type: born_in
+    to: place/bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/the-hague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

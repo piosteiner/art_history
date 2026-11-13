@@ -32,14 +32,14 @@ provenance:
       - url: https://collection.kunsthaus.ch/de/collection/item/6230/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner: institution/vente-francois-boucher
+  - owner_label: unknown (auction)
     role: agent
     acquired: 1771-02-18
     ended: 1771-03-09
     method: auction
     direct: true
     place: paris
-    label: Nr. 9
+    label: sale of François Boucher’s estate («Vente François Boucher»); Nr. 9
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/6230/
         source: kunsthaus-zurich-sammlung-online

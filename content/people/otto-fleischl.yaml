@@ -2,4 +2,45 @@ public_id: 121058
 name: Otto Fleischl
 given_name: Otto
 family_name: Fleischl
+kind: person
+birth: 1849
+death: 1937
 wikidata_id: Q55680122
+metadata:
+  sources: [Wikidata Q55680122 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/austrian-empire
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q55680122
+  - type: nationality
+    to: polity/cisleithania
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q55680122
+  - type: born_in
+    to: place/vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/360/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  gnd: "1021285005"
+  lc: nr2001006557
+  viaf: "46687716"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q55680122
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/360/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/360/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -2,3 +2,39 @@ public_id: 120875
 name: Abraham Wagner
 given_name: Abraham
 family_name: Wagner
+kind: person
+birth: 1734
+death: 1782
+wikidata_id: Q121898124
+metadata:
+  sources: [Wikidata Q121898124 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  bnf: 15654460v
+  gnd: "1037505182"
+  viaf: "42168028"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q121898124
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q121898124
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q121898124

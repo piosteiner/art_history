@@ -83,10 +83,11 @@ provenance:
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
   - owner: person/charles-de-pauw
-    acquired: 1986
+    acquired: before 1986
     ended: 1986
     direct: true
     place: brussels
+    label: the record of this panel says “1986”, two years after his death; the three other panels say “before 1986”
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/7791/
         source: kunsthaus-zurich-sammlung-online

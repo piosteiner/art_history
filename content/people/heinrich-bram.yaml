@@ -2,3 +2,45 @@ public_id: 120094
 name: Heinrich Bräm
 given_name: Heinrich
 family_name: Bräm
+kind: person
+birth: 1572
+death: 1644
+wikidata_id: Q13883377
+metadata:
+  sources: [Wikidata Q13883377 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q13883377
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1190/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1190/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  gnd: "142573787"
+  hls: "018052"
+  viaf: "152051578"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q13883377
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1190/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1190/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

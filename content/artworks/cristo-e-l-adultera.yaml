@@ -1,4 +1,4 @@
-public_id: 120497
+public_id: 121645
 title_lang: fr
 title: Cristo e l’adultera
 names:
@@ -33,6 +33,8 @@ dimensions: [145, 186]
 institution: kunsthaus-zurich
 inventory_number: KS 51
 web_url: https://collection.kunsthaus.ch/de/collection/item/2066/
+on_loan: true
+on_loan_since: 1986
 wikidata_id: Q131585628
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/a/ab/Mattia_Preti_-_Cristo_e_l%E2%80%99adultera_-_KS_51_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
@@ -40,47 +42,45 @@ images:
     license: Public domain
     credit: Mattia Preti
 provenance:
-  - owner_label: unknown
-    label: Archibald Campbell of Succoth (Sammler/-in); Garscube; 1954
+  - owner: person/archibald-campbell-of-succoth
+    acquired: 1954
+    ended: 1954
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2066/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
+  - owner: person/george-i-campbell
     direct: true
-    label: George I. Campbell (Sammler/-in)
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2066/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: the art trade
-    direct: true
-    place: london
-    label: Christie`s London (Kunsthandel); 19.VII.1946; Lot 10; als Caravaggio an Dr. E. I. Schapiro
-    sources:
-      - url: https://collection.kunsthaus.ch/de/collection/item/2066/
-        source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-11-12
-  - owner_label: the art trade
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1946-07-19
+    ended: 1946-07-19
+    method: auction
     direct: true
     place: london
-    label: Christie`s London (Kunsthandel); 12.XII.1980; Lot 3
+    label: Lot 10; als Caravaggio an Dr. E. I. Schapiro
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2066/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1980-12-12
+    ended: 1980-12-12
+    method: auction
+    direct: true
+    place: london
+    label: Lot 3
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2066/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
   - owner: institution/stiftung-betty-und-david-koetser
-    co_owners: [person/david-koetser]
-    role: dealer
     direct: true
-    sources:
-      - url: https://collection.kunsthaus.ch/de/collection/item/2066/
-        source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-11-12
-  - owner_label: unknown
-    direct: true
-    place: zurich
-    label: Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum); ab 1986
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2066/
         source: kunsthaus-zurich-sammlung-online
@@ -102,6 +102,10 @@ sources:
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12
   creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2066/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/2066/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12

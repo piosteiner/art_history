@@ -1,2 +1,8 @@
 public_id: 121090
 name: Koninklijke Bijenkorf Beheer
+place: amsterdam
+sources:
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/379/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

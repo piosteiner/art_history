@@ -2,4 +2,50 @@ public_id: 120024
 name: Eduard Lorenz Lorenz-Meyer
 given_name: Eduard Lorenz
 family_name: Lorenz-Meyer
+kind: person
+birth: 1856
+death: 1926
 wikidata_id: Q14623858
+metadata:
+  sources: [Wikidata Q14623858 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q14623858
+  - type: born_in
+    to: place/singapore
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q14623858
+  - type: died_in
+    to: place/hamburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/ba/John_Gehrts_-_Ex_libris_Ed._Lorenz_Meyer%2C_1895.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:John_Gehrts_-_Ex_libris_Ed._Lorenz_Meyer,_1895.jpg
+    license: Public domain
+    credit: Johannes Gehrts
+identifiers:
+  gnd: "133284387"
+  lc: n2001021356
+  viaf: "15955755"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q14623858
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

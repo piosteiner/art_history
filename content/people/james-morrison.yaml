@@ -2,3 +2,14 @@ public_id: 120713
 name: James Morrison
 given_name: James
 family_name: Morrison
+birth: 1789
+death: 1857
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2672/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

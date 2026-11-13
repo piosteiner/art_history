@@ -2,3 +2,58 @@ public_id: 120572
 name: Robert Walpole
 given_name: Robert
 family_name: Walpole
+kind: person
+birth: 1676
+death: 1745
+wikidata_id: Q104190
+metadata:
+  sources: [Wikidata Q104190 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-england
+    period: 1707-05-11
+    period_label: until 11 May 1707
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q104190
+  - type: nationality
+    to: polity/kingdom-of-great-britain
+    period: 1707-05-12
+    period_label: from 12 May 1707
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q104190
+  - type: died_in
+    to: place/london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/229/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/82/Retuched_Painting_of_Robert_Walpole.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Retuched_Painting_of_Robert_Walpole.jpg
+    license: Public domain
+    credit: Jean-Baptiste van Loo
+identifiers:
+  bnf: 12006582f
+  gnd: 11880605X
+  idref: "028178688"
+  lc: n50024509
+  rkd: "344624"
+  ulan: "500250653"
+  viaf: "98289961"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q104190
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/229/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/229/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

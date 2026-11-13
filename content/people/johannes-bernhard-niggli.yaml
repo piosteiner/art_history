@@ -2,3 +2,14 @@ public_id: 120132
 name: Johannes Bernhard Niggli
 given_name: Johannes Bernhard
 family_name: Niggli
+birth: 1925
+death: 2019
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1276985/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

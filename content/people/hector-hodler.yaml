@@ -2,3 +2,53 @@ public_id: 120044
 name: Hector Hodler
 given_name: Hector
 family_name: Hodler
+names:
+  - kind: pseudonym
+    role: alternative
+    text: HOMO
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q12608
+kind: person
+birth: 1887
+death: 1920
+wikidata_id: Q12608
+metadata:
+  sources: [Wikidata Q12608 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q12608
+  - type: born_in
+    to: place/geneva
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1092/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/25/1917-Hodler.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1917-Hodler.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "1058766473"
+  idref: "243361815"
+  lc: nb2007003523
+  sikart: "5000639"
+  viaf: "3385149108564768780004"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q12608
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1092/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1092/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

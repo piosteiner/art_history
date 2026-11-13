@@ -1,6 +1,7 @@
 public_id: 117684
 name: Maison de Jules Verne
 kind: building
+parent: amiens
 location: [2.30203, 49.88794]
 wikidata_id: Q2415168
 metadata:

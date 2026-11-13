@@ -2,3 +2,21 @@ public_id: 120084
 name: Magdalena "Magda" Mautner von Markhof
 given_name: Magdalena "Magda" Mautner
 family_name: von Markhof
+birth: 1881
+death: 1944
+relationships:
+  - type: born_in
+    to: place/vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1180/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

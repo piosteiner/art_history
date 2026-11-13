@@ -2,3 +2,14 @@ public_id: 115342
 name: Emil Welti
 given_name: Emil
 family_name: Welti
+birth: 1857
+death: 1940
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2063/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2063/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,2 +1,8 @@
 public_id: 121381
 name: Venduehuis Dickhaut
+place: maastricht
+sources:
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/6756/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

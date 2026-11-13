@@ -32,14 +32,26 @@ images:
     credit: Philips Wouwerman
 provenance:
   - owner: person/joseph-fesch
-    acquired: 1844
-    ended: 1844
+    ended: 1839-05-13
     place: rome
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/3464/
         note: "Footnote: Jewish Digital Cultural Recovery Project (JDCRP), «La Halte», https://pilot-demo.jdcrp.org/artwork/wouwerman_riders_52575/ (21.06.2023); ZKG/KHZ Werkdossier, handschriftliche Notizen von Leopold Ruzicka; Auktion Galerie Charpentier Paris (25.05.1949)."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-03
+  - owner: person/joseph-fesch
+    role: estate
+    acquired: 1839-05-13
+    ended: 1844
+    method: inheritance
+    direct: true
+    place: rome
+    label: estate of Cardinal Joseph Fesch
+    notes_md: The Kunsthaus gives "1844, Joseph Fesch, Rom"; Fesch died on 13 May 1839 — 1844 is the year of his estate's sale in Rome.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3464/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
   - owner: person/jean-jacques-joseph-leroy-d-etiolles
     ended: 1860
     place: paris

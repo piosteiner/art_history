@@ -2,3 +2,28 @@ public_id: 120806
 name: Louis Glatt
 given_name: Louis
 family_name: Glatt
+kind: person
+birth: 1885
+death: 1978
+wikidata_id: Q139176100
+metadata:
+  sources: [Wikidata Q139176100 (retrieved 2026-11-12)]
+identifiers:
+  gnd: "124342582"
+  viaf: "25533960"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q139176100
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/289948/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q139176100

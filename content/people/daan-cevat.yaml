@@ -2,3 +2,35 @@ public_id: 121150
 name: Daan Cevat
 given_name: Daan
 family_name: Cevat
+kind: person
+birth: 1913
+death: 1990
+wikidata_id: Q125144958
+metadata:
+  sources: [Wikidata Q125144958 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q125144958
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q125144958
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q125144958
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/413958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q125144958

@@ -7,25 +7,29 @@ kind: oil painting
 medium: oil on panel
 dimensions: [56.8, 84.5]
 institution: royal-museum-of-fine-arts-antwerp
+description_md: |-
+  [[artist/frans-francken-the-younger|Frans Francken the Younger]]'s painting shows works of art (artificialia) and natural objects (naturalia) in a Kunstkammer; it is dated 1618, painted on wood and measures 56.8 × 84.5 cm [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 61]]. It is in the [[institution/royal-museum-of-fine-arts-antwerp|Koninklijk Museum voor Schone Kunsten]] in Antwerp [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 61]].
+
+  In the lecture it followed a view of the Kunst- und Wunderkammer of Francesco Calzolari in Verona, published in Benedetto Ceruti's "Musaeum Francesco Calceolarii iun. Veronensis" (Verona 1622) [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 60]], and the [[artwork/kunstschrank-gustav-adolf-uppsala|Kunstschrank given to Gustav Adolf of Sweden]] [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 59]]. Together they illustrate the Kunstkammer whose microcosm, in Jeffrey Chipps Smith's words, was "reduced still further" in the cabinet, "becoming here a world inside of a single cabinet" [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 63]].
 sources:
   kind:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 11 (12.12.2024), Folie 60
+      locator: Sitzung 11 (12.12.2024), Folie 61
   medium:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 11 (12.12.2024), Folie 60
+      locator: Sitzung 11 (12.12.2024), Folie 61
   created:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 11 (12.12.2024), Folie 60
+      locator: Sitzung 11 (12.12.2024), Folie 61
   creator:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 11 (12.12.2024), Folie 60
+      locator: Sitzung 11 (12.12.2024), Folie 61
   dimensions:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 11 (12.12.2024), Folie 60
+      locator: Sitzung 11 (12.12.2024), Folie 61
   institution:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 11 (12.12.2024), Folie 60
+      locator: Sitzung 11 (12.12.2024), Folie 61
   title_status:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 11 (12.12.2024), Folie 60
+      locator: Sitzung 11 (12.12.2024), Folie 61

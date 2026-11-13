@@ -1,4 +1,4 @@
-public_id: 120688
+public_id: 121655
 title_lang: fr
 title: Natività
 names:
@@ -32,6 +32,8 @@ dimensions: [74.5, 56]
 institution: kunsthaus-zurich
 inventory_number: KS 60
 web_url: https://collection.kunsthaus.ch/de/collection/item/2632/
+on_loan: true
+on_loan_since: 1986
 wikidata_id: Q131587105
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Giovanni_Battista_Pittoni_-_Nativit%C3%A0_-_KS_60_-_Kunsthaus_Z%C3%BCrich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
@@ -39,24 +41,17 @@ images:
     license: Public domain
     credit: Giambattista Pittoni
 provenance:
-  - owner_label: unknown
+  - owner_label: Bonhams
+    acquired: 1975-04-10
+    ended: 1975-04-10
     place: london
-    label: Bonhams (Kunsthandel); 10.IV.1975; Lot 216
+    label: Lot 216
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2632/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner_label: unknown
+  - owner: person/david-koetser
     direct: true
-    label: David Koetser (Sammler/-in)
-    sources:
-      - url: https://collection.kunsthaus.ch/de/collection/item/2632/
-        source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-11-12
-  - owner_label: unknown
-    direct: true
-    place: zurich
-    label: Zürcher Kunstgesellschaft | Kunsthaus Zürich (Museum); ab 1986
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/2632/
         source: kunsthaus-zurich-sammlung-online
@@ -75,6 +70,10 @@ sources:
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12
   creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2632/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/2632/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-11-12

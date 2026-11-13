@@ -2,3 +2,44 @@ public_id: 120603
 name: Morton H. Bernath
 given_name: Morton H.
 family_name: Bernath
+kind: person
+birth: 1886
+death: 1965
+wikidata_id: Q61819733
+metadata:
+  sources: [Wikidata Q61819733 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q61819733
+  - type: born_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q61819733
+  - type: died_in
+    to: place/mexico-city
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q61819733
+identifiers:
+  gnd: "1055471928"
+  viaf: "89078380"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q61819733
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2406/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2406/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

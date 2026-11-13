@@ -2,3 +2,50 @@ public_id: 121186
 name: Pieter Coecke van Aelst
 given_name: Pieter Coecke
 family_name: van Aelst
+birth: 1502-08-24
+death: 1550-12-16
+wikidata_id: Q434006
+metadata:
+  sources: [Wikidata Q434006 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q434006
+  - type: died_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q434006
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-11-12
+        property: P937
+        wikidata: Q434006
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a5/Johannes_Wierix_%28Attr.%29_%E2%80%93_Portrait_of_Pieter_Coecke_van_Aelst.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Johannes_Wierix_(Attr.)_%E2%80%93_Portrait_of_Pieter_Coecke_van_Aelst.jpg
+    license: Public domain
+    credit: Attributed to Johannes Wierix
+identifiers:
+  bnf: "149625816"
+  gnd: "118676547"
+  idref: "104561246"
+  kulturnav: 19cf6dac-53ae-41f2-ad43-3eae8fd457e0
+  lc: n82239449
+  rkd: "17468"
+  ulan: "500115332"
+  viaf: "12575995"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q434006
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q434006

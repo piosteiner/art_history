@@ -1,2 +1,8 @@
 public_id: 121163
 name: Galerie Wilhelm Grosshennig
+place: dusseldorf
+sources:
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/428/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

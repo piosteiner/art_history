@@ -59,7 +59,7 @@ provenance:
       - url: https://collection.kunsthaus.ch/de/collection/item/2554/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner: institution/trude-fischer
+  - owner: person/trude-fischer
     role: dealer
     place: lucerne
     sources:

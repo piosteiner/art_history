@@ -1,2 +1,13 @@
 public_id: 114921
 name: Baroness Susan North
+birth: 1797
+death: 1884
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/10289/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

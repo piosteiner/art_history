@@ -2,3 +2,21 @@ public_id: 115586
 name: Adolph Rothermundt
 given_name: Adolph
 family_name: Rothermundt
+birth: 1846
+death: 1930
+relationships:
+  - type: died_in
+    to: place/dresden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2462/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2462/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2462/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

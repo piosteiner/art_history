@@ -2,4 +2,56 @@ public_id: 120565
 name: Jean Dollfus
 given_name: Jean
 family_name: Dollfus
+kind: person
+birth: 1823
+death: 1911
 wikidata_id: Q109289362
+metadata:
+  sources: [Wikidata Q109289362 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q109289362
+  - type: born_in
+    to: place/mulhouse
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/8th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q109289362
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d0/Dollfus%2C_Jean_%28Umbricht%29.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Dollfus,_Jean_(Umbricht).jpeg
+    license: Public domain
+    credit: Honoré Umbricht
+identifiers:
+  idref: "180895745"
+  ulan: "500437156"
+  viaf: "310754985"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q109289362
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2287/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

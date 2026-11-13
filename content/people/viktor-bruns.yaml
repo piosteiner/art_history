@@ -2,3 +2,21 @@ public_id: 121410
 name: Viktor Bruns
 given_name: Viktor
 family_name: Bruns
+birth: 1904
+death: 1996
+relationships:
+  - type: died_in
+    to: place/berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7086/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7086/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/7086/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

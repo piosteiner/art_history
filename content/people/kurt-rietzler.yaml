@@ -2,4 +2,41 @@ public_id: 120588
 name: Kurt Rietzler
 given_name: Kurt
 family_name: Rietzler
+kind: person
+birth: 1882
+death: 1955
 wikidata_id: Q93260847
+metadata:
+  sources: [Wikidata Q93260847 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  lc: no2008132703
+  viaf: "39198374"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q93260847
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q93260847
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

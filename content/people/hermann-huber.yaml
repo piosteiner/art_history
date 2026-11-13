@@ -2,4 +2,164 @@ public_id: 120726
 name: Hermann Huber
 given_name: Hermann
 family_name: Huber
+kind: person
+birth: 1888
+death: 1967
 wikidata_id: Q1611548
+metadata:
+  sources: [Wikidata Q1611548 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1611548
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1611548
+  - type: influenced_by
+    to: artist/andre-derain
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: movement/die-brucke
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: movement/fauvism
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: artist/ferdinand-hodler
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: movement/french-realism
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: person/friedrich-nietzsche
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: artist/hans-thoma
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: artist/hans-von-marees
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: artist/henri-matisse
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: artist/henry-fuseli
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: person/jean-jacques-rousseau
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: movement/les-nabis
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: artist/otto-meyer-amden
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: artist/paul-cezanne
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: artist/paul-gauguin
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: artist/pierre-auguste-renoir
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+  - type: influenced_by
+    to: artist/wilhelm-leibl
+    sources:
+      - accessed: 2026-11-12
+        property: P737
+        wikidata: Q1611548
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e9/Hermann_Huber_1888-1967_ca_1911.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hermann_Huber_1888-1967_ca_1911.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 14969535q
+  dome: "169"
+  gnd: "117535702"
+  hls: "022452"
+  lc: nr96014156
+  rkd: "40232"
+  sikart: "4022749"
+  ulan: "500017047"
+  viaf: "72173876"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q1611548
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2684/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2684/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

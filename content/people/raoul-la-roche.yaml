@@ -2,4 +2,55 @@ public_id: 120233
 name: Raoul La Roche
 given_name: Raoul
 family_name: La Roche
+kind: person
+birth: 1889
+death: 1965
 wikidata_id: Q3419112
+metadata:
+  sources: [Wikidata Q3419112 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q3419112
+  - type: born_in
+    to: place/basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6e/Raoul_La_Roche.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raoul_La_Roche.jpg
+    license: CC BY-SA 3.0
+    credit: Casa le roche
+identifiers:
+  bnf: 13747164t
+  dodis: P29476
+  gnd: 12045923X
+  hls: "030216"
+  idref: "066911109"
+  lc: n88052820
+  ulan: "500339574"
+  viaf: "32827792"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q3419112
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1506/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

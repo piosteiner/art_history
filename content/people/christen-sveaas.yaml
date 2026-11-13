@@ -2,3 +2,26 @@ public_id: 120335
 name: Christen Sveaas
 given_name: Christen
 family_name: Sveaas
+kind: person
+birth: 1956
+wikidata_id: Q5109161
+metadata:
+  sources: [Wikidata Q5109161 (retrieved 2026-11-12)]
+relationships:
+  - type: born_in
+    to: place/oslo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/178941/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  viaf: "223862471"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q5109161
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/178941/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

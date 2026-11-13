@@ -118,7 +118,7 @@ provenance:
         note: "Footnote: Feilchenfeldt 2014, S. 58: «Am 27. Februar 1951 schrieb Kurt Riezler an Walter Feilchenfeldt, dass er Manets grossformatiges Gemälde Rocheforts Flucht (Abb. S. 48) und das Blumenstilleben von Renoir gerne verkaufen würde. Beide Bilder schickte er kurze Zeit später an die Kunsthandlung Walter Feilchenfeldt, Zürich, in Kommission.»"
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner: person/walter-feilchenfeldt
+  - owner: institution/walter-feilchenfeldt-kunsthandel
     role: agent
     acquired: 1951-01-27
     ended: 1955-06-28

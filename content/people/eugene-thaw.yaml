@@ -10,6 +10,13 @@ death: 2018-01-03
 wikidata_id: Q53563347
 metadata:
   sources: [Wikidata Q53563347 (retrieved 2026-10-31)]
+relationships:
+  - type: born_in
+    to: place/new-york
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2448/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
 identifiers:
   bnf: 12187829w
   gnd: 11927079X

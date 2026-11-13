@@ -2,3 +2,62 @@ public_id: 121191
 name: Stanislaus August Poniatowski
 given_name: Stanislaus August
 family_name: Poniatowski
+names:
+  - kind: birth
+    lang: pl
+    role: alternative
+    text: Stanisław Antoni Poniatowski
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q54019
+kind: person
+birth: 1732
+death: 1798
+wikidata_id: Q54019
+metadata:
+  sources: [Wikidata Q54019 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q54019
+  - type: died_in
+    to: place/saint-petersburg
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q54019
+  - type: lived_in
+    to: place/saint-petersburg
+    sources:
+      - accessed: 2026-11-12
+        property: P551
+        wikidata: Q54019
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Marcello_Bacciarelli_-_Portrait_of_Stanislaus_Augustus_Poniatowski_in_Coronation_Robes_-_MNK_II-a-362_-_National_Museum_Krak%C3%B3w.jpg/1280px-Marcello_Bacciarelli_-_Portrait_of_Stanislaus_Augustus_Poniatowski_in_Coronation_Robes_-_MNK_II-a-362_-_National_Museum_Krak%C3%B3w.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Marcello_Bacciarelli_-_Portrait_of_Stanislaus_Augustus_Poniatowski_in_Coronation_Robes_-_MNK_II-a-362_-_National_Museum_Krak%C3%B3w.jpg
+    license: Public domain
+    credit: Marcello Bacciarelli
+identifiers:
+  bnf: 12032352m
+  gnd: "119095777"
+  idref: "028499913"
+  lc: n50053726
+  rkd: "434359"
+  ulan: "500098008"
+  viaf: "26221"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q54019
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/471/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

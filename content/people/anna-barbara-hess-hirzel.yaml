@@ -2,3 +2,14 @@ public_id: 120197
 name: Anna Barbara Hess-Hirzel
 given_name: Anna Barbara
 family_name: Hess-Hirzel
+birth: 1803
+death: 1888
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2269/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2269/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

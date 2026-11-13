@@ -2,4 +2,50 @@ public_id: 120196
 name: Johann Jakob Hess
 given_name: Johann Jakob
 family_name: Hess
+kind: person
+birth: 1791
+death: 1857
 wikidata_id: Q1694878
+metadata:
+  sources: [Wikidata Q1694878 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1694878
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/145/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/145/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/JohannJakobHess.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:JohannJakobHess.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "116768274"
+  hls: "007308"
+  viaf: "52450042"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q1694878
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/145/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/145/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -2,4 +2,47 @@ public_id: 120224
 name: Ulrich Wille
 given_name: Ulrich
 family_name: Wille
+kind: person
+birth: 1848
+death: 1925
 wikidata_id: Q116124
+metadata:
+  sources: [Wikidata Q116124 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q116124
+  - type: born_in
+    to: place/hamburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Ferdinand_Hodler_-_General_Ulrich_Wille_%28Kunstmuseum_Bern%29.jpg/1280px-Ferdinand_Hodler_-_General_Ulrich_Wille_%28Kunstmuseum_Bern%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_General_Ulrich_Wille_(Kunstmuseum_Bern).jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+identifiers:
+  dodis: P22314
+  gnd: "118633198"
+  hls: "024433"
+  idref: 07925957X
+  lc: no2003114684
+  viaf: "47555197"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q116124
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1487/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

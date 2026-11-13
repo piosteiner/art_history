@@ -2,4 +2,46 @@ public_id: 120493
 name: Cornelis Johannes Karel van Aalst
 given_name: Cornelis Johannes Karel
 family_name: van Aalst
+kind: person
+birth: 1866
+death: 1939
 wikidata_id: Q2237728
+metadata:
+  sources: [Wikidata Q2237728 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2237728
+  - type: died_in
+    to: place/hoevelaken
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Cornelis_Johannes_Karel_van_Aalst_%281912%29.jpg/1280px-Cornelis_Johannes_Karel_van_Aalst_%281912%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cornelis_Johannes_Karel_van_Aalst_(1912).jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "1053542860"
+  lc: n2014049681
+  rkd: "336706"
+  ulan: "500360049"
+  viaf: "5295055"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q2237728
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

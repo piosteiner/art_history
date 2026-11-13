@@ -2,3 +2,50 @@ public_id: 120548
 name: Sigfried Giedion
 given_name: Sigfried
 family_name: Giedion
+kind: person
+birth: 1888
+death: 1968
+wikidata_id: Q123143
+metadata:
+  sources: [Wikidata Q123143 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q123143
+  - type: born_in
+    to: place/prague
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2255/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2255/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  bnf: 11904858b
+  gnd: "118921703"
+  hls: "031360"
+  idref: "026890704"
+  lc: n84186726
+  rkd: "389854"
+  ulan: "500045674"
+  viaf: "64006335"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q123143
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2255/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2255/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

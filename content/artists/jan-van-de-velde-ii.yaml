@@ -2,3 +2,39 @@ public_id: 121463
 name: Jan van de Velde (II)
 given_name: Jan van de Velde
 family_name: (II)
+birth: 1593
+death: 1641-11-01
+wikidata_id: Q473684
+metadata:
+  sources: [Wikidata Q473684 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q473684
+  - type: born_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q473684
+identifiers:
+  bnf: 12489608c
+  gnd: "118767909"
+  idref: "119995344"
+  kulturnav: 39e8d7c6-cb6a-4635-a5a2-7e9316a98535
+  lc: nr97028048
+  rkd: "79783"
+  ulan: "500115398"
+  viaf: "10641780"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q473684
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q473684

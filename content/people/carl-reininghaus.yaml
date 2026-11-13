@@ -6,6 +6,7 @@ names:
   - lang: ru
     role: translation
     text: Карл Райнингхаус
+  - Carl von Reininghaus
 kind: person
 occupations: [entrepreneur, art collector]
 birth: 1857-02-11
@@ -13,6 +14,19 @@ death: 1929-10-29
 wikidata_id: Q1040189
 metadata:
   sources: [Wikidata Q1040189 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/graz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1543/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Schiele_-_Bildnis_Carl_Reininghaus_-_1910.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Schiele_-_Bildnis_Carl_Reininghaus_-_1910.jpg

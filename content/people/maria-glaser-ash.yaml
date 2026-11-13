@@ -2,3 +2,14 @@ public_id: 120480
 name: Maria Glaser-Ash
 given_name: Maria
 family_name: Glaser-Ash
+birth: 1901
+death: 1981
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2018/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

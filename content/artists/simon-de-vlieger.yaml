@@ -2,3 +2,43 @@ public_id: 121539
 name: Simon de Vlieger
 given_name: Simon
 family_name: de Vlieger
+birth: 1601
+death: 1653-03-13
+wikidata_id: Q1093129
+metadata:
+  sources: [Wikidata Q1093129 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q1093129
+  - type: born_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q1093129
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Simon_de_Vlieger_-_Thunderstorm_off_the_Coast.jpg/1280px-Simon_de_Vlieger_-_Thunderstorm_off_the_Coast.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Simon_de_Vlieger_-_Thunderstorm_off_the_Coast.jpg
+    license: Public domain
+    credit: Simon de Vlieger
+identifiers:
+  bnf: 14967596f
+  gnd: "118805568"
+  kulturnav: 58653334-aa0c-432d-83dd-efb33479f8ae
+  lc: n89665561
+  rkd: "81451"
+  ulan: "500002742"
+  viaf: "77929789"
+sources:
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q1093129
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q1093129

@@ -2,3 +2,27 @@ public_id: 120974
 name: Désirée Justinienne Pulchérie Marie Vuillard
 given_name: Désirée Justinienne Pulchérie Marie
 family_name: Vuillard
+birth: 1861
+death: 1948
+relationships:
+  - type: born_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3378/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

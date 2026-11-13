@@ -8,26 +8,29 @@ kind: relief
 medium: Bronze
 materials: [bronze]
 institution: hildesheim-cathedral
-description_md: "Rechter Flügel. Gegenüber: Sündenfall."
+description_md: |-
+  The sixth field from the bottom on the right leaf of the [[artwork/bernwardstur|Bernward door]] (around 1015) shows the Crucifixion.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 47]] The lecture paired it with the Fall on the opposite leaf and set the cross, the wood of life, against the tree of knowledge.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 50]][[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 54]][[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 55]] The opposed trees were central to the lecture's reading of the door, whose themes it summarised as trees and doors – the door leaves as gates of paradise.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 27]]
+
+  Ittai Weinryb reads the door's trees, after Harvey Stahl and Isabelle Marchesin, as visual cues to the elements of the biblical and Christological narrative that mattered to medieval viewers, and the pairing of loss and survival through the Fall and the Incarnation as a counterpart to the forests that Slavic belief held sacred.[[source/weinryb-2023-die-hildesheimer-avantgarde|p. 104]]
 sources:
   kind:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 47
   medium:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 47
   parent:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 47
   created:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 47
   materials:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 47
   institution:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 47
   title_status:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 21
+      locator: Sitzung 5 (31.10.2024), Folie 47

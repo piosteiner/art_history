@@ -2,3 +2,32 @@ public_id: 121297
 name: Fernando Garzoni
 given_name: Fernando
 family_name: Garzoni
+kind: person
+birth: 1926
+death: 1996
+wikidata_id: Q94856461
+metadata:
+  sources: [Wikidata Q94856461 (retrieved 2026-11-12)]
+identifiers:
+  gnd: "123149673"
+  lc: n81078715
+  viaf: "37818282"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q94856461
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q94856461
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/5956/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q94856461

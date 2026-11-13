@@ -1,11 +1,21 @@
 public_id: 116855
 name: Lucerne Auction of Degenerate Art
 kind: auction
-period: 1939-06
+period: 1939-06-30
 place: lucerne
-description_md: The sale of "degenerate art" from German museums at the [[institution/galerie-fischer]] in Lucerne; [[person/emil-georg-buhrle]] bid there, unsuccessfully, for a self-portrait by Van Gogh [[source/buehrle-ch-the-collection]]. See [[degenerate-art]].
+description_md: |-
+  The sale of "degenerate art" from German museums at the [[institution/galerie-fischer]] in Lucerne; [[person/emil-georg-buhrle]] bid there, unsuccessfully, for a self-portrait by Van Gogh [[source/buehrle-ch-the-collection]]. See [[degenerate-art]].
+
+  The auction was held by [[person/theodor-fischer|Theodor Fischer]] at the Grand Hôtel National on 30 June 1939, as part of the "Verwertungsaktion" — the attempt by a commission under [[person/joseph-goebbels|Goebbels]], set up under the law of 31 May 1938, to turn the works confiscated from German museums into foreign currency.[[source/peters-2017|pp. 26, 28]] 125 works were offered. French art above all — [[artist/paul-gauguin|Gauguin]], [[artist/vincent-van-gogh|Van Gogh]], [[artist/pablo-picasso|Picasso]] — fetched good prices, while some German works went cheaply, the market for German art barely existing at the time; buyers were assured that the proceeds would under no circumstances go to rearmament. By far the most expensive lot was Van Gogh's self-portrait, at 175,000 Swiss francs.[[source/peters-2017|pp. 28–29]] Dealers from many Western countries came; one commentator noted "the gleeful atmosphere of a shooting match".[[source/hermand-1994|p. 40]] Three months earlier, in March 1939, 1,004 paintings and 3,825 works on paper had been burned in Berlin.[[source/hermand-1994|p. 40]]
+
+  The sale closed a circle: in the Vinnen dispute of 1911 Van Gogh had been the symbol of the French art that German museums supposedly preferred; now his painting raised currency as a symbol of the decay that had entered German museums from 1910.[[source/peters-2017|p. 29]] The "Verwertungsaktion" officially ended in 1941.[[source/peters-2017|p. 29]]
 relationships:
   - type: concerns
     to: person/emil-georg-buhrle
   - type: concerns
     to: institution/galerie-fischer
+sources:
+  period:
+    - source: peters-2017
+      locator: p. 28, fig. 6
+      accessed: 2026-11-12

@@ -2,4 +2,46 @@ public_id: 120878
 name: Johan Steengracht van Oostkapelle
 given_name: Johan Steengracht
 family_name: van Oostkapelle
+kind: person
+birth: 1782
+death: 1846
 wikidata_id: Q2387328
+metadata:
+  sources: [Wikidata Q2387328 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q2387328
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a9/Johan_Steengracht_van_Oostcapelle_%281782-1846%29.png
+    source_url: https://commons.wikimedia.org/wiki/File:Johan_Steengracht_van_Oostcapelle_(1782-1846).png
+    license: Public domain
+    credit: Christiaan van Geelen
+identifiers:
+  bnf: 10694711m
+  gnd: "1013355768"
+  rkd: "426317"
+  ulan: "500326422"
+  viaf: "289283460"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q2387328
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

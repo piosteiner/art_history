@@ -2,4 +2,53 @@ public_id: 121625
 name: Claude Terrasse
 given_name: Claude
 family_name: Terrasse
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Claude Jean André Charles François Terrasse
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q133796355
+kind: person
+birth: 1925
+death: 2008
 wikidata_id: Q133796355
+metadata:
+  sources: [Wikidata Q133796355 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q133796355
+  - type: born_in
+    to: place/chamonix-mont-blanc
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q133796355
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/979/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  bnf: 15842369b
+  lc: nr96019982
+  viaf: "71728519"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q133796355
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/979/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -1,2 +1,8 @@
 public_id: 120600
 name: Master of the Munich Marian altarpiece
+active: c. 1450
+sources:
+  active:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2406/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

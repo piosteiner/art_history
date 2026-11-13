@@ -10,6 +10,13 @@ death: 1971-11-24
 wikidata_id: Q1358414
 metadata:
   sources: [Wikidata Q1358414 (retrieved 2026-11-02)]
+relationships:
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3368/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
 identifiers:
   dodis: P23048
   gnd: "118540106"

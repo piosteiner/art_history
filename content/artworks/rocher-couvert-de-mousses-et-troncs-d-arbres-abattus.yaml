@@ -41,7 +41,7 @@ provenance:
       - url: https://collection.kunsthaus.ch/de/collection/item/289948/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner: person/arthur-calame
+  - owner: artist/arthur-calame
     acquired: 1907
     ended: 1907
     method: inheritance

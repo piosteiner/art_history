@@ -2,3 +2,41 @@ public_id: 121029
 name: Karl Groos
 given_name: Karl
 family_name: Groos
+kind: person
+birth: 1861
+death: 1946
+wikidata_id: Q77521
+metadata:
+  sources: [Wikidata Q77521 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q77521
+  - type: born_in
+    to: place/heidelberg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3524/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+identifiers:
+  bnf: "126706895"
+  gnd: "116865865"
+  idref: "081234740"
+  lc: no98108810
+  viaf: "775054"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q77521
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3524/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3524/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

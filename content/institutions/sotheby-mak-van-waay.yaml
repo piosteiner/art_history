@@ -1,3 +1,26 @@
 public_id: 120495
 name: Sotheby Mak van Waay
+kind: auction house
+place: amsterdam
 wikidata_id: Q73900988
+metadata:
+  sources: [Wikidata Q73900988 (retrieved 2026-11-12)]
+relationships:
+  - type: part_of
+    to: institution/sotheby-s
+    sources:
+      - accessed: 2026-11-12
+        property: P361
+        wikidata: Q73900988
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q73900988
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2062/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q73900988

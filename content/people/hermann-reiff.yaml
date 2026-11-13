@@ -2,4 +2,31 @@ public_id: 120725
 name: Hermann Reiff
 given_name: Hermann
 family_name: Reiff
+kind: person
+birth: 1856
+death: 1938
 wikidata_id: Q94859077
+metadata:
+  sources: [Wikidata Q94859077 (retrieved 2026-11-12)]
+identifiers:
+  gnd: "116403829"
+  viaf: "67216213"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q94859077
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2684/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q94859077
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2684/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q94859077

@@ -2,4 +2,32 @@ public_id: 120798
 name: Eduard Guyer-Freuler
 given_name: Eduard
 family_name: Guyer-Freuler
+kind: person
+birth: 1839
+death: 1905
 wikidata_id: Q72049175
+metadata:
+  sources: [Wikidata Q72049175 (retrieved 2026-11-12)]
+identifiers:
+  gnd: "1089354231"
+  idref: "241423473"
+  viaf: "305135760"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q72049175
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q72049175
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2865/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q72049175

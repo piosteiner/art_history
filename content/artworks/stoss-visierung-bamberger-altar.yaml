@@ -8,6 +8,10 @@ medium: Federzeichnung, Papier
 materials: [paper]
 dimensions: [45, 33]
 institution: jagiellonian-university-museum
+description_md: |-
+  [[artist/veit-stoss|Veit Stoss]]'s design drawing (Visierung) for the high altarpiece of the Carmelite church of the Assumption of the Virgin in Nuremberg, 1520; pen and ink on paper, 45 × 33 cm, now in the Jagiellonian University Museum (Collegium Maius), Kraków.[[source/ganz-2024-aus-dem-wald|Sitzung 8 (21.11.2024), Folie 101]] Wikipedia lists it as a presentation drawing, one of his rare two-dimensional works.[[source/wikipedia-de-veit-stoss|§ Zweidimensionale Werke]]
+
+  The altarpiece itself, commissioned in 1520 by Stoss's son Andreas, prior of the Carmelites, and finished in 1523, is now in Bamberg Cathedral; its left wing and crowning are lost, so the drawing records parts of the design that no longer survive.[[source/ganz-2024-aus-dem-wald|Sitzung 8 (21.11.2024), Folie 100–101]][[source/wikipedia-de-veit-stoss|§ Nürnberg]] Carvers usually applied for such commissions with a presentation drawing of this kind.[[source/wikipedia-de-tilman-riemenschneider|§ Aufträge und Auftraggeber]]
 relationships:
   - type: design_for
     to: artwork/bamberger-altar-veit-stoss

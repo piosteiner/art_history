@@ -85,6 +85,7 @@ provenance:
         number: "18"
         document: Kunsthandlung Würthle, Katalog zu „Egon Schiele“
   - owner: person/friedrich-welz
+    role: possessor
     acquired: 1939
     ended: 1944
     method: theft

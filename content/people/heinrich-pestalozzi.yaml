@@ -2,3 +2,51 @@ public_id: 121623
 name: Heinrich Pestalozzi
 given_name: Heinrich
 family_name: Pestalozzi
+kind: person
+birth: 1790
+death: 1857
+wikidata_id: Q99932403
+metadata:
+  sources: [Wikidata Q99932403 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q99932403
+  - type: born_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/971/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Heinrich_Pestalozzi_Ingenieur.jpg/1280px-Heinrich_Pestalozzi_Ingenieur.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Heinrich_Pestalozzi_Ingenieur.jpg
+    license: Public domain
+    credit: "Titel: Heinrich Pestalozzi Oberst : geb. 25. September 1790. gest. 9. August 1857 / C. F. Irminger lith. nach der Masque Autor, Beteiligte: Irminger, Karl Friedrich [1813-1863] Impressum: Zürich : Druck v. Ruff u. Hofer, [nach 1857?] Umfang: 1 Druckgrafik : Kreidelithographie auf Chine collé ; 24,4 x 20,4 cm Besitzende Institution: Zentralbibliothek Zürich, Pestalozzi, Heinrich (b) I, 1 DOI: https://doi.org/10.3931/e-rara-48778"
+identifiers:
+  dodis: P32645
+  gnd: "172305403"
+  hls: "019908"
+  viaf: "95204057"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q99932403
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/971/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

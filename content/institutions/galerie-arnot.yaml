@@ -1,3 +1,42 @@
 public_id: 121134
 name: Galerie Arnot
+kind: gallery
+founded: 1909
+dissolved: 1928
+place: vienna
+location: [16.37327, 48.20183]
+address: Vienna, Kärntnerstrasse 15.Paris, 1-3 rue Lafitte
 wikidata_id: Q113495765
+metadata:
+  sources: [Wikidata Q113495765 (retrieved 2026-11-12)]
+identifiers:
+  gnd: 16074554-8
+  viaf: "122732683"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q113495765
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/409/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q113495765
+  address:
+    - accessed: 2026-11-12
+      property: P6375
+      wikidata: Q113495765
+  founded:
+    - accessed: 2026-11-12
+      property: P571
+      wikidata: Q113495765
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q113495765
+  dissolved:
+    - accessed: 2026-11-12
+      property: P576
+      wikidata: Q113495765

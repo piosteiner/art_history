@@ -2,3 +2,14 @@ public_id: 120880
 name: Cornelie van Pallandt
 given_name: Cornelie
 family_name: van Pallandt
+birth: 1840
+death: 1923
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3084/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

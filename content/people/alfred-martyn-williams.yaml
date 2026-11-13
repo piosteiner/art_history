@@ -2,4 +2,41 @@ public_id: 120455
 name: Alfred Martyn Williams
 given_name: Alfred Martyn
 family_name: Williams
+kind: person
+birth: 1897
+death: 1985
 wikidata_id: Q26265403
+metadata:
+  sources: [Wikidata Q26265403 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q26265403
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q26265403
+  - type: born_in
+    to: place/cornwall
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q26265403
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

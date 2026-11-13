@@ -61,11 +61,12 @@ provenance:
         note: "Footnote: Wie oben Fussnote 2."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
-  - owner: institution/genossenschaft-zum-baugarten-und-ein-ungenannter-gonner
+  - owner: institution/genossenschaft-zum-baugarten
     acquired: 1991
     ended: 1991
     method: purchase
     direct: true
+    label: and an anonymous patron («und ein ungenannter Gönner»)
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/1209/
         note: "Footnote: Wie oben Fussnote 2."

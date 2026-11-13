@@ -2,3 +2,21 @@ public_id: 120156
 name: Hans Schuler
 given_name: Hans
 family_name: Schuler
+birth: 1869
+death: 1920
+relationships:
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

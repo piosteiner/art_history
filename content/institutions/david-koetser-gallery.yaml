@@ -1,3 +1,34 @@
 public_id: 120841
 name: David Koetser Gallery
+kind: gallery
+founded: 1967
+place: zurich
+location: [8.53745, 47.36954]
+address: Talstrasse 37 8001 Zürich
 wikidata_id: Q72854695
+metadata:
+  sources: [Wikidata Q72854695 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q72854695
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/302/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+    - accessed: 2026-11-12
+      property: P131
+      wikidata: Q72854695
+  address:
+    - accessed: 2026-11-12
+      property: P6375
+      wikidata: Q72854695
+  founded:
+    - accessed: 2026-11-12
+      property: P571
+      wikidata: Q72854695
+  location:
+    - accessed: 2026-11-12
+      property: P625
+      wikidata: Q72854695

@@ -4,8 +4,59 @@ names:
   - lang: ja
     role: original
     text: 十七代目市村羽左衛門
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q11480517
+  - lang: ja
+    role: translation
+    text: 十七代目 市村羽左衛門
+    sources:
+      - accessed: 2026-11-12
+        wikidata: Q11480517
+kind: person
 occupations: [kabuki actor]
+birth: 1916-07-11
+death: 2001-07-08
+wikidata_id: Q11480517
+metadata:
+  sources: [Wikidata Q11480517 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q11480517
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q11480517
+  - type: born_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q11480517
+identifiers:
+  lc: n97878906
+  viaf: "68234462"
 sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q11480517
+  birth:
+    - accessed: 2026-11-12
+      property: P569
+      wikidata: Q11480517
+  death:
+    - accessed: 2026-11-12
+      property: P570
+      wikidata: Q11480517
   occupations:
     - source: british-museum-1992-1217-0-9
       accessed: 2026-11-06

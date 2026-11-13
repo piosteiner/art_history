@@ -2,4 +2,50 @@ public_id: 120611
 name: Himan Brown
 given_name: Himan
 family_name: Brown
+kind: person
+birth: 1910
+death: 2010
 wikidata_id: Q5765075
+metadata:
+  sources: [Wikidata Q5765075 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q5765075
+  - type: born_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q5765075
+  - type: died_in
+    to: place/new-york
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q5765075
+identifiers:
+  gnd: "121112659"
+  viaf: "187186611"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q5765075
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2433/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

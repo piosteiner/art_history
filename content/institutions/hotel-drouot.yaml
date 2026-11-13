@@ -1,5 +1,6 @@
 public_id: 100300
 name: Hôtel Drouot
+names: [Hôtel de Ventes]
 kind: auction house
 founded: 1852
 place: paris
@@ -25,6 +26,9 @@ sources:
     - accessed: 2026-10-28
       property: P131
       wikidata: Q3145483
+    - url: https://collection.kunsthaus.ch/de/collection/item/2698/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
   address:
     - accessed: 2026-10-28
       property: P6375

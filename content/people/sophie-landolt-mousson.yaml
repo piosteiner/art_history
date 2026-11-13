@@ -2,3 +2,21 @@ public_id: 121068
 name: Sophie Landolt-Mousson
 given_name: Sophie
 family_name: Landolt-Mousson
+birth: 1833
+death: 1917
+relationships:
+  - type: born_in
+    to: place/bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3665/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3665/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3665/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

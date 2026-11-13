@@ -2,4 +2,47 @@ public_id: 121628
 name: Conrad Rahn-Escher
 given_name: Conrad
 family_name: Rahn-Escher
+kind: person
+birth: 1802
+death: 1881
 wikidata_id: Q60845664
+metadata:
+  sources: [Wikidata Q60845664 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q60845664
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q60845664
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q60845664
+identifiers:
+  gnd: "116324945"
+  hls: "013512"
+  idref: "137620225"
+  lc: no98121498
+  viaf: "59833030"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q60845664
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/983/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/983/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

@@ -15,6 +15,12 @@ relationships:
       - accessed: 2026-11-04
         property: P27
         wikidata: Q947522
+  - type: born_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1448/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
   - type: died_in
     to: place/paris
     sources:

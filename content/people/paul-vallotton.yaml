@@ -2,3 +2,21 @@ public_id: 112257
 name: Paul Vallotton
 given_name: Paul
 family_name: Vallotton
+birth: 1864
+death: 1936
+relationships:
+  - type: born_in
+    to: place/lausanne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2594/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2594/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2594/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

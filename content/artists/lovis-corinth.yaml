@@ -83,6 +83,12 @@ relationships:
       - accessed: 2026-11-03
         property: P737
         wikidata: Q157610
+  - type: student_of
+    to: artist/franz-von-defregger
+    sources:
+      - accessed: 2026-11-12
+        property: P802
+        wikidata: Q78711
   - type: studied_at
     to: institution/academy-of-fine-arts-munich
     sources:

@@ -9,7 +9,12 @@ kind: sculpture
 medium: Zirbelkiefer, originale Fassung
 dimensions: [386]
 institution: pfarrkirche-st-wolfgang
-description_md: "Der Schrein der zweiten Wandlung: die Krönung Mariens."
+description_md: |-
+  The central shrine of [[artist/michael-pacher|Michael Pacher]]'s high altarpiece at St. Wolfgang im Salzkammergut (1471–81), visible on the feast-day side: the Coronation of the Virgin.[[source/ganz-2024-aus-dem-wald|Sitzung 8 (21.11.2024), Folie 74]] The shrine is 3.86 m high and 97 cm deep; its sculpture is carved in Swiss stone pine and keeps its original painting and gilding.[[source/ganz-2024-aus-dem-wald|Sitzung 8 (21.11.2024), Folie 68]]
+
+  In the richly gilded shrine the crowned Virgin kneels before her Son, who blesses her; they are surrounded by sixteen angels, some making music, others holding precious cloths and robes, and the dove of the Holy Spirit hovers above them.[[source/wikipedia-de-pacher-altar-st-wolfgang|§ Der Hauptschrein]] A Coronation by Christ in the presence of the Holy Spirit but without God the Father is without precedent: normally either Christ or God the Father crowns her, or she is crowned before the whole Trinity.[[source/wikipedia-de-pacher-altar-st-wolfgang|§ Der Hauptschrein]] The large side figures are Saint Wolfgang and Saint Benedict, and a border of small carved figures of prophets and Old Testament ancestors of Christ frames the shrine.[[source/wikipedia-de-pacher-altar-st-wolfgang|§ Der Hauptschrein]] The paintings of the inner wings lead up to the scene: above the dying Virgin, Christ appears to take his mother into heaven, and her coronation follows in the shrine.[[source/wikipedia-de-pacher-altar-st-wolfgang|§ Die Flügel]]
+
+  Only a small part of the shrine's carving is painted in colours; most of it is gilded.[[source/wikipedia-de-pacher-altar-st-wolfgang|§ introduction]]
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/9e/Sankt_Wolfgang_Kirche_-_Pacheraltar_Schrein_5.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Sankt_Wolfgang_Kirche_-_Pacheraltar_Schrein_5.jpg
@@ -18,22 +23,22 @@ images:
 sources:
   kind:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 30
+      locator: Sitzung 8 (21.11.2024), Folie 74
   medium:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 30
+      locator: Sitzung 8 (21.11.2024), Folie 74
   parent:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 30
+      locator: Sitzung 8 (21.11.2024), Folie 74
   created:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 30
+      locator: Sitzung 8 (21.11.2024), Folie 74
   creator:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 30
+      locator: Sitzung 8 (21.11.2024), Folie 74
   dimensions:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 30
+      locator: Sitzung 8 (21.11.2024), Folie 74
   title_status:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 30
+      locator: Sitzung 8 (21.11.2024), Folie 74

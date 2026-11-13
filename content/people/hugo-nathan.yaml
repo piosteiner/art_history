@@ -7,3 +7,16 @@ birth: 1861
 death: 1922
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18)]
+relationships:
+  - type: born_in
+    to: place/frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+  - type: died_in
+    to: place/frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2561/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12

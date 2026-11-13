@@ -2,3 +2,47 @@ public_id: 121545
 name: Jakob Bosshart
 given_name: Jakob
 family_name: Bosshart
+kind: person
+birth: 1862
+death: 1924
+wikidata_id: Q117227
+metadata:
+  sources: [Wikidata Q117227 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q117227
+  - type: died_in
+    to: place/davos
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q117227
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2b/Ernst_Ludwig_Kirchner_Kopf_Bosshart.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ernst_Ludwig_Kirchner_Kopf_Bosshart.jpg
+    license: Public domain
+    credit: Ernst Ludwig Kirchner
+identifiers:
+  bnf: 12520142x
+  gnd: "118893017"
+  hls: "011589"
+  idref: "030706963"
+  lc: no90024607
+  viaf: "64113465"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q117227
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/784/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/784/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

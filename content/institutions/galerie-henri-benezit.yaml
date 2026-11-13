@@ -1,3 +1,20 @@
 public_id: 121014
 name: Galerie Henri Benezit
+kind: gallery
+place: paris
 wikidata_id: Q97621190
+metadata:
+  sources: [Wikidata Q97621190 (retrieved 2026-11-12)]
+identifiers:
+  idref: "026441454"
+  ulan: "500448994"
+  viaf: "127400309"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q97621190
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3484/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

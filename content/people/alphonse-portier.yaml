@@ -2,3 +2,22 @@ public_id: 120584
 name: Alphonse Portier
 given_name: Alphonse
 family_name: Portier
+kind: person
+birth: 1841
+death: 1902
+wikidata_id: Q136388639
+metadata:
+  sources: [Wikidata Q136388639 (retrieved 2026-11-12)]
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q136388639
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2362/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

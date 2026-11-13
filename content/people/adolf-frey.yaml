@@ -2,4 +2,47 @@ public_id: 120965
 name: Adolf Frey
 given_name: Adolf
 family_name: Frey
+kind: person
+birth: 1855
+death: 1920
 wikidata_id: Q124151
+metadata:
+  sources: [Wikidata Q124151 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q124151
+  - type: died_in
+    to: place/zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3344/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/%28UAZ%29_AB.1.0277_Frey.tif/lossless-page1-1280px-%28UAZ%29_AB.1.0277_Frey.tif.png
+    source_url: https://commons.wikimedia.org/wiki/File:(UAZ)_AB.1.0277_Frey.tif
+    license: Public domain
+    credit: Franz Schmelhaus, Zürich
+identifiers:
+  bnf: 12414671g
+  gnd: "116782544"
+  hls: "011796"
+  idref: "033262764"
+  lc: no92033205
+  viaf: "19766062"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q124151
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3344/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12

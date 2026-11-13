@@ -9,7 +9,10 @@ kind: sculpture
 medium: Zirbelkiefer, originale Fassung
 dimensions: [584]
 institution: pfarrkirche-st-wolfgang
-description_md: Das Gesprenge über dem Schrein; die Gesamthöhe des Altars beträgt 10,88 m.
+description_md: |-
+  The superstructure (Gesprenge) above the shrine of [[artist/michael-pacher|Michael Pacher]]'s high altarpiece at St. Wolfgang im Salzkammergut (1471–81); it is 5.84 m high, of Swiss stone pine with its original painting, and the whole altarpiece is 10.88 m high.[[source/ganz-2024-aus-dem-wald|Sitzung 8 (21.11.2024), Folie 68]]
+
+  It is built of five two-storey canopy towers holding ten carved figures: at the top in the centre God the Father; below him the Annunciation with the Archangel Gabriel and Mary; below that Christ on the cross between Mary and John the Evangelist; on the left the Archangel Michael as vanquisher of the devil and weigher of souls, above him a holy nun, perhaps Scholastica; on the right John the Baptist, above him Saint Odile.[[source/wikipedia-de-pacher-altar-st-wolfgang|§ Das Gesprenge]] Originally the altarpiece was 11.50 m high from the altar table to the top, but the top had to be shortened by about 60 cm when it was set up.[[source/wikipedia-de-pacher-altar-st-wolfgang|§ Beschreibung]]
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e6/Sankt_Wolfgang_Kirche_-_Pacheraltar_Gesprenge_2.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Sankt_Wolfgang_Kirche_-_Pacheraltar_Gesprenge_2.jpg
@@ -18,22 +21,22 @@ images:
 sources:
   kind:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 36
+      locator: Sitzung 8 (21.11.2024), Folie 68
   medium:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 36
+      locator: Sitzung 8 (21.11.2024), Folie 68
   parent:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 36
+      locator: Sitzung 8 (21.11.2024), Folie 68
   created:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 36
+      locator: Sitzung 8 (21.11.2024), Folie 68
   creator:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 36
+      locator: Sitzung 8 (21.11.2024), Folie 68
   dimensions:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 36
+      locator: Sitzung 8 (21.11.2024), Folie 68
   title_status:
     - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 8 (21.11.2024), Folie 36
+      locator: Sitzung 8 (21.11.2024), Folie 68

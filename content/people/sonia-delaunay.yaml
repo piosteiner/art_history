@@ -2,3 +2,68 @@ public_id: 120175
 name: Sonia Delaunay
 given_name: Sonia
 family_name: Delaunay
+kind: person
+birth: 1885
+death: 1979
+wikidata_id: Q232972
+metadata:
+  sources: [Wikidata Q232972 (retrieved 2026-11-12)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q232972
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-11-12
+        property: P27
+        wikidata: Q232972
+  - type: born_in
+    to: place/odesa
+    sources:
+      - accessed: 2026-11-12
+        property: P19
+        wikidata: Q232972
+  - type: died_in
+    to: place/7th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-11-12
+        property: P20
+        wikidata: Q232972
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/138/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Sonia_Delaunay_portrait_photograph.jpg/1280px-Sonia_Delaunay_portrait_photograph.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sonia_Delaunay_portrait_photograph.jpg
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  bnf: "118992635"
+  dome: "80"
+  gnd: 11852450X
+  idref: "026819716"
+  kulturnav: f682305d-8593-40de-8030-b3b3269ad19b
+  lc: n80010306
+  rkd: "21633"
+  ulan: "500115510"
+  viaf: "12307152"
+sources:
+  kind:
+    - accessed: 2026-11-12
+      property: P31
+      wikidata: Q232972
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/138/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/138/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-12
