@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: L. Schünzel's copy of Courbet's *Steinklopfer*; the Dresden original a war loss; Lissitzky's *New Man*
+- **What:** (data only, audited) new: *Die Steinklopfer (Kopie nach Gustave Courbet)*, L. Schünzel 1926/27, Albertinum
+  Inv.-Nr. 89/30 (source `skd-online-collection-189729`; no picture — rights reserved), `copy_after` the Dresden
+  picture, named in the group and the Dresden text; new entries Albertinum (Q699780) and the artist L. Schünzel (no
+  first name or dates known). The Dresden *Stone Breakers*: fate lost 1944/45 ("Kriegsverlust", Deutsche Fotothek via
+  the DDB; destroyed Feb. 1945 or missing since 1944 per Raskin), cited. Lissitzky, *New Man (Neuer)*: designed
+  1920–21 (field `conceived`), published 1923; Brooklyn impression's paper and sizes; a section on Vitebsk,
+  Suprematism and Proun; the artist's biography extended — new source Wye 2004 (*Artists and Prints*, MoMA; the
+  text of MoMA's object page 88312).
+- **Why / Revert:** owner's requests; the entries' history pages.
+
 ### Fix: the test environment's nightly reset (failed every night since 2026-11-06) · e2e ports · DDB on "Enrich"
 - **What:** `scripts/test-env.sh` empties `study_set_snapshots` (229) with the other private tables — the TRUNCATE of
   `study_sets` failed on its foreign key, the script stopped with `arthistory-test` already stopped, so the test
