@@ -2,6 +2,22 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-13
+
+### Content: Courbet, *Die Steinklopfer* (Winterthur) and the Deutsche Digitale Bibliothek
+- **What:** (data only, audited) new from Wikidata Q91932358 with the record of bundessammlungen.ch (item 11334, new
+  source `bundessammlungen-sor1923-15`) and the Römerholz page: the Winterthur version (SOR1923.15, c. 1849, 56 × 65 cm,
+  public-domain picture), its provenance in 11 steps with lot numbers (Paris 1855 → Mazaroz-Ribalier → "M. B." →
+  Bernheim-Jeune → Blanquet de Fulde → Wilhelm Hansen → Oskar Reinhart 1923 → Swiss Confederation 1958/1965),
+  literature, a cited text; new entries Sammlung Oskar Reinhart «Am Römerholz» (Q682406) and Oskar Reinhart
+  (Q120588, `founded` the collection); a group of versions *Les Casseurs de pierres* (Dresden = 1, Winterthur = 2) and
+  the Dresden text linking it (dimensions: Wikipedia 56 × 85, the collection 56 × 65 cm). The source
+  `deutsche-digitale-bibliothek-de` (created by the owner that morning) named "Deutsche Digitale Bibliothek";
+  rows for the DDB and the Bundessammlungen added to the owner's unpublished draft of the documentation chapter
+  "Inhalte erfassen" (portal tables) — live after the owner publishes.
+- **Why:** owner's requests.
+- **Revert:** the entries' history pages; remove the two rows from the draft.
+
 ## 2026-11-12
 
 ### Content: completion round 4 — the lecture "War and Peace in East Asian Art" (33 entries)
