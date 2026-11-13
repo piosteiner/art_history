@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: open case for the Gero Cross's dating; Lauer 2020 to read
+- **What:** (data only, audited) open case on `gero-cross` (no finding parked): replace the date's sources (lecture +
+  two Wikipedias) with Rolf Lauer, "The Gero Cross in Cologne Cathedral", in *Christ on the Cross* (Brepols 2020),
+  pp. 184–205 — new source `lauer-2020-gero-cross` (scholarly, to read); look-up link swisscovery by ISBN. Endemann's
+  entry completed from the volume's imprint (ISBN, series vol. 16, pp. 136–183, scholarly).
+- **Why:** owner — the 976 limit rests on Gero's death/Thietmar's legend, and the sources are weak; library later.
+- **Revert:** close/delete the case on `/open-cases`; the sources' history pages.
+
 ### Content: the Gero Cross's date sourced; glossary term crucifix
 - **What:** (data only, audited) the owner had set the Gero Cross to 970–976 and the type "Kruzifix" (auto-created
   term) in the CMS; added: the date's sources (lecture Sitzung 4, slides 21 + 53; new `wikipedia-de-gerokreuz`;
