@@ -232,9 +232,7 @@ route) and `transferred_to` (previous → next owner). Graph, map, entity pages 
 `owned_by` is therefore derived now (the existing rows moved into `provenance`); `relationships_not_derived` refuses
 stored derived types. A filter on the owner can't be pushed below the window functions (they partition by artwork),
 so `edges` computes the provenance part for the whole table on each query — fine at this size; the people role
-`owner` asks `provenance` directly (index `provenance_person_idx`). Quality checks: `provenance_gap_1933_1945` (an
-undocumented change of owner whose gap overlaps 30 Jan 1933 – 8 May 1945: `daterange && daterange`),
-`provenance_forced_transfer` (confiscation / forced sale without a later restitution), `provenance_last_owner`.
+`owner` asks `provenance` directly (index `provenance_person_idx`). Quality checks: `provenance_forced_transfer` (confiscation / forced sale without a later restitution), `provenance_last_owner`.
 
 
 **Roles, joint owners, prices, the chain as read (063).** `provenance.role` (enum `holder_role`): owner · dealer ·
@@ -647,9 +645,10 @@ its `[[links]]` follow renames and merges like every text.
   `provenance.check_after` (096): a planned step (dated after today) — the day after which the admin asks whether it
   happened as planned; NULL for records of the past. API: `planned_until`.
 - `provenance_gaps`: per handover the span in which it may have happened — window aggregates: the latest date known
-  before it (the creation for the first owner), the earliest acquisition known from it on. The check
-  `provenance_gap_1933_1945` reports each stretch overlapping 30 January 1933 – 8 May 1945 once (several undated
-  owners in a row share one).
+  before it (the creation for the first owner), the earliest acquisition known from it on. An
+  undocumented change of owner whose stretch overlaps 30 January 1933 – 8 May 1945 (`daterange && daterange`) was the
+  Quality check `provenance_gap_1933_1945` until 251 (2026-11-13: a research question, not a data error) — now it is
+  listed on the research page `/quality/provenance-gaps` beside the coverage gaps.
 - `acquisition_method` `settlement` (073): kept after an agreement with claimants; answers `provenance_forced_transfer`
   like a restitution.
 - `artworks.provenance_status` (enum `provenance_status`: a_clear, b_no_indications, c_indications, d_seized — the BAK
@@ -674,7 +673,10 @@ its `[[links]]` follow renames and merges like every text.
 life (creation → today) minus documented minus presumed = the gaps, with multirange arithmetic (`range_agg`, `-`, `*`,
 `unnest`); each gap with the holders before/after and the undated candidates — and `provenance_completeness` (days
 documented / presumed / gap, gap days in 1933–1945, documented %, has_provenance). Admin: bar + gap lines on the
-artwork page, `/quality/provenance-gaps`.
+artwork page, `/quality/provenance-gaps` (251: "Provenance research 1933–1945" — coverage gaps and undocumented
+changes of owner then; by default only works without a 1933–1945 status, `?all=1` every work; setting the status takes a
+work off the list). The site offers the same works as a filter (`?provenance_gap=1933-1945`, entry point on
+`/provenance/1933-1945`).
 A destroyed or lost work's life ends with its destruction or loss (170, 173): `fate IN ('destroyed', 'lost')` → until
 `upper(fate_date)`, without a date until the last dated holding — no gap from then until today; when a lost work
 reappears, its fate is cleared and the provenance goes on. `partly_destroyed` (parts survive) runs on until today. Bars

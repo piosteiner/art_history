@@ -41,8 +41,11 @@ test('custody beside the ownership; an auction that did not sell; the 1933–194
     .toBe('agent · not sold');
 
   // 3. the undated owner between 1937 and 1950: a possible handover in 1937–1945; the first, 1884–1900, isn't one
-  expect(sql(`SELECT string_agg(detail, ' | ') FROM quality_issues_live WHERE check_id = 'provenance_gap_1933_1945' AND entity_id = ${W}`))
-    .toBe('Test Later Owner: the change of owner (undated) is not documented as direct — it may have happened between 1937 and 1950');
+  //    (a research question since 251 — the CMS list /quality/provenance-gaps, not a Quality finding)
+  expect(sql(`SELECT string_agg(owner_name || ': ' || extract(year FROM gap_from) || '–' || extract(year FROM gap_to - 1), ' | ') FROM provenance_gaps
+    WHERE artwork_id = ${W} AND NOT direct AND CASE WHEN gap_from < gap_to THEN daterange(gap_from, gap_to) && daterange('1933-01-30', '1945-05-09') ELSE false END`))
+    .toBe('Test Later Owner: 1937–1950');
+  expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'provenance_gap_1933_1945'`)).toBe('0');
   // 4. a forced sale without restitution is a warning — a settlement answers it
   expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'provenance_forced_transfer' AND entity_id = ${W}`)).toBe('1');
 

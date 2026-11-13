@@ -6,7 +6,7 @@
 // Owner 2026-11-13 (19 images had been left without credit).
 const { getJson } = require('./http');
 
-const COMMONS = 'https://commons.wikimedia.org';
+const COMMONS = process.env.COMMONS_BASE || 'https://commons.wikimedia.org';  // the e2e tests' fixture server
 
 // [[User:X|Name]] → Name, [[Page]] → Page, [url label] → label, templates and markup out
 function plain(s) {

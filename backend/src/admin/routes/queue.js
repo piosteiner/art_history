@@ -379,31 +379,53 @@ router.post('/quality/batch/terms', async (req, res) => {
 });
 
 // ---------------------------------------------------------------------------------------------------------------
-// Provenance research (078): the works whose provenance leaves the most of 1933–1945 without a known holder first,
-// each with its gaps then — between whom, and the undated holders who may have held it. Works without any
-// provenance are counted apart: a different question.
+// Provenance research 1933–1945 (078; 251: the research list instead of Quality warnings, owner 2026-11-13). Works
+// whose provenance leaves part of 1933–1945 without a known holder (longest silence first), and works with a change
+// of owner that is undated or not documented as direct and may have happened then (view provenance_gaps, 084).
+// By default only works without a 1933–1945 status: setting the status (A–D) records that someone has looked — the
+// work leaves the list, its gap stays visible on the site. ?all=1 lists every work.
 // ---------------------------------------------------------------------------------------------------------------
+const STATUS_SHORT = { a_clear: 'A', b_no_indications: 'B', c_indications: 'C', d_seized: 'D' };
 router.get('/quality/provenance-gaps', async (req, res) => {
+  const all = req.query.all === '1';
   const { rows } = await adminPool.query(`
-    SELECT w.slug, w.title, a.name AS creator, w.created_label, c.documented_percent, c.gap_1933_1945_days, c.gap_days,
-           pg.gaps   -- stored with the completeness (204: provenance_gaps_stored), not computed per view
-    FROM provenance_completeness_stored c JOIN artworks w ON w.id = c.artwork_id LEFT JOIN artists a ON a.id = w.creator_id  -- stored (129)
-    LEFT JOIN provenance_gaps_stored pg ON pg.artwork_id = c.artwork_id
-    WHERE c.has_provenance AND c.gap_1933_1945_days > 0
-    ORDER BY c.gap_1933_1945_days DESC, c.gap_days DESC, w.title COLLATE sort_natural`);
-  const { rows: [none] } = await adminPool.query(`SELECT count(*)::int AS n FROM provenance_completeness_stored c JOIN artworks w ON w.id = c.artwork_id
-    WHERE NOT c.has_provenance AND (w.created IS NULL OR lower(w.created) < '1945-05-09')`);
+    WITH undated AS (   -- changes of owner that may fall into 1933–1945 (the former Quality check, 084)
+      SELECT artwork_id, string_agg(DISTINCT owner_name || coalesce(' (' || acquired_label || ')', ' (undated)'), ', ') AS names
+      FROM provenance_gaps
+      WHERE NOT direct AND CASE WHEN gap_from IS NULL OR gap_to IS NULL OR gap_from < gap_to   -- CASE: the guard first
+        THEN daterange(gap_from, gap_to) && daterange('1933-01-30', '1945-05-09') ELSE false END
+      GROUP BY artwork_id)
+    SELECT w.slug, w.title, a.name AS creator, w.created_label, w.provenance_status::text AS status,
+           c.documented_percent, coalesce(c.gap_1933_1945_days, 0) AS gap_1933_1945_days, c.gap_days,
+           pg.gaps, u.names AS undated   -- gaps stored with the completeness (204: provenance_gaps_stored)
+    FROM artworks w LEFT JOIN artists a ON a.id = w.creator_id
+    LEFT JOIN provenance_completeness_stored c ON c.artwork_id = w.id AND c.has_provenance   -- stored (129)
+    LEFT JOIN provenance_gaps_stored pg ON pg.artwork_id = w.id
+    LEFT JOIN undated u ON u.artwork_id = w.id
+    WHERE (c.gap_1933_1945_days > 0 OR u.artwork_id IS NOT NULL) AND ($1 OR w.provenance_status IS NULL)
+    ORDER BY coalesce(c.gap_1933_1945_days, 0) DESC, c.gap_days DESC NULLS LAST, w.title COLLATE sort_natural`, [all]);
+  const { rows: [n] } = await adminPool.query(`SELECT
+      (SELECT count(*)::int FROM provenance_completeness_stored c JOIN artworks w ON w.id = c.artwork_id
+        WHERE NOT c.has_provenance AND (w.created IS NULL OR lower(w.created) < '1945-05-09')) AS none`);
   const yrs = (d) => Math.round(d / 365.25 * 10) / 10;
-  send(req, res, { title: 'Provenance gaps 1933–1945', body: html`<p class="muted"><a href="/quality">← Quality</a></p>
-    <h1>Provenance gaps 1933–1945</h1>
-    <p class="muted">Works whose provenance leaves part of 30 January 1933 – 8 May 1945 without a known holder — the longest silence
-      first. “Possibly”: holders known only without dates who fall into the gap. ${none.n} further work${none.n === 1 ? '' : 's'} made before
-      1945 ${none.n === 1 ? 'has' : 'have'} no provenance at all.</p>
-    ${rows.length ? html`<div class="table-wrap"><table><thead><tr><th>Artwork</th><th>Silent in 1933–45</th><th>Documented</th><th>Gaps then</th></tr></thead><tbody>
+  send(req, res, { title: 'Provenance research 1933–1945', body: html`<p class="muted"><a href="/quality">← Quality</a></p>
+    <h1>Provenance research 1933–1945</h1>
+    <p class="muted">Works whose provenance leaves part of 30 January 1933 – 8 May 1945 without a known holder — the longest
+      silence first — or has a change of owner that is undated or not documented as direct and may have happened then.
+      A gap is a research question, not an error: once the museum's own provenance has been checked and entered, set the
+      work's <b>1933–1945 status</b> (A–D) on its edit page — it then leaves this list, and the gap stays visible on the site
+      (“Works with open questions 1933–1945”). ${n.none} further work${n.none === 1 ? '' : 's'} made before 1945
+      ${n.none === 1 ? 'has' : 'have'} no provenance at all.</p>
+    <p class="bar">${all ? html`<a href="/quality/provenance-gaps">only works without a status</a> · <b>all works</b>`
+      : html`<b>works without a 1933–1945 status</b> · <a href="/quality/provenance-gaps?all=1">all works</a>`}
+      <span class="muted">${rows.length} work${rows.length === 1 ? '' : 's'}</span></p>
+    ${rows.length ? html`<div class="table-wrap"><table class="provenance-research"><thead><tr><th>Artwork</th><th>Silent in 1933–45</th><th>Documented</th><th>Gaps then</th>${all ? html`<th>Status</th>` : ''}</tr></thead><tbody>
       ${rows.map((r) => html`<tr><td><a href="/artworks/${r.slug}#provenance">${r.title}</a><div class="muted small">${[r.creator, r.created_label].filter(Boolean).join(', ')}</div></td>
-        <td><b>${yrs(r.gap_1933_1945_days)} years</b></td><td>${r.documented_percent ?? '—'}%</td>
-        <td class="small">${(r.gaps || []).map((g) => html`<div>${g.from === g.to ? g.from : `${g.from}–${g.to}`}${g.before ? html`: after ${g.before}` : ''}${g.after ? html`, before ${g.after}` : ''}${g.candidates.length ? html` <span class="muted">— possibly ${g.candidates.join(', ')}</span>` : ''}</div>`)}</td></tr>`)}
-      </tbody></table></div>` : html`<p class="flash ok">No work with a provenance has a gap in 1933–1945.</p>`}` });
+        <td>${r.gap_1933_1945_days ? html`<b>${yrs(r.gap_1933_1945_days)} years</b>` : '—'}</td><td>${r.documented_percent ?? '—'}%</td>
+        <td class="small">${(r.gaps || []).map((g) => html`<div>${g.from === g.to ? g.from : `${g.from}–${g.to}`}${g.before ? html`: after ${g.before}` : ''}${g.after ? html`, before ${g.after}` : ''}${g.candidates.length ? html` <span class="muted">— possibly ${g.candidates.join(', ')}</span>` : ''}</div>`)}
+          ${r.undated ? html`<div>change of owner not dated or not documented as direct: ${r.undated}</div>` : ''}</td>
+        ${all ? html`<td>${r.status ? STATUS_SHORT[r.status] : html`<span class="muted">—</span>`}</td>` : ''}</tr>`)}
+      </tbody></table></div>` : html`<p class="flash ok">${all ? 'No work has a gap in 1933–1945.' : 'Every work with a gap in 1933–1945 has a status.'}</p>`}` });
 });
 
 module.exports = router;

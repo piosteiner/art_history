@@ -108,7 +108,7 @@ test('a provenance chain: computed periods, derived edges in graph, map, owner p
   await expect(userA.locator('main')).toContainText('provenance of Test Bassin aux nymphéas — Test Emil Bührle');
 });
 
-test('reorder and remove steps; an undocumented change of owner across 1933–1945 is reported', async ({ userA, request }) => {
+test('reorder and remove steps; an undocumented change of owner across 1933–1945 is on the research list', async ({ userA, request }) => {
   sql(`INSERT INTO provenance (artwork_id, position, owner_label, acquired, acquired_label, method) VALUES
          (entity_id('artwork', 'test-bassin'), 0, 'Private collection, Berlin', year_range(1930), '1930', 'purchase');
        INSERT INTO provenance (artwork_id, position, owner_person_id, acquired, acquired_label, method) VALUES
@@ -116,8 +116,16 @@ test('reorder and remove steps; an undocumented change of owner across 1933–19
        INSERT INTO provenance (artwork_id, position, owner_institution_id, acquired, acquired_label, method, direct) VALUES
          (entity_id('artwork', 'test-bassin'), 2, entity_id('institution', 'test-kunsthaus'), year_range(1960), '1960', 'gift', true)`);
   await settled();   // the finding comes from the derived-data worker (125)
-  await userA.goto('/quality?check=provenance_gap_1933_1945');
-  await expect(userA.locator('main')).toContainText('Test Emil Bührle: the change of owner (1948) is not documented as direct');
+  // a research question, not a Quality finding (251): listed while the work has no 1933–1945 status
+  await userA.goto('/quality/provenance-gaps');
+  const row = userA.locator('table.provenance-research tr', { hasText: 'Test Bassin' });
+  await expect(row).toContainText('change of owner not dated or not documented as direct: Test Emil Bührle (1948)');
+  sql(`UPDATE artworks SET provenance_status = 'b_no_indications' WHERE slug = 'test-bassin'`);
+  await userA.reload();
+  await expect(row).toHaveCount(0);
+  await userA.goto('/quality/provenance-gaps?all=1');
+  await expect(row.locator('td').last()).toHaveText('B');
+  sql(`UPDATE artworks SET provenance_status = NULL WHERE slug = 'test-bassin'`);
 
   await userA.goto('/artworks/test-bassin');
   const rows = userA.locator('table.provenance tr:not(.transfer)');

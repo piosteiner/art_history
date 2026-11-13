@@ -502,12 +502,17 @@ test('through whose hands 1933–1945 (088): holders, possessors in red, handove
   await expect(goring.locator('.tag-ns', { hasText: 'held without title' })).toBeVisible();
   await expect(goring.locator('.hands-works a', { hasText: 'La Petite Irène' })).toBeVisible();
   expect(await page.locator('.hands-handovers > li').count()).toBeGreaterThan(0);
+  // the way to the works with open questions (251): a gap is a filter, not a verdict
+  const research = page.locator('.hands-research');
+  await expect(research).toContainText('not in itself a sign of looting');
+  await expect(research.locator('a', { hasText: 'Works whose provenance has a gap' })).toHaveAttribute('href', '/artworks?provenance_gap=1933-1945');
   await page.fill('input[name=from]', '1900');
   await page.fill('input[name=to]', '1920');
   await page.locator('.hands-window button').click();
   await expect(page).toHaveURL(/\/provenance\/1900-1920$/);
   await expect(page.locator('h1')).toHaveText('Through whose hands, 1900–1920');
   await expect(page.locator('.hands-holders > li', { hasText: 'Hermann Göring' })).toHaveCount(0);
+  await expect(page.locator('.hands-research')).toHaveCount(0);   // only for 1933–1945
 });
 
 test('cite this version (089): the latest version with its exact moment; opening it shows the entry as recorded then', async ({ page }) => {

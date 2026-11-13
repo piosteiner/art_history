@@ -102,7 +102,8 @@ const SEARCH_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 
 const escapeHtml = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 // the expensive request: its own, tighter brake (120 a minute, 15 at once per address — src/ratelimit.js; 30 at once
 // still gave one 503 among 45 parallel searches, 2026-11-07)
-const searchLimit = process.env.NODE_ENV === 'test' ? (req, res, next) => next() : rateLimit({ perMinute: 120, burst: 15, name: 'search' });
+// off in the tests like the general brake (src/app.js) — with one e2e worker every search comes from one address
+const searchLimit = process.env.NODE_ENV === 'test' || process.env.RATE_LIMITS === 'off' ? (req, res, next) => next() : rateLimit({ perMinute: 120, burst: 15, name: 'search' });
 router.get('/search/text', searchLimit, async (req, res) => {
   const q = typeof req.query.q === 'string' ? req.query.q.trim().slice(0, 200) : '';
   const type = typeof req.query.type === 'string' && req.query.type ? req.query.type : null;

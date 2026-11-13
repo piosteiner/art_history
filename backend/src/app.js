@@ -34,8 +34,10 @@ const onHost = (host) => (req, res, next) =>
   (req.hostname === host || config.env !== 'production') ? next() : res.status(404).json({ error: 'not_found' });
 
 // a brake per client address (src/ratelimit.js): 1,200 requests a minute, 300 at once — a page view needs a dozen,
-// the site's own tests a few hundred a minute; off while the e2e tests run (one address, thousands of requests)
-const limited = process.env.NODE_ENV === 'test' ? [] : [rateLimit({ perMinute: 1200, burst: 300 })];
+// the site's own tests a few hundred a minute; off while the tests run (one address, thousands of requests) — the e2e
+// servers run as development and say RATE_LIMITS=off (test/e2e/env.js)
+const limitsOff = process.env.NODE_ENV === 'test' || process.env.RATE_LIMITS === 'off';
+const limited = limitsOff ? [] : [rateLimit({ perMinute: 1200, burst: 300 })];
 app.use('/v1', onHost(config.apiHost), cors({ origin: config.corsOrigin }), ...limited, v1);
 
 app.use((req, res, next) => {

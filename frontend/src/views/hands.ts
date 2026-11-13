@@ -24,12 +24,28 @@ function holderRow(h: HandsHolder) {
   </li>`;
 }
 
+/** 1933–1945: the way to the works with open questions (owner 2026-11-13 — gaps are a filter for visitors, not a data
+ *  error) and what a gap does and doesn't mean. */
+function research() {
+  return html`<aside class="callout hands-research">
+    <p class="callout-title">Works with open questions</p>
+    <p><a href="/artworks?provenance_gap=1933-1945">Works whose provenance has a gap in 1933–1945 →</a> For part of these years no
+      holder is documented. A gap is not in itself a sign of looting — often an owner simply isn't recorded. Where research
+      points to a loss through Nazi persecution, the work carries category C or D:
+      <a href="/artworks?provenance=C,D">works with indications or seized (C, D)</a> ·
+      <a href="/artworks?provenance_gap=1933-1945&amp;provenance=C,D">both together</a>.</p>
+    <p class="small muted">Looking for a lost work? The <a href="https://www.lostart.de/en" target="_blank" rel="noopener">Lost Art
+      database ↗</a> of the German Lost Art Foundation lists reported losses and reports of found objects.</p>
+  </aside>`;
+}
+
 export function handsPage(main: HTMLElement, from: number, to: number) {
   document.title = `Through whose hands, ${from}–${to} · Art History`;
   render(main, html`<section class="page hands-page">
     <h1>Through whose hands, ${String(from)}–${String(to)}</h1>
     <p class="muted">Who held works of this collection in the window, from the provenance of each work — owners, dealers,
       custodians, and those who held them without title (seized, looted, stolen) — and the handovers dated in it.</p>
+    ${from === 1933 && to === 1945 ? research() : ''}
     <form class="hands-window">
       <label>From <input type="number" name="from" value="${String(from)}" min="1000" max="2100" required></label>
       <label>to <input type="number" name="to" value="${String(to)}" min="1000" max="2100" required></label>

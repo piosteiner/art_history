@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Migration 251: gaps in 1933–1945 off the Quality page, onto a research list; e2e rate limits off
+- **What:** the check `provenance_gap_1933_1945` (602 warnings) is removed from `quality_issues_live` (its stored
+  findings and acks deleted; the 2 open cases parked on it stay). CMS `/quality/provenance-gaps` is now "Provenance
+  research 1933–1945": coverage gaps plus undocumented changes of owner that may fall then (view `provenance_gaps`), by
+  default only works without a 1933–1945 status (425 of 667), `?all=1` with a status column. Site: on
+  `/provenance/1933-1945` a box "Works with open questions" — link to the list filter, categories C/D, both together,
+  the wording "a gap is not in itself a sign of looting", the Lost Art database; the list button's title says so too.
+  E2E: the servers run as development, so the API's rate limits were on — with one worker every search came from one
+  address and `search-text.spec.js` hit the 120/min search brake (429) in the last two deploys. `RATE_LIMITS=off` in
+  `test/e2e/env.js`, read by `src/app.js` and `src/routes/v1.js`. `commons-credit.js` uses `COMMONS_BASE` (fixtures).
+- **Why:** owner 2026-11-13 — "not really a quality issue and more of a filter criterium".
+- **Revert:** re-create the check block from migration 084's definition (`quality_issues_live`); git revert the code.
+
 ### Content: Zumikon's point corrected (Wikidata's lay in Morocco)
 - **What:** place `zumikon` moved from POINT(-3.889 35.111) (Wikidata Q66898's P625, wrong) to OpenStreetMap relation
   1682247 (8.6238, 47.3324); `within_code` MA-03 → CH-ZH by trigger; location now cited to the new source `openstreetmap`.
