@@ -15,6 +15,10 @@ Format: date — what — why — how to revert.
   Richter, *Genoveva in der Waldeinsamkeit* (Sächsischer Kunstverein 1841 → Leonhardi, possible → Heye → Hamburger
   Kunsthalle by 1913; the Kunsthalle's record). Holders without entries kept as named holders.
 - **Why / Revert:** owner's to-do list; the entries' history pages.
+- **Corrected the same day** after checking the sources again: *Der Abend* — Friedrich Körte only named as owner in
+  1906, the museum bought it 1916 from the trade (no end for Körte); *Genoveva* — Heye until 1913, the gift in 1913
+  (not "or earlier"), the record's notes (800 marks gift tax, Leonhardi "bislang ohne Beleg"); Cheyres — the theft
+  rests on the lecture's caption alone, no recovery known (noted on the step).
 
 ### Content: Sant'Ambrogio — the 1750 door linked to the surviving original panels
 - **What:** (data only, audited) relationship `copy_after` from *Porta lignea di Sant'Ambrogio* (the door at the portal,
