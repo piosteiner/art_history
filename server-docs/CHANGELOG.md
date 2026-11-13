@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: Sant'Ambrogio — the 1750 door linked to the surviving original panels
+- **What:** (data only, audited) relationship `copy_after` from *Porta lignea di Sant'Ambrogio* (the door at the portal,
+  remade 1750) to *Formelle della porta lignea di Sant'Ambrogio* (the surviving 4th/8th-century panels in a museum),
+  label "remade in 1750 after the very damaged original panels", cited to the ICCD record (NSC, after Reggiori 1966).
+- **Why / Revert:** owner's request; delete the relationship.
+
 ### Content: "View at …" links sorted; four "wrong-looking fields" cases
 - **What:** (data only, audited) links not on the holder's own site and not reliable moved from `web_url` to the other
   web page (250) with the site's name and, where needed, a note ("Another impression", "Trailer", "A study of the work"):
