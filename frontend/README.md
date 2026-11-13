@@ -73,6 +73,10 @@ to GitHub Pages (also daily at 03:17 UTC, so new content gets its page and previ
 content but check behaviour, not exact numbers (fixed points: Van Gogh, The Great Wave, woodblock prints).
 The repository's Pages source must be **GitHub Actions**; the MapTiler key is the repository variable `MAPTILER_KEY`
 (restrict it to `arthistory.piogino.ch` and `localhost` in the MapTiler dashboard; it is public in the bundle anyway).
+The tests and the prerender (`scripts/prerender.mjs`, ~10,000 entry pages) both read the **live API**: while the server
+is busy (a backend deploy runs its own e2e tests on it) they can fail without anything being wrong — 2026-11-13 a
+prerender failed during load and ran through locally a little later. So don't start a backend deploy while a Pages run
+is on; a failed run is repeated by the next push under `frontend/` or the nightly run.
 
 ## Countries and polities
 `country` = today's country (from the entry's place), `polities` = dated, hand-entered links (nationality, made in,
