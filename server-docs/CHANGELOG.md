@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: fate, theft, a number and three provenance chains from the to-do list
+- **What:** (data only, audited) Barili, *Autoritratto* (formerly Kunstgewerbemuseum/MAK Vienna): fate destroyed,
+  Second World War (lecture, Sitzung 10, Folie 54). *Schreinmadonna von Cheyres*: owner the parish church, open
+  theft step 1978 (lecture, Sitzung 7, Folie 108) — `artwork_stolen()` marks it, finding `provenance_stolen`. Boston
+  Crucifix: inventory 51.1405 (Endemann 2020, pp. 144, 147). Provenance steps, cited to the sources the texts
+  already used: Friedrich, *Der Abend* (Körte 1821 probable → Friedrich Körte 1906 → Landesmuseum Hannover 1916;
+  de.wikipedia § Provenienz), *Mann und Frau in Betrachtung des Mondes* (Salomon, Dresden 1922 → Lulu Böhler,
+  Lucerne → Fritz Nathan 1932 → Alte Nationalgalerie 1932; en.wikipedia after Börsch-Supan/Jähnig p. 433),
+  Richter, *Genoveva in der Waldeinsamkeit* (Sächsischer Kunstverein 1841 → Leonhardi, possible → Heye → Hamburger
+  Kunsthalle by 1913; the Kunsthalle's record). Holders without entries kept as named holders.
+- **Why / Revert:** owner's to-do list; the entries' history pages.
+
 ### Content: Sant'Ambrogio — the 1750 door linked to the surviving original panels
 - **What:** (data only, audited) relationship `copy_after` from *Porta lignea di Sant'Ambrogio* (the door at the portal,
   remade 1750) to *Formelle della porta lignea di Sant'Ambrogio* (the surviving 4th/8th-century panels in a museum),
