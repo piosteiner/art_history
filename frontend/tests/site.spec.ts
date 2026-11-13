@@ -2238,6 +2238,22 @@ test('versions of one composition (API 132): "Version 2 of 3 in …", the whole 
   await expect(page.locator('.part-nav .part-prev')).toContainText('Version 1');
 });
 
+test('an edition (API 247): an impression reads "Impression 2 in …", the edition lists its impressions', async ({ page }) => {
+  const whole = { slug: 'mock-edition', title: 'New Man (Neuer)', kind: 'edition', parts_count: null, is_group: true };
+  await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    Object.assign(body, { part_of: [whole], part_number: '2', previous_part: { slug: 'south-wind-clear-sky', title: 'New Man (Neuer) — Brooklyn Museum', part_number: '1' }, next_part: null,
+      kind: 'edition', parts_count: null, parts: [{ slug: 'south-wind-clear-sky', title: 'New Man (Neuer) — Brooklyn Museum', part_number: '1', kind: 'lithograph', created: null, image_url: null, parts: null }] });
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('.series-line')).toHaveText(/Impression 2\s+in\s+New Man \(Neuer\)/);
+  await expect(page.locator('.part-nav .part-prev')).toContainText('Impression 1');
+  await expect(page.locator('.parts h2')).toContainText('Impressions');
+  await expect(page.locator('.parts .part-number').first()).toHaveText('Impression 1');
+});
+
 // ---- an artwork's web page (API migrations 038/039; no live artwork has one yet: the tests add it) ----
 async function withWebPage(page: Page, change: (body: Record<string, unknown>) => void) {
   await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {

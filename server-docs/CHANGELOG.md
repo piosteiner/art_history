@@ -9,7 +9,9 @@ Format: date — what — why — how to revert.
   are parts of the work, each with its own holder, number, size, provenance and museum page, so the web-page check
   stays per object. CMS: "edition" among the kinds of wholes (`relevance.js`, `core.js`); site: parts of an edition
   read "Impression 2 of 2 in …", the heading "Impressions" (`partWord()` in `frontend/src/series.ts`, lists too).
-  e2e `groups.spec.js` + fixture `glossary/edition.yaml`.
+  e2e `groups.spec.js` + fixture `glossary/edition.yaml`; site test "an edition (API 247)". Data: Lissitzky, *New Man
+  (Neuer)* converted — the work an edition, impressions `lissitzky-new-man-brooklyn` (50.191.10, sheet 53.5 × 45.6 cm,
+  by exchange) and `lissitzky-new-man-moma` (web page 88312; number and size still to enter).
 - **Why:** owner: several museums hold impressions of Lissitzky's *New Man* — link both; Japanese woodblock prints
   and Dürer next.
 - **Revert:** git revert; the term can stay (unused) or be deleted in the CMS.
