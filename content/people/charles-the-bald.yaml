@@ -1,0 +1,69 @@
+public_id: 122186
+name: Charles the Bald
+given_name: Charles the
+family_name: Bald
+names:
+  - lang: de
+    role: translation
+    text: Karl der Kahle
+  - lang: fr
+    role: translation
+    text: Charles le Chauve
+  - lang: la
+    role: alternative
+    text: Karolus Calvus
+  - Charles II
+kind: person
+occupations: [monarch, writer]
+birth: 823-06-17
+birth_label: 13 June 823 (Julian calendar)
+death: 877-10-10
+death_label: 6 October 877 (Julian calendar)
+description_md: |-
+  King of West Francia from 843, King of Italy and Emperor from 875 until his death in 877.[[source/wikipedia-en-charles-the-bald|§ introduction]] The son of the Emperor Louis the Pious and his second wife, Judith, he was taught from the age of seven by Walafrid Strabo, monk of Reichenau.[[source/wikipedia-fr-charles-ii-le-chauve|§ Origines et enfance]] The settlement of 843 gave him the kingdom of the West Franks — roughly today's France, as far as the Meuse, the Saône and the Rhône.[[source/wikipedia-en-charles-the-bald|§ introduction]] He is shown kneeling in prayer before the Crucified in his [[artwork/gebetbuch-karls-des-kahlen|prayer book]], written before 869.[[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 54]]
+
+  ## Why "the Bald"?
+
+  The name is old: the *Genealogy of the Frankish Kings* from Fontenelle, possibly written as early as 869, calls him *Karolus Calvus*, and so do Richer of Reims and Adhemar of Chabannes in the late 10th century. Whether he was bald is doubtful — the images made in his lifetime, in his Bible of 845 and on his seals as king (847) and as emperor (875), show him with a full head of hair.[[source/wikipedia-en-charles-the-bald|§ Baldness]] Three explanations are given:
+
+  - **Irony.** He was not bald but very hairy, and the name meant the opposite (after Janet L. Nelson, *Charles the Bald*, 1992).[[source/wikipedia-en-charles-the-bald|§ Baldness]]
+  - **A king without a kingdom.** As the son of his father's second marriage he was for years the only one without a kingdom, while his half-brothers were already sub-kings — without a crown, "bald"; his enemies would have kept the name to remind him that he was not born to be king (after Reinhard Lebe, *War Karl der Kahle wirklich kahl?*, 2003).[[source/wikipedia-en-charles-the-bald|§ Baldness]][[source/wikipedia-fr-charles-ii-le-chauve|§ Surnom]]
+  - **A shaven head.** Lay abbot of Saint-Denis from 867, he is said to have had his head shaved on 5 May 877, when Pope John VIII consecrated the church of St Mary at Compiègne, as a sign of submission to the Church — although Frankish custom wanted a king's hair long.[[source/wikipedia-fr-charles-ii-le-chauve|§ Surnom]] If the Fontenelle genealogy dates from 869, the name is older than that day.
+wikidata_id: Q71231
+metadata:
+  sources: [Wikidata Q71231 (retrieved 2026-11-13)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/50/Carlo_calvo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carlo_calvo.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "120822364"
+  gnd: "118640119"
+  idref: "027378357"
+  lc: n83800638
+  ulan: "500372808"
+  viaf: "267078093"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q71231
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q71231
+    - source: wikipedia-en-charles-the-bald
+      locator: § introduction
+      accessed: 2026-11-13
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q71231
+    - source: wikipedia-en-charles-the-bald
+      locator: § introduction
+      accessed: 2026-11-13
+  occupations:
+    - accessed: 2026-11-13
+      property: P106
+      wikidata: Q71231

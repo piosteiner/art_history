@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: Charles the Bald — the epithet, dates as written, linked with his prayer book
+- **What:** (data only, audited) `charles-the-bald` (person, from Wikidata this morning): text with a section "Why
+  'the Bald'?" — irony (Nelson 1992), a king without a kingdom (Lebe 2003), the tonsure of 877 — from en.wikipedia
+  § Baldness and fr.wikipedia § Surnom (new sources); dates labelled as written, "13 June 823 / 6 October 877 (Julian
+  calendar)" (stored Gregorian, unchanged); names de/fr/la. Prayer book: label "c. 800" (Wikidata's headline value)
+  → 846–869 (range unchanged, + lecture slide 54), `depicts_person` Charles (fol. 38v), first provenance step
+  "commission" by Charles 846–869 (probable, Wikidata P88) → new warning `provenance_last_owner` (the way to the
+  Munich Residenz is unknown).
+- **Not done:** the GEO article the owner named blocks automated access — not read, not cited.
+- **Why / Revert:** owner's request; the entries' history pages (script `p228/charles.js`).
+
 ### Content: open case for the Gero Cross's dating; Lauer 2020 to read
 - **What:** (data only, audited) open case on `gero-cross` (no finding parked): replace the date's sources (lecture +
   two Wikipedias) with Rolf Lauer, "The Gero Cross in Cologne Cathedral", in *Christ on the Cross* (Brepols 2020),
