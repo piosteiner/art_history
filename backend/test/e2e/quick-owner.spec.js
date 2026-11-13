@@ -53,3 +53,15 @@ test('provenance: a quick-added owner with a refused step is not created', async
   await expect(userA.locator('#pv-owner')).toHaveValue('new:person:Test Hugo von Tschudi');
   await expect(userA.locator('.ac:has(#pv-owner) .ac-chosen')).toContainText('new person “Test Hugo von Tschudi”');
 });
+
+test('a holder known only from a cited provenance is "info"; uncited or with a Wikidata item a warning (252)', async () => {
+  const sev = () => sql(`SELECT severity FROM quality_issues_live WHERE check_id = 'auto_created' AND entity_type = 'person' AND entity_id = entity_id('person', 'test-faure')`);
+  sql(`INSERT INTO auto_created (entity_type, entity_id, created_from_type, created_from_id) VALUES ('person', entity_id('person', 'test-faure'), 'artwork', entity_id('artwork', 'test-wintergarten'));
+       INSERT INTO provenance (artwork_id, position, owner_person_id) VALUES (entity_id('artwork', 'test-wintergarten'), 0, entity_id('person', 'test-faure'))`);
+  expect(sev()).toBe('warning');   // the step cites nothing
+  sql(`INSERT INTO citations (provenance_id, text) SELECT p.id, 'Test museum, provenance'
+       FROM provenance p WHERE p.artwork_id = entity_id('artwork', 'test-wintergarten')`);
+  expect(sev()).toBe('info');      // named in a cited provenance, nothing more known
+  sql(`UPDATE people SET wikidata_id = 'Q1' WHERE slug = 'test-faure'`);
+  expect(sev()).toBe('warning');   // an item: its details can be filled in
+});

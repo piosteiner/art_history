@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Migration 252: auto-created provenance holders as "info"
+- **What:** check `auto_created` — an auto-created person or institution without a Wikidata item, holder of at least
+  one provenance step that cites a source and with no stored relationship, is "info" instead of "warning" (1,069 of the
+  1,359 open; 290 warnings stay). Created through a picker (via provenance/relationship) stays "error". E2E in
+  `quick-owner.spec.js`.
+- **Why:** owner 2026-11-13 — ~1,100 names from museum provenances (Kunsthaus import) are as complete as their source;
+  researching each isn't realistic and acknowledging them would hide them. A Wikidata matching pass follows.
+- **Revert:** re-create the severity CASE of the auto_created block without the info branch.
+
 ### Content: auto-created entries, first round (Quality "auto_created" 1,605 → 1,357 open)
 - **What:** `fill-from-wikidata.js --no-create --no-names` on the open entries with a Wikidata item: 118 places
   (country, parent, GND …), 43 institutions (place, location, address, website, authority numbers, images from Commons),
