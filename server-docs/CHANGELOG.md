@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Fix: the test environment's nightly reset (failed every night since 2026-11-06) · e2e ports · DDB on "Enrich"
+- **What:** `scripts/test-env.sh` empties `study_set_snapshots` (229) with the other private tables — the TRUNCATE of
+  `study_sets` failed on its foreign key, the script stopped with `arthistory-test` already stopped, so the test
+  environment was down from 6 to 13 November; reset run by hand at 05:22, the test site answers again. E2E shards 1
+  and 2 moved from :3008/:3009 to :3021/:3022 (`test/e2e/env.js`, `playwright.config.js`) — 3008 is now
+  books-piogino's, 3009 news's (CLAUDE.md port list updated). "Search elsewhere" on "Enrich" opens the Deutsche
+  Digitale Bibliothek for works, artists, people and institutions (`src/admin/lookups.js`; its API reads single
+  objects without a key, its search needs one and robots.txt excludes the search pages); e2e `lookups.spec.js` extended.
+- **Why:** owner's request (DDB); the failing reset and the port clash found on the way.
+- **Revert:** git revert of the commit; `backend/deploy.sh`.
+
 ### Content: Courbet, *Die Steinklopfer* (Winterthur) and the Deutsche Digitale Bibliothek
 - **What:** (data only, audited) new from Wikidata Q91932358 with the record of bundessammlungen.ch (item 11334, new
   source `bundessammlungen-sor1923-15`) and the Römerholz page: the Winterthur version (SOR1923.15, c. 1849, 56 × 65 cm,

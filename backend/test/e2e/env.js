@@ -1,7 +1,7 @@
 // Shared settings of the end-to-end tests.
 // Several workers run the spec files side by side (playwright.config.js); each worker has its own database and its
 // own test server — a shard — so the specs never see each other's changes:
-//   shard 0: arthistory_test, :3006 · shard 1: arthistory_test_1, :3008 · shard 2: arthistory_test_2, :3009
+//   shard 0: arthistory_test, :3006 · shard 1: arthistory_test_1, :3021 · shard 2: arthistory_test_2, :3022
 // (the extra databases created once with `db/setup.sh arthistory_test_N`). A worker's shard is its
 // TEST_PARALLEL_INDEX (0 … workers − 1, set by Playwright); global-setup.js prepares all of them. Two workers by
 // default (E2E_WORKERS, at most 3): the machine has 2 CPUs — a third made each test slower, not the run shorter.
@@ -14,7 +14,7 @@ const FIXTURES = 'http://127.0.0.1:3017';                     // wikidata-fixtur
 const WORKERS = Math.max(1, Math.min(3, Number(process.env.E2E_WORKERS) || 2));
 
 function shard(i) {
-  const PORT = i === 0 ? 3006 : 3007 + i;
+  const PORT = i === 0 ? 3006 : 3020 + i;   // 3008, 3009 were taken by other projects (2026-11-13)
   const DB = i === 0 ? 'arthistory_test' : `arthistory_test_${i}`;
   return {
     i, PORT, DB,

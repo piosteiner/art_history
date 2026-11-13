@@ -1,5 +1,5 @@
 // End-to-end tests of the admin panel in a real (headless) browser: npm run test:e2e
-// They run against their own databases (arthistory_test, _1, _2, reset before every run) and their own servers (:3006, :3008, :3009),
+// They run against their own databases (arthistory_test, _1, _2, reset before every run) and their own servers (:3006, :3021, :3022),
 // never against dev or production data. deploy.sh runs them before touching production. Details: test/e2e/README.md
 const { defineConfig } = require('@playwright/test');
 const { BASE, WORKERS } = require('./test/e2e/env');

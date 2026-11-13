@@ -11,6 +11,8 @@ test('Enrich: buttons that open other sites with the entry searched, by type', a
   await expect(wpi).toHaveAttribute('href', `https://digitalprojects.wpi.art/search?modeSelect=all&all=${encodeURIComponent(title)}`);
   await expect(wpi).toHaveAttribute('target', '_blank');
   await expect(box.locator('a:has-text("Getty ULAN")')).toHaveCount(0);
+  // the Deutsche Digitale Bibliothek: works, artists, people, institutions
+  await expect(box.locator('a:has-text("Deutsche Digitale Bibliothek")')).toHaveAttribute('href', `https://www.deutsche-digitale-bibliothek.de/searchresults?query=${encodeURIComponent(title)}`);
   // Korea's e-museum: the Korean name when the entry has one, else the name
   await expect(box.locator('a:has-text("e-museum (Korea)")')).toHaveAttribute('href', new RegExp(`emuseum\\.go\\.kr/headerSearch\\?.*&keyword=${encodeURIComponent(title)}$`));
   sql(`UPDATE artworks SET names = names || '[{"text": "해바라기", "lang": "ko", "role": "translation"}]'::jsonb WHERE slug = 'sunflowers-national-gallery'`);
@@ -26,4 +28,5 @@ test('Enrich: buttons that open other sites with the entry searched, by type', a
   await userA.goto(`/institutions/${slug}/enrich`);
   await expect(userA.locator('.lookups a:has-text("Getty ULAN")')).toHaveAttribute('href', /getty\.edu\/vow\/ULANServlet\?english=Y&find=/);
   await expect(userA.locator('.lookups a:has-text("Wildenstein Plattner Institute")')).toHaveCount(0);
+  await expect(userA.locator('.lookups a:has-text("Deutsche Digitale Bibliothek")')).toHaveAttribute('href', /deutsche-digitale-bibliothek\.de\/searchresults\?query=/);
 });

@@ -31,6 +31,11 @@ const LOOKUPS = [
   { name: 'Smithsonian', types: ['artwork', 'artist'],
     title: 'the Smithsonian\'s collections (API key not applied for)',
     url: (s) => `https://collections.si.edu/search/results.htm?q=${q(s)}` },
+  // Germany's portal for culture and knowledge (owner 2026-11-13): single objects can be read through its API, but
+  // its search needs an API key and robots.txt excludes the search pages — so searched in the browser
+  { name: 'Deutsche Digitale Bibliothek', types: ['artwork', 'artist', 'person', 'institution'],
+    title: 'Germany\'s "central portal for culture and knowledge" — e.g. the Deutsche Fotothek (its search needs an API key)',
+    url: (s) => `https://www.deutsche-digitale-bibliothek.de/searchresults?query=${q(s)}` },
 ];
 
 const forType = (type) => LOOKUPS.filter((l) => l.types.includes(type));

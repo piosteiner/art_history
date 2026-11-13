@@ -52,7 +52,8 @@ TRUNCATE admin_sessions, admin_drafts, page_drafts, form_drafts, live_docs, page
   study_set_events, study_set_proposals, study_set_votes,   -- a set's history and proposals (221): they reference study_sets
   study_set_links, study_set_invitations,   -- links and invitations to sets (228)
   friendships, account_blocks, chat_messages, chat_reports, set_chat_messages, set_chat_removed, set_chat_reads,   -- private (224, 225)
-  set_chat_hidden, account_views;   -- private (226, 227)
+  set_chat_hidden, account_views,   -- private (226, 227)
+  study_set_snapshots;   -- results' copies of sets (229): they reference study_sets (missing here, every reset failed 2026-11-06 … 13)
 -- site-only accounts (220: members — visitors who signed up) are people, not editors of the content: not in the test copy
 -- accounts made for the test environment (222) stay, with their password and role; deleted ones go
 DELETE FROM admin_users WHERE role = 'member' AND NOT test_env;
