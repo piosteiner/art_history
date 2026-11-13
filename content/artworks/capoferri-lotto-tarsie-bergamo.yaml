@@ -18,12 +18,14 @@ names:
     role: translation
     text: Inlays of the choir of Santa Maria Maggiore
 creator: giovan-francesco-capoferri
-created: 1522
+created: c. 1523–1533
+created_span: uncertain
+conceived: 1523
 medium: intarsia
 dimensions: [44, 45.6]
 institution: santa-maria-maggiore
 description_md: |-
-  The choir of [[institution/santa-maria-maggiore|Santa Maria Maggiore]] in [[place/bergamo|Bergamo]] is decorated with an intarsia cycle made between 1523 and 1533 in a long and at times tense collaboration between the intarsia master [[artist/giovan-francesco-capoferri|Giovan Francesco Capoferri]], the painter [[artist/lorenzo-lotto|Lorenzo Lotto]], the Franciscan theologian Girolamo Terzi and a large team of sculptors, carvers and carpenters [[source/ajmar-2024-reciprocal-design|p. 42]]. The panel of the Creation of the World in the backrest of the choir stalls measures 44 × 45.6 cm; the lecture dates it 1524–1532 [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 12]].
+  The choir of [[institution/santa-maria-maggiore|Santa Maria Maggiore]] in [[place/bergamo|Bergamo]] is decorated with an intarsia cycle made between 1523 and 1533 in a long and at times tense collaboration between the intarsia master [[artist/giovan-francesco-capoferri|Giovan Francesco Capoferri]], the painter [[artist/lorenzo-lotto|Lorenzo Lotto]], the Franciscan theologian Girolamo Terzi and a large team of sculptors, carvers and carpenters [[source/ajmar-2024-reciprocal-design|p. 42]]. The panel of the Creation of the World in the backrest of the choir stalls measures 44 × 45.6 cm; Marta Ajmar dates it c. 1523–1533 [[source/ajmar-2024-reciprocal-design|p. 43, fig. 18]], the lecture 1524–1532 [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 12]]; the purchases of timber began in 1522 [[source/ajmar-2024-reciprocal-design|p. 42]].
 
   ## The Creation and the Magnum Chaos
 
@@ -54,13 +56,17 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 10 (5.12.2024)
   created:
-    - accessed: 2026-11-09
-      property: P571
-      wikidata: Q3981182
+    - source: ajmar-2024-reciprocal-design
+      locator: p. 43, fig. 18
+      accessed: 2026-11-13
   creator:
     - accessed: 2026-11-09
       property: P170
       wikidata: Q3981182
+  conceived:
+    - source: ajmar-2024-reciprocal-design
+      locator: p. 43
+      accessed: 2026-11-13
   dimensions:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 10 (5.12.2024)

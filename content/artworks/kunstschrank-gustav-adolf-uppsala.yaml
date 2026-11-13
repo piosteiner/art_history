@@ -16,7 +16,8 @@ names:
     role: translation
     text: Augsburg Art Cabinet
 creator: ulrich-baumgartner
-created: 1633
+created: c. 1625–1631
+created_span: uncertain
 medium: Ebenholz, Silber, Edelsteine
 materials: [ebony, silver]
 institution: uppsala-university
@@ -45,9 +46,9 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 11 (12.12.2024)
   created:
-    - accessed: 2026-11-09
-      property: P571
-      wikidata: Q10422378
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 55
+      accessed: 2026-11-13
   creator:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 11 (12.12.2024)

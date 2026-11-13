@@ -48,15 +48,15 @@ names:
     role: translation
     text: Romulus and Remus
 creator: peter-paul-rubens
-created: 1615
+created: 1612
 medium: oil on canvas
 materials: [oil paint, canvas]
 dimensions: [213, 212]
 institution: capitoline-museums
-inventory_number: PT 144
+inventory_number: PC 67
 web_url: http://www.museicapitolini.org/fr/percorsi/percorsi_per_sale/pinacoteca_capitolina/sala_di_santa_petronilla_la_grande_pittura_del_seicento_a_roma/romolo_e_remo
 description_md: |-
-  A painting by [[artist/peter-paul-rubens|Peter Paul Rubens]] in the Pinacoteca of the [[institution/capitoline-museums|Capitoline Museums]] in Rome: the twins Romulus and Remus cared for by the she-wolf.[[source/wikipedia-en-romulus-and-remus-rubens]] Rubens also shows the god of the river Tiber sitting on his urn, the woodpecker that watched over the twins and brought them food, and the shepherd who discovers the infants.[[source/wikipedia-en-romulus-and-remus-rubens]] The lecture "Aus dem Wald" titles it *Romulus and Remus discovered by the shepherd Faustulus* and gives oil on canvas, 213 × 212 cm, and the date 1612;[[source/ganz-2024-aus-dem-wald|Sitzung 3 (10.10.2024), Folie 75]] Wikipedia dates it 1615–1616.[[source/wikipedia-en-romulus-and-remus-rubens]]
+  A painting by [[artist/peter-paul-rubens|Peter Paul Rubens]] in the Pinacoteca of the [[institution/capitoline-museums|Capitoline Museums]] in Rome: the twins Romulus and Remus cared for by the she-wolf.[[source/wikipedia-en-romulus-and-remus-rubens]] Rubens also shows the god of the river Tiber sitting on his urn, the woodpecker that watched over the twins and brought them food, and the shepherd who discovers the infants.[[source/wikipedia-en-romulus-and-remus-rubens]] The lecture "Aus dem Wald" titles it *Romulus and Remus discovered by the shepherd Faustulus* and gives oil on canvas, 213 × 212 cm, and the date 1612,[[source/ganz-2024-aus-dem-wald|Sitzung 3 (10.10.2024), Folie 75]] as does the museum, which lists it as coming from the Pio collection (inv. PC 67);[[source/musei-capitolini-romolo-e-remo]] Wikipedia dates it 1615–1616.[[source/wikipedia-en-romulus-and-remus-rubens]]
 
   ## The fig tree
 
@@ -71,14 +71,20 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Romulus_and_Remus_by_Peter_Paul_Rubens.jpg
     license: CC0
     credit: Peter Paul Rubens
+numbers:
+  - number: PT 144
+    institution: capitoline-museums
+    label: given by Wikidata; not on the museum's page
 sources:
   medium:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 3 (10.10.2024)
   created:
-    - accessed: 2026-11-09
-      property: P571
-      wikidata: Q3940915
+    - source: musei-capitolini-romolo-e-remo
+      accessed: 2026-11-13
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024), Folie 75
+      accessed: 2026-11-13
   creator:
     - accessed: 2026-11-09
       property: P170
@@ -96,6 +102,5 @@ sources:
       property: P195
       wikidata: Q3940915
   inventory_number:
-    - accessed: 2026-11-09
-      property: P217
-      wikidata: Q3940915
+    - source: musei-capitolini-romolo-e-remo
+      accessed: 2026-11-13

@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: three disputed dates decided (Rubens, Bergamo choir, Uppsala cabinet)
+- **What:** (data only, audited) owner's to-do; all three stored dates came from Wikidata alone, now declined there.
+  Rubens, *Romolo e Remo*: 1612 (not 1615) — the Capitoline Museums' page (new source `musei-capitolini-romolo-e-remo`)
+  + lecture; inventory "PT 144" (Wikidata) → the museum's "PC 67", PT 144 kept as a further number. Bergamo, Creation
+  intarsia: c. 1523–1533 (not 1522 = first timber purchases), designed 1523 (`conceived`) — Ajmar, ZfK 87 (2024),
+  p. 43, fig. 18. Uppsala, Augsburg art cabinet: c. 1625–1631 (not 1633; given 1632) — lecture slide 55 (the
+  Gustavianum's page timed out). Texts adjusted for Rubens and Bergamo.
+- **Why / Revert:** owner's request; the entries' history pages (script `p228/dates3.js`).
+
 ### Content: Charles the Bald — the epithet, dates as written, linked with his prayer book
 - **What:** (data only, audited) `charles-the-bald` (person, from Wikidata this morning): text with a section "Why
   'the Bald'?" — irony (Nelson 1992), a king without a kingdom (Lebe 2003), the tonsure of 877 — from en.wikipedia
