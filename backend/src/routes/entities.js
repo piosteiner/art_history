@@ -861,6 +861,10 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     (extras.phases || []).forEach((p) => renderMd(p, ['notes_md'], env));
     const body = nameCountry(shapeNames(renderMd(entity, e.md, env), e.name));
     if (mentionedIn) body.mentioned_in = mentionedIn;
+    // questions about the entry being checked (open cases, 248): their public notes only — via the view, never the table
+    const { rows: openCases } = await apiPool.query(`SELECT note, to_char(opened, 'YYYY-MM-DD') AS opened, to_char(last_update, 'YYYY-MM-DD') AS last_update
+      FROM public_open_cases WHERE entity_type = $1 AND entity_id = $2 ORDER BY opened, id`, [e.type, id]);
+    if (openCases.length) body.open_cases = openCases;
     // the glossary terms its texts link, with their short definitions — for tooltips without further requests
     const glossary = env.used.size ? Object.fromEntries((await apiPool.query(
       `SELECT slug, name, category::text AS category, definition FROM glossary t WHERE slug = ANY ($1) ORDER BY ${sortKey('term', 't')}`, [[...env.used]])).rows

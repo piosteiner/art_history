@@ -3747,3 +3747,23 @@ test('reference records: folded, Wikidata first, each number linked to its recor
   await expect(box.locator('a', { hasText: '118540416' })).toHaveAttribute('href', 'https://d-nb.info/gnd/118540416');
   await expect(box.locator('li', { hasText: 'Without address' }).locator('a')).toHaveCount(0);
 });
+
+test('open cases (API 248): "Being checked" under the title with each public note and its days; none without cases', async ({ page }) => {
+  const base = {
+    type: 'term', slug: 'test-review-term', name: 'Test Term', category: 'other', definition: 'a test',
+    alt_names: [], description_html: null, images: [], image_url: null, wikidata_id: null, metadata: {}, updated_at: '', glossary: {}, used_in: [], relationships: [], names: [],
+  };
+  await page.route(/\/v1\/glossary\/test-review-term$/, (r) => r.fulfill({ json: { ...base, open_cases: [
+    { note: 'Who made the intarsia is being checked.', opened: '2026-11-13', last_update: null },
+    { note: null, opened: '2026-10-30', last_update: '2026-11-05' },
+  ] } }));
+  await page.goto('/glossary/test-review-term');
+  const box = page.locator('aside.under-review');
+  await expect(box.locator('.under-review-head')).toContainText('Being checked — 2 open questions about this entry');
+  await expect(box.locator('li').first()).toContainText('Who made the intarsia is being checked. (since 13 November 2026)');
+  await expect(box.locator('li').nth(1)).toContainText('A question about this entry is being checked. (since 30 October 2026, last progress 5 November 2026)');
+  await page.route(/\/v1\/glossary\/test-review-plain$/, (r) => r.fulfill({ json: { ...base, slug: 'test-review-plain' } }));
+  await page.goto('/glossary/test-review-plain');
+  await expect(page.locator('h1')).toHaveText('Test Term');
+  await expect(page.locator('aside.under-review')).toHaveCount(0);
+});

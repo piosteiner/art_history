@@ -569,7 +569,10 @@ sources). An artist's change also reaches the museums holding their works (`arti
 | `arthistory_admin` | admin panel pool, import | SELECT/INSERT/UPDATE/DELETE on content; no DDL, no TRUNCATE, 30 s timeout |
 | `arthistory_api` | public API pool, export | SELECT only; `default_transaction_read_only`, 5 s timeout |
 
-New tables get these grants automatically (`ALTER DEFAULT PRIVILEGES` in `db/setup-database.sql`).
+New tables get these grants automatically (`ALTER DEFAULT PRIVILEGES` in `db/setup-database.sql`) — **including
+`arthistory_api`'s SELECT**, so a table that is not for the public must be revoked from it by name in its migration
+(249 did so for 30 forgotten ones: accounts, chats, study sets, drafts, open cases; `test/e2e/api-grants.spec.js` fails
+when a table with such a name is readable by the API role).
 `schema_migrations` is readable by the owner only. Migration 006 tightens the admin tables:
 
 | Table | api | admin |
@@ -864,6 +867,13 @@ bibliography (its shelfmark) or look_url; created_by/at; closed_at/by + resoluti
 `src/admin/quality.js`: NOT EXISTS an open case); closed, the finding — if it still holds — is back. CMS only (no API
 grant): `/open-cases` grouped by where to look, "Open case…" on the Quality page, a box on the entry's page
 (`src/admin/routes/open-cases.js`). Audited.
+
+**On the public site (248, owner 2026-11-13 — transparency about the work in progress):** a case has a `public_note`
+(one line, ≤ 300 characters, no line breaks — the topic or question in English; the description stays a working note).
+The API reads the view `public_open_cases` (id, entry, note, `opened`, `last_update` = the latest update's day; open
+cases only) — granted to `arthistory_api`, while the table itself is not: a view runs with its owner's rights, so the
+role sees exactly these columns. Every detail response has `open_cases` when there are any; the site shows them as
+"Being checked" under the title (`underReview()` in `frontend/src/views/detail.ts`).
 
 ## Other sources (migration 197)
 `source_reliability` has a lowest value `other` (before `database`): a family tree, a forum, a blog — set by hand on

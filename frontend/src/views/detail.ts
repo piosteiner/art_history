@@ -68,6 +68,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
         ${titleStatusLine(e) ? html`<p class="title-status muted small">${titleStatusLine(e)}${cite(e.sources?.[displayName(e).swapped ? 'names' : 'title_status'], e.bibliography)}</p>` : ''}
         ${v.subtitle ? html`<p class="subtitle">${v.subtitle}</p>` : ''}
         ${e.type === 'artwork' ? html`${seriesLine(e)}${partNav(e)}` : ''}
+        ${underReview(e)}
         <p class="detail-actions">
           ${web ? html`<span class="web-top${v.images.length ? '' : ' narrow-only'}">${webPageLink(web)}${accessedNote(web)}</span>` : ''}
           ${GROUPS.includes(e.type as Group) ? html`<a class="button-link" href="/?${PLURAL[e.type]}=${encodeURIComponent(e.slug)}">Show on the map and timeline →</a>` : ''}
@@ -261,6 +262,21 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
  * folded away under one line (owner 2026-11-10: "expandable and collapsable further links"). Only https addresses
  * are links; a number without an address is shown as text.
  */
+/**
+ * Open questions about this entry (API 248): the owner's open cases, each with its public note — "being checked" shown
+ * openly on the page (owner 2026-11-13: transparency about the work in progress). Never the case's working notes.
+ */
+function underReview(e: { open_cases?: { note: string | null; opened: string; last_update: string | null }[] }) {
+  const cases = e.open_cases ?? [];
+  if (!cases.length) return '';
+  const on = (ymd: string) => new Date(`${ymd}T12:00:00`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  return html`<aside class="under-review" aria-label="Being checked">
+    <p class="under-review-head"><strong>Being checked</strong> — ${cases.length === 1 ? 'an open question' : `${String(cases.length)} open questions`} about this entry; the information below may change.</p>
+    <ul>${cases.map((c) => html`<li>${c.note ?? 'A question about this entry is being checked.'}
+      <span class="muted small">(since ${on(c.opened)}${c.last_update ? `, last progress ${on(c.last_update)}` : ''})</span></li>`)}</ul>
+  </aside>`;
+}
+
 function referenceRecords(e: { wikidata_id: string | null; identifiers?: { authority: string; name: string; value: string; url: string | null }[] }) {
   const rows = [
     ...(e.wikidata_id ? [{ name: 'Wikidata', value: e.wikidata_id, url: `https://www.wikidata.org/wiki/${e.wikidata_id}` }] : []),

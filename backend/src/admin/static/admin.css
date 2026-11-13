@@ -244,6 +244,7 @@ mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: in
 .oc-case { border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; padding: .5rem .8rem; margin: 0 0 .6rem; background: var(--panel); }
 .oc-head { display: flex; flex-wrap: wrap; gap: .4rem; align-items: baseline; }
 .oc-finding { margin: .2rem 0; }
+.oc-public { margin: .3rem 0; }   /* the public note (248) — what the site shows */
 .oc-text { margin: .3rem 0; }
 .oc-case .actions { display: flex; flex-wrap: wrap; gap: .5rem; align-items: flex-start; margin: .3rem 0 0; }
 .oc-close > summary { list-style: none; cursor: pointer; }

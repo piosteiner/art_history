@@ -154,6 +154,10 @@ first paragraph of its text as plain text (links as names, no footnotes), cut af
 or `null`; `image_url`: the main image or `null`. Only existing entries; terms and sources are in `glossary`/`bibliography`.
 Every detail response except a term's also has **`mentioned_in`** `[{type, slug, name}]`:
 the entries whose texts link this one (backlinks). A term has the same thing as `used_in`.
+Every detail response of an entry with open cases (248) has **`open_cases`** `[{note, opened, last_update}]`: questions
+about it being checked — `note` the case's public note (one line, or `null`: "a question is being checked"), `opened`
+and `last_update` days (`YYYY-MM-DD`, `last_update` `null` without updates). Never the case's working description.
+Absent when there is none.
 
 **`GET /v1/previews?refs=artist/paul-gauguin,place/arles,term/contrapposto`** — the same previews for *any* entries
 (max. 100 refs, all types incl. terms and sources), as `{data: {"type/slug": {type, slug, name, subtitle, image_url,

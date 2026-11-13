@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Migrations 248/249: open cases on the public site; private tables no longer readable by the API role
+- **What:** 248 — `open_cases.public_note` (one line, ≤ 300 chars, CHECK), view `public_open_cases` (note, opened, last
+  update; open cases only) granted to `arthistory_api`; API detail `open_cases` on every type; CMS case form field
+  "Public note", shown in the case ("on the site"); site: "Being checked" box under the entry's title
+  (`underReview()`, `.under-review`). 249 — `REVOKE ALL … FROM arthistory_api` on 30 tables the API never needed:
+  accounts/friends/chats (11), study sets (12), CMS working state (drafts, `page_downloads`, `editor_scopes`,
+  `admin_search_docs`, `open_cases`, `open_case_updates`). Tests: `open-cases.spec.js` (note in the API, never the
+  description, gone when closed, two lines refused), new `api-grants.spec.js`, site test "open cases (API 248)".
+- **Why:** owner — show openly which questions about an entry are being checked. While building it: the owner role's
+  default privileges had given the public API role SELECT on every new table, private ones included (chats, study
+  sets, drafts) — nothing in the API read them, but one injectable query would have exposed private chats.
+- **Revert:** 249: `GRANT SELECT ON <the 30 tables> TO arthistory_api` (not advisable). 248: `DROP VIEW
+  public_open_cases; ALTER TABLE open_cases DROP COLUMN public_note;` + revert the commit (CMS form, API, site).
+
 ### Content: the prayer book of Charles the Bald after the MDZ record
 - **What:** (data only, audited) new source `mdz-bsb00079994` (Bayerische Staatsbibliothek / MDZ record of ResMü Schk 4
   WL, read via its IIIF manifest and the owner's screenshot). The book: description (46 leaves, gold on purple, court

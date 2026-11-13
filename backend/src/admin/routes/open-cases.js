@@ -3,6 +3,8 @@
 // of the Quality page (quality.js: issues(), counts()); closed with a result, the finding — if it still holds — is back.
 // The list groups the open cases by where the answer is to be found: a source of the bibliography (a book with its
 // shelfmark), else the host of a link (the library catalogue), else "no place given".
+// Since 248 an open case is shown on the entry's public page with its public note (one line, the topic or question) —
+// never its description, which stays a working note.
 const express = require('express');
 const { adminPool } = require('../../db');
 const { BY_TYPE } = require('../../content');
@@ -65,6 +67,7 @@ function caseItem(c, names, { back = '/open-cases' } = {}) {
       <span class="muted small">opened ${day(c.created_at)}${c.created_by_name ? ` by ${c.created_by_name}` : ''}</span></div>
     ${c.finding ? html`<div class="muted small oc-finding">${c.finding}</div>` : ''}
     <div class="md oc-text">${raw(renderMarkdown(c.description_md, { names }))}</div>
+    <p class="small oc-public">${c.closed_at ? '' : html`<span class="tag">on the site</span> `}${c.public_note || html`<i class="muted">no public note — the site says only that a question about this entry is being checked</i>`}</p>
     ${c.look_url ? html`<p class="small"><a href="${c.look_url}" rel="noopener" target="_blank">${c.look_url}</a></p>` : ''}
     ${(c.updates || []).length ? html`<ol class="oc-updates">${c.updates.map((u) => html`<li id="update-${String(u.id)}">
       <span class="oc-update-day">${dayOf(u.on_day)}</span>${u.by_name ? html` <span class="muted small">${u.by_name}</span>` : ''}
@@ -135,6 +138,9 @@ function form({ e, t, values = {}, action, submit, finding = null, back }) {
     <div class="field"><label for="oc-text">Description</label>
       <textarea id="oc-text" name="description_md" rows="8" class="md" required placeholder="What is open, what to compare — e.g. the provenance against the catalogue">${v('description_md')}</textarea>
       <div class="hint">Markdown as in every text: [[type/slug]] links, [[source/…]] footnotes, lists.</div></div>
+    <div class="field"><label for="oc-public">Public note</label>
+      <input id="oc-public" name="public_note" value="${v('public_note')}" maxlength="300" placeholder="Who made the intarsia — Giuliano or Benedetto da Maiano — is being checked.">
+      <div class="hint">Shown on the entry's public page while the case is open (248): one sentence in English — the topic or question, no working notes. Empty = only “a question about this entry is being checked”.</div></div>
     <div class="row">
       <div class="field"><label for="oc-source">Where to look: a source</label>
         <input id="oc-source" name="source" value="${v('source')}" placeholder="start typing: a book, an archive …" autocomplete="off" data-lookup="source">
@@ -158,7 +164,9 @@ async function checked(db, body) {
     if (!rows.length) return { error: `no source “${slug}” in the bibliography` };
     sourceId = rows[0].id;
   }
-  return { row: { description_md: text, look_url: url || null, source_id: sourceId } };
+  const note = String(body.public_note ?? '').replace(/\s+/g, ' ').trim();
+  if (note.length > 300) return { error: 'the public note is one sentence — 300 characters at most' };
+  return { row: { description_md: text, look_url: url || null, source_id: sourceId, public_note: note || null } };
 }
 
 async function entryOf(req, res) {
@@ -194,10 +202,10 @@ router.post('/open-cases', async (req, res) => {
   if (c.error) return again(c.error);
   const parks = req.body.check_id && req.body.issue_key && quality.CHECKS[req.body.check_id];
   try {
-    await withTx(req.user, (db) => db.query(`INSERT INTO open_cases (entity_type, entity_id, check_id, issue_key, finding, description_md, source_id, look_url, created_by)
-      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)`,
+    await withTx(req.user, (db) => db.query(`INSERT INTO open_cases (entity_type, entity_id, check_id, issue_key, finding, description_md, source_id, look_url, created_by, public_note)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)`,
     [t.type, e.id, parks ? req.body.check_id : null, parks ? String(req.body.issue_key).slice(0, 200) : null,
-      parks ? String(req.body.finding || '').slice(0, 1000) || null : null, c.row.description_md, c.row.source_id, c.row.look_url, req.user.id]));
+      parks ? String(req.body.finding || '').slice(0, 1000) || null : null, c.row.description_md, c.row.source_id, c.row.look_url, req.user.id, c.row.public_note]));
   } catch (err) {
     return again(err.code === '23505' ? 'this finding is in an open case already' : friendly(err));
   }
@@ -228,8 +236,8 @@ router.post('/open-cases/:id', async (req, res) => {
     return send(req, res, { title: 'Edit a case', status: 422, flash: { kind: 'error', text: v.error }, body: html`<h1>Edit a case</h1>
       ${form({ e: { slug: c.slug, name: c.name }, t: BY_TYPE[c.entity_type], values: { ...c, ...req.body }, finding: c.finding, back, action: `/open-cases/${String(c.id)}`, submit: 'Save' })}` });
   }
-  await withTx(req.user, (db) => db.query('UPDATE open_cases SET description_md = $2, source_id = $3, look_url = $4 WHERE id = $1',
-    [c.id, v.row.description_md, v.row.source_id, v.row.look_url]));
+  await withTx(req.user, (db) => db.query('UPDATE open_cases SET description_md = $2, source_id = $3, look_url = $4, public_note = $5 WHERE id = $1',
+    [c.id, v.row.description_md, v.row.source_id, v.row.look_url, v.row.public_note]));
   res.redirect(303, `${back}${back.includes('?') ? '&' : '?'}done=saved#case-${c.id}`);
 });
 

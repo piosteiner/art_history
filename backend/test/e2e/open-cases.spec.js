@@ -1,7 +1,9 @@
 // Open cases (migration 198, src/admin/routes/open-cases.js): a finding that takes longer is moved out of the Quality
 // page with a description and where to look; it is followed up in the list (grouped by the source to consult), shown
 // on the entry's page, closed with a result — and its finding, still there, is back on the Quality page.
-const { test, expect, sql, settled, submitForm } = require('./helpers');
+const { test, expect, sql, settled, submitForm, API } = require('./helpers');
+
+const detail = (request, slug) => request.get(`${API}/artworks/${slug}`, { headers: { Host: 'api.localhost' } }).then((r) => r.json());
 
 const cleanup = () => sql(`DELETE FROM open_cases WHERE entity_type = 'artwork' AND entity_id IN (SELECT id FROM artworks WHERE slug LIKE 'test-case-%');
   DELETE FROM artworks WHERE slug LIKE 'test-case-%'; DELETE FROM bibliography WHERE slug = 'test-case-catalogue'`);
@@ -80,12 +82,13 @@ test('a finding moved to an open case: described, grouped by where to look, clos
               AND (coalesce(new_row, old_row)->>'entity_id')::bigint = entity_id('artwork', 'test-case-berck')`)).not.toBe('0');
 });
 
-test('a case opened from an entry, without a finding; a wrong source is refused', async ({ userA }) => {
+test('a case opened from an entry, without a finding; a wrong source is refused; its public note on the site (248)', async ({ userA, request }) => {
   sql("INSERT INTO artworks (slug, title) VALUES ('test-case-plain', 'Test Case Plain')");
   await userA.goto('/artworks/test-case-plain');
   await userA.locator('.oc-box a:has-text("Open a case")').click();
   await expect(userA.locator('.oc-form')).not.toContainText('Finding moved here');
-  await md(userA, 'Ask the museum about the date.');
+  await md(userA, 'Ask the museum about the date. Internal: the curator said so on the phone.');
+  await userA.fill('#oc-public', 'The date of this work is being checked with the museum.');
   await userA.fill('#oc-source', 'no-such-source');
   await submitForm(userA);
   await expect(userA.locator('.flash')).toContainText('no source “no-such-source”');
@@ -93,8 +96,22 @@ test('a case opened from an entry, without a finding; a wrong source is refused'
   await submitForm(userA);
   await expect(userA).toHaveURL(/\/artworks\/test-case-plain\?done=case-opened/);
   await expect(userA.locator('.oc-box .oc-case')).toContainText('Ask the museum about the date.');
+  await expect(userA.locator('.oc-box .oc-public')).toContainText('The date of this work is being checked with the museum.');
   await userA.goto('/open-cases');
   await expect(userA.locator('.oc-group', { hasText: 'No place given' })).toContainText('Test Case Plain');
+
+  // the public API: the note and the day it was opened — never the working description
+  const open = await detail(request, 'test-case-plain');
+  expect(open.open_cases).toEqual([{ note: 'The date of this work is being checked with the museum.', opened: expect.stringMatching(/^\d{4}-\d{2}-\d{2}$/), last_update: null }]);
+  expect(JSON.stringify(open)).not.toContain('curator');
+  // the note emptied: still shown as a case, without a topic
+  sql("UPDATE open_cases SET public_note = NULL WHERE entity_id = entity_id('artwork', 'test-case-plain')");
+  expect((await detail(request, 'test-case-plain')).open_cases).toEqual([expect.objectContaining({ note: null })]);
+  // closed: gone from the site
+  sql("UPDATE open_cases SET closed_at = now() WHERE entity_id = entity_id('artwork', 'test-case-plain')");
+  expect((await detail(request, 'test-case-plain')).open_cases).toBeUndefined();
+  // a note over two lines is refused by the database
+  expect(() => sql("UPDATE open_cases SET public_note = E'one\\ntwo' WHERE entity_id = entity_id('artwork', 'test-case-plain')")).toThrow(/open_cases_public_note_line/);
 });
 
 test('a case opened from the button beside Edit, without any finding; dated updates (today unless set), deleted again', async ({ userA }) => {

@@ -859,6 +859,11 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .hands-works { font-size: .9rem; }
 /* an entry's numbers in Wikidata and authority files, folded (detail.ts referenceRecords, 2026-11-10) */
 .ref-records { margin: .8rem 0; font-size: .9rem; }
+/* open questions about the entry (API 248) — under the title, before the buttons */
+.under-review { margin: .4rem 0 1rem; padding: .5rem .8rem; border: 1px solid var(--line); border-left: 4px solid var(--prov-c); background: var(--surface); border-radius: var(--radius); font-size: .92rem; }
+.under-review-head { margin: 0 0 .2rem; }
+.under-review ul { margin: 0; padding-left: 1.1rem; }
+.under-review li { margin: .15rem 0; }
 .ref-records summary { cursor: pointer; color: var(--muted); }
 .ref-records[open] summary { margin-bottom: .3rem; }
 .ref-records ul { margin: .3rem 0 0; padding-left: 1.2rem; }

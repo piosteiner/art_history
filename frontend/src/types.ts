@@ -124,6 +124,8 @@ interface DetailBase {
   wikidata_id: string | null;
   /** Numbers in authority files (API 053: GND, ULAN, VIAF, LC, BnF …), each with its record's address when it has one. */
   identifiers?: { authority: string; name: string; value: string; url: string | null }[];
+  /** Questions about the entry being checked (API 248, open cases): the public note (null = no topic given) and days. */
+  open_cases?: { note: string | null; opened: string; last_update: string | null }[];
   metadata: Record<string, unknown>;
   updated_at: string;
   relationships: Relationship[];
