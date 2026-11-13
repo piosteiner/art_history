@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: auto-created terms, movements, places — second round
+- **Terms (58 → 0 open):** 55 materials/object types with a sourced definition (citation on `definition`), a cited
+  text (Mason, Endemann, Baxandall, Forsyth, the "Aus dem Wald" slides first; 57 pinned Wikipedia articles) and a
+  broader term (oak/poplar/lime panel › panel, vellum › parchment, tempera › paint …). Doubles: `fresco-2` merged into
+  `fresco`, `oakwood` into `oak`, `wood-engraving-technique` deleted (Hokusai's *Kajikazawa* is a woodcut: kind
+  "Japanese woodblock print"), "Gebetsbuch" → `prayer-book`. Wrong Wikidata materials removed: wove paper on Dürer's
+  *Self-portrait at Thirteen* (1484), oak on the Ringelheim Crucifix (linden, Endemann). Sentences restating doubtful
+  records (Montvianeix pigments, loess on the Hōryūji murals, graphite in 1495) left out.
+- **Movements:** 17 with a sourced period (+ parent where missing), 7 phases acknowledged (completed from the AAT
+  on 2026-10-18); `ottonian-dynasty` removed (the Gero Cross → `ottonian-art`). Structural questions to the owner.
+- **Places:** 45 parents from Wikidata's P131 chain (first ancestor we have, cited P131); Norman Conquest → event;
+  Hungarian Revolution of 1956 → Budapest, pseudo-place "Hungarian People's Republic" removed; `saint-denis-2` →
+  `saint-denis-seine-saint-denis`; Jerusalem left without parent (disputed). Small rest: 7 anonymous masters, The Night
+  Café group acknowledged; True Cross cycle dated from Wikidata.
+- **Why:** owner 2026-11-13. **Revert:** each entry's history; acks by note "(2026-11-13)".
+
 ### Migration 252: auto-created provenance holders as "info"
 - **What:** check `auto_created` — an auto-created person or institution without a Wikidata item, holder of at least
   one provenance step that cites a source and with no stored relationship, is "info" instead of "warning" (1,069 of the
