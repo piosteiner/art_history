@@ -1,31 +1,34 @@
 public_id: 117310
 title_lang: it
 title: Coro della cappella del Palazzo Pubblico
+parts_count: 21
 creator: domenico-di-niccolo-dei-cori
 created: 1415/1428
-kind: intarsia
+created_span: duration
+kind: cycle
 medium: intarsia
 institution: palazzo-pubblico
 description_md: |-
-  [[artist/domenico-di-niccolo-dei-cori|Domenico di Niccolò]]'s intarsia work in the [[institution/palazzo-pubblico|Palazzo Pubblico]] in Siena dates from 1415–1428; the lecture showed a panel with the Creation of the World from it [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 11]]. The panel had already been shown at the end of the preceding session, together with the Creation of the World in Santa Maria Maggiore in Bergamo [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folien 89–90]].
+  The carved and inlaid wooden choir of the chapel in the [[institution/palazzo-pubblico|Palazzo Pubblico]] in Siena, made by [[artist/domenico-di-niccolo-dei-cori|Domenico di Niccolò]] from 1415 to 1428: twenty-one stalls along the walls of the chapel. The work gave its maker his nickname, "dei Cori".[[source/wikipedia-it-palazzo-pubblico-siena|§ Anticappella e cappella di Palazzo]]
 
-  The lecture set Domenico's Creation beside the [[artwork/capoferri-lotto-tarsie-bergamo|Creation of the World]] that [[artist/giovan-francesco-capoferri|Giovan Francesco Capoferri]] made after a design by [[artist/lorenzo-lotto|Lorenzo Lotto]] for the backrest of the choir stalls of Santa Maria Maggiore in Bergamo (1524–1532), a century later [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folien 12–14]]. The comparison belonged to the question of the role of natural materials in intarsia, which Marta Ajmar describes as "reciprocal design", where patterns emerge from the co-operation of the maker with the wood and with more-than-human agents such as fungi, woodworm, fire and water [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 88]] [[source/ajmar-2024-reciprocal-design|p. 25]].
+  The lecture showed one of its panels, the [[artwork/domenico-di-niccolo-creazione-del-mondo|Creation of the World]].[[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 11]]
 sources:
   kind:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 10 (5.12.2024)
-  medium:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 10 (5.12.2024)
+    - source: wikipedia-it-palazzo-pubblico-siena
+      locator: § Anticappella e cappella di Palazzo
+      accessed: 2026-11-13
   created:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 10 (5.12.2024)
+    - source: wikipedia-it-palazzo-pubblico-siena
+      locator: § Anticappella e cappella di Palazzo
+      accessed: 2026-11-13
   creator:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 10 (5.12.2024)
+    - source: wikipedia-it-palazzo-pubblico-siena
+      locator: § Anticappella e cappella di Palazzo
+      accessed: 2026-11-13
   institution:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 10 (5.12.2024)
-  title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 10 (5.12.2024)

@@ -1,0 +1,26 @@
+public_id: 122224
+name: Franz Gerwin
+given_name: Franz
+family_name: Gerwin
+birth: 1891-06-09
+death: 1960-03-28
+biography_md: |-
+  German painter, born in Lünen, died in Bochum in 1960; his work matched the National Socialist idea of "German art".[[source/wikipedia-de-franz-gerwin|introduction]] His [[artwork/gerwin-hochofen|*Hochöfen*]] (1940) was shown at the Great German Art Exhibition of 1941.[[source/schlenker-2020-grosse-deutsche-kunstausstellung|§ Ausgestellte Werke, Abb.]]
+
+  **Birth year.** The German Wikipedia gives 9 June 1891,[[source/wikipedia-de-franz-gerwin|introduction]] Ines Schlenker 1894;[[source/schlenker-2020-grosse-deutsche-kunstausstellung|§ Ausgestellte Werke, Abb.]] Wikidata records both.
+wikidata_id: Q1446929
+metadata:
+  sources: [Wikidata Q1446929 (retrieved 2026-11-13)]
+identifiers:
+  gnd: "124279813"
+  rkd: "347847"
+  viaf: "10775329"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q1446929
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q1446929

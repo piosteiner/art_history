@@ -1,0 +1,48 @@
+public_id: 122216
+name: Constantin Gerhardinger
+given_name: Constantin
+family_name: Gerhardinger
+names:
+  - text: Gerhardinger Constantin
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1127846
+  - text: i. gerhardinger
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1127846
+  - text: l. gerhardinger
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1127846
+  - text: const. gerhardinger
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1127846
+  - text: konst. gerhardinger
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1127846
+  - text: Konstantin Gerhardinger
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1127846
+birth: 1888-07-31
+death: 1970-03-11
+wikidata_id: Q1127846
+metadata:
+  sources: [Wikidata Q1127846 (retrieved 2026-11-13)]
+identifiers:
+  gnd: 11889451X
+  rkd: "31058"
+  ulan: "500020292"
+  viaf: "50023873"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q1127846
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q1127846

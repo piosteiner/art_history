@@ -1,0 +1,29 @@
+public_id: 122221
+name: Adolf Reich
+given_name: Adolf
+family_name: Reich
+names:
+  - text: Adolph Reich
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q98916465
+birth: 1887-04-30
+death: 1963-11-19
+wikidata_id: Q98916465
+metadata:
+  sources: [Wikidata Q98916465 (retrieved 2026-11-13)]
+identifiers:
+  gnd: "130842729"
+  idref: "187065594"
+  rkd: "66030"
+  ulan: "500036753"
+  viaf: "8502114"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q98916465
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q98916465

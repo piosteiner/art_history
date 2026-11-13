@@ -227,6 +227,12 @@ language stays the heading. Under the heading: "Official English title" / "Own E
 the source marker (`sources.title_status`, or `sources.names` for a preferred official translation). `displayName`,
 `otherNames`, `titleStatusLine` in `src/html.ts`; the same rule in `scripts/prerender.mjs`.
 
+## Open questions (API migration 248)
+An entry with open cases in the CMS gets `open_cases` `[{note, opened, last_update}]` in its detail. The page shows
+them under the title as **"Being checked"**: each case's public note (or "A question about this entry is being
+checked."), since when, and the day of its last progress (`underReview()` in `src/views/detail.ts`, `.under-review`).
+The case's working description never reaches the API. Test: `tests/site.spec.ts` "open cases (API 248)".
+
 ## Sources for facts (API migrations 049/050)
 `src/cite.ts`: after a sourced value (fact rows, relationships, provenance steps) a small marker with one letter per kind
 of source, the most reliable first — P primary · L literature · M museum/collection · D other database · W Wikidata ·

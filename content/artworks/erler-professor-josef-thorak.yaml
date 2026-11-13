@@ -1,0 +1,28 @@
+public_id: 122273
+title_lang: de
+title: Professor Josef Thorak
+names:
+  - lang: en
+    role: translation
+    text: Professor Josef Thorak
+creator: fritz-erler
+created: 1939
+kind: painting
+description_md: "*Professor Josef Thorak* by [[artist/fritz-erler|Fritz Erler]] (1939) was shown at the Great German Art Exhibition of 1939 in the [[institution/haus-der-kunst|Haus der Deutschen Kunst]] in Munich; recorded in the picture archive of the Bayerische Staatsbibliothek ([Bayerische Staatsbibliothek, Bildarchiv habe-001150](https://bildarchiv.bsb-muenchen.de/fylr/L/d6bd3f50-9b23-4da5-a171-1fd8d194578b)).[[source/schlenker-2020-grosse-deutsche-kunstausstellung|§ Ausgestellte Werke, Abb.]]"
+relationships:
+  - type: depicts_person
+    to: artist/josef-thorak
+    label: portrait
+    sources:
+      - source: schlenker-2020-grosse-deutsche-kunstausstellung
+        locator: § Ausgestellte Werke, Abb.
+sources:
+  kind:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  created:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  creator:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.

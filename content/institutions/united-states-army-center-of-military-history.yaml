@@ -1,0 +1,59 @@
+public_id: 122206
+name: United States Army Center of Military History
+names:
+  - text: Center of Military History, United States Army
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q7889463
+  - text: CMH
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q7889463
+  - text: U.S. Army Center of Military History
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q7889463
+  - lang: ja
+    role: translation
+    text: アメリカ合衆国陸軍戦史センター
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q7889463
+  - lang: zh
+    role: translation
+    text: 美國陸軍軍史中心
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q7889463
+  - lang: ko
+    role: translation
+    text: 미국 육군 역사관
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q7889463
+  - lang: ru
+    role: translation
+    text: Центр военной истории армии США
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q7889463
+founded: 1918-03
+place: washington-d-c
+website_url: https://history.army.mil/Research/Series-and-Collections/
+wikidata_id: Q7889463
+metadata:
+  sources: [Wikidata Q7889463 (retrieved 2026-11-13)]
+identifiers:
+  gnd: 131362-9
+  idref: "028385233"
+  lc: n81146695
+  viaf: "146001294"
+sources:
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q7889463
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q7889463

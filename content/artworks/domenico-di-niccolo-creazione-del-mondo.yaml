@@ -1,0 +1,37 @@
+public_id: 122288
+title_lang: it
+title: Creazione del mondo
+names:
+  - lang: de
+    role: translation
+    text: Erschaffung der Welt
+  - lang: en
+    role: translation
+    text: Creation of the World
+parent: domenico-di-niccolo-coro-palazzo-pubblico
+creator: domenico-di-niccolo-dei-cori
+created: 1415/1428
+created_span: duration
+kind: intarsia
+medium: intarsia
+institution: palazzo-pubblico
+description_md: |-
+  A panel of the [[artwork/domenico-di-niccolo-coro-palazzo-pubblico|choir]] that [[artist/domenico-di-niccolo-dei-cori|Domenico di Niccolò]] made for the chapel of the [[institution/palazzo-pubblico|Palazzo Pubblico]] in Siena (1415–1428); the lecture showed it as *Erschaffung der Welt* [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folie 11]], after it had already appeared at the end of the preceding session, together with the Creation of the World in Santa Maria Maggiore in Bergamo [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folien 89–90]].
+
+  The lecture set Domenico's Creation beside the [[artwork/capoferri-lotto-tarsie-bergamo|Creation of the World]] that [[artist/giovan-francesco-capoferri|Giovan Francesco Capoferri]] made after a design by [[artist/lorenzo-lotto|Lorenzo Lotto]] for the backrest of the choir stalls of Santa Maria Maggiore in Bergamo (c. 1523–1533 [[source/ajmar-2024-reciprocal-design|p. 43, fig. 18]]), a century later [[source/ganz-2024-aus-dem-wald|Sitzung 11 (12.12.2024), Folien 12–14]]. The comparison belonged to the question of the role of natural materials in intarsia, which Marta Ajmar describes as "reciprocal design", where patterns emerge from the co-operation of the maker with the wood and with more-than-human agents such as fungi, woodworm, fire and water [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 88]] [[source/ajmar-2024-reciprocal-design|p. 25]].
+sources:
+  kind:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 11
+  medium:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 11
+  created:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 11
+  creator:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 11
+  institution:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 11

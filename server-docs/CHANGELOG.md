@@ -4,6 +4,49 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Test environment closed
+- **What:** pm2 `arthistory-test` deleted (`pm2 save`), cluster `18/test` stopped and `start.conf` → `manual` (backup
+  `start.conf.bak-2026-11-13`), `arthistory-test-reset.timer` disabled, nginx `sites-enabled/arthistory-test` replaced by
+  `arthistory-test-closed` (503 notice for test., api.test., admin.test.; copy in `config/nginx/`). Data, roles,
+  passwords, the site build and the original nginx site kept. `deploy.sh` skips the test environment (no pm2 process).
+- **Why:** owner — not used at the moment; memory on the 4 GB VPS (swap full, half the CPU waiting for it). Measured:
+  ~120–200 MB freed by this; with the other VS Code session and an 8-day-old `vite preview` (port 4174, from an old
+  scratchpad) ended as well, available memory 0.5 → 1.9 GB and swap 3.9 → 1.9 GB.
+- **Revert:** server-docs/README.md → Test environment, "To reopen".
+
+### deploy.sh: e2e tests with one worker
+- **What:** `E2E_WORKERS=${E2E_WORKERS:-1}` for the deploy's e2e run.
+- **Why:** with two workers, three deploys of 248/249 failed on different tests under swapping (23–26 min); with one,
+  all 370 passed in 12.2 min.
+- **Revert:** `E2E_WORKERS=2 ./deploy.sh`, or remove the variable.
+
+### Wikidata: creators read "truthy", attributions are no creators
+- **What:** `src/admin/wikidata.js` — `creatorIds()` reads P170 at its best rank only (a preferred "unknown value" = no
+  creator) and leaves out statements with P1480 attribution/possibly/presumably/probably/hypothetically; used for the
+  creator field and the co-creators. `statements()` unchanged (the review keeps showing outranked statements — e2e
+  "ranks"). Unit test `test/wikidata-creators.test.js`.
+- **Why:** the Città ideale had become Piero della Francesca's with Laurana as co-creator — Wikidata's normal-rank
+  attributions beside its preferred "unknown". A scan of all 1,606 works with Wikidata creators: two more took an
+  attribution (Pianta della Catena — Lucantonio degli Uberti; Kegon engi emaki — Jōnin, already labelled "attributed");
+  12 Kunsthaus works have Wikidata "unknown" but the museum's own "circle of / workshop of / style of" (no error).
+- **Revert:** the commit.
+
+### Content: Città ideale, Hoyer, the GDK works, the Siena choir, open cases' public notes
+- **What:** (data only, audited) *Città ideale*: creator Piero and co-creator Laurana removed (Wikidata attributions),
+  "Anonymous, Central Italy", 1480–1490, olio su tavola after the museum (new source `gndm-citta-ideale`, web page
+  gndm.it), text. Hoyer: title *Am Anfang war das Wort* (Hoffmann's 1937 photograph `bsb-hoffmann-hoff-15764`,
+  Schlenker, Wikipedia; "Im" never sourced), slug renamed (old redirects), holder US Army Center of Military History
+  (Q7889463, created; Google Arts & Culture record). Ines Schlenker, *Große Deutsche Kunstausstellung (1937-1944)*,
+  Historisches Lexikon Bayerns 2020 (`schlenker-2020-grosse-deutsche-kunstausstellung`, owner's PDF): the GDK 1937
+  event's "Organisation and figures" (884 works beside Peters's ~1,500), and the 18 works illustrated in it created
+  with 13 artists (Wikidata, dates checked against the article; Gerwin's birth year 1891/1894 disputed, noted) and
+  Troost, Adolf Wagner, Max Schmeling as people (`depicts_person`); one image (Belling's *Schmeling*, Bundesarchiv CC
+  BY-SA 3.0 de). Siena: the choir of the Palazzo Pubblico as a cycle of 21 stalls (it.wikipedia) with the lecture's
+  *Creazione del mondo* as its part. Open cases: public notes for all 9 + a case for the Studiolo of Urbino (Giuliano
+  or Benedetto da Maiano — Raggio 1999, Met).
+- **Why / Revert:** owner's to-dos and requests; the entries' history pages (scripts `p228/citta.js`, `hoyer*.js`,
+  `gdk*.js`, `siena-coro.js`, `cases-public.js`).
+
 ### Migrations 248/249: open cases on the public site; private tables no longer readable by the API role
 - **What:** 248 — `open_cases.public_note` (one line, ≤ 300 chars, CHECK), view `public_open_cases` (note, opened, last
   update; open cases only) granted to `arthistory_api`; API detail `open_cases` on every type; CMS case form field

@@ -1,0 +1,42 @@
+public_id: 122222
+name: Rudolf Belling
+given_name: Rudolf
+family_name: Belling
+names:
+  - text: Rudolf Edwin Belling
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q215029
+  - lang: ru
+    role: translation
+    text: Рудольф Беллинг
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q215029
+birth: 1886-08-26
+death: 1972-06-09
+wikidata_id: Q215029
+metadata:
+  sources: [Wikidata Q215029 (retrieved 2026-11-13)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/88/Bundesarchiv_Bild_102-08322%2C_Plastik_von_Rudolf_Belling.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_102-08322,_Plastik_von_Rudolf_Belling.jpg
+    license: CC BY-SA 3.0 de
+    credit: Unknown
+identifiers:
+  bnf: 14972332n
+  gnd: "118508660"
+  idref: "077473299"
+  lc: n82018297
+  rkd: "6261"
+  ulan: "500087529"
+  viaf: "1933149108672368780001"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q215029
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q215029

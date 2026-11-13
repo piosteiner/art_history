@@ -1,0 +1,28 @@
+public_id: 122279
+title_lang: de
+title: Porträt des Staatsministers und Gauleiters Adolf Wagner
+names:
+  - lang: en
+    role: translation
+    text: Portrait of State Minister and Gauleiter Adolf Wagner
+creator: fritz-erler
+created: 1939
+kind: painting
+description_md: "*Porträt des Staatsministers und Gauleiters Adolf Wagner* by [[artist/fritz-erler|Fritz Erler]] (1939) was shown at the Great German Art Exhibition of 1939 in the [[institution/haus-der-kunst|Haus der Deutschen Kunst]] in Munich; photographed by Georg Schödl ([Stadtarchiv München, DE-1992-FS-NS-00852](https://stadtarchiv.muenchen.de/scopeQuery/detail.aspx?ID=462394)).[[source/schlenker-2020-grosse-deutsche-kunstausstellung|§ Ausgestellte Werke, Abb.]] Wagner, as state commissioner for the Haus der Deutschen Kunst, oversaw the exhibitions.[[source/schlenker-2020-grosse-deutsche-kunstausstellung|§ Auswahlprozess]]"
+relationships:
+  - type: depicts_person
+    to: person/adolf-wagner
+    label: portrait
+    sources:
+      - source: schlenker-2020-grosse-deutsche-kunstausstellung
+        locator: § Ausgestellte Werke, Abb.
+sources:
+  kind:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  created:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  creator:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.

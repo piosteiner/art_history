@@ -76,7 +76,17 @@ Check: `sudo fail2ban-client status arthistory-admin` · unban: `sudo fail2ban-c
 | api.test.arthistory.piogino.ch | A | 83.228.207.199 (test environment, 2026-10-31) |
 | justone.piogino.ch | A | 83.228.207.199 (Just One card generator, 2026-11-09; certbot TLS) |
 
-## Test environment (for visitors) — set up 2026-10-31
+## Test environment (for visitors) — set up 2026-10-31, **closed since 2026-11-13**
+**Closed** (owner: not used at the moment; memory on the 4 GB VPS): pm2 `arthistory-test` removed (so `deploy.sh`
+skips it), cluster `18/test` stopped with `start.conf` = `manual` (backup `start.conf.bak-2026-11-13`), timer
+`arthistory-test-reset.timer` disabled; nginx serves `sites-available/arthistory-test-closed` (copy in
+`config/nginx/`) — the three addresses answer 503 with a short notice. Data, roles, passwords (`test.env`), the site
+build and the original nginx site stay. **To reopen:** `echo auto | sudo tee /etc/postgresql/18/test/start.conf`,
+`sudo systemctl start postgresql@18-test`; swap the nginx link back (`sites-enabled/arthistory-test` →
+`sites-available/arthistory-test`, remove `arthistory-test-closed`, `nginx -t`, reload); `pm2 start
+backend/ecosystem.test.config.js && pm2 save`; `sudo systemctl enable --now arthistory-test-reset.timer`; then
+`scripts/test-env.sh` once (fresh copy of production, migrations of the time).
+
 The same CMS and site as production for people who want to try the project, reset every night:
 - **Site** https://test.arthistory.piogino.ch (a build of `frontend/` with `VITE_API_BASE`, `VITE_SITE`, `VITE_TEST_ENV=1`,
   in `/var/www/arthistory-test/site`; `noindex`), **CMS** https://admin.test.arthistory.piogino.ch (one shared login

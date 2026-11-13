@@ -40,10 +40,10 @@ names:
         wikidata: Q587514
 creator: umberto-boccioni
 created: 1910
-kind: painting
+kind: oil painting
 medium: Oil on canvas
 materials: [oil paint, canvas]
-dimensions: [301, 199.3]
+dimensions: [199.3, 301]
 institution: museum-of-modern-art
 inventory_number: "507.1951"
 web_url: https://www.moma.org/collection/works/79865
@@ -73,27 +73,47 @@ images:
     license: Public domain
     credit: Umberto Boccioni
 sources:
+  kind:
+    - url: https://www.moma.org/collection/works/79865
+      source: moma-the-starry-night
+      accessed: 2026-11-13
+  medium:
+    - url: https://www.moma.org/collection/works/79865
+      source: moma-the-starry-night
+      accessed: 2026-11-13
   created:
     - accessed: 2026-11-07
       property: P571
       wikidata: Q587514
+    - url: https://www.moma.org/collection/works/79865
+      source: moma-the-starry-night
+      accessed: 2026-11-13
   creator:
     - accessed: 2026-11-07
       property: P170
       wikidata: Q587514
+    - url: https://www.moma.org/collection/works/79865
+      source: moma-the-starry-night
+      accessed: 2026-11-13
   materials:
     - accessed: 2026-11-07
       property: P186
       wikidata: Q587514
+    - url: https://www.moma.org/collection/works/79865
+      source: moma-the-starry-night
+      accessed: 2026-11-13
   dimensions:
-    - accessed: 2026-11-07
-      property: P2048
-      wikidata: Q587514
+    - url: https://www.moma.org/collection/works/79865
+      source: moma-the-starry-night
+      accessed: 2026-11-13
   institution:
-    - accessed: 2026-11-07
-      property: P195
-      wikidata: Q587514
+    - url: https://www.moma.org/collection/works/79865
+      source: moma-the-starry-night
+      accessed: 2026-11-13
   inventory_number:
     - accessed: 2026-11-07
       property: P217
       wikidata: Q587514
+    - url: https://www.moma.org/collection/works/79865
+      source: moma-the-starry-night
+      accessed: 2026-11-13

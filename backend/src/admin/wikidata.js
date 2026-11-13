@@ -120,11 +120,25 @@ async function artworkRights(db, artworkId) {
 
 // --- reading an entity ------------------------------------------------------------------------------------------
 const labelOf = (e) => (e && e.labels && ((e.labels.en || e.labels.mul || Object.values(e.labels)[0] || {}).value)) || null;
-// Statements of a property, best rank first (preferred → normal; deprecated never).
+// Statements of a property, best rank first (preferred → normal; deprecated never). The lower ranks stay: the review
+// shows them as "outranked" (Jan van Eyck born in Maaseik, preferred, beside Liège — relsFor()).
 function statements(e, prop) {
   const all = ((e && e.claims && e.claims[prop]) || []).filter((s) => s.rank !== 'deprecated' && s.mainsnak && s.mainsnak.datavalue);
   return [...all.filter((s) => s.rank === 'preferred'), ...all.filter((s) => s.rank !== 'preferred')];
 }
+// The creator (P170) as Wikidata itself reads it ("truthy"): the best rank only, and a preferred "unknown value" is the
+// answer — no creator rather than a lower-ranked guess. Statements whose "sourcing circumstances" (P1480) make them an
+// attribution (attribution, possibly, presumably, probably, hypothetically) are no creators either. (2026-11-13: the
+// Città ideale had "unknown" preferred and Piero and Laurana as normal-rank attributions — they had become creator and
+// co-creator.)
+const ATTRIBUTED = new Set(['Q230768', 'Q30230067', 'Q18122778', 'Q56644435', 'Q18603603']);
+const attributed = (s) => ((s.qualifiers && s.qualifiers.P1480) || []).some((q) => q.datavalue && ATTRIBUTED.has(q.datavalue.value.id));
+function truthy(e, prop) {
+  const all = ((e && e.claims && e.claims[prop]) || []).filter((s) => s.rank !== 'deprecated' && s.mainsnak);
+  const best = all.some((s) => s.rank === 'preferred') ? all.filter((s) => s.rank === 'preferred') : all;
+  return best.filter((s) => s.mainsnak.datavalue);
+}
+const creatorIds = (e) => [...new Set(truthy(e, 'P170').filter((s) => !attributed(s)).map((s) => s.mainsnak.datavalue.value.id).filter(Boolean))];
 const itemIds = (e, prop) => [...new Set(statements(e, prop).map((s) => s.mainsnak.datavalue.value.id).filter(Boolean))];
 const firstString = (e, prop) => { const s = statements(e, prop)[0]; return s ? String(s.mainsnak.datavalue.value) : null; };
 // monolingual text (street address P6375, title P1476): { text, language } → the text
@@ -412,7 +426,7 @@ function fieldsFor(t, e) {
   }
   if (t.type === 'artwork') {
     date('created', 'P571');
-    ref('creator', 'artist', 'P170');
+    { const id = creatorIds(e)[0]; if (id && 'creator' in t.fields) f.creator = { kind: 'ref', ref: { type: 'artist', qid: id } }; }
     ref('institution', 'institution', 'P195');
     text('web_url', firstString(e, 'P973'));  // "described at URL" — usually the museum's page of the work (038)
     // An inventory number belongs to a collection (qualifier P195): prefer the one of the collection suggested above.
@@ -478,7 +492,7 @@ function relsFor(t, e) {
   }
   // several creators (P170): the first becomes the creator field, the others co-creators (migration 028)
   if (t.type === 'artwork') {
-    for (const qid of itemIds(e, 'P170').slice(1)) {
+    for (const qid of creatorIds(e).slice(1)) {
       if (!out.some((r) => r.type === 'co_creator' && r.qid === qid)) out.push({ type: 'co_creator', prop: 'P170', qid, period: null, period_label: null });
     }
   }
@@ -1023,4 +1037,4 @@ async function coordsOf(qid) {
 module.exports = { couldBe,
   getEntitiesBatch,
   withProvenance, search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry, typesOf, institutionKind, NAME_PROPS,
-  pdLike, workRights, artworkRights };
+  pdLike, workRights, artworkRights, fieldsFor, relsFor };

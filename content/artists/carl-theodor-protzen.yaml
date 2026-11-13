@@ -1,0 +1,36 @@
+public_id: 122223
+name: Carl Theodor Protzen
+given_name: Carl Theodor
+family_name: Protzen
+names:
+  - text: Carl Protzen
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q28154643
+  - text: Karl Protzen
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q28154643
+  - text: Karl Theodor Protzen
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q28154643
+birth: 1887-10-17
+death: 1956-09-13
+wikidata_id: Q28154643
+metadata:
+  sources: [Wikidata Q28154643 (retrieved 2026-11-13)]
+identifiers:
+  gnd: "1036254577"
+  rkd: "229211"
+  ulan: "500181297"
+  viaf: "146490584"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q28154643
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q28154643

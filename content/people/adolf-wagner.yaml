@@ -1,0 +1,56 @@
+public_id: 122227
+name: Adolf Wagner
+given_name: Adolf
+family_name: Wagner
+names:
+  - lang: ja
+    role: translation
+    text: アドルフ・ワーグナー
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q84346
+  - lang: zh
+    role: translation
+    text: 阿道夫·瓦格納
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q84346
+  - lang: ru
+    role: translation
+    text: Адольф Вагнер
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q84346
+kind: person
+occupations: [politician, military officer]
+birth: 1890-10-01
+death: 1944-04-12
+wikidata_id: Q84346
+metadata:
+  sources: [Wikidata Q84346 (retrieved 2026-11-13)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Adolf_Wagner.jpg/1280px-Adolf_Wagner.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Adolf_Wagner.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "120046733"
+  lc: n2002079818
+  viaf: "112563523"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q84346
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q84346
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q84346
+  occupations:
+    - accessed: 2026-11-13
+      property: P106
+      wikidata: Q84346

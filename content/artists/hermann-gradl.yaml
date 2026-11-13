@@ -1,0 +1,36 @@
+public_id: 122214
+name: Hermann Gradl
+given_name: Hermann
+family_name: Gradl
+names:
+  - lang: ru
+    role: translation
+    text: Герман Градль
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1611243
+birth: 1883-02-15
+death: 1964-02-15
+wikidata_id: Q1611243
+metadata:
+  sources: [Wikidata Q1611243 (retrieved 2026-11-13)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/65/Hermann_Gradl.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hermann_Gradl.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "118696882"
+  idref: "195757769"
+  lc: n91073315
+  rkd: "218942"
+  viaf: "59878532"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q1611243
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q1611243

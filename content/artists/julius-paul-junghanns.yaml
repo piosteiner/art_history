@@ -1,0 +1,82 @@
+public_id: 122215
+name: Julius Paul Junghanns
+given_name: Julius Paul
+family_name: Junghanns
+names:
+  - text: Julius Paul Junghans
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: Julius P. Junghanns
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: Paul Junghanns
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: Prof. Junghanns
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: Jul. Paul Junghanns
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: prof. julius paul junghanns
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: Paul Junghans
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: professor julius paul junghanns
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: J. P. Junghanns
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: professor j. p. junghanns
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: Jul. Junghans
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: Prof. Julius Junghanns
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: J. P. Junghans
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+  - text: Julius Junghans
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1712871
+birth: 1876-06-08
+death: 1958-04-03
+wikidata_id: Q1712871
+metadata:
+  sources: [Wikidata Q1712871 (retrieved 2026-11-13)]
+identifiers:
+  dome: "710"
+  gnd: "119290677"
+  lc: nr98024031
+  rkd: "43106"
+  ulan: "500048128"
+  viaf: "37723355"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q1712871
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q1712871

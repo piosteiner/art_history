@@ -1,0 +1,75 @@
+public_id: 122228
+name: Max Schmeling
+given_name: Max
+family_name: Schmeling
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Maximillian Adolph Otto Siegfried Schmeling
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q77102
+  - text: Maximilian Adolph Otto Siegfried Schmeling
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q77102
+  - lang: ja
+    role: translation
+    text: マックス・シュメリング
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q77102
+  - lang: zh
+    role: translation
+    text: 马克斯·施梅林
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q77102
+  - lang: ko
+    role: translation
+    text: 막스 슈멜링
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q77102
+  - lang: ru
+    role: translation
+    text: Макс Шмелинг
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q77102
+kind: person
+occupations: [boxer, actor, film actor, entrepreneur, athlete, musician]
+birth: 1905-09-28
+death: 2005-02-02
+wikidata_id: Q77102
+metadata:
+  sources: [Wikidata Q77102 (retrieved 2026-11-13)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Max-schmeling.jpg/1280px-Max-schmeling.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Max-schmeling.jpg
+    license: Public domain
+    credit: Wm. C. Greene - New York World-Telegram and the Sun
+identifiers:
+  bnf: "160380921"
+  gnd: "118608525"
+  idref: "083012079"
+  lc: n98048601
+  viaf: "54941132"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q77102
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q77102
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q77102
+  occupations:
+    - accessed: 2026-11-13
+      property: P106
+      wikidata: Q77102

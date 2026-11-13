@@ -1,0 +1,47 @@
+public_id: 122213
+name: Philipp Carl Leipold
+given_name: Philipp Carl
+family_name: Leipold
+names:
+  - text: Karl Leipold
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1732132
+  - text: k. leipold
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1732132
+  - text: c. leipold
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1732132
+  - text: leipold
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1732132
+  - text: carl leipold
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1732132
+birth: 1864-01-12
+death: 1943-04-01
+wikidata_id: Q1732132
+metadata:
+  sources: [Wikidata Q1732132 (retrieved 2026-11-13)]
+identifiers:
+  dome: "3720"
+  gnd: "116883847"
+  idref: "084347740"
+  lc: nr2005014362
+  rkd: "49171"
+  ulan: "500049548"
+  viaf: "775405"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q1732132
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q1732132

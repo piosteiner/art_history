@@ -1,0 +1,57 @@
+public_id: 122225
+name: Claus Bergen
+given_name: Claus
+family_name: Bergen
+names:
+  - text: klaus bergen
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1098438
+  - text: Claus Friedrich Bergen
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1098438
+  - lang: ja
+    role: translation
+    text: クラウス・ベルゲン
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1098438
+  - lang: zh
+    role: translation
+    text: 克劳斯·贝尔根
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1098438
+  - lang: ru
+    role: translation
+    text: Клаус Берген
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1098438
+birth: 1885-04-18
+death: 1964-10-04
+wikidata_id: Q1098438
+metadata:
+  sources: [Wikidata Q1098438 (retrieved 2026-11-13)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/96/Bw_portrait_Claus_Bergen_painter.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bw_portrait_Claus_Bergen_painter.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  dome: "11926"
+  gnd: "118509373"
+  lc: n84057180
+  rkd: "7085"
+  ulan: "500058278"
+  viaf: "74643787"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q1098438
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q1098438

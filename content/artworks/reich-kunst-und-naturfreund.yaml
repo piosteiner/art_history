@@ -1,0 +1,21 @@
+public_id: 122276
+title_lang: de
+title: Kunst- und Naturfreund
+names:
+  - lang: en
+    role: translation
+    text: Friend of Art and Nature
+creator: adolf-reich
+created: 1939
+kind: painting
+description_md: "*Kunst- und Naturfreund* by [[artist/adolf-reich|Adolf Reich]] (1939) was shown at the Great German Art Exhibition of 1941 in the [[institution/haus-der-kunst|Haus der Deutschen Kunst]] in Munich; reproduced as a postcard from a photograph by Heinrich Hoffmann ([Bayerische Staatsbibliothek, Bildarchiv hoff-42304](https://bildarchiv.bsb-muenchen.de/fylr/L/b101de6d-5e51-47ad-b609-d26bdf5b8ede)).[[source/schlenker-2020-grosse-deutsche-kunstausstellung|§ Ausgestellte Werke, Abb.]]"
+sources:
+  kind:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  created:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  creator:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.

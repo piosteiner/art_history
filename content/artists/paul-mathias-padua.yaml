@@ -1,0 +1,45 @@
+public_id: 122220
+name: Paul Mathias Padua
+given_name: Paul Mathias
+family_name: Padua
+names:
+  - text: Paul Padua
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1000862
+  - text: p. padua
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1000862
+  - text: Paul Matthias von Padua
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1000862
+  - text: Paul Matthias Padua
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1000862
+  - text: Matthias Padua
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1000862
+birth: 1903-11-15
+death: 1981-08-22
+wikidata_id: Q1000862
+metadata:
+  sources: [Wikidata Q1000862 (retrieved 2026-11-13)]
+identifiers:
+  gnd: "118889427"
+  lc: n89672882
+  rkd: "61428"
+  ulan: "500160869"
+  viaf: "30335099"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q1000862
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q1000862

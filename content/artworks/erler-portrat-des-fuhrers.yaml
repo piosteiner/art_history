@@ -1,0 +1,28 @@
+public_id: 122278
+title_lang: de
+title: Porträt des Führers
+names:
+  - lang: en
+    role: translation
+    text: Portrait of the Führer
+creator: fritz-erler
+created: 1939
+kind: painting
+description_md: "*Porträt des Führers* by [[artist/fritz-erler|Fritz Erler]] (1939) was shown at the Great German Art Exhibition of 1939 in the [[institution/haus-der-kunst|Haus der Deutschen Kunst]] in Munich; photographed there ([Bayerische Staatsbibliothek, Bildarchiv hoff-26230](https://bildarchiv.bsb-muenchen.de/fylr/L/5f8f8631-0663-43f9-93ba-aa96e4cbdad6)).[[source/schlenker-2020-grosse-deutsche-kunstausstellung|§ Ausgestellte Werke, Abb.]]"
+relationships:
+  - type: depicts_person
+    to: person/adolf-hitler
+    label: portrait
+    sources:
+      - source: schlenker-2020-grosse-deutsche-kunstausstellung
+        locator: § Ausgestellte Werke, Abb.
+sources:
+  kind:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  created:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  creator:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.

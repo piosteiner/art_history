@@ -1,0 +1,25 @@
+public_id: 122267
+title_lang: de
+title: Das neue Deutschland
+names:
+  - lang: en
+    role: translation
+    text: The New Germany
+  - lang: de
+    role: former
+    text: Segler
+creator: philipp-carl-leipold
+created: 1937 or earlier
+created_span: uncertain
+kind: painting
+description_md: "*Das neue Deutschland* by [[artist/philipp-carl-leipold|Philipp Carl Leipold]] (1937 or earlier) was shown at the [[event/great-german-art-exhibition-1937|Great German Art Exhibition 1937]] in the [[institution/haus-der-kunst|Haus der Deutschen Kunst]] in Munich; photographed there ([Bayerische Staatsbibliothek, Bildarchiv hoff-40025](https://bildarchiv.bsb-muenchen.de/fylr/L/21941bcb-45ba-4c44-b25e-f13441051a8d)).[[source/schlenker-2020-grosse-deutsche-kunstausstellung|§ Ausgestellte Werke, Abb.]] A seascape originally called *Segler* (Sailing Ship): its new title gave a harmless subject an unmistakable message.[[source/schlenker-2020-grosse-deutsche-kunstausstellung|§ Ausgestellte Werke]]"
+sources:
+  kind:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  created:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  creator:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.

@@ -1,0 +1,36 @@
+public_id: 122277
+title_lang: de
+title: Der Boxer Schmeling
+names:
+  - lang: en
+    role: translation
+    text: The Boxer Schmeling
+creator: rudolf-belling
+created: 1929
+kind: sculpture
+medium: Bronze
+description_md: '*Der Boxer Schmeling* by [[artist/rudolf-belling|Rudolf Belling]] (1929) was shown at the [[event/great-german-art-exhibition-1937|Great German Art Exhibition 1937]] in the [[institution/haus-der-kunst|Haus der Deutschen Kunst]] in Munich.[[source/schlenker-2020-grosse-deutsche-kunstausstellung|§ Ausgestellte Werke, Abb.]] In 1937 Belling was shown at the same time in this exhibition and in the [[event/degenerate-art-exhibition|*Entartete Kunst*]] exhibition; after a critic noticed, his two works were removed from the defamatory show, while the *Schmeling* stayed in the Great German Art Exhibition as an embodiment of "Aryan" ideals.[[source/schlenker-2020-grosse-deutsche-kunstausstellung|§ Bewertung]]'
+relationships:
+  - type: depicts_person
+    to: person/max-schmeling
+    sources:
+      - source: schlenker-2020-grosse-deutsche-kunstausstellung
+        locator: § Ausgestellte Werke, Abb.
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ae/Bundesarchiv_Bild_102-11975%2C_Plastik_Max_Schmelings.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_102-11975,_Plastik_Max_Schmelings.jpg
+    license: CC BY-SA 3.0 de
+    credit: Bundesarchiv, Bild 102-11975 (photograph July 1931, author unknown)
+sources:
+  kind:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  medium:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  created:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.
+  creator:
+    - source: schlenker-2020-grosse-deutsche-kunstausstellung
+      locator: § Ausgestellte Werke, Abb.

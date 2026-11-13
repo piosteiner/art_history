@@ -1,0 +1,38 @@
+public_id: 122219
+name: Fritz Erler
+given_name: Fritz
+family_name: Erler
+names:
+  - lang: ru
+    role: translation
+    text: Фриц Эрлер
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q100750
+birth: 1868-12-15
+death: 1940-07-11
+wikidata_id: Q100750
+metadata:
+  sources: [Wikidata Q100750 (retrieved 2026-11-13)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/07/Fritz_Erler_-_Selbstportr%C3%A4t_1908_%28Jugend_1914%29.png
+    source_url: https://commons.wikimedia.org/wiki/File:Fritz_Erler_-_Selbstportr%C3%A4t_1908_(Jugend_1914).png
+    license: Public domain
+    credit: Fritz Erler
+identifiers:
+  bnf: 11447191x
+  dome: "450"
+  gnd: "118682326"
+  lc: nr93017707
+  rkd: "26515"
+  ulan: "500011750"
+  viaf: "57408836"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q100750
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q100750

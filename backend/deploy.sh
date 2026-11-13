@@ -21,7 +21,9 @@ if ! npm audit --omit=dev --audit-level=moderate >/dev/null 2>&1; then
 fi
 
 if [ "$1" != "--skip-tests" ]; then
-  # Unit tests, then the admin panel in a real browser against their own databases and servers (two workers side by side: arthistory_test :3006, arthistory_test_1 :3008).
+  # Unit tests, then the admin panel in a real browser against its own database and server (arthistory_test :3006).
+  # One e2e worker unless E2E_WORKERS says otherwise (2026-11-13: on this 2-CPU / 4 GB server two workers swapped and
+  # timed out — 23–26 min with failures — while one worker ran all 370 tests in 12 min without a flaky one).
   # The whole output goes to logs/deploy-<time>.log (the newest 20 kept), so a failure can be looked up afterwards.
   # E2E_RETRIES=1: a test that fails once and then passes is "flaky" — listed, but the deploy goes on; one that fails
   # twice stops it (2026-10-27: two failures that five full runs could not reproduce had blocked deploys).
@@ -30,7 +32,7 @@ if [ "$1" != "--skip-tests" ]; then
   echo "  tests … (output: $LOG)"
   # at a lower CPU priority: on this 2-CPU server the tests' browsers and servers took the time production's requests
   # needed — API queries hit the 5 s statement timeout during deploys (2026-11-03)
-  if ! { nice -n 10 npm test --silent && E2E_RETRIES=1 nice -n 10 npm run --silent test:e2e; } > "$LOG" 2>&1; then
+  if ! { nice -n 10 npm test --silent && E2E_RETRIES=1 E2E_WORKERS=${E2E_WORKERS:-1} nice -n 10 npm run --silent test:e2e; } > "$LOG" 2>&1; then
     echo "✗ tests failed — production was not touched (still running $PREVIOUS)."
     grep -E "✘|^# fail|^not ok|[0-9]+ failed" "$LOG" | sort -u | head -20
     echo "  Full output: $LOG"

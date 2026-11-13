@@ -59,17 +59,19 @@ names:
   - lang: it
     role: alternative
     text: Città ideale
-creator: piero-della-francesca
-created: 1480s
+attribution_label: Anonymous, Central Italy
+created: 1480/1490
 created_span: uncertain
-medium: tempera on panel
+medium: Olio su tavola
 materials: [oil paint, panel, tempera]
 dimensions: [67.7, 239.4]
 institution: galleria-nazionale-delle-marche
 inventory_number: INV. 1990 D37
-web_url: http://www.gallerianazionalemarche.it/collezioni-gnm/citta-ideale/
+web_url: https://gndm.it/opere/citta-ideale/
 description_md: |-
-  This panel with a view of an ideal city dates from about 1470–1480; it is painted in tempera on wood and measures 67.7 × 239.4 cm [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 72]]. It is in the [[institution/galleria-nazionale-delle-marche|Galleria Nazionale delle Marche]] in [[place/urbino|Urbino]] [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 72]].
+  This panel with a view of an ideal city measures 67.7 × 239.4 cm; the museum gives it to an anonymous artist of central Italy and dates it 1480–1490, oil on panel [[source/gndm-citta-ideale]] — the lecture dated it about 1470–1480 and called it tempera on wood [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 72]].
+
+  It has been attributed to several artists, among them the architect Luciano Laurana, for the precision of its drawing and for its classical architecture, which resembles that of the Palazzo Ducale in Urbino, which Laurana in part designed; today scholars give it to a painter of central Italy. Its purpose is open: a study in perspective, the panel of a piece of furniture (spalliera) or the model for a stage set [[source/gndm-citta-ideale]]. It came from the convent of Santa Chiara in Urbino and probably belonged to the ducal family — Federico's daughter Elisabetta da Montefeltro may have brought it with her when she entered the convent after being widowed in 1482; about 1861 it came into the state collections [[source/gndm-citta-ideale]]. It is in the [[institution/galleria-nazionale-delle-marche|Galleria Nazionale delle Marche]] in [[place/urbino|Urbino]] [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 72]].
 
   The lecture showed it between two views of [[artist/benedetto-da-maiano|Benedetto da Maiano]]'s intarsia [[artwork/studiolo-urbino-ausblick-landschaft|view through an arcade onto a landscape]] in the studiolo of Federico da Montefeltro (1474–1476), comparing perspectival construction in painting and in intarsia [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folien 71–73]]. The slide gives no author for the painting [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 72]].
 wikidata_id: Q1113938
@@ -81,12 +83,6 @@ relationships:
     sources:
       - accessed: 2026-11-09
         property: P1071
-        wikidata: Q1113938
-  - type: co_creator
-    to: artist/luciano-laurana
-    sources:
-      - accessed: 2026-11-09
-        property: P170
         wikidata: Q1113938
   - type: associated_with
     to: movement/italian-renaissance
@@ -101,16 +97,11 @@ images:
     credit: Julian Lupyan
 sources:
   medium:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 10 (5.12.2024)
+    - source: gndm-citta-ideale
+      accessed: 2026-11-13
   created:
-    - accessed: 2026-11-09
-      property: P571
-      wikidata: Q1113938
-  creator:
-    - accessed: 2026-11-09
-      property: P170
-      wikidata: Q1113938
+    - source: gndm-citta-ideale
+      accessed: 2026-11-13
   materials:
     - accessed: 2026-11-09
       property: P186
@@ -129,3 +120,6 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q1113938
+  attribution_label:
+    - source: gndm-citta-ideale
+      accessed: 2026-11-13

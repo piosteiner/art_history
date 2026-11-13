@@ -1,0 +1,30 @@
+# Art history TEST environment — CLOSED since 2026-11-13 (owner: "we don't use it at the moment"; memory on the 4 GB VPS).
+# pm2 arthistory-test removed, cluster 18/test stopped and disabled, arthistory-test-reset.timer disabled; data, roles,
+# passwords and the site build stay. To reopen: server-docs/CHANGELOG.md 2026-11-13 ("Test environment closed").
+# The three addresses answer 503 with a short notice instead of errors. Copy in server-docs/config/nginx/.
+server {
+    server_name test.arthistory.piogino.ch api.test.arthistory.piogino.ch admin.test.arthistory.piogino.ch;
+    access_log /var/log/nginx/arthistory-test-site.access.log;
+    error_log  /var/log/nginx/arthistory-test-site.error.log warn;
+    add_header X-Robots-Tag "noindex, nofollow" always;
+    default_type text/html;
+    location / {
+        add_header X-Robots-Tag "noindex, nofollow" always;
+        add_header Retry-After 86400 always;
+        return 503 '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Test environment closed</title><style>body{font-family:system-ui,sans-serif;max-width:36rem;margin:15vh auto;padding:0 16px;line-height:1.5;color:#22201c;background:#faf8f4}@media (prefers-color-scheme:dark){body{color:#ebe6dd;background:#17161a}a{color:#f0a283}}a{color:#8a3520}</style></head><body><h1>The test environment is closed for now</h1><p>The art history project\'s test environment is not running at the moment.</p><p>The site itself is at <a href="https://arthistory.piogino.ch/">arthistory.piogino.ch</a>.</p></body></html>';
+    }
+
+    listen [::]:443 ssl;
+    listen 443 ssl;
+    ssl_certificate /etc/letsencrypt/live/test.arthistory.piogino.ch/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/test.arthistory.piogino.ch/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name test.arthistory.piogino.ch api.test.arthistory.piogino.ch admin.test.arthistory.piogino.ch;
+    return 301 https://$host$request_uri;
+}

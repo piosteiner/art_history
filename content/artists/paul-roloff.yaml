@@ -1,0 +1,28 @@
+public_id: 122218
+name: Paul Roloff
+given_name: Paul
+family_name: Roloff
+birth: 1877-01-26
+death: 1951-05-29
+wikidata_id: Q1750046
+metadata:
+  sources: [Wikidata Q1750046 (retrieved 2026-11-13)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e3/Roloff%2C_Selbstpotrait_1945.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Roloff,_Selbstpotrait_1945.jpg
+    license: CC BY-SA 3.0 de
+    credit: Dr. Elisabeth Waldmann, Enkelin des Malers
+identifiers:
+  dome: "1259"
+  gnd: "119455870"
+  rkd: "229903"
+  viaf: "13118521"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q1750046
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q1750046

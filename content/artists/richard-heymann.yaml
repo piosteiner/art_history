@@ -1,0 +1,21 @@
+public_id: 122217
+name: Richard Heymann
+given_name: Richard
+family_name: Heymann
+birth: 1900
+death: 1973
+wikidata_id: Q94864901
+metadata:
+  sources: [Wikidata Q94864901 (retrieved 2026-11-13)]
+identifiers:
+  gnd: "1025282299"
+  viaf: "258913830"
+sources:
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q94864901
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q94864901
