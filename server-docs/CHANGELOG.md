@@ -6,7 +6,8 @@ Format: date — what — why — how to revert.
 
 ### Content: L. Schünzel — a second copy, active 1913–1927
 - **Open case 16** (same day): who he was — where to look in the library (the gallery's *Copistenbuch* 1912–1930,
-  the SLUB's Dresden address books, Thieme-Becker/Vollmer/AKL/Dressler) and the two GND candidates; no public note.
+  the SLUB's Dresden address books, Thieme-Becker/Vollmer/AKL/Dressler) and the two GND candidates; public note
+  "Who this painter was … is being researched" (all 11 open cases now have one).
 - **What:** (data only, audited) artist L. Schünzel: active period 1913–1927 (closes `artist_missing_dates`), text
   with a second documented copy (Batoni, *Mary Magdalene*, stamped "Copie nach No. 454 der Königl. Gemälde-Galerie zu
   Dresden 1913", Auktionshaus Stahl Nov. 2011 lot 43 — new source `stahl-2011-schunzel-maria-magdalena`) and the
