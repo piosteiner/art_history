@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: credits for 19 Commons images (Quality "Image without license or credit" 19 → 0)
+- **What:** the images had their license but no credit — their Commons pages carry no machine-readable author
+  ("Files with no machine-readable author"), so the import found none. Credits read from each description page:
+  photographer (Andrew Dunn, Arne List, AlterVista, Stahlkocher, Jansamurai), maker for faithful reproductions (Van Gogh,
+  Giunta Pisano, Master Heinrich of Constance, Viollet-le-Duc), museum for its open-access photos (Met, LACMA, BIU Santé),
+  "Unknown author" where the page names nobody.
+- **Why:** owner asked to check the Quality notice.
+- **Revert:** history of each image (audit_log, table images).
+
 ### Content: films out of the database, their content moved to related entries
 - **What:** removed the ten film entries (artworks of kind anime/film: Afro Samurai, Akira, Appleseed, Grave of the
   Fireflies, Heidi Girl of the Alps, Millennium Actress, Samurai Champloo, Steamboy, The Sword of Doom, Ulysses' Gaze) and
