@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: L. Schünzel — a second copy, active 1913–1927
+- **What:** (data only, audited) artist L. Schünzel: active period 1913–1927 (closes `artist_missing_dates`), text
+  with a second documented copy (Batoni, *Mary Magdalene*, stamped "Copie nach No. 454 der Königl. Gemälde-Galerie zu
+  Dresden 1913", Auktionshaus Stahl Nov. 2011 lot 43 — new source `stahl-2011-schunzel-maria-magdalena`) and the
+  SKD's note on the copyists' stamp and the *Copistenbuch* 1912–1930 (new source `skd-gam-023-kopistenstempel`),
+  where the full name should be found. No first name or dates found online.
+- **Why / Revert:** owner's request; the entry's history page.
+
 ### Content: duplicates and life dates from the to-do list
 - **What:** (data only, audited) Kapitol door: "Heilung des Blinden, Auferweckung des Lazarus" (part 10) overlapped
   "Heilung des Blindgeborenen" (part 8) — after the door's scene list (de.wikipedia after Bloch 1978: right leaf,
