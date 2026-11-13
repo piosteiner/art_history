@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: duplicates and life dates from the to-do list
+- **What:** (data only, audited) Kapitol door: "Heilung des Blinden, Auferweckung des Lazarus" (part 10) overlapped
+  "Heilung des Blindgeborenen" (part 8) — after the door's scene list (de.wikipedia after Bloch 1978: right leaf,
+  13 healing, 14 Lazarus, one scene per relief) part 10 is now "Auferweckung des Lazarus" (the lecture's combined
+  caption kept as another name), part 8 notes the right leaf (slide 130 says left); pair marked not the same.
+  Marienstatt: no second entry — the "Ursula-Altar (um 1350/60)" of the Wikipedia list is probably our high altar,
+  not confirmed (nothing changed). Life dates checked against the GND: Beckmann born 12 Feb 1884, S. Gerasimov
+  26 Sep 1885, Taikan 2 Nov 1868 (all were wrong), Riemenschneider died "7 July 1531 (Julian calendar)" (stored 17
+  July; was 27 July — converted twice), Strigel "4 May 1528 (Julian calendar)" (label only), Andreoni 30 June 1903 –
+  1 July 1961, Milan (it.wikipedia); Bucci, Masereel kept (GND agrees with us, not Wikipedia); Cascella, Thorak,
+  Lissitzky unchanged (GND gives years / another reading). Old Wikidata citations of changed fields replaced.
+- **Why / Revert:** owner's to-do list; the entries' history pages.
+
 ### Content: fate, theft, a number and three provenance chains from the to-do list
 - **What:** (data only, audited) Barili, *Autoritratto* (formerly Kunstgewerbemuseum/MAK Vienna): fate destroyed,
   Second World War (lecture, Sitzung 10, Folie 54). *Schreinmadonna von Cheyres*: owner the parish church, open
