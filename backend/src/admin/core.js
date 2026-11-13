@@ -491,7 +491,7 @@ async function formContext(t, id = null) {
   // object types of immovable works, offered even before they are used (migration 034)
   if (t.type === 'artwork') {
     suggestions.kind = [...new Set([...suggestions.kind, 'building', 'garden', 'park', 'bridge', 'temple hall', 'shrine', 'pagoda', 'gate',
-      'monument', 'tower', 'mural', 'series', 'versions', 'cycle', 'pair', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'])].sort();
+      'monument', 'tower', 'mural', 'series', 'versions', 'edition', 'cycle', 'pair', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'])].sort();
   }
   // the kinds that make a whole a group of works (132: glossary category "group of works"), in every language the
   // terms have — the form hides the physical fields for them (editor/artworkform.js)

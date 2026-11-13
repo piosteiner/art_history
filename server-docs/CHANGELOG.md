@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Feature: editions — the impressions of one print as parts of a group of works (migration 247)
+- **What:** glossary term "edition" (group of works; de Auflage, fr tirage) — a print's impressions or a model's casts
+  are parts of the work, each with its own holder, number, size, provenance and museum page, so the web-page check
+  stays per object. CMS: "edition" among the kinds of wholes (`relevance.js`, `core.js`); site: parts of an edition
+  read "Impression 2 of 2 in …", the heading "Impressions" (`partWord()` in `frontend/src/series.ts`, lists too).
+  e2e `groups.spec.js` + fixture `glossary/edition.yaml`.
+- **Why:** owner: several museums hold impressions of Lissitzky's *New Man* — link both; Japanese woodblock prints
+  and Dürer next.
+- **Revert:** git revert; the term can stay (unused) or be deleted in the CMS.
+
 ### Content: L. Schünzel's copy of Courbet's *Steinklopfer*; the Dresden original a war loss; Lissitzky's *New Man*
 - **What:** (data only, audited) new: *Die Steinklopfer (Kopie nach Gustave Courbet)*, L. Schünzel 1926/27, Albertinum
   Inv.-Nr. 89/30 (source `skd-online-collection-189729`; no picture — rights reserved), `copy_after` the Dresden

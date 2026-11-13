@@ -19,7 +19,7 @@ const FIELDS = require('../content').BY_TYPE;
 
 // object types that open a group as soon as they are typed (editor.js) and that the rules below use
 const IMMOVABLE = ['building', 'garden', 'park', 'bridge', 'temple hall', 'shrine', 'pagoda', 'gate', 'monument', 'tower', 'mural'];
-const WHOLES = ['series', 'versions', 'cycle', 'pair', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'];
+const WHOLES = ['series', 'versions', 'edition', 'cycle', 'pair', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'];
 // an artwork's fields that describe one physical object — none for a group of works (migration 132)
 const OBJECT_FIELDS = ['conceived', 'medium', 'materials', 'dimensions', 'dimensions_note', 'other_dimensions', 'institution',
   'inventory_number', 'on_loan', 'on_loan_since', 'location', 'area', 'provenance_status', 'provenance_status_note', 'fate',

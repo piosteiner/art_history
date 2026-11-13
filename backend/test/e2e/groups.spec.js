@@ -1,10 +1,10 @@
 // Groups of works (migrations 131/132): a whole whose kind is a term of the glossary category "group of works"
-// (series, versions, cycle, pair) — the form hides the empty fields of a physical object, the checks ask no web page
+// (series, versions, edition, cycle, pair) — the form hides the empty fields of a physical object, the checks ask no web page
 // of it but say how many parts are missing, the API marks it and names its parts' kind.
 const { test, expect, sql, settled, API } = require('./helpers');
 
 const api = async (request, p) => (await request.get(`${API}${p}`, { headers: { Host: 'api.localhost' } })).json();
-const cleanup = () => sql("DELETE FROM artworks WHERE slug IN ('test-grp-a', 'test-grp-b'); DELETE FROM artworks WHERE slug = 'test-grp'");
+const cleanup = () => sql("DELETE FROM artworks WHERE slug IN ('test-grp-a', 'test-grp-b', 'test-ed-a', 'test-ed-b'); DELETE FROM artworks WHERE slug IN ('test-grp', 'test-ed')");
 test.beforeEach(cleanup);
 test.afterAll(cleanup);
 
@@ -109,4 +109,25 @@ test('a new series from a work\'s "Part of": created with the save, with the art
   await expect(partOf).toHaveText('Test Grp New Series');
   await expect(partOf).toHaveAttribute('title', 'test-grp-new-series');
   sql("DELETE FROM artworks WHERE slug IN ('test-grp-new-part', 'test-grp-new-series')");
+});
+
+test('an edition (247): the impressions of one print are its parts, each with its own museum and page', async ({ userA, request }) => {
+  sql(`INSERT INTO artworks (slug, title, kind) VALUES ('test-ed', 'Test Edition Print', 'edition');
+       INSERT INTO artworks (slug, title, kind, parent_id, part_number, current_institution_id, inventory_number, web_url) VALUES
+         ('test-ed-a', 'Test Edition Print, impression A', 'lithograph', entity_id('artwork', 'test-ed'), '1', (SELECT min(id) FROM institutions), 'A.1', 'https://example.org/ed-a'),
+         ('test-ed-b', 'Test Edition Print, impression B', 'lithograph', entity_id('artwork', 'test-ed'), '2', (SELECT max(id) FROM institutions), 'B.2', 'https://example.org/ed-b')`);
+  expect(sql("SELECT artwork_is_group(kind_term_id) FROM artworks WHERE slug = 'test-ed'")).toBe('t');   // the term "edition"
+  await settled();
+  // no web page asked of the edition itself; each impression has its own
+  expect(sql(`SELECT count(*) FROM quality_issues WHERE check_id = 'artwork_without_web_page'
+    AND entity_type = 'artwork' AND entity_id IN (entity_id('artwork', 'test-ed'), entity_id('artwork', 'test-ed-a'), entity_id('artwork', 'test-ed-b'))`)).toBe('0');
+  // the form: a group of works, its physical fields hidden while empty
+  await userA.goto('/artworks/test-ed/edit');
+  await expect(userA.locator('.relevance-note')).toContainText('A group of works');
+  await expect(userA.locator('#f-inventory_number')).toBeHidden();
+  // the API: the edition marked as a group, an impression knows its whole's kind
+  const part = await api(request, '/artworks/test-ed-b');
+  expect(part.part_of[0]).toMatchObject({ slug: 'test-ed', kind: 'edition', is_group: true });
+  const whole = await api(request, '/artworks/test-ed');
+  expect(whole.parts.map((p) => p.slug)).toEqual(['test-ed-a', 'test-ed-b']);
 });
