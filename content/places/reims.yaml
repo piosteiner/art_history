@@ -1,0 +1,49 @@
+public_id: 122201
+name: Reims
+names:
+  - lang: ja
+    role: translation
+    text: ランス
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q41876
+  - lang: zh
+    role: translation
+    text: 兰斯
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q41876
+  - lang: ko
+    role: translation
+    text: 랭스
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q41876
+  - lang: ru
+    role: translation
+    text: Реймс
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q41876
+kind: settlement
+parent: arrondissement-of-reims
+country_code: FR
+location: [4.02861, 49.26528]
+wikidata_id: Q41876
+metadata:
+  sources: [Wikidata Q41876 (retrieved 2026-11-13)]
+identifiers:
+  gnd: 4103640-2
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q41876
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q41876
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q41876

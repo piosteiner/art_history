@@ -1,0 +1,62 @@
+public_id: 122196
+name: Grossmünster
+names:
+  - lang: ja
+    role: translation
+    text: グロスミュンスター
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q684948
+  - lang: zh
+    role: translation
+    text: 苏黎世大教堂
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q684948
+  - lang: ko
+    role: translation
+    text: 그로스뮌스터
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q684948
+  - lang: ru
+    role: translation
+    text: Гроссмюнстер
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q684948
+founded: 13th century
+place: zurich
+location: [8.54417, 47.37]
+address: Zwingliplatz 7,  8001 Zürich
+website_url: https://www.grossmuenster.ch/de/
+wikidata_id: Q684948
+metadata:
+  sources: [Wikidata Q684948 (retrieved 2026-11-13)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Grossm%C3%BCnster_Zurich_Switzerland_24Jun2021.jpg/1280px-Grossm%C3%BCnster_Zurich_Switzerland_24Jun2021.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Grossm%C3%BCnster_Zurich_Switzerland_24Jun2021.jpg
+    license: CC BY-SA 4.0
+    credit: Ilya Hirschberg (Kreecher)
+identifiers:
+  gnd: 4458464-7
+  hls: "012123"
+  lc: n84078475
+  viaf: "172515024"
+sources:
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q684948
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q684948
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q684948
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q684948

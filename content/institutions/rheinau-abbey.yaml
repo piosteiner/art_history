@@ -1,0 +1,70 @@
+public_id: 122198
+name: Rheinau Abbey
+names:
+  - lang: fr
+    role: translation
+    text: abbaye de Rheinau
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q670448
+  - lang: de
+    role: translation
+    text: Benediktinerkloster Rheinau, Schweiz
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q670448
+  - lang: it
+    role: translation
+    text: Abbazia di Rheinau
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q670448
+  - lang: zh
+    role: translation
+    text: 萊瑙修道院
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q670448
+  - lang: ru
+    role: translation
+    text: Аббатство Райнау
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q670448
+kind: monastery
+founded: 8th century
+place: rheinau
+location: [8.60833, 47.64222]
+address: Klosterinsel
+wikidata_id: Q670448
+metadata:
+  sources: [Wikidata Q670448 (retrieved 2026-11-13)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/2010-05-14_16-25-05_Switzerland_Zurich_Alt-Rheinau.jpg/1280px-2010-05-14_16-25-05_Switzerland_Zurich_Alt-Rheinau.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:2010-05-14_16-25-05_Switzerland_Zurich_Alt-Rheinau.jpg
+    license: CC BY-SA 3.0
+    credit: Hansueli Krapf
+identifiers:
+  gnd: "1058102524"
+  hls: "011596"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q670448
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q670448
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q670448
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q670448
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q670448

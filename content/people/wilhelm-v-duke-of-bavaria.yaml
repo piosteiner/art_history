@@ -1,0 +1,94 @@
+public_id: 122199
+name: Wilhelm V, Duke of Bavaria
+names:
+  - lang: de
+    role: original
+    text: Wilhelm V von Bayern
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q60568
+  - lang: nl
+    role: translation
+    text: Willem V van Beieren
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q60568
+  - lang: fr
+    role: translation
+    text: Guillaume V de Bavière
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q60568
+  - lang: de
+    role: original
+    text: Wilhelm V.
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q60568
+  - lang: it
+    role: translation
+    text: Guglielmo V di Baviera
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q60568
+  - lang: es
+    role: translation
+    text: Guillermo V de Baviera
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q60568
+  - lang: ja
+    role: translation
+    text: ヴィルヘルム5世
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q60568
+  - lang: zh
+    role: translation
+    text: 威廉五世
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q60568
+  - lang: ru
+    role: translation
+    text: Вильгельм V Баварский
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q60568
+kind: person
+occupations: [aristocrat]
+birth: 1548-10-09
+death: 1626-02-07
+wikidata_id: Q60568
+metadata:
+  sources: [Wikidata Q60568 (retrieved 2026-11-13)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fd/William_v.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:William_v.jpg
+    license: Public domain
+    credit: Hans von Aachen
+identifiers:
+  bnf: 14557323s
+  gnd: "118771841"
+  idref: "060612134"
+  lc: n88674050
+  rkd: "490216"
+  ulan: "500355261"
+  viaf: "266916562"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q60568
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q60568
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q60568
+  occupations:
+    - accessed: 2026-11-13
+      property: P106
+      wikidata: Q60568

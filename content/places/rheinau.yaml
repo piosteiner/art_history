@@ -1,0 +1,16 @@
+public_id: 122197
+name: Rheinau
+kind: settlement
+location: [8.60667, 47.64583]
+wikidata_id: Q67534
+metadata:
+  sources: [Wikidata Q67534 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q67534
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q67534

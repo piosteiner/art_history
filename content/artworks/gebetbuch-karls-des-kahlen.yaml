@@ -23,10 +23,11 @@ names:
   - lang: en
     role: translation
     text: Gebetbuch Karls des Kahlen - Schatzkammer München
+attribution_label: Court school of Charles the Bald
 created: 846/869
 created_span: uncertain
 kind: Gebetsbuch
-medium: Handschrift
+medium: Pergament, Text in Gold, teilweise auf Purpur
 dimensions: [14.2, 11.5, 3.7]
 institution: munich-residence
 inventory_number: ResMü Schk 4 WL
@@ -35,10 +36,25 @@ description_md: |-
   The prayer book of [[person/charles-the-bald|Charles the Bald]], written before 869, is kept in the Residenz in Munich (ResMü Schk 4 WL).[[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 54]] The double page fol. 38v–39r shows the king kneeling in prayer before the Crucified.[[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 54]]
 
   In the lecture the miniature was shown between images of the [[artwork/gero-cross|Gero Cross]], together with the Psalter of Louis the German, in which Arnulf of Carinthia prays before a crucifix.[[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 52]] [[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 54]] [[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 56]] [[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 57]] Since the Carolingian period, monumental sculptures attested in churches mostly represented the cross and the Crucified, their surfaces covered in gold or silver, but most survive only in written records.[[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 24]]
+
+  ## The book
+
+  A small prayer book (14.2 × 11.5 × 3.7 cm) of 46 parchment leaves (13.5 × 11 cm), in Latin, probably made in [[place/reims|Reims]]; its leaves were richly decorated between 846 and 869 in the so-called court school of Charles the Bald.[[source/mdz-bsb00079994|Beschreibung; Anmerkungen]] It contains penitential prayers and prayers for the hours, psalms and prayers for various occasions, adapted for Charles's own use. The text is written entirely in gold, partly on purple; the pages are framed with ornamental borders and decorated with initials. The only figural images are the two full-page miniatures on fol. 38v–39r, before a prayer for the veneration of the Holy Cross, which show the ruler adoring the crucified Christ.[[source/mdz-bsb00079994|Beschreibung]] It is the oldest surviving royal prayer book of the Middle Ages and belongs to a group of splendid manuscripts commissioned by Charles the Bald that mark a last high point of Carolingian book art.[[source/mdz-bsb00079994|Beschreibung]]
+
+  ## From Zürich to Munich
+
+  From the 14th century until the Reformation the manuscript can be traced in the [[institution/grossmunster|Grossmünster]] in Zürich, in the possession of its chapter of canons; it then came to [[institution/rheinau-abbey|Rheinau Abbey]], into the possession of its abbot Johann Theobald Werle, and was given to [[person/wilhelm-v-duke-of-bavaria|Duke Wilhelm V of Bavaria]] (1548–1626), who acquired it for Munich in 1583; before 1803 it was in the old electoral court library.[[source/mdz-bsb00079994|Beschreibung; Anmerkungen]] The present binding, of leather with gold embroidery and Bavarian pearls, was probably made after 1635 for Elector Maximilian I (1573–1651). It replaced the original cover, which according to historical descriptions had two ivory reliefs — the Annunciation and the Visitation, or the Nativity — that can no longer be identified with certainty.[[source/mdz-bsb00079994|Beschreibung]]
 wikidata_id: Q17321865
 metadata:
   sources: [Wikidata Q17321865 (retrieved 2026-11-09)]
 relationships:
+  - type: created_in
+    to: place/reims
+    certainty: probable
+    sources:
+      - source: mdz-bsb00079994
+        locator: Erschienen ("wohl Reims")
+        accessed: 2026-11-13
   - type: depicts_person
     to: person/charles-the-bald
     label: kneeling in prayer before the Crucified (fol. 38v)
@@ -55,15 +71,62 @@ provenance:
   - owner: person/charles-the-bald
     acquired: 846/869
     method: commission
-    certainty: probable
+    notes_md: From the personal possession of Charles the Bald; one of the manuscripts made at his commission.
     sources:
       - accessed: 2026-11-13
         property: P88
         wikidata: Q17321865
+      - source: mdz-bsb00079994
+        locator: Beschreibung
+        accessed: 2026-11-13
+  - owner: institution/grossmunster
+    acquired: 14th century
+    place: zurich
+    label: the chapter of canons (Chorherrenstift)
+    notes_md: Traceable in the Grossmünster from the 14th century until the Reformation.
+    sources:
+      - source: mdz-bsb00079994
+        locator: Beschreibung; Anmerkungen
+        accessed: 2026-11-13
+  - owner: institution/rheinau-abbey
+    ended: 1583
+    place: rheinau
+    label: in the possession of its abbot Johann Theobald Werle
+    notes_md: Came to Rheinau after the Reformation.
+    sources:
+      - source: mdz-bsb00079994
+        locator: Beschreibung; Anmerkungen
+        accessed: 2026-11-13
+  - owner: person/wilhelm-v-duke-of-bavaria
+    acquired: 1583
+    method: gift
+    direct: true
+    place: munich
+    notes_md: The record's note says "Geschenk für Herzog Wilhelm V."; its description says he "could acquire" it for Munich in 1583.
+    sources:
+      - source: mdz-bsb00079994
+        locator: Beschreibung; Anmerkungen
+        accessed: 2026-11-13
+  - owner: institution/bayerische-staatsbibliothek
+    place: munich
+    label: the old electoral court library (kurfürstliche Hofbibliothek)
+    notes_md: In the court library before 1803; the present binding probably made after 1635 for Elector Maximilian I.
+    sources:
+      - source: mdz-bsb00079994
+        locator: Anmerkungen
+        accessed: 2026-11-13
+  - owner: institution/munich-residence
+    place: munich
+    label: Schatzkammer
+    sources:
+      - source: mdz-bsb00079994
+        locator: Besitzende Institution
+        accessed: 2026-11-13
 sources:
   medium:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 4 (17.10.2024), Folie 54
+    - source: mdz-bsb00079994
+      locator: Beschreibung; Umfang
+      accessed: 2026-11-13
   created:
     - accessed: 2026-11-09
       property: P571
@@ -71,15 +134,31 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 4 (17.10.2024), Folie 54
       accessed: 2026-11-13
+    - source: mdz-bsb00079994
+      locator: Zeit
+      accessed: 2026-11-13
   dimensions:
     - accessed: 2026-11-09
       property: P2048
       wikidata: Q17321865
+    - source: mdz-bsb00079994
+      locator: Beschreibung
+      accessed: 2026-11-13
   institution:
     - accessed: 2026-11-09
       property: P195
       wikidata: Q17321865
+    - source: mdz-bsb00079994
+      locator: Besitzende Institution
+      accessed: 2026-11-13
   inventory_number:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q17321865
+    - source: mdz-bsb00079994
+      locator: Signatur
+      accessed: 2026-11-13
+  attribution_label:
+    - source: mdz-bsb00079994
+      locator: Anmerkungen; Beschreibung
+      accessed: 2026-11-13

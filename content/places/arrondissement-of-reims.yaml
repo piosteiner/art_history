@@ -1,0 +1,16 @@
+public_id: 122200
+name: arrondissement of Reims
+kind: region
+location: [4.03333, 49.25]
+wikidata_id: Q702181
+metadata:
+  sources: [Wikidata Q702181 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q702181
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q702181

@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: the prayer book of Charles the Bald after the MDZ record
+- **What:** (data only, audited) new source `mdz-bsb00079994` (Bayerische Staatsbibliothek / MDZ record of ResMü Schk 4
+  WL, read via its IIIF manifest and the owner's screenshot). The book: description (46 leaves, gold on purple, court
+  school, fol. 38v–39r, oldest royal prayer book) and its way from Zürich to Munich (binding after 1635, lost ivory
+  cover); medium "Pergament, Text in Gold, teilweise auf Purpur" (was "Handschrift"); attribution "Court school of
+  Charles the Bald"; `created_in` Reims (probable, "wohl Reims"); the commission now attested; provenance steps 2–6:
+  Grossmünster (14th c. – Reformation), Rheinau Abbey (abbot Johann Theobald Werle, no entry of his own), Wilhelm V
+  (gift, 1583), the court library (before 1803), the Residenz. Created from Wikidata: Grossmünster, Rheinau Abbey,
+  Wilhelm V, Reims. Remaining: `provenance_gap_1933_1945` (when it came to the Schatzkammer is not in the record).
+- **Why / Revert:** owner's request; the entries' history pages (script `p228/gebetbuch.js`).
+
 ### Content: three disputed dates decided (Rubens, Bergamo choir, Uppsala cabinet)
 - **What:** (data only, audited) owner's to-do; all three stored dates came from Wikidata alone, now declined there.
   Rubens, *Romolo e Remo*: 1612 (not 1615) — the Capitoline Museums' page (new source `musei-capitolini-romolo-e-remo`)
