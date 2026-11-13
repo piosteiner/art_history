@@ -1,16 +1,48 @@
 public_id: 116681
 name: Staatliche Kunstsammlungen Dresden
+names:
+  - text: SKD Museum
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q653002
+  - text: Dresden State Art Collections
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q653002
 kind: museum
 founded: 1560
+place: dresden
+location: [13.7369, 51.0528]
+website_url: http://www.skd.museum/
+collection_url: https://skd-online-collection.skd.museum/
 wikidata_id: Q653002
 metadata:
   sources: [Wikidata Q653002 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/53/Residenzschloss_Dresden.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Residenzschloss_Dresden.jpg
+    license: CC BY-SA 3.0
+    credit: David Brandt
+identifiers:
+  bnf: 12213484p
+  gnd: 2022341-9
+  idref: "081264488"
+  lc: n50065750
+  viaf: "144338517"
 sources:
   kind:
     - accessed: 2026-11-07
       property: P31
       wikidata: Q653002
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q653002
   founded:
     - accessed: 2026-11-07
       property: P571
+      wikidata: Q653002
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q653002

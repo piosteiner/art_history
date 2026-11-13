@@ -1,0 +1,44 @@
+public_id: 122170
+name: University of Oxford
+kind: university
+founded: 1096
+place: oxford
+location: [-1.255, 51.755]
+address: University of Oxford, University Offices, Wellington Square, Oxford, Oxfordshire, OX1 2JD
+website_url: https://ox.ac.uk/
+wikidata_id: Q34433
+metadata:
+  sources: [Wikidata Q34433 (retrieved 2026-11-13)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/1_oxford_aerial_panorama_2016.jpg/1280px-1_oxford_aerial_panorama_2016.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1_oxford_aerial_panorama_2016.jpg
+    license: CC BY-SA 4.0
+    credit: Chensiyuan
+identifiers:
+  bnf: 11866762v
+  gnd: 36214-1
+  idref: "026416646"
+  lc: n79095521
+  ulan: "500309870"
+  viaf: "142129514"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q34433
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q34433
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q34433
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q34433
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q34433

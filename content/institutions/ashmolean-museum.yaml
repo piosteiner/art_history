@@ -1,17 +1,57 @@
 public_id: 113442
 name: Ashmolean Museum
+names:
+  - text: Ashmolean Museum of Art and Archeology
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q636400
 kind: museum
 founded: 1683
+place: oxford
+location: [-1.26056, 51.75556]
+address: Beaumont Street, Oxford OX1 2PH
+website_url: https://www.ashmolean.org/
 collection_url: https://collections.ashmolean.org/
 wikidata_id: Q636400
 metadata:
   sources: [Wikidata Q636400 (retrieved 2026-11-03)]
+relationships:
+  - type: part_of
+    to: institution/university-of-oxford
+    sources:
+      - accessed: 2026-11-13
+        property: P361
+        wikidata: Q636400
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Ashmolean_Museum_in_July_2014.jpg/1280px-Ashmolean_Museum_in_July_2014.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ashmolean_Museum_in_July_2014.jpg
+    license: CC BY-SA 2.0
+    credit: Lewis Clarke
+identifiers:
+  bnf: 11868703t
+  gnd: 1007560-4
+  idref: "027561070"
+  lc: n81139884
+  ulan: "500309840"
+  viaf: "141569308"
 sources:
   kind:
     - accessed: 2026-11-03
       property: P31
       wikidata: Q636400
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q636400
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q636400
   founded:
     - accessed: 2026-11-03
       property: P571
+      wikidata: Q636400
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q636400

@@ -1,0 +1,25 @@
+public_id: 122168
+name: Karlsruhe
+kind: settlement
+parent: karlsruhe-government-region
+country_code: DE
+location: [8.4, 49.01667]
+wikidata_id: Q1040
+metadata:
+  sources: [Wikidata Q1040 (retrieved 2026-11-13)]
+identifiers:
+  gnd: 4029713-5
+  hls: "006613"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q1040
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q1040
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q1040

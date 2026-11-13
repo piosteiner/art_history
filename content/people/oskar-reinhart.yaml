@@ -1,0 +1,51 @@
+public_id: 122147
+name: Oskar Reinhart
+given_name: Oskar
+family_name: Reinhart
+names:
+  - lang: ja
+    role: translation
+    text: オスカー・ラインハルト
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q120588
+kind: person
+occupations: [entrepreneur, art collector]
+birth: 1885-06-11
+death: 1965-09-16
+wikidata_id: Q120588
+metadata:
+  sources: [Wikidata Q120588 (retrieved 2026-11-13)]
+relationships:
+  - type: founded
+    to: institution/sammlung-oskar-reinhart-am-romerholz
+    sources:
+      - source: bundessammlungen-sor1923-15
+        locator: Ownership
+        accessed: 2026-11-13
+identifiers:
+  bnf: 11935147m
+  dodis: P2527
+  gnd: "119368978"
+  hls: "027755"
+  idref: "027273814"
+  lc: n82062702
+  rkd: "363418"
+  viaf: "67274531"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q120588
+  birth:
+    - accessed: 2026-11-13
+      property: P569
+      wikidata: Q120588
+  death:
+    - accessed: 2026-11-13
+      property: P570
+      wikidata: Q120588
+  occupations:
+    - accessed: 2026-11-13
+      property: P106
+      wikidata: Q120588

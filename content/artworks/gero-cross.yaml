@@ -57,14 +57,14 @@ names:
   - lang: en
     role: translation
     text: Gero Crucifix (Gero Cross)
-created: 960/970
-created_label: c. 960
+created: 970/976
 created_span: uncertain
+kind: crucifix
 medium: Eichenholz, farbig gefasst
 materials: [oakwood, oak]
 dimensions: [288, 198, 25.2]
 institution: cologne-cathedral
-web_url: https://www.koelner-dom.de/rundgang/bedeutendewerke/gero-kreuz/info/
+web_url: https://www.koelner-dom.de/kunstwerke/gerokreuz
 description_md: |-
   The Gero Cross in [[place/cologne|Cologne]] Cathedral is a monumental crucifix of oak; the corpus is 187 cm high, the cross 285 cm, and its polychromy is modern.[[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 21]] It is considered the oldest large sculpture of the crucified [[person/jesus-christ|Christ]] north of the Alps and has always been displayed in the cathedral.[[source/wikipedia-en-gero-cross|§ Introduction]] It was commissioned by Gero, Archbishop of Cologne, who died in 976.[[source/wikipedia-en-gero-cross|§ Introduction]]
 
@@ -82,7 +82,7 @@ description_md: |-
 
   ## History and dating
 
-  Thietmar says the crucifix was originally displayed above Gero's grave.[[source/wikipedia-en-gero-cross|§ History]] In 1322 it was placed in the new Gothic cathedral, where it remains.[[source/wikipedia-en-gero-cross|§ History]] In 1904 it was repainted by W. Batzem; X-rays showed that the eyes were closed in the original paint layer as well.[[source/wikipedia-en-gero-cross|§ History]] Dendrochronology confirmed the early date in 1976.[[source/wikipedia-en-gero-cross|§ History]] The lecture gave the date as "before 976" and also as 970/990, Endemann as 970–80 or c. 980, Wikipedia as around 965–970.[[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 21]] [[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 52]] [[source/endemann-2020-wood-carving-and-staffering|pp. 147–148]] [[source/wikipedia-en-gero-cross|§ Introduction]] In the lecture the cross was compared with the crucified Christ of the [[artwork/lindau-gospels|Lindau Gospels]] cover and with the [[artwork/goldene-madonna-essen|Golden Madonna of Essen]].[[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 68]] [[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 79]]
+  Thietmar says the crucifix was originally displayed above Gero's grave.[[source/wikipedia-en-gero-cross|§ History]] In 1322 it was placed in the new Gothic cathedral, where it remains.[[source/wikipedia-en-gero-cross|§ History]] In 1904 it was repainted by W. Batzem; X-rays showed that the eyes were closed in the original paint layer as well.[[source/wikipedia-en-gero-cross|§ History]] **Dating.** Thietmar names Gero, who died in 976, as the one who had the crucifix made; that puts it before 976 — the lecture's "before 976".[[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folien 21, 53]][[source/wikipedia-en-gero-cross|§ Introduction]] When the corpus was taken off the cross in 1976 and examined, the dendrochronologist Ernst Hollstein matched its 209 tree rings with the West German oak chronology for the years 757 to 965; assuming that little more than the sapwood had been cut away, he put the felling of the tree around 965 — for Rolf Lauer a confirmation of the early date.[[source/wikipedia-de-gerokreuz|§ Dendrochronologische Datierung 1976]] Günther Binding (1982) doubted these conclusions and dated the "so-called Gero crucifix" to the last decade of the 10th century, under Archbishop Everger; a dendrochronological study of 2008 also called Hollstein's conclusions imprecise.[[source/wikipedia-de-gerokreuz|§ Kunsthistorische Einschätzung]] So the date given here, 970–976, follows Thietmar and the tree rings; other datings are 970/990 in the lecture, 970–80 or c. 980 in Endemann, around 965–970 in the English Wikipedia.[[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 21]] [[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 52]] [[source/endemann-2020-wood-carving-and-staffering|pp. 147–148]] [[source/wikipedia-en-gero-cross|§ Introduction]] In the lecture the cross was compared with the crucified Christ of the [[artwork/lindau-gospels|Lindau Gospels]] cover and with the [[artwork/goldene-madonna-essen|Golden Madonna of Essen]].[[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 68]] [[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 79]]
 wikidata_id: Q653601
 metadata:
   sources: [Wikidata Q653601 (retrieved 2026-11-09)]
@@ -113,13 +113,22 @@ images:
 identifiers:
   gnd: 4253726-5
 sources:
+  kind:
+    - accessed: 2026-11-13
+      wikidata: Q653601
   medium:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 4 (17.10.2024), Folie 21
   created:
-    - accessed: 2026-11-09
-      property: P571
-      wikidata: Q653601
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folien 21, 53
+      accessed: 2026-11-13
+    - source: wikipedia-de-gerokreuz
+      locator: § Entstehung; § Dendrochronologische Datierung 1976
+      accessed: 2026-11-13
+    - source: wikipedia-en-gero-cross
+      locator: § Introduction
+      accessed: 2026-11-13
   materials:
     - accessed: 2026-11-09
       property: P186

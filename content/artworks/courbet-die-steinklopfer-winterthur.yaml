@@ -1,0 +1,227 @@
+public_id: 122148
+title_lang: de
+title: Die Steinklopfer
+title_status: official
+names:
+  - lang: en
+    role: translation
+    text: The Stonebreakers
+    status: official
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q91932358
+  - lang: fr
+    role: translation
+    text: Les Casseurs de pierres
+    status: official
+  - lang: it
+    role: translation
+    text: Gli spaccapietre
+    status: official
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q91932358
+  - lang: de
+    role: alternative
+    text: Steineklopfer
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q91932358
+parent: courbet-the-stone-breakers-versions
+part_number: "2"
+creator: gustave-courbet
+created: 1849
+created_label: c. 1849
+created_span: uncertain
+kind: painting
+medium: Öl auf Leinwand
+materials: [oil paint, canvas]
+dimensions: [56, 65]
+institution: sammlung-oskar-reinhart-am-romerholz
+inventory_number: SOR1923.15
+web_url: https://www.bundessammlungen.ch/de/collection/item/11334/
+description_md: |-
+  A smaller version of [[artist/gustave-courbet|Gustave Courbet]]'s *Stone Breakers*, painted in oil on canvas around 1849 and measuring 56 × 65 cm; it belongs to the [[institution/sammlung-oskar-reinhart-am-romerholz|Oskar Reinhart Collection «Am Römerholz»]] in Winterthur (SOR1923.15) and is at present not on display.[[source/bundessammlungen-sor1923-15|record]][[source/roemerholz-courbet-steinklopfer|page]]
+
+  ## Description
+
+  Two stone breakers do their hard work in ragged clothes; their bodies are shaped by the labour, yet they radiate dignity and honesty. Their faces are shadowed or turned away from the viewer — the individual gives way to the type. The art of the French Realists, of whom Courbet was one of the most important, set the life and work of ordinary people in pictures that were at times monumental.[[source/bundessammlungen-sor1923-15|description]] The revolution of 1848 had led to the proclamation of the Second French Republic; Courbet supported the republican idea and rejected the monarchy with its thinking in social ranks.[[source/bundessammlungen-sor1923-15|description]]
+
+  ## The two versions
+
+  The museum describes its picture as a smaller, possibly later version of the *Stone Breakers*: the large canvas, with the same composition reversed, is today regarded as a war loss.[[source/bundessammlungen-sor1923-15|description]] That large picture, begun in November 1849 and shown at the Salon of 1850–1851, was in the Gemäldegalerie Alte Meister in Dresden and disappeared in 1944/45 — see [[artwork/the-stone-breakers|*The Stone Breakers* (Dresden)]] and the group [[artwork/courbet-the-stone-breakers-versions|*Les Casseurs de pierres*]].[[source/wikipedia-en-the-stone-breakers|§ History]] Wikipedia gives the Winterthur version as 56 × 85 cm; the collection's own record gives 56 × 65 cm.[[source/wikipedia-en-the-stone-breakers|§ History]][[source/bundessammlungen-sor1923-15|dimensions]]
+
+  ## Provenance
+
+  The painting first appears at an anonymous auction at the Hôtel des Commissaires-Priseurs in Paris on 27 June 1855 (lot 18). It then belonged to the Mazaroz-Ribalier collection, sold at the Hôtel Drouot on 13–14 May 1890 (lot 3), and to a collector "M. B.", whose sale at the Hôtel Drouot on 13 April 1892 (lot 14) brought it to the Galerie [[institution/bernheim-jeune|Bernheim-Jeune]]. After the collection of Baron Blanquet de Fulde, sold at the Hôtel Drouot on 12 March 1900 (lot 20), it came to [[person/wilhelm-hansen|Wilhelm Hansen]] in Copenhagen, from whom [[person/oskar-reinhart|Oskar Reinhart]] acquired it in 1923. With his collection it passed as his gift to the Swiss Confederation (1958/1965).[[source/bundessammlungen-sor1923-15|provenance]]
+
+  ## Literature
+
+  *Sammlung Oskar Reinhart «Am Römerholz» Winterthur. Gesamtkatalog*, ed. Mariantonia Reinhard-Felice, 2003, pp. 408–409, cat. 109; *100 Meisterwerke aus der Sammlung Oskar Reinhart «Am Römerholz»*, 2008, pp. 148–149, cat. 109.[[source/bundessammlungen-sor1923-15|literature]]
+wikidata_id: Q91932358
+metadata:
+  sources: [Wikidata Q91932358 (retrieved 2026-11-13)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Courbet_-_Les_casseurs_de_pierres_-_Am_R%C3%B6merholz.jpg/1280px-Courbet_-_Les_casseurs_de_pierres_-_Am_R%C3%B6merholz.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Courbet_-_Les_casseurs_de_pierres_-_Am_R%C3%B6merholz.jpg
+    license: Public domain
+    credit: Gustave Courbet
+provenance:
+  - owner_label: Anonyme Auktion, Hôtel des Commissaires-Priseurs, Paris
+    role: agent
+    numbers:
+      - kind: lot
+        number: "18"
+    acquired: 1855-06-27
+    ended: 1855-06-27
+    method: auction
+    direct: true
+    sources:
+      - source: bundessammlungen-sor1923-15
+        locator: Ownership
+        accessed: 2026-11-13
+  - owner_label: Sammlung Mazaroz-Ribalier
+    ended: 1890-05-13/1890-05-14
+    ended_label: 13–14 May 1890
+    sources:
+      - source: bundessammlungen-sor1923-15
+        locator: Ownership
+        accessed: 2026-11-13
+  - owner: institution/hotel-drouot
+    role: agent
+    numbers:
+      - kind: lot
+        number: "3"
+    acquired: 1890-05-13/1890-05-14
+    acquired_label: 13–14 May 1890
+    ended: 1890-05-13/1890-05-14
+    ended_label: 13–14 May 1890
+    method: auction
+    direct: true
+    label: Auktion Mazaroz-Ribalier
+    sources:
+      - source: bundessammlungen-sor1923-15
+        locator: Ownership
+        accessed: 2026-11-13
+  - owner_label: Sammlung M. B.
+    ended: 1892-04-13
+    sources:
+      - source: bundessammlungen-sor1923-15
+        locator: Ownership
+        accessed: 2026-11-13
+  - owner: institution/hotel-drouot
+    role: agent
+    numbers:
+      - kind: lot
+        number: "14"
+    acquired: 1892-04-13
+    ended: 1892-04-13
+    method: auction
+    direct: true
+    label: Auktion M. B., an Bernheim-Jeune
+    sources:
+      - source: bundessammlungen-sor1923-15
+        locator: Ownership
+        accessed: 2026-11-13
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1892-04-13
+    method: purchase
+    direct: true
+    sources:
+      - source: bundessammlungen-sor1923-15
+        locator: Ownership
+        accessed: 2026-11-13
+  - owner_label: Sammlung Baron Blanquet de Fulde
+    ended: 1900-03-12
+    sources:
+      - source: bundessammlungen-sor1923-15
+        locator: Ownership
+        accessed: 2026-11-13
+  - owner: institution/hotel-drouot
+    role: agent
+    numbers:
+      - kind: lot
+        number: "20"
+    acquired: 1900-03-12
+    ended: 1900-03-12
+    method: auction
+    direct: true
+    label: Auktion Blanquet de Fulde
+    sources:
+      - source: bundessammlungen-sor1923-15
+        locator: Ownership
+        accessed: 2026-11-13
+  - owner: person/wilhelm-hansen
+    ended: 1923
+    label: Sammlung Wilhelm Hansen, Kopenhagen
+    sources:
+      - source: bundessammlungen-sor1923-15
+        locator: Ownership
+        accessed: 2026-11-13
+  - owner: person/oskar-reinhart
+    acquired: 1923
+    ended: 1958/1965
+    ended_label: 1958/1965
+    method: purchase
+    direct: true
+    notes_md: Bought from the Wilhelm Hansen collection in Copenhagen ("ebenda erworben 1923").
+    sources:
+      - source: bundessammlungen-sor1923-15
+        locator: Ownership
+        accessed: 2026-11-13
+  - owner: institution/sammlung-oskar-reinhart-am-romerholz
+    acquired: 1958/1965
+    acquired_label: 1958/1965
+    method: gift
+    direct: true
+    label: Schweizerische Eidgenossenschaft
+    notes_md: Gift of Dr. h.c. Oskar Reinhart to the Swiss Confederation, 1958/1965.
+    sources:
+      - source: bundessammlungen-sor1923-15
+        locator: Ownership
+        accessed: 2026-11-13
+sources:
+  kind:
+    - source: bundessammlungen-sor1923-15
+      accessed: 2026-11-13
+  medium:
+    - source: bundessammlungen-sor1923-15
+      accessed: 2026-11-13
+  created:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q91932358
+    - source: bundessammlungen-sor1923-15
+      accessed: 2026-11-13
+  creator:
+    - accessed: 2026-11-13
+      property: P170
+      wikidata: Q91932358
+    - source: bundessammlungen-sor1923-15
+      accessed: 2026-11-13
+  materials:
+    - accessed: 2026-11-13
+      property: P186
+      wikidata: Q91932358
+  dimensions:
+    - accessed: 2026-11-13
+      property: P2048
+      wikidata: Q91932358
+    - source: bundessammlungen-sor1923-15
+      accessed: 2026-11-13
+  institution:
+    - accessed: 2026-11-13
+      property: P195
+      wikidata: Q91932358
+    - source: bundessammlungen-sor1923-15
+      accessed: 2026-11-13
+  title_status:
+    - source: bundessammlungen-sor1923-15
+      accessed: 2026-11-13
+  inventory_number:
+    - accessed: 2026-11-13
+      property: P217
+      wikidata: Q91932358
+    - source: bundessammlungen-sor1923-15
+      accessed: 2026-11-13

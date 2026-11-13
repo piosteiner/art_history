@@ -1,0 +1,14 @@
+public_id: 122174
+name: edition
+names:
+  - lang: de
+    role: translation
+    text: Auflage
+  - lang: fr
+    role: translation
+    text: tirage
+  - lang: en
+    role: alternative
+    text: impressions
+category: group of works
+definition: The impressions of one print, or the casts of one model, taken from the same block, plate, stone or mould — each impression an object of its own, often in another collection.

@@ -1,0 +1,55 @@
+public_id: 122177
+title_lang: en
+title: New Man (Neuer) — Brooklyn Museum
+parent: lissitzky-new-man
+part_number: "1"
+creator: el-lissitzky
+created: 1923
+kind: lithograph
+medium: Lithograph on beige moderately thick smooth wove paper
+dimensions: [53.5, 45.6]
+dimensions_note: sheet; image 30.5 × 31.8 cm
+institution: brooklyn-museum
+inventory_number: 50.191.10
+web_url: https://www.brooklynmuseum.org/opencollection/objects/64484
+description_md: "The [[institution/brooklyn-museum|Brooklyn Museum]]'s impression of [[artwork/lissitzky-new-man|*New Man (Neuer)*]], plate 10 of El Lissitzky's portfolio of *Victory over the Sun* figurines (1923): a lithograph on beige, moderately thick smooth wove paper, sheet 53.5 × 45.6 cm, image 30.5 × 31.8 cm, inventory 50.191.10, acquired by exchange; at present not on view.[[source/brooklyn-50-191-10|caption]]"
+provenance:
+  - owner: institution/brooklyn-museum
+    method: exchange
+    label: By exchange
+    sources:
+      - url: https://www.brooklynmuseum.org/opencollection/objects/64484
+        source: brooklyn-50-191-10
+        locator: caption
+        accessed: 2026-11-13
+sources:
+  medium:
+    - url: https://www.brooklynmuseum.org/opencollection/objects/64484
+      source: brooklyn-50-191-10
+      locator: caption
+      accessed: 2026-11-13
+  created:
+    - url: https://www.brooklynmuseum.org/opencollection/objects/64484
+      source: brooklyn-50-191-10
+      locator: caption
+      accessed: 2026-11-13
+  creator:
+    - url: https://www.brooklynmuseum.org/opencollection/objects/64484
+      source: brooklyn-50-191-10
+      locator: caption
+      accessed: 2026-11-13
+  dimensions:
+    - url: https://www.brooklynmuseum.org/opencollection/objects/64484
+      source: brooklyn-50-191-10
+      locator: caption
+      accessed: 2026-11-13
+  institution:
+    - url: https://www.brooklynmuseum.org/opencollection/objects/64484
+      source: brooklyn-50-191-10
+      locator: caption
+      accessed: 2026-11-13
+  inventory_number:
+    - url: https://www.brooklynmuseum.org/opencollection/objects/64484
+      source: brooklyn-50-191-10
+      locator: caption
+      accessed: 2026-11-13

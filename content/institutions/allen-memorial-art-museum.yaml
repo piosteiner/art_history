@@ -1,16 +1,42 @@
 public_id: 117114
 name: Allen Memorial Art Museum
+names:
+  - text: AMAM
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q3816734
 kind: museum
 founded: 1917
+place: oberlin
+location: [-82.2168, 41.2937]
+website_url: https://amam.oberlin.edu/
+collection_url: https://allenartcollection.oberlin.edu/
 wikidata_id: Q3816734
 metadata:
   sources: [Wikidata Q3816734 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Oberlin_College_-_Allen_Memorial_Art_Museum.jpg/1280px-Oberlin_College_-_Allen_Memorial_Art_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Oberlin_College_-_Allen_Memorial_Art_Museum.jpg
+    license: Public domain
+    credit: Daderot
+identifiers:
+  lc: n79092629
+  ulan: "500303823"
+  viaf: "155081650"
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
       wikidata: Q3816734
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q3816734
   founded:
     - accessed: 2026-11-09
       property: P571
+      wikidata: Q3816734
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q3816734

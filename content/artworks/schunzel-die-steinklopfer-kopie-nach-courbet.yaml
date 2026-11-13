@@ -1,0 +1,50 @@
+public_id: 122167
+title_lang: de
+title: Die Steinklopfer (Kopie nach Gustave Courbet)
+title_status: official
+creator: l-schunzel
+created: 1926/1927
+created_label: 1926/27
+kind: painting
+medium: Öl auf Leinwand
+dimensions: [85, 121]
+institution: albertinum
+inventory_number: Inv.-Nr. 89/30
+web_url: https://skd-online-collection.skd.museum/Details/Index/189729
+description_md: |-
+  A copy after [[artist/gustave-courbet|Gustave Courbet]]'s [[artwork/the-stone-breakers|*Stone Breakers*]], painted in 1926/27 by [[artist/l-schunzel|L. Schünzel]] in oil on canvas, 85 × 121 cm, and inscribed lower left "nach G. Courbet. von L. Schünzel."; it is in the [[institution/albertinum|Albertinum]] of the Staatliche Kunstsammlungen Dresden (Inv.-Nr. 89/30).[[source/skd-online-collection-189729|record]]
+
+  Courbet's original, bought for the Dresden gallery around 1882, was lost in 1944/45.[[source/wikipedia-en-the-stone-breakers|§ History]] A smaller version by Courbet himself is in the Oskar Reinhart Collection in Winterthur: [[artwork/courbet-die-steinklopfer-winterthur|*Die Steinklopfer*]].[[source/bundessammlungen-sor1923-15|description]]
+relationships:
+  - type: copy_after
+    to: artwork/the-stone-breakers
+    label: signed "nach G. Courbet"
+    sources:
+      - source: skd-online-collection-189729
+        locator: Signatur, Bezeichnung, Inschriften
+        accessed: 2026-11-13
+sources:
+  kind:
+    - source: skd-online-collection-189729
+      accessed: 2026-11-13
+  medium:
+    - source: skd-online-collection-189729
+      accessed: 2026-11-13
+  created:
+    - source: skd-online-collection-189729
+      accessed: 2026-11-13
+  creator:
+    - source: skd-online-collection-189729
+      accessed: 2026-11-13
+  dimensions:
+    - source: skd-online-collection-189729
+      accessed: 2026-11-13
+  institution:
+    - source: skd-online-collection-189729
+      accessed: 2026-11-13
+  title_status:
+    - source: skd-online-collection-189729
+      accessed: 2026-11-13
+  inventory_number:
+    - source: skd-online-collection-189729
+      accessed: 2026-11-13

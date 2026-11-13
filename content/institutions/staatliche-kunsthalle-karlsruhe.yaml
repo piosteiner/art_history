@@ -1,3 +1,45 @@
 public_id: 115390
 name: Staatliche Kunsthalle Karlsruhe
+kind: museum
+founded: 1846
+place: karlsruhe
+location: [8.4, 49.0119]
+address: Hans-Thoma-Straße 2, 76133 Karlsruhe
+website_url: http://www.kunsthalle-karlsruhe.de
+collection_url: https://www.kunsthalle-karlsruhe.de/alle-werke/
 wikidata_id: Q658725
+metadata:
+  sources: [Wikidata Q658725 (retrieved 2026-11-13)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/35/KarlsruherKunsthalle.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:KarlsruherKunsthalle.jpg
+    license: Public domain
+    credit: Armerdietrich
+identifiers:
+  bnf: "118674806"
+  gnd: 4204664-6
+  idref: "027750175"
+  lc: n79074432
+  ulan: "500300796"
+  viaf: "139030426"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q658725
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q658725
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q658725
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q658725
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q658725

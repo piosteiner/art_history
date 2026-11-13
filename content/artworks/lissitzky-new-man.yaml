@@ -3,11 +3,17 @@ title_lang: en
 title: New Man (Neuer)
 creator: el-lissitzky
 created: 1923
-kind: lithograph
-medium: Colour lithograph
-web_url: https://www.brooklynmuseum.org/opencollection/objects/64484
+conceived: 1920/1921
+conceived_label: 1920–21
+kind: edition
 description_md: |-
-  Plate 10 of the portfolio *Figurines: The Three-Dimensional Design of the Electro-Mechanical Show "Victory over the Sun"* (Hanover, 1923); impressions are in several museums, for example the [[institution/brooklyn-museum|Brooklyn Museum]], 50.191.10 [[source/brooklyn-50-191-10]].
+  Plate 10 of the portfolio *Figurines: The Three-Dimensional Design of the Electro-Mechanical Show "Victory over the Sun"* (Hanover, 1923): designed in 1920–21 and published in 1923, as the Museum of Modern Art dates it.[[source/wye-2004-artists-and-prints|MoMA, object page]] The colour lithograph exists in impressions in several museums — the [[institution/brooklyn-museum|Brooklyn Museum]] (50.191.10, acquired by exchange: lithograph on beige, moderately thick smooth wove paper, sheet 53.5 × 45.6 cm, image 30.5 × 31.8 cm)[[source/brooklyn-50-191-10|caption]] and the Museum of Modern Art in New York among them.[[source/wye-2004-artists-and-prints|MoMA, object page]] Each is entered as an impression of this edition: [[artwork/lissitzky-new-man-brooklyn|Brooklyn]] and [[artwork/lissitzky-new-man-moma|MoMA]].
+
+  ## Vitebsk, Suprematism and Proun
+
+  At the behest of [[artist/marc-chagall|Marc Chagall]], Lissitzky took over the graphic workshop of the Vitebsk Art Institute in 1919. When [[artist/kazimir-malevich|Kazimir Malevich]] arrived at the school, Lissitzky came under the strong influence of [[movement/suprematism|Suprematism]] and began to work abstractly; he invented the imagery he called *Proun* ("Project for the Affirmation of the New"): floating architectonic structures in an imagined three-dimensional space through which one might move above, below and through. The *Proun* style can be seen in *New Man*, a character of the 1913 Futurist opera *Victory over the Sun*.[[source/wye-2004-artists-and-prints|MoMA, object page]]
+
+  After seeing a production of the opera staged in Vitebsk in 1920, Lissitzky set out to restage it entirely with mechanical puppets, or automatons.[[source/wye-2004-artists-and-prints|MoMA, object page]][[source/brooklyn-50-191-10|object label]] The performance was never realised; instead he published a portfolio of ten large lithographs showing his vision of the main characters.[[source/brooklyn-50-191-10|object label]] His designs take up the geometry and limited colour range of Suprematism — which rejected traditional perspectival illusion for geometric shapes floating against a white ground — and the multidimensionality of the *Proun* images.[[source/wye-2004-artists-and-prints|MoMA, object page]][[source/brooklyn-50-191-10|object label]]
 
   ## The portfolio
 
@@ -24,3 +30,9 @@ description_md: |-
   ## Later
 
   For the exhibition "Lissitzky+" four figurines — the Announcer, the Time Traveller, the Gravediggers and the New Man — were built as large models [[source/wikipedia-en-el-lissitzky|§ Scholarly assessment and legacy]].
+sources:
+  conceived:
+    - url: https://www.moma.org/collection/works/88312
+      source: wye-2004-artists-and-prints
+      locator: 'MoMA, object page: "1920–21, published 1923"'
+      accessed: 2026-11-13

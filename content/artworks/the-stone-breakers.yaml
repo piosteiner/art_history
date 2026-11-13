@@ -62,14 +62,21 @@ names:
     sources:
       - accessed: 2026-11-08
         wikidata: Q2914912
+parent: courbet-the-stone-breakers-versions
+part_number: "1"
 creator: gustave-courbet
-created: 1850
+created: 1849
 kind: painting
 medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [165, 257]
 institution: staatliche-kunstsammlungen-dresden
 inventory_number: Gal.-Nr. 2522
+web_url: https://skd-online-collection.skd.museum/Details/Index/240756
+fate: lost
+fate_date: 1944/1945
+fate_date_label: 1944/45
+fate_note: Kriegsverlust (war loss), Galerie Neue Meister 2522, as the Deutsche Fotothek records it. Usually said to have been destroyed in the bombing of Dresden on 13–15 February 1945; according to Richard Raskin (1988) missing since a transfer in 1944.
 description_md: |-
   Courbet's realism of labour — with [[artwork/madonna-di-loreto]] the seminar's reminder of the traditions of realism that totalitarian art drew on [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 24]].
 
@@ -87,7 +94,9 @@ description_md: |-
 
   ## Loss
 
-  The picture was bought around 1882 by the Gemäldegalerie Alte Meister in Dresden [[source/wikipedia-en-the-stone-breakers|§ History]]. It is usually said to have been destroyed during the bombing of Dresden on 13–15 February 1945, together with 153 other paintings, when a transport taking works to the Königstein Fortress was hit [[source/wikipedia-en-gustave-courbet|§ The Stone Breakers]] [[source/wikipedia-en-the-stone-breakers|§ History]]. Richard Raskin, however, wrote in 1988 that it was not on that transport and that the museum lists it as missing since a transfer in 1944 [[source/wikipedia-en-the-stone-breakers|§ History]]. A smaller second version, a mirror image measuring 56 × 85 cm, is in the Oskar Reinhart Collection in Winterthur [[source/wikipedia-en-the-stone-breakers|§ History]].
+  The picture was bought around 1882 by the Gemäldegalerie Alte Meister in Dresden [[source/wikipedia-en-the-stone-breakers|§ History]]. It is usually said to have been destroyed during the bombing of Dresden on 13–15 February 1945, together with 153 other paintings, when a transport taking works to the Königstein Fortress was hit [[source/wikipedia-en-gustave-courbet|§ The Stone Breakers]] [[source/wikipedia-en-the-stone-breakers|§ History]]. Richard Raskin, however, wrote in 1988 that it was not on that transport and that the museum lists it as missing since a transfer in 1944 [[source/wikipedia-en-the-stone-breakers|§ History]]. A smaller second version, a mirror image, is in the Oskar Reinhart Collection in Winterthur — [[artwork/courbet-die-steinklopfer-winterthur|*Die Steinklopfer*]]; Wikipedia gives 56 × 85 cm, the collection 56 × 65 cm[[source/bundessammlungen-sor1923-15|dimensions]] [[source/wikipedia-en-the-stone-breakers|§ History]].
+
+  The Deutsche Fotothek records the picture (Galerie Neue Meister 2522) as a *Kriegsverlust*, a war loss.[[source/deutsche-digitale-bibliothek-de|item U2RUXT3DKWAKNNAJD426SZVN6DUZXITL]] A copy painted in 1926/27 by [[artist/l-schunzel|L. Schünzel]] is in the Albertinum: [[artwork/schunzel-die-steinklopfer-kopie-nach-courbet|*Die Steinklopfer (Kopie nach Gustave Courbet)*]].[[source/skd-online-collection-189729|record]]
 wikidata_id: Q2914912
 metadata:
   sources: [Wikidata Q2914912 (retrieved 2026-11-07)]
@@ -103,11 +112,18 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet_018.jpg
     license: Public domain
     credit: Gustave Courbet
+    caption: Reproduktionsnegativ, Kunststoff (Fotografie)
 sources:
+  fate:
+    - url: https://www.deutsche-digitale-bibliothek.de/item/U2RUXT3DKWAKNNAJD426SZVN6DUZXITL
+      source: deutsche-digitale-bibliothek-de
+      accessed: 2026-11-13
+    - source: wikipedia-en-the-stone-breakers
+      accessed: 2026-11-13
   created:
-    - accessed: 2026-11-07
-      property: P571
-      wikidata: Q2914912
+    - url: https://www.deutsche-digitale-bibliothek.de/item/U2RUXT3DKWAKNNAJD426SZVN6DUZXITL
+      source: deutsche-digitale-bibliothek-de
+      accessed: 2026-11-13
   creator:
     - accessed: 2026-11-07
       property: P170

@@ -1,0 +1,26 @@
+public_id: 122179
+name: crucifix
+names:
+  - corpus
+  - lang: de
+    role: translation
+    text: Kruzifix
+  - lang: fr
+    role: translation
+    text: crucifix
+  - lang: it
+    role: translation
+    text: crocifisso
+  - lang: es
+    role: translation
+    text: crucifijo
+  - lang: nl
+    role: translation
+    text: crucifix
+category: object type
+definition: A cross with an image of Jesus on it, as distinct from a bare cross.
+description_md: |-
+  A cross with an image of Jesus on it, as distinct from a bare cross; the figure of Christ is called the corpus. Western crucifixes usually have a three-dimensional corpus, while in Eastern Orthodoxy the body is normally painted on the cross or in low relief — strictly speaking a crucifix must be three-dimensional, but the distinction is not always observed. A painting of the whole Crucifixion with a landscape and other figures is not a crucifix.[[source/wikipedia-en-crucifix|§ introduction]]
+
+  Large crucifixes high across the central axis of a church are called roods ([[triumphal-cross]]); by the late Middle Ages they were found in nearly every Western church.[[source/wikipedia-en-crucifix|§ introduction]] The Gothic [[forked-cross]] is another kind. The [[artwork/gero-cross|Gero Cross]] in Cologne is the oldest large crucifix north of the Alps.[[source/wikipedia-en-gero-cross|§ Introduction]]
+wikidata_id: Q20460

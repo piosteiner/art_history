@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: the Gero Cross's date sourced; glossary term crucifix
+- **What:** (data only, audited) the owner had set the Gero Cross to 970–976 and the type "Kruzifix" (auto-created
+  term) in the CMS; added: the date's sources (lecture Sitzung 4, slides 21 + 53; new `wikipedia-de-gerokreuz`;
+  `wikipedia-en-gero-cross`), Wikidata's "c. 960" (`960/970`) declined; the dating paragraph rewritten with both
+  positions (Thietmar + Hollstein's dendrochronology 1976 vs. Binding 1982 / the 2008 critique). The term renamed
+  `crucifix` (old slug redirects; Kruzifix as the German name), Wikidata Q20460, description (new source
+  `wikipedia-en-crucifix`), triumphal cross and forked cross as its narrower terms; the work's type cited to Wikidata;
+  `auto_created` acknowledged. Site changelog: entry 2026-11-13 created unpublished.
+- **Why / Revert:** owner's request; the entries' history pages (script `p228/gero.js` in the session scratchpad).
+
 ### Feature: editions — the impressions of one print as parts of a group of works (migration 247)
 - **What:** glossary term "edition" (group of works; de Auflage, fr tirage) — a print's impressions or a model's casts
   are parts of the work, each with its own holder, number, size, provenance and museum page, so the web-page check

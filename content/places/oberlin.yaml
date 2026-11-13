@@ -1,0 +1,22 @@
+public_id: 122169
+name: Oberlin
+kind: settlement
+parent: ohio
+country_code: US
+location: [-82.21667, 41.28833]
+wikidata_id: Q988384
+metadata:
+  sources: [Wikidata Q988384 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q988384
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q988384
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q988384

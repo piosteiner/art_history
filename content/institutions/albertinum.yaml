@@ -1,0 +1,70 @@
+public_id: 122158
+name: Albertinum
+names:
+  - text: Staatliche Kunstsammlungen Dresden Albertinum
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q699780
+  - text: Galerie Neue Meister
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q699780
+  - lang: ja
+    role: translation
+    text: アルベルティーヌム
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q699780
+  - lang: zh
+    role: translation
+    text: 阿爾伯提努
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q699780
+  - lang: ko
+    role: translation
+    text: 알베르티눔
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q699780
+  - lang: ru
+    role: translation
+    text: Альбертинум
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q699780
+kind: museum
+founded: 1887
+place: dresden
+location: [13.7444, 51.0519]
+website_url: https://albertinum.skd.museum
+wikidata_id: Q699780
+metadata:
+  sources: [Wikidata Q699780 (retrieved 2026-11-13)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7f/Albertinum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albertinum.jpg
+    license: CC BY 3.0
+    credit: David Brandt
+identifiers:
+  bnf: 16958526k
+  gnd: 2099200-2
+  lc: n86820799
+  viaf: "156027041"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q699780
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q699780
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q699780
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q699780

@@ -1,0 +1,103 @@
+public_id: 122146
+name_lang: de
+name: Sammlung Oskar Reinhart «Am Römerholz»
+names:
+  - text: Am Romerholz
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q682406
+  - text: villa Oskar Reinhart
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q682406
+  - text: Reinhart Collection
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q682406
+  - lang: nl
+    role: translation
+    text: verzameling Oskar Reinhart «Am Römerholz»
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q682406
+  - lang: fr
+    role: translation
+    text: musée Oskar Reinhart « Am Römerholz »
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q682406
+  - lang: de
+    role: translation
+    text: Sammlung Oskar Reinhart «Am Römerholz»
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q682406
+  - lang: it
+    role: translation
+    text: Collezione Oskar Reinhart «Am Römerholz»
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q682406
+  - lang: ja
+    role: translation
+    text: オスカー・ラインハルト・コレクション アム・レマーホルツ
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q682406
+  - lang: ko
+    role: translation
+    text: 암 뢰머홀츠 미술관
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q682406
+  - lang: ru
+    role: translation
+    text: Ам Рёмерхольц
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q682406
+  - lang: en
+    role: translation
+    text: Oskar Reinhart Collection ʽAm Römerholzʼ
+    status: official
+  - lang: fr
+    role: translation
+    text: Collection Oskar Reinhart « Am Römerholz »
+    status: official
+kind: museum
+place: winterthur
+location: [8.73167, 47.51111]
+address: Haldenstrasse 95
+description_md: Oskar Reinhart's collection in his house «Am Römerholz», Haldenstrasse 95, Winterthur, which he gave to the Swiss Confederation (1958/1965); it is run by the Federal Office of Culture.[[source/bundessammlungen-sor1923-15|provenance]][[source/roemerholz-courbet-steinklopfer|page]]
+website_url: http://www.bundesmuseen.ch/roemerholz/
+wikidata_id: Q682406
+metadata:
+  sources: [Wikidata Q682406 (retrieved 2026-11-13)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Winterthur_-_Villa_Am_R%C3%B6merholz_%28ehemalige_Villa_Henri_Sulzer-Ziegler%29_und_Sammlung_Oskar_Reinhart_%C2%ABAm_R%C3%B6merholz%C2%BB%2C_Haldenstrasse_95_2011-09-12_14-28-34.jpg/1280px-Winterthur_-_Villa_Am_R%C3%B6merholz_%28ehemalige_Villa_Henri_Sulzer-Ziegler%29_und_Sammlung_Oskar_Reinhart_%C2%ABAm_R%C3%B6merholz%C2%BB%2C_Haldenstrasse_95_2011-09-12_14-28-34.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Winterthur_-_Villa_Am_R%C3%B6merholz_(ehemalige_Villa_Henri_Sulzer-Ziegler)_und_Sammlung_Oskar_Reinhart_%C2%ABAm_R%C3%B6merholz%C2%BB,_Haldenstrasse_95_2011-09-12_14-28-34.jpg
+    license: CC BY-SA 3.0
+    credit: Roland zh
+identifiers:
+  bnf: "161663282"
+  gnd: 2073889-4
+  idref: "114498873"
+  lc: n88132346
+  viaf: "152496203"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q682406
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q682406
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q682406
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q682406
