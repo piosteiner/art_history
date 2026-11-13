@@ -75,6 +75,7 @@ async function search(q) {
 const MAX_IMAGES = 12;  // P18 statements offered per item (each costs one Commons request)
 const { metaText: stripTags } = require('./images');
 const http = require('./http');
+const { commonsCredit } = require('./commons-credit');
 async function commonsImage(file) {
   const url = `${COMMONS}/w/api.php?${new URLSearchParams({ action: 'query', titles: `File:${file}`, prop: 'imageinfo',
     iiprop: 'extmetadata|url', iiurlwidth: '1280', format: 'json' })}`;
@@ -88,7 +89,7 @@ async function commonsImage(file) {
     url: clean(info.thumburl || info.url),
     source_url: info.descriptionurl,
     license: stripTags(meta.LicenseShortName && meta.LicenseShortName.value) || null,
-    credit: stripTags(meta.Artist && meta.Artist.value) || null,
+    credit: stripTags(meta.Artist && meta.Artist.value) || await commonsCredit(info.descriptionurl),  // no machine-readable author
   };
 }
 

@@ -50,6 +50,7 @@ const collab = require('../collab');
 const { THRESHOLD, likeParam, scoreSql, altSql, fieldSearchSql } = require('../match');
 const { docToForm, formToDoc, entityForm, humanize, fieldLabel } = require('../forms');
 const { PAGE, an, send, draftBanner, unpublishedBanner, unpublishedFields, restoredBanner, withTx, UserError, RULES, friendly, pager, pageParam, relationshipTypes, allEntities, relFromForm, relForm, anOf, typeWarning, CONVERTIBLE, stepFromBody, notFoundPage, formContext, findEntity, pluralParam } = require('../core');
+const { fillCredit } = require('../commons-credit');
 
 const router = express.Router();
 // a field listing several items with " · " (241: the provenance's holders with their years) shows the items that
@@ -871,7 +872,7 @@ router.post('/:plural/:slug/images', async (req, res) => {
   const e = t.imageFk && await findEntity(t, req.params.slug);
   if (!e) return notFoundPage(req, res);
   try {
-    const values = images.fromForm(req.body);
+    const values = await fillCredit(images.fromForm(req.body));  // a Commons page without machine-readable author
     await withTx(req.user, (db) => images.add(db, t.type, e.id, values));
   } catch (err) {
     return send(req, res, {

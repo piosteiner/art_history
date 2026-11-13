@@ -8,6 +8,7 @@ const images = require('../images');
 const citations = require('../citations');
 const { thumbUrl } = require('../images');
 const { send, withTx, friendly, relationshipTypes, allEntities, relFromForm, relForm, notFoundPage } = require('../core');
+const { fillCredit } = require('../commons-credit');
 
 const router = express.Router();
 
@@ -89,7 +90,7 @@ router.post('/images/:id', async (req, res) => {
   const img = await images.byId(adminPool, req.params.id);
   if (!img) return notFoundPage(req, res);
   try {
-    const values = images.fromForm(req.body);
+    const values = await fillCredit(images.fromForm(req.body));  // an emptied credit of a Commons image is read again
     await withTx(req.user, (db) => images.update(db, img.id, values));
   } catch (err) {
     return imageEditPage(req, res, img, { status: 422, values: req.body,

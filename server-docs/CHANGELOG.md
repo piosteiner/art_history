@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Admin: Commons credit read from the description page when there is no machine-readable author
+- **What:** `backend/src/admin/commons-credit.js` — when Commons' `Artist` is empty, the file's wikitext is read: author /
+  artist / photographer field → "Photographer:" / "Foto:" / "©" line → `{{PD-user…|User}}` → own work / *-self = uploader →
+  `{{Institution:…}}` → public-domain licence with nobody named = "Unknown author" (not when the page describes the work
+  only by its Wikidata item); else empty, so the Quality page still asks. Used by "Add image", the image edit form (only
+  an empty credit) and the Wikidata review (`commonsImage`). Off in NODE_ENV=test; `test/commons-credit.test.js` with
+  the 19 pages' cases.
+- **Why:** owner 2026-11-13 — 19 images had come in without credit.
+- **Revert:** remove the module and its three calls (entries.js images route, relationships.js image edit, wikidata.js).
+
 ### Content: credits for 19 Commons images (Quality "Image without license or credit" 19 → 0)
 - **What:** the images had their license but no credit — their Commons pages carry no machine-readable author
   ("Files with no machine-readable author"), so the import found none. Credits read from each description page:
