@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: site changelog and documentation drafts for 2026-11-13
+- **What:** site changelog entry 48 (unpublished draft) +11 items for the afternoon (editions, 1933–1945 entry point,
+  image credits, Steinklopfer, works without a creator, provenances, life dates, films, 55 terms, 17 movements,
+  places/Zumikon) — 24 in all. Documentation (`projekt-dokumentation`) as drafts of the owner's account, approved
+  wording: new drafts of chapter 8 (editions, under "Werkgruppen"), 11 ("Datenqualität": 1933–45 research list,
+  provenance holders as info, the Wikidata review) and 14 ("NS-Raubgut": the site's entry point); one sentence on the
+  Commons credit fallback appended in the existing chapter-10 draft. Live after the owner publishes.
+- **Why:** owner 2026-11-13. **Revert:** delete the items / drafts in the CMS.
+
 ### Content: auto-created terms, movements, places — second round
 - **Terms (58 → 0 open):** 55 materials/object types with a sourced definition (citation on `definition`), a cited
   text (Mason, Endemann, Baxandall, Forsyth, the "Aus dem Wald" slides first; 57 pinned Wikipedia articles) and a
