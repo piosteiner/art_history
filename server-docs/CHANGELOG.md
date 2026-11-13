@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-13
 
+### Content: works without a creator worked through with the owner (136 → 6)
+- **What:** (data only, audited) attributions with their sources — the origin as each work's own text gives it,
+  never its present place (owner: "careful … if an object was moved"); plain "Anonymous" where no place of making is
+  known (e.g. the forked crucifixes of Andernach, Bocholt, St. Maria im Kapitol; the Göttingen altar). Wholes and their
+  parts together: Bernward door + 16 reliefs "Bernward's workshop, Hildesheim (master unknown)", Kapitol door + 13
+  "Cologne workshop, Lower Rhine–Meuse (master unknown)" (de.wikipedia § Meisterfrage); 84 clear cases by batch;
+  new artist "Presbyter Martinus" (the 1199 Madonna's inscription) as its creator; the Sagrestia delle Messe:
+  Giuliano da Maiano + co-creators Antonio Manetti, Agnolo di Lazzaro; Lindau Gospels, De Lisle Psalter (Madonna
+  Master, attributed), Bernward Gospels ("made for Bishop Bernward", no scriptorium claimed), Bayeux Tapestry
+  ("Anonymous, English, probably for Bishop Odo"), Wechselburg (Saxon), Wolfstür (Carolingian). "Mito Kōmon" deleted
+  (a TV series, not an artwork). Open: the Lorch altar (2), the Pomeranian cabinet's contents (3), the True Cross cycle.
+- **Why / Revert:** owner's round; the entries' history pages.
+
 ### Content: L. Schünzel — a second copy, active 1913–1927
 - **Open case 16** (same day): who he was — where to look in the library (the gallery's *Copistenbuch* 1912–1930,
   the SLUB's Dresden address books, Thieme-Becker/Vollmer/AKL/Dressler) and the two GND candidates; public note
