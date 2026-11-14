@@ -1,6 +1,7 @@
 public_id: 117268
 title_lang: de
 title: Crucifixus dolorosus aus Lage
+attribution_label: Anonymous
 created: early 14th century
 created_span: uncertain
 kind: sculpture
@@ -32,3 +33,7 @@ sources:
   title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 7 (14.11.2024), Folie 68
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 68
+      accessed: 2026-11-13

@@ -1,3 +1,15 @@
 public_id: 101526
 name: paint
 category: material
+definition: A coloured substance — pigment held in a binder, often thinned with a solvent — that dries to a film on the surface it is spread on.
+description_md: |-
+  Paint is a coloured liquid or mixture that, applied to a solid surface and left to dry, forms a film-like layer; as art, it makes a painting.[[source/wikipedia-en-paint|introduction]] Its constant component is the binder, the film former that remains on the surface once the diluent — solvent or water — has evaporated; pigments are solid particles held in it that give the colour.[[source/wikipedia-en-paint|§ Components]] Most paints are either oil-based or water-based.[[source/wikipedia-en-paint|introduction]]
+
+  Paint is among the oldest human materials: cave paintings in ochre, hematite, manganese oxide and charcoal may be 40,000 years old, and a 100,000-year-old ochre-based mixture that could have been used like paint was found in Blombos Cave in South Africa.[[source/wikipedia-en-paint|§ History]] The oldest known oil paintings are Buddhist murals of about 650 in the Bamiyan valley of Afghanistan.[[source/wikipedia-en-paint|§ History]] In European art, [[term/tempera|egg tempera]] was the medium of the earliest painters; since the Renaissance drying oils, chiefly linseed oil, have been the most common binder ([[term/oil-paint|oil paint]]); [[term/casein-paint|casein]] paints were common in the nineteenth century, and [[term/watercolor-paint|watercolour]] and [[term/gouache-paint|gouache]] are bound with gum arabic and thinned with water.[[source/wikipedia-en-paint|§ Art]] Acrylic and other water-borne paints entered the market in the twentieth century.[[source/wikipedia-en-paint|§ Art]]
+
+  In this database "paint" stands for colour whose binder is not specified, for example on the [[artwork/amida-raigo-triptych-koya|Amida raigō triptych]] of Mount Kōya[[source/history-of-japanese-art|pp. 146–147, fig. 178]], the [[artwork/ippen-hijiri-e|Ippen Hijiri-e]][[source/history-of-japanese-art|pp. 203–205, figs. 236–237]] and [[artist/gustav-klimt|Gustav Klimt]]'s [[artwork/beethoven-frieze|Beethoven Frieze]].
+sources:
+  definition:
+    - source: wikipedia-en-paint
+      locator: introduction; § Components
+      accessed: 2026-11-13

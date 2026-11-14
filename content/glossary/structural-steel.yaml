@@ -1,3 +1,14 @@
 public_id: 116679
 name: structural steel
 category: material
+parent: steel
+definition: Steel rolled into standard load-bearing shapes such as I-beams and channels, used as the framework of buildings — and of large sculptures.
+description_md: |-
+  Structural steel is steel used for construction in a variety of standard shapes, most often elongated beams with a specific cross-section such as the I-beam, whose shape lets it carry high loads without sagging; shapes, sizes, composition and strength are regulated by national standards.[[source/wikipedia-en-structural-steel|§ Introduction]] It is usually used in a system of interconnected members fixed together to carry loads.[[source/wikipedia-en-structural-steel|§ Introduction]] Common shapes include I-beams, Z-shapes, hollow sections, angles, channels, tees, bars and rods.[[source/wikipedia-en-structural-steel|§ Structural shapes]]
+
+  [[artist/vera-mukhina|Vera Mukhina]]'s [[artwork/worker-and-kolkhoz-woman|Worker and Kolkhoz Woman]] (1937) was carried by a heavy frame weighing 63 tons, while its outer shell of thin [[term/stainless-steel|stainless steel]] sheets weighed only 12 tons; the main structure was made at the Moscow machine-tool factory Stankoagregat.[[source/wikipedia-en-worker-and-kolkhoz-woman|§ Manufacturing and installation]]
+sources:
+  definition:
+    - source: wikipedia-en-structural-steel
+      locator: § Introduction
+      accessed: 2026-11-13

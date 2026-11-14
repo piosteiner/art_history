@@ -1,6 +1,9 @@
 public_id: 103372
 name: synthetism
 kind: movement
+parent: post-impressionism
+period: 1887/1893
+period_label: late 1880s–early 1890s
 wikidata_id: Q847847
 metadata:
   sources: [Wikidata Q847847 (retrieved 2026-10-29)]
@@ -9,3 +12,11 @@ sources:
     - accessed: 2026-10-29
       property: P31
       wikidata: Q847847
+  parent:
+    - source: wikipedia-en-synthetism
+      locator: § History
+      accessed: 2026-11-13
+  period:
+    - source: wikipedia-en-synthetism
+      locator: § History
+      accessed: 2026-11-13

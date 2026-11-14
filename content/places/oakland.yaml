@@ -1,14 +1,22 @@
 public_id: 117556
 name: Oakland
 kind: settlement
+parent: alameda-county
+country_code: US
 location: [-122.25, 37.8]
 wikidata_id: Q17042
 metadata:
   sources: [Wikidata Q17042 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4117963-8
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q17042
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q17042
   location:
     - accessed: 2026-11-10

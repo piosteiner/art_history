@@ -1,6 +1,7 @@
 public_id: 117255
 title_lang: de
 title: Raroner Madonna
+attribution_label: Anonymous, Burgundy or Saint-Maurice/Sion
 created: c. 1120–1150
 created_span: uncertain
 kind: sculpture
@@ -38,3 +39,7 @@ sources:
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 6 (7.11.2024)
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 42
+      accessed: 2026-11-13

@@ -3,7 +3,8 @@ name: Tilman Riemenschneider
 given_name: Tilman
 family_name: Riemenschneider
 birth: 1460
-death: 1531-07-27
+death: 1531-07-17
+death_label: 7 July 1531 (Julian calendar)
 biography_md: |-
   German carver and sculptor (born about 1460 in Heiligenstadt; died 7 July 1531 in Würzburg), mayor of Würzburg and one of the most important artists of the transition from Late Gothic to Renaissance.[[source/wikipedia-de-tilman-riemenschneider|§ introduction]] With Michel Erhart, Veit Stoss and Michael Pacher he shaped the south German limewood altarpiece, most of which remained unpainted – first for financial reasons, later because the market for donations collapsed.[[source/wikipedia-de-tilman-riemenschneider|§ introduction]]
 
@@ -59,6 +60,6 @@ sources:
       property: P569
       wikidata: Q44723
   death:
-    - accessed: 2026-11-03
-      property: P570
-      wikidata: Q44723
+    - url: https://d-nb.info/gnd/118600885
+      source: gnd
+      accessed: 2026-11-13

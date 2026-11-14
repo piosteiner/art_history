@@ -1,14 +1,22 @@
 public_id: 117672
 name: Birchington
 kind: settlement
+parent: kent
+country_code: GB
 location: [1.305, 51.37694]
 wikidata_id: Q865021
 metadata:
   sources: [Wikidata Q865021 (retrieved 2026-11-10)]
+identifiers:
+  gnd: "1050267648"
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q865021
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q865021
   location:
     - accessed: 2026-11-10

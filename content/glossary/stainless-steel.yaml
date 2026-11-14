@@ -1,3 +1,14 @@
 public_id: 116678
 name: stainless steel
 category: material
+parent: steel
+definition: Steel alloyed with at least about 10.5 % chromium, which forms a self-healing film against rust; developed around 1912–13 and used for sculpture from the 1930s.
+description_md: |-
+  Stainless steel is an iron-based alloy containing chromium, which makes it resistant to rust; from a chromium content of 10.5 % a passive film forms that protects the metal and heals itself in contact with oxygen.[[source/wikipedia-en-stainless-steel|§ Introduction]] On 17 October 1912 the Krupp engineers Benno Strauss and Eduard Maurer patented the austenitic steel later known as 18/8, under the name Nirosta; in 1913 Harry Brearley in Sheffield found a martensitic stainless alloy while seeking a material for gun barrels.[[source/wikipedia-en-stainless-steel|§ History]][[source/wikipedia-en-stainless-steel|§ Harry Brearley]] Brearley first called it "rustless steel"; a local cutlery maker gave it the name "stainless steel".[[source/wikipedia-en-stainless-steel|§ Rustless steel]]
+
+  [[artist/vera-mukhina|Vera Mukhina]]'s [[artwork/worker-and-kolkhoz-woman|Worker and Kolkhoz Woman]] for the 1937 World's Fair in Paris, 24.5 m high, is made of stainless steel.[[source/wikipedia-en-worker-and-kolkhoz-woman|§ Introduction]] Professor Pyotr Lvov proposed chrome-nickel stainless steel despite Mukhina's doubts; it was chosen over bronze and copper because it reflected light better.[[source/wikipedia-en-worker-and-kolkhoz-woman|§ Manufacturing and installation]] The outer shell of 0.5 mm sheets weighed only 12 tons, carried by a frame of 63 tons.[[source/wikipedia-en-worker-and-kolkhoz-woman|§ Manufacturing and installation]]
+sources:
+  definition:
+    - source: wikipedia-en-stainless-steel
+      locator: § Introduction
+      accessed: 2026-11-13

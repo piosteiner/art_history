@@ -2,3 +2,13 @@ public_id: 101329
 name: lime panel
 category: material
 parent: panel
+definition: A painting support of limewood (linden), used beside poplar in Italy and, in the Middle Ages and Renaissance, in the Upper Rhine, Bavaria and by south German painters.
+description_md: |-
+  Limewood (linden) was one of the woods of Italian painting panels, beside poplar and willow.[[source/wikipedia-en-panel-painting|§ Panel construction and preparation]] In the Middle Ages spruce and lime were used in the Upper Rhine and often in Bavaria, and lime was popular with Albrecht Altdorfer, Hans Baldung Grien, Christoph Amberger, [[artist/albrecht-durer|Albrecht Dürer]] and [[artist/lucas-cranach-the-elder|Lucas Cranach the Elder]].[[source/wikipedia-en-panel-painting|§ Types of wood]] Ilene Forsyth, after Jacqueline Marette's technical study of medieval wood panels, names oak and lindenwood as the usual panel woods north of southern France.[[source/forsyth-1972-the-throne-of-wisdom|p. 16]] Above all, limewood was the carving wood of southern Germany — see [[term/lime|lime]] — where the polychromy of carved figures was applied much as on painted panels.[[source/baxandall-1980-limewood-sculptors|p. 41]]
+
+  In this database a lime panel is recorded for Dürer's [[artwork/adoration-of-the-trinity|Adoration of the Trinity]] (Landauer Altarpiece), an oil painting on panel of 1511, commissioned by the Nuremberg merchant Matthäus Landauer for the chapel of the Zwölfbrüderhaus and now in the Kunsthistorisches Museum, Vienna.[[source/wikipedia-en-adoration-of-the-trinity|§ Introduction]][[source/wikipedia-en-adoration-of-the-trinity|§ History]]
+sources:
+  definition:
+    - source: wikipedia-en-panel-painting
+      locator: § Types of wood
+      accessed: 2026-11-13

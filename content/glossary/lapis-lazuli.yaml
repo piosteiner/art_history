@@ -1,3 +1,14 @@
 public_id: 117125
 name: lapis lazuli
 category: material
+parent: semiprecious-stone
+definition: A deep-blue rock, chiefly of the mineral lazurite, mined in Badakhshan (Afghanistan) since antiquity; ground and purified, it gives the pigment ultramarine.
+description_md: |-
+  Lapis lazuli is a deep-blue metamorphic rock, composed mainly of lazurite with pyrite, diopside and calcite, prized as a semi-precious stone since antiquity; its Persian name, *lāžward*, is the root of words for blue such as *azul* and *azure*.[[source/wikipedia-en-lapis-lazuli|introduction]] It has been mined in Badakhshan in north-eastern Afghanistan — at Sar-i Sang in the Kokcha valley for more than 6,000 years — and Afghanistan supplied the ancient Persians, Egyptians, Mesopotamians, Greeks and Romans.[[source/wikipedia-en-lapis-lazuli|introduction; § Sources]] It was used in the funeral mask of Tutankhamun.[[source/wikipedia-en-lapis-lazuli|introduction]]
+
+  By the end of the Middle Ages Europe imported lapis lazuli to grind into the pigment ultramarine, which Masaccio, Perugino, Titian and Vermeer used, often reserving it for the clothing of the central figures, above all the Virgin Mary.[[source/wikipedia-en-lapis-lazuli|introduction]] Its use in oil paint largely ended in the early nineteenth century, when a chemically identical synthetic ultramarine became available.[[source/wikipedia-en-lapis-lazuli|§ Uses and substitutes]] Because it was expensive, cheaper blues were often taken for it: much [[term/azurite|azurite]] was labelled lapis lazuli, and heating tells them apart, since ultramarine withstands heat while azurite turns black.[[source/wikipedia-en-azurite|§ Pigments]]
+sources:
+  definition:
+    - source: wikipedia-en-lapis-lazuli
+      locator: introduction
+      accessed: 2026-11-13

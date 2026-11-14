@@ -5,6 +5,7 @@ names:
   - lang: en
     role: alternative
     text: Pilgrim's Ampulla with (Symbolic) Crucifixion and Marys at the Tomb
+attribution_label: Anonymous
 created: c. 600
 created_span: uncertain
 medium: lead
@@ -43,3 +44,7 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q111970658
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 44
+      accessed: 2026-11-13

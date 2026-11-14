@@ -3,6 +3,7 @@ title_lang: de
 title: Kreuzigung, Marien am Grab, Himmelfahrt
 parent: bildertur-st-maria-im-kapitol
 part_number: "12"
+attribution_label: Cologne workshop, Lower Rhine–Meuse (master unknown)
 created: 1050/1065
 kind: relief
 medium: Nussbaum, Relief
@@ -36,3 +37,7 @@ sources:
   title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 5 (31.10.2024), Folie 104
+  attribution_label:
+    - source: wikipedia-de-holztur-von-st-maria-im-kapitol
+      locator: § Meisterfrage (rev. 266570149)
+      accessed: 2026-11-13

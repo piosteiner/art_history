@@ -1,3 +1,13 @@
 public_id: 106387
 name: loess
 category: material
+definition: A pale yellow-buff, silt-sized sediment formed by the accumulation of wind-blown dust, covering a tenth of the earth’s land.
+description_md: |-
+  Loess (from German *Löss*) is a clastic, predominantly silt-sized sediment formed by the accumulation of wind-blown dust; ten per cent of the earth's land area is covered by loess or similar deposits.[[source/wikipedia-en-loess|introduction]] It is homogeneous, porous and friable, pale yellow or buff, and often calcareous; its angular grains of quartz, feldspar or mica let it stand in vertical banks, so that it can easily be dug into cave dwellings.[[source/wikipedia-en-loess|§ Properties]] In north-western China the deposits are more than a hundred metres thick; the loess of the Loess Plateau gave the Yellow River its name and colour.[[source/wikipedia-en-loess|§ Properties; § China]] The term was introduced into English from German in 1824 and first applied to the loess of the Rhine valley around 1821.[[source/wikipedia-en-loess|§ Etymology]]
+
+  Japanese sources list for them 黄土 (literally "yellow earth") among the yellow pigments, beside litharge, painted over a ground of white clay on walls of earth.[[source/wikipedia-ja-horyuji-kondo-hekiga|§ 技法・様式]]
+sources:
+  definition:
+    - source: wikipedia-en-loess
+      locator: introduction; § Properties
+      accessed: 2026-11-13

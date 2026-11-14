@@ -1,6 +1,9 @@
 public_id: 103038
 name: Caravaggisti
 kind: movement
+parent: baroque
+period: 1597/1656
+period_label: late 1590s–1656
 wikidata_id: Q62506
 metadata:
   sources: [Wikidata Q62506 (retrieved 2026-10-28)]
@@ -9,3 +12,11 @@ sources:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q62506
+  parent:
+    - source: wikipedia-en-caravaggisti
+      locator: "§ Italian: Rome; § Naples"
+      accessed: 2026-11-13
+  period:
+    - source: wikipedia-en-caravaggisti
+      locator: "§ Italian: Rome; § Naples"
+      accessed: 2026-11-13

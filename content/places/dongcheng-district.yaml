@@ -1,0 +1,59 @@
+public_id: 122349
+name: Dongcheng District
+names:
+  - lang: ja
+    role: translation
+    text: 東城区
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q394681
+  - lang: zh
+    role: original
+    text: 东城区
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q394681
+  - lang: ko
+    role: translation
+    text: 둥청구
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q394681
+  - lang: fr
+    role: translation
+    text: Dongcheng
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q394681
+  - lang: es
+    role: translation
+    text: Distrito de Dongcheng
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q394681
+  - lang: ru
+    role: translation
+    text: Район Дунчэн
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q394681
+kind: settlement
+parent: people-s-republic-of-china
+country_code: CN
+location: [116.41006, 39.92718]
+wikidata_id: Q394681
+metadata:
+  sources: [Wikidata Q394681 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q394681
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q394681
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q394681

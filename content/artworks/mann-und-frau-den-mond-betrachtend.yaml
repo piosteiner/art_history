@@ -62,6 +62,44 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Mann_und_Frau_in_Betrachtung_des_Mondes_(ca._1824).jpg
     license: Public domain
     credit: Caspar David Friedrich
+provenance:
+  - owner_label: Kunsthandlung Salomon, Dresden
+    role: dealer
+    acquired: 1922
+    acquired_label: 1922 or earlier
+    ended: 1922
+    ended_label: 1922 or later
+    sources:
+      - source: wikipedia-en-two-men-contemplating-the-moon
+        locator: § Provenance (after Börsch-Supan and Jähnig 1973, p. 433)
+        accessed: 2026-11-13
+  - owner_label: Sammlung Lulu Böhler, Luzern
+    acquired: 1932
+    acquired_label: 1932 or earlier
+    ended: 1932
+    notes_md: Lent from this collection to the exhibition at the Galerie Paul Cassirer, Berlin, in 1932.
+    sources:
+      - source: wikipedia-en-two-men-contemplating-the-moon
+        locator: § Provenance (after Börsch-Supan and Jähnig 1973, p. 433)
+        accessed: 2026-11-13
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1932
+    ended: 1932
+    direct: true
+    label: Galerie Fritz Nathan, Luzern
+    sources:
+      - source: wikipedia-en-two-men-contemplating-the-moon
+        locator: § Provenance (after Börsch-Supan and Jähnig 1973, p. 433)
+        accessed: 2026-11-13
+  - owner: institution/alte-nationalgalerie
+    acquired: 1932
+    method: purchase
+    direct: true
+    sources:
+      - source: wikipedia-en-two-men-contemplating-the-moon
+        locator: § Provenance (after Börsch-Supan and Jähnig 1973, p. 433)
+        accessed: 2026-11-13
 sources:
   medium:
     - source: ganz-2024-aus-dem-wald

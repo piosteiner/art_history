@@ -1,6 +1,7 @@
 public_id: 103048
 name: Orientalist painting
 kind: movement
+period: 18th century–1962
 wikidata_id: Q765606
 metadata:
   sources: [Wikidata Q765606 (retrieved 2026-10-28)]
@@ -9,3 +10,7 @@ sources:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q765606
+  period:
+    - source: wikipedia-fr-peinture-orientaliste
+      locator: lead
+      accessed: 2026-11-13

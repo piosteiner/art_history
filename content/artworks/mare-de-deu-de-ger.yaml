@@ -11,6 +11,7 @@ names:
   - lang: en
     role: translation
     text: Virgin from Ger
+attribution_label: Anonymous, Catalan
 created: 1150s
 created_span: uncertain
 medium: willow, polychromy over gesso
@@ -57,3 +58,7 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q3815333
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 44
+      accessed: 2026-11-13

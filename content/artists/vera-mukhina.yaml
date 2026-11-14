@@ -98,6 +98,13 @@ biography_md: |-
 wikidata_id: Q234601
 metadata:
   sources: [Wikidata Q234601 (retrieved 2026-11-07)]
+relationships:
+  - type: student_of
+    to: artist/antoine-bourdelle
+    sources:
+      - accessed: 2026-11-13
+        property: P802
+        wikidata: Q314350
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Mikhail_Nesterov%2C_Vera_Mukhina%2C_1940%2C_Tretyakov_Gallery_26668%3B_from_goskatalog.ru.jpg/1280px-Mikhail_Nesterov%2C_Vera_Mukhina%2C_1940%2C_Tretyakov_Gallery_26668%3B_from_goskatalog.ru.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Mikhail_Nesterov,_Vera_Mukhina,_1940,_Tretyakov_Gallery_26668;_from_goskatalog.ru.jpg

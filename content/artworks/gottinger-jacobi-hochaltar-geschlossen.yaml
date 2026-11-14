@@ -3,6 +3,7 @@ title_lang: de
 title: "Geschlossener Zustand: Szenen aus der Vita des Jakobus"
 parent: gottinger-jacobi-hochaltar
 part_number: "1"
+attribution_label: Anonymous
 created: 1402
 kind: painting
 medium: Malerei auf Holz
@@ -30,3 +31,7 @@ sources:
   title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 8 (21.11.2024), Folie 28
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024), Folie 27 ("unknown artists")
+      accessed: 2026-11-13

@@ -80,6 +80,32 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Tageszeitenzyklus,_Der_Abend_(1821-22).jpg
     license: Public domain
     credit: Caspar David Friedrich
+provenance:
+  - owner_label: Wilhelm Körte
+    acquired: 1821-07
+    method: purchase
+    direct: true
+    certainty: probable
+    notes_md: Probably bought from the artist together with *Der Morgen*.
+    sources:
+      - source: wikipedia-de-der-abend-gemalde
+        locator: § Provenienz
+        accessed: 2026-11-13
+  - owner_label: Friedrich Körte, Berlin
+    label: physician in Berlin
+    notes_md: Owner in 1906.
+    sources:
+      - source: wikipedia-de-der-abend-gemalde
+        locator: § Provenienz
+        accessed: 2026-11-13
+  - owner: institution/landesmuseum-hannover
+    acquired: 1916
+    method: purchase
+    notes_md: Bought from the art trade (aus dem Kunsthandel).
+    sources:
+      - source: wikipedia-de-der-abend-gemalde
+        locator: § Provenienz
+        accessed: 2026-11-13
 sources:
   medium:
     - source: ganz-2024-aus-dem-wald

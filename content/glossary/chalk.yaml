@@ -1,3 +1,15 @@
 public_id: 101416
 name: chalk
 category: material
+definition: A soft, white, porous limestone of calcite formed from marine plankton; ground with glue into gesso; also the name of the black and red drawing chalks.
+description_md: |-
+  Chalk is a soft, white, porous sedimentary carbonate rock, a form of limestone composed of the mineral calcite and formed under the sea from the hard parts of microscopic plankton; it underlies much of Western Europe, as in the cliffs of Dover.[[source/wikipedia-en-chalk|introduction]] Ground chalk or gypsum bound with glue makes [[term/gesso|gesso]], the white ground laid on panels and carvings before painting or gilding.[[source/wikipedia-en-gilding|§ Mechanical gilding]] Wooden sculptures such as the [[artwork/montvianeix-madonna|Montvianeix Madonna]] carry the remains of their colour over a chalk ground and canvas (*Kreidegrund und Leinwand*).[[source/ganz-2024-aus-dem-wald|Sitzung 6 (7.11.2024), Folie 38]] Chalk was also one of the whites — with bone ash and lead white — that pigmented the glue grounds prepared for [[term/silverpoint|silverpoint]].[[source/wikipedia-en-silverpoint|§ Characteristics]]
+
+  As drawing materials, "chalks" are only partly chalk: [[term/black-chalk|black chalk]] is a bituminous or carbonaceous shale rather than calcium carbonate, and [[term/red-chalk|red chalk]] is made of red ochre.[[source/wikipedia-en-chalk|§ Uses]] Coloured and pastel chalks are mostly made of gypsum.[[source/wikipedia-en-chalk|§ Uses]]
+
+  In this database chalk is recorded for [[artist/michelangelo|Michelangelo]]'s drawing [[artwork/male-back-with-a-flag|Male Back with a Flag]] (c. 1504), [[artist/rembrandt|Rembrandt]]'s [[artwork/ein-elefant|Elephant]] (1637) and [[artist/gustav-klimt|Gustav Klimt]]'s [[artwork/beethoven-frieze|Beethoven Frieze]] (1901).
+sources:
+  definition:
+    - source: wikipedia-en-chalk
+      locator: introduction; § Uses
+      accessed: 2026-11-13

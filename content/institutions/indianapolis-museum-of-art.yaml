@@ -2,9 +2,24 @@ public_id: 113417
 name: Indianapolis Museum of Art
 kind: museum
 founded: 1883
+place: indianapolis
+location: [-86.18565, 39.82602]
+website_url: https://discovernewfields.org/
 wikidata_id: Q1117704
 metadata:
   sources: [Wikidata Q1117704 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Indy-Art-Museum-Szmurlo.jpg/1280px-Indy-Art-Museum-Szmurlo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Indy-Art-Museum-Szmurlo.jpg
+    license: CC BY 3.0
+    credit: No machine-readable author provided. Cszmurlo assumed (based on copyright claims).
+identifiers:
+  bnf: 11882886k
+  gnd: 50311-3
+  idref: "026615525"
+  lc: n79063278
+  ulan: "500300517"
+  viaf: "147476952"
 sources:
   kind:
     - accessed: 2026-11-03
@@ -13,4 +28,8 @@ sources:
   founded:
     - accessed: 2026-11-03
       property: P571
+      wikidata: Q1117704
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q1117704

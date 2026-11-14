@@ -1,14 +1,29 @@
 public_id: 116535
 name: Hiroshima
+names:
+  - kind: pseudonym
+    role: alternative
+    text: 3Bの街
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q34664
 kind: settlement
+parent: japan
+country_code: JP
 location: [132.45531, 34.38525]
 wikidata_id: Q34664
 metadata:
   sources: [Wikidata Q34664 (retrieved 2026-11-06)]
+identifiers:
+  gnd: 4072524-8
 sources:
   kind:
     - accessed: 2026-11-06
       property: P31
+      wikidata: Q34664
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q34664
   location:
     - accessed: 2026-11-06

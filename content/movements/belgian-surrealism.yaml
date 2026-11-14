@@ -1,6 +1,8 @@
 public_id: 103136
 name: Belgian surrealism
 kind: movement
+parent: surrealism
+period: November 1924 – 1950
 wikidata_id: Q3505455
 metadata:
   sources: [Wikidata Q3505455 (retrieved 2026-10-28)]
@@ -9,3 +11,11 @@ sources:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q3505455
+  parent:
+    - source: wikipedia-fr-surrealisme-belge
+      locator: § Histoire du surréalisme en Belgique
+      accessed: 2026-11-13
+  period:
+    - source: wikipedia-fr-surrealisme-belge
+      locator: § Histoire du surréalisme en Belgique
+      accessed: 2026-11-13

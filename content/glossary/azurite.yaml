@@ -1,3 +1,13 @@
 public_id: 106389
 name: azurite
 category: material
+definition: A soft deep-blue copper mineral (basic copper carbonate), ground into a blue pigment since antiquity.
+description_md: |-
+  Azurite is a soft, deep-blue copper mineral, a basic copper carbonate formed by the weathering of copper ore deposits; copper gives it its colour.[[source/wikipedia-en-azurite|introduction]] It was used as a pigment in ancient Egypt, obtained from mines in Sinai, and in ancient Greece, for example on the Acropolis in Athens.[[source/wikipedia-en-azurite|§ History]] Depending on how finely it is ground it gives a wide range of blues; mixed with oil it turns slightly green, and old azurite may look greenish because it weathers into green malachite.[[source/wikipedia-en-azurite|§ Pigments]] In the Middle Ages, when ultramarine from [[term/lapis-lazuli|lapis lazuli]] had to come from Afghanistan, azurite was a common European mineral and a major source of painters' blues; much of it was mislabelled lapis lazuli.[[source/wikipedia-en-azurite|§ Pigments]] Heating tells the two apart: ultramarine withstands heat, while azurite turns into black copper oxide — yet gentle heating of azurite produces a deep blue used in Japanese painting.[[source/wikipedia-en-azurite|§ Pigments]] Burning to darken a colour is one of the ways Japanese makers of mineral pigments ([[term/iwaenogu|iwa-enogu]]) vary their shades.[[source/wikipedia-ja-iwaenogu|§ 天然岩絵具]]
+
+  The [[artwork/horyu-ji-kondo-murals|wall paintings of the Hōryūji Kondō]], painted at the end of the seventh or very beginning of the eighth century, list *gunjō* (群青, azurite) with *rokushō* (緑青) as their blue-green pigments.[[source/wikipedia-ja-horyuji-kondo-hekiga|§ 技法・様式]]
+sources:
+  definition:
+    - source: wikipedia-en-azurite
+      locator: introduction; § Pigments
+      accessed: 2026-11-13

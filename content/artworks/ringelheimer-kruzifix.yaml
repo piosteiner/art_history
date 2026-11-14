@@ -23,10 +23,11 @@ names:
   - lang: en
     role: translation
     text: Ringelheim Crucifix
+attribution_label: Anonymous, Hildesheim
 created: c. 1000
 created_span: uncertain
 medium: Lindenholz
-materials: [lime, oakwood]
+materials: [lime]
 dimensions: [162, 161, 25]
 institution: dommuseum-hildesheim
 inventory_number: L 1993-8
@@ -89,3 +90,7 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q106448361
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 17
+      accessed: 2026-11-13

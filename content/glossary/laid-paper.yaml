@@ -1,3 +1,14 @@
 public_id: 117115
 name: laid paper
 category: material
+parent: paper
+definition: Handmade paper formed on a mould of wires, whose chain lines and laid lines show against the light — the usual European paper from the 12th to the 19th century.
+description_md: |-
+  Laid paper has a ribbed texture from the way it is made; from the 12th century into the 19th it was the predominant paper in Europe, until largely supplanted by [[term/wove-paper|wove paper]].[[source/wikipedia-en-laid-paper|§ Introduction]] The papermaker dipped a mould with a wire sieve into a vat of pulp of hemp or linen fibres, lifted it out and shook it so that the fibres locked together, and the pattern of the wires was imparted to the sheet: widely spaced chain lines parallel to the short sides and closely spaced laid lines at right angles to them.[[source/wikipedia-en-laid-paper|§ Traditional production]] In older "antique laid" paper the wooden ribs of the mould left darker strips along the chain lines, seen against the light; improvements in mould making in the early 1800s gave a more even sheet.[[source/wikipedia-en-laid-paper|§ Traditional production]] Laid paper is still used by artists for charcoal drawing.[[source/wikipedia-en-laid-paper|§ Introduction]]
+
+  In this database laid paper is recorded for [[artist/albrecht-durer|Albrecht Dürer]]'s engraving [[artwork/durer-adam-und-eva-1504|Adam and Eve]] of 1504.
+sources:
+  definition:
+    - source: wikipedia-en-laid-paper
+      locator: § Introduction
+      accessed: 2026-11-13

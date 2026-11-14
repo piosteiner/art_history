@@ -11,6 +11,7 @@ names:
   - lang: de
     role: alternative
     text: Schreinmadonna
+attribution_label: Anonymous, West Prussian
 created: c. 1390
 created_span: uncertain
 medium: Lindenholz, farbige Fassung und Vergoldung
@@ -77,3 +78,7 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q115411549
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 92
+      accessed: 2026-11-13

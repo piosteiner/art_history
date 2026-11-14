@@ -2,16 +2,44 @@ public_id: 113415
 name: Harvard Art Museums
 kind: museum
 founded: 1895
+place: cambridge-massachusetts
+location: [-71.11472, 42.37417]
+address: 32 Quincy Street
+website_url: http://www.harvardartmuseums.org
 collection_url: https://harvardartmuseums.org/collections
 wikidata_id: Q3783572
 metadata:
   sources: [Wikidata Q3783572 (retrieved 2026-11-03)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Fogg_Art_Museum%2C_Harvard_University.jpg/1280px-Fogg_Art_Museum%2C_Harvard_University.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fogg_Art_Museum,_Harvard_University.jpg
+    license: Public domain
+    credit: Daderot
+identifiers:
+  bnf: 16710756z
+  gnd: 4445500-8
+  idref: "174126654"
+  lc: no2008065752
+  ulan: "500372593"
+  viaf: "144524678"
 sources:
   kind:
     - accessed: 2026-11-03
       property: P31
       wikidata: Q3783572
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q3783572
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q3783572
   founded:
     - accessed: 2026-11-03
       property: P571
+      wikidata: Q3783572
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q3783572

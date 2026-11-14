@@ -1,14 +1,22 @@
 public_id: 117673
 name: "Sammatti (Finland : Kunta)"
 kind: site
+parent: uusimaa
+country_code: FI
 location: [23.82083, 60.32083]
 wikidata_id: Q1003678
 metadata:
   sources: [Wikidata Q1003678 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4812862-4
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q1003678
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q1003678
   location:
     - accessed: 2026-11-10

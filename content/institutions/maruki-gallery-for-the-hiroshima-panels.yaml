@@ -1,11 +1,35 @@
 public_id: 116492
 name: Maruki Gallery for the Hiroshima Panels
 kind: museum
+place: higashimatsuyama
+location: [139.35214, 36.02825]
+address: 〒355-0076　埼玉県東松山市下唐子1401
+website_url: https://marukigallery.jp/
 wikidata_id: Q7739750
 metadata:
   sources: [Wikidata Q7739750 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Maruki_museum.jpg/1280px-Maruki_museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maruki_museum.jpg
+    license: Public domain
+    credit: JunK
+identifiers:
+  lc: no2015021239
+  viaf: "252052284"
 sources:
   kind:
     - accessed: 2026-11-06
       property: P31
+      wikidata: Q7739750
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q7739750
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q7739750
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q7739750

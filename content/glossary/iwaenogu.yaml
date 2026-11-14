@@ -5,4 +5,13 @@ names:
     role: original
     text: "{岩絵具|いわえのぐ}"
 category: material
-definition: Mineral pigments ground from stones (malachite, azurite, cinnabar …), bound with animal glue; the colours of Japanese painting.
+definition: Granular pigments made mainly by crushing minerals, graded by particle size and bound with animal glue (nikawa) — the traditional colours of Japanese painting.
+description_md: |-
+  *Iwa-enogu* ("stone paints") are granular paints made mainly by crushing minerals, traditional pigments of painting, sculpture, crafts and architecture and above all the material of Japanese-style painting (*nihonga*).[[source/wikipedia-ja-iwaenogu|introduction]] The grains have no binding power of their own and do not adhere to the surface alone; traditionally they are mixed with animal glue (*nikawa*), kneaded with the finger.[[source/wikipedia-ja-iwaenogu|§ 概要]] They are sorted by fineness into numbered grades, generally from no. 5 to no. 13 and *byaku* ("white"), the finest: the same mineral gives a darker, more vivid colour when coarse and a whiter, brighter one when fine, because the finer grains scatter more light.[[source/wikipedia-ja-iwaenogu|§ 概要]] Makers vary the shades further by separating the grains in water according to how fast they settle, by burning them to oxidise them to darker tones, or by mixing in rock crystal for brilliance.[[source/wikipedia-ja-iwaenogu|§ 天然岩絵具]] Natural iwa-enogu are mostly expensive; the few strong primary colours of ancient Japanese painting can be seen in tomb murals and picture scrolls.[[source/wikipedia-ja-iwaenogu|§ 天然岩絵具]]
+
+  From the modern era artificial versions were developed: *shin-iwa-enogu*, coloured glass of frit and metal oxides fired at 700–1000 °C and then crushed like natural stone, researched after 1945 above all as substitutes for *iwa-gunjō* (岩群青) and *iwa-rokushō* (岩緑青), and on sale by 1952; and synthetic iwa-enogu, grains of crystal or calcite coated with pigments or dyes.[[source/wikipedia-ja-iwaenogu|§ 人工的な岩絵具]] Before them, intermediate colours had been made by dyeing [[term/gofun|gofun]].[[source/wikipedia-ja-iwaenogu|§ 人工的な岩絵具]] Colours of mineral pigments bound with animal glue were already painted on eighth-century dry-lacquer sculpture over a coating of fine clay mixed with glue.[[source/history-of-japanese-art|p. 86]] The blue-green pigments of the [[artwork/horyu-ji-kondo-murals|Hōryūji Kondō murals]] were *rokushō* (緑青) and *gunjō* (群青, [[term/azurite|azurite]]).[[source/wikipedia-ja-horyuji-kondo-hekiga|§ 技法・様式]]
+sources:
+  definition:
+    - source: wikipedia-ja-iwaenogu
+      locator: introduction; § 概要
+      accessed: 2026-11-13

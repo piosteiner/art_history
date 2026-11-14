@@ -1,3 +1,13 @@
 public_id: 117091
 name: pearl
 category: material
+definition: A hard, lustrous concretion of calcium carbonate formed in the soft tissue of a mollusc, valued as a gem and set in jewellery, goldsmiths' work and embroidery.
+description_md: |-
+  A pearl is a hard, shiny object formed within the mantle of a living shelled mollusc; like the shell, it is calcium carbonate deposited in concentric layers, and the finest natural pearls have been valued as gemstones for many centuries.[[source/wikipedia-en-pearl|§ Introduction]] Natural pearls are extremely rare; most sold today are cultured.[[source/wikipedia-en-pearl|§ Introduction]] Besides jewellery, pearls were used in the past to adorn clothing and were crushed for cosmetics, medicines and paints.[[source/wikipedia-en-pearl|§ Introduction]] Pearls and other organic materials are therefore often counted among [[term/gemstone|gemstones]].[[source/wikipedia-en-gemstone|§ Introduction]]
+
+  The double-armed cross of the [[artwork/limburger-staurothek|Limburg Staurotheke]], of sycamore covered with gilded silver, is embellished with gemstones and pearls.[[source/wikipedia-en-limburg-staurotheke|§ Introduction]] On the [[artwork/stavelot-triptych|Stavelot Triptych]] an X-shaped fixture with pearls at its four ends holds together the cross of the True Cross relic.[[source/wikipedia-en-stavelot-triptych|§ Description]] In the prayer book of [[person/charles-the-bald|Charles the Bald]] the king is shown in a purple mantle with pearl-studded hems, and the two picture pages have broad gold frames decorated with pearls and gems.[[source/wikipedia-de-gebetbuch-karls-des-kahlen|§ Beschreibung]]
+sources:
+  definition:
+    - source: wikipedia-en-pearl
+      locator: § Introduction
+      accessed: 2026-11-13

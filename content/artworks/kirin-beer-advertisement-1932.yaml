@@ -5,6 +5,7 @@ names:
   - lang: ja
     role: original
     text: キリンビール
+attribution_label: Anonymous, Japanese
 created: 1932-04-21
 kind: advertisement
 description_md: |-
@@ -22,3 +23,7 @@ sources:
   created:
     - source: thomsen-2019-war-and-peace
       locator: image list, 10 May 2019 (guest lecture, Klaus Friese)
+  attribution_label:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 10 May 2019 (guest lecture, Klaus Friese)
+      accessed: 2026-11-13

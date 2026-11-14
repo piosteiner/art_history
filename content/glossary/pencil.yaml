@@ -1,3 +1,13 @@
 public_id: 101412
 name: pencil
 category: material
+definition: A drawing and writing implement whose solid core — usually graphite mixed with clay — is held in a casing, most often of wood.
+description_md: |-
+  A pencil is a writing or drawing implement with a solid pigment core in a protective casing; it marks by abrasion, leaving a trail of core material on the paper.[[source/wikipedia-en-pencil|introduction]] Most cores are graphite powder mixed with a clay binder, giving grey or black marks that are easily erased.[[source/wikipedia-en-pencil|introduction]] The word comes from the late Latin *penicillus*, "little tail", and originally meant an artist's fine brush.[[source/wikipedia-en-pencil|§ History › Camel hair]] As a drawing technique its closest predecessor was [[term/silverpoint|silverpoint]] or leadpoint, until a large deposit of pure, solid [[term/graphite|graphite]] was found at Borrowdale in Cumbria, England, in 1565 (some sources say as early as 1500); it was thought to be a form of lead and called plumbago, which is why the core is still called "lead".[[source/wikipedia-en-pencil|§ History › Graphite deposit discoveries]] Graphite sticks were at first wrapped in string or sheepskin for stability.[[source/wikipedia-en-pencil|§ History › Graphite deposit discoveries]] Around 1560 an Italian couple made what are likely the first designs for a wood-encased pencil, a hollowed-out stick of juniper; soon two carved wooden halves were glued around the graphite, essentially the method still used.[[source/wikipedia-en-pencil|§ History › Wood encasement]] Graphite sticks were made from powder in Nuremberg in 1662, and in 1795 Nicolas-Jacques Conté mixed powdered graphite with clay and fired the rods in a kiln — a method, found earlier by Joseph Hardtmuth in Vienna, that let the hardness be varied and is still in use.[[source/wikipedia-en-pencil|§ History › Graphite powder and clay]]
+
+  Pencil drawings in this database include [[artist/egon-schiele|Egon Schiele]]'s [[artwork/self-portrait-in-yellow-vest|Selbstbildnis in gelber Weste]] (1914) and [[artwork/autumn-tree-in-stirred-air-winter-tree|Autumn Tree in Stirred Air]] (1912) and his drawing of 25 April 1912 [[artwork/ich-werde-fur-die-kunst-und-fur-meine-geliebten-gerne-ausharren|"Ich werde für die Kunst und für meine Geliebten gerne ausharren!"]].
+sources:
+  definition:
+    - source: wikipedia-en-pencil
+      locator: introduction
+      accessed: 2026-11-13

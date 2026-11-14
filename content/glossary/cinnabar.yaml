@@ -1,3 +1,13 @@
 public_id: 106385
 name: cinnabar
 category: material
+definition: A bright scarlet mineral, mercury sulphide (HgS), ground into the red pigment vermilion; used since antiquity in the Near East, China and the Americas.
+description_md: |-
+  Cinnabar is the bright scarlet to brick-red form of mercury(II) sulphide; it is the commonest ore of mercury and the historic source of the brilliant red pigment called vermilion.[[source/wikipedia-en-cinnabar|introduction]] It occurs as a vein-filling mineral associated with volcanic activity and alkaline hot springs.[[source/wikipedia-en-cinnabar|introduction]] Its colour has been used since antiquity: in the Near East as a rouge-type cosmetic, in the Americas since the Olmec culture, and in China, where it was used for writing on oracle bones as early as the Zhou dynasty and, from the Song dynasty, in carved red lacquerware.[[source/wikipedia-en-cinnabar|§ Decorative use]] In Roman times it was highly valued as a paint for interior walls, because it darkened outdoors in sunlight.[[source/wikipedia-en-cinnabar|introduction]] Because of its mercury it is toxic, which was recognised as early as ancient Rome.[[source/wikipedia-en-cinnabar|introduction]] In burials it was used as a powder: the 7th-century tomb of the Red Queen at Palenque was completely covered in it.[[source/wikipedia-en-cinnabar|§ Decorative use]]
+
+  The [[artwork/horyu-ji-kondo-murals|wall paintings of the Hōryūji Kondō]] (c. 710) used vermilion — 朱 (*shu*), cinnabar — among their reds, beside *bengara* (弁柄) and minium (鉛丹).[[source/wikipedia-ja-horyuji-kondo-hekiga|§ 技法・様式]][[source/history-of-japanese-art|p. 82, fig. 101]]
+sources:
+  definition:
+    - source: wikipedia-en-cinnabar
+      locator: introduction
+      accessed: 2026-11-13

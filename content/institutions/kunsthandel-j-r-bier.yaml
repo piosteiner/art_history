@@ -1,3 +1,19 @@
 public_id: 115085
 name: Kunsthandel J. R. Bier
+kind: gallery
+address: Groot Heiligland 66
 wikidata_id: Q115518116
+metadata:
+  sources: [Wikidata Q115518116 (retrieved 2026-11-13)]
+identifiers:
+  gnd: 5179081-6
+  viaf: "146252923"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q115518116
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q115518116

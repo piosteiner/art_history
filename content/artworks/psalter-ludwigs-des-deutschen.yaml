@@ -23,6 +23,7 @@ names:
   - lang: en
     role: translation
     text: Psalter Ludwigs des Deutschen - SB Berlin Theol. lat. fol. 58
+attribution_label: Saint-Bertin scriptorium
 created: c. 850
 created_span: uncertain
 medium: Handschrift
@@ -62,3 +63,7 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q2115604
+  attribution_label:
+    - source: wikipedia-de-psalter-ludwigs-des-deutschen
+      locator: § Introduction
+      accessed: 2026-11-13

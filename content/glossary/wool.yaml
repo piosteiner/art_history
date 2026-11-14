@@ -1,3 +1,15 @@
 public_id: 117184
 name: wool
 category: material
+definition: The textile fibre of sheep and other mammals, a protein fibre spun into yarn for weaving, embroidery and felt.
+description_md: |-
+  Wool is the textile fibre obtained from sheep and other mammals, especially goats, rabbits and camelids; it is an animal fibre of protein with a small share of lipids, chemically akin to [[term/silk|silk]] and distinct from plant fibres such as cotton.[[source/wikipedia-en-wool|§ Introduction]] After shearing it is sorted and cleaned, then carded or combed and made into yarn or felt.[[source/wikipedia-en-wool|§ Introduction]]
+
+  In medieval Europe wool was the basis of a great trade: raw wool, much of it from the lands of Cistercian houses, was shipped from North Sea ports to the textile cities of Flanders such as Ypres and Ghent to be dyed and made into cloth, and in the 13th century the wool trade became the economic engine of the Low Countries and central Italy.[[source/wikipedia-en-wool|§ 12th and 13th centuries]] Much of the value of woollen textiles lay in their dyeing and finishing.[[source/wikipedia-en-wool|§ 12th and 13th centuries]]
+
+  The [[artwork/bayeux-tapestry|Bayeux Tapestry]] of about 1070 is not woven but embroidered: wool stitched on a [[term/linen|linen]] ground, 68.38 m long and 45.7–53.6 cm high, now in Bayeux.[[source/ganz-2024-aus-dem-wald|Sitzung 3 (10.10.2024), Folie 39]]
+sources:
+  definition:
+    - source: wikipedia-en-wool
+      locator: § Introduction
+      accessed: 2026-11-13

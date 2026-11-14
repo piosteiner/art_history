@@ -23,6 +23,7 @@ names:
   - lang: en
     role: translation
     text: Crucifix No. 15 Santo Sepolcro
+attribution_label: Anonymous
 created: 12th century
 created_span: uncertain
 medium: tempera and gold on panel
@@ -70,3 +71,7 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q16545867
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 74
+      accessed: 2026-11-13

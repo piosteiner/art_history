@@ -1,0 +1,47 @@
+public_id: 122350
+name: Nashville
+names:
+  - lang: ja
+    role: translation
+    text: ナッシュビル
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q23197
+  - lang: zh
+    role: translation
+    text: 纳什维尔;納許維爾;納士維;納什維爾
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q23197
+  - lang: ko
+    role: translation
+    text: 내슈빌
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q23197
+  - lang: ru
+    role: translation
+    text: Нашвилл
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q23197
+kind: settlement
+parent: united-states
+country_code: US
+location: [-86.77444, 36.16222]
+wikidata_id: Q23197
+metadata:
+  sources: [Wikidata Q23197 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q23197
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q23197
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q23197

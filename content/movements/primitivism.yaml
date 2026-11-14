@@ -1,6 +1,8 @@
 public_id: 103237
 name: primitivism
 kind: movement
+period: 1867/
+period_label: since the late 19th century
 wikidata_id: Q848365
 metadata:
   sources: [Wikidata Q848365 (retrieved 2026-10-28)]
@@ -9,3 +11,7 @@ sources:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q848365
+  period:
+    - source: wikipedia-en-primitivism
+      locator: lead
+      accessed: 2026-11-13

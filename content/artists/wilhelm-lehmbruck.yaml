@@ -14,11 +14,41 @@ relationships:
       - accessed: 2026-11-03
         property: P27
         wikidata: Q551282
+  - type: born_in
+    to: place/duisburg
+    sources:
+      - accessed: 2026-11-13
+        property: P19
+        wikidata: Q551282
   - type: died_in
     to: place/berlin
     sources:
       - accessed: 2026-11-03
         property: P20
+        wikidata: Q551282
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-11-13
+        property: P937
+        wikidata: Q551282
+  - type: worked_in
+    to: place/dusseldorf
+    sources:
+      - accessed: 2026-11-13
+        property: P937
+        wikidata: Q551282
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-13
+        property: P937
+        wikidata: Q551282
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-13
+        property: P937
         wikidata: Q551282
   - type: studied_at
     to: institution/kunstakademie-dusseldorf

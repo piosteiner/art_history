@@ -17,6 +17,7 @@ names:
   - lang: en
     role: translation
     text: Golden Madonna
+attribution_label: Anonymous, Lower Saxon
 created: 11th century
 created_span: uncertain
 medium: Lindenholz, Goldblech, Reste originaler Fassung
@@ -72,3 +73,7 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q117838042
+  attribution_label:
+    - source: endemann-2020-wood-carving-and-staffering
+      locator: p. 147, n. 16
+      accessed: 2026-11-13

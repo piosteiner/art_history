@@ -1,14 +1,22 @@
 public_id: 117590
 name: Dmitrov
 kind: site
+parent: russia
+country_code: RU
 location: [37.53333, 56.35]
 wikidata_id: Q102334
 metadata:
   sources: [Wikidata Q102334 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4283145-3
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q102334
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q102334
   location:
     - accessed: 2026-11-10

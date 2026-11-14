@@ -1,6 +1,8 @@
 public_id: 117679
 name: Huntly
 kind: settlement
+parent: scotland
+country_code: GB
 location: [-2.78333, 57.45]
 wikidata_id: Q1016931
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q1016931
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q1016931
   location:
     - accessed: 2026-11-10

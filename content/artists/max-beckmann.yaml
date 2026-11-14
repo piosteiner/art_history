@@ -2,7 +2,7 @@ public_id: 121157
 name: Max Beckmann
 given_name: Max
 family_name: Beckmann
-birth: 1884-02-27
+birth: 1884-02-12
 death: 1950-12-27
 biography_md: |-
   German painter, draughtsman, printmaker, sculptor and writer, born into a middle-class family in Leipzig; classified as an Expressionist, he rejected both the term and the movement, and in the 1920s was associated with the [[movement/new-objectivity|New Objectivity]] [[source/wikipedia-en-max-beckmann|introduction; § Life]].
@@ -146,9 +146,9 @@ identifiers:
   viaf: "46775885"
 sources:
   birth:
-    - accessed: 2026-11-12
-      property: P569
-      wikidata: Q164683
+    - url: https://d-nb.info/gnd/118508210
+      source: gnd
+      accessed: 2026-11-13
   death:
     - accessed: 2026-11-12
       property: P570

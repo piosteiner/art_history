@@ -1,14 +1,22 @@
 public_id: 116540
 name: Jiangsu
 kind: site
+parent: people-s-republic-of-china
+country_code: CN
 location: [120, 33]
 wikidata_id: Q16963
 metadata:
   sources: [Wikidata Q16963 (retrieved 2026-11-06)]
+identifiers:
+  gnd: 4073374-9
 sources:
   kind:
     - accessed: 2026-11-06
       property: P31
+      wikidata: Q16963
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q16963
   location:
     - accessed: 2026-11-06

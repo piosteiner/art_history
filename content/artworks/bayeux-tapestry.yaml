@@ -68,6 +68,7 @@ names:
     sources:
       - accessed: 2026-11-09
         wikidata: Q187483
+attribution_label: Anonymous, English (probably for Bishop Odo of Bayeux)
 created: 1066/1083
 created_label: c. 11th century
 created_span: uncertain
@@ -122,7 +123,7 @@ relationships:
         property: P180
         wikidata: Q187483
   - type: depicts
-    to: place/norman-conquest-of-england
+    to: event/norman-conquest-of-england
     sources:
       - accessed: 2026-11-09
         property: P180
@@ -231,3 +232,7 @@ sources:
     - accessed: 2026-11-09
       property: P195
       wikidata: Q187483
+  attribution_label:
+    - source: wikipedia-en-bayeux-tapestry
+      locator: introduction
+      accessed: 2026-11-13

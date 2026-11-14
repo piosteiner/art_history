@@ -1,6 +1,8 @@
 public_id: 117589
 name: North Stratford
 kind: site
+parent: united-states
+country_code: US
 location: [-71.6286, 44.7517]
 wikidata_id: Q14705387
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q14705387
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q14705387
   location:
     - accessed: 2026-11-10

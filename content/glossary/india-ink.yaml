@@ -1,3 +1,14 @@
 public_id: 107354
 name: India ink
 category: material
+parent: ink
+definition: A deep black ink of fine soot (lampblack) in water, sometimes bound with gelatin or shellac; invented in China and sold as a liquid or as a solid inkstick.
+description_md: |-
+  India ink — also called China or Chinese ink — is a simple black ink once widely used for writing and printing and now mostly for drawing and outlining; it is noted for a deeper, richer black than the iron-gall ink formerly common in Europe.[[source/wikipedia-en-india-ink|introduction]] Basic India ink is fine soot (lampblack) in water: no binder is needed, as the carbon stays in colloidal suspension and dries to a waterproof layer, though gelatin or shellac may be added.[[source/wikipedia-en-india-ink|§ Composition]] It was invented in China — the English name comes from later trade with India — and black carbon ink already appears in characters on late Shang oracle bones.[[source/wikipedia-en-india-ink|§ History]] Pine soot was traditionally favoured; from the Song dynasty lampblack from oil lamps was used as well.[[source/wikipedia-en-india-ink|§ History]] The traditional Chinese method ground hide glue with carbon black, lampblack and bone black and let the mixture dry; in East Asian calligraphy a solid [[term/inkstick|inkstick]] was rubbed against an inkstone with water.[[source/wikipedia-en-india-ink|§ History]] It is the ink of East Asian ink-wash painting and calligraphy, applied with a brush or a dip pen.[[source/wikipedia-en-india-ink|introduction]]
+
+  In this database India ink is recorded for the [[artwork/ippen-hijiri-e|Ippen Hijiri-e]] of 1299, twelve handscrolls of the life and travels of the monk Ippen painted by [[artist/en-i|En'i]].[[source/history-of-japanese-art|pp. 203–205, figs. 236–237]]
+sources:
+  definition:
+    - source: wikipedia-en-india-ink
+      locator: introduction; § Composition
+      accessed: 2026-11-13

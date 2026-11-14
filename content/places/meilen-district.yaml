@@ -1,14 +1,22 @@
 public_id: 108896
 name: Meilen District
 kind: site
+parent: switzerland
+country_code: CH
 location: [8.66667, 47.26667]
 wikidata_id: Q656714
 metadata:
   sources: [Wikidata Q656714 (retrieved 2026-11-02)]
+identifiers:
+  hls: "009423"
 sources:
   kind:
     - accessed: 2026-11-02
       property: P31
+      wikidata: Q656714
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q656714
   location:
     - accessed: 2026-11-02

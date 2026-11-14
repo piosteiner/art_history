@@ -2,15 +2,40 @@ public_id: 117166
 name: Basilica of San Domenico
 kind: basilica
 founded: 1228
+place: bologna
+location: [11.3445, 44.4895]
+address: piazza San Domenico 13 ‒ Bologna (BO)
+website_url: https://sandomenicobologna.it
 wikidata_id: Q862602
 metadata:
   sources: [Wikidata Q862602 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Bologna_-_Piazza_San_Domenico_%28DSCN0004-01-01%29.jpg/1280px-Bologna_-_Piazza_San_Domenico_%28DSCN0004-01-01%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bologna_-_Piazza_San_Domenico_(DSCN0004-01-01).jpg
+    license: CC BY-SA 4.0
+    credit: Maretta Angelini
+identifiers:
+  gnd: 4358336-2
+  lc: n79021945
+  viaf: "293479551"
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
       wikidata: Q862602
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q862602
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q862602
   founded:
     - accessed: 2026-11-09
       property: P571
+      wikidata: Q862602
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q862602

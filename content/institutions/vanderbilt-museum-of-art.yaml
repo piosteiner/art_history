@@ -1,11 +1,22 @@
 public_id: 113449
 name: Vanderbilt Museum of Art
 kind: museum
+place: nashville
+location: [-86.80139, 36.14583]
+website_url: https://www.vanderbilt.edu/art-museum/
 wikidata_id: Q18563658
 metadata:
   sources: [Wikidata Q18563658 (retrieved 2026-11-03)]
+identifiers:
+  gnd: 10039870-4
+  lc: nr98003710
+  viaf: "145867347"
 sources:
   kind:
     - accessed: 2026-11-03
       property: P31
+      wikidata: Q18563658
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q18563658

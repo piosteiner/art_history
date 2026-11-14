@@ -1,3 +1,23 @@
 public_id: 111999
 name: Galerie Charpentier
+kind: gallery
+place: paris
 wikidata_id: Q3094593
+metadata:
+  sources: [Wikidata Q3094593 (retrieved 2026-11-13)]
+identifiers:
+  bnf: 11868843b
+  gnd: 5091600-2
+  idref: "026441462"
+  lc: no90015095
+  ulan: "500310169"
+  viaf: "128559024"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q3094593
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q3094593

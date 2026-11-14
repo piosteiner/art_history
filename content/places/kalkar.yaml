@@ -1,14 +1,22 @@
 public_id: 117388
 name: Kalkar
 kind: site
+parent: germany
+country_code: DE
 location: [6.2925, 51.73889]
 wikidata_id: Q243554
 metadata:
   sources: [Wikidata Q243554 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4029327-0
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q243554
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q243554
   location:
     - accessed: 2026-11-09

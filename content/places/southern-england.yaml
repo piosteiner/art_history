@@ -1,14 +1,30 @@
 public_id: 117687
 name: Southern England
+names:
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: The South
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1134643
 kind: region
+parent: england
+country_code: GB
 location: [-1.5, 51.33333]
 wikidata_id: Q1134643
 metadata:
   sources: [Wikidata Q1134643 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4120409-8
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q1134643
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q1134643
   location:
     - accessed: 2026-11-10

@@ -1,6 +1,7 @@
 public_id: 117276
 title_lang: de
 title: Heimsuchungsgruppe aus dem Passauer Dom
+attribution_label: Anonymous, Passau
 created: c. 1420
 created_span: uncertain
 kind: sculpture
@@ -56,3 +57,7 @@ sources:
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 7 (14.11.2024), Folie 100
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 100
+      accessed: 2026-11-13

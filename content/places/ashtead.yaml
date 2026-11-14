@@ -1,14 +1,22 @@
 public_id: 117680
 name: Ashtead
 kind: settlement
+parent: england
+country_code: GB
 location: [-0.2986, 51.3101]
 wikidata_id: Q2220778
 metadata:
   sources: [Wikidata Q2220778 (retrieved 2026-11-10)]
+identifiers:
+  gnd: "1254533842"
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q2220778
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q2220778
   location:
     - accessed: 2026-11-10

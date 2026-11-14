@@ -2,3 +2,13 @@ public_id: 101424
 name: red chalk
 category: material
 parent: chalk
+definition: A reddish-brown drawing chalk of red ochre (hematite), also called sanguine; popular for drawing from the late fifteenth century.
+description_md: |-
+  Red chalk is chalk of a reddish-brown colour used for drawing, obtained from the red ochre variety of hematite; older references call it sanguine, from the Italian *sanguigna* and the Latin *sanguis*, for its likeness to the colour of dried blood.[[source/wikipedia-en-red-chalk|introduction]] It is not calcium-carbonate [[term/chalk|chalk]] but made of red ochre.[[source/wikipedia-en-chalk|§ Uses]] The ancient Egyptians and Romans used it for wall painting; by the sixteenth century deposits were known in Italy, Spain, Flanders, France and Germany and it became a popular drawing medium — [[artist/leonardo-da-vinci|Leonardo da Vinci]], in the late fifteenth century, was the first major artist to work in it.[[source/wikipedia-en-red-chalk|introduction]] It lends itself to sketches and life drawing and is ideal for rendering modelling, volume and human flesh; like pastel it works well on mid-toned paper, and a fixative may preserve the finished drawing.[[source/wikipedia-en-red-chalk|§ Technique]] Red chalk is one of the chalks, with [[term/graphite|graphite]] and [[term/black-chalk|black chalk]], whose gestural qualities displaced [[term/silverpoint|silverpoint]] at the end of the sixteenth century.[[source/wikipedia-en-silverpoint|§ History]] Red ochre itself is among the oldest pigments ([[term/red-ocher|red ocher]]).[[source/wikipedia-en-ochre|introduction]]
+
+  Red-chalk drawings in this database include [[artist/raphael|Raphael]]'s [[artwork/young-man-carrying-an-old-man-on-his-back|Young Man Carrying an Old Man on His Back]] (1514) and [[artist/gustav-klimt|Gustav Klimt]]'s [[artwork/portrait-of-a-lady-with-cape-and-hat|Portrait of a Lady with Cape and Hat]] (c. 1897).
+sources:
+  definition:
+    - source: wikipedia-en-red-chalk
+      locator: introduction
+      accessed: 2026-11-13

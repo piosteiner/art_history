@@ -1,3 +1,14 @@
 public_id: 117207
 name: semiprecious stone
 category: material
+parent: gemstone
+definition: A gemstone outside the traditional group of precious stones (emerald, ruby, sapphire, diamond); in art history and archaeology also called hardstone.
+description_md: |-
+  The traditional Western classification of [[term/gemstone|gemstones]], going back to the ancient Greeks, distinguishes precious from semi-precious stones; in modern use the precious stones are emerald, ruby, sapphire and diamond, and all others are semi-precious.[[source/wikipedia-en-gemstone|§ Characteristics and classification]] The distinction reflects the rarity and quality of the stones in ancient times rather than modern market value — a green garnet can be worth more than a mid-quality emerald — and in art history and archaeology semi-precious stones are also called hardstones.[[source/wikipedia-en-gemstone|§ Characteristics and classification]] Amethyst counted as precious until large deposits were found in Brazil in the 19th century.[[source/wikipedia-en-gemstone|§ Value]]
+
+  On the [[artwork/stavelot-triptych|Stavelot Triptych]], the modern black velvet background replaces an original golden field inlaid with semi-precious stones.[[source/wikipedia-en-stavelot-triptych|§ Description]] On the Majesty of Sainte Foy at Conques, gaps in the gold were concealed over the centuries by "splendid-looking gems of lesser value".[[source/forsyth-1972-the-throne-of-wisdom|p. 14]] In this database semi-precious stones are recorded for the [[artwork/sainte-foy-conques|reliquary statue of Sainte Foy]].
+sources:
+  definition:
+    - source: wikipedia-en-gemstone
+      locator: § Characteristics and classification
+      accessed: 2026-11-13

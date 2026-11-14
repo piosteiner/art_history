@@ -5,6 +5,7 @@ names:
   - lang: zh
     role: original
     text: 竹林七賢
+attribution_label: Anonymous, Chinese (Eastern Jin)
 created: late 4th century
 created_span: uncertain
 kind: relief
@@ -29,3 +30,7 @@ sources:
   created:
     - source: thomsen-2019-war-and-peace
       locator: image list, 8 March 2019
+  attribution_label:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 8 March 2019
+      accessed: 2026-11-13

@@ -1,5 +1,6 @@
 public_id: 117075
 title: Hochaltar des Doberaner Münsters
+attribution_label: Anonymous
 created: c. 1300
 created_span: uncertain
 medium: Eichenholz
@@ -45,3 +46,7 @@ sources:
   institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 8 (21.11.2024)
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024), Folie 25
+      accessed: 2026-11-13

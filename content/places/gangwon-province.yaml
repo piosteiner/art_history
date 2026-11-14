@@ -1,6 +1,8 @@
 public_id: 117706
 name: Gangwon Province
 kind: site
+parent: south-korea
+country_code: KR
 location: [128.25, 37.5]
 wikidata_id: Q41071
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q41071
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q41071
   location:
     - accessed: 2026-11-10

@@ -1,6 +1,8 @@
 public_id: 122200
 name: arrondissement of Reims
 kind: region
+parent: marne
+country_code: FR
 location: [4.03333, 49.25]
 wikidata_id: Q702181
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-13
       property: P31
+      wikidata: Q702181
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q702181
   location:
     - accessed: 2026-11-13

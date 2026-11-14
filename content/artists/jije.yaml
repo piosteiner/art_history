@@ -50,6 +50,12 @@ relationships:
       - accessed: 2026-11-10
         property: P135
         wikidata: Q741204
+  - type: founded
+    to: movement/marcinelle-school
+    sources:
+      - accessed: 2026-11-13
+        property: P112
+        wikidata: Q273470
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Joseph_Gillain.jpg/1280px-Joseph_Gillain.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Joseph_Gillain.jpg

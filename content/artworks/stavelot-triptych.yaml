@@ -37,6 +37,7 @@ names:
     sources:
       - accessed: 2026-11-09
         wikidata: Q7604811
+attribution_label: Mosan goldsmiths
 created: 1156
 medium: gilt copper, enamel
 materials: [gold, vitreous enamel, wood, copper]
@@ -86,3 +87,7 @@ sources:
     - accessed: 2026-11-09
       property: P195
       wikidata: Q7604811
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024), Folie 23
+      accessed: 2026-11-13

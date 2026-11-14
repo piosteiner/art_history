@@ -2,15 +2,35 @@ public_id: 117697
 name: Joshibi University of Art and Design
 kind: art academy
 founded: 1900
+place: tokyo
+location: [139.38889, 35.52861]
+website_url: https://www.joshibi.ac.jp/
 wikidata_id: Q846126
 metadata:
   sources: [Wikidata Q846126 (retrieved 2026-11-10)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Joshibi_UNIV_01.jpg/1280px-Joshibi_UNIV_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joshibi_UNIV_01.jpg
+    license: Copyrighted free use
+    credit: IZUMI SAKAI
+identifiers:
+  gnd: 16071392-4
+  lc: n81093475
+  viaf: "128573558"
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
       wikidata: Q846126
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q846126
   founded:
     - accessed: 2026-11-10
       property: P571
+      wikidata: Q846126
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q846126

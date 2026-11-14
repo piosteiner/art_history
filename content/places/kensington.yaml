@@ -1,14 +1,22 @@
 public_id: 117677
 name: Kensington
 kind: site
+parent: england
+country_code: GB
 location: [-0.1909, 51.5004]
 wikidata_id: Q288781
 metadata:
   sources: [Wikidata Q288781 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4579601-4
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q288781
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q288781
   location:
     - accessed: 2026-11-10

@@ -1,6 +1,8 @@
 public_id: 117675
 name: Hövelö
 kind: site
+parent: finland
+country_code: FI
 location: [27.62981, 64.27929]
 wikidata_id: Q97495910
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q97495910
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q97495910
   location:
     - accessed: 2026-11-10

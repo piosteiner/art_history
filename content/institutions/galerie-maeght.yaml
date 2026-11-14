@@ -1,3 +1,29 @@
 public_id: 115630
 name: Galerie Maeght
+kind: museum
+founded: 1936
+place: paris
+location: [2.32687, 48.85676]
+website_url: http://www.maeght.com/galeries/
 wikidata_id: Q2742485
+metadata:
+  sources: [Wikidata Q2742485 (retrieved 2026-11-13)]
+identifiers:
+  viaf: "141762717"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q2742485
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q2742485
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q2742485
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q2742485

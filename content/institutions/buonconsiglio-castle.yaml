@@ -1,5 +1,32 @@
 public_id: 117157
 name: Buonconsiglio Castle
+place: trento-2
+location: [11.12704, 46.07157]
+address: Via Cardinale Bernardo Clesio 5, 38122 Trento
+website_url: https://buonconsiglio.it
 wikidata_id: Q247451
 metadata:
   sources: [Wikidata Q247451 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/20110727_Trento_Buonconsiglio_Castle_6609.jpg/1280px-20110727_Trento_Buonconsiglio_Castle_6609.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:20110727_Trento_Buonconsiglio_Castle_6609.jpg
+    license: CC BY-SA 4.0
+    credit: Jakub Hałun
+identifiers:
+  gnd: 4273917-2
+  idref: "050299263"
+  lc: n85053337
+  viaf: "140764119"
+sources:
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q247451
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q247451
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q247451

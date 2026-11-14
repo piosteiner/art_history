@@ -1,6 +1,7 @@
 public_id: 117289
 title_lang: en
 title: Christ before Herod
+attribution_label: Anonymous, probably Franconian
 created: c. 1420–1430
 created_span: uncertain
 kind: woodcut
@@ -37,3 +38,7 @@ sources:
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 9 (28.11.2024)
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024), Folie 16
+      accessed: 2026-11-13

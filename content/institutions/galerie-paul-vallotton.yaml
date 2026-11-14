@@ -1,3 +1,28 @@
 public_id: 112183
 name: Galerie Paul Vallotton
+kind: gallery
+place: lausanne
+location: [6.62956, 46.52063]
+address: Av. Jean-Jaques Mercier 2 1003 Lausanne
 wikidata_id: Q73572773
+metadata:
+  sources: [Wikidata Q73572773 (retrieved 2026-11-13)]
+identifiers:
+  idref: "028342666"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q73572773
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q73572773
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q73572773
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q73572773

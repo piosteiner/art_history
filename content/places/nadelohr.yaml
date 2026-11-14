@@ -1,6 +1,8 @@
 public_id: 117105
 name: Nadelöhr
 kind: site
+parent: germany
+country_code: DE
 location: [13.62116, 50.96927]
 wikidata_id: Q49441785
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q49441785
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q49441785
   location:
     - accessed: 2026-11-09

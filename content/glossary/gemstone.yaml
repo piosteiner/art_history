@@ -1,3 +1,17 @@
 public_id: 117067
 name: gemstone
 category: material
+definition: A piece of mineral crystal — or a rock or organic material such as pearl — cut or polished for jewellery and ornament; set in medieval goldsmiths' work on reliquaries, book covers and statues.
+description_md: |-
+  A gemstone is a piece of mineral crystal which, cut or polished, is used for jewellery and other adornment; some rocks such as [[term/lapis-lazuli|lapis lazuli]] and organic materials such as amber and [[term/pearl|pearl]] are often counted among them too.[[source/wikipedia-en-gemstone|§ Introduction]] The Western distinction between precious and semi-precious stones goes back to the ancient Greeks; in modern use only emerald, ruby, sapphire and diamond are precious.[[source/wikipedia-en-gemstone|§ Characteristics and classification]] Smooth, dome-shaped cabochons have been popular since ancient times.[[source/wikipedia-en-gemstone|§ Cutting and polishing]]
+
+  ## In medieval goldsmiths' work
+
+  The earliest statues of the Madonna as Throne of Wisdom were sheathed in gold or silver, and "costly gems, including antique intaglios and cameos, edged the hems of garments and studded thrones"; the tenth-century golden Madonna of Clermont-Ferrand was set with dozens of precious stones.[[source/forsyth-1972-the-throne-of-wisdom|p. 10]] Bernard of Angers saw the Majesty of St Gerald at Aurillac "of purest gold and costly gems gleaming".[[source/forsyth-1972-the-throne-of-wisdom|p. 12]] Gold and gems also made such figures a target: on the Majesty of Sainte Foy at Conques, sections of the gold leaves were snipped away over the centuries and the gaps hidden by "splendid-looking gems of lesser value".[[source/forsyth-1972-the-throne-of-wisdom|p. 14]]
+
+  The reliquary of [[artwork/sainte-foy-conques|Sainte Foy]] is gold, gems and crystal over a core of yew.[[source/ganz-2024-aus-dem-wald|Sitzung 4 (17.10.2024), Folie 14]] The double-armed cross of the [[artwork/limburger-staurothek|Limburg Staurotheke]] is covered in gilded silver and set with gemstones and pearls.[[source/wikipedia-en-limburg-staurotheke|§ Introduction]] Gemstones are also recorded for the [[artwork/bernward-gospels|Bernward Gospels]] and the [[artwork/grosse-goldene-madonna-hildesheim|Great Golden Madonna]] of Hildesheim.
+sources:
+  definition:
+    - source: wikipedia-en-gemstone
+      locator: § Introduction
+      accessed: 2026-11-13

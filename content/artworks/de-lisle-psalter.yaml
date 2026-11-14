@@ -17,6 +17,7 @@ names:
     sources:
       - accessed: 2026-11-09
         wikidata: Q1180107
+attribution_label: Madonna Master (attributed)
 created: c. 1310
 created_span: uncertain
 medium: manuscript
@@ -54,3 +55,7 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q1180107
+  attribution_label:
+    - source: wikipedia-en-howard-psalter-and-hours
+      locator: introduction
+      accessed: 2026-11-13

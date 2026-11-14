@@ -1,6 +1,7 @@
 public_id: 116589
 title_lang: en
 title: "Japan-Korea: Teamwork and Unity, Champions of the World"
+attribution_label: Anonymous
 created: 1930s
 created_span: uncertain
 kind: postcard
@@ -23,3 +24,7 @@ sources:
   created:
     - source: thomsen-2019-war-and-peace
       locator: image list, 17 May 2019
+  attribution_label:
+    - source: thomsen-2019-war-and-peace
+      locator: lecture of 24 May 2019, class notes
+      accessed: 2026-11-13

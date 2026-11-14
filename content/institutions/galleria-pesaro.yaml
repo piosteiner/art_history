@@ -1,3 +1,36 @@
 public_id: 111990
 name: Galleria Pesaro
+kind: gallery
+founded: 1917
+dissolved: 1937
+place: milan
+location: [9.18219, 45.46389]
 wikidata_id: Q21235146
+metadata:
+  sources: [Wikidata Q21235146 (retrieved 2026-11-13)]
+identifiers:
+  gnd: 16309221-7
+  lc: nr2002009396
+  ulan: "500302907"
+  viaf: "173766495"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q21235146
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q21235146
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q21235146
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q21235146
+  dissolved:
+    - accessed: 2026-11-13
+      property: P576
+      wikidata: Q21235146

@@ -1,6 +1,8 @@
 public_id: 117188
 name: Couesnon
 kind: natural
+parent: france
+country_code: FR
 location: [-1.5122, 48.6175]
 wikidata_id: Q632961
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q632961
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q632961
   location:
     - accessed: 2026-11-09

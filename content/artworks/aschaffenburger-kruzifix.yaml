@@ -1,6 +1,7 @@
 public_id: 117235
 title_lang: de
 title: Aschaffenburger Kruzifix
+attribution_label: Anonymous, German (south-west Germany or Middle Rhine)
 created: c. 980–1000
 created_span: uncertain
 kind: sculpture
@@ -34,3 +35,7 @@ sources:
   title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 4 (17.10.2024), Folie 18
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 18
+      accessed: 2026-11-13

@@ -9,6 +9,7 @@ names:
   - lang: en
     role: translation
     text: AM 738 4to
+attribution_label: Anonymous, Icelandic
 created: c. 1680
 created_span: uncertain
 medium: manuscript
@@ -31,6 +32,7 @@ images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/02/AM_738_4to_Yggdrasill.png
     source_url: https://commons.wikimedia.org/wiki/File:AM_738_4to_Yggdrasill.png
     license: Public domain
+    credit: Unknown author — Árni Magnússon Institute (AM 738 4to)
 sources:
   medium:
     - source: ganz-2024-aus-dem-wald
@@ -46,3 +48,7 @@ sources:
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 2 (3.10.2024)
+  attribution_label:
+    - source: wikipedia-en-am-738-4to
+      locator: introduction
+      accessed: 2026-11-13

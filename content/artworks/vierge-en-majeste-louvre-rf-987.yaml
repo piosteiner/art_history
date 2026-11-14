@@ -5,6 +5,7 @@ names:
   - lang: en
     role: translation
     text: Vierge en Majesté
+attribution_label: Anonymous, Auvergne
 created: c. 1150
 created_span: uncertain
 medium: walnut, polychromy over gesso
@@ -58,3 +59,7 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q117818923
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 36
+      accessed: 2026-11-13

@@ -29,6 +29,7 @@ names:
   - lang: en
     role: translation
     text: Rich Bernward Gospels
+attribution_label: Made for Bishop Bernward of Hildesheim (scribes and illuminators unknown)
 created: c. 1015
 created_span: uncertain
 medium: Handschrift, Pergament
@@ -86,3 +87,7 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q1785164
+  attribution_label:
+    - source: wikipedia-en-rich-bernward-gospels
+      locator: § Contents and decoration
+      accessed: 2026-11-13

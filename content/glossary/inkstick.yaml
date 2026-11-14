@@ -1,3 +1,16 @@
 public_id: 106390
 name: inkstick
 category: material
+parent: india-ink
+definition: "Solid East Asian ink: soot (of pine or oil) kneaded with animal glue and pressed into a stick or cake, ground with water on an inkstone before use."
+description_md: |-
+  Inksticks or ink cakes are solid Chinese ink, used in Chinese, Japanese and other East Asian calligraphy and brush painting; they are made mainly of soot and animal glue, sometimes with incense or medicinal scents.[[source/wikipedia-en-inkstick|introduction]] The soot comes from burning oils such as tung oil or lard, or wood such as pine; egg white, fish-skin or ox-hide glue binds it, and the dough is kneaded, pressed into a mould and slowly dried.[[source/wikipedia-en-inkstick|§ Production]] The earliest soot-and-glue inks found in excavations date from the end of the Warring States period, around 256 BC, as pellets ground on a flat inkstone with a small pestle.[[source/wikipedia-en-inkstick|§ History]] Together with the inkstone, the brush and paper, the inkstick counts among the Four Treasures of the Study.[[source/wikipedia-en-inkstick|introduction]]
+
+  In Japan the black ink of ink painting, *sumi*, is made by collecting the soot of burning pine twigs and forming it, with resin, into a long flat-sided stick; the stick is dipped in a little water in the well of the inkstone and rubbed on its slope until the desired ratio of pigment to water is reached.[[source/history-of-japanese-art|p. 220]] By adjusting the grinding, the painter controls the concentration of the ink.[[source/wikipedia-en-inkstick|introduction]] Lacquered inkstone cases held the stone slab on which the stick was dissolved.[[source/history-of-japanese-art|p. 178]]
+
+  [[artist/uragami-gyokudo|Uragami Gyokudō]]'s [[artwork/gyokudo-eastern-clouds|Eastern Clouds, Sifted Snow]] (c. 1811) is executed in ink with occasional touches of ocher on paper.[[source/history-of-japanese-art|p. 338]] Ink (*sumi*) was already the black of the [[artwork/horyu-ji-kondo-murals|wall paintings of the Hōryūji Kondō]] at the turn of the eighth century.[[source/wikipedia-ja-horyuji-kondo-hekiga|§ 技法・様式]]
+sources:
+  definition:
+    - source: wikipedia-en-inkstick
+      locator: introduction; § Production
+      accessed: 2026-11-13

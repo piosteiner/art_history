@@ -1,11 +1,22 @@
 public_id: 117670
 name: Royal Society of Portrait Painters
 founded: 1891
+place: city-of-westminster
+location: [-0.13046, 51.50649]
+website_url: http://www.therp.co.uk/
 wikidata_id: Q2171131
 metadata:
   sources: [Wikidata Q2171131 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 5543306-6
+  lc: nb2012005514
+  viaf: "265123152"
 sources:
   founded:
     - accessed: 2026-11-10
       property: P571
+      wikidata: Q2171131
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q2171131

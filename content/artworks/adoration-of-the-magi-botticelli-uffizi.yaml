@@ -70,10 +70,12 @@ creator: sandro-botticelli
 created: 1470/1475
 created_label: c. 1470s
 created_span: uncertain
+kind: painting
 materials: [tempera, panel]
-dimensions: [111, 134]
+dimensions: [111, 137]
 institution: uffizi-gallery
 inventory_number: 1890 no. 882
+web_url: https://www.uffizi.it/opere/botticelli-adorazione-lami
 other_web_url: https://web.archive.org/web/20160920053513/http://www.palazzo-medici.it/mediateca/en/schede.php?id_scheda=318
 other_web_name: Internet Archive (archived page)
 wikidata_id: Q488825
@@ -131,6 +133,10 @@ provenance:
         source: uffizi-artworks
         accessed: 2026-10-20
 sources:
+  kind:
+    - url: https://www.uffizi.it/opere/botticelli-adorazione-lami
+      source: uffizi-artworks
+      accessed: 2026-11-13
   created:
     - url: https://www.uffizi.it/en/artworks/boticelli-adoration-lami
       source: uffizi-artworks
@@ -139,18 +145,24 @@ sources:
     - accessed: 2026-10-20
       property: P170
       wikidata: Q488825
+    - url: https://www.uffizi.it/opere/botticelli-adorazione-lami
+      source: uffizi-artworks
+      accessed: 2026-11-13
   materials:
     - accessed: 2026-10-20
       property: P186
       wikidata: Q488825
   dimensions:
-    - accessed: 2026-10-20
-      property: P2048
-      wikidata: Q488825
+    - url: https://www.uffizi.it/opere/botticelli-adorazione-lami
+      source: uffizi-artworks
+      accessed: 2026-11-13
   institution:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q488825
+    - url: https://www.uffizi.it/opere/botticelli-adorazione-lami
+      source: uffizi-artworks
+      accessed: 2026-11-13
   inventory_number:
     - url: https://www.uffizi.it/en/artworks/boticelli-adoration-lami
       source: uffizi-artworks

@@ -1,3 +1,26 @@
 public_id: 115187
 name: Hauswedell & Nolte
+kind: auction house
+founded: 1927
+dissolved: 2015
+website_url: http://www.hauswedell-nolte.de
 wikidata_id: Q47002736
+metadata:
+  sources: [Wikidata Q47002736 (retrieved 2026-11-13)]
+identifiers:
+  idref: "111999235"
+  lc: n85239690
+  viaf: "138377512"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q47002736
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q47002736
+  dissolved:
+    - accessed: 2026-11-13
+      property: P576
+      wikidata: Q47002736

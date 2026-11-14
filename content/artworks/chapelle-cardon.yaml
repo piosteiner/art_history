@@ -8,6 +8,7 @@ names:
     sources:
       - accessed: 2026-11-09
         wikidata: Q27005745
+attribution_label: Anonymous, Lower Rhenish
 created: 1400/1425
 created_label: c. 15th century
 created_span: uncertain
@@ -74,3 +75,7 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q27005745
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024), Folie 21
+      accessed: 2026-11-13

@@ -2,15 +2,39 @@ public_id: 116685
 name: Yale University Art Gallery
 kind: museum
 founded: 1832
+place: new-haven
+location: [-72.93096, 41.30839]
+website_url: https://artgallery.yale.edu/
+collection_url: https://artgallery.yale.edu/collection
 wikidata_id: Q1568434
 metadata:
   sources: [Wikidata Q1568434 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Yale_University_Art_Gallery_exterior.jpg/1280px-Yale_University_Art_Gallery_exterior.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yale_University_Art_Gallery_exterior.jpg
+    license: Public domain
+    credit: Ragesoss
+identifiers:
+  bnf: 11991834g
+  gnd: 1019500-2
+  idref: "027993175"
+  lc: n79129213
+  ulan: "500303559"
+  viaf: "158793816"
 sources:
   kind:
     - accessed: 2026-11-07
       property: P31
       wikidata: Q1568434
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q1568434
   founded:
     - accessed: 2026-11-07
       property: P571
+      wikidata: Q1568434
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q1568434

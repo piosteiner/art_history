@@ -2,16 +2,44 @@ public_id: 113422
 name: Cleveland Museum of Art
 kind: museum
 founded: 1913
+place: cleveland
+location: [-81.61167, 41.50889]
+address: 11150 East Blvd, Cleveland, OH 44106
+website_url: https://www.clevelandart.org/
 collection_url: https://www.clevelandart.org/art/collection/search
 wikidata_id: Q657415
 metadata:
   sources: [Wikidata Q657415 (retrieved 2026-11-03)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/29/Springtime_art_museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Springtime_art_museum.jpg
+    license: CC BY 2.0
+    credit: zenbikescience
+identifiers:
+  bnf: "118719047"
+  gnd: 1007926-9
+  idref: "027294331"
+  lc: n78087650
+  ulan: "500209693"
+  viaf: "125472356"
 sources:
   kind:
     - accessed: 2026-11-03
       property: P31
       wikidata: Q657415
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q657415
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q657415
   founded:
     - accessed: 2026-11-03
       property: P571
+      wikidata: Q657415
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q657415

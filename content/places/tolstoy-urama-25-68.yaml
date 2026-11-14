@@ -1,6 +1,8 @@
 public_id: 117574
 name: Tolstoy Urama, 25/68
 kind: building
+parent: russia
+country_code: RU
 location: [49.13869, 55.79598]
 wikidata_id: Q56834344
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q56834344
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q56834344
   location:
     - accessed: 2026-11-10

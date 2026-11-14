@@ -1,3 +1,13 @@
 public_id: 106386
 name: red ocher
 category: material
+definition: An earth pigment of clay and sand coloured red by hematite (iron oxide); one of the oldest pigments, used from prehistory onwards.
+description_md: |-
+  Ochre is a family of natural clay earth pigments of ferric oxide with varying amounts of clay and sand; red ochre is the variant with a large amount of hematite, which gives it its reddish tint.[[source/wikipedia-en-ochre|introduction; § Terminology]] It is among the oldest pigments: in Africa the processing of red ochre has been dated to around 300,000 years ago, pieces engraved with designs at Blombos Cave to about 75,000 years ago, and animals painted in red and yellow ochre survive at Pech Merle and Altamira.[[source/wikipedia-en-ochre|§ Historical use in art and culture › Prehistory]] The finest red ochre of classical antiquity came from Sinope on the Black Sea, whence the Latin and Italian *sinopia* for dark red ochres.[[source/wikipedia-en-ochre|§ Historical use in art and culture › Ancient Greece and Rome]] In the Renaissance red and yellow ochres were widely used in panel painting and fresco, their colour varying with the local clay.[[source/wikipedia-en-ochre|§ Historical use in art and culture › Renaissance]] Prehistoric Japan used it too: in Yayoi secondary burials the washed bones were possibly painted with red ocher before reburial in a large jar.[[source/history-of-japanese-art|p. 28]]
+
+  In the [[artwork/horyu-ji-kondo-murals|wall paintings of the Hōryūji Kondō]] the red pigments were vermilion (朱, [[term/cinnabar|cinnabar]]), *bengara* (弁柄) — the pigment recorded here as red ocher — and minium (鉛丹); the figures were finally outlined in bengara, and since bengara alone survived the fire of 1949 without chemical change, the outlines are what remains visible.[[source/wikipedia-ja-horyuji-kondo-hekiga|§ 技法・様式; § 焼損]] Mason notes the red, rather than black, outlines and their even, unmodulated "iron-wire" line.[[source/history-of-japanese-art|p. 82]]
+sources:
+  definition:
+    - source: wikipedia-en-ochre
+      locator: introduction; § Terminology
+      accessed: 2026-11-13

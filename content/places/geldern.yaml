@@ -1,14 +1,22 @@
 public_id: 117715
 name: Geldern
 kind: site
+parent: germany
+country_code: DE
 location: [6.3325, 51.51972]
 wikidata_id: Q16024
 metadata:
   sources: [Wikidata Q16024 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4019895-9
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q16024
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q16024
   location:
     - accessed: 2026-11-10

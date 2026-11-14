@@ -2,3 +2,15 @@ public_id: 100870
 name: tempera
 category: material
 parent: paint
+definition: A fast-drying paint of pigments in a water-soluble binder, above all egg yolk (egg tempera); the main medium of European panel painting until about 1500.
+description_md: |-
+  Tempera is a permanent, fast-drying painting medium of pigments mixed with a water-soluble, usually glutinous binder; the commonest kind, egg tempera, is bound with egg yolk, while tempera made with milk protein is called [[term/casein-paint|casein paint]].[[source/wikipedia-en-tempera|introduction]] The name comes from the Italian *dipingere a tempera*, "to paint in distemper", from the Late Latin *distemperare*, "to mix thoroughly".[[source/wikipedia-en-tempera|§ Etymology]] For egg tempera only the yolk is used, diluted with water — often about one part yolk to three of water — and mixed with powdered pigment.[[source/wikipedia-en-tempera|§ Technique › Egg tempera]] It adheres best to an absorbent ground, traditionally rigid Italian [[term/gesso|gesso]] on a wooden [[term/panel|panel]].[[source/wikipedia-en-tempera|§ Ground]] It dries rapidly and is laid on in thin, semi-opaque or transparent layers, often in small cross-hatched strokes that allow great precision; it dries to a smooth satin or matte finish, and unlike oil it does not darken or yellow with age.[[source/wikipedia-en-tempera|§ Application]]
+
+  The earliest known egg tempera is on prehistoric tomb murals in Sardinia of 3400–2700 BC.[[source/wikipedia-en-tempera|§ History]] Tempera was the main medium of panel painting and illuminated manuscripts in the Byzantine world and in medieval and early Renaissance Europe, the primary panel medium of nearly every European painter up to 1500; [[term/oil-paint|oil paint]] replaced it in the Netherlands during the fifteenth century and in Italy around 1500.[[source/wikipedia-en-tempera|§ History]] It remains the traditional medium of Orthodox icons in Greece and Russia, and was revived intermittently in the nineteenth and twentieth centuries.[[source/wikipedia-en-tempera|§ History]]
+
+  Works in tempera in this database run from the [[artwork/giunta-pisano-croce-san-domenico|painted cross of San Domenico]] by [[artist/giunta-pisano|Giunta Pisano]] (1254, tempera and gold on panel)[[source/ganz-2024-aus-dem-wald|Sitzung 7 (14.11.2024), Folie 74]] and [[artist/fra-angelico|Fra Angelico]]'s [[artwork/annunciation-fra-angelico|Annunciation]] (1425–1426) to [[artist/sandro-botticelli|Botticelli]]'s [[artwork/primavera|Primavera]] and [[artwork/the-birth-of-venus|Birth of Venus]], and to [[artwork/walpurgisnacht|Walpurgisnacht]] (1896–1897) by [[artist/albert-welti|Albert Welti]] and [[artwork/mercury-passing-before-the-sun|Mercury Passing Before the Sun]] (1914) by [[artist/giacomo-balla|Giacomo Balla]].
+sources:
+  definition:
+    - source: wikipedia-en-tempera
+      locator: introduction; § History
+      accessed: 2026-11-13

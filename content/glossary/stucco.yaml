@@ -1,3 +1,16 @@
 public_id: 117215
 name: stucco
 category: material
+parent: plaster
+definition: A plaster of lime, sand and water, sometimes with gypsum, applied wet and hardened — used for wall cladding and modelled into ornament, reliefs and figures.
+description_md: |-
+  Stucco is a material of aggregates, a binder and water, applied wet and hardening to a dense solid; its basic composition is lime, water and sand.[[source/wikipedia-en-stucco|§ Introduction]][[source/wikipedia-en-stucco|§ Composition]] English distinguishes stucco for exteriors from [[term/plaster|plaster]] for interiors, but Italian *stucco* serves for both, and until the later 19th century both consisted of the same lime and sand.[[source/wikipedia-en-stucco|§ Introduction]][[source/wikipedia-en-stucco|§ Composition]]
+
+  As a sculptural material stucco was used for reliefs in Egypt, Minoan Crete, Etruria, Mesopotamia and Persia, and in Islamic art; Roman builders preferred it to marble for vaults because it was lighter, and Baroque and Rococo interiors used it lavishly.[[source/wikipedia-en-stucco|§ Sculptural and architectural use]] In the Middle Ages figures could also be made of it: Bernard of Angers, writing in the early 11th century, speaks of statues of gypsum, wood or bronze, and the Libri Carolini mention images formed "in gypso"; the story of a Maiestas in Cambrai that fell from the altar around 1168 and was reduced to powder suggests that stucco images still existed in the 12th century, though none has survived.[[source/forsyth-1972-the-throne-of-wisdom|p. 9, n. 1]] Such figures, Ilene Forsyth writes, "would have satisfied the need for an inexpensive material in sculpture".[[source/forsyth-1972-the-throne-of-wisdom|p. 9, n. 1]]
+
+  In this database stucco is recorded for the [[artwork/mare-de-deu-de-ger|Mare de Déu de Ger]], a Catalan Madonna of 1150–1200 carved in willow and painted over a chalk ground.[[source/ganz-2024-aus-dem-wald|Sitzung 6 (7.11.2024), Folie 44]]
+sources:
+  definition:
+    - source: wikipedia-en-stucco
+      locator: § Introduction
+      accessed: 2026-11-13

@@ -1,14 +1,22 @@
 public_id: 117187
 name: Le Mont Saint-Michel
 kind: settlement
+parent: manche
+country_code: FR
 location: [-1.51028, 48.63583]
 wikidata_id: Q20892
 metadata:
   sources: [Wikidata Q20892 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4040122-4
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q20892
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q20892
   location:
     - accessed: 2026-11-09

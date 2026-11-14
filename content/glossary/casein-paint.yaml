@@ -2,3 +2,13 @@ public_id: 101525
 name: casein paint
 category: material
 parent: paint
+definition: A fast-drying, water-soluble paint whose binder is casein, the protein of milk, dissolved in an alkali such as lime; it dries to a matte finish.
+description_md: |-
+  Casein paint, occasionally marketed as milk paint, is a fast-drying, water-soluble painting medium bound with casein; it can be made from milk and lime, with pigment added for colour.[[source/wikipedia-en-casein-paint|introduction]] For the binder, casein — precipitated from milk by an acid or by rennet — is dissolved in an alkali, usually lime, ammonium carbonate or borax.[[source/wikipedia-en-casein-paint|§ Manufacture]] The paint has a glue-like consistency but can be thinned with water; it adheres best to porous supports such as wood, dries to a matte finish, and its brittle dried film makes it unsuitable for heavy impasto on flexible canvas.[[source/wikipedia-en-casein-paint|§ Description]] It has been used since ancient Egyptian times as a form of distemper, and artists value it because, unlike gouache, it dries to an even consistency, which makes it suitable for murals; it can also resemble oil painting more than most other water-based paints.[[source/wikipedia-en-casein-paint|§ Uses]] With time it loses its solubility and becomes water-resistant.[[source/wikipedia-en-casein-paint|§ Uses]] Until acrylics arrived in the late 1960s it was the material of choice for many commercial illustrators; Andy Warhol painted *Dick Tracy* and *Popeye* (1960) in casein.[[source/wikipedia-en-casein-paint|§ Casein artists]] Tempera made from milk protein is called casein paint, so it is often counted among the [[term/tempera|tempera]] paints.[[source/wikipedia-en-tempera|introduction]]
+
+  In this database casein paint is recorded for [[artist/gustav-klimt|Gustav Klimt]]'s [[artwork/beethoven-frieze|Beethoven Frieze]] (1901–1902), painted directly on the walls of the Secession building for the Fourteenth Vienna Secession exhibition and meant for that exhibition only.[[source/wikipedia-en-beethoven-frieze|§ Description]]
+sources:
+  definition:
+    - source: wikipedia-en-casein-paint
+      locator: introduction; § Manufacture
+      accessed: 2026-11-13

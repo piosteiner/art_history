@@ -1,6 +1,8 @@
 public_id: 117576
 name: Lev Tolstoy Street
 kind: street
+parent: moscow
+country_code: RU
 location: [37.58669, 55.734]
 wikidata_id: Q4472955
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q4472955
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q4472955
   location:
     - accessed: 2026-11-10

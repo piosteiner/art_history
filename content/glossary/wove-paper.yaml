@@ -2,3 +2,10 @@ public_id: 101403
 name: wove paper
 category: material
 parent: paper
+definition: Paper formed on a mould of finely woven wire cloth, with an even surface and no chain or laid lines; in Europe from the 1750s (James Whatman, Baskerville's Virgil of 1757).
+description_md: Wove paper was made by hand on a wooden mould holding a finely woven brass wire cloth, which gave a smooth, uniform surface instead of the ribbed texture of [[term/laid-paper|laid paper]].[[source/wikipedia-en-wove-paper|§ Introduction]][[source/wikipedia-en-wove-paper|§ History]] Such paper was first made in East Asia with moulds of fabric or bamboo; in Europe, where for about 500 years papermakers could only produce laid paper, it appears with James Whatman the Elder of Kent, whose paper John Baskerville used for his edition of Virgil in 1757.[[source/wikipedia-en-wove-paper|§ Introduction]][[source/wikipedia-en-wove-paper|§ History]] Benjamin Franklin brought it to the American colonies for currency printing from 1764 and is credited with introducing it to France in 1777, where it is called *vélin*.[[source/wikipedia-en-wove-paper|§ History]]
+sources:
+  definition:
+    - source: wikipedia-en-wove-paper
+      locator: § History
+      accessed: 2026-11-13

@@ -41,6 +41,7 @@ names:
   - lang: en
     role: translation
     text: Golden Madonna of Essen
+attribution_label: Anonymous, Rhenish
 created: 980s
 created_span: uncertain
 medium: Pappelholz (Korpus), Linden- und Nussbaumholz (Thron), Goldblech
@@ -119,3 +120,7 @@ sources:
     - accessed: 2026-11-09
       property: P195
       wikidata: Q670031
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 14
+      accessed: 2026-11-13

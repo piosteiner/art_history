@@ -1,14 +1,22 @@
 public_id: 117570
 name: Yasnaya Polyana
 kind: building
+parent: yasnaya-polyana-2
+country_code: RU
 location: [37.52638, 54.07513]
 wikidata_id: Q749556
 metadata:
   sources: [Wikidata Q749556 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4028515-7
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q749556
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q749556
   location:
     - accessed: 2026-11-10

@@ -48,7 +48,7 @@ relationships:
         property: P27
         wikidata: Q152176
   - type: born_in
-    to: place/saint-denis-2
+    to: place/saint-denis-seine-saint-denis
     sources:
       - accessed: 2026-11-12
         property: P19

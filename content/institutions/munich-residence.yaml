@@ -2,15 +2,39 @@ public_id: 117079
 name: Munich Residence
 kind: palace
 founded: 1385
+place: munich
+location: [11.57871, 48.14105]
+address: Residenzstraße 1, 80333 München
+website_url: http://www.residenz-muenchen.de/
 wikidata_id: Q686548
 metadata:
   sources: [Wikidata Q686548 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/M%C3%BCnchner_Residenz_2014-08-02_Pano.jpg/1280px-M%C3%BCnchner_Residenz_2014-08-02_Pano.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:M%C3%BCnchner_Residenz_2014-08-02_Pano.jpg
+    license: CC BY-SA 4.0
+    credit: "Wikiolo derivative work: MagentaGreen"
+identifiers:
+  gnd: 4210386-1
+  viaf: "128519786"
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
       wikidata: Q686548
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q686548
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q686548
   founded:
     - accessed: 2026-11-09
       property: P571
+      wikidata: Q686548
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q686548

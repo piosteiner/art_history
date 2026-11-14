@@ -35,6 +35,7 @@ names:
   - lang: en
     role: translation
     text: Bernward Doors
+attribution_label: Bernward's workshop, Hildesheim (master unknown)
 created: c. 1015
 created_span: uncertain
 medium: Bronze
@@ -124,3 +125,7 @@ sources:
   institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 5 (31.10.2024)
+  attribution_label:
+    - source: wikipedia-de-bernwardstur
+      locator: § Meisterfrage (rev. 270015781)
+      accessed: 2026-11-13

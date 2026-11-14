@@ -1,14 +1,22 @@
 public_id: 116975
 name: Perpignan
 kind: settlement
+parent: pyrenees-orientales
+country_code: FR
 location: [2.89472, 42.6975]
 wikidata_id: Q6730
 metadata:
   sources: [Wikidata Q6730 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4045226-8
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q6730
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q6730
   location:
     - accessed: 2026-11-09

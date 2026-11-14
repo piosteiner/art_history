@@ -1,6 +1,7 @@
 public_id: 116574
 title_lang: en
 title: Figure of a Kneeling Crossbowman
+attribution_label: Anonymous, Chinese (Qin dynasty)
 created: c. 210 BCE
 created_span: uncertain
 kind: sculpture
@@ -29,3 +30,7 @@ sources:
   created:
     - source: thomsen-2019-war-and-peace
       locator: image list, 1 March 2019
+  attribution_label:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 1 March 2019
+      accessed: 2026-11-13

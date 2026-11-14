@@ -1,14 +1,22 @@
 public_id: 117598
 name: Fullerton
 kind: settlement
+parent: california
+country_code: US
 location: [-117.92861, 33.88]
 wikidata_id: Q494723
 metadata:
   sources: [Wikidata Q494723 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4433193-9
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q494723
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q494723
   location:
     - accessed: 2026-11-10

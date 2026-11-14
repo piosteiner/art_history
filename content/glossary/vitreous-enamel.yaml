@@ -1,3 +1,16 @@
 public_id: 117090
 name: vitreous enamel
 category: material
+parent: glass
+definition: Powdered glass fused to metal (or another base) by firing, as a hard coloured coating — the material of cloisonné and champlevé enamels.
+description_md: |-
+  Vitreous enamel is made by fusing powdered [[term/glass|glass]] to a base by firing, usually between 750 and 850 °C; the powder melts, flows and hardens into a smooth, durable glassy coating, and the term is mostly used for work on metal.[[source/wikipedia-en-vitreous-enamel|§ Introduction]] The earliest enamel used the cloisonné technique, setting the enamel in small cells with gold walls — a method first used to hold stones and gems, for which enamel was probably a cheaper substitute; the earliest undisputed enamels are Mycenaean rings from Cyprus of the 13th century BC.[[source/wikipedia-en-vitreous-enamel|§ Ancient]]
+
+  Enamel was at its most important in European art in the Middle Ages: the Byzantines used cloisonné in imitation of inlaid precious stones and then more freely for images; Mosan metalwork set enamel plaques of the highest quality in reliquaries; and Limoges became famous for champlevé from the 12th century onward.[[source/wikipedia-en-vitreous-enamel|§ Medieval and Renaissance Europe]]
+
+  The [[artwork/limburger-staurothek|Limburg Staurotheke]], made in Constantinople in the 10th century, is one of the best surviving examples of Byzantine cloisonné enamel.[[source/wikipedia-en-limburg-staurotheke|§ Introduction]] The [[artwork/stavelot-triptych|Stavelot Triptych]] of about 1156 shows both traditions side by side: Byzantine cloisonné in its two inner triptychs and Mosan champlevé in the medallions of the wings.[[source/wikipedia-en-stavelot-triptych|§ Description]] Enamel is also recorded for the reliquary of [[artwork/sainte-foy-conques|Sainte Foy]] at Conques.
+sources:
+  definition:
+    - source: wikipedia-en-vitreous-enamel
+      locator: § Introduction
+      accessed: 2026-11-13

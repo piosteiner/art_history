@@ -1,10 +1,15 @@
 public_id: 108836
 name: Canada
 kind: country
+country_code: CA
+boundary_code: CA
 location: [-109, 56]
 wikidata_id: Q16
 metadata:
   sources: [Wikidata Q16 (retrieved 2026-11-02)]
+identifiers:
+  gnd: 4029456-0
+  hls: "003378"
 sources:
   kind:
     - accessed: 2026-11-02

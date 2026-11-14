@@ -1,3 +1,10 @@
 public_id: 117127
 name: lac dye
 category: material
+definition: A red dye from the lac insect (Kerria lacca) of South and Southeast Asia, harvested with the resinous sticklac; used since antiquity to dye wool, silk and leather.
+description_md: Lac is the resinous secretion of lac insects, above all the cultivated *Kerria lacca*; colonies on the branches of host trees secrete the resin, and the coated branches are harvested as sticklac.[[source/wikipedia-en-lac-resin|introduction]] When dye is wanted, the insects are kept in the sticklac, because the colour comes from the insects rather than from their resin.[[source/wikipedia-en-lac-resin|§ Harvesting]] The word derives from the Sanskrit *lākshā*, "one hundred thousand", used both for the countless insects and for their scarlet secretion, which ancient India used as wood finish, cosmetic, lacquer and dye for wool and silk.[[source/wikipedia-en-lac-resin|§ Etymology]] Lac dye goes back to antiquity; in China it is a traditional dye for leather goods.[[source/wikipedia-en-lac-resin|§ Uses]] India exported large amounts of lac dye from the 1700s to the late 1800s, until synthetic dyes replaced it.[[source/wikipedia-en-lac-resin|§ Production levels]] The main producers today are Indian states, followed by Thailand, China and other countries of South and Southeast Asia.[[source/wikipedia-en-lac-resin|introduction; § Production levels]]
+sources:
+  definition:
+    - source: wikipedia-en-lac-resin
+      locator: § Harvesting; § Uses
+      accessed: 2026-11-13

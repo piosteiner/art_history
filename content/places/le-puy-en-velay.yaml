@@ -1,14 +1,22 @@
 public_id: 116972
 name: Le Puy-en-Velay
 kind: settlement
+parent: france
+country_code: FR
 location: [3.885, 45.04333]
 wikidata_id: Q184359
 metadata:
   sources: [Wikidata Q184359 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4111265-9
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q184359
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q184359
   location:
     - accessed: 2026-11-09

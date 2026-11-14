@@ -1,3 +1,10 @@
 public_id: 117124
 name: white lead
 category: material
+definition: An opaque, heavy white pigment of basic lead carbonate, made from lead and vinegar; the main white of painting from antiquity to the 19th century, and toxic.
+description_md: 'White lead (lead white) is a thick, opaque and heavy white pigment composed mainly of basic lead carbonate; it was the most widely produced and used white pigment in many parts of the world from antiquity until the nineteenth century, when the less toxic zinc white and later titanium white displaced it.[[source/wikipedia-en-lead-white|introduction]] One of the oldest synthetic pigments, it was made in much the same way everywhere: lead shavings were set above vinegar in clay pots so that the acid vapours reacted with the metal — a method probably used in China by about 300 BC and introduced to Japan in the seventh century.[[source/wikipedia-en-lead-white|§ Production methods]] The seventeenth-century Dutch "stack" process added heat and carbon dioxide by sealing the pots in a room filled with horse manure or tan bark.[[source/wikipedia-en-lead-white|§ Production methods]] In China and Japan it was occasionally used in early wall paintings and in tempera on paper and silk; in Europe it remained, until zinc white, the only white of easel painting.[[source/wikipedia-en-lead-white|§ History of use]] Its opacity made it the pigment for modelling bodies and for highlights, and in X-rays of paintings its dense outlines can reveal the underdrawing.[[source/wikipedia-en-lead-white|§ Visual characteristics]] It was also used, despite the danger of lead poisoning, as a cosmetic in Europe, Greece, China and Japan.[[source/wikipedia-en-lead-white|§ History of use]] In watercolour, white lead added for covering power tended to turn black in polluted air.[[source/wikipedia-en-watercolor-painting|§ Transparency]]'
+sources:
+  definition:
+    - source: wikipedia-en-lead-white
+      locator: introduction; § Production methods
+      accessed: 2026-11-13

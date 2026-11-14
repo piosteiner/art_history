@@ -2,15 +2,40 @@ public_id: 117089
 name: Limburg Cathedral
 kind: cathedral
 founded: 1001/1100
+place: limburg-an-der-lahn
+location: [8.06667, 50.38889]
+address: Domplatz 2, 65549 Limburg an der Lahn
+website_url: https://dom.bistumlimburg.de/
 wikidata_id: Q564957
 metadata:
   sources: [Wikidata Q564957 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Limburger_Dom_Bild_4.jpg/1280px-Limburger_Dom_Bild_4.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Limburger_Dom_Bild_4.jpg
+    license: CC BY-SA 4.0
+    credit: Phantom3Pix
+identifiers:
+  gnd: 4124703-6
+  lc: n85298128
+  viaf: "147667246"
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
       wikidata: Q564957
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q564957
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q564957
   founded:
     - accessed: 2026-11-09
       property: P571
+      wikidata: Q564957
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q564957

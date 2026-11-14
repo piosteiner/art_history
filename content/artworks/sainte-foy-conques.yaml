@@ -23,6 +23,7 @@ names:
   - lang: en
     role: translation
     text: Statue reliquaire de Sainte Foy de Conques
+attribution_label: Anonymous, southern French
 created: 800/809
 created_label: 800s
 created_span: uncertain
@@ -74,3 +75,7 @@ sources:
   institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 4 (17.10.2024)
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 14
+      accessed: 2026-11-13

@@ -1,6 +1,8 @@
 public_id: 117595
 name: Johnstown
 kind: site
+parent: united-states
+country_code: US
 location: [-104.92028, 40.33611]
 wikidata_id: Q2002961
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q2002961
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q2002961
   location:
     - accessed: 2026-11-10

@@ -1,19 +1,26 @@
 public_id: 121272
 name: Zumikon
 kind: settlement
-parent: morocco
+parent: meilen-district
 country_code: CH
 location: [8.6238228, 47.3324061]
 wikidata_id: Q66898
 metadata:
   sources: [Wikidata Q66898 (retrieved 2026-11-12)]
+identifiers:
+  gnd: 4485830-9
+  hls: "000115"
 sources:
   kind:
     - accessed: 2026-11-12
       property: P31
       wikidata: Q66898
   parent:
-    - accessed: 2026-11-12
+    - accessed: 2026-11-13
       property: P131
       wikidata: Q66898
-  location: ["OpenStreetMap, Zumikon (relation 1682247), via Nominatim"]
+  location:
+    - url: https://www.openstreetmap.org/relation/1682247
+      source: openstreetmap
+      locator: relation 1682247 (Zumikon)
+      accessed: 2026-11-13

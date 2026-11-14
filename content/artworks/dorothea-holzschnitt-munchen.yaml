@@ -1,6 +1,7 @@
 public_id: 117288
 title_lang: de
 title: Die heilige Dorothea mit dem Jesuskind
+attribution_label: Anonymous, Bavaria or Salzburg
 created: c. 1410–1420
 created_span: uncertain
 kind: woodcut
@@ -37,3 +38,7 @@ sources:
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 9 (28.11.2024)
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024), Folie 15
+      accessed: 2026-11-13

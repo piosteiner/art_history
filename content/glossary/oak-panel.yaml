@@ -2,3 +2,15 @@ public_id: 101303
 name: oak panel
 category: material
 parent: panel
+definition: A painting support of oak boards — the usual panel wood of the Low Countries, northern Germany, the Rhineland and France, much of it Baltic oak imported by sea.
+description_md: |-
+  Oak was the most common wood for painted panels in the Low Countries, northern Germany and the Rhineland around Cologne, and in France most panels were of oak until the 17th century.[[source/wikipedia-en-panel-painting|§ Types of wood]] Ilene Forsyth, after Jacqueline Marette's technical study of medieval wood panels, notes that walnut is absent north of southern France, where oak and lindenwood are usual.[[source/forsyth-1972-the-throne-of-wisdom|p. 16]] The Netherlands ran short of local timber early in the 15th century, and most Early Netherlandish masterpieces are painted on Baltic oak, often Polish, cut north of Warsaw and shipped down the Vistula and across the Baltic.[[source/wikipedia-en-panel-painting|§ Conservation and scientific analysis]] Oak from Königsberg and Gdańsk is often found in Flemish and Dutch paintings of the 15th to 17th centuries, its origin established by the pattern of the growth rings.[[source/wikipedia-en-panel-painting|§ Types of wood]] Northern carvers, too, had cheap East Baltic timber imported by the Hansa, which included oak but not limewood.[[source/baxandall-1980-limewood-sculptors|p. 28]]
+
+  [[artist/albrecht-durer|Albrecht Dürer]] painted on oak in the Netherlands and southern Germany, and [[artist/leonardo-da-vinci|Leonardo da Vinci]] used oak for his paintings in France.[[source/wikipedia-en-panel-painting|§ Types of wood]] In the 1690s the Dutch writer Wilhelmus Beurs considered oak the most useful wood to paint on, and when canvas or copper was not used, the main œuvre of the northern school was painted on oak.[[source/wikipedia-en-panel-painting|§ Types of wood]] On the wood itself see [[term/oak|oak]].
+
+  Oak panels are recorded in this database for [[artist/hugo-van-der-goes|Hugo van der Goes]]'s [[artwork/portinari-triptych|Portinari Triptych]], Pieter Brueghel the Elder's [[artwork/the-procession-to-calvary|Procession to Calvary]] and [[artwork/the-peasant-wedding|Peasant Wedding]], and [[artist/anthony-van-dyck|Anthony van Dyck]]'s early [[artwork/self-portrait|Self-Portrait]].
+sources:
+  definition:
+    - source: wikipedia-en-panel-painting
+      locator: § Types of wood
+      accessed: 2026-11-13

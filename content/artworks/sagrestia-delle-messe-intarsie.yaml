@@ -1,6 +1,7 @@
 public_id: 117301
 title_lang: it
 title: Tarsie della Sagrestia delle Messe
+creator: giuliano-da-maiano
 created: 1436/1468
 kind: intarsia
 medium: intarsia
@@ -15,6 +16,19 @@ description_md: |-
   ## Material
 
   Spalted "green wood" (legname verde), stained blue-green by the fungus Chlorociboria, has been detected in Renaissance intarsia from the fifteenth century onwards, including panels in Santa Maria del Fiore [[source/ajmar-2024-reciprocal-design|p. 39]]. The lecture showed the Nativity of the west wall next to the fungus and to wood coloured blue-green by it [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folien 85–87]].
+relationships:
+  - type: co_creator
+    to: artist/agnolo-di-lazzaro
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 10 (5.12.2024), Folien 24–25
+        accessed: 2026-11-13
+  - type: co_creator
+    to: artist/antonio-manetti-ciaccheri
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 10 (5.12.2024), Folie 23
+        accessed: 2026-11-13
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/2b/Giuliano_da_maiano%2C_tarsie_della_sagrestia_delle_messe%2C_1436-1468%2C_finti_sportelli_22.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Giuliano_da_maiano,_tarsie_della_sagrestia_delle_messe,_1436-1468,_finti_sportelli_22.jpg
@@ -61,6 +75,10 @@ sources:
   created:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 10 (5.12.2024)
+  creator:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024), Folien 26–32
+      accessed: 2026-11-13
   institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 10 (5.12.2024)

@@ -1,6 +1,7 @@
 public_id: 117274
 title_lang: de
 title: Exemplar (Strassburger Exemplar)
+attribution_label: Anonymous
 created: c. 1370
 created_span: uncertain
 kind: illuminated manuscript
@@ -43,3 +44,7 @@ sources:
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 7 (14.11.2024), Folie 81
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 79, 81
+      accessed: 2026-11-13

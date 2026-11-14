@@ -1,3 +1,19 @@
 public_id: 117123
 name: linen
 category: material
+definition: A textile woven from the bast fibres of flax — in art the ground of embroideries, the cloth laid over wooden panels and carvings under the gesso, and a canvas for painting.
+description_md: |-
+  Linen is a textile made from the bast fibres of the flax plant; dyed flax fibres from a cave in the Caucasus suggest that linen-like fabrics may go back more than 30,000 years, and it was used in Mesopotamia and ancient Egypt.[[source/wikipedia-en-linen|§ Introduction]] In Egypt mummies were wrapped in linen as a symbol of light and purity and a display of wealth.[[source/wikipedia-en-linen|§ Early history]] It remains one of the preferred traditional supports for oil painting, valued for its strength and durability.[[source/wikipedia-en-linen|§ Uses]]
+
+  ## Under gesso
+
+  Before gesso was laid on a painting panel, the wood was coated with glue and resin and covered with linen.[[source/wikipedia-en-panel-painting|§ Panel construction and preparation]] Wooden sculpture was treated alike: on Romanesque Madonnas "thin linen was normally affixed to the surface, followed by layers of gesso and polychromy", the fine mesh of the fabric binding gesso and paint to the wood.[[source/forsyth-1972-the-throne-of-wisdom|p. 19]] Traces are particularly visible on the [[artwork/morgan-madonna|Morgan Madonna]] and the [[artwork/montvianeix-madonna|Montvianeix Madonna]]; French scholars call such a statue *marouflé*, a practice widespread throughout the 12th century.[[source/forsyth-1972-the-throne-of-wisdom|p. 19, n. 38]] The lecture "Aus dem Wald" gives the Montvianeix Madonna as walnut with remains of polychromy over a chalk ground and canvas (*Leinwand*).[[source/ganz-2024-aus-dem-wald|Sitzung 6 (7.11.2024), Folie 38]] In late-medieval German limewood sculpture, blemishes and joins were made good with chalk and plaster paste "and sometimes covered with linen" before the gesso.[[source/baxandall-1980-limewood-sculptors|p. 41]]
+
+  ## Embroidery ground
+
+  The [[artwork/bayeux-tapestry|Bayeux Tapestry]] of about 1070 is wool embroidery on linen, 68.38 m long.[[source/ganz-2024-aus-dem-wald|Sitzung 3 (10.10.2024), Folie 39]]
+sources:
+  definition:
+    - source: wikipedia-en-linen
+      locator: § Introduction
+      accessed: 2026-11-13

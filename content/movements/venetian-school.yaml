@@ -1,6 +1,7 @@
 public_id: 101175
 name: Venetian school
 kind: movement
+period: 15th century–1797
 wikidata_id: Q610687
 metadata:
   sources: [Wikidata Q610687 (retrieved 2026-10-19)]
@@ -9,3 +10,7 @@ sources:
     - accessed: 2026-10-19
       property: P31
       wikidata: Q610687
+  period:
+    - source: wikipedia-en-venetian-painting
+      locator: lead
+      accessed: 2026-11-13

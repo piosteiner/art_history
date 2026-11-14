@@ -1,3 +1,13 @@
 public_id: 106388
 name: verdigris
 category: material
+definition: A green to bluish-green copper acetate, formed on copper by acetic acid; a pigment used from antiquity to the 19th century, prone to darken.
+description_md: |-
+  Verdigris is the common name for a variety of somewhat toxic copper salts of acetic acid, green to bluish-green; it forms naturally as a patina on copper, bronze and brass, and was the main component of a green pigment used from antiquity until the late twentieth century in easel painting, polychrome sculpture and the illumination of maps.[[source/wikipedia-en-verdigris|introduction]] The name comes from Old French *verte grez*, explained as *vert d'aigre*, "green of vinegar".[[source/wikipedia-en-verdigris|§ Etymology]] It was used in paintings in Rome and Pompeii, and through the Middle Ages, Renaissance and Baroque; early Italian, Netherlandish and German painters used it, as glaze or opaque paint, for pure greens in landscapes and drapery.[[source/wikipedia-en-verdigris|§ Pigment]] It is unstable: it tends to brown or darken, as in the angels' costumes of Botticelli's *Mystical Nativity*, and copper resinate made from it turns brown in light and air; in the nineteenth century emerald green and viridian replaced it.[[source/wikipedia-en-verdigris|§ Pigment; § Stability]]
+
+  In this database verdigris is recorded for the [[artwork/horyu-ji-kondo-murals|wall paintings of the Hōryūji Kondō]], whose blue-green pigments are listed as *rokushō* (緑青) and *gunjō* (群青).[[source/wikipedia-ja-horyuji-kondo-hekiga|§ 技法・様式]] Red and green were set against each other in strong contrast, with shading to give volume.[[source/wikipedia-ja-horyuji-kondo-hekiga|§ 技法・様式]]
+sources:
+  definition:
+    - source: wikipedia-en-verdigris
+      locator: introduction
+      accessed: 2026-11-13

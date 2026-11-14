@@ -1,3 +1,13 @@
 public_id: 115221
 name: Galerie Pierre
+kind: gallery
 wikidata_id: Q97654636
+metadata:
+  sources: [Wikidata Q97654636 (retrieved 2026-11-13)]
+identifiers:
+  viaf: "159448145"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q97654636

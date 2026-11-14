@@ -1,14 +1,22 @@
 public_id: 117666
 name: Istanbul
 kind: settlement
+parent: turkey
+country_code: TR
 location: [28.96028, 41.01]
 wikidata_id: Q406
 metadata:
   sources: [Wikidata Q406 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4027821-9
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q406
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q406
   location:
     - accessed: 2026-11-10

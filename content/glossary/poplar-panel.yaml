@@ -2,3 +2,15 @@ public_id: 101311
 name: poplar panel
 category: material
 parent: panel
+definition: A painting support of poplar wood — the usual panel wood of Italian painting from the Middle Ages to the 16th century, very rare in northern Europe.
+description_md: |-
+  In Italy the wood for a painting panel was usually seasoned [[term/poplar|poplar]], willow or linden.[[source/wikipedia-en-panel-painting|§ Panel construction and preparation]] Italian paintings used local or sometimes Dalmatian wood, most often poplar, but also chestnut, walnut, oak and other woods.[[source/wikipedia-en-panel-painting|§ Conservation and scientific analysis]] In northern Europe poplar is very rarely found; [[artist/albrecht-durer|Albrecht Dürer]] painted on poplar while he was in Venice.[[source/wikipedia-en-panel-painting|§ Types of wood]] [[artist/caravaggio|Caravaggio]] still painted his [[artwork/davide-con-la-testa-di-golia|David with the Head of Goliath]] in Vienna on a reused poplar panel, at a time when canvas had long taken over.[[source/wikipedia-en-panel-painting|§ History]]
+
+  Poplar was valued for its softness rather than its strength: a fourteenth-century English treatise on building called limetrees and poplars useless for building but pleasant for carving, and Leon Battista Alberti wrote: "Neither for statues nor pictures did the ancients despise the poplar, white and black, the sallow, the hornbeam, the service-tree, the elder and the fig".[[source/baxandall-1980-limewood-sculptors|p. 33]]
+
+  Poplar panels are recorded in this database for [[artist/leonardo-da-vinci|Leonardo]]'s [[artwork/mona-lisa|Mona Lisa]] and [[artwork/the-virgin-and-child-with-saint-anne|Virgin and Child with Saint Anne]], [[artist/raphael|Raphael]]'s [[artwork/madonna-del-prato|Madonna del Prato]], [[artist/parmigianino|Parmigianino]]'s [[artwork/self-portrait-in-a-convex-mirror|Self-Portrait in a Convex Mirror]], [[artist/piero-della-francesca|Piero della Francesca]]'s [[artwork/piero-flagellazione|Flagellation]] and Caravaggio's David.
+sources:
+  definition:
+    - source: wikipedia-en-panel-painting
+      locator: § Conservation and scientific analysis
+      accessed: 2026-11-13

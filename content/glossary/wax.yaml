@@ -1,3 +1,13 @@
 public_id: 102170
 name: wax
 category: material
+definition: A malleable, water-insoluble organic solid such as beeswax that melts at low heat; in art used for figurines and sculpture models, encaustic and as an additive to paint.
+description_md: |-
+  Waxes are organic compounds that are malleable solids near room temperature and melt, typically above about 40 °C, into thin liquids; they are insoluble in water.[[source/wikipedia-en-wax|introduction]] Natural waxes are made by plants and animals — beeswax among them — and others are derived from petroleum.[[source/wikipedia-en-wax|introduction]] Wax was used in antiquity for figurines, dolls and wax sculpture; the Louvre's Egyptian department keeps wax figurines and moulds and a wax-covered writing tablet.[[source/wikipedia-en-wax|§ Uses › Antiquity]] In the Middle Ages wax sealed documents and covered writing tablets.[[source/wikipedia-en-wax|§ Uses › Other uses]] Coloured with pigments, it is the medium of encaustic painting and of crayons and coloured pencils.[[source/wikipedia-en-wax|§ Uses › Other uses]] Encaustic, painting with melted wax, was an ancient alternative to [[term/tempera|tempera]]; some Fayum mummy portraits combine the two.[[source/wikipedia-en-tempera|§ History]]
+
+  [[artist/eugene-delacroix|Eugène Delacroix]] painted his mural [[artwork/jacob-wrestling-with-the-angel-delacroix|Jacob Wrestling with the Angel]] (1855–1861) in the Chapelle des Saints-Anges of Saint-Sulpice, Paris, in oil and wax directly on the dry wall — a technique common in the nineteenth century that allowed retouching, and not, strictly speaking, a fresco.[[source/wikipedia-fr-saint-sulpice-delacroix|§ Description]]
+sources:
+  definition:
+    - source: wikipedia-en-wax
+      locator: introduction; § Uses
+      accessed: 2026-11-13

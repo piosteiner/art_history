@@ -1,6 +1,9 @@
 public_id: 103207
 name: divisionism
 kind: movement
+parent: neo-impressionism
+period: 1884/
+period_label: from c. 1884
 wikidata_id: Q2487023
 metadata:
   sources: [Wikidata Q2487023 (retrieved 2026-10-28)]
@@ -9,3 +12,11 @@ sources:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q2487023
+  parent:
+    - source: wikipedia-en-divisionism
+      locator: lead; § Divisionism in Italy
+      accessed: 2026-11-13
+  period:
+    - source: wikipedia-en-divisionism
+      locator: lead; § Divisionism in Italy
+      accessed: 2026-11-13

@@ -35,6 +35,7 @@ names:
   - lang: en
     role: translation
     text: Limburg Staurotheke
+attribution_label: Anonymous, Byzantine
 created: 10th century
 created_span: uncertain
 medium: Holz, Gold, Email, Edelsteine
@@ -87,3 +88,7 @@ sources:
     - accessed: 2026-11-09
       property: P195
       wikidata: Q1748749
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 47
+      accessed: 2026-11-13

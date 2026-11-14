@@ -1,0 +1,96 @@
+public_id: 116670
+name: Thodoros Angelopoulos
+given_name: Thodoros
+family_name: Angelopoulos
+names:
+  - kind: birth
+    lang: en
+    role: alternative
+    text: Theodoros Angelopoulos
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q55168
+  - lang: el
+    role: original
+    text: Θόδωρος Αγγελόπουλος
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q55168
+  - text: Theodoros Aggelopoulos
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q55168
+  - lang: nl
+    role: translation
+    text: Theo Angelopoulos
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q55168
+  - lang: it
+    role: translation
+    text: Theo Aggelopoulos
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q55168
+  - lang: ja
+    role: translation
+    text: テオ・アンゲロプロス
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q55168
+  - lang: zh
+    role: translation
+    text: 泰奧·安哲羅普洛斯
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q55168
+  - lang: ko
+    role: translation
+    text: 테오 앙겔로풀로스
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q55168
+  - lang: ru
+    role: translation
+    text: Теодорос Ангелопулос
+    sources:
+      - accessed: 2026-11-07
+        wikidata: Q55168
+birth: 1935-04-27
+death: 2012-01-24
+description_md: |-
+  Theo (Thodoros) Angelopoulos (1935–2012) was a Greek filmmaker, screenwriter and producer, one of the most influential directors of his time [[source/wikipedia-en-theo-angelopoulos|introduction]].
+
+  ## Life and work
+
+  Born in [[place/athens|Athens]] on 27 April 1935, he studied law there, then film at the IDHEC in Paris, and began making films after the 1967 coup [[source/wikipedia-en-theo-angelopoulos|§ Biography]]. In the 1970s he made a series of political films about modern Greece, among them *The Travelling Players* (1975) [[source/wikipedia-en-theo-angelopoulos|§ Biography]]. His style is marked by slow, episodic narratives and long, carefully choreographed takes; recurring themes are exile, return and the history of twentieth-century Greece [[source/wikipedia-en-theo-angelopoulos|§ Biography]]. *Eternity and a Day* won the Palme d'Or in 1998 [[source/wikipedia-en-theo-angelopoulos|introduction]]. He died on 24 January 2012 after an accident while filming *The Other Sea* [[source/wikipedia-en-theo-angelopoulos|§ Death]].
+
+  ## In the seminar
+
+  *Ulysses' Gaze* (1995), loosely based on Homer's *Odyssey*, follows a Greek filmmaker across the Balkans in search of three undeveloped reels by the Manaki brothers, pioneers of film in the region, and ends in besieged Sarajevo; it won the Grand Jury Prize at Cannes in 1995 [[source/wikipedia-en-ulysses-gaze|introduction; § Plot; § Accolades]]. A frame of it — a dismembered statue of Lenin on a barge crossing the Balkans — illustrated the afterlife of monuments, beside Deimantas Narkevičius's [[artwork/once-in-the-xx-century|Once in the XX Century]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 34]].
+wikidata_id: Q55168
+metadata:
+  sources: [Wikidata Q55168 (retrieved 2026-11-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0a/Theodoros_Angelopoulos_Athens_26-4-2009-2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Theodoros_Angelopoulos_Athens_26-4-2009-2.jpg
+    license: CC BY-SA 2.0
+    credit: George Laoutaris
+identifiers:
+  bnf: "127306645"
+  gnd: "119013568"
+  idref: "027892085"
+  lc: n85048703
+  nlk: KAC201108012
+  rkd: "404223"
+  ulan: "500472240"
+  viaf: "84956677"
+sources:
+  birth:
+    - accessed: 2026-11-07
+      property: P569
+      wikidata: Q55168
+  death:
+    - accessed: 2026-11-07
+      property: P570
+      wikidata: Q55168

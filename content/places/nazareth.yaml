@@ -1,14 +1,22 @@
 public_id: 117663
 name: Nazareth
 kind: settlement
+parent: israel
+country_code: IL
 location: [35.29785, 32.7021]
 wikidata_id: Q430776
 metadata:
   sources: [Wikidata Q430776 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4041463-2
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q430776
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q430776
   location:
     - accessed: 2026-11-10

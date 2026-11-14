@@ -6,3 +6,15 @@ names:
     text: Statue
 category: object type
 parent: sculpture
+definition: A free-standing sculpture of a full-length human or animal figure, carved or cast in wood, metal, stone or another durable material, typically near life size.
+description_md: |-
+  A statue is a free-standing sculpture of full-length human or animal figures, carved or cast in a durable material such as wood, metal or stone, typically life-size or close to it; a figure small enough to carry is a statuette, one more than twice life-size a colossal statue.[[source/wikipedia-en-statue|§ Introduction]] Throughout history statues have been cult images — in the temples of Egypt, India, Greece and Rome, and still in Hindu, Buddhist and Jain temples, where they are often the focal point of worship.[[source/wikipedia-en-statue|§ Religion]][[source/wikipedia-en-statue|§ Modern era]] Ancient and medieval statues were usually painted; the colouring ceased in the Renaissance, when excavated classical sculptures that had lost their colour became the models.[[source/wikipedia-en-statue|§ Colors]]
+
+  In medieval Europe the single statue was less common than other sculpture, except for figures of the Virgin, usually with the Child, and the body of Christ on crucifixes; the [[artwork/gero-cross|Gero Cross]] in Cologne is one of the earliest large figures of the crucified Christ.[[source/wikipedia-en-statue|§ Middle Ages]] Of the Romanesque Madonna in Majesty Ilene Forsyth writes that "more than any other type of sculpture" it was "*the* cult statue of the Middle Ages, because in it divine presence seemed more fully concentrated".[[source/forsyth-1972-the-throne-of-wisdom|p. 9]] Italian Renaissance sculpture revived the standing statue as the key form of Roman art, led by [[artist/donatello|Donatello]] and [[artist/michelangelo|Michelangelo]]; from around 1900, with [[artist/aristide-maillol|Maillol]], the figure began to move away from realism.[[source/wikipedia-en-statue|§ Renaissance]][[source/wikipedia-en-statue|§ Modern era]]
+
+  Most statues in this database are Japanese Buddhist images of the Asuka and Nara periods — [[artist/tori-busshi|Tori Busshi]]'s [[artwork/horyu-ji-shaka-triad|Shaka Triad]] of 623, the [[artwork/kudara-kannon|Kudara Kannon]], the guardians and bodhisattvas of Tōdai-ji — and works by [[artist/unkei|Unkei]]; others are the [[artwork/venus-de-medici|Venus de' Medici]], [[artwork/worker-and-kolkhoz-woman|Worker and Kolkhoz Woman]], the [[artwork/stalin-monument-budapest|Stalin Monument]] and [[artist/kim-seo-kyung|Kim Seo-kyung]]'s [[artwork/statue-of-peace|Statue of Peace]] (2011).
+sources:
+  definition:
+    - source: wikipedia-en-statue
+      locator: § Introduction
+      accessed: 2026-11-13

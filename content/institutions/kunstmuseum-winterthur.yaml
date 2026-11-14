@@ -1,3 +1,27 @@
 public_id: 114895
 name: Kunstmuseum Winterthur
+kind: museum
+place: winterthur
+location: [8.73028, 47.50139]
 wikidata_id: Q119816375
+metadata:
+  sources: [Wikidata Q119816375 (retrieved 2026-11-13)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a4/Picswiss_ZH-13-24.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Picswiss_ZH-13-24.jpg
+    license: CC BY-SA 3.0
+    credit: Roland Zumbühl (Picswiss), Arlesheim (Commons:Picswiss project)
+identifiers:
+  bnf: "118703646"
+  gnd: 2016815-9
+  lc: n50013809
+  ulan: "500311764"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q119816375
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q119816375

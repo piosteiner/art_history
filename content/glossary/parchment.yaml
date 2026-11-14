@@ -1,3 +1,15 @@
 public_id: 101405
 name: parchment
 category: material
+definition: A writing and painting material of specially prepared untanned animal skin, chiefly of sheep, calves and goats — the usual support of medieval manuscripts.
+description_md: |-
+  Parchment is made from specially prepared untanned skins of animals, primarily sheep, calves and goats, and has been used as a writing medium in West Asia and Europe for more than two millennia; by 400 AD many written works meant to be preserved had been transferred from papyrus to parchment.[[source/wikipedia-en-parchment|§ Introduction]] The word comes, via Latin *pergamenum* and French *parchemin*, from the city of Pergamon, a thriving centre of production in the Hellenistic period; the legend that it was invented there to replace papyrus is almost certainly false.[[source/wikipedia-en-parchment|§ History]] In the later Middle Ages, especially the 15th century, paper largely replaced it except for luxury manuscripts, and twelve of the 48 surviving Gutenberg Bibles are printed on parchment.[[source/wikipedia-en-parchment|§ History]]
+
+  The finer calfskin is called [[term/vellum|vellum]], but without scientific analysis the animal is hard to determine, so many conservators prefer "parchment" or "animal membrane" for all of them.[[source/wikipedia-en-parchment|§ Parchment and vellum]] Parchment consists mostly of collagen: water in paint melts the surface slightly and forms a raised bed for the paint, a quality prized by some artists; it had ceased to be a primary support for artists by the end of the 15th century.[[source/wikipedia-en-parchment|§ Modern use]]
+
+  In this database parchment carries manuscripts such as the [[artwork/moutier-grandval-bible|Moutier-Grandval Bible]], the [[artwork/bernward-gospels|Bernward Gospels]], the [[artwork/moralia-in-job-citeaux|Cîteaux Moralia in Job]] and the [[artwork/tres-riches-heures|Très Riches Heures]]; Erhard Etzlaub's view of [[artwork/etzlaub-waldplan-von-nurnberg|Nuremberg and its forests]] of 1516 is a painting on parchment.[[source/baxandall-1980-limewood-sculptors|p. 30, fig. 11]] [[artist/albrecht-durer|Dürer]]'s [[artwork/lion|Lion]] and [[artwork/wing-of-a-european-roller|Wing of a European Roller]] and [[artist/gustav-klimt|Gustav Klimt]]'s [[artwork/the-hydra|Hydra]] are also recorded on parchment.
+sources:
+  definition:
+    - source: wikipedia-en-parchment
+      locator: § Introduction
+      accessed: 2026-11-13

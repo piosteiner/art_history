@@ -1,14 +1,30 @@
 public_id: 117682
 name: Nantes
+names:
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: cité des ducs de Bretagne
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q12191
 kind: settlement
+parent: loire-atlantique
+country_code: FR
 location: [-1.55389, 47.21722]
 wikidata_id: Q12191
 metadata:
   sources: [Wikidata Q12191 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4041204-0
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q12191
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q12191
   location:
     - accessed: 2026-11-10

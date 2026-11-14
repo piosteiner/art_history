@@ -1,14 +1,22 @@
 public_id: 117708
 name: Utena
 kind: settlement
+parent: lithuania
+country_code: LT
 location: [25.6, 55.5]
 wikidata_id: Q189157
 metadata:
   sources: [Wikidata Q189157 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4662053-9
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q189157
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q189157
   location:
     - accessed: 2026-11-10

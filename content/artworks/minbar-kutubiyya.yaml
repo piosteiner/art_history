@@ -13,6 +13,7 @@ names:
     sources:
       - accessed: 2026-11-09
         wikidata: Q95888174
+attribution_label: Anonymous, Córdoba
 created: 1137/1144
 medium: cedar and oak with inlays of African blackwood, jujube, padauk, boxwood and bone
 materials: [oak, cedar, boxwood]
@@ -47,3 +48,7 @@ sources:
   institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 10 (5.12.2024)
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024), Folie 36
+      accessed: 2026-11-13

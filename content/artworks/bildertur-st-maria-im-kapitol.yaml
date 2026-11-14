@@ -11,6 +11,7 @@ names:
   - lang: en
     role: translation
     text: wooden door of St. Maria im Kapitol
+attribution_label: Cologne workshop, Lower Rhine–Meuse (master unknown)
 created: 11th century
 created_span: uncertain
 medium: Eiche (Türflügel), Nussbaum (Reliefs, Rahmen)
@@ -77,3 +78,7 @@ sources:
   institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 5 (31.10.2024), Folie 17
+  attribution_label:
+    - source: wikipedia-de-holztur-von-st-maria-im-kapitol
+      locator: § Meisterfrage (rev. 266570149)
+      accessed: 2026-11-13

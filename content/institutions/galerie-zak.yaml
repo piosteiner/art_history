@@ -1,3 +1,29 @@
 public_id: 112024
 name: Galerie Zak
+kind: gallery
+founded: 1928
+place: paris
+location: [2.33393, 48.85448]
 wikidata_id: Q28831124
+metadata:
+  sources: [Wikidata Q28831124 (retrieved 2026-11-13)]
+identifiers:
+  lc: no2012059587
+  viaf: "133808238"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q28831124
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q28831124
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q28831124
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q28831124

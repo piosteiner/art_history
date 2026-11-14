@@ -1,14 +1,22 @@
 public_id: 117191
 name: Dinan
 kind: settlement
+parent: france
+country_code: FR
 location: [-2.05028, 48.45556]
 wikidata_id: Q201311
 metadata:
   sources: [Wikidata Q201311 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4372000-6
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q201311
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q201311
   location:
     - accessed: 2026-11-09

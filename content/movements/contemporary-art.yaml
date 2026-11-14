@@ -1,11 +1,18 @@
 public_id: 117704
 name: contemporary art
 kind: movement
+period: 1945/
 wikidata_id: Q186030
 metadata:
   sources: [Wikidata Q186030 (retrieved 2026-11-10)]
+identifiers:
+  hls: "011189"
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
       wikidata: Q186030
+  period:
+    - source: wikipedia-en-contemporary-art
+      locator: lead; § Scope
+      accessed: 2026-11-13

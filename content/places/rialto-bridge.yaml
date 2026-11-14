@@ -1,14 +1,22 @@
 public_id: 117154
 name: Rialto Bridge
 kind: site
+parent: venice
+country_code: IT
 location: [12.33564, 45.43801]
 wikidata_id: Q52505
 metadata:
   sources: [Wikidata Q52505 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4209662-5
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q52505
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q52505
   location:
     - accessed: 2026-11-09

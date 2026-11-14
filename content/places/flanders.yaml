@@ -1,10 +1,13 @@
 public_id: 121631
 name: Flanders
 kind: site
+country_code: BE
 location: [4.5, 51]
 wikidata_id: Q234
 metadata:
   sources: [Wikidata Q234 (retrieved 2026-11-12)]
+identifiers:
+  gnd: 4248467-4
 sources:
   kind:
     - accessed: 2026-11-12

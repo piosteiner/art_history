@@ -12,3 +12,15 @@ names:
     text: Blattgold
 category: material
 parent: gold
+definition: Gold hammered into extremely thin sheets (goldbeating) and laid onto a prepared surface — the basic material of gilding, gold grounds and gold screens.
+description_md: |-
+  Gold leaf is gold hammered into thin sheets, usually around 0.1 μm thick, by goldbeating, for use in gilding; most goldbeaters make 23-karat leaf.[[source/wikipedia-en-gold-leaf|introduction; § Production]] Egyptian artisans were beating gold into leaf five thousand years ago, and in China gold leaf was produced in Nanjing from the third century and used to gild Buddhist statues.[[source/wikipedia-en-gold-leaf|§ History]] On wood or canvas the surface was first coated with [[term/gesso|gesso]]; in water gilding the leaf, laid on a size of rabbit-skin glue, could then be burnished with agate to a mirror finish.[[source/wikipedia-en-gilding|§ Mechanical gilding]] The gold ground of Early Christian mosaics passed to icons and to Western panel paintings until the late Middle Ages.[[source/wikipedia-en-gold-leaf|§ Art]]
+
+  In Japan, Buddhist sculpture was commonly coated with [[term/lacquer|lacquer]] and gold leaf, as on the camphor-wood Kannon of 711 at Hōryūji.[[source/history-of-japanese-art|p. 80]] In the Momoyama period sliding doors and folding screens were painted in bright colours on a ground of gold leaf — perhaps to reflect the dim light of the castles, perhaps to evoke Amida's paradise, and certainly as an expression of the period's sudden affluence.[[source/history-of-japanese-art|p. 245]] Japanese gold leaf is known to be the thinnest in the world; the sheets are beaten between specially prepared papers about five times, and the leaves laid on screens shrank from about 12 cm square in the fifteenth and sixteenth centuries to about 9 cm in the Edo period.[[source/history-of-japanese-art|p. 245]] The top two floors of the [[artwork/kinkaku-ji-temple|Golden Pavilion]] in Kyoto are entirely covered with 0.5 μm gold leaf.[[source/wikipedia-en-gold-leaf|§ Architecture]]
+
+  Works in gold leaf in this database include [[artwork/cypress-byobu-eitoku|Cypress]] by [[artist/kano-eitoku|Kanō Eitoku]][[source/history-of-japanese-art|pp. 256–257, fig. 296]], the [[artwork/rakuchu-rakugai-funaki|Funaki screens]][[source/history-of-japanese-art|pp. 245–247, fig. 281]], the [[artwork/namban-byobu-imperial|Namban screens]][[source/history-of-japanese-art|pp. 247–249, fig. 282]] and [[artist/ogata-korin|Ogata Kōrin]]'s [[artwork/korin-irises-nezu|Irises]][[source/history-of-japanese-art|pp. 314–315, fig. 365]]; in Europe [[artist/gustav-klimt|Gustav Klimt]]'s [[artwork/the-kiss|The Kiss]].
+sources:
+  definition:
+    - source: wikipedia-en-gold-leaf
+      locator: introduction
+      accessed: 2026-11-13

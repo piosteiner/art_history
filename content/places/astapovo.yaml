@@ -1,6 +1,8 @@
 public_id: 117571
 name: Astapovo
 kind: settlement
+parent: russia
+country_code: RU
 location: [39.5375, 53.2075]
 wikidata_id: Q4071563
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q4071563
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q4071563
   location:
     - accessed: 2026-11-10

@@ -1,0 +1,53 @@
+public_id: 122345
+name: Indianapolis
+names:
+  - lang: ja
+    role: translation
+    text: インディアナポリス
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q6346
+  - lang: zh
+    role: translation
+    text: 印第安納波利斯
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q6346
+  - lang: ko
+    role: translation
+    text: 인디애나폴리스
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q6346
+  - lang: es
+    role: translation
+    text: Indianápolis
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q6346
+  - lang: ru
+    role: translation
+    text: Индианаполис
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q6346
+kind: settlement
+parent: united-states
+country_code: US
+location: [-86.15806, 39.76861]
+wikidata_id: Q6346
+metadata:
+  sources: [Wikidata Q6346 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q6346
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q6346
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q6346

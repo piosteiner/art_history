@@ -5,6 +5,7 @@ names:
   - lang: en
     role: translation
     text: Lorcher Hochaltar
+attribution_label: Master of the Lorch High Altar, Middle Rhine
 created: 1483
 medium: Eichenholz, Lindenholz
 materials: [oak, lime]
@@ -54,3 +55,7 @@ sources:
   institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 8 (21.11.2024), Folien 97–98
+  attribution_label:
+    - source: habenicht-2016-das-ungefasste-altarretabel
+      locator: p. 185
+      accessed: 2026-11-13

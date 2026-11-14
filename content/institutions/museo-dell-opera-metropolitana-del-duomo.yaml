@@ -2,15 +2,42 @@ public_id: 113412
 name: Museo dell'Opera Metropolitana del Duomo
 kind: museum
 founded: 1869
+place: siena
+location: [11.3296, 43.3177]
+address: Piazza Duomo 8
+website_url: http://www.operaduomo.siena.it/museo.htm
 wikidata_id: Q869130
 metadata:
   sources: [Wikidata Q869130 (retrieved 2026-11-03)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7a/484SienaOperaMetropolitana.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:484SienaOperaMetropolitana.JPG
+    license: Public domain
+    credit: MarkusMark
+identifiers:
+  gnd: 10074779-6
+  idref: "076470636"
+  lc: nr91002674
+  ulan: "500308995"
+  viaf: "263184055"
 sources:
   kind:
     - accessed: 2026-11-03
       property: P31
       wikidata: Q869130
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q869130
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q869130
   founded:
     - accessed: 2026-11-03
       property: P571
+      wikidata: Q869130
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q869130

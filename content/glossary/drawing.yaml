@@ -5,3 +5,15 @@ names:
     role: translation
     text: Zeichnung
 category: object type
+definition: A work made by marking paper or another surface with lines and tones — in pen and ink, chalk, charcoal, metalpoint or brush — as a study, a design or a finished work.
+description_md: |-
+  Drawing is a visual art that uses an instrument to mark paper or another two-dimensional surface; paper is the most common support, though [[term/vellum|vellum]], wood and other materials have been used.[[source/wikipedia-en-drawing|§ Introduction]] Its media are mostly dry — [[term/graphite|graphite]], [[term/charcoal|charcoal]], pastel, [[term/silverpoint|silverpoint]] — or fluid, as pen and ink; metalpoint usually uses silver or lead.[[source/wikipedia-en-drawing|§ Materials]] Before paper was widely available in Europe, monks made drawings as underdrawings for manuscripts on vellum or parchment or as the final image; after paper spread in the 14th century, drawing became more common as a tool of study in preparing finished works.[[source/wikipedia-en-drawing|§ In manuscripts]][[source/wikipedia-en-drawing|§ As artistic expression]] Drawing became an art form in its own right around the late 15th century, with artists such as [[artist/albrecht-durer|Albrecht Dürer]] and Martin Schongauer.[[source/wikipedia-en-drawing|§ Notable artists and draftsmen]]
+
+  In the contract of 1485 for his [[artwork/ghirlandaio-anbetung-der-konige-innocenti|Adoration of the Magi]], [[artist/domenico-ghirlandaio|Domenico Ghirlandaio]] had to paint the panel as shown on a drawing on paper, "with the figures", and was not to depart from its composition.[[source/ganz-2024-aus-dem-wald|Sitzung 1 (26.9.2024), Folie 34]] [[artist/veit-stoss|Veit Stoss]]'s pen drawing of 1520 for the high altar of the Nuremberg Carmelites, now in Kraków, is such a design (*Visierung*) for a carved altarpiece.[[source/ganz-2024-aus-dem-wald|Sitzung 8 (21.11.2024), Folie 101]]
+
+  Drawings in this database range from [[artist/pieter-brueghel-the-elder|Pieter Brueghel the Elder]]'s [[artwork/die-grossen-fische-fressen-die-kleinen|Big Fish Eat Little Fish]] (1556) and [[artist/rembrandt|Rembrandt]]'s [[artwork/ein-elefant|Elephant]] (1637) to [[artist/vincent-van-gogh|Vincent van Gogh]]'s [[artwork/la-route-de-tarascon|Road to Tarascon]], [[artist/kathe-kollwitz|Käthe Kollwitz]]'s portrait study of a working woman and [[artist/egon-schiele|Egon Schiele]]'s drawing of 25 April 1912 — and the [[artwork/stoss-visierung-bamberger-altar|Stoss design]].
+sources:
+  definition:
+    - source: wikipedia-en-drawing
+      locator: § Introduction
+      accessed: 2026-11-13

@@ -1,3 +1,21 @@
 public_id: 111912
 name: Galerie F & J Tempelaere
+kind: gallery
+place: paris
+address: 70, Boulevard Malesherbes, Paris
 wikidata_id: Q133456484
+metadata:
+  sources: [Wikidata Q133456484 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q133456484
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q133456484
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q133456484

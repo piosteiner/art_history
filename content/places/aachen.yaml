@@ -1,14 +1,22 @@
 public_id: 116936
 name: Aachen
 kind: settlement
+parent: nordrhein-westfalen
+country_code: DE
 location: [6.08379, 50.77621]
 wikidata_id: Q1017
 metadata:
   sources: [Wikidata Q1017 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4000003-5
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q1017
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q1017
   location:
     - accessed: 2026-11-09

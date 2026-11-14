@@ -1,6 +1,8 @@
 public_id: 117685
 name: Walthamstow
 kind: site
+parent: england
+country_code: GB
 location: [-0.0211, 51.584]
 wikidata_id: Q2321784
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q2321784
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q2321784
   location:
     - accessed: 2026-11-10

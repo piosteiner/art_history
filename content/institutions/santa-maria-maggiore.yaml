@@ -2,15 +2,40 @@ public_id: 117151
 name: Santa Maria Maggiore
 kind: basilica
 founded: 1101/1200
+place: bergamo
+location: [9.66213, 45.70322]
+address: Piazza Rosate
+website_url: https://www.fondazionemia.it/it/basilica/storia
 wikidata_id: Q2001128
 metadata:
   sources: [Wikidata Q2001128 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/S_Maria_Maggiore_view_from_Campanone.jpg/1280px-S_Maria_Maggiore_view_from_Campanone.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:S_Maria_Maggiore_view_from_Campanone.jpg
+    license: CC BY 3.0
+    credit: Cherie.greene
+identifiers:
+  gnd: 4428414-7
+  lc: n81110790
+  viaf: "143079809"
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
       wikidata: Q2001128
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q2001128
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q2001128
   founded:
     - accessed: 2026-11-09
       property: P571
+      wikidata: Q2001128
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q2001128

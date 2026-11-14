@@ -1,14 +1,22 @@
 public_id: 117686
 name: Hammersmith
 kind: site
+parent: england
+country_code: GB
 location: [-0.2229, 51.4928]
 wikidata_id: Q277162
 metadata:
   sources: [Wikidata Q277162 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4702918-3
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q277162
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q277162
   location:
     - accessed: 2026-11-10

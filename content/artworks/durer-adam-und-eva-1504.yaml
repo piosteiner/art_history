@@ -2,7 +2,11 @@ public_id: 117116
 title_lang: de
 title: Adam und Eva (Der Sündenfall)
 names:
-  - The Fall of Man
+  - text: The Fall of Man (Adam and Eve)
+    sources:
+      - url: https://collections.mfa.org/objects/246
+        source: mfa-lullaby-la-berceuse-48-548
+        accessed: 2026-11-13
   - lang: nl
     role: translation
     text: Adam en Eva
@@ -35,11 +39,18 @@ names:
     text: Adam and Eve
 creator: albrecht-durer
 created: 1504
+kind: copper engraving technique
 medium: Kupferstich
 materials: [laid paper, copper]
-dimensions: [25.1, 19.4]
+dimensions: [25.1, 19.3]
+other_dimensions:
+  - cm: [27, 21.3]
+    part: sheet
+  - cm: [25.4, 19.6]
+    part: Platte
 institution: albertina
-inventory_number: "1967.33"
+inventory_number: DG1930/1451
+web_url: https://sammlungenonline.albertina.at/objects/92505/adam-und-eva?ctx=a5e69fd95bd5cfb21e2e57e0a3e1206b9ca20b33&idx=9
 other_web_url: http://www.mfa.org/collections/object/the-fall-of-man-adam-and-eve-246
 other_web_name: Museum of Fine Arts, Boston
 other_web_note: Another impression
@@ -77,6 +88,10 @@ images:
     license: Public domain
     credit: Albrecht Dürer
 sources:
+  kind:
+    - url: https://sammlungenonline.albertina.at/objects/92505/adam-und-eva?ctx=a5e69fd95bd5cfb21e2e57e0a3e1206b9ca20b33&idx=9
+      source: albertina-sammlungen-online
+      accessed: 2026-11-13
   medium:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 2 (3.10.2024), Folie 51
@@ -84,10 +99,16 @@ sources:
     - accessed: 2026-11-09
       property: P571
       wikidata: Q3898508
+    - url: https://sammlungenonline.albertina.at/objects/92505/adam-und-eva?ctx=a5e69fd95bd5cfb21e2e57e0a3e1206b9ca20b33&idx=9
+      source: albertina-sammlungen-online
+      accessed: 2026-11-13
   creator:
     - accessed: 2026-11-09
       property: P170
       wikidata: Q3898508
+    - url: https://sammlungenonline.albertina.at/objects/92505/adam-und-eva?ctx=a5e69fd95bd5cfb21e2e57e0a3e1206b9ca20b33&idx=9
+      source: albertina-sammlungen-online
+      accessed: 2026-11-13
   materials:
     - accessed: 2026-11-09
       property: P186
@@ -95,16 +116,19 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 2 (3.10.2024), Folie 51
   dimensions:
-    - accessed: 2026-11-09
-      property: P2048
-      wikidata: Q3898508
+    - url: https://sammlungenonline.albertina.at/objects/92505/adam-und-eva?ctx=a5e69fd95bd5cfb21e2e57e0a3e1206b9ca20b33&idx=9
+      source: albertina-sammlungen-online
+      accessed: 2026-11-13
   institution:
     - accessed: 2026-11-09
       property: P195
       wikidata: Q3898508
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 2
+    - url: https://sammlungenonline.albertina.at/objects/92505/adam-und-eva?ctx=a5e69fd95bd5cfb21e2e57e0a3e1206b9ca20b33&idx=9
+      source: albertina-sammlungen-online
+      accessed: 2026-11-13
   inventory_number:
-    - accessed: 2026-11-09
-      property: P217
-      wikidata: Q3898508
+    - url: https://sammlungenonline.albertina.at/objects/92505/adam-und-eva?ctx=a5e69fd95bd5cfb21e2e57e0a3e1206b9ca20b33&idx=9
+      source: albertina-sammlungen-online
+      accessed: 2026-11-13

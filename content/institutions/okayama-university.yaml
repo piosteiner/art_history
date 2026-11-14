@@ -2,15 +2,37 @@ public_id: 117710
 name: Okayama University
 kind: university
 founded: 1949-05-31
+place: okayama
+location: [133.91961, 34.68877]
+website_url: https://www.okayama-u.ac.jp/index_e.html
 wikidata_id: Q1067916
 metadata:
   sources: [Wikidata Q1067916 (retrieved 2026-11-10)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Okayama_University.jpg/1280px-Okayama_University.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Okayama_University.jpg
+    license: CC BY-SA 3.0
+    credit: Original uploader was Setouchi at ja.wikipedia
+identifiers:
+  bnf: 13512383g
+  gnd: 37751-X
+  idref: "050403109"
+  lc: n50078646
+  viaf: "144841094"
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
       wikidata: Q1067916
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q1067916
   founded:
     - accessed: 2026-11-10
       property: P571
+      wikidata: Q1067916
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q1067916

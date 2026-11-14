@@ -1,14 +1,22 @@
 public_id: 116546
 name: Xi'an
 kind: settlement
+parent: people-s-republic-of-china
+country_code: CN
 location: [108.94222, 34.26111]
 wikidata_id: Q5826
 metadata:
   sources: [Wikidata Q5826 (retrieved 2026-11-06)]
+identifiers:
+  gnd: 4225216-7
 sources:
   kind:
     - accessed: 2026-11-06
       property: P31
+      wikidata: Q5826
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q5826
   location:
     - accessed: 2026-11-06

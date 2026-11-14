@@ -1,6 +1,8 @@
 public_id: 117668
 name: Palace Gate
 kind: street
+parent: england
+country_code: GB
 location: [-0.184, 51.5006]
 wikidata_id: Q55076531
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q55076531
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q55076531
   location:
     - accessed: 2026-11-10

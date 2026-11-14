@@ -1,14 +1,22 @@
 public_id: 117594
 name: Santa Ana
 kind: settlement
+parent: california
+country_code: US
 location: [-117.88139, 33.74083]
 wikidata_id: Q49244
 metadata:
   sources: [Wikidata Q49244 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4323497-5
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q49244
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q49244
   location:
     - accessed: 2026-11-10

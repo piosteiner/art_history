@@ -3,6 +3,7 @@ title_lang: de
 title: "Zweite Wandlung: Marienkrönung und Heilige"
 parent: gottinger-jacobi-hochaltar
 part_number: "3"
+attribution_label: Anonymous
 created: 1402
 kind: sculpture
 medium: Holz, gefasst
@@ -30,3 +31,7 @@ sources:
   title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 8 (21.11.2024), Folie 30
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 8 (21.11.2024), Folie 27 ("unknown artists")
+      accessed: 2026-11-13

@@ -1,0 +1,21 @@
+public_id: 122193
+name: prayer book
+names:
+  - lang: de
+    role: translation
+    text: Gebetbuch
+  - lang: fr
+    role: translation
+    text: livre de prières
+category: object type
+parent: book
+definition: A book of prayers and devotional readings for private or communal use, as distinct in the strict sense from service books of the liturgy.
+description_md: |-
+  A prayer book contains prayers and perhaps devotional readings, for private or communal use, or sometimes the liturgy of services; books of orders of service or readings for them are strictly "service books" or liturgical books, though the term is often used loosely.[[source/wikipedia-en-prayer-book|§ Introduction]] In Christianity the term covers breviaries for praying the canonical hours as well as the Book of Hours.[[source/wikipedia-en-prayer-book|§ Breviaries]][[source/wikipedia-en-prayer-book|§ Notable prayer books]]
+
+  The [[artwork/gebetbuch-karls-des-kahlen|prayer book of Charles the Bald]], made between 846 and 869 at the court school of [[person/charles-the-bald|Charles the Bald]] and now in the treasury of the Munich Residenz, is regarded as the oldest surviving prayer book made for private use.[[source/wikipedia-de-gebetbuch-karls-des-kahlen|§ Introduction]] It is small — 46 parchment leaves of 13.5 × 11 cm — and holds Latin penitential and hour prayers and psalms adapted for the king's use, written entirely in gold ink, partly on purple.[[source/wikipedia-de-gebetbuch-karls-des-kahlen|§ Beschreibung]] Its only figurative pages, fol. 38v–39r, show the crowned king kneeling before the Crucified.[[source/wikipedia-de-gebetbuch-karls-des-kahlen|§ Beschreibung]]
+sources:
+  definition:
+    - source: wikipedia-en-prayer-book
+      locator: § Introduction
+      accessed: 2026-11-13

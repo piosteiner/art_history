@@ -1,3 +1,13 @@
 public_id: 106399
 name: hemp textile
 category: material
+definition: Cloth woven from the bast fibre of the hemp plant (Cannabis sativa); in East Asia also a support for painting and a cloth for dry-lacquer sculpture.
+description_md: |-
+  Hemp, the plant *Cannabis sativa*, was one of the first plants to be spun into usable fibre; its bast fibres are made into textiles, rope and paper.[[source/wikipedia-en-hemp|introduction; § Uses]] Pure hemp cloth has a texture similar to linen; it was commonly used for sail canvas, and the word "canvas" itself derives from *cannabis*.[[source/wikipedia-en-hemp|§ Fiber]] In Japan hemp (*asa*) was used for clothing as far back as the Jōmon period, and historically as paper and fibre.[[source/wikipedia-en-hemp|§ History › Japan]]
+
+  In Japanese art hemp cloth served both as a painting support and as a structural material: the [[artwork/yakushi-ji-kichijoten|Kichijōten of Yakushiji]], of the third quarter of the eighth century, is painted "in bright colors and gold on hemp cloth".[[source/history-of-japanese-art|p. 96, fig. 121]] In hollow-core [[term/dry-lacquer|dry-lacquer]] sculpture, introduced from China in the seventh century, three to ten layers of lacquer-soaked hemp or linen cloth were applied over a clay core and modelled, each layer dried before the next.[[source/history-of-japanese-art|p. 86]] Heian lacquerware often did without wood altogether and was built on a hempen core, the dried layers of lacquer giving the piece its rigidity.[[source/history-of-japanese-art|pp. 106–107]]
+sources:
+  definition:
+    - source: wikipedia-en-hemp
+      locator: introduction; § Fiber
+      accessed: 2026-11-13

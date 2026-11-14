@@ -57,6 +57,7 @@ names:
   - lang: en
     role: translation
     text: Gero Crucifix (Gero Cross)
+attribution_label: Anonymous
 created: 970/976
 created_span: uncertain
 kind: crucifix
@@ -100,7 +101,7 @@ relationships:
         property: P135
         wikidata: Q653601
   - type: associated_with
-    to: movement/ottonian-dynasty
+    to: movement/ottonian-art
     sources:
       - accessed: 2026-11-09
         property: P135
@@ -143,3 +144,7 @@ sources:
     - accessed: 2026-11-09
       property: P195
       wikidata: Q653601
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 4 (17.10.2024), Folie 21
+      accessed: 2026-11-13

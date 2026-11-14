@@ -2,4 +2,20 @@ public_id: 122166
 name: L. Schünzel
 given_name: L.
 family_name: Schünzel
-biography_md: A painter known here only from a copy after Gustave Courbet's *Stone Breakers*, dated 1926/27 and signed lower left "nach G. Courbet. von L. Schünzel."; the Staatliche Kunstsammlungen Dresden give no first name or dates of life.[[source/skd-online-collection-189729|record]]
+active: 1913/1927
+biography_md: |-
+  A painter who copied pictures of the Dresden picture gallery in the first decades of the 20th century, known by the signature "L. Schünzel"; no first name or dates of life have been found.[[source/skd-online-collection-189729|record]][[source/stahl-2011-schunzel-maria-magdalena|lot 43]]
+
+  ## Copies after the Dresden gallery
+
+  Two copies are documented. A *Mary Magdalene* after Pompeo Batoni, oil on canvas, 82 × 128 cm, signed lower left "L. Schünzel" and inscribed "nach Pompeo Battoni 1707-1787", bears on its reverse the stencilled "Copie nach No. 454 der Königl. Gemälde-Galerie zu Dresden 1913"; it was sold at the Auktionshaus Stahl in Hamburg in November 2011 (lot 43, 1,400 euros).[[source/stahl-2011-schunzel-maria-magdalena|lot 43]] The second is the copy of Gustave Courbet's [[artwork/the-stone-breakers|*Stone Breakers*]], 1926/27, 85 × 121 cm, signed "nach G. Courbet. von L. Schünzel.", today in the [[institution/albertinum|Albertinum]]: [[artwork/schunzel-die-steinklopfer-kopie-nach-courbet|*Die Steinklopfer (Kopie nach Gustave Courbet)*]].[[source/skd-online-collection-189729|record]]
+
+  The stencilled inscription on the Batoni copy is the gallery's "copyist's stamp": with "Copie nach No. [gallery number] der (Königl:) Gemälde Galerie zu Dresden [year]" the gallery marked the copies it had permitted. Every request to copy was entered in the gallery's *Copistenbuch* (the book of 1912–1930 survives) with its date, the copyist's name and address, and the number, artist and title of the picture.[[source/skd-gam-023-kopistenstempel|description]] Schünzel's request of 1913 should therefore be recorded there, with the full name.[[source/skd-gam-023-kopistenstempel|description]][[source/stahl-2011-schunzel-maria-magdalena|lot 43]]
+sources:
+  active:
+    - source: stahl-2011-schunzel-maria-magdalena
+      locator: lot 43 (copy dated 1913)
+      accessed: 2026-11-13
+    - source: skd-online-collection-189729
+      locator: record (copy dated 1926/27)
+      accessed: 2026-11-13

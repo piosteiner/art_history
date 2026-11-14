@@ -1,14 +1,22 @@
 public_id: 116476
 name: Takasaki
 kind: settlement
+parent: gunma
+country_code: JP
 location: [139.00236, 36.32311]
 wikidata_id: Q336438
 metadata:
   sources: [Wikidata Q336438 (retrieved 2026-11-06)]
+identifiers:
+  gnd: 1224420-X
 sources:
   kind:
     - accessed: 2026-11-06
       property: P31
+      wikidata: Q336438
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q336438
   location:
     - accessed: 2026-11-06

@@ -1,11 +1,31 @@
 public_id: 117084
 name: Essen Minster
 kind: cathedral
+place: essen
+location: [7.014, 51.456]
+website_url: http://www.dom-essen.de/index.php?id=151
 wikidata_id: Q135737
 metadata:
   sources: [Wikidata Q135737 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Dom-Essen-mit-Burgplatz-und-Rathaus-2016.jpg/1280px-Dom-Essen-mit-Burgplatz-und-Rathaus-2016.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dom-Essen-mit-Burgplatz-und-Rathaus-2016.jpg
+    license: CC BY-SA 3.0
+    credit: Tuxyso
+identifiers:
+  gnd: 4204759-6
+  lc: n90621367
+  viaf: "129134281"
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q135737
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q135737
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q135737

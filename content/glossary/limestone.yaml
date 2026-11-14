@@ -1,3 +1,14 @@
 public_id: 116691
 name: limestone
 category: material
+parent: stone
+definition: A sedimentary rock of calcium carbonate, easy to cut and carve and durable — a major building and sculptural stone from the pyramids to medieval churches.
+description_md: |-
+  Limestone is a carbonate sedimentary rock composed mostly of calcite and aragonite, forms of calcium carbonate, and is the main source of lime; much of it was built up by the accumulation of corals and shells in the sea.[[source/wikipedia-en-limestone|§ Introduction]] It is relatively easy to cut into blocks or carve in detail and stands up well to exposure: the Great Pyramid of Giza was built of it, the Maya carved refined reliefs in it, and many medieval churches and castles in Europe are of limestone.[[source/wikipedia-en-limestone|§ Uses]] Metamorphosed by heat and pressure it becomes [[term/marble|marble]].[[source/wikipedia-en-limestone|§ Uses]]
+
+  Michael Baxandall notes that the stone of south German sculptors was usually sedimentary — sandstone or limestone — and, unlike wood, homogeneous and inert.[[source/baxandall-1980-limewood-sculptors|p. 32]] The [[artwork/stalin-monument-budapest|Stalin Monument]] in Budapest (1951) set an eight-metre bronze statue by [[artist/sandor-mikus|Sándor Mikus]] on a four-metre limestone base.[[source/wikipedia-en-stalin-monument-budapest|§ Monument]]
+sources:
+  definition:
+    - source: wikipedia-en-limestone
+      locator: § Introduction
+      accessed: 2026-11-13

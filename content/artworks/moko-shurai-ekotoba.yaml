@@ -41,6 +41,7 @@ names:
     sources:
       - accessed: 2026-11-06
         wikidata: Q3087790
+attribution_label: Anonymous, Japanese
 created: 1293-03-25
 kind: emakimono
 medium: Colour on paper
@@ -93,3 +94,6 @@ sources:
       wikidata: Q3087790
     - source: colbase-szk002942
       accessed: 2026-11-06
+  attribution_label:
+    - source: colbase-szk002942
+      accessed: 2026-11-13

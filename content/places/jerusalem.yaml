@@ -1,10 +1,13 @@
 public_id: 117662
 name: Jerusalem
 kind: settlement
+country_code: IL
 location: [35.23416, 31.77668]
 wikidata_id: Q1218
 metadata:
   sources: [Wikidata Q1218 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4028586-8
 sources:
   kind:
     - accessed: 2026-11-10

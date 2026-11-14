@@ -1,6 +1,8 @@
 public_id: 108894
 name: Interlaken-Oberhasli administrative district
 kind: site
+parent: switzerland
+country_code: CH
 location: [7.86667, 46.68333]
 wikidata_id: Q678742
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-02
       property: P31
+      wikidata: Q678742
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q678742
   location:
     - accessed: 2026-11-02

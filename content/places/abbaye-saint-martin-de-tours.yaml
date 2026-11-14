@@ -1,6 +1,8 @@
 public_id: 117132
 name: abbaye Saint-Martin de Tours
 kind: site
+parent: tours
+country_code: FR
 location: [0.68278, 47.39306]
 wikidata_id: Q19817291
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q19817291
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q19817291
   location:
     - accessed: 2026-11-09

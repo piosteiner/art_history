@@ -20,6 +20,12 @@ relationships:
       - accessed: 2026-11-03
         property: P20
         wikidata: Q317041
+  - type: student_of
+    to: artist/franz-von-stuck
+    sources:
+      - accessed: 2026-11-13
+        property: P1066
+        wikidata: Q317041
   - type: studied_at
     to: institution/academy-of-fine-arts-munich
     sources:

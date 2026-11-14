@@ -1,6 +1,9 @@
 public_id: 103373
 name: cloisonnism
 kind: movement
+parent: post-impressionism
+period: 1888-03/
+period_label: from March 1888
 wikidata_id: Q889525
 metadata:
   sources: [Wikidata Q889525 (retrieved 2026-10-29)]
@@ -9,3 +12,11 @@ sources:
     - accessed: 2026-10-29
       property: P31
       wikidata: Q889525
+  parent:
+    - source: wikipedia-en-cloisonnism
+      locator: lead
+      accessed: 2026-11-13
+  period:
+    - source: wikipedia-en-cloisonnism
+      locator: lead
+      accessed: 2026-11-13

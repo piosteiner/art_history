@@ -1,6 +1,7 @@
 public_id: 117314
 title_lang: nl
 title: Antwerps kabinet
+attribution_label: Anonymous, Antwerp
 created: c. 1650
 created_span: uncertain
 kind: kunstschrank
@@ -46,3 +47,7 @@ sources:
     - url: https://www.rijksmuseum.nl/en/collection/BK-NM-11906-1
       source: rijksmuseum-nl
       accessed: 2026-11-11
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 11 (12.12.2024), Folie 51
+      accessed: 2026-11-13

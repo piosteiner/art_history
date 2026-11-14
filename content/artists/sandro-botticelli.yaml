@@ -12,6 +12,14 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q5669
+  - kind: birth
+    lang: it
+    role: original
+    text: Alessandro Filipepi
+    sources:
+      - url: https://www.uffizi.it/en/artworks/boticelli-adoration-lami
+        source: uffizi-artworks
+        accessed: 2026-11-13
 birth: c. 1445
 death: 1510-05-27
 wikidata_id: Q5669

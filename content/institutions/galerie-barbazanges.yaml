@@ -1,3 +1,31 @@
 public_id: 111915
 name: Galerie Barbazanges
+kind: gallery
+founded: 1903
+dissolved: 1928
+place: paris
+location: [2.31104, 48.8724]
 wikidata_id: Q1491850
+metadata:
+  sources: [Wikidata Q1491850 (retrieved 2026-11-13)]
+identifiers:
+  bnf: "128868693"
+  ulan: "500310153"
+  viaf: "151274345"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q1491850
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q1491850
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q1491850
+  dissolved:
+    - accessed: 2026-11-13
+      property: P576
+      wikidata: Q1491850

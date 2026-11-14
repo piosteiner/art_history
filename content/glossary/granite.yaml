@@ -1,3 +1,14 @@
 public_id: 108280
 name: granite
 category: material
+parent: stone
+definition: A coarse-grained igneous rock of quartz, feldspar and mica, hard and durable — used since ancient Egypt for monuments, sarcophagi and sculpture.
+description_md: |-
+  Granite is a coarse-grained igneous rock composed mostly of quartz, alkali feldspar, mica and plagioclase, formed from silica-rich magma that cools slowly underground; it is common in the continental crust.[[source/wikipedia-en-granite|§ Introduction]] Granite industries are among the oldest in the world, going back to ancient Egypt: the Great Pyramid of Giza holds a sarcophagus of red Aswan granite, and the Pyramid of Menkaure was built of limestone and granite blocks.[[source/wikipedia-en-granite|§ Industry and uses]][[source/wikipedia-en-granite|§ Antiquity]] Imperial Roman granite came mainly from Egypt, and granite became "an integral part of the Roman language of monumental architecture"; after quarrying ceased around the third century AD, the stone was reused as spolia.[[source/wikipedia-en-granite|§ Antiquity]] In the 19th century steam-powered cutting and polishing tools made polished granite a favourite stone for memorials.[[source/wikipedia-en-granite|§ Sculpture and memorials]]
+
+  In this database granite is recorded for the [[artwork/ganghwa-dolmen-bugeun-ri|dolmen on Kanghwa island]] west of Seoul, a northern "table"-type dolmen of the early Bronze Age, about 1000 BC; such dolmens were tombs, probably of people of higher rank such as clan chiefs.[[source/portal-2000|p. 30, fig. 13]]
+sources:
+  definition:
+    - source: wikipedia-en-granite
+      locator: § Introduction
+      accessed: 2026-11-13

@@ -1,14 +1,22 @@
 public_id: 117678
 name: Beaconsfield
 kind: settlement
+parent: england
+country_code: GB
 location: [-0.63468, 51.60087]
 wikidata_id: Q812906
 metadata:
   sources: [Wikidata Q812906 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 125391-8
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q812906
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q812906
   location:
     - accessed: 2026-11-10

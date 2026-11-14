@@ -1,11 +1,30 @@
 public_id: 117705
 name: Chung-Ang University
 founded: 1918
+place: seoul
+location: [126.95503, 37.50489]
+website_url: https://www.cau.ac.kr/
 wikidata_id: Q41790
 metadata:
   sources: [Wikidata Q41790 (retrieved 2026-11-10)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/00/CAU_Main_Gate.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:CAU_Main_Gate.jpg
+    license: CC BY-SA 3.0
+    credit: Chunganguniversity
+identifiers:
+  lc: n79072798
+  viaf: "137194720"
 sources:
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q41790
   founded:
     - accessed: 2026-11-10
       property: P571
+      wikidata: Q41790
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q41790

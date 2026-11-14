@@ -1,0 +1,65 @@
+public_id: 122348
+name: Taipei
+names:
+  - lang: ja
+    role: translation
+    text: 台北市
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1867
+  - lang: zh
+    role: original
+    text: 臺北市
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1867
+  - lang: ko
+    role: translation
+    text: 타이베이시
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1867
+  - lang: de
+    role: translation
+    text: Taipeh
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1867
+  - lang: es
+    role: translation
+    text: Taipéi
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1867
+  - lang: ru
+    role: translation
+    text: Тайбэй
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1867
+  - lang: pt
+    role: translation
+    text: Taipé
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q1867
+kind: settlement
+parent: taipei-city
+country_code: TW
+location: [121.5625, 25.0375]
+wikidata_id: Q1867
+metadata:
+  sources: [Wikidata Q1867 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q1867
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q1867
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q1867

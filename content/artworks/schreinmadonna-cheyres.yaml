@@ -1,6 +1,7 @@
 public_id: 117279
 title_lang: de
 title: Schreinmadonna von Cheyres (Notre-Dame de Grâce)
+attribution_label: Anonymous, Cologne
 created: c. 1330–1340
 created_span: uncertain
 kind: sculpture
@@ -14,6 +15,24 @@ description_md: |-
   Like many Shrine Madonnas whose interiors are divided into several cells, the Yvonand Virgin carries only seven separate scenes inside – a number Elina Gertsman relates to the medieval notion of a womb with seven cells.[[source/gertsman-2015-worlds-within|p. 200]] Its literature includes a study by Schmid on the "Schreinmadonna von Cheyres".[[source/gertsman-2015-worlds-within|p. 199]]
 
   In the lecture it followed the Upper Rhenish Shrine Madonna in the Bode-Museum (around 1330) as a near contemporary from Cologne.[[source/ganz-2024-aus-dem-wald|Sitzung 7 (14.11.2024), Folie 106–109]]
+provenance:
+  - owner: institution/eglise-de-cheyres
+    direct: true
+    label: Pfarrkirche Cheyres
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 7 (14.11.2024), Folie 108
+        accessed: 2026-11-13
+  - owner_label: unknown (thief)
+    role: possessor
+    acquired: 1978
+    method: theft
+    direct: true
+    notes_md: "Stolen from the parish church of Cheyres in 1978 (the lecture's caption of 2024: \"1978 gestohlen\"). A recovery is not known to us — no other source on the theft found (2026-11-13)."
+    sources:
+      - source: ganz-2024-aus-dem-wald
+        locator: Sitzung 7 (14.11.2024), Folie 108
+        accessed: 2026-11-13
 sources:
   medium:
     - source: ganz-2024-aus-dem-wald
@@ -36,3 +55,7 @@ sources:
   title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 7 (14.11.2024), Folien 108–109
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 108
+      accessed: 2026-11-13

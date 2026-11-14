@@ -1,14 +1,22 @@
 public_id: 117189
 name: Rennes
 kind: settlement
+parent: france
+country_code: FR
 location: [-1.68083, 48.11417]
 wikidata_id: Q647
 metadata:
   sources: [Wikidata Q647 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4116965-7
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q647
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q647
   location:
     - accessed: 2026-11-09

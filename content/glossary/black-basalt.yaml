@@ -1,3 +1,14 @@
 public_id: 101711
 name: black basalt
 category: material
+parent: stone
+definition: A dark, fine-grained volcanic rock, very hard to work, used since antiquity for stelae and statues.
+description_md: |-
+  Basalt is a fine-grained volcanic rock formed by the rapid cooling of lava rich in magnesium and iron; more than 90 % of all volcanic rock on Earth is basalt.[[source/wikipedia-en-basalt|§ Introduction]] The name comes from Late Latin *basaltes*, a misspelling of *basanites*, "very hard stone", from the Greek for touchstone; Georgius Agricola fixed the modern term in 1546 for the black rock beneath Stolpen castle, believing it to be the stone described by Pliny the Elder.[[source/wikipedia-en-basalt|§ Etymology]] Besides building blocks and cobblestones, basalt is used for statues.[[source/wikipedia-en-basalt|§ Uses]]
+
+  The best-known basalt monument in this database is the stele bearing the [[artwork/stele-with-the-code-of-hammurabi|Code of Hammurabi]], composed about 1753 BC: a stele 2.25 m high with a relief of [[person/hammurabi|Hammurabi]] before the sun god Shamash above some 4,130 lines of cuneiform.[[source/wikipedia-en-code-of-hammurabi|§ Introduction]] It was found in 1901 at Susa, where it had been taken as plunder some 600 years after it was made, and is now in the [[institution/musee-du-louvre|Louvre]].[[source/wikipedia-en-code-of-hammurabi|§ Introduction]]
+sources:
+  definition:
+    - source: wikipedia-en-basalt
+      locator: § Introduction
+      accessed: 2026-11-13

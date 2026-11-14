@@ -1,6 +1,8 @@
 public_id: 103108
 name: Troubadour style
 kind: movement
+parent: romanticism
+period: early 19th century–1848
 wikidata_id: Q3501307
 metadata:
   sources: [Wikidata Q3501307 (retrieved 2026-10-28)]
@@ -9,3 +11,11 @@ sources:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q3501307
+  parent:
+    - source: wikipedia-en-troubadour-style
+      locator: lead; § History
+      accessed: 2026-11-13
+  period:
+    - source: wikipedia-en-troubadour-style
+      locator: lead; § History
+      accessed: 2026-11-13

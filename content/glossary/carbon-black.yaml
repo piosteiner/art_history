@@ -1,3 +1,10 @@
 public_id: 117126
 name: carbon black
 category: material
+definition: A black pigment of almost pure carbon, traditionally made by charring bones, ivory or vine stems or by collecting the soot of oil lamps.
+description_md: "Carbon black is a material produced by the incomplete combustion of coal tar, vegetable matter or petroleum products in a limited supply of air; it is a form of paracrystalline carbon.[[source/wikipedia-en-carbon-black|introduction]] As a pigment it was traditionally produced by charring organic materials such as wood or bone, and its traditional names record the method: ivory black from charred bones or ivory, vine black from charred dried grape vines and stems, lamp black from the soot of oil lamps.[[source/wikipedia-en-carbon-black|§ Pigment]] All of these blacks were used as paint pigments since prehistoric times; Rembrandt, Vermeer, Van Dyck and, later, Cézanne, Picasso and Manet employed them — in Manet's *Music in the Tuileries* the black dresses and the men's hats are painted in ivory black.[[source/wikipedia-en-carbon-black|§ Pigment]] Newer industrial methods have largely superseded the traditional sources.[[source/wikipedia-en-carbon-black|§ Pigment]] Soot is also the basis of East Asian black ink: [[term/india-ink|India ink]] is made of fine lampblack, and Japanese *sumi* of pine soot pressed into an [[term/inkstick|inkstick]].[[source/wikipedia-en-india-ink|§ Composition]][[source/history-of-japanese-art|p. 220]]"
+sources:
+  definition:
+    - source: wikipedia-en-carbon-black
+      locator: § Pigment
+      accessed: 2026-11-13

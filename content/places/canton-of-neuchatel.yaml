@@ -1,14 +1,23 @@
 public_id: 108892
 name: Canton of Neuchâtel
 kind: region
+parent: switzerland
+country_code: CH
 location: [6.78333, 46.98333]
 wikidata_id: Q12738
 metadata:
   sources: [Wikidata Q12738 (retrieved 2026-11-02)]
+identifiers:
+  gnd: 4041745-1
+  hls: "007397"
 sources:
   kind:
     - accessed: 2026-11-02
       property: P31
+      wikidata: Q12738
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q12738
   location:
     - accessed: 2026-11-02

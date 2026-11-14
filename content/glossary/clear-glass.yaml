@@ -1,3 +1,14 @@
 public_id: 102164
 name: clear glass
 category: material
+parent: glass
+definition: Colourless, transparent glass — in stained-glass windows the base that is coloured with metal oxides or flashed with a coloured layer, and used plain for light.
+description_md: |-
+  Ordinary soda-lime [[term/glass|glass]] looks colourless when thin, although iron impurities give it a green tint visible in thick pieces; additives such as manganese dioxide were used to reduce the tint for plain window glass.[[source/wikipedia-en-stained-glass|§ Transparent glass]] In stained glass the primary colouring method is to mix metal oxides into glass that is originally colourless, producing "pot metal" coloured all through; in flashed glass a thin coloured layer is fused onto colourless glass, which could be abraded to reveal the clear glass beneath.[[source/wikipedia-en-stained-glass|§ "Pot metal" and flashed glass]] In the 13th century Murano glassmakers developed an exceptionally clear colourless glass, *cristallo*, named for its likeness to rock crystal.[[source/wikipedia-en-glass|§ History]]
+
+  From the 10th century glass was used in the stained-glass windows of churches, with famous examples at Chartres and Saint-Denis,[[source/wikipedia-en-glass|§ History]] and Chartres was the greatest centre of stained-glass manufacture.[[source/wikipedia-en-stained-glass|§ Medieval glass in Europe]] The [[artwork/notre-dame-de-la-belle-verriere|Belle Verrière]] window at Chartres, recorded here with clear glass, keeps a Romanesque Virgin and Child on three panels of the late 12th century, reused in the new cathedral built after the fire of 1194.[[source/wikipedia-fr-belle-verriere|§ Introduction]] The figure is dated about 1180, the window in its present form 1215–1220.[[source/wikipedia-fr-belle-verriere|§ Fiche signalétique]] Its narrative scenes are framed by a red border edged with a double fillet of blue and white.[[source/wikipedia-fr-belle-verriere|§ Composition du vitrail]]
+sources:
+  definition:
+    - source: wikipedia-en-stained-glass
+      locator: § Transparent glass
+      accessed: 2026-11-13

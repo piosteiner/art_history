@@ -2,8 +2,8 @@ public_id: 116666
 name: Cesare Andreoni
 given_name: Cesare
 family_name: Andreoni
-birth: 1903
-death: 1961
+birth: 1903-06-30
+death: 1961-07-01
 biography_md: |-
   Cesare Andreoni (1903–1961) was an Italian [[movement/futurism|Futurist]] painter and designer, born in [[place/milan|Milan]] on 30 June 1903 and died there on 1 July 1961; he lived and worked in Milan all his life [[source/wikipedia-it-cesare-andreoni|§ Biografia]].
 
@@ -19,6 +19,19 @@ biography_md: |-
 wikidata_id: Q52150981
 metadata:
   sources: [Wikidata Q52150981 (retrieved 2026-11-07)]
+relationships:
+  - type: born_in
+    to: place/milan
+    sources:
+      - source: wikipedia-it-cesare-andreoni
+        locator: introduction
+        accessed: 2026-11-13
+  - type: died_in
+    to: place/milan
+    sources:
+      - source: wikipedia-it-cesare-andreoni
+        locator: introduction
+        accessed: 2026-11-13
 identifiers:
   bnf: "123870965"
   gnd: "119156520"
@@ -29,10 +42,10 @@ identifiers:
   viaf: "77119460"
 sources:
   birth:
-    - accessed: 2026-11-07
-      property: P569
-      wikidata: Q52150981
+    - source: wikipedia-it-cesare-andreoni
+      locator: introduction
+      accessed: 2026-11-13
   death:
-    - accessed: 2026-11-07
-      property: P570
-      wikidata: Q52150981
+    - source: wikipedia-it-cesare-andreoni
+      locator: introduction
+      accessed: 2026-11-13

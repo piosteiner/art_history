@@ -1,6 +1,8 @@
 public_id: 117573
 name: Dzerzhinsky Street, 11/2
 kind: building
+parent: russia
+country_code: RU
 location: [49.11608, 55.79649]
 wikidata_id: Q55868448
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q55868448
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q55868448
   location:
     - accessed: 2026-11-10

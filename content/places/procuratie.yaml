@@ -1,6 +1,8 @@
 public_id: 117149
 name: Procuratie
 kind: site
+parent: venice
+country_code: IT
 location: [12.33778, 45.43417]
 wikidata_id: Q162796
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q162796
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q162796
   location:
     - accessed: 2026-11-09

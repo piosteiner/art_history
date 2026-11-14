@@ -2,15 +2,39 @@ public_id: 116683
 name: Basilica of Saint Augustine in Campo Marzio
 kind: basilica
 founded: 1401/1500
+place: rome
+location: [12.47426, 41.9008]
+address: Piazza di S. Agostino, 00186 Roma
+website_url: https://www.agostiniani.it/comunita-agostiniane-provincia/basilica-s-agostino-roma/
 wikidata_id: Q1424095
 metadata:
   sources: [Wikidata Q1424095 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Sant%27Agostino%2C_Rome.jpg/1280px-Sant%27Agostino%2C_Rome.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sant%27Agostino,_Rome.jpg
+    license: CC0
+    credit: Wilfredor
+identifiers:
+  gnd: 4505864-7
+  viaf: "89159474184427661667"
 sources:
   kind:
     - accessed: 2026-11-07
       property: P31
       wikidata: Q1424095
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q1424095
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q1424095
   founded:
     - accessed: 2026-11-07
       property: P571
+      wikidata: Q1424095
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q1424095

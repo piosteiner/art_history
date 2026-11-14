@@ -1,14 +1,22 @@
 public_id: 117190
 name: Westminster Abbey
 kind: site
+parent: city-of-westminster
+country_code: GB
 location: [-0.12737, 51.4994]
 wikidata_id: Q5933
 metadata:
   sources: [Wikidata Q5933 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4206437-5
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q5933
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q5933
   location:
     - accessed: 2026-11-09

@@ -1,6 +1,8 @@
 public_id: 117693
 name: Asa
 kind: site
+parent: japan
+country_code: JP
 location: [132.43361, 34.54597]
 wikidata_id: Q11450271
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q11450271
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q11450271
   location:
     - accessed: 2026-11-10

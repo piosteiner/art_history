@@ -1,3 +1,15 @@
 public_id: 102819
 name: silk
 category: material
+definition: A natural protein fibre from the cocoons of the mulberry silkworm, first woven in China; a textile and, in East Asia, a support for painting and calligraphy.
+description_md: |-
+  Silk is a natural protein fibre, mainly fibroin with a coating of sericin, that can be woven or knitted into textiles; the best-known silk comes from the cocoons of the larvae of the mulberry silkworm *Bombyx mori*, reared in captivity (sericulture).[[source/wikipedia-en-silk|introduction]] It was first made into fabric in ancient China, where the earliest surviving silk cloth dates from about 3630 BC; silk was also a surface for writing, light, durable in a damp climate and absorbing ink well.[[source/wikipedia-en-silk|§ History › China]] Sericulture reached Korea around 200 BC, and in Japan it has been practised since the Yayoi period.[[source/wikipedia-en-silk|§ History › China; § Japan]] China was the most famous source of raw silk on the Silk Roads, while Sasanian Persia was famous for weaving it into brocades.[[source/history-of-japanese-art|p. 48]] The [[artwork/brocade-lion-hunting-horyu-ji|seventh-century brocaded panel with medallions of hunting lions]] at Hōryūji was almost certainly woven in Persia, carried across the Silk Roads to China and from there to Japan.[[source/history-of-japanese-art|p. 52, fig. 56]]
+
+  In Japanese painting silk and paper are the supports of the hanging scroll: the *kakemono* consists of a painting or calligraphy executed on paper or silk mounted on a paper backing and framed in figured silk or brocade.[[source/history-of-japanese-art|p. 220]] Sliding doors and screens were occasionally painted on silk as well.[[source/history-of-japanese-art|p. 245]] Buddhist paintings could carry *kirikane*, cut gold adhered to the silk surface, as on the [[artwork/toji-five-great-myoo-paintings|Kongō Yasha]] from a set of five Myōō of 1127 at Tōji.[[source/history-of-japanese-art|pp. 156–158, fig. 192]] In the Meiji period Fenollosa urged a new painting combining Western perspective and shading with Japanese techniques such as water-based pigments on silk.[[source/history-of-japanese-art|p. 363]]
+
+  Among the many paintings on silk in this database are the [[artwork/taima-mandara-nara|Taima Mandara]][[source/history-of-japanese-art|pp. 205–207, figs. 238–239]], the [[artwork/portrait-of-yoritomo-jingo-ji|Portrait of Minamoto no Yoritomo]] at Jingoji[[source/history-of-japanese-art|pp. 168–169, fig. 201]], [[artist/ito-jakuchu|Itō Jakuchū]]'s [[artwork/jakuchu-pond-insects|Insects at a Pond]][[source/history-of-japanese-art|p. 324, fig. 376]] and [[artist/yokoyama-taikan|Yokoyama Taikan]]'s [[artwork/taikan-floating-lights|Floating Lights]].[[source/history-of-japanese-art|pp. 366–367, fig. 434]]
+sources:
+  definition:
+    - source: wikipedia-en-silk
+      locator: introduction; § History › China
+      accessed: 2026-11-13

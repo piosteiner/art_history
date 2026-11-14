@@ -1,5 +1,6 @@
 public_id: 117088
 title: Imad-Madonna
+attribution_label: Anonymous, Westphalian
 created: 11th century
 created_span: uncertain
 medium: Lindenholz, Eichenholz, Reste ursprünglicher Fassung
@@ -55,3 +56,7 @@ sources:
   institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 4 (17.10.2024), Folie 16
+  attribution_label:
+    - source: endemann-2020-wood-carving-and-staffering
+      locator: p. 147, n. 16
+      accessed: 2026-11-13

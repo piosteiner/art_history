@@ -1,6 +1,7 @@
 public_id: 117253
 title_lang: en
 title: Virgin and Child in Majesty (Autun Madonna)
+attribution_label: Anonymous, Burgundian
 created: 1130/1140
 kind: sculpture
 medium: birch, polychromy over gesso
@@ -47,3 +48,7 @@ sources:
     - url: https://www.metmuseum.org/art/collection/search/470311
       source: metropolitan-museum-collection
       accessed: 2026-11-11
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 34
+      accessed: 2026-11-13

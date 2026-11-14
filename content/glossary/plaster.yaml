@@ -1,3 +1,17 @@
 public_id: 101527
 name: plaster
 category: material
+definition: A paste of gypsum, lime or cement mixed with water that sets hard — the ground of wall paintings and the material of sculptors' models and casts.
+description_md: |-
+  Plaster is a building material for interior walls and ceilings and for moulding and casting decorative elements; its common types contain gypsum, lime or cement, are made as a dry powder and mixed with water into a paste that hardens as it sets.[[source/wikipedia-en-plaster|§ Introduction]] It was used in building and decoration in the Middle East at least 5,000 years ago, and in Egypt burnt gypsum served as mortar and wall facing for the pyramids.[[source/wikipedia-en-plaster|§ History]] Gypsum plaster is called plaster of Paris after the large deposit of gypsum at Montmartre.[[source/wikipedia-en-plaster|§ Gypsum plaster]]
+
+  ## In art
+
+  Lime plaster is the traditional ground of [[term/fresco|fresco]]: the pigments are laid on a thin wet top layer, the *intonaco*, and become part of it, as on [[artist/michelangelo|Michelangelo]]'s [[artwork/sistine-chapel-ceiling|Sistine Chapel ceiling]].[[source/wikipedia-en-plaster|§ Art]] Because it expands as it hardens and then contracts slightly, plaster is excellent for moulds and is often used for casting sculpture.[[source/wikipedia-en-plaster|§ Art]] [[artist/vera-mukhina|Vera Mukhina]]'s team worked from four plaster models, the tallest 95 cm, when building [[artwork/worker-and-kolkhoz-woman|Worker and Kolkhoz Woman]].[[source/wikipedia-en-worker-and-kolkhoz-woman|§ Manufacturing and installation]] In late-medieval German sculpture, blemishes and joins in the wood were made good "with a chalk and plaster paste" before the gesso.[[source/baxandall-1980-limewood-sculptors|p. 41]]
+
+  Works recorded with plaster in this database include [[artist/gustav-klimt|Gustav Klimt]]'s [[artwork/beethoven-frieze|Beethoven Frieze]], [[artist/eugene-delacroix|Eugène Delacroix]]'s [[artwork/jacob-wrestling-with-the-angel-delacroix|Jacob Wrestling with the Angel]], the [[artwork/takamatsuzuka-tomb-murals|Takamatsuzuka tomb murals]] and [[artist/auguste-rodin|Auguste Rodin]]'s [[artwork/the-gates-of-hell-orsay|Gates of Hell]] in the Musée d'Orsay.
+sources:
+  definition:
+    - source: wikipedia-en-plaster
+      locator: § Introduction
+      accessed: 2026-11-13

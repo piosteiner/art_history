@@ -1,3 +1,45 @@
 public_id: 115588
 name: Museum Boijmans Van Beuningen
+kind: museum
+founded: 1849
+place: rotterdam
+location: [4.47334, 51.91422]
+address: Museumpark 18
+website_url: https://www.boijmans.nl/
+collection_url: https://www.boijmans.nl/collectie/kunstwerken
 wikidata_id: Q679527
+metadata:
+  sources: [Wikidata Q679527 (retrieved 2026-11-13)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Museumpark_02.JPG/1280px-Museumpark_02.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Museumpark_02.JPG
+    license: Public domain
+    credit: K. Siereveld
+identifiers:
+  bnf: "118666063"
+  gnd: 1007928-2
+  idref: "027647889"
+  lc: n81056593
+  ulan: "500308264"
+  viaf: "158031734"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q679527
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q679527
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q679527
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q679527
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q679527

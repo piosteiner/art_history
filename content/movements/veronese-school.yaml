@@ -1,6 +1,8 @@
 public_id: 103291
 name: Veronese school
 kind: movement
+parent: renaissance
+period: 16th century
 wikidata_id: Q3578530
 metadata:
   sources: [Wikidata Q3578530 (retrieved 2026-10-28)]
@@ -9,3 +11,11 @@ sources:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q3578530
+  parent:
+    - source: wikipedia-it-storia-della-pittura-a-verona
+      locator: § Rinascimento, la scuola veronese di pittura
+      accessed: 2026-11-13
+  period:
+    - source: wikipedia-it-storia-della-pittura-a-verona
+      locator: § Rinascimento, la scuola veronese di pittura
+      accessed: 2026-11-13

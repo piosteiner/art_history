@@ -1,6 +1,8 @@
 public_id: 117694
 name: Higashimatsuyama
 kind: site
+parent: japan
+country_code: JP
 location: [139.39992, 36.04217]
 wikidata_id: Q823907
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q823907
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q823907
   location:
     - accessed: 2026-11-10

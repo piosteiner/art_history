@@ -1,10 +1,22 @@
 public_id: 116607
 name: Pacific War
+parent: world-war-ii
 period: 1941-12-08
 wikidata_id: Q184425
 metadata:
   sources: [Wikidata Q184425 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/US_landings.jpg/1280px-US_landings.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:US_landings.jpg
+    license: Public domain
+    credit: General MacArthur's General Staff
+identifiers:
+  gnd: 4249775-9
 sources:
+  parent:
+    - accessed: 2026-11-13
+      property: P361
+      wikidata: Q184425
   period:
     - accessed: 2026-11-06
       property: P585

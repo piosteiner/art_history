@@ -1,3 +1,45 @@
 public_id: 112023
 name: Museum Folkwang
+kind: museum
+founded: 1902-07-09
+place: essen
+location: [7.00417, 51.4417]
+address: Museumsplatz 1
+website_url: https://www.museum-folkwang.de/
+collection_url: https://sammlung-online.museum-folkwang.de/
 wikidata_id: Q125634
+metadata:
+  sources: [Wikidata Q125634 (retrieved 2026-11-13)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Frontansicht_Museum_Folkwang.JPG/1280px-Frontansicht_Museum_Folkwang.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Frontansicht_Museum_Folkwang.JPG
+    license: CC BY-SA 3.0
+    credit: Julius1990
+identifiers:
+  bnf: "149455329"
+  gnd: 4018390-7
+  idref: "033108358"
+  lc: n50065358
+  ulan: "500300157"
+  viaf: "139412268"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q125634
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q125634
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q125634
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q125634
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q125634

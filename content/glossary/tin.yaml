@@ -1,3 +1,13 @@
 public_id: 117122
 name: tin
 category: material
+definition: A soft, silvery-white metal, alloyed with copper to make bronze; in medieval art also beaten into foil and gilded on carved figures.
+description_md: |-
+  Tin is a soft, silvery-grey metal, obtained chiefly from the mineral cassiterite; a bar of it can be bent by hand.[[source/wikipedia-en-tin|§ Introduction]] Its first large-scale use was in [[term/bronze|bronze]], made of about one part tin to seven of copper, from as early as 3000 BC; pure metallic tin was produced after 600 BC, and pewter, an alloy of 85–90 % tin, has been used for tableware since the Bronze Age.[[source/wikipedia-en-tin|§ Introduction]] Tin compounds also gave painters pigments, among them lead-tin yellow, historically important in oil painting.[[source/wikipedia-en-tin|§ Pigments]]
+
+  Romanesque wooden figures of the Madonna were occasionally sheathed with copper, lead or tin, "which could be gilded in simulation of gold".[[source/forsyth-1972-the-throne-of-wisdom|p. 9, n. 1]] In German retables around 1500 the finest patterned surfaces were made "with appliqué tin-foil": the foil was stamped in a patterned matrix, mordant-gilded, painted with resin-bound pigment and attached to the inner drapery of the principal figures, its striations imitating the weave of brocade.[[source/baxandall-1980-limewood-sculptors|p. 42]]
+sources:
+  definition:
+    - source: wikipedia-en-tin
+      locator: § Introduction
+      accessed: 2026-11-13

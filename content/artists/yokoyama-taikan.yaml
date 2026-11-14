@@ -27,7 +27,7 @@ names:
   - lang: ru
     role: translation
     text: Ёкояма Тайкан
-birth: 1868-10-02
+birth: 1868-11-02
 death: 1958-02-26
 biography_md: |-
   Yokoyama Taikan (1868–1958) was one of the three pupils of [[artist/hashimoto-gaho|Hashimoto Gahō]] who led the nihonga movement in the first three decades of the twentieth century, with [[artist/shimomura-kanzan|Shimomura Kanzan]] and [[artist/hishida-shunso|Hishida Shunsō]]. [[source/history-of-japanese-art|p. 364]]
@@ -124,9 +124,9 @@ identifiers:
   viaf: "45639225"
 sources:
   birth:
-    - accessed: 2026-11-01
-      property: P569
-      wikidata: Q2034441
+    - url: https://d-nb.info/gnd/13940046X
+      source: gnd
+      accessed: 2026-11-13
   death:
     - accessed: 2026-11-01
       property: P570

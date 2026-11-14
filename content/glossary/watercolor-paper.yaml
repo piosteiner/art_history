@@ -2,3 +2,13 @@ public_id: 101418
 name: watercolor paper
 category: material
 parent: paper
+definition: Paper made for watercolour, often wholly or partly of cotton, sized and textured so that it takes washes without distorting; cold-pressed (textured) or hot-pressed (smooth).
+description_md: |-
+  Paper is the conventional and most common support for [[term/watercolor-paint|watercolour]], usually special watercolour paper; it is often made wholly or partly of cotton, which gives the right texture and keeps the sheet from distorting when wet.[[source/wikipedia-en-watercolor-painting|§ Introduction]] Most watercolour papers are cold-pressed, with a textured surface; hot-pressed paper is smoother.[[source/wikipedia-en-watercolor-painting|§ Introduction]] The transparency of watercolour comes from the gum binder being absorbed by the paper, leaving a layer of pigment particles through which the paper shimmers.[[source/wikipedia-en-watercolor-painting|§ Introduction]] The popularity of watercolour in 19th-century England brought heavier and more sized wove papers made for it.[[source/wikipedia-en-watercolor-painting|§ English school]]
+
+  [[artist/albrecht-durer|Albrecht Dürer]], who painted botanical, wildlife and landscape watercolours, is generally considered among the earliest masters of the medium.[[source/wikipedia-en-watercolor-painting|§ History]] In this database his [[artwork/little-owl|Little Owl]] of 1508 is recorded on watercolour paper.
+sources:
+  definition:
+    - source: wikipedia-en-watercolor-painting
+      locator: § Introduction
+      accessed: 2026-11-13

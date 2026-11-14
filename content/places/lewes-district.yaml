@@ -1,0 +1,21 @@
+public_id: 122342
+name: Lewes District
+kind: region
+parent: england
+location: [0.00889, 50.87389]
+wikidata_id: Q1254688
+metadata:
+  sources: [Wikidata Q1254688 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q1254688
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q1254688
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q1254688

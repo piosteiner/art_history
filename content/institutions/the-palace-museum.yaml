@@ -2,9 +2,24 @@ public_id: 116487
 name: The Palace Museum
 kind: museum
 founded: 1420
+place: dongcheng-district
+location: [116.39083, 39.91556]
+website_url: http://www.dpm.org.cn/
 wikidata_id: Q2047427
 metadata:
   sources: [Wikidata Q2047427 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Forbidden_City_Beijing_Shenwumen_Gate.JPG/1280px-Forbidden_City_Beijing_Shenwumen_Gate.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Forbidden_City_Beijing_Shenwumen_Gate.JPG
+    license: CC BY-SA 3.0
+    credit: user:kallgan
+identifiers:
+  bnf: 12285613n
+  gnd: 50510-9
+  idref: "031688616"
+  lc: n81108982
+  ulan: "500307587"
+  viaf: "161056277"
 sources:
   kind:
     - accessed: 2026-11-06
@@ -13,4 +28,8 @@ sources:
   founded:
     - accessed: 2026-11-06
       property: P571
+      wikidata: Q2047427
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q2047427

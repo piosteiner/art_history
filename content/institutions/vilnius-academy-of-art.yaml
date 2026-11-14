@@ -2,13 +2,30 @@ public_id: 117709
 name: Vilnius Academy of Art
 kind: university
 founded: 1793
+place: lithuania
+website_url: http://www.vda.lt/
 wikidata_id: Q1476319
 metadata:
   sources: [Wikidata Q1476319 (retrieved 2026-11-10)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/VDA_by_Augustas_Didzgalvis.jpg/1280px-VDA_by_Augustas_Didzgalvis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:VDA_by_Augustas_Didzgalvis.jpg
+    license: CC BY-SA 4.0
+    credit: Augustas Didžgalvis
+identifiers:
+  bnf: "145367190"
+  gnd: 3022659-4
+  idref: "185015832"
+  lc: no97021715
+  viaf: "125784716"
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q1476319
+  place:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q1476319
   founded:
     - accessed: 2026-11-10

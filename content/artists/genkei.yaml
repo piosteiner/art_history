@@ -3,3 +3,28 @@ name: Genkei
 wikidata_id: Q11564095
 metadata:
   sources: [Wikidata Q11564095 (retrieved 2026-11-01)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-13
+        property: P27
+        wikidata: Q11564095
+  - type: worked_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-11-13
+        property: P937
+        wikidata: Q11564095
+  - type: student_of
+    to: artist/unkei
+    sources:
+      - accessed: 2026-11-13
+        property: P1066
+        wikidata: Q11564095
+  - type: associated_with
+    to: movement/kei-school
+    sources:
+      - accessed: 2026-11-13
+        property: P135
+        wikidata: Q11564095

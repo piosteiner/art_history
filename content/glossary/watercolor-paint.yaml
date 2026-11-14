@@ -2,3 +2,13 @@ public_id: 101398
 name: watercolor paint
 category: material
 parent: paint
+definition: Paint of pigment suspended in water with a water-soluble binder, traditionally gum arabic; laid on thinly and transparently, usually on paper.
+description_md: |-
+  Watercolour paint consists of a pigment, gum arabic as a binder holding it in suspension, additives such as glycerin, ox gall or honey, and water as the solvent that thins it.[[source/wikipedia-en-watercolor-painting|§ Watercolor paint]] From the sixteenth to the eighteenth century watercolour binders were sugars and/or hide glues; gum arabic has been the preferred binder since the nineteenth century.[[source/wikipedia-en-watercolor-painting|§ Watercolor paint]] The usual support is paper, often special watercolour paper, but silk, vellum, ivory and other surfaces are also used.[[source/wikipedia-en-watercolor-painting|introduction]] Opaque watercolour is called bodycolour or [[term/gouache-paint|gouache]]; nineteenth-century English painters exalted "transparent" watercolour, partly because the lead white added for covering power turned black in polluted air.[[source/wikipedia-en-watercolor-painting|§ Watercolor paint; § Transparency]] Until the late eighteenth century painters made their colours themselves from pigments bought from an apothecary or colourman; in 1781 William and Thomas Reeves were rewarded for the moist watercolour cake.[[source/wikipedia-en-watercolor-painting|§ Commercial watercolors]]
+
+  Watercolour was used for manuscript illustration since Egyptian times, but its continuous history as an art medium begins in the Renaissance: [[artist/albrecht-durer|Albrecht Dürer]], who painted botanical, animal and landscape watercolours, is generally considered among its earliest masters.[[source/wikipedia-en-watercolor-painting|§ History]] His watercolours in this database include the [[artwork/young-hare|Young Hare]] (1502), the [[artwork/great-piece-of-turf|Great Piece of Turf]] (1503), the [[artwork/wing-of-a-european-roller|Wing of a European Roller]] (1500), the [[artwork/little-owl|Little Owl]] (1508), the [[artwork/lion|Lion]] (1495) and the [[artwork/courtyard-of-innsbruck-castle-with-clouds|Courtyard of Innsbruck Castle]] (1495); later examples are [[artist/gustav-klimt|Gustav Klimt]]'s [[artwork/the-hydra|Water Serpents I]] (1906) and a drawing of [[artist/egon-schiele|Egon Schiele]] of 1912.
+sources:
+  definition:
+    - source: wikipedia-en-watercolor-painting
+      locator: § Watercolor paint
+      accessed: 2026-11-13

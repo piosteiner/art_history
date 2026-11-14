@@ -1,0 +1,16 @@
+public_id: 122341
+name: canton of Chamonix-Mont-Blanc
+kind: site
+location: [6.84022, 45.94353]
+wikidata_id: Q1724864
+metadata:
+  sources: [Wikidata Q1724864 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q1724864
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q1724864

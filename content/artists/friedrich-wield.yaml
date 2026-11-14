@@ -6,6 +6,18 @@ birth: 1880-03-15
 death: 1940-06-10
 wikidata_id: Q1462823
 relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-11-13
+        property: P27
+        wikidata: Q1462823
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-13
+        property: P27
+        wikidata: Q1462823
   - type: born_in
     to: place/hamburg
     sources:
@@ -16,6 +28,17 @@ relationships:
     sources:
       - property: P20
         wikidata: Q1462823
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bb/Friedrich_Wield.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Friedrich_Wield.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "118632493"
+  lc: nr2005003638
+  rkd: "279278"
+  sikart: "4024341"
+  viaf: "40171625"
 sources:
   birth:
     - property: P569

@@ -23,6 +23,7 @@ names:
     sources:
       - accessed: 2026-11-06
         wikidata: Q707668
+attribution_label: Anonymous
 created: 1597
 location: [135.77033, 34.99146]
 description_md: 'The "ear mound" in Kyoto: the ears and noses of thousands of Koreans killed in the [[event/japanese-invasions-of-korea]] — whole heads were too much to carry, so ears and noses were pickled and brought back. A stupa on top was to bring the dead peace, so they would not haunt the Japanese. [[source/thomsen-2019-war-and-peace|lecture of 5 April 2019, class notes]]'
@@ -52,3 +53,7 @@ sources:
     - accessed: 2026-11-06
       property: P625
       wikidata: Q707668
+  attribution_label:
+    - source: thomsen-2019-war-and-peace
+      locator: lecture of 5 April 2019, class notes
+      accessed: 2026-11-13

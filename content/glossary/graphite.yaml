@@ -1,3 +1,10 @@
 public_id: 101409
 name: graphite
 category: material
+definition: A soft, grey-black crystalline form of carbon that leaves a mark on paper; mined pure at Borrowdale from the sixteenth century, it is the core of the pencil.
+description_md: Graphite is a crystalline form of the element carbon, made of many stacked layers of graphene; it occurs naturally and is the most stable form of carbon.[[source/wikipedia-en-graphite|introduction]] Its ability to leave marks on paper gave it its name, coined in 1789 by the German mineralogist Abraham Gottlob Werner from the Greek *graphein*, "to write or draw".[[source/wikipedia-en-graphite|§ Pencils]] Sometime before 1565 (some sources say as early as 1500) an enormous deposit of very pure, soft graphite was discovered at Seathwaite in Borrowdale, Cumbria; it could easily be cut into sticks and, because of its military use for cannonball moulds, the mine was controlled by the Crown.[[source/wikipedia-en-graphite|§ History of use]] From the sixteenth century all [[term/pencil|pencils]] were made with leads of English natural graphite; the modern mixture of powdered graphite and clay was invented by Nicolas-Jacques Conté in 1795.[[source/wikipedia-en-graphite|§ Pencils]] The older term plumbago was used for natural graphite used for drawing, typically a lump of the mineral without a wood casing; "plumbago drawings" are mostly portraits of the seventeenth and eighteenth centuries.[[source/wikipedia-en-graphite|§ Pencils]] Artists value graphite for detailed, precise drawing over a wide range of values, easy to control and to erase, and often combine it with charcoal or ink.[[source/wikipedia-en-graphite|§ Pencils]]
+sources:
+  definition:
+    - source: wikipedia-en-graphite
+      locator: introduction; § Pencils
+      accessed: 2026-11-13

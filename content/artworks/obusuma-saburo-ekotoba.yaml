@@ -24,6 +24,7 @@ names:
   - lang: ja
     role: original
     text: 男衾三郎絵巻
+attribution_label: Anonymous, Japanese
 created: 13th century
 created_span: uncertain
 kind: emakimono
@@ -78,3 +79,6 @@ sources:
       wikidata: Q22118229
     - source: colbase-tnm-a-11889
       accessed: 2026-11-06
+  attribution_label:
+    - source: colbase-tnm-a-11889
+      accessed: 2026-11-13

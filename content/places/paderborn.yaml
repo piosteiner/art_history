@@ -1,14 +1,22 @@
 public_id: 116998
 name: Paderborn
 kind: settlement
+parent: nordrhein-westfalen
+country_code: DE
 location: [8.76667, 51.71667]
 wikidata_id: Q2971
 metadata:
   sources: [Wikidata Q2971 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4044283-4
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q2971
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q2971
   location:
     - accessed: 2026-11-09

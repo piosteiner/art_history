@@ -1,14 +1,22 @@
 public_id: 117390
 name: St. Wolfgang im Salzkammergut
 kind: settlement
+parent: oberosterreich
+country_code: AT
 location: [13.44806, 47.73833]
 wikidata_id: Q567835
 metadata:
   sources: [Wikidata Q567835 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4051632-5
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q567835
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q567835
   location:
     - accessed: 2026-11-09

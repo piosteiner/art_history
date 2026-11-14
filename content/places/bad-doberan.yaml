@@ -1,14 +1,22 @@
 public_id: 116991
 name: Bad Doberan
 kind: settlement
+parent: mecklenburg-vorpommern
+country_code: DE
 location: [11.90528, 54.10694]
 wikidata_id: Q9536
 metadata:
   sources: [Wikidata Q9536 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4012564-6
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q9536
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q9536
   location:
     - accessed: 2026-11-09

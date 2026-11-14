@@ -1,6 +1,9 @@
 public_id: 100908
 name: pointillism
 kind: movement
+parent: neo-impressionism
+period: 1886/
+period_label: from 1886
 wikidata_id: Q200034
 metadata:
   sources: [Wikidata Q200034 (retrieved 2026-10-18)]
@@ -9,3 +12,11 @@ sources:
     - accessed: 2026-10-18
       property: P31
       wikidata: Q200034
+  parent:
+    - source: wikipedia-en-pointillism
+      locator: lead
+      accessed: 2026-11-13
+  period:
+    - source: wikipedia-en-pointillism
+      locator: lead
+      accessed: 2026-11-13

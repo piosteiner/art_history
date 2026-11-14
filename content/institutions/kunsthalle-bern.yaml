@@ -1,3 +1,43 @@
 public_id: 115501
 name: Kunsthalle Bern
+kind: museum
+founded: 1918
+place: bern
+location: [7.44939, 46.94428]
+address: Helvetiaplatz 1, 3005 Bern
+website_url: https://www.kunsthalle-bern.ch
 wikidata_id: Q612774
+metadata:
+  sources: [Wikidata Q612774 (retrieved 2026-11-13)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Bern_Kunsthalle_DSC04962.jpg/1280px-Bern_Kunsthalle_DSC04962.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bern_Kunsthalle_DSC04962.jpg
+    license: CC BY-SA 3.0
+    credit: Krol:k
+identifiers:
+  bnf: 11877099q
+  gnd: 1021951-1
+  idref: "026542838"
+  lc: n50065149
+  viaf: "173513827"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q612774
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q612774
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q612774
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q612774
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q612774

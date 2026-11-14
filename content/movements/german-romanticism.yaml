@@ -1,6 +1,8 @@
 public_id: 100995
 name: German Romanticism
 kind: movement
+parent: romanticism
+period: late 18th century–early 19th century
 wikidata_id: Q2477112
 metadata:
   sources: [Wikidata Q2477112 (retrieved 2026-10-18)]
@@ -9,3 +11,11 @@ sources:
     - accessed: 2026-10-18
       property: P31
       wikidata: Q2477112
+  parent:
+    - accessed: 2026-11-13
+      property: P361
+      wikidata: Q2477112
+  period:
+    - source: wikipedia-en-german-romanticism
+      locator: lead
+      accessed: 2026-11-13

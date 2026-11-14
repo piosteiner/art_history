@@ -8,6 +8,10 @@ created: 1488/1502
 kind: intarsia
 medium: intarsia
 institution: mak-wien
+fate: destroyed
+fate_date: 1939-09/1945-09-02
+fate_date_label: Second World War
+fate_note: Formerly in the Kunstgewerbemuseum (today MAK) in Vienna; destroyed in the Second World War.
 description_md: |-
   [[artist/antonio-barili|Antonio Barili]]'s intarsia self-portrait comes from the choir stalls of the chapel of St John the Baptist in Siena Cathedral; it was formerly in the Kunstgewerbemuseum in Vienna and was destroyed in the Second World War [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 54]]. The lecture dates the [[artwork/barili-coro-cappella-san-giovanni-siena|choir stalls]] 1488–1502 [[source/ganz-2024-aus-dem-wald|Sitzung 10 (5.12.2024), Folie 54]]; Marta Ajmar dates the panel 1502 [[source/ajmar-2024-reciprocal-design|p. 31]].
 
@@ -21,6 +25,10 @@ description_md: |-
 
   After the dispersal of the choir stalls the panel was held in the Kunstgewerbemuseum in Vienna, where it was lost in the Second World War [[source/ajmar-2024-reciprocal-design|p. 31]].
 sources:
+  fate:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 10 (5.12.2024), Folie 54
+      accessed: 2026-11-13
   kind:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 10 (5.12.2024)

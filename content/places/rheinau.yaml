@@ -1,14 +1,23 @@
 public_id: 122197
 name: Rheinau
 kind: settlement
+parent: canton-of-zurich
+country_code: CH
 location: [8.60667, 47.64583]
 wikidata_id: Q67534
 metadata:
   sources: [Wikidata Q67534 (retrieved 2026-11-13)]
+identifiers:
+  gnd: 4049741-0
+  hls: "000032"
 sources:
   kind:
     - accessed: 2026-11-13
       property: P31
+      wikidata: Q67534
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q67534
   location:
     - accessed: 2026-11-13

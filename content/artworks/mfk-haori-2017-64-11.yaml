@@ -1,6 +1,7 @@
 public_id: 116586
 title_lang: en
 title: Haori with a War Design
+attribution_label: Anonymous
 created: 1932
 kind: haori
 medium: Silk, jacquard weaving
@@ -32,3 +33,7 @@ sources:
   inventory_number:
     - source: thomsen-2019-war-and-peace
       locator: image list, 10 May 2019 (guest lecture, Klaus Friese)
+  attribution_label:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 10 May 2019 (guest lecture, Klaus Friese)
+      accessed: 2026-11-13

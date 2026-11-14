@@ -17,6 +17,7 @@ names:
   - lang: en
     role: translation
     text: Madonna Enthroned as the "Seat of Wisdom"
+creator: presbyter-martinus
 created: 1199
 medium: Pappelholz, farbige Fassung und Vergoldung
 materials: [poplar wood, poplar, gold]
@@ -57,6 +58,10 @@ sources:
     - accessed: 2026-11-09
       property: P571
       wikidata: Q109007199
+  creator:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 57
+      accessed: 2026-11-13
   materials:
     - accessed: 2026-11-09
       property: P186

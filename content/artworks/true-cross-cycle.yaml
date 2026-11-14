@@ -1,9 +1,25 @@
 public_id: 117145
 title: True Cross cycle
+attribution_label: Gentile Bellini, Vittore Carpaccio and other Venetian painters
+created: 1490s
+created_span: uncertain
 wikidata_id: Q21608844
 metadata:
   sources: [Wikidata Q21608844 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Teleri_della_scuola_di_san_giovanni_evangelista_01.JPG/1280px-Teleri_della_scuola_di_san_giovanni_evangelista_01.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Teleri_della_scuola_di_san_giovanni_evangelista_01.JPG
+    license: CC BY-SA 3.0
+    credit: Sailko
 sources:
+  created:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q21608844
   title_status:
     - accessed: 2026-11-09
       wikidata: Q21608844
+  attribution_label:
+    - source: wikipedia-en-miracle-of-the-relic-of-the-cross-at-the-ponte-di-rialto
+      locator: introduction (the painters of the cycle)
+      accessed: 2026-11-13

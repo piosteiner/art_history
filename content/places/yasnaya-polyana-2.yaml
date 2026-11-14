@@ -1,0 +1,21 @@
+public_id: 122344
+name: Yasnaya Polyana
+kind: settlement
+parent: russia
+location: [37.52933, 54.07241]
+wikidata_id: Q23885154
+metadata:
+  sources: [Wikidata Q23885154 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q23885154
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q23885154
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q23885154

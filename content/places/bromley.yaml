@@ -1,6 +1,8 @@
 public_id: 117542
 name: Bromley
 kind: site
+parent: england
+country_code: GB
 location: [0.01831, 51.40644]
 wikidata_id: Q122892
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q122892
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q122892
   location:
     - accessed: 2026-11-10

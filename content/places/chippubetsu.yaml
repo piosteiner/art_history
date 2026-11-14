@@ -1,6 +1,8 @@
 public_id: 117695
 name: Chippubetsu
 kind: site
+parent: hokkaido
+country_code: JP
 location: [141.95783, 43.767]
 wikidata_id: Q1357097
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q1357097
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q1357097
   location:
     - accessed: 2026-11-10

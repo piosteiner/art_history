@@ -1,6 +1,7 @@
 public_id: 117228
 title_lang: en
 title: Anglo-Saxon calendar (Cotton MS Tiberius B V)
+attribution_label: Anonymous, Anglo-Saxon
 created: mid 11th century
 created_span: uncertain
 kind: illuminated manuscript
@@ -40,3 +41,7 @@ sources:
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 3 (10.10.2024)
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 3 (10.10.2024), Folie 52
+      accessed: 2026-11-13

@@ -2,15 +2,44 @@ public_id: 116674
 name: Tretyakov Gallery
 kind: museum
 founded: 1856
+place: moscow
+location: [37.62086, 55.74139]
+address: Lavrushinsky Ln, 10
+website_url: https://www.tretyakovgallery.ru
+collection_url: https://www.tretyakovgallery.ru/collection/
 wikidata_id: Q183334
 metadata:
   sources: [Wikidata Q183334 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Moscow_05-2012_TretyakovGallery.jpg/1280px-Moscow_05-2012_TretyakovGallery.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Moscow_05-2012_TretyakovGallery.jpg
+    license: CC BY-SA 3.0
+    credit: A.Savin
+identifiers:
+  bnf: 12157672v
+  gnd: 1035329-X
+  idref: 02734410X
+  lc: n81071245
+  ulan: "500303235"
+  viaf: "155322452"
 sources:
   kind:
     - accessed: 2026-11-07
       property: P31
       wikidata: Q183334
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q183334
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q183334
   founded:
     - accessed: 2026-11-07
       property: P571
+      wikidata: Q183334
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q183334

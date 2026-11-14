@@ -1,14 +1,22 @@
 public_id: 117703
 name: Niigata
 kind: settlement
+parent: niigata-prefecture
+country_code: JP
 location: [139.03639, 37.91619]
 wikidata_id: Q179691
 metadata:
   sources: [Wikidata Q179691 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4208484-2
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q179691
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q179691
   location:
     - accessed: 2026-11-10

@@ -1,10 +1,13 @@
 public_id: 117665
 name: Damascus
 kind: settlement
+country_code: SY
 location: [36.29194, 33.51306]
 wikidata_id: Q3766
 metadata:
   sources: [Wikidata Q3766 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4010956-2
 sources:
   kind:
     - accessed: 2026-11-10

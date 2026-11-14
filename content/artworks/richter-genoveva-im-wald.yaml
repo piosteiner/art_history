@@ -63,6 +63,40 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Ludwig_Richter_-_Genoveva_in_der_Waldeinsamkeit_(1841).jpg
     license: Public domain
     credit: Ludwig Richter
+provenance:
+  - owner_label: Sächsischer Kunstverein
+    acquired: 1841-05
+    method: purchase
+    direct: true
+    notes_md: Bought from Richter for the society's lottery.
+    sources:
+      - source: hamburger-kunsthalle-hk-1236
+        locator: Genoveva in der Waldeinsamkeit
+        accessed: 2026-11-13
+  - owner_label: Leonhardi
+    label: pupil of Richter
+    certainty: possible
+    notes_md: Possibly in his collection — "bislang ohne Beleg" (not documented so far).
+    sources:
+      - source: hamburger-kunsthalle-hk-1236
+        locator: Genoveva in der Waldeinsamkeit
+        accessed: 2026-11-13
+  - owner_label: Friedrich Carl Theodor Heye
+    ended: 1913
+    label: pupil of Richter
+    sources:
+      - source: hamburger-kunsthalle-hk-1236
+        locator: Genoveva in der Waldeinsamkeit
+        accessed: 2026-11-13
+  - owner: institution/hamburger-kunsthalle
+    acquired: 1913
+    method: gift
+    direct: true
+    notes_md: Gift of Friedrich Carl Theodor Heye; the Kunsthalle paid 800 marks gift tax on it (HAHK, Bestand Geschenke).
+    sources:
+      - source: hamburger-kunsthalle-hk-1236
+        locator: Genoveva in der Waldeinsamkeit
+        accessed: 2026-11-13
 sources:
   medium:
     - source: ganz-2024-aus-dem-wald

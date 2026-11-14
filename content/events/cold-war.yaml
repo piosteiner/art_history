@@ -4,6 +4,14 @@ period: 1945
 wikidata_id: Q8683
 metadata:
   sources: [Wikidata Q8683 (retrieved 2026-11-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/US_Army_tanks_face_off_against_Soviet_tanks%2C_Berlin_1961.jpg/1280px-US_Army_tanks_face_off_against_Soviet_tanks%2C_Berlin_1961.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:US_Army_tanks_face_off_against_Soviet_tanks,_Berlin_1961.jpg
+    license: Public domain
+    credit: "U.S. Army photo Photo Credit: USAMHI"
+identifiers:
+  gnd: 4075770-5
+  hls: "017344"
 sources:
   period:
     - accessed: 2026-11-07

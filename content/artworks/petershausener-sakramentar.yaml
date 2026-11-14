@@ -17,6 +17,7 @@ names:
   - lang: en
     role: translation
     text: Petershausen Sacramentary
+attribution_label: Reichenau scriptorium
 created: c. 980
 created_span: uncertain
 medium: Handschrift
@@ -47,3 +48,7 @@ sources:
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 6 (7.11.2024), Folie 55
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 55
+      accessed: 2026-11-13

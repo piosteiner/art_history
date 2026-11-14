@@ -2,16 +2,44 @@ public_id: 113420
 name: Cooper Hewitt, Smithsonian Design Museum
 kind: museum
 founded: 1896
+place: new-york-city
+location: [-73.95806, 40.78472]
+address: 2 E 91ST ST, NEW YORK NY 10128-0606
+website_url: https://www.cooperhewitt.org/
 collection_url: https://collection.cooperhewitt.org/
 wikidata_id: Q1129820
 metadata:
   sources: [Wikidata Q1129820 (retrieved 2026-11-03)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/32/Cooper-Hewitt-MattFlynnAHHP.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cooper-Hewitt-MattFlynnAHHP.jpg
+    license: Public domain
+    credit: Matt Flynn
+identifiers:
+  bnf: 12301491f
+  gnd: 6132215-5
+  idref: "031882668"
+  lc: n80056822
+  ulan: "500243970"
+  viaf: "156924364"
 sources:
   kind:
     - accessed: 2026-11-03
       property: P31
       wikidata: Q1129820
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q1129820
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q1129820
   founded:
     - accessed: 2026-11-03
       property: P571
+      wikidata: Q1129820
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q1129820

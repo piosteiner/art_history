@@ -1,6 +1,8 @@
 public_id: 103047
 name: Trecento
 kind: movement
+parent: proto-renaissance
+period: 14th century
 wikidata_id: Q856643
 metadata:
   sources: [Wikidata Q856643 (retrieved 2026-10-28)]
@@ -9,3 +11,11 @@ sources:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q856643
+  parent:
+    - accessed: 2026-11-13
+      property: P361
+      wikidata: Q856643
+  period:
+    - source: wikipedia-en-trecento
+      locator: "lead; § Period: Art"
+      accessed: 2026-11-13

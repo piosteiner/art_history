@@ -1,6 +1,7 @@
 public_id: 116590
 title_lang: en
 title: Five-Year Plan of Xinjing, Manchukuo
+attribution_label: Anonymous
 created: 1935
 kind: map
 medium: Lithograph
@@ -34,3 +35,7 @@ sources:
   created:
     - source: thomsen-2019-war-and-peace
       locator: image list, 17 May 2019
+  attribution_label:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 17 May 2019
+      accessed: 2026-11-13

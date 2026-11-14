@@ -23,6 +23,7 @@ names:
     sources:
       - accessed: 2026-11-09
         wikidata: Q1825931
+attribution_label: "Several workshops (upper cover: the court school of Charles the Bald)"
 created: c. 860
 created_span: uncertain
 medium: Gold, Edelsteine, manuscript
@@ -64,3 +65,6 @@ sources:
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 4 (17.10.2024)
+  attribution_label:
+    - source: wikipedia-en-lindau-gospels
+      accessed: 2026-11-13

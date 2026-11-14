@@ -2,15 +2,44 @@ public_id: 117119
 name: Uppsala University
 kind: university
 founded: 1477
+place: uppsala
+location: [17.62889, 59.8575]
+address: Dag Hammarskjölds Väg 7, 752 37 Uppsala
+website_url: https://www.uu.se
 wikidata_id: Q185246
 metadata:
   sources: [Wikidata Q185246 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Universitas_Regia_Upsaliensis.jpg/1280px-Universitas_Regia_Upsaliensis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Universitas_Regia_Upsaliensis.jpg
+    license: CC0
+    credit: This image was produced by me, David Castor (user:dcastor). The pictures I submit to the Wikipedia Project are released to the public domain. This gives you the right to use them in any way you like, without any kind of notification. This said, I would still appreciate to be mentioned as the originator whenever you think it complies well with your use of the picture. A message to me about how it has been used would also be welcome. You are obviously not required to respond to these wishes of mine, just in a friendly manner encouraged to. (All my photos are placed in Category:Images by David Castor or a subcategory thereof.)
+identifiers:
+  bnf: 11868035h
+  gnd: 1010726-5
+  idref: "026431661"
+  kulturnav: ea20e6b3-f98a-444e-86a0-e7edaeaf026b
+  lc: n79006860
+  ulan: "500312107"
+  viaf: "134409977"
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
       wikidata: Q185246
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q185246
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q185246
   founded:
     - accessed: 2026-11-09
       property: P571
+      wikidata: Q185246
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q185246

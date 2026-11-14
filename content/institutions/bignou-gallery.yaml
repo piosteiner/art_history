@@ -1,3 +1,41 @@
 public_id: 112101
 name: Bignou Gallery
+kind: gallery
+founded: 1927
+dissolved: 1953
+place: new-york-city
+location: [-73.97202, 40.7619]
+address: 32 E 57th St, New York, NY, USA
 wikidata_id: Q15619234
+metadata:
+  sources: [Wikidata Q15619234 (retrieved 2026-11-13)]
+identifiers:
+  gnd: 6013428-8
+  lc: nr96018100
+  ulan: "500434173"
+  viaf: "147029910"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q15619234
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q15619234
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q15619234
+  founded:
+    - accessed: 2026-11-13
+      property: P571
+      wikidata: Q15619234
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q15619234
+  dissolved:
+    - accessed: 2026-11-13
+      property: P576
+      wikidata: Q15619234

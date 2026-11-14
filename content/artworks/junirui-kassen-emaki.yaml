@@ -8,6 +8,7 @@ names:
   - lang: en
     role: translation
     text: Battle of the Twelve Animals
+attribution_label: Anonymous, Japanese
 created: 15th century
 created_span: uncertain
 kind: emakimono
@@ -30,3 +31,7 @@ sources:
   created:
     - source: thomsen-2019-war-and-peace
       locator: image list, 22 March 2019
+  attribution_label:
+    - source: thomsen-2019-war-and-peace
+      locator: image list, 22 March 2019
+      accessed: 2026-11-13

@@ -1,6 +1,7 @@
 public_id: 117287
 title_lang: de
 title: Der heilige Christophorus
+attribution_label: Anonymous, South German
 created: c. 1430–1440
 created_span: uncertain
 kind: woodcut
@@ -38,3 +39,7 @@ sources:
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 9 (28.11.2024), Folie 14
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024), Folie 14
+      accessed: 2026-11-13

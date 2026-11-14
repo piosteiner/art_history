@@ -2,15 +2,39 @@ public_id: 116484
 name: National Palace Museum
 kind: museum
 founded: 1925-10-10
+place: taipei
+location: [121.54861, 25.10222]
+address: 臺北市士林區至善路2段221號
+website_url: http://www.npm.gov.tw
 wikidata_id: Q540668
 metadata:
   sources: [Wikidata Q540668 (retrieved 2026-11-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/NationalPalace_MuseumFrontView.jpg/1280px-NationalPalace_MuseumFrontView.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:NationalPalace_MuseumFrontView.jpg
+    license: CC BY 3.0
+    credit: Peellden
+identifiers:
+  bnf: 12329271m
+  gnd: 80348-0
+  idref: "074520296"
+  lc: n81062107
+  ulan: "500309392"
+  viaf: "153614786"
 sources:
   kind:
     - accessed: 2026-11-06
       property: P31
       wikidata: Q540668
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q540668
   founded:
     - accessed: 2026-11-06
       property: P571
+      wikidata: Q540668
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q540668

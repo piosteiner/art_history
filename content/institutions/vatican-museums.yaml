@@ -2,15 +2,44 @@ public_id: 117178
 name: Vatican Museums
 kind: museum
 founded: 1506
+place: vatican-city
+location: [12.45444, 41.90639]
+address: Viale Vaticano 6, I-00192 Roma
+website_url: http://www.museivaticani.va
+collection_url: https://catalogo.museivaticani.va/
 wikidata_id: Q182955
 metadata:
   sources: [Wikidata Q182955 (retrieved 2026-11-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Mura_vaticane_-_ingresso_ai_Musei_00410.JPG/1280px-Mura_vaticane_-_ingresso_ai_Musei_00410.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Mura_vaticane_-_ingresso_ai_Musei_00410.JPG
+    license: CC BY-SA 3.0
+    credit: user:Lalupa
+identifiers:
+  bnf: 12312427s
+  gnd: 235092-0
+  idref: "032013795"
+  lc: n81003002
+  ulan: "500356366"
+  viaf: "141443926"
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
       wikidata: Q182955
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q182955
+  address:
+    - accessed: 2026-11-13
+      property: P6375
+      wikidata: Q182955
   founded:
     - accessed: 2026-11-09
       property: P571
+      wikidata: Q182955
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q182955

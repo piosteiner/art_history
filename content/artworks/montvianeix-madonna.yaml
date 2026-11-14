@@ -5,6 +5,7 @@ names:
   - lang: en
     role: alternative
     text: Enthroned Virgin and Child
+attribution_label: Anonymous, Auvergne
 created: 1150/1200
 medium: walnut, remains of polychromy over gesso and canvas
 materials: [walnut wood, tin, linen, white lead, lapis lazuli, carbon black, lac dye, canvas]
@@ -67,3 +68,7 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q20201067
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 6 (7.11.2024), Folie 38
+      accessed: 2026-11-13

@@ -3,12 +3,13 @@ title_lang: de
 title: Heilung des Blindgeborenen
 parent: bildertur-st-maria-im-kapitol
 part_number: "8"
+attribution_label: Cologne workshop, Lower Rhine–Meuse (master unknown)
 created: 1050/1065
 kind: relief
 medium: Nussbaum, Relief
 materials: [walnut wood]
 institution: st-maria-im-kapitol
-description_md: "This walnut relief of the [[artwork/bildertur-st-maria-im-kapitol|wooden door of St. Maria im Kapitol]] in Cologne (1050/65) shows Christ healing the man born blind.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 130]] A project of the TH Köln under Prof. Regina Urbanek (2021) reconstructed its first colouring of 1040/65 and a second one from the middle of the 12th century.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 130]] The original colours of the door were uncovered in 1936: strong red frames, yellow grounds recalling the gold of book painting, and figures in many colours with eyes, mouths and folds painted rather than carved.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Tafeln und Figuren]] Richard Hamann compared the healing of the blind man with the Magi before Herod to distinguish two carvers, this one working with clear structure and vertical lines.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Meisterfrage]]"
+description_md: "This walnut relief of the [[artwork/bildertur-st-maria-im-kapitol|wooden door of St. Maria im Kapitol]] in Cologne (1050/65) shows Christ healing the man born blind.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 130]] It is no. 13 of the door's scenes, on the right leaf with Christ's ministry and Passion, followed by the [[artwork/bildertur-kapitol-heilung-und-lazarus|raising of Lazarus]];[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Ikonografie]] the lecture's caption places it on the left leaf.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 130]] A project of the TH Köln under Prof. Regina Urbanek (2021) reconstructed its first colouring of 1040/65 and a second one from the middle of the 12th century.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 130]] The original colours of the door were uncovered in 1936: strong red frames, yellow grounds recalling the gold of book painting, and figures in many colours with eyes, mouths and folds painted rather than carved.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Tafeln und Figuren]] Richard Hamann compared the healing of the blind man with the Magi before Herod to distinguish two carvers, this one working with clear structure and vertical lines.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Meisterfrage]]"
 sources:
   kind:
     - source: ganz-2024-aus-dem-wald
@@ -31,3 +32,7 @@ sources:
   title_status:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 5 (31.10.2024), Folie 130
+  attribution_label:
+    - source: wikipedia-de-holztur-von-st-maria-im-kapitol
+      locator: § Meisterfrage (rev. 266570149)
+      accessed: 2026-11-13

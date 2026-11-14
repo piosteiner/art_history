@@ -99,7 +99,7 @@ names:
     sources:
       - accessed: 2026-11-07
         wikidata: Q1755821
-birth: 1885-08-26
+birth: 1885-09-26
 death: 1964-04-20
 biography_md: |-
   Sergey Gerasimov (1885–1964) was a Soviet painter who studied under the Impressionist Konstantin Korovin and became a leading figure of Moscow's art schools and artists' union [[source/wikipedia-en-sergey-vasilyevich-gerasimov|introduction]] [[source/wikipedia-en-sergey-vasilyevich-gerasimov|§ Biography]].
@@ -129,9 +129,9 @@ identifiers:
   viaf: "37710500"
 sources:
   birth:
-    - accessed: 2026-11-07
-      property: P569
-      wikidata: Q1755821
+    - url: https://d-nb.info/gnd/118690582
+      source: gnd
+      accessed: 2026-11-13
   death:
     - accessed: 2026-11-07
       property: P570

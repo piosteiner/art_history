@@ -1,0 +1,35 @@
+public_id: 117186
+name: Norman Conquest of England
+names:
+  - lang: de
+    role: translation
+    text: normannische Eroberung Englands
+    sources:
+      - accessed: 2026-11-13
+        wikidata: Q200485
+kind: war
+period: 4 October 1066 – 1075
+location: [-1.3167, 52.0667]
+wikidata_id: Q200485
+metadata:
+  sources: [Wikidata Q200485 (retrieved 2026-11-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/96/Bayeux_Tapestry_WillelmDux.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_WillelmDux.jpg
+    license: Public domain
+    credit: alipaiman
+identifiers:
+  gnd: 4302751-9
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q200485
+  period:
+    - accessed: 2026-11-13
+      property: P585
+      wikidata: Q200485
+  location:
+    - accessed: 2026-11-09
+      property: P625
+      wikidata: Q200485

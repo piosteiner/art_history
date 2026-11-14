@@ -1,3 +1,15 @@
 public_id: 101944
 name: charcoal
 category: material
+definition: Charred wood — vine or willow sticks burned without air, or compressed powder with a binder — used as a dry drawing medium that is easily blended and erased.
+description_md: |-
+  Artists' charcoal is charcoal used as a dry drawing medium, either as sticks of wood burned in a kiln without air or as compressed charcoal held together by gum or wax; its marks are much less permanent than graphite's, so that lines can easily be erased and blended, from very light to intensely black.[[source/wikipedia-en-charcoal-art|introduction]] Vine charcoal, from burned grape vines, gives shades of grey; willow charcoal is darker; both are easily dusted off and are favoured for preliminary sketches and compositions.[[source/wikipedia-en-charcoal-art|§ Types]] Charcoal powder was also used for pouncing — transferring a design from one surface to another.[[source/wikipedia-en-charcoal-art|§ Types]] Fixatives keep the dust in place.[[source/wikipedia-en-charcoal-art|introduction]]
+
+  Charcoal was a key component of cave painting at least 28,000 years ago.[[source/wikipedia-en-charcoal-art|§ History]] It was widely used in the Renaissance, but few such works survive because the particles flaked off; at the end of the fifteenth century drawings began to be bathed in gum to prevent this.[[source/wikipedia-en-charcoal-art|§ History]] Throughout Western art history painters have used it for sketching and preliminary studies for paintings.[[source/wikipedia-en-charcoal-art|§ History]] In Japan, too, charcoal was one of the coloured powders laid on the back of a full-size cartoon to transfer the design of the [[artwork/horyu-ji-kondo-murals|Hōryūji Kondō murals]] to the wall.[[source/wikipedia-ja-horyuji-kondo-hekiga|§ 技法・様式]]
+
+  In this database charcoal is recorded for [[artist/leonardo-da-vinci|Leonardo da Vinci]]'s [[artwork/adoration-of-the-magi|Adoration of the Magi]] (1481–1482).
+sources:
+  definition:
+    - source: wikipedia-en-charcoal-art
+      locator: introduction; § Types
+      accessed: 2026-11-13

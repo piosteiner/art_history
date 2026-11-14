@@ -1,6 +1,8 @@
 public_id: 117698
 name: Kiryū
 kind: site
+parent: japan
+country_code: JP
 location: [139.33047, 36.40533]
 wikidata_id: Q634022
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q634022
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q634022
   location:
     - accessed: 2026-11-10

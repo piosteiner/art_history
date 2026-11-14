@@ -1,14 +1,24 @@
 public_id: 117374
 title_lang: de
-title: Heilung des Blinden, Auferweckung des Lazarus
+title: Auferweckung des Lazarus
+title_status: common
+names:
+  - lang: de
+    role: alternative
+    text: Heilung des Blinden, Auferweckung des Lazarus
+  - lang: en
+    role: translation
+    text: Raising of Lazarus
+    status: own
 parent: bildertur-st-maria-im-kapitol
 part_number: "10"
+attribution_label: Cologne workshop, Lower Rhine–Meuse (master unknown)
 created: 1050/1065
 kind: relief
 medium: Nussbaum, Relief
 materials: [walnut wood]
 institution: st-maria-im-kapitol
-description_md: "This walnut relief on the right leaf of the [[artwork/bildertur-st-maria-im-kapitol|wooden door of St. Maria im Kapitol]] in Cologne (1050/65) shows the healing of the blind man and the raising of Lazarus.[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 100]][[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folie 101]] The right leaf shows Christ's ministry and Passion.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Ikonografie]] Richard Hamann compared the healing of the blind man with the Magi before Herod on the left leaf to distinguish two carvers: one modelling fully and plastically, the other working with clear structure and vertical lines.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Meisterfrage]]"
+description_md: This walnut relief on the right leaf of the [[artwork/bildertur-st-maria-im-kapitol|wooden door of St. Maria im Kapitol]] in Cologne (1050/65) shows the raising of Lazarus — no. 14 of the door's scenes, after the [[artwork/bildertur-kapitol-heilung-des-blindgeborenen|healing of the man born blind]] (no. 13); on the right leaf each relief holds a single scene.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Ikonografie]] The lecture showed the two neighbouring reliefs together as "Heilung des Blinden, Auferweckung des Lazarus".[[source/ganz-2024-aus-dem-wald|Sitzung 5 (31.10.2024), Folien 100–101]] The right leaf shows Christ's ministry and Passion.[[source/wikipedia-de-holztur-von-st-maria-im-kapitol|§ Ikonografie]]
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/bd/Holzt%C3%BCr_von_St._Maria_im_Kapitol_-_Tafel_13_Blindenheilung-0421.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Holzt%C3%BCr_von_St._Maria_im_Kapitol_-_Tafel_13_Blindenheilung-0421.jpg
@@ -34,5 +44,10 @@ sources:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 5 (31.10.2024), Folie 100
   title_status:
-    - source: ganz-2024-aus-dem-wald
-      locator: Sitzung 5 (31.10.2024), Folie 100
+    - source: wikipedia-de-holztur-von-st-maria-im-kapitol
+      locator: § Ikonografie (scene 14)
+      accessed: 2026-11-13
+  attribution_label:
+    - source: wikipedia-de-holztur-von-st-maria-im-kapitol
+      locator: § Meisterfrage (rev. 266570149)
+      accessed: 2026-11-13

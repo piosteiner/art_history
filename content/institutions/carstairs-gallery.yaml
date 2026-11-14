@@ -1,3 +1,13 @@
 public_id: 112079
 name: Carstairs Gallery
+kind: gallery
 wikidata_id: Q56651621
+metadata:
+  sources: [Wikidata Q56651621 (retrieved 2026-11-13)]
+identifiers:
+  ulan: "500435472"
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q56651621

@@ -111,6 +111,7 @@ images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg
     license: Public domain
+    credit: Vincent van Gogh
 sources:
   parent:
     - url: https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746

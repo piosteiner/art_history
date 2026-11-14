@@ -5,6 +5,7 @@ names:
   - lang: en
     role: translation
     text: Panels of the wooden door of Sant'Ambrogio
+attribution_label: Anonymous, late antique (Milan)
 created: late 4th century
 created_span: uncertain
 kind: relief
@@ -18,4 +19,8 @@ sources:
   institution:
     - source: wikipedia-it-basilica-di-sant-ambrogio
       locator: § Opere artistiche
+      accessed: 2026-11-13
+  attribution_label:
+    - source: wikipedia-it-basilica-di-sant-ambrogio
+      locator: § L'antica basilica paleocristiana
       accessed: 2026-11-13

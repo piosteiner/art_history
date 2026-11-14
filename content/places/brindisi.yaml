@@ -1,14 +1,22 @@
 public_id: 117602
 name: Brindisi
 kind: settlement
+parent: italy
+country_code: IT
 location: [17.94583, 40.63833]
 wikidata_id: Q13496
 metadata:
   sources: [Wikidata Q13496 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4080536-0
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q13496
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q13496
   location:
     - accessed: 2026-11-10

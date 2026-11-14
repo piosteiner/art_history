@@ -1,0 +1,21 @@
+public_id: 122340
+name: Cher
+kind: region
+parent: france
+location: [2.44444, 47.08111]
+wikidata_id: Q3286
+metadata:
+  sources: [Wikidata Q3286 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q3286
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q3286
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q3286

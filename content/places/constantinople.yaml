@@ -1,10 +1,13 @@
 public_id: 117093
 name: Constantinople
 kind: settlement
+country_code: TR
 location: [28.97602, 41.01224]
 wikidata_id: Q16869
 metadata:
   sources: [Wikidata Q16869 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4073697-0
 sources:
   kind:
     - accessed: 2026-11-09

@@ -1,6 +1,8 @@
 public_id: 116939
 name: Conques-en-Rouergue
 kind: settlement
+parent: france
+country_code: FR
 location: [2.39722, 44.60028]
 wikidata_id: Q21619422
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q21619422
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q21619422
   location:
     - accessed: 2026-11-09

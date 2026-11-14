@@ -1,6 +1,7 @@
 public_id: 117296
 title_lang: en
 title: Prayer book (Egerton MS 1821)
+attribution_label: Anonymous, English
 created: c. 1490
 created_span: uncertain
 kind: illuminated manuscript
@@ -41,3 +42,7 @@ sources:
   inventory_number:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 9 (28.11.2024)
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 9 (28.11.2024), Folie 32
+      accessed: 2026-11-13

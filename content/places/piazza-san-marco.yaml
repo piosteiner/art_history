@@ -1,14 +1,22 @@
 public_id: 117147
 name: Piazza San Marco
 kind: street
+parent: venice
+country_code: IT
 location: [12.338, 45.434]
 wikidata_id: Q217527
 metadata:
   sources: [Wikidata Q217527 (retrieved 2026-11-09)]
+identifiers:
+  gnd: 4252349-7
 sources:
   kind:
     - accessed: 2026-11-09
       property: P31
+      wikidata: Q217527
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q217527
   location:
     - accessed: 2026-11-09

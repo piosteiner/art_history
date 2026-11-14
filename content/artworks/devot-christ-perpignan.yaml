@@ -5,6 +5,7 @@ names:
   - lang: en
     role: translation
     text: Christ en croix dit Dévot Christ (cathédrale de Perpignan)
+attribution_label: Anonymous (origin disputed)
 created: 1307
 medium: limewood, remains of two layers of polychromy
 materials: [lime]
@@ -50,3 +51,7 @@ sources:
   institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 7 (14.11.2024)
+  attribution_label:
+    - source: ganz-2024-aus-dem-wald
+      locator: Sitzung 7 (14.11.2024), Folie 70
+      accessed: 2026-11-13

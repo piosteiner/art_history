@@ -1,0 +1,21 @@
+public_id: 122339
+name: Marne
+kind: region
+parent: france
+location: [4.25, 49]
+wikidata_id: Q12594
+metadata:
+  sources: [Wikidata Q12594 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q12594
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q12594
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q12594

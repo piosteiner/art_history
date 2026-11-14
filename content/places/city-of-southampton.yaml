@@ -1,0 +1,21 @@
+public_id: 122343
+name: City of Southampton
+kind: site
+parent: england
+location: [-1.38333, 50.91667]
+wikidata_id: Q21683230
+metadata:
+  sources: [Wikidata Q21683230 (retrieved 2026-11-13)]
+sources:
+  kind:
+    - accessed: 2026-11-13
+      property: P31
+      wikidata: Q21683230
+  parent:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q21683230
+  location:
+    - accessed: 2026-11-13
+      property: P625
+      wikidata: Q21683230

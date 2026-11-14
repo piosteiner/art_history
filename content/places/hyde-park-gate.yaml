@@ -1,6 +1,8 @@
 public_id: 117606
 name: Hyde Park Gate
 kind: street
+parent: england
+country_code: GB
 location: [-0.18272, 51.5004]
 wikidata_id: Q5953682
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q5953682
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q5953682
   location:
     - accessed: 2026-11-10

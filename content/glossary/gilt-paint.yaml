@@ -1,3 +1,13 @@
 public_id: 117161
 name: gilt paint
 category: material
+definition: Gold ground to a fine powder and mixed with a binder such as gum arabic, applied with a brush like any paint (also called shell gold).
+description_md: |-
+  Besides laying on [[term/gold-leaf|gold leaf]], gilders and painters also used gold as a pigment: the gold was ground into a fine powder and mixed with a binder such as gum arabic, and the resulting gold paint, called shell gold, was applied in the same way as any paint.[[source/wikipedia-en-gilding|§ Mechanical gilding]] Sometimes, after gold-leafing or gold-painting, the piece was heated enough to melt the gold slightly and give an even coat.[[source/wikipedia-en-gilding|§ Mechanical gilding]] Together with gold leaf, gold paint remained the only way of gilding materials such as wood, leather, the vellum pages of illuminated manuscripts and gilt-edged paper.[[source/wikipedia-en-gilding|§ Mechanical gilding]] Bookbinders, too, can use shell gold on a cover instead of leaf.[[source/wikipedia-en-gilding|§ Bookbinding]]
+
+  In this database gilt paint is recorded for the [[artwork/croce-dipinta-santo-sepolcro-pisa|painted cross from the church of the Santo Sepolcro in Pisa]], a crucifix of around 1200 in tempera and gold on panel, now in the Museo Nazionale di San Matteo, Pisa.[[source/ganz-2024-aus-dem-wald|Sitzung 7 (14.11.2024), Folie 74]]
+sources:
+  definition:
+    - source: wikipedia-en-gilding
+      locator: § Mechanical gilding
+      accessed: 2026-11-13

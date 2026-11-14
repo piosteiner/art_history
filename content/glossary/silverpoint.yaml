@@ -1,3 +1,13 @@
 public_id: 101402
 name: silverpoint
 category: material
+definition: "Drawing with a stylus of silver on a prepared ground: the metal leaves a fine line that resists erasure; favoured in fifteenth-century Florence and Flanders."
+description_md: |-
+  Silverpoint, one of several kinds of metalpoint, is a drawing technique first used by medieval scribes: a silver rod or wire is dragged across a surface, often prepared with [[term/gesso|gesso]] or a ground of Chinese white.[[source/wikipedia-en-silverpoint|introduction; § History]] Lead, tin and silver were the metals used for drawing; silver does not blunt as easily and renders precise detail, and in the late Gothic and early Renaissance it was especially favoured in Florentine and Flemish workshops for model books and preparatory sheets — Jan van Eyck, Leonardo da Vinci, Dürer and Raphael worked in it.[[source/wikipedia-en-silverpoint|§ History]] On uncoated parchment or paper the line is very light; from the fourteenth century prepared grounds of rabbit-skin glue pigmented with bone ash, chalk or lead white were used, whose slight tooth takes off a little silver.[[source/wikipedia-en-silverpoint|§ Characteristics]] Unlike graphite and chalk, silver resists erasure and leaves a fainter line.[[source/wikipedia-en-silverpoint|§ History]] At the end of the sixteenth century, as artists sought more gestural qualities, silverpoint gave way to [[term/graphite|graphite]], [[term/red-chalk|red]] and [[term/black-chalk|black chalk]]; Goltzius and [[artist/rembrandt|Rembrandt]] kept the tradition into the seventeenth century.[[source/wikipedia-en-silverpoint|§ History]]
+
+  [[artist/albrecht-durer|Albrecht Dürer]] learned metalpoint from his father, a goldsmith, and his [[artwork/self-portrait-at-thirteen|Self-Portrait at Thirteen]] of 1484 is still considered a masterpiece of the technique.[[source/wikipedia-en-silverpoint|§ History]]
+sources:
+  definition:
+    - source: wikipedia-en-silverpoint
+      locator: § History
+      accessed: 2026-11-13

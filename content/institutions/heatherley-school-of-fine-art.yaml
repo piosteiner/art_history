@@ -2,15 +2,32 @@ public_id: 117671
 name: Heatherley School of Fine Art
 kind: art academy
 founded: 1845
+place: london
+location: [-0.18497, 51.47869]
 wikidata_id: Q3369232
 metadata:
   sources: [Wikidata Q3369232 (retrieved 2026-11-10)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4c/Heatherley%27s_Lots_Rd_%2814992692629%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Heatherley%27s_Lots_Rd_(14992692629).jpg
+    license: CC BY-SA 2.0
+    credit: Images George Rex from London, England
+identifiers:
+  viaf: "173352232"
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
       wikidata: Q3369232
+  place:
+    - accessed: 2026-11-13
+      property: P131
+      wikidata: Q3369232
   founded:
     - accessed: 2026-11-10
       property: P571
+      wikidata: Q3369232
+  location:
+    - accessed: 2026-11-13
+      property: P625
       wikidata: Q3369232

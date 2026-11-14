@@ -1,14 +1,23 @@
 public_id: 117669
 name: Chamonix-Mont-Blanc
 kind: settlement
+parent: canton-of-chamonix-mont-blanc
+country_code: FR
 location: [6.86889, 45.92222]
 wikidata_id: Q83236
 metadata:
   sources: [Wikidata Q83236 (retrieved 2026-11-10)]
+identifiers:
+  gnd: 4085208-8
+  hls: "007041"
 sources:
   kind:
     - accessed: 2026-11-10
       property: P31
+      wikidata: Q83236
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q83236
   location:
     - accessed: 2026-11-10

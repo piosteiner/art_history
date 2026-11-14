@@ -26,6 +26,7 @@ names:
   - lang: ru
     role: translation
     text: дуб
+  - oakwood
 category: material
 parent: wood
 definition: type of wood obtained from oak trees

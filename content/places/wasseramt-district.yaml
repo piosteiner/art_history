@@ -1,14 +1,23 @@
 public_id: 108890
 name: Wasseramt District
 kind: site
+parent: switzerland
+country_code: CH
 location: [7.58333, 47.16667]
 wikidata_id: Q660262
 metadata:
   sources: [Wikidata Q660262 (retrieved 2026-11-02)]
+identifiers:
+  gnd: 4593982-2
+  hls: "007726"
 sources:
   kind:
     - accessed: 2026-11-02
       property: P31
+      wikidata: Q660262
+  parent:
+    - accessed: 2026-11-13
+      property: P131
       wikidata: Q660262
   location:
     - accessed: 2026-11-02

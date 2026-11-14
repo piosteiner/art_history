@@ -5,6 +5,7 @@ names:
   - lang: ja
     role: original
     text: 主婦の友
+attribution_label: Anonymous
 created: 1938
 kind: magazine cover
 description_md: |-
@@ -28,3 +29,7 @@ sources:
   created:
     - source: thomsen-2019-war-and-peace
       locator: image list, 10 May 2019 (guest lecture, Klaus Friese)
+  attribution_label:
+    - source: thomsen-2019-war-and-peace
+      locator: image list and vocabulary list, 10 May 2019 (guest lecture, Klaus Friese)
+      accessed: 2026-11-13

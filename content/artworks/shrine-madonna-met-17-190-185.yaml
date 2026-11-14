@@ -11,6 +11,7 @@ names:
   - lang: en
     role: alternative
     text: Shrine of the Virgin
+attribution_label: Anonymous, Rhenish
 created: 1300
 medium: oak, polychromy over gesso
 materials: [oak]
@@ -62,6 +63,7 @@ images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Shrine_of_the_Virgin_MET_DP266473.jpg/1280px-Shrine_of_the_Virgin_MET_DP266473.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Shrine_of_the_Virgin_MET_DP266473.jpg
     license: CC0
+    credit: The Metropolitan Museum of Art
 sources:
   medium:
     - source: ganz-2024-aus-dem-wald
@@ -87,3 +89,7 @@ sources:
     - url: https://www.metmuseum.org/art/collection/search/464142
       source: metropolitan-museum-collection
       accessed: 2026-11-11
+  attribution_label:
+    - source: gertsman-2015-worlds-within
+      locator: p. 70
+      accessed: 2026-11-13

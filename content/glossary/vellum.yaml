@@ -1,3 +1,16 @@
 public_id: 117210
 name: vellum
 category: material
+parent: parchment
+definition: Fine parchment, strictly of calfskin, scraped and prepared for writing and painting; in practice the word is often used interchangeably with parchment.
+description_md: |-
+  Vellum is prepared animal skin used as writing material, distinguished from [[term/parchment|parchment]] either by being made from calfskin or simply by being of higher quality.[[source/wikipedia-en-vellum|§ Introduction]] The word comes from Old French *vélin*, "calfskin", from Latin *vitulinum*, "made from calf", but from Roman times it was used for the best-quality skin of any animal; the finest, "uterine vellum", was said to come from stillborn or unborn animals.[[source/wikipedia-en-vellum|§ Terminology]] The boundaries blur: Christopher de Hamel writes that "for most purposes the words parchment and vellum are interchangeable".[[source/wikipedia-en-vellum|§ Terminology]]
+
+  The skin is washed and soaked in lime for several days to remove the hair, stretched on a frame (*herse*) and scraped with a crescent-shaped knife (*lunellum*), alternately wetted and dried to create tension, then cleaned with pumice and treated with lime or chalk to take the ink.[[source/wikipedia-en-vellum|§ Manufacture]][[source/wikipedia-en-vellum|§ Description]] Most of the finer medieval manuscripts, illuminated or not, were written on vellum,[[source/wikipedia-en-vellum|§ Usage]] and before canvas it was the support of the miniatures in illuminated manuscripts.[[source/wikipedia-en-panel-painting|§ Introduction]]
+
+  In this database vellum is recorded for the [[artist/limbourg-brothers|Limbourg brothers]]' [[artwork/tres-riches-heures|Très Riches Heures]] and for the [[artwork/atlas-miller|Miller Atlas]] of [[artist/lopo-homem|Lopo Homem]] (1519).
+sources:
+  definition:
+    - source: wikipedia-en-vellum
+      locator: § Introduction
+      accessed: 2026-11-13

@@ -2,3 +2,21 @@ public_id: 101136
 name: panel
 category: material
 parent: wood
+definition: A flat support of wood, in one piece or of several boards joined, prepared with glue, linen and gesso for painting; the usual painting support in Europe until canvas spread in the 16th century.
+description_md: |-
+  A panel painting is made on a flat panel of wood, either a single piece or several pieces joined together; until canvas became the more popular support in the 16th century it was the normal method of painting, when not painting on a wall or on vellum.[[source/wikipedia-en-panel-painting|§ Introduction]] Panel painting was prestigious in Greece and Rome, but few ancient examples survive; in the West it revived in the 12th century, its earliest forms being altar backs (dossals), altar fronts and crucifixes.[[source/wikipedia-en-panel-painting|§ History]] Canvas took over from panel in Italy in the first half of the 16th century, a change led by [[artist/andrea-mantegna|Mantegna]] and the Venetians; in the Netherlands the change took about a century longer, and [[artist/peter-paul-rubens|Rubens]] still preferred panel for the precision a solid support allowed.[[source/wikipedia-en-panel-painting|§ History]]
+
+  ## Construction
+
+  Cennino Cennini's handbook describes the process: a carpenter made a solid piece of wood, preferably radially cut and without the outer sapwood, which was coated with animal-skin glue and resin, covered with [[term/linen|linen]] and then with many layers of [[term/gesso|gesso]], each sanded down before the next.[[source/wikipedia-en-panel-painting|§ Panel construction and preparation]] Larger panels were composed of separate boards laid side by side with the grain alternating from one board to the next; Ilene Forsyth compares the joinery of Romanesque Madonnas in the Auvergne with this "usual medieval method of preparing panels for paintings".[[source/forsyth-1972-the-throne-of-wisdom|p. 16]] Carved figures were prepared in the same way: in German limewood sculpture "the technique of painting the sculpture was much like painting on panels", following the painters' handbooks.[[source/baxandall-1980-limewood-sculptors|p. 41]]
+
+  ## Woods and dating
+
+  Painters normally used the wood of their region — in Italy mostly poplar, in the Low Countries, northern Germany and the Rhineland oak, in southern Germany often pine — so that the species can help to locate a painting, and tree-ring dating gives an earliest possible date.[[source/wikipedia-en-panel-painting|§ Conservation and scientific analysis]] Fifteenth-century Nuremberg painters preferred conifers (spruce and fir), as in the epitaph for Ursula Haller of about 1483/84, painted on fir.[[source/ganz-2024-aus-dem-wald|Sitzung 8 (21.11.2024), Folie 58]] In the contract of 23 October 1485 for [[artist/domenico-ghirlandaio|Domenico Ghirlandaio]]'s [[artwork/ghirlandaio-anbetung-der-konige-innocenti|Adoration of the Magi]], the prior of the Spedale degli Innocenti had the wooden panel made, and the painter was to colour it in his own hand after an agreed drawing on paper.[[source/ganz-2024-aus-dem-wald|Sitzung 1 (26.9.2024), Folie 34]] Panels warp and crack with age; from the 19th century many were transferred to canvas, sometimes damaging the paint.[[source/wikipedia-en-panel-painting|§ Conservation and scientific analysis]]
+
+  Panel is the most frequent painting support in this database, from [[artist/giotto|Giotto]]'s Madonna Enthroned and [[artist/jan-van-eyck|Jan van Eyck]]'s [[artwork/madonna-of-chancellor-rolin|Madonna of Chancellor Rolin]] to [[artist/pieter-brueghel-the-elder|Pieter Brueghel the Elder]]'s [[artwork/the-hunters-in-the-snow|Hunters in the Snow]] and works by [[artist/egon-schiele|Egon Schiele]] of 1911–12; panels of a known wood are filed under [[term/oak-panel|oak panel]], [[term/poplar-panel|poplar panel]] and [[term/lime-panel|lime panel]].
+sources:
+  definition:
+    - source: wikipedia-en-panel-painting
+      locator: § Introduction
+      accessed: 2026-11-13
