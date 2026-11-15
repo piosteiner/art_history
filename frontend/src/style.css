@@ -1794,12 +1794,9 @@ a.tag.friend-shared:hover { border-color: var(--accent); }
 .emote-tip { position: fixed; z-index: 70; pointer-events: none; padding: .35rem; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); }
 .emote-tip img { display: block; max-width: 112px; max-height: 112px; }
 
-/* wide screens (2026-11-15): lists, tables, search and the graph get the room (up to 110 rem); reading text keeps
-   its measure (.prose, .facts, .provenance-list … at 42 rem). At the end of the file, after main, .page and .site-footer. */
+/* wide screens (2026-11-15): only the periods timeline gets the room (up to 110 rem); every other page keeps its
+   1200 px frame (owner 2026-11-15). At the end of the file, after main and .page. */
 @media (min-width: 1600px) {
-  main, .site-footer { max-width: min(110rem, calc(100vw - 4rem)); }
-  .page { max-width: none; }
-  /* an entry's page: text at its measure beside a larger map, no gap between them */
-  .page.detail { max-width: 84rem; }
-  .detail-grid { grid-template-columns: minmax(0, 1fr) clamp(340px, 46%, 40rem); }
+  main:has(> .periods-page) { max-width: min(110rem, calc(100vw - 4rem)); }
+  .page.periods-page { max-width: none; }
 }
