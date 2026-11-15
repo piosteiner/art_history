@@ -78,7 +78,12 @@ label.check > input { flex: none; margin: 0; transform: translateY(.1em); }
 :where(form) :where(button:not([type=button], [type=reset], .link-button, .secondary, [class*="maplibregl"]), input[type=submit]):hover:not(:disabled) { filter: brightness(1.08); }
 :where(button, input[type=submit], input[type=button]):disabled { opacity: .55; cursor: default; }
 :where(button, input[type=submit], input[type=button]):focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 var(--sans); }
+/* the base size: 16 px, a little larger on wide screens without display scaling (a 27-inch 1440p monitor) — the body
+   in rem, so that everything in rem grows with it; phones, laptops and scaled 4K screens keep 16 px (2026-11-15) */
+html { font-size: 100%; }
+@media (min-width: 1920px) { html { font-size: 106.25%; } }   /* 17 px */
+@media (min-width: 2400px) { html { font-size: 112.5%; } }    /* 18 px */
+body { margin: 0; background: var(--bg); color: var(--text); font: 1rem/1.55 var(--sans); }
 a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
 a:hover { color: var(--accent); }
 h1, h2 { font-family: var(--serif); font-weight: 600; line-height: 1.2; }
@@ -1788,3 +1793,13 @@ a.tag.friend-shared:hover { border-color: var(--accent); }
 .emote-suggest li[aria-selected="true"], .emote-suggest li:hover { background: var(--picked-bg); }
 .emote-tip { position: fixed; z-index: 70; pointer-events: none; padding: .35rem; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); }
 .emote-tip img { display: block; max-width: 112px; max-height: 112px; }
+
+/* wide screens (2026-11-15): lists, tables, search and the graph get the room (up to 110 rem); reading text keeps
+   its measure (.prose, .facts, .provenance-list … at 42 rem). At the end of the file, after main, .page and .site-footer. */
+@media (min-width: 1600px) {
+  main, .site-footer { max-width: min(110rem, calc(100vw - 4rem)); }
+  .page { max-width: none; }
+  /* an entry's page: text at its measure beside a larger map, no gap between them */
+  .page.detail { max-width: 84rem; }
+  .detail-grid { grid-template-columns: minmax(0, 1fr) clamp(340px, 46%, 40rem); }
+}
