@@ -27,3 +27,4 @@ backups/
 
 # thumbnails of museum-hosted images (backend/src/routes/thumbs.js)
 backend/var/
+backend/test/e2e/.source-files/

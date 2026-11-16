@@ -1828,3 +1828,12 @@ a.tag.friend-shared:hover { border-color: var(--accent); }
   main:has(> .periods-page) { max-width: min(110rem, calc(100vw - 4rem)); }
   .page.periods-page { max-width: none; }
 }
+
+/* a source's contents and summaries (API 253) */
+.source-notes { margin: 1.6rem 0; }
+.source-notes .source-toc ol { list-style: none; padding: 0; margin: .4rem 0; }
+.source-notes .source-toc li { display: flex; gap: .8rem; justify-content: space-between; padding: .15rem 0; border-bottom: 1px dotted var(--line); }
+.source-notes .source-toc li.toc-l2 { padding-left: 1.2rem; } .source-notes .source-toc li.toc-l3 { padding-left: 2.4rem; font-size: .95em; } .source-notes .source-toc li.toc-l4 { padding-left: 3.6rem; font-size: .9em; }
+.source-notes .toc-page { color: var(--muted); font-variant-numeric: tabular-nums; flex: none; }
+.source-notes details > summary { cursor: pointer; font-weight: 600; margin: .8rem 0 .3rem; }
+.source-notes h3 { font-size: 1.02rem; margin: 1rem 0 .3rem; }

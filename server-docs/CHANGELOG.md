@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-16
 
+### Migration 253: source files and reading notes; OCR tools; compressed copies of the books
+- **What:** tables `source_files` (a source's copies under `SOURCE_FILES_DIR`, default `/home/ubuntu/sources`) and
+  `source_notes` (contents, summary, chapter summaries; `released_at`), both REVOKEd from the API role; view
+  `public_source_notes` for the released ones. CMS `routes/source-notes.js`: on a source's page "Reading notes" (admins
+  only — editors see nothing), files opened through `/source-files/:id` (admins only), edit form, "Proofread — publish" /
+  "Unpublish". API source detail `notes` (released only); site section "Summary" / "Zusammenfassung" with contents,
+  chapters and "Written with AI, proofread and published on …". Server: `apt install ocrmypdf tesseract-ocr-{eng,deu,fra,
+  ita,jpn,kor} jbig2dec pngquant unpaper`; `/home/ubuntu/sources/` filled from `/home/ubuntu/books` (originals kept).
+  Tests: e2e `source-notes.spec.js`, `api-grants.spec.js` (names), site "a source with published reading notes".
+- **Why:** owner 2026-11-16 — summaries and contents of all sources with files, private until proofread; keep the files
+  long-term and smaller.
+- **Revert:** drop view/tables (migration), remove the route and the API field; `apt remove ocrmypdf …`; the copies in
+  `/home/ubuntu/sources` can be deleted (originals untouched).
+
 ### Content: ColBase batch — 14 works at the Japanese national museums; Heidelberg in the documentation (draft)
 - **What:** (data only, audited) for the 35 works held by TNM/Kyoto/Nara/Kyushu without a web page, ColBase records
   looked up through Japan Search (title, the artist's Japanese name, Japanese catalogue titles; size within 1.5 cm).

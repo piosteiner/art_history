@@ -795,3 +795,10 @@ label.check > span { flex: 1; }
 .emote-grid figure { margin: 0; display: grid; justify-items: center; gap: .15rem; padding: .3rem; border: 1px solid var(--line, #ddd); border-radius: 6px; }
 .emote-grid img { height: 28px; width: auto; }
 .emote-grid figcaption { font-size: .75rem; overflow-wrap: anywhere; text-align: center; }
+
+/* a source's reading notes (253): contents, chapters */
+.source-notes .source-toc { list-style: none; padding: 0; margin: .4rem 0; }
+.source-notes .source-toc li { display: flex; justify-content: space-between; gap: .8rem; border-bottom: 1px dotted #ddd; padding: .1rem 0; }
+.source-notes .source-toc li.toc-l2 { padding-left: 1.2rem; } .source-notes .source-toc li.toc-l3 { padding-left: 2.4rem; } .source-notes .source-toc li.toc-l4 { padding-left: 3.6rem; }
+.source-notes .source-chapter h4 { margin: .9rem 0 .2rem; }
+.source-chapter-edit { margin: .6rem 0; } .source-chapter-edit textarea { width: 100%; }

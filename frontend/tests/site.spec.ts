@@ -3789,3 +3789,22 @@ test('the other web page (API 250): below the text, with the note that the holde
   await page.goto('/artworks/the-great-wave-off-kanagawa');
   await expect(p).toHaveText('Another impression also at mfa.org ↗.');
 });
+
+test('a source with published reading notes: summary, contents with pages, chapters (API 253)', async ({ page }) => {
+  await sampleBibliography(page);
+  await page.route(/\/v1\/bibliography\/busch-1993$/, (r) => r.fulfill({ json: { type: 'source', slug: 'busch-1993', siglum: 'Busch 1993', citation: BUSCH.citation, name: 'Busch 1993',
+    kind: 'book', subtitle: null, authors: ['Werner Busch'], year: 1993, reading_status: 'read', read_on: null, primary_source: false, names: [], description_html: null,
+    wikidata_id: null, metadata: {}, updated_at: '', relationships: [], glossary: {}, bibliography: {}, mentioned_in: [],
+    notes: { lang: 'de', released: '2026-11-20', summary_html: '<p>Eine Geschichte des Gefühls im Bild.</p>',
+      toc: [{ title: 'Einleitung', page: 7, level: 1 }, { title: 'Friedrich', page: 41, level: 2 }],
+      chapters: [{ title: 'Einleitung', pages: 'S. 7–40', summary_html: '<p>Worum es geht.</p>' }] } } }));
+  await page.goto('/bibliography/busch-1993');
+  const notes = page.locator('section.source-notes');
+  await expect(notes).toHaveAttribute('lang', 'de');
+  await expect(notes.locator('h2')).toHaveText('Zusammenfassung');
+  await expect(notes).toContainText('Eine Geschichte des Gefühls im Bild.');
+  await expect(notes.locator('.source-toc li')).toHaveText([/Einleitung\s*7/, /Friedrich\s*41/]);
+  await notes.locator('summary', { hasText: 'Kapitel für Kapitel' }).click();
+  await expect(notes).toContainText('Worum es geht.');
+  await expect(notes).toContainText('geprüft und veröffentlicht am 2026-11-20');
+});

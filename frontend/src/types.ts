@@ -618,6 +618,14 @@ export interface Source extends DetailBase, Named, Omit<SourceItem, 'slug'> {
   type: 'source';
   description_html: string | null; // the notes
   url?: string | null; isbn?: string | null; doi?: string | null;
+  /** API 253: contents and summaries, once the owner has proofread and published them (written with AI); null before. */
+  notes?: SourceNotes | null;
+}
+export interface SourceNotes {
+  lang: 'en-GB' | 'de' | 'en'; released: string;
+  toc: { title: string; page: string | number | null; level: number }[];
+  summary_html: string | null;
+  chapters: { title: string; pages: string | null; summary_html: string | null }[];
 }
 
 export type Entity = Artist | Artwork | Place | Movement | Institution | Person | Polity | Event | Literature | Term | Source;

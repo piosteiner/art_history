@@ -38,6 +38,7 @@ const duplicates = require('../duplicates');
 const crypto = require('crypto');
 const images = require('../images');
 const privateImages = require('./private-images');
+const sourceNotes = require('./source-notes');
 const provenance = require('../provenance');
 const numbers = require('../numbers');
 const citations = require('../citations');
@@ -744,6 +745,7 @@ router.get('/:plural/:slug', async (req, res) => {
       })()}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       ${t.type === 'artwork' ? await privateImages.section(e, req.user) : ''}
+      ${t.type === 'source' ? await sourceNotes.section(e, req.user) : ''}
       ${t.type === 'artwork' ? numbers.listSection({ e, numbers: nums, cites: await citations.forNumbers(adminPool, nums.map((n) => n.id)), recent }) : ''}
       ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap, gaps: await provenance.coverage(adminPool, e.id), fate: await provenance.fate(adminPool, e.id),
         alternatives: provAlternatives,

@@ -28,6 +28,8 @@ module.exports = {
   // the test environment for visitors (TEST_ENV=1, its own database cluster, reset nightly — server-docs/README.md)
   testEnv: process.env.TEST_ENV === '1',
   testSite: process.env.TEST_SITE || 'https://test.arthistory.piogino.ch',
+  // the owner's copies of sources (books, articles, slides — migration 253), never in git or on the site
+  sourceFilesDir: process.env.SOURCE_FILES_DIR || '/home/ubuntu/sources',
   adminHost: process.env.ADMIN_HOST || (env === 'production' ? 'admin.arthistory.piogino.ch' : 'admin.localhost'),
   db: {
     name: process.env.DB_NAME || 'arthistory',

@@ -4,7 +4,7 @@
 // open cases (248) stays readable.
 const { test, expect, sql } = require('./helpers');
 
-const PRIVATE = /^(account_|admin_|chat_|set_chat_|study_|friendships$|form_drafts$|page_drafts$|page_downloads$|editor_scopes$|open_case|private_images$|feedback$|audit_log$)/;
+const PRIVATE = /^(account_|admin_|chat_|set_chat_|study_|friendships$|form_drafts$|page_drafts$|page_downloads$|editor_scopes$|open_case|private_images$|source_files$|source_notes$|feedback$|audit_log$)/;
 
 test('the API role reads no private table; the public view of open cases it does', () => {
   const readable = sql(`SELECT string_agg(c.relname, ' ' ORDER BY c.relname) FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace

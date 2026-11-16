@@ -878,6 +878,10 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     if (e.type === 'source') {
       const own = (await bibliography.loadCatalogue(apiPool)).get(entity.slug);
       Object.assign(body, { siglum: own.siglum, citation: own.full });
+      // reading notes (253): only once the owner has proofread and published them — contents and summaries
+      const note = (await apiPool.query('SELECT lang, toc, summary_md, chapters, released_at FROM public_source_notes WHERE source_id = $1', [id])).rows[0];
+      body.notes = note ? { lang: note.lang, released: note.released_at.toISOString().slice(0, 10), toc: note.toc,
+        summary_html: renderMarkdown(note.summary_md || ''), chapters: (note.chapters || []).map((c) => ({ title: c.title, pages: c.pages || null, summary_html: renderMarkdown(c.summary_md || '') })) } : null;
     }
     // Sources for facts (citations, 049/050): of its fields, its relationships, its provenance steps — each as
     // { kind, reliability, text, source?, wikidata?, locator, url, accessed, note, outdated }; the full references of the

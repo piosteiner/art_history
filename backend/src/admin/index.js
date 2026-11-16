@@ -113,6 +113,7 @@ router.use(require('./routes/provenance'));
 router.use(require('./routes/phases'));         // a work's building history (169)
 router.use(require('./routes/open-cases'));     // cases to follow up, out of the Quality page (198)
 router.use(require('./routes/private-images')); // the owner's reference images from their books (184)
+router.use(require('./routes/source-notes'));   // files and reading notes of sources, private until published (253)
 router.use(require('./routes/accounts'));       // accounts, roles, sign-up settings — admins only (220)
 router.use(require('./routes/emotes'));         // emotes in the chats, from 7TV — admins only (240)
 router.use(require('./routes/wikidata'));

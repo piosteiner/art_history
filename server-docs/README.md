@@ -125,6 +125,14 @@ Also course materials: `War and Peace FS19/` (Thomsen lecture) and `art-and-tota
 UZH HS 2024 — readings, programmes, slides, the owner's notes and paper; downloaded 2026-11-07 from the owner's shared
 Google Drive folder, 37 files, 461 MB).
 
+**Working copies (since 2026-11-16, migration 253):** `/home/ubuntu/sources/<source slug>/` — the same files compressed
+(scans: Ghostscript 200 dpi, JPEG q65, then `ocrmypdf` in the source's language — Tesseract eng/deu/fra/ita/jpn/kor;
+PDFs with text: downsampled only if ≥ 15 % smaller; the rest copied), `manifest.json` = original path → copy, sizes,
+sha256, action. Registered in `source_files` (CMS: a source's page → Reading notes → files, admins only,
+`GET /source-files/:id`; `SOURCE_FILES_DIR`). The originals in `books/` stay until the owner has checked samples.
+**Not backed up yet** — the nightly backup covers the database only (to-do: an encrypted copy off the server, not on
+GitHub). Reading notes (contents + summaries, written with AI) in `source_notes`, private until the owner publishes them.
+
 ## API keys for outside data (open to-do)
 Sources of the admin panel's image search that need a key of our own — without it the source is not offered
 (`src/admin/imagesearch.js`). Keys go into `~/.config/arthistory/backend.env` (never into the repo), then

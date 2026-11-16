@@ -4,12 +4,26 @@ import {
 } from '../html';
 import type {
   EraDate, EraPart,
-  Artwork, Citation, CreatorRef, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, Literature, PartDimensions, Phase, PolityLink, Term,
+  Artwork, Citation, CreatorRef, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, Literature, PartDimensions, Phase, PolityLink, SourceNotes, Term,
 } from '../types';
 import { partsGrid } from '../series';
 import { STATUS_LABEL } from '../catalog';
 import { cite } from '../cite';
 import { backlinks, lastRecordedStep, provenanceSection, uncertain } from './detail-sections';
+
+/** API 253: a source's contents and summaries — written with AI, published by the owner after proofreading; in the
+ *  source's language (lang on the section). Chapters fold, the contents too when long. */
+function sourceNotesSection(n: SourceNotes): Html {
+  const lang = n.lang === 'de' ? 'de' : 'en';
+  return html`<section class="source-notes" lang="${lang}"><h2>${lang === 'de' ? 'Zusammenfassung' : 'Summary'}</h2>
+    ${n.summary_html ? html`<div class="text">${trusted(n.summary_html)}</div>` : ''}
+    ${n.toc.length ? html`<details class="source-toc"${n.toc.length <= 25 ? ' open' : ''}><summary>${lang === 'de' ? 'Inhalt' : 'Contents'}</summary>
+      <ol>${n.toc.map((t) => html`<li class="toc-l${String(Math.min(t.level || 1, 4))}"><span>${t.title}</span>${t.page != null && t.page !== '' ? html`<span class="toc-page">${String(t.page)}</span>` : ''}</li>`)}</ol></details>` : ''}
+    ${n.chapters.length ? html`<details class="source-chapters"><summary>${lang === 'de' ? 'Kapitel für Kapitel' : 'Chapter by chapter'} <span class="muted">${String(n.chapters.length)}</span></summary>
+      ${n.chapters.map((c) => html`<h3>${c.title}${c.pages ? html` <span class="muted small">${c.pages}</span>` : ''}</h3>${c.summary_html ? html`<div class="text">${trusted(c.summary_html)}</div>` : ''}`)}</details>` : ''}
+    <p class="muted small">${lang === 'de' ? `Mit KI verfasst, geprüft und veröffentlicht am ${n.released}.` : `Written with AI, proofread and published on ${n.released}.`}</p>
+  </section>`;
+}
 
 export type Fact = [label: string, value: Html | string | null | undefined | false];
 
@@ -358,7 +372,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['DOI', e.doi ? html`<a href="https://doi.org/${e.doi}" target="_blank" rel="noopener">${e.doi}</a>` : null],
           ['Online', e.url ? html`<a href="${e.url}" target="_blank" rel="noopener">${e.url.replace(/^https?:\/\/(www\.)?/, '')}</a>` : null],
         ],
-        extra: [],
+        extra: e.notes ? [sourceNotesSection(e.notes)] : [],
       };
     case 'term':
       return {
