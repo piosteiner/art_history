@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-16
 
+### Content: Makoto Aida (private collection) and the Boscotrecase Red Room panel — web pages
+- **What:** (data only, audited) Aida, *Air Raid on New York City*: `artwork_without_web_page` acknowledged (Takahashi
+  Collection, Tokyo, has no online catalogue of single works; not in Art Platform Japan; the Mori page stays the other
+  web page). Boscotrecase, Red Room panel (MANN 147501): new source `blanckenhagen-alexander-1962` (*The Paintings from
+  Boscotrecase*, RM Ergänzungsheft 6, Heidelberg 1962 — read in the excerpts at noteaccess.com; Heidelberg's
+  digitised copy is behind a bot check), other web page = that digitised copy, text section "The Red Room" (pp. 9, 20).
+  Which wall our panel is (north / west / east) is not settled. Finding acknowledged.
+- **Why / Revert:** owner's round; the entries' history pages.
+
 ### Content: Konoe Nobutada, *Nikka Tenjin* — found at Yale (2024.62.1)
 - **What:** (data only, audited) Mason's fig. 306 ("Imadegawa Yōko, Shiga") is the Yale University Art Gallery's
   *Tenjin Traveling to China (Totō Tenjin)*: same size 75.4 × 35.5 cm, inscription 日課天神 with the same Tenjin line,
