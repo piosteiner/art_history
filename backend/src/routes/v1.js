@@ -149,10 +149,13 @@ router.get('/search/text', searchLimit, async (req, res) => {
            search_headline(p.body, $1) AS headline,
            count(*) OVER () AS total,
            count(*) FILTER (WHERE e.type = 'source') OVER () AS source_total   -- the site heads them "In the bibliography"
-    FROM entity_index e
+    -- the candidates first, then the view for them only: with "p.id IS NOT NULL OR … IN (near)" the OR kept the filter
+    -- out of the view, so every entry of entity_index was built with its computed fields (~350 ms) to keep a handful
+    -- (2026-11-16: hokusai 440 → 57 ms, venedig 497 → 63 ms, same hits)
+    FROM (SELECT type, id FROM per_entry UNION SELECT type, id FROM near) c
+    JOIN entity_index e ON (e.type, e.id) = (c.type, c.id)
     LEFT JOIN per_entry p ON (p.type, p.id) = (e.type, e.id)
-    WHERE (p.id IS NOT NULL OR (e.type, e.id) IN (SELECT type, id FROM near))
-      AND ($5::text[] IS NULL OR (e.type = 'artwork' AND NOT EXISTS (SELECT 1 FROM unnest($5::text[]) ph WHERE NOT ${has()})))
+    WHERE ($5::text[] IS NULL OR (e.type = 'artwork' AND NOT EXISTS (SELECT 1 FROM unnest($5::text[]) ph WHERE NOT ${has()})))
       AND ($6::text[] IS NULL OR e.type <> 'artwork' OR NOT EXISTS (SELECT 1 FROM unnest($6::text[]) ph WHERE ${has()}))
     -- sources after every other entry (owner, 2026-10-28): the person Kleomenes before the lexicon article "Kleomenes"
     ORDER BY e.type = 'source', score DESC, e.sort_key COLLATE sort_natural

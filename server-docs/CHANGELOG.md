@@ -2,6 +2,21 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-16
+
+### API: full-text search 4–8× faster for searches with few hits
+- **What:** `/v1/search/text` (`backend/src/routes/v1.js`) collects its candidates first (full-text matches ∪ near
+  names) and joins the view `entity_index` only to them. Before, `WHERE (p.id IS NOT NULL OR (e.type, e.id) IN (near))`
+  kept the filter out of the view: all 10,283 entries were built with their computed fields (~350 ms) to keep a
+  handful. Measured on production (read-only, `EXPLAIN ANALYZE`): hokusai 440 → 57 ms, kirche 426 → 43 ms,
+  venedig 497 → 63 ms, kunst 488 → 177 ms. Searches with many hits (st, maria, portrait: 700–800 ms) unchanged — there
+  the planner builds the whole view anyway; a stored table of the index entries would be the next step (not done).
+  Same hits as before for all searches compared (only the order among equal scores beyond the first page can differ).
+  Unit tests 96/96, e2e 371/372 (the one failure, provenance-custody, passed on rerun — worker timing), perf 41/41
+  within budget (full-text search 276 ms at 10×).
+- **Why:** owner 2026-11-16, after the same kind of fix on zuerich.piogino.ch. **Revert:** `git revert` of this commit
+  and `backend/deploy.sh`.
+
 ## 2026-11-13
 
 ### Content: site changelog and documentation drafts for 2026-11-13
