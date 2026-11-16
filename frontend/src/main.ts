@@ -38,6 +38,20 @@ const nav = document.getElementById('nav')!;
 // "Sets": the shared study sets for visitors, the account's own once it is known to be logged in (account.ts)
 render(nav, html`<span class="nav-group"><a href="/">Explore</a><a href="/graph">Network</a><a href="/periods">Periods</a><a href="/quiz">Quiz</a><a href="/sets/shared" data-section="sets" class="nav-sets">Sets</a></span>
   ${NAV.map((g) => html`<span class="nav-group" title="${g.title}">${g.plurals.map((p) => html`<a href="/${p}">${PLURAL_LABEL[p]}</a>`)}</span>`)}`);
+// phones: the menu folds behind a "Menu" button (style.css, ≤ 640 px) — opened and closed here, closed again after a link
+{
+  const header = document.querySelector<HTMLElement>('.site-header')!;
+  const toggle = document.getElementById('nav-toggle')!;
+  const setOpen = (open: boolean) => {
+    header.classList.toggle('nav-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+  };
+  toggle.addEventListener('click', () => setOpen(!header.classList.contains('nav-open')));
+  nav.addEventListener('click', (e) => { if ((e.target as Element).closest('a')) setOpen(false); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && header.classList.contains('nav-open')) { setOpen(false); toggle.focus(); }
+  });
+}
 mountSearch(document.getElementById('search')!);
 watchLinks(main); // previews on the internal links of every page
 wireImageFallbacksEverywhere(); // an image that fails: its original, or without crossorigin (html.ts)

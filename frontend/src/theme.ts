@@ -38,7 +38,10 @@ export function mountThemeToggle(root: HTMLElement) {
   btn.type = 'button';
   btn.className = 'theme-toggle';
   const label = () => {
-    btn.textContent = LABEL[choice];
+    // the icon and the word apart: on the narrowest screens only the icon shows (style.css .theme-word)
+    const [icon, word] = LABEL[choice].split(' ');
+    btn.replaceChildren(icon, Object.assign(document.createElement('span'), { className: 'theme-word', textContent: ` ${word}` }));
+    btn.setAttribute('aria-label', `Theme: ${choice}`);
     btn.title = `Theme: ${choice} (click to change)`;
   };
   label();

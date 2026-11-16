@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-16
 
+### Site: the header on narrow screens
+- **What:** `frontend/` — phones (≤ 640 px): the header is a grid — title and switches on the first row, a "Menu" button
+  beside the search on the second, the links folded below (opened by the button, closed after a link or Esc; groups as
+  grids of 2–3 columns with lines between them; `#nav-toggle` in `index.html`, handler in `main.ts`); ≤ 400 px the theme
+  switch shows only its icon (`theme.ts`: icon and `.theme-word` apart), ≤ 350 px tighter spacing. Wider screens: the
+  search sits beside the switches (no longer stranded mid-row), the lines between link groups only at > 1200 px (a
+  wrapped group started its line with one). Removed the old absolute positions of `#theme`/`.header-end`. Test
+  `tests/mobile.spec.ts` "the menu folds behind Menu…".
+- **Why:** owner 2026-11-16 — the header looked bad on very narrow displays (at 320 px the switches covered the title).
+- **Revert:** git revert.
+
 ### API: full-text search 4–8× faster for searches with few hits
 - **What:** `/v1/search/text` (`backend/src/routes/v1.js`) collects its candidates first (full-text matches ∪ near
   names) and joins the view `entity_index` only to them. Before, `WHERE (p.id IS NOT NULL OR (e.type, e.id) IN (near))`

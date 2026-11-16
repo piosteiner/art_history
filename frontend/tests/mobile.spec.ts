@@ -56,3 +56,21 @@ test('previews on an entry page: the first tap on a link shows it, the second fo
   await museum.tap();
   await expect(page).toHaveURL(/\/institutions\/\d+\/metropolitan-museum-of-art$/);
 });
+
+test('the menu folds behind "Menu" on a phone; title and switches share the first row', async ({ page }) => {
+  await page.goto('/artists');
+  const nav = page.locator('#nav');
+  const toggle = page.locator('#nav-toggle');
+  await expect(nav).toBeHidden();
+  await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+  // the title is not covered by the switches
+  const brand = (await page.locator('.brand').boundingBox())!;
+  const end = (await page.locator('.header-end').boundingBox())!;
+  expect(brand.x + brand.width).toBeLessThanOrEqual(end.x);
+  await toggle.tap();
+  await expect(nav).toBeVisible();
+  await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+  await nav.locator('a', { hasText: 'Glossary' }).tap();
+  await expect(page).toHaveURL(/\/glossary$/);
+  await expect(nav).toBeHidden();
+});

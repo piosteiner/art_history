@@ -102,10 +102,40 @@ h2 { font-size: 1.25rem; margin: 1.6em 0 .5em; }
 .nav { display: flex; flex-wrap: wrap; gap: .2rem .9rem; font-size: .95rem; }
 .nav .nav-group { display: flex; flex-wrap: wrap; gap: .2rem .9rem; }
 .nav .nav-group + .nav-group { border-left: 1px solid var(--line); padding-left: .9rem; }
-@media (max-width: 1000px) { .nav .nav-group + .nav-group { border-left: 0; padding-left: 0; } } /* groups may wrap: no lines */
+/* the lines between groups only while the whole menu fits on one line — a wrapped group would start its line with one */
+@media (max-width: 1200px) { .nav .nav-group + .nav-group { border-left: 0; padding-left: 0; } }
 .nav a { color: var(--muted); text-decoration: none; padding: .15rem 0; border-bottom: 2px solid transparent; }
 .nav a:hover, .nav a.current { color: var(--text); border-bottom-color: var(--accent); }
 .search { margin-left: auto; position: relative; flex: 0 1 300px; min-width: 200px; }
+.nav-toggle { display: none; }
+/* phones: title and switches on the first row, Menu + search on the second, the links (folded) below */
+@media (max-width: 640px) {
+  .site-header { display: grid; grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas: "brand brand end" "toggle search search" "nav nav nav"; gap: .55rem .6rem; align-content: start; }
+  .brand { grid-area: brand; align-self: center; white-space: nowrap; }
+  .header-end { grid-area: end; gap: .5rem; }
+  .search { grid-area: search; margin: 0; min-width: 0; }
+  .nav-toggle { grid-area: toggle; align-self: stretch; display: inline-flex; align-items: center; gap: .35rem; font: inherit; font-size: .92rem;
+    color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 0 .75rem; cursor: pointer; }
+  .nav-toggle::before { content: "☰"; }
+  .site-header.nav-open .nav-toggle::before { content: "✕"; }
+  .nav-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .nav { grid-area: nav; display: none; }
+  .site-header.nav-open .nav { display: block; }   /* a block: the groups' grids get their full width (as flex items they were measured one column wide) */
+  .nav .nav-group { display: grid; grid-template-columns: repeat(auto-fill, minmax(6.6rem, 1fr)); grid-auto-rows: min-content; align-content: start; gap: 0 .6rem; padding: .35rem 0; }
+  .nav .nav-group + .nav-group { border-top: 1px solid var(--line); }
+  .nav a { padding: .4rem 0; }
+}
+@media (max-width: 400px) {
+  .theme-word { display: none; }   /* only the icon: the title keeps its room */
+  .brand { font-size: 1.1rem; }
+  .header-end { gap: .4rem; }
+}
+@media (max-width: 350px) {
+  .brand { font-size: 1rem; }
+  .header-end { gap: .3rem; }
+  .account-signup { padding: .15rem .5rem; }
+}
 
 .search-form input, .filter {
   width: 100%; font: inherit; padding: .45rem .7rem; border: 1px solid var(--line);
@@ -565,7 +595,6 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
   position: fixed; top: 12px; right: 16px; font-size: 1.6rem; line-height: 1; background: none; border: 0; color: #fff; cursor: pointer;
 }
 #theme { flex: none; }
-@media (max-width: 640px) { #theme { position: absolute; top: .6rem; right: 16px; } .site-header { position: relative; } }
 /* map controls in dark mode (MapLibre draws its icons dark) */
 :root[data-theme="dark"] .maplibregl-ctrl-group,
 :root[data-theme="dark"] .maplibregl-ctrl-attrib { background: var(--surface); color: var(--muted); }
@@ -1570,8 +1599,7 @@ button.danger { border-color: var(--accent); color: var(--accent); }
 .results-items { margin: .3rem 0; padding-left: 1.4rem; }
 
 /* the account menu at the header's end (owner 2026-11-05) — replaces the footer's account line */
-.header-end { display: flex; align-items: center; gap: .7rem; margin-left: auto; }
-@media (max-width: 640px) { .header-end { position: absolute; top: .55rem; right: 16px; } #theme { position: static; } }
+.header-end { display: flex; align-items: center; gap: .7rem; }   /* beside the search, which takes the free space before it */
 .account { display: flex; align-items: center; gap: .6rem; font-size: .92rem; }
 .account-login { color: var(--muted); text-decoration: none; }
 .account-login:hover { color: var(--text); }
