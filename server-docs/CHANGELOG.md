@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-16
 
+### Content: Konoe Nobutada, *Nikka Tenjin* — found at Yale (2024.62.1)
+- **What:** (data only, audited) Mason's fig. 306 ("Imadegawa Yōko, Shiga") is the Yale University Art Gallery's
+  *Tenjin Traveling to China (Totō Tenjin)*: same size 75.4 × 35.5 cm, inscription 日課天神 with the same Tenjin line,
+  provenance beginning "Imadegawa Yuko, Shiga Prefecture". Holder, number, web page, date 1609 (inscription; span
+  "uncertain" = one moment), size with mounting, other names, CC0 image (object page), provenance in five steps
+  (Imadegawa → Takashi Yanagi, Kyoto, by 1979 → Danziger 1979 → loan to Yale 2009–24 → gift 2024), text section with
+  the inscriptions (Murase's translation). New source `yale-2024-62-1`. Mason's "early 17th century" citation on the
+  date removed (superseded). NB Yale is not yet in the documentation's "Bildrechte der Museen".
+- **Why / Revert:** owner's round "paintings without a web page"; the entry's history page.
+
 ### Content: S. Gerasimov, *A Collective Farm Festival* — no Tretyakov page; Paris 1937, into the gallery 1945
 - **What:** (data only, audited) other web page = the Tretyakov Gallery magazine's illustration catalogue (tg-m.ru 4840;
   the gallery's online collection shows a selection only); new sources `tg-m-catalogue-4840` and
