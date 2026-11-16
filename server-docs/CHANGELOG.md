@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-16
 
+### Content: ColBase batch — 14 works at the Japanese national museums; Heidelberg in the documentation (draft)
+- **What:** (data only, audited) for the 35 works held by TNM/Kyoto/Nara/Kyushu without a web page, ColBase records
+  looked up through Japan Search (title, the artist's Japanese name, Japanese catalogue titles; size within 1.5 cm).
+  Entered for the 14 confident matches: number, ColBase page, Japanese title, citations (one source per record,
+  `colbase-<museum>-<number>`), 12 CC BY images — Kasuga mandala A-11088, Sanraku A-10129, Shikō A-10525-1, haniwa
+  J-22675, Fontanesi A-11687, Taiga A-11521, Taima mandala (Nara) 1008-0, Hōrai toiletry box (Kyushu) H甲30, dōtaku
+  J-37433, Kurokoma figurine J-8008, Sharaku A-10569-486, Hokusai A-10569-672, Harunobu A-10569-1255, Moronobu A-8789.
+  Found a duplicate: `kanzan-yoroboshi` = `scene-from-the-noh-play-yoroboshi` (A-10508) — merge pending the owner.
+  To confirm: Kōun *Old Monkey* (C-232: 1893, 108.5 cm), Kishida *Reiko* (A-10568: 1921), Motonobu (A-288-2: width).
+  Documentation: row "Heidelberger historische Bestände – digital" (arthistoricum.net, German Sales auction catalogues;
+  automated access no — bot check) as a draft of chapter 9.
+- **Why / Revert:** owner 2026-11-16; the entries' history pages / delete the draft.
+
 ### Content: Asai Chū, *Autumn at Grez* — TNM A-11171
 - **What:** (data only, audited) ColBase record (same size 79.5 × 60.0 cm, 1901): number A-11171, web page, CC BY image,
   Japanese title, fields cited; new source `colbase-tnm-a-11171`.
