@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-16
 
+### Content: Hoyer (no Army page) and the Goryeo *Amitābha triad* — found in Tokyo (TNM TA-59)
+- **What:** (data only, audited) Hoyer, *Am Anfang war das Wort*: the Google Arts & Culture page is the USHMM's (the
+  Army Center of Military History only in its rights line), no page of the CMH found — stays other web page, finding
+  acknowledged. *Amitābha triad* (Portal fig. 45): Portal p. 89 names the Tokyo National Museum for fig. 45, ColBase
+  TA-59 matches (123.0 × 55.9 cm, Amitābha with Avalokiteśvara holding a willow and Mahāsthāmaprāpta): holder, number,
+  web page (ColBase), date 13th–14th century (museum; Portal: 13th), CC BY image, other names, text section "In Tokyo";
+  new source `colbase-tnm-ta-59`; Portal's citations of the old date and width removed.
+- **Why / Revert:** owner's round; the entries' history pages.
+
 ### Content: Makoto Aida (private collection) and the Boscotrecase Red Room panel — web pages
 - **What:** (data only, audited) Aida, *Air Raid on New York City*: `artwork_without_web_page` acknowledged (Takahashi
   Collection, Tokyo, has no online catalogue of single works; not in Art Platform Japan; the Mori page stays the other
