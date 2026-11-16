@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-16
 
+### Content: Asai Chū, *Autumn at Grez* — TNM A-11171
+- **What:** (data only, audited) ColBase record (same size 79.5 × 60.0 cm, 1901): number A-11171, web page, CC BY image,
+  Japanese title, fields cited; new source `colbase-tnm-a-11171`.
+- **Why / Revert:** owner's round; the entry's history page.
+
 ### Content: Hoyer (no Army page) and the Goryeo *Amitābha triad* — found in Tokyo (TNM TA-59)
 - **What:** (data only, audited) Hoyer, *Am Anfang war das Wort*: the Google Arts & Culture page is the USHMM's (the
   Army Center of Military History only in its rights line), no page of the CMH found — stays other web page, finding
