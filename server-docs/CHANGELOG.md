@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-16
 
+### Content: S. Gerasimov, *A Collective Farm Festival* — no Tretyakov page; Paris 1937, into the gallery 1945
+- **What:** (data only, audited) other web page = the Tretyakov Gallery magazine's illustration catalogue (tg-m.ru 4840;
+  the gallery's online collection shows a selection only); new sources `tg-m-catalogue-4840` and
+  `echo-2007-sobranie-tretyakovki-gerasimov` (Echo of Moscow, "Собрание Третьяковки", 8 July 2007, N. Aleksandrova of
+  the Tretyakov). Provenance artist 1937 → Tretyakov 1945 (after his solo exhibition); records Paris 1937 (silver
+  medal), Guggenheim *RUSSIA!* 2005–06; text section "Paris 1937 and the Tretyakov"; creator/date/holder/medium/size
+  cited. A first showing "1938, Индустрия социализма" from a search snippet left out (page unreadable).
+  `artwork_without_web_page` acknowledged.
+- **Why / Revert:** owner 2026-11-16 (option 1); the entry's history page.
+
 ### Site: the header on narrow screens
 - **What:** `frontend/` — phones (≤ 640 px): the header is a grid — title and switches on the first row, a "Menu" button
   beside the search on the second, the links folded below (opened by the button, closed after a link or Esc; groups as
