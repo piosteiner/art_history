@@ -17,6 +17,19 @@ Format: date — what — why — how to revert.
 - **Why:** owner 2026-11-16, after the same kind of fix on zuerich.piogino.ch. **Revert:** `git revert` of this commit
   and `backend/deploy.sh`.
 
+## 2026-11-16
+
+### Content: Andreoni, *Aeropittura e carri armati* (1936) — on the art market
+- **What:** (data only, audited) oil on wood, 127 × 127 cm, frame 130 × 130 cm; kind painting; creator/date/kind cited
+  (seminar slide 17, the gallery page, Artsy). New sources `lattuada-andreoni-aeropittura-e-carri-armati` and
+  `artsy-andreoni-aeropittura-e-carri-armati` (level other), new institution Lattuada Gallery (Milan, gallery).
+  Provenance: unknown holder (lenders of 1996/2018 not named) → Lattuada Gallery as dealer by 2021; records: exhibitions
+  Seravezza 1996 (cat. Duranti p. 131 no. 34), Rome Galleria Russo 2018 (pp. 144–145), Milan Arte Centro 2021 (cat. p. 14
+  no. 4), offered on Artsy Nov. 2026 (€40,000, certificate of authenticity). Text section "Where it is". No web link
+  (owner: a dealer's listing is not the holder's page) — `artwork_without_web_page` acknowledged. No image (Andreoni
+  † 1961, protected until 2031).
+- **Why / Revert:** owner's request; the entry's history page.
+
 ## 2026-11-13
 
 ### Content: site changelog and documentation drafts for 2026-11-13
