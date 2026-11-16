@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-16
 
+### Content: reading notes, first 23 sources; Mason, Kolb, two sources
+- **What:** (data only, audited) private reading notes (contents + summaries, by subagents from the owner's copies,
+  checked by link/file validation and spot checks) for 23 sources: Mason; the War and Peace course, Howes, Kushner
+  (Kushner's copy OCR'd afterwards — its cover sheet had hidden the missing text layer); Baxandall, Habenicht, Böckem,
+  Ajmar; 15 seminar readings incl. the owner's Sironi paper — 54 files registered. None released.
+  Mason: place, ISBN and "second edition, revised by Donald Dinwiddie" (title page). Pages: Cardoso 193–203, Lazzaro 13–31.
+  New sources: `sapienza-sironi-restauro` (press release on the restoration of Sironi's Aula Magna mural); the file
+  "Italy between art and science" is an extract of `braun-2000`. Böckem's argument on the *Veduta di Venezia*:
+  authenticity "disputed" (2016, note, pp. 50–58); new person `anton-kolb` (d. 1541 Venice, text after Böckem pp. 33–35)
+  as its publisher (1500); the view's "created in Venice" dated 1497–1500.
+- **Why / Revert:** owner 2026-11-16; entries' history pages; `DELETE FROM source_notes …` for the notes.
+
 ### Migration 253: source files and reading notes; OCR tools; compressed copies of the books
 - **What:** tables `source_files` (a source's copies under `SOURCE_FILES_DIR`, default `/home/ubuntu/sources`) and
   `source_notes` (contents, summary, chapter summaries; `released_at`), both REVOKEd from the API role; view
