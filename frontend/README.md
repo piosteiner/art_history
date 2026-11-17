@@ -244,6 +244,9 @@ T a note in words. Hover, keyboard focus or a tap opens the citations: short for
 Wikidata item), accessed date, the full reference from the detail's `bibliography`, the note. `outdated` citations get
 no marker and are listed last, muted ("value changed since"). Which row shows which field: `FIELD_FACT` in
 `views/detail-facts.ts`; a sourced field without a row gets one of its own.
+Own assumptions (API 255, `kind: 'assumption'`): the word "assumed" (dashed, italic) instead of a letter — never read as
+a source; the popover says "Not from a source", "Assumption by <public name> — no source says so; an educated guess"
+and "Why: …" (the note).
 
 ## Crossed paths
 `src/encounters.ts` finds pairs at the same place with overlapping dates in the dated presence links (left out: a
