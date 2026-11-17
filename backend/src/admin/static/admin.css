@@ -419,7 +419,7 @@ details.cite[open] > summary::after { content: ''; position: fixed; inset: 0; z-
 .cite-panel ul { margin: 0 0 .8rem; padding-left: 1.1rem; }
 .cite-panel li { margin: .25rem 0; }
 .cite-panel .cite-add { border-top: 1px solid var(--line); padding-top: .7rem; }
-.cite-more > summary { cursor: pointer; margin: .3rem 0; }
+.cite-more > summary, .cite-assume > summary { cursor: pointer; margin: .3rem 0; }
 .cite-badge.cite-none { color: var(--accent); border-color: var(--accent); }
 .cite-legend { margin-top: -.4rem; }
 .cite-legend .cite-badge { margin: 0 .1rem; }

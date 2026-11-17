@@ -538,7 +538,7 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
           <div class="field-pair"><div class="field"><label>Name of the website (new ones)</label><input name="site" placeholder="e.g. Van Gogh Museum, Collection" aria-label="name of the website"></div>
             <div class="field"><label>Accessed</label><input name="accessed" type="date" aria-label="accessed"></div></div>
           <div class="field"><label>Or in words — a note, not a bibliography entry</label><input name="text" placeholder="e.g. letter to Theo, 1888" aria-label="source in words"></div></details>
-        <details class="cite-more cite-assume"><summary class="small muted">no source: my own assumption …</summary>
+        <details class="cite-assume"><summary class="small muted">no source: my own assumption …</summary>
           <div class="field"><label>My assumption — why I think so</label>
             <textarea name="assumption" rows="2" placeholder="e.g. style and technique match the workshops of the capital at that time" aria-label="my assumption, with the reasoning"></textarea>
             <div class="hint">For an educated guess no source states. The site shows it as “Assumption by <i>your public name</i>” with this reasoning — never as a source. Leave the fields above empty.</div></div></details>
