@@ -1,5 +1,9 @@
 public_id: 106310
 title: Dōtaku with designs of animals, plants and daily life
+names:
+  - lang: ja
+    role: translation
+    text: 扁平鈕式銅鐸
 attribution_label: Anonymous
 created: c. 100 BCE–c. 300
 created_span: uncertain
@@ -9,6 +13,8 @@ materials: [bronze]
 dimensions: [42.8]
 dimensions_note: each 42.8 cm high
 institution: tokyo-national-museum
+inventory_number: J-37433
+web_url: https://colbase.nich.go.jp/collection_items/tnm/J-37433
 description_md: "A pair of Late Yayoi bronze bells with reliefs in blocks: a praying mantis, dragonflies, a salamander, cranes, a turtle, a man shooting a deer, a hunter with dogs and a boar, a granary and two people pounding rice. [[source/history-of-japanese-art|p. 26, fig. 20]]"
 relationships:
   - type: created_in
@@ -23,6 +29,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 26, fig. 20
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/J-37433/image/slideshow_s/J-37433_E0102652.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/J-37433
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -42,3 +53,12 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 26, fig. 20
+    - url: https://colbase.nich.go.jp/collection_items/tnm/J-37433
+      source: colbase-tnm-j-37433
+      locator: 所蔵
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/J-37433
+      source: colbase-tnm-j-37433
+      locator: 列品番号
+      accessed: 2026-11-16

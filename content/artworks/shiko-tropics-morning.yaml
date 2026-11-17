@@ -1,5 +1,9 @@
 public_id: 108249
 title: The Tropics (Morning)
+names:
+  - lang: ja
+    role: translation
+    text: 熱国之巻（朝之巻）
 creator: imamura-shiko
 created: 1914
 kind: handscroll
@@ -7,6 +11,8 @@ medium: Handscroll, colour on paper
 materials: [paper]
 dimensions: [45.7]
 institution: tokyo-national-museum
+inventory_number: A-10525-1
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10525-1
 description_md: "The masterpiece of [[artist/imamura-shiko]] (1880–1916), after a journey to India in 1914: two [[yamato-e]] handscrolls of a south Indian landscape in the morning and the evening, a seamless blend of Eastern and Western techniques — the absence of outlines a nod to Rinpa, the naive charm and repetitive brushstrokes reminiscent of Van Gogh and Gauguin. [[source/history-of-japanese-art|pp. 367–368, fig. 436]]"
 relationships:
   - type: associated_with
@@ -14,6 +20,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 367–368, fig. 436
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/A-10525-1/image/slideshow_s/A-10525-1_E0148316.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/A-10525-1
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -36,3 +47,12 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: pp. 367–368, fig. 436
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10525-1
+      source: colbase-tnm-a-10525-1
+      locator: 所蔵
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10525-1
+      source: colbase-tnm-a-10525-1
+      locator: 列品番号
+      accessed: 2026-11-16

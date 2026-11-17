@@ -1,5 +1,9 @@
 public_id: 107942
 title: Morning Haze at Asakusa (Eight Sophisticated Views of Edo)
+names:
+  - lang: ja
+    role: translation
+    text: 風流江戸八景・浅草晴嵐
 creator: suzuki-harunobu
 created: c. 1769
 created_span: uncertain
@@ -9,6 +13,8 @@ materials: [paper]
 dimensions: [25.4, 19]
 dimensions_note: chūban
 institution: tokyo-national-museum
+inventory_number: A-10569-1255
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-1255
 description_md: Ofuji, the “ginkgo girl” of the toothpick shop behind the Asakusa Kannon and one of the two great beauties of Edo, flirts with a young samurai — slender, graceful, innocent and untouched by life like all [[artist/suzuki-harunobu]]’s women; ginkgo leaves at her feet and a willow, emblem of the pleasure quarter, behind her. [[source/history-of-japanese-art|p. 284, fig. 322]]
 relationships:
   - type: associated_with
@@ -38,3 +44,12 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 284, fig. 322
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-1255
+      source: colbase-tnm-a-10569-1255
+      locator: 所蔵
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-1255
+      source: colbase-tnm-a-10569-1255
+      locator: 列品番号
+      accessed: 2026-11-16

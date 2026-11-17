@@ -4,6 +4,11 @@ title: Aeropainting and Tanks
 creator: cesare-andreoni
 created: 1936
 kind: painting
+medium: Oil on wood
+dimensions: [127, 127]
+other_dimensions:
+  - cm: [130, 130]
+    part: frame
 description_md: |-
   War depicted as heroic, in [[movement/aeropittura]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 17]].
 
@@ -14,6 +19,97 @@ description_md: |-
   ## War as heroic
 
   The seminar showed the painting under the heading "War" beside [[artwork/eber-the-battle-for-warsaw|*The Battle for Warsaw*]] (1940) by the German painter [[artist/elk-eber|Elk Eber]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 17]], and against [[artist/george-grosz|George Grosz]]'s [[artwork/grosz-to-them-peace-is-assured|*To them peace is assured*]] (1920) and [[artist/otto-dix|Otto Dix]]'s [[artwork/dix-der-krieg|*War*]] triptych (1932) [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 18]]: after the First World War depictions of war often showed its gruesome side, whereas the totalitarian regimes again depicted war as heroic [[source/beatrice-marinho-2024-art-and-totalitarianism|class notes, 24 September 2024]]. Golomstock saw in this a translation of Futurism: the idea of struggle, which the early Futurists expressed through abstract "lines of force", became in totalitarian art the concrete image of war [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 43]]. Walter Benjamin quoted a Futurist text praising the beauty of the war in Ethiopia as the prime example of Fascism's aestheticisation of politics [[source/antliff-2002|p. 154]] [[source/beatrice-marinho-2024-art-and-totalitarianism|slides, 24 September 2024, slide 6]].
+
+  ## Where it is
+
+  The painting is on the art market. In November 2026 the Lattuada Gallery in Milan offered it for €40,000: oil on wood, 127 × 127 cm (130 × 130 cm framed), hand-signed by the artist, in "perfect condition" and with a certificate of authenticity [[source/artsy-andreoni-aeropittura-e-carri-armati|About the work]]. The gallery names three exhibitions — *Dottori e l'Aeropittura* at the Palazzo Mediceo in Seravezza (1996), *La ricerca della modernità* at the Galleria Russo in Rome (2018) and *Il secondo futurismo* at its own Galleria Arte Centro in Milan (2021) — each with its catalogue [[source/lattuada-andreoni-aeropittura-e-carri-armati|Gallerist's Notes]]. Who owned it before is not stated.
 relationships:
   - type: associated_with
     to: movement/aeropittura
+provenance:
+  - owner_label: unknown
+    notes_md: The lenders to the exhibitions of 1996 and 2018 are not named in the source.
+    sources:
+      - url: https://www.lattuadagallery.com/en/artecentro-futurism/cesare--andreoni/aeropittura-e-carri-armati-
+        source: lattuada-andreoni-aeropittura-e-carri-armati
+        locator: Gallerist's Notes
+        accessed: 2026-11-16
+    records:
+      - kind: exhibition
+        date: 1996-06-16/1996-08-21
+        note: Exhibition “Dottori e l’Aeropittura”, Seravezza, Palazzo Mediceo.
+        document: Dottori e l’Aeropittura. Aeropittori e aeroscultori futuristi, ed. M. Duranti, exhibition catalogue, Maschietto & Mussolino, Siena 1996, p. 131, no. 34
+      - kind: exhibition
+        date: 2018-02-22/2018-03-15
+        note: Exhibition “La ricerca della modernità. Opere dal Divisionismo al Futurismo”, Galleria Russo, Rome.
+        place: rome
+        document: La ricerca della modernità. Opere dal Divisionismo al Futurismo, Manfredi edizioni, Imola 2018, pp. 144–145
+  - owner: institution/lattuada-gallery
+    role: dealer
+    acquired: 2021-12-31 or earlier
+    acquired_label: by 2021
+    notes_md: Shown at the gallery in 2021; offered for sale in November 2026 (€40,000 on Artsy). Whether the gallery owns it or sells it on behalf of an owner is not stated.
+    sources:
+      - url: https://www.lattuadagallery.com/en/artecentro-futurism/cesare--andreoni/aeropittura-e-carri-armati-
+        source: lattuada-andreoni-aeropittura-e-carri-armati
+        locator: Gallerist's Notes
+        accessed: 2026-11-16
+      - url: https://www.artsy.net/artwork/cesare-andreoni-aeropittura-e-carri-armati
+        source: artsy-andreoni-aeropittura-e-carri-armati
+        locator: price and seller
+        accessed: 2026-11-16
+    records:
+      - kind: exhibition
+        date: "2021"
+        note: Exhibition “Il secondo futurismo”, Galleria Arte Centro (Lattuada), Milan, curated by Flavio Lattuada.
+        place: milan
+        document: Il secondo futurismo, ed. Flavio Lattuada, Milan 2021, p. 14, no. 4
+      - kind: sighting
+        date: 2026-11
+        note: Offered for sale by the Lattuada Gallery on Artsy, €40,000, “perfect condition”, hand-signed, with a certificate of authenticity.
+        place: milan
+sources:
+  kind:
+    - url: https://www.artsy.net/artwork/cesare-andreoni-aeropittura-e-carri-armati
+      source: artsy-andreoni-aeropittura-e-carri-armati
+      locator: "About the work: Medium"
+      accessed: 2026-11-16
+  medium:
+    - url: https://www.artsy.net/artwork/cesare-andreoni-aeropittura-e-carri-armati
+      source: artsy-andreoni-aeropittura-e-carri-armati
+      locator: "About the work: Materials"
+      accessed: 2026-11-16
+    - url: https://www.lattuadagallery.com/en/artecentro-futurism/cesare--andreoni/aeropittura-e-carri-armati-
+      source: lattuada-andreoni-aeropittura-e-carri-armati
+      locator: work page
+      accessed: 2026-11-16
+  created:
+    - source: beatrice-marinho-2024-art-and-totalitarianism
+      locator: slides, 24 September 2024, slide 17
+      accessed: 2026-11-16
+    - url: https://www.lattuadagallery.com/en/artecentro-futurism/cesare--andreoni/aeropittura-e-carri-armati-
+      source: lattuada-andreoni-aeropittura-e-carri-armati
+      locator: work page
+      accessed: 2026-11-16
+  creator:
+    - source: beatrice-marinho-2024-art-and-totalitarianism
+      locator: slides, 24 September 2024, slide 17
+      accessed: 2026-11-16
+    - url: https://www.lattuadagallery.com/en/artecentro-futurism/cesare--andreoni/aeropittura-e-carri-armati-
+      source: lattuada-andreoni-aeropittura-e-carri-armati
+      locator: work page
+      accessed: 2026-11-16
+  dimensions:
+    - url: https://www.artsy.net/artwork/cesare-andreoni-aeropittura-e-carri-armati
+      source: artsy-andreoni-aeropittura-e-carri-armati
+      locator: "About the work: Size"
+      accessed: 2026-11-16
+    - url: https://www.lattuadagallery.com/en/artecentro-futurism/cesare--andreoni/aeropittura-e-carri-armati-
+      source: lattuada-andreoni-aeropittura-e-carri-armati
+      locator: work page
+      accessed: 2026-11-16
+  other_dimensions:
+    - url: https://www.artsy.net/artwork/cesare-andreoni-aeropittura-e-carri-armati
+      source: artsy-andreoni-aeropittura-e-carri-armati
+      locator: "About the work: Framed Size"
+      accessed: 2026-11-16

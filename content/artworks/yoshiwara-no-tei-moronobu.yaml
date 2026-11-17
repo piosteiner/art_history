@@ -1,5 +1,9 @@
 public_id: 108003
 title: "Yoshiwara no tei (The Appearance of Yoshiwara): teahouse scene"
+names:
+  - lang: ja
+    role: translation
+    text: 吉原の体
 creator: hishikawa-moronobu
 created: 1678
 kind: Japanese woodblock print
@@ -8,6 +12,8 @@ materials: [paper]
 dimensions: [23.2, 38.1]
 dimensions_note: horizontal ōban
 institution: tokyo-national-museum
+inventory_number: A-8789
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-8789
 description_md: "From the set of single-sheet prints of 1678 by [[artist/hishikawa-moronobu]] (1618–1694), who brought the print designer out of anonymity and was the first to sign his prints — the age when the novels of [[person/ihara-saikaku]] (1642–1693) were published with ever better illustrations: in a teahouse of the Yoshiwara pleasure quarter patrons sitting on the floor watch a courtesan dance to a drum and two [[samisen]]; on the left a two-panel screen bears Moronobu’s signature. [[source/history-of-japanese-art|pp. 280–281, fig. 319]]"
 relationships:
   - type: associated_with
@@ -15,6 +21,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 280–281, fig. 319
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/A-8789/image/slideshow_s/A-8789_C0064491.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/A-8789
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -37,3 +48,12 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: pp. 280–281, fig. 319
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-8789
+      source: colbase-tnm-a-8789
+      locator: 所蔵
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-8789
+      source: colbase-tnm-a-8789
+      locator: 列品番号
+      accessed: 2026-11-16

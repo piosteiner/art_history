@@ -1,14 +1,29 @@
 public_id: 108624
 title: Amitābha triad
+names:
+  - lang: ja
+    role: translation
+    text: 阿弥陀三尊図軸
+  - lang: en
+    role: alternative
+    text: The Buddha Amitābha with Two Attendants
 attribution_label: Anonymous
-created: 13th century
+created: 13th–14th century
 created_span: uncertain
 kind: kakemono
 medium: Ink, colours and gold paint on silk
 materials: [ink, silk, gold]
-dimensions: [123, 55.8]
+dimensions: [123, 55.9]
+institution: tokyo-national-museum
+inventory_number: TA-59
+web_url: https://colbase.nich.go.jp/collection_items/tnm/TA-59
 region: east_asia
-description_md: A Koryŏ Buddhist painting of breathtaking beauty — Amitābha descending with two bodhisattvas, the main figure overpoweringly large, the robes covered with roundels, the jewellery and transparent silks rendered with gold. Most such paintings survive in Japanese temples and were long thought Chinese; their re-attribution began with an exhibition at the Yamato Bunkakan in 1978. [[source/portal-2000|pp. 89–90, fig. 45]]
+description_md: |-
+  A Koryŏ Buddhist painting of breathtaking beauty — Amitābha descending with two bodhisattvas, the main figure overpoweringly large, the robes covered with roundels, the jewellery and transparent silks rendered with gold. Most such paintings survive in Japanese temples and were long thought Chinese; their re-attribution began with an exhibition at the Yamato Bunkakan in 1978. [[source/portal-2000|pp. 89–90, fig. 45]]
+
+  ## In Tokyo
+
+  The painting is the Tokyo National Museum's *Amitābha with Two Attendants* (TA-59): a descent (raigō) in which Amitābha floats on auspicious clouds with his right hand stretched out, Avalokiteśvara with a willow branch on his right and Mahāsthāmaprāpta on his left; the red and green of the Buddha's robe and the translucent veils of the two bodhisattvas are covered with very fine patterns in gold paint [[source/colbase-tnm-ta-59|description]]. The museum dates it to the 13th–14th century, Jane Portal to the 13th [[source/colbase-tnm-ta-59|date]] [[source/portal-2000|p. 90, fig. 45]]. Portal names it among the examples of Amitābha triads — with those in the Brooklyn Museum and the Hoam Museum in Korea — a type that also goes by the name "Descending Amitābha" (Naeyong-do), after the belief that Amitābha comes down with bodhisattvas to fetch a dying devotee to the Pure Land [[source/portal-2000|p. 89]].
 relationships:
   - type: created_in_polity
     to: polity/goryeo
@@ -20,6 +35,11 @@ relationships:
     sources:
       - source: portal-2000
         locator: pp. 89–90, fig. 45
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/TA-59/image/slideshow_s/TA-59_E0157045.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/TA-59
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: portal-2000
@@ -27,12 +47,45 @@ sources:
   medium:
     - source: portal-2000
       locator: pp. 89–90, fig. 45
+    - url: https://colbase.nich.go.jp/collection_items/tnm/TA-59
+      source: colbase-tnm-ta-59
+      locator: Color on silk
+      accessed: 2026-11-16
   created:
-    - source: portal-2000
-      locator: pp. 89–90, fig. 45
+    - url: https://colbase.nich.go.jp/collection_items/tnm/TA-59
+      source: colbase-tnm-ta-59
+      locator: Goryeo dynasty, 13th–14th century
+      accessed: 2026-11-16
+  creator:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/TA-59
+      source: colbase-tnm-ta-59
+      locator: Artist unknown
+      accessed: 2026-11-16
   materials:
     - source: portal-2000
       locator: pp. 89–90, fig. 45
   dimensions:
-    - source: portal-2000
-      locator: pp. 89–90, fig. 45
+    - url: https://colbase.nich.go.jp/collection_items/tnm/TA-59
+      source: colbase-tnm-ta-59
+      locator: 123.0×55.9
+      accessed: 2026-11-16
+  institution:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/TA-59
+      source: colbase-tnm-ta-59
+      locator: 所蔵
+      accessed: 2026-11-16
+  created_span:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/TA-59
+      source: colbase-tnm-ta-59
+      locator: Goryeo dynasty, 13th–14th century
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/TA-59
+      source: colbase-tnm-ta-59
+      locator: 列品番号
+      accessed: 2026-11-16
+  attribution_label:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/TA-59
+      source: colbase-tnm-ta-59
+      locator: Artist unknown
+      accessed: 2026-11-16

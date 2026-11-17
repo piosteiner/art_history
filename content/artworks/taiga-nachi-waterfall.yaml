@@ -1,5 +1,9 @@
 public_id: 107990
 title: Nachi Waterfall
+names:
+  - lang: ja
+    role: translation
+    text: 那智濺瀑図
 creator: ike-taiga
 created: 1770s
 created_span: uncertain
@@ -8,6 +12,8 @@ medium: Hanging scroll, colour on paper
 materials: [paper]
 dimensions: [125.7, 56.9]
 institution: tokyo-national-museum
+inventory_number: A-11521
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11521
 description_md: "Painted by [[artist/ike-taiga]] at about fifty: not a minutely detailed record but a recreation of impressions — rocks and trees carry the eye to a large triangular mountain with the waterfall a void of white paper at its centre; loose, rhythmic brushwork and abundant washes give a wet, atmospheric quality. [[source/history-of-japanese-art|pp. 331–332, fig. 386]]"
 relationships:
   - type: associated_with
@@ -15,6 +21,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 331–332, fig. 386
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/A-11521/image/slideshow_s/A-11521_C0032606.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/A-11521
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -37,3 +48,12 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: pp. 331–332, fig. 386
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-11521
+      source: colbase-tnm-a-11521
+      locator: 所蔵
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-11521
+      source: colbase-tnm-a-11521
+      locator: 列品番号
+      accessed: 2026-11-16

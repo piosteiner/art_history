@@ -37,6 +37,9 @@ names:
     text: veduta di Venezia
 creator: jacopo-de-barbari
 created: 1500
+authenticity: disputed
+authenticity_date: 2016
+authenticity_note: "Sole authorship by Jacopo de' Barbari is not tenable according to Beate Böckem (2016): the publisher Anton Kolb directed the project, Barbari was at most one of several artists — perhaps combining the studies into one view or designing the figures."
 medium: woodcut on six sheets
 materials: [paper]
 dimensions: [135, 282]
@@ -75,10 +78,14 @@ metadata:
 relationships:
   - type: created_in
     to: place/venice
+    period: 1497/1500
     sources:
       - accessed: 2026-11-09
         property: P1071
         wikidata: Q26106449
+      - source: bockem-2016-jacopo-de-barbari
+        locator: pp. 34–35 (three years of work, petition of 30 October 1500)
+        accessed: 2026-11-16
   - type: depicts
     to: place/venice
     sources:
@@ -118,3 +125,7 @@ sources:
   institution:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 9 (28.11.2024)
+  authenticity:
+    - source: bockem-2016-jacopo-de-barbari
+      locator: pp. 50–58
+      accessed: 2026-11-16

@@ -1,5 +1,9 @@
 public_id: 106316
 title: Haniwa figure of a farmer
+names:
+  - lang: ja
+    role: translation
+    text: 埴輪 鍬を担ぐ男子
 attribution_label: Anonymous
 created: 300/710
 kind: haniwa
@@ -7,6 +11,8 @@ medium: Clay
 materials: [clay]
 dimensions: [92.5]
 institution: tokyo-national-museum
+inventory_number: J-22675
+web_url: https://colbase.nich.go.jp/collection_items/tnm/J-22675
 description_md: A smiling farmer with a hoe over his shoulder — one of the everyday figures among the haniwa of the Kantō. [[source/history-of-japanese-art|p. 33, fig. 29]]
 relationships:
   - type: created_in
@@ -21,6 +27,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 33, fig. 29
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/J-22675/image/slideshow_s/J-22675_E0099207.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/J-22675
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -40,3 +51,12 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 33, fig. 29
+    - url: https://colbase.nich.go.jp/collection_items/tnm/J-22675
+      source: colbase-tnm-j-22675
+      locator: 所蔵
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/J-22675
+      source: colbase-tnm-j-22675
+      locator: 列品番号
+      accessed: 2026-11-16

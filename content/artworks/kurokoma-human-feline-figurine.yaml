@@ -1,5 +1,9 @@
 public_id: 106328
 title: Human/feline figurine
+names:
+  - lang: ja
+    role: translation
+    text: 土偶
 attribution_label: Anonymous
 created: c. 2500 BCE–c. 1500 BCE
 created_span: uncertain
@@ -8,6 +12,8 @@ medium: Earthenware
 materials: [earthenware]
 dimensions: [25.2]
 institution: tokyo-national-museum
+inventory_number: J-8008
+web_url: https://colbase.nich.go.jp/collection_items/tnm/J-8008
 description_md: "Head and torso of a Middle Jōmon figurine between human and cat: slanting eyes cut through the clay, a three-lobed mouth, incised marks like tattoos, a spotted pattern like fur; one hand rests on the breast. [[source/history-of-japanese-art|p. 19, fig. 10]]"
 relationships:
   - type: created_in
@@ -22,6 +28,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 19, fig. 10
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/J-8008/image/slideshow_s/J-8008_E0084451.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/J-8008
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -41,3 +52,12 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 19, fig. 10
+    - url: https://colbase.nich.go.jp/collection_items/tnm/J-8008
+      source: colbase-tnm-j-8008
+      locator: 所蔵
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/J-8008
+      source: colbase-tnm-j-8008
+      locator: 列品番号
+      accessed: 2026-11-16

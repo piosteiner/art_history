@@ -1,5 +1,12 @@
 public_id: 108205
 title: Autumn at Grez
+names:
+  - lang: ja
+    role: original
+    text: グレーの秋
+  - lang: en
+    role: alternative
+    text: Autumn in Grez-sur-Loing
 creator: asai-chu
 created: 1901
 kind: painting
@@ -7,6 +14,8 @@ medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [79.5, 60]
 institution: tokyo-national-museum
+inventory_number: A-11171
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11171
 description_md: "Painted at Grez-sur-Loing near Fontainebleau, where [[artist/asai-chu]] spent six months from October 1901 during his two years in France: poplars, a common feature of the countryside, in yellow, green and light brown against grey trunks. [[source/history-of-japanese-art|pp. 373–374, fig. 445]]"
 relationships:
   - type: associated_with
@@ -14,6 +23,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 373–374, fig. 445
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/A-11171/image/slideshow_s/A-11171_C0054748.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/A-11171
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -21,18 +35,43 @@ sources:
   medium:
     - source: history-of-japanese-art
       locator: pp. 373–374, fig. 445
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-11171
+      source: colbase-tnm-a-11171
+      locator: カンバス・油彩
+      accessed: 2026-11-16
   created:
     - source: history-of-japanese-art
       locator: pp. 373–374, fig. 445
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-11171
+      source: colbase-tnm-a-11171
+      locator: 明治34年(1901)
+      accessed: 2026-11-16
   creator:
     - source: history-of-japanese-art
       locator: pp. 373–374, fig. 445
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-11171
+      source: colbase-tnm-a-11171
+      locator: 浅井忠
+      accessed: 2026-11-16
   materials:
     - source: history-of-japanese-art
       locator: pp. 373–374, fig. 445
   dimensions:
     - source: history-of-japanese-art
       locator: pp. 373–374, fig. 445
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-11171
+      source: colbase-tnm-a-11171
+      locator: 79.5×60.0
+      accessed: 2026-11-16
   institution:
     - source: history-of-japanese-art
       locator: pp. 373–374, fig. 445
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-11171
+      source: colbase-tnm-a-11171
+      locator: 所蔵
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-11171
+      source: colbase-tnm-a-11171
+      locator: 列品番号
+      accessed: 2026-11-16

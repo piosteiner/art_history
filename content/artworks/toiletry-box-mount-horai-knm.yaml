@@ -1,5 +1,9 @@
 public_id: 107553
 title: Toiletry box with Mount Hōrai
+names:
+  - lang: ja
+    role: translation
+    text: 蓬莱蒔絵手箱
 attribution_label: Anonymous
 created: 13th century
 created_span: uncertain
@@ -8,6 +12,8 @@ medium: Black lacquer on wood with maki-e
 materials: [lacquer, wood, gold]
 dimensions: [24.4, 32.5, 18.5]
 institution: kyoto-national-museum
+inventory_number: H甲30
+web_url: https://colbase.nich.go.jp/collection_items/kyohaku/H%E7%94%B230
 description_md: "A small toiletry box of black lacquer, painted on four sides in gold [[maki-e]] with flying geese and trees — pure [[kara-e]]: Mount Hōrai, the Daoist mountain of the elixir of immortality, with a weathered rock and a stunted cypress by a lake (such rocks came from a lake near Hangzhou) and two groups of geese flying south, an image of the coming of winter. [[source/history-of-japanese-art|p. 178, fig. 205]]"
 relationships:
   - type: associated_with
@@ -15,6 +21,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 178, fig. 205
+images:
+  - url: https://colbase.nich.go.jp/media/kyohaku/H%E7%94%B230/image/slideshow_s/35181_difile2-L.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/kyohaku/H%E7%94%B230
+    license: CC BY 4.0
+    credit: Kyoto National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -34,3 +45,12 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 178, fig. 205
+    - url: https://colbase.nich.go.jp/collection_items/kyohaku/H%E7%94%B230
+      source: colbase-kyohaku-h-30
+      locator: 所蔵
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/kyohaku/H%E7%94%B230
+      source: colbase-kyohaku-h-30
+      locator: 列品番号
+      accessed: 2026-11-16

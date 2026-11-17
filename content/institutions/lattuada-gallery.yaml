@@ -1,0 +1,15 @@
+public_id: 122521
+name: Lattuada Gallery
+kind: gallery
+place: milan
+sources:
+  kind:
+    - url: https://www.artsy.net/artwork/cesare-andreoni-aeropittura-e-carri-armati
+      source: artsy-andreoni-aeropittura-e-carri-armati
+      locator: seller
+      accessed: 2026-11-16
+  place:
+    - url: https://www.artsy.net/artwork/cesare-andreoni-aeropittura-e-carri-armati
+      source: artsy-andreoni-aeropittura-e-carri-armati
+      locator: seller
+      accessed: 2026-11-16

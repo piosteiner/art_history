@@ -1,5 +1,9 @@
 public_id: 107948
 title: Sarayashiki (House of Plates), from One Hundred Ghost Stories
+names:
+  - lang: ja
+    role: translation
+    text: 百物語・さらやしき
 creator: katsushika-hokusai
 created: c. 1830
 created_span: uncertain
@@ -9,6 +13,8 @@ materials: [paper]
 dimensions: [25.4, 19]
 dimensions_note: chūban
 institution: tokyo-national-museum
+inventory_number: A-10569-672
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-672
 description_md: "One of five designs [[artist/katsushika-hokusai]] made for a series on ghost tales: a servant girl falsely accused of breaking one of ten blue-and-white plates was drowned in a well; at night her voice counts up to nine and wails. Against a deep-blue sky her head rises from the well on a neck of plates, a thin trail of white smoke issuing from her mouth. [[source/history-of-japanese-art|pp. 290–291, fig. 332]]"
 relationships:
   - type: associated_with
@@ -16,6 +22,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 290–291, fig. 332
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/A-10569-672/image/slideshow_s/A-10569-672_E0143699.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-672
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -38,3 +49,12 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: pp. 290–291, fig. 332
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-672
+      source: colbase-tnm-a-10569-672
+      locator: 所蔵
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-672
+      source: colbase-tnm-a-10569-672
+      locator: 列品番号
+      accessed: 2026-11-16

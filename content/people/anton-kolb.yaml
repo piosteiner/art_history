@@ -1,0 +1,28 @@
+public_id: 122577
+name: Anton Kolb
+given_name: Anton
+family_name: Kolb
+death: 1541
+description_md: |-
+  Anton Kolb came from a wealthy Nuremberg merchant family — the son of the merchant Stephan Kolb and of Margaretha Kunherr — and around 1500 was one of the most successful German merchants in Venice, where he seems to have spent most of his life and where he died in 1541 [[source/bockem-2016-jacopo-de-barbari|p. 34]]. In 1508 and 1515 he appears in the records of the Fondaco dei Tedeschi; in the new Fondaco of 1508 his room lay between those of Ulrich Fugger and the Eisfogel family, on the first floor above the Grand Canal [[source/bockem-2016-jacopo-de-barbari|p. 34]]. He traded in works of art and tapestries, was in regular contact with Albrecht Dürer during Dürer's stay in Venice in 1506, and had sold the Nuremberg Chronicle in Venice — half of his 34 copies by 1499; in 1536 he is said to have built a machine for cleaning the canals [[source/bockem-2016-jacopo-de-barbari|p. 34]].
+
+  As publisher he petitioned the Signoria on 30 October 1500 for leave to sell the [[artwork/barbari-veduta-di-venezia|view of Venice]] at a fixed minimum price and free of duty [[source/bockem-2016-jacopo-de-barbari|pp. 34–35]]. Beate Böckem argues that the view should be called his rather than Jacopo de' Barbari's: Kolb's direction of the project is documented, Barbari's share is not [[source/bockem-2016-jacopo-de-barbari|pp. 51, 58]].
+relationships:
+  - type: died_in
+    to: place/venice
+    sources:
+      - source: bockem-2016-jacopo-de-barbari
+        locator: p. 34
+        accessed: 2026-11-16
+  - type: published
+    to: artwork/barbari-veduta-di-venezia
+    period: 1500
+    sources:
+      - source: bockem-2016-jacopo-de-barbari
+        locator: pp. 33–35
+        accessed: 2026-11-16
+sources:
+  death:
+    - source: bockem-2016-jacopo-de-barbari
+      locator: p. 34
+      accessed: 2026-11-16

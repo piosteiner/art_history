@@ -1,11 +1,17 @@
 public_id: 107195
 title: Kasuga mandala
+names:
+  - lang: ja
+    role: translation
+    text: 春日宮曼荼羅
 attribution_label: Anonymous
 kind: kakemono
 medium: Hanging scroll, colour on silk
 materials: [silk]
 dimensions: [113.1, 68.7]
 institution: tokyo-national-museum
+inventory_number: A-11088
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11088
 description_md: "A bird’s-eye view of the Kasuga Shrine at Nara, the Fujiwara family’s shrine on the slopes of Mount Mikasa: the four small aligned halls of the kami, raised on piles with gabled roofs extending over the stairs, within corridors and cloister walls like a Buddhist temple, among cherry trees, with the torii at the bottom. Date unknown. [[source/history-of-japanese-art|pp. 163–164, fig. 198]]"
 relationships:
   - type: associated_with
@@ -13,6 +19,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 163–164, fig. 198
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/A-11088/image/slideshow_s/A-11088_E0241445.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/A-11088
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -29,3 +40,12 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: pp. 163–164, fig. 198
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-11088
+      source: colbase-tnm-a-11088
+      locator: 所蔵
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-11088
+      source: colbase-tnm-a-11088
+      locator: 列品番号
+      accessed: 2026-11-16

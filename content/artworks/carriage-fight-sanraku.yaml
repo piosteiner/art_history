@@ -1,5 +1,9 @@
 public_id: 107669
 title: The Carriage Fight (Tale of Genji)
+names:
+  - lang: ja
+    role: translation
+    text: 車争図屏風
 creator: kano-sanraku
 created: early 17th century
 created_span: uncertain
@@ -8,6 +12,8 @@ medium: Four-panel screen, colour and ink on paper
 materials: [ink, paper]
 dimensions: [175, 370]
 institution: tokyo-national-museum
+inventory_number: A-10129
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10129
 description_md: "Four panels of a set of fusuma painted by [[artist/kano-sanraku]] (1559–1635) for the Kujō family, now a single screen: the most famous scene of the Aoi chapter of the Tale of Genji, in which the attendants of Lady Rokujō and of Genji’s wife Lady Aoi fight for a good place along the route of the Kamigamo festival parade. The narrative techniques of thirteenth-century Tosa emaki are adapted to the large format; the artist individualizes every figure. Sanraku, once a page of Hideyoshi, was adopted by Eitoku; after the fall of the Toyotomi he became a priest, and his calmer style became the model for the Kyoto branch of the Kanō. [[source/history-of-japanese-art|pp. 258–259, fig. 299]]"
 relationships:
   - type: associated_with
@@ -21,6 +27,11 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: pp. 258–259, fig. 299
+images:
+  - url: https://colbase.nich.go.jp/media/tnm/A-10129/image/slideshow_s/A-10129_A-10129.jpg
+    source_url: https://colbase.nich.go.jp/collection_items/tnm/A-10129
+    license: CC BY 4.0
+    credit: Tokyo National Museum, ColBase
 sources:
   kind:
     - source: history-of-japanese-art
@@ -43,3 +54,12 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: pp. 258–259, fig. 299
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10129
+      source: colbase-tnm-a-10129
+      locator: 所蔵
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://colbase.nich.go.jp/collection_items/tnm/A-10129
+      source: colbase-tnm-a-10129
+      locator: 列品番号
+      accessed: 2026-11-16

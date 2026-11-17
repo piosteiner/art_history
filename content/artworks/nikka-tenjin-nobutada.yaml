@@ -1,13 +1,32 @@
 public_id: 107686
 title: “Daily Tenjin” (Nikka Tenjin)
+names:
+  - lang: en
+    role: alternative
+    text: Tenjin Traveling to China (Totō Tenjin)
+  - lang: ja
+    role: original
+    text: 日課天神
 creator: konoe-nobutada
-created: early 17th century
+created: 1609
 created_span: uncertain
 kind: kakemono
 medium: Hanging scroll, ink on paper
 materials: [ink, paper]
 dimensions: [75.4, 35.5]
-description_md: "An icon of Kitano Tenjin, the deified [[person/sugawara-no-michizane]], patron of scholars: [[artist/konoe-nobutada]] (1565–1614), Minister of the Left and regent, one of the Three Master Calligraphers of the Kan’ei era, painted a fresh image of the deity every day. Broad, relaxed ink strokes for the robe, and his confident inscription: “[Kitano Tenjin] is one to whom the destiny of the empire may be entrusted.” A scholar-painter in the Chinese literati tradition. [[source/history-of-japanese-art|p. 266, fig. 306]]"
+dimensions_note: without mounting; with mounting 191.5 × 35.5 cm
+other_dimensions:
+  - cm: [191.5, 35.5]
+    part: overall
+institution: yale-university-art-gallery
+inventory_number: 2024.62.1
+web_url: https://artgallery.yale.edu/collections/objects/109495
+description_md: |-
+  An icon of Kitano Tenjin, the deified [[person/sugawara-no-michizane]], patron of scholars: [[artist/konoe-nobutada]] (1565–1614), Minister of the Left and regent, one of the Three Master Calligraphers of the Kan’ei era, painted a fresh image of the deity every day. Broad, relaxed ink strokes for the robe, and his confident inscription: “[Kitano Tenjin] is one to whom the destiny of the empire may be entrusted.” A scholar-painter in the Chinese literati tradition. [[source/history-of-japanese-art|p. 266, fig. 306]]
+
+  ## Inscriptions and where it is
+
+  Besides the title 日課天神 and the line on Tenjin, the scroll bears a line of eight characters, 今須望足護皇基 — since the wish has been fulfilled, the speaker will now protect the imperial foundation — and a waka dated in the year Keichō tsuchinoto-tori (1609): "If just the heart is set on the path of truth, / even without prayers, will not gods protect me?" (translated by Miyeko Murase) [[source/yale-2024-62-1|Inscriptions]]. Mason gives the holder as Imadegawa Yōko in Shiga [[source/history-of-japanese-art|p. 266, fig. 306]]; by 1979 it was with the dealer Takashi Yanagi in Kyoto, who sold it that year to Peggy and Richard M. Danziger of New York; lent to the [[institution/yale-university-art-gallery|Yale University Art Gallery]] from 2009, it was given to the museum in 2024, which catalogues it as *Tenjin Traveling to China (Totō Tenjin)* [[source/yale-2024-62-1|Provenance]].
 relationships:
   - type: depicts_person
     to: person/sugawara-no-michizane
@@ -20,6 +39,65 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 266, fig. 306
+images:
+  - url: https://images.collections.yale.edu/iiif/2/yuag:5136e445-6fe0-47f6-a1b1-bf598f72abb3/full/1280,/0/default.jpg
+    source_url: https://artgallery.yale.edu/collections/objects/109495
+    license: CC0
+    credit: Yale University Art Gallery
+provenance:
+  - owner_label: Imadegawa Yuko
+    place: shiga-prefecture
+    notes_md: Named by Mason as the holder ("Imadegawa Yōko, Shiga"); Yale lists "Imadegawa Yuko, Shiga Prefecture City".
+    sources:
+      - url: https://artgallery.yale.edu/collections/objects/109495
+        source: yale-2024-62-1
+        locator: Provenance
+        accessed: 2026-11-16
+      - source: history-of-japanese-art
+        locator: p. 266, fig. 306
+        accessed: 2026-11-16
+  - owner_label: Takashi Yanagi, Kyoto
+    role: dealer
+    ended: 1979-12-31 or earlier
+    ended_label: by 1979
+    place: kyoto
+    sources:
+      - url: https://artgallery.yale.edu/collections/objects/109495
+        source: yale-2024-62-1
+        locator: Provenance
+        accessed: 2026-11-16
+  - owner_label: Peggy D. Danziger (née Block) and Richard M. Danziger
+    acquired: 1979
+    ended: 2024
+    method: purchase
+    direct: true
+    place: new-york-city
+    notes_md: New York and Purchase, New York.
+    sources:
+      - url: https://artgallery.yale.edu/collections/objects/109495
+        source: yale-2024-62-1
+        locator: Provenance
+        accessed: 2026-11-16
+  - owner: institution/yale-university-art-gallery
+    role: custodian
+    acquired: 2009
+    ended: 2024
+    notes_md: On loan from the Danzigers.
+    sources:
+      - url: https://artgallery.yale.edu/collections/objects/109495
+        source: yale-2024-62-1
+        locator: Provenance
+        accessed: 2026-11-16
+  - owner: institution/yale-university-art-gallery
+    acquired: 2024
+    method: gift
+    direct: true
+    notes_md: Gift of Peggy and Richard M. Danziger, LL.B. 1963.
+    sources:
+      - url: https://artgallery.yale.edu/collections/objects/109495
+        source: yale-2024-62-1
+        locator: Provenance
+        accessed: 2026-11-16
 sources:
   kind:
     - source: history-of-japanese-art
@@ -27,15 +105,49 @@ sources:
   medium:
     - source: history-of-japanese-art
       locator: p. 266, fig. 306
+    - url: https://artgallery.yale.edu/collections/objects/109495
+      source: yale-2024-62-1
+      locator: medium
+      accessed: 2026-11-16
   created:
-    - source: history-of-japanese-art
-      locator: p. 266, fig. 306
+    - url: https://artgallery.yale.edu/collections/objects/109495
+      source: yale-2024-62-1
+      locator: date; inscription dated Keichō tsuchinoto tori
+      accessed: 2026-11-16
   creator:
     - source: history-of-japanese-art
       locator: p. 266, fig. 306
+    - url: https://artgallery.yale.edu/collections/objects/109495
+      source: yale-2024-62-1
+      locator: maker
+      accessed: 2026-11-16
   materials:
     - source: history-of-japanese-art
       locator: p. 266, fig. 306
   dimensions:
     - source: history-of-japanese-art
       locator: p. 266, fig. 306
+    - url: https://artgallery.yale.edu/collections/objects/109495
+      source: yale-2024-62-1
+      locator: dimensions
+      accessed: 2026-11-16
+  institution:
+    - url: https://artgallery.yale.edu/collections/objects/109495
+      source: yale-2024-62-1
+      locator: credit line
+      accessed: 2026-11-16
+  created_span:
+    - url: https://artgallery.yale.edu/collections/objects/109495
+      source: yale-2024-62-1
+      locator: inscription dated Keichō tsuchinoto tori
+      accessed: 2026-11-16
+  inventory_number:
+    - url: https://artgallery.yale.edu/collections/objects/109495
+      source: yale-2024-62-1
+      locator: object number
+      accessed: 2026-11-16
+  other_dimensions:
+    - url: https://artgallery.yale.edu/collections/objects/109495
+      source: yale-2024-62-1
+      locator: dimensions with mounting
+      accessed: 2026-11-16
