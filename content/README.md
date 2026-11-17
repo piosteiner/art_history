@@ -185,6 +185,11 @@ relationships:
   - type: lived_in
     to: place/arles
     sources: [Letter 577]                  # in words
+  - type: created_in
+    to: place/kyoto
+    sources:
+      - assumption: "style and technique of the capital's workshops"   # our own educated guess (255)
+        by: 1                                                          # the account whose guess it is
 ```
 The import adds missing ones (lines of text replace the old lines); the export writes them all.
 

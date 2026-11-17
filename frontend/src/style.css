@@ -811,6 +811,8 @@ ruby rt { font-size: .5em; color: var(--muted); }
   color: var(--muted); font: 600 .62rem/1 var(--sans); text-align: center; letter-spacing: 0;
 }
 .cite-ref:hover .cite-kind, .cite-ref:focus-visible .cite-kind { border-color: var(--accent); color: var(--text); }
+/* an assumption of ours, not a source (API 255): a word in italics, dashed — never read as a source letter */
+.cite-kind-assumption { border-style: dashed; font-style: italic; font-weight: 500; }
 .popover-cite { max-width: min(380px, calc(100vw - 16px)); }
 .cite-list { list-style: none; margin: .35rem 0 0; padding: 0; }
 .cite-item { display: flex; gap: .45rem; align-items: baseline; margin: .3rem 0; font-size: .86rem; line-height: 1.4; }

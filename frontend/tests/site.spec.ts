@@ -1463,6 +1463,21 @@ test('sources for facts: markers by kind, best first; the citations in a popover
   await expect(pop).toContainText('seen on site');
 });
 
+test('an own assumption (API 255): the word "assumed", not a letter; whose it is and why — "Not from a source"', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    b.sources = { created: [cited({ kind: 'assumption', reliability: null, text: 'Assumption by Pio Steiner', assumed_by: 'Pio Steiner',
+      note: 'the block style matches his prints of 1830–1832' })] };
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const date = page.locator('.facts dt', { hasText: 'Date' }).locator('+ dd');
+  await expect(date.locator('.cite-ref')).toHaveText('assumed');
+  await date.locator('.cite-ref').click();
+  const pop = page.locator('.popover-cite');
+  await expect(pop.locator('.glossary-popover-head')).toHaveText('Not from a source');
+  await expect(pop.locator('.cite-item')).toContainText('Assumption by Pio Steiner — no source says so; an educated guess.');
+  await expect(pop.locator('.cite-item')).toContainText('Why: the block style matches his prints of 1830–1832');
+});
+
 const year = (y: number, to: number | null = y) => ({ label: to === null ? `since ${y}` : to === y ? `${y}` : `${y}–${to}`, from: `${y}-01-01`, to: to === null ? null : `${to}-12-31`, from_year: y, to_year: to });
 
 test('provenance: owners in order, implied ends and undocumented handovers marked, not repeated below', async ({ page }) => {

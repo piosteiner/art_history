@@ -458,6 +458,10 @@ compares it with the current value (`outdated`) and gives each citation a `relia
 database < institution < scholarly < primary — enums compare in declaration order, so `max()` is "the best source";
 a bibliography entry's from its kind unless set in `bibliography.reliability`). `field_sourcing`: every field with a
 value and its best still-valid citation → quality checks `weakly_sourced` (info, per entry) and `citation_outdated`.
+**Own assumptions** (255): a fourth kind beside bibliography, Wikidata and free text — `assumed_by` (the account whose
+educated guess it is, ON DELETE RESTRICT) with the reasoning in `note` (CHECK `citations_assumption_reason`), one per
+account and target (`citations_one_assumption`). No reliability: for the Quality page the value stays without a source.
+`citation_status.assumed_by_name` = the account's public name (never the login), `source_text` "Assumption by …".
 `entity_rows` gives every entry as `to_jsonb(row)`, so fields are read generically. Wikidata cites itself: values taken
 in a comparison become `pending` citations (the form values expected) and are settled by `saveEntity` on publish; a
 new entry carries them in the form (`wd.cite`); relationships and auto-created entries are cited at once. The

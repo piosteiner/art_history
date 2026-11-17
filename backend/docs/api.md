@@ -275,7 +275,8 @@ Where each fact comes from. The detail has `sources`: `{field: [citation]}` for 
 `{kind, reliability, text, source?, wikidata?, locator, url, accessed, note, outdated}`
 - `kind`: `source` (an entry of the bibliography: `source: {slug, siglum}`; its full reference is in the response's
   `bibliography` map, like the sources its texts cite), `wikidata` (`wikidata: {item, property, url}`), `text`
-  (a note in words, not verified).
+  (a note in words, not verified), `assumption` (255: no source says it — an editor of this site concludes it;
+  `assumed_by` = their public name, `note` = the reasoning, `reliability` null; never present it as a source).
 - `reliability`: `other` (a family tree, a forum, a blog — set by hand, 197) < `database` (Wikidata, aggregators,
   Wikipedia) < `institution` (museum, collection database) < `scholarly`
   (catalogue raisonné, literature) < `primary` (archive, letters); `null` for `text`. Show the best one, weaker ones as

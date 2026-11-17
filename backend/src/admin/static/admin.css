@@ -404,6 +404,7 @@ details.cite > summary::-webkit-details-marker { display: none; }
 .cite-other { border-style: dotted; }
 .cite-none { border-style: dashed; }
 .cite-text { font-style: italic; }
+.cite-assumption { font-style: italic; border-style: dashed; }   /* own assumption, not a source (255) */
 .cite-outdated { color: var(--bg); background: var(--err); border-color: var(--err); }
 .cite-badge.cite-pending { border: 1px dotted currentColor; background: transparent; color: var(--fg); }  /* in the working copy, not published yet */
 .cite-warn { color: var(--err); }

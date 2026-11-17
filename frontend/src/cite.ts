@@ -3,7 +3,8 @@
 // (linked to the exact page or the Wikidata item), the accessed date, the full reference from the bibliography.
 // Markers: P primary source (archive, letters) · L literature (catalogue raisonné, scholarly) · M museum or collection
 // database · D other database · W Wikidata · O another source (a family tree, a forum — below the databases) ·
-// T a note in words (not verified). A citation whose value has changed since
+// T a note in words (not verified) · "assumed": no source says it — an educated guess of an editor of this site, by
+// name, with the reasoning (API 255), shown as a word, not a letter, so it is never mistaken for a source. A citation whose value has changed since
 // (`outdated`) gets no marker and is listed last, muted.
 import { byKeyboard, hideSoon, openFor, show } from './glossary';
 import { href as entryHref, html, trusted, type Html } from './html';
@@ -15,10 +16,12 @@ const rank = (c: Citation) => (c.outdated ? -1 : RANK[c.reliability ?? ''] ?? 0)
 export const MARKER_TITLE: Record<string, string> = {
   P: 'primary source', L: 'literature', M: 'museum or collection', D: 'database', W: 'Wikidata', O: 'other source (a family tree, a forum …)',
   T: 'a note in words, not verified',
+  A: 'an assumption of this site, not from a source',
 };
 function marker(c: Citation): string {
   if (c.kind === 'wikidata') return 'W';
   if (c.kind === 'text') return 'T';
+  if (c.kind === 'assumption') return 'A';
   return ({ primary: 'P', scholarly: 'L', institution: 'M', database: 'D', other: 'O' } as Record<string, string>)[c.reliability ?? ''] ?? 'L';
 }
 
@@ -35,6 +38,13 @@ const asCitation = (c: Citation | string): Citation => (typeof c === 'string'
   : c);
 
 function item(c: Citation, bibliography: Record<string, SourceHint> | undefined): Html {
+  if (c.kind === 'assumption') {
+    return html`<li class="cite-item cite-assumption${c.outdated ? ' outdated' : ''}">
+      <span class="cite-kind cite-kind-assumption" title="${MARKER_TITLE.A}">A</span>
+      <span class="cite-body"><strong>${c.text}</strong> — no source says so; an educated guess.${c.outdated ? html` <span class="tag">value changed since</span>` : ''}
+        ${c.note ? html`<span class="cite-note">Why: ${c.note}</span>` : ''}</span>
+    </li>`;
+  }
   const href = c.url ?? c.wikidata?.url ?? null;
   const full = c.source ? bibliography?.[c.source.slug]?.citation : null;
   const accessed = day(c.accessed);
@@ -57,10 +67,13 @@ export function cite(list: (Citation | string)[] | null | undefined, bibliograph
   const current = all.filter((c) => !c.outdated);
   if (!current.length) return '';
   const letters = [...new Set(current.map(marker))];
-  contents.push(html`<div class="glossary-popover-head"><strong>${all.length === 1 ? 'Source' : 'Sources'}</strong></div>
+  const onlyAssumed = current.every((c) => c.kind === 'assumption');
+  contents.push(html`<div class="glossary-popover-head"><strong>${onlyAssumed ? 'Not from a source' : all.length === 1 ? 'Source' : 'Sources'}</strong></div>
     <ul class="cite-list">${all.map((c) => item(c, bibliography))}</ul>`);
   const what = letters.map((l) => MARKER_TITLE[l]).join(', ');
-  return html`<button type="button" class="cite-ref" data-cite="${String(contents.length - 1)}" aria-label="Sources: ${what}">${letters.map((l) => html`<span class="cite-kind">${l}</span>`)}</button>`;
+  // an assumption reads as a word ("assumed"), not a letter: never mistaken for a source (255)
+  return html`<button type="button" class="cite-ref" data-cite="${String(contents.length - 1)}" aria-label="Sources: ${what}">${letters.map((l) => (l === 'A'
+    ? html`<span class="cite-kind cite-kind-assumption">assumed</span>` : html`<span class="cite-kind">${l}</span>`))}</button>`;
 }
 
 /** Hover, keyboard focus and click/tap open the citations; a second click closes them. */

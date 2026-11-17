@@ -9,11 +9,12 @@ const { html } = require('./html');
 
 class CitationError extends Error {}
 
-const BADGE = { other: 'O', database: 'W', institution: 'M', scholarly: 'L', primary: 'P', text: 'T' };
+const BADGE = { other: 'O', database: 'W', institution: 'M', scholarly: 'L', primary: 'P', text: 'T', assumption: 'A' };
 const BADGE_TITLE = { other: 'other source (family tree, forum, blog — below the databases)', database: 'aggregated database (Wikidata)',
   institution: 'institution (museum, collection database)',
-  scholarly: 'scholarly (catalogue raisonné, literature)', primary: 'primary source (archive, letter)', text: 'a note in words — not yet a source of the bibliography' };
-const kindOf = (c) => c.reliability || 'text';
+  scholarly: 'scholarly (catalogue raisonné, literature)', primary: 'primary source (archive, letter)', text: 'a note in words — not yet a source of the bibliography',
+  assumption: 'an assumption of ours, not from a source — shown on the site as "Assumption by …" with the reasoning (255)' };
+const kindOf = (c) => (c.assumed_by ? 'assumption' : c.reliability || 'text');
 
 let fieldsCache = null;
 async function citableFields(db) {
@@ -39,7 +40,7 @@ async function shortForms(db, rows) {
 // An entry's citations, by field; and those of its relationships, by relationship id.
 async function forEntity(db, type, id) {
   const { rows } = await db.query(`SELECT c.id, c.field, c.reliability, c.source_text, c.source_slug, c.locator, c.note, c.accessed,
-      c.wikidata_item, c.url, c.outdated, c.pending IS NOT NULL AS pending FROM citation_status c
+      c.wikidata_item, c.url, c.assumed_by, c.assumed_by_name, c.outdated, c.pending IS NOT NULL AS pending FROM citation_status c
     WHERE c.entity_type = $1 AND c.entity_id = $2 AND c.field IS NOT NULL ORDER BY c.reliability DESC NULLS LAST, c.id`, [type, id]);
   const byField = {};
   for (const r of await shortForms(db, rows)) (byField[r.field] ||= []).push(r);
@@ -48,7 +49,7 @@ async function forEntity(db, type, id) {
 async function forRelationships(db, ids) {
   if (!ids.length) return {};
   const { rows } = await db.query(`SELECT c.id, c.relationship_id, c.reliability, c.source_text, c.source_slug, c.locator, c.note,
-      c.accessed, c.wikidata_item, c.url, false AS outdated, false AS pending FROM citation_status c
+      c.accessed, c.wikidata_item, c.url, c.assumed_by, c.assumed_by_name, false AS outdated, false AS pending FROM citation_status c
     WHERE c.relationship_id = ANY ($1::bigint[]) ORDER BY c.reliability DESC NULLS LAST, c.id`, [ids]);
   const byRel = {};
   for (const r of await shortForms(db, rows)) (byRel[r.relationship_id] ||= []).push(r);
@@ -57,7 +58,7 @@ async function forRelationships(db, ids) {
 async function forProvenance(db, ids) {
   if (!ids.length) return {};
   const { rows } = await db.query(`SELECT c.id, c.provenance_id, c.reliability, c.source_text, c.source_slug, c.locator, c.note,
-      c.accessed, c.wikidata_item, c.url, false AS outdated, false AS pending FROM citation_status c
+      c.accessed, c.wikidata_item, c.url, c.assumed_by, c.assumed_by_name, false AS outdated, false AS pending FROM citation_status c
     WHERE c.provenance_id = ANY ($1::bigint[]) ORDER BY c.reliability DESC NULLS LAST, c.id`, [ids]);
   const byStep = {};
   for (const r of await shortForms(db, rows)) (byStep[r.provenance_id] ||= []).push(r);
@@ -67,7 +68,7 @@ async function forProvenance(db, ids) {
 async function forNames(db, ids) {  // other names (152): rows of entry_names
   if (!ids.length) return {};
   const { rows } = await db.query(`SELECT c.id, c.name_id, c.reliability, c.source_text, c.source_slug, c.locator, c.note,
-      c.accessed, c.wikidata_item, c.url, false AS outdated, false AS pending FROM citation_status c
+      c.accessed, c.wikidata_item, c.url, c.assumed_by, c.assumed_by_name, false AS outdated, false AS pending FROM citation_status c
     WHERE c.name_id = ANY ($1::bigint[]) ORDER BY c.reliability DESC NULLS LAST, c.id`, [ids]);
   const byName = {};
   for (const r of await shortForms(db, rows)) (byName[r.name_id] ||= []).push(r);
@@ -77,7 +78,7 @@ async function forNames(db, ids) {  // other names (152): rows of entry_names
 // sources of names not published yet (190), by the name's text
 async function forWaitingNames(db, type, id) {
   const { rows } = await db.query(`SELECT c.id, c.pending->>'__name' AS name_text, c.reliability, c.source_text, c.source_slug, c.locator, c.note,
-      c.accessed, c.wikidata_item, c.url, false AS outdated, true AS pending FROM citation_status c
+      c.accessed, c.wikidata_item, c.url, c.assumed_by, c.assumed_by_name, false AS outdated, true AS pending FROM citation_status c
     WHERE c.entity_type = $1 AND c.entity_id = $2 AND c.field IS NULL ORDER BY c.reliability DESC NULLS LAST, c.id`, [type, id]);
   const byText = {};
   for (const r of await shortForms(db, rows)) (byText[r.name_text] ||= []).push(r);
@@ -87,7 +88,7 @@ async function forWaitingNames(db, type, id) {
 async function forNumbers(db, ids) {  // further numbers of an artwork (081)
   if (!ids.length) return {};
   const { rows } = await db.query(`SELECT c.id, c.number_id, c.reliability, c.source_text, c.source_slug, c.locator, c.note,
-      c.accessed, c.wikidata_item, c.url, false AS outdated, false AS pending FROM citation_status c
+      c.accessed, c.wikidata_item, c.url, c.assumed_by, c.assumed_by_name, false AS outdated, false AS pending FROM citation_status c
     WHERE c.number_id = ANY ($1::bigint[]) ORDER BY c.reliability DESC NULLS LAST, c.id`, [ids]);
   const byNumber = {};
   for (const r of await shortForms(db, rows)) (byNumber[r.number_id] ||= []).push(r);
@@ -124,6 +125,12 @@ async function add(db, body, userId, { pending = null, pendingByField = null } =
     if (!url) url = rows[0].url;
   }
   if (url && !/^https?:\/\/[^\s/]+\.[^\s]+$/.test(url)) throw new CitationError('Link: a web address (https://…).');
+  // an assumption (255): no source says it — this account concludes it; the reasoning goes in `note`
+  const assumption = text('assumption');
+  if (assumption) {
+    if (sourceSlug || free || url) throw new CitationError('An assumption stands on its own — add the source separately, or leave the link and source fields empty.');
+    return addAssumption(db, body, assumption, userId);
+  }
   if (!sourceSlug && !free && !url) throw new CitationError('Paste the link of the page, pick a source of the bibliography — or describe the source in words.');
   let sourceId = null;
   if (sourceSlug) {
@@ -180,6 +187,31 @@ async function add(db, body, userId, { pending = null, pendingByField = null } =
     if (!rowCount) throw new CitationError(`“${field}” takes no source.`);
   }
   return fields;
+}
+
+// One assumption per account and target (index citations_one_assumption): a second one replaces the reasoning.
+async function addAssumption(db, body, reasoning, userId) {
+  const text = (k) => String(body[k] ?? '').trim() || null;
+  if (!userId) throw new CitationError('An assumption needs an account to say whose it is.');
+  for (const [key, col] of [['relationship', 'relationship_id'], ['provenance', 'provenance_id'], ['number', 'number_id'], ['name', 'name_id']]) {
+    if (!text(key)) continue;
+    const { rowCount } = await db.query(`UPDATE citations SET note = $2, updated_at = now() WHERE ${col} = $1 AND assumed_by = $3`, [text(key), reasoning, userId]);
+    if (!rowCount) await db.query(`INSERT INTO citations (${col}, assumed_by, note, created_by) VALUES ($1, $3, $2, $3)`, [text(key), reasoning, userId]);
+    return;
+  }
+  if (text('name_text')) throw new CitationError('Publish the name first — then add the assumption to it.');
+  const field = text('field');
+  const { rowCount } = await db.query(`UPDATE citations c SET note = $4, updated_at = now(), cited_value = field_value(er.r, f.cols)
+      FROM citable_fields f, entity_rows er WHERE f.entity_type = c.entity_type AND f.field = c.field AND er.type = c.entity_type AND er.id = c.entity_id
+       AND c.entity_type = $1::entity_type AND c.entity_id = $2 AND c.field = $3 AND c.assumed_by = $5`, [text('type'), text('id'), field, reasoning, userId]);
+  if (rowCount) return [field];
+  const { rowCount: added } = await db.query(`
+    INSERT INTO citations (entity_type, entity_id, field, assumed_by, note, created_by, cited_value)
+    SELECT f.entity_type, er.id, f.field, $5, $4, $5, field_value(er.r, f.cols)
+    FROM citable_fields f JOIN entity_rows er ON er.type = f.entity_type AND er.id = $2
+    WHERE f.entity_type = $1::entity_type AND f.field = $3`, [text('type'), text('id'), field, reasoning, userId]);
+  if (!added) throw new CitationError(`“${field}” takes no source.`);
+  return [field];
 }
 
 async function byId(db, id) {
@@ -472,10 +504,11 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
       <div class="cite-status small" aria-live="polite"></div>
       ${cites.length ? html`<ul>${cites.map((c) => html`<li><span class="cite-badge cite-${kindOf(c)}" title="${BADGE_TITLE[kindOf(c)]}">${BADGE[kindOf(c)]}</span>
         ${c.wikidata_item ? html`<a href="https://www.wikidata.org/wiki/${c.wikidata_item}" target="_blank" rel="noopener">${c.source_text}</a>`
-          : c.source_slug ? html`<a href="/bibliography/${c.source_slug}">${c.source_text}</a>` : html`<span>${c.source_text}</span>`}
+          : c.source_slug ? html`<a href="/bibliography/${c.source_slug}">${c.source_text}</a>`
+          : c.assumed_by ? html`<b>${c.source_text}</b> <span class="muted small">— no source says so</span>` : html`<span>${c.source_text}</span>`}
         ${c.url ? html` <a class="small" href="${c.url}" target="_blank" rel="noopener">page ↗</a>` : ''}
         ${c.accessed ? html`<span class="muted small">· accessed ${c.accessed.toISOString().slice(0, 10)}</span>` : ''}
-        ${c.note ? html`<div class="small">${c.note}</div>` : ''}
+        ${c.note ? html`<div class="small">${c.assumed_by ? 'Why: ' : ''}${c.note}</div>` : ''}
         ${c.outdated ? html`<div class="small cite-warn">The value changed since — does the source still support it?
           <form method="post" action="/citations/${c.id}/confirm" class="inline cite-confirm"><input type="hidden" name="back" value="${back}"><button class="link small" title="I checked: the source supports the value as it is now${c.accessed ? ' (accessed today)' : ''}">Yes, it still does</button></form>
           <span class="muted">· if not: remove it</span></div>` : ''}
@@ -505,6 +538,10 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
           <div class="field-pair"><div class="field"><label>Name of the website (new ones)</label><input name="site" placeholder="e.g. Van Gogh Museum, Collection" aria-label="name of the website"></div>
             <div class="field"><label>Accessed</label><input name="accessed" type="date" aria-label="accessed"></div></div>
           <div class="field"><label>Or in words — a note, not a bibliography entry</label><input name="text" placeholder="e.g. letter to Theo, 1888" aria-label="source in words"></div></details>
+        <details class="cite-more cite-assume"><summary class="small muted">no source: my own assumption …</summary>
+          <div class="field"><label>My assumption — why I think so</label>
+            <textarea name="assumption" rows="2" placeholder="e.g. style and technique match the workshops of the capital at that time" aria-label="my assumption, with the reasoning"></textarea>
+            <div class="hint">For an educated guess no source states. The site shows it as “Assumption by <i>your public name</i>” with this reasoning — never as a source. Leave the fields above empty.</div></div></details>
         <div class="cite-actions"><button class="cite-submit">Add source</button></div>
       </form></div></details>`;
 }

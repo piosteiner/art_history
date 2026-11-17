@@ -342,3 +342,41 @@ test('confirming an outdated source clears the warning in the quality box withou
   await expect(userA.locator('.qa-slot')).not.toContainText('Changed since cited', { timeout: 10000 });   // no reload
   sql("DELETE FROM artworks WHERE slug = 'test-qa-refresh'; DELETE FROM bibliography WHERE slug = 'test-qa-refresh-book'");
 });
+
+test('an own assumption (255): added in the sources dialog, shown as "Assumption by <public name>" with the reasoning — no source', async ({ userA, request }) => {
+  const api = async (path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
+  sql("DELETE FROM citations WHERE assumed_by IS NOT NULL AND entity_type = 'artist' AND entity_id = entity_id('artist', 'vincent-van-gogh')");
+  await userA.goto('/artists/vincent-van-gogh');
+  const dd = userA.locator('dt:has-text("Death") + dd');
+  await dd.locator('details.cite > summary').first().click();
+  const panel = dd.locator('details.cite .cite-panel').first();
+  await panel.locator('.cite-assume > summary').click();
+  // an assumption stands on its own: not together with a source
+  await panel.locator('input[name=url]').fill('https://example.org/page');
+  await panel.locator('textarea[name=assumption]').fill('Died where his last letters were written');
+  await panel.locator('.cite-submit').click();
+  await expect(dd.locator('.cite-status').first()).toContainText('An assumption stands on its own');
+  await panel.locator('input[name=url]').fill('');
+  await panel.locator('.cite-submit').click();
+  await expect(dd.locator('.cite-status').first()).toHaveText('Assumption added.');
+  await expect(dd.locator('summary .cite-badge.cite-assumption').first()).toHaveText('A');
+  const row = sql(`SELECT c.note || ' | ' || coalesce(u.public_name, 'an editor of this site') FROM citations c JOIN admin_users u ON u.id = c.assumed_by
+                   WHERE c.entity_type = 'artist' AND c.entity_id = entity_id('artist', 'vincent-van-gogh') AND c.field = 'death'`);
+  const [why, name] = row.split(' | ');
+  expect(why).toBe('Died where his last letters were written');
+  await expect(dd.locator('.cite-panel li').filter({ hasText: `Assumption by ${name}` })).toContainText('Why: Died where his last letters were written');
+  // the API: kind "assumption", whose (public name, never the login), why — and no reliability: it is not a source
+  const v = await api('/artists/vincent-van-gogh');
+  expect(v.sources.death.find((c) => c.kind === 'assumption')).toEqual({ kind: 'assumption', reliability: null, text: `Assumption by ${name}`,
+    assumed_by: name, locator: null, url: null, accessed: null, note: 'Died where his last letters were written', outdated: false });
+  // a second one by the same account replaces the reasoning (one per account and target)
+  await userA.goto('/artists/vincent-van-gogh');
+  await dd.locator('details.cite > summary').first().click();
+  await panel.locator('.cite-assume > summary').click();
+  await panel.locator('textarea[name=assumption]').fill('Auvers: his grave is there');
+  await panel.locator('.cite-submit').click();
+  await expect(dd.locator('.cite-status').first()).toHaveText('Assumption added.');
+  expect(sql(`SELECT string_agg(note, ' | ') FROM citations WHERE assumed_by IS NOT NULL AND entity_type = 'artist' AND entity_id = entity_id('artist', 'vincent-van-gogh')`))
+    .toBe('Auvers: his grave is there');
+  sql("DELETE FROM citations WHERE assumed_by IS NOT NULL AND entity_type = 'artist' AND entity_id = entity_id('artist', 'vincent-van-gogh')");
+});

@@ -2,6 +2,7 @@
 //   free text:  "Letter 577"
 //   a source:   { source: <bibliography slug>, locator: "S. 45", url: https://…, accessed: 2026-10-08, note: … }
 //   Wikidata:   { wikidata: Q45585, property: P2048, accessed: 2026-10-08 }
+//   our own assumption (255): { assumption: <the reasoning>, by: <account id> }
 // Existing citations stay; listed ones that are missing are added (free text: the lines replace the old lines). A source
 // listed twice for one target (two passages) becomes one citation with both notes and pages (143).
 async function importCitations(db, target, list) {
@@ -23,9 +24,14 @@ async function importCitations(db, target, list) {
       if (sourceId === null) throw new Error(`source "${c.source}" does not exist`);
     }
     const v = typeof c === 'string' ? { text: c.trim() }
+      : c && c.assumption ? { assumed_by: Number(c.by) || 1, note: String(c.assumption) }
       : { source_id: sourceId, wikidata_item: c.wikidata || null, wikidata_property: c.property || null,
         locator: c.locator ?? null, url: c.url ?? null, accessed: c.accessed ? String(c.accessed) : null, note: c.note ?? null };
     if (typeof c === 'string' && !v.text) continue;
+    if (v.assumed_by) {   // one assumption per account and target (255): the reasoning as listed
+      const { rowCount } = await db.query(`UPDATE citations SET note = $${key.length + 2} WHERE ${where} AND assumed_by = $${key.length + 1}`, [...key, v.assumed_by, v.note]);
+      if (rowCount) continue;
+    }
     // a source cites a target once (143): listed again (another passage), its page and note join the citation there
     if (sourceId !== null) {
       const { rows: [had] } = await db.query(`SELECT id, locator, note, url FROM citations WHERE ${where} AND source_id = $${key.length + 1}`, [...key, sourceId]);

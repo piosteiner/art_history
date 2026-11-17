@@ -74,7 +74,10 @@ export interface Relationship {
  * in words (`text`, not verified). `text` is the short form to show ("Busch 1993, S. 45", "Wikidata, Q45585, P2048").
  */
 export interface Citation {
-  kind: 'source' | 'wikidata' | 'text';
+  /** assumption (API 255): no source says it — an editor of this site concludes it; `note` gives the reasoning. */
+  kind: 'source' | 'wikidata' | 'text' | 'assumption';
+  /** The public name of the editor whose assumption it is. */
+  assumed_by?: string | null;
   /** database (Wikidata, aggregators) < institution (museum) < scholarly (literature) < primary (archive); null for text. */
   reliability: 'other' | 'database' | 'institution' | 'scholarly' | 'primary' | null;
   text: string;

@@ -901,8 +901,11 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       [...rels.map((r) => r._prov_id), ...steps.map((p) => p._prov_id), ...steps.flatMap((p) => (p.alternatives || []).map((a) => a._prov_id))].filter(Boolean),
       (body.numbers || []).map((n) => n._num_id), nameRows.map((n) => n.id)]);
     const shape = (c) => {
-      const out = { kind: c.wikidata_item ? 'wikidata' : c.source_id ? 'source' : 'text', reliability: c.reliability };
-      if (c.wikidata_item) {
+      const out = { kind: c.wikidata_item ? 'wikidata' : c.source_id ? 'source' : c.assumed_by ? 'assumption' : 'text', reliability: c.reliability };
+      if (c.assumed_by) {   // 255: our own conclusion, not a source — whose (public name), and why (note)
+        out.text = c.source_text;
+        out.assumed_by = c.assumed_by_name;
+      } else if (c.wikidata_item) {
         out.text = `Wikidata, ${c.wikidata_item}${c.wikidata_property ? `, ${c.wikidata_property}` : ''}`;
         out.wikidata = { item: c.wikidata_item, property: c.wikidata_property, url: `https://www.wikidata.org/wiki/${c.wikidata_item}` };
       } else if (c.source_id) {

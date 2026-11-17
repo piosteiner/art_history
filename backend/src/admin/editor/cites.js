@@ -223,7 +223,8 @@ async function send(form, submitter) {
   offerWebPage(fresh);   // gone once that page is a source here
   refreshQuality();      // the findings follow (a source added, removed or confirmed): the box and the queue's bar
   const n = keys.length;
-  status(fresh, form.classList.contains('cite-add') ? (n > 1 ? `Source added to ${n} fields.` : 'Source added.') : confirming ? 'Noted: the source still supports it.' : 'Source removed.');
+  const assumed = form.classList.contains('cite-add') && String(form.elements.assumption?.value || '').trim();   // 255
+  status(fresh, assumed ? 'Assumption added.' : form.classList.contains('cite-add') ? (n > 1 ? `Source added to ${n} fields.` : 'Source added.') : confirming ? 'Noted: the source still supports it.' : 'Source removed.');
   const first = fresh && fresh.querySelector('form.cite-add input[name="url"]');
   if (first) first.focus();
 }

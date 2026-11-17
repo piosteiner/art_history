@@ -2,6 +2,32 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-17
+
+### Migration 255: own assumptions as a kind of citation
+- **What:** `citations.assumed_by` (account) with the reasoning in `note`; `citations_one_source` now counts it,
+  `citations_assumption_reason`, unique index `citations_one_assumption`; `citation_status` gains `assumed_by`,
+  `assumed_by_name` (public name) and "Assumption by …" as `source_text`; `citation_doc()` exports
+  `{assumption, by}`. CMS sources dialog "no source: my own assumption …" (`addAssumption()` in
+  `src/admin/citations.js`), YAML import, API `kind: 'assumption'`, site marker "assumed" (`frontend/src/cite.ts`).
+  Tests: e2e `citations.spec.js` "an own assumption (255)", site `site.spec.ts`.
+- **Why:** owner: an educated guess without a source must be shown as one, and as the owner's — not as another
+  person's or a journal's. Prompted by five works "created in Tokyo" from an import (below).
+- **Revert:** delete assumption rows, restore the old CHECK and view from 050/239 and `citation_doc()`; revert the code.
+
+### Migration 254 deployed; national museums of Japan linked (data, audited)
+- **What:** script (scratchpad `nich.js`) for the 60 works of the Tokyo, Kyoto and Nara national museums: ColBase
+  numbers from Wikidata (P14394), existing ColBase links or Japan Search (only when the record's own number equals the
+  inventory number); e-Museum numbers from Wikidata/links only when the e-Museum record names the same inventory number
+  after the museum's name; TNM record = inventory without hyphen. 36 ColBase (button), 9 e-Museum, 27 TNM records.
+  Katawaguruma tebako: inventory H-4445 (Wikidata's item mixes the Kamakura box H-4445 with the Heian national treasure)
+  → H-4282, cited from ColBase; e-Museum 100198 (= H-4445) not linked. Tōhaku's *Pine Trees* inventory A10471 → A-10471.
+  Five uncited "created in Tokyo" relationships (tebako, Shūbun, Sesshū *Winter Landscape*, Eitoku *Cypress*, Tōhaku
+  *Pine Trees*) deleted — an import had taken the museum's city as the place of creation.
+  Glossary term `tebako` (under box; JAANUS, ColBase H-4282 as sources) for three works (kind cited from ColBase).
+- **Why:** owner's decision on the national museums' three databases (254); wrong place and number found on the way.
+- **Revert:** audit_log (source 'script', 2026-11-17).
+
 ## 2026-11-16
 
 ### Content: reading notes, first 23 sources; Mason, Kolb, two sources
