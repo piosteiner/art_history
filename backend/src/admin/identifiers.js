@@ -13,7 +13,8 @@ async function authorities(db) {
   return cache;
 }
 const forType = (list, type) => list.filter((a) => a.types.includes(type));
-const urlOf = (a, value) => a.url_template.replace('{id}', encodeURIComponent(value));
+// a number's slashes stay (ColBase's "tnm/H-4445" is a path, 254); everything else encoded like the API's links
+const urlOf = (a, value) => a.url_template.replace('{id}', encodeURIComponent(value).replace(/%2F/gi, '/'));
 
 // The number from what was pasted: the number itself, or a record's web address of that authority
 // (d-nb.info/gnd/118559737, portal.dnb.de/…query=nid%3D118559737, getty.edu/vow/…subjectid=500021093, viaf.org/viaf/…).
@@ -26,6 +27,11 @@ function numberFrom(code, text) {
   if (code === 'gnd') return (/(?:^|[=:])nid=?([0-9X-]+)/i.exec(decodeURIComponent(q('query') || '')) || [])[1] || (u.hostname.endsWith('d-nb.info') || u.hostname.endsWith('lobid.org') ? last.replace(/\.json$/, '') : t);
   if (code === 'ulan') return q('subjectid') || (/(500\d{6})/.exec(t) || [])[1] || t;
   if (code === 'wpi') return (/\/artworks\/(\d+)/.exec(u.pathname) || [])[1] || t;  // digitalprojects.wpi.art/artworks/71610[/…]
+  // the national museums of Japan (254): colbase.nich.go.jp/collection_items/tnm/H-4445, emuseum…?content_base_id=100198,
+  // tnm.jp/…?controller=dtl&colid=H4445
+  if (code === 'colbase') return (/\/collection_items\/([a-z]+\/[^/?#]+)/.exec(u.pathname) || [])[1] ? decodeURIComponent(/\/collection_items\/([a-z]+\/[^/?#]+)/.exec(u.pathname)[1]) : t;
+  if (code === 'emuseum') return q('content_base_id') || t;
+  if (code === 'tnm') return q('colid') || t;
   if (code === 'sikart') return (/person-(\d+)/.exec(t) || [])[1] || q('id') || (/(\d{6,10})/.exec(t) || [])[1] || t;  // recherche.sik-isea.ch/sik:person-4000055/…
   return last || t;
 }

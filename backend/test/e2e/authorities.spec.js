@@ -137,3 +137,25 @@ test('WPI (181): a work\'s number in the Wildenstein Plattner Institute\'s catal
   expect(sql("SELECT entity_types::text FROM authorities WHERE code = 'wpi'")).toBe('{artwork}');
   sql("DELETE FROM entry_identifiers WHERE authority = 'wpi'");
 });
+
+test('national museums of Japan (254): ColBase, e-Museum and TNM numbers from pasted links, linked and in the API', async ({ userA, request }) => {
+  const { API } = require('./helpers');
+  sql("DELETE FROM entry_identifiers WHERE authority IN ('colbase', 'emuseum', 'tnm')");
+  await userA.goto('/artworks/sunflowers-national-gallery/edit');
+  const section = userA.locator('#reference-records');
+  for (const [code, link] of [['colbase', 'https://colbase.nich.go.jp/collection_items/tnm/H-4445?locale=en'],
+    ['emuseum', 'https://emuseum.nich.go.jp/detail?content_base_id=100198&content_pict_id=0&langId=en'],
+    ['tnm', 'https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=H4445']]) {
+    await section.locator('summary:has-text("+ Add a reference record")').click();
+    await section.locator('select[name=authority]').selectOption(code);
+    await section.locator('input[name=value]').fill(link);
+    await Promise.all([userA.waitForNavigation(), section.locator('button:has-text("Add")').click()]);
+    await expect(userA).toHaveURL(/done=id-added/);
+  }
+  await expect(section.locator('a[href="https://colbase.nich.go.jp/collection_items/tnm/H-4445?locale=en"]')).toHaveText('tnm/H-4445 ↗');
+  await expect(section.locator('a[href="https://emuseum.nich.go.jp/detail?content_base_id=100198&langId=en"]')).toHaveText('100198 ↗');
+  await expect(section.locator('a[href="https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=H4445"]')).toHaveText('H4445 ↗');
+  const w = await (await request.get(`${API}/artworks/sunflowers-national-gallery`, { headers: { Host: 'api.localhost' } })).json();
+  expect(w.identifiers.map((i) => i.authority).sort()).toEqual(expect.arrayContaining(['colbase', 'emuseum', 'tnm']));
+  sql("DELETE FROM entry_identifiers WHERE authority IN ('colbase', 'emuseum', 'tnm')");
+});

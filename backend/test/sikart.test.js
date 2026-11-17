@@ -19,3 +19,10 @@ test('the number from a SIKART link', () => {
   assert.strictEqual(numberFrom('wpi', 'https://digitalprojects.wpi.art/artworks/71610/deux-tahitiennes-sur-la-plage'), '71610');
   assert.strictEqual(numberFrom('sikart', '4000055'), '4000055');
 });
+
+test('the numbers of the national museums of Japan from their links (254)', () => {
+  assert.strictEqual(numberFrom('colbase', 'https://colbase.nich.go.jp/collection_items/tnm/H-4445?locale=en'), 'tnm/H-4445');
+  assert.strictEqual(numberFrom('emuseum', 'https://emuseum.nich.go.jp/detail?content_base_id=100198&content_pict_id=0&langId=en'), '100198');
+  assert.strictEqual(numberFrom('tnm', 'https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=H4445'), 'H4445');
+  assert.strictEqual(numberFrom('colbase', 'tnm/H-4445'), 'tnm/H-4445');
+});

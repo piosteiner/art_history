@@ -123,6 +123,17 @@ Format: date — what — why — how to revert.
   † 1961, protected until 2031).
 - **Why / Revert:** owner's request; the entry's history page.
 
+## 2026-11-17
+
+### Migration 254: the national museums of Japan's three databases as reference records
+- **What:** authorities `colbase` (Wikidata P14394, `tnm/H-4445`), `emuseum` (P4257) and `tnm` (the TNM's own record,
+  the inventory number without its hyphen) for artworks; `numberFrom()` reads their pasted links; the CMS keeps a
+  number's slashes in links (`identifiers.js` — the API already did). Tests: unit (numberFrom), e2e authorities.
+- **Why:** owner — one object in three NICH databases (TNM collection, ColBase, e-Museum): the button "View at …" leads
+  to ColBase (the most information), the other two are reference records ("Reference records" on the entry page).
+- **Revert:** `DELETE FROM entry_identifiers WHERE authority IN ('colbase','emuseum','tnm'); DELETE FROM authorities
+  WHERE code IN ('colbase','emuseum','tnm');` + revert the commit.
+
 ## 2026-11-13
 
 ### Content: site changelog and documentation drafts for 2026-11-13
