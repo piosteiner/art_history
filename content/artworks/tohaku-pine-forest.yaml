@@ -29,17 +29,14 @@ medium: Pair of six-panel screens, ink on paper
 materials: [wood, ink, paper]
 dimensions: [156, 347]
 institution: tokyo-national-museum
-inventory_number: A10471
-web_url: http://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10471
+inventory_number: A-10471
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10471?locale=en
 location: [139.7756, 35.71994]
 description_md: "A pair of six-panel screens in monochrome ink without gold or colour by [[artist/hasegawa-tohaku]]: tall pines seen from a distance in thick mist that hides the lower half of some and the middle of others, appearing and disappearing like grey apparitions — perhaps remembering Mu Qi’s bamboo in mist. Nature here is gentle and hospitable, not an awe-inspiring backdrop for a warlord. [[source/history-of-japanese-art|pp. 262–263, fig. 302]]"
 wikidata_id: Q11531476
 metadata:
   sources: [Wikidata Q11531476 (retrieved 2026-11-01)]
 relationships:
-  - type: created_in
-    to: place/tokyo
-    period: 16th century
   - type: associated_with
     to: movement/momoyama-period
     sources:
@@ -50,6 +47,10 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Hasegawa_Tohaku_-_Pine_Trees_(Sh%C5%8Drin-zu_by%C5%8Dbu)_-_right_hand_screen.jpg
     license: Public domain
     credit: Hasegawa Tōhaku
+identifiers:
+  colbase: tnm/A-10471
+  emuseum: "100151"
+  tnm: A10471
 sources:
   kind:
     - source: history-of-japanese-art

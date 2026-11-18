@@ -18,22 +18,19 @@ names:
 attribution_label: Anonymous
 created: 12th century
 created_span: uncertain
-kind: box
+kind: tebako
 medium: Black lacquer with gold lacquer and mother-of-pearl inlay
 materials: [lacquer, gold, mother-of-pearl]
 dimensions: [13.5, 30.6, 22.4]
 institution: tokyo-national-museum
-inventory_number: H-4445
-web_url: https://emuseum.nich.go.jp/detail?content_base_id=100198&content_pict_id=0&langId=en
+inventory_number: H-4282
+web_url: https://colbase.nich.go.jp/collection_items/tnm/H-4282?locale=en
 location: [139.7756, 35.71994]
 description_md: A cosmetic box with a hempen core under layers of black lacquer, decorated in [[maki-e]] — gold powder sprinkled onto the damp lacquer — and with inlaid mother-of-pearl ([[raden]]). Its motif, half-submerged wooden cartwheels left to soak in a stream so that they would not dry out and crack, is purely Japanese in concept and drawn from poetic imagery. [[source/history-of-japanese-art|p. 106, fig. 130]]
 wikidata_id: Q107044952
 metadata:
   sources: [Wikidata Q107044952 (retrieved 2026-11-01)]
 relationships:
-  - type: created_in
-    to: place/tokyo
-    period: 13th century
   - type: created_in_polity
     to: polity/japan
     sources:
@@ -45,10 +42,14 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 106, fig. 130
+identifiers:
+  colbase: tnm/H-4282
+  tnm: H4282
 sources:
   kind:
     - source: history-of-japanese-art
       locator: p. 106, fig. 130
+    - source: colbase-tnm-h-4282
   medium:
     - source: history-of-japanese-art
       locator: p. 106, fig. 130
@@ -71,7 +72,4 @@ sources:
       wikidata: Q107044952
     - source: history-of-japanese-art
       locator: p. 106, fig. 130
-  inventory_number:
-    - accessed: 2026-11-01
-      property: P217
-      wikidata: Q107044952
+  inventory_number: ["ColBase, Tokyo National Museum: 片輪車蒔絵螺鈿手箱, Heian period, 12th century, 22.4 × 30.6 × 13.5 cm, H-4282"]

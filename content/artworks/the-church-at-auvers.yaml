@@ -68,10 +68,16 @@ names:
         wikidata: Q1213917
 creator: vincent-van-gogh
 created: 1890-06-04/1890-06-08
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
-dimensions: [94, 74]
+dimensions: [93, 74.5]
+other_dimensions:
+  - cm: [110, 92.3]
+    part: frame
 institution: musee-d-orsay
 inventory_number: RF 1951 42
+web_url: https://www.musee-orsay.fr/fr/oeuvres/755
 other_web_url: http://www.vggallery.com/painting/p_0789.htm
 other_web_name: The Vincent van Gogh Gallery
 wikidata_id: Q1213917
@@ -132,6 +138,14 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
+  kind:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/755
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
+  medium:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/755
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   created:
     - url: https://www.musee-orsay.fr/fr/oeuvres/leglise-dauvers-sur-oise-vue-du-chevet-755
       source: musee-d-orsay-collections
@@ -140,18 +154,27 @@ sources:
     - accessed: 2026-10-20
       property: P170
       wikidata: Q1213917
+    - url: https://www.musee-orsay.fr/fr/oeuvres/755
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   materials:
     - accessed: 2026-10-20
       property: P186
       wikidata: Q1213917
+    - url: https://www.musee-orsay.fr/fr/oeuvres/755
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   dimensions:
-    - accessed: 2026-10-20
-      property: P2048
-      wikidata: Q1213917
+    - url: https://www.musee-orsay.fr/fr/oeuvres/755
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   institution:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q1213917
+    - url: https://www.musee-orsay.fr/fr/oeuvres/755
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   inventory_number:
     - accessed: 2026-10-20
       property: P217
@@ -159,3 +182,7 @@ sources:
     - url: https://www.musee-orsay.fr/fr/oeuvres/leglise-dauvers-sur-oise-vue-du-chevet-755
       source: musee-d-orsay-collections
       accessed: 2026-10-20
+  other_dimensions:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/755
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17

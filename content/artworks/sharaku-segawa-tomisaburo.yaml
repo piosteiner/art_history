@@ -23,7 +23,7 @@ dimensions: [38.1, 23.2]
 dimensions_note: ōban
 institution: tokyo-national-museum
 inventory_number: A-10569-486
-web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-486
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-486?locale=en
 description_md: "The actor called “Nasty Tomi” for his acerbic personality, in a female role, glaring through hard eyes as he pulls up one sleeve: truthful, unflattering, frozen in a mie pose against glistening grey mica. [[artist/toshusai-sharaku]] produced about 150 actor prints between spring 1794 and New Year 1795 and disappeared; a law of 1794 forbade mica. [[source/history-of-japanese-art|p. 286, fig. 325]]"
 wikidata_id: Q62024406
 metadata:
@@ -49,6 +49,9 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Sharaku_-_Segawa_Tomisabur%C5%8D_as_Yadorigi,_wife_of_Ogishi_Kurando.png
     license: Public domain
     credit: Tōshūsai Sharaku
+identifiers:
+  colbase: tnm/A-10569-486
+  tnm: A10569486
 sources:
   kind:
     - source: history-of-japanese-art

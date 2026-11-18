@@ -13,7 +13,7 @@ materials: [earthenware]
 dimensions: [25.2]
 institution: tokyo-national-museum
 inventory_number: J-8008
-web_url: https://colbase.nich.go.jp/collection_items/tnm/J-8008
+web_url: https://colbase.nich.go.jp/collection_items/tnm/J-8008?locale=en
 description_md: "Head and torso of a Middle Jōmon figurine between human and cat: slanting eyes cut through the clay, a three-lobed mouth, incised marks like tattoos, a spotted pattern like fur; one hand rests on the breast. [[source/history-of-japanese-art|p. 19, fig. 10]]"
 relationships:
   - type: created_in
@@ -33,6 +33,9 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/tnm/J-8008
     license: CC BY 4.0
     credit: Tokyo National Museum, ColBase
+identifiers:
+  colbase: tnm/J-8008
+  tnm: J8008
 sources:
   kind:
     - source: history-of-japanese-art

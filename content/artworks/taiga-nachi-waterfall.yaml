@@ -13,7 +13,7 @@ materials: [paper]
 dimensions: [125.7, 56.9]
 institution: tokyo-national-museum
 inventory_number: A-11521
-web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11521
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11521?locale=en
 description_md: "Painted by [[artist/ike-taiga]] at about fifty: not a minutely detailed record but a recreation of impressions — rocks and trees carry the eye to a large triangular mountain with the waterfall a void of white paper at its centre; loose, rhythmic brushwork and abundant washes give a wet, atmospheric quality. [[source/history-of-japanese-art|pp. 331–332, fig. 386]]"
 relationships:
   - type: associated_with
@@ -26,6 +26,9 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/tnm/A-11521
     license: CC BY 4.0
     credit: Tokyo National Museum, ColBase
+identifiers:
+  colbase: tnm/A-11521
+  tnm: A11521
 sources:
   kind:
     - source: history-of-japanese-art

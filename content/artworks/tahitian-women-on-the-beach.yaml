@@ -56,12 +56,25 @@ names:
     sources:
       - accessed: 2026-10-20
         wikidata: Q930535
+  - lang: fr
+    role: alternative
+    text: Sur la plage
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/290
+        source: musee-d-orsay-collections
+        accessed: 2026-11-17
 creator: paul-gauguin
 created: 1891-11/1891-12
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [69, 91.5]
+other_dimensions:
+  - cm: [89.5, 111.4, 10]
+    part: frame
 institution: musee-d-orsay
 inventory_number: RF 2765
+web_url: https://www.musee-orsay.fr/fr/oeuvres/290
 other_web_url: http://www.photo.rmn.fr/C.aspx?VP3=SearchResult&amp;IID=2C6NU0XIMSR8
 other_web_name: RMN-Grand Palais (photo agency)
 wikidata_id: Q930535
@@ -72,6 +85,10 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_056.jpg
     license: Public domain
     credit: Paul Gauguin
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/MUNALOrsay28.JPG/1280px-MUNALOrsay28.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:MUNALOrsay28.JPG
+    license: CC BY-SA 3.0
+    credit: AlejandroLinaresGarcia
 provenance:
   - owner: artist/paul-gauguin
     acquired: 1891-11
@@ -132,6 +149,14 @@ provenance:
 identifiers:
   wpi: "71610"
 sources:
+  kind:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/290
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
+  medium:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/290
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   created:
     - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-de-tahiti-290
       source: musee-d-orsay-collections
@@ -144,6 +169,9 @@ sources:
     - accessed: 2026-10-20
       property: P186
       wikidata: Q930535
+    - url: https://www.musee-orsay.fr/fr/oeuvres/290
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   dimensions:
     - accessed: 2026-10-20
       property: P2048
@@ -152,6 +180,9 @@ sources:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q930535
+    - url: https://www.musee-orsay.fr/fr/oeuvres/290
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   inventory_number:
     - accessed: 2026-10-20
       property: P217

@@ -16,7 +16,7 @@ materials: [ink, silk, gold]
 dimensions: [123, 55.9]
 institution: tokyo-national-museum
 inventory_number: TA-59
-web_url: https://colbase.nich.go.jp/collection_items/tnm/TA-59
+web_url: https://colbase.nich.go.jp/collection_items/tnm/TA-59?locale=en
 region: east_asia
 description_md: |-
   A Koryŏ Buddhist painting of breathtaking beauty — Amitābha descending with two bodhisattvas, the main figure overpoweringly large, the robes covered with roundels, the jewellery and transparent silks rendered with gold. Most such paintings survive in Japanese temples and were long thought Chinese; their re-attribution began with an exhibition at the Yamato Bunkakan in 1978. [[source/portal-2000|pp. 89–90, fig. 45]]
@@ -40,6 +40,9 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/tnm/TA-59
     license: CC BY 4.0
     credit: Tokyo National Museum, ColBase
+identifiers:
+  colbase: tnm/TA-59
+  tnm: TA59
 sources:
   kind:
     - source: portal-2000

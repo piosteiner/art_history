@@ -11,7 +11,7 @@ materials: [silk]
 dimensions: [113.1, 68.7]
 institution: tokyo-national-museum
 inventory_number: A-11088
-web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11088
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11088?locale=en
 description_md: "A bird’s-eye view of the Kasuga Shrine at Nara, the Fujiwara family’s shrine on the slopes of Mount Mikasa: the four small aligned halls of the kami, raised on piles with gabled roofs extending over the stairs, within corridors and cloister walls like a Buddhist temple, among cherry trees, with the torii at the bottom. Date unknown. [[source/history-of-japanese-art|pp. 163–164, fig. 198]]"
 relationships:
   - type: associated_with
@@ -24,6 +24,9 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/tnm/A-11088
     license: CC BY 4.0
     credit: Tokyo National Museum, ColBase
+identifiers:
+  colbase: tnm/A-11088
+  tnm: A11088
 sources:
   kind:
     - source: history-of-japanese-art

@@ -13,7 +13,7 @@ materials: [silk]
 dimensions: [181.3, 179.3]
 institution: nara-national-museum
 inventory_number: 1008-0
-web_url: https://colbase.nich.go.jp/collection_items/narahaku/1008-0
+web_url: https://colbase.nich.go.jp/collection_items/narahaku/1008-0?locale=en
 description_md: "A painted version of the Taima Mandara, the icon of Pure Land Buddhism as Hōnen taught it: its original is the tapestry at [[institution/taima-dera]], by tradition of the eighth century but perhaps Chinese, rediscovered in the thirteenth century. At the centre Amida sits on an octagonal throne with Kannon and Seishi before multi-storied palaces and a lotus pond in which souls are reborn; the left border tells the legend of Queen Vaidehi, the right shows the thirteen meditations on the paradise — the lapis lazuli earth among them — and the bottom the nine grades of rebirth. [[source/history-of-japanese-art|pp. 205–207, figs. 238–239]]"
 relationships:
   - type: associated_with
@@ -26,6 +26,8 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/narahaku/1008-0
     license: CC BY 4.0
     credit: Nara National Museum, ColBase
+identifiers:
+  colbase: narahaku/1008-0
 sources:
   kind:
     - source: history-of-japanese-art

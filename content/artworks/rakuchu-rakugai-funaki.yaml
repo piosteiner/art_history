@@ -14,7 +14,7 @@ dimensions: [162, 340]
 dimensions_note: each screen
 institution: tokyo-national-museum
 inventory_number: A-11168
-web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11168
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11168?locale=en
 description_md: "A pair of [[rakuchu-rakugai]] screens painted while the Tokugawa were attacking Osaka Castle, perhaps for a wealthy townsman rather than a daimyo: Kyoto as Hideyoshi had rebuilt it, seen from a much lower altitude than the Rekihaku screens, streets crowded with people. The first panels of the right screen show Hōkōji with Hideyoshi’s Great Buddha and, above, his mausoleum; the left screen ends in the Tokugawa’s Nijō Castle — the old regime and the new side by side, with the portable shrines of the Gion festival between them. [[source/history-of-japanese-art|pp. 245–247, fig. 281]]"
 relationships:
   - type: associated_with
@@ -34,6 +34,9 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/tnm/A-11168
     license: CC BY 4.0
     credit: Tokyo National Museum, ColBase
+identifiers:
+  colbase: tnm/A-11168
+  tnm: A11168
 sources:
   kind:
     - source: history-of-japanese-art

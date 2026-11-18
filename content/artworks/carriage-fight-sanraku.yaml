@@ -13,7 +13,7 @@ materials: [ink, paper]
 dimensions: [175, 370]
 institution: tokyo-national-museum
 inventory_number: A-10129
-web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10129
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10129?locale=en
 description_md: "Four panels of a set of fusuma painted by [[artist/kano-sanraku]] (1559–1635) for the Kujō family, now a single screen: the most famous scene of the Aoi chapter of the Tale of Genji, in which the attendants of Lady Rokujō and of Genji’s wife Lady Aoi fight for a good place along the route of the Kamigamo festival parade. The narrative techniques of thirteenth-century Tosa emaki are adapted to the large format; the artist individualizes every figure. Sanraku, once a page of Hideyoshi, was adopted by Eitoku; after the fall of the Toyotomi he became a priest, and his calmer style became the model for the Kyoto branch of the Kanō. [[source/history-of-japanese-art|pp. 258–259, fig. 299]]"
 relationships:
   - type: associated_with
@@ -32,6 +32,9 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/tnm/A-10129
     license: CC BY 4.0
     credit: Tokyo National Museum, ColBase
+identifiers:
+  colbase: tnm/A-10129
+  tnm: A10129
 sources:
   kind:
     - source: history-of-japanese-art

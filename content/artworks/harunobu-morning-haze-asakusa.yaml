@@ -14,7 +14,7 @@ dimensions: [25.4, 19]
 dimensions_note: chūban
 institution: tokyo-national-museum
 inventory_number: A-10569-1255
-web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-1255
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-1255?locale=en
 description_md: Ofuji, the “ginkgo girl” of the toothpick shop behind the Asakusa Kannon and one of the two great beauties of Edo, flirts with a young samurai — slender, graceful, innocent and untouched by life like all [[artist/suzuki-harunobu]]’s women; ginkgo leaves at her feet and a willow, emblem of the pleasure quarter, behind her. [[source/history-of-japanese-art|p. 284, fig. 322]]
 relationships:
   - type: associated_with
@@ -22,6 +22,9 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 284, fig. 322
+identifiers:
+  colbase: tnm/A-10569-1255
+  tnm: A105691255
 sources:
   kind:
     - source: history-of-japanese-art

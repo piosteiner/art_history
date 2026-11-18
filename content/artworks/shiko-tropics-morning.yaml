@@ -12,7 +12,7 @@ materials: [paper]
 dimensions: [45.7]
 institution: tokyo-national-museum
 inventory_number: A-10525-1
-web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10525-1
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10525-1?locale=en
 description_md: "The masterpiece of [[artist/imamura-shiko]] (1880–1916), after a journey to India in 1914: two [[yamato-e]] handscrolls of a south Indian landscape in the morning and the evening, a seamless blend of Eastern and Western techniques — the absence of outlines a nod to Rinpa, the naive charm and repetitive brushstrokes reminiscent of Van Gogh and Gauguin. [[source/history-of-japanese-art|pp. 367–368, fig. 436]]"
 relationships:
   - type: associated_with
@@ -25,6 +25,9 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/tnm/A-10525-1
     license: CC BY 4.0
     credit: Tokyo National Museum, ColBase
+identifiers:
+  colbase: tnm/A-10525-1
+  tnm: A105251
 sources:
   kind:
     - source: history-of-japanese-art

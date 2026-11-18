@@ -32,7 +32,7 @@ medium: Colour on paper
 dimensions: [29.3, 1260.9]
 institution: tokyo-national-museum
 inventory_number: A-11889
-web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11889
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11889?locale=en
 description_md: "The tale of two warrior brothers of the Kantō: the elder, Yoshimi Jirō, longs for life in the capital and marries a lady who served at court; the younger, Obusuma Saburō, devoted only to the martial arts, marries the plainest woman of the east. Jirō, who has neglected arms, is killed by bandits on his way to guard duty in Kyoto — a story that asks what a warrior's calling is. [[source/colbase-tnm-a-11889]]"
 wikidata_id: Q22118229
 metadata:
@@ -48,6 +48,10 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Kyujutsu07.jpg
     license: Public domain
     credit: Unknown author
+identifiers:
+  colbase: tnm/A-11889
+  emuseum: "100332"
+  tnm: A11889
 sources:
   kind:
     - source: colbase-tnm-a-11889

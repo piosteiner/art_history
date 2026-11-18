@@ -38,6 +38,9 @@ images:
     license: CC BY 4.0 (ColBase)
     credit: ColBase, National Institutes for Cultural Heritage
     caption: The Hall of Amida Buddha
+identifiers:
+  colbase: tnm/A-10547
+  tnm: A10547
 sources:
   kind:
     - source: history-of-japanese-art

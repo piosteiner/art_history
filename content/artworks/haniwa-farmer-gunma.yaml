@@ -12,7 +12,7 @@ materials: [clay]
 dimensions: [92.5]
 institution: tokyo-national-museum
 inventory_number: J-22675
-web_url: https://colbase.nich.go.jp/collection_items/tnm/J-22675
+web_url: https://colbase.nich.go.jp/collection_items/tnm/J-22675?locale=en
 description_md: A smiling farmer with a hoe over his shoulder — one of the everyday figures among the haniwa of the Kantō. [[source/history-of-japanese-art|p. 33, fig. 29]]
 relationships:
   - type: created_in
@@ -32,6 +32,9 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/tnm/J-22675
     license: CC BY 4.0
     credit: Tokyo National Museum, ColBase
+identifiers:
+  colbase: tnm/J-22675
+  tnm: J22675
 sources:
   kind:
     - source: history-of-japanese-art

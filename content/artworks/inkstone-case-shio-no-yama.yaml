@@ -9,7 +9,7 @@ materials: [lacquer, wood, gold, silver]
 dimensions: [4.8, 25.7, 23.8]
 institution: kyoto-national-museum
 inventory_number: H甲24
-web_url: https://colbase.nich.go.jp/collection_items/kyohaku/H%E7%94%B224
+web_url: https://colbase.nich.go.jp/collection_items/kyohaku/H甲24?locale=en
 description_md: "An [[inkstone-case]] decorated in gold [[maki-e]] on a red lacquer base with inset silver rocks: a landscape evoking Shiogama, the salt flats on the north-eastern coast that were a favourite image of melancholy solitude in poetry, gardens and design. [[source/history-of-japanese-art|p. 178, fig. 206]]"
 relationships:
   - type: associated_with
@@ -29,6 +29,8 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/kyohaku/H%E7%94%B224
     license: CC BY 4.0
     credit: Kyoto National Museum, ColBase
+identifiers:
+  colbase: kyohaku/H甲24
 sources:
   kind:
     - source: history-of-japanese-art

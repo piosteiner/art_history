@@ -21,9 +21,6 @@ wikidata_id: Q107045359
 metadata:
   sources: [Wikidata Q107045359 (retrieved 2026-11-01)]
 relationships:
-  - type: created_in
-    to: place/tokyo
-    period: 15th century
   - type: associated_with
     to: movement/muromachi-period
     sources:
@@ -34,6 +31,8 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Shubun_-_Reading_in_a_Bamboo_Grove_detail.jpg
     license: Public domain
     credit: Tenshō Shūbun
+identifiers:
+  emuseum: "100145"
 sources:
   kind:
     - source: history-of-japanese-art

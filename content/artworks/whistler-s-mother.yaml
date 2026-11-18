@@ -78,10 +78,16 @@ names:
         wikidata: Q687182
 creator: james-mcneill-whistler
 created: 1871
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [144.3, 163]
+other_dimensions:
+  - cm: [186, 204.5, 14.5]
+    part: frame
 institution: musee-d-orsay
 inventory_number: RF 699
+web_url: https://www.musee-orsay.fr/fr/oeuvres/974
 other_web_url: https://www.photo.rmn.fr/archive/86-001131-2C6NU0HB0TI2.html
 other_web_name: RMN-Grand Palais (photo agency)
 wikidata_id: Q687182
@@ -141,6 +147,14 @@ identifiers:
   gnd: 4764623-8
   viaf: "184402409"
 sources:
+  kind:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/974
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
+  medium:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/974
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   created:
     - accessed: 2026-10-20
       property: P571
@@ -156,10 +170,16 @@ sources:
     - accessed: 2026-10-20
       property: P186
       wikidata: Q687182
+    - url: https://www.musee-orsay.fr/fr/oeuvres/974
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   dimensions:
     - accessed: 2026-10-20
       property: P2048
       wikidata: Q687182
+    - url: https://www.musee-orsay.fr/fr/oeuvres/974
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   institution:
     - accessed: 2026-10-20
       property: P195

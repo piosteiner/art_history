@@ -40,10 +40,16 @@ names:
         wikidata: Q1766454
 creator: gustave-caillebotte
 created: 1875
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
-dimensions: [102, 146.5]
+dimensions: [102, 147]
+other_dimensions:
+  - cm: [140.2, 184.5]
+    part: frame
 institution: musee-d-orsay
 inventory_number: RF 2718
+web_url: https://www.musee-orsay.fr/fr/oeuvres/105
 other_web_url: https://www.wga.hu/html_m/c/caillebo/01floor.html
 other_web_name: Web Gallery of Art
 wikidata_id: Q1766454
@@ -99,6 +105,14 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
+  kind:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/105
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
+  medium:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/105
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   created:
     - accessed: 2026-10-20
       property: P571
@@ -110,18 +124,31 @@ sources:
     - accessed: 2026-10-20
       property: P170
       wikidata: Q1766454
+    - url: https://www.musee-orsay.fr/fr/oeuvres/105
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   materials:
     - accessed: 2026-10-20
       property: P186
       wikidata: Q1766454
+    - url: https://www.musee-orsay.fr/fr/oeuvres/105
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   dimensions:
-    - accessed: 2026-10-20
-      property: P2048
-      wikidata: Q1766454
+    - url: https://www.musee-orsay.fr/fr/oeuvres/105
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   institution:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q1766454
+    - url: https://www.musee-orsay.fr/fr/oeuvres/105
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
+  title_status:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/105
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   inventory_number:
     - accessed: 2026-10-20
       property: P217
@@ -129,3 +156,7 @@ sources:
     - url: https://www.musee-orsay.fr/fr/oeuvres/raboteurs-de-parquets-105
       source: musee-d-orsay-collections
       accessed: 2026-10-20
+  other_dimensions:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/105
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17

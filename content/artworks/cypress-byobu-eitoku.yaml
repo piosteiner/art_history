@@ -29,9 +29,6 @@ wikidata_id: Q20982926
 metadata:
   sources: [Wikidata Q20982926 (retrieved 2026-11-01)]
 relationships:
-  - type: created_in
-    to: place/tokyo
-    period: 1590
   - type: associated_with
     to: movement/momoyama-period
     sources:
@@ -42,6 +39,8 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:%E7%8B%A9%E9%87%8E%E6%B0%B8%E5%BE%B3%E3%80%8A%E6%AA%9C%E5%9B%B3%E5%B1%8F%E9%A2%A8%E3%80%8B1590%E5%B9%B4%E3%80%8116%E4%B8%96%E7%B4%80%E3%80%81%E6%A1%83%E5%B1%B1%E6%99%82%E4%BB%A3%E3%80%81%E6%9D%B1%E4%BA%AC%E5%9B%BD%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8.jpg
     license: Public domain
     credit: Kanō Eitoku
+identifiers:
+  emuseum: "100144"
 sources:
   kind:
     - source: history-of-japanese-art

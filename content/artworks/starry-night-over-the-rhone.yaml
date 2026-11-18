@@ -33,10 +33,16 @@ names:
     text: Starry Night
 creator: vincent-van-gogh
 created: 1888
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
-dimensions: [72, 92.1]
+dimensions: [73, 92]
+other_dimensions:
+  - cm: [94.5, 114]
+    part: frame
 institution: musee-d-orsay
 inventory_number: RF 1975 19
+web_url: https://www.musee-orsay.fr/fr/oeuvres/78696
 other_web_url: http://www.vggallery.com/painting/p_0474.htm
 other_web_name: The Vincent van Gogh Gallery
 wikidata_id: Q1464531
@@ -153,6 +159,14 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
+  kind:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/78696
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
+  medium:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/78696
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   created:
     - accessed: 2026-10-20
       property: P571
@@ -164,18 +178,27 @@ sources:
     - accessed: 2026-10-20
       property: P170
       wikidata: Q1464531
+    - url: https://www.musee-orsay.fr/fr/oeuvres/78696
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   materials:
     - accessed: 2026-10-20
       property: P186
       wikidata: Q1464531
+    - url: https://www.musee-orsay.fr/fr/oeuvres/78696
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   dimensions:
-    - accessed: 2026-10-20
-      property: P2048
-      wikidata: Q1464531
+    - url: https://www.musee-orsay.fr/fr/oeuvres/78696
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   institution:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q1464531
+    - url: https://www.musee-orsay.fr/fr/oeuvres/78696
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   inventory_number:
     - accessed: 2026-10-20
       property: P217
@@ -183,3 +206,7 @@ sources:
     - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
       source: musee-d-orsay-collections
       accessed: 2026-10-20
+  other_dimensions:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/78696
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17

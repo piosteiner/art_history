@@ -58,12 +58,14 @@ names:
         wikidata: Q2571560
 creator: jean-francois-millet
 created: 1857/1859
-created_label: c. 1858
 created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [55.5, 66]
 institution: musee-d-orsay
 inventory_number: RF 1877
+web_url: https://www.musee-orsay.fr/fr/oeuvres/345
 other_web_url: https://archive.org/details/collectiondemjoh00gale/page/n431/mode/1up
 other_web_name: Internet Archive
 other_web_note: Its entry in the catalogue of the John W. Wilson collection (Brussels)
@@ -71,6 +73,10 @@ wikidata_id: Q2571560
 metadata:
   sources: [Wikidata Q2571560 (retrieved 2026-10-20)]
 images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Jean-Francois-Millet-the-angelus.jpg/1280px-Jean-Francois-Millet-the-angelus.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Francois-Millet-the-angelus.jpg
+    license: CC0
+    credit: Multiple Artists
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/JEAN-FRAN%C3%87OIS_MILLET_-_El_%C3%81ngelus_%28Museo_de_Orsay%2C_1857-1859._%C3%93leo_sobre_lienzo%2C_55.5_x_66_cm%29.jpg/1280px-JEAN-FRAN%C3%87OIS_MILLET_-_El_%C3%81ngelus_%28Museo_de_Orsay%2C_1857-1859._%C3%93leo_sobre_lienzo%2C_55.5_x_66_cm%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:JEAN-FRAN%C3%87OIS_MILLET_-_El_%C3%81ngelus_(Museo_de_Orsay,_1857-1859._%C3%93leo_sobre_lienzo,_55.5_x_66_cm).jpg
     license: Public domain
@@ -235,6 +241,14 @@ provenance:
         source: musee-d-orsay-collections
         accessed: 2026-10-20
 sources:
+  kind:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/345
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
+  medium:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/345
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   created:
     - accessed: 2026-10-20
       property: P571
@@ -250,14 +264,23 @@ sources:
     - accessed: 2026-10-20
       property: P186
       wikidata: Q2571560
+    - url: https://www.musee-orsay.fr/fr/oeuvres/345
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   dimensions:
     - accessed: 2026-10-20
       property: P2048
       wikidata: Q2571560
+    - url: https://www.musee-orsay.fr/fr/oeuvres/345
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   institution:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q2571560
+    - url: https://www.musee-orsay.fr/fr/oeuvres/345
+      source: musee-d-orsay-collections
+      accessed: 2026-11-17
   inventory_number:
     - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
       source: musee-d-orsay-collections

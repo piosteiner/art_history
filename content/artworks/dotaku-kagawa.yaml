@@ -14,7 +14,7 @@ dimensions: [42.8]
 dimensions_note: each 42.8 cm high
 institution: tokyo-national-museum
 inventory_number: J-37433
-web_url: https://colbase.nich.go.jp/collection_items/tnm/J-37433
+web_url: https://colbase.nich.go.jp/collection_items/tnm/J-37433?locale=en
 description_md: "A pair of Late Yayoi bronze bells with reliefs in blocks: a praying mantis, dragonflies, a salamander, cranes, a turtle, a man shooting a deer, a hunter with dogs and a boar, a granary and two people pounding rice. [[source/history-of-japanese-art|p. 26, fig. 20]]"
 relationships:
   - type: created_in
@@ -34,6 +34,9 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/tnm/J-37433
     license: CC BY 4.0
     credit: Tokyo National Museum, ColBase
+identifiers:
+  colbase: tnm/J-37433
+  tnm: J37433
 sources:
   kind:
     - source: history-of-japanese-art

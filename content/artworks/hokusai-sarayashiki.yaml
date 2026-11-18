@@ -14,7 +14,7 @@ dimensions: [25.4, 19]
 dimensions_note: chūban
 institution: tokyo-national-museum
 inventory_number: A-10569-672
-web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-672
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-672?locale=en
 description_md: "One of five designs [[artist/katsushika-hokusai]] made for a series on ghost tales: a servant girl falsely accused of breaking one of ten blue-and-white plates was drowned in a well; at night her voice counts up to nine and wails. Against a deep-blue sky her head rises from the well on a neck of plates, a thin trail of white smoke issuing from her mouth. [[source/history-of-japanese-art|pp. 290–291, fig. 332]]"
 relationships:
   - type: associated_with
@@ -27,6 +27,9 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/tnm/A-10569-672
     license: CC BY 4.0
     credit: Tokyo National Museum, ColBase
+identifiers:
+  colbase: tnm/A-10569-672
+  tnm: A10569672
 sources:
   kind:
     - source: history-of-japanese-art

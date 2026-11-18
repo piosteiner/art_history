@@ -15,7 +15,7 @@ materials: [oil paint, canvas]
 dimensions: [79.5, 60]
 institution: tokyo-national-museum
 inventory_number: A-11171
-web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11171
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11171?locale=en
 description_md: "Painted at Grez-sur-Loing near Fontainebleau, where [[artist/asai-chu]] spent six months from October 1901 during his two years in France: poplars, a common feature of the countryside, in yellow, green and light brown against grey trunks. [[source/history-of-japanese-art|pp. 373–374, fig. 445]]"
 relationships:
   - type: associated_with
@@ -28,6 +28,9 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/tnm/A-11171
     license: CC BY 4.0
     credit: Tokyo National Museum, ColBase
+identifiers:
+  colbase: tnm/A-11171
+  tnm: A11171
 sources:
   kind:
     - source: history-of-japanese-art

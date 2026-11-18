@@ -1,0 +1,26 @@
+public_id: 122580
+name: tebako
+names:
+  - lang: ja
+    role: original
+    text: "{手箱|てばこ}"
+  - lang: en
+    role: translation
+    text: hand box
+  - lang: en
+    role: alternative
+    text: cosmetic box
+  - lang: en
+    role: alternative
+    text: toiletry box
+category: object type
+parent: box
+definition: A Japanese box for small personal things — cosmetics, writing materials, incense — usually lacquered; brought from China as a comb box before the Heian period and in use among court women through the Muromachi period.
+description_md: |-
+  Literally "hand box". The early boxes had a fitted inner tray with small containers for cosmetics, writing materials (*suzuribako*) and incense; by the late eleventh century a tebako typically held six smaller boxes — two for tooth black, one for white face powder, a large round one for a mirror and two small round ones for incense. Until the Muromachi period the lid either overlapped the body or closed flush with it. [[source/jaanus-tebako]]
+
+  Not every box called a tebako held cosmetics: the Tokyo National Museum thinks the twelfth-century [[artwork/katawaguruma-tebako]] was more probably made as a case for illuminated sutra scrolls. [[source/colbase-tnm-h-4282]]
+wikidata_id: Q130320230
+sources:
+  definition:
+    - source: jaanus-tebako

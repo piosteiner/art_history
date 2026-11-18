@@ -11,7 +11,7 @@ materials: [oil paint, canvas]
 dimensions: [80.4, 65.3]
 institution: tokyo-national-museum
 inventory_number: A-11258
-web_url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A11258
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11258?locale=en
 wikidata_id: Q20643510
 metadata:
   sources: [Wikidata Q20643510 (retrieved 2026-10-28)]
@@ -40,6 +40,10 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Kuroda_Maiko.jpg
     license: Public domain
     credit: Kuroda Seiki
+identifiers:
+  colbase: tnm/A-11258
+  emuseum: "100326"
+  tnm: A11258
 sources:
   created:
     - accessed: 2026-10-28
