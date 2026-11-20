@@ -121,6 +121,19 @@ provenance:
         date: "1962"
         place: buenos-aires
         document: Museo Nacional de Bellas Artes, El Impresionismo francés en las colecciones argentinas
+  - owner: institution/sotheby-s
+    role: agent
+    not_sold: true
+    acquired: 2026-11-18
+    method: auction
+    direct: true
+    place: new-york-city
+    label: evening sale N12368, 18 November 2026, lot 12
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/maison-de-piette-a-montfoucault-effet-de-neige?locale=en
+        note: "Sotheby’s result: not sold"
+        source: sothebys-n12368-lot-12
+        accessed: 2026-11-19
 numbers:
   - number: "326"
     source: pissarro-venturi-1939

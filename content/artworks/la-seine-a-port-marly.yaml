@@ -161,6 +161,19 @@ provenance:
         source: sothebys-n12368-lot-6
         accessed: 2026-10-31
     check_after: 2026-11-18
+  - owner: institution/sotheby-s
+    role: agent
+    not_sold: true
+    acquired: 2026-11-18
+    method: auction
+    direct: true
+    place: new-york-city
+    label: evening sale N12368, 18 November 2026, lot 6
+    sources:
+      - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/la-seine-a-port-marly?locale=en
+        note: "Sotheby’s result: not sold"
+        source: sothebys-n12368-lot-6
+        accessed: 2026-11-19
 numbers:
   - number: "72"
     source: daulte-1959
