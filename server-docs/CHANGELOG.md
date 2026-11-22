@@ -21,6 +21,8 @@ Format: date — what — why — how to revert.
   `scripts/admin-user.js` clears the state. Privacy statement (CMS page `privacy`, audited as script): the temporary
   password in "For an account our server stores", the account log and the administrators' paragraph; "Last updated
   22 November 2026". Tests: e2e `accounts.spec.js` "a reset password is temporary …", site `tests/password.spec.ts`.
+  Privacy text applied 2026-11-22 after the deploy (audit_log, source 'script'). Deployed with `backend/deploy.sh`
+  (unit 97, e2e 376 passed; the first run had stopped on 256's too strict CHECK → 257).
   Test-environment accounts: `test-accounts.js` copies the hash only, so there the temporary password works without
   the forced change (the test environment is closed).
 - **Why:** owner 2026-11-22: "in the cms be able to reset their password and if i did this then the users will be asked
