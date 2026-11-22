@@ -346,7 +346,7 @@ test('a reset password is temporary: the change is forced, then cleared; it expi
   await expect(userA.locator('.account-temporary-expired')).toContainText('temporary password expired');
   await expect(userA.locator('h2:has-text("Log") + table')).toContainText('temporary password expired after 30 days');
   // the database keeps the marker and the state together
-  expect(() => sql(`UPDATE admin_users SET password_temporary_until = NULL WHERE id = ${id}`)).toThrow(/admin_users_password_hash_kind/);
+  expect(() => sql(`UPDATE admin_users SET password_temporary_until = NULL WHERE id = ${id}`)).toThrow(/admin_users_password_expired_marker/);
 
   // an admin's reset of their own account: an ordinary new password, still logged in
   sql(`UPDATE admin_users SET role = 'admin' WHERE id = ${id}`);

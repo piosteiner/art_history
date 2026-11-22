@@ -16,7 +16,7 @@ Format: date — what — why — how to revert.
   `expire_temporary_passwords()` (at start, hourly, and at a login that meets one) sets the hash to the marker
   `'expired'`, ends the sessions and logs `password_expired`; the login then says "Your temporary password expired
   after 30 days — ask the admin for a new one." (said whatever password is typed — the hash is gone; it reveals only
-  that such a username had a reset). CHECK `admin_users_password_hash_kind` keeps marker and column together.
+  that such a username had a reset). CHECK `admin_users_password_expired_marker` (257, narrowed from 256's `admin_users_password_hash_kind`, which refused the placeholders `!locked` of test-env.sh and `x` of test fixtures — caught by the deploy's e2e run) keeps marker and date together.
   An admin resetting their own account keeps the old behaviour (an ordinary new password, this session kept).
   `scripts/admin-user.js` clears the state. Privacy statement (CMS page `privacy`, audited as script): the temporary
   password in "For an account our server stores", the account log and the administrators' paragraph; "Last updated
@@ -26,7 +26,7 @@ Format: date — what — why — how to revert.
 - **Why:** owner 2026-11-22: "in the cms be able to reset their password and if i did this then the users will be asked
   to set a new own password upon login. this step cannot be skipped. the temporary password would be cleared once the
   new password was set by the user or after 30 days. this should be communicated to the user as well."
-- **Revert:** `git revert` the commit; then `ALTER TABLE admin_users DROP CONSTRAINT admin_users_password_hash_kind,
+- **Revert:** `git revert` the commit; then `ALTER TABLE admin_users DROP CONSTRAINT admin_users_password_expired_marker,
   DROP COLUMN password_temporary_until; DROP FUNCTION expire_temporary_passwords();` (an account whose hash is
   `'expired'` needs a new password first: `npm run admin:user`); the privacy paragraph from the page's history.
 
