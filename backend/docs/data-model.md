@@ -579,7 +579,7 @@ when a table with such a name is readable by the API role).
 
 | Table | api | admin |
 |---|---|---|
-| `admin_users` | — | SELECT, UPDATE of `last_login_at`, `password_hash` only (column privileges); users are created as owner |
+| `admin_users` | — | SELECT, UPDATE of `last_login_at`, `password_hash` only (column privileges); users are created as owner. `password_temporary_until` (256): set by an admin's reset — the account must replace the password at its next login; past = expired, hash `'expired'` (`expire_temporary_passwords()`) |
 | `admin_sessions` | — | read/write |
 | `audit_log` | — | SELECT only — rows arrive via the trigger, never directly |
 

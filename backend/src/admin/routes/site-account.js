@@ -2,7 +2,10 @@
 // opens the CMS login (/login?next=<site address>), and the CMS session then shows the owner's private reference images
 // (184) on the site's artwork pages too. These routes answer the site only (CORS with credentials for its origin); the
 // session cookie stays on the admin host (SameSite=Strict, sent because site and admin host are the same site).
-//   GET  /site/me                               {username, role, cms, public_name} or 401
+//   GET  /site/me                               {username, role, cms, public_name} or 401; logged in with a temporary
+//                                               password (256) also {password_change_required: true, temporary_until}
+//   (logged in with a temporary password, 256: every other route answers 403 {error: 'password_change_required'} —
+//   only /me, /logout and /account/password, without the current password, until it is replaced)
 //   GET  /site/signup                           {open, url} — whether "Create an account" is offered (220)
 //   GET  /site/account                          {username, role, cms, public_name, created_at, created_via, sessions, sets, edits}
 //   POST /site/account/public-name              public_name → {public_name}
@@ -21,7 +24,7 @@
 const express = require('express');
 const config = require('../../config');
 const { adminPool } = require('../../db');
-const { loadUser, logout, adminOrigin, verifyPassword, hashPassword, passwordProblem, endSessions, tooManyAttempts, recordFailure } = require('../auth');
+const { loadUser, logout, adminOrigin, verifyPassword, hashPassword, passwordProblem, endSessions, tooManyAttempts, recordFailure, passwordGate } = require('../auth');
 const accounts = require('../accounts');
 const { forAccount } = require('../../routes/quiz');
 
@@ -44,6 +47,9 @@ router.use((req, res, next) => {
   }
   next();
 }, loadUser);
+// a temporary password (256): its own first — the site shows a form that can't be closed (frontend src/account.ts)
+router.use(passwordGate(['/me', '/logout', '/account/password'], (req, res) => res.status(403).json({
+  error: 'password_change_required', temporary_until: req.user.temporary_until })));
 
 // study sets (218): the account's own lists of entries and their index cards (routes/site-sets.js)
 router.use('/sets', require('./site-sets'));
@@ -76,7 +82,8 @@ router.get('/emotes/img/:file', async (req, res) => {
 });
 
 router.get('/me', (req, res) => (req.user
-  ? res.json({ username: req.user.username, role: req.user.role, cms: req.user.cms, public_name: req.user.public_name })
+  ? res.json({ username: req.user.username, role: req.user.role, cms: req.user.cms, public_name: req.user.public_name,
+    ...(req.user.must_change_password ? { password_change_required: true, temporary_until: req.user.temporary_until } : {}) })
   : res.status(401).json({ error: 'not_logged_in' })));
 
 // ---- the account itself (220) -------------------------------------------------------------------------------------
@@ -121,6 +128,11 @@ async function rightPassword(req, password) {
 }
 
 router.post('/account/password', async (req, res) => {
+  // replacing a temporary password (256): just logged in with it — the current one isn't asked again
+  if (req.user.must_change_password) {
+    const error = await accounts.setOwnPassword(req, { password: req.body.password, password2: req.body.password2 });
+    return error ? res.status(422).json({ error }) : res.status(204).end();
+  }
   if (!await rightPassword(req, req.body.current)) return res.status(403).json({ error: 'your current password is not right' });
   const weak = passwordProblem(req.body.password, req.user.username);
   if (weak) return res.status(422).json({ error: weak });

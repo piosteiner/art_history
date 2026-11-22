@@ -64,7 +64,7 @@ function draw(main: HTMLElement, a: AccountInfo) {
         <label>New password <span class="muted small">(at least 10 characters)</span> <input name="password" type="password" autocomplete="new-password" minlength="10" required></label>
         <label>New password again <input name="password2" type="password" autocomplete="new-password" required></label>
         <span><button type="submit">Change password</button> <span class="account-msg small" role="status"></span></span></form>
-      <p class="muted small">Forgotten it one day? There is no e-mail to send a new one — ask the site's owner (the F button sends a message), who can set a new one.</p></section>
+      <p class="muted small">Forgotten it one day? There is no e-mail to send a new one — ask the site's owner (the F button sends a message), who can give you a temporary one — at your next login you then set your own.</p></section>
 
     <section class="account-section"><h2>Logged in</h2>
       <p>${a.sessions === 1 ? 'Only here.' : `In ${String(a.sessions)} browsers or devices, this one included.`}

@@ -31,6 +31,7 @@ function attach(server) {
       if (req.headers.origin !== adminOrigin(req)) return reject(socket, 403, 'Forbidden');
       const user = await userFromRequest(req);
       if (!user || !user.cms) return reject(socket, 401, 'Unauthorized');   // site-only accounts (220) have no live connection
+      if (user.must_change_password) return reject(socket, 403, 'Forbidden');   // its own password first (256)
       wss.handleUpgrade(req, socket, head, (ws) => connected(ws, user));
     } catch (err) {
       console.error('live upgrade failed', err);

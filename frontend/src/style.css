@@ -1839,3 +1839,10 @@ a.tag.friend-shared:hover { border-color: var(--accent); }
 .source-notes .toc-page { color: var(--muted); font-variant-numeric: tabular-nums; flex: none; }
 .source-notes details > summary { cursor: pointer; font-weight: 600; margin: .8rem 0 .3rem; }
 .source-notes h3 { font-size: 1.02rem; margin: 1rem 0 .3rem; }
+/* a temporary password (backend 256): the form to set one's own covers the whole page and can't be closed (account.ts) */
+.site-dialog.password-required { width: 100vw; height: 100vh; height: 100dvh; max-width: none; max-height: none; margin: 0; border: none; border-radius: 0; box-shadow: none; background: var(--bg); }
+.site-dialog.password-required[open] { display: grid; place-items: center; }
+.site-dialog.password-required::backdrop { background: var(--bg); }
+.password-required-form { width: min(28rem, calc(100vw - 2rem)); border: 1px solid var(--line); border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
+.password-required-form input { width: 100%; }
+.password-required-form .account-msg:empty { display: none; }

@@ -11,6 +11,7 @@ const server = app.listen(config.port, config.host, () => {
 live.attach(server);  // admin panel's WebSocket (/live on the admin host)
 quality.start(adminPool);  // keeps the stored data-quality findings up to date (LISTEN quality_changed, migration 058)
 stats.start(adminPool);    // today's numbers for /v1/stats (migration 138), at start and hourly
+require('./admin/auth').startTemporarySweep();   // temporary passwords past their 30 days cleared (256), at start and hourly
 // chat emotes follow the 7TV sets live (src/admin/emotes-live.js); only production talks to 7TV's event feed
 if (config.env === 'production') require('./admin/emotes-live').start(adminPool);
 

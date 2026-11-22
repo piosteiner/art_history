@@ -2,6 +2,34 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-22
+
+### Migration 256: temporary passwords after an admin's reset
+- **What:** CMS → Accounts → an account → "New password…" now gives someone else's account a **temporary** password:
+  its hash replaces the old one, `admin_users.password_temporary_until` = now + 30 days, all its sessions end. The page
+  shows it once with a ready-to-send message and a copy button; the list and the account's page show "temporary
+  password — expires …" (or "… expired …"). Logged in with it (site or CMS) the session reaches only who-am-I, logout
+  and set-a-new-password (`passwordGate` in `src/admin/auth.js`; CMS pages redirect to `/password`, other posts 403,
+  site routes 403 `{error: 'password_change_required'}`, the live WebSocket refused); the site shows a full-page form
+  that can't be closed (`frontend/src/account.ts`). The new password follows the usual rules and must differ from the
+  temporary one; setting it clears the state, keeps this session and ends the others. After 30 days
+  `expire_temporary_passwords()` (at start, hourly, and at a login that meets one) sets the hash to the marker
+  `'expired'`, ends the sessions and logs `password_expired`; the login then says "Your temporary password expired
+  after 30 days — ask the admin for a new one." (said whatever password is typed — the hash is gone; it reveals only
+  that such a username had a reset). CHECK `admin_users_password_hash_kind` keeps marker and column together.
+  An admin resetting their own account keeps the old behaviour (an ordinary new password, this session kept).
+  `scripts/admin-user.js` clears the state. Privacy statement (CMS page `privacy`, audited as script): the temporary
+  password in "For an account our server stores", the account log and the administrators' paragraph; "Last updated
+  22 November 2026". Tests: e2e `accounts.spec.js` "a reset password is temporary …", site `tests/password.spec.ts`.
+  Test-environment accounts: `test-accounts.js` copies the hash only, so there the temporary password works without
+  the forced change (the test environment is closed).
+- **Why:** owner 2026-11-22: "in the cms be able to reset their password and if i did this then the users will be asked
+  to set a new own password upon login. this step cannot be skipped. the temporary password would be cleared once the
+  new password was set by the user or after 30 days. this should be communicated to the user as well."
+- **Revert:** `git revert` the commit; then `ALTER TABLE admin_users DROP CONSTRAINT admin_users_password_hash_kind,
+  DROP COLUMN password_temporary_until; DROP FUNCTION expire_temporary_passwords();` (an account whose hash is
+  `'expired'` needs a new password first: `npm run admin:user`); the privacy paragraph from the page's history.
+
 ## 2026-11-17
 
 ### Migration 255: own assumptions as a kind of citation

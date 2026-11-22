@@ -234,3 +234,129 @@ test('the sign-up form explains username and public name; the privacy box sits b
     await ctx.close();
   }
 });
+
+// 256: an admin's reset gives a temporary password — shown once with a message to send; logged in with it, nothing
+// but "who am I", log out and "set your own password" answers (site and CMS); one's own clears it; after 30 days it
+// is cleared and the login says so. An admin's reset of their own account stays an ordinary new password.
+test('a reset password is temporary: the change is forced, then cleared; it expires after 30 days', async ({ userA }) => {
+  const S = { Origin: SITE };
+  const C = { Origin: BASE };
+  await userA.goto('/accounts?new=1');
+  await userA.fill('#a-u', 'test-acc-temp');
+  await userA.selectOption('select[name="role"] >> nth=0', 'member');
+  await userA.fill('#a-p', 'first own secret 1');
+  await Promise.all([userA.waitForURL(/ok=created/), userA.click('button:has-text("Create account")')]);
+  const id = sql("SELECT id FROM admin_users WHERE username = 'test-acc-temp'");
+  const before = (await loginAs('test-acc-temp', 'first own secret 1')).http;
+  expect((await before.get('/site/me', { headers: S })).status()).toBe(200);
+
+  // the reset: the temporary password once, a message to copy, the state on the account's page and in the list
+  userA.on('dialog', (d) => d.accept());
+  await Promise.all([userA.waitForURL(/password$/), userA.click('button:has-text("New password")')]);
+  await expect(userA.locator('h1')).toHaveText(/^Temporary password\W+test-acc-temp$/);
+  const temp = await userA.locator('.password-once code').innerText();
+  const message = await userA.locator('#pw-msg').inputValue();
+  expect(message).toContain(`Temporary password: ${temp}.`);
+  expect(message).toContain("you will then be asked to set your own password — this step can't be skipped");
+  expect(message).toMatch(/stops working as soon as you have set your own, or after 30 days \(\d{1,2} [A-Z][a-z]+ \d{4}\)\.$/);
+  await expect(userA.locator('button[data-copy-from="#pw-msg"]')).toBeVisible();
+  expect(sql(`SELECT password_temporary_until::date - now()::date FROM admin_users WHERE id = ${id}`)).toBe('30');
+  await userA.goto(`/accounts/${id}`);
+  await expect(userA.locator('.account-temporary')).toContainText('temporary password — expires');
+  await userA.goto('/accounts?q=test-acc-temp');
+  await expect(userA.locator('.accounts-list .account-temporary')).toBeVisible();
+
+  // the old password and the old session are gone
+  expect((await before.get('/site/me', { headers: S })).status()).toBe(401);
+  expect((await loginAs('test-acc-temp', 'first own secret 1')).res.status()).toBe(401);
+
+  // logged in with the temporary one: to /password, carrying where it came from
+  const http = await pw.newContext({ baseURL: BASE });
+  const res = await http.post('/login', { form: { username: 'test-acc-temp', password: temp, next: `${SITE}/sets` }, headers: C, maxRedirects: 0 });
+  expect(res.status()).toBe(303);
+  expect(res.headers().location).toBe(`/password?next=${encodeURIComponent(`${SITE}/sets`)}`);
+  const other = (await loginAs('test-acc-temp', temp)).http;   // a second session with it
+  // who am I: yes, and that the change is due
+  const me = await (await http.get('/site/me', { headers: S })).json();
+  expect(me).toEqual(expect.objectContaining({ username: 'test-acc-temp', password_change_required: true }));
+  expect(new Date(me.temporary_until).getTime()).toBeGreaterThan(Date.now() + 29 * 86400e3);
+  // everything else: refused
+  for (const path of ['/site/account', '/site/sets', '/site/friends', '/site/thumbs']) {
+    const r = await http.get(path, { headers: S });
+    expect(r.status(), path).toBe(403);
+    expect((await r.json()).error, path).toBe('password_change_required');
+  }
+  expect((await http.post('/site/account/public-name', { headers: S, form: { public_name: 'Sneaky' } })).status()).toBe(403);
+  const cms = await http.get('/', { maxRedirects: 0 });
+  expect(cms.status()).toBe(302);
+  expect(cms.headers().location).toBe('/password');
+  expect((await http.get('/accounts', { maxRedirects: 0 })).headers().location).toBe('/password');
+  expect((await http.post('/artworks/new', { headers: C, form: { title: 'x' }, maxRedirects: 0 })).status()).toBe(403);
+  const page = await (await http.get('/password')).text();
+  expect(page).toContain('Your password was reset by the admin. Set your own password to continue.');
+  expect(page).toContain('Your temporary password stops working');
+
+  // the new password: the usual rules, typed twice, not the temporary one
+  const set = (form) => http.post('/site/account/password', { headers: S, form });
+  expect((await set({ password: 'short', password2: 'short' })).status()).toBe(422);
+  expect((await set({ password: 'second own secret 2', password2: 'something else 22' })).status()).toBe(422);
+  const same = await set({ password: temp, password2: temp });
+  expect(same.status()).toBe(422);
+  expect((await same.json()).error).toContain('not the temporary one');
+  expect((await set({ password: 'second own secret 2', password2: 'second own secret 2' })).status()).toBe(204);
+  // cleared: this session goes on, the other one ended, the temporary password no longer works
+  expect(await (await http.get('/site/me', { headers: S })).json()).toEqual({ username: 'test-acc-temp', role: 'member', cms: false, public_name: null });
+  expect((await http.get('/site/sets', { headers: S })).status()).toBe(200);
+  expect((await other.get('/site/me', { headers: S })).status()).toBe(401);
+  expect(sql(`SELECT password_temporary_until IS NULL FROM admin_users WHERE id = ${id}`)).toBe('t');
+  expect((await loginAs('test-acc-temp', temp)).res.status()).toBe(401);
+  expect((await loginAs('test-acc-temp', 'second own secret 2')).res.headers().location).toBe(`${SITE}/sets?login=1`);
+
+  // the CMS's own form does the same (here for an editor)
+  sql(`UPDATE admin_users SET role = 'editor' WHERE id = ${id}`);
+  const temp2 = /<code>([a-z2-9-]{19})<\/code>/.exec(await (await userA.request.post(`/accounts/${id}/password`, { headers: C })).text())[1];
+  const ed = await loginAs('test-acc-temp', temp2);
+  expect(ed.res.headers().location).toBe('/password');
+  expect((await ed.http.post('/password', { headers: C, form: { password: temp2, password2: temp2 }, maxRedirects: 0 })).status()).toBe(422);
+  const done = await ed.http.post('/password', { headers: C, form: { password: 'third own secret 3', password2: 'third own secret 3' }, maxRedirects: 0 });
+  expect(done.status()).toBe(303);
+  expect(done.headers().location).toBe('/');
+  expect((await ed.http.get('/', { maxRedirects: 0 })).status()).toBe(200);
+  await userA.goto(`/accounts/${id}`);
+  await expect(userA.locator('.account-temporary')).toHaveCount(0);
+
+  // after 30 days, found at the login: cleared, its sessions over, the login says why
+  const temp3 = /<code>([a-z2-9-]{19})<\/code>/.exec(await (await userA.request.post(`/accounts/${id}/password`, { headers: C })).text())[1];
+  const late = (await loginAs('test-acc-temp', temp3)).http;
+  sql(`UPDATE admin_users SET password_temporary_until = now() - interval '1 minute' WHERE id = ${id}`);
+  expect((await late.get('/site/me', { headers: S })).status()).toBe(401);
+  const expired = await loginAs('test-acc-temp', temp3);
+  expect(expired.res.status()).toBe(401);
+  expect(await expired.res.text()).toContain('Your temporary password expired after 30 days — ask the admin for a new one.');
+  expect(sql(`SELECT password_hash FROM admin_users WHERE id = ${id}`)).toBe('expired');
+  expect(sql(`SELECT count(*) FROM admin_sessions WHERE user_id = ${id}`)).toBe('0');
+  // … and by the hourly sweep
+  const temp4 = /<code>([a-z2-9-]{19})<\/code>/.exec(await (await userA.request.post(`/accounts/${id}/password`, { headers: C })).text())[1];
+  expect(temp4).not.toBe(temp3);
+  sql(`UPDATE admin_users SET password_temporary_until = now() - interval '1 minute' WHERE id = ${id}`);
+  expect(sql('SELECT expire_temporary_passwords()')).toBe('1');
+  expect(sql(`SELECT password_hash FROM admin_users WHERE id = ${id}`)).toBe('expired');
+  expect(sql('SELECT expire_temporary_passwords()')).toBe('0');
+  await userA.goto(`/accounts/${id}`);
+  await expect(userA.locator('.account-temporary-expired')).toContainText('temporary password expired');
+  await expect(userA.locator('h2:has-text("Log") + table')).toContainText('temporary password expired after 30 days');
+  // the database keeps the marker and the state together
+  expect(() => sql(`UPDATE admin_users SET password_temporary_until = NULL WHERE id = ${id}`)).toThrow(/admin_users_password_hash_kind/);
+
+  // an admin's reset of their own account: an ordinary new password, still logged in
+  sql(`UPDATE admin_users SET role = 'admin' WHERE id = ${id}`);
+  sql(`UPDATE admin_users SET password_temporary_until = NULL, password_hash = (SELECT password_hash FROM admin_users WHERE username = 'tester') WHERE id = ${id}`);
+  const auth = JSON.parse(require('fs').readFileSync(require('./env').AUTH_FILE, 'utf8'));
+  const self = await loginAs('test-acc-temp', auth.tester);
+  const own = await (await self.http.post(`/accounts/${id}/password`, { headers: C })).text();
+  expect(own).toMatch(/New password\W+test-acc-temp/);
+  expect(sql(`SELECT password_temporary_until IS NULL FROM admin_users WHERE id = ${id}`)).toBe('t');
+  expect((await self.http.get('/accounts', { maxRedirects: 0 })).status()).toBe(200);
+
+  for (const c of [http, other, ed.http, late, expired.http, self.http, before]) await c.dispose();
+});

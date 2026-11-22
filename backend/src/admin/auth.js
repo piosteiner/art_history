@@ -101,13 +101,38 @@ async function endSessions(userId, req = null) {
   await adminPool.query('DELETE FROM admin_sessions WHERE user_id = $1 AND ($2::bytea IS NULL OR token_hash <> $2)', [userId, own ? sha256(own) : null]);
 }
 
+// Temporary passwords (256): an admin's reset gives one, valid TEMPORARY_DAYS; the account must replace it at its next
+// login (passwordGate below). After the days expire_temporary_passwords() clears it — at start, hourly, and here
+// before a login that meets one.
+const TEMPORARY_DAYS = 30;
+const TEMPORARY_EXPIRED = `Your temporary password expired after ${TEMPORARY_DAYS} days — ask the admin for a new one.`;
+async function expireTemporaryPasswords() {
+  const n = (await adminPool.query('SELECT expire_temporary_passwords() AS n')).rows[0].n;
+  if (n) console.log(`accounts: ${n} temporary password(s) expired and cleared`);
+  return n;
+}
+/** Clears expired temporary passwords now and every hour (src/server.js). */
+function startTemporarySweep() {
+  const run = () => expireTemporaryPasswords().catch((err) => console.error('accounts: expiring temporary passwords —', err.message));
+  run();
+  setInterval(run, 60 * 60 * 1000).unref();
+}
+
 // → { user } or { error }. Creates the session and sets the cookie on success.
 async function login(req, res, username, password) {
   if (tooManyAttempts(req.ip)) return { error: 'Too many failed attempts — try again in 15 minutes.' };
-  const { rows } = await adminPool.query(`SELECT id, username, password_hash, disabled_at, deleted_at, test_env, role >= 'editor' AS cms
+  const { rows } = await adminPool.query(`SELECT id, username, password_hash, disabled_at, deleted_at, test_env, role >= 'editor' AS cms,
+        password_temporary_until AS temporary_until, password_temporary_until <= now() AS temporary_expired
       FROM admin_users WHERE username = $1`, [String(username || '').trim().toLowerCase()]);
   const user = rows[0];
   const ok = await verifyPassword(String(password || ''), user ? user.password_hash : await getDummyHash());
+  // a temporary password past its days (256): said whatever was typed — once cleared, it can't be checked any more
+  if (user && user.temporary_expired) {
+    recordFailure(req.ip);
+    await expireTemporaryPasswords();
+    console.warn(`admin login with an expired temporary password for "${user.username}" from ${req.ip}`);
+    return { error: TEMPORARY_EXPIRED };
+  }
   if (!user || !ok) {
     recordFailure(req.ip);
     console.warn(`admin login failed for "${username}" from ${req.ip}`);
@@ -120,7 +145,7 @@ async function login(req, res, username, password) {
   if (user.deleted_at) return { error: 'This account was deleted. It is kept for 30 days — ask the site\'s owner if you want it back.' };
   if (user.disabled_at) return { error: 'This account is switched off. Ask the site\'s owner if you think that is a mistake.' };
   await startSession(req, res, user);
-  return { user: { id: user.id, username: user.username, cms: user.cms } };
+  return { user: { id: user.id, username: user.username, cms: user.cms, must_change_password: Boolean(user.temporary_until), temporary_until: user.temporary_until } };
 }
 
 async function logout(req, res) {
@@ -129,16 +154,26 @@ async function logout(req, res) {
   setSessionCookie(res, '', 0);
 }
 
-// The logged-in user of a request — {id, username, role, public_name, cms (may use the CMS), is_admin} — (Express request or the raw HTTP request of a WebSocket upgrade), or null.
+// The logged-in user of a request — {id, username, role, public_name, cms (may use the CMS), is_admin,
+// must_change_password, temporary_until} — (Express request or the raw HTTP request of a WebSocket upgrade), or null.
+// must_change_password (256): logged in with a temporary password — only passwordGate's few addresses answer; a
+// session whose temporary password has run out counts as none.
 async function userFromRequest(req) {
   const cookie = readCookie(req, COOKIE);
   if (!cookie) return null;
   const { rows } = await adminPool.query(`
-    SELECT u.id, u.username, u.role::text AS role, u.public_name, u.role >= 'editor' AS cms, u.role = 'admin' AS is_admin
+    SELECT u.id, u.username, u.role::text AS role, u.public_name, u.role >= 'editor' AS cms, u.role = 'admin' AS is_admin,
+           u.password_temporary_until IS NOT NULL AS must_change_password, u.password_temporary_until AS temporary_until
       FROM admin_sessions s JOIN admin_users u ON u.id = s.user_id
-     WHERE s.token_hash = $1 AND s.expires_at > now() AND u.disabled_at IS NULL`, [sha256(cookie)]);
+     WHERE s.token_hash = $1 AND s.expires_at > now() AND u.disabled_at IS NULL
+       AND (u.password_temporary_until IS NULL OR u.password_temporary_until > now())`, [sha256(cookie)]);
   return rows[0] || null;
 }
+
+/** Middleware (256): a session logged in with a temporary password reaches only `open` addresses (req.path) —
+ *  everything else gets `refuse(req, res)`. Put after loadUser. */
+const passwordGate = (open, refuse) => (req, res, next) => (
+  req.user && req.user.must_change_password && !open.includes(req.path) ? refuse(req, res) : next());
 
 // Middleware: req.user from the session cookie, or null.
 async function loadUser(req, res, next) {
@@ -164,4 +199,5 @@ function checkOrigin(req, res, next) {
 module.exports = {
   hashPassword, verifyPassword, login, logout, loadUser, checkOrigin, userFromRequest, adminOrigin,
   startSession, endSessions, passwordProblem, generatePassword, USERNAME, MIN_PASSWORD, tooManyAttempts, recordFailure,
+  passwordGate, expireTemporaryPasswords, startTemporarySweep, TEMPORARY_DAYS, TEMPORARY_EXPIRED,
 };

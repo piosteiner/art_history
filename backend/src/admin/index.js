@@ -9,12 +9,13 @@
 //   /search-words              groups of equivalent search words (102)
 //   /accounts                  accounts: who may use the CMS, the site-only accounts, sign-up (220; admins only)
 //   /login · /signup           log in; a site-only account of one's own (220, when the owner has opened sign-up)
+//   /password                  set one's own password after an admin's reset — nothing else opens until then (256)
 //   (the pages themselves: src/admin/routes/*.js, mounted below in this order; shared helpers: src/admin/core.js)
 const express = require('express');
 const path = require('path');
 const config = require('../config');
 const { html, layout } = require('./html');
-const { login, logout, loadUser, checkOrigin } = require('./auth');
+const { login, logout, loadUser, checkOrigin, passwordGate, MIN_PASSWORD } = require('./auth');
 const { send, notFoundPage } = require('./core');
 const { asset } = require('./assets');
 
@@ -37,6 +38,15 @@ const siteAccount = require('./routes/site-account');
 router.use('/site', siteAccount);   // the public site's login: its own origin check (routes/site-account.js)
 router.use(checkOrigin);
 router.use(loadUser);
+// Logged in with a temporary password (256): only /password and /logout (and /login, to log in as someone else) —
+// every other page sends the browser to /password, every other post is refused.
+router.use(passwordGate(['/password', '/logout', '/login'], (req, res) => {
+  if (req.method === 'GET' || req.method === 'HEAD') {
+    const next = siteAccount.siteUrl(req.query.next);
+    return res.redirect(`/password${next ? `?next=${encodeURIComponent(next)}` : ''}`);
+  }
+  res.status(403).type('text').send('password_change_required: set your own password first (/password).');
+}));
 
 // ---------------------------------------------------------------------------------------------------------------
 // Login, sign-up (220)
@@ -58,7 +68,8 @@ const loginPage = (error, next, signupOpen) => html`<div class="login">${backLin
   <p class="muted small">Forgot your password? Ask the site's owner (the F button on the site) — accounts have no e-mail address to send one to.</p></div>`;
 
 const siteHome = (path = '/sets') => `${config.corsOrigin}${path}${path.includes('?') ? '&' : '?'}login=1`;
-const afterLogin = (user, next) => next || (user.cms ? '/' : siteHome());
+const afterLogin = (user, next) => (user.must_change_password ? `/password${next ? `?next=${encodeURIComponent(next)}` : ''}`
+  : next || (user.cms ? '/' : siteHome()));
 
 router.get('/login', async (req, res) => {
   const next = siteAccount.siteUrl(req.query.next);
@@ -77,6 +88,38 @@ router.post('/logout', async (req, res) => {
   const cms = req.user && req.user.cms;
   await logout(req, res);
   res.redirect(303, cms ? '/login' : config.corsOrigin);
+});
+
+// Set one's own password (256): after logging in with the temporary password an admin's reset gave. Can't be
+// skipped (passwordGate above); logging out stays possible. Without a temporary password: on to where one belongs.
+const passwordPage = (user, next, error) => html`<div class="login password-change"><h1>Set your own password</h1>
+  <p>Your password was reset by the admin. Set your own password to continue. Your temporary password stops working
+    once you have, or on <b>${accounts.day(user.temporary_until)}</b>.</p>
+  ${error ? html`<p class="flash error">${error}</p>` : ''}
+  <form method="post" action="/password" class="form">
+    ${next ? html`<input type="hidden" name="next" value="${next}">` : ''}
+    <input type="hidden" name="username" value="${user.username}" autocomplete="username">
+    <div class="field"><label for="p">New password <span class="muted small">— at least ${String(MIN_PASSWORD)} characters, not the temporary one</span></label>
+      <input id="p" name="password" type="password" autocomplete="new-password" required minlength="${String(MIN_PASSWORD)}" autofocus></div>
+    <div class="field"><label for="p2">New password again</label><input id="p2" name="password2" type="password" autocomplete="new-password" required></div>
+    <div class="actions"><button>Set my password</button></div>
+  </form>
+  <form method="post" action="/logout" class="inline"><button class="secondary">Log out</button></form></div>`;
+// without the CMS's menu and live connection: nothing else is open yet
+const showPasswordPage = (res, body, status = 200) => res.status(status).type('html').send(String(layout({ title: 'Set your own password', user: null, nav: false, body })));
+router.get('/password', (req, res) => {
+  const next = siteAccount.siteUrl(req.query.next);
+  if (!req.user) return res.redirect(`/login${next ? `?next=${encodeURIComponent(next)}` : ''}`);
+  if (!req.user.must_change_password) return res.redirect(afterLogin(req.user, next));
+  showPasswordPage(res, passwordPage(req.user, next));
+});
+router.post('/password', async (req, res) => {
+  const next = siteAccount.siteUrl(req.body.next);
+  if (!req.user) return res.redirect(303, '/login');
+  if (!req.user.must_change_password) return res.redirect(303, afterLogin(req.user, next));
+  const error = await accounts.setOwnPassword(req, { password: req.body.password, password2: req.body.password2 });
+  if (error) return showPasswordPage(res, passwordPage(req.user, next, error), 422);
+  res.redirect(303, afterLogin({ ...req.user, must_change_password: false }, next));
 });
 
 router.use(require('./routes/signup'));   // /signup: a site-only account of one's own, if the owner has opened it

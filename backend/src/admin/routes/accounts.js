@@ -5,13 +5,16 @@
 //                                 last login
 //   /accounts/<id>                one account: role, public name, note; switch off / on, a new password (generated,
 //                                 shown once — its sessions end), end its sessions, delete; its log
+// A new password for someone else is temporary (256): shown once with a message to send, valid 30 days, replaced by
+// the account's own at its next login (a step it can't skip — src/admin/index.js /password, the site's form).
 // Your own account can't be switched off, demoted or deleted here (and the database keeps one active admin anyway:
 // keep_an_admin()). Accounts aren't content: not in audit_log, but in account_log (who did what, when).
 const express = require('express');
 const { adminPool } = require('../../db');
 const { html } = require('../html');
 const { send, withTx, notFoundPage } = require('../core');
-const { endSessions, generatePassword, hashPassword, passwordProblem, USERNAME } = require('../auth');
+const config = require('../../config');
+const { endSessions, generatePassword, passwordProblem, USERNAME, TEMPORARY_DAYS } = require('../auth');
 const accounts = require('../accounts');
 const testAccounts = require('../test-accounts');
 const TEST_CMS = 'https://admin.test.arthistory.piogino.ch';
@@ -28,6 +31,7 @@ const VIA = { script: 'by script', cms: 'in the CMS', signup: 'signed up' };
 const ACTION = {
   created: 'created', signed_up: 'signed up', role: 'role changed', disabled: 'switched off', enabled: 'switched on',
   'password_reset': 'new password set', 'password_changed': 'password changed by the account', sessions_ended: 'sessions ended',
+  password_expired: `temporary password expired after ${String(TEMPORARY_DAYS)} days`,
   public_name: 'public name changed', note: 'note changed', deleted: 'deleted', restored: 'restored after deletion',
   purged: 'removed for good', set_rolled_back: 'a set rolled back', reference_images: 'reference images shown changed',
 };
@@ -48,6 +52,11 @@ const roleSelect = (name, current, disabled = false) => html`<select name="${nam
   ${Object.entries(accounts.ROLES).map(([k, r]) => html`<option value="${k}"${k === current ? ' selected' : ''}>${r.label} — ${r.help}</option>`)}</select>`;
 const roleTag = (role) => html`<span class="tag role-${role}">${accounts.ROLES[role].label}</span>`;
 const flashOf = (req) => (OK[req.query.ok] ? { kind: 'ok', text: OK[req.query.ok] } : null);
+/** A temporary password's state (256): "temporary password — expires …", or "… expired …" once its days are over. */
+const temporaryTag = (u) => (!u.password_temporary_until ? ''
+  : new Date(u.password_temporary_until) > new Date()
+    ? html` <span class="tag account-temporary" title="Set by an admin; the account must replace it at its next login">temporary password — expires ${when(u.password_temporary_until)}</span>`
+    : html` <span class="tag account-temporary-expired" title="Not replaced in time: it no longer works — give a new one">temporary password expired ${when(u.password_temporary_until)}</span>`);
 
 /** The page showing a password once (new account, new password). */
 const passwordShown = (req, res, user, password, what) => send(req, res, { title: 'Password', body: html`<h1>${what}: ${user.username}</h1>
@@ -57,12 +66,30 @@ const passwordShown = (req, res, user, password, what) => send(req, res, { title
     : html`They log in at the site's “Log in” with the username <b>${user.username}</b>, and can change the password under “Your account” on the site.`}</p>
   <p><a href="/accounts/${String(user.id)}">Back to the account</a> · <a href="/accounts">All accounts</a></p>` });
 
+/** After a reset of someone else's password (256): the temporary password once, and a message to send them. */
+function temporaryShown(req, res, user, password, until) {
+  const site = (user.test_env ? TEST_SITE : config.corsOrigin).replace(/^https?:\/\//, '');
+  const last = accounts.day(until);
+  const message = `Your password for Art History (${site}) was reset. Username: ${user.username}. Temporary password: ${password}. `
+    + `Log in with it by ${last} (“Log in” on the site); you will then be asked to set your own password — this step can't be skipped. `
+    + `The temporary password stops working as soon as you have set your own, or after ${String(TEMPORARY_DAYS)} days (${last}).`;
+  send(req, res, { title: 'Password', body: html`<h1>Temporary password: ${user.username}</h1>
+    <p>The temporary password — shown <b>only now</b>; hand it over safely (in person, a message to the person only):</p>
+    <p class="password-once"><code>${password}</code></p>
+    <p>Valid until <b>${when(until)}</b>. At the next login ${user.username} must set an own password before anything else —
+      it can't be skipped. Its sessions have ended. Once the own password is set, or after ${String(TEMPORARY_DAYS)} days, the temporary one stops working.</p>
+    <div class="field password-message"><label for="pw-msg">A message to send</label>
+      <textarea id="pw-msg" rows="5" readonly>${message}</textarea>
+      <p><button type="button" class="secondary" data-copy-from="#pw-msg">Copy the message</button> <span class="muted small" data-copy-status role="status"></span></p></div>
+    <p><a href="/accounts/${String(user.id)}">Back to the account</a> · <a href="/accounts">All accounts</a></p>` });
+}
+
 router.get('/accounts', async (req, res) => {
   const q = String(req.query.q || '').trim().slice(0, 60);
   const role = accounts.ROLES[req.query.role] ? req.query.role : '';
   const env = ['live', 'test'].includes(req.query.env) ? req.query.env : '';
   const [{ rows }, settings, { rows: counts }] = await Promise.all([
-    adminPool.query(`SELECT u.id, u.username, u.public_name, u.role::text AS role, u.disabled_at, u.deleted_at, u.test_env, u.created_at, u.created_via, u.last_login_at,
+    adminPool.query(`SELECT u.id, u.username, u.public_name, u.role::text AS role, u.disabled_at, u.deleted_at, u.test_env, u.created_at, u.created_via, u.last_login_at, u.password_temporary_until,
         (SELECT count(*)::int FROM study_sets s WHERE s.owner_id = u.id) AS sets,
         (SELECT count(*)::int FROM study_sets s WHERE s.owner_id = u.id AND s.visibility <> 'private') AS shared,
         (SELECT count(*)::int FROM admin_sessions x WHERE x.user_id = u.id AND x.expires_at > now()) AS sessions
@@ -106,7 +133,7 @@ router.get('/accounts', async (req, res) => {
       <select name="env" aria-label="Environment"><option value="">live and test</option><option value="live"${env === 'live' ? ' selected' : ''}>live only</option><option value="test"${env === 'test' ? ' selected' : ''}>test environment only</option></select>
       <button class="secondary">Search</button></form>
     <table class="list accounts-list"><thead><tr><th>Username</th><th>Public name</th><th>Role</th><th>Created</th><th>Last login</th><th>Sets</th><th>Sessions</th></tr></thead><tbody>
-      ${rows.map((u) => html`<tr class="${u.disabled_at ? 'account-off' : ''}"><td><a href="/accounts/${String(u.id)}">${u.username}</a>${envTag(u)}${u.id === req.user.id ? html` <span class="muted small">(you)</span>` : ''}${u.deleted_at ? html` <span class="tag account-deleted">deleted — restorable until ${until(u.deleted_at)}</span>` : u.disabled_at ? html` <span class="tag">switched off</span>` : ''}</td>
+      ${rows.map((u) => html`<tr class="${u.disabled_at ? 'account-off' : ''}"><td><a href="/accounts/${String(u.id)}">${u.username}</a>${envTag(u)}${u.id === req.user.id ? html` <span class="muted small">(you)</span>` : ''}${u.deleted_at ? html` <span class="tag account-deleted">deleted — restorable until ${until(u.deleted_at)}</span>` : u.disabled_at ? html` <span class="tag">switched off</span>` : ''}${temporaryTag(u)}</td>
         <td>${u.public_name || html`<span class="muted">—</span>`}</td><td>${roleTag(u.role)}</td>
         <td class="small">${when(u.created_at)} <span class="muted">${VIA[u.created_via]}</span></td><td class="small">${when(u.last_login_at)}</td>
         <td>${String(u.sets)}${u.shared ? html` <span class="muted small">(${String(u.shared)} shared)</span>` : ''}</td><td>${String(u.sessions)}</td></tr>`)}
@@ -151,7 +178,7 @@ router.post('/accounts/new', async (req, res) => {
 async function accountOf(req) {
   if (!ID.test(req.params.id)) return null;
   const { rows: [u] } = await adminPool.query(`SELECT u.id, u.username, u.public_name, u.role::text AS role, u.disabled_at, u.deleted_at, u.test_env, u.reference_images_of, u.created_at, u.created_via,
-      u.last_login_at, u.note, u.password_set_at, c.username AS created_by,
+      u.last_login_at, u.note, u.password_set_at, u.password_temporary_until, c.username AS created_by,
       (SELECT count(*)::int FROM study_sets s WHERE s.owner_id = u.id) AS sets,
       (SELECT count(*)::int FROM study_set_members e WHERE e.account_id = u.id) AS edits,
       (SELECT count(*)::int FROM study_sessions s WHERE s.owner_id = u.id) AS rounds,
@@ -201,7 +228,7 @@ router.get('/accounts/:id', async (req, res) => {
     <p class="crumbs"><a href="/accounts">Accounts</a> / ${u.username}</p>
     <h1>${u.username} ${roleTag(u.role)}${envTag(u)}${u.deleted_at ? html` <span class="tag account-deleted">deleted ${when(u.deleted_at)}</span>` : u.disabled_at ? html` <span class="tag">switched off ${when(u.disabled_at)}</span>` : ''}${self ? html` <span class="muted small">(you)</span>` : ''}</h1>
     <p class="muted small">Created ${when(u.created_at)} ${VIA[u.created_via]}${u.created_by ? ` by ${u.created_by}` : ''} · last login ${when(u.last_login_at)} ·
-      password set ${when(u.password_set_at)} · ${String(u.sessions)} active session${u.sessions === 1 ? '' : 's'}</p>
+      password set ${when(u.password_set_at)}${temporaryTag(u)} · ${String(u.sessions)} active session${u.sessions === 1 ? '' : 's'}</p>
     <p class="small">${String(u.sets)} study set${u.sets === 1 ? '' : 's'} · editor of ${String(u.edits)} other${u.edits === 1 ? '' : 's'} · ${String(u.rounds)} quiz rounds ·
       ${String(u.images)} private reference images · ${String(u.changes)} changes to the content</p>
     ${u.deleted_at ? html`<section class="accounts-box account-deleted-box"><h2>Deleted ${when(u.deleted_at)}</h2>
@@ -218,7 +245,9 @@ router.get('/accounts/:id', async (req, res) => {
       <div class="actions"><button>Save</button></div></form>
     ${await referenceImagesBox(u)}
     <div class="accounts-box accounts-actions">
-      <form method="post" action="/accounts/${String(u.id)}/password" class="inline" data-confirm="Set a new password for ${u.username}? The old one stops working, the account is logged out everywhere; the new one is shown once.">
+      <form method="post" action="/accounts/${String(u.id)}/password" class="inline" data-confirm="${self
+    ? 'Set a new password for your own account? The old one stops working, your other sessions end; the new one is shown once.'
+    : `Reset the password of ${u.username}? The old one stops working and the account is logged out everywhere. The new one is temporary (shown once, with a message to send): valid ${String(TEMPORARY_DAYS)} days, and at the next login ${u.username} must set an own password.`}">
         <button class="secondary">New password…</button></form>
       <form method="post" action="/accounts/${String(u.id)}/sessions" class="inline"><button class="secondary"${u.sessions ? '' : ' disabled'}>Log out everywhere</button></form>
       ${self ? '' : u.disabled_at
@@ -296,11 +325,11 @@ router.post('/accounts/:id', async (req, res) => {
 router.post('/accounts/:id/password', async (req, res) => {
   const u = await accountOf(req);
   if (!u) return notFoundPage(req, res);
-  const generated = generatePassword();
-  await adminPool.query('UPDATE admin_users SET password_hash = $2, password_set_at = now() WHERE id = $1', [u.id, await hashPassword(generated)]);
+  // someone else's: a temporary password (256); your own: an ordinary new one, this session kept
+  const { generated, until: temporaryUntil } = await accounts.resetPassword(u, req.user);
   await endSessions(u.id, u.id === req.user.id ? req : null);
-  await accounts.log(adminPool, { account: u.id, username: u.username, actor: req.user.id, action: 'password_reset' });
   await synced(u);
+  if (temporaryUntil) return temporaryShown(req, res, u, generated, temporaryUntil);
   passwordShown(req, res, u, generated, 'New password');
 });
 

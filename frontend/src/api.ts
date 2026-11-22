@@ -320,13 +320,19 @@ export const getEmotes = () => account<{ emotes: Record<string, Emote> }>('/emot
 /** Works that only have this account's reference images: slug → the image's address (none for visitors). */
 export const getOwnThumbs = () => account<{ images: Record<string, string> }>('/thumbs').then((r) => r?.images ?? {});
 /** The logged-in account, or null: member = the site only; editor, admin = also the CMS (backend migration 220). */
-export interface Me { username: string; role: 'member' | 'editor' | 'admin'; cms: boolean; public_name: string | null }
+export interface Me {
+  username: string; role: 'member' | 'editor' | 'admin'; cms: boolean; public_name: string | null;
+  /** logged in with a temporary password from an admin's reset (backend 256): its own must be set before anything else */
+  password_change_required?: true; temporary_until?: string;
+}
 export const getAccount = () => account<Me>('/me');
 /** The account's own page (/account): settings and what it holds. */
 export interface AccountInfo extends Me { created_at: string; created_via: 'script' | 'cms' | 'signup'; sessions: number; sets: number; edits: number }
 export const getAccountInfo = () => account<AccountInfo>('/account');
 export const setPublicName = (name: string) => account<{ public_name: string | null }>('/account/public-name', form({ public_name: name }));
 export const changePassword = (current: string, password: string, password2: string) => account<null>('/account/password', form({ current, password, password2 }));
+/** Replaces the temporary password (256): the current one isn't asked — the account just logged in with it. */
+export const setOwnPassword = (password: string, password2: string) => account<null>('/account/password', form({ password, password2 }));
 export const endOtherSessions = () => account<{ ended: number }>('/account/sessions', form({}));
 export const deleteAccount = (password: string) => account<null>('/account/delete', form({ password }));
 // Friends and chat (backend routes/site-friends.js, migration 224)

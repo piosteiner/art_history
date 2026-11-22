@@ -2,8 +2,8 @@
 // which sends the browser back here with ?login=1. Only then — remembered in localStorage — does a page ask the admin
 // host who is logged in; visitors' pages never contact it. Logged in, artwork pages show the account's private
 // reference images (views/detail.ts).
-import { plural } from './format';
-import { ADMIN, chatEvents, getAccount, getFriends, getOwnThumbs, getPrivateImages, logOut, loginUrl, signupUrl, type Me, type PrivateImage } from './api';
+import { day, plural } from './format';
+import { ADMIN, chatEvents, getAccount, getFriends, getOwnThumbs, getPrivateImages, logOut, loginUrl, setOwnPassword, signupUrl, type Me, type PrivateImage } from './api';
 import { setOwnThumbs, gallery } from './html';
 import { html, render } from './html';
 
@@ -93,11 +93,58 @@ export function mountAccount(slot: HTMLElement, setsLink: HTMLAnchorElement | nu
       if (name) { const tmp = document.createElement('span'); render(tmp, label(a)); name.replaceWith(...tmp.childNodes); }
     }) as EventListener);
   };
-  whoFull = remembered() ? getAccount().catch(() => null) : Promise.resolve(null);
+  const fetched = remembered() ? getAccount().catch(() => null) : Promise.resolve(null);
+  // a temporary password (256): the pages act as for a visitor behind the form that sets the account's own
+  whoFull = fetched.then((a) => (a?.password_change_required ? null : a));
   who = whoFull.then((a) => a?.username ?? null);
-  whoFull.then((a) => { if (!a) { remember(false); loggedOut(); } else loggedIn(a); });
+  fetched.then((a) => {
+    if (!a) { remember(false); loggedOut(); } else if (a.password_change_required) passwordRequired(a); else loggedIn(a);
+  });
   // works without a public picture show the account's reference image instead (lists, an artist's works, search …)
   ownThumbsReady = who.then((name) => (name ? getOwnThumbs().then((m) => setOwnThumbs(m)).catch(() => {}) : undefined));
+}
+
+/** Logged in with a temporary password after an admin's reset (backend 256): a form over the whole page that can't be
+ *  closed — no Escape, no click beside it — until the account has set its own password (then the page reloads, logged
+ *  in as usual). Logging out stays possible. */
+function passwordRequired(a: Me) {
+  const dialog = document.createElement('dialog');
+  dialog.className = 'site-dialog password-required';
+  dialog.setAttribute('aria-labelledby', 'password-required-title');
+  render(dialog, html`<form class="site-dialog-form password-required-form">
+    <h2 class="site-dialog-title" id="password-required-title">Set your own password</h2>
+    <p class="site-dialog-text">Your password was reset by the admin. Set your own password to continue. Your temporary
+      password stops working once you have${a.temporary_until ? html`, or on <b>${day(a.temporary_until)}</b>` : ''}.</p>
+    <input type="text" name="username" value="${a.username}" autocomplete="username" hidden>
+    <label class="site-dialog-field"><span>New password <span class="muted small">(at least 10 characters, not the temporary one)</span></span>
+      <input name="password" type="password" autocomplete="new-password" minlength="10" required></label>
+    <label class="site-dialog-field"><span>New password again</span><input name="password2" type="password" autocomplete="new-password" required></label>
+    <p class="account-msg small" role="status"></p>
+    <div class="site-dialog-buttons">
+      <button type="button" class="secondary password-required-logout">Log out</button>
+      <button type="submit" class="site-dialog-ok">Set my password</button></div></form>`);
+  const form = dialog.querySelector('form')!;
+  const msg = dialog.querySelector<HTMLElement>('.account-msg')!;
+  const val = (n: string) => (form.elements.namedItem(n) as HTMLInputElement).value;
+  let done = false;
+  dialog.addEventListener('cancel', (e) => e.preventDefault());   // Escape doesn't close it
+  // a browser may close a modal anyway (Chrome: Escape pressed twice): it opens again
+  dialog.addEventListener('close', () => { if (!done) dialog.showModal(); });
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (val('password') !== val('password2')) { msg.textContent = 'The two passwords differ.'; return; }
+    msg.textContent = '…';
+    setOwnPassword(val('password'), val('password2'))
+      .then(() => { done = true; msg.textContent = 'Done — your own password is set.'; location.reload(); })
+      .catch((err: Error) => { msg.textContent = err.message.replace(/^./, (c) => c.toUpperCase()); });
+  });
+  dialog.querySelector('.password-required-logout')!.addEventListener('click', () => {
+    done = true;
+    logOut().catch(() => null).finally(() => { remember(false); location.reload(); });
+  });
+  document.body.append(dialog);
+  dialog.showModal();
+  dialog.querySelector<HTMLInputElement>('input[name=password]')!.focus();
 }
 
 /** The button's red dot and the number beside Friends: unread messages and open friend requests to the account

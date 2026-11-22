@@ -2,7 +2,8 @@
 // [data-form-draft="<url>"] sends its fields as a draft of this account 1.5 s after typing pauses, and when the tab is
 // hidden or closed; [data-form-draft-status] says when. Save (the form) applies it and the server removes the draft;
 // opening the form again restores one that was never saved. Like the pages' autosave (uploads.js), for many fields.
-// Also: a form [data-confirm="question"] asks before it is sent (delete buttons).
+// Also: a form [data-confirm="question"] asks before it is sent (delete buttons); a button [data-copy-from="#id"] copies
+// that field's text (the message after a password reset, 256) and says so in the [data-copy-status] beside it.
 // A new form (…/new) with nothing written in it is no draft (blank.js): instead of saving it, its draft is removed.
 import { hasContent } from './blank.js';
 
@@ -11,6 +12,20 @@ export function initFormDrafts() {
     form.addEventListener('submit', (e) => { if (!window.confirm(form.dataset.confirm)) e.preventDefault(); });
   }
   for (const form of document.querySelectorAll('form[data-form-draft]')) setup(form);
+  for (const button of document.querySelectorAll('button[data-copy-from]')) {
+    button.addEventListener('click', async () => {
+      const field = document.querySelector(button.dataset.copyFrom);
+      const status = button.parentElement.querySelector('[data-copy-status]');
+      if (!field) return;
+      try {
+        await navigator.clipboard.writeText(field.value);
+        if (status) status.textContent = 'Copied.';
+      } catch {
+        field.select();   // no clipboard (http, an old browser): selected, to copy by hand
+        if (status) status.textContent = 'Selected — copy it with Ctrl+C / ⌘C.';
+      }
+    });
+  }
 }
 
 function setup(form) {

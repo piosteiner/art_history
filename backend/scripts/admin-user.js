@@ -50,7 +50,8 @@ async function main() {
   try {
     const { rows } = await client.query(`
       INSERT INTO admin_users (username, password_hash, role, created_via, password_set_at) VALUES ($1, $2, coalesce($3, 'editor')::account_role, 'script', now())
-      ON CONFLICT (username) DO UPDATE SET password_hash = $2, password_set_at = now(), role = coalesce($3::account_role, admin_users.role)
+      ON CONFLICT (username) DO UPDATE SET password_hash = $2, password_set_at = now(), role = coalesce($3::account_role, admin_users.role),
+        password_temporary_until = NULL   -- a password given here is the account's own, never a temporary one (256)
       RETURNING (xmax = 0) AS created, id, role::text AS role`, [username, await hashPassword(password), role]);
     await client.query(`INSERT INTO account_log (account_id, username, action, detail) VALUES ($1, $2, $3, $4)`,
       [rows[0].id, username, rows[0].created ? 'created' : 'password_reset', { role: rows[0].role, via: 'script' }]);
