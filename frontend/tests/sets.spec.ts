@@ -418,11 +418,15 @@ test('an exam date plans the day\'s cards: the days counted, today\'s cards stud
   const w = async (sel: string) => Math.round((await page.locator(sel).first().boundingBox())!.width);
   expect(await w('.sets-today-row .sets-progress')).toBe(await w('.sets-boxes .sets-boxbar'));
   await expect(page.locator('.sets-today-count')).toHaveText('(2 Name it · 1 Describe it)');
-  await page.fill('.sets-exam-form input[type=date]', '2026-11-17');
+  // a day ahead of whenever the test runs (a fixed 2026-11-17 failed once that day had passed: the field takes no past day)
+  const exam = new Date(Date.now() + 30 * 86400e3);
+  const examYmd = `${exam.getFullYear()}-${String(exam.getMonth() + 1).padStart(2, '0')}-${String(exam.getDate()).padStart(2, '0')}`;
+  const examText = exam.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  await page.fill('.sets-exam-form input[type=date]', examYmd);
   await page.locator('.sets-exam-form button[type=submit]').click();
   await expect(page.locator('.sets-plan h3')).toHaveText("Today's study set · exam in 12 days");
-  await expect(page.locator('.sets-plan')).toContainText(/Tuesday,? 17 November 2026/);
-  expect(account.posts).toContain('plan:2026-11-17');
+  await expect(page.locator('.sets-plan')).toContainText(new RegExp(examText.replace(',', ',?')));
+  expect(account.posts).toContain(`plan:${examYmd}`);
 
   // today's cards, Name it: the term due again, then one new card (the first in the set) — not the third
   await page.locator('.sets-study input[name=cards][value=today]').check();
