@@ -4,6 +4,41 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-23
 
+### Network: four more views — rings, outline, timeline, matrix
+- **What:** (site only — `frontend/src/views/graph-layouts.ts`, `views/graph.ts`, `style.css`) a "View" switch above
+  the network (`?view=`, the free force layout stays the default): **Rings** — a radial tree, the centre's links on the
+  first ring in sectors by kind of link, every end of the tree on the outer ring with its name pointing outwards,
+  links across the tree curved through the middle and faint (after Holten 2006, hierarchical edge bundling);
+  **Outline** — the same tree as a mind map left to right, centre → kind of link (with a count) → entries → their
+  links, "+N links" where an entry is linked across branches; **Timeline** — entries on a time axis in lanes by kind
+  (movements, events, states, artists, people, institutions, works …), a life or a period as a bar, a work at its date,
+  links as arcs, undated entries and bundles in a "No date" column (semantic substrates after Shneiderman & Aris 2006,
+  arcs after Wattenberg 2002); **Matrix** — one row and one column per entry (centre first, then by kind, best linked
+  first), a cell coloured by kind of link, bands per kind of entry (for dense networks — Ghoniem, Fekete &
+  Castagliola 2004). All share the data steps (pruning, chains, merged lines, bundles), the side panel, selection,
+  double-click to re-centre, zoom, full screen and the steps / kinds-of-link controls; each frames itself (outline,
+  timeline, matrix from the top left, never below a readable zoom); names are clickable there. Test "network views
+  (2026-11-23) …".
+- **Why:** owner 2026-11-23: "the network view is the one that also obsidian uses — but people do critizize that view
+  every now and then. i want to try out some visualisation options … 4 more visualizations and have them each
+  available without disabling any of the others".
+- **Revert:** `git revert` the commit.
+
+### Content: 195 family links from Wikidata
+- **What:** (data, audited as script) between people and artists already in the database, matched by their own
+  Wikidata items: parents (P22 father, P25 mother, P40 child), spouses (P26), siblings (P3373) → 106 `child_of`, 39
+  `married_to`, 50 `sibling_of` (now 119 / 45 / 55 in all), each cited with the item(s) and property that state it
+  (401 citations). 23 were there already. Checked against the dates of life (a parent 16–50 years older): left out
+  Charles III of Spain as father of Carlota Joaquina, Ferdinand VII and Carlos (Wikidata's Q36234 lists Charles IV's
+  children) and Taira no Kiyomori as Emperor Shirakawa's son (a rumour; his father of record is Taira no Tadamori);
+  kept Paul Mellon (father 52), the maréchal de Richelieu (father 67), Emperor Ōjin as Jingū's son (the chronicles'
+  account). "Relative" (P1038) not taken — it rarely says the tie. Family trees now: the Brueghels, the Bellinis, the
+  Kanō, the Hals brothers, Ogata Kōrin and Kenzan, the Giacomettis, Dürer, El Greco and his son, Arp and
+  Taeuber-Arp, Ike Taiga and Gyokuran, Vermeer and Catharina Bolnes, the Medici complete.
+- **Why:** owner 2026-11-23 ("yes do that" — the trees had too few links to find an example).
+- **Revert:** `DELETE FROM relationships WHERE relationship_type IN ('child_of','married_to','sibling_of') AND
+  created_at::date = '2026-11-23'` (citations go with them), or per link from the history page.
+
 ### Network: full screen, pages in a new tab, the whole family
 - **What:** (site only, `frontend/src/views/graph.ts`, `style.css`) a "⛶ Full screen" button beside Fit — controls,
   network, side panel and legend fill the screen (Fullscreen API; where there is none, the stage fills the window;

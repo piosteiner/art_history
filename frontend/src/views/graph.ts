@@ -4,14 +4,14 @@
 //   click a node: details and its links in the side panel · double-click: center the network on it
 //   Ctrl/Cmd/middle click: open its page in a new tab · drag nodes · wheel/pinch zooms, drag the background pans
 import { drag } from 'd3-drag';
-import { forceCollide, forceLink, forceManyBody, forceSimulation, forceX, forceY, type SimulationLinkDatum, type SimulationNodeDatum } from 'd3-force';
+import { forceCollide, forceLink, forceManyBody, forceSimulation, forceX, forceY } from 'd3-force';
 import { select } from 'd3-selection';
 import { reducedMotion } from '../theme';
 import { zoom, zoomIdentity, type ZoomBehavior } from 'd3-zoom';
 import { getGraph, getVocabulary, listAll, PLURAL } from '../api';
 import { escape, href, html, impliedEnd, link, render, TYPE_LABEL } from '../html';
 import type { Category, GraphEdge, GraphNode, Plural } from '../types';
-import { bundle, familyKind, mergeEdges, provenanceChains, pruneProvenance, sharedParentSiblings, type GEdge, type GNode } from '../graph-group';
+import { bundle, familyKind, mergeEdges, provenanceChains, pruneProvenance, sharedParentSiblings } from '../graph-group';
 import { findAll } from '../search';
 import { guard, loading, showError } from './common';
 import { navigate } from '../router';
@@ -23,10 +23,7 @@ const CATEGORY_LABEL: Record<string, string> = {
   patronage: 'Patronage', depiction: 'Depictions', provenance: 'Collections', architecture: 'Buildings', publication: 'Publishers', polity: 'States & nationality', event: 'Events', literature: 'Literature',
 };
 
-type Node = GNode & SimulationNodeDatum & { degree: number };
-type Edge = Omit<GEdge, 'source' | 'target'> & SimulationLinkDatum<Node> & { source: Node | string; target: Node | string };
-
-const radius = (n: Node) => (n.depth === 0 ? 13 : n.bundle ? 9 + 2.2 * Math.sqrt(n.bundle.members.length) : 6 + Math.min(n.degree, 8));
+import { LAYOUTS, radius, VIEW_HELP, VIEW_LABEL, VIEWS, type Drawn, type Edge, type Node, type View } from './graph-layouts';
 // Readable networks (2026-11-23, tried on screenshots of van Gogh, Japonisme, Hokusai, Bührle, the Kunsthaus and
 // The Starry Night): owners pass on no provenance, one line per pair, bundles, names only for the main entries (the
 // rest on hover or around the selected one), a free layout — rings by distance crowded everything into one corner.
@@ -86,6 +83,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
   // elsewhere France links every French artist two steps away
   const defaultCats = GRAPH_CATEGORIES.filter((c) => (c !== 'provenance' || ['artworks', 'people', 'institutions'].includes(plural)) && (c !== 'polity' || plural === 'polities'));
   const chosenCats = params.get('categories')?.split(',').filter((c): c is Category => (GRAPH_CATEGORIES as string[]).includes(c)) ?? null;
+  const view: View = (VIEWS as readonly string[]).includes(params.get('view') ?? '') ? params.get('view') as View : 'free';
   const open = new Set<string>();   // bundles opened by a click
   const creators = new Map<string, { id: string; name: string }>();
   let stop: (() => void) | undefined;
@@ -112,9 +110,11 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     })
     .catch((err) => current() && showError(main, err));
 
-  function setParams(next: { depth?: number; categories?: Category[] }) {
+  function setParams(next: { depth?: number; categories?: Category[]; view?: View }) {
     const p = new URLSearchParams();
     p.set('depth', String(next.depth ?? depth));
+    const v = next.view ?? view;
+    if (v !== 'free') p.set('view', v);
     const c = next.categories ?? chosenCats;
     if (c && (c.length !== defaultCats.length || c.some((x) => !defaultCats.includes(x)))) p.set('categories', c.join(','));
     navigate(`/graph/${plural}/${encodeURIComponent(slug!)}?${p.toString().replace(/%2C/g, ',')}`);
@@ -158,6 +158,10 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       <h1>Network around ${link(root.type, root.slug, root.name)}</h1>
       <div class="graph-stage">
       <div class="graph-controls">
+        <div class="seg graph-views" role="group" aria-label="View">
+          <span class="muted">View</span>
+          ${VIEWS.map((v) => html`<button type="button" data-view="${v}" class="${v === view ? 'on' : ''}" aria-pressed="${String(v === view)}" title="${VIEW_HELP[v]}">${VIEW_LABEL[v]}</button>`)}
+        </div>
         <div class="seg" role="group" aria-label="Depth">
           <span class="muted">Steps</span>
           ${[1, 2, 3, 4].map((d) => html`<button type="button" data-depth="${d}" class="${d === depthNow ? 'on' : ''}" aria-pressed="${String(d === depthNow)}">${d}</button>`)}
@@ -174,9 +178,10 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
         </div>
       </div>
       <p class="muted small">${walked.nodes.length} entries, ${raw.length} links${truncated ? ' (cut off at 500 entries: choose fewer steps or kinds of links)' : ''}${nodes.some((n) => n.bundle) ? '; entries of one kind with the same links are bundled — click a bundle to list or open it' : ''}.
+        <strong>${VIEW_LABEL[view]}:</strong> ${VIEW_HELP[view]}.
         Click an entry for details, double-click to center the network on it; dashed = not certain, faded and dashed = end of the period only implied; arrows show what passes on (teacher → student, Hokusai → Van Gogh for an influence, artist → work); a work's owners follow one another — work → first owner → the next …, a dotted line to whoever held it for them; families as a family tree: parents above their children, a double line between spouses.</p>
       <div class="graph-wrap">
-        <svg class="graph" role="img" aria-label="Network graph"></svg>
+        <svg class="graph view-${view}" role="img" aria-label="Network graph"></svg>
         <aside class="graph-info" aria-live="polite"></aside>
       </div>
       <div class="legend">${usedTypes.map((t) => html`<span><i class="dot node-${t}"></i>${TYPE_LABEL[t]}</span>`)}
@@ -194,107 +199,145 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     svg.append('defs').html(usedCats.map((c) => `<marker id="arrow-${escape(c)}" class="cat-${escape(c)}" viewBox="0 -4 8 8" refX="8" refY="0"
       markerWidth="7" markerHeight="7" orient="auto"><path d="M0,-4L8,0L0,4" class="arrowhead"/></marker>`).join(''));
     const viewport = svg.append('g');
-    // family as a family tree: no arrows — parents above their children on an elbow line, spouses side by side on a
-    // double line, siblings on one row (2026-11-23, owner: "family relationships should be portrayed in a family style")
-    const kindOf = new Map(edges.map((e) => [e, familyKind(e.rels)]));
-    const familyNodes = [...new Set(edges.filter((e) => kindOf.get(e)).flatMap((e) => [byId.get(e.source as string)!, byId.get(e.target as string)!]))];
-    const familySet = new Set(familyNodes);
-    const linkSel = viewport.append('g').attr('class', 'edges').selectAll('path').data(edges).join('path')
-      .attr('class', (e) => `edge cat-${e.category}${e.uncertain ? ' uncertain' : ''}${e.implied ? ' implied' : ''}${e.rels.every((r) => r.beside) ? ' beside' : ''}${kindOf.get(e) ? ` family-${kindOf.get(e)!.kind}` : ''}`)
-      .attr('stroke-width', (e) => (kindOf.get(e)?.kind === 'spouse' ? 1.4 : Math.min(1.6 + Math.log2(e.rels.length), 5)))
-      .attr('marker-end', (e) => (e.directed && !kindOf.get(e) ? `url(#arrow-${e.category})` : null));
-    const nodeSel = viewport.append('g').attr('class', 'nodes').selectAll<SVGAElement, Node>('a').data(nodes).join((enter) => enter.append<SVGAElement>('a'))
-      .attr('href', (n) => (n.bundle ? '#' : href(n.type, n.slug)))
-      .attr('class', (n) => `node node-${n.type}${n.depth === 0 ? ' root' : ''}${n.bundle ? ' bundle' : ''}${labelled(n) ? '' : ' quiet'}`);
-    nodeSel.append('circle').attr('r', radius);
-    nodeSel.filter((n) => !!n.bundle).append('text').attr('class', 'count').attr('text-anchor', 'middle').attr('dy', '0.35em').text((n) => String(n.bundle!.members.length));
-    nodeSel.append('text').attr('class', 'name').attr('dx', (n) => radius(n) + 4).attr('dy', '0.35em')
-      .text((n) => (n.bundle ? n.name.replace(/^\d+ /, '') : n.name));
-    nodeSel.append('title').text((n) => (n.bundle ? `${n.name} (click to list them)` : `${n.name} (${TYPE_LABEL[n.type]}${n.period ? `, ${n.period.label}` : ''})`));
-    const nameOf = (id: string) => byId.get(id)?.name ?? nodesIn.find((x) => x.id === id)?.name ?? id;
-    linkSel.append('title').text((e) => e.rels.slice(0, 6).map((r) => `${nameOf(r.source)} ${r.label} ${nameOf(r.target)}${r.period ? ` ${r.period.label}` : ''}`).join('\n')
-      + (e.rels.length > 6 ? `\n… ${e.rels.length - 6} more` : ''));
-    // where the arrow ends (tests read it; the simulation turns source/target into nodes later)
-    linkSel.attr('data-to', (e) => nameOf(typeof e.target === 'string' ? e.target : (e.target as Node).id));
+    let nodeSel: Drawn['nodeSel'];
+    let linkSel: Drawn['linkSel'];
+    let sim: ReturnType<typeof forceSimulation<Node>> | null = null;
+    let fitHow: Drawn['fit'] = { anchor: 'centre', min: 0 };
+    if (view === 'free') {
+      // family as a family tree: no arrows — parents above their children on an elbow line, spouses side by side on a
+      // double line, siblings on one row (2026-11-23, owner: "family relationships should be portrayed in a family style")
+      const kindOf = new Map(edges.map((e) => [e, familyKind(e.rels)]));
+      const familyNodes = [...new Set(edges.filter((e) => kindOf.get(e)).flatMap((e) => [byId.get(e.source as string)!, byId.get(e.target as string)!]))];
+      const familySet = new Set(familyNodes);
+      const freeLinks = viewport.append('g').attr('class', 'edges').selectAll('path').data(edges).join('path')
+        .attr('class', (e) => `edge cat-${e.category}${e.uncertain ? ' uncertain' : ''}${e.implied ? ' implied' : ''}${e.rels.every((r) => r.beside) ? ' beside' : ''}${kindOf.get(e) ? ` family-${kindOf.get(e)!.kind}` : ''}`)
+        .attr('stroke-width', (e) => (kindOf.get(e)?.kind === 'spouse' ? 1.4 : Math.min(1.6 + Math.log2(e.rels.length), 5)))
+        .attr('marker-end', (e) => (e.directed && !kindOf.get(e) ? `url(#arrow-${e.category})` : null));
+      const freeNodes = viewport.append('g').attr('class', 'nodes').selectAll<SVGAElement, Node>('a').data(nodes).join((enter) => enter.append<SVGAElement>('a'))
+        .attr('href', (n) => (n.bundle ? '#' : href(n.type, n.slug)))
+        .attr('class', (n) => `node node-${n.type}${n.depth === 0 ? ' root' : ''}${n.bundle ? ' bundle' : ''}${labelled(n) ? '' : ' quiet'}`);
+      freeNodes.append('circle').attr('r', radius);
+      freeNodes.filter((n) => !!n.bundle).append('text').attr('class', 'count').attr('text-anchor', 'middle').attr('dy', '0.35em').text((n) => String(n.bundle!.members.length));
+      freeNodes.append('text').attr('class', 'name').attr('dx', (n) => radius(n) + 4).attr('dy', '0.35em')
+        .text((n) => (n.bundle ? n.name.replace(/^\d+ /, '') : n.name));
+      freeNodes.append('title').text((n) => (n.bundle ? `${n.name} (click to list them)` : `${n.name} (${TYPE_LABEL[n.type]}${n.period ? `, ${n.period.label}` : ''})`));
+      const nameOf = (id: string) => byId.get(id)?.name ?? nodesIn.find((x) => x.id === id)?.name ?? id;
+      freeLinks.append('title').text((e) => e.rels.slice(0, 6).map((r) => `${nameOf(r.source)} ${r.label} ${nameOf(r.target)}${r.period ? ` ${r.period.label}` : ''}`).join('\n')
+        + (e.rels.length > 6 ? `\n… ${e.rels.length - 6} more` : ''));
+      // where the arrow ends (tests read it; the simulation turns source/target into nodes later)
+      freeLinks.attr('data-to', (e) => nameOf(typeof e.target === 'string' ? e.target : (e.target as Node).id));
 
-    root.fx = width / 2;
-    root.fy = height / 2;
-    let ticks = 0;
-    const sim = forceSimulation(nodes)
-      .force('link', forceLink<Node, Edge>(edges).id((n) => n.id).distance((e) => 110 + 30 * Math.min((e.target as Node).depth ?? 1, 3)).strength(0.5))
-      .force('charge', forceManyBody().strength(-700))
-      // labels sit to the right of the dots: keep neighbours a label's height and some width apart
-      .force('collide', forceCollide<Node>().radius((n) => radius(n) + (labelled(n) ? 26 : 10)).strength(0.9))
-      .force('x', forceX(width / 2).strength(0.04))
-      .force('y', forceY(height / 2).strength(0.06))
-      .force('family', familyForce)
-      .on('tick', () => {
-        draw();
-        if (++ticks === 60) fit();   // a first overview while the layout still settles
-      })
-      .on('end', () => fit());
-    const p0 = (s: Node, t: Node, parent: string): [Node, Node] => (t.id === parent ? [t, s] : [s, t]);
-    function familyForce(alpha: number) {
-      for (const [e, fam] of kindOf) {
-        if (!fam) continue;
-        const kind = fam.kind;
-        let s = e.source as Node, t = e.target as Node;
-        if (typeof s !== 'object' || typeof t !== 'object') continue;
-        if (fam.kind === 'parent') {   // the parent a generation (110 px) above
-          if (t.id === fam.parent) [s, t] = [t, s];
-          const gap = s.y! + 110 - t.y!;
-          if (gap > 0) { t.vy! += gap * alpha * 0.6; s.vy! -= gap * alpha * 0.6; }
-        } else if (kind === 'spouse' || kind === 'sibling') {   // one row, a name's width apart
-          const dy = (t.y! - s.y!) * alpha * 0.5;
-          s.vy! += dy; t.vy! -= dy;
+      root.fx = width / 2;
+      root.fy = height / 2;
+      let ticks = 0;
+      sim = forceSimulation(nodes)
+        .force('link', forceLink<Node, Edge>(edges).id((n) => n.id).distance((e) => 110 + 30 * Math.min((e.target as Node).depth ?? 1, 3)).strength(0.5))
+        .force('charge', forceManyBody().strength(-700))
+        // labels sit to the right of the dots: keep neighbours a label's height and some width apart
+        .force('collide', forceCollide<Node>().radius((n) => radius(n) + (labelled(n) ? 26 : 10)).strength(0.9))
+        .force('x', forceX(width / 2).strength(0.04))
+        .force('y', forceY(height / 2).strength(0.06))
+        .force('family', familyForce)
+        .on('tick', () => {
+          drawFree();
+          if (++ticks === 60) fit();   // a first overview while the layout still settles
+        })
+        .on('end', () => fit());
+      const p0 = (s: Node, t: Node, parent: string): [Node, Node] => (t.id === parent ? [t, s] : [s, t]);
+      function familyForce(alpha: number) {
+        for (const [e, fam] of kindOf) {
+          if (!fam) continue;
+          const kind = fam.kind;
+          let s = e.source as Node, t = e.target as Node;
+          if (typeof s !== 'object' || typeof t !== 'object') continue;
+          if (fam.kind === 'parent') {   // the parent a generation (110 px) above
+            if (t.id === fam.parent) [s, t] = [t, s];
+            const gap = s.y! + 110 - t.y!;
+            if (gap > 0) { t.vy! += gap * alpha * 0.6; s.vy! -= gap * alpha * 0.6; }
+          } else if (kind === 'spouse' || kind === 'sibling') {   // one row, a name's width apart
+            const dy = (t.y! - s.y!) * alpha * 0.5;
+            s.vy! += dy; t.vy! -= dy;
+          }
+        }
+        // everyone on a row of the family tree keeps the left one's name clear (labels sit right of the dots)
+        for (let i = 0; i < familyNodes.length; i++) for (let j = i + 1; j < familyNodes.length; j++) {
+          const [a, b] = familyNodes[i].x! <= familyNodes[j].x! ? [familyNodes[i], familyNodes[j]] : [familyNodes[j], familyNodes[i]];
+          if (Math.abs(a.y! - b.y!) > 30) continue;
+          const short = 36 + (a === root ? 8 : 6.5) * a.name.length - (b.x! - a.x!);
+          if (short > 0) { const push = Math.min(short, 80) * alpha; b.vx! += push; a.vx! -= push; }
+        }
+        // names: two labels on one line don't run into each other — the right one moves up or down
+        const named = nodes.filter((n) => labelled(n) && !familySet.has(n));
+        for (let i = 0; i < named.length; i++) for (let j = i + 1; j < named.length; j++) {
+          const [a, b] = named[i].x! <= named[j].x! ? [named[i], named[j]] : [named[j], named[i]];
+          const dy = b.y! - a.y!;
+          if (Math.abs(dy) >= 15 || b.x! - a.x! > radius(a) + 8 + (a === root ? 7.5 : 6.5) * a.name.length) continue;
+          const push = (15 - Math.abs(dy)) * alpha * (dy >= 0 ? 1 : -1);
+          if (a.fy == null) { b.vy! += push / 2; a.vy! -= push / 2; } else b.vy! += push;
         }
       }
-      // everyone on a row of the family tree keeps the left one's name clear (labels sit right of the dots)
-      for (let i = 0; i < familyNodes.length; i++) for (let j = i + 1; j < familyNodes.length; j++) {
-        const [a, b] = familyNodes[i].x! <= familyNodes[j].x! ? [familyNodes[i], familyNodes[j]] : [familyNodes[j], familyNodes[i]];
-        if (Math.abs(a.y! - b.y!) > 30) continue;
-        const short = 36 + (a === root ? 8 : 6.5) * a.name.length - (b.x! - a.x!);
-        if (short > 0) { const push = Math.min(short, 80) * alpha; b.vx! += push; a.vx! -= push; }
+      function drawFree() {
+        freeLinks.attr('d', (e) => {
+          const s = e.source as Node, t = e.target as Node;
+          const fam = kindOf.get(e);
+          const kind = fam?.kind;
+          if (fam?.kind === 'parent') {   // down from the parent, across, down to the child
+            const [p, c] = p0(s, t, fam.parent);
+            const mid = (p.y! + c.y!) / 2;
+            return `M${p.x},${p.y}V${mid}H${c.x}V${c.y}`;
+          }
+          if (kind === 'spouse') {   // a double line
+            const dx = t.x! - s.x!, dy = t.y! - s.y!, len = Math.hypot(dx, dy) || 1;
+            const ox = (-dy / len) * 2, oy = (dx / len) * 2;
+            return `M${s.x! + ox},${s.y! + oy}L${t.x! + ox},${t.y! + oy}M${s.x! - ox},${s.y! - oy}L${t.x! - ox},${t.y! - oy}`;
+          }
+          return `M${s.x},${s.y}L${endX(e)},${endY(e)}`;
+        });
+        freeNodes.attr('transform', (n) => `translate(${n.x},${n.y})`);
       }
-      // names: two labels on one line don't run into each other — the right one moves up or down
-      const named = nodes.filter((n) => labelled(n) && !familySet.has(n));
-      for (let i = 0; i < named.length; i++) for (let j = i + 1; j < named.length; j++) {
-        const [a, b] = named[i].x! <= named[j].x! ? [named[i], named[j]] : [named[j], named[i]];
-        const dy = b.y! - a.y!;
-        if (Math.abs(dy) >= 15 || b.x! - a.x! > radius(a) + 8 + (a === root ? 7.5 : 6.5) * a.name.length) continue;
-        const push = (15 - Math.abs(dy)) * alpha * (dy >= 0 ? 1 : -1);
-        if (a.fy == null) { b.vy! += push / 2; a.vy! -= push / 2; } else b.vy! += push;
-      }
-    }
-    function draw() {
-      linkSel.attr('d', (e) => {
+
+      // lines stop at the target's edge so the arrowhead stays visible
+      const shorten = (e: Edge) => {
         const s = e.source as Node, t = e.target as Node;
-        const fam = kindOf.get(e);
-        const kind = fam?.kind;
-        if (fam?.kind === 'parent') {   // down from the parent, across, down to the child
-          const [p, c] = p0(s, t, fam.parent);
-          const mid = (p.y! + c.y!) / 2;
-          return `M${p.x},${p.y}V${mid}H${c.x}V${c.y}`;
-        }
-        if (kind === 'spouse') {   // a double line
-          const dx = t.x! - s.x!, dy = t.y! - s.y!, len = Math.hypot(dx, dy) || 1;
-          const ox = (-dy / len) * 2, oy = (dx / len) * 2;
-          return `M${s.x! + ox},${s.y! + oy}L${t.x! + ox},${t.y! + oy}M${s.x! - ox},${s.y! - oy}L${t.x! - ox},${t.y! - oy}`;
-        }
-        return `M${s.x},${s.y}L${endX(e)},${endY(e)}`;
-      });
-      nodeSel.attr('transform', (n) => `translate(${n.x},${n.y})`);
+        const dx = t.x! - s.x!, dy = t.y! - s.y!;
+        const len = Math.hypot(dx, dy) || 1;
+        return (len - radius(t) - 2) / len;
+      };
+      const endX = (e: Edge) => (e.source as Node).x! + ((e.target as Node).x! - (e.source as Node).x!) * shorten(e);
+      const endY = (e: Edge) => (e.source as Node).y! + ((e.target as Node).y! - (e.source as Node).y!) * shorten(e);
+      nodeSel = freeNodes;
+      linkSel = freeLinks as unknown as Drawn['linkSel'];
+      // less motion: the layout is computed at once and shown finished (dragging still moves nodes)
+      if (reducedMotion()) {
+        sim.stop();
+        sim.tick(Math.ceil(Math.log(sim.alphaMin()) / Math.log(1 - sim.alphaDecay())));
+        drawFree();
+      }
+      const simNow = sim;
+      freeNodes.call(drag<SVGAElement, Node>()
+        .on('start', (ev, n) => {
+          if (!ev.active) simNow.alphaTarget(0.25).restart();
+          n.fx = n.x;
+          n.fy = n.y;
+        })
+        .on('drag', (ev, n) => {
+          n.fx = ev.x;
+          n.fy = ev.y;
+        })
+        .on('end', (ev, n) => {
+          if (!ev.active) simNow.alphaTarget(0);
+          if (n !== root) n.fx = n.fy = null;
+        }));
+    } else {
+      for (const e of edges) {   // the other views take the ends as entries straight away
+        e.source = byId.get(e.source as string)!;
+        e.target = byId.get(e.target as string)!;
+      }
+      const d = LAYOUTS[view]({ viewport, nodes, edges, root, catOrder: GRAPH_CATEGORIES, catLabel: CATEGORY_LABEL, width });
+      nodeSel = d.nodeSel;
+      linkSel = d.linkSel;
+      fitHow = d.fit;
     }
-
-    // lines stop at the target's edge so the arrowhead stays visible
-    const shorten = (e: Edge) => {
-      const s = e.source as Node, t = e.target as Node;
-      const dx = t.x! - s.x!, dy = t.y! - s.y!;
-      const len = Math.hypot(dx, dy) || 1;
-      return (len - radius(t) - 2) / len;
-    };
-    const endX = (e: Edge) => (e.source as Node).x! + ((e.target as Node).x! - (e.source as Node).x!) * shorten(e);
-    const endY = (e: Edge) => (e.source as Node).y! + ((e.target as Node).y! - (e.source as Node).y!) * shorten(e);
 
     // ---- zoom, pan, drag ----
     const zoomer: ZoomBehavior<SVGSVGElement, unknown> = zoom<SVGSVGElement, unknown>().scaleExtent([0.2, 4])
@@ -302,22 +345,26 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       .on('zoom', (ev) => viewport.attr('transform', ev.transform.toString()));
     svg.call(zoomer).on('dblclick.zoom', null);
     function fit() {
+      if (view !== 'free') {   // the drawing's own box, framed as the view asks
+        const b = viewport.node()!.getBBox();
+        const k = Math.min(1, Math.max(fitHow.min, Math.min((width - 30) / b.width, (height - 30) / b.height)));
+        const fitsX = k * b.width <= width - 30, fitsY = k * b.height <= height - 30;
+        const tx = fitHow.anchor === 'centre' || fitsX ? width / 2 - k * (b.x + b.width / 2) : 15 - k * b.x;
+        const ty = fitHow.anchor === 'centre' || fitsY ? height / 2 - k * (b.y + b.height / 2) : 15 - k * b.y;
+        svg.call(zoomer.transform, zoomIdentity.translate(tx, ty).scale(k));
+        return;
+      }
       const xs = nodes.map((n) => n.x!), ys = nodes.map((n) => n.y!);
       const [x0, x1, y0, y1] = [Math.min(...xs) - 40, Math.max(...xs) + 160, Math.min(...ys) - 40, Math.max(...ys) + 40];
       const k = Math.min(width / (x1 - x0), height / (y1 - y0), 1); // never enlarge beyond 100 %
       svg.call(zoomer.transform, zoomIdentity.translate(width / 2 - k * (x0 + x1) / 2, height / 2 - k * (y0 + y1) / 2).scale(k));
     }
-    // less motion: the layout is computed at once and shown finished (dragging still moves nodes)
-    if (reducedMotion()) {
-      sim.stop();
-      sim.tick(Math.ceil(Math.log(sim.alphaMin()) / Math.log(1 - sim.alphaDecay())));
-      draw();
-      fit();
-    }
+    if (view !== 'free' || reducedMotion()) fit();
     main.querySelector('.graph-controls')!.addEventListener('click', (e) => {
       const b = (e.target as Element).closest<HTMLButtonElement>('button');
       if (!b) return;
-      if (b.dataset.depth) setParams({ depth: Number(b.dataset.depth) });
+      if (b.dataset.view) setParams({ view: b.dataset.view as View });
+      else if (b.dataset.depth) setParams({ depth: Number(b.dataset.depth) });
       else if (b.dataset.zoom === 'in') svg.call(zoomer.scaleBy, 1.4);
       else if (b.dataset.zoom === 'out') svg.call(zoomer.scaleBy, 1 / 1.4);
       else if (b.dataset.zoom === 'fit') fit();
@@ -353,21 +400,6 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       const picked = [...main.querySelectorAll<HTMLInputElement>('.graph-cats input:checked')].map((i) => i.value as Category);
       setParams({ categories: picked.length ? picked : GRAPH_CATEGORIES });
     });
-
-    nodeSel.call(drag<SVGAElement, Node>()
-      .on('start', (ev, n) => {
-        if (!ev.active) sim.alphaTarget(0.25).restart();
-        n.fx = n.x;
-        n.fy = n.y;
-      })
-      .on('drag', (ev, n) => {
-        n.fx = ev.x;
-        n.fy = ev.y;
-      })
-      .on('end', (ev, n) => {
-        if (!ev.active) sim.alphaTarget(0);
-        if (n !== root) n.fx = n.fy = null;
-      }));
 
     // ---- select, highlight, recenter ----
     const neighbours = (n: Node) => {
@@ -457,7 +489,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     showInfo(null);
     document.title = `Network around ${root.name} · Art History`;
     return () => {
-      sim.stop();
+      sim?.stop();
       document.removeEventListener('fullscreenchange', onFull);
       document.removeEventListener('keydown', onKey);
       if (document.fullscreenElement === stage) void document.exitFullscreen();

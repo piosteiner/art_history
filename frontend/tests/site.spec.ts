@@ -3887,7 +3887,7 @@ test('network: a work\'s owners as one chain, other works\' transfers left out; 
   await expect(edge('married to Vittoria della Rovere')).toHaveClass(/family-spouse/);
   // brothers with their father in the network hang from his bar; no line of their own
   await expect(edge("Ferdinando II de' Medici sibling of Leopoldo de' Medici")).toHaveCount(0);
-  await expect(edge("Ferdinando II de' Medici sibling of Gian Carlo de' Medici")).toHaveCount(1);
+  await expect(edge("Ferdinando II de' Medici sibling of Gian Carlo de' Medici")).toHaveCount(0);   // all three are Cosimo II's sons (Wikidata, 2026-11-23)
   // the parent stands above the child once the layout has settled
   const y = async (name: string) => (await page.locator('svg.graph .node', { hasText: name }).first().boundingBox())!.y;
   await expect.poll(async () => (await y("Ferdinando II de' Medici")) - (await y("Cosimo II de' Medici")), { timeout: 15000 }).toBeGreaterThan(60);
@@ -3916,4 +3916,31 @@ test('network: full screen, pages in a new tab, the whole family whatever the st
   expect(box.height).toBeGreaterThan(page.viewportSize()!.height * 0.6);
   await full.click();
   await expect(full).toHaveAttribute('aria-pressed', 'false');
+});
+
+test('network views (2026-11-23): rings, outline, timeline and matrix beside the free layout — each with the side panel', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/graph/artists/vincent-van-gogh');
+  await expect(page.locator('.graph-views button[data-view="free"]')).toHaveAttribute('aria-pressed', 'true');
+  for (const [view, label] of [['rings', 'Rings'], ['outline', 'Outline'], ['timeline', 'Timeline'], ['matrix', 'Matrix']] as const) {
+    await page.locator('.graph-views button', { hasText: label }).click();
+    await expect(page).toHaveURL(new RegExp(`view=${view}`));
+    await expect(page.locator(`svg.graph.view-${view} .node`).first()).toBeVisible();
+    await expect(page.locator(`svg.graph.view-${view} .edge`).first()).toBeAttached();
+    // a name opens the side panel; its page in a new tab
+    // (dispatched: the entry may lie outside the visible part of the drawing, a drag away)
+    await page.locator(`svg.graph .node:not(.root)`, { hasText: 'Paul Gauguin' }).first().dispatchEvent('click');
+    await expect(page.locator('.graph-info h2')).toHaveText('Paul Gauguin');
+    await expect(page.locator('.graph-info a', { hasText: 'Open page' })).toHaveAttribute('target', '_blank');
+  }
+  // the outline: one heading per kind of link around the centre
+  await page.goto('/graph/artists/vincent-van-gogh?view=outline');
+  await expect(page.locator('.outline-head', { hasText: 'Influence' })).toBeVisible();
+  // the timeline: lanes by kind and an axis in years
+  await page.goto('/graph/artists/vincent-van-gogh?view=timeline');
+  await expect(page.locator('.lane-label', { hasText: 'Artists' })).toBeVisible();
+  await expect(page.locator('.timeline-axis text', { hasText: '1900' })).toBeAttached();
+  // steps and kinds of link keep the view
+  await page.locator('.seg button[data-depth="1"]').click();
+  await expect(page).toHaveURL(/view=timeline/);
 });
