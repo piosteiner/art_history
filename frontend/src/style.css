@@ -633,9 +633,11 @@ svg.graph {
   border-radius: var(--radius); cursor: grab; touch-action: none; display: block;
 }
 svg.graph:active { cursor: grabbing; }
-.edge { stroke: var(--cat); stroke-width: 1.8; stroke-opacity: .75; }
+.edge { stroke: var(--cat); stroke-width: 1.8; stroke-opacity: .75; fill: none; }
 .edge.uncertain { stroke-dasharray: 5 4; }
 .edge.implied { stroke-dasharray: 2 4; stroke-opacity: .4; } /* provenance: the period's end is only implied */
+.edge.beside { stroke-dasharray: 1 4; stroke-linecap: round; stroke-width: 1.6; } /* a custodian or agent beside a work's owners */
+.edge.family-sibling, .edge.family-relative { stroke-dasharray: 6 3; }
 .arrowhead { fill: var(--cat); }
 .node circle { fill: var(--n); stroke: var(--surface); stroke-width: 2; }
 .node.root circle { stroke: var(--text); stroke-width: 2.5; }

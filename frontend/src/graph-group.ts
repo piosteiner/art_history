@@ -85,6 +85,50 @@ const FLOWS_BACK = new Set(['student_of', 'influenced_by', 'influenced_by_cultur
 export const flowFrom = (r: GraphEdge) => (FLOWS_BACK.has(r.type) ? r.target : r.source);
 const flowTo = (r: GraphEdge) => (FLOWS_BACK.has(r.type) ? r.source : r.target);
 
+const OWNED = new Set(['owned_by', 'held_by']);
+
+/**
+ * A work's provenance as a chain (2026-11-23, owner: "to have arrows from the artwork to each provenance step seems a
+ * bit odd … one arrow and then a line … of all provenance steps"):
+ *  - a "passed to" between two owners belongs to one work; it stays only when that work is in the network and linked
+ *    to both — otherwise the Louvre's 1793 transfers of other works read as this work's history;
+ *  - `chains` (not around a collector or a museum, where the works are bundled by the holder): the work keeps its
+ *    arrow only to an owner the chain doesn't reach — its first one, or the first after a gap —, every later owner
+ *    hangs on the "passed to" before it; custodians and agents stay beside the work without an arrow.
+ */
+export function provenanceChains(nodes: GraphNode[], edges: GraphEdge[], { chains = true } = {}) {
+  const ids = new Set(nodes.map((n) => n.id));
+  const held = new Map<string, Set<string>>();   // work → its owners and custodians in the network
+  for (const e of edges) if (OWNED.has(e.type)) (held.get(e.source) ?? held.set(e.source, new Set()).get(e.source)!).add(e.target);
+  const kept = edges.filter((e) => e.type !== 'transferred_to'
+    || (!!e.artwork && ids.has(e.artwork) && !!held.get(e.artwork)?.has(e.source) && !!held.get(e.artwork)?.has(e.target)));
+  if (!chains) return kept;
+  const reached = new Set(kept.filter((e) => e.type === 'transferred_to').map((e) => `${e.artwork}\t${e.target}`));
+  return kept
+    .filter((e) => !(e.type === 'owned_by' && reached.has(`${e.source}\t${e.target}`)))
+    .map((e) => (e.type === 'held_by' ? { ...e, beside: true } : e));
+}
+
+/**
+ * How a family line is drawn: from the parent above to the child below (also when the two are teacher and pupil as
+ * well — Kōkei and Unkei), spouses and siblings on one row; null = not a family line.
+ */
+export function familyKind(rels: GraphEdge[]): { kind: 'parent'; parent: string } | { kind: 'spouse' | 'sibling' | 'relative' } | null {
+  const child = rels.find((r) => r.type === 'child_of');
+  if (child) return { kind: 'parent', parent: child.target };
+  if (!rels.every((r) => r.category === 'family')) return null;
+  if (rels.some((r) => r.type === 'married_to')) return { kind: 'spouse' };
+  if (rels.some((r) => r.type === 'sibling_of')) return { kind: 'sibling' };
+  return { kind: 'relative' };
+}
+
+/** Sibling lines the family tree already shows: both children of a parent in the network hang from the parent's bar. */
+export function sharedParentSiblings(edges: GraphEdge[]) {
+  const parents = new Map<string, Set<string>>();
+  for (const e of edges) if (e.type === 'child_of') (parents.get(e.source) ?? parents.set(e.source, new Set()).get(e.source)!).add(e.target);
+  return (e: GraphEdge) => e.type === 'sibling_of' && [...(parents.get(e.source) ?? [])].some((p) => parents.get(e.target)?.has(p));
+}
+
 /** One edge per pair of entries. The pair's category is that of its first relationship (the API sorts by importance). */
 export function mergeEdges(edges: GraphEdge[]): GEdge[] {
   const byPair = new Map<string, GEdge>();
@@ -92,12 +136,12 @@ export function mergeEdges(edges: GraphEdge[]): GEdge[] {
     const key = e.source < e.target ? `${e.source}\t${e.target}` : `${e.target}\t${e.source}`;
     const m = byPair.get(key);
     if (!m) {
-      byPair.set(key, { source: flowFrom(e), target: flowTo(e), category: e.category, rels: [e], directed: !e.symmetric,
+      byPair.set(key, { source: flowFrom(e), target: flowTo(e), category: e.category, rels: [e], directed: !e.symmetric && !e.beside,
         uncertain: !!e.certainty && e.certainty !== 'attested', implied: e.end_basis === 'implied' });
       continue;
     }
     m.rels.push(e);
-    if (e.symmetric || flowFrom(e) !== m.source) m.directed = false;
+    if (e.symmetric || e.beside || flowFrom(e) !== m.source) m.directed = false;
     m.uncertain &&= !!e.certainty && e.certainty !== 'attested';   // uncertain only if every link is
     m.implied &&= e.end_basis === 'implied';
   }

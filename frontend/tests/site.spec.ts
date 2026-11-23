@@ -3859,9 +3859,42 @@ test('a source with published reading notes: summary, contents with pages, chapt
 
 test('network arrows show what passes on: teacher → student, though the relationship reads "student of" (2026-11-23)', async ({ page }) => {
   await page.goto('/graph/artists/ferdinand-hodler');
-  const line = page.locator('svg.graph line.edge', { has: page.locator('title', { hasText: 'Ferdinand Hodler student of Barthélemy Menn' }) });
+  const line = page.locator('svg.graph path.edge', { has: page.locator('title', { hasText: 'Ferdinand Hodler student of Barthélemy Menn' }) });
   await expect(line).toHaveCount(1);
   await expect(line).toHaveAttribute('marker-end', /arrow-/);
   await expect(line).toHaveAttribute('data-to', 'Ferdinand Hodler');
   await expect(page.locator('.graph-wrap').locator('xpath=preceding-sibling::p[1]')).toContainText('teacher → student');
+});
+
+test('network: a work\'s owners as one chain, other works\' transfers left out; a family as a family tree (2026-11-23)', async ({ page }) => {
+  const edge = (text: string) => page.locator('svg.graph path.edge', { has: page.locator('title', { hasText: text }) });
+  await page.goto('/graph/artworks/the-astronomer');
+  // the work → its first owner after a gap, then one owner to the next
+  await expect(edge('Léon Gauchez passed to Alphonse James de Rothschild')).toHaveAttribute('data-to', 'Alphonse James de Rothschild');
+  await expect(edge('Guy de Rothschild passed to Louvre Museum')).toHaveAttribute('marker-end', /arrow-/);
+  await expect(edge('owned by Guy de Rothschild')).toHaveCount(0);   // reached through the chain, no arrow from the work
+  await expect(edge('French royal collection')).toHaveCount(0);      // the Louvre's transfers of other works
+  // the agent beside the chain, without an arrow
+  const agent = edge('held by Théophile Thoré-Bürger');
+  await expect(agent).toHaveClass(/beside/);
+  await expect(agent).not.toHaveAttribute('marker-end', /.+/);
+
+  await page.goto('/graph/people/ferdinando-ii-de-medici');
+  const parent = edge("Ferdinando II de' Medici child of Cosimo II de' Medici");
+  await expect(parent).toHaveClass(/family-parent/);
+  await expect(parent).not.toHaveAttribute('marker-end', /.+/);
+  await expect(parent).toHaveAttribute('d', /V.*H.*V/);   // down, across, down
+  await expect(edge('married to Vittoria della Rovere')).toHaveClass(/family-spouse/);
+  // brothers with their father in the network hang from his bar; no line of their own
+  await expect(edge("Ferdinando II de' Medici sibling of Leopoldo de' Medici")).toHaveCount(0);
+  await expect(edge("Ferdinando II de' Medici sibling of Gian Carlo de' Medici")).toHaveCount(1);
+  // the parent stands above the child once the layout has settled
+  const y = async (name: string) => (await page.locator('svg.graph .node', { hasText: name }).first().boundingBox())!.y;
+  await expect.poll(async () => (await y("Ferdinando II de' Medici")) - (await y("Cosimo II de' Medici")), { timeout: 15000 }).toBeGreaterThan(60);
+});
+
+test('network: every name shown in a small network (2026-11-23)', async ({ page }) => {
+  await page.goto('/graph/events/tani-buncho-manpachiro-gathering-1792');
+  await expect(page.locator('svg.graph .node').first()).toBeVisible();
+  await expect(page.locator('svg.graph .node.quiet')).toHaveCount(0);
 });

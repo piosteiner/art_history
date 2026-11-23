@@ -775,6 +775,10 @@ export interface GraphEdge {
   source: string; target: string; type: string; label: string; category: Category; symmetric: boolean;
   certainty: string | null; note: string | null; period: DateRange | null;
   derived?: boolean; end_basis?: EndBasis | null;
+  /** provenance links (owned by, held by, passed to …): the work whose history they are and the step's position */
+  artwork?: string; position?: number | null;
+  /** drawn beside a work's chain of owners (a custodian or agent), set by the site */
+  beside?: boolean;
 }
 export interface Graph { root: string; depth: number; types: string[]; truncated: boolean; nodes: GraphNode[]; edges: GraphEdge[] }
 
