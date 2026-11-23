@@ -81,6 +81,9 @@ for line in open(os.path.join(dl, 'lots.tsv'), encoding='utf-8'):
     final = ((sold.get('premiums') or {}).get('finalPriceV2') or {})
     lots[slug] = {'lot': n, 'artist': artist, 'title': title, 'withdrawn': withdrawn,
                   **{f: txt(lot[0].get(f)) if lot else '' for f in FIELDS},
+                  # "ResultHidden": Sotheby's shows results only to logged-in visitors — unknown, not "not sold"
+                  # (all 12 Blaquier-Arrieta lots were entered as not sold on 2026-11-19 because of it)
+                  'hidden': sold.get('__typename') == 'ResultHidden',
                   'closed': bool(bid.get('isClosed')), 'sold': bool(sold.get('isSold')),
                   'price': final.get('amount'), 'currency': final.get('currency') or 'USD'}
 ours = {}
@@ -112,7 +115,7 @@ if before:
 recorded = set((before or {}).get('recorded', []))
 with open(os.path.join(dl, 'results.tsv'), 'w', encoding='utf-8') as r:
     for s, l in lots.items():
-        if not (l['closed'] or l['sold']) or s in recorded: continue
+        if not (l['closed'] or l['sold']) or l.get('hidden') or s in recorded: continue
         ent = ours.get(s)
         price = f"{l['currency']} {int(float(l['price'])):,}".replace(',', '’') if l['price'] else 'price not shown'
         what = f"Sold for {price} (with buyer’s premium)" if l['sold'] else 'Not sold'

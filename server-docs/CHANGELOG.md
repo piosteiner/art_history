@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-23
 
+### Content + script: Blaquier-Arrieta results — all 12 lots sold, not "not sold"
+- **What:** `scripts/watch-sale.sh` read Sotheby's hidden results (`sold.__typename = 'ResultHidden'`, shown only to
+  logged-in visitors) as "not sold" and on 19 November entered all 12 lots so (feedback 11). Data (audited, script
+  source): the 12 Sotheby's steps `not_sold = false`, their lot-page citations reworded; a step "Private collection"
+  (owner, 18 November 2026, auction, New York) after each — prices from the press: lot 5 Van Gogh USD 190,430,000 with
+  fees (hammer $165m, record; bought in the room by William Acquavella), lot 9 Cézanne 111,010,000 (hammer $99m), lot 4
+  Monet 20.2m (basis not stated, USA Art News), lot 12 Pissarro c. 2m (hammer $1.62m); the other eight "price not
+  reported". Four new sources: Porterfield 2026 (The Art Newspaper — "six of the collection's 12 lots hammered below
+  their low estimates, while five sold within…", cited on every step), Brady 2026 (Apollo), Ise 2026 (Perfil, es),
+  Mitchell 2026 (USA Art News, reliability other). Van Gogh text: one sentence on the result appended. Script: hidden
+  results are skipped, not recorded. Feedback 11 done.
+- **Why:** owner 2026-11-23. **Revert:** the works' history pages; delete the sources; the script's two lines.
+
 ### Content: site changelog and documentation drafts for 2026-11-23
 - **What:** site changelog entry 2026-11-23 (unpublished draft, 14 items: network views, full screen, search, family
   tree, chains, arrows, bundles, Hodler/Menn, start-map events, provenance return, 195 family links, shogakai, Heian
