@@ -81,6 +81,18 @@ Format: date — what — why — how to revert.
   Left out: three Met works whose link to shogakai rests on search summaries only.
 - **Why:** owner 2026-11-23 — the topic that started the project. **Revert:** the entries' history pages.
 
+### Content: the Heian jinbutsu shi (Kyoto's directory of notables, 1768–1867)
+- **What:** (data only, audited) from a second research dossier: literary work `heian-jinbutsu-shi` (122754; kind =
+  new glossary genre `jinmeiroku`, written 1768–1867, nine editions with publishers and library record numbers in the
+  text and `metadata.editions`; online copies in `metadata.online`), its compiler as person `rokanshi` (弄翰子, identity
+  unknown, `written_by`), 22 sources — Ahn 2010 (AIJ 75/654), Iwasa 1997 (Gifu Prefectural Museum report 18), the 1813
+  and 1852 editions read from Tohoku University's CC BY scans (`edition_of` the work), NDL Search / CiNii records, the
+  Nichibunken database and its tanzaku companion, Tokyo Metropolitan Library, NCC, three en.wikipedia revisions and two
+  weak web sources (level `other`). Documentation: a row for the Nichibunken database in "Recherche-Portale und
+  Datenbanken" as a draft of chapter 9 (owner publishes). Open: Tenmei 2 = 1782 or 1783, the compiler, the 1998 Kyoto
+  catalogue and Tajima's studies, the database itself (refuses automated access).
+- **Why:** owner 2026-11-23 (with the shogakai). **Revert:** the entries' history pages; delete the draft.
+
 ## 2026-11-16
 
 ### Content: reading notes, first 23 sources; Mason, Kolb, two sources
