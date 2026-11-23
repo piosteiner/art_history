@@ -3270,6 +3270,16 @@ test('places of one name (API 162): each page says where it lies', async ({ page
   await expect(page.locator('.subtitle')).toContainText('in Massachusetts');
 });
 
+test('people show their portraits: on their page with the credit, and as small images in the list (API 043)', async ({ page }) => {
+  await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },
+    body: '<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400"><rect width="300" height="400" fill="#3a6"/></svg>' }));
+  await page.goto('/people/hermann-goring');
+  await expect(page.locator('.gallery img')).toHaveCount(1);
+  await expect(page.locator('.gallery')).toContainText('Public domain');
+  await page.goto('/people?q=goring');
+  await expect(page.locator('.card', { hasText: 'Hermann Göring' }).locator('img.card-img')).toHaveCount(1);
+});
+
 test('lists: hovering a card’s small image shows the whole picture, larger; leaving it hides it', async ({ page }) => {
   // pictures of 400 × 300 instead of the fixtures' 1 × 1 pixel
   await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },

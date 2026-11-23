@@ -285,7 +285,7 @@ export type PersonRole = 'patron' | 'owner' | 'depicted';
 export interface PersonItem extends Located, Named, PersonName {
   slug: string; name: string; kind: string | null; occupations: string[];
   birth: DateRange | null; death: DateRange | null; active: DateRange | null; // active: groups, or when the lifespan is unknown
-  roles: PersonRole[]; birth_place: BirthPlace | null;
+  roles: PersonRole[]; birth_place: BirthPlace | null; image_url: string | null;
 }
 export type ReadingStatus = 'to_read' | 'reading' | 'read';
 /** A source of the bibliography (formatted after the KHIST UZH guide). */
@@ -564,6 +564,8 @@ export interface Person extends DetailBase, Located, Named, PersonName {
   name: string; alt_names: string[]; kind: string | null; occupations: string[];
   birth: DateRange | null; death: DateRange | null; active: DateRange | null; roles: PersonRole[];
   description_html: string | null;
+  /** portraits (API 043: images.person_id) */
+  images: Image[]; image_url: string | null;
 }
 
 export interface Polity extends DetailBase, Named {

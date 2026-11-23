@@ -55,7 +55,7 @@ export function cardParts(plural: Plural, item: AnyItem) {
     }
     case 'people': {
       const p = item as ItemByPlural['people'];
-      [name, date, detail] = [p.name, personDates(p), [personWhat(p), countryText(p.country)].filter(Boolean).join(' · ')];
+      [name, date, detail, image] = [p.name, personDates(p), [personWhat(p), countryText(p.country)].filter(Boolean).join(' · '), p.image_url];
       break;
     }
     case 'bibliography': {

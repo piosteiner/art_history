@@ -347,7 +347,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
     case 'person':
       return {
         title: e.name, subtitle: [personDates(e), personWhat(e)].filter(Boolean).join(' · '),
-        text: e.description_html, images: [],
+        text: e.description_html, images: e.images ?? [],
         facts: [
           ['Born', withEra(dateLabel(e.birth), e.eras?.birth)], ['Died', withEra(dateLabel(e.death), e.eras?.death)],
           ['Active', e.birth || e.death ? '' : dateLabel(e.active)],

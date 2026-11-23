@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-23
 
+### Site: people show their portraits
+- **What:** person pages had `images: []` hard-coded in `factsFor()` (`frontend/src/views/detail-facts.ts`) since
+  before people could have images (043, 2026-10-08), and the people list left out `image_url` (`views/list.ts`) — the
+  API sent both all along (586 people with images, e.g. Hermann Göring). Now `e.images` and the list's small images;
+  `Person`/`PersonItem` types gain them. Test `people show their portraits …` in `tests/site.spec.ts`.
+- **Why:** owner 2026-11-23 (Göring's picture missing on the site). **Revert:** the commit.
+
 ### Content + script: Blaquier-Arrieta results — all 12 lots sold, not "not sold"
 - **What:** `scripts/watch-sale.sh` read Sotheby's hidden results (`sold.__typename = 'ResultHidden'`, shown only to
   logged-in visitors) as "not sold" and on 19 November entered all 12 lots so (feedback 11). Data (audited, script
