@@ -8,7 +8,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 K="${K:-9}"
 DB=scale_test
-BACKUP="$(ls -t "$HOME"/backups/arthistory/arthistory-*.sql.gz | head -1)"
+BACKUP="$(ls -t "$HOME"/backups/arthistory/arthistory-[0-9]*.sql.gz | head -1)"   # not the private-images dump beside it
 
 echo "→ $DB from $BACKUP, K = $K"
 sudo -u postgres dropdb --if-exists "$DB"
@@ -17,6 +17,10 @@ DB_NAME="$DB" npm run -s migrate | tail -1
 sudo -u postgres psql -X -q -d "$DB" -v K="$K" -f perf/scale.sql
 # the clones were written without triggers: everything queued once and computed (as superuser — no timeout); the
 # lists' rows are computed by the server's worker when perf/run.js starts it
-sudo -u postgres psql -X -q -d "$DB" -c 'SELECT refresh_quality_full()' -c 'SELECT refresh_quality()' > /dev/null
+sudo -u postgres psql -X -q -d "$DB" -c 'SELECT refresh_quality_full()' > /dev/null
+# the queue in batches, each its own transaction: refresh_quality() works through it in one, and at ten times the
+# data of 2026-11 (≈ 200,000 queued entries) its temporary tables run out of locks ("out of shared memory")
+while [ "$(sudo -u postgres psql -X -At -d "$DB" -c 'SELECT process_derived(2000)')" != "0" ]; do :; done
+sudo -u postgres psql -X -q -d "$DB" -c 'SELECT refresh_quality()' > /dev/null
 sudo -u postgres psql -X -At -d "$DB" -c "SELECT type || ' ' || count(*) FROM entity_index GROUP BY type ORDER BY type"
 echo "✓ $DB ready"

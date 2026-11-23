@@ -1,6 +1,6 @@
 // The network around one entry (/v1/graph/<type>/<slug>): who influenced whom, studied where, belonged to which
 // movement, was supported by which patron, made which work, owned it after whom (provenance) … laid out with d3-force.
-// /graph/artists/vincent-van-gogh?depth=2
+// /graph/artists/vincent-van-gogh (?depth=1–4, ?categories=…)
 //   click a node: details and its links in the side panel · double-click: center the network on it
 //   Ctrl/Cmd/middle click: open its page in a new tab · drag nodes · wheel/pinch zooms, drag the background pans
 import { drag } from 'd3-drag';
@@ -8,9 +8,11 @@ import { forceCollide, forceLink, forceManyBody, forceSimulation, forceX, forceY
 import { select } from 'd3-selection';
 import { reducedMotion } from '../theme';
 import { zoom, zoomIdentity, type ZoomBehavior } from 'd3-zoom';
-import { getGraph, getVocabulary, PLURAL } from '../api';
+import { getGraph, getVocabulary, listAll, PLURAL } from '../api';
 import { escape, href, html, impliedEnd, link, render, TYPE_LABEL } from '../html';
 import type { Category, GraphEdge, GraphNode, Plural } from '../types';
+import { bundle, mergeEdges, pruneProvenance, type GEdge, type GNode } from '../graph-group';
+import { findAll } from '../search';
 import { guard, loading, showError } from './common';
 import { navigate } from '../router';
 
@@ -21,36 +23,85 @@ const CATEGORY_LABEL: Record<string, string> = {
   patronage: 'Patronage', depiction: 'Depictions', provenance: 'Collections', architecture: 'Buildings', publication: 'Publishers', polity: 'States & nationality', event: 'Events', literature: 'Literature',
 };
 
-type Node = GraphNode & SimulationNodeDatum & { degree: number };
-type Edge = Omit<GraphEdge, 'source' | 'target'> & SimulationLinkDatum<Node> & { source: Node | string; target: Node | string };
+type Node = GNode & SimulationNodeDatum & { degree: number };
+type Edge = Omit<GEdge, 'source' | 'target'> & SimulationLinkDatum<Node> & { source: Node | string; target: Node | string };
 
-const radius = (n: Node) => (n.depth === 0 ? 13 : 6 + Math.min(n.degree, 8));
+const radius = (n: Node) => (n.depth === 0 ? 13 : n.bundle ? 9 + 2.2 * Math.sqrt(n.bundle.members.length) : 6 + Math.min(n.degree, 8));
+// Readable networks (2026-11-23, tried on screenshots of van Gogh, Japonisme, Hokusai, Bührle, the Kunsthaus and
+// The Starry Night): owners pass on no provenance, one line per pair, bundles, names only for the main entries (the
+// rest on hover or around the selected one), a free layout — rings by distance crowded everything into one corner.
 
 export function graph(main: HTMLElement, plural: Plural | undefined, slug: string | undefined, params: URLSearchParams) {
   if (!plural || !slug) {
-    render(main, html`<section class="page"><h1>Network</h1>
+    render(main, html`<section class="page graph-start"><h1>Network</h1>
       <p>The network shows who influenced whom, who studied where, belonged to which movement, was supported by which patron, made or appears in which work,
-      and which collectors, dealers and museums owned a work one after another.
-      Start from any entry: open its page and choose <em>Show the network</em>, or start with one of these:</p>
-      <ul class="plain-list">
-        <li>${link('artist', 'vincent-van-gogh', 'Vincent van Gogh')}: <a href="/graph/artists/vincent-van-gogh?depth=2">network</a></li>
-        <li>${link('movement', 'japonisme', 'Japonisme')}: <a href="/graph/movements/japonisme?depth=2">network</a></li>
+      and which collectors, dealers and museums owned a work one after another. Every entry has one: search for where to start.</p>
+      <form class="graph-search" role="search"><input type="search" placeholder="Start from an artist, a work, a movement, a collector…" aria-label="Start the network from"
+        autocomplete="off"><ul class="plain-list graph-search-results"></ul></form>
+      <h2>For example</h2>
+      <ul class="plain-list graph-examples">
+        <li><a href="/graph/artists/vincent-van-gogh">Vincent van Gogh</a> <span class="muted">— his teachers, friends, works and who owned them</span></li>
+        <li><a href="/graph/movements/japonisme">Japonisme</a> <span class="muted">— Japanese prints and the painters in Europe who took them up</span></li>
+        <li><a href="/graph/people/emil-georg-buhrle">Emil Bührle</a> <span class="muted">— a collection and where its works came from</span></li>
+        <li><a href="/graph/artists/katsushika-hokusai">Katsushika Hokusai</a> <span class="muted">— pupils, series and the painters he influenced</span></li>
+        <li><a href="/graph/events/tani-buncho-manpachiro-gathering-1792">Tani Bunchō's gathering, 1792</a> <span class="muted">— a painting-and-calligraphy party and its people</span></li>
       </ul></section>`);
+    const input = main.querySelector<HTMLInputElement>('.graph-search input')!;
+    const list = main.querySelector<HTMLElement>('.graph-search-results')!;
+    const NO_GRAPH = new Set(['place', 'term', 'source']);
+    let asked = 0;
+    let timer: number | undefined;
+    input.addEventListener('input', () => {
+      clearTimeout(timer);
+      timer = window.setTimeout(async () => {
+        const q = input.value.trim();
+        const mine = ++asked;
+        if (q.length < 2) return render(list, html``);
+        const { local, similar } = await findAll(q);
+        if (mine !== asked) return;
+        const hits = [...local.map(({ e }) => ({ type: e.type, slug: e.slug, name: e.name })), ...similar.map((h) => ({ type: h.type, slug: h.slug, name: h.name }))]
+          .filter((h) => !NO_GRAPH.has(h.type)).slice(0, 12);
+        render(list, hits.length ? html`${hits.map((h) => html`<li><a href="/graph/${PLURAL[h.type]}/${encodeURIComponent(h.slug)}">${h.name}</a>
+          <span class="muted">${TYPE_LABEL[h.type]}</span></li>`)}` : html`<li class="muted">Nothing found.</li>`);
+      }, 200);
+    });
+    main.querySelector('form')!.addEventListener('submit', (ev) => {
+      ev.preventDefault();
+      const a = list.querySelector<HTMLAnchorElement>('a');
+      if (a) navigate(a.getAttribute('href')!);
+    });
+    input.focus();
     return;
   }
   loading(main);
   const current = guard();
-  const depth = Math.min(Math.max(Number(params.get('depth')) || 2, 1), 4);
+  // a collector's or a museum's own works and owners are already hundreds: one step; everything else two
+  const holder = plural === 'people' || plural === 'institutions';
+  const depth = Math.min(Math.max(Number(params.get('depth')) || (holder ? 1 : 2), 1), 4);
+  // provenance is the story of a work, a collector or a museum; around an artist or a movement it drowns the rest
+  // (van Gogh: 1,428 of 1,794 links), so there it is off until ticked
+  // (van Gogh: 1,428 of 1,794 links), so there it is off until ticked; states (nationality) only around a state —
+  // elsewhere France links every French artist two steps away
+  const defaultCats = GRAPH_CATEGORIES.filter((c) => (c !== 'provenance' || ['artworks', 'people', 'institutions'].includes(plural)) && (c !== 'polity' || plural === 'polities'));
   const chosenCats = params.get('categories')?.split(',').filter((c): c is Category => (GRAPH_CATEGORIES as string[]).includes(c)) ?? null;
+  const open = new Set<string>();   // bundles opened by a click
+  const creators = new Map<string, { id: string; name: string }>();
   let stop: (() => void) | undefined;
 
   getVocabulary()
     .then(async (vocab) => {
-      const cats = chosenCats ?? GRAPH_CATEGORIES;
-      const types = chosenCats ? vocab.filter((v) => cats.includes(v.category)).map((v) => v.code) : undefined;
-      const g = await getGraph(plural, slug, depth, types);
+      const cats = chosenCats ?? defaultCats;
+      const types = cats.length !== GRAPH_CATEGORIES.length ? vocab.filter((v) => cats.includes(v.category)).map((v) => v.code) : undefined;
+      // each work's artist, for bundling works whose artist the network doesn't reach (the list the search uses too)
+      const [g, works] = await Promise.all([getGraph(plural, slug, depth, types), listAll('artworks').catch(() => null)]);
       if (!current()) return;
-      stop = draw(g.root, g.nodes, g.edges, g.truncated, depth, cats);
+      creators.clear();
+      for (const w of works?.data ?? []) if (w.creator) creators.set(`artwork/${w.slug}`, { id: `artist/${w.creator.slug}`, name: w.creator.name });
+      const redraw = () => {
+        stop?.();
+        stop = draw(g.root, g.nodes, g.edges, g.truncated, depth, cats, redraw);
+      };
+      redraw();
     })
     .catch((err) => current() && showError(main, err));
 
@@ -58,18 +109,26 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     const p = new URLSearchParams();
     p.set('depth', String(next.depth ?? depth));
     const c = next.categories ?? chosenCats;
-    if (c && c.length !== GRAPH_CATEGORIES.length) p.set('categories', c.join(','));
+    if (c && (c.length !== defaultCats.length || c.some((x) => !defaultCats.includes(x)))) p.set('categories', c.join(','));
     navigate(`/graph/${plural}/${encodeURIComponent(slug!)}?${p.toString().replace(/%2C/g, ',')}`);
   }
 
-  function draw(rootId: string, nodesIn: GraphNode[], edgesIn: GraphEdge[], truncated: boolean, depthNow: number, cats: Category[]) {
-    const nodes: Node[] = nodesIn.map((n) => ({ ...n, degree: 0 }));
+  function draw(rootId: string, nodesIn: GraphNode[], edgesIn: GraphEdge[], truncated: boolean, depthNow: number, cats: Category[], redraw: () => void) {
+    const known = new Set(nodesIn.map((n) => n.id));
+    const sent = edgesIn.filter((e) => known.has(e.source) && known.has(e.target));
+    const walked = pruneProvenance(rootId, nodesIn, sent, depthNow);
+    const raw = walked.edges;
+    const grouped = bundle(rootId, walked.nodes, mergeEdges(raw), { open, creators });
+    const nodes: Node[] = grouped.nodes.map((n) => ({ ...n, degree: 0 }));
     const byId = new Map(nodes.map((n) => [n.id, n]));
-    const edges: Edge[] = edgesIn.filter((e) => byId.has(e.source) && byId.has(e.target)).map((e) => ({ ...e }));
+    const edges: Edge[] = grouped.edges.map((e) => ({ ...e }));
     for (const e of edges) {
       byId.get(e.source as string)!.degree++;
       byId.get(e.target as string)!.degree++;
     }
+    // another centre keeps a depth the visitor chose; otherwise it opens with its own defaults (a collector: one step)
+    const recenter = (n: Node) => `/graph/${PLURAL[n.type]}/${encodeURIComponent(n.slug)}${params.has('depth') ? `?depth=${depthNow}` : ''}`;
+    const labelled = (n: Node) => n.depth <= 1 || !!n.bundle || n.degree >= 4;
     const root = byId.get(rootId)!;
     const usedTypes = [...new Set(nodes.map((n) => n.type))];
     const usedCats = [...new Set(edges.map((e) => e.category))];
@@ -92,7 +151,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
           <button type="button" data-zoom="fit">Fit</button>
         </div>
       </div>
-      <p class="muted small">${nodes.length} entries, ${edges.length} links${truncated ? ' (cut off at 500 entries: choose fewer steps or kinds of links)' : ''}.
+      <p class="muted small">${walked.nodes.length} entries, ${raw.length} links${truncated ? ' (cut off at 500 entries: choose fewer steps or kinds of links)' : ''}${nodes.some((n) => n.bundle) ? '; entries of one kind with the same links are bundled — click a bundle to list or open it' : ''}.
         Click an entry for details, double-click to center the network on it; dashed = not certain, faded and dashed = end of the period only implied; arrows point from the subject (“Van Gogh → influenced by → Hokusai”).</p>
       <div class="graph-wrap">
         <svg class="graph" role="img" aria-label="Network graph"></svg>
@@ -113,27 +172,35 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       markerWidth="7" markerHeight="7" orient="auto"><path d="M0,-4L8,0L0,4" class="arrowhead"/></marker>`).join(''));
     const viewport = svg.append('g');
     const linkSel = viewport.append('g').attr('class', 'edges').selectAll('line').data(edges).join('line')
-      .attr('class', (e) => `edge cat-${e.category}${e.certainty && e.certainty !== 'attested' ? ' uncertain' : ''}${e.end_basis === 'implied' ? ' implied' : ''}`)
-      .attr('marker-end', (e) => (e.symmetric ? null : `url(#arrow-${e.category})`));
+      .attr('class', (e) => `edge cat-${e.category}${e.uncertain ? ' uncertain' : ''}${e.implied ? ' implied' : ''}`)
+      .attr('stroke-width', (e) => Math.min(1.6 + Math.log2(e.rels.length), 5))
+      .attr('marker-end', (e) => (e.directed ? `url(#arrow-${e.category})` : null));
     const nodeSel = viewport.append('g').attr('class', 'nodes').selectAll<SVGAElement, Node>('a').data(nodes).join((enter) => enter.append<SVGAElement>('a'))
-      .attr('href', (n) => href(n.type, n.slug))
-      .attr('class', (n) => `node node-${n.type}${n.depth === 0 ? ' root' : ''}`);
+      .attr('href', (n) => (n.bundle ? '#' : href(n.type, n.slug)))
+      .attr('class', (n) => `node node-${n.type}${n.depth === 0 ? ' root' : ''}${n.bundle ? ' bundle' : ''}${labelled(n) ? '' : ' quiet'}`);
     nodeSel.append('circle').attr('r', radius);
-    nodeSel.append('text').attr('dx', (n) => radius(n) + 4).attr('dy', '0.35em').text((n) => n.name);
-    nodeSel.append('title').text((n) => `${n.name} (${TYPE_LABEL[n.type]}${n.period ? `, ${n.period.label}` : ''})`);
-    linkSel.append('title').text((e) => `${byId.get(e.source as string)?.name} ${e.label} ${byId.get(e.target as string)?.name}${e.period ? ` ${e.period.label}` : ''}`
-      + `${e.end_basis === 'implied' ? ' (end implied)' : ''}${e.certainty && e.certainty !== 'attested' ? ` (${e.certainty})` : ''}`);
+    nodeSel.filter((n) => !!n.bundle).append('text').attr('class', 'count').attr('text-anchor', 'middle').attr('dy', '0.35em').text((n) => String(n.bundle!.members.length));
+    nodeSel.append('text').attr('class', 'name').attr('dx', (n) => radius(n) + 4).attr('dy', '0.35em')
+      .text((n) => (n.bundle ? n.name.replace(/^\d+ /, '') : n.name));
+    nodeSel.append('title').text((n) => (n.bundle ? `${n.name} (click to list them)` : `${n.name} (${TYPE_LABEL[n.type]}${n.period ? `, ${n.period.label}` : ''})`));
+    const nameOf = (id: string) => byId.get(id)?.name ?? nodesIn.find((x) => x.id === id)?.name ?? id;
+    linkSel.append('title').text((e) => e.rels.slice(0, 6).map((r) => `${nameOf(r.source)} ${r.label} ${nameOf(r.target)}${r.period ? ` ${r.period.label}` : ''}`).join('\n')
+      + (e.rels.length > 6 ? `\n… ${e.rels.length - 6} more` : ''));
 
     root.fx = width / 2;
     root.fy = height / 2;
+    let ticks = 0;
     const sim = forceSimulation(nodes)
       .force('link', forceLink<Node, Edge>(edges).id((n) => n.id).distance((e) => 110 + 30 * Math.min((e.target as Node).depth ?? 1, 3)).strength(0.5))
       .force('charge', forceManyBody().strength(-700))
       // labels sit to the right of the dots: keep neighbours a label's height and some width apart
-      .force('collide', forceCollide<Node>().radius((n) => radius(n) + 26).strength(0.9))
+      .force('collide', forceCollide<Node>().radius((n) => radius(n) + (labelled(n) ? 26 : 10)).strength(0.9))
       .force('x', forceX(width / 2).strength(0.04))
       .force('y', forceY(height / 2).strength(0.06))
-      .on('tick', draw)
+      .on('tick', () => {
+        draw();
+        if (++ticks === 60) fit();   // a first overview while the layout still settles
+      })
       .on('end', () => fit());
     function draw() {
       linkSel
@@ -210,7 +277,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     };
     const focus = (n: Node | null) => {
       const ids = n ? neighbours(n) : null;
-      nodeSel.classed('faded', (m) => !!ids && !ids.has(m.id));
+      nodeSel.classed('faded', (m) => !!ids && !ids.has(m.id)).classed('near', (m) => !!ids && ids.has(m.id));
       linkSel.classed('faded', (e) => !!n && (e.source as Node).id !== n.id && (e.target as Node).id !== n.id);
     };
     let selected: Node | null = null;
@@ -218,7 +285,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       .on('mouseenter', (_, n) => focus(n))
       .on('mouseleave', () => focus(selected))
       .on('click', (ev: MouseEvent, n) => {
-        if (ev.ctrlKey || ev.metaKey || ev.shiftKey || ev.button !== 0) return; // new tab/window
+        if (!n.bundle && (ev.ctrlKey || ev.metaKey || ev.shiftKey || ev.button !== 0)) return; // new tab/window
         ev.preventDefault();
         selected = n;
         nodeSel.classed('selected', (m) => m === n);
@@ -227,7 +294,10 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       })
       .on('dblclick', (ev: MouseEvent, n) => {
         ev.preventDefault();
-        if (n !== root) navigate(`/graph/${PLURAL[n.type]}/${encodeURIComponent(n.slug)}?depth=${depthNow}${chosenCats ? `&categories=${chosenCats.join(',')}` : ''}`);
+        if (n.bundle) {
+          open.add(n.id);
+          redraw();
+        } else if (n !== root) navigate(recenter(n));
       });
     svg.on('click', (ev: MouseEvent) => {
       if (ev.target === svgEl) {
@@ -240,19 +310,39 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
 
     function showInfo(n: Node | null) {
       if (!n) return render(info, html`<p class="muted">Click an entry to see its links here.</p>`);
+      if (n.bundle) {
+        const b = n.bundle;
+        render(info, html`<h2>${n.name}</h2>
+          <p class="muted">${CATEGORY_LABEL[b.category] ?? b.category} · each linked only to ${b.parents.map((id) => byId.get(id)?.name ?? id).join(', ')} here</p>
+          <p class="graph-actions"><button type="button" class="button-link" data-open="${n.id}">Show them in the network</button></p>
+          <ul class="plain-list graph-links">${b.members.map((m) => html`<li>${link(m.type, m.slug, m.name)}${m.period ? html` <span class="muted">${m.period.label}</span>` : ''}</li>`)}</ul>`);
+        info.querySelector<HTMLButtonElement>('[data-open]')!.addEventListener('click', () => {
+          open.add(n.id);
+          redraw();
+        });
+        return;
+      }
       const mine = edges.filter((e) => (e.source as Node) === n || (e.target as Node) === n);
+      const ref = (id: string) => {
+        if (id === n.id) return 'this';
+        const x = byId.get(id) ?? nodesIn.find((y) => y.id === id);
+        return x ? link(x.type, x.slug, x.name) : id;
+      };
+      const relRow = (r: GraphEdge) => html`<li class="cat-${r.category}"><i class="line swatch"></i>
+          ${ref(r.source)} <span class="muted">${r.label}</span> ${ref(r.target)}
+          ${r.period ? html` <span class="muted">${r.period.label}</span>` : ''}${impliedEnd(r.end_basis)}${r.certainty && r.certainty !== 'attested' ? html` <span class="tag">${r.certainty}</span>` : ''}
+          ${r.note ? html`<div class="rel-note">${r.note}</div>` : ''}</li>`;
       render(info, html`<h2>${n.name}</h2>
         <p class="muted">${TYPE_LABEL[n.type]}${n.kind ? ` · ${n.kind}` : ''}${n.period ? ` · ${n.period.label}` : ''}</p>
         <p class="graph-actions"><a class="button-link" href="${href(n.type, n.slug)}">Open page</a>
-          ${n !== root ? html`<a class="button-link" href="/graph/${PLURAL[n.type]}/${encodeURIComponent(n.slug)}?depth=${String(depthNow)}">Center the network here</a>` : ''}</p>
-        <ul class="plain-list graph-links">${mine.map((e) => {
-          const s = e.source as Node, t = e.target as Node;
-          return html`<li class="cat-${e.category}"><i class="line swatch"></i>
-            ${s === n ? 'this' : link(s.type, s.slug, s.name)} <span class="muted">${e.label}</span> ${t === n ? 'this' : link(t.type, t.slug, t.name)}
-            ${e.period ? html` <span class="muted">${e.period.label}</span>` : ''}${impliedEnd(e.end_basis)}${e.certainty && e.certainty !== 'attested' ? html` <span class="tag">${e.certainty}</span>` : ''}
-            ${e.note ? html`<div class="rel-note">${e.note}</div>` : ''}</li>`;
+          ${n !== root ? html`<a class="button-link" href="${recenter(n)}">Center the network here</a>` : ''}</p>
+        <ul class="plain-list graph-links">${mine.flatMap((e) => {
+          const other = ((e.source as Node) === n ? e.target : e.source) as Node;
+          return other.bundle ? [html`<li class="cat-${e.category}"><i class="line swatch"></i>${other.name} <span class="muted">· ${CATEGORY_LABEL[e.category] ?? e.category}</span></li>`]
+            : e.rels.map(relRow);
         })}</ul>`);
     }
+
     showInfo(null);
     document.title = `Network around ${root.name} · Art History`;
     return () => sim.stop();

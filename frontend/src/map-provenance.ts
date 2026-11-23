@@ -49,7 +49,7 @@ function stepRow(s: ProvenanceStopProps, inferences: Inference[] = []) {
     ${provenanceHolder(s)}${s.role && STOP_ROLE[s.role] && s.kind !== 'loan' ? html` <span class="tag">${STOP_ROLE[s.role]}</span>` : ''}
     ${made ? html` <span class="tag">${probable(s) ? 'probably made here' : 'made here'}</span>` : ''}
     ${s.kind === 'loan' ? html` <span class="tag">on loan</span>` : ''}
-    ${moved ? html` <span class="tag">moved here</span>` : ''}
+    ${moved ? html` <span class="tag">${s.place_basis === 'returned' ? 'returned' : 'moved here'}</span>` : ''}
     ${s.certainty && s.certainty !== 'attested' ? html` <span class="tag">${s.certainty}</span>` : ''}
     ${how ? html`<br><span class="muted">${how}</span>` : ''}
     ${s.place_basis === 'holder_seat' ? html`<br><span class="muted">at the institution's seat</span>` : ''}

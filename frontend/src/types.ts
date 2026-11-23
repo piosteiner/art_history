@@ -709,12 +709,13 @@ export interface ProvenanceMapStep {
 /**
  * A step with a place. `place_basis`: `recorded` (the step's own) · `holder_seat` (the institution's seat) ·
  * `created_in` (the recorded place of creation) · `artist_residence` / `artist_workplace` (where the artist lived or worked then: "probably").
+ * `returned` (258: back to the owner after an ended custody, agency or possession, or home after the last exhibition).
  */
 export interface ProvenanceStopProps extends ProvenanceMapStep {
   layer: 'provenance_stop';
   place: Ref;
   precision: 'site' | 'settlement' | 'region' | 'country' | null;
-  place_basis: 'recorded' | 'holder_seat' | 'created_in' | 'artist_residence' | 'artist_workplace';
+  place_basis: 'recorded' | 'holder_seat' | 'created_in' | 'artist_residence' | 'artist_workplace' | 'returned';
   /** API 077: 0 at the step's place, 1, 2 … at its further places (`part_label`: when it was there). */
   part?: number; part_label?: string | null;
   /** The step's `position` in the artwork's provenance (API 078), to match it with the detail's steps. */

@@ -2,6 +2,109 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-23
+
+### Network view reworked (frontend) and grouping
+- **What:** (site only — `frontend/src/graph-group.ts`, `views/graph.ts`, `style.css`) before drawing, the network is
+  (1) pruned — an owner, dealer or museum passes the walk on through provenance only at the centre; (2) merged — one
+  line per pair of entries with all their relationships, width by count; (3) bundled — another artist's works reached
+  through that artist ("13 works by Paul Gauguin"), around a collector or museum its works by artist plus "N other
+  works", entries of one type with the same 1–4 neighbours; a bundle lists its members and opens on a click. Names only
+  for the centre, its neighbours and well-linked entries (the rest on hover). Defaults by kind of centre: provenance
+  only around works, people and institutions; states only around a state; people and institutions one step, others
+  two. `/graph` = a search over all entries + examples instead of two fixed networks. Layout stays free (rings tried
+  and dropped). Van Gogh at two steps: 424 entries / 1,794 links → about 90. Test: site `tests/site.spec.ts`
+  "network grouping (2026-11-23) …".
+- **Why:** owner 2026-11-23: "the van gogh network is very messy … the site /graph only shows two … maybe … a omni
+  search under the networks tab … the networks could benefit from more grouping. can you try out some options and keep
+  the ones that look good".
+- **Revert:** `git revert` the commit (frontend only; published by Pages).
+
+### `perf/make-scale-db.sh`: right backup, derived queue in batches
+- **What:** the backup glob takes `arthistory-[0-9]*.sql.gz` (it had picked the private-images dump beside it); after
+  `refresh_quality_full()` the queue is worked off with `process_derived(2000)` per transaction before `refresh_quality()`
+  — in one transaction ≈ 200,000 queued entries at 10× ran out of locks ("out of shared memory"). Budgets on the rebuilt
+  10× data (2026-11-23): 7 of 41 over — periods (503 after 5 s), quality page 3.0 s / 1.5, one check 1.4 / 1.0, artwork
+  list 0.6 / 0.5, artwork list searched ≈ 1.0 / 1.0, worker one change 11–15 s / 10, global part 6–7 s / 3 — the same
+  seven with 258 taken out again, so they come from today's larger data, not from 258 (its check: ≈ 4 ms per artwork).
+  📌 Budgets to look at.
+- **Why:** perf run for 258.
+- **Revert:** `git revert` the commit.
+
+### Migration 258: provenance maps go back to the owner; check `provenance_map_end`
+- **What:** `provenance_stops()` gives the last step one more place (basis `returned`, part 200/201) when (a) it is a
+  custodian, agent or possessor with a *recorded* end — back to the open owner step's place (else the current holder's),
+  "returned to <owner>, <end>" — or (b) it still runs and its last record with a place is an exhibition elsewhere —
+  "back at <holder> after the exhibition". The map draws it as a move within the step (site popup tag "returned",
+  `frontend/src/map-provenance.ts`); the travel distance counts it. New Quality check `provenance_map_end` (warning): the
+  map's last stop more than 50 km from the current institution (not for works on loan or with only a creation place).
+  Today: returns for *In the Conservatory* (Wiesbaden → Berlin) and Gerasimov's *Collective Farm Festival* (New York →
+  Moscow); one finding, *The Gates of Hell* in Seoul (only the foundry step). Data: *Der Vesuv von Ischia aus gesehen*
+  — the Finarte auction (Dec 2008) moved before Sveaas and the gift (it was last); *Sunflowers* (Van Gogh Museum) —
+  step 7, custodian Van Gogh Museum from 2 June 1973 (permanent loan from the foundation), cited like step 5. Test:
+  e2e `provenance.spec.js` "the map goes back to the owner …".
+- **Why:** owner 2026-11-23 (the Mona Lisa's map ended in Rome): "yes, both" — the cases checked and a check.
+- **Revert:** `provenance_stops()` as in 210 (`db/migrations/210_creation_place_longest_stay.sql`), the view without the
+  last UNION block; the data on the works' history pages.
+
+### Content: shogakai and the directories — Senmentei and the Edo directory
+- **What:** (data only, audited) from a third dossier (link.json): person `senmentei-denshiro` (122767; fan dealer,
+  organiser of shogakai, compiler; active 1815–1838), literary work `edo-shoka-jinmeiroku` (122768; kind jinmeiroku,
+  1815–1861, `written_by` Senmentei), sources for the 1815 and 1818 editions (Tsukuba scans), 1836 (NDL pid 2543329),
+  1842 (1919 reprint, NDL pid 1183979) as `edition_of` it, and NDL Search records; paragraphs appended to `shogakai`,
+  `jinmeiroku` and `heian-jinbutsu-shi` (the Kyoto exhibitions of Minagawa Kien; the dossier's uncited negative
+  sentence left out). Our own cross-check of the Kita Buichi invitation (37 of 39 named masters in the 1815/1818/1836
+  directories) only in the documentation draft, marked as our own — not in the entries.
+- **Why:** owner 2026-11-23 ("yes do this"). **Revert:** the entries' history pages.
+
+### Documentation: "Start einer Idee" proofread + "Was sich tatsächlich zugetragen hat" (draft)
+- **What:** a draft of chapter 1 in `page_drafts` (owner's account): 20 corrections of errors (listed to the owner) and
+  a closing section on what the half memory turned out to be — the Heian jinbutsu shi, the shogakai, Senmentei as the
+  link in Edo. Published by the owner unchanged (12:57); a second draft fills in the research result (Senmentei's
+  directory, Tōjō Kindai, the cross-check 37 of 39, Kyoto weaker).
+- **Why / Revert:** owner 2026-11-23; delete the draft.
+
+### Content: the Mona Lisa's map ended in Rome — return to the Louvre added
+- **What:** (data only, audited) provenance step 8: Musée du Louvre, restitution, "early 1914", Paris — after the farewell
+  tour through Italy (fr.wikipedia "Vol de La Joconde", now pinned to rev. 238811725). The map's last stop was the
+  Uffizi's custody with the stop in Rome, because nothing brought the work back.
+- **Why / Revert:** owner 2026-11-23; the work's history page.
+
+### Content: shogakai and sekiga — painting-and-calligraphy gatherings of the late Edo period
+- **What:** (data only, audited) from a research dossier (Japanese and English sources, quotes checked against the
+  texts): 28 sources (Campbell 1987 *Kinsei bungei* 47, Koyama 2026 *Bulletin of the Edo-Tokyo Museum* 16, Washihara
+  2015, Omoto 2004, Iwasa 2005, Markus 1993 (metadata only), Nihon kokugo daijiten / Nipponica / Daijisen / Sekai
+  daihyakka entries, museum records of Cleveland and the Met, Katō's *Ukiyo-e bunken shiryōkan*, ja.wikipedia rev.
+  111613908); glossary terms `shogakai`, `sekiga`, `yoriai-gaki`; artworks: Kyōsai, *Calligraphy and Painting Party*
+  (Cleveland 1983.88, CC0 image), Kyōsai, *Gathering at the Nakamurarō* (Met 2023.583.34), Hiroshige, *Kawachiya at
+  Yanagibashi* (Met JP1164), the Edo-Tokyo Museum's invitation (90210558), Hokusai's Nagoya handbill (Nagoya City
+  Museum); seven events (Bunchō's gathering 9 Feb 1792 — the only date converted from the lunar calendar; Kyōden's
+  1792; the 1838 dispute; Kita Buichi's; Kyōsai's arrest 1870; Hokusai's great Daruma 1804 and 1817 — lunar dates kept
+  in the labels, the year as range). New from Wikidata: artists `kawanabe-kyosai`, `santo-kyoden`, person
+  `ota-nanpo`, institutions `edo-tokyo-museum`, `nagoya-city-museum` (an address place the import made removed).
+  Left out: three Met works whose link to shogakai rests on search summaries only.
+- **Why:** owner 2026-11-23 — the topic that started the project. **Revert:** the entries' history pages.
+
+### Content: the Heian jinbutsu shi (Kyoto's directory of notables, 1768–1867)
+- **What:** (data only, audited) from a second research dossier: literary work `heian-jinbutsu-shi` (122754; kind =
+  new glossary genre `jinmeiroku`, written 1768–1867, nine editions with publishers and library record numbers in the
+  text and `metadata.editions`; online copies in `metadata.online`), its compiler as person `rokanshi` (弄翰子, identity
+  unknown, `written_by`), 22 sources — Ahn 2010 (AIJ 75/654), Iwasa 1997 (Gifu Prefectural Museum report 18), the 1813
+  and 1852 editions read from Tohoku University's CC BY scans (`edition_of` the work), NDL Search / CiNii records, the
+  Nichibunken database and its tanzaku companion, Tokyo Metropolitan Library, NCC, three en.wikipedia revisions and two
+  weak web sources (level `other`). Documentation: a row for the Nichibunken database in "Recherche-Portale und
+  Datenbanken" as a draft of chapter 9 (owner publishes). Open: Tenmei 2 = 1782 or 1783, the compiler, the 1998 Kyoto
+  catalogue and Tajima's studies, the database itself (refuses automated access).
+- **Why:** owner 2026-11-23 (with the shogakai). **Revert:** the entries' history pages; delete the draft.
+
+### Content: reading notes for Golomstock 1990 and Portal 2000
+- **What:** (data only, audited) the last two scans compressed and OCR'd (Golomstock 303.6 → 255.5 MB, whole book
+  minus pp. 298–299 and 310–311; Portal 130.9 → 124.9 MB, extract to p. 189 minus pp. 64–65 and 182–183) and their
+  private reading notes loaded (contents + summary + chapters, files registered; both scans are two-page spreads, the
+  page mapping is in the file labels). 40 sources have notes now, none released. Portal gives Suh Se-ok's birth as 1927
+  (OCR), the entry 1929 — to check.
+- **Why:** owner 2026-11-16 ("do them all"). **Revert:** the notes' history / `DELETE FROM source_notes WHERE …`.
+
 ## 2026-11-22
 
 ### Migration 256: temporary passwords after an admin's reset
@@ -57,49 +160,6 @@ Format: date — what — why — how to revert.
   Glossary term `tebako` (under box; JAANUS, ColBase H-4282 as sources) for three works (kind cited from ColBase).
 - **Why:** owner's decision on the national museums' three databases (254); wrong place and number found on the way.
 - **Revert:** audit_log (source 'script', 2026-11-17).
-
-## 2026-11-23
-
-### Content: the Mona Lisa's map ended in Rome — return to the Louvre added
-- **What:** (data only, audited) provenance step 8: Musée du Louvre, restitution, "early 1914", Paris — after the farewell
-  tour through Italy (fr.wikipedia "Vol de La Joconde", now pinned to rev. 238811725). The map's last stop was the
-  Uffizi's custody with the stop in Rome, because nothing brought the work back.
-- **Why / Revert:** owner 2026-11-23; the work's history page.
-
-### Content: shogakai and sekiga — painting-and-calligraphy gatherings of the late Edo period
-- **What:** (data only, audited) from a research dossier (Japanese and English sources, quotes checked against the
-  texts): 28 sources (Campbell 1987 *Kinsei bungei* 47, Koyama 2026 *Bulletin of the Edo-Tokyo Museum* 16, Washihara
-  2015, Omoto 2004, Iwasa 2005, Markus 1993 (metadata only), Nihon kokugo daijiten / Nipponica / Daijisen / Sekai
-  daihyakka entries, museum records of Cleveland and the Met, Katō's *Ukiyo-e bunken shiryōkan*, ja.wikipedia rev.
-  111613908); glossary terms `shogakai`, `sekiga`, `yoriai-gaki`; artworks: Kyōsai, *Calligraphy and Painting Party*
-  (Cleveland 1983.88, CC0 image), Kyōsai, *Gathering at the Nakamurarō* (Met 2023.583.34), Hiroshige, *Kawachiya at
-  Yanagibashi* (Met JP1164), the Edo-Tokyo Museum's invitation (90210558), Hokusai's Nagoya handbill (Nagoya City
-  Museum); seven events (Bunchō's gathering 9 Feb 1792 — the only date converted from the lunar calendar; Kyōden's
-  1792; the 1838 dispute; Kita Buichi's; Kyōsai's arrest 1870; Hokusai's great Daruma 1804 and 1817 — lunar dates kept
-  in the labels, the year as range). New from Wikidata: artists `kawanabe-kyosai`, `santo-kyoden`, person
-  `ota-nanpo`, institutions `edo-tokyo-museum`, `nagoya-city-museum` (an address place the import made removed).
-  Left out: three Met works whose link to shogakai rests on search summaries only.
-- **Why:** owner 2026-11-23 — the topic that started the project. **Revert:** the entries' history pages.
-
-### Content: the Heian jinbutsu shi (Kyoto's directory of notables, 1768–1867)
-- **What:** (data only, audited) from a second research dossier: literary work `heian-jinbutsu-shi` (122754; kind =
-  new glossary genre `jinmeiroku`, written 1768–1867, nine editions with publishers and library record numbers in the
-  text and `metadata.editions`; online copies in `metadata.online`), its compiler as person `rokanshi` (弄翰子, identity
-  unknown, `written_by`), 22 sources — Ahn 2010 (AIJ 75/654), Iwasa 1997 (Gifu Prefectural Museum report 18), the 1813
-  and 1852 editions read from Tohoku University's CC BY scans (`edition_of` the work), NDL Search / CiNii records, the
-  Nichibunken database and its tanzaku companion, Tokyo Metropolitan Library, NCC, three en.wikipedia revisions and two
-  weak web sources (level `other`). Documentation: a row for the Nichibunken database in "Recherche-Portale und
-  Datenbanken" as a draft of chapter 9 (owner publishes). Open: Tenmei 2 = 1782 or 1783, the compiler, the 1998 Kyoto
-  catalogue and Tajima's studies, the database itself (refuses automated access).
-- **Why:** owner 2026-11-23 (with the shogakai). **Revert:** the entries' history pages; delete the draft.
-
-### Content: reading notes for Golomstock 1990 and Portal 2000
-- **What:** (data only, audited) the last two scans compressed and OCR'd (Golomstock 303.6 → 255.5 MB, whole book
-  minus pp. 298–299 and 310–311; Portal 130.9 → 124.9 MB, extract to p. 189 minus pp. 64–65 and 182–183) and their
-  private reading notes loaded (contents + summary + chapters, files registered; both scans are two-page spreads, the
-  page mapping is in the file labels). 40 sources have notes now, none released. Portal gives Suh Se-ok's birth as 1927
-  (OCR), the entry 1929 — to check.
-- **Why:** owner 2026-11-16 ("do them all"). **Revert:** the notes' history / `DELETE FROM source_notes WHERE …`.
 
 ## 2026-11-16
 

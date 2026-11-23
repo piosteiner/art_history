@@ -278,7 +278,7 @@ test('back from an entry returns to the search it was opened from: search page, 
   const input = page.locator('.search-form input');
   await input.fill('hokusai');
   await page.locator('.search-results [role=option] a').first().click();
-  await expect(page).toHaveURL(/\/(artists|artworks)\//);
+  await expect(page).toHaveURL(/\/(artists|artworks|events)\//);   // since 2026-11-23 an event ("Hokusai's Great Daruma …") can come first
   await expect(input).toHaveValue('');
   await page.goBack();
   await expect(input).toHaveValue('hokusai');
@@ -346,7 +346,8 @@ test('searches read exclusions and plain words; a misspelt word is corrected (AP
   await expect(page.locator('#count .query-fix')).toContainText('showing “Hokusai”');
   await expect(cards.first()).toBeVisible();
   await page.locator('#count button[data-literal]').click();
-  await expect(page.locator('#items')).toContainText('Nothing found for “hokusia”');
+  // as typed: nothing, or only similar names (since 2026-11-23 the handbill "Hokusai's great Daruma …" is one)
+  await expect(page.locator('#items')).toContainText(/Nothing found for “hokusia”|Similar names/);
   // the search page: the same corrections
   await page.goto('/search?q=gaugin');
   await expect(page.locator('#count')).toContainText('nothing for “gaugin”');
@@ -629,6 +630,38 @@ test('network graph: nodes, details on click, filters in the URL', async ({ page
   await expect(page.locator('.graph-info h2')).toHaveText('Vincent van Gogh');
   await page.locator('.graph-cats input[value=influence]').uncheck();
   await expect(page).toHaveURL(/categories=/);
+  expect(errors).toEqual([]);
+});
+
+test('network grouping (2026-11-23): bundles that list and open, provenance and depth by kind of centre, a search to start', async ({ page }) => {
+  const errors = noErrors(page);
+  // around an artist: provenance off, two steps; other artists' works reached through them are bundled
+  await page.goto('/graph/artists/vincent-van-gogh');
+  await expect(page.locator('.node.root')).toHaveCount(1);
+  await expect(page.locator('.graph-cats input[value=provenance]')).not.toBeChecked();
+  await expect(page.locator('.seg button.on[data-depth]')).toHaveText('2');
+  const hokusai = page.locator('.node.bundle', { hasText: 'works by Katsushika Hokusai' });
+  await expect(hokusai).toHaveCount(1);
+  const before = await page.locator('.node').count();
+  await hokusai.dispatchEvent('click');
+  await expect(page.locator('.graph-info h2')).toContainText('works by Katsushika Hokusai');
+  expect(await page.locator('.graph-info .graph-links li').count()).toBeGreaterThan(2);
+  await page.locator('.graph-info [data-open]').click();
+  await expect(page.locator('.node.bundle', { hasText: 'works by Katsushika Hokusai' })).toHaveCount(0);
+  expect(await page.locator('.node').count()).toBeGreaterThan(before);
+  // around a collector: provenance on, one step, his works bundled by artist
+  await page.goto('/graph/people/emil-georg-buhrle');
+  await expect(page.locator('.graph-cats input[value=provenance]')).toBeChecked();
+  await expect(page.locator('.seg button.on[data-depth]')).toHaveText('1');
+  expect(await page.locator('.node.bundle', { hasText: /works by / }).count()).toBeGreaterThan(5);
+  // ticking provenance around an artist stays in the address (the default there is off)
+  await page.goto('/graph/artists/vincent-van-gogh');
+  await page.locator('.graph-cats input[value=provenance]').check();
+  await expect(page).toHaveURL(/categories=[^&]*provenance/);
+  // the start page: search for any entry
+  await page.goto('/graph');
+  await page.locator('.graph-search input').fill('Hokusai');
+  await expect(page.locator('.graph-search-results a[href="/graph/artists/katsushika-hokusai"]')).toBeVisible();
   expect(errors).toEqual([]);
 });
 

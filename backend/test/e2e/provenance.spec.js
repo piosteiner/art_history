@@ -213,6 +213,34 @@ test('the provenance on the map: where it was made from where the artist lived, 
   expect(again.features.find((f) => f.properties.kind === 'creation').properties.place_basis).toBe('created_in');
 });
 
+test('the map goes back to the owner after an ended custody, and home after the last exhibition; a far end is a finding (258)', async ({ request }) => {
+  const W = sql("SELECT entity_id('artwork', 'test-bassin')");
+  const stops = async () => (await api(request, '/map/artworks/test-bassin')).provenance.features
+    .filter((f) => f.properties.layer === 'provenance_stop').map((f) => [f.properties.step, f.properties.place.slug, f.properties.place_basis]);
+  const finding = () => sql(`SELECT count(*) FROM quality_issues WHERE check_id = 'provenance_map_end' AND entity_id = ${W}`);
+  // the museum owns it since 1952; a collecting point in Sorel kept it 1945–1953
+  sql(`INSERT INTO provenance (artwork_id, position, owner_institution_id, method, acquired, acquired_label, location_id)
+         VALUES (${W}, 1, entity_id('institution', 'test-kunsthaus'), 'purchase', '[1940-01-01,1941-01-01)', '1940', entity_id('place', 'test-zurich'));
+       INSERT INTO provenance (artwork_id, position, owner_person_id, role, method, acquired, acquired_label, ended, ended_label, location_id)
+         VALUES (${W}, 2, entity_id('person', 'test-buhrle'), 'custodian', 'unknown', '[1945-01-01,1946-01-01)', '1945',
+                 '[1953-01-01,1954-01-01)', '1953', entity_id('place', 'test-sorel'))`);
+  expect(await stops()).toEqual([[1, 'test-zurich', 'recorded'], [2, 'test-sorel', 'recorded'], [2, 'test-zurich', 'returned']]);
+  await settled();
+  expect(finding()).toBe('0');
+  // the custody still runs: no return — and the map ends 500 km from the museum
+  sql(`UPDATE provenance SET ended = NULL, ended_label = NULL WHERE artwork_id = ${W} AND position = 2`);
+  expect(await stops()).toEqual([[1, 'test-zurich', 'recorded'], [2, 'test-sorel', 'recorded']]);
+  await settled();
+  expect(finding()).toBe('1');
+  // only the owner, shown in Sorel last: home again after the exhibition
+  sql(`DELETE FROM provenance WHERE artwork_id = ${W} AND position = 2;
+       INSERT INTO provenance_records (provenance_id, position, kind, date, date_label, place_id)
+         SELECT id, 1, 'exhibition', '[1960-01-01,1961-01-01)', '1960', entity_id('place', 'test-sorel') FROM provenance WHERE artwork_id = ${W}`);
+  expect((await stops()).at(-1)).toEqual([1, 'test-zurich', 'returned']);
+  await settled();
+  expect(finding()).toBe('0');
+});
+
 test('provenance flags and research 1933–1945: a flagged holder is a warning; links to Lost Art and others (068)', async ({ userA, request }) => {
   sql(`INSERT INTO provenance (artwork_id, position, owner_person_id, method, acquired, acquired_label) VALUES
          (entity_id('artwork', 'test-bassin'), 1, entity_id('person', 'test-michel-monet'), 'inheritance', '[1926-01-01,1927-01-01)', '1926'),

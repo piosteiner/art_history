@@ -654,6 +654,17 @@ svg.graph:active { cursor: grabbing; }
 .graph-info .muted { margin: 0 0 .6rem; }
 .graph-actions { display: flex; flex-wrap: wrap; gap: .4rem; }
 .graph-links li { font-size: .88rem; }
+/* 2026-11-23: names of minor entries only on hover or beside the one in focus; bundles of entries linked to one other */
+.node.quiet text.name { opacity: 0; transition: opacity .15s; }
+.node.quiet:hover text.name, .node.quiet.near text.name, .node.quiet.selected text.name { opacity: 1; }
+.node.bundle circle { fill: var(--surface); stroke: var(--n); stroke-width: 2.5; stroke-dasharray: 4 2.5; }
+.node.bundle text.count { font-size: 11px; font-weight: 700; fill: var(--text); stroke: none; }
+.node.bundle text.name { font-style: italic; }
+.graph-search { position: relative; max-width: 36rem; margin: 1rem 0 1.5rem; }
+.graph-search input { width: 100%; font: inherit; padding: .55rem .8rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); color: var(--text); }
+.graph-search-results { margin: .3rem 0 0; }
+.graph-search-results li { padding: .2rem 0; }
+.graph-examples li { padding: .15rem 0; }
 
 /* footer and privacy page */
 .site-footer {
