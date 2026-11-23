@@ -93,6 +93,14 @@ Format: date — what — why — how to revert.
   catalogue and Tajima's studies, the database itself (refuses automated access).
 - **Why:** owner 2026-11-23 (with the shogakai). **Revert:** the entries' history pages; delete the draft.
 
+### Content: reading notes for Golomstock 1990 and Portal 2000
+- **What:** (data only, audited) the last two scans compressed and OCR'd (Golomstock 303.6 → 255.5 MB, whole book
+  minus pp. 298–299 and 310–311; Portal 130.9 → 124.9 MB, extract to p. 189 minus pp. 64–65 and 182–183) and their
+  private reading notes loaded (contents + summary + chapters, files registered; both scans are two-page spreads, the
+  page mapping is in the file labels). 40 sources have notes now, none released. Portal gives Suh Se-ok's birth as 1927
+  (OCR), the entry 1929 — to check.
+- **Why:** owner 2026-11-16 ("do them all"). **Revert:** the notes' history / `DELETE FROM source_notes WHERE …`.
+
 ## 2026-11-16
 
 ### Content: reading notes, first 23 sources; Mason, Kolb, two sources
