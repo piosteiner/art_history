@@ -763,7 +763,11 @@ export interface SitesMap { type: 'FeatureCollection'; features: Feature<GeoJSON
 
 export interface PlaceCountProps { slug: string; name: string; kind: string | null; country_code: string | null; presence_count: number; association_count: number }
 /** Events with a position (`/v1/map/events`): area, else exact spot, else the place's marker. */
-export interface EventMapProps { slug: string; name: string; kind: string | null; period: DateRange | null; place: Ref | null; precision: 'area' | 'spot' | 'place' }
+export interface EventMapProps {
+  slug: string; name: string; kind: string | null; period: DateRange | null; place: Ref | null; precision: 'area' | 'spot' | 'place';
+  /** the entries it touched, "type/slug" (concerns, participated in, depicts, provenance steps in it) */
+  linked?: string[];
+}
 export interface EventsMap { type: 'FeatureCollection'; features: Feature<GeoJSON.Geometry, EventMapProps>[] }
 
 export interface PlacesMap { type: 'FeatureCollection'; features: Feature<PointGeometry, PlaceCountProps>[] }

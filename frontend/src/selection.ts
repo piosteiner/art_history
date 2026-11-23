@@ -22,7 +22,7 @@ export const ALL: Selection = {
   institution: { mode: 'auto' }, event: { mode: 'auto' },
 };
 
-const isGroup = (t: string): t is Group => (GROUPS as string[]).includes(t);
+export const isGroup = (t: string): t is Group => (GROUPS as string[]).includes(t);
 export const isLayer = (t: string): t is Layer => (LAYERS as string[]).includes(t);
 /** What a missing parameter means: everything for the entries, the automatic choice for the layers. */
 export const defaultPick = (k: Key): Pick => (isLayer(k) ? { mode: 'auto' } : { mode: 'all' });

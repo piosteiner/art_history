@@ -24,7 +24,7 @@ import {
 import { fit, overlaps } from '../map-core';
 import { mountPickers, type PickerGroup } from '../picker';
 import { replaceQuery } from '../router';
-import { chosen, GROUPS, includes, layerIncludes, parseSelection, writeSelection, type Selection } from '../selection';
+import { chosen, GROUPS, includes, isGroup, layerIncludes, parseSelection, writeSelection, type Selection } from '../selection';
 import { reducedMotion } from '../theme';
 import { renderTimeline, type TimelineRow } from '../timeline';
 import type { DateRange, EntityType, EventsMap, FeaturedView, Plural, PresenceMap, ProvenanceMap, SitesMap, StopProps } from '../types';
@@ -158,15 +158,35 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
   const spanText = (w: NonNullable<Window>) => (w.from === w.to ? String(w.from) : `${w.from}–${w.to}`);
 
   /**
-   * Without a time window: the years the chosen entries cover — null until the lists are in (then every event),
-   * empty (no event) when nothing chosen has a date.
+   * The lives the chosen entries span: artists' and people's lives (or their active years), movements' periods,
+   * works' making — not polities (centuries) and not the works' time until today (owner 2026-11-23: an event outside
+   * every life chosen matters only when it touched something chosen).
    */
-  function selectionSpan(): Window {
-    if (!lists) return null;
-    const ranges = entityRows().flatMap((r) => [r.from, r.to]).filter((d): d is DateRange => !!d);
-    const from = Math.min(...ranges.map((d) => d.from_year ?? Infinity));
-    const to = Math.max(...ranges.map((d) => d.to_year ?? d.from_year ?? -Infinity));
-    return Number.isFinite(from) && Number.isFinite(to) ? { from, to } : { from: Infinity, to: -Infinity };
+  function selectionLives(): { from: number; to: number }[] {
+    return entityRows().filter((r) => r.group !== 'Polities').flatMap((r) => {
+      const from = r.from?.from_year;
+      // no death date: living if born within the last 100 years (as the Quality check has it), else a life of 90 years
+      const to = r.group === 'Artworks' ? (r.from?.to_year ?? from)
+        : r.to ? (r.to.to_year ?? r.to.from_year)
+        : from != null && from < THIS_YEAR - 100 ? from + 90 : THIS_YEAR;
+      return from != null && to != null ? [{ from, to }] : [];
+    });
+  }
+  /**
+   * "auto" for events: linked to something chosen (it concerns them, they took part, a work depicts it, a provenance
+   * step happened in it; museums: those linked to what the map shows) or within a chosen life. Every event before the
+   * lists are in.
+   */
+  function eventMatcher(): (f: EventsMap['features'][number]) => boolean {
+    if (!lists) return () => true;
+    const lives = selectionLives();
+    const museums = linkedMuseums();
+    const touched = (ref: string) => {
+      const [type, slug] = ref.split('/') as [EntityType, string];
+      if (type === 'institution') return museums.has(slug);
+      return isGroup(type) && includes(sel, type, slug, artistsOf);
+    };
+    return (f) => (f.properties.linked ?? []).some(touched) || lives.some((l) => overlaps(f.properties.period, l));
   }
   /** Museums linked to what the map shows: holders (now and before) of the works included, venues of the stays. */
   function linkedMuseums() {
@@ -185,18 +205,18 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
       ? includes(sel, 'artwork', f.properties.slug, artistsOf)
       : layerIncludes(sel, 'institution', f.properties.slug, (slug) => linked.has(slug))));
   }
-  /** Events in the window; "auto" without one: in the chosen entries' span (all of them before the lists are in). */
-  function eventShown(f: EventsMap['features'][number], span: Window) {
+  /** Events in the window (if one is set) that are picked — "auto": those that matter to what is chosen (eventMatcher). */
+  function eventShown(f: EventsMap['features'][number], matters: (f: EventsMap['features'][number]) => boolean) {
     if (win && !overlaps(f.properties.period, win)) return false;
-    return layerIncludes(sel, 'event', f.properties.slug, () => !span || overlaps(f.properties.period, span));
+    return layerIncludes(sel, 'event', f.properties.slug, () => matters(f));
   }
   /** What "auto" picks in the pickers, so their ticks and counts show it. */
   function autoPicks() {
     const linked = linkedMuseums();
-    const span = win ?? selectionSpan();
+    const matters = eventMatcher();
     return {
       institution: new Set((sites?.features ?? []).filter((f) => f.properties.type === 'institution' && existed(f) && linked.has(f.properties.slug)).map((f) => f.properties.slug)),
-      event: new Set((events?.features ?? []).filter((f) => !span || overlaps(f.properties.period, span)).map((f) => f.properties.slug)),
+      event: new Set((events?.features ?? []).filter((f) => (!win || overlaps(f.properties.period, win)) && matters(f)).map((f) => f.properties.slug)),
     };
   }
   let autoNow = { institution: new Set<string>(), event: new Set<string>() }; // drawLayers() fills it
@@ -211,11 +231,11 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
       sitesKey.innerHTML = html`<i class="dot" style="background:${COLORS.site}"></i> Museums and sites (${String(shown.length)}${win ? ` that existed in ${spanText(win)}` : ''})`.value;
     }
     if (events?.features.length) {
-      const span = win ?? selectionSpan();
-      const shown = events.features.filter((f) => eventShown(f, span));
+      const matters = eventMatcher();
+      const shown = events.features.filter((f) => eventShown(f, matters));
       showEvents(map, { ...events, features: shown }, { visible: true, window: null });
       eventsKey.hidden = false;
-      const range = span && Number.isFinite(span.from) && (win || sel.event.mode === 'auto') ? ` in ${spanText(span)}` : '';
+      const range = win ? ` in ${spanText(win)}` : '';
       eventsKey.innerHTML = html`<i class="dot" style="background:${COLORS.event}"></i> Events (${String(shown.length)}${range})`.value;
     }
   }
@@ -677,11 +697,11 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
   /** Built once; when the picks or the events layer change only its rows are replaced (zoom and typed years stay). */
   function drawTimeline() {
     if (!lists) return;
-    // events as the picker has them, in the chosen entries' span — not the window: the timeline is where it is picked
-    const span = selectionSpan();
+    // events as the picker has them — not the window: the timeline is where it is picked
+    const matters = eventMatcher();
     const rows: TimelineRow[] = [
       ...entityRows(),
-      ...(events ? events.features.filter((f) => f.properties.period && layerIncludes(sel, 'event', f.properties.slug, () => !span || overlaps(f.properties.period, span)))
+      ...(events ? events.features.filter((f) => f.properties.period && layerIncludes(sel, 'event', f.properties.slug, () => matters(f)))
         .map((f) => ({ group: 'Events', label: f.properties.name, href: href('event', f.properties.slug), from: f.properties.period, to: f.properties.period })) : []),
     ];
     if (timeline) return timeline.setRows(rows);
@@ -717,7 +737,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
         // only museums with a place of their own on the map (the sites layer); events with a position
         { group: 'institution', plural: 'institutions', label: 'Museums', autoLabel: 'the museums linked to what the map shows — holding or having held the works, or where the people stayed — and in a time window only those that existed then',
           entries: entries('institutions', l.institutions.filter((i) => !sites || sites.features.some((f) => f.properties.type === 'institution' && f.properties.slug === i.slug))) },
-        { group: 'event', plural: 'events', label: 'Events', autoLabel: 'the events in the time window — without one, in the years of what is chosen (the artists’ lives, the works until today)',
+        { group: 'event', plural: 'events', label: 'Events', autoLabel: 'the events that matter to what is chosen — linked to it (concerning it, taken part in, depicted, a step of a work’s provenance; the museums shown) or within the chosen artists’ and people’s lives, movements’ periods and works’ making — and in a time window only those then',
           entries: entries('events', l.events.filter((e) => !events || events.features.some((f) => f.properties.slug === e.slug))) },
       ];
       pickers = mountPickers(pickersEl, groups, sel, (next) => {

@@ -2396,7 +2396,7 @@ test('events list: cards with date and place, filter by kind', async ({ page }) 
 async function sampleEvents(page: Page) {
   await page.route(/\/v1\/map\/events$/, (r) => r.fulfill({ json: { type: 'FeatureCollection', features: [
     { type: 'Feature', geometry: FIRE.area, properties: { type: 'event', slug: FIRE.slug, name: FIRE.name, kind: 'fire', period: FIRE_PERIOD, place: { slug: 'edo', name: 'Edo' }, precision: 'area' } },
-    { type: 'Feature', geometry: { type: 'Point', coordinates: [6.63, 46.52] }, properties: { type: 'event', slug: TRIAL.slug, name: TRIAL.name, kind: 'trial', period: TRIAL.period, place: TRIAL.place, precision: 'place' } },
+    { type: 'Feature', geometry: { type: 'Point', coordinates: [6.63, 46.52] }, properties: { type: 'event', slug: TRIAL.slug, name: TRIAL.name, kind: 'trial', period: TRIAL.period, place: TRIAL.place, precision: 'place', linked: ['artwork/bedroom-in-arles'] } },
   ] } }));
   const fireItem = { ...FIRE, location: null, relationships: undefined, parts: undefined };
   await page.route(/\/v1\/events\?/, (r) => r.fulfill({ json: { data: [fireItem, TRIAL], total: 2, limit: 500, offset: 0 } }));
@@ -2423,19 +2423,23 @@ test('explore: an events layer that follows the time window, and events on the t
   await expect(page).toHaveURL(/events=none/);
 });
 
-test('explore: events on "auto" follow the years of what is chosen; chosen works run on the timeline until today', async ({ page }) => {
+test('explore: events on "auto" are those linked to what is chosen or within the chosen lives (owner 2026-11-23); works no longer stretch the span', async ({ page }) => {
   await sampleEvents(page);
-  // Van Gogh alone: 1853–1890 — neither the fire of 1657 nor the trial of 1970
+  // Van Gogh alone, 1853–1890: neither the fire of 1657 nor the trial of 1970
   await page.goto('/?artists=vincent-van-gogh&movements=none&polities=none&people=none&artworks=none');
-  await expect(page.locator('#events-toggle')).toContainText('Events (0 in 1853–1890)');
+  await expect(page.locator('#events-toggle')).toContainText('Events (0)');
   await expect(page.locator('#timeline')).not.toContainText('Bührle trial');
-  // a work of his added: its bar runs until today, and with it the span — the trial of 1970 is in
+  // his works added: they run on the timeline until today, but only the trial comes — it concerns one of them
   await page.goto('/?artists=vincent-van-gogh&movements=none&polities=none&people=none&artworks=by-artists');
   await expect(page.locator('#timeline')).toContainText('Artworks');
-  await expect(page.locator('#events-toggle')).toContainText(/Events \(1 in 18\d\d–20\d\d\)/);
+  await expect(page.locator('#events-toggle')).toContainText('Events (1)');
   await expect(page.locator('#timeline')).toContainText('Bührle trial');
   await expect(page.locator('#timeline')).not.toContainText('Great Fire of Meireki');
-  // chosen by hand: the fire too, also outside the span
+  // Picasso (1881–1973) without works: the trial of 1970 happened in his life
+  await page.goto('/?artists=pablo-picasso&movements=none&polities=none&people=none&artworks=none');
+  await expect(page.locator('#events-toggle')).toContainText('Events (1)');
+  await expect(page.locator('#timeline')).toContainText('Bührle trial');
+  // chosen by hand: the fire too, also outside every life
   await page.goto('/?artists=vincent-van-gogh&movements=none&polities=none&people=none&artworks=none&events=great-fire-of-meireki');
   await expect(page.locator('#events-toggle')).toContainText('Events (1)');
   await expect(page.locator('#timeline')).toContainText('Great Fire of Meireki');
