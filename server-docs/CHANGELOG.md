@@ -42,7 +42,8 @@ Format: date — what — why — how to revert.
   Moscow); one finding, *The Gates of Hell* in Seoul (only the foundry step). Data: *Der Vesuv von Ischia aus gesehen*
   — the Finarte auction (Dec 2008) moved before Sveaas and the gift (it was last); *Sunflowers* (Van Gogh Museum) —
   step 7, custodian Van Gogh Museum from 2 June 1973 (permanent loan from the foundation), cited like step 5. Test:
-  e2e `provenance.spec.js` "the map goes back to the owner …".
+  e2e `provenance.spec.js` "the map goes back to the owner …". Deployed 2026-11-23 with `backend/deploy.sh` (unit 97, e2e 376
+  passed, 1 flaky: `spatial.spec.js` prices); the finding is stored by the nightly `refresh_quality_full()`.
 - **Why:** owner 2026-11-23 (the Mona Lisa's map ended in Rome): "yes, both" — the cases checked and a check.
 - **Revert:** `provenance_stops()` as in 210 (`db/migrations/210_creation_place_longest_stay.sql`), the view without the
   last UNION block; the data on the works' history pages.
