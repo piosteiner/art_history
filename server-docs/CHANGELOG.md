@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-23
 
+### Network: full screen, pages in a new tab, the whole family
+- **What:** (site only, `frontend/src/views/graph.ts`, `style.css`) a "⛶ Full screen" button beside Fit — controls,
+  network, side panel and legend fill the screen (Fullscreen API; where there is none, the stage fills the window;
+  Esc or "✕ Leave full screen"), the network refits to the new size. Links in the side panel ("Open page ↗", the
+  links of an entry or a bundle's members) open in a new tab; "Center the network here" stays. Around a person or an
+  artist the family links are fetched once more four steps out (`/v1/graph/…?depth=4&types=<family>`) and joined —
+  the whole family tree whatever the steps (Erich Lederer at one step shows his father August). `/graph` examples:
+  Ferdinando II de' Medici, Unkei. Rows of a family tree allow for the centre's bold name. Test "network: full
+  screen, pages in a new tab, the whole family …".
+- **Why:** owner 2026-11-23: "like the map the network views also need a full screen view … if a point is selected
+  and a page is opened the page should open in a new tab … the family tree is always good to show … i couldnt find
+  an example".
+- **Revert:** `git revert` the commit.
+
 ### Network: provenance as a chain, families as a family tree, names in small networks
 - **What:** API `/v1/graph/…` — provenance links (owned by, held by, passed to, commissioned, creator) carry
   `artwork` (the work whose history they are) and `position` (the step) — `src/routes/graph.js`, e2e

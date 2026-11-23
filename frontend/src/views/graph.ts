@@ -44,6 +44,8 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
         <li><a href="/graph/movements/japonisme">Japonisme</a> <span class="muted">— Japanese prints and the painters in Europe who took them up</span></li>
         <li><a href="/graph/people/emil-georg-buhrle">Emil Bührle</a> <span class="muted">— a collection and where its works came from</span></li>
         <li><a href="/graph/artists/katsushika-hokusai">Katsushika Hokusai</a> <span class="muted">— pupils, series and the painters he influenced</span></li>
+        <li><a href="/graph/people/ferdinando-ii-de-medici">Ferdinando II de' Medici</a> <span class="muted">— a family tree: his father, brothers, wife and son, and what they collected</span></li>
+        <li><a href="/graph/artists/unkei">Unkei</a> <span class="muted">— a sculptors' family: his father and teacher Kōkei, his sons, the Kei school</span></li>
         <li><a href="/graph/events/tani-buncho-manpachiro-gathering-1792">Tani Bunchō's gathering, 1792</a> <span class="muted">— a painting-and-calligraphy party and its people</span></li>
       </ul></section>`);
     const input = main.querySelector<HTMLInputElement>('.graph-search input')!;
@@ -93,13 +95,18 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       const cats = chosenCats ?? defaultCats;
       const types = cats.length !== GRAPH_CATEGORIES.length ? vocab.filter((v) => cats.includes(v.category)).map((v) => v.code) : undefined;
       // each work's artist, for bundling works whose artist the network doesn't reach (the list the search uses too)
-      const [g, works] = await Promise.all([getGraph(plural, slug, depth, types), listAll('artworks').catch(() => null)]);
+      // the whole family tree, whatever the steps (owner 2026-11-23: "the family tree is always good to show") — the
+      // family links alone, four generations out, around a person or an artist
+      const familyTypes = vocab.filter((v) => v.category === 'family').map((v) => v.code);
+      const withFamily = cats.includes('family') && ['people', 'artists'].includes(plural) && familyTypes.length > 0;
+      const [g, works, fam] = await Promise.all([getGraph(plural, slug, depth, types), listAll('artworks').catch(() => null),
+        withFamily ? getGraph(plural, slug, 4, familyTypes).catch(() => null) : null]);
       if (!current()) return;
       creators.clear();
       for (const w of works?.data ?? []) if (w.creator) creators.set(`artwork/${w.slug}`, { id: `artist/${w.creator.slug}`, name: w.creator.name });
       const redraw = () => {
         stop?.();
-        stop = draw(g.root, g.nodes, g.edges, g.truncated, depth, cats, redraw);
+        stop = draw(g.root, g.nodes, g.edges, g.truncated, depth, cats, redraw, fam);
       };
       redraw();
     })
@@ -113,10 +120,20 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     navigate(`/graph/${plural}/${encodeURIComponent(slug!)}?${p.toString().replace(/%2C/g, ',')}`);
   }
 
-  function draw(rootId: string, nodesIn: GraphNode[], edgesIn: GraphEdge[], truncated: boolean, depthNow: number, cats: Category[], redraw: () => void) {
+  function draw(rootId: string, nodesIn: GraphNode[], edgesIn: GraphEdge[], truncated: boolean, depthNow: number, cats: Category[], redraw: () => void,
+    family: { nodes: GraphNode[]; edges: GraphEdge[] } | null = null) {
     const known = new Set(nodesIn.map((n) => n.id));
     const sent = edgesIn.filter((e) => known.has(e.source) && known.has(e.target));
     const walked = pruneProvenance(rootId, nodesIn, sent, depthNow);
+    if (family) {   // relatives beyond the steps join with their family links
+      const have = new Set(walked.nodes.map((n) => n.id));
+      walked.nodes.push(...family.nodes.filter((n) => !have.has(n.id)));
+      family.nodes.forEach((n) => have.add(n.id));
+      const key = (e: GraphEdge) => `${e.source}\t${e.type}\t${e.target}`;
+      const seen = new Set(walked.edges.map(key));
+      walked.edges.push(...family.edges.filter((e) => have.has(e.source) && have.has(e.target) && !seen.has(key(e))));
+      nodesIn = [...nodesIn, ...family.nodes.filter((n) => !known.has(n.id))];
+    }
     const raw = walked.edges;
     const holderRoot = ['person', 'institution'].includes(nodesIn.find((n) => n.id === rootId)?.type ?? '');
     const shown = sharedParentSiblings(raw);
@@ -139,6 +156,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     render(main, html`<section class="page graph-page">
       <p class="crumbs"><a href="/graph">Network</a> / ${TYPE_LABEL[root.type]}</p>
       <h1>Network around ${link(root.type, root.slug, root.name)}</h1>
+      <div class="graph-stage">
       <div class="graph-controls">
         <div class="seg" role="group" aria-label="Depth">
           <span class="muted">Steps</span>
@@ -152,6 +170,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
           <button type="button" data-zoom="out" aria-label="Zoom out">−</button>
           <button type="button" data-zoom="in" aria-label="Zoom in">+</button>
           <button type="button" data-zoom="fit">Fit</button>
+          <button type="button" data-zoom="full" aria-pressed="false" title="Full screen (Esc to leave)">⛶ Full screen</button>
         </div>
       </div>
       <p class="muted small">${walked.nodes.length} entries, ${raw.length} links${truncated ? ' (cut off at 500 entries: choose fewer steps or kinds of links)' : ''}${nodes.some((n) => n.bundle) ? '; entries of one kind with the same links are bundled — click a bundle to list or open it' : ''}.
@@ -162,12 +181,13 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       </div>
       <div class="legend">${usedTypes.map((t) => html`<span><i class="dot node-${t}"></i>${TYPE_LABEL[t]}</span>`)}
         ${usedCats.map((c) => html`<span class="cat-${c}"><i class="line swatch"></i>${CATEGORY_LABEL[c] ?? c}</span>`)}</div>
+      </div>
     </section>`);
 
     const svgEl = main.querySelector<SVGSVGElement>('svg.graph')!;
     const info = main.querySelector<HTMLElement>('.graph-info')!;
-    const width = svgEl.clientWidth || 900;
-    const height = svgEl.clientHeight || 600;
+    let width = svgEl.clientWidth || 900;
+    let height = svgEl.clientHeight || 600;
     const svg = select(svgEl).attr('viewBox', `0 0 ${width} ${height}`);
 
     // one arrowhead per category, coloured through CSS
@@ -233,7 +253,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       for (let i = 0; i < familyNodes.length; i++) for (let j = i + 1; j < familyNodes.length; j++) {
         const [a, b] = familyNodes[i].x! <= familyNodes[j].x! ? [familyNodes[i], familyNodes[j]] : [familyNodes[j], familyNodes[i]];
         if (Math.abs(a.y! - b.y!) > 30) continue;
-        const short = 36 + 6.5 * a.name.length - (b.x! - a.x!);
+        const short = 36 + (a === root ? 8 : 6.5) * a.name.length - (b.x! - a.x!);
         if (short > 0) { const push = Math.min(short, 80) * alpha; b.vx! += push; a.vx! -= push; }
       }
       // names: two labels on one line don't run into each other — the right one moves up or down
@@ -301,7 +321,34 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       else if (b.dataset.zoom === 'in') svg.call(zoomer.scaleBy, 1.4);
       else if (b.dataset.zoom === 'out') svg.call(zoomer.scaleBy, 1 / 1.4);
       else if (b.dataset.zoom === 'fit') fit();
+      else if (b.dataset.zoom === 'full') toggleFull();
     });
+    // full screen like the map's: controls, network, side panel and legend together; where the browser has no
+    // Fullscreen API (iPhone) the stage fills the window instead
+    const stage = main.querySelector<HTMLElement>('.graph-stage')!;
+    const fullBtn = main.querySelector<HTMLButtonElement>('[data-zoom="full"]')!;
+    const isFull = () => document.fullscreenElement === stage || stage.classList.contains('pseudo-full');
+    function toggleFull() {
+      if (isFull()) {
+        if (document.fullscreenElement) void document.exitFullscreen();
+        else { stage.classList.remove('pseudo-full'); resized(); }
+      } else if (stage.requestFullscreen) stage.requestFullscreen().catch(() => { stage.classList.add('pseudo-full'); resized(); });
+      else { stage.classList.add('pseudo-full'); resized(); }
+    }
+    function resized() {
+      fullBtn.setAttribute('aria-pressed', String(isFull()));
+      fullBtn.textContent = isFull() ? '✕ Leave full screen' : '⛶ Full screen';
+      requestAnimationFrame(() => {
+        width = svgEl.clientWidth || width;
+        height = svgEl.clientHeight || height;
+        svg.attr('viewBox', `0 0 ${width} ${height}`);
+        fit();
+      });
+    }
+    const onFull = () => resized();
+    document.addEventListener('fullscreenchange', onFull);
+    const onKey = (ev: KeyboardEvent) => { if (ev.key === 'Escape' && stage.classList.contains('pseudo-full')) toggleFull(); };
+    document.addEventListener('keydown', onKey);
     main.querySelector('.graph-cats')!.addEventListener('change', () => {
       const picked = [...main.querySelectorAll<HTMLInputElement>('.graph-cats input:checked')].map((i) => i.value as Category);
       setParams({ categories: picked.length ? picked : GRAPH_CATEGORIES });
@@ -365,6 +412,11 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       }
     });
 
+    // pages open in a new tab, so the network stays as it is (owner 2026-11-23); only re-centring stays here
+    const newTabs = () => info.querySelectorAll<HTMLAnchorElement>('a[href]:not([data-here])').forEach((a) => {
+      a.target = '_blank';
+      a.rel = 'noopener';
+    });
     function showInfo(n: Node | null) {
       if (!n) return render(info, html`<p class="muted">Click an entry to see its links here.</p>`);
       if (n.bundle) {
@@ -377,6 +429,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
           open.add(n.id);
           redraw();
         });
+        newTabs();
         return;
       }
       const mine = edges.filter((e) => (e.source as Node) === n || (e.target as Node) === n);
@@ -391,18 +444,24 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
           ${r.note ? html`<div class="rel-note">${r.note}</div>` : ''}</li>`;
       render(info, html`<h2>${n.name}</h2>
         <p class="muted">${TYPE_LABEL[n.type]}${n.kind ? ` · ${n.kind}` : ''}${n.period ? ` · ${n.period.label}` : ''}</p>
-        <p class="graph-actions"><a class="button-link" href="${href(n.type, n.slug)}">Open page</a>
-          ${n !== root ? html`<a class="button-link" href="${recenter(n)}">Center the network here</a>` : ''}</p>
+        <p class="graph-actions"><a class="button-link" href="${href(n.type, n.slug)}">Open page ↗</a>
+          ${n !== root ? html`<a class="button-link" data-here href="${recenter(n)}">Center the network here</a>` : ''}</p>
         <ul class="plain-list graph-links">${mine.flatMap((e) => {
           const other = ((e.source as Node) === n ? e.target : e.source) as Node;
           return other.bundle ? [html`<li class="cat-${e.category}"><i class="line swatch"></i>${other.name} <span class="muted">· ${CATEGORY_LABEL[e.category] ?? e.category}</span></li>`]
             : e.rels.map(relRow);
         })}</ul>`);
+      newTabs();
     }
 
     showInfo(null);
     document.title = `Network around ${root.name} · Art History`;
-    return () => sim.stop();
+    return () => {
+      sim.stop();
+      document.removeEventListener('fullscreenchange', onFull);
+      document.removeEventListener('keydown', onKey);
+      if (document.fullscreenElement === stage) void document.exitFullscreen();
+    };
   }
 
   return () => stop?.();

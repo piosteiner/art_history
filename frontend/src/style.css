@@ -633,6 +633,15 @@ svg.graph {
   border-radius: var(--radius); cursor: grab; touch-action: none; display: block;
 }
 svg.graph:active { cursor: grabbing; }
+/* full screen (button beside Fit): the stage fills the screen, the network takes what controls and legend leave */
+.graph-stage:fullscreen, .graph-stage.pseudo-full {
+  display: flex; flex-direction: column; background: var(--bg); padding: .6rem 1rem; box-sizing: border-box; overflow: hidden;
+}
+.graph-stage.pseudo-full { position: fixed; inset: 0; z-index: 1000; height: 100dvh; }
+.graph-stage:fullscreen .graph-wrap, .graph-stage.pseudo-full .graph-wrap { flex: 1 1 auto; min-height: 0; align-items: stretch; }
+.graph-stage:fullscreen svg.graph, .graph-stage.pseudo-full svg.graph { height: 100%; }
+.graph-stage:fullscreen .graph-info, .graph-stage.pseudo-full .graph-info { overflow-y: auto; max-height: 100%; }
+.graph-stage:fullscreen .legend, .graph-stage.pseudo-full .legend { flex: none; }
 .edge { stroke: var(--cat); stroke-width: 1.8; stroke-opacity: .75; fill: none; }
 .edge.uncertain { stroke-dasharray: 5 4; }
 .edge.implied { stroke-dasharray: 2 4; stroke-opacity: .4; } /* provenance: the period's end is only implied */

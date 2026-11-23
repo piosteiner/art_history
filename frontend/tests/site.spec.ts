@@ -3898,3 +3898,22 @@ test('network: every name shown in a small network (2026-11-23)', async ({ page 
   await expect(page.locator('svg.graph .node').first()).toBeVisible();
   await expect(page.locator('svg.graph .node.quiet')).toHaveCount(0);
 });
+
+test('network: full screen, pages in a new tab, the whole family whatever the steps (2026-11-23)', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });   // the layout finished at once: nodes hold still for clicks
+  // Erich Lederer, one step: his father August is two family steps away (Erich → Serena → August), shown all the same
+  await page.goto('/graph/people/erich-lederer?depth=1');
+  await expect(page.locator('svg.graph .node', { hasText: 'August Lederer' })).toHaveCount(1);
+  // a selected entry's page opens in a new tab; centring stays here
+  await page.locator('svg.graph .node', { hasText: 'Serena Lederer' }).locator('circle').click();
+  await expect(page.locator('.graph-info a', { hasText: 'Open page' })).toHaveAttribute('target', '_blank');
+  await expect(page.locator('.graph-info a', { hasText: 'Center the network here' })).not.toHaveAttribute('target', /.+/);
+  // full screen and back
+  const full = page.locator('button[data-zoom="full"]');
+  await full.click();
+  await expect(full).toHaveAttribute('aria-pressed', 'true');
+  const box = (await page.locator('svg.graph').boundingBox())!;
+  expect(box.height).toBeGreaterThan(page.viewportSize()!.height * 0.6);
+  await full.click();
+  await expect(full).toHaveAttribute('aria-pressed', 'false');
+});
