@@ -60,6 +60,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-23
 
+### Content: the Mona Lisa's map ended in Rome — return to the Louvre added
+- **What:** (data only, audited) provenance step 8: Musée du Louvre, restitution, "early 1914", Paris — after the farewell
+  tour through Italy (fr.wikipedia "Vol de La Joconde", now pinned to rev. 238811725). The map's last stop was the
+  Uffizi's custody with the stop in Rome, because nothing brought the work back.
+- **Why / Revert:** owner 2026-11-23; the work's history page.
+
 ### Content: shogakai and sekiga — painting-and-calligraphy gatherings of the late Edo period
 - **What:** (data only, audited) from a research dossier (Japanese and English sources, quotes checked against the
   texts): 28 sources (Campbell 1987 *Kinsei bungei* 47, Koyama 2026 *Bulletin of the Edo-Tokyo Museum* 16, Washihara
