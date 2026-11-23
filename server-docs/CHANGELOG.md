@@ -58,6 +58,23 @@ Format: date — what — why — how to revert.
 - **Why:** owner's decision on the national museums' three databases (254); wrong place and number found on the way.
 - **Revert:** audit_log (source 'script', 2026-11-17).
 
+## 2026-11-23
+
+### Content: shogakai and sekiga — painting-and-calligraphy gatherings of the late Edo period
+- **What:** (data only, audited) from a research dossier (Japanese and English sources, quotes checked against the
+  texts): 28 sources (Campbell 1987 *Kinsei bungei* 47, Koyama 2026 *Bulletin of the Edo-Tokyo Museum* 16, Washihara
+  2015, Omoto 2004, Iwasa 2005, Markus 1993 (metadata only), Nihon kokugo daijiten / Nipponica / Daijisen / Sekai
+  daihyakka entries, museum records of Cleveland and the Met, Katō's *Ukiyo-e bunken shiryōkan*, ja.wikipedia rev.
+  111613908); glossary terms `shogakai`, `sekiga`, `yoriai-gaki`; artworks: Kyōsai, *Calligraphy and Painting Party*
+  (Cleveland 1983.88, CC0 image), Kyōsai, *Gathering at the Nakamurarō* (Met 2023.583.34), Hiroshige, *Kawachiya at
+  Yanagibashi* (Met JP1164), the Edo-Tokyo Museum's invitation (90210558), Hokusai's Nagoya handbill (Nagoya City
+  Museum); seven events (Bunchō's gathering 9 Feb 1792 — the only date converted from the lunar calendar; Kyōden's
+  1792; the 1838 dispute; Kita Buichi's; Kyōsai's arrest 1870; Hokusai's great Daruma 1804 and 1817 — lunar dates kept
+  in the labels, the year as range). New from Wikidata: artists `kawanabe-kyosai`, `santo-kyoden`, person
+  `ota-nanpo`, institutions `edo-tokyo-museum`, `nagoya-city-museum` (an address place the import made removed).
+  Left out: three Met works whose link to shogakai rests on search summaries only.
+- **Why:** owner 2026-11-23 — the topic that started the project. **Revert:** the entries' history pages.
+
 ## 2026-11-16
 
 ### Content: reading notes, first 23 sources; Mason, Kolb, two sources
