@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-23
 
+### Content: site changelog and documentation drafts for 2026-11-23
+- **What:** site changelog entry 2026-11-23 (unpublished draft, 14 items: network views, full screen, search, family
+  tree, chains, arrows, bundles, Hodler/Menn, start-map events, provenance return, 195 family links, shogakai, Heian
+  jinbutsu shi, "Start einer Idee"). Documentation (`projekt-dokumentation`) as drafts of the owner's account: chapter
+  12 "Website" — a sentence each appended to the Network and Start-map bullets, new section "Netzwerk" with "Ansichten
+  des Netzwerks" before "Vorschaubilder"; chapter 14 "Provenienz" — a paragraph on the Mona Lisa's return and the
+  return rule after "Design". Live after the owner publishes.
+- **Why:** owner 2026-11-23. **Revert:** delete the items / drafts in the CMS.
+
 ### Start map: events on "auto" only where they matter
 - **What:** the events layer's and timeline's "auto" took every event in the years of what is chosen — and chosen works
   run until today, so a Gauguin/van Gogh view listed ~45 events up to 2025 (Korean treaties, World War II, the Kinkaku-ji
