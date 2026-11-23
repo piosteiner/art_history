@@ -74,6 +74,17 @@ export function pruneProvenance(rootId: string, nodes: GraphNode[], edges: Graph
   };
 }
 
+/**
+ * Relationships written from the receiving side: their arrow is drawn the other way, so that an arrow always shows
+ * what passes on — teacher → student, influence → influenced, parent → child, original → copy, artist → work, author →
+ * work (owner 2026-11-23: "Hodler → student of → Menn" read as Hodler teaching Menn). The texts keep the wording.
+ */
+const FLOWS_BACK = new Set(['student_of', 'influenced_by', 'influenced_by_culture_of', 'inspired_by', 'child_of',
+  'copy_after', 'based_on', 'printed_from', 'creator', 'written_by']);
+/** The end an arrow starts from. */
+export const flowFrom = (r: GraphEdge) => (FLOWS_BACK.has(r.type) ? r.target : r.source);
+const flowTo = (r: GraphEdge) => (FLOWS_BACK.has(r.type) ? r.source : r.target);
+
 /** One edge per pair of entries. The pair's category is that of its first relationship (the API sorts by importance). */
 export function mergeEdges(edges: GraphEdge[]): GEdge[] {
   const byPair = new Map<string, GEdge>();
@@ -81,12 +92,12 @@ export function mergeEdges(edges: GraphEdge[]): GEdge[] {
     const key = e.source < e.target ? `${e.source}\t${e.target}` : `${e.target}\t${e.source}`;
     const m = byPair.get(key);
     if (!m) {
-      byPair.set(key, { source: e.source, target: e.target, category: e.category, rels: [e], directed: !e.symmetric,
+      byPair.set(key, { source: flowFrom(e), target: flowTo(e), category: e.category, rels: [e], directed: !e.symmetric,
         uncertain: !!e.certainty && e.certainty !== 'attested', implied: e.end_basis === 'implied' });
       continue;
     }
     m.rels.push(e);
-    if (e.symmetric || e.source !== m.source) m.directed = false;
+    if (e.symmetric || flowFrom(e) !== m.source) m.directed = false;
     m.uncertain &&= !!e.certainty && e.certainty !== 'attested';   // uncertain only if every link is
     m.implied &&= e.end_basis === 'implied';
   }
@@ -124,7 +135,7 @@ export function bundle(rootId: string, nodes: GraphNode[], edges: GEdge[],
   for (const n of nodes) {
     const atRoot = nbrs.get(n.id)!.has(rootId);
     if (n.id === rootId || n.type !== 'artwork' || (atRoot && !holderRoot)) continue;
-    const creator = edges.find((e) => e.source === n.id && e.rels.some((r) => r.type === 'creator'))?.target ?? creators.get(n.id)?.id;
+    const creator = edges.flatMap((e) => e.rels).find((r) => r.source === n.id && r.type === 'creator')?.target ?? creators.get(n.id)?.id;
     if (!creator || creator === rootId) continue;
     const shown = byId.has(creator);
     if (!shown && !atRoot) continue;
@@ -173,7 +184,7 @@ export function bundle(rootId: string, nodes: GraphNode[], edges: GEdge[],
     for (const p of others) {
       const lines = mine.filter((e) => e.source === p || e.target === p);
       const rels = lines.flatMap((e) => e.rels);
-      const fromP = rels.filter((r) => r.source === p).length;
+      const fromP = rels.filter((r) => flowFrom(r) === p).length;
       const out = fromP * 2 >= rels.length;
       outEdges.push({ source: out ? p : id, target: out ? id : p, category: mostCommon(lines.map((e) => e.category)) ?? g.category, rels,
         directed: rels.every((r) => !r.symmetric) && (fromP === 0 || fromP === rels.length), uncertain: false, implied: false });

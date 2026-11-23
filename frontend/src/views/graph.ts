@@ -152,7 +152,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
         </div>
       </div>
       <p class="muted small">${walked.nodes.length} entries, ${raw.length} links${truncated ? ' (cut off at 500 entries: choose fewer steps or kinds of links)' : ''}${nodes.some((n) => n.bundle) ? '; entries of one kind with the same links are bundled — click a bundle to list or open it' : ''}.
-        Click an entry for details, double-click to center the network on it; dashed = not certain, faded and dashed = end of the period only implied; arrows point from the subject (“Van Gogh → influenced by → Hokusai”).</p>
+        Click an entry for details, double-click to center the network on it; dashed = not certain, faded and dashed = end of the period only implied; arrows show what passes on (teacher → student, Hokusai → Van Gogh for an influence, artist → work, one owner to the next).</p>
       <div class="graph-wrap">
         <svg class="graph" role="img" aria-label="Network graph"></svg>
         <aside class="graph-info" aria-live="polite"></aside>
@@ -186,6 +186,8 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     const nameOf = (id: string) => byId.get(id)?.name ?? nodesIn.find((x) => x.id === id)?.name ?? id;
     linkSel.append('title').text((e) => e.rels.slice(0, 6).map((r) => `${nameOf(r.source)} ${r.label} ${nameOf(r.target)}${r.period ? ` ${r.period.label}` : ''}`).join('\n')
       + (e.rels.length > 6 ? `\n… ${e.rels.length - 6} more` : ''));
+    // where the arrow ends (tests read it; the simulation turns source/target into nodes later)
+    linkSel.attr('data-to', (e) => nameOf(typeof e.target === 'string' ? e.target : (e.target as Node).id));
 
     root.fx = width / 2;
     root.fy = height / 2;

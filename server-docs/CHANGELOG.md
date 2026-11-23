@@ -14,7 +14,11 @@ Format: date — what — why — how to revert.
   only around works, people and institutions; states only around a state; people and institutions one step, others
   two. `/graph` = a search over all entries + examples instead of two fixed networks. Layout stays free (rings tried
   and dropped). Van Gogh at two steps: 424 entries / 1,794 links → about 90. Test: site `tests/site.spec.ts`
-  "network grouping (2026-11-23) …".
+  "network grouping (2026-11-23) …". Arrows show what passes on (later the same day, owner: "it currently looks like
+  ferdinand hodler was the teacher of Barthelemy Menn"): relationships written from the receiving side — student of,
+  influenced by, inspired by, child of, copy after, based on, printed from, creator, written by — are drawn the other
+  way (`FLOWS_BACK`, `flowFrom()` in `graph-group.ts`); the texts keep their wording. Test "network arrows show what
+  passes on …".
 - **Why:** owner 2026-11-23: "the van gogh network is very messy … the site /graph only shows two … maybe … a omni
   search under the networks tab … the networks could benefit from more grouping. can you try out some options and keep
   the ones that look good".

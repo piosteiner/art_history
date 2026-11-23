@@ -3856,3 +3856,12 @@ test('a source with published reading notes: summary, contents with pages, chapt
   await expect(notes).toContainText('Worum es geht.');
   await expect(notes).toContainText('geprüft und veröffentlicht am 2026-11-20');
 });
+
+test('network arrows show what passes on: teacher → student, though the relationship reads "student of" (2026-11-23)', async ({ page }) => {
+  await page.goto('/graph/artists/ferdinand-hodler');
+  const line = page.locator('svg.graph line.edge', { has: page.locator('title', { hasText: 'Ferdinand Hodler student of Barthélemy Menn' }) });
+  await expect(line).toHaveCount(1);
+  await expect(line).toHaveAttribute('marker-end', /arrow-/);
+  await expect(line).toHaveAttribute('data-to', 'Ferdinand Hodler');
+  await expect(page.locator('.graph-wrap').locator('xpath=preceding-sibling::p[1]')).toContainText('teacher → student');
+});
