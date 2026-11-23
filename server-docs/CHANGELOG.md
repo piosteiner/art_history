@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-23
 
+### Start map: events on "auto" only where they matter
+- **What:** the events layer's and timeline's "auto" took every event in the years of what is chosen — and chosen works
+  run until today, so a Gauguin/van Gogh view listed ~45 events up to 2025 (Korean treaties, World War II, the Kinkaku-ji
+  arson). Now "auto" = events **linked to something chosen** (it concerns them, they took part, a work depicts it, a
+  provenance step happened in it; museums: those the map links, i.e. holders of the works and venues) **or within a
+  chosen life** (artists' and people's lives or active years — no death date: living if born in the last 100 years,
+  else 90 years —, movements' periods, works' making; not polities, not the works' years until today). A time window
+  still narrows that; hand-picked events stay. The Gauguin/van Gogh view: 12 events. API: `/v1/map/events` features carry
+  `linked` ("type/slug" from `graph_links` both ways + `provenance.event_id`; 3 ms for 128 events).
+  `backend/src/routes/map.js`, `frontend/src/views/explore.ts` (`eventMatcher()`, `selectionLives()`).
+- **Why:** owner 2026-11-23 — events that touched none of the works, museums or buildings and fall outside the people's
+  lives don't matter to the view.
+- **Revert:** revert the commits; the old rule was `overlaps(period, selectionSpan())`.
+
 ### Network: four more views — rings, outline, timeline, matrix
 - **What:** (site only — `frontend/src/views/graph-layouts.ts`, `views/graph.ts`, `style.css`) a "View" switch above
   the network (`?view=`, the free force layout stays the default): **Rings** — a radial tree, the centre's links on the

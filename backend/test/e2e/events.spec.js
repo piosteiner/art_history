@@ -1,5 +1,5 @@
 // Events (migration 047): a type of its own — when, where, part of; depicted, taken part in (with a role), concerned.
-const { test, expect, sql, submitForm, API } = require('./helpers');
+const { test, expect, sql, settled, submitForm, API } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
@@ -51,6 +51,10 @@ test('an event: created with dates and place, depicted by an artwork, a person t
   // on the events map (at its place), and on the participant's map
   const map = await api(request, '/map/events');
   expect(map.features.find((f) => f.properties.slug === 'great-fire-of-meireki').properties.precision).toBe('place');
+  // with the entries it touched, for the start map's "auto" (the derived graph is a moment behind)
+  await settled();
+  const linked = (await api(request, '/map/events')).features.find((f) => f.properties.slug === 'great-fire-of-meireki').properties.linked;
+  expect(linked).toEqual(expect.arrayContaining(['artwork/the-great-wave-off-kanagawa', 'artist/katsushika-hokusai']));
   const hokusai = await api(request, '/map/artists/katsushika-hokusai');
   expect(hokusai.features.some((f) => f.properties.event && f.properties.event.slug === 'great-fire-of-meireki')).toBe(true);
   // [[event/…]] links and their previews

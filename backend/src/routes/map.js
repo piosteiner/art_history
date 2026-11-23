@@ -391,13 +391,22 @@ router.get('/sites', async (req, res) => {
 });
 
 // Events (migration 047): the area it covered, else its exact spot, else the marker of its place — with the period,
-// so a client can filter the map by time.
+// so a client can filter the map by time, and the entries it is linked to (`linked`).
 router.get('/events', async (req, res) => {
   const { rows } = await apiPool.query(`
     SELECT jsonb_build_object('type', 'Feature', 'geometry', ST_AsGeoJSON(coalesce(v.area, v.location, g.marker))::jsonb,
       'properties', jsonb_build_object('type', 'event', 'slug', v.slug, 'name', v.name, 'kind', v.kind,
         'period', range_json(v.period, v.period_label), 'precision', CASE WHEN v.area IS NOT NULL THEN 'area' WHEN v.location IS NOT NULL THEN 'spot' ELSE 'place' END,
-        'place', (SELECT jsonb_build_object('slug', p.slug, 'name', p.name) FROM places p WHERE p.id = v.place_id))) AS feature
+        'place', (SELECT jsonb_build_object('slug', p.slug, 'name', p.name) FROM places p WHERE p.id = v.place_id),
+        -- the entries it touched ("type/slug"): its relationships either way (concerns, participated in, depicts) and the
+        -- provenance steps that happened in it — the start map's "auto" shows events linked to what is chosen
+        'linked', coalesce((SELECT jsonb_agg(DISTINCT x.type || '/' || (r.row->>'slug'))
+           FROM (SELECT CASE WHEN gl.subject_type = 'event' AND gl.subject_id = v.id THEN gl.object_type ELSE gl.subject_type END AS type,
+                        CASE WHEN gl.subject_type = 'event' AND gl.subject_id = v.id THEN gl.object_id ELSE gl.subject_id END AS id
+                   FROM graph_links gl
+                  WHERE (gl.subject_type = 'event' AND gl.subject_id = v.id) OR (gl.object_type = 'event' AND gl.object_id = v.id)
+                 UNION SELECT 'artwork', pv.artwork_id FROM provenance pv WHERE pv.event_id = v.id) x
+           JOIN entry_list_rows r ON r.type = x.type AND r.id = x.id), '[]'::jsonb))) AS feature
     FROM events v LEFT JOIN place_geo g ON g.id = v.place_id
     WHERE coalesce(v.area, v.location, g.marker) IS NOT NULL
     ORDER BY lower(v.period) NULLS LAST, v.name COLLATE sort_natural`);
