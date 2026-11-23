@@ -4,6 +4,29 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-23
 
+### Network: provenance as a chain, families as a family tree, names in small networks
+- **What:** API `/v1/graph/…` — provenance links (owned by, held by, passed to, commissioned, creator) carry
+  `artwork` (the work whose history they are) and `position` (the step) — `src/routes/graph.js`, e2e
+  `provenance.spec.js`. Site (`graph-group.ts` `provenanceChains()`, `familyKind()`, `sharedParentSiblings()`,
+  `views/graph.ts`; lines are SVG paths now):
+  - a "passed to" between two owners stays only when its work is in the network and linked to both — before, the
+    Louvre's 1793 transfers of other works and Durand-Ruel → Gauchez (1872, another work) stood in *The Astronomer*'s
+    network as if they were its history;
+  - not around a collector or museum: a work's owners form a chain — the work's arrow goes only to an owner the chain
+    doesn't reach (the first, or the first after a gap), then owner → owner; custodians and agents on a dotted line
+    beside it without an arrow;
+  - family as a family tree: no arrows, the parent a generation above the child on an elbow line (also when the parent
+    is the teacher too — Kōkei and Unkei), spouses on one row with a double line, siblings on one row (dashed), no
+    sibling line when both hang from a parent in the network; a row keeps a name's width between people;
+  - every name in networks of up to 40 entries (Tani Bunchō's gathering showed nameless dots); labels on one line push
+    each other up or down.
+  Speed (10× data): graph depth 2 89 ms (budget 300; 91 before). Tests: site "network: a work's owners as one chain …",
+  "network: every name shown in a small network".
+- **Why:** owner 2026-11-23: "family relationships should be portraied in a family stayle manner. also to have arrows
+  from the artwork to each provenance step seems a bit odd … maybe you finde more cases where the network … displays
+  information in a misleading or hard to understand manner".
+- **Revert:** `git revert` the commits (API field additive; site published by Pages).
+
 ### Network view reworked (frontend) and grouping
 - **What:** (site only — `frontend/src/graph-group.ts`, `views/graph.ts`, `style.css`) before drawing, the network is
   (1) pruned — an owner, dealer or museum passes the walk on through provenance only at the centre; (2) merged — one

@@ -75,6 +75,10 @@ test('a provenance chain: computed periods, derived edges in graph, map, owner p
   ]));
   const transfer = g.edges.find((e) => e.type === 'transferred_to' && e.source === 'person/test-michel-monet');
   expect(transfer.certainty).toBe('possible');  // not documented as direct
+  // each provenance link names its work and step (the site draws one chain per work; 2026-11-23)
+  expect(transfer.artwork).toBe('artwork/test-bassin');
+  expect(typeof transfer.position).toBe('number');
+  expect(g.edges.filter((e) => e.type !== 'transferred_to' && e.type !== 'owned_by').every((e) => e.position === undefined || e.artwork)).toBe(true);
 
   // map: the artwork's route Sorel-Moussel → Zürich from the provenance places
   const m = await api(request, '/map/artworks/test-bassin');

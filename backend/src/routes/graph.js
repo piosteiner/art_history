@@ -72,6 +72,9 @@ router.get('/:plural/:slug', async (req, res) => {
                 'category', ${edgeCategory('r', 'rt')},
                 'certainty', r.certainty, 'note', r.label, 'period', range_json(r.period, r.period_label),
                 'derived', r.source <> 'relationship', 'end_basis', r.end_basis)
+              -- provenance links (owned_by, held_by, transferred_to …) name their work and step: a "passed to" between
+              -- two owners is one work's history, and the site draws each work's steps as a chain (2026-11-23)
+              || CASE WHEN r.artwork_id IS NOT NULL THEN jsonb_build_object('artwork', 'artwork/' || aw.slug, 'position', pv.position) ELSE '{}' END
               ORDER BY rt.sort_order, s.sort_key COLLATE sort_natural), '[]')
          FROM graph_links r
          JOIN relationship_types rt ON rt.code = r.relationship_type
@@ -79,6 +82,8 @@ router.get('/:plural/:slug', async (req, res) => {
          JOIN nodes n2 ON n2.type = r.object_type  AND n2.id = r.object_id
          JOIN entity_index s ON s.type = r.subject_type AND s.id = r.subject_id
          JOIN entity_index o ON o.type = r.object_type  AND o.id = r.object_id
+         LEFT JOIN artworks aw ON aw.id = r.artwork_id
+         LEFT JOIN provenance pv ON pv.id = r.provenance_id
          WHERE ${inGraph('r')}) AS edges`,
   [e.type, found.rows[0].id, depth, types, depicted]);
 
