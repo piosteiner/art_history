@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-24
 
+### Content: 18 world's fairs (data, audited)
+- **What:** events of kind "world's fair" for London 1851, Paris 1855, London 1862, Paris 1867 (updated), Vienna 1873,
+  Philadelphia 1876, Paris 1878 (updated), 1889, Chicago 1893, Paris 1900, St. Louis 1904, Paris 1925, Barcelona 1929,
+  Chicago 1933–34, Paris 1937 (updated), New York 1939–40, Brussels 1958, Osaka 1970 — exact dates, city, site point
+  (Wikidata P625), Wikidata item, a cited text (political setting, the fair, its art; conflicting dates/numbers named,
+  not chosen silently). Owner's books first: Mason pp. 344–345, 351–353, 363; Portal p. 169; Falcucci p. 676;
+  Golomstock pp. 132–137; Cioli et al. pp. 104, 168–169; Braun figs. 101–102, 128–129; Moure Cecchini pp. 10, 17;
+  Fulda/Soika p. 188. 114 web pages as sources (bie-paris.org, Britannica, the Met, Orsay and others refused scripts,
+  so mostly the NDL's exposition site, museum/foundation pages, Wikipedia). Links: 78 "took part in" with roles
+  (exhibited, architect, organiser …) and the fairs' "concerns" to works, buildings, states, movements named in a cited
+  sentence. 20 landmarks created from Wikidata (Crystal Palace, Eiffel Tower, Guernica, Barcelona Pavilion, Atomium,
+  Tower of the Sun …) and 19 architects/engineers as their makers (cited). Henri Deglane first created from a wrong
+  Wikidata item (a wrestler, Q347751) — removed, the architect Q3130936 instead. Scripts in the session scratchpad
+  (fairs-build.js etc.); research and texts by subagents from fetched pages only.
+- **Why:** owner: the world's fairs with their most important exhibits, visitors and political environments.
+- **Revert:** audit_log (source 'script', 2026-11-24); new rows: events kind "world's fair" without the three older slugs,
+  bibliography created 2026-11-24 with these URLs, artworks/artists from Wikidata of the same day.
+
 ### Site: family lines in the network look like family
 - **What:** around Vincent van Gogh his family seemed missing: the family colour (`--c-family` #b5651d) was all but
   the provenance colour (#a0702a), sibling/relative lines were dashed like "not certain", and a pair with another link
