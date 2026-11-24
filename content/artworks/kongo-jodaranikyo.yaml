@@ -1,0 +1,43 @@
+public_id: 124518
+title: Kongō Jōdaranikyō
+names:
+  - text: Dhāraṇī of the Adamantine Place
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3198667
+  - lang: ja
+    role: translation
+    text: 金剛場陀羅尼経
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3198667
+  - lang: ko
+    role: translation
+    text: 금강장다라니경
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3198667
+created: 686
+materials: [hemp paper]
+dimensions: [46, 26.1]
+wikidata_id: Q3198667
+metadata:
+  sources: [Wikidata Q3198667 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Kongo-badarani_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kongo-badarani_2.jpg
+    license: Public domain
+    credit: Hachiro Onoue
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3198667
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3198667
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3198667

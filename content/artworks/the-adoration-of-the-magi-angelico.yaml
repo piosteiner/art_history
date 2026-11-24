@@ -1,0 +1,354 @@
+public_id: 123204
+title_lang: en
+title: The Adoration of the Magi
+names:
+  - text: Washington Tondo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3531531
+  - text: Cook Tondo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3531531
+  - lang: en
+    role: original
+    text: Adoration of the Magi
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3531531
+  - lang: fr
+    role: translation
+    text: Tondo Cook
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3531531
+  - lang: de
+    role: translation
+    text: Die Anbetung der Könige, Tondo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3531531
+  - lang: es
+    role: translation
+    text: Adoración de los Reyes Magos
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3531531
+  - lang: ja
+    role: translation
+    text: 東方三博士の礼拝 (フラ・アンジェリコとフィリッポ・リッピ)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3531531
+  - lang: zh
+    role: translation
+    text: 三博士來朝
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3531531
+creator: fra-angelico
+created: 1430
+materials: [tempera, poplar panel]
+dimensions: [137.2, 137.2]
+institution: national-gallery-of-art
+inventory_number: 1952.2.2
+provenance_status: a_clear
+provenance_status_note: Cook collection, Doughty House, Richmond (sent to the United States for safekeeping before the war, exhibited at Toledo 1944–45) until sold to the Kress Foundation in February 1947.
+wikidata_id: Q3531531
+metadata:
+  sources: [Wikidata Q3531531 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q3531531
+  - type: co_creator
+    to: artist/filippo-lippi
+    sources:
+      - accessed: 2026-11-24
+        property: P170
+        wikidata: Q3531531
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q3531531
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Fra_Angelico_Adoration.jpg/1280px-Fra_Angelico_Adoration.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fra_Angelico_Adoration.jpg
+    license: Public domain
+    credit: Fra Angelico / Filippo Lippi
+provenance:
+  - owner_label: member of the Medici family, Florence
+    method: commission
+    place: florence
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: Probably commissioned by a member of the Medici family, Florence;
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/lorenzo-il-magnifico
+    method: inheritance
+    direct: true
+    place: florence
+    label: probably the large tondo by "fra Giovanni" valued at 100 florins in his bedroom in the inventory after his death (copy of 23 December 1512)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: by inheritance to Lorenzo de' Medici [1449-1492], Florence.[1] — [1] The inventory drawn up after the death of Lorenzo the Magnificent is known today from a copy made on 23 December 1512 … "Nella chamera grande terrena detta chamera di Lorenzo...uno tondo grande...la nostra Donna e nostro Signore e e' Magi che vanno a offerire, di mano di fra Giovanni, f. 100"
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/piero-guicciardini
+    place: florence
+    label: possibly from the Medici through his father Agnolo Guicciardini (1506–1581)
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: probably Marchese Piero Guicciardini [1569-1626];
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/simona-machiavelli
+    method: inheritance
+    direct: true
+    place: florence
+    label: his widow; inventory verified 20 April 1643
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: his widow, Marchesa Simona Machiavelli [1584-1658], Florence;[2] — [2] … apparently recorded in an inventory verified on 20 April 1643 by Simona Machiavelli, the widow of Piero Guicciardini
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/francesco-guicciardini
+    method: inheritance
+    direct: true
+    place: florence
+    label: her great-nephew; inventory confirmed 31 July 1665
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: by inheritance to her great-nephew, Count Francesco Guicciardini [1618-1677], Florence; — [2] … confirmed by her great-nephew Francesco Guicciardini on 31 July 1665
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/lorenzo-guicciardini
+    method: inheritance
+    direct: true
+    place: florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: by inheritance to his son, Count Lorenzo Guicciardini [1652-1710], Florence;
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/francesco-gaetano-guicciardini
+    method: inheritance
+    direct: true
+    place: florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: by inheritance to his son, Count Francesco Gaetano Guicciardini [1699-1780], Florence;
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/lorenzo-guicciardini-2
+    method: inheritance
+    direct: true
+    place: florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: by inheritance to his son, Count Lorenzo Guicciardini [1743-1812], Florence;
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/francesco-guicciardini-2
+    co_owners: [person/ferdinando-guicciardini]
+    acquired: 1803
+    method: inheritance
+    direct: true
+    place: florence
+    label: given possession of their inheritance while their parents were still living; Guicciardini gallery inventory of 1 September 1807
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: by inheritance to his sons, Count Francesco [1776-1838] and Colonel Ferdinando [1782-1833] Guicciardini, Florence, in 1803;[3] — [3] … Francesco and Ferdinando were "emancipati" and given possession of their inheritance in 1803, while their parents were still living.
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/francois-honore-dubois
+    acquired: 1810-07
+    method: purchase
+    direct: true
+    place: florence
+    label: as by Botticelli; bought the entire Guicciardini gallery at about two-thirds of its assessed value (tondo valued at 50 zecchini); police commissioner of Napoleonic Florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: sold July 1810 to Chevalier François-Honoré Dubois, Florence and Paris, as by Botticelli.[4] — [4] … was transformed into a bill of sale when "M. Dubois" bought the entire contents (at about two-thirds assessed value) in July 1810. The two tondi were valued at 50 zecchini each.
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/samuel-woodburn
+    role: dealer
+    acquired: 1826 or earlier
+    place: london
+    label: as by Fra Angelico; private-treaty sale catalogue of 25 March 1826, no. 1, probably unsold; perhaps acquired directly from Dubois
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: (Samuel Woodburn, London), by 1826, as by Fra Angelico.[5] — [5] … a 25 March 1826 private-treaty sale catalogue of the stock of Messrs. Woodburn … two Adoration of the Magi tondi, both with a Guicciardini provenance, attributed to Fra Angelico (no. 1) and Botticelli (no. 2)
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/william-coningham
+    place: london
+    label: probably bought from Woodburn, his adviser (Fredericksen)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: William Coningham [1815-1884], London;
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1849-06-09
+    method: auction
+    direct: true
+    place: london
+    label: Coningham sale, Christie & Manson, London, 9 June 1849, no. 34, as by Filippo Lippi, "From the Guicciardini Palace in Florence"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: (his sale, Christie & Manson, London, 9 June 1849, no. 34, as by Filippo Lippi).[6]
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/alexander-barker
+    acquired: 1851 or earlier
+    place: london
+    label: seen by Waagen in 1850/51 as by Benozzo Gozzoli, "formerly in the collection of Mr. Coningham"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: Alexander Barker [c. 1797-1873], London, by 1851;[7] — [7] … as Waagen specifies, the Barker Adoration was "formerly in the collection of Mr. Coningham."
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1874-06-06
+    method: auction
+    direct: true
+    place: london
+    label: Barker sale, Christie, Manson & Woods, London, 6 June 1874, no. 42, as by Filippino Lippi
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: (his sale, Christie, Manson & Woods, London, 6 June 1874, no. 42, as by Filippino Lippi);[8]
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/giovanni-calvetti
+    role: agent
+    acquired: 1874-06-06
+    method: auction
+    direct: true
+    place: london
+    label: bought at the Barker sale as agent for Sir Francis Cook
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: purchased by (Giovanni Calvetti [d. 1875], London) for Sir Francis Cook, 1st bt. [1817-1901]
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/francis-cook
+    acquired: 1874-06-06
+    method: auction
+    direct: true
+    place: richmond-upon-thames
+    label: Sir Francis Cook, 1st Baronet, Doughty House, Richmond, Surrey
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: purchased by (Giovanni Calvetti [d. 1875], London) for Sir Francis Cook, 1st bt. [1817-1901], Doughty House, Richmond, Surrey;
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/frederick-lucas-cook
+    method: inheritance
+    direct: true
+    place: richmond-upon-thames
+    label: Sir Frederick Cook, 2nd Baronet, Doughty House; Borenius catalogue 1913
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: by inheritance to his son, Sir Frederick Lucas Cook, 2nd bt. [1844-1920], Doughty House;
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/herbert-frederick-cook
+    method: inheritance
+    direct: true
+    place: richmond-upon-thames
+    label: 3rd Baronet, Doughty House
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: by inheritance to his son, Sir Herbert Frederick Cook, 3rd bt. [1868-1939], Doughty House;
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: person/francis-ferdinand-maurice-cook
+    method: inheritance
+    direct: true
+    place: richmond-upon-thames
+    label: 4th Baronet, Doughty House, and Cothay Manor, Somerset
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: by inheritance to his son, Sir Francis Ferdinand Maurice Cook, 4th bt. [1907-1978], Doughty House, and Cothay Manor, Somerset;
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: institution/toledo-museum-of-art
+    role: custodian
+    acquired: 1944
+    ended: 1945
+    place: toledo-2
+    label: Cook paintings sent to the United States for safekeeping before the war; exhibited at Toledo 1944–45, then at two museums in Canada in 1945
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: "[9] Before World War II the most important paintings from the Cook collection were sent to the United States for safekeeping. They were exhibited at the Toledo (Ohio) Museum of Art from 1944 to 1945, and at two museums in Canada in 1945."
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: institution/francis-a-drey
+    role: agent
+    acquired: 1947-02
+    direct: true
+    place: london
+    label: sale from the Cook collection to the Kress Foundation
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: sold February 1947 through (Francis A. Drey, London) to the Samuel H. Kress Foundation, New York, as by Filippo Lippi;[9]
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1947-02
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: as by Filippo Lippi; bought on the eve of the Cook paintings' return to England
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: sold February 1947 through (Francis A. Drey, London) to the Samuel H. Kress Foundation, New York, as by Filippo Lippi;[9] — [9] … After complicated negotiations on the eve of the paintings' return to England, the Kress Foundation purchased a number of works, including NGA 1952.2.2.
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41581.html
+        note: gift 1952 to NGA.
+        source: nga-1952-2-2
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3531531
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q3531531
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3531531
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3531531
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3531531
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q3531531

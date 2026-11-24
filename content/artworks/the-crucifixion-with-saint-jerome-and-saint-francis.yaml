@@ -1,0 +1,101 @@
+public_id: 123096
+title_lang: en
+title: The Crucifixion with Saint Jerome and Saint Francis
+creator: francesco-pesellino
+created: 1445/1450
+created_label: c. 15th century
+created_span: uncertain
+materials: [tempera, panel]
+dimensions: [61.5, 49.1]
+institution: national-gallery-of-art
+inventory_number: 1939.1.109
+wikidata_id: Q20173644
+metadata:
+  sources: [Wikidata Q20173644 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/jerome
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20173644
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Pesellino%2C_Christ_on_the_Cross%2C_Adored_by_Saint_Jerome_and_Saint_Francis.jpg/1280px-Pesellino%2C_Christ_on_the_Cross%2C_Adored_by_Saint_Jerome_and_Saint_Francis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pesellino,_Christ_on_the_Cross,_Adored_by_Saint_Jerome_and_Saint_Francis.jpg
+    license: Public domain
+    credit: Francesco Pesellino
+provenance:
+  - owner_label: Melzi collection, Milan
+    place: milan
+    label: "as given in the bill of sale to Kress; Shapley: Duchessa Melzi d'Eril; the NGA notes the lawyer Gennaro Melzi's collection, Milan, as an alternative"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.250.html
+        note: Melzi collection, Milan.[1] — [1] … mentions the Melzi collection, Milan, which is the provenance information given in the bill of sale to the Kress Foundation.
+        source: nga-1939-1-109
+        accessed: 2026-11-24
+  - owner: person/robert-langton-douglas
+    role: dealer
+    place: london
+    label: London and Dublin
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.250.html
+        note: (Robert Langton Douglas [1864-1951], London and Dublin);[2]
+        source: nga-1939-1-109
+        accessed: 2026-11-24
+  - owner: person/alessandro-contini-bonacossi
+    role: dealer
+    method: purchase
+    direct: true
+    place: rome
+    label: 'Douglas, letter of 1 May 1941: "I sold this picture to Count Contini."'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.250.html
+        note: 'sold to (Count Alessandro Contini Bonacossi, Rome); — [2] … Douglas writes: "I sold this picture to Count Contini."'
+        source: nga-1939-1-109
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1932-07
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: bill of sale of 29 July 1932 (with nine other paintings and other objects), as Crucifixion and Two Saints
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.250.html
+        note: sold July 1932 to the Samuel H. Kress Foundation, New York; [3] — [3] The bill of sale for … ten paintings, including the Pesellino, which is titled Crucifixion and Two Saints, is dated 29 July 1932
+        source: nga-1939-1-109
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1939
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.250.html
+        note: gift 1939 to NGA.
+        source: nga-1939-1-109
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20173644
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20173644
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20173644
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20173644
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20173644
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20173644

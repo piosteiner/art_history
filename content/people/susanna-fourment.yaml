@@ -1,0 +1,23 @@
+public_id: 122973
+name: Susanna Fourment
+given_name: Susanna
+family_name: Fourment
+kind: person
+birth: 1599
+death: 1628
+wikidata_id: Q60709019
+metadata:
+  sources: [Wikidata Q60709019 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q60709019
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q60709019
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q60709019

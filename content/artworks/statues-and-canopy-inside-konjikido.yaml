@@ -1,0 +1,28 @@
+public_id: 124334
+title: Statues and Canopy Inside Konjikidō
+names:
+  - text: Konjikidō Dōnai Shozō　and Tengai
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107044816
+  - lang: ja
+    role: translation
+    text: 金色堂堂内諸像及天蓋
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107044816
+created: 12th century
+created_span: uncertain
+wikidata_id: Q107044816
+metadata:
+  sources: [Wikidata Q107044816 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Interior_of_Konjikido%2C_Chusonji_%2862%29.jpg/1280px-Interior_of_Konjikido%2C_Chusonji_%2862%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Interior_of_Konjikido,_Chusonji_(62).jpg
+    license: Public domain
+    credit: Imperial Japanese Commission to the Panama-Pacific International Exposition
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107044816

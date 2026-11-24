@@ -1,0 +1,65 @@
+public_id: 125810
+name: Thessaloniki
+names:
+  - lang: ja
+    role: translation
+    text: テッサロニキ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17151
+  - lang: zh
+    role: translation
+    text: 塞薩洛尼基
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17151
+  - lang: ko
+    role: translation
+    text: 테살로니키
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17151
+  - lang: fr
+    role: translation
+    text: Thessalonique
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17151
+  - lang: it
+    role: translation
+    text: Salonicco
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17151
+  - lang: es
+    role: translation
+    text: Salónica
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17151
+  - lang: ru
+    role: translation
+    text: Салоники
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17151
+kind: settlement
+parent: greece
+country_code: GR
+location: [22.93556, 40.64028]
+wikidata_id: Q17151
+metadata:
+  sources: [Wikidata Q17151 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q17151
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q17151
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q17151

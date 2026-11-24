@@ -1,0 +1,217 @@
+public_id: 122882
+title_lang: en
+title: Sweet Melancholy
+creator: joseph-marie-vien
+created: 1756
+kind: oil painting
+medium: oil on canvas
+dimensions: [68, 55]
+institution: cleveland-museum-of-art
+inventory_number: "1996.1"
+web_url: https://clevelandart.org/art/1996.1
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1996.1/1996.1_web.jpg
+    source_url: https://clevelandart.org/art/1996.1
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/marie-therese-geoffrin
+    acquired: 1757
+    method: purchase
+    place: paris
+    label: bought directly from the artist, possibly at the Salon of 1757
+    certainty: probable
+    price:
+      amount: 400
+      currency: LIV
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: Madame Marie-Thérèse Geoffrin [1699-1777], Paris, France [Probably from 1757] — Geoffrin, one of Vien’s patrons and host of a salon that he frequently attended, purchased the painting directly from the artist for 400 livres, possibly at the Salon of 1757.
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: person/jean-louis-antoine-le-vaillant-de-damery
+    acquired: c. 1765
+    label: order of Damery and Dubarry unconfirmed; Beauvarlet's engraving (c. 1765) places it in the Damery collection; possibly sold by him in 1764
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: Jean Louis Antoine le Vaillant de Damery, Chevalier de l’Ordre Royal Militaire de St-Louis [1723-1803] [c. 1765] — Some versions of the painting’s provenance list Damery followed by Durbarry, while they appear in the reverse order in others. Although this is not confirmed, it seems that Damery should appear first … An engraving after the painting by Beauvarlet, published c. 1765, situates the painting in the Damery collection … It is possible that Damery sold the painting in 1764
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: person/jean-baptiste-dubarry
+    acquired_label: until 1774
+    place: toulouse
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: Comte Jean-Baptiste Dubarry [1723-1794], Toulouse, France [Until 1774]
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: person/jean-baptiste-pierre-lebrun
+    co_owners: [person/pierre-remy]
+    role: agent
+    not_sold: true
+    acquired: 1774-11-21
+    method: auction
+    direct: true
+    place: paris
+    label: Dubarry sale, Paris, 21 November 1774, no. 93, probably bought in (Remy annotated as buyer)
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: "(Sale: Jean-Pierre-Baptiste Le Brun and Pierre Remy, Paris, Dubarry sale, Nov. 21, 1774, no. 93, probably bought in) [Nov. 21, 1774]"
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: person/pierre-remy
+    role: agent
+    acquired: 1774
+    direct: true
+    place: paris
+    label: probably unsold at the Dubarry sale; remained with the auction house or with Remy as agent until the Prince de Conti acquired it
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: (Pierre Remy, Paris, France) [1774-] — Remy, who is indicated as the buyer at the Dubarry sale by an annotation in the catalogue, presided over both the Dubarry and Prince de Conti auctions, and thus he was likely not the "buyer" of the painting. Rather, the painting was probably unsold or was bought in at the Dubarry sale, and thus the Vien remained with the auction house or with Remy, in his capacity as an agent, until the Prince de Conti somehow acquired it.
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: person/louis-francois-de-bourbon-prince-de-conti
+    ended: 1776
+    place: paris
+    label: Louis François, 6th Prince de Conti; Remy sold it to him (footnote)
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: Louis François, 6th Prince de Conti [1717-1776], Paris, France [Until 1776] — Pierre Remy came into posession of the the painting at the 1774 Dubarry sale, sold it to the Prince de Conti, and then auctioned off the Conti collection in 1777
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: person/pierre-remy
+    role: agent
+    acquired: 1777-04-17
+    method: auction
+    direct: true
+    place: paris
+    label: Prince de Conti sale, Paris, 17 April 1777, no. 732, sold to Quenet
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: "(Sale: Pierre Remy, Paris, France, Prince de Conti sale, April 17, 1777, no. 732, sold to Quenet) [April 17, 1777]"
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner_label: Quenet, Paris
+    acquired: 1777
+    method: auction
+    direct: true
+    place: paris
+    label: bought several hundred objects at auctions in the 1770s and 1780s (Getty Provenance Index); otherwise unidentified
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: Quenet, Paris, France [1777-] — According to the Getty Provenance Index, Quenet purchased several hundred objects at auctions in the 1770s and 1780s, but beyond this, nothing is known about his identity.
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: person/jean-paul-andre-des-rasins-marquis-de-saint-marc
+    ended: 1818
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: Jean Paul André des Rasins, Marquis de Saint-Marc [1723-1818], Paris, France, by descent to his daughter, Marie de la Roze [Until 1818]
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: person/marie-de-la-roze
+    acquired: 1818
+    method: inheritance
+    direct: true
+    label: née de Saint-Marc, his daughter; put the collection up for sale at Hôtel Drouot in 1859
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: Marie de la Roze [Probably 1818 - 1859] — Marie de la Roze (née de Saint-Marc) inherited the paintings in her father's collection, eventually putting them up for sale at Hôtel Drouot in 1859.
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1859-02-23
+    method: auction
+    direct: true
+    place: paris
+    label: Marquis de Saint-Marc sale, no. 17
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: "(Sale: Hôtel Drouot, Paris, Marquis de Saint-Marc sale, Paris, Feb. 23, 1859, no. 17) [Feb. 23, 1859]"
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1955
+    place: new-york-city
+    label: sold to a private collector, UK
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: (Wildenstein & Company, New York, NY, sold to a private collector, UK) [1955-1980]
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner_label: private noble collection, UK
+    acquired: 1980
+    method: purchase
+    direct: true
+    label: sold to Danny Katz and Simon Dickinson through William Thuillier, probably 1995
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: Private noble collection, UK, sold to Danny Katz and Simon Dickinson through William Thuillier [1980 - probably 1995]
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: person/william-thuillier
+    role: dealer
+    acquired: 1995
+    direct: true
+    place: paris
+    label: sold to Danny Katz and Simon Dickinson
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: (William Thuillier, Paris, France, sold to Danny Katz and Simon Dickinson) [1995]
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: person/danny-katz
+    co_owners: [person/simon-dickinson]
+    role: dealer
+    acquired: 1995
+    method: purchase
+    direct: true
+    place: london
+    label: bought from Thuillier; Katz then bought out Dickinson
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: (Danny Katz and Simon Dickinson, London, the latter bought out by the former) [1995] — Katz and Dickinson purchased the painting from Thuillier; Katz then bought out Dickinson and sold the painting to Moatti and Kilgore within several days.
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: person/danny-katz
+    role: dealer
+    acquired: 1995
+    method: purchase
+    direct: true
+    place: london
+    label: bought out Dickinson; sold to Moatti and Kilgore within several days
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: Danny Katz, London, sold to Emmanuel Moatti and Jack Kilgore [1995]
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: person/emmanuel-moatti
+    co_owners: [person/jack-kilgore]
+    role: dealer
+    acquired: 1995
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: sold to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: (Emmanuel Moatti and Jack Kilgore, New York, NY, sold to the Cleveland Museum of Art) [1995-1996]
+        source: cma-1996-1
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1996
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Mr. and Mrs. William H. Marlatt Fund, inv. 1996.1
+    sources:
+      - url: https://clevelandart.org/art/1996.1
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1996-]
+        source: cma-1996-1
+        accessed: 2026-11-24

@@ -1,0 +1,64 @@
+public_id: 124133
+title: Yellow Fudō
+names:
+  - text: Ki-Fudō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11677716
+  - lang: fr
+    role: translation
+    text: Fudō Myōō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11677716
+  - lang: ja
+    role: translation
+    text: 黄不動
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11677716
+created: 9th century
+created_span: uncertain
+materials: [silk]
+dimensions: [178.2, 72.1]
+institution: mii-dera
+wikidata_id: Q11677716
+metadata:
+  sources: [Wikidata Q11677716 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/51/Miidera_Yellow_Fudo2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Miidera_Yellow_Fudo2.jpg
+    license: Public domain
+    credit: Unknown author
+provenance:
+  - owner: institution/mii-dera
+    acquired: 9th century
+    method: creation
+    place: otsu
+    label: painted after the golden Fudō the monk Enchin saw in a vision in 838, most likely in the second half of the 9th century; a secret icon (hibutsu) of Onjō-ji (Mii-dera), its owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/103
+        note: 時代 ： 平安 … 所有者名 ： 園城寺
+        source: kunishitei-201-103
+        accessed: 2026-11-24
+      - note: a painting of Yellow Fudo, the most important of the Myoo preserved as a secret treasure (hibutsu) of Onjoji … The painting of Fudo is said to be an artist's recreation of an image of a yellow Fudo seen in a vision by Enchin in 838 … it seems most likely that the original painting is a work from the second half of the ninth century.
+        source: history-of-japanese-art
+        locator: p. 139
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=99867691
+        note: 黄不動（きふどう）は、滋賀県大津市の園城寺（通称：三井寺）に秘仏として伝わる、全身が黄色の不動明王立像の仏画である。平安時代初期の9世紀の作
+        source: jawiki-kifudo-99867691
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11677716
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q11677716
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q11677716

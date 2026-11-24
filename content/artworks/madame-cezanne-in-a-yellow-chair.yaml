@@ -1,0 +1,197 @@
+public_id: 125118
+title_lang: en
+title: Madame Cézanne en robe rouge
+names:
+  - lang: en
+    role: original
+    text: Madame Cézanne in a Yellow Chair
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2962671
+  - lang: nl
+    role: translation
+    text: Madame Cézanne sur une chaise jaune
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2962671
+  - lang: de
+    role: translation
+    text: Porträt der Mme Cézanne im gelben Lehnstuhl
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2962671
+  - lang: it
+    role: translation
+    text: Ritratto di Madame Cézanne nella poltrona gialla
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2962671
+  - lang: ru
+    role: translation
+    text: Мадам Сезанн в жёлтом кресле
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2962671
+creator: paul-cezanne
+created: 1888/1890
+created_label: c. 1888
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [81, 65]
+institution: art-institute-of-chicago
+inventory_number: "1948.54"
+web_url: https://www.cezannecatalogue.com/catalogue/entry.php?id=634
+wikidata_id: Q2962671
+metadata:
+  sources: [Wikidata Q2962671 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/marie-hortense-fiquet
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q2962671
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q2962671
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Paul_C%C3%A9zanne_-_Madame_C%C3%A9zanne_in_a_Yellow_Chair_-_1948.54_-_Art_Institute_of_Chicago.jpg/1280px-Paul_C%C3%A9zanne_-_Madame_C%C3%A9zanne_in_a_Yellow_Chair_-_1948.54_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Madame_C%C3%A9zanne_in_a_Yellow_Chair_-_1948.54_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Paul Cézanne
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: 1906-06-13 or earlier
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/62371
+        note: Ambroise Vollard (1866–1939), Paris, June 13, 1906 [Vollard sent the painting to Bernheim-Jeune with two other paintings on June 13, 1906];
+        source: aic-1948-54
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: agent
+    acquired: 1906-06-13
+    direct: true
+    place: paris
+    label: sent by Vollard with two other paintings
+    sources:
+      - url: https://www.artic.edu/artworks/62371
+        note: "[Vollard sent the painting to Bernheim-Jeune with two other paintings on June 13, 1906]"
+        source: aic-1948-54
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1907-02-22
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/62371
+        note: sold to Galerie Bernheim-Jeune & Cie, Paris, Feb. 22, 1907 [according to correspondence from Gilbert Gruet of Bernheim-Jeune & Cie,  Nov. 29, 1977, copy in curatorial file];
+        source: aic-1948-54
+        accessed: 2026-11-24
+  - owner: person/theodore-duret
+    acquired: 1907-04-16
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/62371
+        note: sold to Théodore Duret, Paris, Apr. 16, 1907 [this and the following according to New York 2006–7];
+        source: aic-1948-54
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired_label: c. April 1908
+    direct: true
+    place: paris
+    label: returned by Duret
+    sources:
+      - url: https://www.artic.edu/artworks/62371
+        note: returned to Galerie Bernheim–Jeune & Cie, Paris, c. Apr. 1908;
+        source: aic-1948-54
+        accessed: 2026-11-24
+  - owner: artist/august-deusser
+    acquired: 1909-10-15
+    method: purchase
+    direct: true
+    place: dusseldorf
+    label: Bernheim-Jeune stock book no. 15.758
+    sources:
+      - url: https://www.artic.edu/artworks/62371
+        note: sold to August Deusser, Düsseldorf, Germany, Oct. 15, 1909 [Galerie Bernheim-Jeune & Cie’s stockbook no. 15.758; see Gruet correspondence cited above].
+        source: aic-1948-54
+        accessed: 2026-11-24
+  - owner: institution/galerie-thannhauser
+    co_owners: [person/paul-rosenberg]
+    role: dealer
+    acquired_label: Nov. 30, 1823 [sic]
+    place: lucerne
+    label: jointly; Thannhauser/Rosengart stock book no. 714
+    sources:
+      - url: https://www.artic.edu/artworks/62371
+        note: Galerie Thannhauser, Lucerne, Switzerland, and Paul Rosenberg and Co., Paris and New York, Nov. 30, 1823 [this and the following according to the Thannhauser/Rosengart stockbook, no. 714; see also Pfister 1927, d’Ors 1926, and New York 1928];
+        source: aic-1948-54
+        accessed: 2026-11-24
+  - owner: person/alphonse-kann
+    acquired: 1929-10-31
+    method: purchase
+    direct: true
+    place: saint-germain-en-laye
+    label: St. Germain-en-Laye and London
+    sources:
+      - url: https://www.artic.edu/artworks/62371
+        note: sold to Alphonse Kann, St. Germain-en-Laye and London, Oct. 31, 1929 [according to New York 2006–7];
+        source: aic-1948-54
+        accessed: 2026-11-24
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1947-11-06
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Paris and New York; Rosenberg ledger no. 836
+    sources:
+      - url: https://www.artic.edu/artworks/62371
+        note: sold to Paul Rosenberg & Co, Paris and New York, Nov. 6, 1947 [Rosenberg Ledger, no. 836, Museum of Modern Art, New York, copy in curatorial file; see also consular invoice, copy in curatorial file];
+        source: aic-1948-54
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1948-04-22
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/62371
+        note: sold to the Art Institute of Chicago, April 22, 1948.
+        source: aic-1948-54
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q2962671
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q2962671
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q2962671
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q2962671
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q2962671
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q2962671

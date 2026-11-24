@@ -1,0 +1,77 @@
+public_id: 125260
+title_lang: ty
+title: Merahi metua no Tehamana (Mea rahi metua no Teha'amana)
+names:
+  - text: Tehamana Has Many Parents
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q19894296
+  - text: The Ancestors of Tehamana
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q19894296
+  - lang: en
+    role: translation
+    text: Merahi metua no Tehamana
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q19894296
+  - lang: de
+    role: translation
+    text: Tehamana hat viele Vorfahren
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q19894296
+  - lang: ja
+    role: translation
+    text: メラヒ・メトゥア・ノ・テハーマナ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q19894296
+  - lang: ko
+    role: translation
+    text: 테하아마나의 조상들
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q19894296
+creator: paul-gauguin
+created: 1893
+materials: [oil paint, canvas]
+dimensions: [76.3, 54.3]
+institution: art-institute-of-chicago
+inventory_number: "1980.613"
+wikidata_id: Q19894296
+metadata:
+  sources: [Wikidata Q19894296 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Paul_Gauguin_-_The_Ancestors_of_Tehamana_OR_Tehamana_Has_Many_Parents_%28Merahi_metua_no_Tehamana%29_-_Google_Art_Project.jpg/1280px-Paul_Gauguin_-_The_Ancestors_of_Tehamana_OR_Tehamana_Has_Many_Parents_%28Merahi_metua_no_Tehamana%29_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_The_Ancestors_of_Tehamana_OR_Tehamana_Has_Many_Parents_(Merahi_metua_no_Tehamana)_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Paul Gauguin
+identifiers:
+  wpi: "71674"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q19894296
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q19894296
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q19894296
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q19894296
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q19894296
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q19894296

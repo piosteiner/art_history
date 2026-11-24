@@ -1,0 +1,153 @@
+public_id: 123023
+title_lang: en
+title: A Woman Holding a Pink
+names:
+  - lang: nl
+    role: translation
+    text: Portret van een vrouw met anjer
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177434
+creator: rembrandt
+created: 1656
+materials: [oil paint, canvas]
+dimensions: [103, 86]
+institution: national-gallery-of-art
+inventory_number: 1937.1.75
+provenance_status: a_clear
+provenance_status_note: Owned by Andrew W. Mellon from 1931 and by The A.W. Mellon Educational and Charitable Trust from 1932 until its gift to the NGA in 1937.
+wikidata_id: Q20177434
+metadata:
+  sources: [Wikidata Q20177434 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/A_Woman_Holding_a_Pink.jpg/1280px-A_Woman_Holding_a_Pink.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:A_Woman_Holding_a_Pink.jpg
+    license: Public domain
+    credit: Workshop of Rembrandt
+provenance:
+  - owner: person/pierre-crozat
+    acquired: before 1740
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.82.html
+        note: Pierre Crozat [1665-1740], Paris, before 1740;
+        source: nga-1937-1-75
+        accessed: 2026-11-24
+  - owner: person/louis-francois-crozat
+    method: inheritance
+    direct: true
+    place: paris
+    label: marquis du Châtel; by inheritance from his uncle
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.82.html
+        note: by inheritance to his nephews, first to Louis-François Crozat, marquis du Châtel [1691-1750], Paris,
+        source: nga-1937-1-75
+        accessed: 2026-11-24
+  - owner: person/louis-antoine-crozat
+    method: inheritance
+    direct: true
+    place: paris
+    label: baron de Thiers; inherited on Louis-François' death without a male heir
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.82.html
+        note: and then [on Louis-François' death without a male heir] to Louis-Antoine Crozat, baron de Thiers [1699-1770], Paris;
+        source: nga-1937-1-75
+        accessed: 2026-11-24
+  - owner_label: heirs of Louis-Antoine Crozat, baron de Thiers
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.82.html
+        note: the latter's heirs;
+        source: nga-1937-1-75
+        accessed: 2026-11-24
+  - owner: person/catherine-ii-of-russia
+    acquired: 1772
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: bought through Denis Diderot (1713–1784) as an intermediary, for the Imperial Hermitage Gallery
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.82.html
+        note: purchased 1772, through Denis Diderot [1713-1784] as an intermediary, by Catherine II, empress of Russia [1729-1796], for the Imperial Hermitage Gallery, Saint Petersburg;
+        source: nga-1937-1-75
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    label: bought by Catherine II for the gallery; sold March 1931
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.82.html
+        note: by Catherine II, empress of Russia [1729-1796], for the Imperial Hermitage Gallery, Saint Petersburg; sold March 1931,
+        source: nga-1937-1-75
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1931-03
+    method: purchase
+    direct: true
+    label: sold from the Hermitage, as a painting by Rembrandt, to Andrew W. Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.82.html
+        note: sold March 1931, as a painting by Rembrandt, through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1937-1-75
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1931-03
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.82.html
+        note: sold March 1931, as a painting by Rembrandt, through (…) to Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-75
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1932-03-30
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.82.html
+        note: deeded 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1937-1-75
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.82.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-75
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177434
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177434
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177434
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177434
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177434
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177434

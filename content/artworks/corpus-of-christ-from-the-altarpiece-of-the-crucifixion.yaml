@@ -1,0 +1,141 @@
+public_id: 123940
+title_lang: en
+title: Corpus of Christ, from the Altarpiece of the Crucifixion
+creator: jacques-de-baerze
+created: 1391/1399
+kind: sculpture
+medium: Wood with gilding and traces of polychromy
+dimensions: [27.7, 18.3, 5.2]
+institution: art-institute-of-chicago
+inventory_number: "1944.1370"
+web_url: https://www.artic.edu/artworks/52560
+images:
+  - url: https://www.artic.edu/iiif/2/d1666499-6fde-bb14-1b47-7e86209d3b58/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/52560
+    license: CC0
+    credit: Art Institute of Chicago, Gift of Honoré Palmer
+provenance:
+  - owner: person/philip-the-bold
+    acquired: 1390
+    method: commission
+    place: dijon
+    label: commissioned by Philip the Bold, Duke of Burgundy, for the Chartreuse de Champmol
+    sources:
+      - url: https://www.artic.edu/artworks/52560
+        note: Commissioned by Philip the Bold, Duke of Burgundy, for the Chartreuse de Champmol, Dijon, France, 1390
+        source: aic-1944-1370
+        accessed: 2026-11-24
+  - owner: institution/chartreuse-de-champmol
+    acquired: 1399
+    ended: 1792
+    direct: true
+    place: dijon
+    label: installed on the high altar of the Saint-Jean Chapel by Melchior Broederlam, 1399
+    sources:
+      - url: https://www.artic.edu/artworks/52560
+        note: and installed there on the high altar of the Saint-Jean Chapel by Melchior Broederlam, 1399 [see Müller 1966];
+        source: aic-1944-1370
+        accessed: 2026-11-24
+  - owner: institution/abbey-of-saint-benigne-dijon
+    role: custodian
+    acquired: 1792
+    method: transfer
+    direct: true
+    place: dijon
+    label: removed to the abbey of Saint-Bénigne
+    sources:
+      - url: https://www.artic.edu/artworks/52560
+        note: removed to the abbey of Saint-Bénigne, Dijon, 1792 [see Musée de Beaux-Arts de Dijon 1960; Goetz 1950, p. 159; and Cleveland 2004 exh. cat.];
+        source: aic-1944-1370
+        accessed: 2026-11-24
+  - owner: institution/musee-des-beaux-arts-de-dijon
+    acquired: 1818/1819
+    method: transfer
+    direct: true
+    place: dijon
+    label: transferred 1818/19 (Musée de Beaux-Arts de Dijon 1960 gives 1818, Cleveland 2004 exh. cat. 1819)
+    sources:
+      - url: https://www.artic.edu/artworks/52560
+        note: transferred to the Musée de Beaux-Arts de Dijon, 1818/19 [see Goetz 1950, p. 159; Chabeuf 1910, p. 123; Musée de Beaux-Arts de Dijon 1960, which gives the date as 1818; and Cleveland 2004 exh. cat., which gives the date as 1819].
+        source: aic-1944-1370
+        accessed: 2026-11-24
+  - owner: person/paul-buffet
+    acquired: after 1841
+    place: dijon
+    sources:
+      - url: https://www.artic.edu/artworks/52560
+        note: Paul Buffet, Dijon, after 1841 [see Goetz 1950, pp. 159-60; Vitry 1907, pp. 4–5; and Gillerman 2001, p. 22];
+        source: aic-1944-1370
+        accessed: 2026-11-24
+  - owner: person/francois-dameron
+    ended: 1900
+    method: gift
+    direct: true
+    place: dijon
+    label: given by Paul Buffet; held until his death in 1900
+    sources:
+      - url: https://www.artic.edu/artworks/52560
+        note: given to François Dameron (d. 1900), Dijon, and held in his possession until 1900 [see Goetz 1950, p. 160; Vitry 1907, p. 5; and Chabeuf 1910, p. 122];
+        source: aic-1944-1370
+        accessed: 2026-11-24
+  - owner_label: widow of François Dameron (d. 1906), Dijon
+    acquired: 1900
+    method: inheritance
+    direct: true
+    place: dijon
+    label: by descent to his widow
+    sources:
+      - url: https://www.artic.edu/artworks/52560
+        note: by descent to his widow (d. 1906), Dijon [see sources cited above];
+        source: aic-1944-1370
+        accessed: 2026-11-24
+  - owner_label: second-hand dealer (brocanteur), Dijon
+    role: dealer
+    acquired: 1906
+    method: purchase
+    direct: true
+    place: dijon
+    sources:
+      - url: https://www.artic.edu/artworks/52560
+        note: sold to a second-hand dealer (“brocanteur”), Dijon, 1906 [see Goetz 1950, p. 160].
+        source: aic-1944-1370
+        accessed: 2026-11-24
+  - owner: person/marcel-bing
+    acquired: 1907 or earlier
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/52560
+        note: Marcel Bing, Paris, by 1907 [see Vitry 1907 and Gillerman 2001, p. 22];
+        source: aic-1944-1370
+        accessed: 2026-11-24
+  - owner: person/bertha-palmer
+    acquired: 1910
+    method: purchase
+    direct: true
+    place: chicago
+    label: letter from Marcel Bing to Bertha Honoré Palmer, 13 May 1910, in curatorial file
+    sources:
+      - url: https://www.artic.edu/artworks/52560
+        note: sold to Bertha Honoré Palmer (d. 1918), Chicago, 1910 [see letter from Marcel Bing to Bertha Honoré Palmer, 13 May 1910, in curatorial file];
+        source: aic-1944-1370
+        accessed: 2026-11-24
+  - owner: person/honore-palmer
+    method: inheritance
+    direct: true
+    place: chicago
+    label: by descent to her son
+    sources:
+      - url: https://www.artic.edu/artworks/52560
+        note: by descent to her son, Honoré Palmer, Chicago;
+        source: aic-1944-1370
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1944
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/52560
+        note: given to the Art Institute, 1944.
+        source: aic-1944-1370
+        accessed: 2026-11-24

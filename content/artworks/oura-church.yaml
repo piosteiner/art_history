@@ -1,0 +1,86 @@
+public_id: 124438
+title: Ōura Church
+names:
+  - text: Church of the 26 Japanese Martyrs
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q430626
+  - text: Basilica of the Twenty-Six Holy Martyrs of Japan
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q430626
+  - text: Ōura Cathedral
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q430626
+  - text: Ōura Catholic Church
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q430626
+  - lang: fr
+    role: translation
+    text: basilique des Vingt-Six-Martyrs-du-Japon
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q430626
+  - lang: de
+    role: translation
+    text: Basilika der sechsundzwanzig heiligen Märtyrer Japans
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q430626
+  - lang: it
+    role: translation
+    text: chiesa di Ōura
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q430626
+  - lang: es
+    role: translation
+    text: iglesia de Ōura
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q430626
+  - lang: ja
+    role: translation
+    text: 大浦天主堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q430626
+  - lang: ko
+    role: translation
+    text: 오우라 천주당
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q430626
+  - lang: ru
+    role: translation
+    text: Церковь Оура
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q430626
+created: 1863
+location: [129.87028, 32.73417]
+wikidata_id: Q430626
+metadata:
+  sources: [Wikidata Q430626 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nagasaki
+    period: 1863
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Oura_Cathedral_20180623.jpg/1280px-Oura_Cathedral_20180623.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Oura_Cathedral_20180623.jpg
+    license: CC0
+    credit: Houjyou-Minori
+identifiers:
+  viaf: "255514751"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q430626
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q430626

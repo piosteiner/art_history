@@ -54,6 +54,42 @@ relationships:
       - accessed: 2026-10-30
         property: P27
         wikidata: Q233603
+  - type: child_of
+    to: person/maria-luisa-of-parma
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q229854
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q233603
+  - type: sibling_of
+    to: person/carlos-de-borbon-y-borbon-parma
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q343621
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233603
+  - type: sibling_of
+    to: person/ferdinand-vii-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q186256
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233603
+  - type: sibling_of
+    to: person/maria-isabella-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233196
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233603
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Carlota_Joaquina_by_Taunay_1817.jpg/1280px-Carlota_Joaquina_by_Taunay_1817.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Carlota_Joaquina_by_Taunay_1817.jpg

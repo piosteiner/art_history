@@ -1,0 +1,112 @@
+public_id: 123206
+title_lang: en
+title: The Annunciation
+names:
+  - lang: en
+    role: original
+    text: Annunciation
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2734881
+  - lang: nl
+    role: translation
+    text: De Boodschap aan Maria
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2734881
+  - lang: fr
+    role: translation
+    text: L'Annonciation
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2734881
+  - lang: de
+    role: translation
+    text: Verkündigung
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2734881
+  - lang: it
+    role: translation
+    text: Annunciazione
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2734881
+  - lang: es
+    role: translation
+    text: Anunciación
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2734881
+  - lang: ja
+    role: translation
+    text: 受胎告知
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2734881
+  - lang: zh
+    role: translation
+    text: 圣母领报
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2734881
+  - lang: ru
+    role: translation
+    text: Благовещение
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2734881
+creator: jan-van-eyck
+created: 1434/1436
+created_label: c. 1430s
+created_span: uncertain
+materials: [oil paint, panel, transferred on canvas]
+dimensions: [90.2, 34.1]
+institution: andrew-w-mellon-collection
+inventory_number: 1937.1.39
+wikidata_id: Q2734881
+metadata:
+  sources: [Wikidata Q2734881 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q2734881
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q2734881
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Annunciation_-_Jan_van_Eyck_-_1434_-_NG_Wash_DC.jpg/1280px-Annunciation_-_Jan_van_Eyck_-_1434_-_NG_Wash_DC.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Annunciation_-_Jan_van_Eyck_-_1434_-_NG_Wash_DC.jpg
+    license: Public domain
+    credit: Jan van Eyck
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q2734881
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q2734881
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q2734881
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q2734881
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q2734881
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q2734881

@@ -1,0 +1,18 @@
+public_id: 125191
+name: Nicolas Bertin
+given_name: Nicolas
+family_name: Bertin
+birth: 1667
+death: 1736-04-11
+wikidata_id: Q3296632
+metadata:
+  sources: [Wikidata Q3296632 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q3296632
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q3296632

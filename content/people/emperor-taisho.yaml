@@ -40,6 +40,16 @@ description_md: Emperor of Japan; the era of his reign is [[taisho-era|Taishō]]
 wikidata_id: Q157052
 metadata:
   sources: [Wikidata Q157052 (retrieved 2026-11-02)]
+relationships:
+  - type: child_of
+    to: person/emperor-meiji
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q157052
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q174231
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/3/33/Emperor_Taish%C5%8D.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Emperor_Taish%C5%8D.jpg

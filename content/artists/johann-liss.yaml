@@ -1,0 +1,18 @@
+public_id: 124633
+name: Johann Liss
+given_name: Johann
+family_name: Liss
+birth: 1597
+death: 1629-11-05
+wikidata_id: Q700279
+metadata:
+  sources: [Wikidata Q700279 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q700279
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q700279

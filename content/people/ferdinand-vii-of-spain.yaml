@@ -68,6 +68,24 @@ relationships:
       - accessed: 2026-10-30
         property: P20
         wikidata: Q186256
+  - type: child_of
+    to: person/maria-luisa-of-parma
+    sources:
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q186256
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q229854
+  - type: sibling_of
+    to: person/maria-isabella-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q186256
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233196
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Fernando_VII_-_Vicente_L%C3%B3pez.jpg/1280px-Fernando_VII_-_Vicente_L%C3%B3pez.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Fernando_VII_-_Vicente_L%C3%B3pez.jpg

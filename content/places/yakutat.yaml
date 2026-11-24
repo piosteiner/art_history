@@ -1,0 +1,22 @@
+public_id: 126271
+name: Yakutat
+kind: settlement
+parent: united-states
+country_code: US
+location: [-139.72722, 59.54694]
+wikidata_id: Q487681
+metadata:
+  sources: [Wikidata Q487681 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q487681
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q487681
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q487681

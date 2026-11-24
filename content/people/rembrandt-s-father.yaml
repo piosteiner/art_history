@@ -1,0 +1,18 @@
+public_id: 125218
+name: Rembrandt's father
+given_name: Rembrandt's
+family_name: father
+kind: person
+birth: 1601/1700
+wikidata_id: Q17330745
+metadata:
+  sources: [Wikidata Q17330745 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q17330745
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q17330745

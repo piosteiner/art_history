@@ -1,0 +1,140 @@
+public_id: 122883
+title_lang: en
+title: Study for "The Martyrdom of Saint Sebastian" (for the Augustinian monastery at Diessen, Germany)
+creator: giovanni-battista-tiepolo
+created: 1739
+kind: oil painting
+medium: oil on canvas
+dimensions: [51.7, 31.7]
+institution: cleveland-museum-of-art
+inventory_number: "1946.277"
+web_url: https://clevelandart.org/art/1946.277
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1946.277/1946.277_web.jpg
+    source_url: https://clevelandart.org/art/1946.277
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: institution/conservatorium-der-aufgehobenen-kloster
+    role: agent
+    not_sold: true
+    acquired: 1804
+    method: auction
+    place: munich
+    label: after the secularization of the monasteries (Diessen among them); depot in the Theatine monastery; sale, Munich, 1804, lot 1084 (handwritten list only), unsold
+    sources:
+      - url: https://clevelandart.org/art/1946.277
+        note: Sale, Munich, 1804, unsold and then transferred to the Zentralgemäldegalerie — After the secularization of the monasteries, including the one at Diessen, many works were transferred immediately to the Zentralgemäldegalerie …, while others first went to the Conservatorium der aufgehobenen Klöster, a depot in the Theatiner monastery (today, Odeonsplatz). From there they were auctioned off, and if they failed to sell, as was the case with the Tiepolo (lot 1084), they were given to the Zentralgemäldegalerie
+        source: cma-1946-277
+        accessed: 2026-11-24
+  - owner: institution/bavarian-state-painting-collections
+    acquired: 1804-08-20
+    method: transfer
+    direct: true
+    place: munich
+    label: as the Zentralgemäldegalerie; at Schleißheim, no. 2186 of the Zweibrücker Nachtragsinventar, no. 4150 in 1822; deaccessioned and sold at auction 1852
+    sources:
+      - url: https://clevelandart.org/art/1946.277
+        note: Bayerischen Staatsgemäldesammlungen, Munich, deaccessioned and sold at auction [1804-1852] — the Tiepolo was transferred there on August 20, 1804 … transported to Schleißheim castle … the Tiepolo was entered as No. 2186 in the "Zweibrücker Nachtragsinventar" … In the new inventory of 1822, the “St. Sebastian” and “St. Stephen” were listed as Nos. 4150 and 4151
+        source: cma-1946-277
+        accessed: 2026-11-24
+  - owner: person/robert-eberle
+    acquired: 1852
+    method: auction
+    direct: true
+    place: munich
+    label: sale, Schloss Schleißheim, Augsburg, 13–23 April 1852, lot 16, sold to "Eberle" — possibly the painter Robert Eberle
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1946.277
+        note: (Sale, Schloss Schleißheim, Augsburg, April 13-23, 1852, lot 16, sold to “Eberle”) … Possibly Robert Eberle [1815-1860], Munich, probably by descent to a Vienna collector [1852-1860] — “Eberle,” the name listed as the buyer in the inventory of the 1852 sale, may be Robert Eberle, a painter living in Munich.
+        source: cma-1946-277
+        accessed: 2026-11-24
+  - owner_label: collector (a well-positioned official), Vienna
+    acquired: late 19th century
+    method: inheritance
+    direct: true
+    place: vienna
+    label: presumably a relative of Eberle; sold to a "minor collector" in 1921 (Fröhlich's letter to Seligmann, 27 October 1928)
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1946.277
+        note: Collector, Vienna, sold to a “minor collector” [Late 19th century -1921] — According to Fröhlich's letter to Seligmann of Oct. 27, 1928, the Viennese collector was a “well-positioned official” (“hoheren Beamten”) who sold the painting to a “minor collector” (“kleiner Sammler”) in 1921.
+        source: cma-1946-277
+        accessed: 2026-11-24
+  - owner_label: minor collector, Vienna
+    acquired: 1921
+    method: purchase
+    direct: true
+    place: vienna
+    label: '"a minor collector and distrustful odd, old man"; probably sold or consigned to Galerie Fröhlich'
+    sources:
+      - url: https://clevelandart.org/art/1946.277
+        note: “Minor collector,” Vienna, probably sold or consigned to Galerie Fröhlich [1921-1928?] — Fröhlich’s letter to Seligmann says that the Tiepolo was acquired in 1921 by a “minor collector and distrustful odd, old man.”
+        source: cma-1946-277
+        accessed: 2026-11-24
+  - owner_label: Swiss dealer (unnamed)
+    role: agent
+    acquired_label: several years before 1928
+    label: entrusted to show to an interested collector; no transaction appears to have been made
+    sources:
+      - url: https://clevelandart.org/art/1946.277
+        note: Fröhlich notes that several years prior to 1928, the owner entrusted the Tiepolo to a Swiss dealer who was going to show the painting to a collector interested in the painting. It does not appear, however, that any transactions were made involving this dealer or collector.
+        source: cma-1946-277
+        accessed: 2026-11-24
+  - owner: institution/galerie-frohlich
+    role: dealer
+    acquired: 1928
+    direct: true
+    place: vienna
+    label: probably bought or on consignment from the minor collector; Dr. Fröhlich likely Otto Fröhlich; sold to Jacques Seligmann & Co. 1928
+    sources:
+      - url: https://clevelandart.org/art/1946.277
+        note: (Galerie Fröhlich, Vienna, sold to Jacques Seligmann & Co.) [1928] — Correspondence between Dr. Fröhlich and Jacques Seligmann from 1928 indicates that Fröhlich sold the painting to Seligmann in 1928.
+        source: cma-1946-277
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    acquired: 1928
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: stock book 1928–1929, inv. no. 4370; probably sold to Dr. Max Kadisch
+    sources:
+      - url: https://clevelandart.org/art/1946.277
+        note: (Jacques Seligmann & Co., New York, NY, probably sold to Dr. Max Kadisch) [1928-by 1930?] — … it seems that Seligmann likely sold the painting to Kadisch sometime after 1928 (inv. no. 4370, 1928-1929 Seligmann stock book)
+        source: cma-1946-277
+        accessed: 2026-11-24
+  - owner: person/max-kadisch
+    acquired_label: by 1930? (unconfirmed)
+    method: purchase
+    direct: true
+    place: vienna
+    label: Dr. Max Kadisch, dead by 1938 (Fröhlich-Bume, Burlington Magazine 1938); the sale to him is not documented in Seligmann's records
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1946.277
+        note: Probably Dr. Max Kadisch, Vienna, to Jacques Seligmann & Co. [By 1930? - 1917/1938] — The Seligmann & Co. file on the Tiepolo lists the last owner as “Dr. Max Kadisch” of Vienna … There is an unconfirmed reference in the museum’s files that the painting was with Kadisch by 1930. Lili Fröhlich-Bume comments in her 1938 article in the Burlington Magazine that the Tiepolo “turned up a few years ago in the collection of the late Dr. Kadisch at Vienna,”
+        source: cma-1946-277
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    acquired_label: by 1937/1938
+    place: new-york-city
+    label: back in stock by 1937/1938, inv. no. 6508, perhaps after Kadisch's death; in "Works of Art Sold or Taken out of Stock 1946-1948"
+    sources:
+      - url: https://clevelandart.org/art/1946.277
+        note: (Jacques Seligmann & Co., New York, New York, sold to the Cleveland Museum of Art) [1937/1938 - 1946] — The painting was back with Seligmann & Co. by 1937/1938, when it is listed in the stock book with inv. no. 6508. The Tiepolo also appears, under the same inventory number, in the list of “Works of Art Sold or Taken out of Stock 1946-1948.”
+        source: cma-1946-277
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1946
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Delia E. Holden and L. E. Holden Funds, inv. 1946.277
+    sources:
+      - url: https://clevelandart.org/art/1946.277
+        note: The Cleveland Museum of Art, Cleveland, Ohio — Delia E. Holden and L.E. Holden Funds [1946-]
+        source: cma-1946-277
+        accessed: 2026-11-24

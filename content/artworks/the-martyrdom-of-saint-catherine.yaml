@@ -1,0 +1,174 @@
+public_id: 122802
+title_lang: en
+title: The Martyrdom of Saint Catherine
+names:
+  - lang: de
+    role: original
+    text: Felsenlandschaft mit Meeresufer bei aufziehendem Gewitter (Wunder der Heiligen Katharina)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176248
+  - text: Mountainous landscape with storm
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176248
+  - lang: nl
+    role: translation
+    text: Landschap met het martelaarschap van de H. Catharina
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176248
+  - lang: de
+    role: original
+    text: Martyrium der hl. Katharina
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176248
+attribution_label: possibly by Matthys Cock
+created: c. 1540
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [62.2, 118.2]
+institution: national-gallery-of-art
+inventory_number: 1952.2.18
+provenance_status: c_indications
+provenance_status_note: Sold in Amsterdam in 1940 by Mendel Mayer Rössler, a Polish national, to Walter Paech, who sold it to Hans Posse for Hitler's museum in Linz (Linz no. 1368); recovered at Altaussee, restituted to the Netherlands 1946 and to Rössler on 23 May 1947.
+wikidata_id: Q20176248
+metadata:
+  sources: [Wikidata Q20176248 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/catherine-of-alexandria
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20176248
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/The_Martyrdom_of_Saint_Catherine_E11481.jpg/1280px-The_Martyrdom_of_Saint_Catherine_E11481.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Martyrdom_of_Saint_Catherine_E11481.jpg
+    license: Public domain
+    credit: Antwerp 16th Century (Possibly Matthys Cock)
+provenance:
+  - owner: institution/galerie-van-diemen
+    role: dealer
+    place: berlin
+    label: part of the Margraf group; confirmed by Karl Lilienfeld's letter of 27 January 1951
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41601.html
+        note: (Van Diemen Gallery, Berlin).[1] — [1] … The initial ownership of the painting by the Van Diemen-Margraf Gallery is verified in a letter of 27 January 1951 from Karl Lilienfeld to the Samuel H. Kress Foundation
+        source: nga-1952-2-18
+        accessed: 2026-11-24
+  - owner: person/mendel-mayer-rossler
+    acquired: 1926
+    place: berlin
+    label: acquired in Berlin
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41601.html
+        note: Acquired 1926 in Berlin by Mendel Mayer Rössler [1879-1951];[2]
+        source: nga-1952-2-18
+        accessed: 2026-11-24
+  - owner: person/walter-paech
+    role: dealer
+    acquired: 1940
+    method: purchase
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41601.html
+        note: "[2] Rössler, a Polish national, sold this picture in Amsterdam in 1940 to the dealer Walter Paech, who then sold the painting to Hans Posse for Hitler's planned museum in Linz."
+        source: nga-1952-2-18
+        accessed: 2026-11-24
+  - owner: person/adolf-hitler
+    role: possessor
+    method: purchase
+    direct: true
+    label: sold to Hans Posse for Hitler's museum in Linz; Linz inventory no. 1368, as by Brueghel
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41601.html
+        note: who then sold the painting to Hans Posse for Hitler's planned museum in Linz. (See Linz inventory no. 1368, as by Brueghel
+        source: nga-1952-2-18
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    ended: 1946-03-04
+    method: transfer
+    place: munich
+    label: recovered at Altaussee; Munich property card no. 4347/2996
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41601.html
+        note: "The records of the Munich Central Collecting Point indicate that the painting was recovered at Alt Aussee and restituted to the Netherlands on 4 March 1946 (See Munich property card #4347/2996"
+        source: nga-1952-2-18
+        accessed: 2026-11-24
+  - owner_label: the Netherlands (Dutch restitution authorities)
+    role: custodian
+    acquired: 1946-03-04
+    ended: 1947-05-23
+    method: restitution
+    direct: true
+    label: Dutch Receipt for Cultural Property no. 8A, dated 7 March 1946
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41601.html
+        note: restituted to the Netherlands on 4 March 1946 (… Dutch Receipt for Cultural Property no. 8A, dated 7 March 1946 …)
+        source: nga-1952-2-18
+        accessed: 2026-11-24
+  - owner: person/mendel-mayer-rossler
+    acquired: 1947-05-23
+    method: restitution
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41601.html
+        note: The painting was restituted to Rössler on 23 May 1947
+        source: nga-1952-2-18
+        accessed: 2026-11-24
+  - owner: institution/van-diemen-lilienfeld-galleries
+    role: dealer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41601.html
+        note: (Van Diemen-Lilienfeld Galleries, New York);
+        source: nga-1952-2-18
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1950
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Kress Collection Digital Archive, object 2241
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41601.html
+        note: sold 1950 Samuel H. Kress Foundation, New York;[3]
+        source: nga-1952-2-18
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    label: gift by exchange
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41601.html
+        note: gift 1952 by exchange to NGA.
+        source: nga-1952-2-18
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20176248
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20176248
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20176248
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20176248
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20176248

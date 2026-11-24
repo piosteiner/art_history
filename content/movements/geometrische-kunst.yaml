@@ -1,0 +1,11 @@
+public_id: 123151
+name: Geometrische Kunst
+kind: movement
+wikidata_id: Q19970066
+metadata:
+  sources: [Wikidata Q19970066 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q19970066

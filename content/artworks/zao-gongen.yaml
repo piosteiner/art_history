@@ -1,0 +1,35 @@
+public_id: 124346
+title: Zaō Gongen
+names:
+  - text: Plaque with Hair-line Engraving of Zao Gonge
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045219
+  - text: Hair-line engraving of Zao-Gongen on copper plaque
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045219
+  - text: Cast bronze plaque with line-engraved Zaō Gongen
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045219
+  - lang: ja
+    role: translation
+    text: 蔵王権現像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045219
+created: 1001-05-11
+wikidata_id: Q107045219
+metadata:
+  sources: [Wikidata Q107045219 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Cast_bronze_plaque_with_line-engraved_Za%C5%8D_Gongen%28Central_part%29_%28Nishiarai_Daishi%29.jpg/1280px-Cast_bronze_plaque_with_line-engraved_Za%C5%8D_Gongen%28Central_part%29_%28Nishiarai_Daishi%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cast_bronze_plaque_with_line-engraved_Za%C5%8D_Gongen(Central_part)_(Nishiarai_Daishi).jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107045219

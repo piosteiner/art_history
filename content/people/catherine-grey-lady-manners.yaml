@@ -1,0 +1,21 @@
+public_id: 124669
+name: Catherine Grey, Lady Manners
+kind: person
+birth: 1767
+death: 1852
+wikidata_id: Q19974201
+metadata:
+  sources: [Wikidata Q19974201 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q19974201
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q19974201
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q19974201

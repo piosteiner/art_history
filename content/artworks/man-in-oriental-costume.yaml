@@ -1,0 +1,153 @@
+public_id: 122985
+title_lang: en
+title: Man in Oriental Costume
+names:
+  - lang: nl
+    role: translation
+    text: Halffiguur van een man in oosterse kleding
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177141
+  - lang: de
+    role: translation
+    text: Mann in orientalischem Gewand
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177141
+creator: rembrandt
+attribution_label: Rembrandt van Rijn and workshop (probably Govaert Flinck)
+created: 1635
+materials: [oil paint, canvas]
+dimensions: [102.8, 78.8]
+institution: national-gallery-of-art
+inventory_number: 1940.1.13
+provenance_status: a_clear
+provenance_status_note: Andrew W. Mellon bought it from the Hermitage in 1930/31; his estate deeded it on 8 March 1938 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1940.
+wikidata_id: Q20177141
+metadata:
+  sources: [Wikidata Q20177141 (retrieved 2026-11-23)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/16/Rembrandt_Man_in_Oriental_Costume.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rembrandt_Man_in_Oriental_Costume.jpg
+    license: Public domain
+    credit: Rembrandt
+provenance:
+  - owner: person/johann-ernst-gotzkowsky
+    acquired: 1756 or earlier
+    ended_label: until at least 1766
+    place: berlin
+    label: bought on behalf of Frederick II of Prussia, kept during the Seven Years' War; Oesterreich's catalogues 1757 (no. 33) and 1766 (no. 146)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.572.html
+        note: Johan Ernst Gotzkowsky [1710-1775], Berlin, by 1756 until at least 1766;[1] — [1] Gotzkowsky originally bought the picture on behalf of Friedrich II (the Great), king of Prussia (1712-1786). Due to the financial straits of Prussia during the Seven Years' War (1756-1762), the painting remained in Gotzkowsky's hands.
+        source: nga-1940-1-13
+        accessed: 2026-11-24
+  - owner: person/prince-henry-of-prussia
+    method: purchase
+    direct: true
+    label: found in the prince's inventories (Bartoschek 1985, Frank 2002/2003)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.572.html
+        note: sold to Heinrich, prince of Prussia [1726-1802];[2]
+        source: nga-1940-1-13
+        accessed: 2026-11-24
+  - owner: person/catherine-ii-of-russia
+    acquired: 1773 or earlier
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: Münnich's catalogue of the Imperial Palace (1773–85), no. 124
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.572.html
+        note: sold to Catherine II, empress of Russia [1729-1796], Saint Petersburg, by 1773;[3]
+        source: nga-1940-1-13
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.572.html
+        note: Imperial Hermitage Gallery, Saint Petersburg;
+        source: nga-1940-1-13
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1930/1931
+    acquired_label: between June 1930 and April 1931
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York); as a painting by Rembrandt
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.572.html
+        note: sold between June 1930 and April 1931, as a painting by Rembrandt, through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1940-1-13
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1930/1931
+    acquired_label: between June 1930 and April 1931
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.; as a painting by Rembrandt
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.572.html
+        note: sold between June 1930 and April 1931, as a painting by Rembrandt, through (…) to Andrew W. Mellon, Pittsburgh and Washington;
+        source: nga-1940-1-13
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    role: estate
+    method: inheritance
+    direct: true
+    place: pittsburgh
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.572.html
+        note: his estate;
+        source: nga-1940-1-13
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1938-03-08
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by the estate of Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.572.html
+        note: deeded 8 March 1938 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1940-1-13
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1940
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.572.html
+        note: gift 1940 to NGA.
+        source: nga-1940-1-13
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177141
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177141
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177141
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177141
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177141
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177141

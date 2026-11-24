@@ -65,6 +65,15 @@ relationships:
       - accessed: 2026-11-02
         property: P1066
         wikidata: Q2661041
+  - type: married_to
+    to: artist/ike-gyokuran
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q2661041
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q23008985
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/A_portrait_of_Ike_Taiga_by_Fukuhara_Gogaku_%E6%B1%A0%E5%A4%A7%E9%9B%85%E5%83%8F_%E7%A6%8F%E5%8E%9F%E4%BA%94%E5%B2%B3.jpg/1280px-A_portrait_of_Ike_Taiga_by_Fukuhara_Gogaku_%E6%B1%A0%E5%A4%A7%E9%9B%85%E5%83%8F_%E7%A6%8F%E5%8E%9F%E4%BA%94%E5%B2%B3.jpg
     source_url: https://commons.wikimedia.org/wiki/File:A_portrait_of_Ike_Taiga_by_Fukuhara_Gogaku_%E6%B1%A0%E5%A4%A7%E9%9B%85%E5%83%8F_%E7%A6%8F%E5%8E%9F%E4%BA%94%E5%B2%B3.jpg

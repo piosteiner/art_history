@@ -1,0 +1,152 @@
+public_id: 122980
+title_lang: en
+title: Pope Innocent X
+names:
+  - lang: fr
+    role: translation
+    text: Innocent X
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177335
+  - lang: de
+    role: translation
+    text: Papst Innocent X
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177335
+attribution_label: circle of Diego Velázquez
+created: c. 1650
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [49.2, 41.3]
+institution: national-gallery-of-art
+inventory_number: 1937.1.80
+web_url: https://www.wga.hu/frames-e.html?/html/v/velazque/07/0712vela.html
+provenance_status: a_clear
+provenance_status_note: Andrew W. Mellon bought it from the Hermitage in July 1930 and deeded it on 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q20177335
+metadata:
+  sources: [Wikidata Q20177335 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/innocent-x
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20177335
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Portrait_of_Pope_Innocent_X_%28by_Circle_of_Diego_Vel%C3%A1zquez%29_-_National_Gallery_of_Art.jpg/1280px-Portrait_of_Pope_Innocent_X_%28by_Circle_of_Diego_Vel%C3%A1zquez%29_-_National_Gallery_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Pope_Innocent_X_(by_Circle_of_Diego_Vel%C3%A1zquez)_-_National_Gallery_of_Art.jpg
+    license: Public domain
+    credit: Circle of Diego Velázquez
+provenance:
+  - owner: person/robert-walpole
+    label: 1st Earl of Orford; Houghton Hall, Norfolk
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.87.html
+        note: Sir Robert Walpole, 1st earl of Orford [1676-1745], Houghton Hall, Norfolk;
+        source: nga-1937-1-80
+        accessed: 2026-11-24
+  - owner: person/robert-walpole-2nd-earl-of-orford
+    method: inheritance
+    direct: true
+    label: his son; Houghton Hall, Norfolk
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.87.html
+        note: by inheritance to his son, Robert Walpole, 2nd earl of Orford [1700-1751], Houghton Hall;
+        source: nga-1937-1-80
+        accessed: 2026-11-24
+  - owner: person/george-walpole-3rd-earl-of-orford
+    method: inheritance
+    direct: true
+    label: his son; Houghton Hall, Norfolk
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.87.html
+        note: by inheritance to his son, George Walpole, 3rd earl of Orford [1730-1791], Houghton Hall;
+        source: nga-1937-1-80
+        accessed: 2026-11-24
+  - owner: person/catherine-ii-of-russia
+    acquired: 1779
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: through Count Aleksei Semonovich Musin-Pushkin, Russian ambassador to England
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.87.html
+        note: sold 1779, through Count Aleksei Semonovich Musin-Pushkin, Russian ambassador to England, to Catherine II, empress of Russia [1729-1796], Saint Petersburg;
+        source: nga-1937-1-80
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    label: inv. no. 418
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.87.html
+        note: Imperial Hermitage Gallery, Saint Petersburg, inv. no. 418;
+        source: nga-1937-1-80
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1930-07
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York); as a painting by Velázquez
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.87.html
+        note: sold July 1930, as a painting by Velázquez, through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1937-1-80
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1930-07
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.; as a painting by Velázquez
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.87.html
+        note: sold July 1930, as a painting by Velázquez, through (…) to Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-80
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1932-03-30
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.87.html
+        note: deeded 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1937-1-80
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.87.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-80
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177335
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177335
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177335
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177335
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177335

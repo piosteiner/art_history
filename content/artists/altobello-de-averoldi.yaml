@@ -1,0 +1,18 @@
+public_id: 122824
+name: Altobello de Averoldi
+given_name: Altobello
+family_name: de Averoldi
+birth: 1468
+death: 1531-11-11
+wikidata_id: Q23581270
+metadata:
+  sources: [Wikidata Q23581270 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q23581270
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q23581270

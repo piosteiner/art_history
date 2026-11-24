@@ -1,0 +1,11 @@
+public_id: 123187
+name: Byzantine art
+kind: movement
+wikidata_id: Q211884
+metadata:
+  sources: [Wikidata Q211884 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q211884

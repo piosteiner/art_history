@@ -27,6 +27,15 @@ relationships:
       - accessed: 2026-11-04
         property: P20
         wikidata: Q69574
+  - type: married_to
+    to: person/sonia-delaunay
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q69574
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q232972
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Uhde%2C_Style_de_France%2C_15-04-1947.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Uhde,_Style_de_France,_15-04-1947.jpg

@@ -1,0 +1,22 @@
+public_id: 127474
+name: Torgau
+kind: settlement
+parent: sachsen
+country_code: DE
+location: [13.00556, 51.56028]
+wikidata_id: Q12062
+metadata:
+  sources: [Wikidata Q12062 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q12062
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q12062
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q12062

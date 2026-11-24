@@ -1,0 +1,18 @@
+public_id: 123056
+name: Gilbert Stuart
+given_name: Gilbert
+family_name: Stuart
+birth: 1755-12-03
+death: 1828-07-09
+wikidata_id: Q41402
+metadata:
+  sources: [Wikidata Q41402 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q41402
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q41402

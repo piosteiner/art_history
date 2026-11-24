@@ -1,0 +1,22 @@
+public_id: 128361
+name: Tegernsee
+kind: settlement
+parent: bayern
+country_code: DE
+location: [11.75694, 47.70861]
+wikidata_id: Q260130
+metadata:
+  sources: [Wikidata Q260130 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q260130
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q260130
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q260130

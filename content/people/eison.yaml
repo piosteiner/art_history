@@ -1,0 +1,21 @@
+public_id: 124437
+name: Eison
+kind: person
+birth: 1201
+death: 1290-10-06
+wikidata_id: Q11410722
+metadata:
+  sources: [Wikidata Q11410722 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11410722
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q11410722
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q11410722

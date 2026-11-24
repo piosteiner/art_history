@@ -1,0 +1,156 @@
+public_id: 124623
+title_lang: en
+title: Woman Reading
+creator: nicolas-bernard-lepicie
+created: 1769
+materials: [oil paint, canvas]
+dimensions: [46.3, 37.8]
+institution: cleveland-museum-of-art
+inventory_number: "1964.288"
+web_url: https://clevelandart.org/art/1964.288
+provenance_status: d_seized
+provenance_status_note: Owned by Georges Wildenstein in share with Galerie Cailleux, Paris; seized by the ERR (W 125) probably by November 1940; recovered at Altaussee, repatriated to France 1946 and restituted to Wildenstein 21 March 1947.
+wikidata_id: Q60469188
+metadata:
+  sources: [Wikidata Q60469188 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Nicolas-Bernard_L%C3%A9pici%C3%A9_-_Woman_Reading_-_1964.288_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Nicolas-Bernard_L%C3%A9pici%C3%A9_-_Woman_Reading_-_1964.288_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nicolas-Bernard_L%C3%A9pici%C3%A9_-_Woman_Reading_-_1964.288_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Nicolas-Bernard Lépicié
+provenance:
+  - owner: person/louis-courajod
+    acquired_label: before 1896
+    place: paris
+    label: old label "M. Courajod" on the stretcher; not in his posthumous sales of 1897 and 1911
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1964.288
+        note: Probably Louis-Charles-Léon Courajod [1841-1896], Paris, France [Before 1896] — The remnants of an old label reading "M. Courajod" are present on the painting's stretcher
+        source: cma-1964-288
+        accessed: 2026-11-24
+  - owner_label: public auction, Paris
+    role: agent
+    acquired: 1938
+    method: auction
+    place: paris
+    label: "\"public auction\" per Wildenstein's file; sale not identified"
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1964.288
+        note: (Probably a public auction, Paris, sold to Georges Wildenstein) [Probably 1938] — Wildenstein’s file on this painting indicates that it was purchased in 1938 at, according to the gallery's records, a "public auction,"
+        source: cma-1964-288
+        accessed: 2026-11-24
+  - owner: person/georges-wildenstein
+    co_owners: [institution/galerie-cailleux]
+    role: dealer
+    acquired: 1938
+    method: auction
+    direct: true
+    place: paris
+    label: owned in share; Wildenstein stock no. 5798, as by Lagrenée with Lépicié written below
+    sources:
+      - url: https://clevelandart.org/art/1964.288
+        note: (Georges Wildenstein, Paris, France, owned in share with Galerie Cailleux, confiscated by the Einsatzstab Reichsleiter Rosenberg) [1938-probably 1940] — This painting appears in Wildenstein’s Paris records from 1938 with stock no. 5798.
+        source: cma-1964-288
+        accessed: 2026-11-24
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    acquired: 1940
+    ended: 1945
+    method: confiscation
+    direct: true
+    place: paris
+    label: seized likely by mid-November 1940; registered at the Jeu de Paume 15 January 1943 as ERR W 125; shipped in crate GEM 105, most likely to Altaussee
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1964.288
+        note: The Lépicié was seized by the Einsatzstab Reichsleiter Rosenberg (ERR), likely by mid-November 1940 [...] The painting’s arrival at the Jeu de Paume was registered on January 15, 1943, when it was assigned ERR No. W 125
+        source: cma-1964-288
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    acquired: 1945-06-23
+    ended: 1946-06-25
+    direct: true
+    place: munich
+    label: from Altaussee (Aussee no. 294/11); Munich no. 368/11; repatriated to France 25 June 1946
+    sources:
+      - url: https://clevelandart.org/art/1964.288
+        note: The Munich Collecting Central Collecting Point property card shows an Alt Aussee number of 294/11 and a Munich number of 368/11 [...] where the painting arrived on June 23, 1945. It was repatriated to France on June 25, 1946, and then restituted to Wildenstein on March 21, 1947.
+        source: cma-1964-288
+        accessed: 2026-11-24
+  - owner: person/georges-wildenstein
+    co_owners: [institution/galerie-cailleux]
+    role: dealer
+    acquired: 1947-03-21
+    method: restitution
+    direct: true
+    place: new-york-city
+    label: restituted to Wildenstein; his share probably sold later to Galerie Cailleux (circumstances unknown)
+    sources:
+      - url: https://clevelandart.org/art/1964.288
+        note: (Georges Wildenstein, New York, NY, his share probably sold to Galerie Cailleux) [1947-before 1960]
+        source: cma-1964-288
+        accessed: 2026-11-24
+  - owner: institution/galerie-cailleux
+    role: dealer
+    acquired_label: before 1960
+    method: purchase
+    direct: true
+    place: paris
+    label: full ownership, probably by buying Wildenstein's share
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1964.288
+        note: (Galerie Cailleux, Paris, France, sold to Severance and Greta Millikin) [By 1960] — it would appear that Wildenstein sold his share to Cailleux, giving the latter full ownership.
+        source: cma-1964-288
+        accessed: 2026-11-24
+  - owner: person/severance-a-millikin
+    co_owners: [person/greta-millikin]
+    acquired: 1960
+    ended: 1964
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1964.288
+        note: Severance (1895-1985) and Greta Millikin (1903-1989), Cleveland, Ohio, gifted to the Cleveland Museum of Art [1960-1964]
+        source: cma-1964-288
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1964
+    method: gift
+    direct: true
+    place: cleveland
+    label: Severance and Greta Millikin Collection
+    sources:
+      - url: https://clevelandart.org/art/1964.288
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1964-]
+        source: cma-1964-288
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60469188
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60469188
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60469188
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60469188
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60469188
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60469188

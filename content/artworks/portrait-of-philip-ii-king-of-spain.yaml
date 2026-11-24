@@ -1,0 +1,257 @@
+public_id: 122928
+title_lang: en
+title: Portrait of Philip II, King of Spain
+creator: alessandro-cesati
+created: 1553/1557
+kind: sculpture
+medium: citrine, mounted in a gold and enamel pendant
+institution: cleveland-museum-of-art
+inventory_number: "2012.53"
+web_url: https://clevelandart.org/art/2012.53
+images:
+  - url: https://openaccess-cdn.clevelandart.org/2012.53/2012.53_web.jpg
+    source_url: https://clevelandart.org/art/2012.53
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/philip-ii-of-spain
+    acquired: 1550s
+    label: possibly given to his godson Philip Howard
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: Possibly King Philip II of Spain (1527-1598), possibly by gift to his godson Philip Howard [1550s]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/philip-howard-20th-earl-of-arundel
+    acquired: 1550s
+    ended: 1595
+    method: gift
+    direct: true
+    label: possibly a gift from his godfather Philip II
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: Possibly Philip Howard, 20th Earl of Arundel (1557-1595), by inheritance to his son Thomas Howard (1585-1646) [1550s-1595]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/thomas-howard-21st-earl-of-arundel
+    acquired: 1595
+    ended: 1646
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: Thomas Howard, 2nd Earl of Arundel (1585-1646), by inheritance to Henry Frederick Howard (1608-1652) [1595-1646]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/henry-frederick-howard-22nd-earl-of-arundel
+    acquired: 1646
+    ended: 1652
+    method: inheritance
+    direct: true
+    label: Lord Maltravers
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: Henry Frederick Howard, Lord Maltravers (1608-1652), by descent to Herny Howard, 7th Duke of Norfolk (1655-1701) [1646-1652]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/henry-howard-7th-duke-of-norfolk
+    acquired: 1652
+    method: inheritance
+    direct: true
+    label: by descent
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: Henry Howard, 7th Duke of Norfolk (1655-1701), by settlement to his divorced Duchess Lady Mary Mordaunt (c. 1659-1705) [1652-1700]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/mary-mordaunt
+    acquired: 1700
+    ended: 1705
+    method: settlement
+    direct: true
+    label: by settlement to the divorced Duchess of Norfolk
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: Duchess Lady Mary Mordaunt (c. 1659-1705), by inheritance to her second husband Sir John Germain (1650-1718) [1700-1705]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/sir-john-germain
+    acquired: 1705
+    ended: 1718
+    method: inheritance
+    direct: true
+    label: from his wife Mary Mordaunt
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: Sir John Germain (1650-1718), by inheritance to his second wife Lady Elizabeth Germain (1680-1769) [1705-1718]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/lady-elizabeth-germain
+    acquired: 1718
+    method: inheritance
+    direct: true
+    label: from her husband Sir John Germain
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: Lady Elizabeth Germain (1680-1769), by gift to her great niece Lady Mary Beauclerc (1743-1812) on the occasion of her marriage to Lord Charles Spencer (1740-1820), brother of the 3rd duke of Marlborough [1718-1762]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/lady-mary-beauclerc
+    co_owners: [person/lord-charles-spencer]
+    acquired: 1762
+    method: gift
+    direct: true
+    label: wedding gift from her great-aunt Lady Elizabeth Germain
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: Lady Elizabeth Germain (1680-1769), by gift to her great niece Lady Mary Beauclerc (1743-1812) on the occasion of her marriage to Lord Charles Spencer (1740-1820), brother of the 3rd duke of Marlborough [1718-1762] — Lord Charles Spencer (1740-1820), by inheritance to Lady Mary Spencer, by family arrangement to her brother-in-law George Spencer (1739-1817) [1762-]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner_label: Lady Mary Spencer
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: Lord Charles Spencer (1740-1820), by inheritance to Lady Mary Spencer, by family arrangement to her brother-in-law George Spencer (1739-1817)
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/george-spencer-4th-duke-of-marlborough
+    ended: 1817
+    method: transfer
+    direct: true
+    label: by family arrangement from his sister-in-law Lady Mary Spencer
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: George Spencer, 4th Duke of Marlborough (1739-1817), by inheritance to George Spencer-Churchill, 5th Duke of Marlborough (1766-1840) [-1817]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/george-spencer-churchill-5th-duke-of-marlborough
+    acquired: 1817
+    ended: 1840
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: George Spencer-Churchill, 5th Duke of Marlborough (1766-1840), by inheritance to George Spencer-Churchill, 6th Duke of Marlborough (1793-1857) [1817-1840]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/george-spencer-churchill-6th-duke-of-marlborough
+    acquired: 1840
+    ended: 1857
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: George Spencer-Churchill, 6th Duke of Marlborough (1793-1857), by inheritance to John Winston Spencer-Churchill (1822-1883) [1840-1857]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/john-winston-spencer-churchill-7th-duke-of-marlborough
+    acquired: 1857
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: John Winston Spencer-Churchill, 7th Duke of Marlborough (1822-1883) (sold, Christie's, London, 1875, lot 587, to David Bromilow) [1857-1875]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1875
+    method: auction
+    direct: true
+    place: london
+    label: sale, Christie's, London, 1875, lot 587
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: (sold, Christie's, London, 1875, lot 587, to David Bromilow)
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/david-bromilow
+    acquired: 1875
+    method: auction
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: to David Bromilow — David Bromilow (sold, Christie's, London, June 26, 1899, lot 587 to Francis Whelan for £105) [1875-1899]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1899-06-26
+    method: auction
+    direct: true
+    place: london
+    label: sale, Christie's, London, 26 June 1899, lot 587
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: David Bromilow (sold, Christie's, London, June 26, 1899, lot 587 to Francis Whelan for £105)
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/francis-whelan
+    acquired: 1899-06-26
+    ended_label: before 1930
+    method: auction
+    direct: true
+    price:
+      amount: 105
+      currency: GBP
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: to Francis Whelan for £105 — Francis Whelan [1899 - before 1930]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: institution/spink-son
+    role: dealer
+    acquired_label: before 1930
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: Spink and Sons [Before 1930]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner_label: private collection
+    acquired_label: before 2008
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: Private collection (sold Bonham's, London, December 2008, for £62,400 to Lowell Libson) [Before 2008]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: institution/bonhams
+    role: agent
+    acquired: 2008-12
+    method: auction
+    direct: true
+    place: london
+    label: sale, Bonhams, London, December 2008
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: (sold Bonham's, London, December 2008, for £62,400 to Lowell Libson)
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: person/lowell-libson
+    co_owners: [person/thomas-heneage]
+    role: dealer
+    acquired: 2008-12
+    method: auction
+    direct: true
+    place: london
+    price:
+      amount: 62400
+      currency: GBP
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: for £62,400 to Lowell Libson — Lowell Libson and Thomas Heneage [2008-2012]
+        source: cma-2012-53
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2012
+    method: purchase
+    direct: true
+    place: cleveland
+    label: "acquired by exchange: bequests of Mrs. Severance A. Millikin and John L. Severance and other funds and gifts"
+    sources:
+      - url: https://clevelandart.org/art/2012.53
+        note: The Cleveland Museum of Art, Cleveland, Ohio [2012-]
+        source: cma-2012-53
+        accessed: 2026-11-24

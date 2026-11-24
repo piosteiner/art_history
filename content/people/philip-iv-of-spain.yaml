@@ -77,6 +77,15 @@ relationships:
       - accessed: 2026-10-30
         property: P551
         wikidata: Q691402
+  - type: married_to
+    to: person/mariana-of-austria
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q311469
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q691402
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Philip_IV_of_Spain.jpg/1280px-Philip_IV_of_Spain.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Philip_IV_of_Spain.jpg

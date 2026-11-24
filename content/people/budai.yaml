@@ -1,0 +1,21 @@
+public_id: 124243
+name: Budai
+kind: person
+birth: 801/900
+death: 916
+wikidata_id: Q599838
+metadata:
+  sources: [Wikidata Q599838 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q599838
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q599838
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q599838

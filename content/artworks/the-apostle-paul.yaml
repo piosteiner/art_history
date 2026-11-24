@@ -1,0 +1,288 @@
+public_id: 122990
+title_lang: en
+title: The Apostle Paul
+names:
+  - lang: pl
+    role: original
+    text: Paweł Apostoł
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177450
+  - text: The Apostle Paul at his Writing Desk
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177450
+  - lang: nl
+    role: translation
+    text: De apostel Paulus
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177450
+  - lang: fr
+    role: translation
+    text: L'Apôtre Paul
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177450
+  - lang: de
+    role: translation
+    text: Der Apostel Paulus
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177450
+  - lang: it
+    role: translation
+    text: Paolo Apostolo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177450
+creator: rembrandt
+attribution_label: Rembrandt van Rijn (and workshop?)
+created: c. 1657
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [131.5, 104.4]
+institution: national-gallery-of-art
+inventory_number: 1942.9.59
+web_url: http://www.rembrandtdatabase.org/Rembrandt/painting/59127/the-apostle-paul
+wikidata_id: Q20177450
+metadata:
+  sources: [Wikidata Q20177450 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/paul-the-apostle
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20177450
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Saint_Paul%2C_Rembrandt_van_Rijn_%28and_Workshop%3F%29%2C_c._1657.jpg/1280px-Saint_Paul%2C_Rembrandt_van_Rijn_%28and_Workshop%3F%29%2C_c._1657.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Saint_Paul,_Rembrandt_van_Rijn_(and_Workshop%3F),_c._1657.jpg
+    license: Public domain
+    credit: Rembrandt
+provenance:
+  - owner: person/johan-van-schuylenburg
+    place: the-hague
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: Johan van Schuylenburg, The Hague;
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1735-09-20
+    method: auction
+    direct: true
+    place: the-hague
+    label: his sale, The Hague, 20 September 1735, no. 31
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: (his sale, The Hague, 20 September 1735, no. 31);
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner_label: Backer
+    acquired: 1735-09-20
+    method: auction
+    direct: true
+    label: buyer at the 1735 sale
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: Backer.
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner: person/pierre-louis-eveillard-de-livois
+    place: angers
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: Pierre-Louis Éveillard de Livois [1736-1790], Angers;[1]
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner_label: Sentout
+    role: agent
+    acquired: 1791
+    method: auction
+    direct: true
+    place: angers
+    label: his estate sale, Angers, 1791 (date unknown), no. 65
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: (his estate sale, by Sentout, Angers, unknown date in 1791, no. 65);
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner_label: Gamba
+    method: auction
+    direct: true
+    label: possibly Bartolomeo Gamba (1776–1841), librarian of the Marciana, Venice (NGA); 'negozio di Parigi' in Marescalchi's inventory
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: Gamba;[2] — [2] This was possibly Bartolomeo Gamba (1776-1841), bibliographer, publisher, and librarian of the Biblioteca Nazionale Marciana in Venice.
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner_label: Paillet and Geoffroy
+    role: agent
+    not_sold: true
+    acquired: 1811-12-17
+    method: auction
+    direct: true
+    place: paris
+    label: his sale, Paris, 17–18 December 1811, 1st day, no. 26; bought in
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: (his sale, by Paillet and Geoffroy, Paris, 17-18 December 1811, 1st day, no. 26, bought in);
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner: person/ferdinando-marescalchi
+    acquired_label: soon after the sale of 17–18 December 1811
+    method: purchase
+    direct: true
+    place: bologna
+    label: in his inventory of 1813 and in the collection's inventories of 1817 and 1824
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: purchased soon after this sale by Ferdinando Marescalchi [1754-1816], Bologna.[3] — [3] An 1813 inventory of Marescalchi's collection includes the painting … It is also included in later inventories of the Marescalchi collection made in 1817 and 1824
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner: person/george-hayter
+    acquired: 1841 or earlier
+    place: london
+    label: lent it to an exhibition in 1841
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: Sir George Hayter [1792-1871], London, by 1841;[4] — [4] Hayter lent the painting an exhibition in 1841.
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1845-05-03
+    method: auction
+    direct: true
+    place: london
+    label: his sale, no. 82, as 'Portrait of Cornelius Von Schrevellier [Schrevellius Translater of Homer]'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: (his sale, Christie & Manson, London, 3 May 1845, no. 82, as Portrait of Cornelius Von Schrevellier [Schrevellius Translater(sic) of Homer);
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner_label: Nieuwenhuys
+    role: dealer
+    acquired: 1845-05-03
+    method: auction
+    direct: true
+    label: dealer named under lot 82 in Lord Northwick's annotated catalogue
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: (Nieuwenhuys).[5] — [5] The dealer's name is written below lot 82 in a copy of the sale catalogue annotated by Lord Northwick
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner: person/james-pourtales-gorgier
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: James-Alexandre, comte de Pourtalès-Gorgier [1776-1855], Paris;
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1865-03-31
+    method: auction
+    direct: true
+    place: paris
+    label: his sale at his residence, Paris, 27 March–4 April 1865, this lot 31 March, no. 182 (Mündler's letter gives 185)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: (his sale, at his residence, Paris, 27 March-4 April 1865 [this lot 31 March], no. 182);
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner: person/otto-mundler
+    role: agent
+    acquired: 1865-03-31
+    method: auction
+    direct: true
+    place: paris
+    label: bought at the sale for Lord Wimborne
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: purchased by (Otto Mündler, Paris) for Ivor Bertie Guest, 1st baron Wimborne — [6] … a letter of 31 March 1865 to Lord Wimborne from Otto Mündler in which Mündler wrote that he had purchased "the Rembrandt 185, representing St. Paul."
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner: person/ivor-guest-1st-baron-wimborne
+    acquired: 1865-03-31
+    method: purchase
+    direct: true
+    label: Canford Manor, Dorset; 1888 catalogue no. 154
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: "for Ivor Bertie Guest, 1st baron Wimborne [1835-1914], Canford Manor, Dorsetshire.[6] — [6] A Catalogue of the Pictures at Canford Manor in the Possession of Lord Wimborne, Edinburgh, 1888: 63-64, no. 154."
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner: institution/arthur-j-sulley-co
+    role: dealer
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: (Arthur J. Sulley & Co., London);
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner: person/peter-a-b-widener
+    acquired: 1912 or earlier
+    direct: true
+    label: Lynnewood Hall, Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: Peter A.B. Widener, Lynnewood Hall, Elkins Park, Pennsylvania, by 1912;
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner: person/peter-a-b-widener
+    role: estate
+    method: inheritance
+    direct: true
+    label: estate of Peter A. B. Widener; Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park, Pennsylvania;
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner: person/joseph-e-widener
+    method: inheritance
+    direct: true
+    label: inheritance from the estate of Peter A. B. Widener by gift through power of appointment; Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park, Pennsylvania;
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1942
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1198.html
+        note: gift 1942 to NGA.
+        source: nga-1942-9-59
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177450
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177450
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177450
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177450
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177450
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177450

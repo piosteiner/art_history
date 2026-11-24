@@ -1,0 +1,198 @@
+public_id: 123049
+title_lang: en
+title: Nymphs Feeding the Child Jupiter
+attribution_label: follower of Nicolas Poussin
+created: c. 1650
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [117.4, 155.3]
+institution: national-gallery-of-art
+inventory_number: 1952.2.21
+wikidata_id: Q20177331
+metadata:
+  sources: [Wikidata Q20177331 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Nymphs_Feeding_the_Child_Jupiter_A12458.jpg/1280px-Nymphs_Feeding_the_Child_Jupiter_A12458.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nymphs_Feeding_the_Child_Jupiter_A12458.jpg
+    license: Public domain
+    credit: Follower of Nicolas Poussin
+provenance:
+  - owner: person/robert-walpole
+    acquired: 1736 or earlier
+    method: purchase
+    place: london
+    label: Sir Robert Walpole, 1st Earl of Orford; Dressing Room of 10 Downing Street; in the catalogue of his pictures, 1736
+    price:
+      amount: 114
+      currency: GBP
+      note: according to Horace Walpole
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: Sir Robert Walpole, 1st earl of Orford [1676- 1745], Dressing Room of 10 Downing Street, London, by 1736;[1] — According to Horace Walpole, his father paid 114 Pounds
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner: person/horace-walpole
+    acquired: 1745
+    method: inheritance
+    direct: true
+    place: twickenham
+    label: his son; Strawberry Hill, Round Drawing Room (Description of the Villa, 1764)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: by inheritance to his son, Horace Walpole, 4th earl of Oxford and 2nd baron Walpole [1717-1797], Strawberry Hill, Twickenham, Middlesex;[2] — [2] … The Education of Jupiter appears in the Round Drawing Room.
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner: person/anne-seymour-damer
+    acquired: 1797
+    ended: 1811
+    method: inheritance
+    direct: true
+    place: twickenham
+    label: daughter of Horace Walpole's cousin Henry Seymour Conway; Strawberry Hill
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: by inheritance to the daughter of his cousin Henry Seymour Conway, Mrs. Anne Seymour Damer [d. 1828], Strawberry Hill, who in 1811, as directed by terms of the 4th Earl's will, turned the estate over to his niece,
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner_label: Maria, Dowager Countess of Waldegrave (d. 1835)
+    acquired: 1811
+    method: inheritance
+    direct: true
+    place: twickenham
+    label: Horace Walpole's niece; Strawberry Hill turned over to her as his will directed
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: who in 1811, as directed by terms of the 4th Earl's will, turned the estate over to his niece, Maria, Dowager Countess of Waldegrave [d. 1835], Strawberry Hill;
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner: person/john-james-waldegrave-6th-earl-waldegrave
+    method: inheritance
+    direct: true
+    place: twickenham
+    label: her grandson; Strawberry Hill
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: by inheritance to her grandson, John James Waldegrave, 6th earl of Waldegrave [1785-1835], Strawberry Hill;
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner: person/george-edward-waldegrave-7th-earl-waldegrave
+    method: inheritance
+    direct: true
+    place: twickenham
+    label: his son; Strawberry Hill
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: by inheritance to his son, George Edward Waldegrave, 7th earl of Waldegrave [1816-1846], Strawberry Hill;
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner: person/george-robins
+    role: agent
+    acquired: 1842-05-18
+    method: auction
+    direct: true
+    place: twickenham
+    label: Strawberry Hill sale at the residence, 25 April – 24 May 1842, 21st day (18 May 1842), no. 46, as The Education of Jupiter
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: (Strawberry Hill sale, at the residence by George Robins, Twickenham, 25 April - 24 May 1842, 21st day [18 May 1842], no. 46, as The Education of Jupiter);
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner: person/john-easthope
+    acquired: 1842-05-18
+    method: auction
+    direct: true
+    place: london
+    label: Sir John Easthope, Bt.; buyer named in Aedes Strawberrianae (1842)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: "Sir John Easthope, bt. [1784-1865], London.[3] — [3] Aedes Strawberrianae. Names of Purchasers and the Prices to the Sale Catalogue … London, 1842: 50."
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner_label: Mrs. Doyle
+    label: name provided by C. Marshall Spink
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: Mrs. Doyle. — [4] The three preceding names were provided by C. Marshall Spink.
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner: person/cecil-uvedale-corbett
+    label: Major Cecil Uvedale Corbett; Stableford Hall, Stableford, near Bridgnorth, Shropshire; family identified by the Getty Provenance Index
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: Major Cecil Uvedale Corbett [1880-1944], Stableford Hall, Stableford, near Bridgnorth, Shropshire; — [4] … Martha Hepworth of the Getty Provenance Index further identified the Corbett family
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner: person/uvedale-corbett
+    acquired: 1944
+    method: inheritance
+    direct: true
+    label: presumably by inheritance; his son, Lt.-Col. Uvedale Corbett, Shobdon, near Leominster, Herefordshire; pictures likely in the 'Ashfield heirlooms' or half the pictures at Stableford bequeathed to him
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: presumably by inheritance to his son, Lt.-Col. Uvedale Corbett [1909-2005], Shobdon, near Leominster, Herefordshire;[4]
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner: person/c-marshall-spink
+    role: dealer
+    method: purchase
+    direct: true
+    place: london
+    label: bought, per Georges Wildenstein, at a sale in an English country house, probably at Stableford Hall (no record found)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: (C. Marshall Spink, London);[5] — [5] According to Georges Wildenstein … Spink bought the painting "at a sale in an English country house, probably a sale which took place at Stableford Hall." Attempts to find a record of this sale have proved unsuccessful.
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1947
+    method: purchase
+    direct: true
+    label: Paris, New York and London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: sold 1947 to (Wildenstein and Co., Inc., Paris, New York, and London);
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1947
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: sold 1947 to the Samuel H. Kress Foundation, New York;[6]
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41604.html
+        note: gift 1952 to NGA.
+        source: nga-1952-2-21
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177331
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177331
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177331
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177331
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177331

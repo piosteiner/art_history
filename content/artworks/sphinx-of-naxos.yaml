@@ -1,0 +1,150 @@
+public_id: 123133
+title: Sphinx of Naxos
+names:
+  - lang: nl
+    role: translation
+    text: Sfinx van Naxos
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q781243
+  - lang: fr
+    role: translation
+    text: Sphinx de Naxos
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q781243
+  - lang: de
+    role: translation
+    text: Sphinx der Naxier
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q781243
+  - lang: it
+    role: translation
+    text: Sfinge dei Nassi
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q781243
+  - lang: es
+    role: translation
+    text: Esfinge de Naxos
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q781243
+  - lang: ja
+    role: translation
+    text: ナクソスのスフィンクス
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q781243
+  - lang: zh
+    role: translation
+    text: 纳克索斯的斯芬克斯
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q781243
+  - lang: ru
+    role: translation
+    text: Наксосский Сфинкс
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q781243
+created: -560
+materials: [Naxian marble]
+dimensions: [292]
+institution: delphi-archaeological-museum
+inventory_number: 380, 1050
+location: [22.49982, 38.4803]
+wikidata_id: Q781243
+metadata:
+  sources: [Wikidata Q781243 (retrieved 2026-11-23)]
+relationships:
+  - type: created_in
+    to: place/municipal-unit-of-delphi
+    period: -560
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/20/028MAD_Sphinx.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:028MAD_Sphinx.jpg
+    license: CC BY-SA 3.0
+    credit: Archaeological Museum of Delphi
+provenance:
+  - owner_label: Sanctuary of Apollo, Delphi
+    acquired: c. 560 BCE
+    method: gift
+    place: delphi
+    label: votive offering of the Naxians, set up on an Ionic column next to the Temple of Apollo
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sphinx_of_Naxos
+        note: It was originally set up on a stele around 560 BC as a votive offering to the Temple of Apollo by Naxos, one of the richest Cycladic islands at the time.
+        source: wikipedia-en-sphinx-of-naxos
+        accessed: 2026-11-24
+  - owner_label: excavations at Delphi
+    acquired: 1860/1861
+    method: find
+    place: delphi
+    label: first fragments (the body, broken in large joining pieces) found in the sanctuary — 1860 in en, 1861 in de and el
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sphinx_of_Naxos
+        note: The first fragments were excavated from the sanctuary of the Temple of Apollo in 1860.
+        source: wikipedia-en-sphinx-of-naxos
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Sphinx_der_Naxier
+        note: Der Körper der Sphinx wurde 1861 in meist größere und anpassende Teile zerbrochen entdeckt und wurde restauriert.
+        source: wikipedia-de-sphinx-der-naxier
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/%CE%A3%CF%86%CE%AF%CE%B3%CE%B3%CE%B1_%CF%84%CF%89%CE%BD_%CE%9D%CE%B1%CE%BE%CE%AF%CF%89%CE%BD
+        note: Βρέθηκε το 1861 κατά τη διάρκεια ανασκαφών και φυλάσσεται στο αρχαιολογικό μουσείο των Δελφών.
+        source: wikipedia-el-sfinga-ton-naxion
+        accessed: 2026-11-24
+  - owner_label: excavations at Delphi
+    acquired: 1893
+    method: find
+    place: delphi
+    label: the remainder, with the head, found
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sphinx_of_Naxos
+        note: The remainder was found in 1893.
+        source: wikipedia-en-sphinx-of-naxos
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Sphinx_der_Naxier
+        note: Der Kopf wurde 1893 aufgefunden.
+        source: wikipedia-de-sphinx-der-naxier
+        accessed: 2026-11-24
+  - owner: institution/delphi-archaeological-museum
+    method: transfer
+    place: delphi
+    label: inventory 1050 (body) and 380 (head)
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sphinx_of_Naxos
+        note: The Sphinx of Naxos, also Sphinx of the Naxians, now in the Archaeological Museum of Delphi
+        source: wikipedia-en-sphinx-of-naxos
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Sphinx_der_Naxier
+        note: Heute befindet sich die Statue unter den Inventarnummern 1050 (Körper) und 380 (Kopf) im Archäologischen Museum von Delphi.
+        source: wikipedia-de-sphinx-der-naxier
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q781243
+  location:
+    - accessed: 2026-11-23
+      property: P625
+      wikidata: Q781243
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q781243
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q781243
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q781243
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q781243

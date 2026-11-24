@@ -1,0 +1,56 @@
+public_id: 123841
+title_lang: de
+title: Mensch mit seinem Schutzgeist
+attribution_label: Anonymous
+created: 500/1000
+kind: sculpture
+medium: Stein
+dimensions: [82, 19.5, 16]
+institution: museum-rietberg
+inventory_number: RMA 803
+web_url: https://rietberg.ch/sammlungen/rma-803
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Mensch_mit_Schutzgeist_Panama_Museum_Rietberg_RMA_803.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mensch_mit_Schutzgeist_Panama_Museum_Rietberg_RMA_803.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: 500/1000
+    method: creation
+    place: nata
+    label: made at El Caño, Natá, Coclé Province (Coclé culture), c. 500–1000
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-803
+        note: "um 500–1000: Urheber*in unbekannt in Panama, Provinz Coclé, Natá, El Caño"
+        source: rietberg-rma-803
+        accessed: 2026-11-24
+  - owner: person/alpheus-hyatt-verrill
+    acquired: 1925/1926
+    acquired_label: between November 1925 and April 1926
+    method: find
+    place: nata
+    label: excavated at El Caño; see A. Hyatt Verrill, A Mystery of Prehistoric Panama, 1928; letter from Ralph Altman (MRZ SAr S.3-3-1)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-803
+        note: 'zwischen 11.1925–04.1926: Alpheus Hyatt Verrill (1871–1954), aus Grabung, in Panama, Provinz Coclé, Natá, El Caño MRZ SAr S.3-3-1, Geschenke und Legate, "A": Brief von Ralph Altmann vom 11.21.1962, s. ausserdem: A. Hyatt Verril: A Mystery of Prehistoric Panama, 1928'
+        source: rietberg-rma-803
+        accessed: 2026-11-24
+  - owner: person/ralph-c-altman
+    acquired_label: before 21 January 1963
+    label: circumstances of acquisition unknown; letter from Ralph C. Altmann to Elsy Leuzinger
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-803
+        note: 'vor 21.01.1963: Ralph C. Altmann (1909–1967), Erwerbsumstände unbekannt MRZ SAr S.3-3-1, Geschenke und Legate, "A": Brief von Ralph C. Altmann an Elsy Leuzinger.'
+        source: rietberg-rma-803
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1963
+    method: purchase
+    place: zurich
+    label: bought by Elsy Leuzinger with funds of Eduard von der Heydt ("Anschaffung aus dem 'Fonds'")
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-803
+        note: "1963: Museum Rietberg, angekauft KrF: Nicht von der Heydt selber, sondern Elsy Leuzinger hat das Objekt 1963 gekauft als sogenannte \"Anschaffung aus dem 'Fonds'\" (also mit Mitteln von Eduard von der Heydt)."
+        source: rietberg-rma-803
+        accessed: 2026-11-24

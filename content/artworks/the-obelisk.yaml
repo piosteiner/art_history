@@ -1,0 +1,220 @@
+public_id: 125190
+title_lang: en
+title: The Obelisk
+names:
+  - text: The obelisc
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268072
+  - lang: fr
+    role: translation
+    text: L'Obélisque
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268072
+  - lang: de
+    role: translation
+    text: Der Obelisk
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268072
+creator: hubert-robert
+created: 1787
+materials: [oil paint, canvas]
+dimensions: [255.6, 223.5]
+institution: art-institute-of-chicago
+inventory_number: "1900.383"
+wikidata_id: Q20268072
+metadata:
+  sources: [Wikidata Q20268072 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Hubert_Robert_-_The_Obelisk_-_1900.383_-_Art_Institute_of_Chicago.jpg/1280px-Hubert_Robert_-_The_Obelisk_-_1900.383_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hubert_Robert_-_The_Obelisk_-_1900.383_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Hubert Robert
+provenance:
+  - owner: person/jean-joseph-de-laborde
+    acquired: 1787
+    method: commission
+    label: commissioned with its pendants (1900.382, 1900.384, 1900.385) for the Château de Méréville, near Étampes
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: Commissioned with its pendants (1900.382, 1900.384, 1900.385) by Jean Joseph, marquis de Laborde (died 1794), in 1787 for the Château de Méréville (near Etampes);
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner_label: Madame de Laborde
+    ended: 1819
+    direct: true
+    label: owner of the Château de Méréville; sold the château in 1819
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: the château was sold by Mme de Laborde, 1819 [see Simone de Lassus, “Quelques Détails inédits sur Méréville,” Bulletin de la Société de l’histoire de l’art français, année 1976 (1978), p. 286 n. 1];
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner_label: M. Ters and Mme d’Espagnat
+    acquired: 1819
+    method: purchase
+    direct: true
+    label: owner of the Château de Méréville, where the paintings presumably remained (Lassus 1978)
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: "the château was owned successively by: M. Ters and Mme d’Espagnat (sold 1824)"
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner_label: comte de Saint-Roman
+    acquired: 1824
+    method: purchase
+    direct: true
+    label: owner of the Château de Méréville, where the paintings presumably remained (Lassus 1978)
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: "the château was owned successively by: … comte de Saint-Roman (sold 1866)"
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner_label: duc de Sessa
+    acquired: 1866
+    method: purchase
+    direct: true
+    label: owner of the Château de Méréville, where the paintings presumably remained (Lassus 1978)
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: "the château was owned successively by: … duc de Sessa (sold 1868)"
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner_label: M. and Mme Beleys
+    acquired: 1868
+    method: purchase
+    direct: true
+    label: owner of the Château de Méréville, where the paintings presumably remained (Lassus 1978)
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: "the château was owned successively by: … M. and Mme Beleys (sold 1869)"
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner: institution/societe-cail
+    acquired: 1869
+    method: purchase
+    direct: true
+    label: owner of the Château de Méréville, where the paintings presumably remained (Lassus 1978)
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: "the château was owned successively by: … la Société Cail (sold 1874)"
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner_label: M. Heddle
+    acquired: 1874
+    method: purchase
+    direct: true
+    label: owner of the Château de Méréville, where the paintings presumably remained (Lassus 1978)
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: "the château was owned successively by: … M. Heddle (sold 1889)"
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner: person/adam-natanson
+    acquired: 1889
+    method: purchase
+    direct: true
+    label: owner of the Château de Méréville, where the paintings presumably remained (Lassus 1978)
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: "the château was owned successively by: … Adam Natanson (sold 1890)"
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner_label: M. Hériot
+    acquired: 1890
+    method: purchase
+    direct: true
+    label: owner of the Château de Méréville; a letter of 1987 (Binvel to Wise) says, perhaps erroneously, that Hériot sold the paintings in July 1896
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: "the château was owned successively by: … M. Hériot (sold 1896)"
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner: person/prudent-carpentier
+    acquired: 1896
+    ended: 1897
+    method: purchase
+    direct: true
+    label: owner of the Château de Méréville; sold it in 1897, when the contents were dispersed and the paintings probably sold
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: "the château was owned successively by: … Prudent Carpentier (sold 1897, at which time the contents of the house were dispersed and the paintings probably sold)"
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner_label: M. L. François
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: M. L. François;
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1900-06-13
+    method: auction
+    direct: true
+    place: paris
+    label: François sale, Galerie Georges Petit, Paris, 13 June 1900, no. 4
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: sold Galerie George Petit, Paris, June 13, 1900, no. 4,
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: agent
+    acquired: 1900-06-13
+    method: auction
+    direct: true
+    place: paris
+    label: bought at the sale on behalf of the Art Institute of Chicago
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: to Durand-Ruel, acting on behalf of the Art Institute,
+        source: aic-1900-383
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1900
+    method: purchase
+    direct: true
+    place: chicago
+    label: with funds provided by Clarence Buckingham
+    sources:
+      - url: https://www.artic.edu/artworks/57049
+        note: to Durand-Ruel, acting on behalf of the Art Institute, with funds provided by Clarence Buckingham, 1900.
+        source: aic-1900-383
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268072
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20268072
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20268072
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20268072
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268072
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268072

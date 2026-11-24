@@ -1,0 +1,165 @@
+public_id: 125207
+title_lang: en
+title: Lady Reading the Letters of Heloise and Abelard
+creator: bernard-d-agesci
+created: 1780
+materials: [oil paint, canvas]
+dimensions: [81, 65]
+institution: art-institute-of-chicago
+inventory_number: "1994.430"
+wikidata_id: Q20274719
+metadata:
+  sources: [Wikidata Q20274719 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Auguste_Bernard%2C_called_Bernard_d%27Agesci_-_Lady_Reading_the_Letters_of_Heloise_and_Abelard_-_1994.430_-_Art_Institute_of_Chicago.jpg/1280px-Auguste_Bernard%2C_called_Bernard_d%27Agesci_-_Lady_Reading_the_Letters_of_Heloise_and_Abelard_-_1994.430_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Auguste_Bernard,_called_Bernard_d%27Agesci_-_Lady_Reading_the_Letters_of_Heloise_and_Abelard_-_1994.430_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Bernard d'Agesci
+provenance:
+  - owner: person/louis-gabriel-de-veri-raionard
+    ended: 1785
+    label: marquis de Véri
+    sources:
+      - url: https://www.artic.edu/artworks/133859
+        note: Louis Gabriel Marquis de Véri-Raionard (died 1785);
+        source: aic-1994-430
+        accessed: 2026-11-24
+  - owner: person/louis-gabriel-de-veri-raionard
+    role: estate
+    acquired: 1785
+    ended: 1785-12-12
+    direct: true
+    place: paris
+    label: estate sale, Paris, 12 December 1785, lot 74
+    sources:
+      - url: https://www.artic.edu/artworks/133859
+        note: his estate sale, Paris, December 12, 1785, lot 74;
+        source: aic-1994-430
+        accessed: 2026-11-24
+  - owner_label: Devouge
+    acquired: 1785-12-12
+    method: auction
+    direct: true
+    price:
+      amount: 371
+      currency: LIV
+    sources:
+      - url: https://www.artic.edu/artworks/133859
+        note: sold to Devouge for 371 livres [acc. to annotated copies of the catalogue in the Rijksbureau voor Kunsthistorische Documentatie, The Hague, and Getty Research Institute].
+        source: aic-1994-430
+        accessed: 2026-11-24
+  - owner: person/david-david-weill
+    place: neuilly-sur-seine
+    sources:
+      - url: https://www.artic.edu/artworks/133859
+        note: David David-Weill, Neuilly-sur-Seine, Paris;
+        source: aic-1994-430
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1919
+    ended: 1924
+    direct: true
+    place: paris
+    label: sold or consigned to Wildenstein; sold by them 1924
+    sources:
+      - url: https://www.artic.edu/artworks/133859
+        note: sold or consigned to Wildenstein, Paris, 1919; sold by Wildenstein, 1924 [acc. to Joseph Baillio’s letter to Martha Wolff, dated September 23, 1994, in curatorial file].
+        source: aic-1994-430
+        accessed: 2026-11-24
+  - owner: person/albert-john-kobler
+    ended: 1937
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/133859
+        note: Albert John Kobler (died 1937), New York;
+        source: aic-1994-430
+        accessed: 2026-11-24
+  - owner: person/mignon-kobler
+    acquired: 1937
+    ended: 1942
+    method: inheritance
+    direct: true
+    place: new-york-city
+    label: by descent, his wife
+    sources:
+      - url: https://www.artic.edu/artworks/133859
+        note: by descent to his wife, Mignon Kobler (died 1942)
+        source: aic-1994-430
+        accessed: 2026-11-24
+  - owner_label: Kobler estate
+    role: estate
+    direct: true
+    label: consigned the picture to Parke-Bernet
+    sources:
+      - url: https://www.artic.edu/artworks/133859
+        note: Chrisopher Apostle, Sotheby's who confirmed that the picture was consigned to Parke-Bernet by the Kobler estate
+        source: aic-1994-430
+        accessed: 2026-11-24
+  - owner: institution/parke-bernet
+    role: agent
+    acquired: 1948-04-22
+    method: auction
+    direct: true
+    place: new-york-city
+    label: lot 16 (ill.), as Jean Baptiste Greuze, L'Amoureux Desir
+    sources:
+      - url: https://www.artic.edu/artworks/133859
+        note: sold Parke-Bernet, New York, April 22, 1948, lot 16 (ill.), as Jean Baptiste Greuze, L’Amoureux Desir;
+        source: aic-1994-430
+        accessed: 2026-11-24
+  - owner: person/nicholas-de-koenigsberg
+    acquired: 1948-04-22
+    method: auction
+    direct: true
+    place: new-york-city
+    label: New York and Argentina
+    sources:
+      - url: https://www.artic.edu/artworks/133859
+        note: Nicholas de Koenigsberg, New York and Argentina [acc. to Parke-Bernet Galleries’ archive card].
+        source: aic-1994-430
+        accessed: 2026-11-24
+  - owner: institution/simon-dickinson-inc
+    role: dealer
+    acquired: 1994 or earlier
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/133859
+        note: Simon Dickinson Inc., New York, by 1994;
+        source: aic-1994-430
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1994
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/133859
+        note: sold to the Art Institute, 1994.
+        source: aic-1994-430
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20274719
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20274719
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20274719
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20274719
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20274719
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20274719

@@ -1,0 +1,18 @@
+public_id: 125202
+name: Samuel van Hoogstraten
+given_name: Samuel
+family_name: van Hoogstraten
+birth: 1627-08-02
+death: 1678-10-19
+wikidata_id: Q436797
+metadata:
+  sources: [Wikidata Q436797 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q436797
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q436797

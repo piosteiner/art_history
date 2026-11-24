@@ -24,6 +24,16 @@ death: 1192-05-03
 wikidata_id: Q317984
 metadata:
   sources: [Wikidata Q317984 (retrieved 2026-11-01)]
+relationships:
+  - type: child_of
+    to: person/emperor-toba
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q317984
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q349284
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Emperor_Goshirakawa.jpg/1280px-Emperor_Goshirakawa.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Emperor_Goshirakawa.jpg

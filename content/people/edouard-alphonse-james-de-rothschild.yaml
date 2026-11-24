@@ -23,6 +23,16 @@ death: 1949-06-30
 wikidata_id: Q2443913
 metadata:
   sources: [Wikidata Q2443913 (retrieved 2026-10-20)]
+relationships:
+  - type: child_of
+    to: person/alphonse-james-de-rothschild
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q2443913
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q2494198
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/8a/%C3%89douard-Alphonse-James_de_Rothschild.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard-Alphonse-James_de_Rothschild.jpg

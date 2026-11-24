@@ -1,0 +1,137 @@
+public_id: 123232
+title: Moschophoros
+names:
+  - text: Calf bearer
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1722117
+  - lang: nl
+    role: translation
+    text: Kriophoros
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1722117
+  - lang: fr
+    role: translation
+    text: Moschophore
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1722117
+  - lang: de
+    role: translation
+    text: Kalbträger
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1722117
+  - lang: it
+    role: translation
+    text: Moscoforo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1722117
+  - lang: es
+    role: translation
+    text: Moscóforo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1722117
+  - lang: ja
+    role: translation
+    text: モスコフォロス
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1722117
+  - lang: zh
+    role: translation
+    text: 荷牛人
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1722117
+  - lang: ru
+    role: translation
+    text: Мосхофор
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1722117
+materials: [Hymettian marble]
+dimensions: [162]
+institution: acropolis-museum
+location: [23.7285, 37.96844]
+wikidata_id: Q1722117
+metadata:
+  sources: [Wikidata Q1722117 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/athens
+  - type: associated_with
+    to: movement/archaic-greek-sculpture
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q1722117
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/39/ACMA_Moschophoros.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ACMA_Moschophoros.jpg
+    license: CC BY-SA 2.5
+    credit: Marsyas
+provenance:
+  - owner_label: Rhombos (dedicator)
+    acquired: c. 560 BCE
+    method: creation
+    place: athens
+    label: votive statue dedicated on the Athenian Acropolis by one Rhombos (name incomplete; possibly Kombos or Bombos)
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moschophoros
+        note: The inscription on that plinth claims that this statue was dedicated by someone named Rhombos (possibly Kombos or Bombos; the beginning of the name is missing).
+        source: wikipedia-en-moschophoros
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1864
+    method: find
+    place: athens
+    label: body excavated in fragments in the Perserschutt on the south-east Acropolis in 1864; the base found in 1887
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moschophoros
+        note: It was excavated in fragments in the Perserschutt on the Acropolis of Athens in 1864. … The sculpture was found on the Athenian Acropolis in 1864. In 1887, the base was discovered.
+        source: wikipedia-en-moschophoros
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Kalbträger
+        note: Der Körper wurde 1864, die Basis 1887 bei Ausgrabungen auf der südöstlichen Akropolis von Athen im sogenannten Perserschutt gefunden.
+        source: wikipedia-de-kalbtraeger
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/Μοσχοφόρος
+        note: Το σώμα βρέθηκε το 1864 και η βάση το 1887 στην Περσική Τάφρο, στις ανασκαφές της Ακρόπολης.
+        source: wikipedia-el-moschoforos
+        accessed: 2026-11-24
+  - owner: institution/acropolis-museum
+    place: athens
+    label: now in the Acropolis Museum (earlier history in the old Acropolis Museum not covered by the sources read)
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moschophoros
+        note: The statue, dated c. 560 BC and estimated to have originally measured 1.65 meters (5.4 ft) in height, is now in the Acropolis Museum in Athens, Greece.
+        source: wikipedia-en-moschophoros
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Kalbträger
+        note: Heute wird die Statue im Akropolis-Museum in Athen aufbewahrt.
+        source: wikipedia-de-kalbtraeger
+        accessed: 2026-11-24
+identifiers:
+  gnd: 7845297-1
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1722117
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q1722117
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q1722117
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q1722117

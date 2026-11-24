@@ -1,0 +1,131 @@
+public_id: 124672
+title_lang: en
+title: Saints Presenting a Devout Woman to the Virgin and Child
+names:
+  - lang: it
+    role: translation
+    text: Santi presentano una devota alla Vergine e al Bambino
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60475019
+creator: giambattista-pittoni
+created: 1720/1730
+created_label: c. 18th century
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [172, 135.5]
+institution: cleveland-museum-of-art
+inventory_number: "1982.36"
+web_url: https://clevelandart.org/art/1982.36
+wikidata_id: Q60475019
+metadata:
+  sources: [Wikidata Q60475019 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Giovanni_Battista_Pittoni_-_Saints_Presenting_a_Devout_Woman_to_the_Virgin_and_Child_-_1982.36_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Giovanni_Battista_Pittoni_-_Saints_Presenting_a_Devout_Woman_to_the_Virgin_and_Child_-_1982.36_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Pittoni_-_Saints_Presenting_a_Devout_Woman_to_the_Virgin_and_Child_-_1982.36_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Giambattista Pittoni
+provenance:
+  - owner_label: a palace chapel, Belluno
+    acquired: 1720s
+    method: commission
+    place: belluno
+    label: commissioner unknown; the chapel, unidentified, is cited as since demolished
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1982.36
+        note: "Possibly a palace chapel, Belluno, Italy  [date: 1720s] — The individual who commissioned the painting is unknown, as is the original location of the chapel, which secondary sources have not identified, but have cited as since demolished."
+        source: cma-1982-36
+        accessed: 2026-11-24
+  - owner_label: Piccoli collection, Venice
+    place: venice
+    label: perhaps Giuseppe Piccoli (d. 1924); placed here rather than after 1927 by the museum, verification ongoing
+    sources:
+      - url: https://clevelandart.org/art/1982.36
+        note: Piccoli collection, Venice — The Piccoli collection may be that of Giuseppe Piccoli, a collector who lived in Venice. ... Verification of this new proposed provenance is ongoing.
+        source: cma-1982-36
+        accessed: 2026-11-24
+  - owner: person/eugene-broerman
+    acquired_label: possibly 1924
+    place: brussels
+    sources:
+      - url: https://clevelandart.org/art/1982.36
+        note: "Eugene Broerman [1860-1930], Brussels, consigned to Galerie Georges Giroux  [date: Possibly 1924-1927]"
+        source: cma-1982-36
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-giroux
+    role: agent
+    acquired: 1927-03-21
+    method: auction
+    direct: true
+    place: brussels
+    label: Broerman sale, 21 March 1927, lot 24, as Giambattista Tiepolo
+    sources:
+      - url: https://clevelandart.org/art/1982.36
+        note: "(Galerie Georges Giroux, Brussels, Broerman sale, March 21, 1927, lot 24, as Giambattista Tiepolo)  [date: 1927]"
+        source: cma-1982-36
+        accessed: 2026-11-24
+  - owner: institution/galerie-fievez
+    role: agent
+    acquired: 1941-06-23
+    method: auction
+    place: brussels
+    label: sale 23–24 June 1941, no. 232; charity sale organised by the Belgian royal family, objects donated by unnamed collectors
+    sources:
+      - url: https://clevelandart.org/art/1982.36
+        note: (Galerie Fievez, Brussels, sale, June 23-24, 1941, no. 232 — This auction was organized by the Belgian royal family to benefit l’Oeuvre Nationale de Service Social aux Familles de Militaires. ... the objects in the auction were donated by various collectors, connoisseurs, and philanthropists, although these individuals are not identified in the catalogue.
+        source: cma-1982-36
+        accessed: 2026-11-24
+  - owner: person/andre-descamps
+    acquired_label: possibly 1941
+    place: brussels
+    label: Baron André Descamps
+    sources:
+      - url: https://clevelandart.org/art/1982.36
+        note: "Baron André Descamps, Brussels, possibly consigned to Newhouse Galleries  [date: Possibly 1941-1982]"
+        source: cma-1982-36
+        accessed: 2026-11-24
+  - owner: institution/newhouse-gallery
+    role: dealer
+    place: new-york-city
+    label: possibly on consignment from Descamps
+    sources:
+      - url: https://clevelandart.org/art/1982.36
+        note: "(Newhouse Galleries, New York, sold to the Cleveland Museum of Art)  [date: Until 1982]"
+        source: cma-1982-36
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1982
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1982.36
+        note: "The Cleveland Museum of Art, Cleveland, Ohio  [date: 1982-]"
+        source: cma-1982-36
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60475019
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60475019
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60475019
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60475019
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60475019
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60475019

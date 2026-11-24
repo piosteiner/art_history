@@ -1,0 +1,283 @@
+public_id: 122988
+title_lang: it
+title: Giuditta e l'ancella con la testa di Oloferne
+names:
+  - text: Judith with the Head of Holofernes
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3769182
+  - lang: en
+    role: translation
+    text: Judith and Holofernes
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3769182
+  - lang: nl
+    role: translation
+    text: Judith en haar dienstmaagd met het hoofd van Holofernes
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3769182
+  - lang: fr
+    role: translation
+    text: Judith tenant la tête d'Holopherne
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3769182
+  - lang: de
+    role: translation
+    text: Judith und ihre Magd mit dem Haupt des Holofernes
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3769182
+  - lang: es
+    role: translation
+    text: Judith y su doncella con la cabeza de Holofernes
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3769182
+  - lang: ja
+    role: translation
+    text: ユーディットとホロフェルネス
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3769182
+  - lang: ru
+    role: translation
+    text: Юдифь и её служанка с головой Олоферна
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3769182
+creator: andrea-mantegna
+attribution_label: Andrea Mantegna or follower (possibly Giulio Campagnola)
+created: 1490s
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [30.1, 18.1]
+institution: national-gallery-of-art
+inventory_number: 1942.9.42
+wikidata_id: Q3769182
+metadata:
+  sources: [Wikidata Q3769182 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/judith
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q3769182
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Andrea_Mantegna_099.jpg/1280px-Andrea_Mantegna_099.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andrea_Mantegna_099.jpg
+    license: Public domain
+    credit: Andrea Mantegna / Giulio Campagnola
+provenance:
+  - owner: person/charles-i-of-england
+    label: possibly the 'little Judith of Rafell Urbin' of van der Doort's 1639 inventory (Passavant); Millar rejects the identification
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: "Possibly Charles I, King of England [1600-1649]; — [1] Passavant … connected it with the mention of a painting of Judith by Raphael in Abraham van der Doort's 1639 inventory of the collection of King Charles I … But Millar 1960: 232, rejecting Passavant's identification, has suggested that the Judith in the inventory may be identifiable with Giorgione's"
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/william-herbert-3rd-earl-of-pembroke
+    acquired: 1625-12-31 or earlier
+    acquired_label: before 1625
+    method: exchange
+    direct: true
+    label: Wilton House, Salisbury; exchanged by Charles I (as Prince) for a woman's portrait and Parmigianino's 'two Children' (van der Doort)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: by exchange to William Herbert, 3rd earl of Pembroke [1580-1630], Wilton House, Salisbury, before 1625;
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/philip-herbert-4th-earl-of-pembroke
+    method: inheritance
+    direct: true
+    label: by inheritance to the previous earl's brother; Wilton House; NGA gives his dates as 1584–1649/1650
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: by inheritance to his brother, Philip Herbert, 4th earl of Pembroke [1584-1649/1650];
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/philip-herbert-5th-earl-of-pembroke
+    method: inheritance
+    direct: true
+    label: by inheritance to the previous earl's son; Wilton House; NGA gives his dates as 1620/1621–1669
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: by inheritance to his son, Philip Herbert, 5th earl of Pembroke [1620/1621-1669];
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/william-herbert-6th-earl-of-pembroke
+    method: inheritance
+    direct: true
+    label: by inheritance to the previous earl's son; Wilton House
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: by inheritance to his son, William Herbert, 6th earl of Pembroke [1640-1674];
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/philip-herbert-7th-earl-of-pembroke
+    method: inheritance
+    direct: true
+    label: by inheritance to the previous earl's half-brother; Wilton House; NGA gives his dates as 1652/1653–1683
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: by inheritance to his half-brother, Philip Herbert, 7th earl of Pembroke [1652/1653-1683];
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/thomas-herbert-8th-earl-of-pembroke
+    method: inheritance
+    direct: true
+    label: by inheritance to the previous earl's brother; Wilton House; NGA gives his dates as 1656–1732/1733
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: by inheritance to his brother, Thomas Herbert, 8th earl of Pembroke [1656-1732/1733];
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/henry-herbert-9th-earl-of-pembroke
+    method: inheritance
+    direct: true
+    label: by inheritance to the previous earl's son; Wilton House; NGA gives his dates as 1693–1749/1750; first recorded at Wilton by Gambarini 1731, p. 93, no. 4
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: "by inheritance to his son, Henry Herbert, 9th earl of Pembroke [1693-1749/1750];[1] — [1] The painting is first recorded in the Earl of Pembroke's collection at Wilton by C. Gambarini, A Description of the Earl of Pembroke's Pictures, Westminster, 1731: 93, no. 4."
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/henry-herbert-10th-earl-of-pembroke
+    method: inheritance
+    direct: true
+    label: by inheritance to the previous earl's son; Wilton House
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: by inheritance to his son, Henry Herbert, 10th earl of Pembroke [1734-1794];
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/george-herbert-11th-earl-of-pembroke
+    method: inheritance
+    direct: true
+    label: by inheritance to the previous earl's son; Wilton House
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: by inheritance to his son, George Augustus Herbert, 11th earl of Pembroke [1759-1827];
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/robert-herbert-12th-earl-of-pembroke
+    method: inheritance
+    direct: true
+    label: by inheritance to the previous earl's son; Wilton House
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: by inheritance to his son, Robert Henry Herbert, 12th earl of Pembroke [1791-1862];
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/george-herbert-13th-earl-of-pembroke
+    method: inheritance
+    direct: true
+    label: by inheritance to the previous earl's nephew; Wilton House
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: by inheritance to his nephew, George Robert Charles Herbert, 13th early of Pembroke [1850-1895];
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/sidney-herbert-14th-earl-of-pembroke
+    method: inheritance
+    direct: true
+    label: by inheritance to the previous earl's brother; Wilton House
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: by inheritance to his brother, Sidney Herbert, 14th earl of Pembroke [1853-1913];
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/reginald-herbert-15th-earl-of-pembroke
+    method: inheritance
+    direct: true
+    label: by inheritance to the previous earl's son; Wilton House
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: by inheritance to his son, Reginald Herbert, 15th earl of Pembroke [1880-1960];
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1917-07
+    method: auction
+    direct: true
+    place: london
+    label: his sale, London, 5–6 and 9–10 July 1917, 4th day, no. 542; sold privately
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: (his sale, Sotheby's, London, 5-6 and 9-10 July 1917, 4th day, no. 542 [sold privately]);
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    co_owners: [institution/duveen-brothers]
+    role: dealer
+    acquired: 1917-07
+    method: purchase
+    direct: true
+    place: london
+    label: in Agnew's stock July–September 1917, owned jointly with Duveen; Duveen's record notes '1/2 share Scott Fowles'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: 'listed July to September 1917 in (Thomas Agnew & Sons, Ltd., London) stock, owned jointly with (Duveen Brothers, Inc., London and New York); — [2] The entry for the painting in the Duveen Brothers Records has the following notations: "1/2 share Scott Fowles," "Sotheby 19/7/17," and "Agnew 23/9/17"'
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/carl-w-hamilton
+    role: custodian
+    acquired: 1920 or earlier
+    ended: 1921
+    direct: true
+    place: new-york-city
+    label: on approval, not bought; returned to Duveen 1921
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: on approval to Carl W. Hamilton [1886-1967], New York, by 1920, and returned 1921;[2] — [2] … a large collection of Italian paintings was offered on approval to Hamilton by 1920, but he did not purchase them and returned them to Duveen the following year.
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: person/joseph-e-widener
+    acquired: c. 1923
+    method: purchase
+    label: Lynnewood Hall, Elkins Park, Pennsylvania; bought with funds of the Estate of Peter A. B. Widener; Widener records say c. 1921, Duveen's expenses run into 1923
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: purchased c. 1923 by Joseph E. Widener, Lynnewood Hall, Elkins Park, Pennsylvania;[3] … after purchase by funds of the Estate — [3] Widener collection records … give a purchase date of c. 1921, but the Duveen Brothers Records list expenses for the painting into 1923
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1942
+    method: gift
+    direct: true
+    place: washington-d-c
+    label: from the Estate of Peter A. B. Widener by gift through power of appointment of Joseph E. Widener
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1181.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park, Pennsylvania, after purchase by funds of the Estate; gift 1942 to NGA.
+        source: nga-1942-9-42
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q3769182
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q3769182
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q3769182
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q3769182
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q3769182
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q3769182

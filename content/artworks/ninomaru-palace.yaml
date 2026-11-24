@@ -1,0 +1,126 @@
+public_id: 123915
+title: Ninomaru Palace
+names:
+  - text: Ninomaru Goten
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q10343958
+  - text: Ninomaru-goten Palace
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q10343958
+  - lang: de
+    role: translation
+    text: Ninomaru-Palast
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q10343958
+  - lang: ja
+    role: translation
+    text: 二条城二の丸御殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q10343958
+created: 1603
+wikidata_id: Q10343958
+metadata:
+  sources: [Wikidata Q10343958 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Nijo_Castle_2017.jpg/1280px-Nijo_Castle_2017.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nijo_Castle_2017.jpg
+    license: CC BY-SA 4.0
+    credit: CCP2017
+provenance:
+  - owner: institution/tokugawa-shogunate-2
+    acquired: 1603
+    method: commission
+    place: kyoto
+    label: built as Tokugawa Ieyasu's residence in Kyoto, begun 1601/1602, in use by March 1603; greatly remodelled under Iemitsu for Emperor Go-Mizunoo's visit of 1626 (Ōhiroma c. 1625)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1703
+        note: 二条城は徳川家康が京都にのぼった時の居館として創築されたものであって、慶長六年（一六〇一）に着手されたが、工事が行われたのは翌七年からと思われ、同八年三月には家康がここに入城しているから、この時すでに主要な部分は竣工していたのであろう。その後、三代将軍家光が寛永三年（一六二六）の後水尾天皇の行幸を迎えるにあたり、大改修がなされた。
+        source: kunishitei-102-1703
+        accessed: 2026-11-24
+      - note: Fortunately, Nijō Castle, the residence of the Tokugawa in Kyoto—although the shoguns primarily resided in Edo—has survived to the present. The Ohiroma, or Great Audience Hall, was remodeled around 1625
+        source: history-of-japanese-art
+        locator: pp. 242–243
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/401/1695
+        note: 二條城ハ慶長八年徳川家康ノ築造ニ係リ同年三月家康始メテ入城シ … 元和二年家康薨去後幕府ハ同年ヨリ寛永元年ノ間ニ益々殿閣ヲ修築シテ
+        source: kunishitei-401-1695
+        accessed: 2026-11-24
+  - owner: institution/meiji-government
+    acquired: 1868-01
+    method: confiscation
+    direct: true
+    place: kyoto
+    label: after Tokugawa Yoshinobu returned power to the court (1867) and left the castle, taken over by the court and made the provisional office of the Daijōkan
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/401/1695
+        note: 明治元年正月朝廷此ノ城ヲ収メテ太政官代ト為ス
+        source: kunishitei-401-1695
+        accessed: 2026-11-24
+      - url: https://nijo-jocastle.city.kyoto.lg.jp/introduction/highlights/nenpyo/
+        note: 1868年 (明治元年) 1月、城内に太政官代を置く (現在の内閣にあたる)。
+        source: nijo-castle-nenpyo
+        accessed: 2026-11-24
+  - owner: place/kyoto-prefecture
+    role: custodian
+    acquired: 1871-03-13
+    ended: 1873-02
+    method: transfer
+    place: kyoto
+    label: the castle placed under Kyoto Prefecture; the prefectural office moved into the Ninomaru on 26 June 1871 and stayed until 1885
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/401/1695
+        note: 明治四年三月十三日城ハ京都府ノ管轄トナリ同年六月二十六日府廳ヲ二ノ丸内ニ移セリ
+        source: kunishitei-401-1695
+        accessed: 2026-11-24
+      - url: https://nijo-jocastle.city.kyoto.lg.jp/introduction/highlights/nenpyo/
+        note: 1871年 (明治4年) 二の丸御殿内に府庁を置く(のち一時陸軍省になる)。
+        source: nijo-castle-nenpyo
+        accessed: 2026-11-24
+  - owner: institution/ministry-of-the-army
+    role: custodian
+    acquired: 1873-02
+    method: transfer
+    place: kyoto
+    label: the castle placed under the Army Ministry; the prefectural office remained in the Ninomaru
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/401/1695
+        note: 明治六年二月城ハ陸軍省ノ管轄トナリシガ府廰ハ依然此處ニアリ
+        source: kunishitei-401-1695
+        accessed: 2026-11-24
+  - owner: institution/ministry-of-the-imperial-household
+    acquired: 1884-07-28
+    method: transfer
+    place: kyoto
+    label: placed under the Imperial Household Ministry as the Nijō Detached Palace (Nijō Rikyū); the prefectural office moved out in June 1885
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/401/1695
+        note: 明治十七年七月二十八日城ハ宮内省所管トナリ二條離宮ト改セラレ京都府廰ハ翌年六月他ニ移轉セリ
+        source: kunishitei-401-1695
+        accessed: 2026-11-24
+      - url: https://nijo-jocastle.city.kyoto.lg.jp/introduction/highlights/nenpyo/
+        note: 1884年 (明治17年) 皇室の別邸 「二条離宮」となる。
+        source: nijo-castle-nenpyo
+        accessed: 2026-11-24
+  - owner: place/kyoto
+    acquired: 1939-10-25
+    method: gift
+    direct: true
+    place: kyoto
+    label: the detached palace's land and buildings released from the imperial estate (27 July 1939) and granted to the City of Kyoto; opened to the public as Onshi Moto-rikyū Nijō-jō, 11 February 1940; Ninomaru Palace National Treasure 1952
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1703
+        note: 所有者名 ： 京都市 所有者種別 ： 市区町村
+        source: kunishitei-102-1703
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/401/1695
+        note: 昭和十四年七月二十七日二條離宮ノ土地及建物ノ世傳御料ヲ解除シ昭和十四年十月二十五日京都市ニ御下賜アラセラル
+        source: kunishitei-401-1695
+        accessed: 2026-11-24
+      - url: https://nijo-jocastle.city.kyoto.lg.jp/introduction/highlights/nenpyo/
+        note: 1939年 (昭和14年) 宮内省が二条離宮を京都市に下賜。 1940年 (昭和15年) 2月11日恩賜元離宮二条城として 一般公開をはじめる。
+        source: nijo-castle-nenpyo
+        accessed: 2026-11-24

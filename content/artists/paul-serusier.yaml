@@ -1,0 +1,18 @@
+public_id: 122931
+name: Paul Sérusier
+given_name: Paul
+family_name: Sérusier
+birth: 1864-11-09
+death: 1927-10-07
+wikidata_id: Q326606
+metadata:
+  sources: [Wikidata Q326606 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q326606
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q326606

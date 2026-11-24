@@ -1,0 +1,29 @@
+public_id: 127575
+name: Manchester
+names:
+  - lang: ko
+    role: translation
+    text: 맨체스터
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q21525592
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-2.25, 53.41667]
+wikidata_id: Q21525592
+metadata:
+  sources: [Wikidata Q21525592 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q21525592
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q21525592
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q21525592

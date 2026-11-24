@@ -1,0 +1,235 @@
+public_id: 125217
+title_lang: en
+title: Old Man with a Gold Chain
+names:
+  - lang: nl
+    role: translation
+    text: Halffiguur van een man met halsberg en gevederde baret, ca. 1631
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q14911808
+  - lang: fr
+    role: translation
+    text: Le Vieil Homme à la chaîne d'or
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q14911808
+  - lang: de
+    role: translation
+    text: "Der Vater des Künstlers: Harmen Gerritz van Rijn"
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q14911808
+  - lang: zh
+    role: translation
+    text: 戴金鍊的老人
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q14911808
+creator: rembrandt
+created: 1631
+materials: [oil paint, panel]
+dimensions: [83.1, 75.7]
+institution: art-institute-of-chicago
+inventory_number: "1922.4467"
+provenance_status: a_clear
+provenance_status_note: In the Art Institute of Chicago since 1922.
+wikidata_id: Q14911808
+metadata:
+  sources: [Wikidata Q14911808 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/rembrandt-s-father
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q14911808
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q14911808
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Rembrandt_Harmensz._van_Rijn_-_Old_Man_with_a_Gold_Chain_-_Google_Art_Project.jpg/1280px-Rembrandt_Harmensz._van_Rijn_-_Old_Man_with_a_Gold_Chain_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_Old_Man_with_a_Gold_Chain_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Rembrandt
+provenance:
+  - owner: person/jacob-alewijn
+    place: amsterdam
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: Jacob Alewijn, Amsterdam;
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner: person/margaretha-helena-graafland
+    ended: 1766
+    method: inheritance
+    direct: true
+    place: amsterdam
+    label: by descent to his widow; consignor of the 1767 sale identified by the Rembrandt Research Project 1982
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: by descent to his widow Margaretha Helena Graafland (died 1766); … [For the identification of the consignor at this sale, see Rembrandt Research Project 1982, with evidence that the height of the picture was later slightly reduced]
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner_label: Ketelaar
+    acquired: 1767-06-10
+    method: auction
+    direct: true
+    place: amsterdam
+    label: sale, Amsterdam, 10 June 1767, no. 14, as Rembrandt, Het Hoofd van een Oud Man … (35 x 30 duim); the height was later slightly reduced
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: sold Amsterdam, June 10, 1767, no. 14, to Ketelaar, “Rembrandt. Het Hoofd van een Oud Man, zynde een Kniestuk, Levensgroote, met een dokere Mantel om, en een gouden Keten met een Medaille om den hals. … Hoog 35, breed 30 duim”
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner: person/matthew-piers-watt-boulton
+    label: Tew Park, Oxfordshire
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: Matthew Piers Watt Boulton, Tew Park, Oxfordshire;
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1911-12-09
+    method: auction
+    direct: true
+    place: london
+    label: Boulton estate sale, Christie's, London, 9 December 1911, no. 14, as the Father of Rembrandt (annotated catalogue, Frick Art Reference Library; identity per Bode 1912)
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: his estate sale Christie’s, London, December 9, 1911, no. 14, as the Father of Rembrandt for £220 10s. to Shepherd [annotated sale catalogue at Frick Art Reference Library; for the identity of 1922.4467 and the painting in the Boulton sale, see Bode 1912].
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner_label: Shepherd
+    acquired: 1911-12-09
+    method: auction
+    direct: true
+    place: london
+    label: bought at the Boulton sale, Christie's, London, no. 14
+    price:
+      amount: 220.5
+      currency: GBP
+      note: £220 10s.
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: as the Father of Rembrandt for £220 10s. to Shepherd
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner: institution/p-d-colnaghi-co-ltd
+    role: dealer
+    acquired: 1912-02-12
+    place: london
+    label: Lippmann, with a half share acquired by Colnaghi on 12 February 1912 (letter from Lavinia Davies, Colnaghi, 28 November 1977); with Lippmann, London
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: Lippmann, London, with a half share acquired by P. and D. Colnaghi, London, February 12, 1912 [letter from Lavinia Davies, Colnaghi, to Susan Wise, 28 November, 1977 in curatorial file];
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    co_owners: [institution/kunsthandlung-julius-bohler]
+    role: dealer
+    acquired: 1912-03
+    method: purchase
+    direct: true
+    label: Colnaghi sold their share; Lippmann, Knoedler and Julius Böhler sharing ownership; with Lippmann, London
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: Colnaghi sold their share in March, 1912, with Lippmann, Knoedler, and Julius Böhler sharing ownership in the picture [letter of Lavinia Davies cited above];
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner: person/marcel-nemes
+    acquired: 1912-06-17
+    method: purchase
+    direct: true
+    place: budapest
+    label: sold by Böhler
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: sold by Böhler to Marczell de Nemes, Budapest, 17 June, 1912;
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner: institution/galerie-manzi-joyant
+    role: agent
+    not_sold: true
+    acquired: 1913-06
+    method: auction
+    direct: true
+    place: paris
+    label: offered for sale, Galerie Manzi, Joyant, Paris, 17–18 June 1913, no. 60, as Portrait du père de Rembrandt; bought in
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: offered for sale Galerie Manzi, Joyant, Paris, 17-18 June, 1913, no. 60, as Portrait du père de Rembrandt, bought in
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner: institution/kunsthandlung-julius-bohler
+    role: dealer
+    acquired: 1913-07
+    direct: true
+    label: returned to Julius Böhler after the unsold sale (letter from Julius Böhler, 20 September 1977)
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: bought in and returned to Julius Böhler in July 1913 [letter from Julius Böhler to Susan Wise, September 20, 1977 in curatorial file];
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner: institution/reinhardt-galleries
+    role: dealer
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Reinhardt, New York, the American representative of Böhler's firm
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: sold by Julius Böhler to Reinhardt, New York [letter from Böhler cited above; in a letter of June 14, 1977, Julius Böhler noted that Reinhardt was the American representative for their firm];
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner_label: Mrs. W. W. Kimball, Chicago
+    acquired: 1914 or earlier
+    ended: 1921
+    method: purchase
+    direct: true
+    place: chicago
+    label: Mrs. W. W. Kimball (died 1921); Valentiner 1914
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: sold to Mrs. W. W. Kimball, (died 1921), Chicago, by 1914 [Valentiner 1914];
+        source: aic-1922-4467
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1922
+    method: bequest
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/95998
+        note: bequeathed, 1922.
+        source: aic-1922-4467
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q14911808
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q14911808
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q14911808
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q14911808
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q14911808
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q14911808

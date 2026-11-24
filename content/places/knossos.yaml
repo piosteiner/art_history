@@ -1,0 +1,35 @@
+public_id: 125916
+name: Knossos
+names:
+  - lang: it
+    role: translation
+    text: Cnosso
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q117884854
+  - lang: ru
+    role: translation
+    text: Кноссос
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q117884854
+kind: settlement
+parent: kriti
+country_code: GR
+location: [25.15917, 35.29889]
+wikidata_id: Q117884854
+metadata:
+  sources: [Wikidata Q117884854 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q117884854
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q117884854
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q117884854

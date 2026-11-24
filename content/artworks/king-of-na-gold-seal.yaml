@@ -1,0 +1,70 @@
+public_id: 124473
+title: King of Na gold seal
+names:
+  - text: Gold Seal
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2975212
+  - lang: fr
+    role: translation
+    text: Sceau du roi de Na
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2975212
+  - lang: ja
+    role: translation
+    text: 漢委奴国王印
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2975212
+  - lang: zh
+    role: translation
+    text: 汉委奴国王印
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2975212
+  - lang: ko
+    role: translation
+    text: 한위노국왕인
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2975212
+  - lang: ru
+    role: translation
+    text: Печать ханского вана японской страны На
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2975212
+created: 57
+materials: [gold, silver, copper]
+institution: fukuoka-city-museum
+location: [130.35308, 33.58975]
+wikidata_id: Q2975212
+metadata:
+  sources: [Wikidata Q2975212 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/fukuoka
+    period: 57
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/af/King_of_Na_gold_seal.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:King_of_Na_gold_seal.jpg
+    license: Public domain
+    credit: "Original uploader: User:金翅大鹏鸟 at zh.wikipedia"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q2975212
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2975212
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q2975212
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q2975212

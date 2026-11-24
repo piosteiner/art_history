@@ -1,0 +1,55 @@
+public_id: 124224
+title: Chinese Lions
+names:
+  - text: Karajishi
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q81818937
+  - lang: nl
+    role: translation
+    text: Chinese leeuwen
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q81818937
+  - lang: ja
+    role: translation
+    text: 唐獅子図屏風
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q81818937
+  - lang: zh
+    role: translation
+    text: 唐獅子圖屏風
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q81818937
+creator: kano-eitoku
+created: 16th century
+created_span: uncertain
+institution: museum-of-the-imperial-collections
+inventory_number: SZK002944
+wikidata_id: Q81818937
+metadata:
+  sources: [Wikidata Q81818937 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Kano_Eitoku_002.jpg/1280px-Kano_Eitoku_002.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kano_Eitoku_002.jpg
+    license: Public domain
+    credit: Kanō Eitoku
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q81818937
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q81818937
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q81818937
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q81818937

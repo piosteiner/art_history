@@ -1,0 +1,177 @@
+public_id: 123022
+title_lang: en
+title: A View on a High Road
+names:
+  - lang: de
+    role: translation
+    text: Blick auf eine Hauptstrasse
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177611
+creator: meindert-hobbema
+created: 1665
+materials: [oil paint, canvas]
+dimensions: [93.1, 127.8]
+institution: national-gallery-of-art
+inventory_number: 1937.1.62
+provenance_status: a_clear
+provenance_status_note: Bought by Andrew W. Mellon in November 1924; deeded 28 December 1934 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q20177611
+metadata:
+  sources: [Wikidata Q20177611 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/A_View_on_a_High_Road-1665-Meindert_Hobbema.jpg/1280px-A_View_on_a_High_Road-1665-Meindert_Hobbema.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:A_View_on_a_High_Road-1665-Meindert_Hobbema.jpg
+    license: Public domain
+    credit: Meindert Hobbema
+provenance:
+  - owner: person/marie-anne-fizeau
+    place: amsterdam
+    label: Mme Jean Etienne Fizeau, née Massé
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.69.html
+        note: Mme Jean Etienne Fizeau [née Marie Anne Massé, d. 1790], Amsterdam;
+        source: nga-1937-1-62
+        accessed: 2026-11-24
+  - owner_label: auction, Amsterdam
+    role: agent
+    acquired: 1791-04-27
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Fizeau sale; known to Lugt only from van der Willigen's list (1873)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.69.html
+        note: (sale, Amsterdam, 27 April 1791);[1] — [1] The Fizeau (variously spelled Fiseau, Fezeau, or Fiziau) sale was known to Frits Lugt not from an actual example of the catalogue, but because it is listed in Adriaan van der Willigen, Naamlijst …, Haarlem, 1873.
+        source: nga-1937-1-62
+        accessed: 2026-11-24
+  - owner: person/welbore-ellis-agar-2
+    method: auction
+    direct: true
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.69.html
+        note: Welbore Ellis Agar [1735-1805], London;
+        source: nga-1937-1-62
+        accessed: 2026-11-24
+  - owner: person/welbore-felix-agar
+    co_owners: [person/emmanuel-felix-agar]
+    method: inheritance
+    direct: true
+    place: london
+    label: his illegitimate sons; a Christie's sale planned for 2–3 May 1806 (catalogue printed) did not take place
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.69.html
+        note: by inheritance to his illegitimate sons, Welbore Felix Agar [d. 1836] and Sir Emmanuel Felix Agar [1781-1866]; — [2] The Ellis Agar Collection was to be sold at Christie's, London, 2-3 May 1806, and a sale catalogue was produced, but before the auction could take place the complete collection was instead sold to Lord Grosvenor
+        source: nga-1937-1-62
+        accessed: 2026-11-24
+  - owner: person/robert-grosvenor-1st-marquess-of-westminster
+    acquired: 1806
+    method: purchase
+    direct: true
+    place: london
+    label: bought with the whole Ellis Agar collection for 30,000 guineas; no. 42 on the bill of sale
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.69.html
+        note: sold 1806 to Robert Grosvenor, 1st marquess of Westminster [1767-1845];[2] — [2] … the complete collection was instead sold to Lord Grosvenor, for 30,000 guineas … The bill of sale is preserved at the Grosvenor Estate Office Archive; the Hobbema is number 42 on this list
+        source: nga-1937-1-62
+        accessed: 2026-11-24
+  - owner: person/hugh-lupus-grosvenor-1st-duke-of-westminster
+    method: inheritance
+    direct: true
+    place: london
+    label: grandson; Grosvenor House
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.69.html
+        note: by inheritance to his grandson, Hugh Lupus Grosvenor, 1st duke of Westminster [1825-1899], Grosvenor House, London;
+        source: nga-1937-1-62
+        accessed: 2026-11-24
+  - owner: person/alfred-charles-de-rothschild
+    acquired: 1912
+    method: purchase
+    direct: true
+    place: london
+    label: London and Halton House, near Wendover, Buckinghamshire
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.69.html
+        note: purchased 1912 by Baron Alfred Charles de Rothschild [1842-1918], London and Halton House, near Wendover, Buckinghamshire;[3]
+        source: nga-1937-1-62
+        accessed: 2026-11-24
+  - owner: person/almina-herbert-countess-of-carnarvon
+    method: bequest
+    direct: true
+    place: london
+    label: his illegitimate daughter Almina Victoria, later Mrs. Ian Onslow Dennistoun
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.69.html
+        note: bequeathed to his illegitimate daughter, Almina Victoria, Countess of Carnarvon [c. 1877-1969, later Mrs. Ian Onslow Dennistoun], London;
+        source: nga-1937-1-62
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1924
+    method: purchase
+    direct: true
+    label: London, New York and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.69.html
+        note: sold 1924 to (Duveen Brothers, Inc., London, New York, and Paris);[4]
+        source: nga-1937-1-62
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1924-11
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.69.html
+        note: sold November 1924 to Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-62
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1934-12-28
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.69.html
+        note: deeded 28 December 1934 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1937-1-62
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.69.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-62
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177611
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177611
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177611
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177611
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177611
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177611

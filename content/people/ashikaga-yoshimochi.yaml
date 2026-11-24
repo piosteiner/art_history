@@ -26,6 +26,16 @@ death: 1428-02-12
 wikidata_id: Q466287
 metadata:
   sources: [Wikidata Q466287 (retrieved 2026-11-01)]
+relationships:
+  - type: child_of
+    to: person/ashikaga-yoshimitsu
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q248381
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q466287
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Ashikaga_Yoshimochi.jpg/1280px-Ashikaga_Yoshimochi.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Ashikaga_Yoshimochi.jpg

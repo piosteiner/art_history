@@ -1,0 +1,94 @@
+public_id: 122586
+name: Edo-Tokyo Museum
+names:
+  - lang: nl
+    role: translation
+    text: Edo-Tokyomuseum
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1191042
+  - lang: fr
+    role: translation
+    text: musée d'Edo-Tokyo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1191042
+  - lang: de
+    role: translation
+    text: Edo-Tokyo-Museum
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1191042
+  - lang: it
+    role: translation
+    text: Museo Edo-Tokyo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1191042
+  - lang: ja
+    role: translation
+    text: 東京都江戸東京博物館
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1191042
+  - lang: zh
+    role: translation
+    text: 江戶東京博物館
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1191042
+  - lang: ko
+    role: translation
+    text: 에도-도쿄 박물관
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1191042
+  - lang: ru
+    role: translation
+    text: Музей Эдо-Токио
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1191042
+kind: museum
+founded: 1993
+place: tokyo
+location: [139.79608, 35.69639]
+address: 東京都墨田区横網1-4-1
+website_url: https://www.edo-tokyo-museum.or.jp/
+collection_url: https://www.edohakuarchives.jp/
+wikidata_id: Q1191042
+metadata:
+  sources: [Wikidata Q1191042 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Edo-Tokyo_Museum.jpg/1280px-Edo-Tokyo_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edo-Tokyo_Museum.jpg
+    license: CC BY-SA 3.0
+    credit: Wiiii
+identifiers:
+  bnf: "165088109"
+  gnd: 5295932-6
+  idref: 11978159X
+  lc: n87868824
+  ulan: "500272229"
+  viaf: "124760152"
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q1191042
+  place:
+    - accessed: 2026-11-23
+      property: P131
+      wikidata: Q1191042
+  address:
+    - accessed: 2026-11-23
+      property: P6375
+      wikidata: Q1191042
+  founded:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q1191042
+  location:
+    - accessed: 2026-11-23
+      property: P625
+      wikidata: Q1191042

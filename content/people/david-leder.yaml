@@ -15,6 +15,15 @@ relationships:
       - url: https://collection.kunsthaus.ch/de/collection/item/2376/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
+  - type: married_to
+    to: person/lola-leder
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q125176732
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q125176580
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/46/Liebermann%2C_Max_-_Leder%2C_David.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Liebermann,_Max_-_Leder,_David.jpg

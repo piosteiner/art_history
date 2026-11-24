@@ -1,0 +1,224 @@
+public_id: 125070
+title_lang: en
+title: The Crucifixion
+names:
+  - lang: es
+    role: original
+    text: Crucificado
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3221342
+  - text: Crucifixion
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3221342
+  - text: Christ on the Cross
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3221342
+  - lang: en
+    role: original
+    text: Crucifixion of Christ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3221342
+  - lang: nl
+    role: translation
+    text: Christus aan het kruis
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3221342
+  - lang: fr
+    role: translation
+    text: Le Christ en croix
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3221342
+  - lang: de
+    role: translation
+    text: Christus am Kreuz
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3221342
+  - lang: it
+    role: translation
+    text: Crocifissione
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3221342
+  - lang: ja
+    role: translation
+    text: 磔刑図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3221342
+  - lang: ru
+    role: translation
+    text: Христос на кресте
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3221342
+creator: francisco-de-zurbaran
+created: 1627
+materials: [oil paint, canvas]
+dimensions: [290.3, 165.5]
+institution: art-institute-of-chicago
+inventory_number: "1954.15"
+wikidata_id: Q3221342
+metadata:
+  sources: [Wikidata Q3221342 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/jesus-christ
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q3221342
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/48/Francisco_de_Zurbar%C3%A1n_-_The_Crucifixion_-_1954.15_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n_-_The_Crucifixion_-_1954.15_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Francisco de Zurbarán
+provenance:
+  - owner: institution/san-pablo-el-real
+    acquired: 1627
+    method: commission
+    place: seville
+    label: painted for the sacristy of the Dominican monastery
+    sources:
+      - url: https://www.artic.edu/artworks/80084
+        note: Painted for the sacristy of the Dominican monastery San Pablo el Real, Seville;
+        source: aic-1954-15
+        accessed: 2026-11-24
+  - owner: institution/alcazar-of-seville
+    role: custodian
+    acquired: 1810
+    method: transfer
+    direct: true
+    place: seville
+    label: deposited at the Palacio Real on the order of Joseph Bonaparte, King of Spain (Gómez Imaz 1917, p. 141, no. 224)
+    sources:
+      - url: https://www.artic.edu/artworks/80084
+        note: placed on deposit at Palacio Real, Seville, on the order of Joseph Bonaparte, King of Spain, 1810 [see M. Gómez Imaz, 1917, p. 141, no. 224];
+        source: aic-1954-15
+        accessed: 2026-11-24
+  - owner: person/jean-toussaint-arrighi-de-casanova
+    acquired: after 1810
+    direct: true
+    label: General, Duc de Padoue; acquired shortly after the 1810 deposit, as recounted by his son (Du Lac's letter of 16 February 1901)
+    sources:
+      - url: https://www.artic.edu/artworks/80084
+        note: acquired by General Jean Toussaint Arrighi de Casanova, Duc de Padoue (died 1853) shortly thereafter [as recounted by his son to Father Stanislas Du Lac, S.J.; see letter from Father Du Lac to Father Paul Troussard dated 16 February 1901 and preserved at the Bibliothèque Sèvres, Paris, copy in file];
+        source: aic-1954-15
+        accessed: 2026-11-24
+  - owner: person/ernest-arrighi-de-casanova
+    method: inheritance
+    direct: true
+    label: his son, 2nd Duc de Padoue
+    sources:
+      - url: https://www.artic.edu/artworks/80084
+        note: by descent to his son, Ernest Louis Hyacinthe Arrighi de Casanova, 2nd Duc de Padoue,
+        source: aic-1954-15
+        accessed: 2026-11-24
+  - owner: person/stanislas-du-lac
+    acquired: 1876
+    method: gift
+    direct: true
+    place: paris
+    label: Jesuit, rector of the Collège Sainte-Geneviève; in thanks for his spiritual assistance to the duke's wife
+    sources:
+      - url: https://www.artic.edu/artworks/80084
+        note: given by him to Father Stanislas Du Lac S.J. (died 1909), rector of the Collège Saint Geneviève, Paris, 1876 [see letter cited above; Father Du Lac explained that he received the painting in thanks for his spiritual assistance to the duke's wife];
+        source: aic-1954-15
+        accessed: 2026-11-24
+  - owner: institution/st-mary-s-college-canterbury
+    role: custodian
+    acquired_label: between 1880 and 1890
+    direct: true
+    place: canterbury
+    label: probably taken there by Father Du Lac; likely remained when the college was replaced by a Jesuit school for novices
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/80084
+        note: probably taken by Father Du Lac to St. Mary's College, Canterbury for the period between 1880 and 1890 and likely remained at Canterbury when St. Mary's College was replaced by a Jesuit school for novitiates;
+        source: aic-1954-15
+        accessed: 2026-11-24
+  - owner: institution/jesuit-novices-school-laval
+    role: custodian
+    acquired: 1897
+    method: transfer
+    direct: true
+    place: laval
+    label: apparently moved with the school from Canterbury; in Laval in 1901
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/80084
+        note: it was apparently moved from Canterbury to Laval along with the Jesuit novices' school in 1897 and was in Laval in 1901 [see letters from Jacqueline Diot and Father Du Lac in curatorial file];
+        source: aic-1954-15
+        accessed: 2026-11-24
+  - owner: institution/jesuit-seminary-of-saint-louis
+    role: custodian
+    method: transfer
+    direct: true
+    label: at Jersey
+    sources:
+      - url: https://www.artic.edu/artworks/80084
+        note: transferred from Laval to the Jesuit seminary of Saint Louis at Jersey [see note with Du Lac letter];
+        source: aic-1954-15
+        accessed: 2026-11-24
+  - owner: institution/jesuit-seminary-of-saint-louis
+    role: custodian
+    acquired: 1951
+    method: transfer
+    direct: true
+    place: chantilly
+    label: moved with the seminary from Jersey
+    sources:
+      - url: https://www.artic.edu/artworks/80084
+        note: transferred with the seminary to Chantilly in 1951 [see undated typewritten notes in curatorial file].
+        source: aic-1954-15
+        accessed: 2026-11-24
+  - owner: person/hans-fritz-fankhauser
+    acquired: 1952 or earlier
+    place: basel
+    label: Dr. H. F. Fankhauser, Basel, in 1952
+    sources:
+      - url: https://www.artic.edu/artworks/80084
+        note: Dr. H. F. Fankhauser, Basel, 1952 [See Baticle in New York, 1988];
+        source: aic-1954-15
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1954
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/80084
+        note: sold to the Art Institute, 1954.
+        source: aic-1954-15
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3221342
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q3221342
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3221342
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3221342
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3221342
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q3221342

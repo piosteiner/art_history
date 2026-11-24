@@ -1,0 +1,43 @@
+public_id: 123930
+title: Honden, Heiden and Haiden of Marōdo Shrine
+names:
+  - lang: ja
+    role: translation
+    text: 厳島神社摂社客神社本殿、幣殿、拝殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020644
+created: 1241
+institution: itsukushima-shrine
+location: [132.3201, 34.29662]
+wikidata_id: Q107020644
+metadata:
+  sources: [Wikidata Q107020644 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/hatsukaichi
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Honden_of_Marodo_Shrine_in_Itsukushima_Shrine_and_Gojunoto_Tower.jpg/1280px-Honden_of_Marodo_Shrine_in_Itsukushima_Shrine_and_Gojunoto_Tower.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Honden_of_Marodo_Shrine_in_Itsukushima_Shrine_and_Gojunoto_Tower.jpg
+    license: CC BY-SA 4.0
+    credit: そらみみ
+provenance:
+  - owner: institution/itsukushima-shrine
+    acquired: 1241
+    method: creation
+    place: hatsukaichi
+    label: auxiliary shrine (sessha) of Itsukushima; the shrine buildings laid out with Taira no Kiyomori's support in the late Heian period, burned 1207 and 1223, rebuilt almost entirely in Ninji 2 (1241)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3166
+        note: 平安時代の末期に平清盛（一一一八～八一）の援助によって社殿が造営されたと伝え … 神社は承元元年（一二〇七）、貞応二年（一二二三）の両度炎上し、仁治二年（一二四一）ほぼ全社殿にわたる造営が行われているので、現社殿は古式の部分も存するが、ほぼこの時のものと思われる。 … 所有者名 ： 厳島神社
+        source: kunishitei-102-3166
+        accessed: 2026-11-24
+      - note: The shrine, completely rebuilt by Taira no Kiyomori after his elevation to governor of Aki province, created a kind of dream-palace, extending out over the sea in front of Miyajima Island. Although it has been destroyed many times, it has always been rebuilt in the same design.
+        source: history-of-japanese-art
+        locator: p. 165
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020644

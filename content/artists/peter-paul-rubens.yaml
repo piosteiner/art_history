@@ -273,6 +273,15 @@ relationships:
       - accessed: 2026-10-28
         property: P135
         wikidata: Q5599
+  - type: married_to
+    to: person/helena-fourment
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q1965732
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q5599
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Sir_Peter_Paul_Rubens_-_Portrait_of_the_Artist_-_Google_Art_Project.jpg/1280px-Sir_Peter_Paul_Rubens_-_Portrait_of_the_Artist_-_Google_Art_Project.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Sir_Peter_Paul_Rubens_-_Portrait_of_the_Artist_-_Google_Art_Project.jpg

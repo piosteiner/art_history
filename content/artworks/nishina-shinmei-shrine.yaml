@@ -1,0 +1,32 @@
+public_id: 124489
+title: Nishina Shinmei Shrine
+names:
+  - lang: fr
+    role: translation
+    text: Nishina Shinmei-gū
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3342145
+  - lang: ja
+    role: translation
+    text: 仁科神明宮
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3342145
+location: [137.87903, 36.44994]
+wikidata_id: Q3342145
+metadata:
+  sources: [Wikidata Q3342145 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/omachi
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Nishina-3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nishina-3.jpg
+    license: CC BY-SA 3.0
+    credit: 江戸村のとくぞう
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3342145

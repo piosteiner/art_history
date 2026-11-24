@@ -1,0 +1,149 @@
+public_id: 124697
+title_lang: en
+title: View of Bordeaux, from the Quai des Chartrons
+names:
+  - lang: fr
+    role: translation
+    text: Vue de Bordeaux, du quai des Chartrons
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60475908
+  - lang: de
+    role: translation
+    text: Blick auf Bordeaux vom Quai des Chartrons
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60475908
+creator: eugene-boudin
+created: 1874
+materials: [oil paint, canvas]
+dimensions: [54.7, 89.5]
+institution: cleveland-museum-of-art
+inventory_number: "1986.73"
+web_url: https://clevelandart.org/art/1986.73
+wikidata_id: Q60475908
+metadata:
+  sources: [Wikidata Q60475908 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Clevelandart_1986.73.jpg/1280px-Clevelandart_1986.73.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Clevelandart_1986.73.jpg
+    license: CC0
+    credit: Eugène Boudin
+provenance:
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1877-02-28
+    method: auction
+    place: paris
+    label: "Boudin sale, Hôtel Drouot, Paris, 28 Feb. 1877, no. 30: a 'Vue de Bordeaux' matching the Cleveland picture's dimensions"
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1986.73
+        note: (Boudin sale, Hôtel Drouot, Paris, Feb. 28, 1877, no. 30) — A painting titled "Vue de Bordeaux" that matches the dimensions of the Cleveland picture appears in this sale of works by Boudin.
+        source: cma-1986-73
+        accessed: 2026-11-24
+  - owner: person/aurelien-scholl
+    acquired: 1899 or earlier
+    place: paris
+    label: lent it to the Boudin exhibition at the École des Beaux-Arts, 1899
+    sources:
+      - url: https://clevelandart.org/art/1986.73
+        note: Aurélien Scholl [1833-1902], Paris — Scholl was the lender of the Cleveland picture to a Boudin exhibition at the École des Beaux-Arts in 1899.
+        source: cma-1986-73
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1921-06-17
+    method: auction
+    place: paris
+    label: sale, Hôtel Drouot, Paris, 17 June 1921, no. 52
+    sources:
+      - url: https://clevelandart.org/art/1986.73
+        note: (Sale, Hôtel Drouot, Paris, June 17, 1921 (no. 52), probably sold to Galerie Allard & Noël)
+        source: cma-1986-73
+        accessed: 2026-11-24
+  - owner: institution/allard-noel
+    role: dealer
+    acquired: 1921-06-17
+    method: auction
+    direct: true
+    place: paris
+    label: buyer 'Allard' in Drouot's annotated catalogue; Schmit's catalogue raisonné lists 'Gérard, Paris' and Galerie Abels, Cologne, next — undocumented
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1986.73
+        note: (Probably Galerie Allard & Noël, Paris) — The annotated copy of this catalogue held by Hôtel Drouot indicates that the buyer of the Boudin was “Allard.” This notation likely refers to Galerie Allard et Noël, Paris
+        source: cma-1986-73
+        accessed: 2026-11-24
+  - owner: institution/e-j-van-wisselingh-co
+    role: dealer
+    acquired: 1950 or earlier
+    place: amsterdam
+    label: no. 4 in its 1950 exhibition 'Maîtres français XIXme et XXme siècles'; Schmit lists the dealer C. R. A. van Stolk, Bergen, next — undocumented
+    sources:
+      - url: https://clevelandart.org/art/1986.73
+        note: (E. J. van Wisselingh & Co., Amsterdam) — The CMA painting is no. 4 in the 1950 van Wisselingh & Co. exhibition, Maîtres français XIXme et XXme siècles.
+        source: cma-1986-73
+        accessed: 2026-11-24
+  - owner_label: Private collection, Washington, D.C.
+    place: washington-d-c
+    sources:
+      - url: https://clevelandart.org/art/1986.73
+        note: Private collection, Washington, D.C., to Wildenstein & Co.
+        source: cma-1986-73
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1986.73
+        note: (Wildenstein & Co., New York, sold to Emily Blossom)
+        source: cma-1986-73
+        accessed: 2026-11-24
+  - owner: person/emily-blossom
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Mrs. Dudley S. Blossom Jr.
+    sources:
+      - url: https://clevelandart.org/art/1986.73
+        note: Emily Blossom [1913-1991], Cleveland, OH, given to the Cleveland Museum of Art
+        source: cma-1986-73
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1986
+    method: gift
+    direct: true
+    place: cleveland
+    label: John L. Severance Fund and Gift of Mrs. Dudley S. Blossom Jr.
+    sources:
+      - url: https://clevelandart.org/art/1986.73
+        note: The Cleveland Museum of Art, Cleveland, OH
+        source: cma-1986-73
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60475908
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60475908
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60475908
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60475908
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60475908
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60475908

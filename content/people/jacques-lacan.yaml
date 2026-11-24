@@ -23,6 +23,16 @@ death: 1981-09-09
 wikidata_id: Q169906
 metadata:
   sources: [Wikidata Q169906 (retrieved 2026-10-20)]
+relationships:
+  - type: married_to
+    to: person/sylvia-bataille
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q169906
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q2636468
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/25/Jacques_Lacan_during_an_interview_1969.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Jacques_Lacan_during_an_interview_1969.jpg

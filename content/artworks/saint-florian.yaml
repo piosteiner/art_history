@@ -1,0 +1,150 @@
+public_id: 123029
+title_lang: en
+title: Saint Florian
+names:
+  - lang: nl
+    role: translation
+    text: San Floriano
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3947074
+  - lang: de
+    role: translation
+    text: "Griffoni-Altar, ursprl. Griffonikapelle in der San Petronio in Bologna, Aufsatz auf linken Flügel mit Hl. Petrus: Hl. Florian"
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3947074
+creator: francesco-del-cossa
+created: 1472
+materials: [oil paint, panel]
+dimensions: [79.4, 55]
+institution: national-gallery-of-art
+inventory_number: 1939.1.227
+provenance_status: a_clear
+provenance_status_note: With Duveen Brothers from the 1929 Spiridon sale until its sale to the Samuel H. Kress Foundation in May 1936; given to the NGA in 1939.
+wikidata_id: Q3947074
+metadata:
+  sources: [Wikidata Q3947074 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/saint-florian
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q3947074
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Francesco_del_Cossa_014.jpg/1280px-Francesco_del_Cossa_014.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francesco_del_Cossa_014.jpg
+    license: Public domain
+    credit: Francesco del Cossa
+provenance:
+  - owner: person/floriano-griffoni
+    method: commission
+    place: bologna
+    label: for the Griffoni family chapel (sixth off the north aisle, dedicated to Saint Vincent) in San Petronio, Bologna; the frame was paid for on 19 July 1473
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.368.html
+        note: Commissioned by Floriano Griffoni for a family chapel (the sixth off the north aisle) in the church of San Petronio, Bologna;[1]
+        source: nga-1939-1-227
+        accessed: 2026-11-24
+  - owner: person/pompeo-aldrovandi
+    acquired: c. 1731
+    ended_label: no longer there in 1782
+    direct: true
+    place: bologna
+    label: Cardinal, successor of the Griffoni in the chapel; the altarpiece was taken to the Casa Aldrovandi, Bologna (his agent wrote of cutting it into small pictures); not in the 1782 inventory
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.368.html
+        note: moved to the Casa Aldrovandi, Bologna, c. 1731, but no longer there in 1782.[2] — [2] … transportate in Casa Aldrovandi allorchè il Cardinal Pompeo Aldrovandi successore de' Griffoni fece ridurre questa Cappella … An inventory of the Casa Aldrovandi in 1782 … does not include any pictures that could come from the Griffoni altarpiece
+        source: nga-1939-1-227
+        accessed: 2026-11-24
+  - owner: person/ugo-beni
+    acquired: 1858 or earlier
+    place: gubbio
+    label: Count; seen there with its companion by Otto Mündler, 3 June 1858
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.368.html
+        note: Count Ugo Beni, Gubbio, by 1858;[3] — [3] The presence of Saint Florian and the companion Saint Lucy (NGA 1939.1.228) in the Beni collection is noted in a diary entry of 3 June 1858 by Otto Mündler
+        source: nga-1939-1-227
+        accessed: 2026-11-24
+  - owner: person/joseph-spiridon
+    acquired: 1881/1882
+    method: purchase
+    direct: true
+    place: paris
+    label: bought from Count Beni in Florence in 1881 (Spiridon sale catalogue) or at the Beni sale, Gubbio, April 1882, no. 4, as Saint Martin by Zoppo (Davies; catalogue unlocated)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.368.html
+        note: 'purchased 1881 or at (Beni sale, Gubbio, April 1882, no. 4, as Saint Martin by Zoppo) by Joseph Spiridon [1845-1930], Paris;[4] — [4] The catalogue of the 1929 Spiridon collection sale indicates that both NGA paintings were purchased from Count Beni in Florence in 1881. This contradicts the citation in Davies 1961: 152 n. 16, that refers to them as lots 4 and 5 in the "Conte U. Beni" sale of April/May 1882 in Gubbio.'
+        source: nga-1939-1-227
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    co_owners: [institution/hugo-helbing]
+    role: agent
+    acquired: 1929-05-31
+    method: auction
+    direct: true
+    place: berlin
+    label: his sale, Cassirer and Helbing, Berlin, 31 May 1929, no. 12, as Heilige Liberalis
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.368.html
+        note: (his sale, Cassirer and Helbing, Berlin, 31 May 1929, no. 12, as Heilige Liberalis);
+        source: nga-1939-1-227
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Duveen Brothers, Inc., London and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.368.html
+        note: (Duveen Brothers, Inc., London and New York);[5]
+        source: nga-1939-1-227
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1936-05
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: one of thirteen paintings and one sculpture (Duveen letter of 18 May 1939, 'St. Liberale' and 'St. Lucy', 'Spiridon Coll'n')
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.368.html
+        note: sold May 1936 to the Samuel H. Kress Foundation, New York;[6] — [6] The Duveen Brothers letter confirming the sale of thirteen paintings and one sculpture, including NGA 1939.1.227 and .228, which were described as "representing 'St. Liberale' and 'St. Lucy', is dated 18 May 1939; the provenance is given as "Spiridon Coll'n"
+        source: nga-1939-1-227
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1939
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.368.html
+        note: gift 1939 to NGA.
+        source: nga-1939-1-227
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q3947074
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q3947074
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q3947074
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q3947074
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q3947074
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q3947074

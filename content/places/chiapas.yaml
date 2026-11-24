@@ -1,0 +1,16 @@
+public_id: 124899
+name: Chiapas
+kind: site
+location: [-92.45, 16.53]
+wikidata_id: Q60123
+metadata:
+  sources: [Wikidata Q60123 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q60123
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q60123

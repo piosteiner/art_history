@@ -34,6 +34,15 @@ relationships:
       - accessed: 2026-10-09
         property: P112
         wikidata: Q6352575
+  - type: child_of
+    to: person/andrew-w-mellon
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q446858
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q1542805
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Paul_Mellon%2C_by_William_Orpen_%281878-1931%29_%28cropped%29_%28cropped%29.jpg/1280px-Paul_Mellon%2C_by_William_Orpen_%281878-1931%29_%28cropped%29_%28cropped%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Paul_Mellon,_by_William_Orpen_(1878-1931)_(cropped)_(cropped).jpg

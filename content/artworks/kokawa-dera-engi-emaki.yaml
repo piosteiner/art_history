@@ -1,0 +1,83 @@
+public_id: 124111
+title: Kokawa-dera Engi Emaki
+names:
+  - text: Illustrated handscroll of Legends of Kokawa-dera Temple
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q595722
+  - text: The Legendary Origins of Kokawadera
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q595722
+  - lang: ja
+    role: translation
+    text: 粉河寺縁起絵巻
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q595722
+  - lang: zh
+    role: translation
+    text: 粉河寺缘起绘卷
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q595722
+created: 12th century
+created_span: uncertain
+institution: kyoto-national-museum
+web_url: http://www.kyohaku.go.jp/eng/syuzou/meihin/emaki/item05.html
+on_loan: true
+wikidata_id: Q595722
+metadata:
+  sources: [Wikidata Q595722 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts
+    to: place/kokawa-dera-temple
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q595722
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c5/The_Legendary_Origins_of_Kokawadera_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Legendary_Origins_of_Kokawadera_2.jpg
+    license: Public domain
+    credit: Unknown author
+provenance:
+  - owner: institution/kokawa-dera
+    acquired_label: for centuries
+    place: kinokawa
+    label: the temple's own founding legend (late Heian, 12th century); probably damaged by fire in the Tenshō era, when Toyotomi Hideyoshi burned Negoro-ji — the beginning and the upper and lower edges burnt
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/83
+        note: 所有者名 ： 粉河寺
+        source: kunishitei-201-83
+        accessed: 2026-11-24
+      - url: https://www.kyohaku.go.jp/eng/collection/meihin/emaki/item05/
+        note: Japan, Late-Heian Period, 12th century … Kokawa-dera Temple, Wakayama
+        source: knm-meihin-kokawa-dera-engi
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%B2%89%E6%B2%B3%E5%AF%BA%E7%B8%81%E8%B5%B7%E7%B5%B5%E5%B7%BB&oldid=110821249
+        note: 恐らく天正年間、豊臣秀吉の根来寺焼き討ちにより罹災し、巻首部分と、全巻にわたる上下に甚だしい焼損が見られる。
+        source: wikipedia-ja-kokawadera-engi-emaki
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Kokawa-dera_Engi_Emaki
+        note: The emakimono has been owned for centuries, and is still owned, by the Kokawa-dera temple.
+        source: wikipedia-en-kokawa-dera-engi-emaki
+        accessed: 2026-11-24
+  - owner: institution/kyoto-national-museum
+    role: custodian
+    place: kyoto
+    label: deposited by Kokawa-dera (National Treasure since 31 March 1953)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%B2%89%E6%B2%B3%E5%AF%BA%E7%B8%81%E8%B5%B7%E7%B5%B5%E5%B7%BB&oldid=110821249
+        note: 現在の所有者は粉河寺であるが、京都国立博物館に寄託されている。
+        source: wikipedia-ja-kokawadera-engi-emaki
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q595722
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q595722

@@ -1,0 +1,16 @@
+public_id: 123116
+name: Delphi Archaeological Museum
+kind: museum
+founded: 1903
+wikidata_id: Q636928
+metadata:
+  sources: [Wikidata Q636928 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q636928
+  founded:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q636928

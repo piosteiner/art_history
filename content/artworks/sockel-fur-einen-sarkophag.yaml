@@ -1,0 +1,45 @@
+public_id: 123867
+title_lang: de
+title: Sockel für einen Sarkophag
+attribution_label: Anonymous
+created: first half of the 6th century
+created_span: uncertain
+kind: relief
+medium: Kalkstein
+dimensions: [50, 200]
+institution: museum-rietberg
+inventory_number: RCH 115
+web_url: https://rietberg.ch/sammlungen/rch-115
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Sarkophag-Sockel_Museum_Rietberg_RCH_115_img01.jpg/1280px-Sarkophag-Sockel_Museum_Rietberg_RCH_115_img01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sarkophag-Sockel_Museum_Rietberg_RCH_115_img01.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner: person/c-t-loo
+    role: dealer
+    acquired: before 1923
+    place: paris
+    label: lit. D'Ardenne de Tizac 1923, pl. 13; Chinesische Ausstellung 1929; photograph from the Pagoda from the estate of Janine Loo
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-115
+        note: |-
+          vor 1923: C. T. Loo (1880–1957), Händler*in, Paris
+          Lit. D'Ardenne de Tizac, 1923, Pl. 13; Chinesische Ausstellung, 1929, Foto aus der Pagode aus dem Nachlass Janine Loo
+        source: rietberg-rch-115
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    label: collector
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-115
+        note: Eduard von der Heydt (1882–1964), Sammler*in
+        source: rietberg-rch-115
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    method: gift
+    label: gift of Eduard von der Heydt (credit line)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-115
+        note: Creditline | Geschenk Eduard von der Heydt
+        source: rietberg-rch-115
+        accessed: 2026-11-24

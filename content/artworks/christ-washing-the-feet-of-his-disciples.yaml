@@ -1,0 +1,193 @@
+public_id: 125192
+title_lang: en
+title: Christ Washing the Feet of His Disciples
+creator: nicolas-bertin
+created: 1720/1730
+created_label: c. 18th century
+created_span: uncertain
+dimensions: [49.5, 72.1]
+institution: art-institute-of-chicago
+inventory_number: "1979.305"
+wikidata_id: Q20275956
+metadata:
+  sources: [Wikidata Q20275956 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Nicolas_Bertin_-_Christ_Washing_the_Feet_of_His_Disciples_-_1979.305_-_Art_Institute_of_Chicago.jpg/1280px-Nicolas_Bertin_-_Christ_Washing_the_Feet_of_His_Disciples_-_1979.305_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nicolas_Bertin_-_Christ_Washing_the_Feet_of_His_Disciples_-_1979.305_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Nicolas Bertin
+provenance:
+  - owner_label: private collection, Lyon
+    place: lyon
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: Probably a private collection, Lyons [according to Catalogue historique… de M. de Lalive 1764].
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: person/ange-laurent-de-lalive-de-jully
+    acquired: 1757 or earlier
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: Ange Laurent de Lalive de Jully, Paris, by 1757;
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: person/pierre-remy
+    role: agent
+    acquired: 1770-05-07
+    method: auction
+    direct: true
+    place: paris
+    label: Lalive de Jully sale, no. 65; Rémy bought it on behalf of the duc de Praslin
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: sold Pierre Remy, Paris, May 7, 1770, no. 65, to Rémy, acting on behalf of the duc de Praslin,
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: person/cesar-gabriel-de-choiseul
+    acquired: 1770-05-07
+    ended: 1785
+    method: auction
+    direct: true
+    place: paris
+    label: bought for the duc de Praslin, probably César Gabriel de Choiseul, duc de Praslin
+    certainty: probable
+    price:
+      amount: 1050
+      currency: LIV
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: to Rémy, acting on behalf of the duc de Praslin, for 1,050 livres [according to annotated sale catalogue in Frick Art Reference Library, New York; see also Bailey 1988, p. xlvii]; probably César Gabriel de Choiseul, duc de Praslin (d. 1785), Paris,
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: person/louis-cesar-renaud-de-choiseul
+    ended: 1791
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: by descent to Louis César Renaud de Choiseul, vicomte de Choiseul (d. 1791);
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: person/cesar-hippolyte-de-choiseul-praslin
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: by descent to César Hippolyte de Choiseul, comte de Choiseul-Praslin;
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: person/alexandre-joseph-paillet
+    role: agent
+    acquired: 1793-02-18
+    method: auction
+    direct: true
+    place: paris
+    label: Choiseul-Praslin sale, Paris, 18 February 1793 and following days, no. 152
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: sold A. J. Paillet, Paris, February 18 and following, 1793, no. 152,
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner_label: Clysorius
+    acquired: 1793-02-18
+    method: auction
+    direct: true
+    price:
+      amount: 800
+      currency: LIV
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: to Clysorius for 800 livres [see annotated sale catalogue in the Frick Art Reference Library, New York and Lefrançois 1981, p. 114].
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: person/abraham-fontanel
+    place: montpellier
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: Abraham Fontanel, Montpellier [Lefrançois 1981, p. 114];
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: person/jacques-joseph-de-boussairolles
+    acquired: 1806
+    ended: 1814
+    method: purchase
+    direct: true
+    place: montpellier
+    label: Château de la Mogère, Montpellier
+    price:
+      amount: 2000
+      currency: LIV
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: sold by Fontanel, 1806, to Baron Jacques Joseph de Boussairolles (d. 1814), Château de Mogère, Montpellier for 2,000 livres [according to Lefrançois 1981, p. 114, and Chevalier 1995, pp. 169–177];
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: person/marie-claire-boussairolles
+    ended: 1905
+    method: inheritance
+    direct: true
+    label: his great-granddaughter; wife of Charles-Antoine Barthélemy, baron de Saizieu
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: by descent to his great-granddaughter, Marie-Claire Boussairolles (d. 1905), who married Charles-Antoine Barthélemy, baron de Saizieu;
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: person/louis-antoine-henri-barthelemy-de-saizieu
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: by descent to Louis-Antoine-Henri Barthélemy, baron de Saizieu;
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: person/joseph-de-colbert-cannet
+    method: inheritance
+    direct: true
+    place: chevagnes
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: by decent to Joseph, comte de Colbert-Cannet; Chevagnes [according to information sheet provided by Jean Pierre Selz at time of purchase; …]
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: person/jean-pierre-selz
+    role: agent
+    acquired: 1979
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: purchased from Colbert-Cannet with Jean Pierre Selz as agent, 1979.
+        source: aic-1979-305
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1979
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/58052
+        note: purchased from Colbert-Cannet with Jean Pierre Selz as agent, 1979.
+        source: aic-1979-305
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20275956
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20275956
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20275956
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20275956
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20275956

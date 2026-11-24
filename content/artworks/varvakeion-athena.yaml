@@ -1,0 +1,91 @@
+public_id: 123175
+title: Varvakeion Athena
+names:
+  - text: Athena Varvakeios statue
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q25221697
+  - text: Athena Parthenos
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q25221697
+  - lang: it
+    role: translation
+    text: Atena Varvakeion
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q25221697
+  - lang: es
+    role: translation
+    text: Atenea Varvakeion
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q25221697
+  - lang: ja
+    role: translation
+    text: ヴァルヴァケイオンのアテーナー
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q25221697
+  - lang: ru
+    role: translation
+    text: Афина Варвакион
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q25221697
+materials: [marble, Pentelic marble]
+dimensions: [105]
+institution: national-archaeological-museum-of-athens
+wikidata_id: Q25221697
+metadata:
+  sources: [Wikidata Q25221697 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bb/NAMA_Ath%C3%A9na_Varvakeion.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:NAMA_Ath%C3%A9na_Varvakeion.jpg
+    license: CC BY 2.5
+    credit: Unknown (After Phidias' Athena Parthenos)
+provenance:
+  - owner_label: unknown
+    role: event
+    acquired: 1880-12-18
+    method: find
+    place: athens
+    label: found in the ruins of a Roman house near the original site of the Varvakeion School, Athens; finder not named
+    sources:
+      - url: https://en.wikipedia.org/wiki/Varvakeion_Athena
+        note: The statue is named for the locale of its discovery in 1880, in the ruins of a Roman house near the original site of the Varvakeion School.
+        source: wikipedia-en-varvakeion-athena
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/Αθηνά_Παρθένος_(Εθνικό_Αρχαιολογικό_Μουσείο_αρ._129)
+        note: Λέγεται επίσης Αθηνά της Βαρβακείου, επειδή βρέθηκε στις 18 Δεκεμβρίου 1880 κοντά στη Βαρβάκειο Σχολή.
+        source: wikipedia-el-athena-parthenos-nam-129
+        accessed: 2026-11-24
+      - url: http://nam.culture.gr/portal/page/portal/deam/virtual_exhibitions/EAMS/EAMG129
+        note: Statuette of Athena. Found in Athens, near the Varvakeion school.
+        source: nam-129-varvakeion-athena
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    place: athens
+    label: inventory 129
+    sources:
+      - url: https://en.wikipedia.org/wiki/Varvakeion_Athena
+        note: The Varvakeion Athena is a Roman-era statue of Athena Parthenos now part of the collection of the National Archaeological Museum of Athens.
+        source: wikipedia-en-varvakeion-athena
+        accessed: 2026-11-24
+      - url: http://nam.culture.gr/portal/page/portal/deam/virtual_exhibitions/EAMS/EAMG129
+        note: "The Varvakeion Athena (129) … Unit : NAM ind. no. 129"
+        source: nam-129-varvakeion-athena
+        accessed: 2026-11-24
+sources:
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q25221697
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q25221697
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q25221697

@@ -35,6 +35,15 @@ relationships:
       - accessed: 2026-11-12
         property: P20
         wikidata: Q2138078
+  - type: child_of
+    to: person/martin-hurlimann
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q120296
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q2138078
 identifiers:
   bnf: 12638122m
   gnd: "129034703"

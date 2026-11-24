@@ -32,6 +32,15 @@ relationships:
       - accessed: 2026-11-12
         property: P937
         wikidata: Q864013
+  - type: sibling_of
+    to: artist/simon-luttichuys
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q864013
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q863953
 identifiers:
   bnf: "162011852"
   gnd: "118729780"

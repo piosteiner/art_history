@@ -1,0 +1,160 @@
+public_id: 122778
+title_lang: en
+title: Portrait of a Man with a Tall Hat and Gloves
+names:
+  - lang: nl
+    role: translation
+    text: Portret van een man met hoge hoed en handschoenen
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177419
+  - lang: de
+    role: translation
+    text: Porträt eines Mannes mit hohem Hut und Handschuhen
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177419
+creator: rembrandt
+created: 1656/1658
+created_label: c. 1650s
+created_span: uncertain
+materials: [oil paint, canvas, transferred to canvas]
+dimensions: [99.5, 82.5]
+institution: national-gallery-of-art
+inventory_number: 1942.9.67
+web_url: http://www.rembrandtdatabase.org/Rembrandt/painting/32822/portrait-of-a-man-with-a-tall-hat-and-gloves-in-his-hand
+wikidata_id: Q20177419
+metadata:
+  sources: [Wikidata Q20177419 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/frans-van-schooten
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20177419
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Portrait_of_a_Man_with_a_Tall_Hat_and_Gloves%2C_Rembrandt_van_Rijn%2C_c._1656%2C_National_Gallery_of_Art%2C_Washington.jpg/1280px-Portrait_of_a_Man_with_a_Tall_Hat_and_Gloves%2C_Rembrandt_van_Rijn%2C_c._1656%2C_National_Gallery_of_Art%2C_Washington.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man_with_a_Tall_Hat_and_Gloves,_Rembrandt_van_Rijn,_c._1656,_National_Gallery_of_Art,_Washington.jpg
+    license: Public domain
+    credit: Rembrandt
+provenance:
+  - owner: person/gerard-hoet-jr
+    place: the-hague
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1206.html
+        note: Possibly Gerard Hoet, Jr. [d. 1760], The Hague;
+        source: nga-1942-9-67
+        accessed: 2026-11-24
+  - owner: person/ottho-van-thol
+    co_owners: [person/huibert-keetelaar, person/pierre-yver]
+    role: agent
+    acquired: 1760-08-25
+    ended: 1760-08-25
+    method: auction
+    direct: true
+    place: the-hague
+    label: 'possibly the sale, The Hague, 25 August 1760, no. 49: "Een Mans-Pourtrait, met twee Handen" (Hoet/Terwesten, Catalogus, 3: 225)'
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1206.html
+        note: 'possibly (sale, by Ottho Van Thol, Huibert Keetelaar, and Pierre Yver, The Hague, 25 August 1760, no. 49).[1] — [1] … The painting is listed as: "Een Mans-Pourtrait, met twee Handen, door denzelven; hoog 39, breet 30 1/2 diumen."'
+        source: nga-1942-9-67
+        accessed: 2026-11-24
+  - owner: person/nikolai-borisovich-yusupov
+    acquired: 1803 or earlier
+    place: saint-petersburg
+    label: seen in 1803 by Heinrich Christoph von Reimers in the family's palace on the Fontanka, Saint Petersburg; moved in 1811 to the Arkhangelskoye estate near Moscow
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1206.html
+        note: Prince Nicolai Borisovich Yusupov [1751-1831], Saint Petersburg and Moscow, by 1803;[2] — [2] … Heinrich Christoph von Reimers (1768-1812) visited the collection in 1803 when it was housed in the family's palace on the Fontanka River in Saint Petersburg; his description of it, published in 1805, mentions the Gallery's painting … [4] The Yusupov collection, including the two portraits by Rembrandt, was moved in 1811 from Saint Petersburg to the family's Arkhangelskoye estate near Moscow
+        source: nga-1942-9-67
+        accessed: 2026-11-24
+  - owner: person/boris-nikolaievich-yusupov
+    method: inheritance
+    direct: true
+    place: moscow
+    label: at Arkhangelskoye; returned in 1837 to the new family palace on the Moika, Saint Petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1206.html
+        note: by inheritance to his son, Prince Boris Nicolaiovich Yusupov [1794-1849], Moscow and Saint Petersburg; — [4] … was returned again to Saint Petersburg in 1837 to a new family palace on the Moika River.
+        source: nga-1942-9-67
+        accessed: 2026-11-24
+  - owner: person/nikolai-borisovich-yusupov-2
+    method: inheritance
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1206.html
+        note: by inheritance to his son, Prince Nicolai Borisovich Yusupov [1827-1891], Saint Petersburg;
+        source: nga-1942-9-67
+        accessed: 2026-11-24
+  - owner: person/zinaida-yusupova
+    method: inheritance
+    direct: true
+    place: saint-petersburg
+    label: the collection was hers; heir after 1908 her second son, Felix; the Moika palace collection largely seized by the Bolsheviks after 1917, these two Rembrandts not
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1206.html
+        note: by inheritance to his daughter, Princess Zinaida [Zenaida] Nikolaievna Yusupova [1861-1939], Saint Petersburg, Yalta, and London;[3] — [3] … The Yusupov art collection, however, was hers, and, after the death in 1908 of her first son, Nicolai, the heir to it became her second son, Felix.
+        source: nga-1942-9-67
+        accessed: 2026-11-24
+  - owner: person/felix-yusupov
+    role: agent
+    acquired_label: before April 1919
+    method: transfer
+    direct: true
+    place: london
+    label: smuggled out of the Moika Palace before April 1919, taken to London and sold there in 1921 as her son and heir
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1206.html
+        note: sold 1921 by her son and heir, Prince Felix Felixovich Yusupov [1887-1967],[4] — [4] … The two Rembrandt paintings, however, were smuggled out of the Moika Palace at some point prior to April 1919, when Prince Felix Felixovich Yusupov, his wife and parents, and other members of the Russian nobility left Yalta aboard a British ship. The paintings were taken by the prince to London, where negotiations for their sale began.
+        source: nga-1942-9-67
+        accessed: 2026-11-24
+  - owner: person/joseph-e-widener
+    acquired: 1921
+    method: purchase
+    direct: true
+    label: bought with funds of the Estate of Peter A. B. Widener; in Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1206.html
+        note: sold 1921 by her son and heir, Prince Felix Felixovich Yusupov [1887-1967], to Joseph E. Widener; inheritance from Estate of Peter A. B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park, Pennsylvania, after purchase by funds of the Estate;
+        source: nga-1942-9-67
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1942
+    method: gift
+    direct: true
+    place: washington-d-c
+    label: inheritance from the Estate of Peter A. B. Widener by gift through power of appointment of Joseph E. Widener
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1206.html
+        note: inheritance from Estate of Peter A. B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park, Pennsylvania, after purchase by funds of the Estate; gift 1942 to NGA.
+        source: nga-1942-9-67
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177419
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177419
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177419
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177419
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177419
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177419

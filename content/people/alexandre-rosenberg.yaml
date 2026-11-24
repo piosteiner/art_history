@@ -13,6 +13,16 @@ death: 1913
 wikidata_id: Q18379827
 metadata:
   sources: [Wikidata Q18379827 (retrieved 2026-10-31)]
+relationships:
+  - type: married_to
+    to: person/mathilde-rosenberg
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q18379827
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q116472137
 sources:
   kind:
     - accessed: 2026-10-31

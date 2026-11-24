@@ -19,6 +19,16 @@ death: 1964-11-16
 wikidata_id: Q88130
 metadata:
   sources: [Wikidata Q88130 (retrieved 2026-10-19)]
+relationships:
+  - type: child_of
+    to: person/heinrich-benesch
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q18934866
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q88130
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Egon_Schiele_-_Doppelbildnis_Heinrich_und_Otto_Benesch.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Doppelbildnis_Heinrich_und_Otto_Benesch.jpg

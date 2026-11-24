@@ -18,6 +18,13 @@ death: 972-10-25
 wikidata_id: Q2975265
 metadata:
   sources: [Wikidata Q2975265 (retrieved 2026-11-01)]
+relationships:
+  - type: child_of
+    to: person/emperor-daigo
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q2975265
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/a/ae/Kuya_Portrait.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Kuya_Portrait.JPG

@@ -8,6 +8,16 @@ death: 30-04-05
 wikidata_id: Q302
 metadata:
   sources: [Wikidata Q302 (retrieved 2026-10-19)]
+relationships:
+  - type: child_of
+    to: person/mary
+    sources:
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q302
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q345
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Spas_vsederzhitel_sinay_%28cropped1%29.jpg/1280px-Spas_vsederzhitel_sinay_%28cropped1%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Spas_vsederzhitel_sinay_(cropped1).jpg

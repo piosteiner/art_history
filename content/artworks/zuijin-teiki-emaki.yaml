@@ -1,0 +1,87 @@
+public_id: 124118
+title: Zuijin Teiki Emaki
+names:
+  - text: Illuminated Scroll of the Imperial Guard Cavalry
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q50439427
+  - text: Equestrian Portraits of Court Nobles
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q50439427
+  - lang: fr
+    role: translation
+    text: Rouleau enluminé des gardes impériaux
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q50439427
+  - lang: ja
+    role: translation
+    text: 随身庭騎絵巻
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q50439427
+created: 13th century
+created_span: uncertain
+materials: [paper, India ink, paint]
+dimensions: [28.7]
+institution: okura-museum-of-art
+wikidata_id: Q50439427
+metadata:
+  sources: [Wikidata Q50439427 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Zuishin_Teiki_handscroll.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Zuishin_Teiki_handscroll.jpg
+    license: Public domain
+    credit: Unknown author
+provenance:
+  - owner_label: unknown painter (often attributed to Fujiwara no Nobuzane)
+    acquired: c. 1247
+    method: creation
+    label: inscription 'Hōji 1 (1247), tenth month, the retired emperor's bodyguards' before the last six portraits; made in or close to that month
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/74
+        note: 年代 ： 1247 … 図中に「宝治元年十月院御随身」とある
+        source: kunishitei-201-74
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Zuijin_Teiki_Emaki
+        note: An inscription located ahead of the fourth guard mentions the month of October 1247, and the emakimono could therefore have been created during or close to that month.
+        source: wikipedia-en-zuijin-teiki-emaki
+        accessed: 2026-11-24
+  - owner_label: Tokugawa family
+    acquired: 1731 or earlier
+    label: recorded in the Sumiyoshi family's appraisal notes (Sumiyoshi-ke kantei hikae)
+    sources:
+      - url: https://en.wikipedia.org/wiki/Zuijin_Teiki_Emaki
+        note: An entry in the Sumiyoshi-ke Kantei-hikae reveals that in 1731, it was in possession of the Tokugawa clan, then the ruling dynasty of Japan.
+        source: wikipedia-en-zuijin-teiki-emaki
+        accessed: 2026-11-24
+  - owner: institution/okura-museum-of-art
+    place: tokyo
+    label: owned by the Okura Cultural Foundation (Ōkura Bunka Zaidan), which runs the Okura Museum of Art; National Treasure since 31 March 1953
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/74
+        note: 国宝指定年月日 ： 1953.03.31(昭和28.03.31) … 所在都道府県 ： 東京都 … 所有者名 ： 公益財団法人大倉文化財団
+        source: kunishitei-201-74
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Zuijin_Teiki_Emaki
+        note: It is now held by the Okura Museum of Art in Tokyo.
+        source: wikipedia-en-zuijin-teiki-emaki
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q50439427
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q50439427
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q50439427
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q50439427

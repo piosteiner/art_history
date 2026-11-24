@@ -1,0 +1,22 @@
+public_id: 126644
+name: Chislehurst
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [0.0789, 51.415]
+wikidata_id: Q122917
+metadata:
+  sources: [Wikidata Q122917 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q122917
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q122917
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q122917

@@ -108,6 +108,21 @@ relationships:
       - accessed: 2026-11-12
         property: P135
         wikidata: Q44007
+  - type: sibling_of
+    to: person/mathilde-klee
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q139190841
+  - type: married_to
+    to: person/lily-klee
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q22236480
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q44007
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/6/6e/Paul_Klee_1911.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Paul_Klee_1911.jpg

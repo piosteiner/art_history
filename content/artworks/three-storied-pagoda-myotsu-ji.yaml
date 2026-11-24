@@ -1,0 +1,43 @@
+public_id: 123987
+title: Three-storied Pagoda, Myōtsū-ji
+names:
+  - lang: ja
+    role: translation
+    text: 明通寺三重塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020335
+created: 1270
+institution: myotsu-ji
+location: [135.8041, 35.45333]
+wikidata_id: Q107020335
+metadata:
+  sources: [Wikidata Q107020335 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/obama
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Myotsuji_Obama_Fukui_Pref03s3s4592.jpg/1280px-Myotsuji_Obama_Fukui_Pref03s3s4592.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Myotsuji_Obama_Fukui_Pref03s3s4592.jpg
+    license: CC BY 2.5
+    credit: 663highland
+provenance:
+  - owner: institution/myotsu-ji
+    acquired: 1270
+    method: creation
+    place: obama
+    label: ridgepole raised 1270, completing the temple's 13th-century rebuilding (main hall 1258/1265, Niō gate 1264/1266) under the reviving monk Raizen; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/821
+        note: 文永七年（一二七〇）には三重塔の棟上が行われ、ここに伽藍が整ったようである。現存する三重塔はこの時のものである。 … 所有者名 ： 明通寺 所有者種別 ： 寺院
+        source: kunishitei-102-821
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%98%8E%E9%80%9A%E5%AF%BA&oldid=108956836
+        note: 現存する本堂、三重塔は鎌倉時代中期、13世紀のもので、中興の祖である僧・頼禅によって復興されたものである。
+        source: wikipedia-ja-myotsu-ji
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020335

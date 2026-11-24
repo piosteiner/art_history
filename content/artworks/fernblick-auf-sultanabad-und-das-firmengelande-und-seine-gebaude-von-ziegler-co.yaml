@@ -1,0 +1,89 @@
+public_id: 124911
+title: Fernblick auf Sultanabad und das Firmengelände und seine Gebäude von Ziegler & Co.
+created: 1892/1893
+created_label: c. 1890s
+created_span: uncertain
+materials: [paper, albumen print]
+institution: museum-rietberg
+inventory_number: 2022.428.147
+wikidata_id: Q128940322
+metadata:
+  sources: [Wikidata Q128940322 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts
+    to: place/arak
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q128940322
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Museum-Rietberg-Z%C3%BCrich-2022.00428.147.jpg/1280px-Museum-Rietberg-Z%C3%BCrich-2022.00428.147.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Museum-Rietberg-Z%C3%BCrich-2022.00428.147.jpg
+    license: Public domain
+    credit: Antoin Sevruguin
+provenance:
+  - owner: person/emil-alpiger
+    acquired: 1875/1896
+    method: purchase
+    label: Karl Emil Ludwig Alpiger sen.; bought in Iran; oral family tradition, communicated by Dr. Rudolf Schnyder
+    sources:
+      - url: https://rietberg.ch/sammlungen/2022-428-147
+        note: "1875–1896: Karl Emil Ludwig Alpiger sen. (1841–1905), angekauft in Iran Mündliche Überlieferung der Familie, mitgeteilt durch Dr. Rudolf Schnyder."
+        source: rietberg-2022-428-147
+        accessed: 2026-11-24
+  - owner: person/karl-alpiger
+    acquired: 1905
+    acquired_label: probably 1905
+    method: inheritance
+    label: Karl Alpiger jun.; Langer (ed.), Emil Alpiger (1841-1905), 2018, p. 11
+    sources:
+      - url: https://rietberg.ch/sammlungen/2022-428-147
+        note: "vermutlich 1905: Karl Alpiger jun. (*1876–unbekannter Zeitpunkt), durch Erbgang erworben Axel Langer (Hrsg.), Emil Alpiger (1841-1905): Teppich-Kaufmann und Sammler, Zürich: Museum Rietberg, 2018, S. 11"
+        source: rietberg-2022-428-147
+        accessed: 2026-11-24
+  - owner: person/alfons-alpiger
+    acquired: before 1984
+    method: inheritance
+    label: oral tradition through Gabriel Alpiger
+    sources:
+      - url: https://rietberg.ch/sammlungen/2022-428-147
+        note: "vor 1984: Alfons Alpiger (1907–1984), durch Erbgang erworben Mündliche Überlieferung durch Gabriel Alpiger"
+        source: rietberg-2022-428-147
+        accessed: 2026-11-24
+  - owner: person/rudolf-schnyder
+    role: trustee
+    acquired: 1984
+    method: transfer
+    place: zurich
+    label: taken over in trust; oral information from Dr. Rudolf Schnyder
+    sources:
+      - url: https://rietberg.ch/sammlungen/2022-428-147
+        note: "1984: Rudolf Schnyder (1931–2015), treuhänderisch übernommen in Zürich Mündliche Auskunft von Dr. Rudolf Schnyder"
+        source: rietberg-2022-428-147
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 2010
+    method: gift
+    place: zurich
+    sources:
+      - url: https://rietberg.ch/sammlungen/2022-428-147
+        note: "2010: Museum Rietberg, als Geschenk erhalten"
+        source: rietberg-2022-428-147
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q128940322
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q128940322
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q128940322
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q128940322

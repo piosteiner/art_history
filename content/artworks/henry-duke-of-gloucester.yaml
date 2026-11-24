@@ -1,0 +1,150 @@
+public_id: 123019
+title_lang: en
+title: Henry, Duke of Gloucester
+names:
+  - lang: nl
+    role: translation
+    text: Portret van Henry Stuart (1639-1660)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177374
+  - lang: de
+    role: translation
+    text: Henry Stuart, Herzog von Gloucester (1639-1660)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177374
+creator: adriaen-hanneman
+created: c. 1653
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [104.8, 87]
+institution: national-gallery-of-art
+inventory_number: 1937.1.51
+provenance_status: a_clear
+provenance_status_note: Bought by Andrew W. Mellon from the Hermitage in November 1930; deeded 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q20177374
+metadata:
+  sources: [Wikidata Q20177374 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/henry-stuart-duke-of-gloucester
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20177374
+  - type: co_creator
+    to: artist/anthony-van-dyck
+    sources:
+      - accessed: 2026-11-23
+        property: P170
+        wikidata: Q20177374
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Henry%2C_Duke_of_Gloucester.jpg/1280px-Henry%2C_Duke_of_Gloucester.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henry,_Duke_of_Gloucester.jpg
+    license: Public domain
+    credit: Adriaen Hanneman
+provenance:
+  - owner: person/heinrich-von-bruhl
+    place: dresden
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.58.html
+        note: Count Heinrich von Brühl [1700-1763], Dresden;
+        source: nga-1937-1-51
+        accessed: 2026-11-24
+  - owner_label: heirs of Heinrich von Brühl
+    ended: 1769
+    method: inheritance
+    direct: true
+    place: dresden
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.58.html
+        note: his heirs, until 1769;
+        source: nga-1937-1-51
+        accessed: 2026-11-24
+  - owner: person/catherine-ii-of-russia
+    acquired: 1769
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.58.html
+        note: his heirs, until 1769; Catherine II, empress of Russia [1729-1796], Saint Petersburg;
+        source: nga-1937-1-51
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.58.html
+        note: Imperial Hermitage Gallery, Saint Petersburg;
+        source: nga-1937-1-51
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1930-11
+    method: purchase
+    direct: true
+    label: sale from the Hermitage, as a painting by Sir Anthony van Dyck, to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.58.html
+        note: purchased November 1930, as a painting by Sir Anthony van Dyck, through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York) by Andrew W. Mellon
+        source: nga-1937-1-51
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1930-11
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.58.html
+        note: purchased November 1930 … by Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-51
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1932-03-30
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.58.html
+        note: deeded 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1937-1-51
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.58.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-51
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177374
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177374
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177374
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177374
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177374
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177374

@@ -1,0 +1,29 @@
+public_id: 127600
+name: Villandry
+names:
+  - lang: ru
+    role: translation
+    text: Вилландри
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1138735
+kind: settlement
+parent: indre-et-loire
+country_code: FR
+location: [0.51111, 47.33944]
+wikidata_id: Q1138735
+metadata:
+  sources: [Wikidata Q1138735 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1138735
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1138735
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1138735

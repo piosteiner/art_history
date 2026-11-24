@@ -1,0 +1,266 @@
+public_id: 125121
+title_lang: en
+title: Landscape with the Ruins of the Castle of Egmond
+names:
+  - lang: nl
+    role: translation
+    text: Ruine van Kasteel Egmond
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20273922
+  - lang: fr
+    role: translation
+    text: Paysage avec les ruines du château de Egmond
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20273922
+  - lang: de
+    role: translation
+    text: Landschaft mit den Ruinen des Schlosses von Egmond
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20273922
+  - lang: es
+    role: translation
+    text: Paisaje con las ruinas del Castillo de Egmond
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20273922
+creator: jacob-van-ruisdael
+created: 1655
+materials: [oil paint, canvas]
+dimensions: [98, 130]
+institution: art-institute-of-chicago
+inventory_number: "1947.475"
+wikidata_id: Q20273922
+metadata:
+  sources: [Wikidata Q20273922 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q20273922
+  - type: depicts
+    to: place/castle-egmond
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20273922
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Jacob_van_Ruisdael_-_Landscape_with_the_Ruins_of_the_Castle_of_Egmond.jpg/1280px-Jacob_van_Ruisdael_-_Landscape_with_the_Ruins_of_the_Castle_of_Egmond.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_van_Ruisdael_-_Landscape_with_the_Ruins_of_the_Castle_of_Egmond.jpg
+    license: Public domain
+    credit: Jacob van Ruisdael
+provenance:
+  - owner: person/jean-andre-tardieu
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: Possibly Collection of Jean-André Tardieu;
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1867-05-10
+    method: auction
+    direct: true
+    place: paris
+    label: sale, Paris, Hôtel Drouot, 10–11 May 1867, lot 51, as Les Ruines du Château de Brederode; buyer not named
+    certainty: possible
+    price:
+      amount: 3650
+      currency: FRF
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: sold, Paris, Hôtel Drouot, May 10-11, 1867, lot 51 as Les Ruines du Château de Brederode for 3,650 francs.
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: person/etienne-edmond-martin-de-beurnonville
+    ended: 1876
+    place: labbeville
+    label: château de la Chapelle, Labbeville (Val-d'Oise)
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: Baron Etienne Martin de Beurnonville (1789-1876), château de la Chapelle, Labbeville, Val d'Oise, France;
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: person/etienne-edmond-martin-de-beurnonville
+    role: estate
+    acquired: 1876
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: sale of his estate, Paris, Hôtel Drouot, May 9, 1881
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1881-05-09
+    method: auction
+    direct: true
+    place: paris
+    label: Beurnonville estate sale, lot 451, as Ruins of the Castle of Brederode
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: sale of his estate, Paris, Hôtel Drouot, May 9, 1881, lot 451 as Ruins of the Castle of Brederode;
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: person/charles-sedelmeyer
+    role: dealer
+    acquired: 1881-05-09
+    method: auction
+    direct: true
+    place: paris
+    label: buyer and price from the annotated sale catalogue at the RKD
+    price:
+      amount: 10000
+      currency: FRF
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: sold to Charles Sedelmeyer (1837-1925), Paris, for 10,000 francs [annotated sale cat., Rijksbureau voor Kunsthistorische Documentatie, The Hague; copy in curatorial object file].
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: person/gyorgy-rath
+    acquired: 1892 or earlier
+    ended_label: before 1905
+    place: budapest
+    label: until before 1905 (Frimmel 1892)
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: György Ráth (1828-1905), Budapest, by 1892 until before 1905 [this and the following according to Frimmel 1892].
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: institution/p-d-colnaghi-co-ltd
+    role: dealer
+    acquired: 1906 or earlier
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: P & D. Colnaghi, London, by 1906;
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: person/oscar-huldschinsky
+    acquired: 1906 or earlier
+    method: purchase
+    direct: true
+    place: berlin
+    label: by January 1906 (Berlin exhibition 1906)
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: sold to Oscar Huldschinsky (died 1931), Berlin, by Jan. 1906 [Berlin 1906];
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    role: agent
+    not_sold: true
+    acquired: 1928-05-10
+    method: auction
+    direct: true
+    place: berlin
+    label: Huldschinsky sale, Paul Cassirer, Berlin, 10–11 May 1928, lot 29, bought in at 61,000 marks
+    price:
+      amount: 61000
+      currency: RM
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: offered for sale, Paul Cassirer, Berlin, May 10-11, 1928, lot 29, bought in at 61,000 marks [according to Rosenberg 1928 and La Revue d'Art 1928].
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: institution/kunsthandel-j-goudstikker-n-v
+    role: dealer
+    acquired: 1928 or earlier
+    place: amsterdam
+    label: Galerie Goudstikker, Rotterdam and Amsterdam, by December 1928 to at least February 1929 (exhibited Rotterdam and Amsterdam 1928)
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: Galerie Goudstikker, Rotterdam and Amsterdam, by Dec. 1928 to at least Feb. 1929 [Rotterdam and Amsterdam 1928].
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: institution/galerie-bachstitz-den-haag
+    role: dealer
+    acquired: 1932 or earlier
+    place: the-hague
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: Bachstitz Gallery, The Hague, by 1932 [this and the following according to email correspondence with Agnews, July 2004, in curatorial object file];
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: agent
+    acquired: 1932-10
+    ended: 1933-03
+    direct: true
+    place: london
+    label: on consignment from the Bachstitz Gallery; included in the 1932 (Von Auspitz) catalogue, no. 27, though not part of that collection
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: consigned to Agnews, London, Oct. 1932 [not part of the Von Auspitz collection, but included in the 1932 catalogue, no. 27];
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: institution/galerie-bachstitz-den-haag
+    role: dealer
+    acquired: 1933-03
+    direct: true
+    place: the-hague
+    label: returned from Agnew's; until at least 1935; inventory nos. G95 and Ru1356
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: returned to the Bachstitz Gallery, The Hague, Mar. 1933 until at least 1935 [inventory nos. G95 and Ru1356 in the Bachstitz Gallery archive at the Rijksbureau voor Kunsthistorische Documentatie, The Hague; Bulletin of the Bachstitz Gallery 1935].
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner_label: anonymous family
+    label: the family for whom Paul Cassirer Ltd. sold it
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: Paul Cassirer, Ltd., London, 1947, as agent for an anonymous family
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: institution/paul-cassirer-ltd
+    role: agent
+    acquired: 1947
+    direct: true
+    place: london
+    label: as agent for an anonymous family, with Otto Reichenheim, Canfield Gardens, London, as intermediary
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: Paul Cassirer, Ltd., London, 1947, as agent for an anonymous family, with Otto Reichenheim, Canfield Gardens, London, as intermediary;
+        source: aic-1947-475
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1947
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/60755
+        note: sold to the Art Institute, 1947.
+        source: aic-1947-475
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20273922
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20273922
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20273922
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20273922
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20273922
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20273922

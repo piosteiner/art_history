@@ -1,0 +1,22 @@
+public_id: 127997
+name: Bromyard
+kind: settlement
+parent: herefordshire
+country_code: GB
+location: [-2.5068, 52.1908]
+wikidata_id: Q2277559
+metadata:
+  sources: [Wikidata Q2277559 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2277559
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2277559
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2277559

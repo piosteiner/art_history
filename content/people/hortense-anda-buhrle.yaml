@@ -54,6 +54,15 @@ relationships:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q666331
+  - type: child_of
+    to: person/emil-georg-buhrle
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q1630202
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q96297
 identifiers:
   bnf: 14793142q
   dodis: P24305

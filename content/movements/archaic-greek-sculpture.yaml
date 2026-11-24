@@ -1,0 +1,16 @@
+public_id: 123127
+name: Archaic Greek sculpture
+kind: movement
+period: -700
+wikidata_id: Q632355
+metadata:
+  sources: [Wikidata Q632355 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q632355
+  period:
+    - accessed: 2026-11-23
+      property: P580
+      wikidata: Q632355

@@ -1,0 +1,29 @@
+public_id: 126260
+name: Foumban
+names:
+  - lang: ru
+    role: translation
+    text: Фумбан
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1439847
+kind: settlement
+parent: ouest
+country_code: CM
+location: [10.91667, 5.71667]
+wikidata_id: Q1439847
+metadata:
+  sources: [Wikidata Q1439847 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1439847
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1439847
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1439847

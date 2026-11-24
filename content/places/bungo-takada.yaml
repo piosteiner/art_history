@@ -1,0 +1,53 @@
+public_id: 123905
+name: Bungo-Takada
+names:
+  - lang: ja
+    role: original
+    text: 豊後高田市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q857281
+  - lang: zh
+    role: translation
+    text: 丰后高田市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q857281
+  - lang: ko
+    role: translation
+    text: 분고타카다시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q857281
+  - lang: fr
+    role: translation
+    text: Bungotakada
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q857281
+  - lang: ru
+    role: translation
+    text: Бунготакада
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q857281
+kind: settlement
+parent: japan
+country_code: JP
+location: [131.44697, 33.55622]
+wikidata_id: Q857281
+metadata:
+  sources: [Wikidata Q857281 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q857281
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q857281
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q857281

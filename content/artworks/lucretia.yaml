@@ -1,0 +1,356 @@
+public_id: 123024
+title_lang: en
+title: Lucretia
+names:
+  - lang: fr
+    role: translation
+    text: Le Suicide de Lucrèce
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3976750
+  - lang: de
+    role: translation
+    text: Selbstmord der Lukretia
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3976750
+  - lang: it
+    role: translation
+    text: Suicidio di Lucrezia
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3976750
+  - lang: ja
+    role: translation
+    text: ルクレティア
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3976750
+  - lang: ru
+    role: translation
+    text: Лукреция
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3976750
+creator: rembrandt
+created: 1664
+materials: [oil paint, canvas]
+dimensions: [120, 101]
+institution: national-gallery-of-art
+inventory_number: 1937.1.76
+web_url: https://www.nga.gov/collection/art-object-page.83.html
+provenance_status: a_clear
+provenance_status_note: Owned by Andrew W. Mellon from 1921 and by The A.W. Mellon Educational and Charitable Trust from 1934 until its gift to the NGA in 1937.
+wikidata_id: Q3976750
+metadata:
+  sources: [Wikidata Q3976750 (retrieved 2026-11-23)]
+relationships:
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q3976750
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Rembrandt_van_Rijn%2C_Lucretia%2C_1664%2C_NGA_83.jpg/1280px-Rembrandt_van_Rijn%2C_Lucretia%2C_1664%2C_NGA_83.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn,_Lucretia,_1664,_NGA_83.jpg
+    license: CC0
+    credit: Rembrandt
+provenance:
+  - owner: person/augustin-lapeyriere
+    place: paris
+    label: Jean-Joseph-Pierre-Augustin Lapeyrière, known as Augustin Lapeyrière, then de Lapeyrière
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: Jean-Joseph-Pierre-Augustin Lapeyrière [1779-1831, known as Augustin Lapeyrière, then de Lapeyrière], Paris;
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: institution/galerie-le-brun
+    role: agent
+    acquired: 1825-04-19
+    method: auction
+    direct: true
+    place: paris
+    label: his sale, Galerie Le Brun, Paris, 19 April 1825 and days following (originally scheduled for 14 March 1825), no. 143
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: (his sale, Galerie Le Brun, Paris, 19 April 1825 and days following [originally scheduled for 14 March 1825 and days following], no. 143).
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: person/michael-m-zachary
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: Michael M. Zachary [d. 1837], London;[1]
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: institution/phillips
+    role: agent
+    not_sold: true
+    acquired: 1826-04-14
+    method: auction
+    direct: true
+    place: london
+    label: sale, Phillips, London, 14–15 April 1826, 1st day, no. 64, bought in; main seller Lord Berwick, Zachary annotated as consignor; a note 'Sir T Lawrence' read as a previous owner
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: (sale, Phillips, London, 14-15 April 1826, 1st day, no. 64, bought in); — [1] Although the main seller at the April 1826 sale was Lord Berwick, there were also other consignors. One annotation in the Wallace Collection (London) Library’s copy of the sale catalogue indicates that Zachary was the consigner of the NGA painting; another annotation next to the Lucretia entry reads “Sir T Lawrence.” The Getty Provenance Index© Database, Sale Catalogs, lot 0064 from sale catalog Br-2806, identifies the latter annotation as indicating a previous owner.
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: institution/phillips
+    role: agent
+    acquired: 1828-05-31
+    method: auction
+    direct: true
+    place: london
+    label: Zachary sale, Phillips, London, 31 May 1828, no. 25
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: (Zachary sale, Phillips, London, 31 May 1828, no. 25);
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: person/hugh-andrew-johnstone-munro
+    acquired: 1828-05-31
+    method: auction
+    direct: true
+    place: london
+    label: bought for him by Sir Thomas Lawrence (1769–1830) (Hofstede de Groot); the annotated catalogue names 'Woodin' as buyer; London and Novar House, Ross-shire; not found in the Munro sales
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: purchased by Sir Thomas Lawrence [1769-1830] for Hugh Andrew Johnstone Munro [1797-1864], London, and Novar House, near Evanton, Ross-shire, Scotland.[2] — [2] … the Wallace Collection (London) Library’s copy of the sale catalogue is annotated with the name “Woodin” as the buyer … Munro acquired a significant collection that was dispersed in sales both before and after his death, but the painting has not been located in any of the sale catalogues.
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: person/paul-pavlovich-demidoff
+    place: florence
+    label: Prince of San Donato, near Florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: Paul Pavlovich Demidoff [1839-1885], Prince of San Donato, near Florence;
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner_label: Demidoff sale at San Donato
+    role: agent
+    acquired: 1880-03-15
+    method: auction
+    direct: true
+    place: florence
+    label: his sale, at his residence, Florence, 15 March–10 April 1880, no. 1146
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: (his sale, at his residence, Florence, 15 March-10 April 1880, no. 1146).
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: person/leon-gauchez
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: (Léon Gauchez, Paris);
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    not_sold: true
+    acquired: 1889-07-13
+    method: auction
+    direct: true
+    place: london
+    label: sale, Christie, Manson & Woods, London, 13 July 1889, no. 56, bought in and returned to the consignor Gauchez (Graves wrongly gives the buyer as Wontner)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: (sale, Christie, Manson & Woods, London, 13 July 1889, no. 56, bought in); — [3] Although Algernon Graves … gives the buyer at the 1889 sale as Wontner, the painting was in fact bought in and returned to the consignor, Gauchez.
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: person/leon-gauchez
+    role: dealer
+    acquired: 1889
+    ended_label: until at least 1893
+    direct: true
+    place: paris
+    label: bought in and returned to him; seen in Paris by Émile Michel in 1893
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: "(Léon Gauchez, Paris), until at least 1893.[3] — [3] … the painting was in fact bought in and returned to the consignor, Gauchez. … Émile Michel (Rembrandt: Sa vie, son oeuvre et son temps, Paris, 1893: 489) saw the painting in Paris, but did not identify the owner, who is named by Malcolm Bell"
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: institution/bourgeois-cie
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: (Bourgeois & Cie., Paris);
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: person/leo-nardus
+    role: dealer
+    direct: true
+    place: suresnes
+    label: Suresnes, France, and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: (Leo Nardus [1868-1955], Suresnes, France, and New York);[4]
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: person/matthew-chaloner-durfee-borden
+    acquired: 1906 or earlier
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: Matthew Chaloner Durfee Borden [1842-1912], New York, by 1906;[5]
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: institution/american-art-association
+    role: agent
+    acquired: 1913-02-13
+    method: auction
+    direct: true
+    place: new-york-city
+    label: his estate sale, American Art Association, New York, 13–14 February 1913, 1st day, no. 28
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: (his estate sale, American Art Association, New York, 13-14 February 1913, 1st day, no. 28);
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    method: auction
+    direct: true
+    place: new-york-city
+    label: New York and Paris; newspapers speculated that Knoedler's might have been buying for Henry Clay Frick
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: (M. Knoedler & Co., New York and Paris);[6] — [6] Newspapers speculated that Knoedler’s might have been buying for the New York collector Henry Clay Frick
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: institution/frederik-muller-cie
+    role: dealer
+    acquired: 1913
+    method: purchase
+    direct: true
+    place: amsterdam
+    label: as Frederik Müller and Co.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: sold 1913 to (Frederik Müller and Co., Amsterdam);
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: person/august-janssen
+    acquired: 1913
+    method: purchase
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: sold 1913 to August Janssen [1863-1918], Amsterdam;[7]
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner_label: estate of August Janssen
+    role: estate
+    method: inheritance
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: his estate;
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: person/jacques-goudstikker
+    role: dealer
+    acquired: 1919
+    method: purchase
+    direct: true
+    place: amsterdam
+    label: bought with the entire Janssen collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: sold 1919 with the entire Janssen collection to (Jacques Goudstikker, Amsterdam).[8]
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: person/hermann-heilbuth
+    acquired: 1920 or earlier
+    place: copenhagen
+    label: shown in the 1920–1921 exhibition of his collection in Copenhagen
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: Hermann Heilbuth [1861-1945], Copenhagen, by 1920.[9] — [9] The painting was included in a 1920-1921 exhibition of Heilbuth’s collection in Copenhagen.
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: institution/ehrich-galleries
+    role: dealer
+    acquired_label: in 1921
+    place: new-york-city
+    label: with the dealers in 1921 (Gimpel's journal)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: (Ehrich Brothers, New York), in 1921.[10]
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    place: new-york-city
+    label: New York and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: (M. Knoedler & Co., New York and Paris);
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1921-11
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: sold November 1921 to Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1934-12-28
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: deeded 28 December 1934 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.83.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-76
+        accessed: 2026-11-24
+identifiers:
+  gnd: 124318292X
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q3976750
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q3976750
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q3976750
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q3976750
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q3976750
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q3976750

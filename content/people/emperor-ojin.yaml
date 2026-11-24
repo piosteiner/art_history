@@ -26,6 +26,16 @@ occupations: [ruler]
 wikidata_id: Q317997
 metadata:
   sources: [Wikidata Q317997 (retrieved 2026-11-01)]
+relationships:
+  - type: child_of
+    to: person/empress-jingu
+    sources:
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q317997
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q232803
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Emperor_%C5%8Cjin.jpg/1280px-Emperor_%C5%8Cjin.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Emperor_%C5%8Cjin.jpg

@@ -1,0 +1,160 @@
+public_id: 122993
+title_lang: fr
+title: Pêcheur à la coquille
+names:
+  - lang: fr
+    role: original
+    text: Pêcheur napolitain
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q17442738
+  - lang: fr
+    role: original
+    text: Pêcheur napolitain à la coquille
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q17442738
+  - lang: en
+    role: translation
+    text: Neapolitan fisherboy
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q17442738
+  - lang: ru
+    role: translation
+    text: Неаполитанский мальчик-рыбак
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q17442738
+creator: jean-baptiste-carpeaux
+created: 1861
+materials: [marble]
+dimensions: [92, 42]
+institution: national-gallery-of-art
+inventory_number: 1943.4.89
+wikidata_id: Q17442738
+metadata:
+  sources: [Wikidata Q17442738 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Neapolitan_Fisherboy_by_Jean-Baptiste_Carpeaux%2C_1857-c.1861%2C_marble_-_National_Gallery_of_Art%2C_Washington_-_DSC08945.JPG/1280px-Neapolitan_Fisherboy_by_Jean-Baptiste_Carpeaux%2C_1857-c.1861%2C_marble_-_National_Gallery_of_Art%2C_Washington_-_DSC08945.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Neapolitan_Fisherboy_by_Jean-Baptiste_Carpeaux,_1857-c.1861,_marble_-_National_Gallery_of_Art,_Washington_-_DSC08945.JPG
+    license: CC0
+    credit: Daderot
+provenance:
+  - owner: artist/jean-baptiste-carpeaux
+    method: creation
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12187.html
+        note: Sold by the artist,
+        source: nga-1943-4-89
+        accessed: 2026-11-24
+  - owner: person/napoleon-iii
+    co_owners: [person/eugenie-de-montijo]
+    acquired_label: possibly before February 1862
+    method: purchase
+    direct: true
+    place: paris
+    label: sold to Napoléon III, officially owned by Empress Eugénie; installed at the Palais des Tuileries
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12187.html
+        note: Sold by the artist, possibly before February 1862, to Napoléon III [1808-1873], but officially identified as owned by his wife Eugénie [1826-1920]; installed at the Palais des Tuileries, Paris;[1]
+        source: nga-1943-4-89
+        accessed: 2026-11-24
+  - owner: person/napoleon-iii
+    co_owners: [person/eugenie-de-montijo]
+    acquired_label: probably by summer 1871
+    direct: true
+    place: chislehurst
+    label: taken into exile as the imperial family's private property, to their first residence in England
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12187.html
+        note: taken by the imperial family as private property to their first residence in exile in England, Chislehurst, probably by summer 1871;
+        source: nga-1943-4-89
+        accessed: 2026-11-24
+  - owner: person/eugenie-de-montijo
+    direct: true
+    place: farnborough
+    label: at her final English residence, The Hall, Farnborough (Hampshire)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12187.html
+        note: bequeathed by Eugénie as part of the family estate at her final English residence, The Hall, Farnborough (Hampshire),
+        source: nga-1943-4-89
+        accessed: 2026-11-24
+  - owner: person/victor-prince-napoleon
+    method: bequest
+    direct: true
+    label: her nephew; part of the family estate at Farnborough
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12187.html
+        note: bequeathed by Eugénie as part of the family estate … to her nephew, Prince Napoléon Victor Jérôme Bonaparte [1862-1926];
+        source: nga-1943-4-89
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1927-12-31 or earlier
+    acquired_label: privately, before the estate sales of July 1927
+    method: purchase
+    direct: true
+    label: bought privately with its pendant before the Empress's estate sales (London 1 and 7 July, Farnborough 18–27 July 1927); at Duveen Galleries, New York, by January 1941
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12187.html
+        note: sold privately before the estate sales of July 1927 to (Duveen Brothers, Inc., London, New York, and Paris);[2] (Duveen Galleries, New York, by January 1941);[3] — [2] … Ces groupes n'ont pas figuré à la vente de l'Impératrice … (Le marbre avec son pendant ayant été à Farnborough, ont été achetés à l'amiable par Duveen.)
+        source: nga-1943-4-89
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1941
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12187.html
+        note: sold 1941 to the Samuel H. Kress Foundation, New York;
+        source: nga-1943-4-89
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    role: custodian
+    acquired: 1941-03
+    ended: 1943
+    direct: true
+    place: washington-d-c
+    label: on loan from the Kress Foundation
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12187.html
+        note: placed on loan March 1941 to the National Gallery of Art;[4]
+        source: nga-1943-4-89
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1943
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12187.html
+        note: gift 1943 to NGA.
+        source: nga-1943-4-89
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q17442738
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q17442738
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q17442738
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q17442738
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q17442738
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q17442738

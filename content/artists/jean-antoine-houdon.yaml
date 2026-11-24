@@ -1,0 +1,18 @@
+public_id: 122810
+name: Jean-Antoine Houdon
+given_name: Jean-Antoine
+family_name: Houdon
+birth: 1741-03-20
+death: 1828-07-15
+wikidata_id: Q318741
+metadata:
+  sources: [Wikidata Q318741 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q318741
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q318741

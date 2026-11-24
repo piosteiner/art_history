@@ -1,0 +1,23 @@
+public_id: 124157
+name: Dazu Huike
+given_name: Dazu
+family_name: Huike
+kind: person
+birth: 487
+death: 593
+wikidata_id: Q541023
+metadata:
+  sources: [Wikidata Q541023 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q541023
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q541023
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q541023

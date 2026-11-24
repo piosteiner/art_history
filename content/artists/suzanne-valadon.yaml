@@ -1,0 +1,18 @@
+public_id: 123010
+name: Suzanne Valadon
+given_name: Suzanne
+family_name: Valadon
+birth: 1865-09-23
+death: 1938-04-07
+wikidata_id: Q156889
+metadata:
+  sources: [Wikidata Q156889 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q156889
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q156889

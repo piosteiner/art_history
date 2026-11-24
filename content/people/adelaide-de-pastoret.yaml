@@ -1,0 +1,23 @@
+public_id: 125074
+name: Adélaïde de Pastoret
+given_name: Adélaïde
+family_name: de Pastoret
+kind: person
+birth: 1765-03-09
+death: 1843-09-26
+wikidata_id: Q15615032
+metadata:
+  sources: [Wikidata Q15615032 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q15615032
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q15615032
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q15615032

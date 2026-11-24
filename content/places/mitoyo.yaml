@@ -1,0 +1,47 @@
+public_id: 123947
+name: Mitoyo
+names:
+  - lang: ja
+    role: original
+    text: 三豊市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q873578
+  - lang: zh
+    role: translation
+    text: 三丰市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q873578
+  - lang: ko
+    role: translation
+    text: 미토요시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q873578
+  - lang: ru
+    role: translation
+    text: Митоё
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q873578
+kind: settlement
+parent: japan
+country_code: JP
+location: [133.71508, 34.18264]
+wikidata_id: Q873578
+metadata:
+  sources: [Wikidata Q873578 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q873578
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q873578
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q873578

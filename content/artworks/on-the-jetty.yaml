@@ -1,0 +1,174 @@
+public_id: 122784
+title_lang: en
+title: On the Jetty
+names:
+  - lang: de
+    role: translation
+    text: Sur la Jetée, Am Meeresufer
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20188722
+creator: eugene-boudin
+created: c. 1869
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [18.4, 27.4]
+institution: national-gallery-of-art
+inventory_number: 1970.17.13
+provenance_status: d_seized
+provenance_status_note: Confiscated by the ERR from the Lévy de Benzion collection in France; selected by Hermann Göring at the Jeu de Paume on 25 November 1942; recovered in Berchtesgaden, restituted to France 18 April 1946 and returned to the Lévy de Benzion family 10 May 1946.
+wikidata_id: Q20188722
+metadata:
+  sources: [Wikidata Q20188722 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/On_the_Jetty_A11788.jpg/1280px-On_the_Jetty_A11788.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:On_the_Jetty_A11788.jpg
+    license: Public domain
+    credit: Eugène Louis Boudin
+provenance:
+  - owner: person/moise-levi-de-benzion
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52157.html
+        note: Moïse Lévy de Benzion, Paris.[1]
+        source: nga-1970-17-13
+        accessed: 2026-11-24
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    method: confiscation
+    label: confiscated from the Lévy de Benzion collection in France; at the Jeu de Paume
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52157.html
+        note: "[1] This painting was confiscated by the Nazi Einsatzstab Reichsleiter Rosenberg (ERR) from the Levy de Benzion collection in France."
+        source: nga-1970-17-13
+        accessed: 2026-11-24
+  - owner: person/hermann-goring
+    role: possessor
+    acquired: 1942-11-25
+    method: transfer
+    direct: true
+    place: paris
+    label: selected at the Jeu de Paume; Göring list dated 20 October 1942, 1st supplement, no. 67
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52157.html
+        note: "The painting was selected by Hermann Goering on 25 November 1942 from the Jeu de Paume (OSS Consolidated Interrogation Report #2, The Goering Collection, 15 September 1945, Attachment 5, Liste der für die Sammlung des Reichsmarschalls Hermann Göring abgegebenen Kunstgegenstände, dated 20 October 1942, 1. Nachtrag, no. 67"
+        source: nga-1970-17-13
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    ended: 1946-04-18
+    method: transfer
+    place: munich
+    label: recovered in Berchtesgaden; Munich property card no. 5914
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52157.html
+        note: The records of the Munich Central Collecting Point indicate that the painting was recovered in Berchtesgaden and restituted to France on 18 April 1946 (Munich property card no. 5914;
+        source: nga-1970-17-13
+        accessed: 2026-11-24
+  - owner_label: France (French restitution authorities)
+    role: custodian
+    acquired: 1946-04-18
+    ended: 1946-05-10
+    method: restitution
+    direct: true
+    label: French Receipt for Cultural Objects no. 6A, item no. 950
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52157.html
+        note: restituted to France on 18 April 1946 (… French Receipt for Cultural Objects no. 6A, item no. 950 …).
+        source: nga-1970-17-13
+        accessed: 2026-11-24
+  - owner_label: Lévy de Benzion family
+    acquired: 1946-05-10
+    method: restitution
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52157.html
+        note: The painting was returned to the Levy de Benzion family on 10 May 1946.
+        source: nga-1970-17-13
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1949-11-29
+    ended: 1949-11-29
+    method: auction
+    place: paris
+    label: sale, Hôtel Drouot, Paris, 29 November 1949, no. 80
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52157.html
+        note: (sale, Hôtel Drouot, Paris, 29 November 1949, no. 80).
+        source: nga-1970-17-13
+        accessed: 2026-11-24
+  - owner: person/e-slater
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52157.html
+        note: E. Slater; sold 1950 to (Alex Reid and Lefevre, Glasgow and London);
+        source: nga-1970-17-13
+        accessed: 2026-11-24
+  - owner: institution/alex-reid-lefevre
+    role: dealer
+    acquired: 1950
+    method: purchase
+    direct: true
+    place: london
+    label: Glasgow and London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52157.html
+        note: sold 1950 to (Alex Reid and Lefevre, Glasgow and London); sold 1951 to Capt. Edward H. Molyneux [1891-1974], Paris;[2]
+        source: nga-1970-17-13
+        accessed: 2026-11-24
+  - owner: person/edward-molyneux
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: paris
+    label: Capt. Edward H. Molyneux
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52157.html
+        note: sold 1951 to Capt. Edward H. Molyneux [1891-1974], Paris;[2] — [2] See letter from Alex Reid & Lefèvre, dated 18 August 1977
+        source: nga-1970-17-13
+        accessed: 2026-11-24
+  - owner: person/ailsa-mellon-bruce
+    acquired: 1955-08-15
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52157.html
+        note: sold 15 August 1955 to Ailsa Mellon Bruce [1901-1969], New York;
+        source: nga-1970-17-13
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1970
+    method: bequest
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52157.html
+        note: bequest 1970 to NGA.
+        source: nga-1970-17-13
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20188722
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20188722
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20188722
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20188722
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20188722
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20188722

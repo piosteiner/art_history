@@ -33,6 +33,16 @@ death: 1544-07-25
 wikidata_id: Q654855
 metadata:
   sources: [Wikidata Q654855 (retrieved 2026-10-19)]
+relationships:
+  - type: child_of
+    to: person/henry-iii-of-nassau-breda
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q69450
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q654855
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Possibly_copy_after_Jan_van_Scorel_-_Ren%C3%A9_de_Ch%C3%A2lon_%28ca_1518-44%29.jpg/1280px-Possibly_copy_after_Jan_van_Scorel_-_Ren%C3%A9_de_Ch%C3%A2lon_%28ca_1518-44%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Possibly_copy_after_Jan_van_Scorel_-_Ren%C3%A9_de_Ch%C3%A2lon_(ca_1518-44).jpg

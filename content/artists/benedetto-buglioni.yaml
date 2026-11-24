@@ -1,0 +1,18 @@
+public_id: 124643
+name: Benedetto Buglioni
+given_name: Benedetto
+family_name: Buglioni
+birth: 1460-03-21
+death: 1521-03-07
+wikidata_id: Q590255
+metadata:
+  sources: [Wikidata Q590255 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q590255
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q590255

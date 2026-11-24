@@ -1,0 +1,22 @@
+public_id: 126993
+name: Hamilton
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-4.039, 55.777]
+wikidata_id: Q4131
+metadata:
+  sources: [Wikidata Q4131 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q4131
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q4131
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q4131

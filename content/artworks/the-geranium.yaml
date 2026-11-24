@@ -1,0 +1,140 @@
+public_id: 125195
+title_lang: en
+title: Still Life with Geranium
+names:
+  - lang: en
+    role: original
+    text: The Geranium
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20267753
+  - lang: es
+    role: translation
+    text: El geranio
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20267753
+creator: henri-matisse
+created: 1906
+materials: [oil paint, canvas]
+dimensions: [100.3, 81.5]
+institution: art-institute-of-chicago
+inventory_number: "1932.1342"
+wikidata_id: Q20267753
+metadata:
+  sources: [Wikidata Q20267753 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Henri_matisse%2C_il_geranio%2C_1906.jpg/1280px-Henri_matisse%2C_il_geranio%2C_1906.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_matisse,_il_geranio,_1906.jpg
+    license: CC BY-SA 4.0
+    credit: Francesco Bini
+provenance:
+  - owner: artist/henri-matisse
+    acquired: 1906
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/87045
+        note: The artist;
+        source: aic-1932-1342
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1907-03-01
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/87045
+        note: sold to Bernheim-Jeune, Paris, Mar. 1, 1907;
+        source: aic-1932-1342
+        accessed: 2026-11-24
+  - owner: person/oskar-moll
+    co_owners: [person/greta-moll]
+    acquired: 1908-10-27
+    method: purchase
+    direct: true
+    place: wroc-aw
+    label: Breslau, Germany (present-day Wrocław); letter from Marguerite G. Duthuit, 17 September 1975
+    sources:
+      - url: https://www.artic.edu/artworks/87045
+        note: sold to Oskar (July 21, 1875–Aug. 19, 1947) and Greta (1884–1977) Moll, Breslau, Germany (present-day Wrocław, Poland), from Oct. 27, 1908 [letter from Marguerite G. Duthuit, Sept. 17, 1975; photocopy in curatorial file].
+        source: aic-1932-1342
+        accessed: 2026-11-24
+  - owner: institution/valentine-gallery
+    role: dealer
+    acquired: 1927
+    place: new-york-city
+    label: likely acquired fall 1927, inventory no. 147
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/87045
+        note: "Likely acquired by the Valentine Gallery, New York, inventory #147, fall 1927 [inventory card and letter from Valentine Dudensing to Pierre Matisse, Dec. 15, 1927, Pierre Matisse Gallery Archives, Morgan Library & Museum, New York; photocopies in curatorial file];"
+        source: aic-1932-1342
+        accessed: 2026-11-24
+  - owner: person/frank-crowninshield
+    acquired: 1928-04-11
+    method: purchase
+    direct: true
+    place: paris
+    label: Valentine Dudensing ledger books, MoMA Archives
+    sources:
+      - url: https://www.artic.edu/artworks/87045
+        note: sold to Frank Crowninshield (June 24, 1872–Dec. 28, 1947), Paris, Apr. 11, 1928 [this and the following according to Valentine Dudensing Ledger Books, Museum of Modern Art Archives; photocopy in curatorial file];
+        source: aic-1932-1342
+        accessed: 2026-11-24
+  - owner: institution/valentine-gallery
+    role: dealer
+    acquired: 1928-08
+    direct: true
+    place: paris
+    label: returned to the gallery
+    sources:
+      - url: https://www.artic.edu/artworks/87045
+        note: returned to the Valentine Gallery, Paris, Aug. 1928 [letter from Valentine Dudensing to Pierre Matisse, summer 1928; photocopy in curatorial file];
+        source: aic-1932-1342
+        accessed: 2026-11-24
+  - owner: person/frederic-clay-bartlett
+    acquired: 1928-10-27
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/87045
+        note: sold to Frederick Clay Bartlett (1873–1953), Chicago, Oct. 27, 1928 [Cambridge 1929];
+        source: aic-1932-1342
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1932-12-27
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/87045
+        note: sold to the Art Institute of Chicago, Dec. 27, 1932.
+        source: aic-1932-1342
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20267753
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20267753
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20267753
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20267753
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20267753
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20267753

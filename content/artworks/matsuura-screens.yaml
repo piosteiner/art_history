@@ -1,0 +1,89 @@
+public_id: 124119
+title: Matsuura screens
+names:
+  - text: Screens of women engaged in various amusements
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107046198
+  - lang: de
+    role: translation
+    text: Matsuura Byobu (Stellschirm)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107046198
+  - lang: ja
+    role: translation
+    text: 松浦屏風
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107046198
+created: 1624/1644
+dimensions: [153, 363]
+institution: museum-yamato-bunkakan
+location: [135.7567, 34.69539]
+wikidata_id: Q107046198
+metadata:
+  sources: [Wikidata Q107046198 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nara
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Iwasa_Matabei_002.jpg/1280px-Iwasa_Matabei_002.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Iwasa_Matabei_002.jpg
+    license: Public domain
+    credit: 岩佐又兵衛
+provenance:
+  - owner_label: unknown painter
+    acquired: 1624/1644
+    method: creation
+    label: pair of six-fold screens, painter unknown; dated to the Kan'ei era from the costumes
+    certainty: probable
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%BE%E6%B5%A6%E5%B1%8F%E9%A2%A8&oldid=107698243
+        note: 大和文華館が収蔵する屏風の制作年代は描かれた人物の着物から寛永年間と推定される。 … 作者は不詳である。
+        source: wikipedia-ja-matsuura-byobu
+        accessed: 2026-11-24
+      - url: https://www.kintetsu-g-hd.co.jp/culture/yamato/collection/collect01/09.html
+        note: 日本・江戸時代前期 紙本金地著色・六曲一双
+        source: yamato-bunkakan-matsuura-byobu
+        accessed: 2026-11-24
+  - owner_label: Matsura family
+    label: former owners after whom the screens are called 'Matsura screens'
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%BE%E6%B5%A6%E5%B1%8F%E9%A2%A8&oldid=107698243
+        note: 婦女遊楽図（左隻）。旧蔵者松浦家にちなみ「松浦屏風」と通称される。
+        source: wikipedia-ja-matsuura-byobu
+        accessed: 2026-11-24
+  - owner: institution/kintetsu-group-holdings
+    label: owner (National Treasure since 20 March 1954), kept at the Museum Yamato Bunkakan
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/107
+        note: 国宝指定年月日 ： 1954.03.20(昭和29.03.20) … 保管施設の名称 ： 公益財団法人大和文華館 所有者名 ： 近鉄グループホールディングス株式会社
+        source: kunishitei-201-107
+        accessed: 2026-11-24
+  - owner: institution/museum-yamato-bunkakan
+    role: custodian
+    place: nara
+    label: kept and shown at the Yamato Bunkakan
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/107
+        note: 所在地 ： 奈良県奈良市学園南1-11-6 保管施設の名称 ： 公益財団法人大和文華館
+        source: kunishitei-201-107
+        accessed: 2026-11-24
+      - url: https://www.kintetsu-g-hd.co.jp/culture/yamato/collection/collect01/09.html
+        note: 国宝 婦女遊楽図屏風〔松浦屏風〕
+        source: yamato-bunkakan-matsuura-byobu
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107046198
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q107046198
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107046198

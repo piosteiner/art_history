@@ -36,6 +36,15 @@ relationships:
   - type: founded
     to: institution/blaquier-arrieta-collection
     sources: [https://www.sothebys.com/en/series/legendary-the-blaquier-arrieta-collection]
+  - type: married_to
+    to: person/nelly-arrieta-de-blaquier
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q17462598
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q130409898
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/19/Blaquier_123.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Blaquier_123.jpg

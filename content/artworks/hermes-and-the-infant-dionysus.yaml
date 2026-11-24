@@ -1,0 +1,152 @@
+public_id: 123122
+title_lang: en
+title: Hermes and the Infant Dionysus
+names:
+  - lang: pl
+    role: original
+    text: Hermes z małym Dionizosem
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1518432
+  - text: Hermes Carrying the Infant Dionysus
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1518432
+  - text: Hermes of Praxiteles
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1518432
+  - lang: fr
+    role: translation
+    text: Hermès portant Dionysos enfant
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1518432
+  - lang: de
+    role: translation
+    text: Hermes von Olympia
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1518432
+  - lang: it
+    role: translation
+    text: Hermes con Dioniso
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1518432
+  - lang: es
+    role: translation
+    text: Hermes con el niño Dioniso
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1518432
+  - lang: ja
+    role: translation
+    text: 幼児ディオニュソスを抱くヘルメス
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1518432
+  - lang: zh
+    role: translation
+    text: 赫耳墨斯和婴儿酒神
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1518432
+  - lang: ru
+    role: translation
+    text: Гермес с младенцем Дионисом
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1518432
+created: c. 330 BCE
+created_span: uncertain
+materials: [Parian marble]
+dimensions: [215, 100]
+institution: archaeological-museum-of-olympia
+web_url: http://odysseus.culture.gr/h/4/eh430.jsp?obj_id=8898
+location: [21.62983, 37.64379]
+wikidata_id: Q1518432
+metadata:
+  sources: [Wikidata Q1518432 (retrieved 2026-11-23)]
+relationships:
+  - type: created_in
+    to: place/municipal-unit-of-archea-olympia
+    period: c. 330 BCE
+  - type: associated_with
+    to: movement/greek-late-classical-period
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q1518432
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/02_2020_Grecia_photo_Paolo_Villa_FO190024_%28Museo_archeologico_di_Olimpia_-_Statua_Ermes_con_Dioniso_Bambino_scolpita_da_Prassitele%2C_Arte_pre_Ellenistica%2C_senza_gimp%29-edit.jpg/1280px-thumbnail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:02_2020_Grecia_photo_Paolo_Villa_FO190024_(Museo_archeologico_di_Olimpia_-_Statua_Ermes_con_Dioniso_Bambino_scolpita_da_Prassitele,_Arte_pre_Ellenistica,_senza_gimp)-edit.jpg
+    license: CC BY-SA 4.0
+    credit: Paolo Villa, edited by MenkinAlRire
+provenance:
+  - owner_label: Temple of Hera (Heraion), Olympia
+    acquired: 2nd century or earlier
+    place: ancient-olympia
+    label: mentioned in the Heraion by Pausanias (5.17.3) in the 2nd century AD; probably its original setting
+    sources:
+      - url: https://de.wikipedia.org/wiki/Hermes_von_Olympia
+        note: Da Pausanias (5, 17, 3) im 2. Jahrhundert n. Chr. diese Statue im Heraion zu Olympia erwähnt, ist davon auszugehen, dass die Statuengruppe an ihrem ursprünglichen Aufstellungsort aufgefunden wurde.
+        source: wikipedia-de-hermes-von-olympia
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: late 3rd century
+    place: ancient-olympia
+    label: buried in the rubble when an earthquake under Diocletian collapsed the roof of the Temple of Hera
+    sources:
+      - url: https://en.wikipedia.org/wiki/Hermes_and_the_Infant_Dionysus
+        note: The Olympia site was hit by an earthquake during the reign of the Roman emperor Diocletian in the final years of the third century C.E, collapsing the roof of the Temple of Hera and burying the statue in rubble.
+        source: wikipedia-en-hermes-and-the-infant-dionysus
+        accessed: 2026-11-24
+  - owner: person/ernst-curtius-2
+    co_owners: [person/gustav-hirschfeld]
+    acquired: 1877-05-08
+    method: find
+    place: ancient-olympia
+    label: found in the cella of the Temple of Hera; excavations under the 1874 agreement between Greece and Germany — led by Curtius (en), on site under Hirschfeld (de); six more finds completed it; with German excavations at Olympia
+    sources:
+      - url: https://en.wikipedia.org/wiki/Hermes_and_the_Infant_Dionysus
+        note: In 1874, the Greek state signed an agreement with Germany for an archaeological exploration of the Olympia site … The German excavations in 1875 were led by Ernst Curtius. On 8 May 1877, in the temple of Hera, he uncovered the body (head, torso, legs, left arm) of a statue
+        source: wikipedia-en-hermes-and-the-infant-dionysus
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Hermes_von_Olympia
+        note: Gefunden wurde die Statue am 8. Mai 1877 bei Ausgrabungen in der Cella des Heratempels in Olympia unter der Leitung von Gustav Hirschfeld.
+        source: wikipedia-de-hermes-von-olympia
+        accessed: 2026-11-24
+  - owner: institution/archaeological-museum-of-olympia
+    method: transfer
+    place: ancient-olympia
+    sources:
+      - url: https://en.wikipedia.org/wiki/Hermes_and_the_Infant_Dionysus
+        note: It is displayed at the Archaeological Museum of Olympia.
+        source: wikipedia-en-hermes-and-the-infant-dionysus
+        accessed: 2026-11-24
+identifiers:
+  gnd: 4821693-8
+  viaf: "199742485"
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q1518432
+  location:
+    - accessed: 2026-11-23
+      property: P625
+      wikidata: Q1518432
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q1518432
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q1518432
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q1518432

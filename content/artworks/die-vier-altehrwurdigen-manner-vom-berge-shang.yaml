@@ -1,0 +1,67 @@
+public_id: 123860
+title_lang: de
+title: Die vier altehrwürdigen Männer vom Berge Shang
+creator: jiao-bingzhen
+created: c. 1700
+created_span: uncertain
+kind: painting
+medium: Tusche und Farben auf Papier, als Fächer montiert
+institution: museum-rietberg
+inventory_number: RCH 1164a
+web_url: https://rietberg.ch/sammlungen/rch-1164a
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Fans_Four_venerable_men_of_Mt_Shang_Museum_Rietberg_RCH_1164a-b.jpg/1280px-Fans_Four_venerable_men_of_Mt_Shang_Museum_Rietberg_RCH_1164a-b.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fans_Four_venerable_men_of_Mt_Shang_Museum_Rietberg_RCH_1164a-b.jpg
+    license: Public domain
+    credit: Jiao Bingzehn (1689–1726), Wang Youdun (1692–1758)
+provenance:
+  - owner: artist/jiao-bingzhen
+    acquired: before 1700
+    method: creation
+    label: painting; the record says "in Kangxi" (the Kangxi reign)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-1164a
+        note: "vor 1700: Jiao Bingzhen (aktiv um 1689–1726) in Kangxi"
+        source: rietberg-rch-1164a
+        accessed: 2026-11-24
+  - owner: person/wang-youdun
+    acquired: before 1700
+    method: creation
+    label: calligraphy
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-1164a
+        note: "vor 1700: Wang Youdun (1692–1758)"
+        source: rietberg-rch-1164a
+        accessed: 2026-11-24
+  - owner: person/qianlong-emperor
+    acquired: 1711/1799
+    label: collector's seal; circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-1164a
+        note: |-
+          1711–1799: Kaiser Qianlong (1711–1799), Erwerbsumstände unbekannt
+          Sammlersiegel
+        source: rietberg-rch-1164a
+        accessed: 2026-11-24
+  - owner: person/charles-a-drenowatz
+    acquired: before 1974
+    label: published in Chu-Tsing Li, A Thousand Peaks and Myriad Ravines, 1974
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-1164a
+        note: |-
+          vor 1974: Charles A. Drenowatz (1908–1979), Erwerbsumstände unbekannt
+          publiziert in Chu-Tsing Li: A thousand peaks and a myriad ravines, 1974
+        source: rietberg-rch-1164a
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1979-11-04
+    method: gift
+    place: zurich
+    label: gift of Charles A. Drenowatz
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-1164a
+        note: |-
+          04.11.1979: Museum Rietberg, als Geschenk erhalten in Zürich
+          Creditline: Geschenk Charles A. Drenowatz
+        source: rietberg-rch-1164a
+        accessed: 2026-11-24

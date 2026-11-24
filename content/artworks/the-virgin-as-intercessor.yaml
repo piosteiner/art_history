@@ -1,0 +1,206 @@
+public_id: 123040
+title_lang: en
+title: The Virgin as Intercessor
+names:
+  - lang: nl
+    role: translation
+    text: De Maagd Maria als middelares, omringd door engelen met de instrumenten van de Pasie
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177082
+  - lang: de
+    role: translation
+    text: Jungfrau Maria als Fürsprecher
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177082
+creator: anthony-van-dyck
+created: 1628/1629
+created_label: c. 1620s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [118.8, 102.3]
+institution: national-gallery-of-art
+inventory_number: 1942.9.88
+wikidata_id: Q20177082
+metadata:
+  sources: [Wikidata Q20177082 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/The_Virgin_as_Intercessor_G-04981-006.jpg/1280px-The_Virgin_as_Intercessor_G-04981-006.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Virgin_as_Intercessor_G-04981-006.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+provenance:
+  - owner_label: Private collection, Antwerp
+    acquired: 1670 or earlier
+    ended_label: until at least 1717
+    place: province-of-antwerp
+    label: shown above a fireplace in Hieronymus Janssens's Visitors at a Gallery of Paintings, 1670 (Musée Girodet, Montargis)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: Private collection, Antwerp, by 1670 until at least 1717. — [1] The Gallery's painting is shown hanging above a fireplace in a 1670 picture, Visitors at a Gallery of Paintings, by Hieronymus Janssens (Musée Girodet, Montargis, France).
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: person/p-van-de-copello
+    place: amsterdam
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: P. van de Copello, Amsterdam;
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: person/john-hope
+    acquired: 1774-01-26
+    method: purchase
+    direct: true
+    place: amsterdam
+    label: seen by Sir Joshua Reynolds in the Hope Cabinet in 1781
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: sold 26 January 1774 to John Hope [1737-1784], Amsterdam;[1] — Van Dyck's painting was seen by Sir Joshua Reynolds in the Hope Cabinet in 1781
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: person/john-hope
+    role: estate
+    acquired: 1784
+    direct: true
+    label: left to his three sons; administered by their mother Philippina Barbara van der Hoeven and Henry Hope; the paintings stayed undivided in the estate; Amsterdam and London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: his estate, Amsterdam and London;[2] — [2] John Hope's estate, which was left to his three sons--Thomas [1769-1831], Adrian Elias [1772-1834] and Henry Philip [1774-1839]--was administered by the children's mother, Philippina Barbara van der Hoeven and their father's cousin, Henry Hope [1736-1811] … the collection of paintings was not divided, but remained in the estate.
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: person/henry-hope
+    role: custodian
+    acquired: 1789
+    ended: 1811
+    place: london
+    label: controlled the estate's paintings after the mother's death in 1789; took them from Amsterdam to London in 1794; insurance list of 17 December 1795, house at the corner of Harley Street
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: After the mother's death in 1789, Henry Hope assumed control of the collection of paintings in Amsterdam. … which was taken by Henry Hope to London in 1794 when he and other members of the family fled the invading French army … On December 17, 1795, he signed insurance lists of 'Pictures in the House No. 1 the corner of Harley Street, belonging to Mr. Henry Hope," … Included in the lists from catalogue B was "Van Dijck...Ascension of the Virgin...400,"
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: person/thomas-hope
+    role: custodian
+    acquired: 1811
+    place: london
+    label: presumably held the paintings for Henry Philip Hope, at 2 Hanover Square and from 1819 in Duchess Street; seen in Thomas Hope's Cabinet by C. M. Westmacott, 1824
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: "After Henry Hope's death in 1811, possession of the collection presumably went to Thomas Hope, with whom it remained because of Henry Philip Hope's peripatetic life … NGA 1942.9.88 was seen in Thomas Hope's Cabinet by C.M. Westmacott (British Galleries of Painting and Sculpture, London, 1824: 228)."
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: person/henry-philip-hope
+    acquired: 1819 or earlier
+    method: inheritance
+    place: london
+    label: youngest son of John Hope; sole heir of the paintings no later than 1819, for reasons unknown
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: by inheritance to his youngest son, Henry Philip Hope [1774-1839], London;[3] — [3] It is not clear when, and for what reason, Henry Philip Hope became the sole heir of the paintings, but he seems to have inherited the collection no later than 1819.
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: person/henry-thomas-hope
+    acquired: 1839
+    method: inheritance
+    direct: true
+    place: london
+    label: his nephew; London (Duchess Street until 1851, then Piccadilly) and Deepdene, near Dorking, Surrey
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: by inheritance to his nephew, Henry Thomas Hope [1808-1862], London and Deepdene, near Dorking, Surrey;[4] — [4] Henry Thomas Hope maintained the property and its collections on Duchess Street until 1851, when he moved to a new residence in Piccadilly
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: person/adele-hope-bichat
+    acquired: 1862
+    method: inheritance
+    direct: true
+    place: london
+    label: his widow; London and Deepdene
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: by inheritance to his widow, Adèle Hope-Bichat [d. 1884], London and Deepdene;
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: person/henry-pelham-clinton-hope-8th-duke-of-newcastle-under-lyme
+    acquired: 1884
+    method: inheritance
+    direct: true
+    place: london
+    label: her grandson Henry Francis Hope Pelham-Clinton-Hope; London, Deepdene and Clumber Park, Nottingham
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: by inheritance to her grandson, Henry Francis Hope Pelham-Clinton-Hope, 8th duke of Newcastle-under-Lyme [1866-1941], London, Deepdene, and Clumber Park, Nottingham;[5]
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: institution/victoria-and-albert-museum
+    role: custodian
+    acquired: 1891
+    ended: 1898
+    place: london
+    label: lent by Lord Pelham-Clinton-Hope
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: "[5] Lord Pelham-Clinton-Hope lent the painting to the South Kensington Museum from 1891-1898."
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: person/asher-wertheimer
+    co_owners: [institution/p-d-colnaghi-co-ltd]
+    role: dealer
+    acquired: 1898
+    method: purchase
+    direct: true
+    place: london
+    label: on joint account; Colnaghi of London and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: sold 1898 to (Asher Wertheimer, London) on joint account with (P. & D. Colnaghi & Co., London and New York);
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: person/peter-a-b-widener
+    acquired: 1898-12-13
+    method: purchase
+    direct: true
+    label: Lynnewood Hall, Elkins Park, Pennsylvania; date from the Widener card files — Edith Standen's notes and the Statement of Date of Acquisition give 1899
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: sold 13 December 1898 to Peter A.B. Widener, Lynnewood Hall, Elkins Park, Pennsylvania;[6] — [6] Date as mentioned in Widener card files … However, Edith Standen recorded in her notes … that the painting was bought by P.A.B. Widener in 1899. A third source … also indicates that 1899 was the date of purchase.
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1942
+    method: gift
+    direct: true
+    place: washington-d-c
+    label: from the Estate of Peter A. B. Widener by gift through power of appointment of Joseph E. Widener
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1227.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park; gift 1942 to NGA.
+        source: nga-1942-9-88
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177082
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177082
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177082
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177082
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177082
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177082

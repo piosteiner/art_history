@@ -1,0 +1,22 @@
+public_id: 122691
+name: sekiga
+names:
+  - lang: ja
+    role: original
+    text: 席画
+  - lang: en
+    role: translation
+    text: painting at the table
+  - lang: ja
+    role: alternative
+    text: 席上揮毫
+    note: "'writing/painting at the table', used on invitations (Koyama 2026 p. 31)"
+category: arts and customs
+also_in: [technique]
+definition: Painting done on the spot at a banquet or gathering at the request of those present; also the picture so made.
+description_md: "*Sekiga* (席画) is painting done on the spot at a banquet or gathering at the request of those present, and also the picture so made [[source/nikkoku-sekiga|s.v. 席画]]. The earliest example in the *Nihon kokugo daijiten* is Nakabayashi Chikutō's treatise of 1802, which describes great households summoning a painter to paint at table and the painter adapting to his patron's taste [[source/nikkoku-sekiga|s.v. 席画]]. The practice flourished among *nanga* painters, and many anecdotes tell of it, from [[artist/ike-taiga|Ike no Taiga]]'s finger painting to the feats of [[artist/katsushika-hokusai|Katsushika Hokusai]] [[source/mypedia-sekiga|s.v. 席画]]. Nanga theorists such as Kuwayama Gyokushū and Nakabayashi Chikutō nevertheless warned that a serious *nanga* painter should never paint *sekiga*, a view Noriko Omoto calls a minority position [[source/omoto-2004-bakufu-goyo-sekiga|pp. 1–2]]. At the shogun's court it was a formal duty: the Oku-eshi painted before the shogun in his private rooms, and the Omote-eshi performed *sekiga* to mark the accession of a new shogun, as on the 12th day of the twelfth month of Tenpō 8 (1837/38) [[source/omoto-2004-bakufu-goyo-sekiga|pp. 4–12]]. In public, Hokusai painted a half-length Daruma on joined paper of 120 mats beside the hall of the Gokokuji in Edo on the 13th day of the fourth month of 1804, using brooms for brushes [[source/kato-hokusai-kyokuhitsu-daruma|§ 1804]]. In Nagoya in 1817 a printed handbill announced his *sekiga* of a Daruma of 120 mats for the 5th day of the tenth month [[source/kato-hokusai-kyokuhitsu-daruma|§ 1817, handbill]]. At a *[[term/shogakai|shogakai]]* the hosts and their assistants painted pictures and inscriptions on fans and silk to the guests' orders [[source/campbell-1987-tenpoki-zengo-shogakai|p. 59]]. Invitations announced this as *sekijō kigō* (席上揮毫), 'writing and painting at the table' [[source/koyama-2026-ryogoku-yanagibashi-shogakai|p. 31]]."
+sources:
+  definition:
+    - source: nikkoku-sekiga
+      locator: s.v. 席画
+      accessed: 2026-11-23

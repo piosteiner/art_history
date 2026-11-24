@@ -1,0 +1,41 @@
+public_id: 124488
+name: Ōmachi
+names:
+  - lang: ja
+    role: original
+    text: 大町市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q385375
+  - lang: ko
+    role: translation
+    text: 오마치시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q385375
+  - lang: ru
+    role: translation
+    text: Омати
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q385375
+kind: settlement
+parent: japan
+country_code: JP
+location: [137.85111, 36.503]
+wikidata_id: Q385375
+metadata:
+  sources: [Wikidata Q385375 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q385375
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q385375
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q385375

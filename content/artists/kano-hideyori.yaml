@@ -24,6 +24,15 @@ relationships:
       - accessed: 2026-11-02
         property: P135
         wikidata: Q11571481
+  - type: child_of
+    to: artist/kano-motonobu
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q1078015
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q11571481
 identifiers:
   viaf: "251204313"
 sources:

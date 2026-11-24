@@ -1,0 +1,168 @@
+public_id: 123080
+title_lang: en
+title: Diana
+names:
+  - lang: fr
+    role: translation
+    text: Diane chasseresse
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20188694
+  - lang: de
+    role: translation
+    text: Diana als Jägerin
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20188694
+  - lang: it
+    role: translation
+    text: Diana cacciatrice
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20188694
+  - lang: ko
+    role: translation
+    text: 디아나
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20188694
+creator: pierre-auguste-renoir
+created: 1867
+materials: [oil paint, canvas]
+dimensions: [199.5, 129.5]
+institution: national-gallery-of-art
+inventory_number: 1963.10.205
+provenance_status: a_clear
+provenance_status_note: Bought by Chester and Maud Dale, New York, from Étienne Bignou on 16 January 1933 (invoice November 1932); bequeathed to the NGA 1963.
+wikidata_id: Q20188694
+metadata:
+  sources: [Wikidata Q20188694 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Pierre-Auguste_Renoir_-_Diana_%281867%29.jpg/1280px-Pierre-Auguste_Renoir_-_Diana_%281867%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Diana_(1867).jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: person/georges-viau
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46680.html
+        note: Dr. George Viau [1855-1939], Paris;
+        source: nga-1963-10-205
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: agent
+    acquired: 1907-03-21
+    method: auction
+    direct: true
+    place: paris
+    label: bought at the Viau sale, Paris, 21 March 1907, no. 68, for an unknown buyer
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46680.html
+        note: (his sale, Paris, 21 March 1907, no. 68); purchased by (Bernheim-Jeune, Paris) for an unknown buyer.
+        source: nga-1963-10-205
+        accessed: 2026-11-24
+  - owner: person/alexandre-berthier-prince-de-wagram
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46680.html
+        note: Alexandre Berthier [1883-1918], 4th Prince de Wagram, Paris;
+        source: nga-1963-10-205
+        accessed: 2026-11-24
+  - owner_label: heirs of Alexandre Berthier, 4th Prince of Wagram
+    method: inheritance
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46680.html
+        note: sold probably by his heirs
+        source: nga-1963-10-205
+        accessed: 2026-11-24
+  - owner: institution/canadeesche-hypothek-bank
+    role: agent
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46680.html
+        note: sold probably by his heirs though (Canadeesche Hypothek Bank)
+        source: nga-1963-10-205
+        accessed: 2026-11-24
+  - owner: person/etienne-bignou
+    role: agent
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46680.html
+        note: through (Étienne Bignou, Paris)
+        source: nga-1963-10-205
+        accessed: 2026-11-24
+  - owner: institution/alex-reid-lefevre
+    co_owners: [institution/m-knoedler-co, person/marcel-kapferer]
+    role: dealer
+    method: purchase
+    direct: true
+    place: london
+    label: "Reid & Lefèvre on joint account with Knoedler and Marcel Kapferer; Reid & Lefèvre Paintings Sold sheet no. 198, #2/29 B1394"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46680.html
+        note: "to (Alex Reid & Lefèvre, London); on joint account with (M. Knoedler & Co., London, New York and Paris) and (Marcel Kapferer);[1] — [1] Reid & Lefèvre Paintings Sold, sheet no. 198, #2/29 B1394 gives acquisition source and partial share information"
+        source: nga-1963-10-205
+        accessed: 2026-11-24
+  - owner: person/etienne-bignou
+    role: dealer
+    acquired: 1929-11-25
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and New York; Knoedler stock book no. 8, New York, no. A614
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46680.html
+        note: sold 25 November 1929 to (Etienne Bignou, Paris and New York);[2] — Knoedler Painting Stockbook no. 5, London 1928-1939, and Stockbook no. 8, New York, no. A614
+        source: nga-1963-10-205
+        accessed: 2026-11-24
+  - owner: person/chester-dale
+    co_owners: [person/maud-dale]
+    acquired: 1933-01-16
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Bignou's invoice, dated November 1932, made out to Mrs. Chester Dale
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46680.html
+        note: sold 16 January 1933 to Chester [1882-1962] and Maud [1875-1953] Dale, New York;[3] — [3] The invoice from Bignou, dated November 1932, was written out to Mrs. Chester Dale.
+        source: nga-1963-10-205
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1963
+    method: bequest
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46680.html
+        note: Chester Dale bequest 1963 to NGA.
+        source: nga-1963-10-205
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20188694
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20188694
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20188694
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20188694
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20188694
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20188694

@@ -1,0 +1,43 @@
+public_id: 123992
+title: Yakushi Hall, Daizen-ji
+names:
+  - lang: ja
+    role: translation
+    text: 大善寺本堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020338
+created: 1286
+institution: daizen-ji-koshu
+location: [138.743, 35.6571]
+wikidata_id: Q107020338
+metadata:
+  sources: [Wikidata Q107020338 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/koshu
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Daizenji_temple-01.JPG/1280px-Daizenji_temple-01.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Daizenji_temple-01.JPG
+    license: CC BY-SA 3.0
+    credit: Tnk3a
+provenance:
+  - owner: institution/daizen-ji-koshu
+    acquired: 1286
+    method: creation
+    place: koshu
+    label: pillars dated 1286 (inscription); ridgepole 1291, finished c. 1306, funded by a Kamakura shogunate levy in Kai and Shinano; repaired 1531, 1615, 1656, restored 1954; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/882
+        note: 今の本堂には背面両隅柱に「弘安九（一二八六）参月十六日」の刻銘がある。 … 享禄四年（一五三一）、慶長二十年（一六一五）、明暦二年（一六五六）などに修理が加えられたが、昭和二十九年解体修理を行って、後世変更の箇所を旧規に復した。 … 所有者名 ： 大善寺 所有者種別 ： 寺院
+        source: kunishitei-102-882
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%A4%A7%E5%96%84%E5%AF%BA_(%E7%94%B2%E5%B7%9E%E5%B8%82)&oldid=109578028
+        note: 鎌倉時代には鎌倉幕府が甲斐・信濃両国において棟別銭を課して、本堂が再建された。 … 堂の北東隅と北西隅の柱にそれぞれ「弘安九年」（1286年）の刻銘があり、この年に立柱されたことがわかる。その後、堂の完成までには長い時間を要し、正応4年（1291年）に上棟、徳治2年（1306年）頃に竣工している
+        source: wikipedia-ja-daizen-ji-koshu
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020338

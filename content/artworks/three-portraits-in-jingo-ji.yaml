@@ -1,0 +1,93 @@
+public_id: 124160
+title: Three portraits in Jingo-ji
+names:
+  - lang: ja
+    role: translation
+    text: 神護寺三像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q96097091
+creator: fujiwara-no-takanobu
+created: early 13th century
+created_span: uncertain
+materials: [silk product]
+institution: jingo-ji
+wikidata_id: Q96097091
+metadata:
+  sources: [Wikidata Q96097091 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/ashikaga-tadayoshi
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q96097091
+  - type: depicts_person
+    to: person/ashikaga-takauji
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q96097091
+  - type: depicts_person
+    to: person/ashikaga-yoshiakira
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q96097091
+  - type: depicts_person
+    to: person/fujiwara-no-mitsuyoshi
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q96097091
+  - type: depicts_person
+    to: person/minamoto-no-yoritomo
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q96097091
+  - type: depicts_person
+    to: person/taira-no-shigemori
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q96097091
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Minamoto_no_Yoritomo.jpg/1280px-Minamoto_no_Yoritomo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Minamoto_no_Yoritomo.jpg
+    license: Public domain
+    credit: Fujiwara no Takanobu
+provenance:
+  - owner: institution/jingo-ji
+    acquired: early 13th century
+    method: creation
+    place: kyoto
+    label: "traditionally portraits of Minamoto no Yoritomo, Taira no Shigemori and Fujiwara no Mitsuyoshi from the Sentō-in of Jingo-ji; Mason: early 13th-c. copies of a 1179 set attributed to Takanobu; a 1995 theory makes them Ashikaga portraits of the 14th c."
+    certainty: probable
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=109917723
+        note: 所有者は神護寺。 … 『神護寺略記』に、「神護寺の仙洞院（1188年建立）に、後白河院、平重盛、源頼朝、藤原光能、平業房らの肖像があり、それらは藤原隆信の作品である」との内容の記述があり
+        source: jawiki-jingoji-sanzo-109917723
+        accessed: 2026-11-24
+      - note: The first is in the Sentoin, the Hall of the Retired Emperor, built in Go Shirakawa's honor at Jingoji and is part of a group of three portraits from a set of five … These painted portraits are thought to be early thirteenth-century copies of a set traditionally attributed to the artist Fujiwara no Takanobu (c. 1146–c. 1206) and executed in 1179
+        source: history-of-japanese-art
+        locator: p. 168
+        accessed: 2026-11-24
+  - owner: institution/kyoto-national-museum
+    role: custodian
+    place: kyoto
+    label: the Yoritomo and Shigemori portraits on deposit (shown at Jingo-ji each year 1–5 May); the Mitsuyoshi portrait reportedly at Tokyo National Museum (unsourced in Wikipedia)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=109917723
+        note: 伝頼朝像、伝重盛像は京都国立博物館、伝光能像は東京国立博物館にそれぞれ寄託されている。毎年5月1日から5日に開かれる神護寺の曝涼（虫干し）展では、伝頼朝像、伝重盛像の2像は神護寺に里帰りし一般公開される
+        source: jawiki-jingoji-sanzo-109917723
+        accessed: 2026-11-24
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q96097091
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q96097091

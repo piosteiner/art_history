@@ -1,0 +1,83 @@
+public_id: 124895
+title: Zeremonialsitz in Gestalt eines Kojoten
+creator: anonymous
+created: 1350/1500
+materials: [stone]
+dimensions: [48, 94]
+institution: museum-rietberg
+inventory_number: RMA 18
+wikidata_id: Q126911289
+metadata:
+  sources: [Wikidata Q126911289 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/lake-patzcuaro
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q126911289
+  - type: created_in
+    to: place/michoacan
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q126911289
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Urheber%2Ain_unbekannt_Ceremonial_stone_seat_Museum_Rietberg_RMA_0018.jpg/1280px-Urheber%2Ain_unbekannt_Ceremonial_stone_seat_Museum_Rietberg_RMA_0018.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Urheber*in_unbekannt_Ceremonial_stone_seat_Museum_Rietberg_RMA_0018.jpg
+    license: CC0
+    credit: Museum Rietberg
+provenance:
+  - owner_label: unknown maker (Tarascan)
+    acquired: 1350/1500
+    method: creation
+    label: made at Lake Pátzcuaro (Patzcuaro-See), Tarascan culture; Kunsthaus catalogue 1959, no. 179
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-18
+        note: "1350–1500: Urheber*in unbekannt in Patzcuaro-See Kunsthaus Katalog 1959, Nr. 179"
+        source: rietberg-rma-18
+        accessed: 2026-11-24
+  - owner: institution/stendahl-art-galleries
+    acquired: before 28 January 1959
+    place: los-angeles
+    label: circumstances of acquisition unknown; dealers' correspondence, letter of 28 January 1959
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-18
+        note: "vor 28.01.1959: Stendahl Art Galleries, Los Angeles (1911), Erwerbsumstände unbekannt Korrespondenz mit Händlern, Brief vom 28. Januar 1959; Ankäufe 1959"
+        source: rietberg-rma-18
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1959
+    method: purchase
+    place: zurich
+    label: bought with funds of the City of Zürich (creditline)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-18
+        note: "1959: Museum Rietberg, angekauft in Zürich"
+        source: rietberg-rma-18
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q126911289
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q126911289
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q126911289
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q126911289
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q126911289
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q126911289

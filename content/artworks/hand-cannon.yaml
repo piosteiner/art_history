@@ -1,0 +1,72 @@
+public_id: 124709
+title_lang: en
+title: Hand Cannon
+institution: cleveland-museum-of-art
+inventory_number: "1919.45"
+web_url: https://clevelandart.org/art/1919.45
+wikidata_id: Q79489544
+metadata:
+  sources: [Wikidata Q79489544 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Unknown_artist_-_Hand_Cannon_-_1919.45_-_Cleveland_Museum_of_Art.jpg/1280px-Unknown_artist_-_Hand_Cannon_-_1919.45_-_Cleveland_Museum_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Unknown_artist_-_Hand_Cannon_-_1919.45_-_Cleveland_Museum_of_Art.jpg
+    license: CC0
+    credit: Unknown author
+provenance:
+  - owner_label: Austin collection
+    sources:
+      - url: https://clevelandart.org/art/1919.45
+        note: Austin Collection
+        source: cma-1919-45
+        accessed: 2026-11-24
+  - owner: person/theodore-offerman
+    ended: 1919
+    place: new-york-city
+    label: consigned to the American Art Association for sale
+    sources:
+      - url: https://clevelandart.org/art/1919.45
+        note: Theodore Offerman [c. 1873–1937], New York, NY, consigned to the American Art Association for sale [?–1919]
+        source: cma-1919-45
+        accessed: 2026-11-24
+  - owner: institution/american-art-association
+    role: agent
+    acquired: 1919-02-08
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Theodore Offerman Collection sale, 7–8 Feb. 1919, lot 300
+    sources:
+      - url: https://clevelandart.org/art/1919.45
+        note: (American Art Association, New York, NY, Theodore Offerman Collection sale, February 8, 1919, lot no. 300) [February 7–8, 1919]
+        source: cma-1919-45
+        accessed: 2026-11-24
+  - owner: person/john-l-severance
+    co_owners: [person/elisabeth-huntington-dewitt-severance]
+    acquired: 1919
+    method: auction
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1919.45
+        note: John L. [1863–1936] and Elisabeth Huntington DeWitt Severance [1865–1929], Cleveland, OH, given to the Cleveland Museum of Art [1919]
+        source: cma-1919-45
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1919
+    method: gift
+    direct: true
+    place: cleveland
+    label: Gift of Mr. and Mrs. John L. Severance
+    sources:
+      - url: https://clevelandart.org/art/1919.45
+        note: The Cleveland Museum of Art, Cleveland, OH [1919–]
+        source: cma-1919-45
+        accessed: 2026-11-24
+sources:
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q79489544
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q79489544

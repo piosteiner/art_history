@@ -1,0 +1,164 @@
+public_id: 123209
+title_lang: en
+title: Madonna and Child
+names:
+  - lang: nl
+    role: translation
+    text: Madonna met kind
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20173966
+  - lang: fr
+    role: translation
+    text: Vierge à l'Enfant
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20173966
+  - lang: de
+    role: translation
+    text: Madonna mit Kind
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20173966
+  - lang: it
+    role: translation
+    text: Madonna con bambino
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20173966
+creator: sandro-botticelli
+created: c. 1470
+created_span: uncertain
+materials: [tempera, panel]
+dimensions: [74.5, 54.5]
+institution: national-gallery-of-art
+inventory_number: 1937.1.21
+provenance_status: a_clear
+provenance_status_note: Bought by Duveen Brothers from the Florentine dealer Luigi Grassi in August 1930; sold to the A.W. Mellon Educational and Charitable Trust on 15 December 1936.
+wikidata_id: Q20173966
+metadata:
+  sources: [Wikidata Q20173966 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20173966
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Madonna_and_Child_E-000025-20160301.jpg/1280px-Madonna_and_Child_E-000025-20160301.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Madonna_and_Child_E-000025-20160301.jpg
+    license: Public domain
+    credit: Sandro Botticelli
+provenance:
+  - owner: person/bartolomeo-corsini
+    acquired: 1763 or earlier
+    label: Villa di Mezzomonte, near Florence; 1763 inventory (not in that of 1727)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.23.html
+        note: Prince Bartolomeo Corsini [1729-1792], Villa di Mezzomonte, near Florence, by 1763;[1] — [1] The inventory of the Villa di Mezzomonte, dated 1763 … The painting is not yet listed in the 1727 inventory of that villa.
+        source: nga-1937-1-21
+        accessed: 2026-11-24
+  - owner: person/tommaso-corsini
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.23.html
+        note: by inheritance to Prince Tommaso Corsini [1767-1856];
+        source: nga-1937-1-21
+        accessed: 2026-11-24
+  - owner: person/andrea-corsini
+    method: inheritance
+    direct: true
+    label: still at Mezzomonte in 1864
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.23.html
+        note: by inheritance to Prince Andrea Corsini [1804-1868];
+        source: nga-1937-1-21
+        accessed: 2026-11-24
+  - owner: person/tommaso-corsini-2
+    method: inheritance
+    direct: true
+    place: florence
+    label: restored and moved c. 1870 to the Corsini Gallery, Palazzo Corsini, Via del Parione, Florence; no. 176 in Room IV
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.23.html
+        note: by inheritance to Prince Tommaso Corsini [1835-1919], who in the early 1870s had it transferred to Palazzo Corsini in Via del Parione, Florence;[2] — [2] … "nel 1870 Sua Eccellenza il Principe Don Tommaso lo fece restaurare e dispose che fosse collocato nella di lui Galleria"
+        source: nga-1937-1-21
+        accessed: 2026-11-24
+  - owner: person/beatrice-corsini-pandolfini
+    method: inheritance
+    direct: true
+    label: label on the back "Prop. B. Pandolfini / Prov. Casa Corsini"; still listed in the Corsini Gallery guides until 1935
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.23.html
+        note: by inheritance to his daughter, Beatrice Corsini Pandolfini [1868-1955]; — [3] … as is documented by the label on the back of the painting, its ownership had already passed by inheritance to Prince Tommaso's daughter Beatrice, who in 1889 married Count Roberto Pandolfini.
+        source: nga-1937-1-21
+        accessed: 2026-11-24
+  - owner: person/luigi-grassi
+    role: dealer
+    acquired: 1930 or earlier
+    direct: true
+    place: florence
+    label: dealer and restorer; showed it to Berenson in February 1930
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.23.html
+        note: (Professor Luigi Grassi [1858-1937, Florence); — [3] … It was by then in the hands of the dealer and restorer Luigi Grassi, who showed it to Bernard Berenson in February 1930
+        source: nga-1937-1-21
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1930-08
+    method: purchase
+    direct: true
+    label: London and New York; bought on Berenson's recommendation
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.23.html
+        note: sold August 1930 to (Duveen Brothers, Inc., London and New York);[3]
+        source: nga-1937-1-21
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1936-12-15
+    method: purchase
+    direct: true
+    place: pittsburgh
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.23.html
+        note: purchased 15 December 1936 by The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[4]
+        source: nga-1937-1-21
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.23.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-21
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20173966
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20173966
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20173966
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20173966
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20173966
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20173966

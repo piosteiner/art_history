@@ -1,0 +1,68 @@
+public_id: 124754
+title_lang: en
+title: Haboku (Flung-ink) Landscape
+creator: shugetsu-tokan
+created: c. 1510
+created_span: uncertain
+institution: cleveland-museum-of-art
+inventory_number: "1976.59"
+web_url: https://clevelandart.org/art/1976.59
+wikidata_id: Q60473123
+metadata:
+  sources: [Wikidata Q60473123 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Sh%C5%ABgetsu_T%C5%8Dkan_-_Haboku_%28Flung-ink%29_Landscape_-_1976.59_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Sh%C5%ABgetsu_T%C5%8Dkan_-_Haboku_%28Flung-ink%29_Landscape_-_1976.59_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sh%C5%ABgetsu_T%C5%8Dkan_-_Haboku_(Flung-ink)_Landscape_-_1976.59_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Shūgetsu Tōkan
+provenance:
+  - owner_label: Hirayama
+    sources:
+      - url: https://clevelandart.org/art/1976.59
+        note: Hirayama
+        source: cma-1976-59
+        accessed: 2026-11-24
+  - owner: person/tanaka-gohei
+    sources:
+      - url: https://clevelandart.org/art/1976.59
+        note: Tanaka Gohei
+        source: cma-1976-59
+        accessed: 2026-11-24
+  - owner: institution/gatodo-gallery-co-ltd
+    role: dealer
+    ended: 1976
+    place: tokyo
+    label: sold to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1976.59
+        note: (Gatodo Gallery Co., Ltd., Tokyo, Japan, sold to the Cleveland Museum of Art) [?-1976]
+        source: cma-1976-59
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1976
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Purchase from the J. H. Wade Fund
+    sources:
+      - url: https://clevelandart.org/art/1976.59
+        note: The Cleveland Museum of Art, Cleveland, OH [1976-] — Purchase from the J. H. Wade Fund
+        source: cma-1976-59
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60473123
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60473123
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60473123
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60473123

@@ -1,0 +1,47 @@
+public_id: 123629
+name: Montpellier
+names:
+  - lang: ja
+    role: translation
+    text: モンペリエ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6441
+  - lang: zh
+    role: translation
+    text: 蒙彼利埃
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6441
+  - lang: ko
+    role: translation
+    text: 몽펠리에
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6441
+  - lang: ru
+    role: translation
+    text: Монпелье
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6441
+kind: settlement
+parent: herault
+country_code: FR
+location: [3.87723, 43.61092]
+wikidata_id: Q6441
+metadata:
+  sources: [Wikidata Q6441 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q6441
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q6441
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q6441

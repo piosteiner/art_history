@@ -1,0 +1,169 @@
+public_id: 125113
+title_lang: en
+title: The Print Collector
+creator: honore-daumier
+created: 1852/1868
+created_label: c. 19th century
+created_span: uncertain
+institution: art-institute-of-chicago
+inventory_number: "1957.305"
+wikidata_id: Q20268533
+metadata:
+  sources: [Wikidata Q20268533 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Honor%C3%A9-Victorin_Daumier_-_The_Print_Collector_-_1957.305_-_Art_Institute_of_Chicago.jpg/1280px-Honor%C3%A9-Victorin_Daumier_-_The_Print_Collector_-_1957.305_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Honor%C3%A9-Victorin_Daumier_-_The_Print_Collector_-_1957.305_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Honoré Daumier
+provenance:
+  - owner: artist/jean-baptiste-camille-corot
+    place: paris
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: Possibly Jean Baptiste Camille Corot, Paris (died 1875);
+        source: aic-1957-305
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1875
+    method: auction
+    direct: true
+    place: paris
+    label: sale 26 May–9 June 1875, lot 663
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: sold Hôtel Drouot, Paris, May 26–June 9, 1875, lot 663 to M[onsieur] Jacquot (for 1550 FF) [according to Robaut 1965, p. 257].
+        source: aic-1957-305
+        accessed: 2026-11-24
+  - owner_label: M. Jacquot
+    acquired: 1875
+    method: auction
+    direct: true
+    place: paris
+    price:
+      amount: 1550
+      currency: FRF
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: lot 663 to M[onsieur] Jacquot (for 1550 FF) [according to Robaut 1965, p. 257].
+        source: aic-1957-305
+        accessed: 2026-11-24
+  - owner: person/henri-vever
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: Possibly Henri Vever (died 1897) [according to Paris 1934].
+        source: aic-1957-305
+        accessed: 2026-11-24
+  - owner: person/georges-viau
+    acquired: 1900 or earlier
+    place: paris
+    label: lent to Paris 1900
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: Probably Georges Viau, Paris, 1900 [Viau lent L'Amateur to Paris 1900].
+        source: aic-1957-305
+        accessed: 2026-11-24
+  - owner: person/jacques-doucet
+    acquired: 1912 or earlier
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: Jacques Doucet (died 1929), Paris, by 1912 [see René Jean 1912, pp. 34-35];
+        source: aic-1957-305
+        accessed: 2026-11-24
+  - owner_label: widow of Jacques Doucet
+    ended_label: until at least 1934
+    direct: true
+    place: paris
+    label: lent to Paris 1934
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: his widow, until at least 1934 [lent to Paris 1934];
+        source: aic-1957-305
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and New York
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: sold to Jacques Seligmann [see Seligman 1960, p. 179]; Jacques Seligmann & Co., Paris and New York,
+        source: aic-1957-305
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    co_owners: [institution/m-knoedler-co]
+    role: dealer
+    acquired: 1938-10
+    ended: 1938-12
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Knoedler bought a share from Seligmann
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: Jacques Seligmann & Co., Paris and New York, who sold a share of the painting to Knoedler's, New York, in October, 1938, buying it back in December, 1938 [letter of May 11, 1999, from Melissa de Medeiros, M. Knoedler & Co. in curatorial file];
+        source: aic-1957-305
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    acquired: 1938-12
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: bought Knoedler's share back
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: buying it back in December, 1938
+        source: aic-1957-305
+        accessed: 2026-11-24
+  - owner: person/marshall-field-iii
+    acquired: 1938
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: sold by Seligmann to Marshall Field III, Chicago, 1938 [according to Seligman 1960, caption to pl. 71a];
+        source: aic-1957-305
+        accessed: 2026-11-24
+  - owner: person/marshall-field-iii
+    role: estate
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: given by the Estate of Marshall Field to the Art Institute, 1957.
+        source: aic-1957-305
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1957
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/6002
+        note: given by the Estate of Marshall Field to the Art Institute, 1957.
+        source: aic-1957-305
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268533
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20268533
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268533
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268533

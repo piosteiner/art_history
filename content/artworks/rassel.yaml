@@ -1,0 +1,69 @@
+public_id: 123870
+title_lang: de
+title: Rassel
+attribution_label: Anonymous
+created: 19th century
+created_span: uncertain
+kind: gerät / zubehör / kleinobjekt
+medium: Holz, bemalt, Metall
+dimensions: [10.5, 9.5, 32]
+institution: museum-rietberg
+inventory_number: RNA 311
+web_url: https://rietberg.ch/sammlungen/rna-311
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Tlingit_rattle_Museum_Rietberg_RNA_311.jpg/1280px-Tlingit_rattle_Museum_Rietberg_RNA_311.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tlingit_rattle_Museum_Rietberg_RNA_311.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Urheber*in unbekannt
+    acquired: 19th century
+    method: creation
+    label: made by an unknown maker in Alaska (Bellabella / Tlingit)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-311
+        note: "19. Jh.: Urheber*in unbekannt in Alaska"
+        source: rietberg-rna-311
+        accessed: 2026-11-24
+  - owner: person/frank-crowninshield
+    acquired: before 1947
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-311
+        note: "vor 1947: Frank Crowninshield (1872–1947), Erwerbsumstände unbekannt"
+        source: rietberg-rna-311
+        accessed: 2026-11-24
+  - owner: person/russell-b-aitken
+    acquired_label: unbekannter Zeitpunkt
+    label: date and circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-311
+        note: "unbekannter Zeitpunkt: Russell B. Aitken (1910–2002), Erwerbsumstände unbekannt"
+        source: rietberg-rna-311
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: before 3 April 2003
+    method: auction
+    place: new-york-city
+    label: consigned to Christie's, New York; The Russell B. Aitken Collection of African and Oceanic Art, sale 1278, lot 29
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-311
+        note: |-
+          vor 03.04.2003: Christie's, New York (1977), in Kommission erhalten in New York
+          The Russell B. Aitken Collection of African and Oceanic Art, sale 1278, lot 29
+        source: rietberg-rna-311
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 2003-04-03
+    method: auction
+    direct: true
+    place: new-york-city
+    label: bought at The Russell B. Aitken Collection of African and Oceanic Art, Christie's New York, sale 1278, lot 29; funds of the Rietberg-Kreis
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-311
+        note: |-
+          03.04.2003: Museum Rietberg, angekauft in New York
+          The Russell B. Aitken Collection of African and Oceanic Art, sale 1278, lot 29
+        source: rietberg-rna-311
+        accessed: 2026-11-24

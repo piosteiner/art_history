@@ -1,0 +1,61 @@
+public_id: 124713
+title_lang: en
+title: Repository for the Great Perfection of Wisdom Sutra and Eleven Volumes of the Great Perfection of Wisdom Sutra
+institution: cleveland-museum-of-art
+inventory_number: "1969.130"
+web_url: https://clevelandart.org/art/1969.130
+wikidata_id: Q79921299
+metadata:
+  sources: [Wikidata Q79921299 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Japan%2C_Heian_period_-_Buddhist_Tabernacle_-_1969.130_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Japan%2C_Heian_period_-_Buddhist_Tabernacle_-_1969.130_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japan,_Heian_period_-_Buddhist_Tabernacle_-_1969.130_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Cleveland Museum of Art
+provenance:
+  - owner: institution/kamigamo-shrine
+    place: kyoto
+    label: Kamigamosha (Kamigamo Shrine)
+    sources:
+      - url: https://clevelandart.org/art/1969.130
+        note: Kamigamosha [Kamigamo Shrine], Kyoto, Japan
+        source: cma-1969-130
+        accessed: 2026-11-24
+  - owner: institution/jinko-in
+    place: kyoto
+    label: temple Jinkō'in, Kyoto
+    sources:
+      - url: https://clevelandart.org/art/1969.130
+        note: Jinkō'in, Kyoto, Japan
+        source: cma-1969-130
+        accessed: 2026-11-24
+  - owner: person/shogoro-yabumoto
+    role: dealer
+    ended: 1969
+    place: amagasaki
+    label: sold to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1969.130
+        note: (Shogoro Yabumoto, Amagasaki, Hyōgo Prefecture, Japan, sold to the Cleveland Museum of Art) [?-1969]
+        source: cma-1969-130
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1969
+    method: purchase
+    direct: true
+    place: cleveland
+    label: John L. Severance Fund
+    sources:
+      - url: https://clevelandart.org/art/1969.130
+        note: The Cleveland Museum of Art, Cleveland, OH [1969-] — John L. Severance Fund
+        source: cma-1969-130
+        accessed: 2026-11-24
+sources:
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q79921299
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q79921299

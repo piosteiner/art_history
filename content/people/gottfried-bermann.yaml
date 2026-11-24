@@ -14,6 +14,16 @@ death: 1995-09-17
 wikidata_id: Q97753
 metadata:
   sources: [Wikidata Q97753 (retrieved 2026-10-31)]
+relationships:
+  - type: married_to
+    to: person/brigitte-bermann-fischer
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q97753
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q59628896
 identifiers:
   bnf: 12055802k
   gnd: "118509683"

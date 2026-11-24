@@ -1,0 +1,82 @@
+public_id: 122941
+title_lang: en
+title: The Nativity
+creator: gerard-david
+created: c. 1485–1490
+created_span: uncertain
+kind: oil painting
+medium: oil on wood panel
+dimensions: [85.2, 59.7]
+institution: cleveland-museum-of-art
+inventory_number: "1958.320"
+web_url: https://clevelandart.org/art/1958.320
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1958.320/1958.320_web.jpg
+    source_url: https://clevelandart.org/art/1958.320
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner_label: Russian collection
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1958.320
+        note: Possibly from a Russian coll.;
+        source: cma-1958-320
+        accessed: 2026-11-24
+  - owner: person/richard-von-kaufmann
+    acquired: 1898 or earlier
+    place: berlin
+    sources:
+      - url: https://clevelandart.org/art/1958.320
+        note: Richard von Kaufmann, Berlin, 1898;
+        source: cma-1958-320
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    co_owners: [institution/hugo-helbing]
+    role: agent
+    acquired: 1917-12-04
+    method: auction
+    direct: true
+    place: berlin
+    label: sale, Cassirer and Helbing, Berlin, 4 December 1917, no. 78
+    sources:
+      - url: https://clevelandart.org/art/1958.320
+        note: (Cassirer and Helbing, Berlin sale, December 4, 1917, no. 78);
+        source: cma-1958-320
+        accessed: 2026-11-24
+  - owner: person/walter-von-pannwitz
+    direct: true
+    place: berlin
+    sources:
+      - url: https://clevelandart.org/art/1958.320
+        note: Walter von Pannwitz, Berlin;
+        source: cma-1958-320
+        accessed: 2026-11-24
+  - owner: person/catalina-von-pannwitz
+    acquired_label: (1917)
+    direct: true
+    label: Frau C. von Pannwitz, Hartekamp near Haarlem
+    sources:
+      - url: https://clevelandart.org/art/1958.320
+        note: Frau C. von Pannwitz, Hartekamp near Haarlem (1917);
+        source: cma-1958-320
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1958.320
+        note: (Rosenberg & Stiebel, NY)
+        source: cma-1958-320
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1958
+    method: purchase
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/1958.320
+        note: Gerard David, The Nativity, c. 1485–90 · Leonard C. Hanna Jr. Fund · 1958.320
+        source: cma-1958-320
+        accessed: 2026-11-24

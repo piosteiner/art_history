@@ -1,0 +1,16 @@
+public_id: 122914
+name: Master of Città di Castello
+birth: 1201/1300
+death: 1301/1400
+wikidata_id: Q4284300
+metadata:
+  sources: [Wikidata Q4284300 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q4284300
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q4284300

@@ -1,0 +1,143 @@
+public_id: 122872
+title_lang: en
+title: Study for "The Bear Hunt" (for the Alcázar, Madrid)
+creator: peter-paul-rubens
+created: c. 1639
+created_span: uncertain
+kind: oil painting
+medium: oil on wood
+dimensions: [26, 53.7]
+institution: cleveland-museum-of-art
+inventory_number: "1983.69"
+web_url: https://clevelandart.org/art/1983.69
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1983.69/1983.69_web.jpg
+    source_url: https://clevelandart.org/art/1983.69
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/e-henstridge
+    place: london
+    label: sold at his sale, Christie's, 11 April 1930
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: (Christie's, London, E. Henstridge sale, April 11, 1930, no. 91, sold to Rothschild)
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1930-04-11
+    method: auction
+    direct: true
+    place: london
+    label: E. Henstridge sale, no. 91
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: (Christie's, London, E. Henstridge sale, April 11, 1930, no. 91, sold to Rothschild)
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner_label: Rothschild (buyer at the Henstridge sale)
+    acquired: 1930-04-11
+    method: auction
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: sold to Rothschild
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner: person/alexander-von-frey
+    role: dealer
+    label: A. G. von Frey, collector and dealer (later A. C. de Frey); no suggestion it came to him as confiscated art
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: (A. G. von Frey [Alexander von Frey]) — The collector and art dealer Alexander von Frey (1882-1951), a Hungarian national, began to amass his art collection in the 1920s. … During WWII Frey is known to have been involved in the trading of confiscated art; however there is no suggestion that 1983.69 came into von Frey's possession in this manner.
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1930-11-12
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: (Thos. Agnew & Sons, London). [Nov. 12, 1930 - June 10, 1937]
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner: person/huntington-hartford
+    acquired: 1937-06-10
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: G. Huntington Hartford (1911-2008), New York. [June 10, 1937 -]
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner: institution/newhouse-gallery
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: (Newhouse Galleries, New York) [- May 15, 1972]
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1972-05-15
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: (Thos. Agnew & Sons, London) [May 15, 1972 - Feb. 13, 1973]
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner_label: Private collection
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: Private collection
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1979
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: (Thos. Agnew and Sons, London) [1979]
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner_label: Private collection, Portugal
+    acquired: 1980
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: Private collection, Portugal. [1980]
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1983-06-23
+    method: auction
+    place: london
+    label: sale, Sotheby's, London, 23 June 1983, no. 40, ill.
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: (Sotheby's, London, sale, June 23, 1983, no. 40, ill.) [1983]
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner: institution/newhouse-gallery
+    role: dealer
+    acquired: 1983
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: (Newhouse Galleries, New York), sold to the Cleveland Museum of Art. [1983]
+        source: cma-1983-69
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1983
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1983.69
+        note: (Newhouse Galleries, New York), sold to the Cleveland Museum of Art. [1983]
+        source: cma-1983-69
+        accessed: 2026-11-24

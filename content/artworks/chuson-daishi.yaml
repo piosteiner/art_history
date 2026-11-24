@@ -1,0 +1,30 @@
+public_id: 124358
+title: Chūson Daishi
+names:
+  - lang: ja
+    role: translation
+    text: 中尊大師
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045576
+materials: [wood]
+wikidata_id: Q107045576
+metadata:
+  sources: [Wikidata Q107045576 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/enchin
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107045576
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Sculpture_of_Chish%C5%8D_Daishi_%28Ch%C5%ABson_Daishi%29.jpg/1280px-Sculpture_of_Chish%C5%8D_Daishi_%28Ch%C5%ABson_Daishi%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sculpture_of_Chish%C5%8D_Daishi_(Ch%C5%ABson_Daishi).jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q107045576

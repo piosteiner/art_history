@@ -1,0 +1,35 @@
+public_id: 129388
+name: Newport
+names:
+  - lang: ko
+    role: translation
+    text: 뉴포트
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q54264
+  - lang: ru
+    role: translation
+    text: Ньюпорт
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q54264
+kind: settlement
+parent: rhode-island
+country_code: US
+location: [-71.31194, 41.49167]
+wikidata_id: Q54264
+metadata:
+  sources: [Wikidata Q54264 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q54264
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q54264
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q54264

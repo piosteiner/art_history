@@ -1,0 +1,16 @@
+public_id: 123183
+name: National Gallery of Athens
+kind: museum
+founded: 1900-04-10
+wikidata_id: Q1167467
+metadata:
+  sources: [Wikidata Q1167467 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1167467
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1167467

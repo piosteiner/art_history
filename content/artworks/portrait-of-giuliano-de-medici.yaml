@@ -1,0 +1,216 @@
+public_id: 122912
+title_lang: en
+title: Giuliano de' Medici
+names:
+  - lang: en
+    role: original
+    text: Portrait of Giuliano de' Medici
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3399442
+  - lang: nl
+    role: translation
+    text: Portret van Giuliano de' Medici
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3399442
+  - lang: fr
+    role: translation
+    text: Portrait de Julien de Médicis
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3399442
+  - lang: de
+    role: translation
+    text: Porträt von Giuliano de' Medici
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3399442
+  - lang: it
+    role: translation
+    text: Ritratto di Giuliano de' Medici
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3399442
+  - lang: es
+    role: translation
+    text: Retrato de Juliano de Médici
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3399442
+  - lang: ja
+    role: translation
+    text: ジュリアーノ・デ・メディチの肖像 (ワシントン・ナショナル・ギャラリー)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3399442
+  - lang: zh
+    role: translation
+    text: 朱利亞諾·德·美第奇肖像畫
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3399442
+creator: sandro-botticelli
+created: 1478/1480
+created_label: c. 1470s
+created_span: uncertain
+materials: [tempera, panel]
+dimensions: [75.5, 52.5]
+institution: national-gallery-of-art
+inventory_number: 1952.5.56
+wikidata_id: Q3399442
+metadata:
+  sources: [Wikidata Q3399442 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/giuliano-de-medici
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q3399442
+  - type: associated_with
+    to: movement/early-renaissance
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q3399442
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Giuliano_de%27_Medici_by_Sandro_Botticelli.jpeg/1280px-Giuliano_de%27_Medici_by_Sandro_Botticelli.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Giuliano_de%27_Medici_by_Sandro_Botticelli.jpeg
+    license: Public domain
+    credit: Sandro Botticelli
+provenance:
+  - owner: person/ferdinando-i-de-medici
+    place: florence
+    label: his emblem (the queen bee and her subjects) on the reverse
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41671.html
+        note: Grand Duke Ferdinand I de' Medici [1551-1609], Florence.[1] — The emblem of the queen bee surrounded by her subjects, visible on the reverse of the painting, appears also on the reverse of a medal made by Michele Mazzafirri for Grand Duke Ferdinand I de' Medici in 1588
+        source: nga-1952-5-56
+        accessed: 2026-11-24
+  - owner: person/alfonso-tacoli-canacci
+    acquired: 1796 or earlier
+    place: florence
+    label: his catalogue no. 444, label 'Etruria pittrice'; probably acquired after 1792
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41671.html
+        note: Marchese Alfonso Tacoli Canacci [1724-1801], Florence, by 1796;[2] — registered under no. 444 … the painting was probably acquired by Tacoli Canacci after 1792
+        source: nga-1952-5-56
+        accessed: 2026-11-24
+  - owner: person/pietro-tacoli
+    method: inheritance
+    direct: true
+    place: modena
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41671.html
+        note: by inheritance to his nephew, Pietro Tacoli [1773-1847], Modena;
+        source: nga-1952-5-56
+        accessed: 2026-11-24
+  - owner: person/adelaide-tacoli
+    method: inheritance
+    direct: true
+    place: modena
+    label: wife of Alessandro Bellincini Bagnesi
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41671.html
+        note: by inheritance to his daughter, Adelaide Tacoli; — Adelaide, wife of Alessandro Bellincini Bagnesi in Modena.
+        source: nga-1952-5-56
+        accessed: 2026-11-24
+  - owner_label: Bellincini Bagnesi family, Modena
+    method: inheritance
+    direct: true
+    place: modena
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41671.html
+        note: through her marriage into the Bellincini Bagnesi family, Modena;
+        source: nga-1952-5-56
+        accessed: 2026-11-24
+  - owner: person/adele-bagnesi
+    method: inheritance
+    direct: true
+    place: modena
+    label: Marchesa Adele Bagnesi
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41671.html
+        note: by descent to Marchesa Adele Bagnesi;[3]
+        source: nga-1952-5-56
+        accessed: 2026-11-24
+  - owner: person/zelindo-bonaccini
+    role: agent
+    acquired: 1940
+    direct: true
+    place: modena
+    label: painter and dealer; sold through him
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41671.html
+        note: sold 1940 through (Zelindo Bonaccini [1890-1967], Modena)[4]
+        source: nga-1952-5-56
+        accessed: 2026-11-24
+  - owner: person/vittorio-cini
+    acquired: 1940
+    method: purchase
+    direct: true
+    place: venice
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41671.html
+        note: to Count Vittorio Cini [1885-1977], Venice;[5] — a list of paintings sold in 1940 by Adele Bagnesi to Count Cini which includes the _Giuliano de' Medici_
+        source: nga-1952-5-56
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1948 or earlier
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: probably bought 1948; offered to Rush H. Kress 30 March 1949
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41671.html
+        note: sold to (Wildenstein & Co., Inc., New York), probably in 1948;[6] — the painting was with Wildenstein's by 1948; it was offered by this firm to Rush H. Kress for acquisition on 30 March 1949
+        source: nga-1952-5-56
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1949-06
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Wildenstein invoice for 16 items dated 23 June 1949
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41671.html
+        note: sold June 1949 to the Samuel H. Kress Foundation, New York;[7] — The Wildenstein invoice to the Kress Foundation for 16 items, including the Botticelli painting, is dated 23 June 1949
+        source: nga-1952-5-56
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41671.html
+        note: gift 1952 to NGA.
+        source: nga-1952-5-56
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q3399442
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q3399442
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q3399442
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q3399442
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q3399442
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q3399442

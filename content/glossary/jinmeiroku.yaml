@@ -1,0 +1,24 @@
+public_id: 122752
+name: jinmeiroku
+names:
+  - lang: ja
+    role: original
+    text: 人名録
+  - lang: ja
+    role: alternative
+    text: 姓名録
+  - lang: en
+    role: translation
+    text: directory (of notable people)
+category: literary genre
+also_in: [arts and customs]
+definition: Printed directory of living notables — scholars, poets, artists — giving names, art names, specialities and addresses; in Japan from 1768.
+description_md: |-
+  A *jinmeiroku* (人名録, ‘name register’) — also *seimeiroku* (姓名録) or, in titles, *jinbutsu shi* (人物志) — is a printed directory of living people, mostly scholars and artists, giving their names, art names, specialities and addresses [[source/tokyo-metropolitan-library-2006-koeki-shoka-jinmeiroku|text]]. In early-modern Japan the genre begins with the *Heian jinbutsu shi* of 1768 for Kyoto; directories by region and by field followed, most of them small practical booklets that libraries seldom kept [[source/tokyo-metropolitan-library-2006-koeki-shoka-jinmeiroku|text]]. The Edo directory *Edo genzai kōeki shoka jinmeiroku* (preface 1836) lists 564 living persons in iroha order with field, address and place of origin, and adds those who had died since the Kyōwa era [[source/tokyo-metropolitan-library-2006-koeki-shoka-jinmeiroku|text]]. Kyoto also had painting-and-calligraphy directories such as the *Kōto shoga jinmeiroku* (皇都書画人名録, preface 1847), which lists 246 painters [[source/ahn-2010-kinsei-kyoto-eshi-kyoju|p. 2063, table 1]]. Historians use successive editions to date careers and moves and to map where artists lived [[source/iwasa-1997-ki-no-hironari-gagyo|pp. 100–101]] [[source/ahn-2010-kinsei-kyoto-eshi-kyoju|p. 2063]]. Many directories are reprinted in Mori Senzō and Nakajima Rijū’s *Kinsei jinmeiroku shūsei* (Benseisha 1976) [[source/ahn-2010-kinsei-kyoto-eshi-kyoju|n. 1–2]].
+
+  In Edo the directory began with the *[[literature/edo-shoka-jinmeiroku|Edo tōji shoka jinmeiroku]]* of 1815, compiled by the fan dealer [[person/senmentei-denshiro|Senmentei]], who also organised *[[term/shogakai|shogakai]]* [[source/senmentei-1815-edo-toji-shoka-jinmeiroku|colophon]] [[source/campbell-1987-tenpoki-zengo-shogakai|pp. 50–51]]. Its notes state that it was made for visitors from other provinces who came to Edo to study, so that they could call on the masters, and that the order of names implies no ranking [[source/senmentei-1815-edo-toji-shoka-jinmeiroku|凡例]]. The edition of 1842 adds visitors who wanted to ask the masters for brushwork [[source/nishimura-1842-koeki-shoka-jinmeiroku-nihen|凡例]]. According to *Edo hanjōki* (1832) the Edo directory sold in the provinces [[source/washihara-2015-bakumatsuki-bunjin-seikei|p. 102]].
+sources:
+  definition:
+    - source: tokyo-metropolitan-library-2006-koeki-shoka-jinmeiroku
+      locator: text
+      accessed: 2026-11-23

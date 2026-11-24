@@ -1,0 +1,48 @@
+public_id: 124849
+title: Okarina in Gestalt einer Frau mit Kind
+creator: anonymous
+created: 600/900
+materials: [ceramic]
+dimensions: [15.5, 12.5]
+institution: museum-rietberg
+inventory_number: RMA 140
+wikidata_id: Q126911343
+metadata:
+  sources: [Wikidata Q126911343 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/mexico
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q126911343
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Urheber%2Ain_unbekannt_Okarina_in_Gestalt_einer_Frau_mit_Kind_Museum_Rietberg_RMA_0140.jpg/1280px-Urheber%2Ain_unbekannt_Okarina_in_Gestalt_einer_Frau_mit_Kind_Museum_Rietberg_RMA_0140.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Urheber*in_unbekannt_Okarina_in_Gestalt_einer_Frau_mit_Kind_Museum_Rietberg_RMA_0140.jpg
+    license: CC0
+    credit: Museum Rietberg
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q126911343
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q126911343
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q126911343
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q126911343
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q126911343
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q126911343

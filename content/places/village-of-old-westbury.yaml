@@ -1,0 +1,22 @@
+public_id: 126989
+name: Village of Old Westbury
+kind: settlement
+parent: new-york
+country_code: US
+location: [-73.5972, 40.7819]
+wikidata_id: Q2710615
+metadata:
+  sources: [Wikidata Q2710615 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2710615
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2710615
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2710615

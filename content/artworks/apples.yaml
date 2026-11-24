@@ -1,0 +1,68 @@
+public_id: 125258
+title_lang: en
+title: Apples
+names:
+  - lang: fr
+    role: original
+    text: Les Pommes
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20262847
+  - lang: de
+    role: translation
+    text: Äpfel
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20262847
+  - lang: es
+    role: translation
+    text: Las manzanas
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20262847
+creator: henri-matisse
+created: 1916
+materials: [oil paint, canvas]
+dimensions: [116.5, 89.5]
+institution: art-institute-of-chicago
+inventory_number: "1948.563"
+wikidata_id: Q20262847
+metadata:
+  sources: [Wikidata Q20262847 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/issy-les-moulineaux
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q20262847
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Henri_matisse%2C_mele%2C_1916.jpg/1280px-Henri_matisse%2C_mele%2C_1916.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_matisse,_mele,_1916.jpg
+    license: CC BY-SA 4.0
+    credit: Francesco Bini
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20262847
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20262847
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20262847
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20262847
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20262847
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20262847

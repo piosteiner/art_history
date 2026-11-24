@@ -1,0 +1,112 @@
+public_id: 124178
+title_lang: en
+title: Illustrated Tale of the Heiji Civil War ： Scroll of the Imperial Visit to Rokuhara
+names:
+  - lang: fr
+    role: translation
+    text: Rouleau illustré du Dit de Heiji (rouleau de la fuite de l'empereur Nijō à Rokuhara)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28803791
+  - lang: ja
+    role: translation
+    text: 平治物語絵巻　六波羅行幸巻
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28803791
+created: 13th century
+created_span: uncertain
+dimensions: [4.22, 95.29]
+institution: tokyo-national-museum
+inventory_number: A-9976
+wikidata_id: Q28803791
+metadata:
+  sources: [Wikidata Q28803791 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Illustrated_Tale_of_the_Heiji_Civil_War_%EF%BC%9A_Scroll_of_the_Imperial_Visit_to_Rokuhara_-_Google_Art_Project.jpg/1280px-Illustrated_Tale_of_the_Heiji_Civil_War_%EF%BC%9A_Scroll_of_the_Imperial_Visit_to_Rokuhara_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Illustrated_Tale_of_the_Heiji_Civil_War_%EF%BC%9A_Scroll_of_the_Imperial_Visit_to_Rokuhara_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Unknown artist – Creator
+provenance:
+  - owner_label: unknown painter
+    acquired: 13th century
+    method: creation
+    label: one scroll of a large set illustrating the Tale of the Heiji; thought to be by a painter of the highest rank; calligraphy in the late style of Guzeiin Noriie
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100148&content_part_id=0&content_pict_id=0
+        note: 同時代の絵巻に比べ縦幅が大きく、抑制のきいた線描、色鮮やかな彩色が非常に特徴的で、当時最高位の絵師が制作を担ったと考えられる。
+        source: emuseum-100148-ja
+        accessed: 2026-11-24
+      - note: Another illustrated scroll-set that grew out of the nobility's interest in the recent past is the Heiji monogatari emaki, dated to the second half of the thirteenth century. … Sadly, no information can be gleaned about the scroll's artist, calligrapher, or patron
+        source: history-of-japanese-art
+        locator: pp. 183–184
+        accessed: 2026-11-24
+  - owner_label: Kinoshita family, lords of the Hiji domain
+    place: hiji
+    label: handed down in the Kinoshita family, daimyo of Hiji in Bungo
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100148&content_part_id=0&content_pict_id=0
+        note: 豊後日出（ぶんごひじ）藩主木下家に伝わり、
+        source: emuseum-100148-ja
+        accessed: 2026-11-24
+  - owner: person/matsudaira-harusato
+    place: matsue
+    label: Matsudaira Fumai, lord of Matsue and tea master; from his time the scroll belonged to the Matsudaira of Matsue
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100148&content_part_id=0&content_pict_id=0
+        note: 松平治郷（まつだいらはるさと）（不味（ふまい）、1751～1818）の頃より出雲松江藩主松平家の所蔵となった。
+        source: emuseum-100148-ja
+        accessed: 2026-11-24
+      - url: https://emuseum.nich.go.jp/detail?langId=en&webView=&content_base_id=100148&content_part_id=0&content_pict_id=0
+        note: In the Edo period (1615-1868), the scroll containing the "Imperial Visit to Rokuhara" was in the possession of the famous tea master Matsudaira Fumai (1751-1818), the governor of Matsue (present-day Shimane Prefecture).
+        source: emuseum-100148-en
+        accessed: 2026-11-24
+  - owner_label: Matsudaira family of Matsue
+    method: inheritance
+    direct: true
+    label: handed down in the family; designated (old) National Treasure in 1931
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100148&content_part_id=0&content_pict_id=0
+        note: その後、代々松平家に伝わり、昭和6年（1931）、旧国宝に指定され、
+        source: emuseum-100148-ja
+        accessed: 2026-11-24
+  - owner: person/matsudaira-naoaki
+    ended: 1938
+    method: inheritance
+    direct: true
+    label: adviser to the Imperial Household Museum
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100148&content_part_id=0&content_pict_id=0
+        note: 昭和13年、帝室博物館顧問などを務めた松平直亮（まつだいらなおあき）（1865～1940）氏より帝室博物館に寄贈された。
+        source: emuseum-100148-ja
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 1938
+    method: gift
+    direct: true
+    place: tokyo
+    label: gift of Matsudaira Naoaki to the Imperial Household Museum (now Tokyo National Museum, A-9976); designation lifted at the gift, renewed 1949, new National Treasure 1955
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100148&content_part_id=0&content_pict_id=0
+        note: 昭和13年、帝室博物館顧問などを務めた松平直亮（まつだいらなおあき）（1865～1940）氏より帝室博物館に寄贈された。寄贈に際して国宝指定は解除されたが、昭和24年（1949）、旧国宝に再指定され、昭和30年に改めて新国宝に指定された。
+        source: emuseum-100148-ja
+        accessed: 2026-11-24
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A9976
+        note: 寄贈者 松平直亮氏寄贈 機関管理番号 A-9976
+        source: tnm-a-9976
+        accessed: 2026-11-24
+identifiers:
+  emuseum: "100148"
+sources:
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q28803791
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q28803791
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q28803791

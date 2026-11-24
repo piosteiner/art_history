@@ -1,0 +1,23 @@
+public_id: 124275
+name: Lanxi Daolong
+given_name: Lanxi
+family_name: Daolong
+kind: person
+birth: 1213
+death: 1278-08-20
+wikidata_id: Q357988
+metadata:
+  sources: [Wikidata Q357988 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q357988
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q357988
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q357988

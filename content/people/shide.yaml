@@ -1,0 +1,11 @@
+public_id: 124766
+name: Shide
+kind: person
+wikidata_id: Q752964
+metadata:
+  sources: [Wikidata Q752964 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q752964

@@ -1,0 +1,18 @@
+public_id: 123011
+name: Masolino da Panicale
+given_name: Masolino
+family_name: da Panicale
+birth: 1383
+death: c. 1447
+wikidata_id: Q318117
+metadata:
+  sources: [Wikidata Q318117 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q318117
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q318117

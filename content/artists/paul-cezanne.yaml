@@ -123,6 +123,15 @@ relationships:
       - accessed: 2026-10-28
         property: P135
         wikidata: Q35548
+  - type: married_to
+    to: person/marie-hortense-fiquet
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q463803
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q35548
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Paul-Cezanne.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Paul-Cezanne.jpg

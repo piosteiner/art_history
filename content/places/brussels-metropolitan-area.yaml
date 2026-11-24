@@ -1,0 +1,16 @@
+public_id: 124637
+name: Brussels metropolitan area
+kind: site
+location: [4.3525, 50.84667]
+wikidata_id: Q9005
+metadata:
+  sources: [Wikidata Q9005 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q9005
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q9005

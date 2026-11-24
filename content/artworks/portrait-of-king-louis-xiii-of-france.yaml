@@ -1,0 +1,102 @@
+public_id: 122894
+title_lang: en
+title: Portrait of King Louis XIII of France
+creator: frans-pourbus
+created: 1611
+kind: oil painting
+medium: oil on canvas
+dimensions: [159.3, 95.3]
+institution: cleveland-museum-of-art
+inventory_number: "2003.225"
+web_url: https://clevelandart.org/art/2003.225
+images:
+  - url: https://openaccess-cdn.clevelandart.org/2003.225/2003.225_web.jpg
+    source_url: https://clevelandart.org/art/2003.225
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/marie-de-medici
+    acquired: 1610
+    method: commission
+    sources:
+      - url: https://clevelandart.org/art/2003.225
+        note: Commissioned in 1610 by Marie de Medici
+        source: cma-2003-225
+        accessed: 2026-11-24
+  - owner: person/philip-iii-of-spain
+    sources:
+      - url: https://clevelandart.org/art/2003.225
+        note: Philippe III of Spain
+        source: cma-2003-225
+        accessed: 2026-11-24
+  - owner: person/w-j-brigstocke
+    place: carmarthen
+    sources:
+      - url: https://clevelandart.org/art/2003.225
+        note: W. J. Brigstocke of Carmarten
+        source: cma-2003-225
+        accessed: 2026-11-24
+  - owner: person/josiah-wedgwood-iii
+    label: Leith Hill Place, Surrey
+    sources:
+      - url: https://clevelandart.org/art/2003.225
+        note: Josiah Wedgwood III (1795-1880) of Leith Hill Place, Surrey
+        source: cma-2003-225
+        accessed: 2026-11-24
+  - owner: person/margaret-wedgwood
+    method: inheritance
+    direct: true
+    label: wife of Rev. Arthur Charles Vaughan-Williams (1834–1875)
+    sources:
+      - url: https://clevelandart.org/art/2003.225
+        note: By inheritance to Margaret Wedgwood (1843-1937), wife of Rev. Arthur Charles Vaughan-Williams (1834-1875)
+        source: cma-2003-225
+        accessed: 2026-11-24
+  - owner_label: Vaughan-Williams family, Tanhurst House, Leith Hill, Surrey
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2003.225
+        note: By inheritanace to the Vaughan-Williams family of Tanhurst House, Leith Hill, Surrey
+        source: cma-2003-225
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 2002
+    method: auction
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/2003.225
+        note: Acquired at the hotel Drouot in 2002 by Mark Weiss
+        source: cma-2003-225
+        accessed: 2026-11-24
+  - owner: person/mark-weiss
+    role: dealer
+    acquired: 2002
+    method: auction
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2003.225
+        note: Acquired at the hotel Drouot in 2002 by Mark Weiss
+        source: cma-2003-225
+        accessed: 2026-11-24
+  - owner: institution/the-weiss-gallery
+    role: dealer
+    direct: true
+    label: sold to the Cleveland Museum of Art, 2003
+    sources:
+      - url: https://clevelandart.org/art/2003.225
+        note: The Weiss Gallery, sold to the Cleveland Museum of Art, 2003.
+        source: cma-2003-225
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2003
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Mr. and Mrs. William H. Marlatt Fund, inv. 2003.225
+    sources:
+      - url: https://clevelandart.org/art/2003.225
+        note: The Weiss Gallery, sold to the Cleveland Museum of Art, 2003.
+        source: cma-2003-225
+        accessed: 2026-11-24

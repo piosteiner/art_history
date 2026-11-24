@@ -31,6 +31,16 @@ description_md: Emperor of Japan; the era of his reign is [[reiwa-era|Reiwa]] â€
 wikidata_id: Q217096
 metadata:
   sources: [Wikidata Q217096 (retrieved 2026-11-02)]
+relationships:
+  - type: child_of
+    to: person/akihito
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q37979
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q217096
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Emperor_Naruhito_20250611_%2854582524056%2C_cropped%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Emperor_Naruhito_20250611_(54582524056,_cropped).jpg

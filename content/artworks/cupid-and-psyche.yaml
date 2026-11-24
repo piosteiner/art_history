@@ -1,0 +1,207 @@
+public_id: 124636
+title_lang: en
+title: Cupid and Psyche
+names:
+  - lang: nl
+    role: translation
+    text: Love and Psyche
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3201883
+  - lang: fr
+    role: translation
+    text: L'Amour et Psyché
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3201883
+  - lang: de
+    role: translation
+    text: Cupid und Psyche
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3201883
+  - lang: it
+    role: translation
+    text: Amore e Psiche
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3201883
+  - lang: es
+    role: translation
+    text: Cupido y Psique
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3201883
+  - lang: ja
+    role: translation
+    text: クピードーとプシューケー
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3201883
+  - lang: zh
+    role: translation
+    text: 丘比特与普塞克 (大卫)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3201883
+creator: jacques-louis-david
+created: 1817
+materials: [oil paint, canvas]
+dimensions: [184, 242]
+institution: cleveland-museum-of-art
+inventory_number: "1962.37"
+web_url: http://www.clevelandart.org/art/1962.37
+wikidata_id: Q3201883
+metadata:
+  sources: [Wikidata Q3201883 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/brussels-metropolitan-area
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q3201883
+  - type: associated_with
+    to: movement/neoclassicism
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q3201883
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Jacques-Louis_David_-_Cupid_and_Psyche_-_1962.37_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Jacques-Louis_David_-_Cupid_and_Psyche_-_1962.37_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_Cupid_and_Psyche_-_1962.37_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Jacques-Louis David
+provenance:
+  - owner: person/giovanni-battista-sommariva
+    label: his sale, 18–23 February 1839, lot 1, sold to Dubois
+    sources:
+      - url: https://clevelandart.org/art/1962.37
+        note: Giovanni Battista Comte de Sommariva [1760-1826], his sale February 18-23, 1839, sold to Dubois. [1839]
+        source: cma-1962-37
+        accessed: 2026-11-24
+  - owner_label: Dubois
+    role: dealer
+    acquired: 1839-02
+    method: auction
+    direct: true
+    place: paris
+    label: bought at the Sommariva sale, 18–23 February 1839, lot 1
+    sources:
+      - url: https://clevelandart.org/art/1962.37
+        note: (Dubois, Paris, France, February 18-23, 1839, lot 1) [1839]
+        source: cma-1962-37
+        accessed: 2026-11-24
+  - owner: person/james-pourtales-gorgier
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1962.37
+        note: James Alexandre Comte de Pourtalès [1776-1855], Paris. France.
+        source: cma-1962-37
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1865-03-27
+    method: auction
+    direct: true
+    place: paris
+    label: Pourtalès-Gorgier sale, Paris, 27 March 1865, lot 242, ff 1,450
+    price:
+      amount: 1450
+      currency: FRF
+    sources:
+      - url: https://clevelandart.org/art/1962.37
+        note: Pourtalès-Gorgier sale, Paris, France, March 27, 1865 (lot 242), ff 1,450 sold to Madame de Furtado, 1880. [1880]
+        source: cma-1962-37
+        accessed: 2026-11-24
+  - owner_label: Madame de Furtado
+    acquired: 1880
+    place: paris
+    label: Madame de Furtado (1821–1896)
+    sources:
+      - url: https://clevelandart.org/art/1962.37
+        note: Madame de Furtado [1821-1896], Paris, France [1880-?]
+        source: cma-1962-37
+        accessed: 2026-11-24
+  - owner_label: M. Eisenschitz
+    label: named on a label on the work (see distinguishing marks), with a query
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1962.37
+        note: M. Eisenschitz ? (See distinguishing marks label)
+        source: cma-1962-37
+        accessed: 2026-11-24
+  - owner_label: Prince Murat
+    acquired: 1913 or earlier
+    sources:
+      - url: https://clevelandart.org/art/1962.37
+        note: Prince Murat by 1913.
+        source: cma-1962-37
+        accessed: 2026-11-24
+  - owner_label: Princesse Murat
+    sources:
+      - url: https://clevelandart.org/art/1962.37
+        note: Princesse Murat.
+        source: cma-1962-37
+        accessed: 2026-11-24
+  - owner: institution/palais-galliera
+    role: agent
+    acquired: 1961-03-02
+    method: auction
+    direct: true
+    place: paris
+    label: Murat sale, Palais Galliéra, Paris, 2 March 1961, lot 140
+    price:
+      amount: 245000
+      currency: FRF
+      note: '"ff 245,000" as given (1961, after the new franc of 1960)'
+    sources:
+      - url: https://clevelandart.org/art/1962.37
+        note: Murat sale, Palais Galliéra, Paris, France, March 2, 1961 (lot 140), ff 245,000.
+        source: cma-1962-37
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    acquired: 1962
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1962.37
+        note: (Rosenberg & Stiebel, New York, NY sold to the Cleveland Museum of Art) [1962]
+        source: cma-1962-37
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1962
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/1962.37
+        note: The Cleveland Museum of Art, Cleveland, OH [1962]
+        source: cma-1962-37
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3201883
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q3201883
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3201883
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3201883
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3201883
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q3201883

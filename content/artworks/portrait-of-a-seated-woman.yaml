@@ -1,0 +1,51 @@
+public_id: 125257
+title_lang: en
+title: Portrait of a Seated Woman
+names:
+  - lang: nl
+    role: translation
+    text: Portret van een vrouw
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20272364
+creator: antonis-mor
+created: 1560/1570
+created_label: c. 16th century
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [121.8, 88.8]
+institution: art-institute-of-chicago
+inventory_number: "1941.29"
+wikidata_id: Q20272364
+metadata:
+  sources: [Wikidata Q20272364 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Anthonis_Mor_-_Portrait_of_a_Seated_Woman_-_1941.29_-_Art_Institute_of_Chicago.jpg/1280px-Anthonis_Mor_-_Portrait_of_a_Seated_Woman_-_1941.29_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anthonis_Mor_-_Portrait_of_a_Seated_Woman_-_1941.29_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Antonis Mor
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20272364
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20272364
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20272364
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20272364
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20272364
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20272364

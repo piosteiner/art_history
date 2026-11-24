@@ -1,0 +1,51 @@
+public_id: 124073
+title: Nishi Honden, Namura Shrine
+names:
+  - text: Nishi Honden, Namura Jinja
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020402
+  - lang: ja
+    role: translation
+    text: 苗村神社西本殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020402
+created: 1308
+institution: namura-shrine
+location: [136.1277, 35.06428]
+wikidata_id: Q107020402
+metadata:
+  sources: [Wikidata Q107020402 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/ryuo
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Shiga_Namura1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shiga_Namura1.jpg
+    license: Public domain
+    credit: Yusuke.ogawa at Japanese Wikipedia
+provenance:
+  - owner: institution/namura-shrine
+    acquired: 1308
+    method: creation
+    place: ryuo
+    label: "rebuilt 1308 (Tokuji 3: begun 4th day of the 2nd month, ridgepole 19th day of the 3rd month) per the shrine's ridge tag, after a building of 1217; repaired 1476 and later; restored 1957–58; owner today"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1493
+        note: 社蔵の棟札に、建保五年（一二一七）に建立されたこと、徳治三年（一三〇八）二月四日造立始、三月十九日棟上の記があるものがあり … 昭和三十二年～三十三年度の解体修理により、大部分が旧態に復された。 … 所有者名 ： 苗村神社 所有者種別 ： 神社
+        source: kunishitei-102-1493
+        accessed: 2026-11-24
+      - url: https://namurajinjya.ryuoh.org/outline.html
+        note: 現在の西本殿は、社蔵されている当地方最古と言われる徳治三年（1308）の棟札によりますと、建保五年（1217）に修造され、更に徳治三年に再建されたこと
+        source: namura-jinja-outline
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%8B%97%E6%9D%91%E7%A5%9E%E7%A4%BE&oldid=111614181
+        note: 西本殿（国宝） - 徳治3年（1308年）再建。三間社流造、桧皮葺
+        source: wikipedia-ja-namura-jinja
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020402

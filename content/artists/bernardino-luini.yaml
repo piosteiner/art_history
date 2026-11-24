@@ -1,0 +1,18 @@
+public_id: 123004
+name: Bernardino Luini
+given_name: Bernardino
+family_name: Luini
+birth: 1481/1482
+death: 1532
+wikidata_id: Q8537
+metadata:
+  sources: [Wikidata Q8537 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q8537
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q8537

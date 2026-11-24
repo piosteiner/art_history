@@ -1,0 +1,22 @@
+public_id: 126102
+name: Upper Winchendon
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-0.9181, 51.8227]
+wikidata_id: Q2030846
+metadata:
+  sources: [Wikidata Q2030846 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2030846
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2030846
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2030846

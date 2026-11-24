@@ -1,0 +1,23 @@
+public_id: 125213
+name: Marie de' Medici
+given_name: Marie de'
+family_name: Medici
+kind: person
+birth: 1575-04-26
+death: 1642-07-03
+wikidata_id: Q182021
+metadata:
+  sources: [Wikidata Q182021 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q182021
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q182021
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q182021

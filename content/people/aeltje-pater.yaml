@@ -1,0 +1,13 @@
+public_id: 124610
+name: Aeltje Pater
+given_name: Aeltje
+family_name: Pater
+kind: person
+wikidata_id: Q17351632
+metadata:
+  sources: [Wikidata Q17351632 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q17351632

@@ -1,0 +1,36 @@
+public_id: 124327
+title: Jōmon Goddess
+names:
+  - text: Jōmon no Megami
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28693146
+  - lang: ja
+    role: translation
+    text: 縄文の女神
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28693146
+institution: yamagata-prefectural-museum
+web_url: http://megami.town.funagata.yamagata.jp/
+location: [140.3396, 38.25548]
+wikidata_id: Q28693146
+metadata:
+  sources: [Wikidata Q28693146 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/yamagata
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Nishi-no-mae_Iseki_dogu-2.JPG/1280px-Nishi-no-mae_Iseki_dogu-2.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Nishi-no-mae_Iseki_dogu-2.JPG
+    license: CC0
+    credit: Saigen Jiro
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q28693146
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q28693146

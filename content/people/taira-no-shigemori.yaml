@@ -1,0 +1,23 @@
+public_id: 124162
+name: Taira no Shigemori
+given_name: Taira no
+family_name: Shigemori
+kind: person
+birth: 1138
+death: 1179-09-09
+wikidata_id: Q1184985
+metadata:
+  sources: [Wikidata Q1184985 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1184985
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q1184985
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q1184985

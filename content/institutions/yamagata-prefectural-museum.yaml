@@ -1,0 +1,16 @@
+public_id: 124325
+name: Yamagata Prefectural Museum
+kind: museum
+founded: 1971
+wikidata_id: Q4707630
+metadata:
+  sources: [Wikidata Q4707630 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q4707630
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q4707630

@@ -1,0 +1,41 @@
+public_id: 129257
+name: Tokoname
+names:
+  - lang: ja
+    role: original
+    text: 常滑市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q209683
+  - lang: ko
+    role: translation
+    text: 도코나메시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q209683
+  - lang: ru
+    role: translation
+    text: Токонамэ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q209683
+kind: settlement
+parent: aichi-prefecture
+country_code: JP
+location: [136.85433, 34.89611]
+wikidata_id: Q209683
+metadata:
+  sources: [Wikidata Q209683 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q209683
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q209683
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q209683

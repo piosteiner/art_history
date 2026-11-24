@@ -49,6 +49,12 @@ wikidata_id: Q84201
 metadata:
   sources: [Wikidata Q84201 (retrieved 2026-10-19)]
 relationships:
+  - type: child_of
+    to: person/albert-casimir-duke-of-teschen
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q60657
   - type: sibling_of
     to: person/ferdinand-iii-of-tuscany
     sources:

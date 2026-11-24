@@ -1,0 +1,52 @@
+public_id: 124236
+title: The Sixth Patriarch Carrying a Pole
+names:
+  - text: The Sixth Patriarch Carrying a Hoe
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045337
+  - lang: fr
+    role: translation
+    text: Le sixième patriarche Huineng portant un bâton sur l'épaule
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045337
+  - lang: ja
+    role: translation
+    text: 六祖挟担図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045337
+creator: zhi-weng
+created: 1254/1256
+created_label: c. 1250s
+created_span: uncertain
+institution: gotoh-museum
+wikidata_id: Q107045337
+metadata:
+  sources: [Wikidata Q107045337 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/huineng
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107045337
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Huineng_with_rod.jpg/1280px-Huineng_with_rod.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Huineng_with_rod.jpg
+    license: Public domain
+    credit: Zhiweng
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107045337
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q107045337
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107045337

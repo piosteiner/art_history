@@ -168,6 +168,15 @@ relationships:
       - accessed: 2026-10-13
         property: P135
         wikidata: Q5593
+  - type: child_of
+    to: person/maria-picasso-y-lopez
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q17376029
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q5593
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/98/Pablo_picasso_1.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Pablo_picasso_1.jpg

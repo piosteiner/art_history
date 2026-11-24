@@ -1,0 +1,49 @@
+public_id: 123989
+title: Sanmon, Zuiryu-ji
+names:
+  - lang: fr
+    role: translation
+    text: porte de la montagne du temple Zuiryū
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020332
+  - lang: ja
+    role: translation
+    text: 瑞龍寺山門
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020332
+created: 1820
+institution: zuiryu-ji-takaoka
+location: [137.0115, 36.73555]
+wikidata_id: Q107020332
+metadata:
+  sources: [Wikidata Q107020332 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/takaoka
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/%E7%91%9E%E9%BE%8D%E5%AF%BA_-_panoramio.jpg/1280px-%E7%91%9E%E9%BE%8D%E5%AF%BA_-_panoramio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E7%91%9E%E9%BE%8D%E5%AF%BA_-_panoramio.jpg
+    license: CC BY 3.0
+    credit: くろふね
+provenance:
+  - owner: institution/zuiryu-ji-takaoka
+    acquired: 1820
+    method: creation
+    place: takaoka
+    label: gate rebuilt 1814–1820 under master carpenter Yamagami Zen'emon Yoshinobu, replacing the gate of 1645 (moved in the Manji era) that burned in 1746; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/712
+        note: 山門は、文政三年（一八二〇）に竣工した。三間一戸の二重門の形式で禅宗様を基調としており … 所有者名 ： 瑞龍寺 所有者種別 ： 寺院
+        source: kunishitei-102-712
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%91%9E%E9%BE%8D%E5%AF%BA_(%E9%AB%98%E5%B2%A1%E5%B8%82)&oldid=111488685
+        note: 現在の門は文政3年（1820年）に竣工したものである。 … 正保2年（1645年）竣工した山門は万治年間（1658年 - 1661年）に場所を移して建てかえられたが、延享3年（1746年）の火災で焼失した。長らく仮の門が建てられていたが、17世紀天外和尚や町年寄の懇願により、山上善右衛門善順を棟梁として文化11年（1814年）建設着手、文政元年（1818年）に焼失した門と同様の古式な禅宗様式で再建された
+        source: wikipedia-ja-zuiryu-ji-takaoka
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020332

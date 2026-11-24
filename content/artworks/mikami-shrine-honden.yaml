@@ -1,0 +1,43 @@
+public_id: 124085
+title: Mikami Shrine Honden
+names:
+  - lang: ja
+    role: translation
+    text: 御上神社本殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020409
+created: 1275/1332
+institution: mikami-shrine
+location: [136.0273, 35.04999]
+wikidata_id: Q107020409
+metadata:
+  sources: [Wikidata Q107020409 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/yasu
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Mikami-jinja_honden-1.JPG/1280px-Mikami-jinja_honden-1.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Mikami-jinja_honden-1.JPG
+    license: CC0
+    credit: Saigen Jiro
+provenance:
+  - owner: institution/mikami-shrine
+    acquired: 1275/1332
+    method: creation
+    place: yasu
+    label: main hall built in the late Kamakura period (dated by style; no record of its building); veranda and front roof altered c. 1337 (a base stone dated Kenmu 4); dismantled and repaired from 1899; the shrine is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1440
+        note: 御上神社は古事記にも記事が見えるが、その創立及び本殿の建立年代は明らかでなく、本殿はその様式上、鎌倉時代の造立と考えられている。… 時代 ： 鎌倉後期 … 西暦 ： 1275-1332 … その一つは建武四年（一三三七）の刻銘がある。縁廻り及び向拝はこの時の改造らしく … 所有者名 ： 御上神社 所有者種別 ： 神社
+        source: kunishitei-102-1440
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111614245
+        note: 1899年（明治32年）に本殿・拝殿・楼門が特別保護建造物に指定された機会に国庫補助を受けて解体修理が行われた
+        source: wikipedia-ja-111614245
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020409

@@ -1,0 +1,99 @@
+public_id: 124074
+title: Hikone Castle Keep Tower
+names:
+  - lang: fr
+    role: translation
+    text: tenshu du château de Hikone
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020403
+  - lang: ja
+    role: translation
+    text: 彦根城天守
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020403
+created: 1606
+location: [136.2518, 35.27646]
+wikidata_id: Q107020403
+metadata:
+  sources: [Wikidata Q107020403 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/hikone
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/%E5%BD%A6%E6%A0%B9%E5%9F%8E%E3%81%AE%E5%A4%A9%E5%AE%88%E9%96%A3.jpg/1280px-%E5%BD%A6%E6%A0%B9%E5%9F%8E%E3%81%AE%E5%A4%A9%E5%AE%88%E9%96%A3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%BD%A6%E6%A0%B9%E5%9F%8E%E3%81%AE%E5%A4%A9%E5%AE%88%E9%96%A3.jpg
+    license: CC BY-SA 4.0
+    credit: 高菜明太
+provenance:
+  - owner: person/ii-naokatsu
+    acquired: 1606
+    method: commission
+    place: hikone
+    label: castle begun 1603 by Ii Naotsugu (later Naokatsu); main bailey and keep finished end of 1606 (ink inscription of 1606), the keep reputedly moved from Ōtsu Castle; seat of the Ii family until the Meiji period
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1393
+        note: 彦根城は井伊家歴代の居城であって、井伊直継（後に直勝と改める）が慶長八年に工を起こし、同十一年（一六〇六）末には本丸及び天守がなり … 天守からは慶長十一年の墨書が発見されているが、創築にあたり大津城天守を移建したといわれる。
+        source: kunishitei-102-1393
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%BD%A6%E6%A0%B9%E5%9F%8E&oldid=111661109
+        note: 1606年（慶長11年）2期までの工事が完了し、同年の天守完成と同じ頃に直継が入城した。
+        source: wikipedia-ja-hikone-castle
+        accessed: 2026-11-24
+  - owner: institution/ministry-of-the-army
+    acquired_label: after the abolition of the domains (Meiji period)
+    method: transfer
+    direct: true
+    label: kept as an army facility; later to be sold to private buyers and demolished because of its age
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%BD%A6%E6%A0%B9%E5%9F%8E&oldid=111661109
+        note: 明治維新後、廃藩置県によって各藩の城郭はそれまでの機能を失い … 彦根城は当初陸軍省管轄下の施設となったため維持された。しかし、老朽化のため民間へ売却されて破却される予定となった
+        source: wikipedia-ja-hikone-castle
+        accessed: 2026-11-24
+  - owner: institution/ministry-of-the-imperial-household
+    acquired: 1878
+    method: transfer
+    direct: true
+    label: spared after Ōkuma Shigenobu, attending Emperor Meiji on his visit to Hikone in 1878, pleaded for it; made the imperial estate Hikone Goryōsho
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1393
+        note: 明治十一年には危うく取り壊しをまぬがれて今日に及んでいる。
+        source: kunishitei-102-1393
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%BD%A6%E6%A0%B9%E5%9F%8E&oldid=111661109
+        note: 明治11年の明治天皇の彦根行幸の際に供奉していた参議大隈重信が天皇に働きかけた結果、天守や櫓の保存が決定し、皇室付属地彦根御料所となり
+        source: wikipedia-ja-hikone-castle
+        accessed: 2026-11-24
+  - owner: person/ii-naonori
+    method: gift
+    direct: true
+    label: granted by the imperial house to the last lord of the Hikone domain (date not given)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%BD%A6%E6%A0%B9%E5%9F%8E&oldid=111661109
+        note: 皇室付属地彦根御料所となり、最終的には最後の彦根藩主であった井伊直憲に下賜されて保存された
+        source: wikipedia-ja-hikone-castle
+        accessed: 2026-11-24
+  - owner: place/hikone
+    acquired: 1944
+    method: gift
+    place: hikone
+    label: gift of the Ii family, with the castle and its grounds; owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1393
+        note: 所有者名 ： 彦根市 所有者種別 ： 市区町村
+        source: kunishitei-102-1393
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%BD%A6%E6%A0%B9%E5%9F%8E&oldid=111661109
+        note: 1944年（昭和19年）、井伊家から彦根市へ、彦根城およびその一帯が寄付される。
+        source: wikipedia-ja-hikone-castle
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/w/index.php?title=Hikone_Castle&oldid=1374333849
+        note: The castle and its grounds were donated by the Ii clan to the city of Hikone in 1944.
+        source: wikipedia-en-hikone-castle-2
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020403

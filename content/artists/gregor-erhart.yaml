@@ -7,6 +7,16 @@ death: 1540
 wikidata_id: Q675137
 metadata:
   sources: [Wikidata Q675137 (retrieved 2026-11-09)]
+relationships:
+  - type: child_of
+    to: artist/michel-erhart
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q675137
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q473508
 sources:
   birth:
     - accessed: 2026-11-09

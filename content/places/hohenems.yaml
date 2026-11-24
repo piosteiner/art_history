@@ -1,0 +1,35 @@
+public_id: 127423
+name: Hohenems
+names:
+  - lang: zh
+    role: translation
+    text: 霍恩埃姆斯
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q698591
+  - lang: ru
+    role: translation
+    text: Хоэнемс
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q698591
+kind: settlement
+parent: austria
+country_code: AT
+location: [9.66667, 47.36667]
+wikidata_id: Q698591
+metadata:
+  sources: [Wikidata Q698591 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q698591
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q698591
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q698591

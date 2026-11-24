@@ -1,0 +1,80 @@
+public_id: 122907
+title_lang: en
+title: Ivory Plaque with Enthroned Mother of God ("The Stroganoff Ivory")
+created: 950/1025
+kind: ivory carving
+medium: ivory
+dimensions: [25.3, 17.2, 1.8]
+institution: cleveland-museum-of-art
+inventory_number: "1925.1293"
+web_url: https://clevelandart.org/art/1925.1293
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1925.1293/1925.1293_web.jpg
+    source_url: https://clevelandart.org/art/1925.1293
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner_label: Bastard collection, Paris
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1925.1293
+        note: Bastard Collection, Paris, France
+        source: cma-1925-1293
+        accessed: 2026-11-24
+  - owner: person/francis-douce
+    ended: 1834
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1925.1293
+        note: Francis Douce, London (d. 1834) [?-1834]
+        source: cma-1925-1293
+        accessed: 2026-11-24
+  - owner_label: Douce and Meyrick collection
+    acquired: 1836-06
+    sources:
+      - url: https://clevelandart.org/art/1925.1293
+        note: Douce and Meyrick Collection [June 1836]
+        source: cma-1925-1293
+        accessed: 2026-11-24
+  - owner_label: Count Stroganoff (1794–1882), Rome
+    place: rome
+    sources:
+      - url: https://clevelandart.org/art/1925.1293
+        note: Collection of Count Stroganoff (1794-1882), Rome, Italy
+        source: cma-1925-1293
+        accessed: 2026-11-24
+  - owner_label: Malcolm collection
+    sources:
+      - url: https://clevelandart.org/art/1925.1293
+        note: Malcolm Collection, sold at Christie's May 1, 1913, No. 20 [?-1913]
+        source: cma-1925-1293
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1913-05-01
+    method: auction
+    direct: true
+    label: sale of the Malcolm collection, 1 May 1913, no. 20
+    sources:
+      - url: https://clevelandart.org/art/1925.1293
+        note: Malcolm Collection, sold at Christie's May 1, 1913, No. 20
+        source: cma-1925-1293
+        accessed: 2026-11-24
+  - owner: institution/tartaglia-co
+    role: dealer
+    sources:
+      - url: https://clevelandart.org/art/1925.1293
+        note: Tartaglia & Co. Sold to the Cleveland Museum of Art [?-1925]
+        source: cma-1925-1293
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1925
+    method: gift
+    direct: true
+    place: cleveland
+    label: "sold by Tartaglia & Co. to the museum; credit line: Gift of J. H. Wade"
+    sources:
+      - url: https://clevelandart.org/art/1925.1293
+        note: Tartaglia & Co. Sold to the Cleveland Museum of Art — The Cleveland Museum of Art, Cleveland, OH [1925-] — Gift of J. H. Wade
+        source: cma-1925-1293
+        accessed: 2026-11-24

@@ -1,0 +1,18 @@
+public_id: 124185
+name: Li Di
+given_name: Li
+family_name: Di
+birth: 1100
+death: 1197
+wikidata_id: Q837459
+metadata:
+  sources: [Wikidata Q837459 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q837459
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q837459

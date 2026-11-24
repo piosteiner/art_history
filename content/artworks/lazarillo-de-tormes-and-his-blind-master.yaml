@@ -1,0 +1,136 @@
+public_id: 124648
+title_lang: en
+title: Lazarillo de Tormes and His Blind Master
+names:
+  - lang: fr
+    role: translation
+    text: Lazarillo de Tormes et son maître aveugle
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60474641
+creator: theodule-ribot
+created: 1870/1880
+created_label: c. 19th century
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [91.5, 73.7]
+institution: cleveland-museum-of-art
+inventory_number: "1980.282"
+web_url: https://clevelandart.org/art/1980.282
+wikidata_id: Q60474641
+metadata:
+  sources: [Wikidata Q60474641 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/%28Toulouse%29_Lazarillo_de_Tormes_et_son_ma%C3%AEtre_aveugle_%28l%27aveugle_%C3%A0_la_cruche_verte_et_l%27enfant%29_-_Th%C3%A9odule_Ribot_-_Cleveland_Museum_of_Art%2C_Ohio%2C_U.S.A.jpg/1280px-%28Toulouse%29_Lazarillo_de_Tormes_et_son_ma%C3%AEtre_aveugle_%28l%27aveugle_%C3%A0_la_cruche_verte_et_l%27enfant%29_-_Th%C3%A9odule_Ribot_-_Cleveland_Museum_of_Art%2C_Ohio%2C_U.S.A.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:(Toulouse)_Lazarillo_de_Tormes_et_son_ma%C3%AEtre_aveugle_(l%27aveugle_%C3%A0_la_cruche_verte_et_l%27enfant)_-_Th%C3%A9odule_Ribot_-_Cleveland_Museum_of_Art,_Ohio,_U.S.A.jpg
+    license: Public domain
+    credit: Didier Descouens
+provenance:
+  - owner_label: E. Oppenheim
+    ended: 1897
+    label: consignor of the 1897 sale; perhaps Eduard Freiherr von Oppenheim, but the Bankhaus Sal. Oppenheim archives show no trace
+    sources:
+      - url: https://clevelandart.org/art/1980.282
+        note: (E. Oppenheim sale, Hôtel Drouot, May 11, 1897, no. 22, unsold — "E. Oppenheim" may refer to Eduard Freiherr von Oppenheim of the German banking family.
+        source: cma-1980-282
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    not_sold: true
+    acquired: 1897-05-11
+    method: auction
+    direct: true
+    place: paris
+    label: E. Oppenheim sale, no. 22, as "L'aveugle et don Guzman d'Alfarache"; unsold
+    sources:
+      - url: https://clevelandart.org/art/1980.282
+        note: (E. Oppenheim sale, Hôtel Drouot, May 11, 1897, no. 22, unsold — According to Hôtel Drouot's annotated copy of the 1897 sale catalogue , the painting failed to sell.
+        source: cma-1980-282
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1911
+    place: paris
+    label: possibly the "L'Aveugle" of the 1911 Ribot exhibition at Bernheim-Jeune
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1980.282
+        note: (Possibly Bernheim-Jeune, Paris) [1911] — A 1911 exhibition of works by Ribot at Bernheim-June includes a painting titled L’Aveugle for which no dimensions or descriptions are provided.
+        source: cma-1980-282
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1918-12-04
+    method: auction
+    place: paris
+    label: sale, 4–5 December 1918, no. 8, as "L'aveugle et don Guzman d'Alfarache"
+    sources:
+      - url: https://clevelandart.org/art/1980.282
+        note: (Sale, Galerie Georges Petit, Paris, December 4-5, 1918, no. 8)
+        source: cma-1980-282
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1973-11-07
+    method: auction
+    place: paris
+    label: sale, no lot number, reproduced on p. 3
+    sources:
+      - url: https://clevelandart.org/art/1980.282
+        note: (Hôtel Drouot, Nov. 7, 1973 [no lot number, reproduced on page 3], sold to Peter Wengraf on behalf of Noah L. and Muriel S. Butkin)
+        source: cma-1980-282
+        accessed: 2026-11-24
+  - owner: person/peter-wengraf
+    role: agent
+    acquired: 1973-11-07
+    method: auction
+    direct: true
+    label: bought at the sale on behalf of Noah L. and Muriel S. Butkin
+    sources:
+      - url: https://clevelandart.org/art/1980.282
+        note: sold to Peter Wengraf on behalf of Noah L. and Muriel S. Butkin
+        source: cma-1980-282
+        accessed: 2026-11-24
+  - owner: person/noah-l-butkin
+    co_owners: [person/muriel-s-butkin]
+    acquired: 1973
+    method: auction
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1980.282
+        note: Noah L. [1918-1980] and Muriel S. Butkin [1915-2008], Cleveland, OH, bequeathed to the Cleveland Museum of Art as a result of disclaimer by Muriel S. Butkin [1973-1980]
+        source: cma-1980-282
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1980
+    method: bequest
+    direct: true
+    place: cleveland
+    label: bequest of Noah L. Butkin, as a result of disclaimer by Muriel S. Butkin
+    sources:
+      - url: https://clevelandart.org/art/1980.282
+        note: bequeathed to the Cleveland Museum of Art as a result of disclaimer by Muriel S. Butkin — The Cleveland Museum of Art, Cleveland, OH [1980-]
+        source: cma-1980-282
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60474641
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60474641
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60474641
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60474641
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60474641

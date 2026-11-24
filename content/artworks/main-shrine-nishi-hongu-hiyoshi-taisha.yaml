@@ -1,0 +1,54 @@
+public_id: 124078
+title: Main Shrine, Nishi-hongū, Hiyoshi Taisha
+names:
+  - lang: ja
+    role: translation
+    text: 日吉大社西本宮本殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020405
+created: 1586
+institution: hiyoshi-taisha
+location: [135.8621, 35.07171]
+wikidata_id: Q107020405
+metadata:
+  sources: [Wikidata Q107020405 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/otsu
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Hiyoshi-taisha_nishihongu-honden01n4592.jpg/1280px-Hiyoshi-taisha_nishihongu-honden01n4592.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hiyoshi-taisha_nishihongu-honden01n4592.jpg
+    license: CC BY 2.5
+    credit: 663highland
+provenance:
+  - owner: institution/hiyoshi-taisha
+    acquired: 1586
+    method: creation
+    place: otsu
+    label: main hall of the Nishi-hongū rebuilt 1586 (Tenshō 14) after the shrine had burnt down again; exterior largely repaired 1597; the shrine is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1344
+        note: 社殿は創立以来たびたび焼失と造替とを繰り返した。現在の社殿は西本宮本殿が天正十四年（一五八六）、東本宮本殿が文禄四年（一五九五）の造立である。… 西本宮本殿では慶長二年（一五九七）に外部を大修理している … 所有者名 ： 日吉大社 所有者種別 ： 神社
+        source: kunishitei-102-1344
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111651670
+        note: 元亀2年（1571年）、織田信長の比叡山焼き討ちにより、日吉社も全て焼かれて灰燼に帰し、中世日吉社は終焉した … 現在見られる建造物は安土桃山時代以降、天正14年（1586年）から慶長2年（1597年）にかけて再建されたものである
+        source: wikipedia-ja-111651670
+        accessed: 2026-11-24
+  - owner: institution/enryaku-ji-temple
+    role: custodian
+    acquired: late 17th century
+    ended: 1868
+    place: otsu
+    label: Enryaku-ji took over the shrine's management (after the Jōkyō affair of 1684 the shrine families kept only the right to serve the rites); the shrine left Enryaku-ji's control with the separation of Shinto and Buddhism in 1868
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111651670
+        note: 17世紀後半には、日吉社は祭事権だけでなく管理権を延暦寺側に奪われつつあり … 社家側はまつりを奉仕する以外のすべての権限を失った … 日吉社は率先して仏教色を一掃すると、延暦寺から独立して社名を日吉神社（ひえじんじゃ）とした。彼らの破壊行為により日吉社は延暦寺の支配下から外れ
+        source: wikipedia-ja-111651670
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020405

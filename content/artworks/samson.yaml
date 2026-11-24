@@ -1,0 +1,166 @@
+public_id: 124674
+title_lang: en
+title: Samson
+creator: valentin-de-boulogne
+created: 1630/1631
+created_label: c. 1630s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [135.6, 102.8]
+institution: cleveland-museum-of-art
+inventory_number: "1972.50"
+web_url: https://clevelandart.org/art/1972.50
+wikidata_id: Q60472329
+metadata:
+  sources: [Wikidata Q60472329 (retrieved 2026-11-24)]
+relationships:
+  - type: associated_with
+    to: movement/caravaggisti
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q60472329
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Valentin_de_Boulogne_-_Samson_-_1972.50_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Valentin_de_Boulogne_-_Samson_-_1972.50_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Valentin_de_Boulogne_-_Samson_-_1972.50_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Valentin de Boulogne
+provenance:
+  - owner: person/francesco-barberini
+    acquired: 1630-12
+    method: commission
+    place: rome
+    label: commissioned December 1630, paid July 1631 (25 scudi); inventoried August 1631 as Poussin
+    sources:
+      - url: https://clevelandart.org/art/1972.50
+        note: This painting was commissioned by Cardinal Francesco Barberini in December 1630 ... In July 1631, 25 scudi were paid to Valentin ... One month later, the painting was incorrectly inventoried as by Poussin
+        source: cma-1972-50
+        accessed: 2026-11-24
+  - owner: person/antonio-barberini
+    acquired: 1633 or earlier
+    place: rome
+    label: inventoried 1633 with Valentin's David with the Head of Goliath
+    sources:
+      - url: https://clevelandart.org/art/1972.50
+        note: In 1633 the painting was inventoried, together with Valentin’s David with the Head of Goliath, as in the collection of Cardinal Antonio Barberini, Francesco’s younger brother
+        source: cma-1972-50
+        accessed: 2026-11-24
+  - owner: person/francesco-barberini
+    acquired: 1649 or earlier
+    place: rome
+    label: apparently again in Francesco's collection, inventory 1649, no. 676, as Valentin
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1972.50
+        note: in 1649, the painting was apparently again in the collection of Francesco [III.inv. 49; no. 676], as Valentin.
+        source: cma-1972-50
+        accessed: 2026-11-24
+  - owner_label: Barberini family, Rome
+    ended: 1812
+    method: inheritance
+    place: rome
+    label: by inheritance within the Barberini family; inventoried 1738 as Andrea Camassei
+    sources:
+      - url: https://clevelandart.org/art/1972.50
+        note: "Cardinals Francesco [1597–1679] and Antonio Barberini [1607–1671], by inheritance within the Barberini family, Rome.  [date: 1631–1812] — The painting was incorrectly inventoried again, this time as by Andrea Camassei, in 1738"
+        source: cma-1972-50
+        accessed: 2026-11-24
+  - owner_label: Colonna di Sciarra family, Rome
+    acquired: 1812
+    method: inheritance
+    place: rome
+    label: division of the Barberini property after litigation
+    sources:
+      - url: https://clevelandart.org/art/1972.50
+        note: "Colonna di Sciarra family, Rome.  [date: 1812–1899] — In 1812, after complicated litigation, the property of the Barberini family was divided between the Barberini and Sciarra branches of the family, and the Valentin entered the Colonna di Sciarra collection in Rome."
+        source: cma-1972-50
+        accessed: 2026-11-24
+  - owner: person/maffeo-barberini-colonna-di-sciarra
+    method: inheritance
+    place: rome
+    label: in debt to Edoardo Almagià among others; 133 pictures sold at auction 1899
+    sources:
+      - url: https://clevelandart.org/art/1972.50
+        note: Eventually, the painting ended up in the possession of Maffeo Barberini Colonna di Sciarra, who in 1891-1892 sold part of his collection illegally for export. ... In 1897, Sciarra owed nearly two million lire to four parties, including Ing. Dr. Edoardo Almagià. 126 paintings were to be accepted as payment against Sciarra’s debts; however, for unknown reasons, the contract was never signed, and instead, 133 pictures were sold at auction at Galleria Sangiorgi in March 1899.
+        source: cma-1972-50
+        accessed: 2026-11-24
+  - owner: institution/galleria-sangiorgi
+    role: agent
+    acquired: 1899-03-28
+    method: auction
+    direct: true
+    place: rome
+    label: Sciarra sale, fifth sale, 28 March 1899, no. 363, as Caroselli
+    sources:
+      - url: https://clevelandart.org/art/1972.50
+        note: (Galleria Sangiorgi, Rome, Sciarra sale, March 28, 1899, fifth sale, no. 363, sold to Edoardo Almagià). — The painting is attributed to Caroselli in the sale catalogue.
+        source: cma-1972-50
+        accessed: 2026-11-24
+  - owner: person/edoardo-almagia
+    acquired: 1899-03-28
+    method: auction
+    direct: true
+    place: rome
+    label: engineer; manuscript catalogue of his collection, no. 15, as Caroselli
+    sources:
+      - url: https://clevelandart.org/art/1972.50
+        note: "Ing. Dr. Edoardo Almagià [b. 1841], Rome, by descent to his son Roberto Almagià, or grandson, Edoardo Almagià.  [date: c. 1899–1921] — A manuscript catalogue of Almagià’s collection attributes to the painting (No. 15) to Caroselli."
+        source: cma-1972-50
+        accessed: 2026-11-24
+  - owner: person/roberto-almagia
+    acquired: 1921
+    ended: 1947
+    method: inheritance
+    place: rome
+    label: no evidence of his ownership beyond the likely inheritance
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1972.50
+        note: "Probably Roberto Almagià [1883-1947], by descent to his son, Edoardo Almagià.  [date: probably 1921–1947] — There is no evidence that Roberto Almagià owned this painting, other than the likelihood that he inherited the painting from his father"
+        source: cma-1972-50
+        accessed: 2026-11-24
+  - owner: person/edoardo-almagia-2
+    acquired: 1947
+    method: inheritance
+    place: rome
+    label: by descent (from his father Roberto or grandfather Edoardo)
+    sources:
+      - url: https://clevelandart.org/art/1972.50
+        note: Edoardo Almagià [b. 1928], Rome, sold to the Cleveland Museum of Art
+        source: cma-1972-50
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1972
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1972.50
+        note: "The Cleveland Museum of Art, Cleveland, Ohio  [date: 1972–present]"
+        source: cma-1972-50
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60472329
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60472329
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60472329
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60472329
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60472329
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60472329

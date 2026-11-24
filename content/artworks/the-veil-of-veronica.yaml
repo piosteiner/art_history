@@ -1,0 +1,169 @@
+public_id: 122953
+title_lang: en
+title: The Veil of Veronica
+creator: domenico-fetti
+created: 1618/1622
+created_label: c. 17th century
+created_span: uncertain
+materials: [oil paint, panel]
+institution: national-gallery-of-art
+inventory_number: 1952.5.7
+wikidata_id: Q20176978
+metadata:
+  sources: [Wikidata Q20176978 (retrieved 2026-11-23)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3b/Domenico_Fetti_-_The_Veil_of_Veronica.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Domenico_Fetti_-_The_Veil_of_Veronica.jpg
+    license: Public domain
+    credit: Domenico Fetti
+provenance:
+  - owner: person/ferdinando-gonzaga-duke-of-mantua
+    acquired: 1627 or earlier
+    place: mantua
+    label: "6th Duke of Mantua; 1627 Mantua inventory: 'il sudario di Nostro Signore di mano del Sig. Perfetti' (most likely a mistranscription of 'per mano di Fetti')"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: Ferdinando Gonzaga, 6th duke of Mantua [1587-1626], by 1627;[1] — The relevant entry reads "il sudario di Nostro Signore di mano del Sig. Perfetti."
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+  - owner: person/ferdinando-carlo-gonzaga
+    method: inheritance
+    direct: true
+    place: mantua
+    label: 10th and last Duke of Mantua; in the 1706 Mantua inventory; in exile in Venice and Padua after the fall of Mantua in 1707, died intestate
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: by inheritance to Ferdinando Carlo Gonzaga, 10th and last duke of Mantua [1650-1708], in Mantua 1706, and Venice 1709;[2] — Following the fall of Mantua to imperial troops in 1707, Ferdinando Carlo went into exile first in Venice and later in Padua, where he died intestate.
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+  - owner: person/ferdinando-carlo-gonzaga
+    role: estate
+    acquired_label: posthumous Venice inventory, 1709
+    direct: true
+    place: venice
+    label: in the posthumous 1709 Venice inventory; the collection shown in the Palazzo Michiel dalle Colonne while the courts sought the legal heir; works not taken by heirs or ceded to Charles of Lorraine sold on the Venetian market
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: For the painting's inclusion in the 1706 Mantua inventory and the posthumous 1709 Venice inventory … his art collection was exhibited in one of his Venetian properties, the Palazzo Michiel dalle Colonne.
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+  - owner: person/pierre-crozat
+    acquired: 1728 or earlier
+    place: paris
+    label: named as owner on Charles Simonneau's engraving in the Recueil Crozat (1729–1742); no. 113 in his posthumous inventory (1740)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: Pierre Crozat [1665-1740], Paris, by 1728;[3] — The Veil of Veronica is no. 113 in Crozat's posthumous inventory (1740)
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+  - owner: person/louis-francois-crozat
+    co_owners: [person/joseph-antoine-crozat]
+    method: inheritance
+    direct: true
+    place: paris
+    label: his nephews, the marquis du Châtel and the baron de Tugny; in the 1751 sale listed among the works of Louis-François ('M. Crozat')
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: by inheritance to his nephews, Louis-François Crozat, marquis du Châtel [1691-1750], Paris, and Joseph Antoine Crozat, baron de Tugny [1696-1751];
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+  - owner_label: Crozat collection sale, Paris
+    role: agent
+    acquired: 1751-06-15
+    method: auction
+    direct: true
+    place: paris
+    label: Crozat collection sale, Paris, 15 June 1751, no. 119, organised by Louis-Antoine Crozat, baron de Thiers (1699–1770); catalogue by Mariette
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: (Crozat collection sale, Paris, 15 June 1751, no. 119);[4] — The sale was organized by the surviving brother, Louis-Antoine Crozat, baron de Thiers [1699-1770].
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+  - owner: person/charles-cressent
+    acquired: 1751-06-15
+    method: auction
+    direct: true
+    place: paris
+    label: buyer per Stuffmann (annotated sale catalogue); not in Cressent's sales or inventories published by Ballot (1919)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: Charles Cressent [1685-1768].[5] — Stuffmann lists Cressent as the purchaser, presumably on the basis of an annotated copy of Mariette's sale catalogue.
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+  - owner: person/adolphe-thiers
+    place: paris
+    label: according to the 1925 Ehrich Gallery catalogue only; not in Blanc's catalogue of his collection — perhaps a confusion with the baron de Thiers
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: Possibly Adolphe Thiers [1797-1877], Paris.[6] — According to the catalogue of the 1925 exhibition at Ehrich Gallery that included the painting.
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+  - owner: institution/ehrich-galleries
+    role: dealer
+    acquired_label: in 1925
+    place: new-york-city
+    label: exhibited 1925 as attributed to Velázquez
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: (Ehrich Gallery, New York), in 1925.[7] — The painting is described as attributed to Velázquez in the 1925 exhibition catalogue
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+  - owner: person/arthur-l-nicholson
+    acquired_label: in 1935
+    place: bournemouth
+    label: lent to the 65th Church Congress Exhibition, Bournemouth, 1935, no. 106
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: Arthur L. Nicholson, Bournemouth, in 1935.[8] — Lent by Nicholson to 65th Church Congress Exhibition, Bournemouth, England, 1935, no. 106.
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+  - owner: person/paul-drey
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: (Paul Drey, New York);
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1943
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: purchased 1943 by the Samuel H. Kress Foundation, New York;[9]
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41617.html
+        note: gift 1952 to NGA.
+        source: nga-1952-5-7
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20176978
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20176978
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20176978
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20176978
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20176978

@@ -1,0 +1,23 @@
+public_id: 122866
+name: Giacomo Corner
+given_name: Giacomo
+family_name: Corner
+kind: person
+birth: 1483
+death: 1542
+wikidata_id: Q109860606
+metadata:
+  sources: [Wikidata Q109860606 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q109860606
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q109860606
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q109860606

@@ -1,0 +1,53 @@
+public_id: 124289
+title: Portrait of Kanesawa Sadaaki
+names:
+  - lang: ja
+    role: translation
+    text: 金沢貞顕像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045377
+institution: shomyo-ji
+wikidata_id: Q107045377
+metadata:
+  sources: [Wikidata Q107045377 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/hojo-sadaaki
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107045377
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Houjou_Sadaaki.JPG/1280px-Houjou_Sadaaki.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Houjou_Sadaaki.JPG
+    license: Public domain
+    credit: Unknown
+provenance:
+  - owner: institution/shomyo-ji
+    acquired: 1333-12-31 or earlier
+    acquired_label: Kamakura period, painted close to the sitter's lifetime
+    place: yokohama
+    label: one of the 'Four Generals' portraits of the Kanazawa Hōjō handed down at their family temple Shōmyō-ji (Kanazawa, Yokohama); sitter Kanazawa Sadaaki, Sanetoki's grandson
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/151
+        note: 本図は″四将像″の名で金沢北条氏の菩提寺、称名寺【しようみようじ】に伝わったもので、歴史上著名な武人の一門四代にわたる肖像画として、文化史的にもきわめて価値の高いものである。画像の製作時期はいずれも像主の生存年代に近く、描写もすぐれ、鎌倉時代の代表的作品である。 … 時代 ： 鎌倉 … 所有者名 ： 称名寺
+        source: kunishitei-201-151
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%A7%B0%E5%90%8D%E5%AF%BA_(%E6%A8%AA%E6%B5%9C%E5%B8%82)&oldid=111486752
+        note: 絹本著色北条実時像・北条顕時像・金沢貞顕像・金沢貞将像、文選集注（国宝）
+        source: ja-wikipedia-shomyoji-yokohama
+        accessed: 2026-11-24
+  - owner: institution/kanagawa-prefectural-kanazawa-bunko
+    role: custodian
+    place: yokohama
+    label: kept and shown on deposit by the prefectural Kanazawa-Bunko museum next to the temple; Shōmyō-ji remains the owner
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%87%91%E6%B2%A2%E6%96%87%E5%BA%AB&oldid=111729713
+        note: 県立金沢文庫は称名寺からの寄託品（美術品、古書、古文書）を中心に郷土資料などを収蔵している。 … 金沢北条氏歴代の肖像画（実時・顕時・貞顕・貞将像、国宝）
+        source: ja-wikipedia-kanazawa-bunko
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%A7%B0%E5%90%8D%E5%AF%BA_(%E6%A8%AA%E6%B5%9C%E5%B8%82)&oldid=111486752
+        note: ※国宝・重要文化財の大部分は隣接する神奈川県立金沢文庫が管理している
+        source: ja-wikipedia-shomyoji-yokohama
+        accessed: 2026-11-24

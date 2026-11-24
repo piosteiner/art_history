@@ -1,0 +1,132 @@
+public_id: 124125
+title: Rakuchū rakugai zu (Uesugi)
+names:
+  - text: Scenes in and around the Capital (Uesugi)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107044831
+  - lang: ja
+    role: translation
+    text: 上杉本洛中洛外図屏風
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107044831
+creator: kano-eitoku
+created: 16th century
+created_span: uncertain
+dimensions: [160.4, 364.2]
+institution: yonezawa-city-uesugi-museum
+inventory_number: A1990-001
+location: [140.1066, 37.90759]
+wikidata_id: Q107044831
+metadata:
+  sources: [Wikidata Q107044831 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/yonezawa
+    period: 16th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Kan%C5%8D_Eitoku_-_Rakuch%C5%AB_rakugai_zu_%28Uesugi%29_-_right_screen.jpg/1280px-Kan%C5%8D_Eitoku_-_Rakuch%C5%AB_rakugai_zu_%28Uesugi%29_-_right_screen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kan%C5%8D_Eitoku_-_Rakuch%C5%AB_rakugai_zu_(Uesugi)_-_right_screen.jpg
+    license: Public domain
+    credit: Unknown author
+provenance:
+  - owner: artist/kano-eitoku
+    acquired: 1565
+    method: creation
+    place: kyoto
+    label: finished 3rd day, 9th month, Eiroku 8 (Uesugi records); thought to have been ordered by the shōgun Ashikaga Yoshiteru, killed in 1565 before it was done, so it stayed with Eitoku
+    certainty: probable
+    sources:
+      - url: https://www.denkoku-no-mori.yonezawa.yamagata.jp/rakuchyu_rakugai.htm
+        note: 筆者は桃山時代を代表する画家・狩野永徳(かのうえいとく)です。
+        source: uesugi-museum-rakuchu-rakugai
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=110330274
+        note: 絵が完成したのは永禄8年（1565年）9月3日 … 義輝は … 洛中洛外図を永徳に発注した。しかし、永禄8年5月に義輝が非業の死を遂げた結果（永禄の変）、同年9月に完成した絵は永徳の許にとどまった。
+        source: jawiki-rakuchu-rakugai-zu-110330274
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/10332
+        note: 本図を描いた画家は、両隻に捺された朱文円郭壺形「州信」印を用いた、狩野永徳（一五四三～一五九〇）であると見做される。 … 本図の制作年代は永禄四年から天正元年頃までの間に求められるであろう。
+        source: kunishitei-201-10332
+        accessed: 2026-11-24
+  - owner: person/oda-nobunaga
+    label: Nobunaga learnt of the screens through Eitoku and sent them to Kenshin, whose alliance he needed
+    certainty: probable
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=110330274
+        note: 信長が上洛した後の天正2年、永徳は信長に接近した。洛中洛外図のことを知った信長は、当時同盟を結ぶ必要があった謙信に絵を贈った。
+        source: jawiki-rakuchu-rakugai-zu-110330274
+        accessed: 2026-11-24
+  - owner: person/uesugi-kenshin
+    acquired: 1574
+    method: gift
+    direct: true
+    label: gift from Oda Nobunaga, sent to Echigo with his envoy Sassa Ichibei in the 3rd month of Tenshō 2 (Uesugi records)
+    sources:
+      - url: https://www.denkoku-no-mori.yonezawa.yamagata.jp/rakuchyu_rakugai.htm
+        note: ｢上杉本洛中洛外図屏風｣は、天正2年(1574年)に織田信長から上杉謙信へ贈られたと伝えられ
+        source: uesugi-museum-rakuchu-rakugai
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=110330274
+        note: 同年三月、尾州織田信長、為使介佐々市兵衛遣于越府、被贈屏風一双、畫工狩野源四郎貞信、入道永徳斎、永禄八年九月三日畫之、花洛盡、被及書札
+        source: jawiki-rakuchu-rakugai-zu-110330274
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/10332
+        note: 本図が伝来した上杉家の資料によれば、本図は、天正元年（一五七三）あるいは二年に織田信長から上杉謙信に贈られた屏風に相当すると考えられている。
+        source: kunishitei-201-10332
+        accessed: 2026-11-24
+  - owner_label: Uesugi family, lords of the Yonezawa domain
+    method: inheritance
+    place: yonezawa
+    label: handed down in the Uesugi family
+    sources:
+      - url: https://www.denkoku-no-mori.yonezawa.yamagata.jp/rakuchyu_rakugai.htm
+        note: 以後米沢藩上杉家に伝来したという由来を持ちます。
+        source: uesugi-museum-rakuchu-rakugai
+        accessed: 2026-11-24
+  - owner: place/yonezawa
+    label: "owner: the City of Yonezawa (managing body: Uesugi Shrine); National Treasure since 15 June 1995"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/10332
+        note: 所在地 ： 米沢市上杉博物館　山形県米沢市丸の内1-2-1 保管施設の名称 ： 米沢市上杉博物館 所有者名 ： 米沢市 管理団体・管理責任者名 ： 宗教法人上杉神社
+        source: kunishitei-201-10332
+        accessed: 2026-11-24
+  - owner: institution/yonezawa-city-uesugi-museum
+    role: custodian
+    place: yonezawa
+    label: kept at the city's museum (original or replica shown in the Uesugi Bunkakan; restored 2026 after crowdfunding)
+    sources:
+      - url: https://www.denkoku-no-mori.yonezawa.yamagata.jp/rakuchyu_rakugai.htm
+        note: 上杉博物館では、常設展示室内「上杉文華館」にて「上杉本洛中洛外図屏風」の複製または原本を展示しています。
+        source: uesugi-museum-rakuchu-rakugai
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/10332
+        note: 保管施設の名称 ： 米沢市上杉博物館
+        source: kunishitei-201-10332
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107044831
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q107044831
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107044831
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q107044831
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107044831
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q107044831

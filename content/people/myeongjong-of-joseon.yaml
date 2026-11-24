@@ -32,6 +32,16 @@ description_md: "King of Joseon. Korean sources date the years of his reign by h
 wikidata_id: Q483641
 metadata:
   sources: [Wikidata Q483641 (retrieved 2026-11-02)]
+relationships:
+  - type: child_of
+    to: person/jungjong-of-joseon
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q483008
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q483641
 identifiers:
   lc: n85012225
   nlk: KAC201717449

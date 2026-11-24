@@ -1,0 +1,70 @@
+public_id: 122920
+title_lang: en
+title: Portrait of Jean-Gabriel du Theil at the Signing of the Treaty of Vienna
+creator: jacques-andre-joseph-aved
+created: 1738/1740
+kind: oil painting
+medium: oil on canvas
+dimensions: [124.5, 92.4]
+institution: cleveland-museum-of-art
+inventory_number: "1964.89"
+web_url: https://clevelandart.org/art/1964.89
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1964.89/1964.89_web.jpg
+    source_url: https://clevelandart.org/art/1964.89
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/edouard-kann
+    acquired: 1922 or earlier
+    place: paris
+    label: circumstances of acquisition unknown; apparently not inherited from his uncle Rodolphe or his father Maurice Kann
+    sources:
+      - url: https://clevelandart.org/art/1964.89
+        note: Edouard Kann [1873-1927], Paris, France [by 1922] — The circumstances of Edouard's acquisition of the Aved painting are not known. The nephew of Rodolphe Kann and the son of Maurice Kann, both prominent collectors, Edouard does not appear to have inherited the painting from either.
+        source: cma-1964-89
+        accessed: 2026-11-24
+  - owner_label: Madame Delaney, Paris
+    ended_label: until 1956?
+    place: paris
+    label: the source for her ownership is unknown; she followed Edouard Kann in the provenance of a Tiepolo (NGA 1952.5.78) too
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1964.89
+        note: Possibly Madame Delaney, Paris, France [Until 1956?]
+        source: cma-1964-89
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1956-12-10
+    method: auction
+    place: paris
+    label: sale, Hôtel Drouot, Paris, 10 December 1956, lot J (property of various private collectors)
+    sources:
+      - url: https://clevelandart.org/art/1964.89
+        note: "(Sale: Hôtel Drouot, Dec. 10, 1956, lot J, sold to Wildenstein & Co.) — Madame Delaney may be one of the “divers amateurs” (various private collectors) whose collection comprised this sale, although this is unconfirmed."
+        source: cma-1964-89
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1956-12-10
+    method: auction
+    direct: true
+    place: new-york-city
+    label: bought at the Hôtel Drouot sale of 10 December 1956, lot J
+    sources:
+      - url: https://clevelandart.org/art/1964.89
+        note: (Wildenstein & Co., New York, NY, sold to the Cleveland Museum of Art) [1956-1964] — Wildenstein also purchased Rigaud's Portrait of Cardinal Guillaume Dubois (CMA 1967.17) at this sale.
+        source: cma-1964-89
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1964
+    method: purchase
+    direct: true
+    place: cleveland
+    label: John L. Severance Fund
+    sources:
+      - url: https://clevelandart.org/art/1964.89
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1964-]
+        source: cma-1964-89
+        accessed: 2026-11-24

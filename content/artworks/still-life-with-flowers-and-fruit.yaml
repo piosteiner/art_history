@@ -1,0 +1,167 @@
+public_id: 122801
+title_lang: en
+title: Still Life with Flowers and Fruit
+names:
+  - lang: nl
+    role: translation
+    text: Stilleven met bloemen en fruit op een marmeren blad
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177776
+  - lang: fr
+    role: translation
+    text: Nature morte aux fleurs et fruits
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177776
+creator: jan-van-huysum
+created: c. 1715
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [78.7, 61.3]
+institution: national-gallery-of-art
+inventory_number: 1996.80.1
+provenance_status: d_seized
+provenance_status_note: Confiscated by the Nazis from Louis de Rothschild, Vienna, 1938, for Hitler's museum in Linz; restituted to Austria on 11 May 1948 and returned to Louis de Rothschild in 1949.
+wikidata_id: Q20177776
+metadata:
+  sources: [Wikidata Q20177776 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Still_Life_with_Flowers_and_Fruit_A16296.jpg/1280px-Still_Life_with_Flowers_and_Fruit_A16296.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Still_Life_with_Flowers_and_Fruit_A16296.jpg
+    license: Public domain
+    credit: Jan van Huysum
+provenance:
+  - owner: person/louis-de-rothschild
+    place: vienna
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.96655.html
+        note: Baron Louis de Rothschild [1882-1955], Vienna.[1]
+        source: nga-1996-80-1
+        accessed: 2026-11-24
+  - owner: person/adolf-hitler
+    role: possessor
+    acquired: 1938
+    method: confiscation
+    place: vienna
+    label: confiscated from the Louis de Rothschild collection; destined for Hitler's museum in Linz (Posse's lists of 20 October 1939 and 31 July 1940); Linz photo album no. V/1
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.96655.html
+        note: "[1] This painting was confiscated by the Nazis from the Louis de Rothschild collection in Vienna in 1938 and was destined for Adolf Hitler's planned museum in Linz, Austria. It is listed on the 20 October 1939 Vorschlag sur Verteilung der in Wien beschlagnahmte Gemaelde: Für das Kunstmuseum in Linz prepared by Hitler's curator, Hans Posse, and also Posse's Verzeichnis der für Linz in Aussicht genommenen Gemälde dated 31 July 1940"
+        source: nga-1996-80-1
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    ended: 1948-05-11
+    method: transfer
+    place: munich
+    label: recovered by the Allies; Munich property card no. 1665
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.96655.html
+        note: "The records of the Allies' Munich Central Collecting Point indicate that the painting was recovered by the Allies and restituted to Austria on 11 May 1948. … (Munich property card #1665;"
+        source: nga-1996-80-1
+        accessed: 2026-11-24
+  - owner_label: Republic of Austria
+    role: custodian
+    acquired: 1948-05-11
+    ended: 1949
+    method: restitution
+    direct: true
+    label: Austrian Receipt for Cultural Property dated 11 May 1948
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.96655.html
+        note: restituted to Austria on 11 May 1948. It was returned to Louis de Rothschild in 1949 (… Austrian Receipt for Cultural Property dated 11 May 1948
+        source: nga-1996-80-1
+        accessed: 2026-11-24
+  - owner: person/louis-de-rothschild
+    acquired: 1949
+    method: restitution
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.96655.html
+        note: It was returned to Louis de Rothschild in 1949
+        source: nga-1996-80-1
+        accessed: 2026-11-24
+  - owner: person/bettina-reininghaus
+    label: Baroness Reininghaus, née Bettina Rothschild Springer, his niece
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.96655.html
+        note: his niece, Baroness Reininghaus [née Bettina Rothschild Springer, 1912-1974];
+        source: nga-1996-80-1
+        accessed: 2026-11-24
+  - owner: person/kurt-reininghaus
+    direct: true
+    label: Baron Kurt Reininghaus, her husband
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.96655.html
+        note: her husband, Baron Kurt Reininghaus [d. 1984];
+        source: nga-1996-80-1
+        accessed: 2026-11-24
+  - owner: institution/galerie-sanct-lucas
+    role: dealer
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.96655.html
+        note: sold to (Galerie Sanct Lucas, Vienna);
+        source: nga-1996-80-1
+        accessed: 2026-11-24
+  - owner: person/philip-cunningham
+    co_owners: [person/lizanne-cunningham]
+    acquired: c. 1994
+    method: purchase
+    direct: true
+    place: alexandria
+    label: Mr. and Mrs. Philip Cunningham, Alexandria, Virginia
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.96655.html
+        note: sold c. 1994 to Mr. and Mrs. Philip Cunningham, Alexandria, Virginia;
+        source: nga-1996-80-1
+        accessed: 2026-11-24
+  - owner: institution/galerie-otto-naumann
+    role: agent
+    method: transfer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.96655.html
+        note: partially sold and partially given 1996 through (Otto Naumann, New York) to NGA.
+        source: nga-1996-80-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1996
+    method: purchase
+    direct: true
+    place: washington-d-c
+    label: partially sold and partially given by the Cunninghams
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.96655.html
+        note: partially sold and partially given 1996 through (Otto Naumann, New York) to NGA.
+        source: nga-1996-80-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177776
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177776
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177776
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177776
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177776
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177776

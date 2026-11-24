@@ -1,0 +1,43 @@
+public_id: 124043
+title: Kongōrin-ji Main Hall
+names:
+  - lang: ja
+    role: translation
+    text: 金剛輪寺本堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020394
+created: 1333/1392
+institution: kongorin-ji-temple
+location: [136.2829, 35.16127]
+wikidata_id: Q107020394
+metadata:
+  sources: [Wikidata Q107020394 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/aisho
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f1/Kongourinji_hondou_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kongourinji_hondou_01.jpg
+    license: CC BY-SA 3.0
+    credit: VanishingDuck at Japanese Wikipedia
+provenance:
+  - owner: institution/kongorin-ji-temple
+    acquired: 1333/1392
+    method: creation
+    place: aisho
+    label: "traditionally dated 1288 from the inscription on the altar fittings (temple tradition: built by Sasaki Yoritsuna after the Mongol invasions), but by style probably early Muromachi (Nanbokuchō); spared when Oda Nobunaga's troops burned the area in 1573"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1505
+        note: 現本堂は、堂内の仏壇金具の銘によって、弘安十一年（一二八八）建立とされてきたが、様式手法からすると、室町時代前期まで下る可能性が高い。 … 所有者名 ： 金剛輪寺
+        source: kunishitei-102-1505
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%87%91%E5%89%9B%E8%BC%AA%E5%AF%BA&oldid=111639305
+        note: 本堂（[[国宝]]）は、[[元寇]]の戦勝記念として佐々木頼綱（六角頼綱）によって建立されたものであるという … [[天正]]元年（[[1573年]]）に[[織田信長]]の兵火で[[湖東三山]]の1つである[[百済寺]]は全焼し、当寺も被害を受けるが、現存の本堂、[[三重塔]]は寺僧の尽力で焼失をまぬがれた
+        source: wikipedia-ja-kongorin-ji
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020394

@@ -1,0 +1,196 @@
+public_id: 125120
+title_lang: en
+title: The Fountains
+names:
+  - lang: fr
+    role: original
+    text: le fontane
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268367
+  - lang: fr
+    role: original
+    text: Les Fontaines
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268367
+creator: hubert-robert
+created: 1787
+materials: [oil paint, canvas]
+dimensions: [255.3, 221.2]
+institution: art-institute-of-chicago
+inventory_number: "1900.385"
+wikidata_id: Q20268367
+metadata:
+  sources: [Wikidata Q20268367 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Hubert_Robert_-_The_Fountains_-_1900.385_-_Art_Institute_of_Chicago.jpg/1280px-Hubert_Robert_-_The_Fountains_-_1900.385_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hubert_Robert_-_The_Fountains_-_1900.385_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Hubert Robert
+provenance:
+  - owner: person/jean-joseph-de-laborde
+    acquired: 1787
+    method: commission
+    label: commissioned with its three pendants (1900.382–384) for the Château de Méréville, near Étampes
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: Commissioned with its pendants (1900.382, 1900.383, 1900.384) by Jean Joseph, marquis de Laborde (died 1794), in 1787 for the Château de Méréville (near Etampes);
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner_label: Mme de Laborde
+    direct: true
+    label: sold the Château de Méréville in 1819
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: the château was sold by Mme de Laborde, 1819 [see Simone de Lassus, “Quelques Détails inédits sur Méréville,” Bulletin de la Société de l’histoire de l’art français, année 1976 (1978), p. 286 n. 1];
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner_label: M. Ters and Mme d'Espagnat
+    acquired: 1819
+    label: owner of the Château de Méréville; sold 1824
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: "the château was owned successively by: M. Ters and Mme d’Espagnat (sold 1824); comte de Saint-Roman (sold 1866); duc de Sessa (sold 1868); M. and Mme Beleys (sold 1869); la Société Cail (sold 1874); M. Heddle (sold 1889); Adam Natanson (sold 1890); M. Hériot (sold 1896); Prudent Carpentier (sold 1897, at which time the contents of the house were dispersed and the paintings probably sold)"
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner_label: comte de Saint-Roman
+    acquired: 1824
+    label: owner of the Château de Méréville; sold 1866
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: "the château was owned successively by: M. Ters and Mme d’Espagnat (sold 1824); comte de Saint-Roman (sold 1866); duc de Sessa (sold 1868); M. and Mme Beleys (sold 1869); la Société Cail (sold 1874); M. Heddle (sold 1889); Adam Natanson (sold 1890); M. Hériot (sold 1896); Prudent Carpentier (sold 1897, at which time the contents of the house were dispersed and the paintings probably sold)"
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner_label: duc de Sessa
+    acquired: 1866
+    label: owner of the Château de Méréville; sold 1868
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: "the château was owned successively by: M. Ters and Mme d’Espagnat (sold 1824); comte de Saint-Roman (sold 1866); duc de Sessa (sold 1868); M. and Mme Beleys (sold 1869); la Société Cail (sold 1874); M. Heddle (sold 1889); Adam Natanson (sold 1890); M. Hériot (sold 1896); Prudent Carpentier (sold 1897, at which time the contents of the house were dispersed and the paintings probably sold)"
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner_label: M. and Mme Beleys
+    acquired: 1868
+    label: owner of the Château de Méréville; sold 1869
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: "the château was owned successively by: M. Ters and Mme d’Espagnat (sold 1824); comte de Saint-Roman (sold 1866); duc de Sessa (sold 1868); M. and Mme Beleys (sold 1869); la Société Cail (sold 1874); M. Heddle (sold 1889); Adam Natanson (sold 1890); M. Hériot (sold 1896); Prudent Carpentier (sold 1897, at which time the contents of the house were dispersed and the paintings probably sold)"
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner: institution/societe-cail
+    acquired: 1869
+    label: owner of the Château de Méréville; sold 1874
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: "the château was owned successively by: M. Ters and Mme d’Espagnat (sold 1824); comte de Saint-Roman (sold 1866); duc de Sessa (sold 1868); M. and Mme Beleys (sold 1869); la Société Cail (sold 1874); M. Heddle (sold 1889); Adam Natanson (sold 1890); M. Hériot (sold 1896); Prudent Carpentier (sold 1897, at which time the contents of the house were dispersed and the paintings probably sold)"
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner_label: M. Heddle
+    acquired: 1874
+    label: owner of the Château de Méréville; sold 1889
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: "the château was owned successively by: M. Ters and Mme d’Espagnat (sold 1824); comte de Saint-Roman (sold 1866); duc de Sessa (sold 1868); M. and Mme Beleys (sold 1869); la Société Cail (sold 1874); M. Heddle (sold 1889); Adam Natanson (sold 1890); M. Hériot (sold 1896); Prudent Carpentier (sold 1897, at which time the contents of the house were dispersed and the paintings probably sold)"
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner: person/adam-natanson
+    acquired: 1889
+    label: owner of the Château de Méréville; sold 1890
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: "the château was owned successively by: M. Ters and Mme d’Espagnat (sold 1824); comte de Saint-Roman (sold 1866); duc de Sessa (sold 1868); M. and Mme Beleys (sold 1869); la Société Cail (sold 1874); M. Heddle (sold 1889); Adam Natanson (sold 1890); M. Hériot (sold 1896); Prudent Carpentier (sold 1897, at which time the contents of the house were dispersed and the paintings probably sold)"
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner_label: M. Hériot
+    acquired: 1890
+    label: owner of the Château de Méréville; sold 1896
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: "the château was owned successively by: M. Ters and Mme d’Espagnat (sold 1824); comte de Saint-Roman (sold 1866); duc de Sessa (sold 1868); M. and Mme Beleys (sold 1869); la Société Cail (sold 1874); M. Heddle (sold 1889); Adam Natanson (sold 1890); M. Hériot (sold 1896); Prudent Carpentier (sold 1897, at which time the contents of the house were dispersed and the paintings probably sold)"
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner: person/prudent-carpentier
+    acquired: 1896
+    ended: 1897
+    label: owner of the Château de Méréville; sold 1897, when the contents were dispersed and the paintings probably sold (a 1987 letter says Hériot sold the paintings in July 1896)
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: "the château was owned successively by: M. Ters and Mme d’Espagnat (sold 1824); comte de Saint-Roman (sold 1866); duc de Sessa (sold 1868); M. and Mme Beleys (sold 1869); la Société Cail (sold 1874); M. Heddle (sold 1889); Adam Natanson (sold 1890); M. Hériot (sold 1896); Prudent Carpentier (sold 1897, at which time the contents of the house were dispersed and the paintings probably sold)"
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner_label: M. L. François
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: M. L. François; sold Galerie George Petit, Paris, June 13, 1900, no. 3,
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1900-06-13
+    method: auction
+    direct: true
+    place: paris
+    label: François sale, no. 3
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: sold Galerie George Petit, Paris, June 13, 1900, no. 3, to Durand-Ruel, acting on behalf of the Art Institute,
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: agent
+    acquired: 1900-06-13
+    method: auction
+    direct: true
+    place: paris
+    label: bought on behalf of the Art Institute
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: to Durand-Ruel, acting on behalf of the Art Institute, with funds provided by William G. Hibbard, 1900.
+        source: aic-1900-385
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1900
+    method: purchase
+    direct: true
+    place: chicago
+    label: funds provided by William G. Hibbard
+    sources:
+      - url: https://www.artic.edu/artworks/57051
+        note: to Durand-Ruel, acting on behalf of the Art Institute, with funds provided by William G. Hibbard, 1900.
+        source: aic-1900-385
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268367
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20268367
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20268367
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20268367
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268367
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268367

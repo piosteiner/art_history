@@ -1,0 +1,37 @@
+public_id: 124919
+title_lang: en
+title: Nyorai-dō of Senju-ji
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 専修寺如来堂
+institution: senju-ji-temple
+location: [136.5029, 34.76245]
+wikidata_id: Q107020358
+metadata:
+  sources: [Wikidata Q107020358 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tsu
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Honzan-Senju-ji_Nyoraido.JPG/1280px-Honzan-Senju-ji_Nyoraido.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Honzan-Senju-ji_Nyoraido.JPG
+    license: Public domain
+    credit: Abasaa
+provenance:
+  - owner: institution/senju-ji-temple
+    acquired: 1743/1748
+    method: creation
+    place: tsu
+    label: vowed in 1719 from donations of the followers; pillars raised September 1743, ridgepole March 1744, Buddha installed July 1748; owner today the religious corporation Senju-ji
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1293
+        note: 如来堂は、享保四年（一七一九）に門信徒からの寄進により建立が発願され、寛保三年（一七四三）九月柱立、延享元年（一七四四）三月に上棟し、同五年七月に遷仏供養が行われた。 … 所有者名 ： 宗教法人専修寺
+        source: kunishitei-102-1293
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020358

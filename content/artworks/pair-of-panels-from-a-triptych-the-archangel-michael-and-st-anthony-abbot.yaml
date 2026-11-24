@@ -1,0 +1,159 @@
+public_id: 124702
+title_lang: en
+title: "Pair of Panels from a Triptych: The Archangel Michael and St. Anthony Abbot"
+names:
+  - lang: de
+    role: translation
+    text: Seitenflügel eines Triptychons:Erzengel Michael und heiliger Antonius
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60469128
+  - lang: it
+    role: translation
+    text: Sant'Antonio Abate e san Michele Arcangelo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60469128
+  - lang: ja
+    role: translation
+    text: 修道院長聖アントニウスと大天使ミカエル
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60469128
+creator: filippo-lippi
+created: 1458
+dimensions: [81.3, 29.8]
+institution: cleveland-museum-of-art
+inventory_number: "1964.150"
+web_url: https://clevelandart.org/art/1964.150
+wikidata_id: Q60469128
+metadata:
+  sources: [Wikidata Q60469128 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/anthony-the-great
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q60469128
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b8/Lippi%2C_sant%27antonio_abate%2C_san_michele_arcangelo_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lippi,_sant%27antonio_abate,_san_michele_arcangelo_2.jpg
+    license: Public domain
+    credit: Filippo Lippi
+provenance:
+  - owner: person/giovanni-di-cosimo-de-medici
+    acquired: 1457 or earlier
+    method: commission
+    place: florence
+    label: commissioned as a gift for King Alfonso V of Aragon (Alfonso I of Naples)
+    sources:
+      - url: https://clevelandart.org/art/1964.150
+        note: "Commissioned by Giovanni di Cosimo de' Medici, Florence, as a gift for King Alfonso V of Aragon (Alfonso I of Naples) [date: by 1457]"
+        source: cma-1964-150
+        accessed: 2026-11-24
+  - owner: person/alfonso-v-of-aragon
+    acquired: 1458 or earlier
+    method: gift
+    direct: true
+    place: naples
+    sources:
+      - url: https://clevelandart.org/art/1964.150
+        note: "Collection of King Alfonso V of Aragon (Alfonso I of Naples), Naples [date: by 1458]"
+        source: cma-1964-150
+        accessed: 2026-11-24
+  - owner: person/sara-pacheco
+    acquired: 1871 or earlier
+    place: madrid
+    label: Countess Sara Pacheco
+    sources:
+      - url: https://clevelandart.org/art/1964.150
+        note: "Collection of Countess Sara Pacheco, Madrid [date: by 1871]"
+        source: cma-1964-150
+        accessed: 2026-11-24
+  - owner: person/john-charles-robinson
+    role: agent
+    acquired: 1871
+    method: purchase
+    direct: true
+    place: madrid
+    label: bought in Madrid on behalf of Sir Francis Cook
+    sources:
+      - url: https://clevelandart.org/art/1964.150
+        note: "Purchased by Sir John Charles Robinson, Madrid, for Sir Fancis Cook, Soughty House, Richmond, Surrey [date: 1871]"
+        source: cma-1964-150
+        accessed: 2026-11-24
+  - owner: person/sir-francis-cook
+    acquired: 1871
+    method: purchase
+    direct: true
+    label: Doughty House, Richmond, Surrey
+    sources:
+      - url: https://clevelandart.org/art/1964.150
+        note: "Purchased by Sir John Charles Robinson, Madrid, for Sir Fancis Cook, Soughty House, Richmond, Surrey [date: 1871]"
+        source: cma-1964-150
+        accessed: 2026-11-24
+  - owner: person/frederick-cook
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1964.150
+        note: By descent to Sir Frederick Cook, Sir Herbert Cook, and their heirs
+        source: cma-1964-150
+        accessed: 2026-11-24
+  - owner: person/herbert-frederick-cook
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1964.150
+        note: By descent to Sir Frederick Cook, Sir Herbert Cook, and their heirs
+        source: cma-1964-150
+        accessed: 2026-11-24
+  - owner_label: Heirs of Sir Herbert Cook
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1964.150
+        note: By descent to Sir Frederick Cook, Sir Herbert Cook, and their heirs
+        source: cma-1964-150
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    acquired: 1964 or earlier
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1964.150
+        note: "Rosenberg & Stiebel Inc., New York [date: by 1964]"
+        source: cma-1964-150
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1964
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1964.150
+        note: "The Cleveland Museum of Art [date: 1964]"
+        source: cma-1964-150
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60469128
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60469128
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60469128
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60469128
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60469128

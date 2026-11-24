@@ -1,0 +1,18 @@
+public_id: 122837
+name: Andrea del Castagno
+given_name: Andrea
+family_name: del Castagno
+birth: c. 1420
+death: 1457-08-28
+wikidata_id: Q240737
+metadata:
+  sources: [Wikidata Q240737 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q240737
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q240737

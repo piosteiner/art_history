@@ -1,0 +1,108 @@
+public_id: 124644
+title_lang: en
+title: Virgin and Child Enthroned with Saints Francis and Giovanni Gualberto
+names:
+  - lang: de
+    role: translation
+    text: Thronende Madonna mit Kind und den hll. Franziskus und Giovanni Gualberto
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60756977
+creator: benedetto-buglioni
+institution: cleveland-museum-of-art
+inventory_number: "1921.1180"
+web_url: https://www.clevelandart.org/art/1921.1180
+wikidata_id: Q60756977
+metadata:
+  sources: [Wikidata Q60756977 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Clevelandart_1921.1180.jpg/1280px-Clevelandart_1921.1180.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Clevelandart_1921.1180.jpg
+    license: CC0
+    credit: Benedetto Buglioni
+provenance:
+  - owner: person/raoul-heilbronner
+    acquired: 1911 or earlier
+    ended: 1914
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1921.1180
+        note: Raoul Heilbronner, died 1941 (Paris, France), by 1911–1914;
+        source: cma-1921-1180
+        accessed: 2026-11-24
+  - owner: institution/french-government
+    role: possessor
+    acquired: 1914
+    method: confiscation
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1921.1180
+        note: Confiscated by the French government, 1914;
+        source: cma-1921-1180
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1921-06
+    method: auction
+    direct: true
+    place: paris
+    label: sale, Galerie Georges Petit, Paris, 22–23 June 1921, lot 144
+    sources:
+      - url: https://clevelandart.org/art/1921.1180
+        note: Sold, Galerie George Petit, Paris, June 22-23, 1921, lot 144, through Jacques Seligman to P. W. French & Co, New York, to Jeptha Homer Wade;
+        source: cma-1921-1180
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: agent
+    acquired: 1921-06
+    method: auction
+    direct: true
+    label: bought at the sale for P. W. French & Co.
+    sources:
+      - url: https://clevelandart.org/art/1921.1180
+        note: Sold, Galerie George Petit, Paris, June 22-23, 1921, lot 144, through Jacques Seligman to P. W. French & Co, New York, to Jeptha Homer Wade;
+        source: cma-1921-1180
+        accessed: 2026-11-24
+  - owner: institution/p-w-french-co
+    role: dealer
+    acquired: 1921
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1921.1180
+        note: Sold, Galerie George Petit, Paris, June 22-23, 1921, lot 144, through Jacques Seligman to P. W. French & Co, New York, to Jeptha Homer Wade;
+        source: cma-1921-1180
+        accessed: 2026-11-24
+  - owner: person/jeptha-homer-wade
+    acquired: 1921
+    method: purchase
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1921.1180
+        note: Jeptha Homer Wade, 1857-1926, by gift to the Cleveland Museum of Art, 1921.
+        source: cma-1921-1180
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1921
+    method: gift
+    direct: true
+    place: cleveland
+    label: Gift of J. H. Wade
+    sources:
+      - url: https://clevelandart.org/art/1921.1180
+        note: Jeptha Homer Wade, 1857-1926, by gift to the Cleveland Museum of Art, 1921.
+        source: cma-1921-1180
+        accessed: 2026-11-24
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60756977
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60756977
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60756977

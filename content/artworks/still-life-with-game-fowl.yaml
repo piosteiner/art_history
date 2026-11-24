@@ -1,0 +1,161 @@
+public_id: 125072
+title_lang: en
+title: Still Life with Game Fowl
+names:
+  - lang: es
+    role: translation
+    text: Bodegón con caza. verdura y fruta
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20274935
+creator: juan-sanchez-cotan
+created: 1600/1603
+created_label: c. 1600s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [67.8, 88.7]
+institution: art-institute-of-chicago
+inventory_number: "1955.1203"
+wikidata_id: Q20274935
+metadata:
+  sources: [Wikidata Q20274935 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Juan_S%C3%A1nchez_Cot%C3%A1n_-_Still_Life_with_Game_Fowl_-_1955.1203_-_Art_Institute_of_Chicago.jpg/1280px-Juan_S%C3%A1nchez_Cot%C3%A1n_-_Still_Life_with_Game_Fowl_-_1955.1203_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Juan_S%C3%A1nchez_Cot%C3%A1n_-_Still_Life_with_Game_Fowl_-_1955.1203_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Juan Sánchez Cotán
+provenance:
+  - owner: artist/juan-sanchez-cotan
+    method: creation
+    place: toledo
+    label: before he retired to a Carthusian monastery in August 1603; his 1603 inventory, no. V
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/84709
+        note: Probably in the artist’s possession, Toledo, before he retired to a Carthusian monastery, in August 1603 [inventory 1603, no. V, (“Un lienzo de frutas adonde está el ánade y otros tres pájaros ques de Diego de Valdivieso”; Jordan in Madrid 1992, pp. 41–43);
+        source: aic-1955-1203
+        accessed: 2026-11-24
+  - owner: person/diego-de-valdivieso
+    acquired: 1603
+    direct: true
+    place: toledo
+    label: “ques de Diego de Valdivieso” in the artist's 1603 inventory
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/84709
+        note: probably Diego de Valdivieso, Toledo, 1603 [see 1603 inventory cited by Jordan 1992].
+        source: aic-1955-1203
+        accessed: 2026-11-24
+  - owner: person/bernardo-de-sandoval-y-rojas
+    place: toledo
+    label: archbishop of Toledo; Toledo or Huerta de Sandoval, near Madrid
+    sources:
+      - url: https://www.artic.edu/artworks/84709
+        note: Cardinal Bernardo de Sandoval y Rojas, archbishop of Toledo and primate of Spain, Toledo or Huerta de Sandoval, near Madrid (died 1618);
+        source: aic-1955-1203
+        accessed: 2026-11-24
+  - owner: person/bernardo-de-sandoval-y-rojas
+    role: estate
+    acquired: 1618
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/84709
+        note: acquired from his estate with 4 other still lifes
+        source: aic-1955-1203
+        accessed: 2026-11-24
+  - owner: institution/spanish-royal-collection
+    acquired: 1619 or earlier
+    direct: true
+    place: royal-palace-of-el-pardo
+    label: with 4 other still lifes for the Galería del Mediodía, El Pardo (note of 10 September 1619); royal inventories 1653, no. 145 (inscribed), and 1701/03, no. 132
+    sources:
+      - url: https://www.artic.edu/artworks/84709
+        note: acquired from his estate with 4 other still lifes for the decoration of the Galería del Mediodía in the royal hunting lodge of El Pardo, the series completed by an additional still life commissioned for this purpose from Juan van der Hamen [according to a note of 10 September 1619 in the accounts of the royal household; see José María de Azcárate, “Algunas noticias sobre pintores cortesanos de siglo XVII” Anales de Instituto de estudios Madrileños, 6 (1970), p. 60; see also Jordan 2006, pp. 54-58,]; royal inventories of 1653, no. 145 (“145.  Un frutero Pequeño Con su marco de oro y negro y un …
+        source: aic-1955-1203
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1809
+    place: el-escorial
+    label: gathered at the Escorial with paintings from the royal residences for shipment to Madrid for a projected national museum
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/84709
+        note: probably one of two still lifes by Cotán listed among the paintings from royal residences gathered at the Escorial in 1809 for shipment to Madrid for a projected national museum [Jordan 2008, pp. 136-37 and Ilse Hempel Lipschutz, Spanish Painting and the French Romantics, Cambridge, Mass., 1972, pp. 268-81, especially p. 280].
+        source: aic-1955-1203
+        accessed: 2026-11-24
+  - owner: person/august-l-mayer
+    acquired: 1922 or earlier
+    place: munich
+    sources:
+      - url: https://www.artic.edu/artworks/84709
+        note: August L. Mayer, Munich, by 1922 [see Mayer 1922, p. 361];
+        source: aic-1955-1203
+        accessed: 2026-11-24
+  - owner: institution/hugo-helbing
+    role: agent
+    acquired: 1933-11
+    method: auction
+    direct: true
+    place: munich
+    label: sale, Hugo Helbing, Munich, 24–25 November 1933, lot 79, pl. 4, as Sánchez Cotán, Küchenstilleben
+    price:
+      amount: 380
+      currency: RM
+      note: price from Die Weltkunst 1933
+    sources:
+      - url: https://www.artic.edu/artworks/84709
+        note: sold, Munich, Hugo Helbing, November 24–25, 1933, lot 79, pl. 4, as Sánchez Cotán, Küchenstilleben for 380 Marks [the price based on Die Weltkunst 1933; that the picture belonged to Mayer can be deduced from the provenance of no. 74 in this sale, which later entered the Bayerische Staatsgemäldesammlungen].
+        source: aic-1955-1203
+        accessed: 2026-11-24
+  - owner_label: Private collection, Germany
+    sources:
+      - url: https://www.artic.edu/artworks/84709
+        note: Private collection, Germany [according to 1955 receipt from Frederick Mont, in curatorial file].
+        source: aic-1955-1203
+        accessed: 2026-11-24
+  - owner: person/frederick-mont
+    co_owners: [institution/newhouse-gallery]
+    role: dealer
+    acquired: 1955 or earlier
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/84709
+        note: Frederick Mont and Newhouse Galleries, New York, by 1955 [1955 receipt cited above and shipping invoice, in curatorial file];
+        source: aic-1955-1203
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1955
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/84709
+        note: sold to the Art Institute, 1955.
+        source: aic-1955-1203
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20274935
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20274935
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20274935
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20274935
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20274935
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20274935

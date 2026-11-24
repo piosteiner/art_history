@@ -1,0 +1,76 @@
+public_id: 122877
+title_lang: en
+title: Tabernacle Relief with Flanking Angels
+creator: tullio-lombardo
+attribution_label: circle of Tullio Lombardo
+created: c. 1480–1500
+created_span: uncertain
+kind: sculpture
+medium: polychromed marble
+dimensions: [81.3, 108.6]
+institution: cleveland-museum-of-art
+inventory_number: "1975.105"
+web_url: https://clevelandart.org/art/1975.105
+provenance_status: d_seized
+provenance_status_note: Forced sale by Heinrich Miller von Aichholz to the City of Vienna in 1938 (as the museum states it).
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1975.105/1975.105_web.jpg
+    source_url: https://clevelandart.org/art/1975.105
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/heinrich-miller-von-aichholz
+    ended: 1938
+    place: vienna
+    label: name given as "Heinrich Miller con Aicholz"
+    sources:
+      - url: https://clevelandart.org/art/1975.105
+        note: Heinrich Miller con Aicholz (Vienna, Austria), by forced sale to the City of Vienna, 1938
+        source: cma-1975-105
+        accessed: 2026-11-24
+  - owner: place/vienna
+    acquired: 1938
+    ended: 1945
+    method: forced_sale
+    direct: true
+    place: vienna
+    label: City of Vienna, by forced sale
+    sources:
+      - url: https://clevelandart.org/art/1975.105
+        note: 1938-1945 City of Vienna, occupied after World War II by the French government
+        source: cma-1975-105
+        accessed: 2026-11-24
+  - owner: institution/french-government
+    acquired: 1945
+    direct: true
+    label: '"occupied" by the French government after the Second World War'
+    sources:
+      - url: https://clevelandart.org/art/1975.105
+        note: 1938-1945 City of Vienna, occupied after World War II by the French government; 1945 - French government
+        source: cma-1975-105
+        accessed: 2026-11-24
+  - owner: person/camillo-castiglioni
+    acquired_label: 1959-1957 [sic]
+    place: vienna
+    sources:
+      - url: https://clevelandart.org/art/1975.105
+        note: Camillo Castiglioni, 1959-1957 (Vienna, Austria)
+        source: cma-1975-105
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    sources:
+      - url: https://clevelandart.org/art/1975.105
+        note: Jacques Seligmann and Co., sold to the Cleveland Museum of Art, 1975.
+        source: cma-1975-105
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1975
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1975.105
+        note: Jacques Seligmann and Co., sold to the Cleveland Museum of Art, 1975.
+        source: cma-1975-105
+        accessed: 2026-11-24

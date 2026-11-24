@@ -1,0 +1,72 @@
+public_id: 122901
+title_lang: en
+title: Portrait of Jean Léglise, Merchant, Mayor of Saint-Martin-de-Seignanx
+creator: leon-bonnat
+created: 1868
+kind: oil painting
+medium: oil on fabric
+dimensions: [80.1, 65.3]
+institution: cleveland-museum-of-art
+inventory_number: "1980.232"
+web_url: https://clevelandart.org/art/1980.232
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1980.232/1980.232_web.jpg
+    source_url: https://clevelandart.org/art/1980.232
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1973-03-14
+    method: auction
+    place: paris
+    label: sale, 14 March 1973, no. 84, with its pendant Portrait de femme (no. 83)
+    sources:
+      - url: https://clevelandart.org/art/1980.232
+        note: (Hôtel Drouot, sale, March 14, 1973, no. 84, sold to François-Gérard Seligmann) — The painting was sold to Seligmann along with its pendant, Portrait de femme (no. 83)
+        source: cma-1980-232
+        accessed: 2026-11-24
+  - owner: person/francois-gerard-seligmann
+    role: dealer
+    acquired: 1973-03-14
+    method: auction
+    direct: true
+    label: bought with its pendant, “une magnifique paire de portraits de BONNAT”
+    sources:
+      - url: https://clevelandart.org/art/1980.232
+        note: (François-Gérard Seligmann, sold to Cyril Humphris) — Several days after the auction, Seligmann wrote to his half-brother Germain that he had purchased, “une magnifique paire de portraits de BONNAT.”
+        source: cma-1980-232
+        accessed: 2026-11-24
+  - owner: person/cyril-humphris
+    role: dealer
+    acquired: 1976
+    method: purchase
+    direct: true
+    place: london
+    label: acquired from an agent in France, presumably Seligmann, in touch with the sitter's descendants
+    sources:
+      - url: https://clevelandart.org/art/1980.232
+        note: (Cyril Humphris, London, sold to Noah L. Butkin) — Humphris said that he acquired the painting from an agent - presumably Seligmann - in France who "was directly in touch with the descendents of the sitter."
+        source: cma-1980-232
+        accessed: 2026-11-24
+  - owner: person/noah-l-butkin
+    acquired: 1977
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1980.232
+        note: Noah L. Butkin, Cleveland, OH, bequeathed to the Cleveland Museum of Art as a result of disclaimer by Muriel S. Butkin [1977-1980]
+        source: cma-1980-232
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1980
+    method: bequest
+    direct: true
+    place: cleveland
+    label: bequest of Noah L. Butkin as a result of a disclaimer by Muriel S. Butkin
+    sources:
+      - url: https://clevelandart.org/art/1980.232
+        note: bequeathed to the Cleveland Museum of Art as a result of disclaimer by Muriel S. Butkin — The Cleveland Museum of Art, Cleveland, Ohio [1980-]
+        source: cma-1980-232
+        accessed: 2026-11-24

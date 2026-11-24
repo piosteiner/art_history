@@ -1,0 +1,160 @@
+public_id: 122783
+title_lang: en
+title: Portrait of a Young Man
+names:
+  - lang: nl
+    role: translation
+    text: Portret van een jongeman
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175692
+  - lang: fr
+    role: translation
+    text: Portrait de jeune homme
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175692
+  - lang: de
+    role: translation
+    text: Porträt eines jungen Mannes
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175692
+creator: hans-holbein-the-younger
+attribution_label: attributed to Hans Holbein the Younger
+created: 1520/1529
+created_label: c. 1520s
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [22, 17]
+institution: national-gallery-of-art
+inventory_number: 1961.9.21
+web_url: https://www.nga.gov/collection/art-object-page.46120.html
+provenance_status: d_seized
+provenance_status_note: Confiscated by the Nazis from Louis de Rothschild, Vienna, 1938, for Hitler's museum in Linz; recovered at Altaussee and restituted to Austria on 25 April 1946.
+wikidata_id: Q20175692
+metadata:
+  sources: [Wikidata Q20175692 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Portrait_of_a_Young_Man_G-05169-003.jpg/1280px-Portrait_of_a_Young_Man_G-05169-003.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_a_Young_Man_G-05169-003.jpg
+    license: Public domain
+    credit: Hans Holbein the Younger
+provenance:
+  - owner_label: member of the Rothschild family, Vienna
+    acquired: c. 1850
+    place: vienna
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46120.html
+        note: Possibly a member of the de Rothschild family, Vienna, from about 1850.[1] — [1] Not verified, but likely
+        source: nga-1961-9-21
+        accessed: 2026-11-24
+  - owner: person/louis-de-rothschild
+    acquired: 1931 or earlier
+    method: inheritance
+    place: vienna
+    label: probably by inheritance
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46120.html
+        note: Baron Louis de Rothschild [1882-1955], Vienna, probably by inheritance, by 1931;[2]
+        source: nga-1961-9-21
+        accessed: 2026-11-24
+  - owner: person/adolf-hitler
+    role: possessor
+    acquired: 1938
+    method: confiscation
+    place: vienna
+    label: confiscated from the Louis de Rothschild collection; destined for Hitler's museum in Linz (Posse's lists of 20 October 1939 and 31 July 1940)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46120.html
+        note: This painting was confiscated by the Nazis from the Louis de Rothschild collection in Vienna in 1938 and was destined for Hitler's planned museum in Linz, Austria.
+        source: nga-1961-9-21
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    ended: 1946-04-25
+    method: transfer
+    label: recovered at Altaussee; Munich property card no. 2306/7
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46120.html
+        note: The records of the Munich Central Collecting Point indicate that the painting was recovered at Alt Aussee and restituted to Austria on 25 April 1946 with Rothschild as the presumed owner.
+        source: nga-1961-9-21
+        accessed: 2026-11-24
+  - owner_label: Republic of Austria, for Louis de Rothschild as presumed owner
+    acquired: 1946-04-25
+    method: restitution
+    direct: true
+    label: Austrian Receipt for Cultural Property no. IIIa, item no. 29
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46120.html
+        note: "restituted to Austria on 25 April 1946 with Rothschild as the presumed owner. (Munich property card #2306/7; Austrian Receipt for Cultural Property no. IIIa, item no. 29"
+        source: nga-1961-9-21
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    place: new-york-city
+    label: "their source: the Vienna Rothschilds"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46120.html
+        note: (Rosenberg & Stiebel, New York, put on consignment with M. Knoedler & Co., New York, May, 1947; … Letter of 10 April 1987 … gives their source for the picture as the Vienna Rothschilds.
+        source: nga-1961-9-21
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1947-05
+    method: transfer
+    direct: true
+    place: new-york-city
+    label: on consignment from Rosenberg & Stiebel May 1947, in Knoedler's regular stock from June 1947 with a share owned by Rosenberg & Stiebel; stock book 10, p. 34, no. A3695
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46120.html
+        note: put on consignment with M. Knoedler & Co., New York, May, 1947; transferred to Knoedler's regular stock in June with a portion owned by Rosenberg & Stiebel);[3]
+        source: nga-1961-9-21
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1952-02
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46120.html
+        note: purchased February 1952 by the Samuel H. Kress Foundation, New York;
+        source: nga-1961-9-21
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1961
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46120.html
+        note: gift 1961 to NGA.
+        source: nga-1961-9-21
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20175692
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20175692
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20175692
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20175692
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20175692
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20175692

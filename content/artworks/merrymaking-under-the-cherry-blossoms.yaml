@@ -1,0 +1,96 @@
+public_id: 124169
+title_lang: en
+title: Merrymaking Under the Cherry Blossoms
+names:
+  - lang: ja
+    role: translation
+    text: 花下遊楽図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q15892590
+  - lang: zh
+    role: translation
+    text: 花下遊樂圖
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q15892590
+creator: kano-naganobu
+created: 17th century
+created_span: uncertain
+materials: [color, paper]
+dimensions: [14.86, 35.58]
+institution: tokyo-national-museum
+inventory_number: A-11530
+wikidata_id: Q15892590
+metadata:
+  sources: [Wikidata Q15892590 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Aronia_Blossoms_Screen_2.jpg/1280px-Aronia_Blossoms_Screen_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Aronia_Blossoms_Screen_2.jpg
+    license: Public domain
+    credit: Kano Naganobu
+provenance:
+  - owner: artist/kano-naganobu
+    acquired: 1610s
+    method: creation
+    label: pair of six-fold screens, given to Kanō Naganobu by the seals; the commission possibly came from the noblewoman at the centre of the right screen or her circle
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100159&content_part_id=0&content_pict_id=0
+        note: 画中に捺された印章から、作者は狩野永徳の末弟にあたる長信（1577～1654）に比定されている。 … 本作の発注者も彼女ないしその近辺の可能性が高い。
+        source: emuseum-100159-ja
+        accessed: 2026-11-24
+      - url: https://emuseum.nich.go.jp/detail?langId=en&webView=&content_base_id=100159&content_part_id=0&content_pict_id=0
+        note: although the painting's exact date of execution is unknown, it is believed to have been done some time in the 1610s.
+        source: emuseum-100159-en
+        accessed: 2026-11-24
+  - owner: person/hara-rokuro
+    label: earlier provenance unknown; the two middle panels of the right screen burnt in the Great Kantō Earthquake of 1923 while the screens were being restored
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100159&content_part_id=0&content_pict_id=0
+        note: 明治期の実業家原六郎（はらろくろう）（1842～1933）の旧蔵品であるが、それ以前の伝来は知られない。
+        source: emuseum-100159-ja
+        accessed: 2026-11-24
+      - url: https://emuseum.nich.go.jp/detail?langId=en&webView=&content_base_id=100159&content_part_id=0&content_pict_id=0
+        note: Previously, the painting was owned by the Meiji period (1868-1912) industrialist Hara Rokurô. It was being restored in 1923 (Taishô 12) when the Great Kantô Earthquake struck, and the two middle panels of the right screen were lost to fire.
+        source: emuseum-100159-en
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 1968
+    place: tokyo
+    label: entered the museum's collection in 1968 (A-11530); owner today the National Institutes for Cultural Heritage
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100159&content_part_id=0&content_pict_id=0
+        note: 当館には昭和43年に収蔵された。
+        source: emuseum-100159-ja
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/75
+        note: 保管施設の名称 ： 東京国立博物館 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-75
+        accessed: 2026-11-24
+identifiers:
+  emuseum: "100159"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q15892590
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q15892590
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q15892590
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q15892590
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q15892590
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q15892590

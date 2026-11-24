@@ -1,0 +1,45 @@
+public_id: 124835
+title: Re-Enacting Krishna's marvellous Deeds
+names:
+  - lang: de
+    role: translation
+    text: Krishnas Taten werden nachgestellt
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q141854605
+created: c. 1780
+created_span: uncertain
+materials: [paper, gouache paint, gold]
+dimensions: [27.5, 35.5]
+institution: museum-rietberg
+inventory_number: REF 38
+web_url: https://rietberg.ch/sammlungen/ref-38
+wikidata_id: Q141854605
+metadata:
+  sources: [Wikidata Q141854605 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Re-Enacting_Krishna%27s_marvellous_Deeds%2C_Folio_from_the_Bhagavata_Purana_series.jpg/1280px-Re-Enacting_Krishna%27s_marvellous_Deeds%2C_Folio_from_the_Bhagavata_Purana_series.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Re-Enacting_Krishna%27s_marvellous_Deeds,_Folio_from_the_Bhagavata_Purana_series.jpg
+    license: Public domain
+    credit: Ascribed to a Master of the first generation after Nainsukh
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q141854605
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q141854605
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q141854605
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q141854605
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q141854605

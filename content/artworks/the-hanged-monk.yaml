@@ -1,0 +1,169 @@
+public_id: 125115
+title_lang: en
+title: The Hanged Monk
+names:
+  - lang: es
+    role: translation
+    text: El monje colgado
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268076
+creator: francisco-goya
+created: c. 1810
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [31, 39.2]
+institution: art-institute-of-chicago
+inventory_number: "1936.225"
+wikidata_id: Q20268076
+metadata:
+  sources: [Wikidata Q20268076 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Francisco_Jos%C3%A9_de_Goya_y_Lucientes_-_The_Hanged_Monk_-_1936.225_-_Art_Institute_of_Chicago.jpg/1280px-Francisco_Jos%C3%A9_de_Goya_y_Lucientes_-_The_Hanged_Monk_-_1936.225_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francisco_Jos%C3%A9_de_Goya_y_Lucientes_-_The_Hanged_Monk_-_1936.225_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Francisco Goya
+provenance:
+  - owner: artist/francisco-goya
+    method: creation
+    place: madrid
+    label: one of six small paintings in the 1812 inventory of Goya's collection
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: One of a series of six small paintings in an inventory of Goya’s collection, Madrid, taken in 1812 for the division of property between the artist and his son Javier following the death of the artist’s wife;
+        source: aic-1936-225
+        accessed: 2026-11-24
+  - owner: person/francisco-javier-goya-bayeu
+    acquired: after 1812
+    method: inheritance
+    direct: true
+    place: madrid
+    label: allotted to Goya's son in the 1812 division of property after the death of Goya's wife; group marked X9, six paintings valued at 800 reales
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: "the group of small paintings marked X9 being allotted to the son: “Otros seis de varios asuntos con el no neuve, en 800 reales” [see Gassier and Wilson 1971, pp. 251, 254]; presumably Javier Goya, after 1812."
+        source: aic-1936-225
+        accessed: 2026-11-24
+  - owner_label: Marqués de la Romana
+    place: madrid
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: Possibly the Marques de la Romana, Madrid [according to Vienna 1908, the painting was formerly in the Romana collection].
+        source: aic-1936-225
+        accessed: 2026-11-24
+  - owner: person/laurent-laperlier
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: Laurent Laperlier (died 1878);
+        source: aic-1936-225
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1879-02-19
+    method: auction
+    direct: true
+    place: paris
+    label: Laperlier sale, lot 20
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: sold, 19 February 1879, Hotel Drouot, Paris, lot 20.
+        source: aic-1936-225
+        accessed: 2026-11-24
+  - owner_label: Serre Dupuch, Bordeaux
+    place: bordeaux
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: Serre Dupuch, Bordeaux [according to Desparmet Fitz-Gerald 1928-51].
+        source: aic-1936-225
+        accessed: 2026-11-24
+  - owner_label: Desparmet Fitz-Gerald, Paris
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: Desparmet Fitz-Gerald, Paris [according to Desparmet Fitz-Gerald 1928-51].
+        source: aic-1936-225
+        accessed: 2026-11-24
+  - owner: institution/galerie-miethke
+    role: dealer
+    acquired: 1908 or earlier
+    place: vienna
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: Miethke Gallery, Vienna, by 1908 [according to Vienna 1908];
+        source: aic-1936-225
+        accessed: 2026-11-24
+  - owner: person/adolf-kohner
+    method: purchase
+    direct: true
+    place: budapest
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: sold to Baron Adolf Kohner, Budapest [see Collection Baron Adolphe Kohner, Ernst-Múzeum, Budapest, 1934];
+        source: aic-1936-225
+        accessed: 2026-11-24
+  - owner: institution/ernst-muzeum
+    role: agent
+    acquired: 1934
+    method: auction
+    direct: true
+    place: budapest
+    label: Kohner collection sale, lot 45
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: Sale, Ernst-Múzeum, Budapest, 1934, lot 45 (ill.).
+        source: aic-1936-225
+        accessed: 2026-11-24
+  - owner: person/edouard-napoleon-cesar-edmond-mortier-duc-de-trevise
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: Édouard Napoléon César Edmond Mortier, duc de Trévise (died 1946), Paris [based on note on the accession card].
+        source: aic-1936-225
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1936 or earlier
+    place: new-york-city
+    label: stock no. A 1717
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: Knoedler & Co., New York, stock no. A 1717, by 1936;
+        source: aic-1936-225
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1936
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/22808
+        note: sold the Art Institute, 1936.
+        source: aic-1936-225
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268076
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20268076
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20268076
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20268076
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268076
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268076

@@ -1,0 +1,43 @@
+public_id: 124039
+title: Ōsasahara Shrine Honden
+names:
+  - lang: ja
+    role: translation
+    text: 大笹原神社本殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020364
+created: 1414
+institution: osasahara-shrine
+location: [136.0658, 35.0765]
+wikidata_id: Q107020364
+metadata:
+  sources: [Wikidata Q107020364 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/yasu
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Shiga_Oosasahara.jpg/1280px-Shiga_Oosasahara.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shiga_Oosasahara.jpg
+    license: Public domain
+    credit: Yusuke.ogawa at Japanese Wikipedia
+provenance:
+  - owner: institution/osasahara-shrine
+    acquired: 1414
+    method: creation
+    place: yasu
+    label: main sanctuary built in Ōei 21 (1414) according to its ridge tags; rebuilt by Mabuchi Sadanobu, lord of Iwakura Castle (Wikipedia); the shrine, called Ōji-sha or Gozu Tennō-sha, renamed Ōsasahara Shrine in early Meiji
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1444
+        note: 当社の創立は寛和二年（九八六）と伝えられ、もとは王子社または牛頭天王社と呼ばれていたが、明治の初めに大笹原神社に改められた。本殿は棟札によって、応永二十一年（一四一四）の建立であることが知られる。 … 所有者名 ： 大笹原神社
+        source: kunishitei-102-1444
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%A4%A7%E7%AC%B9%E5%8E%9F%E7%A5%9E%E7%A4%BE&oldid=111613690
+        note: "[[応永]]21年（[[1414年]]）には岩倉城主の[[馬淵定信]]により本殿が再建され"
+        source: wikipedia-ja-osasahara-jinja
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020364

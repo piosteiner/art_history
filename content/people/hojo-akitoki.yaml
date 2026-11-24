@@ -1,0 +1,21 @@
+public_id: 124286
+name: Hōjō Akitoki
+kind: person
+birth: 1248
+death: 1301-05-15
+wikidata_id: Q11402208
+metadata:
+  sources: [Wikidata Q11402208 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11402208
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q11402208
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q11402208

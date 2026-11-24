@@ -1,0 +1,16 @@
+public_id: 125201
+name: John of Patmos
+kind: person
+birth: 1/100
+wikidata_id: Q2733634
+metadata:
+  sources: [Wikidata Q2733634 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2733634
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2733634

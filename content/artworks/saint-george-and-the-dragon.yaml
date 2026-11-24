@@ -1,0 +1,266 @@
+public_id: 122964
+title_lang: en
+title: Saint George and the Dragon
+names:
+  - lang: fr
+    role: translation
+    text: Saint Georges et le Dragon
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2622161
+  - lang: de
+    role: translation
+    text: Hl. Georg (in Rüstung mit Waffenrock und Lanze) kämpft mit dem Drachen
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2622161
+  - lang: it
+    role: translation
+    text: San Giorgio e il drago
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2622161
+  - lang: es
+    role: translation
+    text: San Jorge y el dragón
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2622161
+  - lang: ja
+    role: translation
+    text: 聖ゲオルギウスとドラゴン
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2622161
+  - lang: zh
+    role: translation
+    text: 聖喬治大戰惡龍
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2622161
+  - lang: ru
+    role: translation
+    text: Святой Георгий и дракон (картина Рафаэля, Вашингтон)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2622161
+creator: raphael
+created: 1505
+materials: [oil paint, wood]
+dimensions: [28.5, 21.5]
+institution: national-gallery-of-art
+inventory_number: 1937.1.26
+provenance_status: a_clear
+provenance_status_note: Andrew W. Mellon bought it from the Hermitage in March 1931 and deeded it on 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q2622161
+metadata:
+  sources: [Wikidata Q2622161 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/saint-george
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q2622161
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q2622161
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Raphael_-_Saint_George_and_the_Dragon_-_Google_Art_Project.jpg/1280px-Raphael_-_Saint_George_and_the_Dragon_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raphael_-_Saint_George_and_the_Dragon_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Raphael
+provenance:
+  - owner: person/william-herbert-3rd-earl-of-pembroke
+    acquired: 1627 or earlier
+    place: wilton
+    label: Wilton House, Wiltshire
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: William Herbert, 3rd Earl of Pembroke [1580-1630], Wilton House, Wiltshire, by 1627;
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: person/philip-herbert-4th-earl-of-pembroke
+    place: wilton
+    label: his brother; Wilton House
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: possibly his brother, Philip Herbert, 4th Earl of Pembroke [1584-1649/1650], Wilton House;
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: person/charles-i-of-england
+    acquired: 1628/1639
+    method: gift
+    direct: true
+    place: london
+    label: given by the 3rd or the 4th Earl of Pembroke; recorded in Van der Doort's catalogue of the king's collection (c. 1639)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: given either by the 3rd Earl or the 4th Earl between 1628 and 1639 to Charles I, King of England [1600-1649];[1] — [1] Recorded in Van der Doort, A Catalogue and Description of King Charles the First's Capital Collection … (c. 1639)
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner_label: Commonwealth sale of Charles I's goods, Somerset House, London
+    role: agent
+    acquired: 1651-12-19
+    method: auction
+    direct: true
+    place: london
+    label: Charles I (Commonwealth) sale, Somerset House, London, 19 December 1651
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: (Charles I [Commonwealth] sale, Somerset House, London, 19 December 1651);
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: person/edward-bass
+    acquired: 1651-12-19
+    method: purchase
+    direct: true
+    label: bought at the Commonwealth sale
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: purchased by Edward Bass.[2] — [2] According to O. Miller, "The Inventories and Valuations of the King's Goods, 1649-1651"
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: person/charles-d-escoubleau-marquis-de-sourdis
+    label: possibly acquired from Edward Bass; recorded by Le Clerc and Colomsat, Cabinet des Singularitez, 1699
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: Charles d'Escoubleau, Marquis de Sourdis [d. 1666], possibly acquired from Bass.[3]
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: person/laurent-le-tessier-de-montarsy
+    acquired: 1729 or earlier
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: Laurent Le Tessier de Montarsy, by 1729;
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: person/pierre-crozat
+    acquired: 1729 or earlier
+    direct: true
+    place: paris
+    label: documented in the Recueil des Stampes … dans le Cabinet du Roi, vol. 1, 1763
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: Pierre Crozat [1665-1740], Paris, by 1729;[4]
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: person/louis-francois-crozat
+    method: inheritance
+    direct: true
+    place: paris
+    label: nephew of Pierre Crozat, marquis du Châtel
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: by inheritance to his nephews, first to Louis-François Crozat, marquis du Châtel [1691-1750], Paris,
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: person/louis-antoine-crozat
+    method: inheritance
+    direct: true
+    label: nephew of Pierre Crozat, baron de Thiers; inherited on Louis-François' death without a male heir
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: and then [on Louis-François' death without a male heir] to Louis-Antoine Crozat, baron de Thiers [1700-1770];
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner_label: heirs of Louis-Antoine Crozat, baron de Thiers
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: the latter's heirs;
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: person/catherine-ii-of-russia
+    acquired: 1772
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: bought through Denis Diderot (1713–1784) as intermediary, for the Imperial Hermitage Gallery
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: purchased 1772, through Denis Diderot [1713-1784] as an intermediary, by Catherine II, empress of Russia [1729-1796], for the Imperial Hermitage Gallery, Saint Petersburg;
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: "for the Imperial Hermitage Gallery, Saint Petersburg;[6] — [6] See A. Somof, Catalogue de la Galerie des Tableaux, Saint Petersburg, 1899: 112-113."
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1931-03
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: purchased March 1931 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1931-03
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: purchased March 1931 through (…) by Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1932-03-30
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: deeded 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[7]
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.28.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-26
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q2622161
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q2622161
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q2622161
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q2622161
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q2622161
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q2622161

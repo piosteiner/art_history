@@ -1,0 +1,221 @@
+public_id: 123201
+title_lang: en
+title: Portrait of a Man
+names:
+  - lang: nl
+    role: translation
+    text: Ritratto d'uomo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3937395
+  - lang: fr
+    role: translation
+    text: Portrait d'homme
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3937395
+  - lang: de
+    role: translation
+    text: Porträt eines Mannes
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3937395
+  - lang: ja
+    role: translation
+    text: 男の肖像画
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3937395
+creator: andrea-del-castagno
+created: c. 1450
+created_span: uncertain
+materials: [panel, tempera]
+dimensions: [54, 40.5]
+institution: national-gallery-of-art
+inventory_number: 1937.1.17
+web_url: https://books.google.de/books?id=iPP55b2Fk60C&pg=PA123#v=onepage&q&f=false
+wikidata_id: Q3937395
+metadata:
+  sources: [Wikidata Q3937395 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Andrea_del_castagno%2C_ritratto_maschile%2C_washington.jpg/1280px-Andrea_del_castagno%2C_ritratto_maschile%2C_washington.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andrea_del_castagno,_ritratto_maschile,_washington.jpg
+    license: Public domain
+    credit: Andrea del Castagno
+provenance:
+  - owner_label: Del Nero family, Florence
+    place: florence
+    label: tradition gathered by Duveen Brothers, not confirmed; Palazzo Del Nero
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: Probably Del Nero family, Florence, and, by descent, to Baron Cerbone Del Nero [1756-1816];[1]
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: person/cerbone-del-nero
+    ended: 1816
+    method: inheritance
+    direct: true
+    place: florence
+    label: Baron Cerbone Del Nero, baron of Porcigliano; the family died out with him
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: Probably Del Nero family, Florence, and, by descent, to Baron Cerbone Del Nero [1756-1816];[1]
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: person/ottavia-torrigiani
+    co_owners: [person/pietro-torrigiani]
+    method: inheritance
+    direct: true
+    place: florence
+    label: his widow and her brother, Marquis Pietro Torrigiani; Palazzo Torrigiani (formerly Del Nero)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: by inheritance to his widow, Ottavia Torrigiani [1758-1825], and her brother, Marquis Pietro Torrigiani [1773-1848], Palazzo Torrigiani (formerly Del Nero), Florence;[2]
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: person/luigi-torrigiani
+    method: inheritance
+    direct: true
+    place: florence
+    label: Marquis Luigi Torrigiani, Palazzo Torrigiani; seen there by Otto Mündler and Charles Eastlake in 1856
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: by inheritance to his son, Marquis Luigi Torrigiani [1804-1869], Palazzo Torrigiani;[3]
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: person/raffaele-torrigiani
+    method: inheritance
+    direct: true
+    place: florence
+    label: one of Luigi's four sons, probably Raffaele (per Duveen Brothers); Palazzo Torrigiani
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: by inheritance to one of his sons, probably Raffaele Torrigiani [1853-1927], Palazzo Torrigiani;[4]
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: person/charles-fairfax-murray
+    co_owners: [institution/thomas-agnew-sons-ltd]
+    role: dealer
+    method: purchase
+    direct: true
+    place: london
+    label: on joint account; Agnew's stock no. 7624; probably 1896
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: acquired by (Charles Fairfax Murray, London and Florence) on joint account with (Thomas Agnew & Sons, Ltd., London);[5] — The painting was Agnew's stock number 7624.
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: person/rodolphe-kann
+    acquired: 1896
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: sold 1896 to Rodolphe Kann [1846-1905], Paris;[6]
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    co_owners: [person/nathan-wildenstein]
+    role: dealer
+    method: purchase
+    direct: true
+    place: paris
+    label: Duveen Brothers (London and New York) and Nathan Wildenstein (Paris), with the Kann collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: (Duveen Brothers, Inc., London and New York) and (Nathan Wildenstein, Paris);[7]
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: person/j-pierpont-morgan
+    acquired: 1907
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: bought the entire Kann collection as a block; Isabella Stewart Gardner tried to obtain this painting
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: sold 1907 to J. Pierpont Morgan [1837-1913], New York;[8] — [8] … J.P. Morgan purchased the entire Kann collection as a block
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: person/j-pierpont-morgan-jr
+    method: inheritance
+    direct: true
+    place: new-york-city
+    label: his son
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: by inheritance to his son, J. Pierpont Morgan, Jr. [1867-1943], New York;
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: agent
+    acquired: 1935
+    direct: true
+    place: new-york-city
+    label: on consignment; New York and London; Knoedler's number CA 765
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: on consignment 1935 with (M. Knoedler & Co., New York and London);[9] — the Getty Provenance Index provides the information that the painting was Knoedler's number CA 765
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1935-02
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: purchased February 1935 by Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1937-05-01
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: deeded 1 May 1937 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[10]
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.19.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-17
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3937395
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q3937395
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3937395
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3937395
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3937395
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q3937395

@@ -1,0 +1,130 @@
+public_id: 123112
+title: Phaistos disc
+names:
+  - text: Phaistos disk
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q465338
+  - text: Phaestos disc
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q465338
+  - text: Festos disc
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q465338
+  - lang: nl
+    role: translation
+    text: Schijf van Phaistos
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q465338
+  - lang: fr
+    role: translation
+    text: disque de Phaïstos
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q465338
+  - lang: de
+    role: translation
+    text: Diskos von Phaistos
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q465338
+  - lang: it
+    role: translation
+    text: disco di Festo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q465338
+  - lang: es
+    role: translation
+    text: Disco de Festos
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q465338
+  - lang: ja
+    role: translation
+    text: ファイストスの円盤
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q465338
+  - lang: zh
+    role: translation
+    text: 斐斯托斯圓盤
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q465338
+  - lang: ko
+    role: translation
+    text: 파이스토스 원반
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q465338
+  - lang: ru
+    role: translation
+    text: Фестский диск
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q465338
+created: -1700/-1100
+created_label: c. 1700 BCE
+created_span: uncertain
+materials: [clay]
+dimensions: [2.1]
+institution: heraklion-archaeological-museum
+inventory_number: ΑΕ 1358
+web_url: http://heraklionmuseum.gr/?page_id=633
+wikidata_id: Q465338
+metadata:
+  sources: [Wikidata Q465338 (retrieved 2026-11-23)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3d/PhaistosDiskLarge.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:PhaistosDiskLarge.jpg
+    license: CC BY-SA 3.0
+provenance:
+  - owner: person/luigi-pernier
+    acquired: 1908-07-03
+    method: find
+    label: found in the basement of room 8, building 101, north-east of the palace, during the Italian Archaeological Mission under Federico Halbherr; Pernier not present at the moment of the find; in Phaistos
+    sources:
+      - url: https://en.wikipedia.org/wiki/Phaistos_Disc
+        note: Italian archaeologist Luigi Pernier recovered the intact "dish" on 3 July 1908 during his excavation of the first Minoan palace.
+        source: wikipedia-en-phaistos-disc
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Diskos_von_Phaistos
+        note: Der Diskos wurde am Abend des 3. Julis 1908 bei Ausgrabungen des Italieners Luigi Pernier im Zuge der von Federico Halbherr 1857–1930 geleiteten italienischen Archäologischen Mission von 1908 gefunden. … Pernier war jedoch bei der Auffindung nicht persönlich anwesend.
+        source: wikipedia-de-diskos-von-phaistos
+        accessed: 2026-11-24
+  - owner: institution/heraklion-archaeological-museum
+    method: transfer
+    place: heraklion
+    sources:
+      - url: https://en.wikipedia.org/wiki/Phaistos_Disc
+        note: It is now on display at the Heraklion Archaeological Museum
+        source: wikipedia-en-phaistos-disc
+        accessed: 2026-11-24
+identifiers:
+  gnd: 4196655-7
+  viaf: "193925792"
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q465338
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q465338
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q465338
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q465338
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q465338

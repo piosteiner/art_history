@@ -1,0 +1,151 @@
+public_id: 125068
+title_lang: de
+title: Apollo und Marsyas
+names:
+  - lang: en
+    role: translation
+    text: Apollo and Marsyas
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20266911
+  - lang: fr
+    role: translation
+    text: Apollon et Marsyas
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20266911
+  - lang: ru
+    role: translation
+    text: Аполлон и Марсия
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20266911
+creator: hans-thoma
+created: 1888
+materials: [oil paint, cardboard]
+dimensions: [101, 73.5]
+institution: art-institute-of-chicago
+inventory_number: "2008.555"
+provenance_status: d_seized
+provenance_status_note: Held by the German Reich for the Linz collection 1939–45, taken from Count Anton Lanckoroński, Vienna; back with him at Schloss Hohenems from 1948.
+wikidata_id: Q20266911
+metadata:
+  sources: [Wikidata Q20266911 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Hans_Thoma_-_Apollo_und_Marsyas.jpg/1280px-Hans_Thoma_-_Apollo_und_Marsyas.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Thoma_-_Apollo_und_Marsyas.jpg
+    license: Public domain
+    credit: Hans Thoma
+provenance:
+  - owner: person/karol-lanckoronski
+    acquired: 1902 or earlier
+    place: vienna
+    sources:
+      - url: https://www.artic.edu/artworks/192691
+        note: Count Karl Lanckoronski-Brzezie (died 1933) by 1902, Vienna;
+        source: aic-2008-555
+        accessed: 2026-11-24
+  - owner: person/anton-lanckoronski
+    acquired: 1938-12-31 or earlier
+    acquired_label: probably from 1933, definitely by 1938
+    direct: true
+    place: vienna
+    sources:
+      - url: https://www.artic.edu/artworks/192691
+        note: Count Anton Lanckoronski (1893–1965), Vienna, probably from 1933, definitely by 1938;
+        source: aic-2008-555
+        accessed: 2026-11-24
+  - owner: person/adolf-hitler
+    role: possessor
+    acquired: 1939
+    ended: 1945
+    direct: true
+    label: German Reich, for the Linz collection
+    sources:
+      - url: https://www.artic.edu/artworks/192691
+        note: German Reich for Linz Collection (1939-45);
+        source: aic-2008-555
+        accessed: 2026-11-24
+  - owner: person/anton-lanckoronski
+    acquired: 1948
+    place: hohenems
+    label: Schloss Hohenems; there definitely in 1951
+    sources:
+      - url: https://www.artic.edu/artworks/192691
+        note: Count Anton Lanckoronski, Schloss Hohenems, from 1948, at Hohenems definitely in 1951;
+        source: aic-2008-555
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1986-11-28
+    method: auction
+    direct: true
+    place: london
+    label: sale, Christie's, London, 28 November 1986
+    sources:
+      - url: https://www.artic.edu/artworks/192691
+        note: sold, Christie’s London, Nov. 28, 1986.
+        source: aic-2008-555
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    not_sold: true
+    acquired: 1998-06-30
+    method: auction
+    place: munich
+    label: sale, Sotheby's, Munich, 30 June 1998, lot 147, bought in
+    sources:
+      - url: https://www.artic.edu/artworks/192691
+        note: Offered for sale, Sotheby’s, Munich, June 30, 1998, lot 147, bought in;
+        source: aic-2008-555
+        accessed: 2026-11-24
+  - owner_label: Private collection, Germany
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/192691
+        note: private collection, Germany.
+        source: aic-2008-555
+        accessed: 2026-11-24
+  - owner: institution/jack-kilgore-co
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/192691
+        note: Jack Kilgore & Co, Inc., New York;
+        source: aic-2008-555
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 2008
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/192691
+        note: sold the the Art Institute of Chicago, 2008.
+        source: aic-2008-555
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20266911
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20266911
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20266911
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20266911
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20266911
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20266911

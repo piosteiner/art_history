@@ -1,0 +1,156 @@
+public_id: 125216
+title_lang: en
+title: Cupid Chastised
+names:
+  - lang: nl
+    role: translation
+    text: De Geseling van Cupid
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20276003
+creator: bartolomeo-manfredi
+created: 1613
+materials: [oil paint, canvas]
+dimensions: [175.3, 130.6]
+institution: art-institute-of-chicago
+inventory_number: "1947.58"
+wikidata_id: Q20276003
+metadata:
+  sources: [Wikidata Q20276003 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/ManfrediMarsCupid.jpg/1280px-ManfrediMarsCupid.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ManfrediMarsCupid.jpg
+    license: Public domain
+    credit: Bartolomeo Manfredi
+provenance:
+  - owner: person/agostino-chigi
+    acquired: 1613-03
+    ended: 1644
+    method: commission
+    place: siena
+    label: commissioned through the agency of Giulio Mancini; painting completed by October 1613 (Wazbinski 1996)
+    sources:
+      - url: https://www.artic.edu/artworks/59847
+        note: Commissioned by Agostino Chigi (died 1644), Siena, through the agency of Giulio Mancini in March 1613; painting completed by October 1613 [see Wazbinski, 1996];
+        source: aic-1947-58
+        accessed: 2026-11-24
+  - owner_label: Chigi family, Siena and Rome
+    acquired: 1644
+    method: inheritance
+    direct: true
+    label: "1644 Chigi inventory: Mars breaking Cupid, Venus trying to defend him, by Bartolomeo Manfredi, 100 scudi (Archivio Chigi Armadio CCCLI)"
+    sources:
+      - url: https://www.artic.edu/artworks/59847
+        note: 'by descent in the Chigi family, Siena and Rome [recorded in 1644 Chigi inventory: "Un quadro con cornici di noce di alto braccia due 3/4 large braccia due rappresenta un soldato [Mars] che spezza [Amour] presente Venere, la quale cerca difenderlo, opera di Bartolomeo Manfredi Milanese scudi cento 100," see Archivio Chigi Armadio CCCLI];'
+        source: aic-1947-58
+        accessed: 2026-11-24
+  - owner: person/pope-alexander-vii
+    ended: 1667
+    method: inheritance
+    direct: true
+    place: rome
+    label: Fabio Chigi, later Pope Alexander VII; 1657 Chigi inventory, no. 57 (Archivio Chigi Armadio CCCLXXXI)
+    sources:
+      - url: https://www.artic.edu/artworks/59847
+        note: by descent to Fabio Chigi, later Pope Alexander VII (died 1667), Rome [recorded in 1657 Chigi inventory, no. 57, “Un quadro dipinto di un Marte che spezza Amore e Venere che finge tenerlo [illegible] con strata alto p[a]lmi 7 incirca largo 5 1/2 incirca di Bartolomeo Manfredi con cornice dorata liscia,” see Archivio Chigi Armadio CCCLXXXI];
+        source: aic-1947-58
+        accessed: 2026-11-24
+  - owner: person/agostino-chigi-2
+    ended: 1705
+    method: inheritance
+    direct: true
+    place: rome
+    label: his nephew Agostino Chigi III (Moir 1985)
+    sources:
+      - url: https://www.artic.edu/artworks/59847
+        note: by descent to his nephew, Agostino Chigi III, Rome (died 1705) [Moir, 1985];
+        source: aic-1947-58
+        accessed: 2026-11-24
+  - owner: person/ludovico-chigi-albani-della-rovere
+    method: inheritance
+    direct: true
+    place: rome
+    label: Palazzo Chigi, Rome, until at least 1917; probably moved to his residence in Ariccia in 1917, when the palazzo became property of the Italian government
+    sources:
+      - url: https://www.artic.edu/artworks/59847
+        note: by descent to Prince Ludovico Chigi Albani della Rovere (1866-1951), Palazzo Chigi, Rome until at least 1917; the painting was probably moved to Ludovico Chigi's residence in Ariccia, near Rome, 1917, when the palazzo became property of the Italian government
+        source: aic-1947-58
+        accessed: 2026-11-24
+  - owner: person/armando-brasini
+    acquired: c. 1935 or earlier
+    place: rome
+    label: seen there by Carlo Sestieri at the age of 13 (letter, 3 October 1988)
+    sources:
+      - url: https://www.artic.edu/artworks/59847
+        note: Armando Brasini (1879-1965), Rome, by c. 1935 [according to Carlo Sestieri’s letter, October 3, 1988, in curatorial file stating that he saw it there when he was 13];
+        source: aic-1947-58
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1938 or earlier
+    direct: true
+    place: new-york-city
+    label: Wildenstein and Company, New York and Paris (Voss 1938, p. 30; Moir 1985)
+    sources:
+      - url: https://www.artic.edu/artworks/59847
+        note: Wildenstein and Company, New York and Paris, by 1938 [Voss 1938, p. 30 and Moir 1985];
+        source: aic-1947-58
+        accessed: 2026-11-24
+  - owner: person/charles-h-worcester
+    acquired: 1939
+    method: purchase
+    direct: true
+    place: chicago
+    label: letters from Wildenstein to Worcester, 16 and 21 November 1939; lent to the Art Institute from 1939
+    sources:
+      - url: https://www.artic.edu/artworks/59847
+        note: sold by Wildenstein to Charles H. Worcester, Chicago, 1939 [letters from Wildenstein to Worcester, Nov. 16 and 21, 1939, in curatorial file]; lent to the Art Institute from 1939;
+        source: aic-1947-58
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    role: custodian
+    acquired: 1939
+    ended: 1947
+    direct: true
+    place: chicago
+    label: on loan from Charles H. Worcester
+    sources:
+      - url: https://www.artic.edu/artworks/59847
+        note: lent to the Art Institute from 1939;
+        source: aic-1947-58
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1947
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/59847
+        note: given to the Art Institute, 1947.
+        source: aic-1947-58
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20276003
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20276003
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20276003
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20276003
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20276003
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20276003

@@ -1,0 +1,22 @@
+public_id: 127989
+name: Settignano
+kind: settlement
+parent: metropolitan-city-of-florence
+country_code: IT
+location: [11.32203, 43.78289]
+wikidata_id: Q942605
+metadata:
+  sources: [Wikidata Q942605 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q942605
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q942605
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q942605

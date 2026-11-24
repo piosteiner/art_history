@@ -1,0 +1,8 @@
+public_id: 125732
+name: Bamendjo
+kind: settlement
+parent: ouest
+country_code: CM
+location: [10.28102, 5.55611]
+metadata:
+  sources: [Wikidata null (retrieved 2026-11-24)]

@@ -1,0 +1,70 @@
+public_id: 124712
+title_lang: en
+title: Playing the "Hand Game"
+created: c. 1760
+created_span: uncertain
+institution: cleveland-museum-of-art
+inventory_number: "1985.258"
+web_url: https://clevelandart.org/art/1985.258
+wikidata_id: Q60475548
+metadata:
+  sources: [Wikidata Q60475548 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Yasumasa_Hasegawa_-_Playing_the_%22Hand_Game%22_-_1985.258_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Yasumasa_Hasegawa_-_Playing_the_%22Hand_Game%22_-_1985.258_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yasumasa_Hasegawa_-_Playing_the_%22Hand_Game%22_-_1985.258_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Yasumasa Hasegawa
+provenance:
+  - owner: institution/honolulu-museum-of-art
+    acquired: 1968 or earlier
+    place: honolulu
+    label: Michener Collection, Honolulu Academy of Arts; published as such by Richard Lane in Monumenta Nipponica 23 (1968), p. 191, fig. 7
+    sources:
+      - url: https://clevelandart.org/art/1985.258
+        note: 'Michener Collection, Honolulu Academy of Arts, Honolulu, HI [? by 1968–?] — Published as being in the collection of "Honolulu Academy of Arts (Michener Collection)" in Richard Lane. “Ukiyo-E Paintings Abroad. A Review Article.” Monumenta Nipponica 23, no. 1/2 (1968): 190–207. Mentioned: p. 191; Reproduced: fig. 7.'
+        source: cma-1985-258
+        accessed: 2026-11-24
+  - owner: person/richard-lane
+    role: dealer
+    place: tokyo
+    label: Dr. Richard Lane; sold to Mr. and Mrs. Kelvin Smith
+    sources:
+      - url: https://clevelandart.org/art/1985.258
+        note: (Dr. Richard Lane, Tokyo, Japan, sold to Mr. and Mrs. Kelvin Smith)
+        source: cma-1985-258
+        accessed: 2026-11-24
+  - owner: person/kelvin-smith
+    co_owners: [person/eleanor-armstrong-smith]
+    method: purchase
+    direct: true
+    place: cleveland
+    label: The Kelvin Smith Collection; bought by Mr. and Mrs. Kelvin Smith; given by Mrs. Kelvin Smith to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1985.258
+        note: The Kelvin Smith Collection, Cleveland, OH, given by Mrs. Kelvin [Eleanor Armstrong] Smith [1899–1998] to the Cleveland Museum of Art [?–1985]
+        source: cma-1985-258
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1985
+    method: gift
+    direct: true
+    place: cleveland
+    label: The Kelvin Smith Collection, given by Mrs. Kelvin Smith
+    sources:
+      - url: https://clevelandart.org/art/1985.258
+        note: The Cleveland Museum of Art, Cleveland, OH [1985–] — The Kelvin Smith Collection, given by Mrs. Kelvin Smith
+        source: cma-1985-258
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60475548
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60475548
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60475548

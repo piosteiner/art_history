@@ -1,0 +1,18 @@
+public_id: 122734
+kind: book
+name_lang: ja
+name: 平安人物志
+compilers: [Rōkanshi]
+volumes_total: 3 巻 + 附録, bound as 1 冊
+edition: 文化再板 (Bunka 10)
+place: Kyoto
+publisher: 林伊兵衛
+year: "1813"
+url: https://touda.tohoku.ac.jp/collection/database/library/10010000007700
+accessed: 2026-11-23
+archive: Tohoku University Library, Kanō Bunko
+shelfmark: 3/27040/1
+primary_source: true
+reliability: primary
+edition_of: heian-jinbutsu-shi
+description_md: Read from the IIIF images (47 frames, 2023); frames 2–5 = 凡例, 目次, opening of 巻上. Manifest https://touda.tohoku.ac.jp/collection/iiif/metadata/10010000007700/manifest.json

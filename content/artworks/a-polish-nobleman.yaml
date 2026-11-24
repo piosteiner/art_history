@@ -1,0 +1,194 @@
+public_id: 122977
+title_lang: en
+title: A Polish Nobleman
+names:
+  - text: Władysław IV in Ełk skin
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q9351747
+  - lang: nl
+    role: translation
+    text: Een poolse edelman
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q9351747
+  - lang: fr
+    role: translation
+    text: Un noble polonais
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q9351747
+  - lang: de
+    role: translation
+    text: Ein polnischer Edelmann
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q9351747
+  - lang: ja
+    role: translation
+    text: ポーランドの貴族
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q9351747
+  - lang: ru
+    role: translation
+    text: Польский дворянин
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q9351747
+creator: rembrandt
+created: 1637
+materials: [oil paint, panel]
+dimensions: [96.8, 66]
+institution: national-gallery-of-art
+inventory_number: 1937.1.78
+provenance_status: a_clear
+provenance_status_note: Andrew W. Mellon bought it from the Hermitage in February 1931 and deeded it on 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q9351747
+metadata:
+  sources: [Wikidata Q9351747 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/andrzej-rej
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q9351747
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q9351747
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Rembrandt_van_Rijn%2C_A_Polish_Nobleman%2C_1637%2C_NGA_85.jpg/1280px-Rembrandt_van_Rijn%2C_A_Polish_Nobleman%2C_1637%2C_NGA_85.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn,_A_Polish_Nobleman,_1637,_NGA_85.jpg
+    license: CC0
+    credit: Rembrandt
+provenance:
+  - owner: person/harman-van-swol
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.85.html
+        note: Possibly Harman van Swol;
+        source: nga-1937-1-78
+        accessed: 2026-11-24
+  - owner: person/jan-pietersz-zomer
+    role: agent
+    acquired: 1707-04-20
+    method: auction
+    direct: true
+    place: amsterdam
+    label: sale of Harman van Swol, Amsterdam, 20 April 1707, no. 15, possibly as 'Een Ambassadeur van Moscovien'
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.85.html
+        note: possibly (his sale, Jan Pietersz. Zomer, Amsterdam, 20 April 1707, no. 15).[1] — [1] … a painting described as "Een Ambassadeur van Moscovien, van Rembrandt kragtig geschildert" … may have been this work
+        source: nga-1937-1-78
+        accessed: 2026-11-24
+  - owner: person/philippus-florentinus-vergeloo
+    role: dealer
+    acquired: 1765
+    place: rotterdam
+    label: Antwerp dealer; acquired in Rotterdam for Count Cobenzl
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.85.html
+        note: Acquired 1765 in Rotterdam by (Philippus Florentinus Vergeloo, Antwerp) for Count Johan Carl Philipp Cobenzl [1712-1770];
+        source: nga-1937-1-78
+        accessed: 2026-11-24
+  - owner: person/johann-karl-philipp-von-cobenzl
+    acquired: 1765
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.85.html
+        note: for Count Johan Carl Philipp Cobenzl [1712-1770]; sold 1768 to Catherine II
+        source: nga-1937-1-78
+        accessed: 2026-11-24
+  - owner: person/catherine-ii-of-russia
+    acquired: 1768
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: first catalogued (1773–85) as 'Portrait d'un Turc'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.85.html
+        note: sold 1768 to Catherine II, empress of Russia [1729-1796], Saint Petersburg;[2]
+        source: nga-1937-1-78
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.85.html
+        note: Imperial Hermitage Gallery, Saint Petersburg;
+        source: nga-1937-1-78
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1931-02
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.85.html
+        note: sold February 1931 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1937-1-78
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1931-02
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.85.html
+        note: sold February 1931 through (…) to Andrew W. Mellon, Pittsburgh and Washington;
+        source: nga-1937-1-78
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1932-03-30
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.85.html
+        note: deeded 30 March 1932 to The A. W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1937-1-78
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.85.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-78
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q9351747
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q9351747
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q9351747
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q9351747
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q9351747
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q9351747

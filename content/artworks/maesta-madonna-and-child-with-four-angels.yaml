@@ -1,0 +1,160 @@
+public_id: 122915
+title_lang: en
+title: Maestà (Madonna and Child with Four Angels)
+creator: master-of-citta-di-castello
+created: c. 1290
+created_span: uncertain
+materials: [tempera, panel]
+dimensions: [230, 141.5]
+institution: national-gallery-of-art
+inventory_number: 1961.9.77
+wikidata_id: Q20172954
+metadata:
+  sources: [Wikidata Q20172954 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Maest%C3%A0_%28Madonna_and_Child_with_Four_Angels%29_B18363.jpg/1280px-Maest%C3%A0_%28Madonna_and_Child_with_Four_Angels%29_B18363.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maest%C3%A0_(Madonna_and_Child_with_Four_Angels)_B18363.jpg
+    license: Public domain
+    credit: Master of Città di Castello Italian, active c. 1290 - 1320
+provenance:
+  - owner: institution/san-francesco-san-quirico-d-orcia
+    place: san-quirico-d-orcia
+    label: drawn by Johann Anton Ramboux (probably 1833–1843) 'in a cloister of the main church' of San Quirico; owned by a lay confraternity
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46176.html
+        note: Possibly the church of San Francesco in San Quirico d’Orcia (Siena).[1]
+        source: nga-1961-9-77
+        accessed: 2026-11-24
+  - owner: person/pompeo-lemmi
+    place: san-quirico-d-orcia
+    label: or Pompeo Lammi
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46176.html
+        note: Pompeo Lemmi (or Lammi?), San Quirico d’Orcia; — described as “presso il Sig. Lemmi”; Fern Rusk Shapley … speaks of Pompeo Lammi.
+        source: nga-1961-9-77
+        accessed: 2026-11-24
+  - owner: person/giacobbe-preziotti
+    acquired_label: by c. 1930
+    direct: true
+    place: san-quirico-d-orcia
+    label: named as owner in the 1930 suit
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46176.html
+        note: Giacobbe Preziotti, San Quirico d’Orcia, by c. 1930;[2]
+        source: nga-1961-9-77
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1930
+    method: claim
+    place: san-quirico-d-orcia
+    label: the Pia Commissione di Santa Maria di Vitaleta sued the owners claiming its restitution to San Francesco
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46176.html
+        note: This same commission later brought a suit against the possessors of the painting in 1930, claiming its restitution.
+        source: nga-1961-9-77
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1936-11
+    label: Ministry for National Education confirmed private ownership and authorized export; restoration followed
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46176.html
+        note: "[3] In November 1936 … the Ministry for National Education notified the Soprintendenza that property rights had been confirmed to belong to the private citizens who then owned the painting, and its export authorized."
+        source: nga-1961-9-77
+        accessed: 2026-11-24
+  - owner_label: Italian art market
+    role: dealer
+    direct: true
+    label: offered for sale after restoration
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46176.html
+        note: (Italian art market);[3] — Probably following this decision, the restoration of the panel began and the painting was offered for sale on the Italian art market.
+        source: nga-1961-9-77
+        accessed: 2026-11-24
+  - owner: person/alberto-fassini
+    direct: true
+    place: tivoli
+    label: Baron Alberto Fassini
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46176.html
+        note: Baron  Alberto Fassini, Tivoli; — places the painting “shortly after World War II in a private collection near Tivoli,” refers, probably, to that of Alberto Fassini.
+        source: nga-1961-9-77
+        accessed: 2026-11-24
+  - owner: person/corinna-uberti-trossi
+    acquired: 1949 or earlier
+    direct: true
+    place: livorno
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46176.html
+        note: Corinna Uberti Trossi, Livorno, by 1949;
+        source: nga-1961-9-77
+        accessed: 2026-11-24
+  - owner: person/ettore-sestieri
+    role: dealer
+    acquired: 1951 or earlier
+    direct: true
+    place: rome
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46176.html
+        note: (Ettore Sestieri, Rome), by 1951;[4]
+        source: nga-1961-9-77
+        accessed: 2026-11-24
+  - owner: person/alessandro-contini-bonacossi-2
+    role: dealer
+    acquired: 1953 or earlier
+    direct: true
+    place: florence
+    label: offered it to the Kress Collection 1953; 'from my personal collection in Florence'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46176.html
+        note: (Count Alessandro Contini Bonacossi, Florence), by 1953;[5] — this painting is described as one "which came from my personal collection in Florence."
+        source: nga-1961-9-77
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1954-06-30
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: offer of 7 June 1954 for sixteen paintings (as Master of Badia a Isola), accepted 30 June 1954; final payment early 1957
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46176.html
+        note: sold 1954 to the Samuel H. Kress Foundation, New York;[6] — On 7 June 1954, the Kress Foundation made an offer to Contini Bonacossi for sixteen paintings … Contini Bonacossi accepted the offer on 30 June 1954; the final payment for the purchase was ultimately made in early 1957
+        source: nga-1961-9-77
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1961
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46176.html
+        note: gift 1961 to NGA.
+        source: nga-1961-9-77
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20172954
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20172954
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20172954
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20172954
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20172954
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20172954

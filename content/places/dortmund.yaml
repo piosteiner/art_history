@@ -1,0 +1,47 @@
+public_id: 126092
+name: Dortmund
+names:
+  - lang: ja
+    role: translation
+    text: ドルトムント
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1295
+  - lang: zh
+    role: translation
+    text: 多特蒙德
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1295
+  - lang: ko
+    role: translation
+    text: 도르트문트
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1295
+  - lang: ru
+    role: translation
+    text: Дортмунд
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1295
+kind: settlement
+parent: nordrhein-westfalen
+country_code: DE
+location: [7.46528, 51.51389]
+wikidata_id: Q1295
+metadata:
+  sources: [Wikidata Q1295 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1295
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1295
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1295

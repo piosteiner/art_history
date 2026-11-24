@@ -1,0 +1,24 @@
+public_id: 125704
+name: Sitka
+names:
+  - lang: ru
+    role: translation
+    text: Ситка
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q79804
+kind: settlement
+country_code: US
+location: [-135.33472, 57.05333]
+wikidata_id: Q79804
+metadata:
+  sources: [Wikidata Q79804 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q79804
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q79804

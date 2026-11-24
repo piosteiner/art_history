@@ -1,0 +1,134 @@
+public_id: 123094
+title_lang: en
+title: Mercury
+attribution_label: after Giovanni Bologna
+created: 1780/1850
+created_label: c. 1780
+created_span: uncertain
+materials: [bronze]
+dimensions: [177, 48.5, 94.9]
+institution: national-gallery-of-art
+inventory_number: 1937.1.131
+wikidata_id: Q63809180
+metadata:
+  sources: [Wikidata Q63809180 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/After_Giovanni_Bologna%2C_Mercury%2C_c._1780-c._1850%2C_NGA_138.jpg/1280px-After_Giovanni_Bologna%2C_Mercury%2C_c._1780-c._1850%2C_NGA_138.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:After_Giovanni_Bologna,_Mercury,_c._1780-c._1850,_NGA_138.jpg
+    license: CC0
+    credit: after Giovanni Bologna
+provenance:
+  - owner: person/alexander-sergeyevich-stroganov
+    place: rome
+    label: Count Alexander Sergeievitch Stroganoff
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.138.html
+        note: Count Alexander Sergeievitch Stroganoff [1733-1811], Rome;
+        source: nga-1937-1-131
+        accessed: 2026-11-24
+  - owner: person/sergei-alexandrovich-stroganov
+    method: inheritance
+    direct: true
+    place: rome
+    label: Count Sergei Alexandrovitch Stroganoff, his son (as the NGA gives him)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.138.html
+        note: by inheritance to his son, Count Sergei Alexandrovitch Stroganoff [1794-1882], Rome;
+        source: nga-1937-1-131
+        accessed: 2026-11-24
+  - owner: person/grigory-sergeyevich-stroganov
+    method: inheritance
+    direct: true
+    place: rome
+    label: Count Grigory Sergeievitch Stroganoff, his son
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.138.html
+        note: by inheritance to his son, Count Grigory Sergeievitch Stroganoff [1829-1910], Rome;
+        source: nga-1937-1-131
+        accessed: 2026-11-24
+  - owner: person/george-donaldson-2
+    acquired: 1900
+    method: purchase
+    direct: true
+    place: london
+    label: Sir George Donaldson
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.138.html
+        note: sold 1900 to Sir George Donaldson [1845-1925], London;
+        source: nga-1937-1-131
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1904
+    method: purchase
+    direct: true
+    place: london
+    label: London, New York and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.138.html
+        note: sold 1904 to (Duveen Brothers, Inc., London, New York, and Paris);
+        source: nga-1937-1-131
+        accessed: 2026-11-24
+  - owner: person/arabella-huntington
+    method: purchase
+    direct: true
+    place: san-marino
+    label: Mrs. Collis P. Huntington
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.138.html
+        note: sold to Mrs. Collis P. Huntington [d. 1924], San Marino, California;
+        source: nga-1937-1-131
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1922
+    method: purchase
+    direct: true
+    label: London, New York and Paris; provenance after Duveen's prospectus
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.138.html
+        note: sold 1922 to (Duveen Brothers, Inc., London, New York, and Paris);[1] — [1] Provenance according to prospectus provided by Duveen Brothers, in NGA curatorial files.
+        source: nga-1937-1-131
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1936-12-15
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Duveen invoice lists the sculpture as by Giovanni Bologna
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.138.html
+        note: purchased 15 December 1936 by The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[2] — [2] The original Duveen Brothers invoice is in Gallery Archives, copy in NGA curatorial files; the sculpture is listed as by Giovanni Bologna.
+        source: nga-1937-1-131
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.138.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-131
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q63809180
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63809180
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q63809180
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63809180
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63809180

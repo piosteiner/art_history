@@ -1,0 +1,242 @@
+public_id: 125073
+title_lang: en
+title: Madame de Pastoret and Her Son
+names:
+  - lang: en
+    role: original
+    text: Portrait of Madame Adélaide Pastoret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3399482
+  - lang: fr
+    role: translation
+    text: Portrait de madame Pastoret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3399482
+  - lang: es
+    role: translation
+    text: Retrato de Madame Pastoret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3399482
+  - lang: ja
+    role: translation
+    text: パストレ夫人の肖像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3399482
+creator: jacques-louis-david
+created: 1791
+materials: [oil paint, canvas]
+dimensions: [130, 97]
+institution: art-institute-of-chicago
+inventory_number: "1967.228"
+wikidata_id: Q3399482
+metadata:
+  sources: [Wikidata Q3399482 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/adelaide-de-pastoret
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q3399482
+  - type: depicts_person
+    to: person/amedee-david-de-pastoret
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q3399482
+  - type: associated_with
+    to: movement/neoclassicism
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q3399482
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Jacques_Louis_David_-_Madame_de_Pastoret_and_Her_Son_-_1967.228_-_Art_Institute_of_Chicago.jpg/1280px-Jacques_Louis_David_-_Madame_de_Pastoret_and_Her_Son_-_1967.228_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacques_Louis_David_-_Madame_de_Pastoret_and_Her_Son_-_1967.228_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Jacques-Louis David
+provenance:
+  - owner: artist/jacques-louis-david
+    ended: 1825
+    method: creation
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: In the artist’s possession until his death in 1825;
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner: artist/jacques-louis-david
+    role: estate
+    acquired: 1825
+    direct: true
+    place: paris
+    label: inventoried 27 February 1826 at the apartment of his son Eugène, rue Cadet no. 11
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: inventoried on February 27, 1826, at the apartment of his son Eugène, rue Cadet no. 11, Paris;
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner_label: Révile
+    role: agent
+    acquired: 1826-04-17
+    method: auction
+    direct: true
+    place: paris
+    label: bought for Emmanuel de Pastoret at David's atelier sale, rue du Gros-Chenet no. 4, Paris, 17 April 1826, no. 16
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: sold in David’s atelier sale, rue du Gros-Chenet no. 4, Paris, April 17, 1826, no. 16, for Fr 400, to Révile, acting on behalf of Emmanuel de Pastoret [price and buyer recorded in David 1880 and the 1897 sale catalogue].
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner: person/claude-emmanuel-de-pastoret
+    acquired: 1826-04-17
+    method: auction
+    direct: true
+    place: meudon
+    label: marquis de Pastoret; through Révile at David's atelier sale; Château de Fleury-Meudon
+    price:
+      amount: 400
+      currency: FRF
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: Claude Emmanuel Joseph Pierre, marquis de Pastoret (died 1840), Château de Fleury-Meudon, Seine-et-Oise;
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner: person/marie-de-pastoret
+    method: inheritance
+    direct: true
+    label: his granddaughter; married Hervé de Rougé, marquis du Plessis-Bellière, in 1835
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: by descent to his granddaughter, Marie de Pastoret (died 1890), who in 1835 married Hervé de Rougé, marquis du Plessis-Bellière;
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1897-05
+    method: auction
+    direct: true
+    place: paris
+    label: sale, Hôtel Drouot, Paris, 10–11 May 1897, no. 21
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: sold Hôtel Drouot, Paris, May 10–11, 1897, no. 21, for Fr 17,900, to Chéramy [La chronique des arts 1897 and Meier-Graefe and Klossowski 1908];
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner: person/paul-cheramy
+    acquired: 1897-05
+    method: auction
+    direct: true
+    place: paris
+    price:
+      amount: 17900
+      currency: FRF
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: for Fr 17,900, to Chéramy [La chronique des arts 1897 and Meier-Graefe and Klossowski 1908]; Paul Alfred Chéramy, Paris;
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1908-05
+    method: auction
+    direct: true
+    place: paris
+    label: sale, Galerie Georges Petit, Paris, 5–7 May 1908, no. 44 (ill.)
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: sold Galerie Georges Petit, Paris, May 5–7, 1908, no. 44 (ill.),
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner: person/georges-petit
+    role: dealer
+    acquired: 1908-05
+    method: auction
+    direct: true
+    place: paris
+    price:
+      amount: 41000
+      currency: FRF
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: for Fr 41,000, to Georges Petit, Paris [American Art News 1908; the buyer is given by Schnapper in Paris 1974/75].
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner: person/therese-murat
+    acquired: 1909 or earlier
+    place: paris
+    label: Comtesse Joachim Murat, née Bianchi; lent to Paris 1909
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: Comtesse Joachim Murat (née Thérèse Bianchi; died 1940), Paris, by 1909 [lent by her to Paris 1909];
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner: person/renee-fleury
+    acquired: 1940
+    method: inheritance
+    direct: true
+    label: her sister, vicomtesse Fleury, née Bianchi
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: at her death to her sister, vicomtesse Fleury (née Renée Bianchi; died 1948);
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner_label: Vicomte Fleury
+    acquired: 1948
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: at her death to vicomte Fleury;
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: c. 1965
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: sold to Wildenstein, New York, c. 1965 [according to telephone conversation of Joseph Baillio with Susan Wise, March 4, 1988, note in curatorial file];
+        source: aic-1967-228
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1967
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/27307
+        note: sold to the Art Institute, 1967.
+        source: aic-1967-228
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3399482
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q3399482
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3399482
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3399482
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3399482
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q3399482

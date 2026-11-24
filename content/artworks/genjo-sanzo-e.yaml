@@ -1,0 +1,85 @@
+public_id: 124146
+title: Genjō Sanzō-e
+names:
+  - lang: fr
+    role: translation
+    text: Biographie illustrée de Xuanzang
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q53752209
+  - lang: ja
+    role: translation
+    text: 玄奘三蔵絵
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q53752209
+creator: takashina-takakane
+created: 14th century
+created_span: uncertain
+institution: fujita-art-museum
+location: [135.525, 34.69507]
+wikidata_id: Q53752209
+metadata:
+  sources: [Wikidata Q53752209 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/osaka
+    period: 14th century
+  - type: depicts_person
+    to: person/xuanzang
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q53752209
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a0/Genj%C5%8D_Sanz%C5%8D-e_4-1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Genj%C5%8D_Sanz%C5%8D-e_4-1.jpg
+    license: Public domain
+    credit: Incertain, peut-être Takashina Takakane.
+provenance:
+  - owner_label: painter of the Kamakura period
+    acquired: 14th century
+    method: creation
+    label: twelve handscrolls, also called Hossōshū hiji ekotoba; Kamakura period
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/154
+        note: 紙本著色玄奘三蔵絵〈／（法相宗秘事絵詞）〉 … 員数 ： 12巻 … 時代 ： 鎌倉
+        source: kunishitei-201-154
+        accessed: 2026-11-24
+      - url: https://www.museum.or.jp/report/4320
+        note: 興福寺伝来の国宝『玄奘三蔵絵（げんじょうさんぞうえ）』（鎌倉時代　14世紀）
+        source: museum-or-jp-report-4320
+        accessed: 2026-11-24
+  - owner: institution/kofuku-ji
+    place: nara
+    label: handed down at Kōfuku-ji, the head temple of the Hossō school
+    sources:
+      - url: https://www.museum.or.jp/report/4320
+        note: 興福寺伝来の国宝『玄奘三蔵絵（げんじょうさんぞうえ）』（鎌倉時代　14世紀）
+        source: museum-or-jp-report-4320
+        accessed: 2026-11-24
+  - owner: institution/fujita-art-museum
+    place: osaka
+    label: owner today; National Treasure since 20 June 1969
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/154
+        note: 所在地 ： 大阪府大阪市都島区綱島町10-32 保管施設の名称 ： 公益財団法人藤田美術館 所有者名 ： 公益財団法人藤田美術館
+        source: kunishitei-201-154
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q53752209
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q53752209
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q53752209
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q53752209

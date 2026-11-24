@@ -1,0 +1,109 @@
+public_id: 122982
+title_lang: en
+title: The House of Cards
+names:
+  - lang: fr
+    role: translation
+    text: Le Château de cartes
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q12859917
+  - lang: it
+    role: translation
+    text: Fanciullo che gioca a carte
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q12859917
+creator: jean-baptiste-simeon-chardin
+created: 1737
+materials: [oil paint, canvas]
+dimensions: [82.2, 66]
+institution: national-gallery-of-art
+inventory_number: 1937.1.90
+wikidata_id: Q12859917
+metadata:
+  sources: [Wikidata Q12859917 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Jean_Sim%C3%A9on_Chardin%2C_The_House_of_Cards%2C_probably_1737%2C_NGA_97.jpg/1280px-Jean_Sim%C3%A9on_Chardin%2C_The_House_of_Cards%2C_probably_1737%2C_NGA_97.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean_Sim%C3%A9on_Chardin,_The_House_of_Cards,_probably_1737,_NGA_97.jpg
+    license: CC0
+    credit: Jean Siméon Chardin
+provenance:
+  - owner: person/catherine-ii-of-russia
+    acquired: 1774 or earlier
+    place: saint-petersburg
+    label: for the Imperial Hermitage Gallery; Hermitage manuscript catalogue (Milich), no. 408, "Un jeune garcon faisant des maisons de cartes"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.97.html
+        note: Catherine II, empress of Russia [1729-1796], by 1774, for the Imperial Hermitage Gallery, Saint Petersburg;[1] — [1] The painting first appeared in a Hermitage catalogue in 1774. … The House of Cards is no. 408.
+        source: nga-1937-1-90
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: agent
+    acquired: 1931-03
+    method: purchase
+    direct: true
+    label: sold through Matthiesen Gallery (Berlin), P. & D. Colnaghi & Co. (London) and M. Knoedler & Co. (New York) to Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.97.html
+        note: purchased March 1931 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1937-1-90
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1931-03
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.97.html
+        note: purchased March 1931 through (…) by Andrew W.  Mellon [1855-1937], Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-90
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1937-05-01
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.97.html
+        note: deeded 1 May 1937 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[2]
+        source: nga-1937-1-90
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.97.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-90
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q12859917
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q12859917
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q12859917
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q12859917
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q12859917
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q12859917

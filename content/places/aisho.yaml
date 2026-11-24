@@ -1,0 +1,47 @@
+public_id: 124042
+name: Aisho
+names:
+  - lang: ja
+    role: original
+    text: 愛荘町
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1346806
+  - lang: zh
+    role: translation
+    text: 愛莊町
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1346806
+  - lang: ko
+    role: translation
+    text: 아이쇼초
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1346806
+  - lang: ru
+    role: translation
+    text: Айсё
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1346806
+kind: settlement
+parent: shiga-prefecture
+country_code: JP
+location: [136.21233, 35.16878]
+wikidata_id: Q1346806
+metadata:
+  sources: [Wikidata Q1346806 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1346806
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1346806
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1346806

@@ -1,0 +1,192 @@
+public_id: 122974
+title_lang: en
+title: Philip, Lord Wharton
+names:
+  - lang: de
+    role: translation
+    text: Bildnis von Philip, Lord Wharton
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3937649
+  - lang: it
+    role: translation
+    text: Ritratto di Philip, Lord Wharton
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3937649
+creator: anthony-van-dyck
+created: 1632
+materials: [oil paint, canvas]
+dimensions: [133, 106]
+institution: national-gallery-of-art
+inventory_number: 1937.1.50
+provenance_status: a_clear
+provenance_status_note: Andrew W. Mellon bought it from the Hermitage in March 1930 and deeded it on 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q3937649
+metadata:
+  sources: [Wikidata Q3937649 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/philip-wharton-4th-baron-wharton
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q3937649
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q3937649
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Philip%2C_Lord_Wharton.jpg/1280px-Philip%2C_Lord_Wharton.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Philip,_Lord_Wharton.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+provenance:
+  - owner: person/philip-wharton-4th-baron-wharton
+    label: the sitter; Wharton Hall (Westmorland) or Healaugh (Yorkshire) until 1637, after 1637 at Wooburn, Buckinghamshire
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.57.html
+        note: Philip Wharton, 4th baron Wharton, [1613-1696], Wharton Hall, near Kirkby Stephen, Westmorland, or Healaugh, West Riding, Yorkshire, until 1637; after 1637 in Wooburn, near High Wycombe, Buckinghamshire;
+        source: nga-1937-1-50
+        accessed: 2026-11-24
+  - owner: person/thomas-wharton-1st-marquess-of-wharton
+    method: inheritance
+    direct: true
+    place: upper-winchendon
+    label: his son; Winchendon, near Aylesbury
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.57.html
+        note: by inheritance to his son, Thomas Wharton, 5th baron and 1st marquess of Wharton [1648-1716], Winchendon, near Aylesbury;
+        source: nga-1937-1-50
+        accessed: 2026-11-24
+  - owner: person/philip-wharton-1st-duke-of-wharton
+    method: inheritance
+    direct: true
+    place: upper-winchendon
+    label: his son; Winchendon, near Aylesbury
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.57.html
+        note: by inheritance to his son, Philip Wharton, 1st and last duke of Wharton [1699-1731], Winchendon, near Aylesbury;[1]
+        source: nga-1937-1-50
+        accessed: 2026-11-24
+  - owner: person/robert-walpole
+    acquired: 1725
+    method: purchase
+    direct: true
+    label: 1st Earl of Orford, Prime Minister; Houghton Hall, Norfolk (Yellow Drawing Room)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.57.html
+        note: purchased 1725 by Sir Robert Walpole, 1st earl of Orford and Prime Minister under George I and George II [1676-1745], Houghton Hall, Norfolk;
+        source: nga-1937-1-50
+        accessed: 2026-11-24
+  - owner: person/robert-walpole-2nd-earl-of-orford
+    method: inheritance
+    direct: true
+    label: his son; Houghton Hall, Norfolk
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.57.html
+        note: by inheritance to his son, Robert Walpole, 2nd earl of Orford [1700-1751], Houghton Hall;
+        source: nga-1937-1-50
+        accessed: 2026-11-24
+  - owner: person/george-walpole-3rd-earl-of-orford
+    method: inheritance
+    direct: true
+    label: his son; Houghton Hall, Norfolk
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.57.html
+        note: by inheritance to his son, George Walpole, 3rd earl of Orford [1730-1791], Houghton Hall;
+        source: nga-1937-1-50
+        accessed: 2026-11-24
+  - owner: person/catherine-ii-of-russia
+    acquired: 1779
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: with the Walpole collection, through Count Aleksei Semonovich Musin-Pushkin, Russian ambassador to England; for the Imperial Hermitage Gallery
+    price:
+      amount: 200
+      currency: GBP
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.57.html
+        note: acquired with the Walpole collection in 1779, through Count Aleksei Semonovich Musin-Pushkin, Russian ambassador to England, by Catherine II, empress of Russia [1729-1796], for the Imperial Hermitage Gallery, Saint Petersburg;[3] — [3] Count Musin-Pushkin purchased the painting for two hundred pounds.
+        source: nga-1937-1-50
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.57.html
+        note: for the Imperial Hermitage Gallery, Saint Petersburg;[3]
+        source: nga-1937-1-50
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1930-03
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.57.html
+        note: purchased March 1930 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1937-1-50
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1930-03
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.57.html
+        note: purchased March 1930 through (…) by Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-50
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1932-03-30
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.57.html
+        note: deeded 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[4]
+        source: nga-1937-1-50
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.57.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-50
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q3937649
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q3937649
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q3937649
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q3937649
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q3937649
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q3937649

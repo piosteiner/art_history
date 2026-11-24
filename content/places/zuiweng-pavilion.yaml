@@ -1,0 +1,16 @@
+public_id: 124248
+name: Zuiweng Pavilion
+kind: site
+location: [118.28814, 32.28342]
+wikidata_id: Q8075073
+metadata:
+  sources: [Wikidata Q8075073 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q8075073
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q8075073

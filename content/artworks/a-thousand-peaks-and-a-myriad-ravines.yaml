@@ -1,0 +1,61 @@
+public_id: 124837
+title_lang: de
+title: Tausend Gipfel und zehntausend Täler
+names:
+  - text: Thousand peaks and ten thousand valleys
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q109126258
+  - lang: en
+    role: translation
+    text: A thousand peaks and a myriad ravines
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q109126258
+  - lang: zh
+    role: translation
+    text: 千岩万壑图
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q109126258
+creator: gong-xian
+created: c. 1670
+created_span: uncertain
+materials: [ink, paper]
+dimensions: [62, 102]
+institution: museum-rietberg
+inventory_number: RCH 1172
+web_url: https://emp-web-101.zetcom.ch:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=37386&viewType=detailView
+wikidata_id: Q109126258
+metadata:
+  sources: [Wikidata Q109126258 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Gong_Xian._Thousand_peaks_and_ten_thousand_valleys._Museum_Rietberg.%28mounting%29.jpg/1280px-Gong_Xian._Thousand_peaks_and_ten_thousand_valleys._Museum_Rietberg.%28mounting%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gong_Xian._Thousand_peaks_and_ten_thousand_valleys._Museum_Rietberg.(mounting).jpg
+    license: CC BY-SA 4.0
+    credit: Gong Xian
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q109126258
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q109126258
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q109126258
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q109126258
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q109126258
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q109126258

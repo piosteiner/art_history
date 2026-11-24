@@ -1,0 +1,175 @@
+public_id: 124646
+title_lang: en
+title: Luncheon (Le Dèjeuner)
+names:
+  - lang: en
+    role: original
+    text: Luncheon (Annette and Her Grandmother)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q87480832
+creator: edouard-vuillard
+created: 1899
+materials: [oil paint, cardboard]
+dimensions: [45.7, 61]
+institution: cleveland-museum-of-art
+inventory_number: "2020.118"
+web_url: https://clevelandart.org/art/2020.118
+wikidata_id: Q87480832
+metadata:
+  sources: [Wikidata Q87480832 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Edouard_Vuillard_%28French%2C_1868-1940%29_-_Luncheon_%28Le_D%C3%A8jeuner%29_-_2020.118_-_Cleveland_Museum_of_Art.jpg/1280px-Edouard_Vuillard_%28French%2C_1868-1940%29_-_Luncheon_%28Le_D%C3%A8jeuner%29_-_2020.118_-_Cleveland_Museum_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edouard_Vuillard_(French,_1868-1940)_-_Luncheon_(Le_D%C3%A8jeuner)_-_2020.118_-_Cleveland_Museum_of_Art.jpg
+    license: CC0
+    credit: Édouard Vuillard
+provenance:
+  - owner: artist/edouard-vuillard
+    method: creation
+    sources:
+      - url: https://clevelandart.org/art/2020.118
+        note: Collection of the Artist [1900]
+        source: cma-2020-118
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1900-03-28
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/2020.118
+        note: (Galerie Bernheim Jeune, Paris, France, March 28, 1900, acquired from the artist) [1900]; (Galerie Bernheim Jeune, Paris, France, November 26, 1900, sold to Georges Dusseuil) [1900]
+        source: cma-2020-118
+        accessed: 2026-11-24
+  - owner: person/georges-dusseuil
+    acquired: 1900-11-26
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/2020.118
+        note: Georges Dusseuil [1848-1926], Paris France [1900-1902]
+        source: cma-2020-118
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1902-05-06
+    method: purchase
+    direct: true
+    place: paris
+    label: sold on 29 April 1903 to Olivier Sainsère (after Salomon, Cogeval and Chivot, Vuillard catalogue raisonné, 2003, no. VII-54)
+    sources:
+      - url: https://clevelandart.org/art/2020.118
+        note: "(Galerie Bernheim Jeune, Paris, France, May 6, 1902, acquired from Georges Dusseuil) [1902-1903]; (Galerie Bernheim Jeune, Paris, France, April 29, 1903, sold to Olivier Sainsere) [1903] — According to Antoine Salomon, Guy Cogeval, and Mathias Chivot, Vuillard, the Inexhaustible Glance: Critical Catalogue of Paintings and Pastels (Milan: Skira, 2003), vol. II, cat. no. VII-54"
+        source: cma-2020-118
+        accessed: 2026-11-24
+  - owner: person/olivier-sainsere
+    acquired: 1903-04-29
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/2020.118
+        note: Olivier Sainsere [1852-1923], Paris, France [1903–?]
+        source: cma-2020-118
+        accessed: 2026-11-24
+  - owner: person/jeanne-richet
+    acquired: 1923 or earlier
+    method: inheritance
+    direct: true
+    place: paris
+    label: his daughter, née Sainsère
+    sources:
+      - url: https://clevelandart.org/art/2020.118
+        note: by descent to his daughter, Jeanne (Sainsère) Richet [1883–1972], Paris, France [by 1923]
+        source: cma-2020-118
+        accessed: 2026-11-24
+  - owner: person/jacqueline-souchere
+    acquired: 1972 or earlier
+    method: inheritance
+    direct: true
+    place: paris
+    label: her daughter, née Richet
+    sources:
+      - url: https://clevelandart.org/art/2020.118
+        note: by descent to her daughter, Jacqueline (Richet) Souchère [1908–1984], Paris, France [by 1972]
+        source: cma-2020-118
+        accessed: 2026-11-24
+  - owner: person/jeanne-gelin
+    acquired: 1984 or earlier
+    method: inheritance
+    direct: true
+    place: paris
+    label: her daughter, née Souchère
+    sources:
+      - url: https://clevelandart.org/art/2020.118
+        note: by descent to her daughter, Jeanne (Souchère) Gelin, Paris, France [by 1984]
+        source: cma-2020-118
+        accessed: 2026-11-24
+  - owner: institution/galerie-cazeau-beraudiere
+    role: dealer
+    acquired_label: before 2002
+    place: paris
+    label: after documentation supplied by the gallery (curatorial file)
+    sources:
+      - url: https://clevelandart.org/art/2020.118
+        note: Galerie Cazeau-Béraudière, Paris, France [before 2002] — According to documentation supplied by Galerie Cazeau-Béraudière, Paris, in the curatorial file.
+        source: cma-2020-118
+        accessed: 2026-11-24
+  - owner: institution/galerie-hopkins-custot
+    role: dealer
+    acquired: 2002
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/2020.118
+        note: (Galerie Hopkins-Custot, Paris, France, sold to Nancy F. and Joseph P. Keithley) [2002]
+        source: cma-2020-118
+        accessed: 2026-11-24
+  - owner: person/nancy-f-keithley
+    co_owners: [person/joseph-p-keithley]
+    acquired: 2002
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/2020.118
+        note: Nancy F. and Joseph P. Keithley, Cleveland, OH, given to the Cleveland Museum of Art [2002–2020]
+        source: cma-2020-118
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2020
+    method: gift
+    direct: true
+    place: cleveland
+    label: Nancy F. and Joseph P. Keithley Collection Gift
+    sources:
+      - url: https://clevelandart.org/art/2020.118
+        note: The Cleveland Museum of Art, Cleveland, OH [2020–]
+        source: cma-2020-118
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q87480832
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q87480832
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q87480832
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q87480832
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q87480832
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q87480832

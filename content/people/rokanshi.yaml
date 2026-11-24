@@ -1,0 +1,15 @@
+public_id: 122753
+name_lang: ja-Latn
+name: Rōkanshi
+names:
+  - lang: ja
+    role: original
+    text: 弄翰子
+kind: person
+occupations: [compiler]
+description_md: Rōkanshi (弄翰子) is the name under which every edition of the Kyoto directory [[literature/heian-jinbutsu-shi|Heian jinbutsu shi]] was compiled, from 1768 to 1867 [[source/ndl-search-2026-heian-jinbutsu-shi|records of the nine editions]]. The preface of the 1852 edition is signed 「弄翰子記」 [[source/rokanshi-1852-heian-jinbutsu-shi|凡例]]. The sources read so far do not say who stood behind the name, or whether it was one person over a century.
+sources:
+  occupations:
+    - source: ndl-search-2026-heian-jinbutsu-shi
+      locator: records of the nine editions
+      accessed: 2026-11-23

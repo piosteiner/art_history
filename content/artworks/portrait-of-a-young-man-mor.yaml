@@ -1,0 +1,167 @@
+public_id: 123216
+title_lang: en
+title: Portrait of a Young Man
+names:
+  - lang: nl
+    role: translation
+    text: Portret van een man
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20176583
+  - lang: fr
+    role: translation
+    text: Portrait de jeune homme
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20176583
+attribution_label: follower of Antonis Mor
+created: 1558
+materials: [oil paint, panel]
+dimensions: [97.5, 69.9]
+institution: national-gallery-of-art
+inventory_number: 1961.9.79
+wikidata_id: Q20176583
+metadata:
+  sources: [Wikidata Q20176583 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/willem-iv-van-den-bergh
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20176583
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Willem_iv_van_den_bergh.jpg/1280px-Willem_iv_van_den_bergh.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Willem_iv_van_den_bergh.jpg
+    license: Public domain
+    credit: Antonis Mor
+provenance:
+  - owner: person/karl-anton-joachim-zephyrinus-friedrich-meinrad-von-hohenzollern
+    label: not in the museum's catalogues of 1871 and 1883
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46178.html
+        note: Probably Prince Karl Anton von Hohenzollern-Sigmaringen [d. 1885].[1] — [1] … The painting is not mentioned in F.A. von Lehner, Fürstlich Hohenzollernsches Museum für Wissenschaft und Kunst, Verzeichniss der Gemälde (Sigmaringen, 1871; 2d ed., 1883), suggesting either that it was acquired after 1883 or that it hung in some other property of the family.
+        source: nga-1961-9-79
+        accessed: 2026-11-24
+  - owner: person/leopold-von-hohenzollern-sigmaringen
+    label: his son
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46178.html
+        note: His son, Prince Leopold von Hohenzollern-Sigmaringen [d. 1905].
+        source: nga-1961-9-79
+        accessed: 2026-11-24
+  - owner: person/wilhelm-august-karl-von-hohenzollern-sigmaringen
+    label: his son
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46178.html
+        note: His son, Prince Wilhelm August Karl von Hohenzollern-Sigmaringen [d. 1927].
+        source: nga-1961-9-79
+        accessed: 2026-11-24
+  - owner: institution/furstlich-hohenzollern-sches-museum
+    place: sigmaringen
+    label: Reiffel 1924
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46178.html
+        note: 'Fürstlich Hohenzollernsches Museum für Wissenschaft und Kunst, Sigmaringen. — [1] See Franz Reiffel, "Das Fürstlich Hohenzollernsche Museum zu Sigmaringen: Gemälde und Bildwerke," Städel-Jahrbuch 3-4 (1924), 59.'
+        source: nga-1961-9-79
+        accessed: 2026-11-24
+  - owner: institution/galerie-a-s-drey
+    role: dealer
+    acquired: 1928
+    ended: 1929
+    label: Munich and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46178.html
+        note: (A.S. Drey, Munich and New York, 1928-1929);
+        source: nga-1961-9-79
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1929
+    ended: 1934
+    direct: true
+    label: stock book 8, p. 68, no. A537
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46178.html
+        note: (M. Knoedler & Co., Inc., 1929-1934); — [2] See M. Knoedler & Co. Records … Stock Book no. 8, page 68, no. A537
+        source: nga-1961-9-79
+        accessed: 2026-11-24
+  - owner: institution/robert-frank-ltd
+    role: dealer
+    acquired: 1934
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46178.html
+        note: (Robert Frank, Ltd., 1934).[2]
+        source: nga-1961-9-79
+        accessed: 2026-11-24
+  - owner: person/heinrich-thyssen-bornemisza
+    acquired: 1937 or earlier
+    place: lugano
+    label: Villa Favorita, Lugano-Castagnola
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46178.html
+        note: Baron Heinrich Thyssen-Bornemisza [1875-1947], Villa Favorita, Lugano-Castagnola, Switzerland, by 1937;
+        source: nga-1961-9-79
+        accessed: 2026-11-24
+  - owner: person/gabrielle-bentinck-thyssen
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46178.html
+        note: by inheritance to his daughter, Baroness Gabrielle Bentinck-Thyssen [1915/1917-1999];
+        source: nga-1961-9-79
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: agent
+    acquired: 1951
+    direct: true
+    place: new-york-city
+    label: on consignment; commission book 5A, p. 50, no. CA 3996
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46178.html
+        note: on consignment 1951 to (M. Knoedler & Co., Inc., New York); — [3] See M. Knoedler & Co. Records … Commission Book no. 5A, page 50, no. CA 3996, and Sales Book no. 16, page 383
+        source: nga-1961-9-79
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1952-02
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46178.html
+        note: purchased February 1952 by the Samuel H. Kress Foundation, New York;[3]
+        source: nga-1961-9-79
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1961
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46178.html
+        note: gift 1961 to NGA.
+        source: nga-1961-9-79
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20176583
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20176583
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20176583
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20176583
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20176583

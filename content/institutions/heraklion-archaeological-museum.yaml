@@ -1,0 +1,16 @@
+public_id: 123111
+name: Heraklion Archaeological Museum
+kind: museum
+founded: 1883
+wikidata_id: Q636972
+metadata:
+  sources: [Wikidata Q636972 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q636972
+  founded:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q636972

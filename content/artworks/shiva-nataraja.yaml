@@ -1,0 +1,63 @@
+public_id: 123842
+title_lang: de
+title: Shiva Nataraja
+attribution_label: Anonymous
+created: 10th century
+created_span: uncertain
+kind: sculpture
+medium: Bronze
+dimensions: [82.4, 77]
+institution: museum-rietberg
+inventory_number: RVI 501
+web_url: https://rietberg.ch/sammlungen/rvi-501
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Shiva_Nataraja_Museum_Rietberg_RVI_501.jpg/1280px-Shiva_Nataraja_Museum_Rietberg_RVI_501.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shiva_Nataraja_Museum_Rietberg_RVI_501.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: 10th century
+    method: creation
+    label: made in Tamil Nadu, Chola dynasty
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-501
+        note: "10. Jh.: Urheber*in unbekannt in Tamil Nadu, Indien"
+        source: rietberg-rvi-501
+        accessed: 2026-11-24
+  - owner: person/gabriel-jouveau-dubreuil
+    acquired: before 1929
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-501
+        note: "vor 1929: Gabriel Jouveau-Dubreuil (1885–1945), Erwerbsumstände unbekannt"
+        source: rietberg-rvi-501
+        accessed: 2026-11-24
+  - owner: person/c-t-loo
+    role: dealer
+    acquired: before 1929
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-501
+        note: "vor 1929: C. T. Loo (1880–1957), Erwerbsumstände unbekannt"
+        source: rietberg-rvi-501
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: 1929 or earlier
+    method: purchase
+    label: published in Der Querschnitt, 1929
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-501
+        note: "spätestens 1929: Eduard von der Heydt (1882–1964), angekauft Lit. Der Querschnitt, 1929."
+        source: rietberg-rvi-501
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1952
+    method: gift
+    place: zurich
+    label: gift of Eduard von der Heydt
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-501
+        note: "1952: Museum Rietberg, als Geschenk erhalten in Zürich"
+        source: rietberg-rvi-501
+        accessed: 2026-11-24

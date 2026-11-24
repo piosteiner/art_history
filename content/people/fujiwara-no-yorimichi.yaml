@@ -23,6 +23,16 @@ death: 1074-03-08
 wikidata_id: Q1370620
 metadata:
   sources: [Wikidata Q1370620 (retrieved 2026-11-01)]
+relationships:
+  - type: child_of
+    to: person/fujiwara-no-michinaga
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q433133
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q1370620
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/26/%E8%97%A4%E5%8E%9F%E9%A0%BC%E9%80%9A.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%E8%97%A4%E5%8E%9F%E9%A0%BC%E9%80%9A.jpg

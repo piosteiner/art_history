@@ -1,0 +1,142 @@
+public_id: 122918
+title_lang: en
+title: The Troubadour
+creator: honore-daumier
+created: 1868/1873
+kind: oil painting
+medium: oil on fabric
+dimensions: [83.6, 56.8]
+institution: cleveland-museum-of-art
+inventory_number: "1958.23"
+web_url: https://clevelandart.org/art/1958.23
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1958.23/1958.23_web.jpg
+    source_url: https://clevelandart.org/art/1958.23
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/armand-doria
+    ended: 1896
+    place: orrouy
+    label: Count Armand Doria
+    sources:
+      - url: https://clevelandart.org/art/1958.23
+        note: Count Armand Doria [1824-1896] Orrouy, France [Until 1896]
+        source: cma-1958-23
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1899-05
+    method: auction
+    place: paris
+    label: Armand Doria sale, 4–5 May 1899, no. 132, as “Page jouant de la mandoline”
+    sources:
+      - url: https://clevelandart.org/art/1958.23
+        note: (Armand Doria sale, Galerie Georges Petit, Paris, May 4-5, 1899 (no. 132), sold to Ambroise Vollard)
+        source: cma-1958-23
+        accessed: 2026-11-24
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: 1899-05
+    method: auction
+    direct: true
+    place: paris
+    label: stock no. 3465, “Le Chanteur”
+    price:
+      amount: 3350
+      currency: FRF
+      note: together with no. 133, “Femme portant un enfant”
+    sources:
+      - url: https://clevelandart.org/art/1958.23
+        note: The Troubadour, here titled “Page jouant de la mandoline,” was sold to dealer Ambroise Vollard together with no. 133, “Femme portant un enfant,” for ff 3,350. … Vollard’s stock book lists “Le Chanteur,” with a provenance of “Doria,” under stock no. 3,465
+        source: cma-1958-23
+        accessed: 2026-11-24
+  - owner: institution/galerie-miethke
+    role: agent
+    acquired: 1908
+    method: transfer
+    place: vienna
+    label: consigned by Vollard; exhibition Honoré Daumier, 1808–1879, November–December (the record prints 1980), no. 42; unsold, returned to Vollard
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1958.23
+        note: In 1908 Vollard seems to have consigned the Daumier to H.O. Miethke, a Vienna dealer … The Daumier is No. 42 in Honoré Daumier, 1808-1879, an exhibition held at Galerie Miethke in November-December 1980. The painting apparently failed to sell and was returned to Vollard
+        source: cma-1958-23
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    role: dealer
+    acquired: 1912-10-28
+    ended_label: probably by 1915
+    method: purchase
+    direct: true
+    place: berlin
+    label: as “Le Guitarist”; buyer and date of its sale unknown (the 1910–1915 sales book was destroyed)
+    sources:
+      - url: https://clevelandart.org/art/1958.23
+        note: the Cassirer Archive, held by the Walter Feilchenfeldt Gallery, records the sale of "Le Guitarist"by Vollard to Cassirer on October 28, 1912. … It is not known to whom and when Cassirer sold the painting; however, it was likely by 1915
+        source: cma-1958-23
+        accessed: 2026-11-24
+  - owner: person/eduard-fuchs
+    acquired: 1928 or earlier
+    ended: 1940
+    place: berlin
+    label: in his “Daumier-Zimmer”, Berlin-Zehlendorf (photo 1928); seems to have escaped the Gestapo's confiscation of his collection on 25 October 1933
+    sources:
+      - url: https://clevelandart.org/art/1958.23
+        note: Eduard Fuchs [1870-1940], Berlin-Zehlendorf, by descent to his wife, Margaret Fuchs [By 1928-1940] — on October 25 of that same year his collection was confiscated by the Gestapo. The Troubadour, however, along with several other Daumier paintings, appears to have avoided confiscation
+        source: cma-1958-23
+        accessed: 2026-11-24
+  - owner: person/felix-weil
+    role: custodian
+    method: transfer
+    place: rotterdam
+    label: possibly among nine Daumier paintings whose ownership Fuchs transferred to his friend as security for a loan; sent to Rotterdam
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1958.23
+        note: it may have been among nine unspecified Daumier paintings for which Fuchs transferred ownership to his friend Felix Weil as security for a loan. These paintings were sent to Rotterdam, thus securing their safety.
+        source: cma-1958-23
+        accessed: 2026-11-24
+  - owner: person/margaret-fuchs
+    acquired: 1940
+    method: inheritance
+    direct: true
+    place: new-york-city
+    label: Paris and New York
+    sources:
+      - url: https://clevelandart.org/art/1958.23
+        note: Margaret Fuchs, Paris and New York, consigned to Justin K. Thannhauser [1940-1953]
+        source: cma-1958-23
+        accessed: 2026-11-24
+  - owner: person/justin-k-thannhauser
+    role: agent
+    method: transfer
+    direct: true
+    place: new-york-city
+    label: on consignment from Margaret Fuchs in the 1950s
+    sources:
+      - url: https://clevelandart.org/art/1958.23
+        note: (Justin K. Thannhauser, New York, sold to Leonard C. Hanna, Jr.) — The Thannhauser Archives in Cologne show that Thannhauser had the painting on consignment from Margaret Fuchs in the 1950s.
+        source: cma-1958-23
+        accessed: 2026-11-24
+  - owner: person/leonard-c-hanna-jr
+    acquired: 1953
+    ended: 1957
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1958.23
+        note: Leonard C. Hanna Jr., [1889-1957], Cleveland, OH, bequeathed to the Cleveland Museum of Art [1953-1958]
+        source: cma-1958-23
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1958
+    method: bequest
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1958.23
+        note: The Cleveland Museum of Art, Cleveland, OH [1958-]
+        source: cma-1958-23
+        accessed: 2026-11-24

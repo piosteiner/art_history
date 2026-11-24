@@ -1,0 +1,50 @@
+public_id: 123957
+title: Main Hall, Taihoji
+names:
+  - lang: ja
+    role: translation
+    text: 大宝寺本堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020658
+created: 1185/1274
+created_label: early Kamakura period
+created_span: uncertain
+institution: taiho-ji-matsuyama
+location: [132.74222, 33.84172]
+wikidata_id: Q107020658
+metadata:
+  sources: [Wikidata Q107020658 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/matsuyama
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Koshozan_Taihoji_04.JPG/1280px-Koshozan_Taihoji_04.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Koshozan_Taihoji_04.JPG
+    license: CC BY-SA 3.0
+    credit: Reggaeman
+provenance:
+  - owner: institution/taiho-ji-matsuyama
+    acquired: 1185/1274
+    acquired_label: early Kamakura period
+    method: creation
+    place: matsuyama
+    label: undated, early Kamakura period by its style; repaired 1631 (new shrine cabinet), 1685 and 1921 (dismantled); owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3317
+        note: 今の本堂は建立年次を知る資料を欠いているが、形式手法からみると鎌倉時代前期頃の特質を表している。その後寛永八年（一六三一）修理と厨子の新設があり、貞享二年（一六八五）修理、大正十年解体修理を施して、今に至っている。 … 所有者名 ： 大宝寺 所有者種別 ： 寺院
+        source: kunishitei-102-3317
+        accessed: 2026-11-24
+      - url: https://www.city.matsuyama.ehime.jp/kanko/kankoguide/rekishibunka/bunkazai/kuni/taihouji_hondou.html
+        note: 平安時代末期の阿弥陀堂形式を用いた鎌倉時代初期の建築であろうと考えられている。屋根はもと茅葺であったのを、延享2年(1745年)の修理の際に瓦葺に改めたと推察される。 … 所在地及び所有者（管理者） 松山市南江戸5丁目 大宝寺
+        source: matsuyama-city-taihoji-hondo
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%AE%9D%E5%AF%BA_%28%E6%9D%BE%E5%B1%B1%E5%B8%82%29
+        note: 江戸時代には歴代松山藩主の祈願所となった。松平氏4代藩主松平定直によって貞享2年（1685年）本堂の修理が行われた。
+        source: wikipedia-ja-taiho-ji-matsuyama
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020658

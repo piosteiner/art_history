@@ -1,0 +1,35 @@
+public_id: 124519
+title: Nishi Honganji Sanju-rokunin Kashu
+names:
+  - lang: ja
+    role: translation
+    text: 西本願寺本三十六人家集
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11628488
+  - lang: ru
+    role: translation
+    text: Сандзюрокунин касю из Ниси Хонган-дзи
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11628488
+created: c. 1112
+created_span: uncertain
+institution: nishi-hongan-ji
+wikidata_id: Q11628488
+metadata:
+  sources: [Wikidata Q11628488 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/36poets_collection_SHIGEYUKI.JPG/1280px-36poets_collection_SHIGEYUKI.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:36poets_collection_SHIGEYUKI.JPG
+    license: Public domain
+    credit: Unknown author
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11628488
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q11628488

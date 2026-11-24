@@ -1,0 +1,189 @@
+public_id: 125111
+title_lang: en
+title: The Laundress
+creator: pierre-auguste-renoir
+created: 1877/1879
+created_label: c. 1870s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [81.4, 56.5]
+institution: art-institute-of-chicago
+inventory_number: "1947.102"
+wikidata_id: Q20266963
+metadata:
+  sources: [Wikidata Q20266963 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Pierre-Auguste_Renoir_-_The_Laundress_-_1947.102_-_Art_Institute_of_Chicago.jpg/1280px-Pierre-Auguste_Renoir_-_The_Laundress_-_1947.102_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_The_Laundress_-_1947.102_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: artist/pierre-auguste-renoir
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: The artist (d. 1919);
+        source: aic-1947-102
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1882-06-15
+    method: purchase
+    direct: true
+    place: paris
+    label: stock books 1880–84 no. 2464 and 1891 no. 1520
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: possibly sold to Durand-Ruel, Paris, June 15, 1882 [per Durand-Ruel Archives, Paris, stock book for 1880–84 (no. 2464), and for 1891 (no. 1520)…];
+        source: aic-1947-102
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1905-08-03
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 8500
+      currency: FRF
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: sold to Bernheim-Jeune, Paris, Aug. 3, 1905, for 8,500 francs [per Durand-Ruel Archives, Paris, stock book 1901 (no. 1520)…];
+        source: aic-1947-102
+        accessed: 2026-11-24
+  - owner: person/alexandre-berthier-prince-de-wagram
+    acquired: 1906-02-24 or earlier
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: sold to the Prince de Wagram (Alexandre Berthier, 4th Prince de Wagram), Paris, by Feb. 24, 1906 [this and the two following per Dauberville and Dauberville 2007)];
+        source: aic-1947-102
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1906-02-24
+    method: purchase
+    direct: true
+    place: paris
+    label: sold back by the Prince de Wagram
+    price:
+      amount: 9000
+      currency: FRF
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: sold back to Bernheim-Jeune, Paris, Feb. 24, 1906, for 9,000 francs;
+        source: aic-1947-102
+        accessed: 2026-11-24
+  - owner: person/leon-orosdi
+    acquired: 1906-03-02
+    method: purchase
+    direct: true
+    place: paris
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: possibly sold to Léon Orosdi, Paris (d. 1922), Mar. 2, 1906.
+        source: aic-1947-102
+        accessed: 2026-11-24
+  - owner: institution/galerie-barbazanges
+    role: dealer
+    acquired: 1923-01-04 or earlier
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: Galérie Barbazanges, Paris, by Jan. 4, 1923. [this and the following per New American Art Galleries sale cat., January 4–5, 1923, lot 109];
+        source: aic-1947-102
+        accessed: 2026-11-24
+  - owner: person/meyer-goodfriend
+    acquired: 1923-01-04 or earlier
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: New York and Paris
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: sold to Meyer Goodfriend, New York and Paris, by Jan. 4, 1923;
+        source: aic-1947-102
+        accessed: 2026-11-24
+  - owner: institution/new-american-art-galleries
+    role: agent
+    acquired: 1923-01-05
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Meyer Goodfriend sale, lot 109
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: Meyer Goodfriend sale, New York and Paris, New American Art Galleries, New York, Jan. 5, 1923, lot 109, to John Levy Galleries, New York, for $2,000.
+        source: aic-1947-102
+        accessed: 2026-11-24
+  - owner: institution/john-levy-galleries
+    role: dealer
+    acquired: 1923-01-05
+    method: auction
+    direct: true
+    place: new-york-city
+    price:
+      amount: 2000
+      currency: USD
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: to John Levy Galleries, New York, for $2,000. [According to an annotated copy of New York, New American Art Galleries sale cat., Jan. 4–5, 1923, lot 109, photocopy in curatorial object file].
+        source: aic-1947-102
+        accessed: 2026-11-24
+  - owner: person/howard-young
+    acquired: 1923-03-28 or earlier
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: Howard Young, New York, by Mar. 28, 1923. [this and the following per verso of an archival photograph of The Laundress inscribed by Howard Young and dated Mar. 28, 1923, curatorial object file];
+        source: aic-1947-102
+        accessed: 2026-11-24
+  - owner: person/charles-h-worcester-2
+    acquired: 1923-03-28 or earlier
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: sold to Charles H. Worcester (d. 1956), Chicago, by Mar. 28, 1923;
+        source: aic-1947-102
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1947
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/59944
+        note: given to the Art Institute of Chicago, 1947.
+        source: aic-1947-102
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20266963
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20266963
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20266963
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20266963
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20266963
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20266963

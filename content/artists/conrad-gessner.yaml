@@ -26,6 +26,15 @@ relationships:
       - accessed: 2026-11-03
         property: P20
         wikidata: Q55191839
+  - type: child_of
+    to: person/salomon-gessner
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q123765
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q55191839
 identifiers:
   bnf: 14974676k
   gnd: "116595671"

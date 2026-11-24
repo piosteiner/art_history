@@ -1,0 +1,166 @@
+public_id: 123152
+title: Kroisos Kouros
+names:
+  - text: Kouros of Anavyssos
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q775405
+  - text: Anavysos Kouros
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q775405
+  - lang: fr
+    role: translation
+    text: Kouros de Kroisos
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q775405
+  - lang: de
+    role: translation
+    text: Kroisos-Kouros
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q775405
+  - lang: it
+    role: translation
+    text: Kouros di Creso
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q775405
+  - lang: es
+    role: translation
+    text: Kurós de Kroisos
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q775405
+  - lang: ja
+    role: translation
+    text: クロイソス・クーロス
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q775405
+  - lang: zh
+    role: translation
+    text: 克罗伊索斯青年雕像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q775405
+created: -540/-515
+materials: [Parian marble]
+dimensions: [194]
+institution: national-archaeological-museum-of-athens
+inventory_number: "3851"
+wikidata_id: Q775405
+metadata:
+  sources: [Wikidata Q775405 (retrieved 2026-11-24)]
+relationships:
+  - type: associated_with
+    to: movement/archaic-greek-sculpture
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q775405
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Kouros_dalla_tomba_di_kroisos%2C_da_anavyssos_in_attica%2C_530_ac_ca._01%2C_n._3851.jpg/1280px-Kouros_dalla_tomba_di_kroisos%2C_da_anavyssos_in_attica%2C_530_ac_ca._01%2C_n._3851.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kouros_dalla_tomba_di_kroisos,_da_anavyssos_in_attica,_530_ac_ca._01,_n._3851.jpg
+    license: CC BY-SA 4.0
+    credit: Francesco Bini
+provenance:
+  - owner_label: grave of Kroisos, necropolis of Anavyssos
+    acquired: -540/-515
+    method: creation
+    place: anavyssos
+    label: grave marker for Kroisos, a young warrior fallen in the front ranks, as the epigram on its base says
+    sources:
+      - url: https://en.wikipedia.org/wiki/Kroisos_Kouros
+        note: The Kroisos Kouros is a marble kouros from Anavyssos (Ανάβυσσος) in Attica which functioned as a grave marker for a fallen young warrior named Kroisos … The sculpture is dated to the Late Archaic Period c. 540–515 BC
+        source: wikipedia-en-kroisos-kouros
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Kroisos-Kouros
+        note: Der Kroisos-Kouros markierte ein Grab in der Nekropole von Anavyssos in Attika
+        source: wikipedia-de-kroisos-kouros
+        accessed: 2026-11-24
+  - owner_label: illicit excavators
+    role: possessor
+    acquired_label: some years before 1937 (1937 in de/el)
+    method: theft
+    place: anavyssos
+    label: dug up without a permit from a burial mound, sawn into pieces and smuggled out of Greece by sea to Paris for sale
+    sources:
+      - url: https://en.wikipedia.org/wiki/Kroisos_Kouros
+        note: The sculptor of the kouros is uncertain and there is no secure record of the time and location of its discovery. … reports showed that some years before it had been illegally unearthed from a burial mound in Anavissos in Attica. It was sawn in various parts and sent to Paris for sale
+        source: wikipedia-en-kroisos-kouros
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/%CE%9A%CE%BF%CF%8D%CF%81%CE%BF%CF%82_%CE%B5%CE%BD_%CF%80%CF%81%CE%BF%CE%BC%CE%AC%CF%87%CE%BF%CE%B9%CF%82
+        note: Βρέθηκε στην Ανάβυσσο το 1937 σε ανασκαφές που έγιναν χωρίς αρχαιολογική άδεια. … οι αρχαιοκάπηλοι τον έκοψαν με πριόνι σε δύο κομμάτια και τον φυγάδεψαν στο Παρίσι.
+        source: wikipedia-el-kouros-en-promachois
+        accessed: 2026-11-24
+      - url: https://www.cambridge.org/core/journals/annual-of-the-british-school-at-athens/article/anavysos-kouros/7D5D5404D0948C1943B460E5FAC354D0
+        note: smuggled out of Greece by sea a few years ago from Anavysos near Laurion
+        source: philadelpheus-1936-anavysos-kouros
+        accessed: 2026-11-24
+  - owner_label: M. Roussos, antique dealer, Paris
+    role: possessor
+    acquired: 1937 or earlier
+    place: paris
+    label: identified in Paris in 1937 in the possession of the dealer
+    sources:
+      - url: https://en.wikipedia.org/wiki/Kroisos_Kouros
+        note: It was identified in Paris in 1937 in the possession of the art dealer M. Roussos.
+        source: wikipedia-en-kroisos-kouros
+        accessed: 2026-11-24
+      - url: https://www.cambridge.org/core/journals/annual-of-the-british-school-at-athens/article/anavysos-kouros/7D5D5404D0948C1943B460E5FAC354D0
+        note: from M. Roussos, an antique dealer
+        source: philadelpheus-1936-anavysos-kouros
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    acquired: 1937-08
+    method: restitution
+    direct: true
+    place: athens
+    label: received in Paris by Greek police officials; fragments brought in three packing cases to the National Museum early in August 1937 and reassembled; inventory 3851
+    sources:
+      - url: https://en.wikipedia.org/wiki/Kroisos_Kouros
+        note: It was sawn in various parts and sent to Paris for sale before it was returned to the National Archaeological Museum of Athens. … It is now situated in the National Archaeological Museum of Athens (inv. no. 3851)
+        source: wikipedia-en-kroisos-kouros
+        accessed: 2026-11-24
+      - url: https://www.cambridge.org/core/journals/annual-of-the-british-school-at-athens/article/anavysos-kouros/7D5D5404D0948C1943B460E5FAC354D0
+        note: Early in August 1937 the fragments of a marble Kouros were conveyed in three packing-cases to the National Museum at Athens.
+        source: philadelpheus-1936-anavysos-kouros
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Kroisos-Kouros
+        note: Ein Jahr später wurde er wieder an Griechenland zurückgegeben und befindet sich seitdem mit der Inventarnummer 3851 im Archäologischen Nationalmuseum in Athen.
+        source: wikipedia-de-kroisos-kouros
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1940/1941
+    place: athens
+    label: the museum's antiquities concealed in 1940–41 (the large statues laid in trenches dug in the floors of the halls); uncovered after the war, first halls reopened 1947 — the page does not name this work
+    certainty: probable
+    sources:
+      - url: https://www.namuseum.gr/en/to-moyseio/istoria-toy-moyseioy/the-rescue-of-the-statues/
+        note: «When the occupation army entered the capital in April 1941, the task of concealing the ancient treasures of the National Museum had already been completed» … Sculptures, bronze and clay artworks had been packed and transported to various raid shelters in Athens … the large statues had been deposited in large trenches that were dug in the floor of the museum halls. … To uncover the buried antiquities was the main priority after the end of the war.
+        source: nam-athens-rescue-of-the-statues
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q775405
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q775405
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q775405
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q775405
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q775405

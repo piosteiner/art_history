@@ -1,0 +1,332 @@
+public_id: 122780
+title_lang: en
+title: Peasants Celebrating Twelfth Night
+names:
+  - lang: nl
+    role: translation
+    text: De koning drinkt (Teniers, 1635)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177143
+creator: david-teniers-the-younger
+created: 1635
+materials: [oil paint, panel]
+dimensions: [47.2, 69.9]
+institution: national-gallery-of-art
+inventory_number: 1972.10.1
+provenance_status: d_seized
+provenance_status_note: Consigned c. 1939 for Baron Robert Gendebien to D. Katz, Dieren; passed through the Nazi-controlled Goudstikker firm and Professor Hoffmann (probably Heinrich Hoffmann) into Hitler's possession; recovered at Altaussee, restituted to the Netherlands on 15 April 1946.
+wikidata_id: Q20177143
+metadata:
+  sources: [Wikidata Q20177143 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Peasants_Celebrating_Twelfth_Night_G-001795-20120626.jpg/1280px-Peasants_Celebrating_Twelfth_Night_G-001795-20120626.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Peasants_Celebrating_Twelfth_Night_G-001795-20120626.jpg
+    license: Public domain
+    credit: David Teniers the Younger
+provenance:
+  - owner: person/edward-ladd-betts
+    label: inscribed on the reverse "E'd Ladd Betts, Esq."; probably Edward Betts, the English physician (d. 27 April 1695)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: Edward Ladd Betts [d. 1695], England.[1] — [1] The painting is inscribed on the reverse "E'd Ladd Betts, Esq." This is probably Edward Betts, a famous English physician, who died on 27 April 1695.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner_label: M. Belinarde
+    acquired: 1785 or earlier
+    label: "owner in 1785 (Smith, Catalogue Raisonné, 3 (1831): 334, no. 276)"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: M. Belinarde, 1785.[2] — [2] John Smith, A Catalogue Raisonné … 3(1831):334, no. 276.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner_label: Pereire family, Paris
+    acquired: 19th century
+    place: paris
+    label: possibly in the collection of Emile and Isaac Pereire, Faubourg Saint-Honoré
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: "[3] The painting could possibly have been in the collection of the Pereire family in the nineteenth century."
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: person/alfred-pereire
+    co_owners: [person/jacques-pereire]
+    acquired: 1936 or earlier
+    place: paris
+    label: lent to a 1936 exhibition in Paris (Pavillon de Marsan)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: Alfred and Jacques Pereire, Paris, by 1936; — [3] … Their descendants Alfred and Jacques Pereire lent the painting to a 1936 exhibition in Paris.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner_label: Madame Isaac Pereire
+    direct: true
+    place: paris
+    label: named "Madame I.P." in the 1937 sale catalogue
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: Mme. I. P[ereire]; — [3] The 1937 auction catalogue identifies the seller as "Madame I.P.," although she was known to be Madame Isaac Pereire.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: institution/galerie-charpentier
+    role: agent
+    acquired: 1937-06-04
+    ended: 1937-06-04
+    method: auction
+    direct: true
+    place: paris
+    label: her sale, Galerie Jean Charpentier, Paris, 4 June 1937, no. 22, as Le Roi boit!
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: (her sale, Galerie Jean Charpentier, Paris, 4 June 1937, no. 22, as Le Roi boit!);
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: person/guy-stein
+    acquired: 1937-06-04
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: Guy Stein, Paris.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: person/alex-gendebien
+    acquired: 1937 or earlier
+    place: brussels
+    label: owner in 1937 according to the 1964 Gebr. Douwes exhibition catalogue
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: Baron Alex. Gendebien, Brussels, in 1937;[4] — [4] The 1964 Gebr. Douwes exhibition catalogue lists a Baron Alex. Gendebien as the owner of the painting in 1937.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: person/robert-gendebien
+    acquired: 1939 or earlier
+    place: brussels
+    label: related to Alex. Gendebien in a way that is unclear
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: consigned c. 1939 for Baron Robert Gendebien [1885-1954] … [4] … a Baron Robert Gendebien owned the painting in 1939 … The relationship between Alex. and Robert Gendebien, though obviously familial, is unclear.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: person/eric-emil-lyndhurst
+    role: agent
+    acquired: c. 1939
+    method: transfer
+    direct: true
+    place: brussels
+    label: handed it to Nathan Katz for sale for Robert Gendebien some months before the outbreak of war (statement of 23 July 1948)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: consigned c. 1939 for Baron Robert Gendebien [1885-1954] by Eric-Emil Lyndhurst, Brussels, to (Firma D. Katz, Dieren, The Netherlands); — [5] According to his statement of 23 July 1948, "[S]ome months before the outbreak of war in 1939, [he] handed over to Mr. Nathan Katz (of the Firm D. Katz, Dieren) [the Teniers painting] belonging to Baron Robert Gendebien for sale."
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: person/d-katz
+    role: agent
+    acquired: c. 1939
+    method: transfer
+    direct: true
+    place: dieren
+    label: Firma D. Katz, on consignment for sale; Lyndhurst later learned from Katz that the Germans had taken it
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: to (Firma D. Katz, Dieren, The Netherlands); — [5] … Lyndhurst learned from Katz that the painting had been taken by the Germans during the war.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: person/p-smit-van-gelder
+    role: dealer
+    method: purchase
+    direct: true
+    place: province-of-antwerp
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: probably sold to (P. Smit van Gelder, Antwerp);
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: person/j-kalb
+    role: dealer
+    method: purchase
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: sold to (J. Kalb);
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: institution/kunsthandel-j-goudstikker-n-v
+    role: dealer
+    acquired: 1941-02-12
+    method: purchase
+    direct: true
+    place: amsterdam
+    label: the Nazi-controlled Goudstikker firm
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: sold 12 February 1941 to (Goudstikker firm, Amsterdam); — [5] After passing through Katz, Smit van Gelder, the Nazi-controlled Goudstikker firm, Kalb, and Hoffmann
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner_label: Professor Hoffmann, Munich (probably Heinrich Hoffmann, 1885–1957, Hitler's photographer)
+    acquired: 1941-12-11
+    method: purchase
+    direct: true
+    place: munich
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: sold 11 December 1941 to Professor Hoffmann, Munich; — [5] … Hoffmann (probably Heinrich Hoffmann [1885-1957], Adolf Hitler's photographer)
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: person/adolf-hitler
+    role: possessor
+    label: made its way into Hitler's possession; noted at the Witt Library as "stolen from Belgium, 1939/1945"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: "[5] A note on Witt Library fiche no. 13.365 indicates that the painting was \"stolen from Belgium, 1939/1945.\" … the painting made its way into Hitler's possession."
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    ended: 1946-04-15
+    method: transfer
+    place: munich
+    label: recovered at Altaussee; Munich property card no. 2588/Aussee 1932
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: "The records of the Munich Central Collecting Point indicate that after the war the painting was recovered at Alt Ausee and restituted to the Netherlands on 15 April 1946 (Munich property card #2588/Aussee 1932"
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner_label: the Netherlands (Dutch restitution authorities)
+    role: custodian
+    acquired: 1946-04-15
+    method: restitution
+    direct: true
+    label: Dutch Receipt for Cultural Objects no. 10a, item no. 34; arrived in the Netherlands 28 May 1946; unclear to whom it was returned
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: restituted to the Netherlands on 15 April 1946 (… Dutch Receipt for Cultural Objects No. 10a, item no. 34 …). The painting arrived in the Netherlands on 28 May 1946. Although it is unclear to whom the painting was returned by the Dutch authorities, Robert Gendebien was assumed to be the rightful owner and was involved in the restitution.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: person/robert-gendebien
+    acquired_label: after 28 May 1946; owner in 1955
+    method: restitution
+    place: brussels
+    label: assumed to be the rightful owner and involved in the restitution
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: Baron Robert Gendebien, Brussels, 1955. — [5] … Robert Gendebien was assumed to be the rightful owner and was involved in the restitution.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: person/eric-emil-lyndhurst
+    role: agent
+    acquired: 1955 or earlier
+    place: brussels
+    label: in possession of it in 1955 (1964 Gebr. Douwes catalogue), perhaps again on consignment from Gendebien
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: Eric-Emil Lyndhurst, Brussels, 1955.[5] — [5] After its return, he may have again put the painting on consignment to Lyndhurst, who, according to the 1964 Gebr. Douwes exhibition catalogue, was in possession of it in 1955.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: institution/douwes-fine-art-ltd
+    role: dealer
+    acquired: 1955 or earlier
+    place: amsterdam
+    label: according to a handwritten notation on a photograph in the Rubenianum, Antwerp
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: (Kunsthandel Gebr. Douwes, Amsterdam), 1955.[6] — [6] According to a handwritten notation on a photograph in the Rubenianum in Antwerp.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1963-07-10
+    ended: 1963-07-10
+    method: auction
+    place: london
+    label: sale, Sotheby's, London, 10 July 1963, no. 42
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: (sale, Sotheby's, London, 10 July 1963, no. 42);
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner_label: Mrs. Pethick
+    acquired: 1963-07-10
+    method: auction
+    direct: true
+    label: purchaser in the Sotheby's auction report; perhaps an agent for a dealer or private collector
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: Mrs. Pethick.[7] — [7] The Sotheby's auction report lists the purchaser of the painting as a Mrs. Pethick. Her name, however, does not appear in any other provenance listing. Perhaps she was an agent for a dealer or private collector.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner_label: Mrs. M. Polak, New York
+    place: new-york-city
+    label: named in the 1964 Gebr. Douwes exhibition catalogue; living in Sarasota according to Schaeffer Galleries (1985)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: Mrs. M. Polak, New York.[8] — [8] According to the catalogue of the 1964 Gebr. Douwes exhibition. In a letter of 30 January 1985 from Mrs. H.S. Schaeffer of Schaeffer Galleries, Inc., … Mrs. Polak is listed as living in Sarasota.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: institution/douwes-fine-art-ltd
+    role: dealer
+    acquired: 1964 or earlier
+    place: amsterdam
+    label: Gebr. Douwes exhibition, 1964
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: (Kunsthandel Gebr. Douwes, Amsterdam), in 1964.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: person/heinrich-becker
+    acquired: 1967 or earlier
+    place: dortmund
+    label: Fritz Rolf, Sammlung Becker, Dortmund, 1967, no. 86
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: "Dr. Heinrich Becker, Dortmund, by 1967;[9] — [9] See Fritz Rolf, Sammlung Becker, Dortmund, 1967: no. 86"
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: institution/schaeffer-galleries
+    role: dealer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: (Schaeffer Galleries, New York);
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1972-02-03
+    method: purchase
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53141.html
+        note: purchased 3 February 1972 by NGA.
+        source: nga-1972-10-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177143
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177143
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177143
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177143
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177143
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177143

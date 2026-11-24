@@ -1,0 +1,72 @@
+public_id: 124756
+title_lang: en
+title: Kasuga Shrine Mandala
+created: 1300/1333
+created_label: c. 14th century
+created_span: uncertain
+institution: cleveland-museum-of-art
+inventory_number: "2015.137"
+web_url: https://clevelandart.org/art/2015.137
+wikidata_id: Q60493602
+metadata:
+  sources: [Wikidata Q60493602 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Anonymous_-_Kasuga_Shrine_Mandala_-_2015.137_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Anonymous_-_Kasuga_Shrine_Mandala_-_2015.137_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anonymous_-_Kasuga_Shrine_Mandala_-_2015.137_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: anonymous
+provenance:
+  - owner_label: Private collection, Japan
+    acquired_label: before 1978
+    label: private collection in Japan before 1978
+    sources:
+      - url: https://clevelandart.org/art/2015.137
+        note: Private Collection, Japan [before 1978]
+        source: cma-2015-137
+        accessed: 2026-11-24
+  - owner: institution/tokyo-art-club
+    role: agent
+    method: auction
+    place: tokyo
+    label: auction, Tokyo Art Club; sold to Mr. Tajima of London Gallery
+    sources:
+      - url: https://clevelandart.org/art/2015.137
+        note: (Tokyo Art Club auction, Tokyo, Japan, sold to Mr. Tajima of London Gallery)
+        source: cma-2015-137
+        accessed: 2026-11-24
+  - owner: institution/london-gallery-ltd
+    role: dealer
+    ended: 2015
+    method: auction
+    direct: true
+    place: tokyo
+    label: bought at the Tokyo Art Club auction by Mr. Tajima of London Gallery; sold to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/2015.137
+        note: (London Gallery, Ltd., Tokyo, Japan, sold to the Cleveland Museum of Art) [?–2015]
+        source: cma-2015-137
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2015
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/2015.137
+        note: The Cleveland Museum of Art, Cleveland, OH [2015–] — Leonard C. Hanna Jr. Fund
+        source: cma-2015-137
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60493602
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60493602
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60493602

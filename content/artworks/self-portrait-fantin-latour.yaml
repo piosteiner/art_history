@@ -1,0 +1,175 @@
+public_id: 123200
+title_lang: en
+title: Self-Portrait
+names:
+  - lang: de
+    role: translation
+    text: Selbstporträt
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20188577
+  - lang: it
+    role: translation
+    text: Autoritratto
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20188577
+  - lang: ja
+    role: translation
+    text: 自画像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20188577
+  - lang: ru
+    role: translation
+    text: Автопортрет Анри Фантена-Латура
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20188577
+creator: henri-fantin-latour
+created: 1861
+materials: [oil paint, canvas]
+dimensions: [25.1, 21.4]
+institution: national-gallery-of-art
+inventory_number: 1995.47.9
+web_url: https://www.nga.gov/collection/art-object-page.92996.html
+provenance_status: d_seized
+provenance_status_note: Confiscated by the Einsatzstab Reichsleiter Rosenberg from David David-Weill in France during World War II; recovered at Altaussee, restituted to France 11 July 1946 and returned to the David-Weill family September 1946.
+wikidata_id: Q20188577
+metadata:
+  sources: [Wikidata Q20188577 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: artist/henri-fantin-latour
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20188577
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Henri_Fantin-Latour_selfportrait_1861.jpg/1280px-Henri_Fantin-Latour_selfportrait_1861.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_Fantin-Latour_selfportrait_1861.jpg
+    license: Public domain
+    credit: Henri Fantin-Latour
+provenance:
+  - owner_label: Madame Fantin-Latour
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.92996.html
+        note: Madame Fantin-Latour;
+        source: nga-1995-47-9
+        accessed: 2026-11-24
+  - owner: institution/galerie-f-j-tempelaere
+    role: dealer
+    acquired: 1929 or earlier
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.92996.html
+        note: sold by 1929 to (Tempelaere, Paris).
+        source: nga-1995-47-9
+        accessed: 2026-11-24
+  - owner: person/david-david-weill
+    acquired: 1936 or earlier
+    place: neuilly-sur-seine
+    label: lent to the 1936 Fantin-Latour exhibition, Grenoble
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.92996.html
+        note: David David-Weill [1871-1952], Neuilly-sur-Seine, by 1936.[1] — [1] The painting was lent by David-Weill to the 1936 exhibition of Fantin-Latour's work held in Grenoble.
+        source: nga-1995-47-9
+        accessed: 2026-11-24
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    acquired_label: during World War II
+    method: confiscation
+    label: confiscated from the David-Weill collection in France
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.92996.html
+        note: During World War II the painting was confiscated by the Nazi Einsatzstab Reichsleiter Rosenberg (ERR) from the David-Weill collection in France, and recovered at Alt Aussee.
+        source: nga-1995-47-9
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    ended: 1946-07-11
+    method: transfer
+    place: munich
+    label: recovered at Altaussee; Munich property card no. 181/6
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.92996.html
+        note: "recovered at Alt Aussee. The records of the Munich Central Collecting Point indicate that the painting was restituted to France on 11 July 1946, with David-Weill as the presumed owner (Munich property card #181/6;"
+        source: nga-1995-47-9
+        accessed: 2026-11-24
+  - owner_label: France, for David-Weill as presumed owner
+    acquired: 1946-07-11
+    method: restitution
+    direct: true
+    label: French Receipt for Cultural Objects no. 9A, item no. 77
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.92996.html
+        note: "restituted to France on 11 July 1946, with David-Weill as the presumed owner (Munich property card #181/6; French Receipt for Cultural Objects no. 9A, item no. 77;"
+        source: nga-1995-47-9
+        accessed: 2026-11-24
+  - owner_label: David-Weill family
+    acquired: 1946-09
+    method: restitution
+    direct: true
+    label: returned per correspondence from the French Ministère des Affaires Étrangères
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.92996.html
+        note: The painting was returned to the David-Weill family in September 1946 (see correspondence from the French Ministere des Affaires Étrangeres in NGA curatorial files).
+        source: nga-1995-47-9
+        accessed: 2026-11-24
+  - owner: person/robert-schmidt
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.92996.html
+        note: (Robert Schmidt, Paris);
+        source: nga-1995-47-9
+        accessed: 2026-11-24
+  - owner: person/paul-mellon
+    co_owners: [person/rachel-lambert-mellon]
+    acquired: 1971-06
+    method: purchase
+    direct: true
+    place: upperville
+    label: Mr. and Mrs. Paul Mellon, Upperville, Virginia
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.92996.html
+        note: sold June 1971 to Mr. and Mrs. Paul Mellon, Upperville, Virginia;
+        source: nga-1995-47-9
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1995
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.92996.html
+        note: gift 1995 to NGA.
+        source: nga-1995-47-9
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20188577
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20188577
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20188577
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20188577
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20188577
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20188577

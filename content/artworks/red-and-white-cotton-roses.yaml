@@ -1,0 +1,89 @@
+public_id: 124186
+title_lang: en
+title: Red and White Cotton Roses
+names:
+  - text: Red and White Cotton Rosemallows
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28808950
+  - lang: ja
+    role: translation
+    text: 紅白芙蓉図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28808950
+creator: li-di
+created: 1197
+dimensions: [2.52, 2.55]
+institution: tokyo-national-museum
+inventory_number: TA-137
+wikidata_id: Q28808950
+metadata:
+  sources: [Wikidata Q28808950 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Li_Di_-_Red_and_White_Cotton_Roses_-_Google_Art_Project.jpg/1280px-Li_Di_-_Red_and_White_Cotton_Roses_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Li_Di_-_Red_and_White_Cotton_Roses_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Li Di Unknown – Creator Details on Google Art Project
+provenance:
+  - owner: artist/li-di
+    acquired: 1197
+    method: creation
+    label: two leaves by the Southern Song court painter Li Di, each signed with the date Qingyuan 3 (1197); probably album leaves at first, remounted in Japan as a pair of hanging scrolls
+    sources:
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TA137
+        note: 李迪＠りてき＠は12世紀後半に活躍した宮廷画家で花鳥画をよくしました。 … 各幅に「慶元丁巳歳李迪画＠けいげんていしのとしりてきが＠」の落款があります。
+        source: tnm-ta-137
+        accessed: 2026-11-24
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100216&content_part_id=0&content_pict_id=0
+        note: 2幅の図は、本来はそれぞれ独立した冊仕立の作品であったと思われるが、日本の茶の湯の美意識から生まれた唐絵鑑賞に合わせて、対幅に改装された。
+        source: emuseum-100216-ja
+        accessed: 2026-11-24
+  - owner_label: unknown owner in Japan
+    acquired: 15th century
+    label: in Japan by the 15th century (Muromachi period)
+    certainty: probable
+    sources:
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TA137
+        note: おそらく室町時代には伝来していた、南宋院体花鳥画の最優品として知られています。
+        source: tnm-ta-137
+        accessed: 2026-11-24
+      - url: https://bunka.nii.ac.jp/heritages/detail/455131
+        note: 日本には室町時代15世紀には伝来しており、現在まで大切に伝えられてきた、中国宮廷花鳥画の名品です。
+        source: bunka-online-455131
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    place: tokyo
+    label: Tokyo National Museum (TA-137), owner the National Institutes for Cultural Heritage; date and way of acquisition not given in the sources read; National Treasure 1957
+    sources:
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TA137
+        note: 機関管理番号 TA-137
+        source: tnm-ta-137
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/139
+        note: 国宝指定年月日 ： 1957.02.19(昭和32.02.19) … 保管施設の名称 ： 東京国立博物館 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-139
+        accessed: 2026-11-24
+identifiers:
+  emuseum: "100216"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q28808950
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q28808950
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q28808950
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q28808950
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q28808950

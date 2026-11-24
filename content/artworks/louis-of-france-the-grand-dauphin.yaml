@@ -1,0 +1,127 @@
+public_id: 122944
+title_lang: en
+title: Louis of France, The Grand Dauphin
+names:
+  - lang: de
+    role: translation
+    text: Ludwig von Frankreich, der große Dauphin
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q63854530
+creator: antoine-coysevox
+created: 1698/1699
+created_label: c. 1698
+created_span: uncertain
+materials: [marble]
+dimensions: [79, 75.1, 34]
+institution: national-gallery-of-art
+inventory_number: 1960.5.7
+wikidata_id: Q63854530
+metadata:
+  sources: [Wikidata Q63854530 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Antoine_Coysevox%2C_Louis_of_France%2C_The_Grand_Dauphin%2C_c._1698-1699%2C_NGA_46015.jpg/1280px-Antoine_Coysevox%2C_Louis_of_France%2C_The_Grand_Dauphin%2C_c._1698-1699%2C_NGA_46015.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antoine_Coysevox,_Louis_of_France,_The_Grand_Dauphin,_c._1698-1699,_NGA_46015.jpg
+    license: CC0
+    credit: Antoine Coysevox
+provenance:
+  - owner_label: Bourbon-Condé family
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46015.html
+        note: Possibly Bourbon-Condé family.
+        source: nga-1960-5-7
+        accessed: 2026-11-24
+  - owner: person/richard-wallace
+    label: London and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46015.html
+        note: Sir Richard Wallace, 1st bt. [1818-1890], London and Paris;
+        source: nga-1960-5-7
+        accessed: 2026-11-24
+  - owner: person/julie-amelie-charlotte-castelnau
+    method: inheritance
+    direct: true
+    label: London and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46015.html
+        note: by inheritance to his wife, Julie-Amélie-Charlotte Castelnau, Lady Wallace [1819-1897], London and Paris;
+        source: nga-1960-5-7
+        accessed: 2026-11-24
+  - owner: person/john-murray-scott-2
+    method: inheritance
+    direct: true
+    place: paris
+    label: Lady Wallace's adviser and secretary; the Wallace-Bagatelle collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46015.html
+        note: by inheritance to her adviser and secretary, Sir John Murray Scott, 1st bt. [1847-1912], London and Paris;
+        source: nga-1960-5-7
+        accessed: 2026-11-24
+  - owner: person/victoria-sackville-west
+    method: inheritance
+    direct: true
+    place: paris
+    label: of Sevenoaks, Kent; the sculpture remained in Paris in Scott's residence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46015.html
+        note: by inheritance to his friend, Josephine Victoria Sackville-West, Lady Sackville [1864-1936], Sevenoaks, Kent [sculpture remained in Paris in Scott's residence];[1]
+        source: nga-1960-5-7
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    acquired: 1913
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46015.html
+        note: sold 1913 to (Jacques Seligmann and Co., Inc., Paris and New York);
+        source: nga-1960-5-7
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46015.html
+        note: sold 1951 to the Samuel H. Kress Foundation, New York;
+        source: nga-1960-5-7
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1960
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46015.html
+        note: gift 1960 to NGA.
+        source: nga-1960-5-7
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q63854530
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q63854530
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63854530
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q63854530
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63854530
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63854530

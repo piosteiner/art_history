@@ -1,0 +1,21 @@
+public_id: 123030
+name: Saint Florian
+kind: person
+birth: 250/259
+death: 304-05-05
+wikidata_id: Q298845
+metadata:
+  sources: [Wikidata Q298845 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q298845
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q298845
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q298845

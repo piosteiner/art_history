@@ -94,6 +94,15 @@ relationships:
       - accessed: 2026-11-03
         property: P135
         wikidata: Q153739
+  - type: married_to
+    to: artist/sophie-taeuber-arp
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q153739
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q254395
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/14/Hans_Arp.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Hans_Arp.JPG

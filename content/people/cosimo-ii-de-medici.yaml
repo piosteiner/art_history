@@ -37,6 +37,16 @@ death: 1621-02-28
 wikidata_id: Q312297
 metadata:
   sources: [Wikidata Q312297 (retrieved 2026-10-20)]
+relationships:
+  - type: child_of
+    to: person/ferdinando-i-de-medici
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q297483
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q312297
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/ed/Gro%C3%9Fherzog_Cosimo_II.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Gro%C3%9Fherzog_Cosimo_II.jpg

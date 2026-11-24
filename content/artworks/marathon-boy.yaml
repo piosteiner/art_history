@@ -1,0 +1,129 @@
+public_id: 123138
+title_lang: en
+title: The Marathon Boy (Ephebe of Marathon)
+names:
+  - text: The Marathon Boy
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2667065
+  - text: Ephebe of Marathon
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2667065
+  - lang: en
+    role: original
+    text: Marathon Boy
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2667065
+  - lang: nl
+    role: translation
+    text: Efebe van Marathon
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2667065
+  - lang: fr
+    role: translation
+    text: Éphèbe de Marathon
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2667065
+  - lang: de
+    role: translation
+    text: Jüngling von Marathon
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2667065
+  - lang: it
+    role: translation
+    text: Efebo di Maratona
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2667065
+  - lang: es
+    role: translation
+    text: Efebo de Maratón
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2667065
+  - lang: ru
+    role: translation
+    text: Марафонский юноша
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2667065
+created: -340/-330
+materials: [bronze]
+institution: national-archaeological-museum-of-athens
+wikidata_id: Q2667065
+metadata:
+  sources: [Wikidata Q2667065 (retrieved 2026-11-23)]
+relationships:
+  - type: associated_with
+    to: movement/greek-late-classical-period
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q2667065
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/The_Marathon_Youth.jpg/1280px-The_Marathon_Youth.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Marathon_Youth.jpg
+    license: CC BY 4.0
+    credit: Nikos Kitsakis
+provenance:
+  - owner_label: fishermen
+    acquired: 1925-06
+    method: find
+    place: marathon
+    label: brought up in a net in the bay of Marathon, between the shore and a small island; perhaps from a shipwreck, jettisoned ballast or deliberate disposal
+    sources:
+      - url: https://en.wikipedia.org/wiki/Marathon_Boy
+        note: The Marathon Boy or Ephebe of Marathon is a Greek bronze sculpture found in the Aegean Sea in the bay of Marathon in 1925.
+        source: wikipedia-en-marathon-boy
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/J%C3%BCngling_von_Marathon
+        note: Die Statue wurde im Juni 1925 von Fischern mit dem Netz geborgen; als Fundort wurde „die Bucht von Marathon zwischen der Küste und einer kleinen Insel“ festgehalten.
+        source: wikipedia-de-juengling-von-marathon
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    acquired: 1925
+    method: transfer
+    place: athens
+    label: on view in the museum since the find (de); inventory X 15118
+    sources:
+      - url: https://en.wikipedia.org/wiki/Marathon_Boy
+        note: The sculpture is conserved in the National Archaeological Museum of Athens where it is dated to around 340–330 BC.
+        source: wikipedia-en-marathon-boy
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/J%C3%BCngling_von_Marathon
+        note: … die 1925 in der Bucht von Marathon gefunden wurde und seither im Archäologischen Nationalmuseum in Athen zu sehen ist (Inventar-Nummer 15118).
+        source: wikipedia-de-juengling-von-marathon
+        accessed: 2026-11-24
+      - url: https://olympicgames.culture.gov.gr/en/ideodi/kalos_kai_agathos/idanika/5_Efivos_Marathwna.html
+        note: Athens, National Archaeological Museum, inv. n. X 15118 … Found in 1925 in the sea off Marathon (Attica).
+        source: culture-gr-olympic-games-marathon-boy
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1940/1941
+    place: athens
+    label: hidden with the museum's antiquities in 1940–41 (bronzes packed for air-raid shelters); the occupiers' request of June 1941 to exhibit it among 103 statues was never carried out; uncovered after the war
+    certainty: probable
+    sources:
+      - url: https://www.namuseum.gr/en/to-moyseio/istoria-toy-moyseioy/the-rescue-of-the-statues/
+        note: In April 1941 the museum looked deserted. Sculptures, bronze and clay artworks had been packed and transported to various raid shelters in Athens … the occupation forces compiled a list of 103 statues with the request to be exhibited, among them the Poseidon of Artemision, the ephebe of Anticythera and the ephebe of Marathon, an order that was never implemented.
+        source: nam-athens-rescue-of-the-statues
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q2667065
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q2667065
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q2667065

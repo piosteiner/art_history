@@ -1,0 +1,57 @@
+public_id: 124502
+title: Tōdaijiyama Sword
+names:
+  - text: Sword with an Inscription and Floral Ring Pommel
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q122562967
+  - lang: fr
+    role: translation
+    text: Épée de Tōdaijiyama
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q122562967
+  - lang: ja
+    role: translation
+    text: 金象嵌銘花形飾環頭大刀
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q122562967
+created: 180s
+created_span: uncertain
+institution: tokyo-national-museum
+inventory_number: J-39135
+web_url: https://colbase.nich.go.jp/collection_items/tnm/J-39135
+location: [135.8375, 34.62139]
+wikidata_id: Q122562967
+metadata:
+  sources: [Wikidata Q122562967 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tenri
+    period: 180s
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/%E6%9D%B1%E5%A4%A7%E5%AF%BA%E5%B1%B1%E5%8F%A4%E5%A2%B3%E5%87%BA%E5%9C%9F_%E9%87%91%E9%8C%AF%E9%8A%98%E8%8A%B1%E5%BD%A2%E9%A3%BE%E7%92%B0%E9%A0%AD%E5%A4%A7%E5%88%80.JPG/1280px-%E6%9D%B1%E5%A4%A7%E5%AF%BA%E5%B1%B1%E5%8F%A4%E5%A2%B3%E5%87%BA%E5%9C%9F_%E9%87%91%E9%8C%AF%E9%8A%98%E8%8A%B1%E5%BD%A2%E9%A3%BE%E7%92%B0%E9%A0%AD%E5%A4%A7%E5%88%80.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E5%A4%A7%E5%AF%BA%E5%B1%B1%E5%8F%A4%E5%A2%B3%E5%87%BA%E5%9C%9F_%E9%87%91%E9%8C%AF%E9%8A%98%E8%8A%B1%E5%BD%A2%E9%A3%BE%E7%92%B0%E9%A0%AD%E5%A4%A7%E5%88%80.JPG
+    license: Public domain
+    credit: Saigen Jiro
+identifiers:
+  colbase: tnm/J-39135
+  emuseum: "100619"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q122562967
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q122562967
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q122562967
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q122562967

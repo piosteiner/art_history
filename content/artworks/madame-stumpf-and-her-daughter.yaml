@@ -1,0 +1,212 @@
+public_id: 122846
+title_lang: en
+title: Madame Stumpf and Her Daughter
+names:
+  - lang: fr
+    role: translation
+    text: Madame Stumpf et sa fille
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20188753
+creator: jean-baptiste-camille-corot
+created: 1872
+materials: [oil paint, canvas]
+dimensions: [105, 74]
+institution: national-gallery-of-art
+inventory_number: 1970.17.23
+provenance_status: d_seized
+provenance_status_note: Confiscated from the Rosenberg collection at the château of Floirac on 18 September 1940; selected by Hermann Göring from the Jeu de Paume (list of 9 April 1943); sold through Zacharie Birtschansky to Hans Wendland for a Swiss dealer, probably Fischer; traced to a Swiss collection in 1945 and returned to the Rosenbergs in 1947.
+wikidata_id: Q20188753
+metadata:
+  sources: [Wikidata Q20188753 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Jean-Baptiste_Camille_Corot_-_Madame_Stumpf_et_sa_fille.jpg/1280px-Jean-Baptiste_Camille_Corot_-_Madame_Stumpf_et_sa_fille.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Camille_Corot_-_Madame_Stumpf_et_sa_fille.jpg
+    license: Public domain
+    credit: Jean-Baptiste Camille Corot
+provenance:
+  - owner: artist/jean-baptiste-camille-corot
+    method: creation
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: Given by the artist to Monsieur F. Stumpf;
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner: person/f-stumpf
+    method: gift
+    direct: true
+    label: given by the artist to Monsieur F. Stumpf
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: Given by the artist to Monsieur F. Stumpf;
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner_label: Stumpf family
+    ended_label: until at least 1906
+    method: inheritance
+    direct: true
+    label: shown in the catalogue of the late F. Stumpf's collection, Galerie Georges Petit, Paris, 7 May 1906, but not offered for sale
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: Stumpf family until at least 1906;[1] — [1] Discussed as part of the Stumpf collection, but not offered for sale, in Catalogue de tableaux moderne composant la collection de feu M. F. Stumpf, Galerie Georges Petit, Paris, 7 May 1906, pp. 6-10.
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner: person/madeleine-barbier-de-saint-hilaire
+    direct: true
+    label: Mme Barbier de Saint Hilaire, née Madeleine Stumpf, the child in the painting
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: Mme Barbier de Saint Hilaire, née Madeleine Stumpf, the child in the painting;
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner: institution/tedesco-freres
+    co_owners: [person/paul-rosenberg]
+    role: dealer
+    acquired: 1922 or earlier
+    method: purchase
+    direct: true
+    place: paris
+    label: sold to Tedesco Frères, Paris, and Paul Rosenberg and Co., New York, London and Paris (Jean Dieterle, letter of 1970)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: sold by 1922[2] to (Tedesco Frères, Paris) and (Paul Rosenberg and Co., New York, London and Paris);[3]
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner_label: confiscating authority not named
+    role: possessor
+    acquired: 1940-09-18
+    method: confiscation
+    place: floirac
+    label: confiscated with others from the Rosenberg collection at the château of Floirac; Répertoire des biens spoliés no. 37.954
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: "[3] … the painting was confiscated with others from the Rosenberg collection in France in 1940 … The painting is listed as no. 37.954 in the Répertoire des biens spoliés en France … the picture was confiscated on 18 September 1940 from the château of Floirac"
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner: person/hermann-goring
+    role: possessor
+    acquired: 1943 or earlier
+    method: confiscation
+    place: paris
+    label: selected from the Jeu de Paume; Nachtrag of 9 April 1943 to the list of 20 October 1942 of works handed over for Göring's collection, no. 3
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: "[3] … The painting was selected by Hermann Goering from the Jeu de Paume (OSS Consolidated Interrogation Report #2, The Goering Collection, 15 September 1945, Attachment 5, Nachtrag zur Liste v. 20.10.42 der für die Sammlung des Reichnsmarschalls Hermann Göring abgegebenen Kunstgegestände dated 9 April 1943, no. 3"
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner: person/zacharie-birtschansky
+    role: possessor
+    place: paris
+    label: French dealer involved in selling the picture to Hans Wendland for a Swiss dealer
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: "[3] … The French dealer Zacharie Birtschansky [1889 - c.1950]was then involved in selling the picture to Hans Wendland for a Swiss dealer, probably Fischer"
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner: person/hans-wendland
+    role: possessor
+    method: purchase
+    direct: true
+    label: bought for a Swiss dealer, probably Fischer
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: "[3] … selling the picture to Hans Wendland for a Swiss dealer, probably Fischer (see OSS Consolidated Interrogation Report #2, The Goering Collection, 15 September 1945, p. 57-8"
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner: institution/galerie-fischer
+    role: possessor
+    method: purchase
+    direct: true
+    place: lucerne
+    label: a Swiss dealer, probably Fischer
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: "[3] … for a Swiss dealer, probably Fischer"
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner_label: Swiss collection
+    role: possessor
+    acquired_label: traced there in 1945
+    label: traced to a Swiss collection in 1945
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: "[3] … traced to a Swiss collection in 1945, and returned to the Rosenbergs in 1947."
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner_label: the Rosenbergs
+    acquired: 1947
+    method: restitution
+    direct: true
+    label: returned to the Rosenbergs (Alexandre Rosenberg, letter of 27 June 1977); claim of Edmond Rosemberg with the first list of Floirac pictures, 15 December 1944
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: "[3] According to a letter from Alexandre Rosenberg dated 27 June 1977 … traced to a Swiss collection in 1945, and returned to the Rosenbergs in 1947."
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner: institution/e-v-thaw-co
+    role: dealer
+    acquired: c. 1965
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: acquired c. 1965 by (E.V. Thaw & Co, New York);[4]
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1966-01
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: sold January 1966 to (Thomas Agnew and Sons, London);
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner: person/ailsa-mellon-bruce
+    acquired: 1966-03-26
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: sold 26 March 1966 to Ailsa Mellon Bruce [1901-1969], New York;
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1970
+    method: bequest
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52167.html
+        note: bequest 1970 to NGA.
+        source: nga-1970-17-23
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20188753
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20188753
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20188753
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20188753
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20188753
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20188753

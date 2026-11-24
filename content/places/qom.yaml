@@ -1,0 +1,16 @@
+public_id: 124905
+name: Qom
+kind: site
+location: [50.87639, 34.64]
+wikidata_id: Q170573
+metadata:
+  sources: [Wikidata Q170573 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q170573
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q170573

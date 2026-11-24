@@ -1,0 +1,53 @@
+public_id: 123988
+title_lang: en
+title: Artemision Bronze
+attribution_label: Anonymous, Greek
+created: -475/-460
+kind: statue
+medium: bronze
+dimensions: [209]
+institution: national-archaeological-museum-of-athens
+inventory_number: X 15161
+wikidata_id: Q1573003
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/God_of_Cape_Artemision_01.JPG/1280px-God_of_Cape_Artemision_01.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:God_of_Cape_Artemision_01.JPG
+    license: CC BY 2.5
+    credit: Sailko
+provenance:
+  - owner_label: unknown
+    role: event
+    acquired_label: no earlier than the mid-2nd century BC
+    label: lost in a shipwreck off Cape Artemision, northern Euboea
+    sources:
+      - url: https://en.wikipedia.org/wiki/Artemision_Bronze
+        note: …at the site of a shipwreck that occurred no earlier than the middle of the second century BC.
+        source: wikipedia-en-artemision-bronze
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/Ποσειδώνας_του_Αρτεμισίου
+        note: στο σημείο που είχε ναυαγήσει ένα πλοίο στα μέσα του 2ου αιώνα π.Χ. … Πιστεύεται ότι το πλοίο μετέφερε ελληνικά έργα προς εξαγωγή με προορισμό την Ιταλία.
+        source: wikipedia-el-poseidonas-tou-artemisiou
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1926
+    ended: 1928
+    method: find
+    label: "recovered from the sea off Cape Artemision, northern Euboea: the left arm in 1926, the rest in 1928; published by Georgios Oikonomos (1928); work stopped in 1928 after a diver died"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Artemision_Bronze
+        note: The sculpture was first discovered in 1926 and further excavated in 1928, … Only the left arm was found in 1926. First reported to the scholarly community by Oekonomos, in Praktika of the Academy of Athens 1928, pp 750ff. … exploration was abandoned when a diver died in 1928, and was never resumed.
+        source: wikipedia-en-artemision-bronze
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/Ποσειδώνας_του_Αρτεμισίου
+        note: Προηγήθηκε η εύρεση του αριστερού χεριού το 1926 και του υπόλοιπου αγάλματος το 1928. Η εύρεση δημοσιεύτηκε από τον Γεώργιο Οικονόμο το 1928 στα «Πρακτικά της Ακαδημίας Αθηνών».
+        source: wikipedia-el-poseidonas-tou-artemisiou
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    place: athens
+    label: inventory X 15161
+    sources:
+      - url: https://de.wikipedia.org/wiki/Poseidon_vom_Kap_Artemision
+        note: Sie befindet sich heute im Archäologischen Nationalmuseum in Athen (Inv.-Nr. 15161).
+        source: wikipedia-de-poseidon-vom-kap-artemision
+        accessed: 2026-11-24

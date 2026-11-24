@@ -1,0 +1,11 @@
+public_id: 123059
+name: Samuel H. Kress Collection
+kind: collection
+wikidata_id: Q2074027
+metadata:
+  sources: [Wikidata Q2074027 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q2074027

@@ -1,0 +1,121 @@
+public_id: 123180
+title_lang: en
+title: Toreador Fresco (Bull-Leaping Fresco)
+names:
+  - text: Toreador Fresco
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3566545
+  - lang: en
+    role: original
+    text: Bull-Leaping Fresco
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3566545
+  - lang: fr
+    role: translation
+    text: Scène de tauromachie
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3566545
+  - lang: de
+    role: translation
+    text: Stiersprung-Fresko
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3566545
+  - lang: it
+    role: translation
+    text: Affresco della taurocatapsia
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3566545
+  - lang: es
+    role: translation
+    text: Fresco de la taurocatapsia
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3566545
+  - lang: zh
+    role: translation
+    text: 躍牛壁畫
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3566545
+  - lang: ru
+    role: translation
+    text: Акробаты с быком
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3566545
+created: c. 1550 BCE
+created_span: uncertain
+materials: [fresco]
+dimensions: [70]
+institution: heraklion-archaeological-museum
+web_url: http://odysseus.culture.gr/h/4/eh430.jsp?obj_id=7915
+wikidata_id: Q3566545
+metadata:
+  sources: [Wikidata Q3566545 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Knossos_bull_leaping_fresco.jpg/1280px-Knossos_bull_leaping_fresco.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Knossos_bull_leaping_fresco.jpg
+    license: Public domain
+    credit: Gleb Simonov
+provenance:
+  - owner_label: Minoan palace at Knossos
+    acquired_label: no earlier than Middle Minoan III
+    method: creation
+    label: stucco relief panel on the upper storey of the east wall of the palace at Knossos
+    sources:
+      - url: https://en.wikipedia.org/wiki/Bull-Leaping_Fresco
+        note: The Bull-Leaping Fresco is the most completely restored of several stucco panels originally sited on the upper-story portion of the east wall of the Minoan palace at Knossos in Crete. … They are, in other words, instances of the "mature art" created no earlier than MM III.
+        source: wikipedia-en-bull-leaping-fresco
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired_label: Late Minoan II
+    label: the panels fell from the upper storey when the palace was destroyed, probably by earthquake
+    sources:
+      - url: https://en.wikipedia.org/wiki/Bull-Leaping_Fresco
+        note: The flakes of the destroyed panels fell to the ground from the upper story during the destruction of the palace, probably by earthquake, in Late Minoan (LM) II.
+        source: wikipedia-en-bull-leaping-fresco
+        accessed: 2026-11-24
+  - owner: person/arthur-evans
+    acquired: 1901
+    method: find
+    label: fragments found in the Court of the Stone Spout, Knossos, in Evans's excavation (Evans owned the palace site); reconstructed by Émile Gilliéron père
+    sources:
+      - url: https://en.wikipedia.org/wiki/Bull-Leaping_Fresco
+        note: Arthur Evans, Keeper of the Ashmolean Museum, owner of the palace and director of excavation, presents the topic in Chapter III of his monumental work on Knossos and Minoan Civilization, Palace of Minos.
+        source: wikipedia-en-bull-leaping-fresco
+        accessed: 2026-11-24
+      - url: https://minoanroom.ashmolean.org/catalogue/aje_4_1_15_1_7/
+        note: The Taureador Fresco was reconstructed from fragments discovered in the Court of the Stone Spout in 1901. Emile Gilliéron père both reconstructed the fragments and painted this copy for Evans, which was first exhibited in 1902 in Oxford.
+        source: ashmolean-minoan-room-taureador-fresco
+        accessed: 2026-11-24
+  - owner: institution/heraklion-archaeological-museum
+    place: heraklion
+    label: the restored panel; when it came to the museum is not stated
+    sources:
+      - url: https://en.wikipedia.org/wiki/Bull-Leaping_Fresco
+        note: "| city = [[Heraklion]], Crete | museum = [[Heraklion Archaeological Museum]]"
+        source: wikipedia-en-bull-leaping-fresco
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3566545
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3566545
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3566545
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3566545

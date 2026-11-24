@@ -1,0 +1,16 @@
+public_id: 123000
+name: Tuileries Palace
+kind: building
+location: [2.33111, 48.86222]
+wikidata_id: Q234364
+metadata:
+  sources: [Wikidata Q234364 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q234364
+  location:
+    - accessed: 2026-11-23
+      property: P625
+      wikidata: Q234364

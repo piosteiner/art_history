@@ -1,0 +1,53 @@
+public_id: 126339
+name: Detroit
+names:
+  - lang: ja
+    role: translation
+    text: デトロイト
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12439
+  - lang: zh
+    role: translation
+    text: 底特律
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12439
+  - lang: ko
+    role: translation
+    text: 디트로이트
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12439
+  - lang: fr
+    role: translation
+    text: Détroit
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12439
+  - lang: ru
+    role: translation
+    text: Детройт
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12439
+kind: settlement
+parent: united-states
+country_code: US
+location: [-83.0475, 42.33167]
+wikidata_id: Q12439
+metadata:
+  sources: [Wikidata Q12439 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q12439
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q12439
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q12439

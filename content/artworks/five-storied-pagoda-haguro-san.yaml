@@ -1,0 +1,77 @@
+public_id: 123910
+title: Five-storied Pagoda, Haguro-san
+names:
+  - text: Chiyori-sha
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11610424
+  - lang: fr
+    role: translation
+    text: pagode à 5 étages du mont Haguro
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11610424
+  - lang: ja
+    role: translation
+    text: 羽黒山五重塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11610424
+created: 10th century
+created_span: uncertain
+dimensions: [2920]
+institution: gassan-shrine
+location: [139.9676, 38.70478]
+wikidata_id: Q11610424
+metadata:
+  sources: [Wikidata Q11610424 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tsuruoka
+    period: 10th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Haguro_pagoda.jpg/1280px-Haguro_pagoda.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Haguro_pagoda.jpg
+    license: CC BY-SA 4.0
+    credit: Mimissu
+provenance:
+  - owner: institution/takisui-ji
+    acquired: 1372
+    method: creation
+    place: tsuruoka
+    label: pagoda of Takisui-ji, a temple of the Haguro shugendō complex; by shrine tradition first built by Taira no Masakado in 931–938; the present pagoda of Ōan 5 (1372), according to the Haguro-san kyūki rebuilt by the intendant (bettō) Daihōji Masauji; repaired 1608 by Mogami Yoshiaki
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/199
+        note: この塔はもと滝水寺のものであった。 社伝によると承平年間（九三一～九三八）に平将門が塔を造ったとあるが、現在の塔は応安五年（一三七二）に建立されたものである。
+        source: kunishitei-102-199
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%BE%BD%E9%BB%92%E5%B1%B1%E4%BA%94%E9%87%8D%E5%A1%94
+        note: 現存する塔は、『羽黒山旧記』によれば応安5年（1372年）に羽黒山の別当職大宝寺政氏が再建したと伝えられる。慶長13年（1608年）には山形藩主最上義光（もがみよしあき）が修理を行ったことが棟札の写しからわかる。
+        source: wikipedia-ja-haguro-san-five-storied-pagoda
+        accessed: 2026-11-24
+  - owner: institution/gassan-shrine
+    co_owners: [institution/dewa-shrine, institution/yudonosan-shrine]
+    acquired_label: with the separation of Shinto and Buddhism in the Meiji period
+    label: the syncretic Haguro-san became Dewa Shrine and its temples were mostly abolished; the pagoda was kept and became the subsidiary shrine Chiyori-sha (deity Ōkuninushi); owned jointly by the three Dewa Sanzan shrines today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/199
+        note: 所有者名 ： 月山神社 出羽神社 湯殿山神社
+        source: kunishitei-102-199
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%BE%BD%E9%BB%92%E5%B1%B1%E4%BA%94%E9%87%8D%E5%A1%94
+        note: 明治時代の神仏分離により、神仏習合の形態だった羽黒山は出羽神社（いではじんじゃ）となり、山内の寺院や僧坊はほとんど廃され、取り壊されたが、五重塔は取り壊されずに残された数少ない仏教式建築の1つである。 … 神仏分離以後は大国主命を祭神として祀り、出羽三山神社の末社「千憑社」となっている。 … 塔の所有者は出羽三山神社（月山神社出羽神社湯殿山神社）である。
+        source: wikipedia-ja-haguro-san-five-storied-pagoda
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11610424
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11610424
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q11610424

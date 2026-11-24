@@ -1,0 +1,35 @@
+public_id: 124344
+title: Ungyō
+names:
+  - lang: fr
+    role: translation
+    text: Kongo Rikishi (Vajrapani), Ungyo (bouche fermée)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q61726970
+  - lang: ja
+    role: translation
+    text: 木造金剛力士立像（吽形）
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q61726970
+created: 13th century
+created_span: uncertain
+materials: [wood, paint, rock crystal]
+wikidata_id: Q61726970
+metadata:
+  sources: [Wikidata Q61726970 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Kongorikishi_Kofukuji_2.jpg/1280px-Kongorikishi_Kofukuji_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kongorikishi_Kofukuji_2.jpg
+    license: Public domain
+    credit: Nara National Museum 奈良帝室博物館 (Showa 8 - 1933)
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q61726970
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q61726970

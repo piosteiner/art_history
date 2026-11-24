@@ -10,6 +10,16 @@ death: 1930-04-05
 wikidata_id: Q22338185
 metadata:
   sources: [Wikidata Q22338185 (retrieved 2026-10-30)]
+relationships:
+  - type: married_to
+    to: person/joseph-roulin
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q22338185
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q22338187
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Van_Gogh_-_La_Berceuse_%28Augustine_Roulin%293.jpeg/1280px-Van_Gogh_-_La_Berceuse_%28Augustine_Roulin%293.jpeg
     source_url: https://commons.wikimedia.org/wiki/File:Van_Gogh_-_La_Berceuse_(Augustine_Roulin)3.jpeg

@@ -1,0 +1,41 @@
+public_id: 125768
+name: Brescia
+names:
+  - lang: zh
+    role: translation
+    text: 布雷西亚
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q16144
+  - lang: ko
+    role: translation
+    text: 브레시아
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q16144
+  - lang: ru
+    role: translation
+    text: Брешиа
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q16144
+kind: settlement
+parent: italy
+country_code: IT
+location: [10.21944, 45.53889]
+wikidata_id: Q16144
+metadata:
+  sources: [Wikidata Q16144 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q16144
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q16144
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q16144

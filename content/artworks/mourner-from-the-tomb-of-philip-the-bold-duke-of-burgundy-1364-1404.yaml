@@ -1,0 +1,107 @@
+public_id: 122904
+title_lang: en
+title: Mourner from the Tomb of Philip the Bold, Duke of Burgundy (1364–1404)
+creator: claux-de-werve
+created: 1404/1410
+kind: sculpture
+medium: vizille alabaster
+dimensions: [41.7, 16.6, 11.7]
+institution: cleveland-museum-of-art
+inventory_number: "1940.128"
+web_url: https://clevelandart.org/art/1940.128
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1940.128/1940.128_web.jpg
+    source_url: https://clevelandart.org/art/1940.128
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner_label: M. M. Hocquart, Dijon
+    place: dijon
+    sources:
+      - url: https://clevelandart.org/art/1940.128
+        note: M. M. Hocquart, Dijon, France
+        source: cma-1940-128
+        accessed: 2026-11-24
+  - owner: person/edouard-de-broissia
+    co_owners: [person/georges-de-broissia]
+    acquired: 1825
+    ended: 1875
+    place: dijon
+    label: Vicomte Edouard de Broissia and his son Georges
+    sources:
+      - url: https://clevelandart.org/art/1940.128
+        note: Vicomte Edouard de Broissia & son, Georges (d.  1875), Dijon, France [1825-1875]
+        source: cma-1940-128
+        accessed: 2026-11-24
+  - owner_label: M. Legay, Nancy
+    role: dealer
+    acquired: 1875
+    place: nancy
+    sources:
+      - url: https://clevelandart.org/art/1940.128
+        note: (M. Legay, Nancy, sold to Charles Stein) [1875-?]
+        source: cma-1940-128
+        accessed: 2026-11-24
+  - owner: person/charles-stein
+    role: dealer
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1940.128
+        note: (Charles Stein, Paris, France)
+        source: cma-1940-128
+        accessed: 2026-11-24
+  - owner: person/arthur-de-schickler
+    place: paris
+    label: Baron Arthur de Schickler
+    sources:
+      - url: https://clevelandart.org/art/1940.128
+        note: Baron Arthur de Schickler, Paris, France
+        source: cma-1940-128
+        accessed: 2026-11-24
+  - owner_label: Count de Pourtales, Paris
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1940.128
+        note: Count de Pourtales, Paris, France
+        source: cma-1940-128
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1919
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1940.128
+        note: (Duveen Bros., Paris, France) [1919]
+        source: cma-1940-128
+        accessed: 2026-11-24
+  - owner: person/clarence-mackay
+    acquired: 1922 or earlier
+    ended: 1939
+    place: new-york-city
+    label: listed in parentheses (the dealer convention) by the museum
+    sources:
+      - url: https://clevelandart.org/art/1940.128
+        note: (Clarence Mackay (d. 1939), New York, NY) [By 1922-1939]
+        source: cma-1940-128
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1940.128
+        note: (Jacques Seligmann, New York, sold to the Cleveland Museum of Art) [?-1940]
+        source: cma-1940-128
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1940
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Purchase from the J. H. Wade Fund
+    sources:
+      - url: https://clevelandart.org/art/1940.128
+        note: (Jacques Seligmann, New York, sold to the Cleveland Museum of Art) — The Cleveland Museum of Art, Cleveland, OH [1940-]
+        source: cma-1940-128
+        accessed: 2026-11-24

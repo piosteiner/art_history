@@ -1,0 +1,23 @@
+public_id: 122852
+name: George Washington Parke Custis
+given_name: George Washington Parke
+family_name: Custis
+kind: person
+birth: 1781-04-30
+death: 1857-10-10
+wikidata_id: Q1508559
+metadata:
+  sources: [Wikidata Q1508559 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q1508559
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q1508559
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q1508559

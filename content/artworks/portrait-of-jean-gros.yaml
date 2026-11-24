@@ -1,0 +1,64 @@
+public_id: 125112
+title_lang: en
+title: Portrait of Jean Gros
+names:
+  - lang: nl
+    role: original
+    text: Jean Gros
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q58018933
+  - lang: nl
+    role: original
+    text: Portret van Jean de Gros
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q58018933
+creator: rogier-van-der-weyden
+created: 1460/1464
+created_label: c. 1460s
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [38.5, 28.6]
+institution: art-institute-of-chicago
+inventory_number: 1933.1051a
+wikidata_id: Q58018933
+metadata:
+  sources: [Wikidata Q58018933 (retrieved 2026-11-24)]
+relationships:
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q58018933
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Rogier_van_der_Weyden_-_Portrait_of_Jean_Gros_-_1933.1051a_-_Art_Institute_of_Chicago.jpg/1280px-Rogier_van_der_Weyden_-_Portrait_of_Jean_Gros_-_1933.1051a_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rogier_van_der_Weyden_-_Portrait_of_Jean_Gros_-_1933.1051a_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Rogier van der Weyden
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q58018933
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q58018933
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q58018933
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q58018933
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q58018933
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q58018933

@@ -1,0 +1,129 @@
+public_id: 124983
+title_lang: en
+title: Madonna and Child
+names:
+  - lang: fr
+    role: translation
+    text: Vierge à l'Enfant
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60778717
+  - lang: de
+    role: translation
+    text: Madonna und Kind
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60778717
+  - lang: it
+    role: translation
+    text: Madonna col Bambino
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60778717
+creator: mino-da-fiesole
+created: 1450
+institution: cleveland-museum-of-art
+inventory_number: "1928.747"
+web_url: https://www.clevelandart.org/art/1928.747
+wikidata_id: Q60778717
+metadata:
+  sources: [Wikidata Q60778717 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Clevelandart_1928.747.jpg/1280px-Clevelandart_1928.747.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Clevelandart_1928.747.jpg
+    license: Public domain
+    credit: Mino da Fiesole
+provenance:
+  - owner: institution/santa-maria-maggiore-rome
+    acquired: 1461 or earlier
+    ended_label: after 1839
+    place: rome
+    label: dismantled in 1747, components moved to the Capitolo Liberiano after 1839
+    sources:
+      - url: https://clevelandart.org/art/1928.747
+        note: by 1461 - after 1839 Santa Maria Maggiore (Rome, Italy), dismantled in 1747, components moved to the Capitolo Liberiano after 1839
+        source: cma-1928-747
+        accessed: 2026-11-24
+  - owner: person/gregory-stroganoff
+    acquired_label: before 1890
+    ended: 1910
+    place: rome
+    label: Count Gregory Stroganoff
+    sources:
+      - url: https://clevelandart.org/art/1928.747
+        note: before 1890 - 1910 Count Gregory Stroganoff, 1829-1910 (Rome, Italy), by inheritance to his daughter, Maria Gregorievna Scerbatoff, 1910
+        source: cma-1928-747
+        accessed: 2026-11-24
+  - owner: person/maria-gregorievna-scerbatoff
+    acquired: 1910
+    ended: 1910
+    method: inheritance
+    direct: true
+    label: conveyed all rights of inheritance to her son and daughter
+    sources:
+      - url: https://clevelandart.org/art/1928.747
+        note: 1910 Maria Gregorievna Scerbatoff, died 1920, conveyed all rights of inheritance to her son and daughter, Vladimir and Aleksandra Scherbatoff, 1910
+        source: cma-1928-747
+        accessed: 2026-11-24
+  - owner: person/vladimir-scherbatoff
+    co_owners: [person/aleksandra-scherbatoff]
+    acquired: 1910
+    ended: 1920
+    method: transfer
+    direct: true
+    label: rights of inheritance conveyed by their mother
+    sources:
+      - url: https://clevelandart.org/art/1928.747
+        note: 1910-20 Vladimir and Aleksandra Scherbatoff, died 1920, by inheritance to the wife of Vladimir Scherbatoff and their children, Elena Petrovna Scerbatov, Olga Vladimirovna, Maria Vladimirovna, 1920,
+        source: cma-1928-747
+        accessed: 2026-11-24
+  - owner: person/elena-petrovna-scerbatov
+    co_owners: [person/olga-vladimirovna-scerbatov, person/maria-vladimirovna-scerbatov]
+    acquired: 1920
+    method: inheritance
+    direct: true
+    label: Princess Elena Petrovna, Vladimir's widow, and their daughters Princesses Olga and Maria Vladimirovna
+    sources:
+      - url: https://clevelandart.org/art/1928.747
+        note: 1920-28 Princess Elena Petrovna Scerbatov, and their children, Princess Olga Vladimirovna and Princess Maria Vladimirovna, sold through Giacomo Nunes and Harold W. Parsons, to the Cleveland Museum of Art, 1928.
+        source: cma-1928-747
+        accessed: 2026-11-24
+  - owner: person/giacomo-nunes
+    co_owners: [person/harold-w-parsons]
+    role: agent
+    acquired: 1928
+    direct: true
+    label: sold through them to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1928.747
+        note: sold through Giacomo Nunes and Harold W. Parsons, to the Cleveland Museum of Art, 1928.
+        source: cma-1928-747
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1928
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Gift of Mrs. Leonard C. Hanna
+    sources:
+      - url: https://clevelandart.org/art/1928.747
+        note: Princess Elena Petrovna Scerbatov, and their children … sold through Giacomo Nunes and Harold W. Parsons, to the Cleveland Museum of Art, 1928.
+        source: cma-1928-747
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60778717
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60778717
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60778717
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60778717

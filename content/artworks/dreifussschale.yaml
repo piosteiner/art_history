@@ -1,0 +1,54 @@
+public_id: 124845
+title: Dreifussschale
+creator: anonymous
+created: 550/950
+materials: [ceramic]
+dimensions: [30, 30]
+institution: museum-rietberg
+inventory_number: RMA 150
+wikidata_id: Q126911346
+metadata:
+  sources: [Wikidata Q126911346 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/sierra-de-los-tuxtlas
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q126911346
+  - type: created_in
+    to: place/veracruz
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q126911346
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Urheber%2Ain_unbekannt_Dreifussschale_Museum_Rietberg_RMA_0150.jpg/1280px-Urheber%2Ain_unbekannt_Dreifussschale_Museum_Rietberg_RMA_0150.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Urheber*in_unbekannt_Dreifussschale_Museum_Rietberg_RMA_0150.jpg
+    license: CC0
+    credit: Museum Rietberg
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q126911346
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q126911346
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q126911346
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q126911346
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q126911346
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q126911346

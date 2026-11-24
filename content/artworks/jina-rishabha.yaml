@@ -1,0 +1,60 @@
+public_id: 123857
+title_lang: de
+title: Jina Rishabha
+attribution_label: Anonymous
+created: 1001/1200
+kind: sculpture
+medium: Marmor
+dimensions: [162, 62, 25]
+institution: museum-rietberg
+inventory_number: RVI 213
+web_url: https://rietberg.ch/sammlungen/rvi-213
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Tirthankara_Rishabhanatha_Rietberg_RVI_213.jpg/1280px-Tirthankara_Rishabhanatha_Rietberg_RVI_213.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tirthankara_Rishabhanatha_Rietberg_RVI_213.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired_label: 11th/12th century
+    method: creation
+    label: made at Chandravati, Rajasthan
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-213
+        note: "11./12. Jh.: Urheber*in unbekannt, Urheber*in, Chandravati, Indien"
+        source: rietberg-rvi-213
+        accessed: 2026-11-24
+  - owner: institution/luzac-co
+    role: dealer
+    acquired: before 1922
+    place: london
+    label: London firm (1890–1986); circumstances unknown; illustrated in Rupam 1922, no. 11, p. 112
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-213
+        note: |-
+          vor 1922: Luzac & Co., London (1890–1986), Erwerbsumstände unbekannt
+          Abbildung in Rupam 1922, N° 11, S. 112
+        source: rietberg-rvi-213
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: 1924
+    label: circumstances unknown; illustrated in Karl With, Bildwerke Ost- und Südasiens aus der Sammlung Yi Yuan, 1924, figs. 90–93
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-213
+        note: |-
+          1924: Eduard von der Heydt (1882–1964), Erwerbsumstände unbekannt
+          Abbildung in: With, Karl, Bildwerke Ost- und Südasiens aus der Sammlung Yi Yuan, Basel: Benno Schwabe und Co. Verlag, 1924, Abb. 90-93
+        source: rietberg-rvi-213
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1954
+    method: gift
+    place: ascona
+    label: received as a gift in Ascona; inventory book II, p. 94
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-213
+        note: |-
+          1954: Museum Rietberg, als Geschenk erhalten, in Ascona
+          MRZ Schriftenarchiv, S.0001-0002, Inventarbuch II, S. 94.
+        source: rietberg-rvi-213
+        accessed: 2026-11-24

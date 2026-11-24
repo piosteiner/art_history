@@ -1,0 +1,66 @@
+public_id: 124472
+title: Inariyama Sword
+names:
+  - text: Gold-inlaid Iron Sword
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q856395
+  - lang: fr
+    role: translation
+    text: épée d'Inariyama
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q856395
+  - lang: de
+    role: translation
+    text: Inariyama-Schwert
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q856395
+  - lang: ja
+    role: translation
+    text: 稲荷山古墳出土鉄剣
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q856395
+  - lang: zh
+    role: translation
+    text: 稻荷山古墳出土鐵劍
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q856395
+  - lang: ko
+    role: translation
+    text: 이나리야마 고분 철검
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q856395
+created: 471
+materials: [iron]
+dimensions: [73.5]
+institution: saitama-prefectural-museum-of-the-sakitama-ancient-burial-mounds
+wikidata_id: Q856395
+metadata:
+  sources: [Wikidata Q856395 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Inariyama_sword.JPG/1280px-Inariyama_sword.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Inariyama_sword.JPG
+    license: Public domain
+    credit: Saigen Jiro
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q856395
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q856395
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q856395
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q856395

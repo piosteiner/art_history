@@ -1,0 +1,186 @@
+public_id: 122897
+title_lang: en
+title: St. Matthew
+creator: william-blake
+created: 1799
+kind: painting
+medium: tempera on canvas
+dimensions: [38.5, 26.5]
+institution: cleveland-museum-of-art
+inventory_number: "2017.4"
+web_url: https://clevelandart.org/art/2017.4
+images:
+  - url: https://openaccess-cdn.clevelandart.org/2017.4/2017.4_web.jpg
+    source_url: https://clevelandart.org/art/2017.4
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/thomas-butts
+    acquired: 1799
+    ended: 1845
+    place: london
+    label: by descent to his son, Thomas Butts, Jr.
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: Thomas Butts [1757 - 1845], London, by descent to his son, Thomas Butts, Jr. [1799-1845]
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner: person/thomas-butts-jr
+    acquired: 1845
+    ended: 1862
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: Thomas Butts, Jr. [died 1862], London [1845-1862]
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner: person/william-michael-rossetti
+    acquired: 1863 or earlier
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: William Michael Rossetti [1829-1919], London [by 1863-?]
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner: person/william-bell-scott
+    acquired: 1876 or earlier
+    label: consigned to sale at Sotheby's, London
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: William Bell Scott [1811-1890], consigned to sale at Sotheby's, London [by 1876-1892]
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1892-07-14
+    method: auction
+    direct: true
+    place: london
+    label: sale, no. 238, sold to Quaritch
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: (Sotheby's, London, July 14, 1892, no. 238, sold to Quaritch) [1892]
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner: institution/quaritch
+    role: dealer
+    acquired: 1892-07-14
+    method: auction
+    direct: true
+    place: london
+    label: listed in Quaritch's catalogue 62 (1893) for £36; sold to E. H. van Ingen for Mrs. William Emerson
+    price:
+      amount: 27
+      currency: GBP
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: (Quaritch, sold to E.H. van Ingen for Mrs. William Emerson) [1892-1893] — Purchased by Quaritch at Sotheby's sale for £27
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner_label: Mrs. William Emerson
+    acquired: 1893
+    method: purchase
+    direct: true
+    label: bought for her from Quaritch by E. H. van Ingen; consigned to sale at Sotheby's, London
+    price:
+      amount: 36
+      currency: GBP
+      note: price in Quaritch's catalogue 62 (1893)
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: Mrs. William Emerson, consigned to sale at Sotheby's, London [1893-1958] — E.H. van Ingen purchased the painting for Mrs. William Emerson from Quaritch, were it was listed in catalogue 62 of 1893 for £36
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1958-05-19
+    method: auction
+    direct: true
+    place: london
+    label: sale, no. 12, bought by Agnew for Lady Melchett
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: (Sotheby's London, May 19, 1958, no.12, bought by Agnew for Lady Melchett) [1958]
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner_label: Lady Melchett (b. 1928)
+    acquired: 1958-05-19
+    method: auction
+    direct: true
+    label: bought for her by Agnew; sold at Christie's, London
+    price:
+      amount: 1300
+      currency: GBP
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: Lady Melchett [1928-], sold at Christie's, London [1958-1971] — Agnew purchased the painting for Lady Melchett from the Sotheby's sale for £1,300
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1971-11-09
+    method: auction
+    direct: true
+    place: london
+    label: sale, no. 71, bought by Piccadilly Gallery
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: (Christie's London, November 9, 1971, no. 71, bought by Piccadilly Gallery) [1971-?]
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner: institution/piccadilly-gallery
+    role: dealer
+    acquired: 1971-11-09
+    method: auction
+    direct: true
+    place: london
+    label: bought at Christie's for 5,000 guineas; sold to Galleria Galatea
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: (Piccadilly Gallery, London, sold to Galleria Galatea) — The painting was purchase by the Piccadilly Gallery, London from Christie's for 5,000 gns
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner: institution/galleria-galatea
+    role: dealer
+    method: purchase
+    direct: true
+    place: metropolitan-city-of-turin
+    label: sold to a private collector, Milan
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: (Galleria Galatea, Turin, sold to private collector, Milan)
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner_label: private collector, Milan
+    acquired: 1981 or earlier
+    method: purchase
+    direct: true
+    place: milan
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: private collector, Milan [by 1981-?]
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner: institution/ben-elwes-fine-art
+    role: dealer
+    acquired: 2016
+    place: london
+    label: sold to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: (Ben Elwes Fine Art, London, sold to the Cleveland Museum of Art) [2016-17]
+        source: cma-2017-4
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2017
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Mr. and Mrs. William H. Marlatt Fund, inv. 2017.4
+    sources:
+      - url: https://clevelandart.org/art/2017.4
+        note: The Cleveland Museum of Art, Cleveland, OH [2017-]
+        source: cma-2017-4
+        accessed: 2026-11-24

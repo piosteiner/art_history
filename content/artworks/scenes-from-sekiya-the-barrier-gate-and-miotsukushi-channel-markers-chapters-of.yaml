@@ -1,0 +1,50 @@
+public_id: 124232
+title: Scenes from Sekiya (The Barrier Gate) and Miotsukushi (Channel Markers) chapters of The Tale of Genji
+names:
+  - text: Channel Markers (Miotsukushi) and The Barrier Gate (Sekiya)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045339
+  - text: Channel Markers and The Barrier Gate
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045339
+  - text: Sekiya and Miotsukushi
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045339
+  - lang: ja
+    role: translation
+    text: 源氏物語関屋澪標図屏風
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045339
+creator: tawara-sotatsu
+created: 1631
+dimensions: [152.6, 355.6]
+institution: seikado-bunko-library
+wikidata_id: Q107045339
+metadata:
+  sources: [Wikidata Q107045339 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Genji_screen_1.jpg/1280px-Genji_screen_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Genji_screen_1.jpg
+    license: Public domain
+    credit: Tawara Sōtatsu
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107045339
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q107045339
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q107045339
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107045339

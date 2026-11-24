@@ -13,6 +13,33 @@ relationships:
       - accessed: 2026-10-30
         property: P27
         wikidata: Q343621
+  - type: child_of
+    to: person/maria-luisa-of-parma
+    sources:
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q343621
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q229854
+  - type: sibling_of
+    to: person/ferdinand-vii-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q186256
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q343621
+  - type: sibling_of
+    to: person/maria-isabella-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233196
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q343621
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Carlos_Mar%C3%ADa_Isidro_de_Borb%C3%B3n%2C_por_Vicente_L%C3%B3pez.jpg/1280px-Carlos_Mar%C3%ADa_Isidro_de_Borb%C3%B3n%2C_por_Vicente_L%C3%B3pez.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Carlos_Mar%C3%ADa_Isidro_de_Borb%C3%B3n,_por_Vicente_L%C3%B3pez.jpg

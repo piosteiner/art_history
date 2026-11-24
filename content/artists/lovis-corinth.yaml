@@ -113,6 +113,15 @@ relationships:
       - accessed: 2026-11-03
         property: P135
         wikidata: Q157610
+  - type: married_to
+    to: person/charlotte-berend-corinth
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q215045
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q157610
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/b9/Lovis_Corinth_1887.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Lovis_Corinth_1887.jpg

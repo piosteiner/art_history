@@ -1,0 +1,22 @@
+public_id: 125994
+name: Floirac
+kind: settlement
+parent: france
+country_code: FR
+location: [-0.52583, 44.83639]
+wikidata_id: Q199682
+metadata:
+  sources: [Wikidata Q199682 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q199682
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q199682
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q199682

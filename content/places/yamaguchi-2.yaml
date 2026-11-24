@@ -1,0 +1,41 @@
+public_id: 123953
+name: Yamaguchi
+names:
+  - lang: ja
+    role: original
+    text: 山口市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q207876
+  - lang: ko
+    role: translation
+    text: 야마구치시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q207876
+  - lang: ru
+    role: translation
+    text: Ямагути
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q207876
+kind: settlement
+parent: yamaguchi
+country_code: JP
+location: [131.47378, 34.17803]
+wikidata_id: Q207876
+metadata:
+  sources: [Wikidata Q207876 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q207876
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q207876
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q207876

@@ -1,0 +1,49 @@
+public_id: 123984
+title: Lecture Hall, Zuiryu-ji
+names:
+  - lang: fr
+    role: translation
+    text: pavillon du Zen du temple Zuiryū
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020334
+  - lang: ja
+    role: translation
+    text: 瑞龍寺法堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020334
+created: 1655
+institution: zuiryu-ji-takaoka
+location: [137.0103, 36.73567]
+wikidata_id: Q107020334
+metadata:
+  sources: [Wikidata Q107020334 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/takaoka
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Zuiryuji_Temple_2010-08-29_03.jpg/1280px-Zuiryuji_Temple_2010-08-29_03.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Zuiryuji_Temple_2010-08-29_03.jpg
+    license: CC BY-SA 3.0
+    credit: 柑橘類 (talk)
+provenance:
+  - owner: institution/zuiryu-ji-takaoka
+    acquired: 1655
+    method: creation
+    place: takaoka
+    label: lecture hall (hattō) built 1655 in the rebuilding of the temple begun by Maeda Toshitsune, lord of Kaga, for his brother Maeda Toshinaga's memorial temple; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/711
+        note: 法堂は、明暦元年（一六五五）の建立で、前面に土間廊下と広縁をとり、後方に六室をとる方丈形式である。 … 所有者名 ： 瑞龍寺 所有者種別 ： 寺院
+        source: kunishitei-102-711
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%91%9E%E9%BE%8D%E5%AF%BA_(%E9%AB%98%E5%B2%A1%E5%B8%82)&oldid=111488685
+        note: 国宝。墨書から明暦元年（1655年）の建立とわかる。 … 前田利常は承応3年（1654年）から瑞龍院の伽藍の本格的整備に着手した。建築工事は、前田藩お抱えの大工頭・山上善右衛門嘉広（代々「善右衛門」を名乗る）が棟梁となって進められた。
+        source: wikipedia-ja-zuiryu-ji-takaoka
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020334

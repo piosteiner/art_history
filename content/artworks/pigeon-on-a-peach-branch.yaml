@@ -1,0 +1,84 @@
+public_id: 124122
+title: Pigeon on a Peach Branch
+names:
+  - text: Peach and Dove
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11537142
+  - text: Peach Blossom and Dove
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11537142
+  - text: Flowering Peach and Dove
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11537142
+  - lang: ja
+    role: translation
+    text: 桃鳩図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11537142
+creator: emperor-huizong-of-song
+created: 1107
+wikidata_id: Q11537142
+metadata:
+  sources: [Wikidata Q11537142 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/%E5%BE%BD%E5%AE%97%E3%80%8A%E6%A1%83%E9%B3%A9%E5%9B%B3%E3%80%8B1108%E5%B9%B4%E3%83%BB12%E4%B8%96%E7%B4%80%E3%83%BB%E4%B8%AD%E5%9B%BD_%E5%8C%97%E5%AE%8B%E6%99%82%E4%BB%A3%E3%80%81%E5%80%8B%E4%BA%BA%E8%94%B5.jpg/1280px-%E5%BE%BD%E5%AE%97%E3%80%8A%E6%A1%83%E9%B3%A9%E5%9B%B3%E3%80%8B1108%E5%B9%B4%E3%83%BB12%E4%B8%96%E7%B4%80%E3%83%BB%E4%B8%AD%E5%9B%BD_%E5%8C%97%E5%AE%8B%E6%99%82%E4%BB%A3%E3%80%81%E5%80%8B%E4%BA%BA%E8%94%B5.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%BE%BD%E5%AE%97%E3%80%8A%E6%A1%83%E9%B3%A9%E5%9B%B3%E3%80%8B1108%E5%B9%B4%E3%83%BB12%E4%B8%96%E7%B4%80%E3%83%BB%E4%B8%AD%E5%9B%BD_%E5%8C%97%E5%AE%8B%E6%99%82%E4%BB%A3%E3%80%81%E5%80%8B%E4%BA%BA%E8%94%B5.jpg
+    license: Public domain
+    credit: Emperor Huizong of Song
+provenance:
+  - owner: artist/emperor-huizong-of-song
+    acquired: 1107
+    method: creation
+    label: inscribed 大観丁亥御筆 (Daguan dinghai, 1107) with Huizong's cipher; that the emperor painted it himself is doubted (Suzuki Kei)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/6
+        note: 絹本著色桃鳩図〈徽宗筆／大観元年の年記がある〉 … 時代 ： 北宋
+        source: kunishitei-201-6
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=106129323
+        note: 画面右上に「痩金体」と称する独特の書体による「大観丁亥御筆」の款と「天水」の花押があり … 鈴木は、本図についても … 真筆ではないとの見方をとっている
+        source: jawiki-momohatozu-106129323
+        accessed: 2026-11-24
+  - owner: person/ashikaga-yoshimitsu
+    label: his collector's seal 天山 (Tenzan) at lower left
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/6
+        note: ト書 ： 「天山」の鑑蔵印がある
+        source: kunishitei-201-6
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=106129323
+        note: 足利義満の所蔵印「天山」が左下にある。
+        source: jawiki-momohatozu-106129323
+        accessed: 2026-11-24
+  - owner: person/inoue-kaoru
+    label: in the collection of the Meiji statesman Inoue Kaoru (1835/36–1915)
+    sources:
+      - url: https://www.tobunken.go.jp/materials/katudo/822896.html
+        note: 井上馨（1835～1915年）は長州藩士で … 伝徽宗筆「桃鳩図」をはじめとする東洋美術の名品を蒐集し
+        source: tobunken-822896
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=106129323
+        note: 明治の元老、井上馨の旧蔵品である。現在は個人蔵。
+        source: jawiki-momohatozu-106129323
+        accessed: 2026-11-24
+  - owner_label: private collection, Tokyo
+    place: tokyo
+    label: privately owned; National Treasure since 9 June 1951 (Important Cultural Property, then called National Treasure, 1937)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/6
+        note: 所在都道府県 ： 東京都 … 所有者名 ： 個人
+        source: kunishitei-201-6
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11537142
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q11537142

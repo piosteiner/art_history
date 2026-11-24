@@ -1,0 +1,63 @@
+public_id: 124769
+title_lang: en
+title: A High-ranking Noble in Priest's Robe
+created: 1392/1573
+institution: cleveland-museum-of-art
+inventory_number: "1966.740"
+web_url: https://clevelandart.org/art/1966.740
+wikidata_id: Q60469732
+metadata:
+  sources: [Wikidata Q60469732 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Unknown_artist_-_A_High-ranking_Noble_in_Priest%27s_Robe_-_1966.740_-_Cleveland_Museum_of_Art.jpg/1280px-Unknown_artist_-_A_High-ranking_Noble_in_Priest%27s_Robe_-_1966.740_-_Cleveland_Museum_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Unknown_artist_-_A_High-ranking_Noble_in_Priest%27s_Robe_-_1966.740_-_Cleveland_Museum_of_Art.jpg
+    license: CC0
+    credit: anonymous
+provenance:
+  - owner: person/dikran-khan-kelekian
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1966.740
+        note: Dikran G. Kelekian [1867–1951], New York, NY
+        source: cma-1966-740
+        accessed: 2026-11-24
+  - owner: person/paul-grigaut
+    place: ann-arbor
+    sources:
+      - url: https://clevelandart.org/art/1966.740
+        note: Paul Grigaut [1905–1969], Ann Arbor, MI
+        source: cma-1966-740
+        accessed: 2026-11-24
+  - owner: person/sherman-e-lee
+    co_owners: [person/ruth-ward-lee]
+    place: cleveland
+    label: given to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1966.740
+        note: Dr. Sherman E. Lee [1918–2008] and Mrs. Ruth Ward Lee [1917–2011], Cleveland, OH, given to the Cleveland Museum of Art [?–1966]
+        source: cma-1966-740
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1966
+    method: gift
+    direct: true
+    place: cleveland
+    label: Gift of Dr. and Mrs. Sherman E. Lee
+    sources:
+      - url: https://clevelandart.org/art/1966.740
+        note: The Cleveland Museum of Art, Cleveland, OH [1966–] — Gift of Dr. and Mrs. Sherman E. Lee
+        source: cma-1966-740
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60469732
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60469732
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60469732

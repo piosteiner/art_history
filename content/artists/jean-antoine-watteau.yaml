@@ -1,0 +1,18 @@
+public_id: 123043
+name: Jean-Antoine Watteau
+given_name: Jean-Antoine
+family_name: Watteau
+birth: 1684-10-10
+death: 1721-07-18
+wikidata_id: Q183221
+metadata:
+  sources: [Wikidata Q183221 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q183221
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q183221

@@ -1,0 +1,215 @@
+public_id: 122812
+title_lang: en
+title: Place du Carrousel, Paris
+names:
+  - lang: de
+    role: original
+    text: Ansicht des Louvre, Blick aus einem Fenster der Rue de Rivoli auf das Gebäude des Louvre, die Tuileriengärten und das Caroussel
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20190741
+creator: camille-pissarro
+created: 1900
+materials: [canvas, oil paint]
+dimensions: [54.9, 65.4]
+institution: national-gallery-of-art
+inventory_number: 1970.17.55
+web_url: https://www.errproject.org/jeudepaume/inventory/297/#page/192/mode/2up
+provenance_status: d_seized
+provenance_status_note: Confiscated by the ERR in France from the Stahl collection, taken by Göring on 17 March 1941 and traded to Gustav Rochlitz; restituted to France 27 March 1946, to Wildenstein 24 October 1947 and returned to Bruno Stahl the same year.
+wikidata_id: Q20190741
+metadata:
+  sources: [Wikidata Q20190741 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts
+    to: place/place-du-carrousel
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20190741
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Place_du_Carrousel%2C_Paris.jpg/1280px-Place_du_Carrousel%2C_Paris.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Place_du_Carrousel,_Paris.jpg
+    license: Public domain
+    credit: Camille Pissarro
+provenance:
+  - owner: artist/camille-pissarro
+    acquired: 1900
+    ended: 1903
+    method: creation
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: By inheritance from the artist [1830-1903]
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner: person/julie-pissarro
+    method: inheritance
+    direct: true
+    label: the artist's wife
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: By inheritance from the artist [1830-1903] to his wife, Mme. Camille [Julie] Pissarro;
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1928-12-03
+    ended: 1928-12-03
+    method: auction
+    direct: true
+    place: paris
+    label: Pissarro sale, Galerie Georges Petit, Paris, 3 December 1928, no. 44
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: (Pissarro sale, Galerie Georges Petit, Paris, 3 December 1928, no. 44);
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner_label: Van Riel
+    acquired: 1928-12-03
+    method: auction
+    direct: true
+    label: buyer according to annotated sale catalogues
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: purchased by Van Riel.[1] — [1] According to annotated sales catalogues
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner: person/bruno-stahl
+    label: Berlin, from 1933 Brussels, after 1941 New York; the collection probably begun by his father Heinrich Stahl (1868–1942); kept in a bank vault in France with Wildenstein objects
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: Bruno Stahl [1892-1958], Berlin, later Brussels and New York;[2] — [2] … other objects from the Stahl collection that were stored in a bank vault with objects from the Wildenstein collection … The collection was likely established by Bruno's father, Heinrich Stahl [1868-1942] of Berlin. Bruno left Germany for Brussels in 1933 where he remained until 1940.
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    acquired_label: during World War II, before 17 March 1941
+    method: confiscation
+    label: confiscated from a bank vault with Stahl and Wildenstein objects; ERR card UNB331, as "Ansicht des Louvres, Paris"; taken to the Jeu de Paume
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: This painting was confiscated by the ERR in France during World War II, with other objects from the Stahl collection that were stored in a bank vault with objects from the Wildenstein collection (ERR card UNB331, as Ansicht des Louvres, Paris. …) … The Pissarro was transferred to the Jeu de Paume
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner: person/hermann-goring
+    role: possessor
+    acquired: 1941-03-17
+    method: transfer
+    direct: true
+    place: paris
+    label: taken at the Jeu de Paume as "Louvreansicht"; no. 20 on the supplement of 9 April 1943 to the Göring list of 20 October 1942
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: The Pissarro was transferred to the Jeu de Paume and taken by Hermann Goering on 17 March 1941, as Louvreansicht, (No. 20 on the Nachtrag zur Liste v. 20.10.42 der für die Sammlung des Reichsmarschalls Hermann Göring abgegebenen Kunstgegenstände dated 9 April 1943
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner: person/gustav-rochlitz
+    role: possessor
+    method: exchange
+    direct: true
+    label: traded by Göring for a Raffaellino del Garbo and a Wouters; found in his possession after the war
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: Goering traded the picture to Gustave Rochlitz in exchange for a Raffaellino del Garbo and a Wouters … The painting remained with Rochlitz, in whose possession it was found after the war
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    ended: 1946-03-27
+    method: transfer
+    place: munich
+    label: Munich property card no. 8040/6
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: "The painting was restituted to France on 27 March 1946 (Munich property card #8040/6;"
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner_label: France (French restitution authorities)
+    role: custodian
+    acquired: 1946-03-27
+    method: restitution
+    direct: true
+    label: French Receipt for Cultural Objects no. 5A, item no. 289; shown in 1946 in "Les Chefs-d'oeuvre des collections privées françaises retrouvés en Allemagne", no. 33
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: The painting was restituted to France on 27 March 1946 (… French Receipt for Cultural Objects no. 5A, item no. 289 …). It was exhibited in 1946 in Les Chefs-d'oeuvre des collections privées françaises retrouvés en Allemagne par la Commission de Récuperation artistique et les Services alliés, no. 33.
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: custodian
+    acquired: 1947-10-24
+    method: restitution
+    direct: true
+    place: paris
+    label: restituted to Wildenstein, from whose vault it had been removed
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: It was restituted to Wildenstein, from whose vault it had been removed, on 24 October 1947,
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner: person/bruno-stahl
+    acquired: 1947
+    method: restitution
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: and returned to Stahl that same year.
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1949-01-05
+    method: purchase
+    direct: true
+    label: London, New York and Paris; Wildenstein letter of 31 January 2001
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: sold 5 January 1949 to (Wildenstein & Co., London, New York and Paris);[3] — Stahl sold the picture to Wildenstein on 5 January 1949.
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner: person/ailsa-mellon-bruce
+    acquired: 1949-03-30
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: bill of sale from Wildenstein, 30 March 1949
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: sold 30 March 1949 to Ailsa Mellon Bruce [1901-1969], New York;[4]
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1970
+    method: bequest
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.52199.html
+        note: bequest 1970 to NGA.
+        source: nga-1970-17-55
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20190741
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20190741
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20190741
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20190741
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20190741
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20190741

@@ -1,0 +1,139 @@
+public_id: 122860
+title_lang: en
+title: Bianca Maria Sforza
+creator: giovanni-ambrogio-de-predis
+created: 1493
+materials: [oil paint, poplar panel]
+dimensions: [51, 32.5]
+institution: national-gallery-of-art
+inventory_number: 1942.9.53
+wikidata_id: Q20174631
+metadata:
+  sources: [Wikidata Q20174631 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/bianca-maria-sforza
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20174631
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Ambrogio_de_Predis_-_Bianca_Maria_Sforza_-_Google_Art_Project.jpg/1280px-Ambrogio_de_Predis_-_Bianca_Maria_Sforza_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ambrogio_de_Predis_-_Bianca_Maria_Sforza_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Giovanni Ambrogio de Predis
+provenance:
+  - owner_label: private collection, England
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1192.html
+        note: Private collection, England;
+        source: nga-1942-9-53
+        accessed: 2026-11-24
+  - owner: person/friedrich-lippmann
+    acquired: 1888
+    method: purchase
+    direct: true
+    place: berlin
+    label: bought in England in summer 1888 by the director of the Berlin Kupferstichkabinett (Harck 1889)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1192.html
+        note: purchased summer 1888 by Dr. Friedrich Lippmann [1838-1903], Berlin; — [1] … Fritz Harck … states that Lippmann, the director of the Kupferstichkabinett … had bought the portrait in England in summer 1888.
+        source: nga-1942-9-53
+        accessed: 2026-11-24
+  - owner_label: son of Friedrich Lippmann (as the NGA names him)
+    method: inheritance
+    direct: true
+    place: berlin
+    label: by inheritance to his son, Friedrich Lippmann
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1192.html
+        note: by inheritance to his son, Friedrich Lippmann, Berlin;[1]
+        source: nga-1942-9-53
+        accessed: 2026-11-24
+  - owner: institution/durlacher-brothers
+    co_owners: [institution/p-d-colnaghi-co-ltd]
+    role: dealer
+    acquired: 1904
+    direct: true
+    label: acquired on joint account by Durlacher Brothers, New York, and P. & D. Colnaghi, London and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1192.html
+        note: acquired 1904 on joint account by (Durlacher Brothers, New York) and (P & D Colnaghi's, London and New York);
+        source: nga-1942-9-53
+        accessed: 2026-11-24
+  - owner: person/eugene-fischhof
+    role: dealer
+    acquired: 1904
+    method: purchase
+    direct: true
+    place: paris
+    label: Eugène Fischhof, Paris and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1192.html
+        note: sold 1904 to (Eugène Fischhof, Paris and New York);
+        source: nga-1942-9-53
+        accessed: 2026-11-24
+  - owner: person/peter-a-b-widener
+    acquired: 1904
+    method: purchase
+    direct: true
+    label: acquired from or through Fischhof; Lynnewood Hall, Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1192.html
+        note: acquired 1904 from or through (Fischhof) by Peter A.B. Widener, Lynnewood Hall, Elkins Park, Pennsylvania;
+        source: nga-1942-9-53
+        accessed: 2026-11-24
+  - owner: person/peter-a-b-widener
+    role: estate
+    method: inheritance
+    direct: true
+    label: estate of Peter A. B. Widener; Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1192.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park;
+        source: nga-1942-9-53
+        accessed: 2026-11-24
+  - owner: person/joseph-e-widener
+    method: inheritance
+    direct: true
+    label: inheritance from the estate of Peter A. B. Widener by gift through power of appointment; Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1192.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park;
+        source: nga-1942-9-53
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1942
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1192.html
+        note: gift 1942 to NGA.
+        source: nga-1942-9-53
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20174631
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20174631
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20174631
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20174631
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20174631
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20174631

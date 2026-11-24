@@ -1,0 +1,66 @@
+public_id: 123902
+title: Nageire-dō
+names:
+  - text: Nageiredō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q19826408
+  - text: Nageiredo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q19826408
+  - text: Nageire Hall
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q19826408
+  - lang: ja
+    role: translation
+    text: 投入堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q19826408
+created: 12th century
+created_span: uncertain
+materials: [wood]
+institution: sanbutsu-ji-temple
+location: [133.9594, 35.39653]
+wikidata_id: Q19826408
+metadata:
+  sources: [Wikidata Q19826408 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/misasa
+    period: 12th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Japan_Tottori_MitokuSan_Nageiredo_DSC01248.jpg/1280px-Japan_Tottori_MitokuSan_Nageiredo_DSC01248.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japan_Tottori_MitokuSan_Nageiredo_DSC01248.jpg
+    license: CC BY-SA 3.0
+    credit: Copyright © 2003 David Monniaux
+provenance:
+  - owner: institution/sanbutsu-ji-temple
+    acquired: 1086/1184
+    method: creation
+    place: misasa
+    label: inner sanctuary of Sanbutsu-ji on Mount Mitoku, originally its tutelary Zaō hall (Zaō-den); late Heian, a floorboard felled 1098 (dendrochronology); legend has En no Gyōja throw it onto the cliff in 706; repaired 1375; owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/2940
+        note: 投入堂はもと三仏寺鎮守の蔵王殿と称されたものである。建立年代は明らかでないが、平安時代の様式をもっている。その後の沿革は永和元年（一三七五）修理を行ったことが知られるだけで、ほかは明らかでない。 … 所有者名 ： 三仏寺
+        source: kunishitei-102-2940
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E6%8A%95%E5%85%A5%E5%A0%82
+        note: 「投入堂」の名は、慶雲3年（706年）、三仏寺の開祖とされる役小角が蔵王権現などを祀った仏堂を、法力でもって平地から山に投げ入れたという伝承に由来する。 … 年輪年代調査では、北側の縁板から11世紀末の1098年の年輪年代が得られている。
+        source: wikipedia-ja-nageire-do
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q19826408
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q19826408
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q19826408

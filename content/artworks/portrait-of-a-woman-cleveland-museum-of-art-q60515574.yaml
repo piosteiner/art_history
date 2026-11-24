@@ -1,0 +1,110 @@
+public_id: 124931
+title_lang: en
+title: Portrait of a Woman
+creator: jean-marc-nattier
+created: c. 1748
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [82, 65]
+institution: cleveland-museum-of-art
+inventory_number: "1948.183"
+web_url: https://clevelandart.org/art/1948.183
+wikidata_id: Q60515574
+metadata:
+  sources: [Wikidata Q60515574 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Jean-Marc_Nattier_-_Portrait_of_a_Woman_-_1948.183_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Jean-Marc_Nattier_-_Portrait_of_a_Woman_-_1948.183_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Marc_Nattier_-_Portrait_of_a_Woman_-_1948.183_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Jean-Marc Nattier
+provenance:
+  - owner: person/maurice-de-talleyrand-perigord
+    place: paris
+    label: Duc de Dino; passed to his second wife
+    sources:
+      - url: https://clevelandart.org/art/1948.183
+        note: Maurice de Talleyrand-Perigord, Duc de Dino, Paris, France, to second wife, Ms. Adele Livingston Sampson
+        source: cma-1948-183
+        accessed: 2026-11-24
+  - owner: person/adele-livingston-sampson
+    ended: 1912
+    direct: true
+    label: from her husband, the Duc de Dino; by descent to her daughter, Mrs. Frederick H. Allen
+    sources:
+      - url: https://clevelandart.org/art/1948.183
+        note: "Ms. Adele Livingston Sampson, by descent to her daughter, Mrs. Frederick H. Allen [date: ? - 1912]"
+        source: cma-1948-183
+        accessed: 2026-11-24
+  - owner: person/frederick-h-allen
+    acquired: 1912
+    method: inheritance
+    direct: true
+    place: village-of-pelham-manor
+    label: with Mrs. Frederick H. Allen
+    sources:
+      - url: https://clevelandart.org/art/1948.183
+        note: "Mr. and Mrs. Frederick H. Allen, Pelham Manor, New York, from whom purchased by Duveen Brothers [date: 1912 - 1930]"
+        source: cma-1948-183
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1930
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1948.183
+        note: "Duveen Brothers (New York, NY), sold to Commodore and Mrs. Louis Dudley Beaumont [date: 1930 - ?]"
+        source: cma-1948-183
+        accessed: 2026-11-24
+  - owner: person/louis-dudley-beaumont
+    method: purchase
+    direct: true
+    place: cap-d-antibes
+    label: Commodore and Mrs. Louis Dudley Beaumont; with Mrs. Louis Dudley Beaumont
+    sources:
+      - url: https://clevelandart.org/art/1948.183
+        note: Commodore and Mrs. Louis Dudley Beaumont, Cap d'Antibes, France
+        source: cma-1948-183
+        accessed: 2026-11-24
+  - owner: institution/louis-dudley-beaumont-foundation
+    sources:
+      - url: https://clevelandart.org/art/1948.183
+        note: "Louis Dudley Beaumont Foundation, by gift to the Cleveland Museum of Art, 1948. [date: ? - 1948]"
+        source: cma-1948-183
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1948
+    method: gift
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1948.183
+        note: "The Cleveland Museum of Art, Cleveland, OH [date: 1948 -]"
+        source: cma-1948-183
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60515574
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60515574
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60515574
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60515574
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60515574
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60515574

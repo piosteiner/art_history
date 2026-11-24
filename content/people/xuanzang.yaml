@@ -1,0 +1,21 @@
+public_id: 124147
+name: Xuanzang
+kind: person
+birth: 602-04-06
+death: 664-03-07
+wikidata_id: Q42063
+metadata:
+  sources: [Wikidata Q42063 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q42063
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q42063
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q42063

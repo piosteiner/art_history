@@ -1,0 +1,195 @@
+public_id: 123017
+title_lang: en
+title: Portrait of a Lady
+names:
+  - text: Portrait of a Woman
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2439462
+  - lang: nl
+    role: translation
+    text: Portret van een dame
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2439462
+  - lang: fr
+    role: translation
+    text: Portrait d'une dame
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2439462
+  - lang: de
+    role: translation
+    text: Porträt einer Dame
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2439462
+  - lang: it
+    role: translation
+    text: Ritratto di giovane donna
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2439462
+  - lang: es
+    role: translation
+    text: Retrato de una dama
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2439462
+  - lang: ja
+    role: translation
+    text: 女性の肖像
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2439462
+  - lang: zh
+    role: translation
+    text: 仕女像
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2439462
+  - lang: ru
+    role: translation
+    text: Портрет дамы
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2439462
+creator: rogier-van-der-weyden
+created: c. 1460
+created_span: uncertain
+materials: [oil paint, oak panel]
+dimensions: [34, 25.5]
+institution: national-gallery-of-art
+inventory_number: 1937.1.44
+provenance_status: a_clear
+provenance_status_note: Bought by Andrew W. Mellon in December 1926; deeded 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q2439462
+metadata:
+  sources: [Wikidata Q2439462 (retrieved 2026-11-23)]
+relationships:
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q2439462
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Rogier_van_der_Weyden_-_Portrait_of_a_Lady_-_Google_Art_Project.jpg/1280px-Rogier_van_der_Weyden_-_Portrait_of_a_Lady_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rogier_van_der_Weyden_-_Portrait_of_a_Lady_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Rogier van der Weyden
+provenance:
+  - owner: person/leopold-iii-friedrich-franz-duke-of-anhalt-dessau
+    place: worlitz
+    label: Gotisches Haus; possibly no. 1318 ("Dirk Bouts(?), Weibliches Porträt …") in Duke Franz's bedroom (Hosäus 1883)
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.51.html
+        note: Probably Leopold Friedrich Franz, Prince of Anhalt [d. 1817], Gotisches Haus, Wörlitz, near Dessau.[1] — [1] … Lorne Campbell has suggested that 1937.1.44 may be identical with no. 1318, "Dirk Bouts(?), Weibliches Porträt in schwarzer Kleidung mit rothem Gürtel," in the bedroom of Duke Franz in the Gotisches Haus
+        source: nga-1937-1-44
+        accessed: 2026-11-24
+  - owner: person/leopold-iv-friedrich-duke-of-anhalt
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.51.html
+        note: Probably Leopold Friedrich, Prince of Anhalt [d. 1871];
+        source: nga-1937-1-44
+        accessed: 2026-11-24
+  - owner: person/friedrich-i-duke-of-anhalt
+    direct: true
+    label: owner listed at the Exposition des primitifs flamands, Bruges 1902, no. 108
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.51.html
+        note: Friedrich I, Duke of Anhalt [d. 1904];[2] — [2] Bruges, Hôtel de Gouvernement Provincial, 1902, Exposition des primitifs flamands et d'art ancien, no. 108, lists the Duke as the current owner.
+        source: nga-1937-1-44
+        accessed: 2026-11-24
+  - owner: person/friedrich-ii-duke-of-anhalt-2
+    direct: true
+    place: worlitz
+    label: Gotisches Haus, Wörlitz, and Herzogliches Schloss, Dessau
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.51.html
+        note: Friedrich II, Duke of Anhalt, Gotisches Haus, Wörlitz, and Herzogliches Schloss, Dessau;
+        source: nga-1937-1-44
+        accessed: 2026-11-24
+  - owner: institution/galerie-bachstitz-den-haag
+    role: dealer
+    acquired: 1925
+    direct: true
+    place: the-hague
+    label: sold through Bachstitz to Duveen
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.51.html
+        note: sold 1925 through (Bachstitz Gallery, The Hague) to (Duveen Brothers, Inc., London, New York, and Paris);[3]
+        source: nga-1937-1-44
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1925
+    method: purchase
+    direct: true
+    label: London, New York and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.51.html
+        note: sold 1925 through (Bachstitz Gallery, The Hague) to (Duveen Brothers, Inc., London, New York, and Paris);[3]
+        source: nga-1937-1-44
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1926-12
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.51.html
+        note: purchased December 1926 by Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-44
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1932-03-30
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.51.html
+        note: deeded 30 March 1932 to The A.W.  Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1937-1-44
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.51.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-44
+        accessed: 2026-11-24
+identifiers:
+  gnd: "1117499022"
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q2439462
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q2439462
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q2439462
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q2439462
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q2439462
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q2439462

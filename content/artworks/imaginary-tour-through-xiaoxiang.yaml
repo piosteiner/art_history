@@ -1,0 +1,104 @@
+public_id: 124266
+title: Imaginary Tour Through Xiaoxiang
+names:
+  - text: Dream Journey Along the Xiao and Xiang Rivers
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045369
+  - lang: ja
+    role: translation
+    text: 瀟湘臥遊図巻
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045369
+created: 12th century
+created_span: uncertain
+institution: tokyo-national-museum
+inventory_number: TA-161
+location: [139.7756, 35.71994]
+wikidata_id: Q107045369
+metadata:
+  sources: [Wikidata Q107045369 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 12th century
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Imaginary_tour_through_Xiao-xiang.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Imaginary_tour_through_Xiao-xiang.jpg
+    license: Public domain
+    credit: Li Shi (李氏)
+provenance:
+  - owner_label: Chan master Yungu (雲谷老師)
+    acquired: 12th century
+    method: commission
+    label: the Southern Song Chan monk Yungu had a painter named Li (舒城李生, 'Mr Li of Shucheng') paint it to travel to Xiaoxiang in his room; colophons of 1170–71 by nine writers
+    sources:
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TA161
+        note: 南宋の禅僧である雲谷老師＠うんこくろうし＠は、李＠り＠という画家に本図を描かせて、自室に居ながらにして瀟湘（湖南省洞庭湖にそそぐ瀟水・湘水一帯）の名勝に遊ぶ気持ちを楽しんだといいます。 … 作者 | 李氏筆 | 時代・世紀 | 南宋時代・12世紀
+        source: tnm-ta161
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/71
+        note: 作者 ： 舒城李生 … ト書 ： 乾道六、七年の葛〓等九人の跋がある
+        source: kunishitei-201-71
+        accessed: 2026-11-24
+  - owner: person/qianlong-emperor
+    label: treasured in the Qing palace as one of the Qianlong Emperor's 'Four Famous Scrolls' (with the Admonitions scroll); seals 石渠宝笈, 乾隆御覧之宝
+    sources:
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TA161
+        note: 清朝の乾隆帝愛蔵の四名巻の一つとして知られます。
+        source: tnm-ta161
+        accessed: 2026-11-24
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100220
+        note: 清の宮廷では顧愷之（こがいし）の『女史箴図巻』（じょししんずかん）などとともに、乾隆帝コレクション中の四名巻の一つとして珍重された。
+        source: emuseum-100220
+        accessed: 2026-11-24
+  - owner: person/kikuchi-seido
+    label: left the Qing court for private hands in the late Qing, then brought to Japan; Kikuchi saved it (with Su Shi's Cold Food Observance) from the fire of the 1923 Kantō earthquake
+    sources:
+      - url: https://jissen.repo.nii.ac.jp/records/1249
+        note: 清末、清朝宮廷から民間に出て、その後日本にもたらされ、南画の収蔵家として知られる菊池惺堂（一八六七―一九三五）の所蔵に帰した。一九二三年の関東大震災に際して、惺堂が、この作品とともに蘇軾の「黄州寒食帖」（現在、台北国立故宮博物院所蔵）を、火災の中から救い出したことは、本作品の内藤湖南の跋にも言及されており
+        source: miyazaki-2014-shosho-gayu
+        locator: p. 1
+        accessed: 2026-11-24
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TA161
+        note: 銘文等 | … 菊地晋印 ; 惺堂
+        source: tnm-ta161
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: after 1945
+    place: tokyo
+    label: in the Tokyo National Museum after the Second World War (way not stated); National Treasure since 31 March 1953
+    sources:
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TA161
+        note: 第二次大戦後に、東京国立博物館の所蔵に帰し、今日に至っている。
+        source: tnm-ta161
+        accessed: 2026-11-24
+      - url: https://jissen.repo.nii.ac.jp/records/1249
+        note: 第二次大戦後に、東京国立博物館の所蔵に帰し、今日に至っている。
+        source: miyazaki-2014-shosho-gayu
+        locator: p. 1
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/71
+        note: 国宝指定年月日 ： 1953.03.31(昭和28.03.31) … 保管施設の名称 ： 東京国立博物館 | 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-71
+        accessed: 2026-11-24
+identifiers:
+  emuseum: "100220"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107045369
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107045369
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107045369
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q107045369

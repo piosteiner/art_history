@@ -30,6 +30,16 @@ death: 1595-02-12
 wikidata_id: Q327156
 metadata:
   sources: [Wikidata Q327156 (retrieved 2026-10-19)]
+relationships:
+  - type: sibling_of
+    to: person/emperor-rudolf-ii
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q150586
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q327156
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/d0/Martino_Rota_002.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Martino_Rota_002.jpg

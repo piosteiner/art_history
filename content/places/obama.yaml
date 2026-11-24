@@ -1,0 +1,47 @@
+public_id: 123986
+name: Obama
+names:
+  - lang: ja
+    role: original
+    text: 小浜市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q41773
+  - lang: zh
+    role: translation
+    text: 小濱市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q41773
+  - lang: ko
+    role: translation
+    text: 오바마시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q41773
+  - lang: ru
+    role: translation
+    text: Обама
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q41773
+kind: settlement
+parent: japan
+country_code: JP
+location: [135.74661, 35.49561]
+wikidata_id: Q41773
+metadata:
+  sources: [Wikidata Q41773 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q41773
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q41773
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q41773

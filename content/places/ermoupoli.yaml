@@ -1,0 +1,71 @@
+public_id: 125819
+name: Ermoupoli
+names:
+  - lang: ja
+    role: translation
+    text: エルムポリ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q210087
+  - lang: zh
+    role: translation
+    text: 埃尔穆波利
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q210087
+  - lang: ko
+    role: translation
+    text: 에르무폴리
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q210087
+  - lang: fr
+    role: translation
+    text: Ermoúpoli
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q210087
+  - lang: it
+    role: translation
+    text: Ermopoli
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q210087
+  - lang: es
+    role: translation
+    text: Ermúpoli
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q210087
+  - lang: ru
+    role: translation
+    text: Эрмуполис
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q210087
+  - lang: pt
+    role: translation
+    text: Hermópolis
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q210087
+kind: settlement
+parent: notio-aigaio
+country_code: GR
+location: [24.9381, 37.4395]
+wikidata_id: Q210087
+metadata:
+  sources: [Wikidata Q210087 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q210087
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q210087
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q210087

@@ -1,0 +1,76 @@
+public_id: 124558
+title: Shuri Castle
+names:
+  - lang: fr
+    role: translation
+    text: château de Shuri
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q907052
+  - lang: de
+    role: translation
+    text: Burg Shuri
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q907052
+  - lang: it
+    role: translation
+    text: Castello di Shuri
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q907052
+  - lang: es
+    role: translation
+    text: Castillo Shuri
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q907052
+  - lang: ja
+    role: translation
+    text: 首里城
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q907052
+  - lang: ko
+    role: translation
+    text: 슈리성
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q907052
+  - lang: ru
+    role: translation
+    text: Замок Сюри
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q907052
+created: 14th century
+created_span: uncertain
+materials: [Ryukyuan limestone, Fake]
+location: [127.71948, 26.21703]
+wikidata_id: Q907052
+metadata:
+  sources: [Wikidata Q907052 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/naha
+    period: 14th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Naha_Shuri_Castle51s3s4200.jpg/1280px-Naha_Shuri_Castle51s3s4200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Naha_Shuri_Castle51s3s4200.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  viaf: "1905149489086593810003"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q907052
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q907052
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q907052

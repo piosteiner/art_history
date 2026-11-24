@@ -1,0 +1,140 @@
+public_id: 124108
+title: Kasuga Gongen Genki E
+names:
+  - text: The Miracles of the Kasuga Deity
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6374869
+  - text: Miracles of the Kasuga Deity
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6374869
+  - text: Legends of Kasuga Shrine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6374869
+  - lang: fr
+    role: translation
+    text: Kasuga gongen genki-e
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6374869
+  - lang: ja
+    role: translation
+    text: 春日権現験記
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6374869
+  - lang: zh
+    role: translation
+    text: 春日權現驗記
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6374869
+created: 1309
+materials: [silk]
+institution: museum-of-the-imperial-collections
+inventory_number: SZK002943
+wikidata_id: Q6374869
+metadata:
+  sources: [Wikidata Q6374869 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7a/Kasuga_gongen_genki-e%2C_Takashina_Takakane%2C_1-3_%28part_1%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kasuga_gongen_genki-e,_Takashina_Takakane,_1-3_(part_1).JPG
+    license: Public domain
+    credit: Takashina Takakane
+provenance:
+  - owner: person/saionji-kinhira
+    acquired: 1309
+    method: commission
+    label: commissioned by the Minister of the Left Saionji Kinhira; texts by Takatsukasa Mototada and three others, paintings by Takashina Takakane (list of contents dated Enkyō 2, 1309)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011971
+        note: 発願者である西園寺公衡（１２６４～１３１５）による延慶(えんきょう)２年（１３０９）の目録によれば、詞は鷹司基忠（１２４７～１３１３）ら４名が分担執筆し、絵は高階隆兼（生没年不詳）が描いた。
+        source: kunishitei-201-00011971
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%98%A5%E6%97%A5%E6%A8%A9%E7%8F%BE%E9%A8%93%E8%A8%98&oldid=108551515
+        note: 1309年（延慶2年）に時の左大臣・西園寺公衡の発案で、宮廷絵所の長・高階隆兼によって描かれ、春日大社に奉納された。
+        source: wikipedia-ja-kasuga-gongen-genki
+        accessed: 2026-11-24
+  - owner: institution/kasuga-taisha
+    acquired: 1309
+    method: gift
+    direct: true
+    place: nara
+    label: dedicated to the Kasuga Shrine
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011971
+        note: 春日社…鷹司家
+        source: kunishitei-201-00011971
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%98%A5%E6%97%A5%E6%A8%A9%E7%8F%BE%E9%A8%93%E8%A8%98&oldid=108551515
+        note: 春日大社に奉納された。
+        source: wikipedia-ja-kasuga-gongen-genki
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/w/index.php?title=Kasuga_Gongen_Genki_E&oldid=1366473177
+        note: Following the completion of the work, the Minister of the Left (Sadaijin), Saionji Kinhira (who was also a brother to Kakuen), dedicated it to the Kasuga Shrine and neighboring Buddhist temple, Kōfukuji, in order to honor the deities and thank them for honoring his home.
+        source: wikipedia-en-kasuga-gongen-genki-e
+        accessed: 2026-11-24
+  - owner_label: Takatsukasa family
+    label: in the Takatsukasa family (how and when it left the shrine is not stated)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011971
+        note: 伝来・その他参考となるべき事項 ： 春日社…鷹司家―皇室（明治8年・同11年献上）―国（平成元年寄贈）
+        source: kunishitei-201-00011971
+        accessed: 2026-11-24
+  - owner: institution/imperial-house-of-japan
+    acquired: 1875/1878
+    method: gift
+    direct: true
+    label: presented to the Imperial House in 1875 and 1878 (Meiji 8 and 11)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011971
+        note: 伝来・その他参考となるべき事項 ： 春日社…鷹司家―皇室（明治8年・同11年献上）―国（平成元年寄贈）
+        source: kunishitei-201-00011971
+        accessed: 2026-11-24
+  - owner: institution/government-of-japan
+    acquired: 1989
+    method: gift
+    direct: true
+    label: given to the State in 1989 (Heisei 1) after Emperor Shōwa's death; kept by the Agency for Cultural Affairs; National Treasure since 30 September 2021
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011971
+        note: 伝来・その他参考となるべき事項 ： 春日社…鷹司家―皇室（明治8年・同11年献上）―国（平成元年寄贈） … 所有者名 ： 国（文化庁保管）
+        source: kunishitei-201-00011971
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%9A%87%E5%B1%85%E4%B8%89%E3%81%AE%E4%B8%B8%E5%B0%9A%E8%94%B5%E9%A4%A8&oldid=111826663
+        note: 昭和天皇崩御後の1989年（平成元年）6月に遺族の明仁と香淳皇后から寄贈され国庫に帰属した美術品
+        source: wikipedia-ja-sannomaru-shozokan
+        accessed: 2026-11-24
+  - owner: institution/museum-of-the-imperial-collections
+    role: custodian
+    acquired: 1993
+    place: tokyo
+    label: the Sannomaru Shōzōkan opened in 1993 to keep the works given to the State in 1989; run by the National Institutes for Cultural Heritage since October 2023, the Agency for Cultural Affairs managing the collection
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%9A%87%E5%B1%85%E4%B8%89%E3%81%AE%E4%B8%B8%E5%B0%9A%E8%94%B5%E9%A4%A8&oldid=111826663
+        note: これらの国有財産となった美術品類を適切な環境で保存研究し、一般に公開する目的をもって1993年（平成5年）に、皇居東御苑内に「三の丸尚蔵館」が開館 … 2023年（令和5年）年10月に管理運営を宮内庁から独立行政法人国立文化財機構に移管され、同機構を所管する文化庁が収蔵品の管理を行う体制に改められた。
+        source: wikipedia-ja-sannomaru-shozokan
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011971
+        note: 保管施設の名称 ： 皇居三の丸尚蔵館
+        source: kunishitei-201-00011971
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q6374869
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q6374869
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q6374869
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q6374869

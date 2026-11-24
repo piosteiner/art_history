@@ -1,0 +1,54 @@
+public_id: 124036
+title: Tahōtō, Ishiyamadera
+names:
+  - lang: fr
+    role: translation
+    text: tahōtō d'Ishiyama-dera
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020361
+  - lang: ja
+    role: translation
+    text: 石山寺多宝塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020361
+created: 1194
+institution: ishiyama-dera-temple
+location: [135.9059, 34.96096]
+wikidata_id: Q107020361
+metadata:
+  sources: [Wikidata Q107020361 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/otsu
+    period: 1194
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Ishiyama-dera_Temple_-_Tah%C3%B4t%C3%B4.jpg/1280px-Ishiyama-dera_Temple_-_Tah%C3%B4t%C3%B4.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ishiyama-dera_Temple_-_Tah%C3%B4t%C3%B4.jpg
+    license: CC BY-SA 3.0
+    credit: Yanajin33
+provenance:
+  - owner: institution/ishiyama-dera-temple
+    acquired: 1194
+    method: creation
+    place: otsu
+    label: built in Kenkyū 5 (1194) according to an ink inscription; by temple tradition donated by Minamoto no Yoritomo; oldest dated tahōtō; dismantled and repaired 1932–1933
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1316
+        note: この多宝塔は墨書から建久五年（一一九四年）に造営されたものと推定される。建立後は数回の修理を経て、昭和七、八年に解体修理 … 所有者名 ： 石山寺
+        source: kunishitei-102-1316
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%9F%B3%E5%B1%B1%E5%AF%BA&oldid=111596102
+        note: 寺伝では源頼朝が、[[平治の乱]]の後に当寺が兄の[[源義平]]を[[平清盛]]から匿ってもらった礼で寄進したと伝わる。墨書より[[建久]]5年（[[1194年]]）建立とわかる
+        source: wikipedia-ja-ishiyama-dera
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107020361
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020361

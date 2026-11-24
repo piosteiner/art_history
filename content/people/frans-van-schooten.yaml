@@ -1,0 +1,23 @@
+public_id: 122779
+name: Frans van Schooten
+given_name: Frans
+family_name: van Schooten
+kind: person
+birth: 1615-05-15
+death: 1660-05-29
+wikidata_id: Q767210
+metadata:
+  sources: [Wikidata Q767210 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q767210
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q767210
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q767210

@@ -1,0 +1,149 @@
+public_id: 123211
+title_lang: en
+title: Saint John the Baptist
+creator: lippo-memmi
+materials: [tempera, panel]
+institution: national-gallery-of-art
+inventory_number: 1939.1.291
+provenance_status: a_clear
+provenance_status_note: Jacques Goudstikker, Amsterdam, by 1934; bought by Duveen Brothers through Paul Cassirer & Co., Amsterdam, in February 1937; sold to the Samuel H. Kress Foundation in June 1938.
+wikidata_id: Q20173065
+metadata:
+  sources: [Wikidata Q20173065 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/john-the-baptist
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20173065
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Saint_John_the_Baptist_A17352.jpg/1280px-Saint_John_the_Baptist_A17352.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Saint_John_the_Baptist_A17352.jpg
+    license: Public domain
+    credit: Lippo Memmi
+provenance:
+  - owner: institution/san-francesco-san-gimignano
+    ended: 1553
+    place: san-gimignano
+    label: probably on the high altar; the church was demolished in 1553 for the new fortifications
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.434.html
+        note: Probably church of San Francesco, San Gimignano, until 1553;[1] — [1] … it may be presumed that they had originally adorned its high altar. Situated outside the city walls, the church of San Francesco in San Gimignano was demolished in 1553
+        source: nga-1939-1-291
+        accessed: 2026-11-24
+  - owner: institution/san-giovanni-battista-san-gimignano
+    ended: 1782/1787
+    method: transfer
+    direct: true
+    place: san-gimignano
+    label: the Franciscans' church after 1553; convent suppressed in 1782
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.434.html
+        note: church of San Giovanni Battista, San Gimignano, until 1782/1787;[2] — [2] After the 1553 demolition of their church of San Francesco, the Franciscans moved inside the city of San Gimignano, settling in the convent annexed to the church of San Giovanni Battista. In 1782 Duke Leopold suppressed this convent
+        source: nga-1939-1-291
+        accessed: 2026-11-24
+  - owner: institution/san-francesco-colle-di-val-d-elsa
+    acquired: 1787
+    ended: 1801/1900
+    ended_label: until the mid-nineteenth century
+    method: transfer
+    direct: true
+    place: colle-di-val-d-elsa
+    label: brought by the friars from San Gimignano; no longer there in 1865
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.434.html
+        note: church of San Francesco, Colle Val d’Elsa, between 1787 and mid-nineteenth century.[3] — [3] The community of friars moved to the convent of San Francesco in Colle Val d’Elsa in 1787, likely bringing with them all the church furnishings from San Gimignano.
+        source: nga-1939-1-291
+        accessed: 2026-11-24
+  - owner_label: Graf von Oriola, Schloss Büdesheim, Oberhessen
+    label: collection formed in Italy c. 1860–1896; possibly Eduard Ernst, Waldemar or Joachim Lobo da Silveira, Grafen von Oriola
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.434.html
+        note: Graf von Oriola, Schloss Budesheim, Oberhessen; — [4] … "Collection Comte Oriola, formée en Italie de 1860-1896 env." … It is possible that the “Comte Oriola” named in the sale catalogue referred to Eduard Ernst Lobo da Silveira (1809-1862) and his sons, Waldemar (1854-1910) and Joachim (1858-1907) Lobo da Silveira
+        source: nga-1939-1-291
+        accessed: 2026-11-24
+  - owner: institution/mensing-fils
+    co_owners: [institution/frederik-muller-cie]
+    role: agent
+    acquired: 1932-04-13
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Oriola sale, Mensing & Fils at Frederik Muller & Co., Amsterdam, 13 April 1932, no. 3, as by Taddeo di Bartolo
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.434.html
+        note: (his sale, Mensing & Fils at Frederik Muller & Co., Amsterdam, 13 April 1932, no. 3, as by Taddeo di Bartolo).[4]
+        source: nga-1939-1-291
+        accessed: 2026-11-24
+  - owner: person/jacques-goudstikker
+    role: dealer
+    acquired: 1934 or earlier
+    place: amsterdam
+    label: lent to an exhibition in Amsterdam in 1934
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.434.html
+        note: (Jacques Goudstikker, Amsterdam), by 1934;[5] — [5] Goudstikker lent the painting to an exhibition in Amsterdam in 1934.
+        source: nga-1939-1-291
+        accessed: 2026-11-24
+  - owner: institution/paul-cassirer-co-amsterdam
+    role: agent
+    acquired: 1937-02
+    direct: true
+    place: amsterdam
+    label: sale to Duveen Brothers
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.434.html
+        note: purchased February 1937 through (Paul Cassierer & Co., Amsterdam) by (Duveen Brothers, Inc., London, New York, and Paris);[6]
+        source: nga-1939-1-291
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1937-02
+    method: purchase
+    direct: true
+    label: London, New York and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.434.html
+        note: purchased February 1937 through (Paul Cassierer & Co., Amsterdam) by (Duveen Brothers, Inc., London, New York, and Paris);[6]
+        source: nga-1939-1-291
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1938-06
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: as Simone Martini (Berenson); bill of sale for eight paintings, 21 June 1938, payments through November 1939
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.434.html
+        note: sold June 1938 to the Samuel H. Kress Foundation, New York;[7] — [7] The bill of sale for eight paintings, including this one, is dated 21 June 1938; payments were to extend through November 1939. The attributions on the bill, in this case to Simone Martini, were those of Bernard Berenson.
+        source: nga-1939-1-291
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1939
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.434.html
+        note: gift 1939 to NGA.
+        source: nga-1939-1-291
+        accessed: 2026-11-24
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20173065
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20173065
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20173065
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20173065

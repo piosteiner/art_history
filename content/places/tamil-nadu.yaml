@@ -1,0 +1,47 @@
+public_id: 125846
+name: Tamil Nadu
+names:
+  - lang: ja
+    role: translation
+    text: タミル・ナードゥ州
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1445
+  - lang: zh
+    role: translation
+    text: 泰米尔纳德邦
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1445
+  - lang: ko
+    role: translation
+    text: 타밀나두
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1445
+  - lang: ru
+    role: translation
+    text: Тамилнад
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1445
+kind: settlement
+parent: india
+country_code: IN
+location: [79, 11]
+wikidata_id: Q1445
+metadata:
+  sources: [Wikidata Q1445 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1445
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1445
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1445

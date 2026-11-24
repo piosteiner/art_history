@@ -1,0 +1,151 @@
+public_id: 122966
+title_lang: en
+title: The Finding of Moses
+names:
+  - text: The Finding of Moses (Washington)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176727
+  - lang: ja
+    role: translation
+    text: モーセの発見 (ヴェロネーゼ、ワシントン・ナショナル・ギャラリー)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176727
+creator: paolo-veronese
+created: c. 1570
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [58, 44.5]
+institution: national-gallery-of-art
+inventory_number: 1937.1.38
+provenance_status: a_clear
+provenance_status_note: Andrew W. Mellon bought it from the Hermitage in November 1930 and deeded it on 1 May 1937 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q20176727
+metadata:
+  sources: [Wikidata Q20176727 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Paolo_Veronese_%E2%80%93_The_Finding_of_Moses_-_NGA.jpg/1280px-Paolo_Veronese_%E2%80%93_The_Finding_of_Moses_-_NGA.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paolo_Veronese_%E2%80%93_The_Finding_of_Moses_-_NGA.jpg
+    license: Public domain
+    credit: Paolo Veronese
+provenance:
+  - owner: person/louis-michel-van-loo
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45.html
+        note: Louis Michel Vanloo [1707-1771], Paris;
+        source: nga-1937-1-38
+        accessed: 2026-11-24
+  - owner_label: Louis-Michel van Loo sale, Paris
+    role: agent
+    acquired: 1772-12-14
+    method: auction
+    direct: true
+    place: paris
+    label: "his sale, Paris, 14 December 1772, no. 2 (catalogue announced the end of November; Lugt no. 2086: 14–17 December)"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45.html
+        note: (his sale, Paris, 14 December 1772, no. 2); — [1] The title page of the 1772 Vanloo sale catalogue indicates the sale was to be "à la fin de Novembre" … the Vanloo sale took place 14-17 December.
+        source: nga-1937-1-38
+        accessed: 2026-11-24
+  - owner: person/augustin-menageot
+    role: dealer
+    acquired: 1772-12-14
+    method: auction
+    direct: true
+    place: paris
+    label: bought at the sale through Denis Diderot (1713–1784) for Catherine II
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45.html
+        note: purchased by (Augustin Ménageot, Paris) through Denis Diderot [1713-1784], Paris, for Catherine II, empress of Russia [1729-1796], Saint Petersburg;[1]
+        source: nga-1937-1-38
+        accessed: 2026-11-24
+  - owner: person/catherine-ii-of-russia
+    acquired: 1772
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: bought through Augustin Ménageot and Denis Diderot
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45.html
+        note: for Catherine II, empress of Russia [1729-1796], Saint Petersburg;[1]
+        source: nga-1937-1-38
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45.html
+        note: Imperial Hermitage Gallery, Saint Petersburg;
+        source: nga-1937-1-38
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1930-11
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45.html
+        note: purchased November 1930 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1937-1-38
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1930-11
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45.html
+        note: purchased November 1930 through (…) by Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-38
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1937-05-01
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45.html
+        note: deeded 1 May 1937 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[2]
+        source: nga-1937-1-38
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-38
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20176727
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20176727
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20176727
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20176727
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20176727
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20176727

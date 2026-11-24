@@ -1,0 +1,35 @@
+public_id: 128922
+name: Toledo
+names:
+  - lang: ja
+    role: translation
+    text: トレド
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q49239
+  - lang: ru
+    role: translation
+    text: Толидо
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q49239
+kind: settlement
+parent: ohio
+country_code: US
+location: [-83.53778, 41.65278]
+wikidata_id: Q49239
+metadata:
+  sources: [Wikidata Q49239 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q49239
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q49239
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q49239

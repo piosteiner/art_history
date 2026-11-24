@@ -1,0 +1,42 @@
+public_id: 124927
+title_lang: en
+title: Main Hall (Hondō) of Taisan-ji
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 太山寺本堂
+created: 1305
+institution: taisan-ji
+location: [132.7149, 33.885]
+wikidata_id: Q107020657
+metadata:
+  sources: [Wikidata Q107020657 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/matsuyama
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Ryuunzan_Taisanji_04.JPG/1280px-Ryuunzan_Taisanji_04.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Ryuunzan_Taisanji_04.JPG
+    license: CC BY-SA 3.0
+    credit: Reggaeman
+provenance:
+  - owner: institution/taisan-ji
+    acquired: 1305
+    method: creation
+    place: matsuyama
+    label: built 1305–1306, dated by ink inscriptions of Kagen 3 (1305) and Kagen 4 found in the restoration of the 1950s; Taisan-ji (temple 52 of the Shikoku pilgrimage) is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3308
+        note: 昭和三十年の修理にあたり、厨子の中央蟇股裏面に嘉元三年十二月、内外陣境の正面中央蟇股裏面に嘉元四年四月の墨書が発見されたので、年代が確定した。 … 所有者名 ： 太山寺 所有者種別 ： 寺院
+        source: kunishitei-102-3308
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E5%A4%AA%E5%B1%B1%E5%AF%BA_%28%E6%9D%BE%E5%B1%B1%E5%B8%82%29
+        note: 現存の本堂（国宝）は三代目で嘉元3年（1305年）伊予国守護河野氏によって再建され、近世には松山城主加藤氏の庇護を受けて栄えた。
+        source: wikipedia-ja-taisan-ji-matsuyama
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020657

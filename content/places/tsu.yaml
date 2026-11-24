@@ -1,0 +1,41 @@
+public_id: 124918
+name: Tsu
+names:
+  - lang: ja
+    role: original
+    text: 津市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q203027
+  - lang: ko
+    role: translation
+    text: 쓰시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q203027
+  - lang: ru
+    role: translation
+    text: Цу
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q203027
+kind: settlement
+parent: japan
+country_code: JP
+location: [136.50578, 34.71844]
+wikidata_id: Q203027
+metadata:
+  sources: [Wikidata Q203027 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q203027
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q203027
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q203027

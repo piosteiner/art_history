@@ -1,0 +1,87 @@
+public_id: 123829
+title_lang: de
+title: Guanyin in der Haltung königlicher Lässigkeit
+attribution_label: Anonymous
+created: 1101/1300
+kind: sculpture
+medium: Holz mit Resten von Bemalung
+dimensions: [90, 88, 50]
+institution: museum-rietberg
+inventory_number: RCH 301
+web_url: https://rietberg.ch/sammlungen/rch-301
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Guanyin_Museum_Rietberg_RCH_301.jpg/1280px-Guanyin_Museum_Rietberg_RCH_301.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Guanyin_Museum_Rietberg_RCH_301.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner: person/edgar-gutmann
+    acquired: before 29 March 1928
+    place: berlin
+    label: "collector; catalogue Besitz des Herrn Edgar Gutmann, Berlin: ost- und südasiatische Kunst, 1928, p. 32, no. 171, pl. XII"
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-301
+        note: "vor 29.03.1928: Edgar Gutmann († um 1955), Sammler*in Cohn, William; Reidemeister, Leopold; Cassirer, Paul: Besitz des Herrn Edgar Gutmann, Berlin: ost- und südasiatische Kunst. Berlin: 1928, S.32, Nr. 171, Tafel XII."
+        source: rietberg-rch-301
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    co_owners: [institution/hugo-helbing]
+    role: agent
+    acquired: before 29 March 1928
+    method: auction
+    direct: true
+    place: berlin
+    label: auction partnership (Auktionsgemeinschaft) Paul Cassirer und Hugo Helbing; sale Besitz des Herrn Edgar Gutmann, Ost- und Südasiatische Kunst, 1928, no. 171
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-301
+        note: "vor 29.03.1928: Auktionsgemeinschaft Paul Cassirer und Hugo Helbing (1916), Auktionshaus, Berlin Besitz des Herrn Edgar Gutmann. Ost- und Südasiatische Kunst. Katalog der Versteigerung Paul Cassirer und Hugo Helbing, 1928, Nr. 171, mit Abbildung."
+        source: rietberg-rch-301
+        accessed: 2026-11-24
+  - owner: person/franz-lissa
+    acquired: 1928-03-29
+    method: auction
+    direct: true
+    place: berlin
+    label: collector; Archiv Paul Cassirer at Walter Feilchenfeldt, Zürich
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-301
+        note: "29.3.1928: Franz Lissa, Sammler*in, Berlin Archiv Paul Cassirer bei Walter Feilchenfeldt, Zürich."
+        source: rietberg-rch-301
+        accessed: 2026-11-24
+  - owner: person/karl-haniel
+    place: dusseldorf
+    label: undated; various references in Eduard von der Heydt's correspondence
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-301
+        note: Karl Haniel, Düsseldorf Verschiedene Nachweise in der Korrespondenz von Eduard von der Heydt
+        source: rietberg-rch-301
+        accessed: 2026-11-24
+  - owner: institution/hugo-helbing
+    role: agent
+    acquired: 11 – 12 May 1937
+    method: auction
+    place: frankfurt
+    label: sale, Auktionshaus Hugo Helbing, Frankfurt am Main, catalogue 51, no. 236, pl. 1
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-301
+        note: "11–12.05.1937: Auktionshaus Hugo Helbing (1919), Auktionshaus, Frankfurt am Main Kat-Nr. 51, Nr. 236, Tafel 1."
+        source: rietberg-rch-301
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: 1937
+    acquired_label: from 1937
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-301
+        note: "ab 1937: Eduard von der Heydt (1882–1964)"
+        source: rietberg-rch-301
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1952-05-24
+    method: gift
+    place: zurich
+    label: beneficiary (Begünstigte*r); credit line "Geschenk Eduard von der Heydt"
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-301
+        note: "24.05.1952: Museum Rietberg, Begünstigte*r, Zürich MRZ-Schriftenarchiv, S.0001-0001, Inventarbuch I, S. 32."
+        source: rietberg-rch-301
+        accessed: 2026-11-24

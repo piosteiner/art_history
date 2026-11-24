@@ -1,0 +1,56 @@
+public_id: 124476
+title: Shizutani School
+names:
+  - text: Former Shizutani School
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q847290
+  - lang: fr
+    role: translation
+    text: École Shizutani
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q847290
+  - lang: ja
+    role: translation
+    text: 閑谷学校
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q847290
+  - lang: zh
+    role: translation
+    text: 閑谷學校
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q847290
+  - lang: ko
+    role: translation
+    text: 시즈타니 학교
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q847290
+created: 1673
+location: [134.21948, 34.79795]
+wikidata_id: Q847290
+metadata:
+  sources: [Wikidata Q847290 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/bizen
+    period: 1673
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Shizutani_school_the_hall_and_shosai.JPG/1280px-Shizutani_school_the_hall_and_shosai.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Shizutani_school_the_hall_and_shosai.JPG
+    license: CC BY-SA 3.0
+    credit: by Reggaeman
+identifiers:
+  viaf: "268235128"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q847290
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q847290

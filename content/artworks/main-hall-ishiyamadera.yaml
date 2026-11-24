@@ -1,0 +1,49 @@
+public_id: 124035
+title: Main Hall, Ishiyamadera
+names:
+  - lang: fr
+    role: translation
+    text: pavillon principal d'Ishiyama-dera
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020362
+  - lang: ja
+    role: translation
+    text: 石山寺本堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020362
+created: 1096
+institution: ishiyama-dera-temple
+location: [135.9056, 34.96045]
+wikidata_id: Q107020362
+metadata:
+  sources: [Wikidata Q107020362 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/otsu
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Main_Hall_-_Ishiyamadera_-_Otsu%2C_Shiga_-_DSC07505.JPG/1280px-Main_Hall_-_Ishiyamadera_-_Otsu%2C_Shiga_-_DSC07505.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Main_Hall_-_Ishiyamadera_-_Otsu,_Shiga_-_DSC07505.JPG
+    license: CC0
+    credit: Daderot
+provenance:
+  - owner: institution/ishiyama-dera-temple
+    acquired: 1096
+    method: creation
+    place: otsu
+    label: main hall (shōdō) rebuilt in Eichō 1 (1096) after the fire of 1078, keeping the size of the hall enlarged in 761–762; the link room and worship hall (raidō) rebuilt in 1602 with Yodo-dono's donation
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1315
+        note: 本堂は天平宝字五年から六年（七六一～七六二）にかけて拡張され、桁行七丈、梁間四丈となった。その後承暦二年（一〇七八）に焼失、永長元年（一〇九六）に再建された。これが現在の本堂であるが … 現在の建築は慶長七年（一六〇二）に建て替えられたものである。 … 所有者名 ： 石山寺
+        source: kunishitei-102-1315
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%9F%B3%E5%B1%B1%E5%AF%BA&oldid=111596102
+        note: "[[承暦]]2年（[[1078年]]）1月2日の火災で焼失し、[[永長]]元年（[[1096年]]）に再建され、[[慶長]]7年（[[1602年]]）に[[淀殿]]の寄進で合の間と礼堂が改築され現在の形式となる"
+        source: wikipedia-ja-ishiyama-dera
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020362

@@ -1,0 +1,18 @@
+public_id: 122814
+name: Alessandro Algardi
+given_name: Alessandro
+family_name: Algardi
+birth: 1598-07-31
+death: 1654-06-10
+wikidata_id: Q336798
+metadata:
+  sources: [Wikidata Q336798 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q336798
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q336798

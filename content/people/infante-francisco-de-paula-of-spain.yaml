@@ -49,6 +49,51 @@ relationships:
       - accessed: 2026-10-30
         property: P27
         wikidata: Q462892
+  - type: child_of
+    to: person/maria-luisa-of-parma
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q229854
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q462892
+  - type: sibling_of
+    to: person/carlos-de-borbon-y-borbon-parma
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q343621
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q462892
+  - type: sibling_of
+    to: person/carlota-joaquina-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233603
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q462892
+  - type: sibling_of
+    to: person/ferdinand-vii-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q186256
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q462892
+  - type: sibling_of
+    to: person/maria-isabella-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233196
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q462892
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Infante_Francisco_de_Paula.jpg/1280px-Infante_Francisco_de_Paula.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Infante_Francisco_de_Paula.jpg

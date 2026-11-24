@@ -1,0 +1,47 @@
+public_id: 126680
+name: Angers
+names:
+  - lang: ja
+    role: translation
+    text: アンジェ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q38380
+  - lang: zh
+    role: translation
+    text: 昂热
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q38380
+  - lang: ko
+    role: translation
+    text: 앙제
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q38380
+  - lang: ru
+    role: translation
+    text: Анже
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q38380
+kind: settlement
+parent: france
+country_code: FR
+location: [-0.55194, 47.47111]
+wikidata_id: Q38380
+metadata:
+  sources: [Wikidata Q38380 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q38380
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q38380
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q38380

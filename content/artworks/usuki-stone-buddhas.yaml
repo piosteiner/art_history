@@ -1,0 +1,76 @@
+public_id: 124298
+title: Usuki Stone Buddhas
+names:
+  - lang: fr
+    role: translation
+    text: Bouddhas de pierre de Usuki
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2921458
+  - lang: es
+    role: translation
+    text: Budas en piedra de Usuki
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2921458
+  - lang: ja
+    role: translation
+    text: 臼杵磨崖仏
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2921458
+  - lang: zh
+    role: translation
+    text: 臼杵磨崖佛
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2921458
+materials: [ignimbrite]
+location: [131.76248, 33.09011]
+wikidata_id: Q2921458
+metadata:
+  sources: [Wikidata Q2921458 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/usuki
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Usuki_Stone_Buddas55.jpg/1280px-Usuki_Stone_Buddas55.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Usuki_Stone_Buddas55.jpg
+    license: CC BY-SA 3.0
+    credit: TANAKA Juuyoh
+provenance:
+  - owner_label: unknown patrons and carvers
+    acquired_label: mostly late Heian period, some niches added in the Kamakura period
+    method: creation
+    place: usuki
+    label: "59 figures carved in four groups (Furuzono, Sannōzan, Hoki I and II) into a welded-tuff hillside; no record of the commission survives (local legend: Manō Chōja had them carved for his dead daughter)"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/285
+        note: その造営に関する史料は知られていないが、作風からみて、平安後期にその規模の大半をそなえ、鎌倉時代に一部追加されたと思われる。
+        source: kunishitei-201-285
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E8%87%BC%E6%9D%B5%E7%A3%A8%E5%B4%96%E4%BB%8F
+        note: 磨崖仏造営の時期や事情を証する史料は一切残っていない。地元に伝わる「真名野長者伝説（炭焼き小五郎伝説）」では、この磨崖仏は亡くなった娘の菩提を弔うために長者が彫らせたとされており … 実際の磨崖仏は、仏像の様式などから大部分は平安時代後期、一部は鎌倉時代の作と推定されている。
+        source: ja-wikipedia-usuki-magaibutsu
+        accessed: 2026-11-24
+  - owner: place/usuki
+    place: usuki
+    label: "owner: the City of Usuki; conserved 1980–1994 (the Furuzono Dainichi's fallen head put back in 1993)"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/285
+        note: 所有者名 ： 臼杵市 … 昭和五十五年度から平成五年度にかけて行われた美術工芸品としての保存修理によりそれらは小断片に至るまで母岩に接合復元することができ
+        source: kunishitei-201-285
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E8%87%BC%E6%9D%B5%E7%A3%A8%E5%B4%96%E4%BB%8F
+        note: 1993年（平成5年）8月25日 - 古園石仏群大日如来の仏頭がもとの位置に復元される。
+        source: ja-wikipedia-usuki-magaibutsu
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2921458
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q2921458

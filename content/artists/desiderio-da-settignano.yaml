@@ -1,0 +1,18 @@
+public_id: 122839
+name: Desiderio da Settignano
+given_name: Desiderio
+family_name: da Settignano
+birth: c. 1430
+death: 1464-01-16
+wikidata_id: Q954917
+metadata:
+  sources: [Wikidata Q954917 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q954917
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q954917

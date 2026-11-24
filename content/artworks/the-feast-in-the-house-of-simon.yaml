@@ -1,0 +1,57 @@
+public_id: 125250
+title_lang: en
+title: The Feast in the House of Simon
+names:
+  - lang: de
+    role: translation
+    text: Fest im Hause des Simon
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q16536566
+  - lang: es
+    role: translation
+    text: Cristo en Casa de Simón (El Greco)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q16536566
+creator: el-greco
+created: 1608/1614
+created_label: c. 1600s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [143.3, 100.4]
+institution: art-institute-of-chicago
+inventory_number: "1949.397"
+wikidata_id: Q16536566
+metadata:
+  sources: [Wikidata Q16536566 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2b/Le_Repas_chez_Simon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Le_Repas_chez_Simon.jpg
+    license: Public domain
+    credit: User:Thomon
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q16536566
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q16536566
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q16536566
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q16536566
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q16536566
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q16536566

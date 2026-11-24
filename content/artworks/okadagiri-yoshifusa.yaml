@@ -1,0 +1,42 @@
+public_id: 124516
+title: Okadagiri Yoshifusa
+names:
+  - lang: ja
+    role: translation
+    text: 岡田切吉房
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045184
+  - lang: zh
+    role: translation
+    text: 冈田切吉房
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045184
+creator: yoshifusa
+institution: tokyo-national-museum
+location: [139.7756, 35.71994]
+wikidata_id: Q107045184
+metadata:
+  sources: [Wikidata Q107045184 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Tachi%2C_Fukuoka_Ichimonji_%22Okadagiri%22_Yoshifusa.jpg/1280px-Tachi%2C_Fukuoka_Ichimonji_%22Okadagiri%22_Yoshifusa.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tachi,_Fukuoka_Ichimonji_%22Okadagiri%22_Yoshifusa.jpg
+    license: CC BY-SA 4.0
+    credit: SLIMHANNYA
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q107045184
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107045184
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107045184

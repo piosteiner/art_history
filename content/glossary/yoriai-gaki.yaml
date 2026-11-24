@@ -1,0 +1,24 @@
+public_id: 122692
+name: yoriai-gaki
+names:
+  - lang: ja
+    role: original
+    text: 寄合書
+  - lang: en
+    role: alternative
+    text: gassaku
+  - lang: ja
+    role: alternative
+    text: 合作
+  - lang: en
+    role: translation
+    text: joint work
+category: arts and customs
+also_in: [format]
+definition: A work of calligraphy or painting made by several people together, or a set of texts copied by several hands.
+description_md: "*Yoriai-gaki* (寄合書) is a work of calligraphy or painting made by several people together, and also the work itself [[source/daijisen-yoriaigaki|s.v. 寄合書]]. The *Nihon kokugo daijiten* extends it to sutras and other sets copied by a group and quotes a haikai collection of 1781 that speaks of a jointly made painting [[source/nikkoku-yoriaigaki|s.v. 寄合書]]. Its older sense is the sharing of a large copying task among several scribes, as in the *Kōya-gire* of the *Kokinshū*, the *Heike nōkyō* sutras or the texts of the *Genji monogatari emaki*, written by five calligraphers [[source/kuboki-nipponica-yoriaigaki|s.v. 寄合書]]. The general word *gassaku* (合作) means a work made by several people joining their efforts [[source/nikkoku-gassaku|s.v. 合作]]. At the *[[term/shogakai|shogakai]]* of late Edo such pieces were a regular demand: in 1857 the organiser Kōbundō announced that the masters would no longer contribute to joint albums or 'fan *gassaku*' without a fee [[source/campbell-1987-tenpoki-zengo-shogakai|pp. 59–60]]. [[artist/kawanabe-kyosai|Kawanabe Kyōsai]]'s *Calligraphy and Painting Party* of 1880 is itself such a work: Kyōsai drew the figures and the outlines of the screens and scrolls, and ten literati filled them in, each signing his part [[source/cma-1983-88|1983.88]]. A scroll of about 1820 in the Metropolitan Museum joins contributions by [[artist/tani-buncho|Tani Bunchō]], [[artist/watanabe-kazan|Watanabe Kazan]], [[artist/sakai-hoitsu|Sakai Hōitsu]] and sixty-six others [[source/met-1975-268-133|1975.268.133]]."
+sources:
+  definition:
+    - source: daijisen-yoriaigaki
+      locator: s.v. 寄合書
+      accessed: 2026-11-23

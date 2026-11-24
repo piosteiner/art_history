@@ -126,6 +126,15 @@ provenance:
         note: "Van Gogh Museum, provenance: “…given on loan until the opening of the museum on 2 June 1973 to the Stedelijk Museum, Amsterdam…”"
         source: van-gogh-museum-collection
         accessed: 2026-10-22
+  - owner: institution/van-gogh-museum
+    role: custodian
+    acquired: 1973-06-02
+    direct: true
+    notes_md: On permanent loan from the [[institution/vincent-van-gogh-foundation|Vincent van Gogh Foundation]] since the museum opened.
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        source: van-gogh-museum-collection
+        accessed: 2026-11-23
 numbers:
   - number: F458
     source: de-la-faille-1970

@@ -1,0 +1,108 @@
+public_id: 124647
+title_lang: en
+title: Singers
+creator: theodule-ribot
+created: 1863/1868
+created_label: c. 1860s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [74, 60.3]
+institution: cleveland-museum-of-art
+inventory_number: "1977.127"
+web_url: https://clevelandart.org/art/1977.127
+wikidata_id: Q60473269
+metadata:
+  sources: [Wikidata Q60473269 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/%28Toulouse%29_Les_Chanteurs_1862_-_Th%C3%A9odule_Ribot_-_The_Cleveland_Museum_of_Art%2C_Ohio%2C_USA.jpg/1280px-%28Toulouse%29_Les_Chanteurs_1862_-_Th%C3%A9odule_Ribot_-_The_Cleveland_Museum_of_Art%2C_Ohio%2C_USA.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:(Toulouse)_Les_Chanteurs_1862_-_Th%C3%A9odule_Ribot_-_The_Cleveland_Museum_of_Art,_Ohio,_USA.jpg
+    license: Public domain
+    credit: Didier Descouens
+provenance:
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1890
+    place: paris
+    label: probably the "Le Concert" (no. 226) of the 1892 Exposition T. Ribot at Bernheim-Jeune
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1977.127
+        note: (Probably Bernheim-Jeune, Paris) [1890] — The 1892 Exposition T. Ribot, held at Bernheim-Jeune, includes a painting entitled “Le Concert” (no. 226), whose lengthy, detailed description matches that of the Cleveland picture perfectly.
+        source: cma-1977-127
+        accessed: 2026-11-24
+  - owner_label: Monsieur de H.
+    acquired: 1892 or earlier
+    label: listed owner of "Une Répétition" (no. 26) at the Palais National de l'École des Beaux-Arts; perhaps the collector of the "PH." stamp on the stretcher
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1977.127
+        note: (Possibly Monsieur de H.) [By 1892] — A Ribot painting at the Palais National de l’École des Beaux-Arts entitled “Une Répétition” (no. 26) matches the dimensions of Singers exactly. “M. de H.” is the listed owner and may refer to the same collector indicated on the painting’s stretcher by a stamp that reads “PH.”
+        source: cma-1977-127
+        accessed: 2026-11-24
+  - owner: person/frederick-r-sears-jr
+    acquired: 1894 or earlier
+    place: boston
+    label: lent to the Museum of Fine Arts, Boston, 11 July 1894 – 11 October 1895 ("Bohemian Singers"); son of the collector Frederick R. Sears
+    sources:
+      - url: https://clevelandart.org/art/1977.127
+        note: Frederick R. Sears, Jr. [1855-1939], Boston [By 1895] — Sears, Jr. lent the Ribot to the Museum of Fine Arts, Boston from July 11, 1894 until October 11, 1895.
+        source: cma-1977-127
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1925-11
+    method: purchase
+    place: paris
+    label: stock no. 5982/BJ; seller and date of sale not recorded
+    sources:
+      - url: https://clevelandart.org/art/1977.127
+        note: (Bernheim-Jeune, Paris) [1925] — Bernheim-Jeune purchased this painting (stock no. 5982/BJ; label visible on stretcher) in November 1925.
+        source: cma-1977-127
+        accessed: 2026-11-24
+  - owner: institution/norton-gallery
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1977.127
+        note: "Norton Gallery, New York [date: ?]"
+        source: cma-1977-127
+        accessed: 2026-11-24
+  - owner: person/noah-l-butkin
+    co_owners: [person/muriel-s-butkin]
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1977.127
+        note: Noah L. [1918-1980] and Muriel S. Butkin [1915-1908], Cleveland, OH, given to the Cleveland Museum of Art [Until 1977]
+        source: cma-1977-127
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1977
+    method: gift
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1977.127
+        note: The Cleveland Museum of Art, Cleveland, OH [1977-]
+        source: cma-1977-127
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60473269
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60473269
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60473269
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60473269
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60473269

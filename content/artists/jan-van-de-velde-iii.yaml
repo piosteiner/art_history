@@ -26,6 +26,15 @@ relationships:
       - accessed: 2026-11-12
         property: P937
         wikidata: Q473744
+  - type: child_of
+    to: artist/jan-van-de-velde-ii
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q473744
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q473684
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Stilleven_met_roemer%2C_fluit%2C_aarden_kruik_en_pijpen_Rijksmuseum_SK-A-3988.jpeg/1280px-Stilleven_met_roemer%2C_fluit%2C_aarden_kruik_en_pijpen_Rijksmuseum_SK-A-3988.jpeg
     source_url: https://commons.wikimedia.org/wiki/File:Stilleven_met_roemer,_fluit,_aarden_kruik_en_pijpen_Rijksmuseum_SK-A-3988.jpeg

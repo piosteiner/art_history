@@ -1,0 +1,11 @@
+public_id: 123129
+name: Hellenistic art
+kind: movement
+wikidata_id: Q221375
+metadata:
+  sources: [Wikidata Q221375 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q221375

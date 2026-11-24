@@ -1,0 +1,104 @@
+public_id: 122889
+title_lang: en
+title: The Little Milkmaid
+creator: theodule-ribot
+created: c. 1865
+created_span: uncertain
+kind: oil painting
+medium: oil on fabric
+dimensions: [46.3, 38.3]
+institution: cleveland-museum-of-art
+inventory_number: "1973.31"
+web_url: https://clevelandart.org/art/1973.31
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1973.31/1973.31_web.jpg
+    source_url: https://clevelandart.org/art/1973.31
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1882-04-06
+    method: auction
+    place: paris
+    label: sale, no. 82, probably sold to Bernheim-Jeune ("Bernheim" annotated as buyer)
+    sources:
+      - url: https://clevelandart.org/art/1973.31
+        note: (Sale, Hôtel Drouot, Paris, April 6, 1882, no. 82, probably sold to Bernheim-Jeune) [1882] — “Bernheim,” presumably referring to Bernheim-Jeune, is written in as the buyer of the Ribot in an annotated copy of the sale catalogue.
+        source: cma-1973-31
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1882
+    method: auction
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1973.31
+        note: (Probably Bernheim-Jeune, Paris) [1882-]
+        source: cma-1973-31
+        accessed: 2026-11-24
+  - owner: person/eduard-friedrich-weber
+    acquired: 1892 or earlier
+    place: hamburg
+    label: Consul Weber; lent to an 1892 Ribot exhibition as La petite laitière; possibly sold it privately before the 1896 sale
+    sources:
+      - url: https://clevelandart.org/art/1973.31
+        note: Consul Eduard Friedrich Weber [1830-1907], Hamburg [By 1892 - by 1896] — Weber is listed as the owner of a painting, La petite laitière, with a title and size matching those of the CMA picture in an 1892 exhibition of works by Ribot. … it is possible that Weber sold the work privately and it was eventually added to the estate sale in 1896.
+        source: cma-1973-31
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1896-05-30
+    method: auction
+    place: paris
+    label: estate sale of Ribot's widow, no. 3
+    sources:
+      - url: https://clevelandart.org/art/1973.31
+        note: (Ribot (his widow) estate sale, Hôtel Drouot, Paris, France, May 30, 1896, no. 3) [1896]
+        source: cma-1973-31
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1911 or earlier
+    place: paris
+    label: likely shown in the gallery's Exposition T. Ribot, 1911, no. 13, La petite laitière
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1973.31
+        note: (Probably Bernheim-Jeune, Paris) [1911] — The Ribot was likely exhibited at Bernheim-Jeune in the 1911 Exposition T. Ribot (no. 13, La petite laitière), as art historian Gabriel Weisberg does not believe that the artist painted any other versions of the subject.
+        source: cma-1973-31
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1931-06
+    method: purchase
+    place: paris
+    label: stock no. 6292 on the stretcher = purchase of Ribot's "Jeune fille au chien" from an unidentified seller, June 1931; date of sale not recorded
+    sources:
+      - url: https://clevelandart.org/art/1973.31
+        note: (Bernheim-Jeune, Paris) [1931-] — … the presence of a Bernheim-Jeune stock number (6292) on the stretcher corresponds to the gallery's purchase of Ribot's "Jeune fille au chien" in June 1931 from an unidentified seller. The gallery's archives do not record the date it was sold to the subsequent owner.
+        source: cma-1973-31
+        accessed: 2026-11-24
+  - owner: institution/galerie-brame-et-lorenceau
+    role: dealer
+    acquired: 1972 or earlier
+    place: paris
+    label: sold to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1973.31
+        note: (Galerie Brame and Lorenceau, Paris, sold to the Cleveland Museum of Art) [By 1972-1973]
+        source: cma-1973-31
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1973
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Mr. and Mrs. William H. Marlatt Fund, inv. 1973.31
+    sources:
+      - url: https://clevelandart.org/art/1973.31
+        note: The Cleveland Museum of Art, Cleveland, OH [1973-]
+        source: cma-1973-31
+        accessed: 2026-11-24

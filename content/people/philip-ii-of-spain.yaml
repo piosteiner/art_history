@@ -55,6 +55,15 @@ relationships:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q28471
+  - type: child_of
+    to: person/charles-v
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q32500
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q34417
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg/1280px-Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg

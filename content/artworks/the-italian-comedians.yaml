@@ -1,0 +1,247 @@
+public_id: 123044
+title_lang: en
+title: The Italian Comedians
+names:
+  - lang: fr
+    role: original
+    text: Les Comédiens italiens
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177791
+  - lang: de
+    role: translation
+    text: Italienische Komödianten
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177791
+  - lang: ja
+    role: translation
+    text: イタリア喜劇の俳優たち
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177791
+creator: jean-antoine-watteau
+created: c. 1720
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [63.8, 76.2]
+institution: national-gallery-of-art
+inventory_number: 1946.7.9
+wikidata_id: Q20177791
+metadata:
+  sources: [Wikidata Q20177791 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Antoine_Watteau_-_The_Italian_Comedians_-_Google_Art_Project.jpg/1280px-Antoine_Watteau_-_The_Italian_Comedians_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_The_Italian_Comedians_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Jean-Antoine Watteau
+provenance:
+  - owner: person/richard-mead
+    method: commission
+    place: london
+    label: possibly commissioned
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: Possibly commissioned by Dr. Richard Mead [1673-1754], London;
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner_label: Langford, auctioneer, London
+    role: agent
+    acquired: 1754-03
+    method: auction
+    direct: true
+    place: london
+    label: Mead estate sale, Langford, London, 20–22 March 1754, 3rd day, no. 43, paired with no. 42, A Pastoral Conversation
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: (his estate sale, Langford, London, 20-22 March 1754, 3rd day, no. 43, paired with no. 42, A Pastoral Conversation);
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner_label: Alderman William Beckford (1709–1770) or his brother Richard Beckford (d. 1756)
+    direct: true
+    place: london
+    label: which brother bought it is unclear (Raines 1977); William was Richard's heir; London and Fonthill, Wiltshire
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: Alderman William Beckford [1709-1770], London and Fonthill, Wiltshire, or his brother, Richard Beckford [d. 1756], London.[1] — [1] See Robert Raines … for a discussion of which Beckford might have purchased the painting. William was his brother Richard's heir
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: person/james-colebrooke
+    acquired: 1756-04
+    method: purchase
+    place: london
+    label: "only if Richard Beckford owned it: possibly among the furnishings of his London house sold by his executors to Sir James Colebrooke"
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: If Richard owned the painting, it might possibly have been part of the "useful and ornamental furnishings" of his London house that were sold by his executors in April 1756 to Sir James Colebrooke, whose name is sometimes included in the provenance.
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: person/roger-harenc
+    place: london
+    label: sometimes spelled Harene; bought Watteau paintings at English sales in the 1740s and 1750s
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: Roger Harenc [d. 1763], London;[2] — [2] Sometimes spelled "Harene." … He is recorded as the buyer of Watteau paintings in sales in England in the 1740s and 1750s.
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner_label: Langford, auctioneer, London
+    role: agent
+    acquired: 1764-03
+    method: auction
+    direct: true
+    place: london
+    label: Harenc estate sale, Langford, London, 1–3 March 1764, 3rd day, no. 52, a pair with A Musical Conversation
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: (his estate sale, Langford, London, 1-3 March 1764, 3rd day, no. 52, a pair with A Musical Conversation [each day's lots begin with no. 1]);
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: person/augustus-fitzroy-3rd-duke-of-grafton
+    acquired: 1764-03
+    method: auction
+    direct: true
+    label: Euston Hall and London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: Augustus Henry, 3rd duke of Grafton [1735-1811], Euston Hall and London.
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: person/thomas-baring
+    acquired: 1851/1856
+    place: london
+    label: recorded by Waagen among the additions to the Baring collection since 1851
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: acquired between 1851 and 1856 by Thomas Baring [1799-1873];[3]
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: person/thomas-george-baring
+    acquired: 1873
+    method: inheritance
+    direct: true
+    place: london
+    label: his nephew
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: by inheritance to his nephew, Thomas George Baring, 1st earl of Northbrook [1826-1904], London;
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: person/asher-wertheimer
+    role: dealer
+    direct: true
+    place: london
+    label: later references identify him as Asher rather than his brother Charles
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: (Asher Wertheimer, London); — [4] … "[W]e bought the picture from the famous dealer, Wertheimer, in 1888 …" Later references identify the Wertheimer as Asher, rather than his brother Charles, who was also an art dealer.
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1888-06
+    method: purchase
+    direct: true
+    place: london
+    label: stock book 1885–1891, p. 90 (NGA27/1/1/7)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: purchased June 1888 by (Thos. Agnew and Sons, Ltd., London); — The Watteau is recorded on page 90 of the stock book for 1885-1891 (reference number NGA27/1/1/7)
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: person/edward-guinness-1st-earl-of-iveagh
+    acquired: 1888-06
+    method: purchase
+    direct: true
+    label: Sir Edward Cecil Guinness, later 1st Earl of Iveagh; Dublin, London, Cowes and Elveden Hall, Suffolk
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: sold the same month to Sir Edward Cecil Guinness [later 1st earl of Iveagh, 1847-1927], Dublin, London, Cowes, and Elveden Hall, Suffolk;[4]
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: person/walter-guinness-1st-baron-moyne
+    acquired: 1927
+    method: inheritance
+    direct: true
+    place: london
+    label: his third son
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: by inheritance to his third son, Walter Edward Guinness, 1st baron Moyne [1880-1944], London;
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1930-02-18
+    method: purchase
+    direct: true
+    label: Paris, New York and London; from Wildenstein records
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: purchased 18 February 1930 by (Wildenstein & Co., Inc., Paris, New York, and London).[5]
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: person/heinrich-thyssen-bornemisza
+    acquired: July 1930 or earlier
+    label: Schloss Rohoncz, Rechnitz, Hungary, and Amsterdam; in the Thyssen-Bornemisza exhibition that opened July 1930; Wildenstein has no record when between February and July 1930 it changed hands
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: Baron Heinrich Thyssen-Bornemisza [1875-1947], Schloss Rohoncz, Rechnitz, Hungary, and Amsterdam, by July 1930.[6] — [6] The painting was in an exhibition of the Thyssen-Bornemisza collection that opened in July 1930. However, Wildenstein has no record of exactly when between February and July 1930 ownership of the painting changed hands
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: December 1936 or earlier
+    place: new-york-city
+    label: with their New York office by December 1936
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: (Wildenstein & Co., Inc., Paris, New York, and London), by December 1936; — [7] Wildenstein records provide the date by which the painting was with their New York office
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1942-11-23
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: purchased 23 November 1942 by the Samuel H. Kress Foundation, New York;[7]
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1946
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32687.html
+        note: gift 1946 to NGA.
+        source: nga-1946-7-9
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177791
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177791
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177791
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177791
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177791
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177791

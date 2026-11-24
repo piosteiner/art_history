@@ -1,0 +1,163 @@
+public_id: 124587
+title_lang: en
+title: Silver Wine Jug, Ham, and Fruit
+names:
+  - lang: nl
+    role: translation
+    text: Stilleven met een zilveren wijnkan en akeliebeker
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20738578
+  - lang: de
+    role: translation
+    text: Silberner Weinkrug, Schinken und Früchte
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20738578
+creator: abraham-van-beyeren
+created: 1660s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [99.7, 82.6]
+institution: cleveland-museum-of-art
+inventory_number: "1960.80"
+web_url: http://www.clevelandart.org/art/1960.80
+provenance_status: c_indications
+provenance_status_note: Probably with Galerie A.S. Drey, Munich, until its 'Aryanization' in 1936, when Walter Bornheim took over the stock; returned by Bornheim to Paul Drey under a compromise of 4 August 1949.
+wikidata_id: Q20738578
+metadata:
+  sources: [Wikidata Q20738578 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/netherlands
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q20738578
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Clevelandart_1960.80.jpg/1280px-Clevelandart_1960.80.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Clevelandart_1960.80.jpg
+    license: CC0
+    credit: Abraham van Beijeren
+provenance:
+  - owner_label: Pierrey, Paris
+    acquired: c. 1908
+    label: 'MCCP card: "exposition Monte Carlo/[sous?] Pierrey, Paris/ca. 1908 (?)" — perhaps lent by him to an exhibition in Monte Carlo; identity undetermined'
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1960.80
+        note: "Possibly Pierrey, Paris [Probably c. 1908] — The Munich Central Collecting Point property card for the van Beyeren painting notes the following under “identifying marks”: “exposition Monte Carlo/[sous?] Pierrey, Paris/ca. 1908 (?),”"
+        source: cma-1960-80
+        accessed: 2026-11-24
+  - owner: institution/galerie-a-s-drey
+    role: dealer
+    ended: 1936
+    place: munich
+    label: with the gallery or possibly in the Drey family's own collection before the war
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1960.80
+        note: (Probably Galerie A.S. Drey, Munich) [Probably until 1936] — it seems likely that the painting was indeed with Galerie A.S. Drey or possibly in the personal collection of the family before the war.
+        source: cma-1960-80
+        accessed: 2026-11-24
+  - owner: person/walter-bornheim
+    acquired: 1936
+    direct: true
+    place: munich
+    label: took over Galerie A.S. Drey on its "Aryanization" (RM 30,000 for the firm, stock valued at RM 300,000), as Galerie für Alte Kunst; certain works held for the Dreys
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1960.80
+        note: Walter Bornheim [1888-1971], Munich [Possibly 1936-1946] — Upon his decision in 1936 to move to the United States, Franz Drey, owner of A.S. Drey, asked sculpture dealer Bornheim to take over upon the “Aryanization” of the gallery. Bornheim paid RM 30,000 for the firm and took over its stock, valued at RM 300,000.
+        source: cma-1960-80
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    acquired: 1946-05
+    ended: 1947-09-17
+    direct: true
+    place: munich
+    label: cleared by the Allies from Bornheim's depot in the Dresdner Bank, Tegernsee; Munich no. 30958; returned to Bornheim 17 Sept. 1947
+    sources:
+      - url: https://clevelandart.org/art/1960.80
+        note: The MCCP card says that the van Beyeren came to the Collecting Point from Tegernsee, one of Bornheim’s depots [...] Upon its arrival at the Collecting Point, the van Beyeren was assigned Munich no. 30958. The Collecting Point card notes that on Sept. 17, 1947 the painting was returned to Bornheim
+        source: cma-1960-80
+        accessed: 2026-11-24
+  - owner: person/walter-bornheim
+    acquired: 1947-09-17
+    method: restitution
+    direct: true
+    place: munich
+    label: returned by the Collecting Point; held only in trust for the owners of A.S. Drey
+    sources:
+      - url: https://clevelandart.org/art/1960.80
+        note: Walter Bornheim, Munich, restituted to Paul Drey [1947-1949] — they were only held in trust by Bornheim
+        source: cma-1960-80
+        accessed: 2026-11-24
+  - owner: person/paul-drey
+    co_owners: [person/elizabeth-drey]
+    acquired: 1949-08-04
+    method: settlement
+    direct: true
+    place: new-york-city
+    label: compromise between Bornheim and Paul Drey; still with Elizabeth Drey or the gallery after Paul's death in 1953 (RKD photograph)
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1960.80
+        note: Probably Paul Drey [1885-1953] and Elizabeth Drey, New York [1949-at least 1953] — On August 4, 1949, Bornheim and Paul Drey reached a compromise wherein the former was obliged to return some artworks to the owners of A.S. Drey
+        source: cma-1960-80
+        accessed: 2026-11-24
+  - owner_label: private collection, United States
+    acquired: 1956 or earlier
+    label: offered at "Erlesene Kunstwerke aus amerikanischem Besitz" (French & Co. with Lempertz, Cologne, 1956, no. 2A), unsold and sent back to the owner
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1960.80
+        note: Possibly private collection, United States [By 1956] — Lempertz records show that the van Beyeren failed to sell and was sent back to its owner in the United States.
+        source: cma-1960-80
+        accessed: 2026-11-24
+  - owner: institution/h-terry-engell-gallery
+    role: dealer
+    place: london
+    label: gave no provenance; source of its acquisition unknown
+    sources:
+      - url: https://clevelandart.org/art/1960.80
+        note: H. Terry-Engell Gallery, London, sold to the Cleveland Museum of Art [Until 1960]
+        source: cma-1960-80
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1960
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Mr. and Mrs. William H. Marlatt Fund
+    sources:
+      - url: https://clevelandart.org/art/1960.80
+        note: The Cleveland Museum of Art, Cleveland, OH [1960-]
+        source: cma-1960-80
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20738578
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20738578
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20738578
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20738578
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20738578
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20738578

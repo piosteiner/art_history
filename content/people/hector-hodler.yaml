@@ -28,6 +28,15 @@ relationships:
       - url: https://collection.kunsthaus.ch/de/collection/item/1092/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
+  - type: child_of
+    to: artist/ferdinand-hodler
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q12608
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q214564
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/25/1917-Hodler.jpg
     source_url: https://commons.wikimedia.org/wiki/File:1917-Hodler.jpg

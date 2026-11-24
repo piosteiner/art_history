@@ -1,0 +1,50 @@
+public_id: 124470
+title: Tamaudun
+names:
+  - text: Tama Udun
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1186324
+  - lang: ja
+    role: translation
+    text: 玉陵
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1186324
+  - lang: ko
+    role: translation
+    text: 다마우둔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1186324
+  - lang: ru
+    role: translation
+    text: Тамаудун
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1186324
+created: 1501
+location: [127.71472, 26.21833]
+wikidata_id: Q1186324
+metadata:
+  sources: [Wikidata Q1186324 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/naha
+    period: 1501
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Tamaudun01s3s4592.jpg/1280px-Tamaudun01s3s4592.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tamaudun01s3s4592.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  viaf: "253633396"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1186324
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1186324

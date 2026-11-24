@@ -1,0 +1,180 @@
+public_id: 123894
+title: Matsue Castle
+names:
+  - text: Matsue-jō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q151776
+  - lang: fr
+    role: translation
+    text: château de Matsue
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q151776
+  - lang: de
+    role: translation
+    text: Burg Matsue
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q151776
+  - lang: it
+    role: translation
+    text: castello di Matsue
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q151776
+  - lang: es
+    role: translation
+    text: Castillo Matsue
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q151776
+  - lang: ja
+    role: translation
+    text: 松江城
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q151776
+  - lang: ko
+    role: translation
+    text: 마쓰에성
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q151776
+  - lang: ru
+    role: translation
+    text: Замок Мацуэ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q151776
+created: 1607
+materials: [wood]
+location: [133.05056, 35.47498]
+wikidata_id: Q151776
+metadata:
+  sources: [Wikidata Q151776 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/matsue
+    period: 1607
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Matsue_castle01bs4592.jpg/1280px-Matsue_castle01bs4592.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Matsue_castle01bs4592.jpg
+    license: CC BY 2.5
+    credit: 663highland
+provenance:
+  - owner: person/horio-yoshiharu
+    acquired: 1607/1611
+    ended: 1633
+    method: commission
+    place: matsue
+    label: built 1607–1611 on Kameda hill by the Horio, lords of Izumo and Oki since 1600; the keep survives from this time; the Horio line ended when Horio Tadaharu died without heir in 1633
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%BE%E6%B1%9F%E5%9F%8E&oldid=111386447
+        note: 1607年（慶長12年） 末次城のあった亀田山に築城を開始。 … 1611年（慶長16年） 正月には松江城は落成していた … 1633年（寛永10年） 堀尾忠晴没、嗣子なく堀尾氏は3代で改易となった。
+        source: wikipedia-ja-matsue-castle
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/2953
+        note: 慶長五年（一六〇〇）に出雲・隠岐の領主となった堀尾氏が、同十二年より築城を開始し、同十六年にほぼ完成した。現在の天守はこの時につくられたものである。
+        source: kunishitei-102-2953
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Matsue_Castle
+        note: Matsue Castle was constructed from 1607 to 1611 by Horio Yoshiharu, the first daimyō of the Matsue Domain
+        source: wikipedia-en-matsue-castle
+        accessed: 2026-11-24
+  - owner: person/kyogoku-tadataka
+    acquired: 1634
+    ended: 1637
+    method: transfer
+    direct: true
+    place: matsue
+    label: "moved from Obama to Izumo and Oki; built the third bailey; died without heir in 1637 (English Wikipedia: ownership passed to the Kyōgoku in 1633)"
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%BE%E6%B1%9F%E5%9F%8E&oldid=111386447
+        note: 1634年（寛永11年） 京極忠高が若狭国小浜藩（若狭・越前国敦賀郡）より出雲・隠岐両国26万石で入封。三の丸を造営し、ここに松江城の全容が完成した。 1637年（寛永14年） 忠高が嗣子なく没し
+        source: wikipedia-ja-matsue-castle
+        accessed: 2026-11-24
+  - owner: person/matsudaira-naomasa
+    acquired: 1638
+    ended: 1871
+    method: transfer
+    direct: true
+    place: matsue
+    label: moved from Matsumoto to Izumo; his Matsudaira line held the castle until the Meiji Restoration; the castle was abolished with the domains in 1871
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%BE%E6%B1%9F%E5%9F%8E&oldid=111386447
+        note: 1638年（寛永15年） 信濃国松本藩より松平直政が出雲18万6千石で入封。以後、明治維新まで続いた。 … 1871年（明治4年）：廃藩置県により、廃城となる。
+        source: wikipedia-ja-matsue-castle
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Matsue_Castle
+        note: Ownership was passed to the Izumo branch of the Kyōgoku in 1633 and then the Matsudaira, a junior branch of the ruling Tokugawa clan, in 1637.
+        source: wikipedia-en-matsue-castle
+        accessed: 2026-11-24
+  - owner: institution/ministry-of-the-army
+    acquired_label: after the castle was abolished in the early Meiji period
+    method: transfer
+    direct: true
+    label: under the castle abolition order all buildings except the keep were sold for 4–5 yen each and removed; the keep too was to be sold for 180 yen
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%BE%E6%B1%9F%E5%9F%8E&oldid=111386447
+        note: 明治時代初頭に廃城令によって松江城は陸軍省所管となり城内の建物は全て解体され売却される予定だった … 天守を除く建造物は4円から5円（当時の価格）で払い下げられ、全て撤去された。天守も180円で売却されることとなった
+        source: wikipedia-ja-matsue-castle
+        accessed: 2026-11-24
+  - owner: person/katsube-hon-emon
+    co_owners: [person/takagi-gonpachi]
+    acquired: 1875
+    method: purchase
+    direct: true
+    label: a wealthy farmer of Izumo district and a former retainer of the domain paid the keep's sale price to the state so that it was kept (Japanese Wikipedia dates this 1873 but as Meiji 8 = 1875)
+    price:
+      amount: 180
+      currency: JPY
+      note: the keep's sale price, paid to the state
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%BE%E6%B1%9F%E5%9F%8E&oldid=111386447
+        note: 天守も180円で売却されることとなったが、出雲郡の豪農の勝部本右衛門や元藩士の高木権八が同額の金を国に納める形で買い戻され、保存されることとなる
+        source: wikipedia-ja-matsue-castle
+        accessed: 2026-11-24
+  - owner_label: Matsudaira family
+    acquired: 1927 or earlier
+    ended: 1927
+    label: owners of the keep and the castle grounds by 1927; how they came to hold them again is not stated
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%BE%E6%B1%9F%E5%9F%8E&oldid=111386447
+        note: 1927年（昭和2年）：所有者の松平家が天守を含む城地を松江市に寄付し、公園として開放される。
+        source: wikipedia-ja-matsue-castle
+        accessed: 2026-11-24
+  - owner: place/matsue
+    acquired: 1927
+    method: gift
+    direct: true
+    place: matsue
+    label: gift of the Matsudaira family, with the castle grounds, opened as a park; owner today (keep a National Treasure since 2015)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%BE%E6%B1%9F%E5%9F%8E&oldid=111386447
+        note: 1927年（昭和2年）：所有者の松平家が天守を含む城地を松江市に寄付し、公園として開放される。
+        source: wikipedia-ja-matsue-castle
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/2953
+        note: 所有者名 ： 松江市 所有者種別 ： 市区町村
+        source: kunishitei-102-2953
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Matsue_Castle
+        note: The Matsudaira donated Matsue Castle to the city of Matsue in 1927.
+        source: wikipedia-en-matsue-castle
+        accessed: 2026-11-24
+identifiers:
+  viaf: "251560372"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q151776
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q151776
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q151776

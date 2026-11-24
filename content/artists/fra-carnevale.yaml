@@ -1,0 +1,18 @@
+public_id: 123026
+name: Fra Carnevale
+given_name: Fra
+family_name: Carnevale
+birth: 1420
+death: 1484-07-01
+wikidata_id: Q2245140
+metadata:
+  sources: [Wikidata Q2245140 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q2245140
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q2245140

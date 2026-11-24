@@ -1,0 +1,21 @@
+public_id: 123035
+name: Saint Peter
+kind: person
+birth: -1
+death: 11 October 64 – 68
+wikidata_id: Q33923
+metadata:
+  sources: [Wikidata Q33923 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q33923
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q33923
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q33923

@@ -1,0 +1,262 @@
+public_id: 122954
+title_lang: en
+title: Cardinal Pietro Bembo
+names:
+  - text: Portrait of Pietro Bembo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q4252531
+  - lang: en
+    role: original
+    text: Portrait of Cardinal Pietro Bembo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q4252531
+  - lang: fr
+    role: translation
+    text: Portrait de Pietro Bembo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q4252531
+  - lang: de
+    role: translation
+    text: Portät des Kardinals Pietro Bembo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q4252531
+  - lang: it
+    role: translation
+    text: Ritratto di Pietro Bembo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q4252531
+  - lang: es
+    role: translation
+    text: Retrato del cardenal Pietro Bembo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q4252531
+  - lang: ja
+    role: translation
+    text: 枢機卿ピエトロ・ベンボの肖像
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q4252531
+creator: titian
+created: 1539/1540
+created_label: c. 16th century
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [94.5, 76.5]
+institution: national-gallery-of-art
+inventory_number: 1952.5.28
+wikidata_id: Q4252531
+metadata:
+  sources: [Wikidata Q4252531 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/pietro-bembo
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q4252531
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q4252531
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Titian_%E2%80%93_Cardinal_Pietro_Bembo_%E2%80%93_Google_Art_Project.jpg/1280px-Titian_%E2%80%93_Cardinal_Pietro_Bembo_%E2%80%93_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Titian_%E2%80%93_Cardinal_Pietro_Bembo_%E2%80%93_Google_Art_Project.jpg
+    license: Public domain
+    credit: Titian
+provenance:
+  - owner: person/pietro-bembo
+    method: commission
+    place: padua
+    label: probably commissioned by the sitter; Padua and Rome
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: Probably commissioned by the sitter, Cardinal Pietro Bembo [1470-1547], Padua and Rome;
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: person/torquato-bembo
+    method: inheritance
+    direct: true
+    place: padua
+    label: his son; left the whole collection by the will of 1544; began to disperse it about twenty years later (parts sent to Rome for sale in 1581 and 1583) — perhaps sold then
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: by inheritance to his son, Torquato Bembo [1525-1595].[1] — In his final testament, drawn up in 1544, Bembo left his entire art collection to Torquato … sending important parts of it back to Rome for sale in 1581 and 1583.
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: person/ferrante-carlo
+    role: dealer
+    place: rome
+    label: the dealer 'Ferrante de Carolis'
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: probably (Ferrante Carlo [1578-1641], Rome), and acquired from him before 1631 by Don Fabrizio Valguarnera [d. 1632], Rome.[2]
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: person/fabrizio-valguarnera
+    acquired: before 1631
+    method: purchase
+    direct: true
+    place: rome
+    label: Sicilian nobleman; the portrait is in the inventory of his possessions and in Carlo's testimony at Valguarnera's trial for theft, 1631
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: acquired from him before 1631 by Don Fabrizio Valguarnera [d. 1632], Rome.[2] — "Il Ritratto di Monse Bembo è di mano di Titiano è quell’istesso che hò detto di sopra d’haver compro da Ferrante de Carolis"
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: person/leone-galli
+    place: rome
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: Leone Galli; acquired 1636 by Cardinal Antonio Barberini — According to an inventory of Cardinal Barberini, the picture was acquired on 20 November 1636 from Leone Galli.
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: person/antonio-barberini
+    acquired: 1636-11-20
+    method: purchase
+    direct: true
+    place: rome
+    label: Cardinal Antonio Barberini, Palazzo Barberini; his inventories of 1636 (no. 334, as a cardinal by Titian), 1644 and 1671
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: acquired 1636 by Cardinal Antonio Barberini [1608-1671], Palazzo Barberini, Rome; — the picture was acquired on 20 November 1636 from Leone Galli.
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: person/maffeo-barberini
+    method: bequest
+    direct: true
+    place: rome
+    label: Principe di Palestrina, his nephew; inventory of the Cardinal's bequests, 1672
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: by inheritance to his nephew, Maffeo Barberini, Principe di Palestrina [d. 1685], Rome; — the inventory of his bequests of 1672 (Lavin 1975, 345 no. 230), according to which it was inherited by his nephew.
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: person/urbano-barberini
+    method: inheritance
+    direct: true
+    place: rome
+    label: his son; posthumous 1686 inventory of Maffeo's legacy
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: by inheritance to his son, Urbano Barberini, Rome;[3] — The portrait duly appears in the posthumous 1686 inventory of Maffeo’s legacy to his son
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: person/francesco-barberini-2
+    acquired: 1730 or earlier
+    place: rome
+    label: Cardinal Francesco II Barberini; 1730 inventory p. 35, no. 218 (Getty Provenance Index), 'in cattivo stato'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: 'the painting is recorded in a 1730 inventory of Cardinal Francesco II Barberini (p. 35, no. 218): "3695 Un Ritratto del Cardle. Bembo a sedere …"'
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner_label: Barberini collection, Rome
+    acquired_label: still there c. 1904–1905
+    place: rome
+    label: recorded there by Fischel (1904) and Lafenestre and Richtenberger (1905)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: still in the Barberini collection, Rome, c. 1904-1905;[4]
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: person/elia-volpi
+    direct: true
+    place: florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: Elia Volpi [1858-1938], Florence;
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: institution/p-d-colnaghi-co-ltd
+    co_owners: [institution/m-knoedler-co]
+    role: dealer
+    acquired: 1905
+    method: purchase
+    direct: true
+    place: london
+    label: Colnaghi (London and New York) on joint account with Knoedler (New York); Knoedler London no. 3828, New York no. 10755
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: sold 1905 to (Colnaghi's, London and New York), on joint account with (M. Knoedler & Co., New York); — The painting is in Colnaghi's private ledgers, and was Knoedler's London number 3828 and New York number 10755.
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: person/charles-m-schwab
+    acquired: 1906-04-30
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Knoedler Sales Book 8, p. 332
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: sold 1906 to Charles M. Schwab [1862-1939], New York;[5] — The Knoedler archives citation reads "4/30/06, stock no. 10755, Titian Cardinal Bembo."
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: institution/parke-bernet
+    role: agent
+    acquired: 1942-12-03
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Schwab estate sale, Parke-Bernet Galleries, New York, 3 December 1942, no. 32
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: (his estate sale, Parke-Bernet Galleries, New York, 3 December 1942, no. 32);
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1942-12-03
+    method: auction
+    direct: true
+    place: new-york-city
+    label: bought at the sale by Stephen Pichetto, the Foundation's curator and conservator
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: purchased by Stephen Pichetto for the Samuel H. Kress Foundation, New York;[6] — Pichetto was the Kress Foundation's curator and conservator.
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41638.html
+        note: gift 1952 to NGA.
+        source: nga-1952-5-28
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q4252531
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q4252531
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q4252531
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q4252531
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q4252531
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q4252531

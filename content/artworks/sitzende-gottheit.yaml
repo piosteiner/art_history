@@ -1,0 +1,66 @@
+public_id: 123854
+title_lang: de
+title: Sitzende Gottheit
+attribution_label: Anonymous
+created: late 9th century
+created_span: uncertain
+kind: sculpture
+medium: Sandstein
+dimensions: [85, 39, 31]
+institution: museum-rietberg
+inventory_number: RHI 402
+web_url: https://rietberg.ch/sammlungen/rhi-402
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Vietnam_Sitzende_Gottheit_Museum_Rietberg_RHI_402.jpg/1280px-Vietnam_Sitzende_Gottheit_Museum_Rietberg_RHI_402.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vietnam_Sitzende_Gottheit_Museum_Rietberg_RHI_402.jpg
+    license: Public domain
+    credit: Wikimedia Commons
+provenance:
+  - owner_label: Cham temple complex, Dong Duong
+    acquired: late 9th century
+    method: creation
+    label: from the Cham temple complex of Dong Duong (Dong-du'o'ng), Quang Nam Province, Champa
+    sources:
+      - url: https://rietberg.ch/sammlungen/rhi-402
+        note: Cham Tempelkomplex in Dong-du'o'ng, Quang Nam Provinz, Vietnam (ausgegraben durch Henri Parmentier)
+        source: rietberg-rhi-402
+        accessed: 2026-11-24
+  - owner: person/henri-parmentier
+    acquired: 1902
+    method: find
+    label: excavated at the Cham temple complex of Dong Duong; lit. Fontein 2007
+    sources:
+      - url: https://rietberg.ch/sammlungen/rhi-402
+        note: |-
+          1902: Henri Parmentier (1871–1949), aus Grabung, in Dong-du'o'ng, Quang Nam Provinz, Vietnam
+          Lit. Fontein, 2007.
+        source: rietberg-rhi-402
+        accessed: 2026-11-24
+  - owner: person/paul-mallon
+    acquired: c. 1925
+    label: With index card
+    sources:
+      - url: https://rietberg.ch/sammlungen/rhi-402
+        note: |-
+          ca. 1925: Paul Mallon (1884–1975)
+          Karteikarte With
+        source: rietberg-rhi-402
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: c. 1925
+    label: letter of Eduard von der Heydt to Heinrich Stönner (Staatliches Museum für Völkerkunde, Berlin), 2 May 1926 (Zentralarchiv SMB)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rhi-402
+        note: |-
+          um 1925: Eduard von der Heydt (1882–1964)
+          Zentralarchiv SMB, I/MfV, OAK 029, Eduard von der Heydt an Dr. Heinrich Stönner, Leiter der indischen Abteilung, Staatliches Museum für Völkerkunde, 2.5.1926
+        source: rietberg-rhi-402
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    method: gift
+    label: gift of Eduard von der Heydt (credit line; no date given)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rhi-402
+        note: "Creditline: Geschenk Eduard von der Heydt"
+        source: rietberg-rhi-402
+        accessed: 2026-11-24

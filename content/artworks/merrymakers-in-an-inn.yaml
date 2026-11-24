@@ -1,0 +1,206 @@
+public_id: 125209
+title_lang: en
+title: Merrymakers in an Inn
+creator: adriaen-van-ostade
+created: 1674
+materials: [oil paint, panel]
+institution: art-institute-of-chicago
+inventory_number: "1894.1028"
+wikidata_id: Q20266357
+metadata:
+  sources: [Wikidata Q20266357 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q20266357
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Adriaen_van_Ostade_-_Merrymakers_in_an_Inn_-_1894.1028_-_Art_Institute_of_Chicago.jpg/1280px-Adriaen_van_Ostade_-_Merrymakers_in_an_Inn_-_1894.1028_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Adriaen_van_Ostade_-_Merrymakers_in_an_Inn_-_1894.1028_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Adriaen van Ostade
+provenance:
+  - owner: person/charles-alexandre-de-calonne
+    place: london
+    label: Paris and London
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: Charles-Alexandre de Calonne (1734–1802), Paris and London;
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner_label: Skinner and Dyke
+    role: agent
+    not_sold: true
+    acquired: 1795-03-28
+    method: auction
+    direct: true
+    place: london
+    label: Calonne sale, Lugt 5289, lot 77, bought in
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: offered his sale, Skinner and Dyke, London, March 28, 1795 (Lugt 5289), lot 77, bought in;
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner: person/michael-bryan
+    role: agent
+    acquired: 1795-04-27
+    method: auction
+    direct: true
+    place: london
+    label: Calonne sale, Michael Bryan Gallery, lot 127
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: his sale, Michael Bryan Gallery, London, April 27, 1795, lot 127;
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner: person/edward-coxe
+    acquired_label: possibly at the April 1795 sale
+    method: purchase
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: sold, possibly at the April 1795 sale, to Edward Coxe, Esq. (died 1814);
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner: person/peter-coxe
+    role: agent
+    acquired: 1807-04-25
+    method: auction
+    direct: true
+    place: london
+    label: Edward Coxe sale, Lugt 7229, lot 65
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: his sale, Peter Coxe, London, April 25, 1807, (Lugt 7229) lot 65.
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner: person/john-dent
+    ended: 1826
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: John Dent, Esq. (1760–1826), London;
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1827-04-28
+    method: auction
+    direct: true
+    place: london
+    label: John Dent estate sale, Lugt 11429, lot 100
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: sold, his estate sale Christie’s, London, April 28, 1827 (Lugt 11429), lot 100 to C.J. Niewenhuys [Niewenhuys 1834];
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner: person/christianus-johannes-nieuwenhuys
+    role: dealer
+    acquired: 1827-04-28
+    method: auction
+    direct: true
+    label: spelt Niewenhuys in the record
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: lot 100 to C.J. Niewenhuys [Niewenhuys 1834];
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner: person/richard-foster
+    acquired: 1827
+    method: purchase
+    direct: true
+    label: Clewer Manor
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: sold to Richard Foster, Esq., Clewer Manor, 1827;
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1876-06-03
+    method: auction
+    direct: true
+    place: london
+    label: Richard Foster estate sale, lot 138
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: his estate sale Christie, Manson and Woods, London, June 3, 1876, lot 138.
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner: person/paul-demidoff
+    ended: 1885
+    place: florence
+    label: San Donato
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: Prince Paul Demidoff (died 1885), San Donato;
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner_label: Pillet, Le Roy and Mannheim
+    role: agent
+    not_sold: true
+    acquired: 1880-03
+    method: auction
+    direct: true
+    place: florence
+    label: San Donato sale, 15 March–10 April 1880, no. 1109, engraved, bought in
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: offered his sale, Pillet, Le Roy and Mannheim, Florence, March 15-April 10, 1880, no. 1109, engraved, bought in;
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner_label: Princess Demidoff (formerly Princess Lise Troubetzkoi)
+    acquired: 1885
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: by descent to Princess Demidoff (formerly Princess Lise Troubetzkoi), 1885;
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: agent
+    acquired: 1890-06
+    method: purchase
+    direct: true
+    place: paris
+    label: sold through Durand-Ruel with a group of Dutch and Flemish paintings, many from the Demidoff collection
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: sold through Durand-Ruel, Paris, June 1890, as part of a group of Dutch and Flemish paintings, many from the Demidoff collection
+        source: aic-1894-1028
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1890-06
+    method: purchase
+    direct: true
+    place: chicago
+    label: funds advanced by Martin A. Ryerson and other trustees; cost reimbursed by the George B. and Mary R. Harris Fund (accession 1894)
+    sources:
+      - url: https://www.artic.edu/artworks/117476
+        note: with funds advanced by Martin A. Ryerson and other trustees of the Art Institute [annual report 1891]; the cost of 1894.1028 was reimbursed by the George B. and Mary R. Harris Fund.
+        source: aic-1894-1028
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20266357
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20266357
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20266357
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20266357
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20266357

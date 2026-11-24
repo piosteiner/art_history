@@ -1,0 +1,52 @@
+public_id: 123943
+title_lang: en
+title: Bust of a Man
+creator: jean-jacques-caffieri
+created: c. 1775
+created_span: uncertain
+kind: sculpture
+medium: Plaster
+dimensions: [64.5, 43.8, 33]
+institution: art-institute-of-chicago
+inventory_number: "1943.1226"
+web_url: https://www.artic.edu/artworks/49198
+images:
+  - url: https://www.artic.edu/iiif/2/f4d51402-f9f8-cb69-9093-b37aa1ce8cb6/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/49198
+    license: CC0
+    credit: Art Institute of Chicago, Simeon B. Williams Fund
+provenance:
+  - owner_label: Marquis de Talleyrand, Rome
+    place: rome
+    label: according to the registrar's cards and copies of incoming receipts
+    sources:
+      - url: https://www.artic.edu/artworks/49198
+        note: Marquis de Talleyrand, Rome [according to registrar’s cards and copies of incoming receipts; see also Chicago exh. cat.].
+        source: aic-1943-1226
+        accessed: 2026-11-24
+  - owner: person/marquis-de-biron
+    place: geneva
+    sources:
+      - url: https://www.artic.edu/artworks/49198
+        note: Marquis de Biron, Geneva [according to sources cited above].
+        source: aic-1943-1226
+        accessed: 2026-11-24
+  - owner: institution/arnold-seligmann-rey-co
+    role: dealer
+    acquired: 1943 or earlier
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/49198
+        note: Arnold Seligmann, Rey & Co., New York, by 1943;
+        source: aic-1943-1226
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1943
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/49198
+        note: sold to the Art Institute, 1943.
+        source: aic-1943-1226
+        accessed: 2026-11-24

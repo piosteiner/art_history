@@ -1,0 +1,118 @@
+public_id: 122950
+title_lang: en
+title: Louis, Duc de Bourgogne
+created: 18th century
+created_span: uncertain
+materials: [marble]
+institution: national-gallery-of-art
+inventory_number: 1960.5.8
+wikidata_id: Q63854421
+metadata:
+  sources: [Wikidata Q63854421 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/louis-dauphin-of-france-duke-of-burgundy
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q63854421
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/French_18th_Century%2C_Louis%2C_Duc_de_Bourgogne%2C_18th_century%2C_NGA_46016.jpg/1280px-French_18th_Century%2C_Louis%2C_Duc_de_Bourgogne%2C_18th_century%2C_NGA_46016.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:French_18th_Century,_Louis,_Duc_de_Bourgogne,_18th_century,_NGA_46016.jpg
+    license: CC0
+    credit: French 18th Century
+provenance:
+  - owner_label: Bourbon-Condé family
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46016.html
+        note: Possibly Bourbon-Condé family.
+        source: nga-1960-5-8
+        accessed: 2026-11-24
+  - owner: person/richard-wallace
+    place: paris
+    label: Sir Richard Wallace, 1st Baronet, London and Paris; the Wallace-Bagatelle collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46016.html
+        note: Sir Richard Wallace, 1st bt. [1818-1890], London and Paris;
+        source: nga-1960-5-8
+        accessed: 2026-11-24
+  - owner: person/julie-amelie-charlotte-castelnau
+    method: inheritance
+    direct: true
+    place: paris
+    label: his wife; Paris and London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46016.html
+        note: by inheritance to his wife, Julie-Amélie-Charlotte Castelnau, Lady Wallace [1819-1897], Paris and London;
+        source: nga-1960-5-8
+        accessed: 2026-11-24
+  - owner: person/john-murray-scott-2
+    method: inheritance
+    direct: true
+    place: paris
+    label: her adviser and secretary, Sir John Murray Scott, 1st Baronet; London and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46016.html
+        note: by inheritance to her adviser and secretary, Sir John Murray Scott, 1st bt. [1847-1912], London and Paris;
+        source: nga-1960-5-8
+        accessed: 2026-11-24
+  - owner: person/victoria-sackville-west-lady-sackville
+    method: inheritance
+    direct: true
+    place: paris
+    label: Josephine Victoria Sackville-West of Sevenoaks, Kent, his friend; the sculpture remained in Paris in Scott's residence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46016.html
+        note: by inheritance to his friend, Josephine Victoria Sackville-West, Lady Sackville [1864-1936], Sevenoaks, Kent [sculpture remained in Paris in Scott's residence];[1] — [1] On the Wallace-Bagatelle collection and its inheritance by Sir John Murray Scott and subsequently Lady Sackville, see Germain Seligman, Merchants of Art
+        source: nga-1960-5-8
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    acquired: 1913
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46016.html
+        note: sold 1913 to (Jacques Seligmann and Co., Inc., Paris and New York);
+        source: nga-1960-5-8
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46016.html
+        note: sold 1951 to the Samuel H. Kress Foundation, New York;
+        source: nga-1960-5-8
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1960
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46016.html
+        note: gift 1960 to NGA.
+        source: nga-1960-5-8
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q63854421
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63854421
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63854421
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63854421

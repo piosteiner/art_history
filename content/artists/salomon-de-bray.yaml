@@ -1,0 +1,18 @@
+public_id: 123084
+name: Salomon de Bray
+given_name: Salomon
+family_name: de Bray
+birth: 1597
+death: 1664-05-11
+wikidata_id: Q541736
+metadata:
+  sources: [Wikidata Q541736 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q541736
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q541736

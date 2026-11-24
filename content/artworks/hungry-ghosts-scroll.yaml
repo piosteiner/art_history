@@ -1,0 +1,100 @@
+public_id: 124258
+title: Hungry Ghosts Scroll
+names:
+  - lang: ja
+    role: translation
+    text: 河本家本餓鬼草紙
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045364
+created: 12th century
+created_span: uncertain
+institution: tokyo-national-museum
+inventory_number: A-10476
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10476
+location: [139.7756, 35.71994]
+wikidata_id: Q107045364
+metadata:
+  sources: [Wikidata Q107045364 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Gaki_zoshi_-_Tokyo.jpeg/1280px-Gaki_zoshi_-_Tokyo.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Gaki_zoshi_-_Tokyo.jpeg
+    license: Public domain
+    credit: Unknown artist
+provenance:
+  - owner_label: unknown maker
+    acquired: 12th century
+    method: creation
+    label: handscroll of the realm of hungry ghosts, words lost; dated 12th century (Heian) by the TNM, early Kamakura by the Agency for Cultural Affairs
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100152
+        note: 平安時代・12世紀 | 東京国立博物館 | A-10476 | 六道のなかでも苦しみの多いとされる「三悪道」の一つ、餓鬼道を描く絵巻。
+        source: emuseum-100152
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/31
+        note: 時代 ： 鎌倉 … 優れたやまと絵画家の手により高い芸術性を持つ。鎌倉時代初頭期の作。
+        source: kunishitei-201-31
+        accessed: 2026-11-24
+  - owner: person/emperor-go-shirakawa
+    place: kyoto
+    label: thought to have been one of the paintings in Go-Shirakawa's treasury of Rengeō-in (Sanjūsangen-dō)
+    certainty: probable
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100152
+        note: 「地獄草紙」（No.7）同様、後白河天皇の蓮華王院宝蔵絵の一つだったと考えられているが
+        source: emuseum-100152
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=107193166
+        note: 後白河法皇の蓮華王院三十三間堂宝蔵に納めた「六道絵」の一部と考えられる。
+        source: wikipedia-ja-107193166
+        accessed: 2026-11-24
+  - owner_label: Ikeda family of Bizen
+    label: scholars have suggested that this scroll, the Kyoto 'Hungry Ghosts' and the 'Hell' scrolls were with the Ikeda lords of Bizen
+    certainty: possible
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100152
+        note: 京都国立博物館所蔵の「餓鬼草紙」も岡山・曹源寺（そうげんじ）に伝わり、「地獄草紙」とあわせたこれらの絵巻は備前池田家に伝わった可能性が指摘されている。
+        source: emuseum-100152
+        accessed: 2026-11-24
+  - owner_label: Kōmoto family, Okayama
+    acquired_label: from the Edo period on
+    place: okayama
+    label: the wealthy merchant family Kōmoto of Okayama (hence 'former Kōmoto family scroll')
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100152
+        note: 江戸時代以降は岡山の豪商・河本（こうもと）家に伝来した。
+        source: emuseum-100152
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=107193166
+        note: "[[岡山県]]の河本家に伝来し、詞書は失われている。"
+        source: wikipedia-ja-107193166
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 1947
+    place: tokyo
+    label: entered the Tokyo National Museum 1947 (way not stated); old National Treasure 1949, new National Treasure 29 March 1952
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100152
+        note: 昭和22年に東京国立博物館に収蔵され、昭和24年、国宝保存法による旧国宝指定を経て、昭和27年に改めて新国宝に指定された。
+        source: emuseum-100152
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/31
+        note: 国宝指定年月日 ： 1952.03.29(昭和27.03.29) … 保管施設の名称 ： 東京国立博物館 | 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-31
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107045364
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107045364
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q107045364

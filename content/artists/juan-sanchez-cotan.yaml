@@ -1,0 +1,18 @@
+public_id: 125071
+name: Juan Sánchez Cotán
+given_name: Juan Sánchez
+family_name: Cotán
+birth: 1560-07-05
+death: 1627-09-08
+wikidata_id: Q919806
+metadata:
+  sources: [Wikidata Q919806 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q919806
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q919806

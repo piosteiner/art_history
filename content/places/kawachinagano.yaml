@@ -1,0 +1,47 @@
+public_id: 124079
+name: Kawachinagano
+names:
+  - lang: ja
+    role: original
+    text: 河内長野市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q819572
+  - lang: zh
+    role: translation
+    text: 河內長野市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q819572
+  - lang: ko
+    role: translation
+    text: 가와치나가노시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q819572
+  - lang: ru
+    role: translation
+    text: Каватинагано
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q819572
+kind: settlement
+parent: osaka-prefecture
+country_code: JP
+location: [135.56414, 34.45808]
+wikidata_id: Q819572
+metadata:
+  sources: [Wikidata Q819572 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q819572
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q819572
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q819572

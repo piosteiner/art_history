@@ -1,0 +1,53 @@
+public_id: 124830
+title_lang: en
+title: Mirror
+institution: cleveland-museum-of-art
+inventory_number: "1917.681"
+web_url: https://clevelandart.org/art/1917.681
+wikidata_id: Q79483192
+metadata:
+  sources: [Wikidata Q79483192 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Japan%2C_Heian_Period_-_Mirror_-_1917.681_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Japan%2C_Heian_Period_-_Mirror_-_1917.681_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japan,_Heian_Period_-_Mirror_-_1917.681_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Cleveland Museum of Art
+provenance:
+  - owner: institution/yamanaka-co
+    role: dealer
+    label: sold to Mr. D. Z. Norton
+    sources:
+      - url: https://clevelandart.org/art/1917.681
+        note: (Yamanaka and Co., sold to Mr. D. Z. Norton)
+        source: cma-1917-681
+        accessed: 2026-11-24
+  - owner: person/d-z-norton
+    method: purchase
+    direct: true
+    place: cleveland
+    label: given to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1917.681
+        note: Mr. D. Z. Norton [1851-1928], Cleveland, OH, given to the Cleveland Museum of Art [?-1917]
+        source: cma-1917-681
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1917
+    method: gift
+    direct: true
+    place: cleveland
+    label: Gift of D. Z. Norton
+    sources:
+      - url: https://clevelandart.org/art/1917.681
+        note: The Cleveland Museum of Art, Cleveland, OH [1917-] — Gift of D. Z. Norton
+        source: cma-1917-681
+        accessed: 2026-11-24
+sources:
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q79483192
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q79483192

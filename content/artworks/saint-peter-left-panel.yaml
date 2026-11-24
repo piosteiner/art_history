@@ -1,0 +1,118 @@
+public_id: 123034
+title_lang: en
+title: Saint Peter [left panel]
+creator: nardo-di-cione
+created: c. 1360
+created_span: uncertain
+materials: [tempera, panel]
+institution: national-gallery-of-art
+inventory_number: 1939.1.261.a
+provenance_status: a_clear
+provenance_status_note: Owned by Henry Goldman, New York, from 1923 until January 1937, then Duveen Brothers and the Samuel H. Kress Foundation (1937); given to the NGA in 1939.
+wikidata_id: Q20173238
+metadata:
+  sources: [Wikidata Q20173238 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/saint-peter
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20173238
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/27/Nardo_di_cione%2C_madonna_col_bambino_tra_i_santi_pietro_e_giovanni_evangelista_%28left_pannel%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Nardo_di_cione,_madonna_col_bambino_tra_i_santi_pietro_e_giovanni_evangelista_(left_pannel).JPG
+    license: CC BY-SA 3.0
+    credit: Nardo di Cione
+provenance:
+  - owner: person/gustav-adolf-wilhelm-von-ingenheim
+    acquired_label: first half of the 19th century
+    label: "probably acquired in Italy (Böttiger: bought in Italy 1816–1817 and 1822–1824; Offner: some during his stay in Italy 1820–1840, others gifts from the king of Prussia); his collection in Munich in 1827, about to go to Paris"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.402.html
+        note: Gustav Adolf Wilhelm von Ingenheim [1789-1855], who acquired it in the first half of the nineteenth century, probably in Italy;[1]
+        source: nga-1939-1-261-a
+        accessed: 2026-11-24
+  - owner_label: Ingenheim family, Schloss Reisewitz, Silesia
+    method: inheritance
+    direct: true
+    label: Schloss Reisewitz, Silesia
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.402.html
+        note: Ingenheim family, Schloss Reisewitz, Silesia;
+        source: nga-1939-1-261-a
+        accessed: 2026-11-24
+  - owner: institution/galerie-a-s-drey
+    role: dealer
+    acquired: 1922
+    method: purchase
+    direct: true
+    place: munich
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.402.html
+        note: sold 1922 to (A.S. Drey, Munich);
+        source: nga-1939-1-261-a
+        accessed: 2026-11-24
+  - owner: person/henry-goldman
+    acquired: 1923
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.402.html
+        note: sold 1923 to Henry Goldman [1856-1937], New York;[2]
+        source: nga-1939-1-261-a
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1937-01
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Duveen Brothers, Inc., London, New York, and Paris; one of nine paintings and one sculpture (Goldman's letter of 5 January 1937)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.402.html
+        note: sold January 1937 to (Duveen Brothers, Inc., London, New York, and Paris);[3] — [3] Letter, Henry Goldman to Duveen Brothers, 5 January 1937 … Goldman confirms the sale to the company of nine paintings and one sculpture
+        source: nga-1939-1-261-a
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1937
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.402.html
+        note: sold 1937 to the Samuel H. Kress Foundation, New York;[4]
+        source: nga-1939-1-261-a
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1939
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.402.html
+        note: gift 1939 to NGA.
+        source: nga-1939-1-261-a
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20173238
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20173238
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20173238
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20173238
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20173238

@@ -1,0 +1,37 @@
+public_id: 124555
+title: Byōbu Dodai
+names:
+  - text: Draft for Screen Poem
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q65264165
+  - lang: ja
+    role: translation
+    text: 屏風土代
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q65264165
+creator: ono-no-michikaze
+created: 928
+institution: museum-of-the-imperial-collections
+wikidata_id: Q65264165
+metadata:
+  sources: [Wikidata Q65264165 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Ono_no_Michikaze_-_By%C5%8Dbu_dodai.jpg/1280px-Ono_no_Michikaze_-_By%C5%8Dbu_dodai.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ono_no_Michikaze_-_By%C5%8Dbu_dodai.jpg
+    license: Public domain
+    credit: Ono no Michikaze
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q65264165
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q65264165
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q65264165

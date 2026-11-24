@@ -1,0 +1,18 @@
+public_id: 122847
+name: Edward Savage
+given_name: Edward
+family_name: Savage
+birth: 1761-11-26
+death: 1817-07-06
+wikidata_id: Q1293506
+metadata:
+  sources: [Wikidata Q1293506 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q1293506
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q1293506

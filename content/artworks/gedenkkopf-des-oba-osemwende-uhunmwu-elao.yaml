@@ -1,0 +1,89 @@
+public_id: 123826
+title_lang: de
+title: Gedenkkopf des Oba Osemwende, Uhunmwu Elao
+attribution_label: Königliche Gilde der Bronzegiesser am Hof von Benin
+created: after 1848
+kind: sculpture
+medium: Gelbguss
+dimensions: [51.4, 31.7, 33.3]
+institution: museum-rietberg
+inventory_number: RAF 601
+web_url: https://rietberg.ch/sammlungen/raf-601
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Benin_Portr%C3%A4t_K%C3%B6nig_Osemwende_Museum_Rietberg_RAF_601.jpg/1280px-Benin_Portr%C3%A4t_K%C3%B6nig_Osemwende_Museum_Rietberg_RAF_601.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Benin_Porträt_König_Osemwende_Museum_Rietberg_RAF_601.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Königliche Gilde der Bronzegiesser am Hof von Benin
+    acquired: c. 1850
+    method: creation
+    place: benin-city
+    label: cast by the royal guild of brass casters at the court of Benin
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-601
+        note: "um 1850: Königliche Gilde der Bronzegiesser am Hof von Benin in Benin City"
+        source: rietberg-raf-601
+        accessed: 2026-11-24
+  - owner: person/adolo
+    acquired: c. 1850
+    method: commission
+    place: benin-city
+    label: Oba of Benin; commissioned
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-601
+        note: "um 1850: Oba Adolo (†1888), beauftragt in Benin City"
+        source: rietberg-raf-601
+        accessed: 2026-11-24
+  - owner: person/ovonramwen-nogbaisi
+    acquired: 1888
+    method: inheritance
+    direct: true
+    place: benin-city
+    label: Oba of Benin; by inheritance
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-601
+        note: "1888: Oba Ovonramwen Nogbaisi (um 1857–1914), durch Erbgang erworben in Benin City"
+        source: rietberg-raf-601
+        accessed: 2026-11-24
+  - owner: institution/british-army
+    role: possessor
+    acquired: 1897
+    method: spoils_of_war
+    place: benin-city
+    label: probably looted in the British attack on Benin City
+    certainty: probable
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-601
+        note: "1897: British Army, wahrscheinlich geplündert in Benin City"
+        source: rietberg-raf-601
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: before 1926
+    label: circumstances of acquisition unknown; published by Eckart von Sydow 1926, pl. 1, and 1932, pp. 28–29
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-601
+        note: "vor 1926: Eduard von der Heydt (1882–1964), Erwerbsumstände unbekannt Inventar Leuzinger, Lit. Sydow, 1926. Vgl. Eckart von Sydow: Sammlung Baron Eduard von der Heydt. (Kunst der Naturvölker. Afrika, Ozeanien, Indonesien), 1926, Tafel 1 sowie Eckart von Sydow: Kunst der Naturvölker. Sammlung Baron Eduard von der Heydt. 1932. S. 28, 29."
+        source: rietberg-raf-601
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1953
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-601
+        note: "1953: Museum Rietberg, als Geschenk erhalten in Zürich Vgl. Schriftenarchiv Museum Rietberg Zürich, Inventarkarte RAF 601."
+        source: rietberg-raf-601
+        accessed: 2026-11-24
+  - owner: institution/national-commission-for-museums-and-monuments
+    acquired: 2026-03-20
+    method: restitution
+    direct: true
+    place: zurich
+    label: transfer of ownership to Nigeria under the agreement between the City of Zurich and the NCMM, in a management agreement with the Benin Royal Palace
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-601
+        note: '20.03.2026: National Commission for Museums and Monuments, Nigeria (NCMM) (1979), Eigentumsübertragung in Zürich Gemäss dem "Agreement on the transfer of ownership and return of Benin Bronzes between the City of Zurich and the National Commission for Museums and Monuments of the Federal Ministry of Art, Culture, Tourism and the Creative Economy of Nigeria, representing the Federal Republic of Nigeria and in a management agreement with the Benin Royal Palace" vom 20.03.2026.'
+        source: rietberg-raf-601
+        accessed: 2026-11-24

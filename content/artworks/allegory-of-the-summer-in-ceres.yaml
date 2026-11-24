@@ -1,0 +1,310 @@
+public_id: 123067
+title_lang: en
+title: Ceres (Summer)
+names:
+  - text: Summer
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177782
+  - text: Ceres
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177782
+  - lang: en
+    role: original
+    text: Allegory of the Summer in Ceres
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177782
+  - lang: fr
+    role: translation
+    text: Allégorie de l'Été sous les traits de Cérès
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177782
+creator: jean-antoine-watteau
+created: 1717/1718
+created_label: c. 1710s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [142, 116]
+institution: national-gallery-of-art
+inventory_number: 1961.9.50
+web_url: https://www.nga.gov/collection/art-object-page.46149.html
+wikidata_id: Q20177782
+metadata:
+  sources: [Wikidata Q20177782 (retrieved 2026-11-23)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2d/Ceres_by_Antoine_Watteau_%281717-1718%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ceres_by_Antoine_Watteau_(1717-1718).jpg
+    license: Public domain
+    credit: Jean-Antoine Watteau
+provenance:
+  - owner: person/pierre-crozat
+    method: commission
+    place: paris
+    label: for the dining room of his hôtel on rue de Richelieu
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: Commissioned by Pierre Crozat [1665-1740] for the dining room of his hôtel on rue de Richelieu, Paris;
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: person/louis-francois-crozat
+    method: inheritance
+    direct: true
+    place: paris
+    label: his nephew, marquis du Châtel; with the hôtel
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: by inheritance with the hôtel to his nephew, Louis François Crozat, marquis du Châtel [1691-1750], Paris;
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: person/louise-honorine-crozat
+    method: inheritance
+    direct: true
+    place: paris
+    label: his daughter, married 1750 to the duc de Choiseul; the hôtel was sold in 1772 and the painting removed, probably to the Château de Chanteloup, Touraine
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: by inheritance with the hôtel to his daughter, Louise-Honorine Crozat [1737-1801, married 1750 to the duc de Choiseul], Paris; the hôtel was sold in 1772 and demolished shortly thereafter, before which the painting was removed, probably to the Choiseul's Château de Chanteloup, Touraine;
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: person/etienne-francois-de-choiseul
+    role: estate
+    direct: true
+    label: estate of the duc de Choiseul
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: (estate sale of Etienne François, duc de Choiseul [1719-1785], Paillet, Paris, 18 December 1786, no. 3, with _Winter_ from the same series);
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: person/alexandre-joseph-paillet
+    role: agent
+    acquired: 1786-12-18
+    method: auction
+    direct: true
+    place: paris
+    label: Choiseul estate sale, no. 3, with Winter from the same series
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: (estate sale of Etienne François, duc de Choiseul [1719-1785], Paillet, Paris, 18 December 1786, no. 3, with _Winter_ from the same series);
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner_label: Meunier
+    acquired: 1786-12-18
+    method: auction
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: purchased by Meunier.
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: person/jean-baptiste-pierre-lebrun
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: Jean Baptiste Pierre Le Brun [1748-1813], Paris;
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: person/jean-baptiste-pierre-lebrun
+    role: agent
+    acquired: 1791-04-20
+    method: auction
+    direct: true
+    place: paris
+    label: his own sale, 11 April–8 May 1791, 10th day, no. 204, with Winter
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: (his own sale, Le Brun, Paris, 11 April-8 May 1791, 10th day [April 20], no. 204, with _Winter_);
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner_label: Rebes
+    acquired: 1791-04-20
+    method: auction
+    direct: true
+    label: named variously Rebes, Mr. le president Rebe, de Rebes; full name not found
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: Rebes; — [1] Annotated copies of the sale catalogue give the name variously as "Rebes," "Mr. le president Rebe," and "de Rebes."
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: person/jean-baptiste-pierre-lebrun
+    role: agent
+    acquired: 1791-11-15
+    method: auction
+    direct: true
+    place: paris
+    label: sale, no. 95, with Winter
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: (sale, Le Brun, Paris, 15 November 1791, no. 95, with _Winter_).[1]
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner_label: Roehn, Paris
+    place: paris
+    label: probably Adolphe Eugène Gabriel Roehn (1780–1867), not his son Alphonse (Pierre Rosenberg)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: Roehn, Paris.[2] — [2] Pierre Rosenberg says this was "probably Adolphe Eugène Gabriel Roehn (1780-1867) and not his son" (Alphonse)
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: person/charles-wertheimer
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: Charles Wertheimer [d. 1911], London.
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: institution/galerie-sedelmeyer
+    role: dealer
+    acquired: 1895 or earlier
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: (Charles Sedelmeyer Galleries, Paris), by 1895;
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: person/lionel-phillips
+    acquired: 1898
+    method: purchase
+    direct: true
+    label: Tylney Hall, Winchfield
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: sold 1898 to Sir Lionel Phillips, bt. [1855-1936], Tylney Hall, Winchfield;[3]
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1913-04-25
+    method: auction
+    direct: true
+    place: london
+    label: sale, no. 72
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: (sale, Christie, Manson & Woods, London, 25 April 1913, no. 72);
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner_label: Nicholson
+    acquired: 1913-04-25
+    method: auction
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: Nicholson.
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: person/henri-michel-levy
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: Henri Michel-Lévy [1845-1914], Paris;
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1919-05-12
+    method: auction
+    direct: true
+    place: paris
+    label: his sale, 12–13 May 1919, no. 28
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: (his sale, Galerie Georges Petit, Paris, 12-13 May 1919, no.  28);
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: person/leon-michel-levy
+    acquired: 1919-05
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: Léon Michel-Lévy [1846-1925], Paris;
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1925-06-17
+    method: auction
+    direct: true
+    place: paris
+    label: his sale, 17–18 June 1925, 1st day, no. 160
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: (his sale, Galerie Georges Petit, Paris, 17-18 June 1925, 1st day, no. 160);[4]
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner_label: Batteroze or Betteroze
+    acquired: 1925-06-17
+    method: auction
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: Batteroze or Betteroze.
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: person/charles-louis-dreyfus
+    place: paris
+    label: published as with Dreyfus by Louis Dimier (1928)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: Charles-Louis Dreyfus [1870-1929], Paris.[5]
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1935 or earlier
+    label: Paris, New York and London; lent to a 1935 exhibition in Copenhagen
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: (Wildenstein & Co., Inc., Paris, New York, and London), by 1935;[6] — [6] The painting was lent by Wildenstein to a 1935 exhibition in Copenhagen.
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1954-02-10
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: bill of sale for fourteen paintings; payments continued to March 1957
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: sold February 1954 to the Samuel H. Kress Foundation, New York;[7] — [7] The bill of sale … is dated February 10, 1954, and was for a total of fourteen paintings; payments by the Foundation continued to March 1957.
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1961
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46149.html
+        note: gift 1961 to NGA.
+        source: nga-1961-9-50
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177782
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177782
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177782
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177782
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177782
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177782

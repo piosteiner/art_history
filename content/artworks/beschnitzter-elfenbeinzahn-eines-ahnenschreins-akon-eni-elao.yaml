@@ -1,0 +1,162 @@
+public_id: 123825
+title_lang: de
+title: Beschnitzter Elfenbeinzahn eines Ahnenschreins, Akon’eni Elao
+attribution_label: Königliche Gilde der Elfenbeinschnitzer am Hof von Benin
+created: 1601/1800
+kind: relief
+medium: Elfenbein (Loxodonta cyclotis)
+dimensions: [117, 12.5, 20]
+institution: museum-rietberg
+inventory_number: RAF 607
+web_url: https://rietberg.ch/sammlungen/raf-607
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Benin_Stosszahn_Museum_Rietberg_RAF_607_img01.jpg/1280px-Benin_Stosszahn_Museum_Rietberg_RAF_607_img01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Benin_Stosszahn_Museum_Rietberg_RAF_607_img01.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Königliche Gilde der Elfenbeinschnitzer am Hof von Benin
+    acquired: 18th century
+    method: creation
+    place: benin-city
+    label: carved by the royal guild of ivory carvers at the court of Benin
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "18. Jh.: Königliche Gilde der Elfenbeinschnitzer am Hof von Benin in Benin City"
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: institution/royal-court-of-benin
+    acquired: 18th century
+    method: commission
+    place: benin-city
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "18. Jh.: Königshaus Benin, beauftragt in Benin City"
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: person/ovonramwen-nogbaisi
+    acquired: 1888
+    method: inheritance
+    place: benin-city
+    label: Oba of Benin; by inheritance
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "1888: Oba Ovonramwen Nogbaisi (um 1857–1914), durch Erbgang erworben in Benin City"
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: institution/british-army
+    role: possessor
+    acquired: 1897
+    method: spoils_of_war
+    place: benin-city
+    label: looted in the British attack on Benin City
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "1897: British Army, geplündert in Benin City"
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: person/arnold-ridyard
+    acquired: c. 1900
+    place: liverpool
+    label: whereabouts unknown before; circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "Verbleib unbekannt um 1900: Arnold Ridyard, Erwerbsumstände unbekannt in Liverpool"
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: person/george-william-neville
+    acquired: c. 1900
+    place: liverpool
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "um 1900: George William Neville, Erwerbsumstände unbekannt in Liverpool"
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: person/william-john-davey
+    acquired: before 1908
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "vor 1908: William John Davey, Erwerbsumstände unbekannt"
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: person/lydia-davey
+    acquired: 1908
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "1908: Lydia Davey, durch Erbgang erworben"
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: person/harold-davey
+    acquired: 1928
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "1928: Harold Davey, durch Erbgang erworben"
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: person/florence-e-davey
+    acquired: 1946
+    method: inheritance
+    direct: true
+    label: consignor of the Sotheby's sale, 26 November 1962
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "1946: Florence E. Davey (†1962), durch Erbgang erworben Vgl. Sotheby & Co, Catalogue of African, American, Oceanic and Indian Art, 26th November 1962, Lot 104 and Consignor List."
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: before 26 November 1962
+    method: auction
+    direct: true
+    place: london
+    label: "consigned; sale Catalogue of African, American, Oceanic and Indian Art, London, 26 November 1962, lot 104 (auction book: lot 105 (?))"
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "vor 26.11.1962: Sotheby's London (1744), in Kommission erhalten in London Auktionshandbuch, London (Scan erhalten, 13.2.2018) Catalogue of African, American, Oceanic and Indian Art Lot. 105 (?) Vgl. Sotheby & Co, Catalogue of African, American, Oceanic and Indian Art, 26th November 1962, Lot 104."
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: person/kenneth-john-hewett
+    acquired: 1962-11-26
+    method: auction
+    direct: true
+    place: london
+    label: bought at the Sotheby's sale (buyer noted by hand in the auction book)
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "26.11.1962: Kenneth John Hewett (1919–1994), angekauft in London Auktionsbuch Sotheby's London, handschriftlicher Eintrag Vgl. Sotheby & Co, Catalogue of African, American, Oceanic and Indian Art, 26th November 1962, Lot. 104, Handschriftliche Notiz zum Käufer."
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: person/ernst-winizki
+    acquired: before 14 April 1993
+    method: purchase
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "vor 14.04.1993: Ernst Winizki (1915–1997), angekauft Vgl. Schriftenarchiv Museum Rietberg, S.0002 – S.0005, RAF 607, Rechnung für den Ankauf des Objektes."
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1993-04-14
+    method: purchase
+    direct: true
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: "14.04.1993: Museum Rietberg, angekauft Vgl. Schriftenarchiv Museum Rietberg, S.0002 – S.0005, RAF 607, Rechnung für den Ankauf des Objektes."
+        source: rietberg-raf-607
+        accessed: 2026-11-24
+  - owner: institution/national-commission-for-museums-and-monuments
+    acquired: 2026-03-20
+    method: restitution
+    direct: true
+    place: zurich
+    label: transfer of ownership to Nigeria under the agreement between the City of Zurich and the NCMM, in a management agreement with the Benin Royal Palace
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-607
+        note: '20.03.2026: National Commission for Museums and Monuments, Nigeria (NCMM) (1979), Eigentumsübertragung in Zürich Gemäss dem "Agreement on the transfer of ownership and return of Benin Bronzes between the City of Zurich and the National Commission for Museums and Monuments of the Federal Ministry of Art, Culture, Tourism and the Creative Economy of Nigeria, representing the Federal Republic of Nigeria and in a management agreement with the Benin Royal Palace" vom 20.03.2026.'
+        source: rietberg-raf-607
+        accessed: 2026-11-24

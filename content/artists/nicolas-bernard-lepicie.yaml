@@ -1,0 +1,18 @@
+public_id: 124622
+name: Nicolas Bernard Lépicié
+given_name: Nicolas Bernard
+family_name: Lépicié
+birth: 1735-06-16
+death: 1784-09-14
+wikidata_id: Q2468565
+metadata:
+  sources: [Wikidata Q2468565 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2468565
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q2468565

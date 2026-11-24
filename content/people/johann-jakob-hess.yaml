@@ -27,6 +27,15 @@ relationships:
       - url: https://collection.kunsthaus.ch/de/collection/item/145/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
+  - type: child_of
+    to: artist/ludwig-hess
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q1694878
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q917118
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/JohannJakobHess.jpg
     source_url: https://commons.wikimedia.org/wiki/File:JohannJakobHess.jpg

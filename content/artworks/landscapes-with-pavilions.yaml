@@ -1,0 +1,106 @@
+public_id: 124245
+title: Landscapes with Pavilions
+names:
+  - text: Chinese Landscape
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045367
+  - lang: ja
+    role: translation
+    text: 楼閣山水図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045367
+created: 18th century
+created_span: uncertain
+institution: tokyo-national-museum
+inventory_number: A-10430
+location: [139.7756, 35.71994]
+wikidata_id: Q107045367
+metadata:
+  sources: [Wikidata Q107045367 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+  - type: depicts
+    to: place/dongting-lake
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107045367
+  - type: depicts
+    to: place/yueyang-tower
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107045367
+  - type: depicts
+    to: place/zuiweng-pavilion
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107045367
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Chinese_landscape_screen.jpg/1280px-Chinese_landscape_screen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chinese_landscape_screen.jpg
+    license: Public domain
+    credit: Ike no Taiga
+provenance:
+  - owner: artist/ike-taiga
+    acquired: 18th century
+    method: creation
+    place: kyoto
+    label: pair of six-panel screens painted in Taiga's forties after a Qing album by Shao Zhenxian; right screen Yueyang Tower, left the Zuiweng Pavilion
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100149
+        note: 池大雅（1723～76）は、江戸時代中期に京都で活躍した画家で … 本作は、大雅40代の作品で … 清時代の画家邵振先（しょうしんせん）が描いた画帖「張環翁祝寿画冊（ちょうかんおうしゅくじゅがさつ）」を参考に描いたことがわかっている。 … 江戸時代・18世紀
+        source: emuseum-100149
+        accessed: 2026-11-24
+  - owner_label: Hitotsubashi Tokugawa family
+    label: formerly owned by the Hitotsubashi branch of the Tokugawa
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100149
+        note: 一橋徳川家旧蔵品で
+        source: emuseum-100149
+        accessed: 2026-11-24
+  - owner: person/dan-ino
+    label: eldest son of Dan Takuma, head of the Mitsui zaibatsu; how he acquired the screens is not stated
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100149
+        note: 昭和19年、三井財閥の総帥であった團琢磨（だんたくま）の長男團伊能（いのう）氏より寄贈された。
+        source: emuseum-100149
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 1944
+    method: gift
+    direct: true
+    place: tokyo
+    label: gift of Dan Inō; National Treasure since 22 November 1952
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100149
+        note: 昭和19年、三井財閥の総帥であった團琢磨（だんたくま）の長男團伊能（いのう）氏より寄贈された。
+        source: emuseum-100149
+        accessed: 2026-11-24
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10430
+        note: 寄贈者 | 團伊能氏寄贈 | 機関管理番号 | A-10430
+        source: tnm-a10430
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/57
+        note: 国宝指定年月日 ： 1952.11.22(昭和27.11.22) … 保管施設の名称 ： 東京国立博物館 | 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-57
+        accessed: 2026-11-24
+identifiers:
+  emuseum: "100149"
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107045367
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107045367
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q107045367

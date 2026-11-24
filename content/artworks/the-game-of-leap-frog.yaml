@@ -1,0 +1,80 @@
+public_id: 124681
+title_lang: en
+title: The Game of Leap Frog
+created: 1785
+institution: cleveland-museum-of-art
+inventory_number: "1944.237"
+web_url: https://clevelandart.org/art/1944.237
+wikidata_id: Q79901016
+metadata:
+  sources: [Wikidata Q79901016 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Jean_Guillaume_Moitte_-_The_Game_of_Leap_Frog_-_1944.237_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Jean_Guillaume_Moitte_-_The_Game_of_Leap_Frog_-_1944.237_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean_Guillaume_Moitte_-_The_Game_of_Leap_Frog_-_1944.237_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Jean Guillaume Moitte
+provenance:
+  - owner: person/jean-jacques-regis-de-cambaceres
+    label: Cambacérès, Duc de Parma, Arch Chancellor of the Empire
+    sources:
+      - url: https://clevelandart.org/art/1944.237
+        note: Cambacérès, Duc de Parma, Arch Chancellor of the Empire (1753-1824)
+        source: cma-1944-237
+        accessed: 2026-11-24
+  - owner: person/paul-demidoff
+    label: Prince Paul Demidoff, Palais de San Donato (1880)
+    sources:
+      - url: https://clevelandart.org/art/1944.237
+        note: "Prince Paul Demidoff, Palais de San Donato  [date: 1880]"
+        source: cma-1944-237
+        accessed: 2026-11-24
+  - owner: person/j-pierpont-morgan
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1944.237
+        note: "J. Pierpont Morgan (sold, Parke-Bernet, New York, March 25, 1944, lot 679)  [date: March 25, 1944]"
+        source: cma-1944-237
+        accessed: 2026-11-24
+  - owner: institution/parke-bernet
+    role: agent
+    acquired: 1944-03-25
+    method: auction
+    direct: true
+    place: new-york-city
+    label: lot 679
+    sources:
+      - url: https://clevelandart.org/art/1944.237
+        note: J. Pierpont Morgan (sold, Parke-Bernet, New York, March 25, 1944, lot 679)
+        source: cma-1944-237
+        accessed: 2026-11-24
+  - owner: institution/arnold-seligmann-rey-co
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1944.237
+        note: "Arnold Seligmann, Rey & Company, Inc. (New York, New York), sold to the Cleveland Museum of Art, 1944.  [date: -1944]"
+        source: cma-1944-237
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1944
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1944.237
+        note: Arnold Seligmann, Rey & Company, Inc. (New York, New York), sold to the Cleveland Museum of Art, 1944.
+        source: cma-1944-237
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q79901016
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q79901016
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q79901016

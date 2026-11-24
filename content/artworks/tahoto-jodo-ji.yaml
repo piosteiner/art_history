@@ -1,0 +1,43 @@
+public_id: 123928
+title: Tahōtō, Jōdo-ji
+names:
+  - lang: ja
+    role: translation
+    text: 浄土寺多宝塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020646
+created: 1329
+institution: jodo-ji-temple
+location: [133.2109, 34.41181]
+wikidata_id: Q107020646
+metadata:
+  sources: [Wikidata Q107020646 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/onomichi
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/%E6%B5%84%E5%9C%9F%E5%AF%BA%28%E5%B0%BE%E9%81%93%E5%B8%82%29%E5%A4%A7%E5%AE%9D%E5%A1%94.jpg/1280px-%E6%B5%84%E5%9C%9F%E5%AF%BA%28%E5%B0%BE%E9%81%93%E5%B8%82%29%E5%A4%A7%E5%AE%9D%E5%A1%94.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E6%B5%84%E5%9C%9F%E5%AF%BA(%E5%B0%BE%E9%81%93%E5%B8%82)%E5%A4%A7%E5%AE%9D%E5%A1%94.jpg
+    license: CC BY-SA 4.0
+    credit: ほっきー
+provenance:
+  - owner: institution/jodo-ji-temple
+    acquired: 1329
+    method: creation
+    place: onomichi
+    label: rebuilt in Gentoku 1 (1329) after the fire of 1325, with sutras copied for the building placed in the finial; rebuilding paid for by the Onomichi couple Dōren and Dōshō (Wikipedia)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3124
+        note: 多宝塔は正中二年（一三二五）の火災で焼失したが、元徳元年（一三二九）に再建された。 … なお、相輪内には、建立にあたって結縁書写した法華経などが多数納入されていた。 … 所有者名 ： 浄土寺
+        source: kunishitei-102-3124
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E6%B5%84%E5%9C%9F%E5%AF%BA_(%E5%B0%BE%E9%81%93%E5%B8%82)
+        note: 正中2年（1325年）に焼失したが、尾道の有徳人道蓮・道性夫妻によって復興された。現存する国宝の本堂・多宝塔、重要文化財の阿弥陀堂はこの時再興された建物である。
+        source: wikipedia-ja-jodo-ji-onomichi
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020646

@@ -1,0 +1,188 @@
+public_id: 123896
+title: Tomioka Silk Mill
+names:
+  - text: Tomioka Seishijō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7818931
+  - lang: nl
+    role: translation
+    text: Zijdefabriek van Tomioka
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7818931
+  - lang: fr
+    role: translation
+    text: filature de soie de Tomioka
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7818931
+  - lang: de
+    role: translation
+    text: Stätten der Seidenspinnerei in Tomioka
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7818931
+  - lang: it
+    role: translation
+    text: Mulino da seta di Tomioka
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7818931
+  - lang: es
+    role: translation
+    text: Manufactura de seda de Tomioka
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7818931
+  - lang: ja
+    role: translation
+    text: 富岡製糸場
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7818931
+  - lang: zh
+    role: translation
+    text: 富岡製絲廠
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7818931
+  - lang: ko
+    role: translation
+    text: 도미오카 제사장
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7818931
+  - lang: ru
+    role: translation
+    text: Фабрика в Томиоке
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7818931
+created: 1872
+materials: [brick]
+location: [138.88767, 36.25533]
+wikidata_id: Q7818931
+metadata:
+  sources: [Wikidata Q7818931 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tomioka
+    period: 1872
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Tomioka_Silk_Mill_East_Cocoon_Warehouse05.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tomioka_Silk_Mill_East_Cocoon_Warehouse05.jpg
+    license: Public domain
+    credit: Hasec
+provenance:
+  - owner: institution/government-of-japan
+    acquired: 1871/1872
+    method: creation
+    place: tomioka
+    label: government model silk-reeling mill, decided 1870, built from 1871 after Paul Brunat's plan; main buildings finished and work begun in 1872
+    sources:
+      - url: https://www.tomioka-silk.jp/_tomioka-silk-mill/about/
+        note: 1870（明治３）年、明治政府は自国資本による官営模範器械製糸場をつくることを決めました。 … 富岡製糸場の建設はフランス人指導者ポール・ブリュナの計画書をもとに1871（明治4）年から始まり、翌年の1872（明治5）年には主な建造物が完成し、操業が開始されました。
+        source: tomioka-silk-official-about
+        accessed: 2026-11-24
+  - owner_label: Mitsui family
+    acquired: 1893-10-01
+    method: purchase
+    direct: true
+    label: "sold off under the privatisation of government factories; highest bid at the tender of 10 September 1893 (reserve 105,000 yen), handed over 1 October (English Wikipedia: Mitsui & Co.)"
+    price:
+      amount: 121460
+      currency: JPY
+    sources:
+      - url: https://www.tomioka-silk.jp/_tomioka-silk-mill/about/
+        note: 官営工場払い下げの主旨により、1893（明治26）年、三井家に払い下げられました。
+        source: tomioka-silk-official-about
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%B2%A1%E8%A3%BD%E7%B3%B8%E5%A0%B4
+        note: 1893年（明治26年）9月10日に行われた入札では、最高額入札となった三井家が12万1460円をつけ、予定価額10万5000円を上回ったため、払い下げが決定した（引渡しは10月1日）。
+        source: wikipedia-ja-tomioka-silk-mill
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Tomioka_Silk_Mill
+        note: In September 1893, Mitsui & Co. raised a 121,460 Yen bid and purchased the Tomioka Silk Mill from the government.
+        source: wikipedia-en-tomioka-silk-mill
+        accessed: 2026-11-24
+  - owner: institution/hara-gomei-kaisha
+    acquired: 1902-09-13
+    method: purchase
+    direct: true
+    label: Hara Tomitarō's partnership bought Mitsui's four silk mills together (100,000 yen at once and 135,000 yen over ten years); renamed Hara Tomioka Silk Mill in October 1902
+    sources:
+      - url: https://www.tomioka-silk.jp/_tomioka-silk-mill/about/
+        note: その後、1902（明治35）年、原合名会社に譲渡され、御法川式多条繰糸機による高品質生糸の大量生産や、蚕種の改良などで注目されました。
+        source: tomioka-silk-official-about
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%B2%A1%E8%A3%BD%E7%B3%B8%E5%A0%B4
+        note: 三井は1902年（明治35年）9月13日に4工場全てを一括して原富太郎の原合名会社に譲渡した。原が4工場の代価として支払ったのは、即金10万円と年賦払い（10年）13万5000円であった。
+        source: wikipedia-ja-tomioka-silk-mill
+        accessed: 2026-11-24
+  - owner: institution/tomioka-seishijo-co-ltd
+    acquired: 1938-06-01
+    method: transfer
+    direct: true
+    label: split off from Hara Gōmei as a company of its own (Kabushiki-gaisha Tomioka Seishijo), managed by its main shareholder Katakura
+    sources:
+      - url: https://www.tomioka-silk.jp/_tomioka-silk-mill/about/
+        note: 1938（昭和13）年には株式会社富岡製糸所として独立しましたが
+        source: tomioka-silk-official-about
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%B2%A1%E8%A3%BD%E7%B3%B8%E5%A0%B4
+        note: 富岡製糸所は切り離されて、同年6月1日に株式会社富岡製糸所として独立した。形式上の代表取締役は西郷健雄（原富太郎の娘婿）であったが、経営は筆頭株主の片倉製糸紡績会社が担当することになった。
+        source: wikipedia-ja-tomioka-silk-mill
+        accessed: 2026-11-24
+  - owner: institution/katakura-industries
+    acquired: 1939
+    ended: 2005-09-30
+    method: transfer
+    direct: true
+    label: merged into Katakura Seishi Bōseki (Katakura Industries from 1943); worked until March 1987, then kept closed and maintained
+    sources:
+      - url: https://www.tomioka-silk.jp/_tomioka-silk-mill/about/
+        note: 1939（昭和14）年には日本最大の製糸会社であった片倉製糸紡績株式会社（現・片倉工業株式会社）に合併されました。 … 1987（昭和62）年3月ついにその操業を停止しました。 操業停止後も片倉工業株式会社によってほとんどの建物は大切に保管され
+        source: tomioka-silk-official-about
+        accessed: 2026-11-24
+  - owner: institution/japan-silk-control-company
+    role: custodian
+    acquired: 1941-05
+    ended: 1946-03-01
+    direct: true
+    label: formally leased to the Nihon Sanshi Tōsei Kabushiki Kaisha under the 1941 Silk Industry Control Law, until the company was dissolved in 1946
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%B2%A1%E8%A3%BD%E7%B3%B8%E5%A0%B4
+        note: 1941年（昭和16年）3月公布の蚕糸事業統制法によって片倉富岡製糸所も統制経済に組み込まれ、同年5月の日本蚕糸統制株式会社の成立によって、富岡製糸所は片倉から同株式会社に形式上賃貸されることとなった。 … 1946年（昭和21年）3月1日に日本蚕糸統制株式会社も解散させられ、富岡製糸所も名実ともに片倉に戻った。
+        source: wikipedia-ja-tomioka-silk-mill
+        accessed: 2026-11-24
+  - owner: place/tomioka
+    acquired: 2005-09-30
+    method: gift
+    direct: true
+    place: tomioka
+    label: buildings given and the land sold to the city by Katakura Industries, agreed in December 2004; run by the city since 1 October 2005; owner today
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%B2%A1%E8%A3%BD%E7%B3%B8%E5%A0%B4
+        note: 翌年12月には県知事、市長、片倉工業社長の三者での合意が成立し、富岡製糸場が富岡市に寄贈されることとなった（土地は有償で売却、建物は無償譲渡）。2005年（平成17年）9月30日付けで富岡市に寄贈され、翌日からは市（富岡製糸場課）が管理を行っている。
+        source: wikipedia-ja-tomioka-silk-mill
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Tomioka_Silk_Mill
+        note: Katakura agreed to sell the site to Tomioka city for a nominal value in 2005.
+        source: wikipedia-en-tomioka-silk-mill
+        accessed: 2026-11-24
+identifiers:
+  viaf: "147851682"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q7818931
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q7818931
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q7818931

@@ -30,6 +30,15 @@ relationships:
       - url: https://collection.kunsthaus.ch/de/collection/item/266/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
+  - type: child_of
+    to: person/nathan-wildenstein
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q12954454
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q215626
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Wildenstein.nathan.und.georges.1908.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Wildenstein.nathan.und.georges.1908.jpg

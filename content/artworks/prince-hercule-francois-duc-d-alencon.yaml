@@ -1,0 +1,163 @@
+public_id: 123069
+title_lang: en
+title: Prince Hercule-François, Duc d'Alençon
+names:
+  - lang: fr
+    role: translation
+    text: Hercule-François, duc d'Alençon.
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176757
+created: 1572
+materials: [oil paint, canvas]
+dimensions: [188.6, 102.2]
+institution: national-gallery-of-art
+inventory_number: 1961.9.55
+wikidata_id: Q20176757
+metadata:
+  sources: [Wikidata Q20176757 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/francis-duke-of-anjou
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20176757
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Prince_Hercule-Fran%C3%A7ois%2C_Duc_d%27Alen%C3%A7on_A28687.jpg/1280px-Prince_Hercule-Fran%C3%A7ois%2C_Duc_d%27Alen%C3%A7on_A28687.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Prince_Hercule-Fran%C3%A7ois,_Duc_d%27Alen%C3%A7on_A28687.jpg
+    license: Public domain
+    credit: Formerly attributed to François Clouet / Formerly attributed to Frans Pourbus the Elder
+provenance:
+  - owner: person/john-stuart-bligh
+    acquired: 1851 or earlier
+    label: 6th Earl of Darnley, Cobham Hall, Kent; seen there by Waagen in 1851
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46154.html
+        note: John Stuart Bligh, 6th earl of Darnley [1827-1896], Cobham Hall, Kent, by 1851;[1]
+        source: nga-1961-9-55
+        accessed: 2026-11-24
+  - owner: person/edward-henry-stuart-bligh
+    method: inheritance
+    direct: true
+    label: his son, 7th Earl of Darnley, Cobham Hall
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46154.html
+        note: by inheritance to his son, Edward Henry Stuart Bligh, 7th earl of Darnley [1851-1900], Cobham Hall;
+        source: nga-1961-9-55
+        accessed: 2026-11-24
+  - owner: person/ivo-bligh
+    method: inheritance
+    direct: true
+    label: his brother Ivo Francis Walter Bligh, 8th Earl of Darnley, Cobham Hall
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46154.html
+        note: by inheritance to his brother, Ivo Francis Walter Bligh, 8th earl of Darnley [1859-1927], Cobham Hall;
+        source: nga-1961-9-55
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1925-05-01
+    method: auction
+    direct: true
+    place: london
+    label: Darnley sale, no. 57, as by François Pourbus
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46154.html
+        note: (Darnley sale, Christie, Manson & Woods, London, 1 May 1925, no. 57, as by François Pourbus);
+        source: nga-1961-9-55
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    co_owners: [institution/p-d-colnaghi-co-ltd]
+    role: dealer
+    acquired: 1925-05-01
+    method: auction
+    direct: true
+    label: Knoedler, New York, and Colnaghi, London and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46154.html
+        note: purchased by (M. Knoedler & Co., New York) and (P. & D. Colnaghi, London and New York);[2]
+        source: nga-1961-9-55
+        accessed: 2026-11-24
+  - owner: person/otto-h-kahn
+    acquired: 1925-11
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46154.html
+        note: sold November 1925 to Otto H. Kahn [1867-1934], New York;[3]
+        source: nga-1961-9-55
+        accessed: 2026-11-24
+  - owner_label: heirs of Otto H. Kahn
+    method: inheritance
+    direct: true
+    label: Duveen's letter of 13 March 1942 went to Kahn's Mogmar Art Corporation
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46154.html
+        note: his heirs; — [4] … the letter of 13 March 1942 from Duveen Brothers to Kahn's Mogmar Art Corporation
+        source: nga-1961-9-55
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: agent
+    acquired: 1942
+    direct: true
+    place: new-york-city
+    label: on consignment from 1942; New York, London and Paris; as by Pieter Pourbus the Elder
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46154.html
+        note: on consignment from 1942 to (Duveen Brothers, Inc., New York, London, and Paris, as by Pieter Pourbus the Elder);[4]
+        source: nga-1961-9-55
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1947
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: as attributed to François Clouet; Duveen invoice of 31 October 1947
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46154.html
+        note: purchased 1947 by the Samuel H. Kress Foundation, New York, as Attributed to François Clouet;[5] — [5] Invoice from Duveen Brothers, 31 October 1947
+        source: nga-1961-9-55
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    role: custodian
+    acquired: 1956
+    place: washington-d-c
+    label: on deposit from the Kress Foundation
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46154.html
+        note: The painting was on deposit at the Gallery from the Foundation beginning in 1956.
+        source: nga-1961-9-55
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1961
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46154.html
+        note: gift 1961 to NGA.
+        source: nga-1961-9-55
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20176757
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20176757
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20176757
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20176757
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20176757

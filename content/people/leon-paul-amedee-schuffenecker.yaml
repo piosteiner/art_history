@@ -8,6 +8,16 @@ death: 1936
 wikidata_id: Q28860082
 metadata:
   sources: [Wikidata Q28860082 (retrieved 2026-10-30)]
+relationships:
+  - type: sibling_of
+    to: person/emile-schuffenecker
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q286456
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q28860082
 sources:
   kind:
     - accessed: 2026-10-30

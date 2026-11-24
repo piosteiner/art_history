@@ -1,0 +1,23 @@
+public_id: 123065
+name: Joseph Bonnier de la Mosson
+given_name: Joseph Bonnier
+family_name: de la Mosson
+kind: person
+birth: 1702-09-06
+death: 1744-07-26
+wikidata_id: Q3184632
+metadata:
+  sources: [Wikidata Q3184632 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q3184632
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q3184632
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q3184632

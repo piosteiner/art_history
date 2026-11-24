@@ -1,0 +1,76 @@
+public_id: 124315
+title: Dogū with palms pressed together
+names:
+  - text: Gasshō Dogū
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q85757303
+  - lang: ja
+    role: translation
+    text: 合掌土偶
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q85757303
+institution: korekawa-archaeological-institution-korekawa-jomon-kan
+web_url: https://www.korekawa-jomon.jp/parmanent_dogu/
+location: [141.4884, 40.47548]
+wikidata_id: Q85757303
+metadata:
+  sources: [Wikidata Q85757303 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/hachinohe
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Late_Jomon_clay_statue_Kazahari_I_Aomoriken_1500BCE_-_1000BCE.jpg/1280px-Late_Jomon_clay_statue_Kazahari_I_Aomoriken_1500BCE_-_1000BCE.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Late_Jomon_clay_statue_Kazahari_I_Aomoriken_1500BCE_-_1000BCE.jpg
+    license: CC BY-SA 3.0
+    credit: PHGCOM
+provenance:
+  - owner: institution/hachinohe-city-board-of-education
+    acquired: 1989-07
+    method: find
+    place: hachinohe
+    label: found in pit dwelling no. 15 during the rescue excavation of the Kazahari I site (1988–1992); the missing part of the left leg lay 2.5 m away
+    sources:
+      - url: https://www.korekawa-jomon.jp/floor-guide-gassyo-dogu/
+        note: The kazahari 1 site had excavated for 5 years (from 1988 to 92). … “Clay figurine with clasping hands” was found at rescue excavation in in July.1989. … The Dogu was found at near inmost wall of No.15 pit dwellings.
+        source: korekawa-jomon-gassho-dogu
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Dog%C5%AB_with_palms_pressed_together
+        note: Excavated by the Hachinohe City Board of Education over five seasons from 1988 to 1992 … The dogū with palms pressed together was unearthed during rescue excavation in July 1989.
+        source: en-wikipedia-dogu-palms-pressed-together
+        accessed: 2026-11-24
+  - owner: place/hachinohe
+    place: hachinohe
+    label: "owner: the City of Hachinohe"
+    sources:
+      - url: https://www.korekawa-jomon.jp/floor-guide-gassyo-dogu/
+        note: "Position: Hachinohe City (1-1-1, Uchimaru, Hachinohe-shi, Aomori, 031-8686, Japan)"
+        source: korekawa-jomon-gassho-dogu
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011333
+        note: 所在地 ： 八戸埋蔵文化財センター是川縄文館　八戸市大字是川字横山1 保管施設の名称 ： 八戸埋蔵文化財センター是川縄文館 所有者名 ： 八戸市
+        source: kunishitei-201-00011333
+        accessed: 2026-11-24
+  - owner: institution/korekawa-archaeological-institution-korekawa-jomon-kan
+    role: custodian
+    place: hachinohe
+    label: kept and shown at the city's archaeological centre (opened 10 July 2011)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011333
+        note: 保管施設の名称 ： 八戸埋蔵文化財センター是川縄文館 所有者名 ： 八戸市
+        source: kunishitei-201-00011333
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E6%88%B8%E5%B8%82%E5%9F%8B%E8%94%B5%E6%96%87%E5%8C%96%E8%B2%A1%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E6%98%AF%E5%B7%9D%E7%B8%84%E6%96%87%E9%A4%A8&oldid=97707806
+        note: 開館 = 2011年7月10日 … 2009年に国宝に指定された『合掌土偶』をはじめ、八戸市各地の遺跡で発掘された縄文時代の土器や漆器などが多数展示されている。
+        source: ja-wikipedia-korekawa-jomon-kan
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q85757303
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q85757303

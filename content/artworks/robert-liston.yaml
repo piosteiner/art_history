@@ -1,0 +1,199 @@
+public_id: 123057
+title_lang: en
+title: Robert Liston
+creator: gilbert-stuart
+created: 1800
+materials: [oil paint, canvas]
+dimensions: [73.8, 61]
+institution: national-gallery-of-art
+inventory_number: 1957.10.1
+wikidata_id: Q20180988
+metadata:
+  sources: [Wikidata Q20180988 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/robert-liston
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20180988
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Robert_Liston_A20254.jpg/1280px-Robert_Liston_A20254.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Robert_Liston_A20254.jpg
+    license: Public domain
+    credit: Gilbert Stuart
+provenance:
+  - owner: person/henrietta-ramage-liston-foulis
+    method: inheritance
+    label: the sitter's grand-niece and heir; Millburn Tower, County Edinburgh; married Sir William Foulis, 8th Baronet, in 1843
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: The sitter's grand-niece and heir, Henrietta Ramage Liston Foulis [d. 1850], Millburn Tower, County Edinburgh, Scotland;[1]
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: person/james-liston-foulis
+    method: inheritance
+    direct: true
+    label: her son, 9th baronet; Woodhall and Millburn Tower, County Edinburgh
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: her son, Sir James Liston Foulis, 9th baronet [1847-1895], Woodhall and Millburn Tower, County Edinburgh;
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: person/william-liston-foulis
+    method: inheritance
+    direct: true
+    label: his son, 10th baronet; Woodhall and Millburn Tower, County Edinburgh
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: his son, Sir William Liston Foulis, 10th baronet [1869-1918], Woodhall and Millburn Tower, County Edinburgh;
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: institution/p-d-colnaghi-co-ltd
+    co_owners: [institution/m-knoedler-co]
+    role: dealer
+    acquired: 1919-12-16
+    direct: true
+    place: london
+    label: Colnaghi & Obach, London, on joint account with Knoedler, New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: (P. & D. Colnaghi & Obach, London, on joint account with M. Knoedler & Co., New York), 16 December 1919;
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: person/elbert-h-gary
+    acquired: 1920-04
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: sold April 1920 to Elbert H. Gary [1846-1927], New York;[2]
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: institution/american-art-association
+    role: agent
+    acquired: 1934-12-08
+    method: auction
+    direct: true
+    place: new-york-city
+    label: sale of his estate, no. 386
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: sale of his estate (American Art Association, New York, 8 December 1934, no. 386);[3]
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: person/helena-woolworth-mccann
+    acquired: 1934-12-08
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Mrs. Charles E. F. McCann; Knoedler bid on her behalf
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: bought by Helena Woolworth McCann [Mrs. Charles E. F. McCann, d. 1938], New York;[4] — [4] … Knoedler was acting as the bidder on behalf of Mrs. McCann
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: person/constance-woolworth-betts
+    co_owners: [person/helena-woolworth-guest, person/frasier-winfield-mccann]
+    method: inheritance
+    direct: true
+    label: her children
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: her children, Constance Woolworth Betts, Helena Woolworth Guest, and Frasier Winfield McCann;[5]
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: institution/parke-bernet
+    role: agent
+    acquired: 1945-02-21
+    method: auction
+    direct: true
+    place: new-york-city
+    label: sale of the collection of the late Mr. and Mrs. Charles E. F. McCann, no. 48
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: (Parke-Bernet Galleries, New York, 21 February 1945, no. 48).[6]
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: person/booth-tarkington
+    place: indianapolis
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: Booth Tarkington [1869-1946], Indianapolis, Indiana;
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: person/susannah-robinson-tarkington
+    method: inheritance
+    direct: true
+    label: his widow
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: his widow, Susannah Robinson Tarkington [d. 1966];[7]
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: person/daniel-h-farr
+    role: agent
+    direct: true
+    label: consigned the painting to Knoedler in November 1947
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: consigned November 1947 by (Daniel H. Farr) to (M. Knoedler & Co.);
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: agent
+    acquired: 1947-11
+    direct: true
+    place: new-york-city
+    label: on consignment from Daniel H. Farr
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: consigned November 1947 by (Daniel H. Farr) to (M. Knoedler & Co.);
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: person/chester-dale
+    acquired: 1947-11
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: sold that month to Chester Dale [1883-1962], New York;
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1957
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43706.html
+        note: gift 1957 to NGA.
+        source: nga-1957-10-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20180988
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20180988
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20180988
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20180988
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20180988
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20180988

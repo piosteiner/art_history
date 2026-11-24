@@ -1,0 +1,166 @@
+public_id: 122932
+title_lang: en
+title: Farmhouse at Le Pouldu
+names:
+  - lang: fr
+    role: translation
+    text: Ferme au Pouldu
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20190126
+creator: paul-serusier
+created: 1890
+materials: [oil paint, canvas]
+dimensions: [72, 60]
+institution: national-gallery-of-art
+inventory_number: 2000.95.1
+web_url: https://www.comite-serusier.com/catalogue-raisonne-paul-serusier/ferme-au-pouldu/
+provenance_status: a_clear
+provenance_status_note: Owned by the Ulm Museum 1925–1955; listed for deaccession as 'degenerate' in 1933 but escaped the 1937 seizures and stayed in the museum's storage.
+wikidata_id: Q20190126
+metadata:
+  sources: [Wikidata Q20190126 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Paul_S%C3%A9rusier%2C_Farmhouse_at_Le_Pouldu%2C_1890%2C_NGA_116570.jpg/1280px-Paul_S%C3%A9rusier%2C_Farmhouse_at_Le_Pouldu%2C_1890%2C_NGA_116570.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_S%C3%A9rusier,_Farmhouse_at_Le_Pouldu,_1890,_NGA_116570.jpg
+    license: CC0
+    credit: Paul Sérusier
+provenance:
+  - owner: institution/galerie-eugene-druet
+    role: dealer
+    place: paris
+    label: name on a label on the back; likely Eugène Druet's gallery
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.116570.html
+        note: (Druet, Paris).[1] — "Druet, Paris" is likely the gallery owned by Eugène Druet (1867-1916)
+        source: nga-2000-95-1
+        accessed: 2026-11-24
+  - owner: person/hugo-troendle
+    place: munich
+    label: German painter and writer on art; possibly bought from the Thannhauser Gallery (no record)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.116570.html
+        note: Hugo Troendle [1882-1955], Munich;[2] — it is possible he bought the painting from the Thannhauser Gallery in Munich, although there seems to be no records of this
+        source: nga-2000-95-1
+        accessed: 2026-11-24
+  - owner: institution/ulm-museum
+    role: custodian
+    acquired: 1925
+    direct: true
+    place: ulm
+    label: loan no. L117, 'Bretonisches Bauernhaus'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.116570.html
+        note: The painting was originally a loan to the Ulm Museum in 1925, as number L117, with the title _Bretonisches Bauernhaus_.
+        source: nga-2000-95-1
+        accessed: 2026-11-24
+  - owner: institution/ulm-museum
+    acquired: 1925
+    method: purchase
+    direct: true
+    place: ulm
+    label: 1933 deaccession list and defamation show '10 Jahre Ulmer Kunstpolitik'; escaped the 1937 seizures; on display again by 1950; deaccessioned 1955
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.116570.html
+        note: purchased 1925 by the Ulm Museum, Germany; — The painting was included in a 1933 list of works to be deaccessioned … in 1937 the painting somehow escaped the fate of over 200 works of art that were seized from the Ulm Museum
+        source: nga-2000-95-1
+        accessed: 2026-11-24
+  - owner: institution/stuttgarter-kunstkabinett-roman-norbert-ketterer
+    role: agent
+    acquired: 1955
+    method: auction
+    direct: true
+    place: stuttgart
+    label: sale, Stuttgart, 29 November – 1 December 1955, with other works from the Ulm Museum
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.116570.html
+        note: (sale, Stuttgarter Kunstkabinett Roman Norbert Ketterer, Stuttgart, 29 November – 1 December 1955);[3]
+        source: nga-2000-95-1
+        accessed: 2026-11-24
+  - owner: institution/hermann-gunther-abels
+    role: dealer
+    acquired: 1955
+    method: auction
+    direct: true
+    place: cologne
+    label: bought at the Stuttgart sale (gallery papers A-32, ZADIK)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.116570.html
+        note: (Hermann & Günther Abels, Cologne).[4] — The Abels’s purchase of the painting at the1955 Stuttgart sale is documented in the Hermann und Günther Abels gallery papers (A-32) at ZADIK
+        source: nga-2000-95-1
+        accessed: 2026-11-24
+  - owner: person/josef-rosensaft
+    co_owners: [person/hadassah-rosensaft]
+    acquired: 1956-01
+    method: purchase
+    direct: true
+    place: montreux
+    label: sale date from the Abels inventory sheet; Holocaust survivors, later in New York; not in his estate sale of 17 March 1976
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.116570.html
+        note: sold January 1956 to Josef [1911-1975] and Hadassah [1912-1997] Rosensaft, Montreux, Switzerland, and New York.[5]
+        source: nga-2000-95-1
+        accessed: 2026-11-24
+  - owner: person/frank-lloyd
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.116570.html
+        note: Frank Lloyd, New York.
+        source: nga-2000-95-1
+        accessed: 2026-11-24
+  - owner: institution/marlborough-gerson-gallery-inc
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.116570.html
+        note: (Marlborough-Gerson Gallery Inc., New York);[6]
+        source: nga-2000-95-1
+        accessed: 2026-11-24
+  - owner: person/alexander-m-laughlin
+    co_owners: [person/judith-walker-laughlin]
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: apparently bought from Marlborough-Gerson (no date)
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.116570.html
+        note: Mr. and Mrs. [1927-2020] Alexander M. Laughlin, New York; — [6] Documents from the donors to the Gallery … appear to indicate the painting was purchased from this New York gallery, but they do not include a date.
+        source: nga-2000-95-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 2000
+    method: gift
+    direct: true
+    place: washington-d-c
+    label: partial and promised gift 2000; gift completed 2024
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.116570.html
+        note: gift (partial and promised) 2000 to NGA; gift completed 2024.
+        source: nga-2000-95-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20190126
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20190126
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20190126
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20190126
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20190126
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20190126

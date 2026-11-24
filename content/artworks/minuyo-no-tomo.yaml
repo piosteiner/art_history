@@ -1,0 +1,35 @@
+public_id: 124520
+title: Minuyo no Tomo
+names:
+  - text: Minu Yo no Tomo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11630153
+  - lang: ja
+    role: translation
+    text: 見努世友
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11630153
+institution: idemitsu-museum-of-arts
+location: [139.7607, 35.67659]
+wikidata_id: Q11630153
+metadata:
+  sources: [Wikidata Q11630153 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/%E8%A6%8B%E5%8A%AA%E4%B8%96%E5%8F%8B.jpg/1280px-%E8%A6%8B%E5%8A%AA%E4%B8%96%E5%8F%8B.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E8%A6%8B%E5%8A%AA%E4%B8%96%E5%8F%8B.jpg
+    license: Public domain
+    credit: 是澤恭三
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11630153
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q11630153

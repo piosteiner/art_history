@@ -1,0 +1,197 @@
+public_id: 124692
+title_lang: en
+title: The Poplars at Saint-Rémy
+names:
+  - lang: en
+    role: original
+    text: Two Poplars in the Apilles near Saint-Rémy
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q26221176
+  - lang: en
+    role: original
+    text: Two Poplars in the Alpilles near Saint-Rémy
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q26221176
+  - lang: nl
+    role: translation
+    text: Populieren in Saint-Remy
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q26221176
+  - lang: fr
+    role: translation
+    text: Peupliers à Saint-Rémy
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q26221176
+  - lang: de
+    role: translation
+    text: Pappeln
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q26221176
+creator: vincent-van-gogh
+created: 1889-10
+materials: [oil paint, canvas]
+dimensions: [61.6, 45.7]
+institution: cleveland-museum-of-art
+inventory_number: "1958.32"
+web_url: http://www.vggallery.com/painting/p_0638.htm
+wikidata_id: Q26221176
+metadata:
+  sources: [Wikidata Q26221176 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/saint-remy-de-provence
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q26221176
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Two_Poplars_in_the_Alpilles_near_Saint-R%C3%A9my%2C_by_Vincent_Van_Gogh%2C_Cleveland_Museum_of_Art%2C_1958.32.tiff/lossy-page1-1280px-Two_Poplars_in_the_Alpilles_near_Saint-R%C3%A9my%2C_by_Vincent_Van_Gogh%2C_Cleveland_Museum_of_Art%2C_1958.32.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Two_Poplars_in_the_Alpilles_near_Saint-R%C3%A9my,_by_Vincent_Van_Gogh,_Cleveland_Museum_of_Art,_1958.32.tiff
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: person/theo-van-gogh
+    acquired: 1889
+    ended: 1891
+    method: inheritance
+    place: paris
+    label: from the artist's estate
+    sources:
+      - url: https://clevelandart.org/art/1958.32
+        note: "Theo van Gogh [1857-1891] Paris, France, by descent to the artist's brother from the artist's estate. [date: 1889–1891]"
+        source: cma-1958-32
+        accessed: 2026-11-24
+  - owner: person/johanna-van-gogh-bonger
+    acquired: 1891
+    ended: 1905
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://clevelandart.org/art/1958.32
+        note: "Johanna van Gogh-Bonger [1862-1915] his wife, Amsterdam, Netherlands, by gift to Willem Steenhoff. [date: 1891–1905]"
+        source: cma-1958-32
+        accessed: 2026-11-24
+  - owner: person/willem-steenhoff
+    acquired: 1905
+    ended: 1910
+    method: gift
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://clevelandart.org/art/1958.32
+        note: "Willem Steenhoff [1863-1932] Amsterdam, Netherlands, sold to Alfred Flechtheim [date: 1905–1910]"
+        source: cma-1958-32
+        accessed: 2026-11-24
+  - owner: person/alfred-flechtheim
+    role: dealer
+    acquired: 1910
+    method: purchase
+    direct: true
+    place: dusseldorf
+    sources:
+      - url: https://clevelandart.org/art/1958.32
+        note: "Alfred Flechtheim, Düsseldorf, Germany [date: 1910]"
+        source: cma-1958-32
+        accessed: 2026-11-24
+  - owner: person/max-siller
+    acquired: 1914 or earlier
+    place: barmen
+    sources:
+      - url: https://clevelandart.org/art/1958.32
+        note: "Max Siller, Barmen, Germany [date: 1914]"
+        source: cma-1958-32
+        accessed: 2026-11-24
+  - owner: person/paul-cassirer
+    role: dealer
+    acquired: 1914
+    place: berlin
+    sources:
+      - url: https://clevelandart.org/art/1958.32
+        note: "Paul Cassirer, Berlin [date: 1914]"
+        source: cma-1958-32
+        accessed: 2026-11-24
+  - owner: person/justin-k-thannhauser
+    role: dealer
+    acquired: 1927
+    label: Munich, Berlin, Lucerne
+    sources:
+      - url: https://clevelandart.org/art/1958.32
+        note: "Justin Thannhauser, Munich, Berlin, Lucerne [date: 1927]"
+        source: cma-1958-32
+        accessed: 2026-11-24
+  - owner: person/harry-sperling
+    acquired: 1940-07
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1958.32
+        note: "Harry Sperling [1925-1971] New York, NY [date: July 1940]"
+        source: cma-1958-32
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1946-03
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1958.32
+        note: "M. Knoedler and Co., New York, NY [date: March 1946]"
+        source: cma-1958-32
+        accessed: 2026-11-24
+  - owner: person/sam-salz
+    role: dealer
+    acquired: 1946-03
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1958.32
+        note: "Sam Salz, New York, NY [date: March 1946]"
+        source: cma-1958-32
+        accessed: 2026-11-24
+  - owner: person/leonard-c-hanna-jr
+    acquired: 1946-03-12
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1958.32
+        note: "Leonard C. Hanna, Jr, Cleveland, OH, purchased March 12, 1946 [date: 1946–1958] … Leonard C. Hanna, Jr. [1889-1957] Cleveland, OH, by bequest to the Cleveland Museum of Art"
+        source: cma-1958-32
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1958
+    method: bequest
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1958.32
+        note: "The Cleveland Museum of Art, Cleveland, OH [date: 1958–]"
+        source: cma-1958-32
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q26221176
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q26221176
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q26221176
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q26221176
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q26221176
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q26221176

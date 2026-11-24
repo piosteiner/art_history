@@ -1,0 +1,152 @@
+public_id: 123062
+title_lang: en
+title: Portrait of Titian
+names:
+  - lang: en
+    role: original
+    text: Imaginary Self-Portrait of Titian
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177320
+  - lang: it
+    role: translation
+    text: Ritratto di Tiziano Vecellio
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177320
+creator: pietro-della-vecchia
+created: 1650s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [112.2, 93.7]
+institution: national-gallery-of-art
+inventory_number: 1960.6.39
+wikidata_id: Q20177320
+metadata:
+  sources: [Wikidata Q20177320 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: artist/titian
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20177320
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q20177320
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Imaginary_Self-Portrait_of_Titian_E10856.jpg/1280px-Imaginary_Self-Portrait_of_Titian_E10856.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Imaginary_Self-Portrait_of_Titian_E10856.jpg
+    license: Public domain
+    credit: Pietro della Vecchia
+provenance:
+  - owner: person/francesco-fontana
+    acquired: 1676 or earlier
+    place: venice
+    label: Cavaliere Francesco Fontana; as by Titian
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46063.html
+        note: Possibly Cavaliere Francesco Fontana, Venice, by 1676 (as by Titian).[1]
+        source: nga-1960-6-39
+        accessed: 2026-11-24
+  - owner_label: family of Count Rackzinsky, Melbourne
+    label: according to Paolini's sale catalogue, Paolini bought it from this family; not identified in the collection of Count Atanazy Raczyński (1788–1874)
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46063.html
+        note: The catalogue of Paolini's sale states that Paolini purchased the painting from the family of Count Rackzinsky in Melbourne, Australia. The painting has not yet been identified in the collection of Count Atanazy Rackzinsky [1788-1874]
+        source: nga-1960-6-39
+        accessed: 2026-11-24
+  - owner: person/paolo-paolini
+    acquired: 1894 or earlier
+    method: purchase
+    place: rome
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46063.html
+        note: Paolo Paolini, Rome, 1894;[2]
+        source: nga-1960-6-39
+        accessed: 2026-11-24
+  - owner: institution/american-art-association
+    role: agent
+    acquired: 1924-12-10
+    method: auction
+    direct: true
+    place: new-york-city
+    label: his sale, 10–11 December 1924, no. 116, as by Titian
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46063.html
+        note: (his sale, American Art Association, New York, 10-11 December 1924, no. 116, as by Titian);
+        source: nga-1960-6-39
+        accessed: 2026-11-24
+  - owner: person/r-m-catts
+    acquired: 1924-12
+    method: auction
+    direct: true
+    label: as by Titian; the highest price at the sale
+    price:
+      amount: 9200
+      currency: USD
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46063.html
+        note: purchased by R. M. Catts (as by Titian).[3] — [3] … Thought to be by Titian, the painting fetched the highest price at the sale ($9,200).
+        source: nga-1960-6-39
+        accessed: 2026-11-24
+  - owner: institution/van-diemen-galleries
+    role: dealer
+    acquired: 1928 or earlier
+    place: new-york-city
+    label: as by Titian; offered to Andrew W. Mellon on 10 November 1928; sold from or kept by the New York branch until 1935
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46063.html
+        note: (Van Diemen Galleries, New York), by 1928 (as by Titian);[4] — [4] Letter of 10 November 1928 from Arthur von Dachne of the Van Diemen Galleries to Miss Randolph, secretary to Andrew W. Mellon, offering the painting for sale … had been sold from or remained with the New York branch until 1935.
+        source: nga-1960-6-39
+        accessed: 2026-11-24
+  - owner: person/william-r-timken
+    co_owners: [person/lillian-guyer-timken]
+    acquired: 1931 or earlier
+    place: new-york-city
+    label: Croton-on-Hudson, New York, and following Mr. Timken's death, New York City
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46063.html
+        note: William Robert Timken [1866-1949] and Lillian Guyer Timken [1881-1959], Croton-on-Hudson, New York, by 1931,[5] and following Mr. Timken's death, New York City;[6]
+        source: nga-1960-6-39
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1960
+    method: bequest
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46063.html
+        note: bequest 1960 to NGA.
+        source: nga-1960-6-39
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177320
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177320
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177320
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177320
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177320
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177320

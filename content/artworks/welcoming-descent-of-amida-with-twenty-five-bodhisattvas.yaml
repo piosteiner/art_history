@@ -1,0 +1,74 @@
+public_id: 122946
+title_lang: en
+title: Welcoming Descent of Amida with Twenty-Five Bodhisattvas
+created: 1325/1375
+kind: painting
+medium: Hanging scroll; ink, color, gold, silver, and cut gold on silk
+institution: cleveland-museum-of-art
+inventory_number: "2025.138"
+web_url: https://clevelandart.org/art/2025.138
+images:
+  - url: https://openaccess-cdn.clevelandart.org/2025.138/2025.138_web.jpg
+    source_url: https://clevelandart.org/art/2025.138
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: institution/seiryuzan-shogon-in-jochiji
+    acquired: 1688 or earlier
+    ended_label: at least 1854
+    place: tokushima-prefecture
+    label: temple 清瀧山荘厳院浄智寺, Awa (Tokushima), Shikoku; there at least until 1854
+    sources:
+      - url: https://clevelandart.org/art/2025.138
+        note: Seiryūzan Shōgon’in Jōchiji 清瀧山荘厳院浄智寺, Awa, Tokushima, Shikoku, Japan [by 1688–at least 1854]
+        source: cma-2025-138
+        accessed: 2026-11-24
+  - owner: person/hosomi-ryo
+    place: osaka
+    label: 細見良
+    sources:
+      - url: https://clevelandart.org/art/2025.138
+        note: Hosomi Ryo 細見良 [1901–1978], Osaka, Japan
+        source: cma-2025-138
+        accessed: 2026-11-24
+  - owner: person/robert-h-ellsworth
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/2025.138
+        note: Robert H. Ellsworth [1929–2014], New York, NY
+        source: cma-2025-138
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1996-03
+    method: auction
+    place: new-york-city
+    label: sale, Christie, Manson & Woods International Inc., New York, 29–30 March 1996, lot 405; sold to Tajima Mitsuru of London Gallery
+    sources:
+      - url: https://clevelandart.org/art/2025.138
+        note: (Christie, Manson & Woods International Inc., New York, NY, March 29–30, 1996 sale, Lot 405, sold to Tajima Mitsuru of London Gallery) [March 29–30, 1996]
+        source: cma-2025-138
+        accessed: 2026-11-24
+  - owner: institution/london-gallery-ltd
+    role: dealer
+    acquired: 1996-03
+    method: auction
+    direct: true
+    place: tokyo
+    label: bought at Christie's by Tajima Mitsuru of London Gallery; sold to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/2025.138
+        note: (London Gallery, Ltd., Tokyo, Japan, sold to the Cleveland Museum of Art) [1996–2025]
+        source: cma-2025-138
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2025
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/2025.138
+        note: The Cleveland Museum of Art, Cleveland, OH [2025–] — Leonard C. Hanna Jr. Fund
+        source: cma-2025-138
+        accessed: 2026-11-24

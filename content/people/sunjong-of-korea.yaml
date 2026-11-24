@@ -47,6 +47,16 @@ description_md: Ruler of the Korean Empire; its era name [[yunghui-era|Yunghui]]
 wikidata_id: Q334111
 metadata:
   sources: [Wikidata Q334111 (retrieved 2026-11-02)]
+relationships:
+  - type: child_of
+    to: person/gojong-of-korea
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q257425
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q334111
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Sunjong_of_the_Korean_Empire.jpg/1280px-Sunjong_of_the_Korean_Empire.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Sunjong_of_the_Korean_Empire.jpg

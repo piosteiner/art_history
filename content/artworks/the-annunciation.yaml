@@ -1,0 +1,322 @@
+public_id: 122956
+title_lang: en
+title: The Annunciation
+names:
+  - text: Annunciation
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176789
+  - lang: fr
+    role: translation
+    text: L'Annonciation
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176789
+  - lang: de
+    role: translation
+    text: Verkündigung
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176789
+  - lang: it
+    role: translation
+    text: Annunciazione
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176789
+creator: paolo-veronese
+attribution_label: Veronese and workshop
+created: c. 1580
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [98.4, 75.3]
+institution: national-gallery-of-art
+inventory_number: 1959.9.6
+wikidata_id: Q20176789
+metadata:
+  sources: [Wikidata Q20176789 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/The_Annunciation_sc983.jpg/1280px-The_Annunciation_sc983.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Annunciation_sc983.jpg
+    license: Public domain
+    credit: Paolo Veronese
+provenance:
+  - owner: person/victor-amadeus-prince-of-carignano
+    place: paris
+    label: Victor Amédée, 3rd prince de Carignan; paired with a Noli me tangere in this and the next four sales
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: Victor Amédée, 3rd prince de Carignan [1690-1741], Paris;
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/victor-amadeus-prince-of-carignano
+    role: estate
+    direct: true
+    place: paris
+    label: estate sale, Hôtel de Soissons, Paris, 30 July 1742 and following days, unnumbered lots, bought in; estate sale there, 18 June 1743 and following days, no. 101
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: (his estate sale, Hôtel de Soissons, Paris, 30 July 1742 and days following, unnumbered lots, bought in); (his estate sale, Hôtel de Soissons, Paris, 18 June 1743 and days following, no. 101);
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/louis-francois-de-bourbon-prince-de-conti
+    acquired: 1743-06-18
+    method: auction
+    direct: true
+    place: paris
+    label: bought for him by Thibaut at the Carignan sale
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: purchased by Thibaut for Louis François I de Bourbon, prince de Conti [1717-1776], Paris;
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/louis-francois-de-bourbon-prince-de-conti
+    role: estate
+    direct: true
+    place: paris
+    label: estate sale, Palais du Temple, Paris, 8 April 1777 and following days, no. 104
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: (his estate sale, Palais du Temple, Paris, 8 April 1777 and days following, no. 104);
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/antoine-poullain
+    acquired: 1777-04-08
+    method: auction
+    direct: true
+    place: paris
+    label: bought for him by the dealer Jacques Langlier, Paris, at the Conti sale; Receveur Général des Domaines du Roi; engraved in Basan's Collection de cent-vingt estampes (1781)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: purchased by (Jacques Langlier, Paris) for Antoine Poullain [d. 1780], Paris; — engravings after paintings that had belonged to the recently deceased “M. Poullain, Receveur Général des Domaines du Roi.”
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/antoine-poullain
+    role: estate
+    direct: true
+    place: paris
+    label: Poullain estate sale, Hôtel de Bullion, Paris, 15–21 March 1780, 3rd day, no. 4
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: (Poullain estate sale, Hôtel de Bullion, Paris, 15-21 March 1780, 3rd day, no. 4);
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/jean-baptiste-pierre-lebrun
+    role: dealer
+    acquired: 1780-03
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: (Jean Baptiste Pierre Le Brun, Paris);
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/joseph-hyacinthe-francois-de-paule-de-rigaud-comte-de-vaudreuil
+    direct: true
+    place: paris
+    label: his sale, Hôtel de Bullion, Paris, 24–25 November 1784, 2nd day, no. 6
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: Joseph Hyacinthe François de Paul de Rigaud, comte de Vaudreuil [1740-1817], Paris; (his sale, Hôtel de Bullion, Paris, 24-25 November 1784, 2nd day, no. 6);
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/jean-baptiste-pierre-lebrun
+    role: dealer
+    acquired: 1784-11-25
+    direct: true
+    place: paris
+    label: Paris and London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: (J.P.B. Le Brun, Paris and London);
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1785-03-19
+    method: auction
+    direct: true
+    place: london
+    label: Le Brun sale, London, 18–19 March 1785, 2nd day, no. 79; the Noli me tangere the next lot (no. 80)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: (Le Brun sale, Christie, Manson & Woods, London, 18-19 March 1785, 2nd day, no. 79);
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/welbore-ellis-agar-2
+    acquired: 1785-03-19
+    method: auction
+    direct: true
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: Welbore Ellis Agar [1735-1805], London;
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/welbore-felix-agar
+    co_owners: [person/emmanuel-felix-agar]
+    method: inheritance
+    direct: true
+    place: london
+    label: his sons; the collection was catalogued for a Christie's sale of 2–3 May 1806 (no. 34) that did not take place
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: by inheritance to his illegitimate sons, Welbore Felix Agar [d. 1836] and Sir Emmanuel Felix Agar [1781-1866]; — The Ellis Agar Collection was to be sold at Christie's, London, 2-3 May 1806, and a sale catalogue was produced (the NGA painting was no. 34)
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/robert-grosvenor-1st-marquess-of-westminster
+    acquired: 1806
+    method: purchase
+    direct: true
+    label: bought with the entire Agar collection for 30,000 guineas before the planned auction; Eaton Hall, Cheshire
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: purchased 1806 with the entire Agar collection by Robert Grosvenor, 1st marquess of Westminster [1767-1845], Eaton Hall, Cheshire, England;[1] — the complete collection was instead sold to Lord Grosvenor, for 30,000 guineas
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/richard-grosvenor-2nd-marquess-of-westminster
+    method: inheritance
+    direct: true
+    label: Eaton Hall, Cheshire
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: by inheritance to his son, Richard Grosvenor, 2nd marquess of Westminster [1795-1869], Eaton Hall;
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/hugh-lupus-grosvenor-1st-duke-of-westminster
+    method: inheritance
+    direct: true
+    label: Eaton Hall, Cheshire
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: by inheritance to his son, Hugh Lupus Grosvenor, 1st duke of Westminster [1825-1899], Eaton Hall;
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/hugh-richard-arthur-grosvenor-2nd-duke-of-westminster
+    method: inheritance
+    direct: true
+    label: his grandson; Eaton Hall, Cheshire
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: by inheritance to his grandson, Hugh Richard Arthur Grosvenor, 2nd duke of Westminster [1879-1953], Eaton Hall;
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1924-07-04
+    method: auction
+    direct: true
+    place: london
+    label: Westminster sale, London, 4 July 1924, no. 58
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: (Westminster sale, Christie, Manson & Woods, London, 4 July 1924, no. 58);
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner_label: Buttery, London
+    role: dealer
+    acquired: 1924-07-04
+    method: auction
+    direct: true
+    place: london
+    label: likely Ayerst Hooker Buttery (1868–1929), restorer and dealer
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: (Buttery, London).[2] — Buttery was likely Ayerst Hooker Buttery (1868-1929), a restorer and dealer.
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: institution/kunsthandlung-julius-bohler
+    role: dealer
+    place: munich
+    label: Munich and Lucerne
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: (Julius Böhler, Munich and Lucerne);
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/julius-h-haass
+    acquired: 1925-02-17
+    method: purchase
+    direct: true
+    place: detroit
+    label: the original bill of sale was sent to the NGA by his daughter Constance Haass McMath in 1962
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: sold 17 February 1925 to Julius H. Haass [1856-1931], Detroit;
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/lillian-henkel-haass
+    ended_label: until at least 1949
+    method: inheritance
+    direct: true
+    place: detroit
+    label: his wife; lent to a 1949 exhibition in Detroit
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: by inheritance to his wife, Lillian Henkel Haass [1879-1960], Detroit, until at least 1949.[3] — Mrs. Haass lent the painting to a 1949 exhibition in Detroit.
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: institution/newhouse-gallery
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: (Newhouse Galleries, New York).
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: person/frederick-mont
+    role: dealer
+    acquired: 1956 or earlier
+    place: new-york-city
+    label: Frederick Mont, Inc.; Betty Mont offered it to the Kress Foundation on 5 November 1956
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: (Frederick Mont, Inc., New York), from at least 1956; — Betty Mont wrote to Guy Emerson of the Kress Foundation on 5 November 1956 that they had "a lovely 'Annuncation' by Paolo Veronese" in their studio.
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1957-02-14
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: invoiced with three other paintings; paid in three instalments completed September 1957
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: sold 14 February 1957 to the Samuel H. Kress Foundation, New York;[4] — The invoice from Frederick Mont & Company to the Kress Foundation, for four paintings including the Veronese, is dated 14 February 1957
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1959
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45891.html
+        note: gift 1959 to NGA.
+        source: nga-1959-9-6
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20176789
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20176789
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20176789
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20176789
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20176789
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20176789

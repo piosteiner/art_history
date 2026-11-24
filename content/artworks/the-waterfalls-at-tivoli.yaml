@@ -1,0 +1,130 @@
+public_id: 122875
+title_lang: en
+title: The Waterfalls at Tivoli
+creator: claude-joseph-vernet
+created: 1737
+kind: oil painting
+medium: oil on canvas
+dimensions: [123.2, 172.6]
+institution: cleveland-museum-of-art
+inventory_number: "1984.175"
+web_url: https://clevelandart.org/art/1984.175
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1984.175/1984.175_web.jpg
+    source_url: https://clevelandart.org/art/1984.175
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/lucien-bonaparte
+    ended: 1812
+    place: ludlow
+    sources:
+      - url: https://clevelandart.org/art/1984.175
+        note: Prince Lucien Bonaparte (1775-1840), Ludlow, England [-1812]
+        source: cma-1984-175
+        accessed: 2026-11-24
+  - owner: person/william-buchanan
+    acquired: 1815 or earlier
+    sources:
+      - url: https://clevelandart.org/art/1984.175
+        note: William Buchanan [By 1815]
+        source: cma-1984-175
+        accessed: 2026-11-24
+  - owner_label: Lapeyrière
+    ended: 1825-03-14
+    place: paris
+    label: Lapeyrière sale, Paris, 14 March 1825
+    sources:
+      - url: https://clevelandart.org/art/1984.175
+        note: "Sale: Lapeyrière, Paris, France, March 14, 1825 [March 14, 1825]"
+        source: cma-1984-175
+        accessed: 2026-11-24
+  - owner_label: Boursault
+    place: paris
+    label: sold in Paris, May 1832, through H. Artaria to Edmund Higginson
+    sources:
+      - url: https://clevelandart.org/art/1984.175
+        note: Boursault, sold, Paris, May 1832, through H. Artaria to Edmund Higginson
+        source: cma-1984-175
+        accessed: 2026-11-24
+  - owner: person/h-artaria
+    role: agent
+    acquired: 1832-05
+    direct: true
+    place: paris
+    label: intermediary in the sale from Boursault to Edmund Higginson
+    sources:
+      - url: https://clevelandart.org/art/1984.175
+        note: Boursault, sold, Paris, May 1832, through H. Artaria to Edmund Higginson
+        source: cma-1984-175
+        accessed: 2026-11-24
+  - owner: person/edmund-higginson
+    acquired: 1832-05
+    ended: 1846-06
+    method: purchase
+    direct: true
+    label: Saltmarshe Castle; sold, London, 4–6 June 1846
+    sources:
+      - url: https://clevelandart.org/art/1984.175
+        note: Edmund Higginson, 1802 - 1871 (Saltmarshe Castle, England) (sold, London, June 4-6, 1846) [1832-1846]
+        source: cma-1984-175
+        accessed: 2026-11-24
+  - owner: person/charles-vere-townshend
+    ended: 1853
+    label: Lord Charles Vere Townshend; held in trust by the estate after his death
+    sources:
+      - url: https://clevelandart.org/art/1984.175
+        note: Lord Charles Vere Townshend, 1785 - 1853, upon his death, held in trust by the estate [-1853]
+        source: cma-1984-175
+        accessed: 2026-11-24
+  - owner: person/charles-vere-townshend
+    role: estate
+    acquired: 1853
+    ended: 1854-05-13
+    method: inheritance
+    direct: true
+    place: london
+    label: estate sale, London, 13 May 1854
+    sources:
+      - url: https://clevelandart.org/art/1984.175
+        note: Estate of Lord Charles Vere Townshend (sold, London, May 13, 1854); [1853-1854]
+        source: cma-1984-175
+        accessed: 2026-11-24
+  - owner: institution/frost-reed
+    role: dealer
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1984.175
+        note: Frost & Reed (London, England), sold to Siegfried Sassoon, 1949 [-1949]
+        source: cma-1984-175
+        accessed: 2026-11-24
+  - owner_label: Siegfried Sassoon (as the museum names the owner; not identified — the poet died in 1967)
+    acquired: 1949
+    method: purchase
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1984.175
+        note: Siegfried Sassoon (sold, Sotheby's, London, 1984, to the Cleveland Museum of Art) [1949-1984]
+        source: cma-1984-175
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1984
+    method: auction
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1984.175
+        note: Siegfried Sassoon (sold, Sotheby's, London, 1984, to the Cleveland Museum of Art)
+        source: cma-1984-175
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1984
+    method: auction
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1984.175
+        note: The Cleveland Museum of Art, Cleveland, OH [1984-]
+        source: cma-1984-175
+        accessed: 2026-11-24

@@ -1,0 +1,42 @@
+public_id: 124504
+title: Dōjigiri
+names:
+  - lang: ja
+    role: translation
+    text: 童子切
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11598454
+creator: yasutsuna
+institution: tokyo-national-museum
+inventory_number: F-19931
+web_url: https://emuseum.nich.go.jp/detail?content_base_id=100186&content_part_id=001&content_pict_id=001&langId=ja&webView=null
+location: [139.7756, 35.71994]
+wikidata_id: Q11598454
+metadata:
+  sources: [Wikidata Q11598454 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Tachi_Sword_-_Dojikiri_Yasutsuna.jpg/1280px-Tachi_Sword_-_Dojikiri_Yasutsuna.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tachi_Sword_-_Dojikiri_Yasutsuna.jpg
+    license: CC BY-SA 4.0
+    credit: Kakidai
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q11598454
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11598454
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q11598454
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q11598454

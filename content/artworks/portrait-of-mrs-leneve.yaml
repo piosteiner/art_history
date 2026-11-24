@@ -1,0 +1,156 @@
+public_id: 122892
+title_lang: en
+title: Portrait of Mrs. Leneve
+creator: peter-lely
+created: c. 1657
+created_span: uncertain
+kind: oil painting
+medium: oil on canvas
+dimensions: [126.7, 101.3]
+institution: cleveland-museum-of-art
+inventory_number: "1942.247"
+web_url: https://clevelandart.org/art/1942.247
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1942.247/1942.247_web.jpg
+    source_url: https://clevelandart.org/art/1942.247
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner_label: family of the sitter (Leneve family)
+    label: by descent to Isabella Leneve
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: family of the sitter, by descent to Isabella Leneve
+        source: cma-1942-247
+        accessed: 2026-11-24
+  - owner: person/isabella-leneve
+    method: inheritance
+    direct: true
+    label: by descent to her nephew, Peter Leneve
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: Isabelle Leneve, by descent to her nephew, Peter Leneve
+        source: cma-1942-247
+        accessed: 2026-11-24
+  - owner: person/peter-leneve
+    method: inheritance
+    direct: true
+    place: norwich
+    label: sold to Horace Walpole; with Mrs. Peter Leneve
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: Mr. and Mrs. Peter Leneve, Norwich, sold to Horace Walpole [?-1759]
+        source: cma-1942-247
+        accessed: 2026-11-24
+  - owner: person/horace-walpole
+    acquired: 1759-09-03
+    ended: 1797
+    method: purchase
+    direct: true
+    place: strawberry-hill
+    label: Strawberry Hill, Middlesex; paid 30 guineas for two portraits of the Leneve family (Lewis Walpole Library)
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: Horace Walpole [1717-1797] Strawberry Hill, Middlesex, England, to Earl of Waldegrave [1759-1797] — Horace Walpole paid 30 guineas for two portraits of the Leneve family on September 3, 1759, according to document in Yale University's Lewis Walpole Library.
+        source: cma-1942-247
+        accessed: 2026-11-24
+  - owner_label: the Earls Waldegrave
+    acquired: 1797
+    direct: true
+    place: strawberry-hill
+    label: consigned to the Strawberry Hill sale, 1842
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: The Earls Waldegrave, consigned to Strawberry Hill sale, April 25, 1842, no. 61) [1797-1842]
+        source: cma-1942-247
+        accessed: 2026-11-24
+  - owner_label: Robins (auctioneer)
+    role: agent
+    acquired: 1842-04-25
+    method: auction
+    direct: true
+    place: strawberry-hill
+    label: Strawberry Hill sale from 25 April 1842; lot 61 sold on the 21st day, 18 May 1842, to Dommes
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: (Robins sale, Strawberry Hill, May 18, 1842, sold to Dommes) [1842] — The portrait was sold as lot 61 on the 21st day of the Strawberry Hill sale, May 18, 1842 for £31.10 to Dommes.
+        source: cma-1942-247
+        accessed: 2026-11-24
+  - owner_label: Dommes
+    acquired: 1842-05-18
+    method: auction
+    direct: true
+    price:
+      amount: 31.5
+      currency: GBP
+      note: £31.10 (31 pounds 10 shillings)
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: Dommes [1842-?] — Dommes purchased the portrait
+        source: cma-1942-247
+        accessed: 2026-11-24
+  - owner: person/hugh-hume-campbell
+    label: Sir Hugh Hume Campbell, Bart.; sold at Christie's, London
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: Sir Hugh Hume Campbell, Bart., sold at Christie’s, London [?-1894]
+        source: cma-1942-247
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1894-06-16
+    method: auction
+    direct: true
+    place: london
+    label: sale, no. 26, to Prideaux
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: (Christie’s, London, June 16, 1894, no. 26, to Prideaux) [1894]
+        source: cma-1942-247
+        accessed: 2026-11-24
+  - owner_label: Prideaux
+    acquired: 1894-06-16
+    method: auction
+    direct: true
+    label: until 1909?
+    price:
+      amount: 39.9
+      currency: GBP
+      note: £39.18 (39 pounds 18 shillings), unframed
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: Prideaux [1894-1909?] — Prideaux purchased the portrait at the Christie's London sale on June 16, 1984 unframed for £39.18
+        source: cma-1942-247
+        accessed: 2026-11-24
+  - owner: person/r-c-vose
+    co_owners: [person/n-m-vose]
+    role: dealer
+    acquired: 1909
+    place: boston
+    label: sold to Mrs. Otto Miller
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: R. C. Vose and N. M. Vose, Boston, sold to Mrs. Otto Miller [1909-1915]
+        source: cma-1942-247
+        accessed: 2026-11-24
+  - owner_label: Mrs. Otto Miller, Cleveland
+    acquired: 1915
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: Mrs. Otto Miller, Cleveland, by gift to the Cleveland Museum of Art [1915-1942]
+        source: cma-1942-247
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1942
+    method: gift
+    direct: true
+    place: cleveland
+    label: Gift of Mrs. Otto Miller, inv. 1942.247
+    sources:
+      - url: https://clevelandart.org/art/1942.247
+        note: The Cleveland Museum of Art, Cleveland, OH [1942-]
+        source: cma-1942-247
+        accessed: 2026-11-24

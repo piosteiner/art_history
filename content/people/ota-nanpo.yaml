@@ -1,0 +1,88 @@
+public_id: 122585
+name: Ōta Nanpo
+names:
+  - lang: ja
+    role: original
+    text: 大田南畝
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q386183
+  - text: Yomo no Akara
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q386183
+  - text: Ōta Shokusanjin
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q386183
+  - text: Ota Nanpo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q386183
+  - text: Ōta Fukashi
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q386183
+  - text: Ōta Nampo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q386183
+  - text: Ota Shokusanjin
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q386183
+  - text: Ota Fukashi
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q386183
+  - text: Ota Nampo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q386183
+  - lang: es
+    role: translation
+    text: Nanpo Ōta
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q386183
+  - lang: ko
+    role: translation
+    text: 오타 난포
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q386183
+kind: person
+occupations: [poet, bureaucrat, writer]
+birth: 1749-04-19
+death: 1823-05-16
+wikidata_id: Q386183
+metadata:
+  sources: [Wikidata Q386183 (retrieved 2026-11-23)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6e/%E5%A4%A7%E7%94%B0%E5%8D%97%E7%95%9D_%E8%BF%91%E4%B8%96%E5%90%8D%E5%AE%B6%E8%82%96%E5%83%8F.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E7%94%B0%E5%8D%97%E7%95%9D_%E8%BF%91%E4%B8%96%E5%90%8D%E5%AE%B6%E8%82%96%E5%83%8F.jpg
+    license: Public domain
+    credit: 谷文晁
+identifiers:
+  bnf: 15639030m
+  gnd: "137792522"
+  idref: "117990531"
+  lc: n79144896
+  viaf: "39704216"
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q386183
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q386183
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q386183
+  occupations:
+    - accessed: 2026-11-23
+      property: P106
+      wikidata: Q386183

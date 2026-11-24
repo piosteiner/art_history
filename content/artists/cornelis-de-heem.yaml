@@ -26,6 +26,15 @@ relationships:
       - accessed: 2026-11-12
         property: P20
         wikidata: Q1133621
+  - type: child_of
+    to: artist/jan-davidsz-de-heem
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q454656
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q1133621
 identifiers:
   bnf: 14975684f
   dome: "10610"

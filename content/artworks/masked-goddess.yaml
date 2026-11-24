@@ -1,0 +1,68 @@
+public_id: 124323
+title: Masked Goddess
+names:
+  - text: Kamen no Megami
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045454
+  - lang: fr
+    role: translation
+    text: Déesse masquée
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045454
+  - lang: ja
+    role: translation
+    text: 土偶／長野県中ッ原遺跡出土
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045454
+institution: togariishi-jomon-archaeological-museum
+location: [138.2339, 36.01358]
+wikidata_id: Q107045454
+metadata:
+  sources: [Wikidata Q107045454 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/chino
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/%E4%BB%AE%E9%9D%A2%E3%81%AE%E5%A5%B3%E7%A5%9E.jpg/1280px-%E4%BB%AE%E9%9D%A2%E3%81%AE%E5%A5%B3%E7%A5%9E.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E4%BB%AE%E9%9D%A2%E3%81%AE%E5%A5%B3%E7%A5%9E.jpg
+    license: CC BY-SA 4.0
+    credit: Aqua Regia 9278
+provenance:
+  - owner_label: excavation of the Nakappara site
+    acquired: 2000-08-23
+    method: find
+    place: chino
+    label: found lying in a small hole in pit no. 70, a probable burial pit, during excavations 1999–2001 ahead of farmland improvement works; right leg intentionally broken
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011237
+        note: 平成十一年、この台地一帯で農地基盤整備事業が計画され、同年から平成13年にかけて発掘調査が行われた。… 土偶は、この土坑群のうち、第70号土坑内 … に掘り込まれた不整円形を呈する小穴（径50センチメートル）の内部から … 出土した。
+        source: kunishitei-201-00011237
+        accessed: 2026-11-24
+      - url: https://www.city.chino.lg.jp/site/togariishi/1751.html
+        note: The "Dogu" ("Kamen no Megami") [Clay Figurine (Masked Goddess)] of the Nakappara site Excavated on Aug. 23, 2000
+        source: chino-togariishi-masked-goddess
+        accessed: 2026-11-24
+  - owner: place/chino
+    label: "owner: the City of Chino"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011237
+        note: 所有者名 ： 茅野市
+        source: kunishitei-201-00011237
+        accessed: 2026-11-24
+  - owner: institution/togariishi-jomon-archaeological-museum
+    role: custodian
+    place: chino
+    label: kept at the city's Togariishi museum
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011237
+        note: 保管施設の名称 ： 茅野市尖石縄文考古館 所有者名 ： 茅野市
+        source: kunishitei-201-00011237
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107045454

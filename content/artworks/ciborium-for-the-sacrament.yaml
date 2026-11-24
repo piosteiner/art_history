@@ -1,0 +1,143 @@
+public_id: 122862
+title_lang: en
+title: Ciborium for the Sacrament
+materials: [marble]
+dimensions: [322.1, 80.8, 69.9]
+institution: national-gallery-of-art
+inventory_number: 1952.5.100
+provenance_status: d_seized
+provenance_status_note: Appears to have been part of Alphons de Rothschild's Vienna collection confiscated by the Nazis in 1938 and stored at the Kunsthistorisches Museum; returned to the Rothschilds by 1951.
+wikidata_id: Q63809404
+metadata:
+  sources: [Wikidata Q63809404 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Florentine_15th_Century%2C_possibly_after_a_model_by_Desiderio_da_Settignano%3B_Florentine_19th_Century%2C_NGA_41715.jpg/1280px-Florentine_15th_Century%2C_possibly_after_a_model_by_Desiderio_da_Settignano%3B_Florentine_19th_Century%2C_NGA_41715.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Florentine_15th_Century,_possibly_after_a_model_by_Desiderio_da_Settignano;_Florentine_19th_Century,_NGA_41715.jpg
+    license: CC0
+    credit: Florentine 15th Century, possibly after a model by Desiderio da Settignano (stem with integral base); Florentine 19th Century (dome, enclosure, base beneath enclosure, finial, bottom plinth)
+provenance:
+  - owner: institution/san-pier-maggiore
+    ended: 1783
+    place: florence
+    label: until the church partially collapsed in 1783
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41715.html
+        note: S. Pier Maggiore, Florence, until 1783, when the church partially collapsed.
+        source: nga-1952-5-100
+        accessed: 2026-11-24
+  - owner_label: a marble worker's shop in Piazza della Madonna, Florence
+    place: florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41715.html
+        note: A marble worker's shop in Piazza della Madonna, Florence.
+        source: nga-1952-5-100
+        accessed: 2026-11-24
+  - owner: person/tito-gagliardi
+    role: dealer
+    place: florence
+    label: via della Scala
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41715.html
+        note: (Tito Gagliardi, via della Scala, Florence);
+        source: nga-1952-5-100
+        accessed: 2026-11-24
+  - owner: person/nathaniel-de-rothschild
+    acquired: c. 1880
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41715.html
+        note: sold c. 1880 to Nathaniel de Rothschild [1836-1905], Vienna;[1]
+        source: nga-1952-5-100
+        accessed: 2026-11-24
+  - owner: person/alphons-de-rothschild
+    method: inheritance
+    direct: true
+    place: vienna
+    label: nephew of Nathaniel de Rothschild
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41715.html
+        note: his nephew, Baron Alphons de Rothschild [1878-1942], Vienna;[2]
+        source: nga-1952-5-100
+        accessed: 2026-11-24
+  - owner_label: the Nazi authorities, Vienna
+    role: possessor
+    acquired: 1938
+    method: confiscation
+    place: vienna
+    label: confiscated by the Nazis with the Vienna collection of Alphons de Rothschild
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41715.html
+        note: "[2] This object appears to have been part of the Vienna collection of Alphons de Rothschild that was confiscated by the Nazis in 1938 and stored at the Kunsthistoriches Museum in Vienna."
+        source: nga-1952-5-100
+        accessed: 2026-11-24
+  - owner: institution/kunsthistorisches-museum-wien
+    role: custodian
+    method: transfer
+    place: vienna
+    label: stored in the museum's storeroom; location published 1942 by Leo Planiscig
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41715.html
+        note: "stored at the Kunsthistoriches Museum in Vienna. Its location was published in 1942 as the storeroom of the Kunsthistoriches Museum by Leo Planiscig, _Desiderio da Settignano_, Vienna, 1942: 22."
+        source: nga-1952-5-100
+        accessed: 2026-11-24
+  - owner: person/clarice-de-rothschild
+    acquired: 1951 or earlier
+    method: restitution
+    label: widow of Alphons de Rothschild; returned to the Rothschilds by 1951
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41715.html
+        note: his widow, Baroness Clarice de Rothschild [1894-1967]; … It was returned to the Rothschilds by 1951 when it was acquired by the Kress Foundation from the Baroness de Rothschild
+        source: nga-1952-5-100
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: agent
+    acquired: 1951
+    direct: true
+    place: new-york-city
+    label: sold through them
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41715.html
+        note: sold 1951 through (Rosenberg & Stiebel, New York)
+        source: nga-1952-5-100
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41715.html
+        note: sold 1951 through (Rosenberg & Stiebel, New York) to the Samuel H. Kress Foundation, New York;
+        source: nga-1952-5-100
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41715.html
+        note: gift 1952 to NGA.
+        source: nga-1952-5-100
+        accessed: 2026-11-24
+sources:
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63809404
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q63809404
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63809404
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63809404

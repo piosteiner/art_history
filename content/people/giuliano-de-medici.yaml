@@ -1,0 +1,23 @@
+public_id: 122913
+name: Giuliano de' Medici
+given_name: Giuliano de'
+family_name: Medici
+kind: person
+birth: 1453-11-06
+death: 1478-05-05
+wikidata_id: Q298877
+metadata:
+  sources: [Wikidata Q298877 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q298877
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q298877
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q298877

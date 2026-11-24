@@ -1,0 +1,53 @@
+public_id: 126371
+name: Kassel
+names:
+  - lang: ja
+    role: translation
+    text: カッセル
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2865
+  - lang: zh
+    role: translation
+    text: 卡塞尔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2865
+  - lang: ko
+    role: translation
+    text: 카셀
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2865
+  - lang: fr
+    role: translation
+    text: Cassel
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2865
+  - lang: ru
+    role: translation
+    text: Кассель
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2865
+kind: settlement
+parent: hessen
+country_code: DE
+location: [9.49792, 51.31578]
+wikidata_id: Q2865
+metadata:
+  sources: [Wikidata Q2865 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2865
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2865
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2865

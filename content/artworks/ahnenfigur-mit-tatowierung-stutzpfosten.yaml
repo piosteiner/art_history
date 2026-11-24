@@ -1,0 +1,72 @@
+public_id: 123861
+title_lang: de
+title: Ahnenfigur mit Tätowierung (Stützpfosten)
+attribution_label: Anonymous
+created: 19th century
+created_span: uncertain
+kind: architectural element
+medium: Holz
+dimensions: [198.5, 45]
+institution: museum-rietberg
+inventory_number: RPO 15
+web_url: https://rietberg.ch/sammlungen/rpo-15
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Maori_St%C3%BCtzpfosten_Museum_Rietberg_RPO_15.jpg/1280px-Maori_St%C3%BCtzpfosten_Museum_Rietberg_RPO_15.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maori_Stützpfosten_Museum_Rietberg_RPO_15.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: 19th century
+    method: creation
+    label: made in New Zealand (Māori)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rpo-15
+        note: "19. Jh.: Urheber*in unbekannt, in Neuseeland"
+        source: rietberg-rpo-15
+        accessed: 2026-11-24
+  - owner: person/julius-wilhelm-bohler
+    co_owners: [person/regina-bohler-thiem]
+    acquired: before 1961
+    label: circumstances of acquisition unknown; list of loans of 3 October 1961
+    sources:
+      - url: https://rietberg.ch/sammlungen/rpo-15
+        note: |-
+          vor 1961: Julius Wilhelm und Regina Böhler, Erwerbsumstände unbekannt
+          MRZ Archiv, S.0003-0004, Liste der Leihgaben vom 03.10.1961
+        source: rietberg-rpo-15
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    role: custodian
+    acquired: 1961-10-03
+    direct: true
+    place: zurich
+    label: received on loan
+    sources:
+      - url: https://rietberg.ch/sammlungen/rpo-15
+        note: |-
+          03.10.1961: Museum Rietberg, als Leihgabe erhalten in Zürich
+          MRZ Archiv, S.0003-0004, Liste der Leihgaben vom 03.10.1961
+        source: rietberg-rpo-15
+        accessed: 2026-11-24
+  - owner: person/regina-bohler-thiem
+    acquired: 1966
+    method: inheritance
+    place: kriens
+    sources:
+      - url: https://rietberg.ch/sammlungen/rpo-15
+        note: "1966: Regina Böhler-Thiem (†1981), durch Erbgang erworben in Kriens"
+        source: rietberg-rpo-15
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1981-11
+    method: bequest
+    place: zurich
+    label: bequest of Regina Böhler; part of a larger permanent loan, the other loans went back to Julius Gustav Böhler (1929–2010)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rpo-15
+        note: |-
+          11.1981: Museum Rietberg, aus Legat erhalten in Zürich
+          MRZ Archiv S.0003-0004, Vermächtnisanzeige. Die Objekte waren Teil einer grösseren Dauerleihgabe, die restlichen Leihgaben gingen zurück an Julius Gustav Böhler (1929–2010).
+        source: rietberg-rpo-15
+        accessed: 2026-11-24

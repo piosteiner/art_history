@@ -1,0 +1,61 @@
+public_id: 124479
+title: Great Buddha of Kamakura
+names:
+  - text: The Great Buddha of Kamakura
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12366269
+  - text: Kamakura Daibutsu
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12366269
+  - text: Kamakura Great Buddha
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12366269
+  - lang: fr
+    role: translation
+    text: grand Bouddha de Kamakura
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12366269
+  - lang: ja
+    role: translation
+    text: 鎌倉大仏
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12366269
+created: 13th century
+created_span: uncertain
+materials: [bronze]
+dimensions: [1335]
+location: [139.5357, 35.31685]
+wikidata_id: Q12366269
+metadata:
+  sources: [Wikidata Q12366269 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/kamakura
+    period: 13th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Kamakura_Budda_Daibutsu_front_1885.jpg/1280px-Kamakura_Budda_Daibutsu_front_1885.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kamakura_Budda_Daibutsu_front_1885.jpg
+    license: CC BY-SA 3.0
+    credit: Dirk Beyer
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q12366269
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q12366269
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q12366269
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q12366269

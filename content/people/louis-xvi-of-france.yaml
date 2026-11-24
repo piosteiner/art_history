@@ -37,6 +37,16 @@ death: 1793-01-21
 wikidata_id: Q7732
 metadata:
   sources: [Wikidata Q7732 (retrieved 2026-10-20)]
+relationships:
+  - type: sibling_of
+    to: person/louis-xviii-of-france
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q7732
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q7750
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Mus%C3%A9e_Ingres-Bourdelle_-_Portrait_de_Louis_XVI_-_Joseph-Siffred_Duplessis_-_Joconde06070000102.jpg/1280px-Mus%C3%A9e_Ingres-Bourdelle_-_Portrait_de_Louis_XVI_-_Joseph-Siffred_Duplessis_-_Joconde06070000102.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Ingres-Bourdelle_-_Portrait_de_Louis_XVI_-_Joseph-Siffred_Duplessis_-_Joconde06070000102.jpg

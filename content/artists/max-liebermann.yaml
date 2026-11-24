@@ -47,6 +47,15 @@ relationships:
       - accessed: 2026-10-30
         property: P112
         wikidata: Q700347
+  - type: married_to
+    to: person/martha-liebermann
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q29053814
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q158062
   - type: relative_of
     to: person/adolph-von-liebermann
     label: uncle of Max Liebermann (brother of his father Louis)

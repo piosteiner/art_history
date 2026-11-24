@@ -12,6 +12,16 @@ occupations: [art collector]
 wikidata_id: Q113629882
 metadata:
   sources: [Wikidata Q113629882 (retrieved 2026-10-31)]
+relationships:
+  - type: child_of
+    to: person/otto-gerstenberg
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q2038895
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q113629882
 identifiers:
   viaf: "301434730"
 sources:

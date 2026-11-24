@@ -1,0 +1,58 @@
+public_id: 125251
+title_lang: en
+title: The Crucifixion
+names:
+  - lang: de
+    role: original
+    text: Kreuzigung
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268400
+  - lang: fr
+    role: translation
+    text: La Crucifixion
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268400
+creator: carlo-crivelli
+created: c. 1487
+created_span: uncertain
+dimensions: [75, 55.2]
+institution: art-institute-of-chicago
+inventory_number: "1929.862"
+wikidata_id: Q20268400
+metadata:
+  sources: [Wikidata Q20268400 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/jesus-christ
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20268400
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Carlo_Crivelli_-_The_Crucifixion_-_1929.862_-_Art_Institute_of_Chicago.jpg/1280px-Carlo_Crivelli_-_The_Crucifixion_-_1929.862_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carlo_Crivelli_-_The_Crucifixion_-_1929.862_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Carlo Crivelli
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268400
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20268400
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20268400
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268400
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268400

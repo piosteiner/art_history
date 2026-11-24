@@ -1,0 +1,23 @@
+public_id: 124630
+name: Guillaume Dubois
+given_name: Guillaume
+family_name: Dubois
+kind: person
+birth: 1656-09-06
+death: 1723-08-10
+wikidata_id: Q542800
+metadata:
+  sources: [Wikidata Q542800 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q542800
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q542800
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q542800

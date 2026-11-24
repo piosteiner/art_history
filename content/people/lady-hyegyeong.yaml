@@ -25,6 +25,16 @@ death: 1815-12-15
 wikidata_id: Q484267
 metadata:
   sources: [Wikidata Q484267 (retrieved 2026-11-01)]
+relationships:
+  - type: married_to
+    to: person/crown-prince-sado
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q484267
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q492998
 identifiers:
   bnf: 12177227b
   gnd: "118977237"

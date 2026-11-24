@@ -1,0 +1,74 @@
+public_id: 125259
+title_lang: fr
+title: Le Comte Amédée-David de Pastoret
+names:
+  - lang: en
+    role: translation
+    text: Amédée-David, the Comte de Pastoret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q15615053
+  - lang: es
+    role: translation
+    text: Conde Amédée-David de Pastoret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q15615053
+  - lang: ja
+    role: translation
+    text: アメデ＝ダヴィッド・ド・パストレ伯爵の肖像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q15615053
+  - lang: ru
+    role: translation
+    text: Амеде-Дэвид де Пасторе
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q15615053
+creator: jean-auguste-dominique-ingres
+created: 1823
+materials: [oil paint, canvas]
+dimensions: [103, 83.5]
+institution: art-institute-of-chicago
+inventory_number: "1971.452"
+wikidata_id: Q15615053
+metadata:
+  sources: [Wikidata Q15615053 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/amedee-david-de-pastoret
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q15615053
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Jean_Auguste_Dominique_Ingres_-_Am%C3%A9d%C3%A9e-David%2C_the_Comte_de_Pastoret_-_1971.452_-_Art_Institute_of_Chicago.jpg/1280px-Jean_Auguste_Dominique_Ingres_-_Am%C3%A9d%C3%A9e-David%2C_the_Comte_de_Pastoret_-_1971.452_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean_Auguste_Dominique_Ingres_-_Am%C3%A9d%C3%A9e-David,_the_Comte_de_Pastoret_-_1971.452_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Jean-Auguste-Dominique Ingres
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q15615053
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q15615053
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q15615053
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q15615053
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q15615053
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q15615053

@@ -1,0 +1,16 @@
+public_id: 124112
+name: Kokawa-dera Temple
+kind: site
+location: [135.40591, 34.28096]
+wikidata_id: Q5358314
+metadata:
+  sources: [Wikidata Q5358314 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q5358314
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q5358314

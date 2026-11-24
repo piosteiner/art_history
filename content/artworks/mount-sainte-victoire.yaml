@@ -1,0 +1,137 @@
+public_id: 122879
+title_lang: en
+title: Mount Sainte-Victoire
+creator: paul-cezanne
+created: c. 1904
+created_span: uncertain
+kind: oil painting
+medium: oil on fabric
+dimensions: [72.2, 92.4]
+institution: cleveland-museum-of-art
+inventory_number: "1958.21"
+web_url: https://clevelandart.org/art/1958.21
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1958.21/1958.21_web.jpg
+    source_url: https://clevelandart.org/art/1958.21
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: artist/paul-cezanne
+    role: estate
+    acquired: 1906-10-22
+    ended: 1907-03-11
+    sources:
+      - url: https://clevelandart.org/art/1958.21
+        note: Estate of Paul Cezanne [October 22, 1906–March 11, 1907]
+        source: cma-1958-21
+        accessed: 2026-11-24
+  - owner: person/ambroise-vollard
+    acquired: 1907-03-11
+    method: purchase
+    direct: true
+    place: paris
+    label: bought from the estate of Paul Cezanne
+    sources:
+      - url: https://clevelandart.org/art/1958.21
+        note: Ambroise Vollard [1866-1939] Paris, France (Purchase from the Estate of Paul Cezanne). [March 11, 1907]
+        source: cma-1958-21
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1922
+    label: 'as given: "Bernheim-Jeune [sale by Rosenberg Gallery]"'
+    sources:
+      - url: https://clevelandart.org/art/1958.21
+        note: Bernheim-Jeune [sale by Rosenberg Gallery] [1922]
+        source: cma-1958-21
+        accessed: 2026-11-24
+  - owner: institution/galerie-barbazanges
+    role: dealer
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1958.21
+        note: Galerie Barbazanges, Paris France
+        source: cma-1958-21
+        accessed: 2026-11-24
+  - owner: person/auguste-pellerin
+    acquired: 1923
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1958.21
+        note: Auguste Pellerin [1853-1929], Paris, France [1923]
+        source: cma-1958-21
+        accessed: 2026-11-24
+  - owner: person/alphonse-kann
+    acquired: 1924
+    method: purchase
+    direct: true
+    place: saint-germain-en-laye
+    label: bought from Auguste Pellerin
+    sources:
+      - url: https://clevelandart.org/art/1958.21
+        note: Alphonse Kann [1870-1948] Saint-Germain-en Laye, Paris, France. (Purchase from Auguste Pellerin) [1924]
+        source: cma-1958-21
+        accessed: 2026-11-24
+  - owner: institution/reinhardt-galleries
+    role: dealer
+    acquired: 1926
+    ended_label: 1934?
+    place: new-york-city
+    label: exhibited at M. Goldschmidt & Co., Berlin, 1928 (ownership not published)
+    sources:
+      - url: https://clevelandart.org/art/1958.21
+        note: (Reinhardt Galleries, New York, NY) [1926–1934?] — Exhibition at M. Goldschmidt & Co., Berlin in 1928; ownership not published
+        source: cma-1958-21
+        accessed: 2026-11-24
+  - owner: person/paul-guillaume
+    acquired: 1934 or earlier
+    ended: 1934
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1958.21
+        note: Paul Guillaume (1891-1934), Paris [By 1934]
+        source: cma-1958-21
+        accessed: 2026-11-24
+  - owner: person/domenica-walter-guillaume
+    acquired: 1934
+    method: inheritance
+    direct: true
+    place: paris
+    label: Juliette "Domenica" Guillaume, his widow; sold major works 1935–1939 through the Valentine Gallery, New York
+    sources:
+      - url: https://clevelandart.org/art/1958.21
+        note: Ms. Juliette "Domenica" Guillaume (widow of Paul Guillaume) [1934–1939] — Ms. Juliette "Domenica" Guillaume inherits her late husband's collection and begins to sell major works of art from 1935-1939; she uses Valentine Gallery in NYC to find buyers.
+        source: cma-1958-21
+        accessed: 2026-11-24
+  - owner: institution/valentine-gallery
+    role: dealer
+    acquired: 1939-02
+    direct: true
+    place: new-york-city
+    label: Valentine (Dudensing) Gallery
+    sources:
+      - url: https://clevelandart.org/art/1958.21
+        note: Valentine (Dudensing) Gallery, New York, NY [February 1939]
+        source: cma-1958-21
+        accessed: 2026-11-24
+  - owner: person/leonard-c-hanna-jr
+    acquired: 1939-02-20
+    ended: 1957
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1958.21
+        note: Leonard C. Hanna Jr [1889-1957] Cleveland, OH [February 20, 1939-1957]
+        source: cma-1958-21
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1958
+    method: bequest
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1958.21
+        note: Leonard C. Hanna [1889-1957] Cleveland, OH, bequeathed to the Cleveland Museum of Art [1958] … The Cleveland Museum of Art, Cleveland, OH [1958–]
+        source: cma-1958-21
+        accessed: 2026-11-24

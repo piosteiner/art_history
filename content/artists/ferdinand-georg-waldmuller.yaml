@@ -1,0 +1,18 @@
+public_id: 122830
+name: Ferdinand Georg Waldmüller
+given_name: Ferdinand Georg
+family_name: Waldmüller
+birth: 1793-01-15
+death: 1865-08-23
+wikidata_id: Q186816
+metadata:
+  sources: [Wikidata Q186816 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q186816
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q186816

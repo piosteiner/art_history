@@ -1,0 +1,158 @@
+public_id: 122855
+title_lang: en
+title: Saint Anthony Abbot [left panel]
+creator: puccio-di-simone
+created: 1354
+materials: [tempera, panel]
+institution: national-gallery-of-art
+inventory_number: 1937.1.6.a
+wikidata_id: Q20173197
+metadata:
+  sources: [Wikidata Q20173197 (retrieved 2026-11-23)]
+relationships:
+  - type: co_creator
+    to: artist/allegretto-nuzi
+    sources:
+      - accessed: 2026-11-23
+        property: P170
+        wikidata: Q20173197
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Puccio_di_Simone_and_Allegretto_Nuzi_-_Saint_Anthony_Abbot_%28left_panel%29_-_1937.1.6.a_-_National_Gallery_of_Art.jpg/1280px-Puccio_di_Simone_and_Allegretto_Nuzi_-_Saint_Anthony_Abbot_%28left_panel%29_-_1937.1.6.a_-_National_Gallery_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Puccio_di_Simone_and_Allegretto_Nuzi_-_Saint_Anthony_Abbot_(left_panel)_-_1937.1.6.a_-_National_Gallery_of_Art.jpg
+    license: Public domain
+    credit: Allegretto Nuzi / Puccio di Simone
+provenance:
+  - owner: institution/sant-antonio-abate-fuori-porta-pisana
+    method: commission
+    place: fabriano
+    label: probably for the high altar of the church of the Antonine canons (demolished 1834)
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.6.html
+        note: Probably commissioned for the high altar of the demolished church of Sant’Antonio Abate fuori Porta Pisana, Fabriano;[1] — [1] … The church, as Sassi reports, was demolished in 1834.
+        source: nga-1937-1-6-a
+        accessed: 2026-11-24
+  - owner_label: local private collection, Fabriano
+    acquired_label: by the early years of the nineteenth century
+    place: fabriano
+    label: presumably passed into a local private collection after the church was stripped (Napoleonic occupation of the Marche, 1797–1811, suggested)
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.6.html
+        note: apparently by the early years of the nineteenth century it was no longer in this church, presumably having passed into a local private collection.[2]
+        source: nga-1937-1-6-a
+        accessed: 2026-11-24
+  - owner: person/joseph-russell-bailey-1st-baron-glanusk
+    label: Glanusk Park, Breconshire, Wales
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.6.html
+        note: Joseph Russell Bailey [1840-1906], 1st Baron Glanusk, Glanusk Park, Breconshire, Wales;
+        source: nga-1937-1-6-a
+        accessed: 2026-11-24
+  - owner: person/joseph-henry-russell-bailey-2nd-baron-glanusk
+    ended: 1915
+    method: inheritance
+    direct: true
+    label: Glanusk Park, Breconshire; by inheritance to his son; sold in 1915 (information gathered by Duveen Brothers)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.6.html
+        note: by inheritance to his son, Joseph Henry Russell Bailey [1864-1928], 2nd Baron Glanusk, Glanusk Park; sold in 1915.[3]
+        source: nga-1937-1-6-a
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1916-07-25
+    method: auction
+    place: london
+    label: sale, Sotheby's, London, 25 July 1916, no. 137, as by Allegretto Nuzi
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.6.html
+        note: (sale, Sotheby’s, London, 25 July 1916, no. 137, as by Allegretto Nuzi);
+        source: nga-1937-1-6-a
+        accessed: 2026-11-24
+  - owner: person/walter-dowdeswell
+    role: agent
+    acquired: 1916-07-25
+    method: auction
+    direct: true
+    place: london
+    label: bought at the sale as Duveen Brothers' agent (annotated sale catalogue, Frick Art Reference Library)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.6.html
+        note: purchased by Walter Dowdeswell[4] for (Duveen Brothers, Inc., London, New York, and Paris); — [4] Walter Dowdeswell was the agent for Duveen Brothers at this time … A copy of the sale catalogue … is annotated with Dowdeswell’s name as the buyer.
+        source: nga-1937-1-6-a
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1916-07-25
+    method: auction
+    direct: true
+    place: london
+    label: "Duveen Brothers' X-Book no. X 170: \"Purchased from Sotheby's 25/7/1916\""
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.6.html
+        note: purchased by Walter Dowdeswell[4] for (Duveen Brothers, Inc., London, New York, and Paris); — [4] … The Duveen Brothers “X-Book” entry for the triptych (the painting was their number X 170) begins with “Purchased from Sotheby’s 25/7/1916”
+        source: nga-1937-1-6-a
+        accessed: 2026-11-24
+  - owner: person/carl-w-hamilton
+    acquired_label: in the early 1920s
+    direct: true
+    place: new-york-city
+    label: furnished his New York apartment with works from Duveen Brothers c. 1920 and returned most of them a few years later
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.6.html
+        note: Carl W. Hamilton [1886-1967], New York, in the early 1920s; — [5] The “American oil millionaire” Carl W. Hamilton decided in c. 1920 to furnish his New York apartment with works of art furnished by the Duveen Brothers; a few years later, however, he returned most of his collection to Duveen
+        source: nga-1937-1-6-a
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1929 or earlier
+    direct: true
+    place: new-york-city
+    label: 'Joseph Duveen, 19 January 1929: Hamilton no longer possesses the triptych, "which is now in my private collection"'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.6.html
+        note: (Duveen Brothers, Inc., London, New York, and Paris), by 1929;[5] — [5] … Joseph Duveen, head of the firm, had the triptych again by at least 19 January 1929, when he responded … “The correspondence has been sent to me because Mr. Hamilton no longer possesses the Triptych, which is now in my private collection . . .”
+        source: nga-1937-1-6-a
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1936-12-15
+    method: purchase
+    direct: true
+    place: pittsburgh
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.6.html
+        note: sold 15 December 1936 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[6]
+        source: nga-1937-1-6-a
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.6.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-6-a
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20173197
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20173197
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20173197
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20173197
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20173197

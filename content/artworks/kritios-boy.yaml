@@ -1,0 +1,141 @@
+public_id: 123126
+title: Kritios Boy
+names:
+  - lang: nl
+    role: translation
+    text: Kritiosjongen
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1789503
+  - lang: fr
+    role: translation
+    text: Éphèbe de Critios
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1789503
+  - lang: de
+    role: translation
+    text: Kritios-Knabe
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1789503
+  - lang: it
+    role: translation
+    text: Efebo di Crizio
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1789503
+  - lang: es
+    role: translation
+    text: Efebo de Kritios
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1789503
+  - lang: ja
+    role: translation
+    text: クリティオスの少年
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1789503
+  - lang: zh
+    role: translation
+    text: 克里提奥斯男孩
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1789503
+creator: critius
+materials: [Parian marble]
+dimensions: [120]
+institution: acropolis-museum
+inventory_number: "698"
+location: [23.7283, 37.96911]
+wikidata_id: Q1789503
+metadata:
+  sources: [Wikidata Q1789503 (retrieved 2026-11-23)]
+relationships:
+  - type: created_in
+    to: place/athens
+  - type: associated_with
+    to: movement/archaic-greek-sculpture
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q1789503
+  - type: associated_with
+    to: movement/severe-style
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q1789503
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/94/009MA_Kritios.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:009MA_Kritios.jpg
+    license: CC BY-SA 3.0
+    credit: User:Tetraktys
+provenance:
+  - owner_label: excavation for the foundations of the old Acropolis museum
+    acquired: 1865/1866
+    method: find
+    place: athens
+    label: torso found in the Perserschutt on the Acropolis (1865 in en; late 1865 or early 1866 in de)
+    sources:
+      - url: https://en.wikipedia.org/wiki/Kritios_Boy
+        note: The torso was found in 1865 while excavating the foundation of the old museum on the Athenian Acropolis.
+        source: wikipedia-en-kritios-boy
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Kritios-Knabe
+        note: Der Torso wurde Ende 1865 oder früh im Jahr 1866 als Teil des sogenannten Perserschutts gefunden.
+        source: wikipedia-de-kritios-knabe
+        accessed: 2026-11-24
+  - owner: person/panagiotis-kavvadias
+    co_owners: [person/georg-kawerau]
+    acquired: 1888
+    method: find
+    place: athens
+    label: head found between the museum and the Acropolis south wall and joined to the torso (a head joined before, Inv. 699, removed)
+    sources:
+      - url: https://en.wikipedia.org/wiki/Kritios_Boy
+        note: The head of this statue was found twenty-three years later between the museum and the Acropolis south wall, in the latest stage of the rubble of destruction undergone in the Persian Wars.
+        source: wikipedia-en-kritios-boy
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Kritios-Knabe
+        note: Der zugehörige Kopf wurde erst 1888 bei den Grabungskampagnen unter der Leitung von Panagiotis Kavvadias und Georg Kawerau entdeckt … Ein zuvor mit dem Torso verbundener und aus dessen Fundkomplex stammender Kopf (Akropolismuseum Inv. 699) wurde daraufhin wieder entfernt
+        source: wikipedia-de-kritios-knabe
+        accessed: 2026-11-24
+  - owner: institution/acropolis-museum
+    method: transfer
+    place: athens
+    label: inventory 698
+    sources:
+      - url: https://en.wikipedia.org/wiki/Kritios_Boy
+        note: It is on display in the Acropolis Museum, Athens, near the site where it was excavated. [Inv. no. 698.]
+        source: wikipedia-en-kritios-boy
+        accessed: 2026-11-24
+identifiers:
+  gnd: "1133098363"
+  viaf: "6960149662192807020004"
+sources:
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q1789503
+  location:
+    - accessed: 2026-11-23
+      property: P625
+      wikidata: Q1789503
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q1789503
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q1789503
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q1789503
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q1789503

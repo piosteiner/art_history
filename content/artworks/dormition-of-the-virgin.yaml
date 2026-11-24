@@ -1,0 +1,117 @@
+public_id: 123186
+title: Dormition of the Virgin
+names:
+  - lang: fr
+    role: translation
+    text: Dormition de la Vierge Marie
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3078569
+  - lang: de
+    role: translation
+    text: Marientod
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3078569
+  - lang: it
+    role: translation
+    text: Dormizione della Vergine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3078569
+  - lang: es
+    role: translation
+    text: Tránsito de la Virgen
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3078569
+  - lang: ja
+    role: translation
+    text: 聖母の死 (エル・グレコ)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3078569
+  - lang: ru
+    role: translation
+    text: Успение Пресвятой Богородицы
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3078569
+creator: el-greco
+created: 1565
+dimensions: [61, 45]
+institution: church-of-the-dormition-of-the-virgin-ermoupoli
+web_url: https://www.wga.hu/frames-e.html?/html/g/greco_el/01/0101grec.html
+wikidata_id: Q3078569
+metadata:
+  sources: [Wikidata Q3078569 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q3078569
+  - type: associated_with
+    to: movement/byzantine-art
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q3078569
+  - type: associated_with
+    to: movement/cretan-school
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q3078569
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c2/Dormition_El_Greco.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dormition_El_Greco.jpg
+    license: Public domain
+    credit: El Greco
+provenance:
+  - owner: artist/el-greco
+    acquired: before 1567
+    method: creation
+    label: painted in Crete near the end of El Greco's Cretan period, probably before 1567; signed on the base of the central candlestick
+    certainty: probable
+    sources:
+      - url: https://en.wikipedia.org/wiki/Dormition_of_the_Virgin_(El_Greco)
+        note: Dormition of the Virgin is a tempera painting on panel executed by El Greco near the end of his Cretan period, probably before 1567. El Greco's signature on the base of the central candelabrum was discovered in 1983.
+        source: wikipedia-en-dormition-of-the-virgin-el-greco
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/Κοίμηση_της_Θεοτόκου_(Θεοτοκόπουλος)
+        note: είναι έργο του Δομήνικου Θεοτοκόπουλου το οποίο δημιούργησε κοντά στο τέλος της περιόδου όπου ζούσε ακόμα στην Κρήτη, πιθανώς πριν το 1567.
+        source: wikipedia-el-koimisi-tis-theotokou-theotokopoulos
+        accessed: 2026-11-24
+  - owner: institution/church-of-the-dormition-of-the-virgin-ermoupoli
+    acquired: 1826/1829
+    place: ermoupoli
+    label: probably brought to Syros during the Greek War of Independence by refugees from Psara, who built the church in 1826–1829; recorded there since 1850 (church archives lost); still venerated there; signature found 1983 by Georgios Mastoropoulos
+    certainty: probable
+    sources:
+      - url: https://en.wikipedia.org/wiki/Dormition_of_the_Virgin_(El_Greco)
+        note: The icon, which retains its function as an object of veneration in the Church of the Dormition of the Virgin in Syros, was probably brought to the island during the Greek War of Independence.
+        source: wikipedia-en-dormition-of-the-virgin-el-greco
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/Κοίμηση_της_Θεοτόκου_(Θεοτοκόπουλος)
+        note: Εξακολουθεί να βρίσκεται στον Ιερό Ναό Κοιμήσεως της Θεοτόκου στην Ερμούπολη, και κατά την επικρατέστερη άποψη μετακινήθηκε εκεί κατά την περίοδο της Ελληνικής Επανάστασης από κατοίκους των Ψαρών οι οποίοι μετά την καταστροφή των Ψαρών κατέφυγαν στη Σύρο, έκτισαν τον ναό την περίοδο 1826-1829 … η παλαιότερα γνωστή καταγραφή αναφέρει πως η εικόνα βρισκόταν στον ναό από το 1850.
+        source: wikipedia-el-koimisi-tis-theotokou-theotokopoulos
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3078569
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q3078569
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3078569
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3078569

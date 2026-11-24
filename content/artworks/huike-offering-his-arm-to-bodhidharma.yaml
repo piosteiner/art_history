@@ -1,0 +1,99 @@
+public_id: 124156
+title: Huike Offering His Arm to Bodhidharma
+names:
+  - lang: ja
+    role: translation
+    text: 慧可断臂図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q85843025
+  - lang: zh
+    role: translation
+    text: 慧可斷臂圖
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q85843025
+creator: sesshu-toyo
+created: 1496
+materials: [ink, paper]
+dimensions: [199.9, 113.6]
+institution: sainen-ji-temple
+wikidata_id: Q85843025
+metadata:
+  sources: [Wikidata Q85843025 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/bodhidharma
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q85843025
+  - type: depicts_person
+    to: person/dazu-huike
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q85843025
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Bodhidharma.and.Huike-Sesshu.Toyo.jpg/1280px-Bodhidharma.and.Huike-Sesshu.Toyo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bodhidharma.and.Huike-Sesshu.Toyo.jpg
+    license: Public domain
+    credit: Sesshū Tōyō
+provenance:
+  - owner: artist/sesshu-toyo
+    acquired: 1496
+    method: creation
+    label: signed as painted in his 77th year (Meiō 5); its size and finish suggest a commission from a powerful patron (designation commentary)
+    sources:
+      - url: https://www.kyohaku.go.jp/eng/collection/meihin/suibokuga/item06/
+        note: Japan, Muromachi Period, dated 1496
+        source: knm-huike-sesshu
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00010660
+        note: 「四明天童第一座雪舟行年七十七歳謹図之」 … 年代 ： 明応五 西暦 ： 1496 … 権力者からの注文制作という事情が考え得る。
+        source: kunishitei-201-00010660
+        accessed: 2026-11-24
+  - owner: institution/sainen-ji-temple
+    acquired: 1532
+    method: gift
+    place: tokoname
+    label: given to the temple by Saji Tamesada, lord of a castle in Chita County, Owari (inscription on silk kept with the scroll); the temple is the owner today
+    sources:
+      - url: https://www.kyohaku.go.jp/eng/collection/meihin/suibokuga/item06/
+        note: According to the inscription on the back, this scroll was donated to Sainen-ji Temple by Saji Tamasada, the feudal lord of Miyayama castle in Chita County in the province of Owari (present-day Aichi Prefecture). It was given to the temple in 1532, shortly after Sesshu's death.
+        source: knm-huike-sesshu
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00010660
+        note: 天文元年（一五三二）に佐治為貞によって斉年寺に寄贈されたことが、別途保存された〓背の上巻絹とみられる絹地墨書銘によってわかる。 … 所有者名 ： 宗教法人斉年寺
+        source: kunishitei-201-00010660
+        accessed: 2026-11-24
+      - url: https://www.kyohaku.go.jp/jp/collection/meihin/suibokuga/item06/
+        note: 尾張常滑の斉年寺には早くから伝わっており、天文元年（1532）に近隣の武将、佐治為貞（さじためさだ）が寺に奉納した。
+        source: knm-huike-sesshu-ja
+        accessed: 2026-11-24
+  - owner: institution/kyoto-national-museum
+    role: custodian
+    place: kyoto
+    label: on deposit from Sainen-ji (a copy hangs at the temple); National Treasure since 8 June 2004
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111552815
+        note: 21世紀現代では、斉年寺から京都国立博物館に寄託されている。斉年寺には複製がある。
+        source: jawiki-ekadanpizu-111552815
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q85843025
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q85843025
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q85843025
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q85843025

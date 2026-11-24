@@ -19,6 +19,16 @@ death: 1608-10-09
 wikidata_id: Q1858775
 metadata:
   sources: [Wikidata Q1858775 (retrieved 2026-10-19)]
+relationships:
+  - type: child_of
+    to: artist/leone-leoni
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q722092
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q1858775
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/22/El_Greco_-_Portrait_of_a_Sculptor_-_WGA10449.jpg
     source_url: https://commons.wikimedia.org/wiki/File:El_Greco_-_Portrait_of_a_Sculptor_-_WGA10449.jpg

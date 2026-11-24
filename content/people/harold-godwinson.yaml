@@ -8,6 +8,25 @@ death: 1066-10-20
 wikidata_id: Q159597
 metadata:
   sources: [Wikidata Q159597 (retrieved 2026-11-09)]
+relationships:
+  - type: sibling_of
+    to: person/gyrth-godwinson
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q159597
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q1249857
+  - type: sibling_of
+    to: person/leofwine-godwinson
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q159597
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q1249624
 sources:
   kind:
     - accessed: 2026-11-09

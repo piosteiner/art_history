@@ -1,0 +1,41 @@
+public_id: 124530
+title: Akihagi-jō
+names:
+  - text: Autumn Bush Clover Scroll
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11595807
+  - lang: ja
+    role: translation
+    text: 秋萩帖
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11595807
+institution: tokyo-national-museum
+inventory_number: B-2532
+web_url: https://colbase.nich.go.jp/collection_items/tnm/B-2532
+location: [139.7756, 35.71994]
+wikidata_id: Q11595807
+metadata:
+  sources: [Wikidata Q11595807 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/30/Akihagi-j%C5%8D_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Akihagi-j%C5%8D_2.jpg
+    license: Public domain
+    credit: Ono no Michikaze
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11595807
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q11595807
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q11595807

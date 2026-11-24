@@ -1,0 +1,34 @@
+public_id: 125247
+title_lang: en
+title: Prancing Horse
+created: 1808/1812
+created_label: c. 19th century
+created_span: uncertain
+materials: [oil paint, canvas]
+institution: art-institute-of-chicago
+inventory_number: "1944.687"
+wikidata_id: Q20268422
+metadata:
+  sources: [Wikidata Q20268422 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Jean_Louis_Andr%C3%A9_Th%C3%A9odore_G%C3%A9ricault_-_Prancing_Horse_-_1944.687_-_Art_Institute_of_Chicago.jpg/1280px-Jean_Louis_Andr%C3%A9_Th%C3%A9odore_G%C3%A9ricault_-_Prancing_Horse_-_1944.687_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean_Louis_Andr%C3%A9_Th%C3%A9odore_G%C3%A9ricault_-_Prancing_Horse_-_1944.687_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Follower of Théodore Géricault
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268422
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20268422
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268422
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268422

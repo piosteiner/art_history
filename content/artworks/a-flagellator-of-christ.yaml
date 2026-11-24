@@ -1,0 +1,149 @@
+public_id: 122815
+title_lang: en
+title: A Flagellator of Christ
+names:
+  - lang: de
+    role: translation
+    text: Geiseler Christi
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q63860610
+creator: alessandro-algardi
+created: 1630/1639
+created_label: c. 1630s
+created_span: uncertain
+materials: [silver]
+dimensions: [23.4, 12.4, 7.3]
+institution: national-gallery-of-art
+inventory_number: 1991.124.1
+provenance_status: c_indications
+provenance_status_note: Sold in 1942 with the Gutmann collection to the dealers Karl Haberstock and Julius Böhler; after the war claimed by the Gutmann heirs, recovered at Starnberg and restituted to the Dutch government on 8 July 1946.
+wikidata_id: Q63860610
+metadata:
+  sources: [Wikidata Q63860610 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Alessandro_Algardi%2C_A_Flagellator_of_Christ%2C_c._1630s%2C_NGA_73398.jpg/1280px-Alessandro_Algardi%2C_A_Flagellator_of_Christ%2C_c._1630s%2C_NGA_73398.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alessandro_Algardi,_A_Flagellator_of_Christ,_c._1630s,_NGA_73398.jpg
+    license: CC0
+    credit: Alessandro Algardi
+provenance:
+  - owner: person/eugen-gutmann
+    acquired: 1912 or earlier
+    place: berlin
+    label: Die Kunstsammlung Eugen Gutmann, Berlin, 1912, no. 170
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.73398.html
+        note: Eugen Gutmann [1840-1925], Berlin, by 1912;[1] — [1] Die Kunstsammlung Eugen Gutmann, Berlin, 1912, no. 170.
+        source: nga-1991-124-1
+        accessed: 2026-11-24
+  - owner_label: Gutmann heirs
+    method: inheritance
+    direct: true
+    label: Gutmann heirs, Holland
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.73398.html
+        note: Gutmann heirs, Holland;[2]
+        source: nga-1991-124-1
+        accessed: 2026-11-24
+  - owner: person/karl-haberstock
+    co_owners: [institution/kunsthandlung-julius-bohler]
+    role: dealer
+    acquired: 1942
+    method: purchase
+    direct: true
+    label: sold with the Gutmann collection of 225 silver, jewellery and Renaissance objects (Haberstock Gallery papers)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.73398.html
+        note: "[2] This object was sold in 1942 with the Gutmann collection of 225 silver, jewelry and Renaissance objects to the dealers Karl Haberstock and Julius Boehler"
+        source: nga-1991-124-1
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    ended: 1946-07-08
+    method: transfer
+    place: munich
+    label: recovered in Starnberg after the Gutmann heirs' claim; Munich property card no. 16395/33
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.73398.html
+        note: "After the war the Gutmann heirs filed a claim for the return of the collection, which was recovered in Starnberg, Germany, and sent to the Munich Central Collecting Point. … see also Munich property card #16395/33"
+        source: nga-1991-124-1
+        accessed: 2026-11-24
+  - owner_label: the Netherlands (Dutch restitution authorities)
+    role: custodian
+    acquired: 1946-07-08
+    method: restitution
+    direct: true
+    label: restituted with others from the Gutmann collection; Dutch claim no. N-3; Dutch Receipt for Cultural Objects no. 15A, item no. 110
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.73398.html
+        note: "This sculpture was restituted to the Dutch government with others from the Gutmann collection on 8 July 1946. [See Dutch claim #N-3 … Dutch Receipt for Cultural Objects no. 15A, item no. 110"
+        source: nga-1991-124-1
+        accessed: 2026-11-24
+  - owner_label: Gutmann heirs
+    ended: c. 1950
+    method: restitution
+    place: new-york-city
+    label: 'sold on the New York art market c. 1950 (Art Digest, 1 November 1950: "Gutmann Collection Here for Dispersal")'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.73398.html
+        note: Gutmann heirs, Holland;[2] sold on the New York art market c. 1950.[3] — [3] "Gutmann Collection Here for Dispersal," Art Digest 25 (November 1, 1950), p. 13.
+        source: nga-1991-124-1
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1989-06-22
+    ended: 1989-06-22
+    method: auction
+    place: new-york-city
+    label: sale, Sotheby's, New York, 22 June 1989, no. 150
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.73398.html
+        note: (sale, Sotheby's, New York, 22 June 1989, no. 150);
+        source: nga-1991-124-1
+        accessed: 2026-11-24
+  - owner: person/ellin-mitchell
+    role: dealer
+    method: auction
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.73398.html
+        note: (Ellin Mitchell, New York);
+        source: nga-1991-124-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1991-06-07
+    method: purchase
+    direct: true
+    place: washington-d-c
+    label: Patrons' Permanent Fund
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.73398.html
+        note: purchased 7 June 1991 by NGA.
+        source: nga-1991-124-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q63860610
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q63860610
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63860610
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q63860610
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63860610
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63860610

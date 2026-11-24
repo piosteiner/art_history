@@ -1,0 +1,188 @@
+public_id: 124680
+title_lang: en
+title: Game of Backgammon
+names:
+  - lang: de
+    role: translation
+    text: TricTrac Spiel
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28925660
+creator: david-teniers-the-younger
+created: 1645
+materials: [oil paint]
+dimensions: [59, 80.6]
+institution: cleveland-museum-of-art
+inventory_number: "1943.377"
+web_url: https://clevelandart.org/art/1943.377
+wikidata_id: Q28925660
+metadata:
+  sources: [Wikidata Q28925660 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/flanders
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q28925660
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/David_Teniers_-_Game_of_Backgammon_-_1943.377_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-David_Teniers_-_Game_of_Backgammon_-_1943.377_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:David_Teniers_-_Game_of_Backgammon_-_1943.377_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: David Teniers the Younger
+provenance:
+  - owner: person/philippe-ii-duke-of-orleans
+    ended: 1723
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: "Philippe II, Duke of Orléans (1674–1723), Regent of France  [date: 1674-1723]"
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner: person/louis-duke-of-orleans
+    acquired: 1723
+    ended: 1752
+    method: inheritance
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: "Louis I Duke of Orléans (1703–1752)  [date: 1723-1752]"
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner: person/louis-philippe-i-duke-of-orleans
+    acquired: 1752
+    ended: 1785
+    method: inheritance
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: "Louis Philippe I (1725–1785), Duke of Orléans  [date: 1752-1785]"
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner: person/louis-philippe-ii-duke-of-orleans
+    acquired: 1785
+    ended: 1792
+    method: inheritance
+    label: Philippe Égalité
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: "Louis-Philippe II (1747–1793), Duke of Orléans / Philippe Égalité  [date: 1785-1792]"
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner: person/thomas-moore-slade
+    role: agent
+    acquired: 1792
+    place: london
+    label: brought to London; exhibited for sale at the Royal Academy, London, April 1793
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: "Brought to London by Thomas Moore Slade, (exhibited for sale in the Royal Academy, London, April 1793)  [date: 1792-1793]"
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner: person/george-hibbert-2
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: George Hibbert (1757–1837), London, England
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner: person/thomas-penrice
+    ended: 1816
+    place: great-yarmouth
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: "Thomas Penrice (d. 1816), Great Yarmouth, England, by inheritance to John Penrice  [date: -1816]"
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner: person/john-penrice
+    acquired: 1816
+    method: inheritance
+    direct: true
+    place: great-yarmouth
+    label: John Penrice Sr.
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: "John Penrice Sr. (1787-1844), sold, Christie's  [date: 1816-1844]"
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1844-07-06
+    method: auction
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: "(Sale: Christie's, London, England, 07/06/1844, to Farrer)  [date: July 6, 1844]"
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner_label: Farrer
+    acquired: 1844-07-06
+    method: auction
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: "Farrer  [date: 1844-]"
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner_label: Private collection
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: "Private collection, sold, Christie's, London  [date: -1925]"
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1925-07-17
+    method: auction
+    direct: true
+    place: london
+    label: Christie's, London, 17 July 1925, no. 119
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: "(Sale: Christie's, London, England, 07/17/1925, no. 119 through S. A. Hecht, London, England to Mr. and Mrs. Samuel Wise)  [date: July 17, 1925]"
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner: person/samuel-d-wise
+    acquired: 1925-07-17
+    method: auction
+    direct: true
+    place: cleveland
+    label: bought through S. A. Hecht, London; with Mrs. Samuel D. Wise
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: "(Sale: Christie's, ... 07/17/1925, no. 119 through S. A. Hecht, London, England to Mr. and Mrs. Samuel Wise) / Mr. and Mrs. Samuel D. Wise (Cleveland, Ohio), by gift to the Cleveland Museum of Art, 1943  [date: 1925-1943]"
+        source: cma-1943-377
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1943
+    method: gift
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1943.377
+        note: Mr. and Mrs. Samuel D. Wise (Cleveland, Ohio), by gift to the Cleveland Museum of Art, 1943
+        source: cma-1943-377
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q28925660
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q28925660
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q28925660
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q28925660
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q28925660
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q28925660

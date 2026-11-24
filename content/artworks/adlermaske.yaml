@@ -1,0 +1,64 @@
+public_id: 123868
+title_lang: de
+title: Adlermaske
+attribution_label: Anonymous
+created: 19th century
+created_span: uncertain
+kind: mask
+medium: Holz, bemalt
+dimensions: [22.5, 16.8, 13.7]
+institution: museum-rietberg
+inventory_number: RNA 202
+web_url: https://rietberg.ch/sammlungen/rna-202
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Tlingit_eagle_mask_Museum_Rietberg_RNA_202.jpg/1280px-Tlingit_eagle_mask_Museum_Rietberg_RNA_202.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tlingit_eagle_mask_Museum_Rietberg_RNA_202.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Urheber*in unbekannt
+    acquired: 19th century
+    method: creation
+    label: made by an unknown Tlingit maker in Alaska
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-202
+        note: "19. Jh.: Urheber*in unbekannt in Alaska"
+        source: rietberg-rna-202
+        accessed: 2026-11-24
+  - owner: person/george-thornton-emmons
+    acquired: c. 1900
+    method: find
+    place: sitka
+    label: found in the grave house of a shaman near Sitka (old database entry; Leuzinger inventory)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-202
+        note: |-
+          um 1900: George Thornton Emmons (1852–1945), gefunden in Sitka, USA
+          Inventar Leuzinger (dort Katalogkopie des Museum of American Indian, New York?). Gemäss altem Eintrag in der Datenbank: "Die Maske wurde von George Thornton Emmons (1852-1945) in dem Grabhaus eines Schamanen in der Nähe von Sitka gefunden."
+        source: rietberg-rna-202
+        accessed: 2026-11-24
+  - owner: institution/museum-of-the-american-indian
+    acquired: 1920
+    place: new-york-city
+    label: Museum of the American Indian, Heye Foundation
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-202
+        note: "1920: Museum of the American Indian, Heye Foundation"
+        source: rietberg-rna-202
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired_label: unbekannter Zeitpunkt
+    label: date and circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-202
+        note: "unbekannter Zeitpunkt: Eduard von der Heydt (1882–1964), Erwerbsumstände unbekannt"
+        source: rietberg-rna-202
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    method: gift
+    label: gift of Eduard von der Heydt (credit line)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-202
+        note: Creditline | Geschenk Eduard von der Heydt
+        source: rietberg-rna-202
+        accessed: 2026-11-24

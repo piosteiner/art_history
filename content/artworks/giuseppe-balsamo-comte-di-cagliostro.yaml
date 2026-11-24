@@ -1,0 +1,164 @@
+public_id: 122811
+title_lang: en
+title: Giuseppe Balsamo, Comte di Cagliostro
+creator: jean-antoine-houdon
+created: 1786
+materials: [marble]
+institution: national-gallery-of-art
+inventory_number: 1952.5.103
+provenance_status: d_seized
+provenance_status_note: In Paris in 1940, confiscated by the Nazis with other parts of the Seligmann family collections; recovered and returned to France in 1947.
+wikidata_id: Q63809774
+metadata:
+  sources: [Wikidata Q63809774 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Jean-Antoine_Houdon%2C_Giuseppe_Balsamo%2C_Comte_di_Cagliostro%2C_1786%2C_NGA_41718.jpg/1280px-Jean-Antoine_Houdon%2C_Giuseppe_Balsamo%2C_Comte_di_Cagliostro%2C_1786%2C_NGA_41718.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Antoine_Houdon,_Giuseppe_Balsamo,_Comte_di_Cagliostro,_1786,_NGA_41718.jpg
+    license: CC0
+    credit: Jean-Antoine Houdon
+provenance:
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1826-11
+    method: auction
+    place: paris
+    label: possibly the sale, Paris, 22–24 November 1826, no. 208, as "Un Buste en marbre de Cagliostro par M. Houdon" (Poulet 2003)
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41718.html
+        note: Possibly (sale, Galerie Georges Petit, Paris, 22-24 November 1826, no. 208, as Un Buste en marbre de Cagliostro par M. Houdon).[1]
+        source: nga-1952-5-103
+        accessed: 2026-11-24
+  - owner: person/richard-seymour-conway-4th-marquess-of-hertford
+    place: paris
+    label: London and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41718.html
+        note: Sir Richard Seymour-Conway, 4th marquess of Hertford [1800-1870], London and Paris;
+        source: nga-1952-5-103
+        accessed: 2026-11-24
+  - owner: person/richard-wallace
+    method: inheritance
+    direct: true
+    place: paris
+    label: his illegitimate son; London and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41718.html
+        note: by inheritance to his illegitimate son, Sir Richard Wallace [1818-1890], London and Paris;
+        source: nga-1952-5-103
+        accessed: 2026-11-24
+  - owner: person/julie-amelie-charlotte-castelnau
+    method: inheritance
+    direct: true
+    place: paris
+    label: Lady Wallace, his wife; Paris and London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41718.html
+        note: by inheritance to his wife, Julie-Amélie-Charlotte Castelnau, Lady Wallace [1819-1897], Paris and London;
+        source: nga-1952-5-103
+        accessed: 2026-11-24
+  - owner: person/john-murray-scott-2
+    method: bequest
+    direct: true
+    place: paris
+    label: the Wallaces' secretary and adviser; London and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41718.html
+        note: by bequest to the Wallace's secretary and adviser, Sir John Murray Scott [1847-1912], London and Paris;
+        source: nga-1952-5-103
+        accessed: 2026-11-24
+  - owner: person/victoria-sackville-west
+    method: bequest
+    direct: true
+    place: paris
+    label: Lady Sackville, his friend
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41718.html
+        note: by bequest to his friend, Josephine Victoria Sackville-West, Lady Sackville [1864-1936], Paris;
+        source: nga-1952-5-103
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    acquired: 1914
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris stock no. 7969, New York stock no. 2205; Germain Seligman named as owner in the 1932 London exhibition of French art and by Cecil 1950
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41718.html
+        note: sold 1914 to (Jacques Seligmann & Cie, Paris and New York);[2] — [2] The direct transfer from Sir John Murray Scott to Lady Sackville and then to Jacques Seligmann is described in Germain Seligman's book Merchants of Art … The sculpture was Seligmann Paris stock no. 7969 and New York stock no. 2205 … Germain Seligmann, manager of Seligmann's New York branch, is listed as the owner in the catalogue of the 1932 exhibition of French art in London
+        source: nga-1952-5-103
+        accessed: 2026-11-24
+  - owner_label: the Nazis (occupation of Paris)
+    role: possessor
+    acquired: 1940
+    method: confiscation
+    place: paris
+    label: confiscated with other portions of the Seligmann family collections
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41718.html
+        note: The bust was in Paris when the Nazis invaded in 1940 and was confiscated with other portions of the Seligmann family collections at that time.
+        source: nga-1952-5-103
+        accessed: 2026-11-24
+  - owner_label: France (French restitution authorities)
+    role: custodian
+    acquired: 1947
+    method: restitution
+    label: recovered and returned to France
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41718.html
+        note: It was recovered and returned to France in 1947.
+        source: nga-1952-5-103
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    method: restitution
+    place: new-york-city
+    label: Germain Seligman worked from 1948 to have the bust shipped from France to the United States
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41718.html
+        note: Correspondence concerning Germain Seligmann's efforts to have the bust shipped from France to the United States beginning in 1948 can be found in the Seligmann papers
+        source: nga-1952-5-103
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1952-02
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: invoice sent with Seligmann New York's letter of 8 February 1952; the bust went to Washington a week later
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41718.html
+        note: purchased February 1952 by the Samuel H. Kress Foundation, New York;[3] — [3] The invoice for the purchase of the bust was included with a letter of 8 February 1952 from Seligmann's New York branch to the Kress Foundation
+        source: nga-1952-5-103
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41718.html
+        note: gift 1952 to NGA.
+        source: nga-1952-5-103
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q63809774
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q63809774
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63809774
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63809774
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63809774

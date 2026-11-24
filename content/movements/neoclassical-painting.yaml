@@ -1,0 +1,16 @@
+public_id: 123003
+name: Neoclassical painting
+kind: movement
+period: 1760/1769
+wikidata_id: Q577147
+metadata:
+  sources: [Wikidata Q577147 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q577147
+  period:
+    - accessed: 2026-11-23
+      property: P580
+      wikidata: Q577147

@@ -27,6 +27,16 @@ death: 1788-08-08
 wikidata_id: Q697562
 metadata:
   sources: [Wikidata Q697562 (retrieved 2026-10-20)]
+relationships:
+  - type: child_of
+    to: person/armand-jean-de-vignerot-du-plessis
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q2861881
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q697562
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jean-Marc_Nattier_%281685-1766%29_-_Portret_van_maarschalk_hertog_Richelieu_-_Lissabon_Museu_Calouste_Gulbenkian_21-10-2010_13-34-54.jpg/1280px-Jean-Marc_Nattier_%281685-1766%29_-_Portret_van_maarschalk_hertog_Richelieu_-_Lissabon_Museu_Calouste_Gulbenkian_21-10-2010_13-34-54.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Jean-Marc_Nattier_(1685-1766)_-_Portret_van_maarschalk_hertog_Richelieu_-_Lissabon_Museu_Calouste_Gulbenkian_21-10-2010_13-34-54.jpg

@@ -6,6 +6,16 @@ death: 1644-03-29
 wikidata_id: Q16863753
 metadata:
   sources: [Wikidata Q16863753 (retrieved 2026-11-09)]
+relationships:
+  - type: sibling_of
+    to: person/lord-bernard-stewart
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q6678983
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q16863753
 sources:
   kind:
     - accessed: 2026-11-09

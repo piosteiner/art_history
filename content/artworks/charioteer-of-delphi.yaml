@@ -1,0 +1,143 @@
+public_id: 123118
+title_lang: en
+title: Charioteer of Delphi
+names:
+  - text: Eniochos
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1230882
+  - lang: nl
+    role: translation
+    text: Wagenmenner van Delphi
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1230882
+  - lang: fr
+    role: translation
+    text: Aurige de Delphes
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1230882
+  - lang: de
+    role: translation
+    text: Wagenlenker von Delphi
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1230882
+  - lang: it
+    role: translation
+    text: Auriga di Delfi
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1230882
+  - lang: es
+    role: translation
+    text: Auriga de Delfos
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1230882
+  - lang: ja
+    role: translation
+    text: デルフィの御者
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1230882
+  - lang: zh
+    role: translation
+    text: 德尔斐的驾车人
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1230882
+  - lang: ru
+    role: translation
+    text: Дельфийский возничий
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1230882
+created: -478
+materials: [bronze]
+dimensions: [182]
+institution: delphi-archaeological-museum
+location: [22.49981, 38.48031]
+wikidata_id: Q1230882
+metadata:
+  sources: [Wikidata Q1230882 (retrieved 2026-11-23)]
+relationships:
+  - type: created_in
+    to: place/municipal-unit-of-delphi
+    period: -478
+  - type: associated_with
+    to: movement/severe-style
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q1230882
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Auriga_de_Delfos_%28474_a.C.%29%2C_Museo_Arqueol%C3%B2gic_de_Delfos_%28Gr%C3%A8cia%29.jpg/1280px-Auriga_de_Delfos_%28474_a.C.%29%2C_Museo_Arqueol%C3%B2gic_de_Delfos_%28Gr%C3%A8cia%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Auriga_de_Delfos_(474_a.C.),_Museo_Arqueol%C3%B2gic_de_Delfos_(Gr%C3%A8cia).jpg
+    license: CC BY-SA 4.0
+    credit: Vicenç Valcárcel Pérez
+provenance:
+  - owner_label: Sanctuary of Apollo, Delphi
+    acquired: c. 470 BCE
+    method: gift
+    place: delphi
+    label: dedicated by Polyzalus, tyrant of Gela, for his chariot victory at the Pythian Games of 478 or 474 BC; part of a group with chariot and horses
+    sources:
+      - url: https://en.wikipedia.org/wiki/Charioteer_of_Delphi
+        note: The work was dedicated at the Sanctuary of Apollo at Delphi … to commemorate one of two victories of the tyrant Polyzalus of Gela in Sicily and his chariot in the Pythian Games of either 478 or 474 BC
+        source: wikipedia-en-charioteer-of-delphi
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: -373
+    place: delphi
+    label: buried in the debris of the earthquake of 373 BC
+    sources:
+      - url: https://en.wikipedia.org/wiki/Charioteer_of_Delphi
+        note: Unlike many other artworks from the sanctuary that were looted or destroyed, it survived because it had been buried in the debris of the great earthquake of 373 BC.
+        source: wikipedia-en-charioteer-of-delphi
+        accessed: 2026-11-24
+  - owner_label: French excavation of Delphi
+    acquired: 1896
+    method: find
+    place: delphi
+    label: found in three pieces with fragments of the horses
+    sources:
+      - url: https://en.wikipedia.org/wiki/Charioteer_of_Delphi
+        note: The statue was discovered in 1896 during excavations at Delphi. … When discovered, the statue was in three pieces—head and upper torso, lower torso, and right arm.
+        source: wikipedia-en-charioteer-of-delphi
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/%CE%97%CE%BD%CE%AF%CE%BF%CF%87%CE%BF%CF%82_%28%CE%AC%CE%B3%CE%B1%CE%BB%CE%BC%CE%B1_%CE%94%CE%B5%CE%BB%CF%86%CF%8E%CE%BD%29
+        note: Η γαλλική ανασκαφή των Δελφών, το 1896 τον έφερε ξανά στο φως, σχεδόν ανέπαφο
+        source: wikipedia-el-iniochos-agalma-delfon
+        accessed: 2026-11-24
+  - owner: institution/delphi-archaeological-museum
+    method: transfer
+    place: delphi
+    sources:
+      - url: https://en.wikipedia.org/wiki/Charioteer_of_Delphi
+        note: The statue is housed today in the Delphi Archaeological Museum.
+        source: wikipedia-en-charioteer-of-delphi
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q1230882
+  location:
+    - accessed: 2026-11-23
+      property: P625
+      wikidata: Q1230882
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q1230882
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q1230882
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q1230882

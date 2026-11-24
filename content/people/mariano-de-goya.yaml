@@ -21,6 +21,15 @@ relationships:
       - accessed: 2026-10-30
         property: P19
         wikidata: Q43372141
+  - type: child_of
+    to: person/francisco-javier-goya-bayeu
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q43372023
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q43372141
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/FRANCISCO_GOYA_PORTRAIT_OF_MARIANO_GOYA%2C_THE_ARTIST%27S_GRANDSON.jpg/1280px-FRANCISCO_GOYA_PORTRAIT_OF_MARIANO_GOYA%2C_THE_ARTIST%27S_GRANDSON.jpg
     source_url: https://commons.wikimedia.org/wiki/File:FRANCISCO_GOYA_PORTRAIT_OF_MARIANO_GOYA,_THE_ARTIST%27S_GRANDSON.jpg

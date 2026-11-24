@@ -39,6 +39,15 @@ relationships:
       - accessed: 2026-11-03
         property: P802
         wikidata: Q314350
+  - type: married_to
+    to: artist/germaine-richier
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q15429125
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q435149
 sources:
   birth:
     - accessed: 2026-10-07

@@ -1,0 +1,22 @@
+public_id: 127829
+name: Chipping Ongar
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [0.244, 51.703]
+wikidata_id: Q2069940
+metadata:
+  sources: [Wikidata Q2069940 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2069940
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2069940
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2069940

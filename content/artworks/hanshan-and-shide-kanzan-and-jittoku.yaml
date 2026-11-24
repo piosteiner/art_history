@@ -1,0 +1,79 @@
+public_id: 124765
+title_lang: en
+title: Hanshan and Shide (Kanzan and Jittoku)
+creator: shikibu-terutada
+created: 1525/1575
+created_label: c. 16th century
+created_span: uncertain
+institution: cleveland-museum-of-art
+inventory_number: "2015.592"
+web_url: https://clevelandart.org/art/2015.592
+wikidata_id: Q60493583
+metadata:
+  sources: [Wikidata Q60493583 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/hanshan
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q60493583
+  - type: depicts_person
+    to: person/shide
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q60493583
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Shikibu_Terutada_-_Hanshan_and_Shide_%28Kanzan_and_Jittoku%29_-_2015.592_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Shikibu_Terutada_-_Hanshan_and_Shide_%28Kanzan_and_Jittoku%29_-_2015.592_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shikibu_Terutada_-_Hanshan_and_Shide_(Kanzan_and_Jittoku)_-_2015.592_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Shikibu Terutada
+provenance:
+  - owner_label: Hisamatsu collection
+    sources:
+      - url: https://clevelandart.org/art/2015.592
+        note: Hisamatsu collection
+        source: cma-2015-592
+        accessed: 2026-11-24
+  - owner_label: Inoue collection
+    sources:
+      - url: https://clevelandart.org/art/2015.592
+        note: Inoue collection
+        source: cma-2015-592
+        accessed: 2026-11-24
+  - owner: person/george-gund-iii
+    label: bequest to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/2015.592
+        note: George Gund III [1937–2013], bequest to the Cleveland Museum of Art [?–2015]
+        source: cma-2015-592
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2015
+    method: bequest
+    direct: true
+    place: cleveland
+    label: Gift from the Collection of George Gund III
+    sources:
+      - url: https://clevelandart.org/art/2015.592
+        note: The Cleveland Museum of Art, Cleveland, OH [2015–] — Gift from the Collection of George Gund III
+        source: cma-2015-592
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60493583
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60493583
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60493583
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60493583

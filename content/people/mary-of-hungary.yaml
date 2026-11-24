@@ -40,6 +40,16 @@ death: 1558-10-18
 wikidata_id: Q157077
 metadata:
   sources: [Wikidata Q157077 (retrieved 2026-10-19)]
+relationships:
+  - type: sibling_of
+    to: person/charles-v
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q32500
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q157077
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Maria%2C_K%C3%B6nigin_von_Ungarn_%281505-1558%29.jpg/1280px-Maria%2C_K%C3%B6nigin_von_Ungarn_%281505-1558%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Maria,_K%C3%B6nigin_von_Ungarn_(1505-1558).jpg

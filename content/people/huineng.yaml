@@ -1,0 +1,21 @@
+public_id: 124237
+name: Huineng
+kind: person
+birth: 638
+death: 713
+wikidata_id: Q345012
+metadata:
+  sources: [Wikidata Q345012 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q345012
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q345012
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q345012

@@ -1,0 +1,121 @@
+public_id: 122871
+title_lang: en
+title: Gooseberries on a Table
+creator: adriaen-coorte
+created: 1701
+kind: oil painting
+medium: oil on paper mounted on wood
+dimensions: [29.7, 22.8]
+institution: cleveland-museum-of-art
+inventory_number: "1987.32"
+web_url: https://clevelandart.org/art/1987.32
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1987.32/1987.32_web.jpg
+    source_url: https://clevelandart.org/art/1987.32
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/auguste-coster
+    ended: 1907
+    place: brussels
+    sources:
+      - url: https://clevelandart.org/art/1987.32
+        note: Auguste Coster [d. 1907], Brussels [-1907]
+        source: cma-1987-32
+        accessed: 2026-11-24
+  - owner: institution/le-roy
+    role: agent
+    acquired: 1907-04
+    method: auction
+    direct: true
+    place: brussels
+    label: Coster sale, Brussels, 4–6 April 1907, lot 69, as "A. Coorbe", "Groseilles"
+    sources:
+      - url: https://clevelandart.org/art/1987.32
+        note: (Le Roy, Brussels, Coster sale, April 4-6, 1907, lot 69, possibly sold to Max Massot) [1907] — The painting is attributed to “A. Coorbe" [sic] and is entitled "Groseilles" in the sale catalogue.
+        source: cma-1987-32
+        accessed: 2026-11-24
+  - owner: person/max-massot
+    method: auction
+    label: possibly bought at the Coster sale
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1987.32
+        note: Max Massot, Belgium, sold to P. de Boer [-1964]
+        source: cma-1987-32
+        accessed: 2026-11-24
+  - owner: institution/kunsthandel-pieter-de-boer
+    role: dealer
+    acquired: 1964
+    method: purchase
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://clevelandart.org/art/1987.32
+        note: (Kunsthandel P. de Boer, Amsterdam, sold to Mrs. Wulf, The Hague) [1964] — There is nothing in this painting's chain of ownership, however, to indicate any dubious World War II-era provenance
+        source: cma-1987-32
+        accessed: 2026-11-24
+  - owner_label: Mrs. Wulf, The Hague
+    acquired: 1964
+    method: purchase
+    direct: true
+    place: the-hague
+    label: exchanged it with P. de Boer for a marine painting by J. van Diest
+    sources:
+      - url: https://clevelandart.org/art/1987.32
+        note: Mrs. Wulf, The Hague, exchanged with P. de Boer for a marine painting by J. van Diest [1964-1975]
+        source: cma-1987-32
+        accessed: 2026-11-24
+  - owner: institution/kunsthandel-pieter-de-boer
+    role: dealer
+    acquired: 1975
+    method: exchange
+    direct: true
+    place: amsterdam
+    label: in exchange for a marine painting by J. van Diest
+    sources:
+      - url: https://clevelandart.org/art/1987.32
+        note: (Kunsthandel P. de Boer, Amsterdam, sold to Johnny Oppenheimer) [1975]
+        source: cma-1987-32
+        accessed: 2026-11-24
+  - owner: person/johnny-oppenheimer
+    acquired: 1975
+    method: purchase
+    direct: true
+    label: Tönnersjö, Eldsberga, Sweden; consigned to P. de Boer in 1984 (unsold), then to Charles Roelofsz Gallery
+    sources:
+      - url: https://clevelandart.org/art/1987.32
+        note: Johnny Oppenheimer, Tönnersjö, Eldsberga, Sweden, consigned to Charles Roelofsz Gallery, Amsterdam [1975-1986] — Oppenheimer also consigned the painting to P. de Boer in 1984; however, it did not sell and remained in Oppenheimer's possession.
+        source: cma-1987-32
+        accessed: 2026-11-24
+  - owner: institution/charles-roelofsz-gallery
+    role: agent
+    acquired: 1986
+    direct: true
+    place: amsterdam
+    label: on consignment from Johnny Oppenheimer
+    sources:
+      - url: https://clevelandart.org/art/1987.32
+        note: (Charles Roelofsz Gallery, Amsterdam) [1986]
+        source: cma-1987-32
+        accessed: 2026-11-24
+  - owner: person/sam-nijstad
+    co_owners: [institution/k-waterman-gallery]
+    role: dealer
+    acquired: 1986
+    label: Sam Nijstad, The Hague, and K. Waterman Gallery, Amsterdam
+    sources:
+      - url: https://clevelandart.org/art/1987.32
+        note: (Sam Nijstad, The Hague, and K. Waterman Gallery, Amsterdam, sold to the Cleveland Museum of Art) [1986]
+        source: cma-1987-32
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1987
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1987.32
+        note: The Cleveland Museum of Art, Cleveland, OH [1987-]
+        source: cma-1987-32
+        accessed: 2026-11-24

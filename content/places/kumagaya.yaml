@@ -1,0 +1,41 @@
+public_id: 124912
+name: Kumagaya
+names:
+  - lang: ja
+    role: original
+    text: 熊谷市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q41106
+  - lang: ko
+    role: translation
+    text: 구마가야시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q41106
+  - lang: ru
+    role: translation
+    text: Кумагая
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q41106
+kind: settlement
+parent: japan
+country_code: JP
+location: [139.38864, 36.14739]
+wikidata_id: Q41106
+metadata:
+  sources: [Wikidata Q41106 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q41106
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q41106
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q41106

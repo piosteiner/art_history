@@ -1,0 +1,16 @@
+public_id: 123188
+name: Cretan school
+kind: movement
+period: 1201/1300
+wikidata_id: Q1378978
+metadata:
+  sources: [Wikidata Q1378978 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1378978
+  period:
+    - accessed: 2026-11-24
+      property: P580
+      wikidata: Q1378978

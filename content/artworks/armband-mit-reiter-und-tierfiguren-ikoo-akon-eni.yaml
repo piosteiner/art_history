@@ -1,0 +1,122 @@
+public_id: 123824
+title_lang: de
+title: Armband mit Reiter und Tierfiguren, Ikoo Akon'eni
+attribution_label: Königliche Gilde der Elfenbeinschnitzer am Hof von Benin
+created: 1701/1850
+kind: jewellery
+medium: Elfenbein
+dimensions: [12.8, 8.3, 7.5]
+institution: museum-rietberg
+inventory_number: RAF 608
+web_url: https://rietberg.ch/sammlungen/raf-608
+on_loan: true
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Benin_Armband_Museum_Rietberg.jpg/1280px-Benin_Armband_Museum_Rietberg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Benin_Armband_Museum_Rietberg.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Königliche Gilde der Elfenbeinschnitzer am Hof von Benin
+    acquired: 18th–19th century
+    method: creation
+    place: benin-city
+    label: carved by the royal guild of ivory carvers at the court of Benin
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-608
+        note: "18./19. Jh.: Königliche Gilde der Elfenbeinschnitzer am Hof von Benin, Urheber*in, Benin City"
+        source: rietberg-raf-608
+        accessed: 2026-11-24
+  - owner: institution/royal-court-of-benin
+    acquired: 18th–19th century
+    method: commission
+    place: benin-city
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-608
+        note: "18./19. Jh.: Königshaus Benin, beauftragt in Benin City"
+        source: rietberg-raf-608
+        accessed: 2026-11-24
+  - owner: person/ovonramwen-nogbaisi
+    acquired: 1888
+    method: inheritance
+    place: benin-city
+    label: Oba of Benin; by inheritance
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-608
+        note: "1888: Oba Ovonramwen Nogbaisi (um 1857–1914), durch Erbgang erworben in Benin City"
+        source: rietberg-raf-608
+        accessed: 2026-11-24
+  - owner: person/harry-rawson
+    role: possessor
+    acquired: 1897
+    method: spoils_of_war
+    place: benin-city
+    label: looted in the British attack on Benin City; illustrated in Felix von Luschan, Die Altertümer von Benin, 1919, p. 399
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-608
+        note: "1897: Harry Rawson (1843–1910), geplündert in Benin City Vgl. Felix von Luschan, Die Altertümer von Benin, 1919, S. 399 mit Abb."
+        source: rietberg-raf-608
+        accessed: 2026-11-24
+  - owner_label: unknown owner
+    acquired: after 1903
+    label: unclear how long the object stayed with Harry Rawson or his heirs
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-608
+        note: "nach 1903: [...] Es ist unklar, bis wann das Objekt im Besitz von Harry Rawson oder allenfalls seiner Erben verblieb."
+        source: rietberg-raf-608
+        accessed: 2026-11-24
+  - owner: person/han-coray
+    acquired: before 1968
+    label: circumstances of acquisition unknown; number on the inside (Reg. No. EA1?)
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-608
+        note: "vor 1968: Han Coray (1880–1974), Erwerbsumstände unbekannt Nummer auf Innenseite (Reg. No. EA1?) Vgl. Staatsbibliothek Berlin, Nachlass Felix von Luschan, Kiste 17, Brief von Admiral Rawson an Felix von Luschan 15.08.1901; British Museum Archive, AOA, Correspondence between C.H. Read and Felix von Luschan/ C.H Read and Captain George Egerton, 1901-1903."
+        source: rietberg-raf-608
+        accessed: 2026-11-24
+  - owner: person/hans-coray
+    acquired: 1974
+    acquired_label: probably 1974
+    method: inheritance
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-608
+        note: "vermutlich 1974: Hans Coray (1906–1991), durch Erbgang erworben"
+        source: rietberg-raf-608
+        accessed: 2026-11-24
+  - owner: person/hans-w-kopp
+    acquired: 1985
+    acquired_label: probably 1985
+    method: purchase
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-608
+        note: "vermutlich 1985: Hans W. Kopp (1931–2009), angekauft Archiv Museum Rietberg, Ordner Eingangsdokumente, Ausgaben-Anweisung zum Ankauf, 14.11.2001 und Ebd. S.0002- 0016, Rechnung RAF 608 & 609."
+        source: rietberg-raf-608
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 2001
+    method: purchase
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-608
+        note: "2001: Museum Rietberg, angekauft Vgl. Archiv Museum Rietberg, Inventarbuch IV/157."
+        source: rietberg-raf-608
+        accessed: 2026-11-24
+  - owner: institution/national-commission-for-museums-and-monuments
+    acquired: 2026-03-20
+    method: restitution
+    direct: true
+    place: zurich
+    label: transfer of ownership to Nigeria under the agreement between the City of Zurich and the NCMM, in a management agreement with the Benin Royal Palace
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-608
+        note: '20.03.2026: National Commission for Museums and Monuments, Nigeria (NCMM) (1979), Eigentumsübertragung in Zürich Gemäss dem "Agreement on the transfer of ownership and return of Benin Bronzes between the City of Zurich and the National Commission for Museums and Monuments of the Federal Ministry of Art, Culture, Tourism and the Creative Economy of Nigeria, representing the Federal Republic of Nigeria and in a management agreement with the Benin Royal Palace" vom 20.03.2026.'
+        source: rietberg-raf-608
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    role: custodian
+    acquired: 2026-03-20
+    direct: true
+    place: zurich
+    label: on loan from the National Commission for Museums and Monuments, Nigeria
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-608
+        note: '20.03.2026: Museum Rietberg, als Leihgabe erhalten in Zürich Gemäss dem "Agreement on the transfer of ownership and return of Benin Bronzes between the City of Zurich and the National Commission for Museums and Monuments of the Federal Ministry of Art, Culture, Tourism and the Creative Economy of Nigeria, representing the Federal Republic of Nigeria and in a management agreement with the Benin Royal Palace" vom 20.03.2026.'
+        source: rietberg-raf-608
+        accessed: 2026-11-24

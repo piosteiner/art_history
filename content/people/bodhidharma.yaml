@@ -1,0 +1,21 @@
+public_id: 124158
+name: Bodhidharma
+kind: person
+birth: c. 483
+death: 540
+wikidata_id: Q187172
+metadata:
+  sources: [Wikidata Q187172 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q187172
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q187172
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q187172

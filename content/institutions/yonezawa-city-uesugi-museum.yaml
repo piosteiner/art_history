@@ -1,0 +1,16 @@
+public_id: 124123
+name: Yonezawa City Uesugi Museum
+kind: museum
+founded: 2001
+wikidata_id: Q11604262
+metadata:
+  sources: [Wikidata Q11604262 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11604262
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11604262

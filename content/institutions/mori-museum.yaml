@@ -1,0 +1,16 @@
+public_id: 124209
+name: Mōri Museum
+kind: museum
+founded: 1916
+wikidata_id: Q11547697
+metadata:
+  sources: [Wikidata Q11547697 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11547697
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11547697

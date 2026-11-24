@@ -1,0 +1,18 @@
+public_id: 122995
+name: Claude Michel
+given_name: Claude
+family_name: Michel
+birth: 1738-12-20
+death: 1814-03-29
+wikidata_id: Q2979538
+metadata:
+  sources: [Wikidata Q2979538 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q2979538
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q2979538

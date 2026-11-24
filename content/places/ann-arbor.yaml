@@ -1,0 +1,47 @@
+public_id: 128727
+name: Ann Arbor
+names:
+  - lang: ja
+    role: translation
+    text: アナーバー
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q485172
+  - lang: zh
+    role: translation
+    text: 安娜堡
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q485172
+  - lang: ko
+    role: translation
+    text: 앤아버
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q485172
+  - lang: ru
+    role: translation
+    text: Энн-Арбор
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q485172
+kind: settlement
+parent: united-states
+country_code: US
+location: [-83.74833, 42.28139]
+wikidata_id: Q485172
+metadata:
+  sources: [Wikidata Q485172 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q485172
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q485172
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q485172

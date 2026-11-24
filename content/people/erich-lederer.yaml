@@ -11,6 +11,15 @@ metadata:
   sources: [Wikidata Q136703900 (retrieved 2026-10-20)]
 relationships:
   - type: child_of
+    to: person/august-lederer
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q762671
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q136703900
+  - type: child_of
     to: person/serena-lederer
     sources:
       - accessed: 2026-10-31

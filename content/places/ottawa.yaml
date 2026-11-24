@@ -1,0 +1,47 @@
+public_id: 127627
+name: Ottawa
+names:
+  - lang: ja
+    role: translation
+    text: オタワ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1930
+  - lang: zh
+    role: translation
+    text: 渥太华;渥太華
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1930
+  - lang: ko
+    role: translation
+    text: 오타와
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1930
+  - lang: ru
+    role: translation
+    text: Оттава
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1930
+kind: settlement
+parent: canada
+country_code: CA
+location: [-75.695, 45.42472]
+wikidata_id: Q1930
+metadata:
+  sources: [Wikidata Q1930 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1930
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1930
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1930

@@ -53,6 +53,15 @@ relationships:
       - accessed: 2026-11-03
         property: P135
         wikidata: Q167654
+  - type: sibling_of
+    to: artist/dirck-hals
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q167654
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q759486
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Frans_Hals_%281582-83%E2%80%931666%29_MET_DP251935.jpg/1280px-Frans_Hals_%281582-83%E2%80%931666%29_MET_DP251935.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Frans_Hals_(1582-83%E2%80%931666)_MET_DP251935.jpg

@@ -1,0 +1,71 @@
+public_id: 124705
+title_lang: en
+title: The Story of Fukutomi
+created: 1400/1499
+created_label: c. 15th century
+created_span: uncertain
+institution: cleveland-museum-of-art
+inventory_number: "1953.358"
+web_url: https://clevelandart.org/art/1953.358
+wikidata_id: Q60516385
+metadata:
+  sources: [Wikidata Q60516385 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Japan%2C_Kamakura_period_-_Fukutomi_Zoshi_-_1953.358_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Japan%2C_Kamakura_period_-_Fukutomi_Zoshi_-_1953.358_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japan,_Kamakura_period_-_Fukutomi_Zoshi_-_1953.358_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: anonymous
+provenance:
+  - owner: institution/kaifuku-in-myoshin-ji
+    place: kyoto
+    label: Kaifuku-in, a subtemple of Myōshin-ji
+    sources:
+      - url: https://clevelandart.org/art/1953.358
+        note: Myōshinji, Kaifuku'in, Kyoto, Japan
+        source: cma-1953-358
+        accessed: 2026-11-24
+  - owner: person/reizei-tamechika
+    sources:
+      - url: https://clevelandart.org/art/1953.358
+        note: Reizei Tamechika [1823–1864]
+        source: cma-1953-358
+        accessed: 2026-11-24
+  - owner: person/masuda-takashi
+    sources:
+      - url: https://clevelandart.org/art/1953.358
+        note: Masuda Takashi [1848–1938]
+        source: cma-1953-358
+        accessed: 2026-11-24
+  - owner: institution/howard-hollis-and-co
+    role: dealer
+    ended: 1953
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1953.358
+        note: (Howard Hollis and Company, Cleveland, OH, sold to the Cleveland Museum of Art) [?–1953]
+        source: cma-1953-358
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1953
+    method: purchase
+    direct: true
+    place: cleveland
+    label: John L. Severance Fund
+    sources:
+      - url: https://clevelandart.org/art/1953.358
+        note: The Cleveland Museum of Art, Cleveland, OH [1953–]
+        source: cma-1953-358
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60516385
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60516385
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60516385

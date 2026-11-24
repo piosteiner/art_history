@@ -1,0 +1,18 @@
+public_id: 122859
+name: Giovanni Ambrogio de Predis
+given_name: Giovanni Ambrogio
+family_name: de Predis
+birth: 1455
+death: 1522
+wikidata_id: Q947105
+metadata:
+  sources: [Wikidata Q947105 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q947105
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q947105

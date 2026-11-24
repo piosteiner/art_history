@@ -1,0 +1,11 @@
+public_id: 122989
+name: Judith
+kind: person
+wikidata_id: Q26454627
+metadata:
+  sources: [Wikidata Q26454627 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q26454627

@@ -1,0 +1,18 @@
+public_id: 122828
+name: Jan Victors
+given_name: Jan
+family_name: Victors
+birth: 1619-06-13
+death: 1670/1679
+wikidata_id: Q1357477
+metadata:
+  sources: [Wikidata Q1357477 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q1357477
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q1357477

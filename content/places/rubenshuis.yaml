@@ -1,0 +1,16 @@
+public_id: 122970
+name: Rubenshuis
+kind: building
+location: [4.40944, 51.21722]
+wikidata_id: Q775644
+metadata:
+  sources: [Wikidata Q775644 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q775644
+  location:
+    - accessed: 2026-11-23
+      property: P625
+      wikidata: Q775644

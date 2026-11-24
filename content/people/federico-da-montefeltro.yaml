@@ -26,6 +26,16 @@ death: 1482-09-19
 wikidata_id: Q435501
 metadata:
   sources: [Wikidata Q435501 (retrieved 2026-10-20)]
+relationships:
+  - type: married_to
+    to: person/battista-sforza
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q435501
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q810972
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/dc/Federico_da_Montefeltro.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Federico_da_Montefeltro.jpg

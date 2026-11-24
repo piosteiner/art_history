@@ -1,0 +1,23 @@
+public_id: 124677
+name: Anne Louis de Goislard de Monsabert
+given_name: Anne Louis de Goislard
+family_name: de Monsabert
+kind: person
+birth: 1708-03-12
+death: 1780-06-01
+wikidata_id: Q128798945
+metadata:
+  sources: [Wikidata Q128798945 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q128798945
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q128798945
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q128798945

@@ -1,0 +1,18 @@
+public_id: 124673
+name: Valentin de Boulogne
+given_name: Valentin
+family_name: de Boulogne
+birth: 1591-01-03
+death: 1632-08-19
+wikidata_id: Q1337275
+metadata:
+  sources: [Wikidata Q1337275 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q1337275
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q1337275

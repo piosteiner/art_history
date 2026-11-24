@@ -1,0 +1,146 @@
+public_id: 123078
+title_lang: fr
+title: Pandore
+names:
+  - lang: en
+    role: translation
+    text: Pandora
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q18001840
+creator: odilon-redon
+created: 1912
+materials: [oil paint, canvas]
+dimensions: [143.5, 62.9]
+institution: national-gallery-of-art
+inventory_number: 1963.10.56
+wikidata_id: Q18001840
+metadata:
+  sources: [Wikidata Q18001840 (retrieved 2026-11-23)]
+relationships:
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q18001840
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Pandora_by_Odilon_Redon.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Pandora_by_Odilon_Redon.JPG
+    license: Public domain
+    credit: Odilon Redon
+provenance:
+  - owner: person/jules-chavasse
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46531.html
+        note: Jules Chavasse, Paris;
+        source: nga-1963-10-56
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1922-06-22
+    method: auction
+    direct: true
+    place: paris
+    label: Chavasse sale, Hôtel Drouot, Paris, 22 June 1922, no. 26, repro.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46531.html
+        note: (his sale, Hôtel Drouot, Paris, 22 June 1922, no. 26, repro.).
+        source: nga-1963-10-56
+        accessed: 2026-11-24
+  - owner_label: Mrs. A. Bing, New York
+    acquired: 1928 or earlier
+    place: new-york-city
+    label: lent to an exhibition at César de Hauke's New York gallery, 1928
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46531.html
+        note: Mrs. A. Bing, New York, by 1928.[1] — [1]Lent by Mrs. Bing to exhibition at Cesar de Hauke's New York gallery in 1928
+        source: nga-1963-10-56
+        accessed: 2026-11-24
+  - owner: institution/reinhardt-galleries
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46531.html
+        note: (Reinhardt Galleries, New York);
+        source: nga-1963-10-56
+        accessed: 2026-11-24
+  - owner: person/lotus-robb-smith
+    acquired_label: c. 1927/28
+    ended_label: until at least 1931
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: probably sold to her by Reinhardt Galleries
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46531.html
+        note: probably by whom sold to Mrs. Lotus Robb Smith, New York, c. 1927/28 until at least 1931;
+        source: nga-1963-10-56
+        accessed: 2026-11-24
+  - owner_label: anonymous collector, almost certainly Mr. Smith, Lotus Robb's former husband
+    method: transfer
+    label: returned to her former husband at their divorce c. 1937, who sold it at once
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46531.html
+        note: sold 1937 by an anonymous collector … [2] The anonymous collector who sold Weitzner the painting is almost certainly Mr. Smith, whom Lotus Robb divorced c. 1937. She later married Mr. Marvin Ross, who detailed how she returned the paintings to her former husband when they divorced, and he immediately sold them
+        source: nga-1963-10-56
+        accessed: 2026-11-24
+  - owner: person/julius-h-weitzner
+    role: dealer
+    acquired: 1937
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: London and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46531.html
+        note: sold 1937 by an anonymous collector to (Julius H. Weitzner [1896-1986], London and New York);[2]
+        source: nga-1963-10-56
+        accessed: 2026-11-24
+  - owner: person/chester-dale
+    acquired: 1950-10-20
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46531.html
+        note: sold 20 October 1950 to Chester Dale [1882-1962], New York; — [2]See Weitzner receipt dated 20 October 1950
+        source: nga-1963-10-56
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1963
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46531.html
+        note: gift 1963 to NGA.
+        source: nga-1963-10-56
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q18001840
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q18001840
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q18001840
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q18001840
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q18001840
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q18001840

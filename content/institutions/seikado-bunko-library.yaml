@@ -1,0 +1,16 @@
+public_id: 124231
+name: Seikadō Bunko Library
+kind: library
+founded: 1892
+wikidata_id: Q3329573
+metadata:
+  sources: [Wikidata Q3329573 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3329573
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3329573

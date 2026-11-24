@@ -8,6 +8,16 @@ death: 1066-10-20
 wikidata_id: Q1249624
 metadata:
   sources: [Wikidata Q1249624 (retrieved 2026-11-09)]
+relationships:
+  - type: sibling_of
+    to: person/gyrth-godwinson
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q1249624
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q1249857
 sources:
   kind:
     - accessed: 2026-11-09

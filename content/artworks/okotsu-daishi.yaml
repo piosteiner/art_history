@@ -1,0 +1,24 @@
+public_id: 124359
+title: Okotsu Daishi
+names:
+  - lang: ja
+    role: translation
+    text: 御骨大師
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045577
+wikidata_id: Q107045577
+metadata:
+  sources: [Wikidata Q107045577 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/enchin
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107045577
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bb/Sculpture_of_Chisho_Daishi_%28O-kotsu_Daishi%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sculpture_of_Chisho_Daishi_(O-kotsu_Daishi).jpg
+    license: Public domain
+    credit: 文化財協会

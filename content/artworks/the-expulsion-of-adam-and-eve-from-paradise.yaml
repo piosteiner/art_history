@@ -1,0 +1,53 @@
+public_id: 125255
+title_lang: en
+title: The Expulsion of Adam and Eve from Paradise
+names:
+  - text: Expulsion of Adam and Eve
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268018
+  - lang: it
+    role: translation
+    text: la cacciata di adamo ed eva dal paradiso terrestre
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268018
+creator: benjamin-west
+created: 1791
+materials: [oil paint, canvas]
+dimensions: [48.6, 72.9]
+institution: art-institute-of-chicago
+inventory_number: "1984.175"
+wikidata_id: Q20268018
+metadata:
+  sources: [Wikidata Q20268018 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Benjamin_West_-_The_Expulsion_of_Adam_and_Eve_from_Paradise_-_1984.175_-_Art_Institute_of_Chicago.jpg/1280px-Benjamin_West_-_The_Expulsion_of_Adam_and_Eve_from_Paradise_-_1984.175_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Benjamin_West_-_The_Expulsion_of_Adam_and_Eve_from_Paradise_-_1984.175_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Benjamin West
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268018
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20268018
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20268018
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20268018
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268018
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268018

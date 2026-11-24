@@ -1,0 +1,91 @@
+public_id: 124305
+title: Great Buddha of Takaoka
+names:
+  - text: Takaoka Daibutsu
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11669490
+  - lang: fr
+    role: translation
+    text: grand Bouddha de Takaoka
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11669490
+  - lang: ja
+    role: translation
+    text: 高岡大仏
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11669490
+  - lang: zh
+    role: translation
+    text: 高岡大佛
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11669490
+created: 1907/1933
+materials: [copper]
+dimensions: [1585]
+institution: daibutsu-ji
+location: [137.01719, 36.74564]
+wikidata_id: Q11669490
+metadata:
+  sources: [Wikidata Q11669490 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/takaoka
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Takaoka_Daibutsu_2011-07-15_01.jpg/1280px-Takaoka_Daibutsu_2011-07-15_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Takaoka_Daibutsu_2011-07-15_01.jpg
+    license: CC BY-SA 3.0
+    credit: 柑橘類 (talk)
+provenance:
+  - owner_label: Takaoka Daibutsu reconstruction office (Matsuki Sōzaemon and 52 promoters)
+    acquired: 1907/1933
+    method: commission
+    place: takaoka
+    label: "third Takaoka Buddha: vowed by the lay leader Matsuki Sōzaemon with Ryōzen, 31st abbot of Gokuraku-ji, after the wooden second one burned in 1900; appeal 1907, bronze from 1916, model by Nakano Sōzan, funds from Ogifu Sōshirō; completed Dec. 1932"
+    sources:
+      - url: https://www.takaokadaibutsu.xyz/about_story.html
+        note: 焼失から7年後の1907年（明治40年）5月には、大仏再建のための「寄付金募集ノ義ニ付願」が富山県庁に提出され … 翌月作成された「高岡大仏再興事務所」の趣意書と配布された募金申込書には「銅像四丈五尺（約13.6メートル）」を作ると呼びかけられた。趣意書に名を連ねた発起人は52名で
+        source: takaokadaibutsu-about-story
+        accessed: 2026-11-24
+      - url: https://www.takaokadaibutsu.xyz/about_history.html
+        note: 信徒世話頭であった松木宗左衛門が、極楽寺第31世良禅上人と提携して大仏再興を発願。
+        source: takaokadaibutsu-about-history
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%AB%98%E5%B2%A1%E5%A4%A7%E4%BB%8F&oldid=111488710
+        note: 1907年 - 火に強い大仏の再建を望む声が高まる。松木宗左衛門が発願し、高岡銅器の職人の協力のもと、現在の大仏の建立が始まる。
+        source: ja-wikipedia-takaoka-daibutsu
+        accessed: 2026-11-24
+  - owner: institution/daibutsu-ji
+    acquired: 1933-05
+    place: takaoka
+    label: cast bronze Buddha completed December 1932, eye-opening ceremony May 1933, at Daibutsu-ji (Hōtokuzan, Jōdo sect), Ōtemachi; moved c. 11 m back in 1980; city-designated cultural property 1981
+    certainty: probable
+    sources:
+      - url: https://www.takaokadaibutsu.xyz/about_story.html
+        note: 1932年（昭和7年）12月尊像蓮台及び総高15.15mの鋳銅大仏が完成。翌1933年（昭和8年）5月には開眼式が挙行されるに至り
+        source: takaokadaibutsu-about-story
+        accessed: 2026-11-24
+      - url: https://www.takaokadaibutsu.xyz/about_history.html
+        note: 高岡大仏は、富山県高岡市大手町の鳳徳山大仏寺にある、高さ約16メートルの阿弥陀如来坐像です。
+        source: takaokadaibutsu-about-history
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%AB%98%E5%B2%A1%E5%A4%A7%E4%BB%8F&oldid=111488710
+        note: 1933年5月3日 - 5月5日 - 新しい大仏が完成。開眼供養が行われる … 1980年 - 補修が行われ、現在の場所に移動（約11m後退）。
+        source: ja-wikipedia-takaoka-daibutsu
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11669490
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q11669490
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q11669490

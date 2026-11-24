@@ -1,0 +1,43 @@
+public_id: 124093
+title: Founder's Hall, Todaiji
+names:
+  - lang: ja
+    role: translation
+    text: 東大寺開山堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020493
+created: 1200
+institution: todai-ji
+location: [135.8433, 34.68901]
+wikidata_id: Q107020493
+metadata:
+  sources: [Wikidata Q107020493 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nara
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Toudai-ji_kaizandou.jpg/1280px-Toudai-ji_kaizandou.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Toudai-ji_kaizandou.jpg
+    license: CC BY-SA 3.0
+    credit: Original uploader was Ｈｉｒｏ２００６ at ja.wikipedia
+provenance:
+  - owner: institution/todai-ji
+    acquired: 1200
+    method: creation
+    place: nara
+    label: "hall for the portrait of Rōben, the first abbot: the inner sanctum built 1200 in Chōgen's lifetime (the 'Sōjō-dō' of his Sazenshū), moved and enlarged to three bays in 1250; the temple dates a first hall to 1019; the temple is the owner today"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/2439
+        note: 建立年代は重源（一一二一～一二〇六）の在世中正治二年（一二〇〇）と考えられ、南無阿弥陀仏作善集に記す「僧正堂」がこれにあたる。当時は方一間の小堂であったが、その後建長二年（一二五〇）に移築し、外陣を付加して現状のような方三間の堂となったと考えられる。… 所有者名 ： 東大寺 所有者種別 ： 寺院
+        source: kunishitei-102-2439
+        accessed: 2026-11-24
+      - url: https://www.todaiji.or.jp/information/kaizando/
+        note: 良弁僧正が遷化した宝亀4年（773）から246年後の寛仁3年（1019）に初めて御忌法要が行なわれたことから、開山堂はそのときに創建され、僧正像も同時に造立されたようである。
+        source: todaiji-kaizando
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020493

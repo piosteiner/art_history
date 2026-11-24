@@ -1,0 +1,250 @@
+public_id: 125200
+title_lang: en
+title: Landscape with Saint John on Patmos
+names:
+  - lang: fr
+    role: translation
+    text: Paysage avec saint Jean à Patmos
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20275938
+  - lang: it
+    role: translation
+    text: Paesaggio con Giovanni Evangelista a Patmos
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20275938
+  - lang: ja
+    role: translation
+    text: パトモス島の聖ヨハネのいる風景
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20275938
+creator: nicolas-poussin
+created: 1640
+materials: [oil paint, canvas]
+dimensions: [100.3, 136.4]
+institution: art-institute-of-chicago
+inventory_number: "1930.500"
+web_url: https://www.artic.edu/artworks/5848/landscape-with-saint-john-on-patmos
+wikidata_id: Q20275938
+metadata:
+  sources: [Wikidata Q20275938 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/john-of-patmos
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20275938
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Nicolas_Poussin_-_Landscape_with_Saint_John_on_Patmos_-_1930.500_-_Art_Institute_of_Chicago.jpg/1280px-Nicolas_Poussin_-_Landscape_with_Saint_John_on_Patmos_-_1930.500_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nicolas_Poussin_-_Landscape_with_Saint_John_on_Patmos_-_1930.500_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Nicolas Poussin
+provenance:
+  - owner: person/gian-maria-roscioli
+    acquired: 1640
+    method: commission
+    place: rome
+    label: commissioned with its pendant Landscape with Saint Matthew (Berlin, Gemäldegalerie), paid 28 October 1640 (Barroero 1979, Corradini 1979)
+    price:
+      amount: 40
+      currency: SCU
+      note: 40 écus for this and its pendant together
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: Commissioned by abate Gian Maria Roscioli (died 1644), Rome, and paid for, with its pendant (Landscape with Saint Mathew, now Berlin, Gemäldegalerie) on October 28, 1640 for 40 écus [documents published by Barroero 1979 and Corradini 1979).
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner_label: French collection
+    acquired: 1680 or earlier
+    label: engraved by Louis de Châtillon, c. 1680
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: Probably in a French collection by 1680 [when engraved by Louis de Châtillon, c. 1680].
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner: person/francois-antoine-robit
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: François-Antoine Robit, Paris,
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner_label: Paillet and Delaroche
+    role: agent
+    acquired: 1801-05-11
+    method: auction
+    direct: true
+    place: paris
+    label: Robit sale, Paris, 11 May 1801 and following days, no. 91
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: sold Paillet and Delaroche, Paris, May 11 and following, 1801, no. 91,
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner: person/michael-bryan
+    acquired: 1801-05
+    method: auction
+    direct: true
+    label: bought through Naudou acting for Bryan (Edwards 1996, pp. 299, 304)
+    price:
+      amount: 7100
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: to Naudou acting for Michael Bryan, for Fr 7,100 [see Edwards 1996, pp. 299, 304];
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner: person/sir-simon-clarke
+    acquired_label: probably shortly after the Robit sale (May 1801)
+    method: purchase
+    direct: true
+    label: Oakhill, Hertfordshire; bought from Bryan, probably shortly after the Robit sale, for 1,000 guineas (Buchanan 1824)
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: sold by Bryan, probably shortly thereafter, to Sir Simon Clarke, Bt (died 1832), Oakhill, Hertfordshire, for 1,000 gns. [see Buchanan 1824; with George Hibbert, Clarke had provided financial support for Bryan’s purchases at the Robit sale];
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1840-05-08
+    method: auction
+    direct: true
+    place: london
+    label: sale, Christie's, London, 8–9 May 1840, no. 39
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: sold Christie’s, London, May 8-9, 1840, no. 39,
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner: person/andrew-geddes
+    acquired: 1840-05
+    ended: 1844
+    method: auction
+    direct: true
+    place: london
+    label: 86 guineas; price and buyer in an annotated catalogue at the Frick Art Reference Library
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: to Geddes for 86 gns. [price and buyer in annotated catalogue at the Frick Art Reference Library]; Andrew Geddes, A.R.A. (died 1844), London;
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner: person/adela-plimer-geddes
+    acquired: 1844
+    method: inheritance
+    direct: true
+    label: his widow
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: by descent to his widow, Adela Plimer Geddes (died 1881),
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    not_sold: true
+    acquired: 1845-04-12
+    method: auction
+    direct: true
+    place: london
+    label: offered for sale, Christie's, London, 12 April 1845, no. 651, bought in
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: offered for sale, Christie’s, London, April 12, 1845, no. 651, bought in;
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    not_sold: true
+    acquired: 1867-11-30
+    method: auction
+    direct: true
+    place: london
+    label: offered for sale, Christie's, London, 30 November 1867, no. 56, bought in (annotated catalogue, Christie's archive)
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: offered for sale, Christie’s, London, November 30, 1867, no. 56, bought in [annotated catalogue from Christie’s archive, copy in curatorial file].
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner: person/max-rothschild
+    acquired: 1918
+    method: purchase
+    place: london
+    label: on the London art market, according to Blunt 1966; Blunt (London 1960) gave 1928
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: Acquired on the London art market by Max Rothschild, 1918 [according to Blunt 1966; in London 1960 Blunt stated that Rothschild acquired the picture in 1928].
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1927-12-16
+    method: auction
+    place: london
+    label: "possibly this picture: sale, Christie's, London, 16 December 1927, no. 86 (40 x 52 1/2 in.), to Leger for £21"
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: Possibly identical with the picture that was sold at Christie’s, London, December 16, 1927, no. 86, to Leger for £21[see Art Prices Current, n.s. 7 London, 1928, p. 105, the dimensions given as 40 x 52 1/2 inches; see also Posse 1930].
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner_label: Leger
+    acquired: 1927-12-16
+    method: auction
+    direct: true
+    place: london
+    certainty: possible
+    price:
+      amount: 21
+      currency: GBP
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: Possibly identical with the picture that was sold at Christie’s, London, December 16, 1927, no. 86, to Leger for £21
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner: institution/e-a-fleischmann-gallery-munich
+    role: dealer
+    acquired: 1930 or earlier
+    place: munich
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: E. A. Fleischmann Gallery, Munich, by 1930;
+        source: aic-1930-500
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1930
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/5848
+        note: sold to the Art Institute, 1930.
+        source: aic-1930-500
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20275938
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20275938
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20275938
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20275938
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20275938
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20275938

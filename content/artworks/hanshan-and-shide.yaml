@@ -1,0 +1,77 @@
+public_id: 124276
+title: Hanshan and Shide
+names:
+  - lang: ja
+    role: translation
+    text: 禅機図断簡 寒山拾得図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045373
+parent: deeds-of-the-zen-masters
+created: 14th century
+created_span: uncertain
+institution: tokyo-national-museum
+inventory_number: TA-343
+web_url: https://colbase.nich.go.jp/collection_items/tnm/TA-343
+location: [139.7756, 35.71994]
+wikidata_id: Q107045373
+metadata:
+  sources: [Wikidata Q107045373 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Hanshan_and_Shide.jpg/1280px-Hanshan_and_Shide.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hanshan_and_Shide.jpg
+    license: Public domain
+    credit: Indara (因陀羅) (Yintuoluo)
+provenance:
+  - owner_label: Yintuoluo (Indara)
+    acquired: 14th century
+    method: creation
+    label: by Indara (religious name Renfan Yin, abbot of Daguangjiao Chan temple, Kaifeng), inscription by Chushi Fanqi; said to be a fragment of a handscroll of Zen scenes
+    sources:
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TA343
+        note: 因陀羅【いんだら】は、本図の款記より、法名を壬梵因といい、開封【かいほう】の大光教禅寺に住し、大師号を授けられた高僧とわかります。本図は禅林とその周辺の人物にかかわる逸話を主題にした禅機図巻(ぜんきずかん)の断巻といわれます。 … 作者 | 因陀羅筆、楚石梵琦賛 | 時代・世紀 | 元時代・14世紀
+        source: tnm-ta343
+        accessed: 2026-11-24
+  - owner_label: Asano family
+    label: formerly owned by the Asano family; its box bears an inscription by the tea master and Matsue daimyo Matsudaira Fumai
+    sources:
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TA343
+        note: 浅野家旧蔵品。
+        source: tnm-ta343
+        accessed: 2026-11-24
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100221
+        note: 本図は付属の箱に、茶人として有名な松江藩主、松平不昧（まつだいらふまい）の箱書をもち、浅野家に旧蔵された名品として知られる。
+        source: emuseum-100221
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    place: tokyo
+    label: owner today (National Institutes for Cultural Heritage; National Treasure since 14 November 1953); date and way of acquisition not stated
+    sources:
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=TA343
+        note: 機関管理番号 | TA-343
+        source: tnm-ta343
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/91
+        note: 国宝指定年月日 ： 1953.11.14(昭和28.11.14) … 保管施設の名称 ： 東京国立博物館 | 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-91
+        accessed: 2026-11-24
+sources:
+  parent:
+    - accessed: 2026-11-24
+      property: P179
+      wikidata: Q107045373
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107045373
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107045373
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q107045373

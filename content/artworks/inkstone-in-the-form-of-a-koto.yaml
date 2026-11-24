@@ -1,0 +1,63 @@
+public_id: 124708
+title_lang: en
+title: Inkstone in the Form of a Koto
+institution: cleveland-museum-of-art
+inventory_number: "1971.168"
+web_url: https://clevelandart.org/art/1971.168
+wikidata_id: Q79923894
+metadata:
+  sources: [Wikidata Q79923894 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Japan%2C_Gifu_Prefecture%2C_Mino_kilns%2C_Momoyama_%281573-1615%29-Edo_period_-_Inkstone_in_the_Form_of_a_Koto_-_1971.168_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Japan%2C_Gifu_Prefecture%2C_Mino_kilns%2C_Momoyama_%281573-1615%29-Edo_period_-_Inkstone_in_the_Form_of_a_Koto_-_1971.168_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japan,_Gifu_Prefecture,_Mino_kilns,_Momoyama_(1573-1615)-Edo_period_-_Inkstone_in_the_Form_of_a_Koto_-_1971.168_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Cleveland Museum of Art
+provenance:
+  - owner: person/kitaoji-rosanjin
+    label: "'Rosanjin Collection'"
+    sources:
+      - url: https://clevelandart.org/art/1971.168
+        note: Rosanjin Collection
+        source: cma-1971-168
+        accessed: 2026-11-24
+  - owner: person/kaneda-kaichiro
+    sources:
+      - url: https://clevelandart.org/art/1971.168
+        note: Kaneda Kaichiro
+        source: cma-1971-168
+        accessed: 2026-11-24
+  - owner: institution/kuroda-toen
+    sources:
+      - url: https://clevelandart.org/art/1971.168
+        note: Kuroda Toen
+        source: cma-1971-168
+        accessed: 2026-11-24
+  - owner: person/mathias-komor
+    role: dealer
+    ended: 1971
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1971.168
+        note: (Mathias Komor [1909–1984], New York, NY, sold to the Cleveland Museum of Art) [?–1971]
+        source: cma-1971-168
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1971
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Gift of Mr. and Mrs. Harry H. Stone (bought from Mathias Komor)
+    sources:
+      - url: https://clevelandart.org/art/1971.168
+        note: The Cleveland Museum of Art, Cleveland, OH [1971–]
+        source: cma-1971-168
+        accessed: 2026-11-24
+sources:
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q79923894
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q79923894

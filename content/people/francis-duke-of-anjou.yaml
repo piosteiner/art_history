@@ -1,0 +1,21 @@
+public_id: 123070
+name: Francis, Duke of Anjou
+kind: person
+birth: 1555-03-28
+death: 1584-06-19
+wikidata_id: Q318380
+metadata:
+  sources: [Wikidata Q318380 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q318380
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q318380
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q318380

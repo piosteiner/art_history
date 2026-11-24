@@ -1,0 +1,243 @@
+public_id: 122781
+title_lang: en
+title: River Landscape with Ferry
+names:
+  - lang: it
+    role: original
+    text: Paesaggio fluviale con traghetto per bestiame
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177276
+  - lang: nl
+    role: translation
+    text: Rivier landschap met veerpont
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177276
+  - lang: fr
+    role: translation
+    text: Paysage avec bac
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177276
+  - lang: de
+    role: translation
+    text: Flusslandschaft mit Fähre
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177276
+  - lang: ja
+    role: translation
+    text: フェリーのある川景色
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177276
+creator: salomon-van-ruysdael
+created: 1649
+materials: [oil paint, canvas]
+dimensions: [99.5, 133.5]
+institution: national-gallery-of-art
+inventory_number: 2007.116.1
+web_url: http://www.codart.nl/exhibitions/details/1723/
+provenance_status: d_seized
+provenance_status_note: Left behind in Jacques Goudstikker's stock when he fled Amsterdam in May 1940; confiscated by the Nazis later that year and delivered to Hermann Göring; recovered by the Allies, returned to the Netherlands 1948 (NK 2347), restituted to Goudstikker's heirs in 2006.
+wikidata_id: Q20177276
+metadata:
+  sources: [Wikidata Q20177276 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Salomon_van_Ruysdael_-_Rivierlandschap_met_veerpont_%281649%29.jpg/1280px-Salomon_van_Ruysdael_-_Rivierlandschap_met_veerpont_%281649%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Salomon_van_Ruysdael_-_Rivierlandschap_met_veerpont_(1649).jpg
+    license: Public domain
+    credit: Salomon van Ruysdael
+provenance:
+  - owner: person/hugh-edward-wilbraham
+    place: northwich
+    label: Major Hugh Edward Wilbraham, M.B.E., Delamere House, near Northwich, Cheshire
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: Possibly Major Hugh Edward Wilbraham, M.B.E. [1857-1930], Delamere House, near Northwich, Cheshire;
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: person/george-hugh-de-vernon-wilbraham
+    method: inheritance
+    direct: true
+    place: northwich
+    label: Delamere House
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: by inheritance to his son, George Hugh de Vernon Wilbraham [1890-1962], Delamere House;
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1930-07-18
+    ended: 1930-07-18
+    method: auction
+    direct: true
+    place: london
+    label: his sale, Christie, Manson & Woods, London, 18 July 1930, no. 33
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: (his sale, Christie, Manson & Woods, London, 18 July 1930, no. 33);
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: person/jacques-goudstikker
+    role: dealer
+    method: purchase
+    direct: true
+    place: amsterdam
+    label: left behind in the gallery's stock when he fled Amsterdam in May 1940; he died in an accident on board the ship
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: (Jacques Goudstikker, Amsterdam);[1] — [1] The dealer Jacques Goudstikker fled Amsterdam with his wife and son in May 1940, and died in an accident on board the ship on which he left. He left behind most of his gallery's stock of paintings, including the Ruysdael
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: person/hermann-goring
+    role: possessor
+    acquired: 1940
+    method: confiscation
+    label: confiscated with the rest of the Goudstikker paintings and delivered to Göring; listed in the Goudstikker report of 13 September 1940, Bijlage III
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: with the rest of the Goudstikker paintings, it was confiscated by the Nazis later the same year and delivered to Hermann Göring; see Rapport inzake de Kunsthandel v.h J Goudstikker NV in oprichtung per 13 September 1940, Bijlage III, "Staat van Schilderijen, gekocht door den Rijksveldmaarschalk H. Göring van de "oude" Goudstikker,"
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    ended: 1948
+    method: transfer
+    place: munich
+    label: recovered by the Allies; Munich no. 5324
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: The painting was recovered by the Allies at the end of World War II and held at the Munich Central Collecting Point (where it was no. 5324), before being returned to the Netherlands in 1948.
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: institution/stichting-nederlands-kunstbezit
+    acquired: 1948
+    method: transfer
+    direct: true
+    place: the-hague
+    label: returned to the Netherlands; inventory no. NK 2347
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: "In the Netherlands, ownership was transferred among several museums, during which time the painting maintained the identifying inventory number NK 2347: Stichting Nederlands Kunstbezit, The Hague, in 1948;"
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: institution/dienst-voor-s-rijks-verspreide-kunstvoorwerpen
+    acquired: 1948
+    ended: 1975
+    method: transfer
+    direct: true
+    place: the-hague
+    label: NK 2347
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: Dienst voor's Rijks Verspreide Kunstvoorwerpen, The Hague, 1948-1975;
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: institution/rijksmuseum
+    role: custodian
+    acquired: 1960
+    ended: 2006
+    method: transfer
+    place: amsterdam
+    label: physical custody; inventory no. SK A 3983
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: Physical custody of the painting was transferred in 1960 to the Rijksmuseum, Amsterdam, where it had the inventory number SK A 3983 and where it remained until 2006.
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: institution/dienst-voor-s-rijks-verspreide-kunstvoorwerpen
+    acquired: 1975
+    ended: 1985
+    method: transfer
+    direct: true
+    place: the-hague
+    label: NK 2347
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: Dienst Verspreide Rijkscollecties, The Hague, 1975-1985;
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: institution/rijksdienst-beeldende-kunst
+    acquired: 1985
+    ended: 1997
+    method: transfer
+    direct: true
+    place: the-hague
+    label: NK 2347
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: Rijksdienst Beeldende Kunst, The Hague, 1985-1997;
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: institution/instituut-collectie-nederland
+    acquired: 1997
+    method: transfer
+    direct: true
+    place: amsterdam
+    label: NK 2347; the Restitutions Committee recommended the Goudstikker heirs' claim in 2005
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: and Instituut Collectie Nederland, Amsterdam, in 1997. … In 2005, the Dutch Advisory Committee on the Assessment of Restitution Applications for Items of Cultural Value and the Second World War recommended in favor of the Goudstikker family's claim for the return of this and other paintings that had been confiscated in 1940.
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: person/marei-von-saher
+    acquired: 2006-02-06
+    method: restitution
+    direct: true
+    place: greenwich-2
+    label: restituted to Jacques Goudstikker's daughter-in-law (widow of his son Edward), with her daughters Charlène and Chantel as surviving heirs
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: restituted 6 February 2006 to his daughter-in-law, Marei von Saher, Greenwich, Connecticut; — [1] … The surviving heirs were Marei von Saher, the widow of Goudstikker's son, Edward, and her daughters, Charlène and Chantel, who received the restituted paintings in early 2006.
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    method: transfer
+    direct: true
+    place: new-york-city
+    label: sale to the NGA through Christie's, New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: purchased 5 November 2007 through (Christie's, New York) by NGA.
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 2007-11-05
+    method: purchase
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139458.html
+        note: purchased 5 November 2007 through (Christie's, New York) by NGA.
+        source: nga-2007-116-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177276
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177276
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177276
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177276
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177276
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177276

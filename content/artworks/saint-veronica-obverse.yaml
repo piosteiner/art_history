@@ -1,0 +1,187 @@
+public_id: 123050
+title_lang: en
+title: Saint Veronica [obverse]
+names:
+  - lang: nl
+    role: translation
+    text: "De H. Veronica met de zweetdoek (op de achterzijde: De kelk van H. Johannes)"
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20174056
+  - lang: fr
+    role: translation
+    text: Sainte Véronique
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20174056
+  - lang: de
+    role: translation
+    text: "Diptychon mit Johannes dem Täufer und der Hl. Veronika, rechter Flügel: Hl. Veronika"
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20174056
+creator: hans-memling
+created: 1470s
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [31.2, 24.4]
+institution: national-gallery-of-art
+inventory_number: 1952.5.46.a
+wikidata_id: Q20174056
+metadata:
+  sources: [Wikidata Q20174056 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/saint-veronica
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20174056
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q20174056
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c3/Hans_Memling_-_St_John_and_Veronica_Diptych_%28right_wing%29_-_WGA14926.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Memling_-_St_John_and_Veronica_Diptych_(right_wing)_-_WGA14926.jpg
+    license: Public domain
+    credit: Hans Memling
+provenance:
+  - owner: person/bernardo-bembo-2
+    label: Venice or Verona; his son Carlo lent paintings to Isabella d'Este in Mantua with a letter of 31 August 1502
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41659.html
+        note: Probably Bernardo Bembo, Venice or Verona [d. 1519]. — [1] Letter of 31 August 1502 from Carlo Bembo, son of Bernardo, to Isabella d'Este, accompanying a loan of paintings to her in Mantua.
+        source: nga-1952-5-46-a
+        accessed: 2026-11-24
+  - owner: person/pietro-bembo
+    place: padua
+    label: Cardinal Pietro Bembo, his son; Padua and Rome; Marcantonio Michiel's notes (1520s or early 1530s) on what seems to be this diptych
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41659.html
+        note: Probably his son, Cardinal Pietro Bembo [1470-1547], Padua and Rome.[1] — Approximately thirty years later (after Bernardo's death), Marcantonio Michiel's notes on what seems to be this diptych name the owner as the poet Pietro Bembo … Pietro Bembo's paintings were then in Padua.
+        source: nga-1952-5-46-a
+        accessed: 2026-11-24
+  - owner: person/nikolai-demidov
+    place: florence
+    label: Nicolai Nikitich Demidov, Prince of San Donato, near Florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41659.html
+        note: Nicolai Nikitich Demidov, Prince of San Donato [1773-1828], near Florence;[2]
+        source: nga-1952-5-46-a
+        accessed: 2026-11-24
+  - owner: person/anatole-demidoff
+    direct: true
+    place: florence
+    label: his son, Anatoly Nikolaievich Demidov, Prince of San Donato, near Florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41659.html
+        note: his son, Anatoly Nikolaievich Demidov, Prince of San Donato [1812-1870], near Florence;
+        source: nga-1952-5-46-a
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1870-03-03
+    method: auction
+    place: paris
+    label: Demidov sale, Paris, 3 March 1870, no. 204, reproduced in an etching by Rajou
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41659.html
+        note: (his sale, Paris, 3 March 1870, no. 204, repro., etching by Rajou).
+        source: nga-1952-5-46-a
+        accessed: 2026-11-24
+  - owner_label: Private collection, Italy
+    ended: c. 1928
+    label: according to Friedländer 1928
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41659.html
+        note: Private collection, Italy, until c. 1928.[3]
+        source: nga-1952-5-46-a
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    role: dealer
+    place: berlin
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41659.html
+        note: (Matthiesen Gallery, Berlin).
+        source: nga-1952-5-46-a
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    role: dealer
+    place: berlin
+    label: according to Friedländer in Unknown Masterpieces, 1930, no. 27
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41659.html
+        note: (Paul Cassirer, Berlin).[4]
+        source: nga-1952-5-46-a
+        accessed: 2026-11-24
+  - owner: person/heinrich-thyssen-bornemisza
+    acquired: 1930 or earlier
+    label: Schloss Rohoncz, Hungary, later Villa Favorita, Lugano-Castagnola; Sammlung Schloss Rohoncz exhibition, Munich 1930, no. 222
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41659.html
+        note: Baron Heinrich Thyssen-Bornemisza [1875-1947], Schloss Rohoncz, Hungary, and later, Villa Favorita, Lugano-Castagnola, Switzerland, by 1930;[5]
+        source: nga-1952-5-46-a
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: agent
+    acquired: 1950
+    direct: true
+    place: new-york-city
+    label: on consignment; Knoedler commission book no. 4, p. 143, no. CA 3725
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41659.html
+        note: on consignment 1950 with (M. Knoedler & Co., New York); — [6] M. Knoedler & Co. Records … Commission book no. 4, p. 143, no. CA 3725; Sales book no. 16, p. 310
+        source: nga-1952-5-46-a
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Knoedler sales book no. 16, p. 310
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41659.html
+        note: purchased 1951 by the Samuel H. Kress Foundation, New York; [6]
+        source: nga-1952-5-46-a
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    label: gift by exchange
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41659.html
+        note: gift 1952 by exchange to NGA.
+        source: nga-1952-5-46-a
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20174056
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20174056
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20174056
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20174056
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20174056
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20174056

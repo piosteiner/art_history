@@ -1,0 +1,18 @@
+public_id: 122854
+name: Puccio di Simone
+given_name: Puccio
+family_name: di Simone
+birth: 1301/1400
+death: 1362
+wikidata_id: Q3410504
+metadata:
+  sources: [Wikidata Q3410504 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q3410504
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q3410504

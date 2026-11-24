@@ -1,0 +1,23 @@
+public_id: 122971
+name: Isabella Brant
+given_name: Isabella
+family_name: Brant
+kind: person
+birth: 1591
+death: 1626-07-15
+wikidata_id: Q2215964
+metadata:
+  sources: [Wikidata Q2215964 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q2215964
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q2215964
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q2215964

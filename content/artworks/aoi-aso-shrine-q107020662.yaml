@@ -1,0 +1,47 @@
+public_id: 124928
+title_lang: en
+title: Two-Storied Gate (Rōmon) of Aoi Aso Shrine
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 青井阿蘇神社楼門
+created: 1613
+institution: aoi-aso-shrine
+location: [130.753, 32.21313]
+wikidata_id: Q107020662
+metadata:
+  sources: [Wikidata Q107020662 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/hitoyoshi
+    period: 1613
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/22/Aoi_Aso_Romon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Aoi_Aso_Romon.jpg
+    license: CC BY-SA 1.0
+    credit: "User: (WT-shared) Shirakawa-yobune at wts wikivoyage"
+provenance:
+  - owner: institution/aoi-aso-shrine
+    acquired: 1613
+    method: creation
+    place: hitoyoshi
+    label: gate built 1613, the last of the shrine buildings raised from 1610 by Sagara Nagatsune (Yorifusa), lord of Hitoyoshi; the shrine is the owner today
+    sources:
+      - url: https://aoisan.jp/kokuhou/
+        note: 1610年 相良長毎が本殿、幣殿、廊を造営 1611年 拝殿を造営 1613年 楼門を造営
+        source: aoisan-kokuhou
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3569
+        note: 現在の社殿は慶長十五年（一六一〇）より同一八年に建てられ、境内の奥に本殿から拝殿が連続して建ち、前方に楼門が建つ。 … 所有者名 ： 青井阿蘇神社 所有者種別 ： 神社
+        source: kunishitei-102-3569
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107020662
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020662

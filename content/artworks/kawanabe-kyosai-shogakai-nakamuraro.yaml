@@ -1,0 +1,64 @@
+public_id: 122694
+title_lang: en
+title: Painting and Calligraphy Gathering at the Nakamurarō in Ryōgoku
+creator: kawanabe-kyosai
+created: c. 1876
+created_span: uncertain
+kind: kakemono
+medium: ink and colour on paper
+dimensions: [138.5, 64.5]
+dimensions_note: image; overall with mounting 212.1 × 80.8 cm
+institution: metropolitan-museum-of-art
+inventory_number: 2023.583.34
+web_url: https://www.metmuseum.org/art/collection/search/897141
+description_md: "[[artist/kawanabe-kyosai|Kawanabe Kyōsai]]'s hanging scroll of about 1876 shows a painting and calligraphy gathering at the Nakamurarō restaurant in Ryōgoku [[source/met-2023-583-34|2023.583.34]]. It is painted in ink and colour on paper, 138.5 × 64.5 cm, and came to the Metropolitan Museum in 2023 with the Mary and Cheney Cowles Collection [[source/met-2023-583-34|2023.583.34]]."
+images:
+  - url: https://images.metmuseum.org/CRDImages/as/web-large/DP-31484-002.jpg
+    source_url: https://www.metmuseum.org/art/collection/search/897141
+    license: CC0
+    credit: The Metropolitan Museum of Art
+provenance:
+  - owner_label: Mary and Cheney Cowles
+    ended: 2023
+    direct: true
+    sources:
+      - source: met-2023-583-34
+        locator: provenance
+        accessed: 2026-11-23
+  - owner: institution/metropolitan-museum-of-art
+    acquired: 2023
+    method: gift
+    direct: true
+    sources:
+      - source: met-2023-583-34
+        locator: provenance
+        accessed: 2026-11-23
+sources:
+  kind:
+    - source: met-2023-583-34
+      locator: 2023.583.34
+      accessed: 2026-11-23
+  medium:
+    - source: met-2023-583-34
+      locator: 2023.583.34
+      accessed: 2026-11-23
+  created:
+    - source: met-2023-583-34
+      locator: 2023.583.34
+      accessed: 2026-11-23
+  creator:
+    - source: met-2023-583-34
+      locator: 2023.583.34
+      accessed: 2026-11-23
+  dimensions:
+    - source: met-2023-583-34
+      locator: 2023.583.34
+      accessed: 2026-11-23
+  institution:
+    - source: met-2023-583-34
+      locator: 2023.583.34
+      accessed: 2026-11-23
+  inventory_number:
+    - source: met-2023-583-34
+      locator: 2023.583.34
+      accessed: 2026-11-23

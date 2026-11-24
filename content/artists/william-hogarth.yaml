@@ -1,0 +1,18 @@
+public_id: 123086
+name: William Hogarth
+given_name: William
+family_name: Hogarth
+birth: 1697-11-10
+death: 1764-10-26
+wikidata_id: Q171344
+metadata:
+  sources: [Wikidata Q171344 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q171344
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q171344

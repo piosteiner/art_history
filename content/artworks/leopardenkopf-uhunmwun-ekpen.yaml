@@ -1,0 +1,83 @@
+public_id: 123827
+title_lang: de
+title: Leopardenkopf, Uhunmwun’ekpen
+attribution_label: Werkstatt des Hofes von Benin
+created: 1701/1900
+kind: sculpture
+medium: Terrakotta
+dimensions: [11.5, 11.5, 8.5]
+institution: museum-rietberg
+inventory_number: RAF 623
+web_url: https://rietberg.ch/sammlungen/raf-623
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Benin_Leopardenkopf_Museum_Rietberg_RAF_623.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Benin_Leopardenkopf_Museum_Rietberg_RAF_623.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Werkstatt des Hofes von Benin
+    acquired: 18th–19th century
+    method: creation
+    place: benin-city
+    label: made by the workshop of the court of Benin
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-623
+        note: "18./19. Jh.: Werkstatt des Hofes von Benin in Benin City"
+        source: rietberg-raf-623
+        accessed: 2026-11-24
+  - owner: institution/royal-court-of-benin
+    acquired: 18th–19th century
+    place: benin-city
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-623
+        note: "18./19. Jh.: Königshaus Benin in Benin City"
+        source: rietberg-raf-623
+        accessed: 2026-11-24
+  - owner: person/akenzua-ii
+    acquired: before 1936
+    method: inheritance
+    place: benin-city
+    label: Oba of Benin; by inheritance
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-623
+        note: "vor 1936: Oba Akenzua II. (1899–1978), durch Erbgang erworben in Benin City"
+        source: rietberg-raf-623
+        accessed: 2026-11-24
+  - owner: person/eckart-von-sydow
+    acquired: before 1936
+    method: gift
+    place: benin-city
+    label: possibly received as a gift
+    certainty: possible
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-623
+        note: "vor 1936: Eckart von Sydow (1885–1942), als Geschenk erhalten (?) in Benin City möglicherweise als Geschenk erhalten"
+        source: rietberg-raf-623
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: 1937
+    label: circumstances of acquisition unknown; lent directly to the Völkerkundemuseum Berlin (African department)
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-623
+        note: "1937: Eduard von der Heydt (1882–1964), Erwerbsumstände unbekannt Als Leihgabe direkt ins Völkerkundemuseum Berlin (Afrikanische Abteilung), Eingang ins Museum 1962"
+        source: rietberg-raf-623
+        accessed: 2026-11-24
+  - owner: institution/ethnologisches-museum
+    role: custodian
+    acquired: after 1937
+    place: berlin
+    label: on loan from Eduard von der Heydt (Völkerkundemuseum Berlin, African department)
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-623
+        note: "nach 1937: Ethnologisches Museum, Berlin (1873), als Leihgabe erhalten Als Leihgabe direkt ins Völkerkundemuseum Berlin (Afrikanische Abteilung), Eingang ins Museum 1962"
+        source: rietberg-raf-623
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1962
+    method: gift
+    label: gift of Eduard von der Heydt, received in Berlin from the loan to the Völkerkundemuseum; entered the museum 1962
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-623
+        note: "1962: Museum Rietberg, als Geschenk erhalten, in Berlin Als Leihgabe direkt ins Völkerkundemuseum Berlin (Afrikanische Abteilung), Eingang ins Museum 1962"
+        source: rietberg-raf-623
+        accessed: 2026-11-24

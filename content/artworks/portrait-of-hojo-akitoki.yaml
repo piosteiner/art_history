@@ -1,0 +1,52 @@
+public_id: 124285
+title: Portrait of Hōjō Akitoki
+names:
+  - lang: ja
+    role: translation
+    text: 北条顕時像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045378
+institution: shomyo-ji
+wikidata_id: Q107045378
+metadata:
+  sources: [Wikidata Q107045378 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/hojo-akitoki
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107045378
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/H%C5%8Dj%C5%8D_Akitoki.jpg/1280px-H%C5%8Dj%C5%8D_Akitoki.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:H%C5%8Dj%C5%8D_Akitoki.jpg
+    license: Public domain
+    credit: Unknown
+provenance:
+  - owner_label: unknown painter
+    acquired_label: Kamakura period, close to the lifetime of the sitter (Hōjō Akitoki, 1248–1301)
+    method: creation
+    label: one of the 'Four Generals' — portraits of four generations of the Kanazawa Hōjō (Sanetoki, Akitoki, Sadaaki, Sadayuki), each painted near its sitter's lifetime
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/150
+        note: 時代 ： 鎌倉 … 歴史上著名な武人の一門四代にわたる肖像画として … 画像の製作時期はいずれも像主の生存年代に近く、描写もすぐれ、鎌倉時代の代表的作品である。
+        source: kunishitei-201-150
+        accessed: 2026-11-24
+  - owner: institution/shomyo-ji
+    place: yokohama
+    label: handed down as the 'Four Generals' at Shōmyō-ji (Kanazawa, Yokohama), the family temple of the Kanazawa Hōjō; owner today. ICP 1900, National Treasure 11 June 1966
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/150
+        note: 本図は″四将像″の名で金沢北条氏の菩提寺、称名寺【しようみようじ】に伝わったもので … 重文指定年月日 ： 1900.04.07(明治33.04.07) | 国宝指定年月日 ： 1966.06.11(昭和41.06.11) … 所有者名 ： 称名寺
+        source: kunishitei-201-150
+        accessed: 2026-11-24
+  - owner: institution/kanagawa-prefectural-kanazawa-bunko
+    role: custodian
+    place: yokohama
+    label: Shōmyō-ji's National Treasures are mostly in the care of the neighbouring Kanagawa Prefectural Kanazawa Bunko (re-founded 1930 with deposits from the temple); date for this portrait not stated
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111486752
+        note: ※国宝・重要文化財の大部分は隣接する神奈川県立金沢文庫が管理している … 1930年（昭和5年）、神奈川県立金沢文庫が復興した。…称名寺から古書・古文書や文化財などが寄託された
+        source: wikipedia-ja-111486752
+        accessed: 2026-11-24

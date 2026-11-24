@@ -1,0 +1,23 @@
+public_id: 122832
+name: Josef Jüttner
+given_name: Josef
+family_name: Jüttner
+kind: person
+birth: 1775-09-12
+death: 1848-04-27
+wikidata_id: Q12026180
+metadata:
+  sources: [Wikidata Q12026180 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q12026180
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q12026180
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q12026180

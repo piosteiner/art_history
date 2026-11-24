@@ -1,0 +1,232 @@
+public_id: 122999
+title_lang: en
+title: The Emperor Napoleon in His Study at the Tuileries
+names:
+  - text: Emperor Napoleon in His Study at the Tuileries
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1313605
+  - lang: nl
+    role: translation
+    text: Keizer Napoleon in zijn studeerkamer in de Tuilerieën
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1313605
+  - lang: fr
+    role: translation
+    text: Napoléon dans son cabinet de travail
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1313605
+  - lang: de
+    role: translation
+    text: Der Kaiser Napoleon in seinem Arbeitszimmer im Tuilerien-Palast
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1313605
+  - lang: it
+    role: translation
+    text: Napoleone nel suo gabinetto di lavoro
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1313605
+  - lang: es
+    role: translation
+    text: Retrato de Napoleón en su gabinete de trabajo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1313605
+  - lang: ja
+    role: translation
+    text: 書斎のナポレオン
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1313605
+  - lang: zh
+    role: translation
+    text: 書房中的拿破崙
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1313605
+  - lang: ru
+    role: translation
+    text: Император Наполеон в своём кабинете в Тюильри
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1313605
+creator: jacques-louis-david
+created: 1812
+materials: [oil paint, canvas]
+dimensions: [203.9, 125.1]
+institution: national-gallery-of-art
+inventory_number: 1961.9.15
+wikidata_id: Q1313605
+metadata:
+  sources: [Wikidata Q1313605 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts
+    to: event/1795-1820-in-western-fashion
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q1313605
+  - type: depicts
+    to: event/civil-code-of-the-french
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q1313605
+  - type: depicts
+    to: place/tuileries-palace
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q1313605
+  - type: depicts_person
+    to: person/napoleon
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q1313605
+  - type: associated_with
+    to: movement/neoclassical-painting
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q1313605
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/The_Emperor_Napoleon_in_His_Study_at_the_Tuileries%2C_by_Jacques-Louis_David_%281812%29_-_National_Gallery_of_Art_%28Samuel_H._Kress_Foundation%29.jpg/1280px-The_Emperor_Napoleon_in_His_Study_at_the_Tuileries%2C_by_Jacques-Louis_David_%281812%29_-_National_Gallery_of_Art_%28Samuel_H._Kress_Foundation%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Emperor_Napoleon_in_His_Study_at_the_Tuileries,_by_Jacques-Louis_David_(1812)_-_National_Gallery_of_Art_(Samuel_H._Kress_Foundation).jpg
+    license: Public domain
+    credit: Jacques-Louis David
+provenance:
+  - owner: person/alexander-hamilton-10th-duke-of-hamilton
+    method: commission
+    place: hamilton
+    label: "commissioned by Alexander, marquis of Douglas (from 1819 10th Duke of Hamilton), Hamilton Palace; David's List C (1819), no. 49: \"Pour le marquis Douglas en Angleterre\""
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46114.html
+        note: Commissioned by Alexander, marquis of Douglas [1767-1852, from 1819, 10th duke of Hamilton], Hamilton Palace, Strathclyde, Scotland;[1] — "List C," dated 1819, refers to the original painting under no. "49. _Napoléon_ en pied dans son cabinet.--Pour le marquis Douglas en Angleterre"
+        source: nga-1961-9-15
+        accessed: 2026-11-24
+  - owner: person/william-hamilton-11th-duke-of-hamilton
+    method: inheritance
+    direct: true
+    place: hamilton
+    label: his son; Hamilton Palace
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46114.html
+        note: by inheritance to his son, William Alexander Anthony Archibald Douglas, 11th duke of Hamilton [1811-1863], Hamilton Palace, Strathclyde, Scotland;
+        source: nga-1961-9-15
+        accessed: 2026-11-24
+  - owner: person/william-douglas-hamilton-12th-duke-of-hamilton
+    method: inheritance
+    direct: true
+    place: hamilton
+    label: his son; Hamilton Palace
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46114.html
+        note: by inheritance to his son, William Alexander Louis Stephen Douglas-Hamilton, 12th duke of Hamilton [1845-1895], Hamilton Palace, Strathclyde, Scotland;
+        source: nga-1961-9-15
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1882-07-08
+    method: auction
+    direct: true
+    place: london
+    label: Hamilton Palace Collection sale, 17 June – 20 July 1882 (8 July), no. 1108
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46114.html
+        note: (Hamilton Palace Collection sale, Christie, Manson & Woods, London, 17 June - 20 July 1882 (8 July), no. 1108);
+        source: nga-1961-9-15
+        accessed: 2026-11-24
+  - owner: person/f-davis
+    role: agent
+    acquired: 1882-07-08
+    method: auction
+    direct: true
+    place: london
+    label: London dealer who almost always purchased for the Earl of Rosebery; probably buying for him
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46114.html
+        note: bought by (F. Davis), probably buying for Archibald Philip Primrose, 5th earl of Rosebery, [1847-1929], London;[2] — F. Davis was a London dealer who almost always purchased for the earl of Rosebery.
+        source: nga-1961-9-15
+        accessed: 2026-11-24
+  - owner: person/archibald-primrose-5th-earl-of-rosebery
+    acquired: 1882-07-08
+    method: auction
+    direct: true
+    place: london
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46114.html
+        note: bought by (F. Davis), probably buying for Archibald Philip Primrose, 5th earl of Rosebery, [1847-1929], London;[2]
+        source: nga-1961-9-15
+        accessed: 2026-11-24
+  - owner: person/harry-primrose-6th-earl-of-rosebery
+    direct: true
+    place: london
+    label: his son, Albert Edward Harry Mayer Archibald Primrose
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46114.html
+        note: his son, Albert Edward Harry Mayer Archibald Primrose, 6th earl of Rosebery [1882-1974], London;
+        source: nga-1961-9-15
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1951-06-15
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46114.html
+        note: sold 15 June 1951 to (Wildenstein & Co., London and New York);
+        source: nga-1961-9-15
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1954-02-10
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: bill of sale of 10 February 1954 for fourteen paintings; payments continued to March 1957
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46114.html
+        note: sold February 1954 to the Samuel H. Kress Foundation, New York;[3] — [3] The bill of sale (copy in NGA curatorial files) is dated February 10, 1954, and was for fourteen paintings, including _Napoleon in his study_; payments by the Foundation continued to March 1957.
+        source: nga-1961-9-15
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1961
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46114.html
+        note: gift 1961 to NGA.
+        source: nga-1961-9-15
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q1313605
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q1313605
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q1313605
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q1313605
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q1313605
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q1313605

@@ -27,6 +27,16 @@ death: 2024-02-26
 wikidata_id: Q2026032
 metadata:
   sources: [Wikidata Q2026032 (retrieved 2026-10-31)]
+relationships:
+  - type: child_of
+    to: person/victor-rothschild-3rd-baron-rothschild
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q2026032
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q3557561
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/f5/Jacob_Rothschild_Amana_nli_%28cropped%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Jacob_Rothschild_Amana_nli_(cropped).jpg

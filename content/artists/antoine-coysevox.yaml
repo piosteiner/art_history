@@ -1,0 +1,18 @@
+public_id: 122943
+name: Antoine Coysevox
+given_name: Antoine
+family_name: Coysevox
+birth: 1640-09-29
+death: 1720-10-10
+wikidata_id: Q505134
+metadata:
+  sources: [Wikidata Q505134 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q505134
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q505134

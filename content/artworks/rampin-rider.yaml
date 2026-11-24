@@ -1,0 +1,126 @@
+public_id: 123131
+title: Rampin Rider
+names:
+  - lang: nl
+    role: translation
+    text: Rampinruiter
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q974300
+  - lang: fr
+    role: translation
+    text: Cavalier Rampin
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q974300
+  - lang: de
+    role: translation
+    text: Reiter Rampin
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q974300
+  - lang: it
+    role: translation
+    text: Cavaliere Rampin
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q974300
+  - lang: es
+    role: translation
+    text: Jinete Rampin
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q974300
+  - lang: ja
+    role: translation
+    text: ランパンの騎士
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q974300
+  - lang: zh
+    role: translation
+    text: 哈皮因骑手像
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q974300
+materials: [marble]
+institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
+location: [23.7281, 37.9687]
+wikidata_id: Q974300
+metadata:
+  sources: [Wikidata Q974300 (retrieved 2026-11-23)]
+relationships:
+  - type: created_in
+    to: place/athens
+  - type: associated_with
+    to: movement/archaic-greek-sculpture
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q974300
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Kouros%27_Head_to_horse%2C_Acropolis%27_museum%2C_Athens.jpg/1280px-Kouros%27_Head_to_horse%2C_Acropolis%27_museum%2C_Athens.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kouros%27_Head_to_horse,_Acropolis%27_museum,_Athens.jpg
+    license: CC BY-SA 2.5 it
+    credit: Roccuz [1]
+provenance:
+  - owner_label: found on the Acropolis of Athens
+    acquired: 1877
+    method: find
+    place: athens
+    label: the head (the torso, found separately in the Perserschutt, is in the Acropolis Museum, Inv. 590)
+    sources:
+      - url: https://de.wikipedia.org/wiki/Reiter_Rampin
+        note: Der namengebende Kopf Rampin wurde 1877 auf der Akropolis gefunden
+        source: wikipedia-de-reiter-rampin
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Rampin_Rider
+        note: The head of the rider was found on the Acropolis of Athens in 1877 and donated to the Louvre.
+        source: wikipedia-en-rampin-rider
+        accessed: 2026-11-24
+  - owner: person/georges-rampin
+    direct: true
+    place: athens
+    label: secretary of the French embassy in Athens, for his collection
+    sources:
+      - url: https://de.wikipedia.org/wiki/Reiter_Rampin
+        note: und von dem französischen Botschaftssekretär in Athen, Georges Rampin, für seine Sammlung erworben.
+        source: wikipedia-de-reiter-rampin
+        accessed: 2026-11-24
+  - owner: institution/department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
+    acquired: 1896
+    method: bequest
+    direct: true
+    place: paris
+    label: inventory 3104 (Ma 3104); 'donated' in the English article
+    sources:
+      - url: https://de.wikipedia.org/wiki/Reiter_Rampin
+        note: Im Jahr 1896 vermachte er den 27 Zentimeter hohen Kopf dem Louvre in Paris, wo er unter der Inventarnummer 3104 ausgestellt wird.
+        source: wikipedia-de-reiter-rampin
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1935
+    place: athens
+    label: Humfry Payne recognised that the head belongs to the torso in the Acropolis Museum, checked with a plaster cast of the head in Athens (published 1936)
+    sources:
+      - url: https://de.wikipedia.org/wiki/Reiter_Rampin
+        note: Im Jahr 1935 erkannte Humfry Payne die Zusammengehörigkeit beider Funde, die er mit Hilfe eines Gipsabgusses des Kopfes in Athen überprüfte. Das Ergebnis publizierte er 1936.
+        source: wikipedia-de-reiter-rampin
+        accessed: 2026-11-24
+identifiers:
+  gnd: "1127659537"
+  viaf: "318148997668959870003"
+sources:
+  location:
+    - accessed: 2026-11-23
+      property: P625
+      wikidata: Q974300
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q974300
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q974300

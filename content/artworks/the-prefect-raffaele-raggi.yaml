@@ -1,0 +1,161 @@
+public_id: 122992
+title_lang: en
+title: The Prefect Raffaele Raggi
+names:
+  - lang: nl
+    role: translation
+    text: Imaginair portret van admiraal Raffaele Raggio (?-?)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177053
+creator: anthony-van-dyck
+created: c. 1625
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [131, 105.4]
+institution: national-gallery-of-art
+inventory_number: 1942.9.90
+wikidata_id: Q20177053
+metadata:
+  sources: [Wikidata Q20177053 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/The_Prefect_Raffaele_Raggi_E11308.jpg/1280px-The_Prefect_Raffaele_Raggi_E11308.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Prefect_Raffaele_Raggi_E11308.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+provenance:
+  - owner: person/tommaso-raggi
+    acquired: 1664 or earlier
+    place: rome
+    label: Marchese; Bellori's 1664 guide names many Van Dyck portraits of the Raggi family in his palazzo below the Campidoglio
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1229.html
+        note: 'Probably Marchese Tomasso Raggi [c. 1597-1679], Rome, by 1664;[1] — [1] … lists: "Marchese Raggi. Palazzo sotto Campidoglio con gran numero di ritratti della famiglia Raggi, di mano di Antonio Van-Dych" … The "Marchese" mentioned here is presumably Tommaso Raggi'
+        source: nga-1942-9-90
+        accessed: 2026-11-24
+  - owner: person/francesco-maria-balbi
+    acquired: 1780 or earlier
+    place: genoa
+    label: possibly Ratti's 'Ritratto d'un Generale vestito d'armadura del Vandik' (1780); perhaps came to the Balbi through a Raggi marriage
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1229.html
+        note: "possibly Francesco Maria Balbi, Genoa, by 1780;[2] — [2] Ratti … 1780: 193, mentions a \"Ritratto d'un Generale vestito d'armadura del Vandik\" in the collection of Francesco Maria Balbi in Genoa."
+        source: nga-1942-9-90
+        accessed: 2026-11-24
+  - owner: person/walter-rockcliffe-farquhar
+    method: purchase
+    label: 3rd baronet; said to have bought it from the Balbi family in Genoa (1894 Widener inventory)
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1229.html
+        note: said to have been bought by Sir Walter Rockcliffe Farquahar, 3rd bt. [1810-1900], from the Balbi family in Genoa;[3]
+        source: nga-1942-9-90
+        accessed: 2026-11-24
+  - owner: person/walter-randolph-farquhar
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1229.html
+        note: by inheritance to his son, Sir Walter Randolph Farquhar [1842-1901], London;
+        source: nga-1942-9-90
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1894-06-02
+    method: auction
+    direct: true
+    place: london
+    label: his sale, no. 124, as 'A General in Armour, with arms'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1229.html
+        note: (his sale, Christie, Manson & Woods, London, 2 June 1894, no. 124);[4] — [4] … described as "A General in Armour, with arms,"
+        source: nga-1942-9-90
+        accessed: 2026-11-24
+  - owner: institution/shepherd-brothers
+    role: dealer
+    acquired: 1894-06-02
+    method: auction
+    direct: true
+    place: london
+    label: "'Shepherd' and '73-10' noted next to lot 124 in an annotated catalogue; probably Shepherd Brothers, London"
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1229.html
+        note: the name "Shepherd" and the numbers "73-10" appear in handwriting next to the description of lot number 124. "Shepherd" is probably a reference to the firm of Shepherd Brothers in London … Shepherd may have sold the painting directly to Sedelmeyer.
+        source: nga-1942-9-90
+        accessed: 2026-11-24
+  - owner: institution/galerie-sedelmeyer
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1229.html
+        note: (Sedelmeyer Gallery, Paris); — [4] … Shepherd may have sold the painting directly to Sedelmeyer.
+        source: nga-1942-9-90
+        accessed: 2026-11-24
+  - owner: person/peter-a-b-widener
+    acquired: 1894
+    method: purchase
+    direct: true
+    label: Lynnewood Hall, Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1229.html
+        note: purchased 1894 by Peter A.B. Widener, Lynnewood Hall, Elkins Park, Pennsylvania;[5]
+        source: nga-1942-9-90
+        accessed: 2026-11-24
+  - owner: person/peter-a-b-widener
+    role: estate
+    method: inheritance
+    direct: true
+    label: estate of Peter A. B. Widener; Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1229.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park;
+        source: nga-1942-9-90
+        accessed: 2026-11-24
+  - owner: person/joseph-e-widener
+    method: inheritance
+    direct: true
+    label: inheritance from the estate of Peter A. B. Widener by gift through power of appointment; Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1229.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park;
+        source: nga-1942-9-90
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1942
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1229.html
+        note: gift 1942 to NGA.
+        source: nga-1942-9-90
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177053
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177053
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177053
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177053
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177053
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177053

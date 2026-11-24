@@ -38,6 +38,16 @@ death: 1740-05-31
 wikidata_id: Q105013
 metadata:
   sources: [Wikidata Q105013 (retrieved 2026-10-30)]
+relationships:
+  - type: child_of
+    to: person/frederick-i-of-prussia
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q105013
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q151826
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Antoine_Pesne_-_K%C3%B6nig_Friedrich_Wilhelm_I._von_Preu%C3%9Fen_%28ca._1733%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Antoine_Pesne_-_K%C3%B6nig_Friedrich_Wilhelm_I._von_Preu%C3%9Fen_(ca._1733).jpg

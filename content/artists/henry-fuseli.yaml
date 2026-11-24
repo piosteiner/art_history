@@ -56,6 +56,15 @@ relationships:
       - accessed: 2026-11-03
         property: P135
         wikidata: Q122382
+  - type: child_of
+    to: artist/johann-caspar-fussli
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q122382
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q667640
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/13/Henry_fuseli_por_James_Northcote_1778.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Henry_fuseli_por_James_Northcote_1778.jpg

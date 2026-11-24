@@ -1,0 +1,119 @@
+public_id: 123115
+title_lang: en
+title: Mask of Agamemnon
+names:
+  - lang: nl
+    role: translation
+    text: Masker van Agamemnon
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1126741
+  - lang: fr
+    role: translation
+    text: masque d'Agamemnon
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1126741
+  - lang: de
+    role: translation
+    text: Goldmaske des Agamemnon
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1126741
+  - lang: it
+    role: translation
+    text: Maschera di Agamennone
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1126741
+  - lang: es
+    role: translation
+    text: Máscara de Agamenón
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1126741
+  - lang: ja
+    role: translation
+    text: アガメムノンのマスク
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1126741
+  - lang: zh
+    role: translation
+    text: 阿伽门农的面具
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1126741
+  - lang: ko
+    role: translation
+    text: 아가멤논 마스크
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1126741
+  - lang: ru
+    role: translation
+    text: Маска Агамемнона
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q1126741
+materials: [gold]
+dimensions: [2.5, 1.7]
+institution: national-archaeological-museum-of-athens
+web_url: http://odysseus.culture.gr/h/4/eh430.jsp?obj_id=4503
+wikidata_id: Q1126741
+metadata:
+  sources: [Wikidata Q1126741 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Athens_%E2%80%94_Mask_of_Agamemnon.jpg/1280px-Athens_%E2%80%94_Mask_of_Agamemnon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Athens_%E2%80%94_Mask_of_Agamemnon.jpg
+    license: Public domain
+    credit: Gleb Simonov
+provenance:
+  - owner_label: Shaft Grave V, Grave Circle A, Mycenae
+    acquired: 16th century BCE
+    method: creation
+    label: funerary mask in a shaft tomb; in Mycenae
+    sources:
+      - url: https://en.wikipedia.org/wiki/Mask_of_Agamemnon
+        note: Heinrich Schliemann found the gold funeral mask in 1876 in a shaft tomb designated Grave V, at the site Grave Circle A, Mycenae. … Modern archaeological research suggests that the mask dates to around the 16th century BC
+        source: wikipedia-en-mask-of-agamemnon
+        accessed: 2026-11-24
+  - owner: person/heinrich-schliemann
+    acquired: 1876-11-30
+    method: find
+    label: excavation supervised for the Greek Archaeological Society by the ephor Panagiotis Stamatakis; in Mycenae
+    sources:
+      - url: https://en.wikipedia.org/wiki/Mask_of_Agamemnon
+        note: By the time of the excavation of the Shaft Graves, the Greek Archaeological Society had taken a hand in supervising Schliemann's work (after the issues at Troy), sending Panagiotis Stamatakis as ephor, or director, of the excavation … The three other masks were not discovered until the 28th. The Mask of Agamemnon was found on the 30th.
+        source: wikipedia-en-mask-of-agamemnon
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/%CE%A0%CF%81%CE%BF%CF%83%CF%89%CF%80%CE%B5%CE%AF%CE%BF_%CF%84%CE%BF%CF%85_%CE%91%CE%B3%CE%B1%CE%BC%CE%AD%CE%BC%CE%BD%CE%BF%CE%BD%CE%B1
+        note: Οι τρεις πρώτες προσωπίδες ανεκαλύφθησαν την 28η του Νοεμβρίου ενώ το συγκεκριμένο προσωπείο βρέθηκε την 30η υπό την παρουσία πολλών μαρτύρων, όπως αποκαλύπτει το ημερολόγιο του Σταματάκη.
+        source: wikipedia-el-prosopeio-tou-agamemnona
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    method: transfer
+    place: athens
+    label: Mycenaean collection; inventory NAMA 624
+    sources:
+      - url: https://en.wikipedia.org/wiki/Mask_of_Agamemnon
+        note: The mask, displayed in the National Archaeological Museum of Athens
+        source: wikipedia-en-mask-of-agamemnon
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Goldmaske_des_Agamemnon
+        note: Die Maske ist in der Mykenischen Sammlung des Archäologischen Nationalmuseums in Athen ausgestellt und hat die Inventarnummer NAMA 624.
+        source: wikipedia-de-goldmaske-des-agamemnon
+        accessed: 2026-11-24
+sources:
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q1126741
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q1126741
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q1126741

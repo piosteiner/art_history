@@ -38,6 +38,16 @@ description_md: "King of Joseon. Korean sources date the years of his reign by h
 wikidata_id: Q485009
 metadata:
   sources: [Wikidata Q485009 (retrieved 2026-11-02)]
+relationships:
+  - type: child_of
+    to: person/sukjong-of-joseon
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q485009
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q485664
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Portrait_of_King_Yeongjo_-_Chae_Yong_Shin_%28%E8%94%A1%E9%BE%8D%E8%87%A3_1850-1941%29_Cho_Seok-jin_%28%E8%B6%99%E9%8C%AB%E6%99%89_1853-1920%29_et_%28cropped%29.jpg/1280px-Portrait_of_King_Yeongjo_-_Chae_Yong_Shin_%28%E8%94%A1%E9%BE%8D%E8%87%A3_1850-1941%29_Cho_Seok-jin_%28%E8%B6%99%E9%8C%AB%E6%99%89_1853-1920%29_et_%28cropped%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_King_Yeongjo_-_Chae_Yong_Shin_(%E8%94%A1%E9%BE%8D%E8%87%A3_1850-1941)_Cho_Seok-jin_(%E8%B6%99%E9%8C%AB%E6%99%89_1853-1920)_et_(cropped).jpg

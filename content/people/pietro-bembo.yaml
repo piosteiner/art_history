@@ -1,0 +1,23 @@
+public_id: 122955
+name: Pietro Bembo
+given_name: Pietro
+family_name: Bembo
+kind: person
+birth: 1470-05-29
+death: 1547-01-29
+wikidata_id: Q334188
+metadata:
+  sources: [Wikidata Q334188 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q334188
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q334188
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q334188

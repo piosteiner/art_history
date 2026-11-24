@@ -1,0 +1,16 @@
+public_id: 122813
+name: Place du Carrousel
+kind: street
+location: [2.33412, 48.86144]
+wikidata_id: Q2723969
+metadata:
+  sources: [Wikidata Q2723969 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q2723969
+  location:
+    - accessed: 2026-11-23
+      property: P625
+      wikidata: Q2723969

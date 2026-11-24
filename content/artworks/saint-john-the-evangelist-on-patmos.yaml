@@ -1,0 +1,63 @@
+public_id: 123060
+title_lang: en
+title: Saint John the Evangelist on Patmos
+names:
+  - lang: it
+    role: translation
+    text: San Giovanni Evangelista a Patmos
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q9396825
+creator: titian
+created: 1540s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [237.6, 263]
+institution: samuel-h-kress-collection
+inventory_number: K-2066
+wikidata_id: Q9396825
+metadata:
+  sources: [Wikidata Q9396825 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/john-the-evangelist
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q9396825
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q9396825
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Titian_and_Workshop%2C_Saint_John_the_Evangelist_on_Patmos%2C_c._1553-1555%2C_NGA_43725.jpg/1280px-Titian_and_Workshop%2C_Saint_John_the_Evangelist_on_Patmos%2C_c._1553-1555%2C_NGA_43725.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Titian_and_Workshop,_Saint_John_the_Evangelist_on_Patmos,_c._1553-1555,_NGA_43725.jpg
+    license: CC0
+    credit: Titian and workshop
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q9396825
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q9396825
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q9396825
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q9396825
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q9396825
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q9396825

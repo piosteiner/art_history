@@ -1,0 +1,42 @@
+public_id: 122949
+title_lang: en
+title: Irises
+creator: watanabe-shiko
+created: 1700/1760
+kind: painting
+medium: pair of six-panel folding screens, ink and color on gilded paper
+institution: cleveland-museum-of-art
+inventory_number: "1954.603"
+web_url: https://clevelandart.org/art/1954.603
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1954.603/1954.603_web.jpg
+    source_url: https://clevelandart.org/art/1954.603
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/matsukata-shosaku
+    sources:
+      - url: https://clevelandart.org/art/1954.603
+        note: Matsukata Shōsaku (1863-1945)
+        source: cma-1954-603
+        accessed: 2026-11-24
+  - owner: institution/howard-hollis-and-co
+    role: dealer
+    place: cleveland
+    label: sold to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1954.603
+        note: (Howard Hollis and Co., Cleveland, OH, sold to the Cleveland Museum of Art) [?-1954]
+        source: cma-1954-603
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1954
+    method: purchase
+    direct: true
+    place: cleveland
+    label: "sold by Howard Hollis and Co.; credit line: Gift of The Norweb Foundation"
+    sources:
+      - url: https://clevelandart.org/art/1954.603
+        note: (Howard Hollis and Co., Cleveland, OH, sold to the Cleveland Museum of Art) [?-1954]; The Cleveland Museum of Art, Cleveland, OH [1954-] — Gift of The Norweb Foundation
+        source: cma-1954-603
+        accessed: 2026-11-24

@@ -1,0 +1,46 @@
+public_id: 123847
+title_lang: de
+title: Trophäen- oder Gedenkkopf, Uhunmwun’ivbioto
+attribution_label: Werkstatt des Hofes von Benin
+created: 1501/1700
+kind: sculpture
+medium: Terrakotta
+dimensions: [25.9, 14.7, 19.8]
+institution: museum-rietberg
+inventory_number: RAF 624
+web_url: https://rietberg.ch/sammlungen/raf-624
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Benin_Kopf_eines_W%C3%BCrdentr%C3%A4gers_Museum_Rietberg_RAF_624.jpg/1280px-Benin_Kopf_eines_W%C3%BCrdentr%C3%A4gers_Museum_Rietberg_RAF_624.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Benin_Kopf_eines_Würdenträgers_Museum_Rietberg_RAF_624.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Werkstatt des Hofes von Benin
+    acquired: 18th–19th century
+    method: creation
+    place: benin-city
+    label: made by a workshop of the court of Benin
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-624
+        note: "18./19. Jh.: Werkstatt des Hofes von Benin in Benin City"
+        source: rietberg-raf-624
+        accessed: 2026-11-24
+  - owner: person/emil-storrer
+    acquired: before 1961
+    label: circumstances of acquisition unknown; whereabouts before unknown; invoiced the sale to the Museum Rietberg
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-624
+        note: "[...] Verbleib unbekannt vor 1961: Emil Storrer (1917–1989), Erwerbsumstände unbekannt Ankäufe 1961, keine weiteren Informationen im Archiv Vgl. Schriftenarchiv Museum Rietberg, S.0002–0006, RAF 624, Rechnung für den Ankauf des Objektes."
+        source: rietberg-raf-624
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1961
+    method: purchase
+    direct: true
+    place: zurich
+    label: bought with funds of the City of Zürich; invoice from Emil Storrer
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-624
+        note: "1961: Museum Rietberg, angekauft MRZ Archiv, S.0002-0006: Ankäufe 1961: Rechnung von Emil Storrer"
+        source: rietberg-raf-624
+        accessed: 2026-11-24

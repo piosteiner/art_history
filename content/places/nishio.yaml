@@ -1,0 +1,41 @@
+public_id: 124921
+name: Nishio
+names:
+  - lang: ja
+    role: original
+    text: 西尾市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q317844
+  - lang: ko
+    role: translation
+    text: 니시오시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q317844
+  - lang: ru
+    role: translation
+    text: Нисио
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q317844
+kind: settlement
+parent: japan
+country_code: JP
+location: [137.06181, 34.86183]
+wikidata_id: Q317844
+metadata:
+  sources: [Wikidata Q317844 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q317844
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q317844
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q317844

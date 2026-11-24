@@ -1,0 +1,65 @@
+public_id: 126293
+name: Taiyuan City
+names:
+  - lang: ja
+    role: translation
+    text: 太原市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q72778
+  - lang: ko
+    role: translation
+    text: 타이위안시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q72778
+  - lang: fr
+    role: translation
+    text: Ville de Taiyuan
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q72778
+  - lang: de
+    role: translation
+    text: Taiyuan
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q72778
+  - lang: es
+    role: translation
+    text: Ciudad Taiyuan
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q72778
+  - lang: ru
+    role: translation
+    text: Тайюань
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q72778
+  - lang: pt
+    role: translation
+    text: Taiuã
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q72778
+kind: settlement
+parent: people-s-republic-of-china
+country_code: CN
+location: [112.54245, 37.87326]
+wikidata_id: Q72778
+metadata:
+  sources: [Wikidata Q72778 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q72778
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q72778
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q72778

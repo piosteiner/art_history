@@ -1,0 +1,18 @@
+public_id: 125215
+name: Bartolomeo Manfredi
+given_name: Bartolomeo
+family_name: Manfredi
+birth: 1582
+death: 1622-12-12
+wikidata_id: Q721166
+metadata:
+  sources: [Wikidata Q721166 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q721166
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q721166

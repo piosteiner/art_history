@@ -1,0 +1,211 @@
+public_id: 122843
+title_lang: en
+title: The Healing of Palladia by Saint Cosmas and Saint Damian
+names:
+  - text: San Marco Altarpiece
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3778391
+  - text: Healing of Palladia
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3778391
+  - lang: en
+    role: original
+    text: The Healing of Palladia by Saints Cosmas and Damian
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3778391
+  - lang: de
+    role: translation
+    text: Heilung der Palladia durch die heiligen Cosmas und Damian
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3778391
+  - lang: it
+    role: translation
+    text: Guarigione di Palladia
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3778391
+creator: fra-angelico
+created: 1443
+materials: [tempera, wood, poplar]
+dimensions: [36.5, 46.5]
+institution: national-gallery-of-art
+inventory_number: 1952.5.3
+wikidata_id: Q3778391
+metadata:
+  sources: [Wikidata Q3778391 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts
+    to: artwork/yayoi-pitcher-nara
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q3778391
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q3778391
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a7/Angelico%2C_predella_dei_santi_cosma_e_damiano_da_pala_di_san_marco%2C_guarigione_di_palladia.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Angelico,_predella_dei_santi_cosma_e_damiano_da_pala_di_san_marco,_guarigione_di_palladia.jpg
+    license: Public domain
+    credit: Fra Angelico
+provenance:
+  - owner: institution/san-marco-florence
+    acquired: c. 1440
+    method: commission
+    place: florence
+    label: predella of the high altarpiece of the church of San Marco (Vasari 1568); altarpiece removed c. 1677 to the convent, possibly the passageway to the sacristy by 1758, or the convent's Spezieria (early 19th century)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41613.html
+        note: High altar of the church of San Marco, Florence, from about 1440 until about 1677.[1] Possibly in the passageway to the sacristy of the same church, by 1758,[2] or in the Spezieria of the Convent of San Marco (recorded here in the early 19th century).[3]
+        source: nga-1952-5-3
+        accessed: 2026-11-24
+  - owner: institution/galleria-dell-accademia-florence
+    acquired: after 1810
+    method: transfer
+    direct: true
+    place: florence
+    label: possibly after the suppression of the Dominican order, 1810–1812
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41613.html
+        note: possibly in the Galleria dell'Accademia, Florence, after 1810-1812,
+        source: nga-1952-5-3
+        accessed: 2026-11-24
+  - owner_label: private hands, Florence
+    place: florence
+    label: from the Accademia, if not directly from the Spezieria of San Marco, into private hands
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41613.html
+        note: and from here (if not directly from the Spezieria) in private hands.[4]
+        source: nga-1952-5-3
+        accessed: 2026-11-24
+  - owner: person/james-pourtales-gorgier
+    acquired: 1841 or earlier
+    place: paris
+    label: first recorded in Dubois's catalogue of the Pourtalès-Gorgier collection, 1841, no. 3, as by Masaccio
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41613.html
+        note: "James-Alexander, comte de Pourtalès-Gorgier [1776-1855], Paris, by 1841; — [4] … mentioned for the first time in Paris, in the Pourtalès-Gorgier collection, only in 1841 (see Léon-Jean-Joseph Dubois, Description des tableaux … Paris, 1841: 3, no. 3, as by Masaccio)."
+        source: nga-1952-5-3
+        accessed: 2026-11-24
+  - owner_label: Pourtalès-Gorgier sale, Hôtel Pourtalès-Gorgier, Paris
+    role: agent
+    acquired: 1865-03-27
+    ended: 1865-04-04
+    method: auction
+    direct: true
+    place: paris
+    label: his sale, Hôtel Pourtalès-Gorgier, Paris, 27 March–4 April 1865, no. 86, as by Masaccio
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41613.html
+        note: (his sale, Hôtel Pourtalès-Gorgier, Paris, 27 March-4 April 1865, no. 86, as by Masaccio);
+        source: nga-1952-5-3
+        accessed: 2026-11-24
+  - owner: person/edmond-de-goncourt
+    co_owners: [person/jules-de-goncourt]
+    acquired: 1865
+    method: auction
+    direct: true
+    place: paris
+    label: buyer's name noted in the sale catalogue, read 'de Zincourt?' (Shapley) or 'de Goncourt' (Waterhouse, 1980)
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41613.html
+        note: probably Edmond [1822-1896] and Jules Huot [1830-1870] de Goncourt, Paris.[5] — [5] A handwritten note with the name of the purchaser in the sale catalogue has been read as "de Zincourt" … Ellis Waterhouse … suggests instead the reading "de Goncourt"
+        source: nga-1952-5-3
+        accessed: 2026-11-24
+  - owner: person/julius-bohler
+    role: dealer
+    label: '"L Bohler" on the Lucerne stock card, read by the Böhler Archive as Julius Böhler, co-owner of the Kunsthandel AG Lucerne with Fritz Steinmeyer'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41613.html
+        note: (Julius Böhler); — [6] … “L Bohler” is given as the source of the painting, but the Böhler Archive interprets this as Julius Böhler, owner of the Kunsthandel AG Lucerne together with Fritz Steinmeyer.
+        source: nga-1952-5-3
+        accessed: 2026-11-24
+  - owner: institution/kunsthandel-ag
+    role: dealer
+    acquired: 1923-02-15
+    direct: true
+    place: lucerne
+    label: stock card L-3993 (Böhler Archive, ZI Munich; incoming date written 1922, meant 1923); the bank Koenigs, Amsterdam, also involved
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41613.html
+        note: (acquired 15 February 1923 by Kunsthandel AG Lucerne);[6] — [6] See stock card L-3993 … The bank Koenigs Amsterdam was also involved in the transaction.
+        source: nga-1952-5-3
+        accessed: 2026-11-24
+  - owner: person/albert-keller-2
+    acquired: 1923-06-09
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41613.html
+        note: purchased 9 June 1923 by Albert Keller [1879-1939], New York;
+        source: nga-1952-5-3
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1939-02-27
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Duveen Brothers, London and New York (Duveen Brothers Records, Getty Research Institute, box 222, folder 23)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41613.html
+        note: (purchased 27 February 1939 by Duveen Brothers, Inc., London and New York);[7]
+        source: nga-1952-5-3
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1944
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: hanging in the National Gallery from 1945 as part of the Kress collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41613.html
+        note: sold 1944 to the Samuel H. Kress Foundation, New York;[8] — [8] The painting has been hanging in the National Gallery since 1945, when it was still part of the Kress collection
+        source: nga-1952-5-3
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41613.html
+        note: gift 1952 to NGA.
+        source: nga-1952-5-3
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q3778391
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q3778391
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q3778391
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q3778391
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q3778391
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q3778391

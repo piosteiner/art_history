@@ -1,0 +1,41 @@
+public_id: 124021
+name: Takayama
+names:
+  - lang: ja
+    role: original
+    text: 高山市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q622594
+  - lang: ko
+    role: translation
+    text: 다카야마시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q622594
+  - lang: ru
+    role: translation
+    text: Такаяма
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q622594
+kind: settlement
+parent: gifu-prefecture
+country_code: JP
+location: [137.25217, 36.14603]
+wikidata_id: Q622594
+metadata:
+  sources: [Wikidata Q622594 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q622594
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q622594
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q622594

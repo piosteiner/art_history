@@ -1,0 +1,54 @@
+public_id: 124509
+title: Ō-Kanehira
+names:
+  - lang: ja
+    role: translation
+    text: 大包平
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11433080
+creator: kanehira
+created: 12th century
+created_span: uncertain
+materials: [steel]
+institution: tokyo-national-museum
+inventory_number: F-19932
+web_url: https://kunishitei.bunka.go.jp/heritage/detail/201/297
+location: [139.7756, 35.71994]
+wikidata_id: Q11433080
+metadata:
+  sources: [Wikidata Q11433080 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 12th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/%E5%A4%A7%E5%8C%85%E5%B9%B3%2C_Okanehira.jpg/1280px-%E5%A4%A7%E5%8C%85%E5%B9%B3%2C_Okanehira.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E5%8C%85%E5%B9%B3,_Okanehira.jpg
+    license: CC BY-SA 4.0
+    credit: SLIMHANNYA
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11433080
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q11433080
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11433080
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q11433080
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q11433080
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q11433080

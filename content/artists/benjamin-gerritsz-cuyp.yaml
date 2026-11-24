@@ -39,6 +39,15 @@ relationships:
       - accessed: 2026-11-03
         property: P937
         wikidata: Q552910
+  - type: sibling_of
+    to: artist/jacob-gerritsz-cuyp
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q552910
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q554847
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Benjamin_Gerritsz_Cuyp_-_Adoration_of_Shepherds.jpg/1280px-Benjamin_Gerritsz_Cuyp_-_Adoration_of_Shepherds.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Benjamin_Gerritsz_Cuyp_-_Adoration_of_Shepherds.jpg

@@ -1,0 +1,221 @@
+public_id: 124609
+title_lang: en
+title: Portrait of a Woman, possibly Aeltje Dircksdr. Pater
+names:
+  - lang: en
+    role: original
+    text: Portrait of a Woman, probably Aeltje Dircksdr. Pater
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17907428
+  - lang: nl
+    role: translation
+    text: Portret van Aeltje Dircksdr. Pater (1597-1678)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17907428
+  - lang: fr
+    role: translation
+    text: Portrait de Aeltje Dircksdr. Pater (1597-1678)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17907428
+  - lang: ru
+    role: translation
+    text: Женский портрет
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17907428
+creator: frans-hals
+created: 1638
+materials: [oil paint, canvas]
+dimensions: [66.5, 52.3]
+institution: cleveland-museum-of-art
+inventory_number: "1948.137"
+web_url: https://clevelandart.org/art/1948.137
+provenance_status: d_seized
+provenance_status_note: Confiscated by the Nazis from Alphonse von Rothschild, Vienna, in March 1938 and chosen by Hitler for the Kunsthistorisches Museum; recovered at Altaussee and returned to his widow Clarice in 1947.
+wikidata_id: Q17907428
+metadata:
+  sources: [Wikidata Q17907428 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q17907428
+  - type: depicts_person
+    to: person/aeltje-pater
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q17907428
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Frans_Hals_-_Portrait_of_a_Woman%2C_possibly_Aeltje_Dircksdr._Pater_-_1948.137_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Frans_Hals_-_Portrait_of_a_Woman%2C_possibly_Aeltje_Dircksdr._Pater_-_1948.137_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portrait_of_a_Woman,_possibly_Aeltje_Dircksdr._Pater_-_1948.137_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Frans Hals
+provenance:
+  - owner_label: private collection, Amsterdam
+    ended: 1851
+    place: amsterdam
+    label: '"a diligent art lover in Amsterdam"'
+    sources:
+      - url: https://clevelandart.org/art/1948.137
+        note: Private collection, Amsterdam [Until 1851] — The seller of the portrait in the 1851 auction is not identified in the catalogue, but is described as “a diligent art lover in Amsterdam
+        source: cma-1948-137
+        accessed: 2026-11-24
+  - owner: person/jeronimo-de-vries
+    role: agent
+    not_sold: true
+    acquired: 1851-09-15
+    method: auction
+    direct: true
+    place: amsterdam
+    label: sale, no. 198, with its pendant; bought in ("Brondgeest" as buyer — Johannes Brondgeest died 1849, so his firm); with Brondgeest (firm of Johannes Albertus Brondgeest)
+    price:
+      amount: 40
+      currency: NLG
+      note: with pendant
+    sources:
+      - url: https://clevelandart.org/art/1948.137
+        note: (Jeronimo de Vries/Johannes Albertus Brondgeest, Amsterdam, sale, September 15, 1851, no. 198, fl. 40 [with pendant], to Brondgeest [bought in])
+        source: cma-1948-137
+        accessed: 2026-11-24
+  - owner: person/anselm-von-rothschild
+    acquired: 1873 or earlier
+    ended: 1874
+    place: vienna
+    label: inv. AR705; lent to the exhibition of Old Masters from Viennese private collections, Österreichisches Museum, 1873
+    sources:
+      - url: https://clevelandart.org/art/1948.137
+        note: Baron Anselm Mayer von Rothschild (1803–1874), Vienna (inv. AR705), by descent to his son, Baron Albert von Rothschild [by 1873-1874]
+        source: cma-1948-137
+        accessed: 2026-11-24
+  - owner: person/albert-salomon-von-rothschild
+    acquired: 1874
+    ended: 1911
+    method: inheritance
+    direct: true
+    place: vienna
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1948.137
+        note: Baron Albert von Rothschild (1844-1911), Vienna, by descent to his son, Alphonse von Rothschild [Probably 1874-1911]
+        source: cma-1948-137
+        accessed: 2026-11-24
+  - owner: person/alphonse-von-rothschild
+    acquired: 1911
+    method: inheritance
+    direct: true
+    place: vienna
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1948.137
+        note: Baron Alphonse von Rothschild (1878-1942), until confiscated by the Nazis in March 1938. [Probably 1911-1938]
+        source: cma-1948-137
+        accessed: 2026-11-24
+  - owner: person/adolf-hitler
+    role: possessor
+    acquired: 1938-03
+    ended: 1945
+    method: confiscation
+    direct: true
+    place: vienna
+    label: confiscated from Alphonse Rothschild (AR 705, "Damenbildnis"), chosen by Hitler for the Kunsthistorisches Museum, Vienna
+    sources:
+      - url: https://clevelandart.org/art/1948.137
+        note: This painting was confiscated from the collection of Alphonse Rothschild in March of 1938 and was chosen by Hitler for the Kunsthistorisches Museum in Vienna
+        source: cma-1948-137
+        accessed: 2026-11-24
+  - owner: institution/tiroler-landesmuseum-ferdinandeum
+    role: custodian
+    acquired_label: during the war
+    direct: true
+    place: innsbruck
+    label: kept there during the war (Kunth and Lillie)
+    sources:
+      - url: https://clevelandart.org/art/1948.137
+        note: According to Felicitas Kunth and Sophie Lillie, Portrait of a Woman was kept at the Tiroler Landesmuseum/Innsbruck Ferdinandeum during the war.
+        source: cma-1948-137
+        accessed: 2026-11-24
+  - owner_label: salt mine at Altaussee
+    role: custodian
+    acquired: 1945 or earlier
+    ended: 1945
+    direct: true
+    label: stored in the salt mines at Alt Aussee; recovered there by the Allies
+    sources:
+      - url: https://clevelandart.org/art/1948.137
+        note: By 1945 stored in the salt mines at Alt Aussee. — It was then moved to the salt mine at Alt Aussee.
+        source: cma-1948-137
+        accessed: 2026-11-24
+  - owner_label: the Allies
+    role: custodian
+    acquired: 1945
+    ended: 1947
+    direct: true
+    label: recovered at Altaussee, identified there by Clarice von Rothschild; not through the Munich Central Collecting Point
+    sources:
+      - url: https://clevelandart.org/art/1948.137
+        note: In possession of the Allies. Restituted to Alphose von Rothschild's widow, Baroness Clarice de Rothschild. [1945-1947] — The painting did not go through the Munich Central Collecting Point, but was returned to Clarice in 1947.
+        source: cma-1948-137
+        accessed: 2026-11-24
+  - owner: person/clarice-de-rothschild
+    acquired: 1947
+    method: restitution
+    direct: true
+    label: widow of Alphonse von Rothschild
+    sources:
+      - url: https://clevelandart.org/art/1948.137
+        note: Baroness Clarice de Rothschild (1894-1967); sold to Rosenberg & Stiebel, New York [1947-1948]
+        source: cma-1948-137
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    acquired: 1948
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1948.137
+        note: (Rosenberg & Stiebel, New York, NY, sold to the Cleveland Museum of Art) [1948]
+        source: cma-1948-137
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1948
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Purchase from the J. H. Wade Fund
+    sources:
+      - url: https://clevelandart.org/art/1948.137
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1948-]
+        source: cma-1948-137
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q17907428
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q17907428
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q17907428
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q17907428
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q17907428
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q17907428

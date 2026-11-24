@@ -1,0 +1,95 @@
+public_id: 123164
+title: Prince of the Lilies
+names:
+  - lang: nl
+    role: translation
+    text: Prins van de lelies
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1961034
+  - lang: fr
+    role: translation
+    text: Prince des Lys
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1961034
+  - lang: it
+    role: translation
+    text: Principe dei gigli
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1961034
+  - lang: es
+    role: translation
+    text: Príncipe de los lirios
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1961034
+  - lang: ru
+    role: translation
+    text: Принц с лилиями
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1961034
+created: c. 1550 BCE
+created_span: uncertain
+materials: [fresco]
+dimensions: [80]
+institution: heraklion-archaeological-museum
+web_url: http://odysseus.culture.gr/h/4/eh430.jsp?obj_id=7914
+wikidata_id: Q1961034
+metadata:
+  sources: [Wikidata Q1961034 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Knossos_%E2%80%94_Prince_of_the_Lilies.jpg/1280px-Knossos_%E2%80%94_Prince_of_the_Lilies.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Knossos_%E2%80%94_Prince_of_the_Lilies.jpg
+    license: CC0
+    credit: Gsimonov
+provenance:
+  - owner_label: palace of Knossos
+    acquired: c. 1550 BCE
+    method: creation
+    place: knossos
+    label: painted stucco relief on a palace wall (Late Minoan IA after Sinclair Hood); probably removed from the wall deliberately during rebuilding or renovation
+    sources:
+      - url: https://en.wikipedia.org/wiki/Prince_of_the_Lilies
+        note: It is dated to "Late Minoan IA" by Sinclair Hood, circa 1550 BC … Only a few pieces of the original image were excavated; it was probably removed from its wall deliberately during rebuilding or renovating the palace.
+        source: wikipedia-en-prince-of-the-lilies
+        accessed: 2026-11-24
+  - owner: person/arthur-evans
+    co_owners: [person/duncan-mackenzie]
+    acquired: 1901
+    method: find
+    place: knossos
+    label: fragments excavated by Duncan Mackenzie in Arthur Evans's excavation, close below the surface in the eroded southern part of the palace
+    sources:
+      - url: https://en.wikipedia.org/wiki/Prince_of_the_Lilies
+        note: When the fragments were excavated under Arthur Evans (not by him personally) in 1901 … The notes by Duncan Mackenzie, the original excavator in 1901, were not done to modern standards … "the fragments were found close below the surface in the much eroded southern region of the palace, and were therefore virtually unstratified".
+        source: wikipedia-en-prince-of-the-lilies
+        accessed: 2026-11-24
+  - owner: institution/heraklion-archaeological-museum
+    method: transfer
+    place: heraklion
+    label: mostly reconstructed original (nine fragments set in plaster of Paris) after Evans's 'Priest-King' reading; a replica stands at the palace
+    sources:
+      - url: https://en.wikipedia.org/wiki/Prince_of_the_Lilies
+        note: The mostly reconstructed original is now in the Heraklion Archaeological Museum (AMH), with a replica version at the palace which includes flowers in the background.
+        source: wikipedia-en-prince-of-the-lilies
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1961034
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q1961034
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q1961034
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q1961034

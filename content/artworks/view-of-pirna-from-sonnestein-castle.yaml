@@ -1,0 +1,169 @@
+public_id: 125210
+title_lang: en
+title: View of Pirna with the Fortress of Sonnenstein
+names:
+  - lang: en
+    role: original
+    text: View of Pirna, from Sonnestein Castle
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q19681547
+  - lang: de
+    role: translation
+    text: Blick vom Schloss Sonnenstein auf Pirna
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q19681547
+creator: bernardo-bellotto
+created: 1750s
+created_span: uncertain
+materials: [oil paint, canvas]
+institution: art-institute-of-chicago
+inventory_number: "1961.44"
+wikidata_id: Q19681547
+metadata:
+  sources: [Wikidata Q19681547 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Anonymous_-_View_of_Pirna_with_the_Fortress_of_Sonnenstein_-_1961.44_-_Art_Institute_of_Chicago.jpg/1280px-Anonymous_-_View_of_Pirna_with_the_Fortress_of_Sonnenstein_-_1961.44_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anonymous_-_View_of_Pirna_with_the_Fortress_of_Sonnenstein_-_1961.44_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Bernardo Bellotto
+provenance:
+  - owner: person/oliver-latham
+    sources:
+      - url: https://www.artic.edu/artworks/12895
+        note: Oliver Latham (d. 1850?), sold Christie's London, April 13, 1850, lot 27
+        source: aic-1961-44
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1850-04-13
+    method: auction
+    direct: true
+    place: london
+    label: lot 27
+    sources:
+      - url: https://www.artic.edu/artworks/12895
+        note: sold Christie's London, April 13, 1850, lot 27, to Mr. Hoare for 16 gns.
+        source: aic-1961-44
+        accessed: 2026-11-24
+  - owner_label: Mr. Hoare
+    acquired: 1850-04-13
+    method: auction
+    direct: true
+    label: bought for 16 guineas
+    sources:
+      - url: https://www.artic.edu/artworks/12895
+        note: to Mr. Hoare for 16 gns.
+        source: aic-1961-44
+        accessed: 2026-11-24
+  - owner: person/william-7th-earl-beauchamp
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/12895
+        note: William Lygon, 7th Earl Beauchamp, London (died 1936) [according to archival photograph and stockbook of Arthur Tooth and Sons; information kindly provided by Simon Matthews].
+        source: aic-1961-44
+        accessed: 2026-11-24
+  - owner: institution/arthur-tooth-sons
+    role: dealer
+    acquired: 1939
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/12895
+        note: Arthur Tooth, London, 1939;
+        source: aic-1961-44
+        accessed: 2026-11-24
+  - owner: person/karl-haberstock
+    role: dealer
+    acquired: 1939-04-01
+    method: purchase
+    direct: true
+    place: berlin
+    label: with its pendant; in Haberstock's Warenkontrollbücher of 1939, 1940 and 1941
+    sources:
+      - url: https://www.artic.edu/artworks/12895
+        note: sold to Karl Haberstock, Berlin, April 1, 1939 [according to Tooth stockbook cited above and Ein- und Verkaufsbuch for July 1936 - December 1939 preserved in the Haberstock Stiftung, Augsburg
+        source: aic-1961-44
+        accessed: 2026-11-24
+  - owner: institution/dresdner-bank
+    role: custodian
+    acquired: 1941
+    place: tegernsee
+    label: on deposit for Haberstock, listed in his Warenkontrollbuch of 1941
+    sources:
+      - url: https://www.artic.edu/artworks/12895
+        note: in the last book it is listed as on deposit in the Dresdener Bank, Tegernsee]
+        source: aic-1961-44
+        accessed: 2026-11-24
+  - owner: institution/kunsthandlung-julius-bohler
+    role: agent
+    acquired: 1950
+    direct: true
+    place: munich
+    label: on consignment from Haberstock
+    sources:
+      - url: https://www.artic.edu/artworks/12895
+        note: consigned by Haberstock to Julius Böhler, Munich in 1950, [letter of January 29, 2001 from Jutte Fianke, Böhler];
+        source: aic-1961-44
+        accessed: 2026-11-24
+  - owner: institution/e-a-silberman-galleries
+    role: dealer
+    acquired: 1951-01
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/12895
+        note: sold by Böhler to E. and A. Silberman, New York, in January 1951 [according to the letter from Jutta Fianke cited above].
+        source: aic-1961-44
+        accessed: 2026-11-24
+  - owner: person/arthur-c-tate
+    acquired: 1957
+    place: new-canaan
+    label: according to the Hartford 1957 exhibition catalogue
+    sources:
+      - url: https://www.artic.edu/artworks/12895
+        note: Arthur C. Tate, New Canaan, CT, 1957 [according to Hartford 1957 exhib. cat.].
+        source: aic-1961-44
+        accessed: 2026-11-24
+  - owner: institution/e-a-silberman-galleries
+    role: dealer
+    acquired: 1960 or earlier
+    place: new-york-city
+    label: advertised in the Burlington Magazine, December 1960
+    sources:
+      - url: https://www.artic.edu/artworks/12895
+        note: E. and A. Silberman Galleries, New York, by 1960 [advertised in Burlington Magazine, December 1960];
+        source: aic-1961-44
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1961
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/12895
+        note: sold to the Art Institute, 1961.
+        source: aic-1961-44
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q19681547
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q19681547
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q19681547
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q19681547
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q19681547

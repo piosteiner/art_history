@@ -1,0 +1,84 @@
+public_id: 122921
+title_lang: en
+title: Saint Ambrose
+creator: francisco-goya
+created: c. 1796–1799
+created_span: uncertain
+kind: oil painting
+medium: oil on canvas
+dimensions: [190, 113]
+institution: cleveland-museum-of-art
+inventory_number: "1969.23"
+web_url: https://clevelandart.org/art/1969.23
+provenance_status: a_clear
+provenance_status_note: Owned by Alessandro Contini-Bonacossi, Florence, from 1930 until his death in 1955; not among the works he sold to Göring through Hofer.
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1969.23/1969.23_web.jpg
+    source_url: https://clevelandart.org/art/1969.23
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner_label: Marqués de la Cueva del Rey
+    label: possibly the family's since the painting was made in the late 1790s
+    sources:
+      - url: https://clevelandart.org/art/1969.23
+        note: Marques de la Cueva del Rey, sold to Galerie Heinemann [Until 1928] — The title of the Marqueses de la Cueva del Rey was created by Carlos II of Spain in 1690, and so it is possible that the family were the original owners of the painting, and that it remained in their possession from its execution in the late 1790s until 1928.
+        source: cma-1969-23
+        accessed: 2026-11-24
+  - owner: institution/galerie-heinemann
+    role: dealer
+    acquired: 1928
+    method: purchase
+    direct: true
+    place: munich
+    label: Heinemann inventory no. 18609
+    sources:
+      - url: https://clevelandart.org/art/1969.23
+        note: (Galerie Heinemann, Munich, sold to Alessandro Contini-Bonacossi) [1928-1930] — The painting’s Heinemann inventory number was 18609.
+        source: cma-1969-23
+        accessed: 2026-11-24
+  - owner: person/alessandro-contini-bonacossi
+    acquired: 1930
+    ended_label: probably 1955
+    method: purchase
+    direct: true
+    place: florence
+    label: not among the 49 works his firm sold to Göring through Hofer, nor among the 144 works that went to the Italian state
+    sources:
+      - url: https://clevelandart.org/art/1969.23
+        note: Alessandro Contini-Bonacossi (1878-1955), Florence, Italy, by descent to his heirs [1930-probably 1955] — Saint Ambrose was among those works not bequeathed to Italy; the painting instead remained in his family at least until the late 1950s.
+        source: cma-1969-23
+        accessed: 2026-11-24
+  - owner_label: heirs of Alessandro Contini-Bonacossi
+    acquired_label: probably 1955
+    ended_label: late 1950s
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1969.23
+        note: Family of Contini-Bonacossi, probably consigned to Pinakos, Inc. [Probably 1955-late 1950s] — Contini-Bonacossi’s heirs likely consigned the painting to Pinakos, Inc. after his death in 1955.
+        source: cma-1969-23
+        accessed: 2026-11-24
+  - owner: institution/pinakos-inc
+    co_owners: [person/rudolf-j-heinemann]
+    role: dealer
+    acquired_label: late 1950s
+    direct: true
+    place: new-york-city
+    label: probably on consignment from the Contini-Bonacossi heirs; Pinakos, Inc. was Rudolf Heinemann's firm
+    sources:
+      - url: https://clevelandart.org/art/1969.23
+        note: (Pinakos, Inc./Rudolf J. Heinemann, New York, NY, sold to the Cleveland Museum of Art) [Late 1950s-1969] — In the 1940s and 1950s, Pinakos, Inc. was the firm name used by Rudolf Heinemann.
+        source: cma-1969-23
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1969
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/1969.23
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1969-]
+        source: cma-1969-23
+        accessed: 2026-11-24

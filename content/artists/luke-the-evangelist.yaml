@@ -1,0 +1,13 @@
+public_id: 125079
+name: Luke the Evangelist
+given_name: Luke the
+family_name: Evangelist
+death: 84
+wikidata_id: Q128538
+metadata:
+  sources: [Wikidata Q128538 (retrieved 2026-11-24)]
+sources:
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q128538

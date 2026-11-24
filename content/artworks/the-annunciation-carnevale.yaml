@@ -1,0 +1,124 @@
+public_id: 123210
+title_lang: en
+title: The Annunciation
+names:
+  - lang: fr
+    role: translation
+    text: L'Annonciation
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20173622
+creator: fra-carnevale
+created: c. 1448
+created_span: uncertain
+materials: [tempera, panel]
+dimensions: [87.6, 62.8]
+institution: national-gallery-of-art
+inventory_number: 1939.1.218
+provenance_status: a_clear
+provenance_status_note: Bought with the entire Dreyfus collection by Duveen Brothers in 1930; sold to the Samuel H. Kress Foundation in May 1936.
+wikidata_id: Q20173622
+metadata:
+  sources: [Wikidata Q20173622 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/01/Fra_Carnevale_-_The_Annunciation_-_WGA04251.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fra_Carnevale_-_The_Annunciation_-_WGA04251.jpg
+    license: Public domain
+    credit: Fra Carnevale
+provenance:
+  - owner: person/ferdinando-lorenzo-strozzi
+    acquired: 1858 or earlier
+    ended_label: sold during his lifetime
+    place: florence
+    label: Palazzo Strozzi; seen by Cavalcaselle (1857–58) and Mündler (April 1858)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.359.html
+        note: Prince Ferdinando Lorenzo Strozzi [1821-1878], Florence, by 1857/1858.[1] — [1] … Otto Mündler saw the painting at the Palazzo Strozzi in April 1858 … NGA 1939.1.218, however, must have been sold during his lifetime.
+        source: nga-1939-1-218
+        accessed: 2026-11-24
+  - owner: person/louis-charles-timbal
+    acquired_label: sometime before 1872
+    place: paris
+    label: painter and collector
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.359.html
+        note: Louis-Charles Timbal [1821-1880], Paris;[2] — [2] The painter and collector Timbal must have acquired the painting sometime before 1872
+        source: nga-1939-1-218
+        accessed: 2026-11-24
+  - owner: person/gustave-dreyfus
+    acquired: 1872
+    method: purchase
+    direct: true
+    place: paris
+    label: bought Timbal's entire collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.359.html
+        note: sold 1872 with his collection to Gustave Dreyfus [1837-1914], Paris; — [2] … when, during the siege of Paris, he decided to sell his entire collection to Gustave Dreyfus
+        source: nga-1939-1-218
+        accessed: 2026-11-24
+  - owner_label: heirs of Gustave Dreyfus
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.359.html
+        note: his heirs;
+        source: nga-1939-1-218
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1930
+    method: purchase
+    direct: true
+    label: with the entire Dreyfus collection; London and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.359.html
+        note: sold 1930 with the entire Dreyfus collection to (Duveen Brothers, Inc., London and New York);[3]
+        source: nga-1939-1-218
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1936-05
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: as Pesellino, attributed by Berenson to the Carrand Master; letter of 18 May 1936 for thirteen paintings and one sculpture
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.359.html
+        note: sold May 1936 to the Samuel H. Kress Foundation, New York;[4] — [4] The Duveen Brothers letter confirming the sale of thirteen paintings and one sculpture, including "an oil painting representing 'The Annunciation' by Francesco Pesellino...Attributed by Mr. Bernhard Berenson to 'The Carrand Master'," is dated 18 May 1936
+        source: nga-1939-1-218
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1939
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.359.html
+        note: gift 1939 to NGA.
+        source: nga-1939-1-218
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20173622
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20173622
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20173622
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20173622
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20173622
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20173622

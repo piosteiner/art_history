@@ -1,0 +1,40 @@
+public_id: 124170
+title: Jeweled Pagoda Mandala, Sovereign Kings of the Golden Light Sutra written in gold to form the pagoda
+names:
+  - lang: ja
+    role: translation
+    text: 金光明最勝王経金字宝塔曼荼羅図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107044821
+created: 12th century
+created_span: uncertain
+institution: daichoju-in
+wikidata_id: Q107044821
+metadata:
+  sources: [Wikidata Q107044821 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6a/Jeweled_Pagoda_Mandala_%28Chusonji%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jeweled_Pagoda_Mandala_(Chusonji).jpg
+    license: Public domain
+    credit: Unknown Heian period artist
+provenance:
+  - owner_label: Ōshū Fujiwara clan
+    acquired: 12th century
+    method: commission
+    place: hiraizumi
+    label: ten hanging scrolls, made before the mid-12th century; commissioned probably by the Fujiwara of Ōshū (perhaps a woman of the family) for the protection of their rule
+    certainty: probable
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/874
+        note: 本図の制作背景は不詳であるが … 奥州経営の安穏を藤原氏が願って制作を発願したことが推測される。 … 本図の制作期は一二世紀半ばより遡ることが推測される。 … 奥州藤原氏の特に女性による発願ではないかとする説も立てられている。
+        source: kunishitei-201-874
+        accessed: 2026-11-24
+  - owner: institution/daichoju-in
+    place: hiraizumi
+    label: owner today, a sub-temple of Chūson-ji, which manages it; all ten scrolls complete; National Treasure 22 June 2001
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/874
+        note: 国宝指定年月日 ： 2001.06.22(平成13.06.22) … 所有者名 ： 大長寿院 管理団体・管理責任者名 ： 宗教法人中尊寺 … 十巻が完存していることも特筆されよう。
+        source: kunishitei-201-874
+        accessed: 2026-11-24

@@ -1,0 +1,227 @@
+public_id: 125065
+title_lang: en
+title: Gian Lodovico Madruzzo
+names:
+  - lang: en
+    role: original
+    text: Portrait of Ludovico Madruzzo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20275886
+  - lang: it
+    role: translation
+    text: Ritratto di Ludovico Madruzzo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20275886
+creator: giovanni-battista-moroni
+created: 1550s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [199.8, 116]
+institution: art-institute-of-chicago
+inventory_number: "1929.912"
+web_url: https://www.wga.hu/frames-e.html?/html/m/moroni/madruzzo.html
+wikidata_id: Q20275886
+metadata:
+  sources: [Wikidata Q20275886 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/ludovico-madruzzo
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20275886
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Giovanni_Battista_Moroni_-_Gian_Lodovico_Madruzzo_-_1929.912_-_Art_Institute_of_Chicago.jpg/1280px-Giovanni_Battista_Moroni_-_Gian_Lodovico_Madruzzo_-_1929.912_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Moroni_-_Gian_Lodovico_Madruzzo_-_1929.912_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Giovanni Battista Moroni
+provenance:
+  - owner_label: Madruzzo family, Castello del Buon Consiglio, Trent
+    place: trento-2
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: Probably Madruzzo family, Castello del Buon Consiglio, Trent;
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner: person/carlo-emanuele-madruzzo
+    method: inheritance
+    direct: true
+    place: trento-2
+    label: with its pendant (Gian Federico Madruzzo, NGA) the “due quadri de ritratti de Madruzzi” of the Castello inventory, Dec. 1658–13 Jan. 1659
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: by descent to Carlo Emanuele Madruzzo (died 1658) [the painting and its pendant, the portrait of his brother Gian Federico Madruzzo now in the National Gallery of Art, Washington D.C., have been identified as the “due quadri de ritratti de Madruzzi” recorded in an inventory of the Castello made between December 1658 and January 13, 1659, see Oberziner 1900 and Shapley, 1979];
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner: person/charlotte-de-lenoncourt
+    label: his cousin
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: possibly his cousin Charlotte de Lénoncourt [see Oberziner 1900].
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner_label: Barons Roccabruna, Trent
+    acquired: 1682 or earlier
+    place: trento-2
+    label: presumably the “I tre quadri grandi di Madruzzi” of a 1682 Roccabruna inventory (with Gian Federico Madruzzo and Titian's Cardinal Cristoforo Madruzzo)
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: Barons Roccabruna, Trent, by 1682;
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner: person/giacomo-roccabruna
+    method: inheritance
+    direct: true
+    place: trento-2
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: by descent to Giacomo Roccabruna (died 1735) [The picture and the portrait of Gian Federico Madruzzo, as well as the portrait of their uncle Cardinal Cristoforo Madruzzo by Titian, are presumably the “I tre quadri grandi di Madruzzi” mentioned in a 1682 Roccabruna inventory cited by Oberziner 1900];
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner_label: Anna Caterina, sister of Giacomo Roccabruna, wife of Baron Antonio Gaudenti della Torre
+    method: inheritance
+    direct: true
+    place: trento-2
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: by descent to his sister Anna Caterina, wife of Baron Antonio Gaudenti della Torre, Trent [according to Oberziner 1900];
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner_label: Gaudenti family, Trent
+    ended_label: until at least 1782
+    method: inheritance
+    direct: true
+    place: trento-2
+    label: "Chiusole 1782: “il Signor Gaudenti … conserva tre ritratti di Tiziano”"
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: Gaudenti family, Trent, until at least 1782 [Chiusole 1782 noted that “il Signor Gaudenti, fra altre cose degne, conserva tre ritratti di Tiziano”];
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner: person/isidoro-salvadori
+    co_owners: [person/valentino-salvadori]
+    acquired: 1833 or earlier
+    direct: true
+    place: trento-2
+    label: the brothers Barons Salvadori; Giovanelli's 1833 manuscript “Tre ritratti de’ Madruzzi”
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: to the brothers Barons Isidoro and Valentino Salvadori, Trent, by 1833 [according to an 1833 manuscript by Benedetto Giovanelli published by Emert 1939 describing “Tre ritratti de’ Madruzzi”; see Emert 1939 for the relationship of the Guadenti and Salvadori families];
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner: institution/trotti-co
+    co_owners: [institution/m-knoedler-co]
+    role: dealer
+    acquired: 1906
+    method: purchase
+    direct: true
+    place: paris
+    label: jointly; with the portraits of Gian Federico Madruzzo and Titian's Cardinal Cristoforo Madruzzo
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: sold to Trotti and Co., Paris, and Knoedler, Paris, 1906 along with the portrait of Gian Federico Madruzzo and the portrait of Cardinal Cristoforo Madruzzo by Titian [see Trotti 1927 and Gregori 1979];
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner: person/james-stillman
+    acquired: 1907 or earlier
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and New York; with the two other Madruzzo portraits
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: sold by Trotti and Knoedler to James Stillman (died 1918), Paris and New York, by 1907 along with the portraits of Gian Federico Madruzzo and Cardinal Cristoforo Madruzzo [Trotti 1927 and Berenson 1907];
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner: person/charles-chauncey-stillman
+    method: inheritance
+    direct: true
+    place: new-york-city
+    label: his son
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: by descent to his son Charles Chauncey Stillman (died 1927), New York, along with the portraits of Gian Federico Madruzzo and Cardinal Cristoforo Madruzzo;
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner: institution/metropolitan-museum-of-art
+    role: custodian
+    acquired: 1921
+    ended: 1926
+    place: new-york-city
+    label: on loan from Charles Chauncey Stillman
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: on loan to The Metropolitan Museum of Art, New York, 1921–26 [according to registrar’s records];
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner: institution/american-art-association
+    role: agent
+    acquired: 1927-02-03
+    method: auction
+    place: new-york-city
+    label: sale, American Art Association, New York, 3 February 1927, no. 27 (Gian Federico Madruzzo no. 28)
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: sold American Art Association, New York, February 3, 1927, no. 27
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner: person/charles-h-worcester
+    acquired: 1927-02-03
+    method: auction
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: sold American Art Association, New York, February 3, 1927, no. 27 to Charles H. Worcester, Chicago [for buyer information, see Rich, Art News, 1930; the portrait of Gian Federico Madruzzo was sold as no. 28.];
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    role: custodian
+    acquired: 1927
+    ended: 1929
+    place: chicago
+    label: on loan from Charles H. Worcester
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: on loan to the Art Institute from 1927;
+        source: aic-1929-912
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1929
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/4081
+        note: given to the Art Institute, 1929.
+        source: aic-1929-912
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20275886
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20275886
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20275886
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20275886
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20275886
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20275886

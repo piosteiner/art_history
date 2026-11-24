@@ -1,0 +1,78 @@
+public_id: 123848
+title_lang: de
+title: Schiffsbug eines Kampfbootes
+attribution_label: Anonymous
+created: 1701/1833
+kind: gerät / zubehör / kleinobjekt
+medium: Holz
+dimensions: [48, 40, 130]
+institution: museum-rietberg
+inventory_number: RPO 12
+web_url: https://rietberg.ch/sammlungen/rpo-12
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Maori_Schiffsbug_Museum_Rietberg_RPO_12.jpg/1280px-Maori_Schiffsbug_Museum_Rietberg_RPO_12.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maori_Schiffsbug_Museum_Rietberg_RPO_12.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: 1701/1800
+    acquired_label: 18th/early 19th century
+    method: creation
+    label: made in New Zealand (Maori), 18th/early 19th century
+    sources:
+      - url: https://rietberg.ch/sammlungen/rpo-12
+        note: "18./frühes 19. Jh.: Urheber*in unbekannt, in Neuseeland"
+        source: rietberg-rpo-12
+        accessed: 2026-11-24
+  - owner: institution/ethnologisches-museum
+    acquired: before 1900
+    place: berlin
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rpo-12
+        note: "vor 1900: Ethnologisches Museum, Berlin (1873), Erwerbsumstände unbekannt"
+        source: rietberg-rpo-12
+        accessed: 2026-11-24
+  - owner: person/william-ockelford-oldman
+    role: dealer
+    acquired: 1911
+    place: london
+    label: W.O. Oldman, Ethnographical Specimens, London; circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rpo-12
+        note: "1911: William Ockelford Oldman (1879–1949), Erwerbsumstände unbekannt W.O. Oldman, Ethnographical Specimens, London; 1927 zog sich Oldman (1879-1949) aus dem Handel zurück und gründete ein Museum in London"
+        source: rietberg-rpo-12
+        accessed: 2026-11-24
+  - owner: person/arthur-speyer
+    acquired: 1939
+    ended: 1958
+    method: exchange
+    label: Arthur Speyer II; by exchange with the Völkerkundemuseum Berlin
+    sources:
+      - url: https://rietberg.ch/sammlungen/rpo-12
+        note: "1939: Arthur Speyer II. (1894–1958), durch Tausch erworben Tausch mit dem Völkerkundemuseum Berlin"
+        source: rietberg-rpo-12
+        accessed: 2026-11-24
+  - owner_label: wife of Arthur Speyer II
+    acquired: 1958
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://rietberg.ch/sammlungen/rpo-12
+        note: "1958: Frau von Arthur Speyer II, durch Erbgang erworben"
+        source: rietberg-rpo-12
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1964-12
+    method: purchase
+    place: zurich
+    label: bought by Elsy Leuzinger in December 1964 (Ankäufe 1965, to 10 May 1965) with funds of Eduard von der Heydt
+    price:
+      amount: 20000
+      currency: DEM
+    sources:
+      - url: https://rietberg.ch/sammlungen/rpo-12
+        note: "12.1964–10.05.1965: Museum Rietberg, angekauft Ankäufe 1965 Im Dezember 1964 von Elsy Leuzinger für DM 20'000 gekauft;"
+        source: rietberg-rpo-12
+        accessed: 2026-11-24

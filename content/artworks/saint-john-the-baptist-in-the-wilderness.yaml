@@ -1,0 +1,136 @@
+public_id: 123041
+title_lang: it
+title: San Giovanni nel Deserto
+names:
+  - lang: pl
+    role: original
+    text: Święty Jan na pustyni
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3947246
+  - lang: en
+    role: translation
+    text: Saint John the Baptist in the Wilderness
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3947246
+  - lang: de
+    role: translation
+    text: Hl. Johannes in der Wüste
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3947246
+  - lang: it
+    role: original
+    text: San Giovanni Battista nel deserto
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3947246
+creator: domenico-veneziano
+created: 1445
+materials: [tempera, panel]
+dimensions: [28.4, 31.8]
+institution: national-gallery-of-art
+inventory_number: 1943.4.48
+wikidata_id: Q3947246
+metadata:
+  sources: [Wikidata Q3947246 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/john-the-baptist
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q3947246
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Domenico_Veneziano_001.jpg/1280px-Domenico_Veneziano_001.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Domenico_Veneziano_001.jpg
+    license: Public domain
+    credit: Domenico Veneziano
+provenance:
+  - owner: institution/santa-lucia-de-magnoli
+    ended_label: probably until the early 1800s
+    place: florence
+    label: "predella of the altarpiece: main altar (cited 1677), probably moved during restoration 1712–1715; sacristy by 1728; third altar on the right of the nave by 1762; not mentioned by Rumohr 1827"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12146.html
+        note: Main altar of the church of Santa Lucia de' Magnoli, Florence, probably until the early 18th century.[1] Sacristy of the same church, by 1728.[2] Third altar on the right of the nave of the same church, by 1762 and probably until the early 1800s.[3]
+        source: nga-1943-4-48
+        accessed: 2026-11-24
+  - owner: person/a-l-nicholson
+    role: dealer
+    ended: 1913-07-24
+    place: london
+    label: receipt of 24 July 1913 on A. L. Nicholson's stationery for "Picture on Panel / 'A Saint in the Wilderness' School of Fra Angelico" (probably this painting)
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12146.html
+        note: In the files of temporary import licenses for which Berenson applied are both a receipt dated 24 July 1913, on printed stationary of A.L. Nicholson in London, for "Picture on Panel / 'A Saint in the Wilderness' School of Fra Angelico," … Both these documents probably refer to the NGA painting.
+        source: nga-1943-4-48
+        accessed: 2026-11-24
+  - owner: person/bernard-berenson
+    acquired: July 1913 or earlier
+    place: settignano
+    label: acquired perhaps in London; declared to the Soprintendenza as brought from London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12146.html
+        note: Bernard Berenson [1865-1959], Settignano, acquired, perhaps in London, by July 1913;[4]
+        source: nga-1943-4-48
+        accessed: 2026-11-24
+  - owner: person/carl-w-hamilton
+    acquired: 1919
+    method: gift
+    direct: true
+    place: new-york-city
+    label: presented by Berenson's wife, Mary Berenson (Mariano and Clark 1966; see the rectification by D. A. Brown 1979)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12146.html
+        note: presented 1919 by his wife, Mary Berenson, to Carl W. Hamilton [1886-1967], New York;[5]
+        source: nga-1943-4-48
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1942
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: offered by Hamilton in a letter of May 1942, accepted the same year
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12146.html
+        note: sold 1942 to the Samuel H. Kress Foundation, New York;[6] — Hamilton offered his painting to Samuel H. Kress in a letter dated May 1942 (copy in NGA curatorial files); the offer was accepted in the same year.
+        source: nga-1943-4-48
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1943
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12146.html
+        note: gift 1943 to NGA.
+        source: nga-1943-4-48
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q3947246
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q3947246
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q3947246
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q3947246
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q3947246
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q3947246

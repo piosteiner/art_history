@@ -18,6 +18,16 @@ death: 1953-01-01
 wikidata_id: Q6859560
 metadata:
   sources: [Wikidata Q6859560 (retrieved 2026-10-31)]
+relationships:
+  - type: child_of
+    to: person/mary-benjamin-rogers
+    sources:
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q6859560
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q110968090
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/d5/Millicent_Rogers_1919.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Millicent_Rogers_1919.jpg

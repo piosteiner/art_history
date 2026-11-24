@@ -1,0 +1,184 @@
+public_id: 124696
+title_lang: fr
+title: L'Écluse à Pontoise
+names:
+  - lang: en
+    role: original
+    text: The Lock at Pontoise
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q21479251
+creator: camille-pissarro
+created: 1872
+materials: [canvas, oil paint]
+dimensions: [53, 83]
+institution: cleveland-museum-of-art
+inventory_number: "1990.7"
+web_url: https://clevelandart.org/art/1990.7
+wikidata_id: Q21479251
+metadata:
+  sources: [Wikidata Q21479251 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/The_Lock_at_Pontoise%2C_by_Camille_Pissarro%2C_Cleveland_Museum_of_Art%2C_1990.7.jpg/1280px-The_Lock_at_Pontoise%2C_by_Camille_Pissarro%2C_Cleveland_Museum_of_Art%2C_1990.7.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Lock_at_Pontoise,_by_Camille_Pissarro,_Cleveland_Museum_of_Art,_1990.7.jpg
+    license: Public domain
+    credit: Camille Pissarro
+provenance:
+  - owner: person/charles-guasco
+    ended: 1900
+    label: earlier Durand-Ruel (1872) and Tissot (1873) owners in the Wildenstein catalogue raisonné are doubted
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: "Charles Guasco [date: Until 1900] — Prior to Guasco, the Wildenstein catalogue raisonné says that Durand-Ruel, London purchased the painting from Pissarro on May 25, 1872 and then sold it to Tissot on November 17, 1873. In spite of the specificity of these dates, the catalogue raisonné precedes each transaction with a question mark"
+        source: cma-1990-7
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1900-06-11
+    method: auction
+    direct: true
+    place: paris
+    label: Guasco sale, Galerie Georges Petit, Paris, 11 June 1900, no. 60
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: "(Guasco sale, Galerie Georges Petit, Paris, June 11, 1900 (no. 60), sold to Louis Schoengrün, Paris [date: 1900]"
+        source: cma-1990-7
+        accessed: 2026-11-24
+  - owner: person/louis-schoengrun
+    acquired: 1900-06-11
+    ended: 1901
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: "Louis Schoengrün, Paris [date: 1900-1901]"
+        source: cma-1990-7
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1901-02-07
+    method: auction
+    direct: true
+    place: paris
+    label: Schoengrün sale, Hôtel Drouot, Paris, 7 February 1901, no. 27
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: "(Schoengrün sale, Paris, Hôtel Drouot, Feb. 7, 1901 (no. 27), sold to Max Behrendt) [date: 1901]"
+        source: cma-1990-7
+        accessed: 2026-11-24
+  - owner: person/max-behrendt
+    acquired: 1901-02-07
+    method: auction
+    direct: true
+    place: paris
+    label: 11 rue du Maréchal Maunoury; lent to exhibitions 1928 (Durand-Ruel) and 1931 (Paul Rosenberg); owner per the 1939 catalogue raisonné
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: "Max Behrendt, Paris [date: 1901-at least 1939] — Behrendt is listed as the owner of the painting in the 1939 Pissarro catalogue raisonné, and he lent it to exhibitions in 1928 (Durand-Ruel) and 1931 (Paul Rosenberg)."
+        source: cma-1990-7
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: custodian
+    acquired: 1928-01-31
+    ended: 1928-03-19
+    place: paris
+    label: deposited by Behrendt for the exhibition Tableaux de Camille Pissarro
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: Durand-Ruel’s records show that Behrendt, who lived at 11 rue de Maréchal Maunoury, Paris, deposited the painting with the gallery on January 31, 1928 for the exhibition, Tableaux de Camille Pissarro, and retrieved it on March 19 of that year.
+        source: cma-1990-7
+        accessed: 2026-11-24
+  - owner_label: Gouin collection
+    label: perhaps Paris; given with a question mark by David Carritt Ltd.; not in the Wildenstein catalogue raisonné
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: "Possibly Gouin collection, Paris [date: ?] — The information provided to CMA by David Carritt, Ltd. includes the Gouin collection in the provenance with a question mark"
+        source: cma-1990-7
+        accessed: 2026-11-24
+  - owner_label: Mrs. Carmona
+    ended: 1951
+    label: identity unknown; perhaps related to Jacques Carmona, Paris
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: "Mrs. Carmona, sold to Wildenstein [date: Until 1951] — Details about the identity of “Mrs. Carmona” are unknown."
+        source: cma-1990-7
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1951
+    ended: 1955
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: "(Wildenstein & Co., New York, sold to Eleanor Allen Cunningham) [date: 1951-1955]"
+        source: cma-1990-7
+        accessed: 2026-11-24
+  - owner: person/eleanor-allen-cunningham
+    acquired: 1955
+    ended: 1961
+    method: purchase
+    direct: true
+    place: hartford
+    label: née Lamont; wife of Charles C. Cunningham, director of the Wadsworth Atheneum 1946–1966
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: "Eleanor Allen (Lamont) Cunningham [1910-1961], Hartford, CT, by descent to her son, Charles Cunningham, Jr [date: 1955-1961]"
+        source: cma-1990-7
+        accessed: 2026-11-24
+  - owner: person/charles-cunningham-jr
+    acquired: 1961
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: "Charles Cunningham, Jr. [date: 1961-]"
+        source: cma-1990-7
+        accessed: 2026-11-24
+  - owner: institution/artemis-group-david-carritt-ltd
+    role: dealer
+    ended: 1990
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: "(Artemis Fine Arts/David Carritt, Ltd., London, sold to the Cleveland Museum of Art) [date: Until 1990]"
+        source: cma-1990-7
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1990
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1990.7
+        note: "The Cleveland Museum of Art, Cleveland, OH [date: 1990-]"
+        source: cma-1990-7
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q21479251
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q21479251
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q21479251
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q21479251
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q21479251
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q21479251

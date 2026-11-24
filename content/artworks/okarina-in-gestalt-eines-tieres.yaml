@@ -1,0 +1,48 @@
+public_id: 124856
+title: Okarina in Gestalt eines Tieres
+creator: anonymous
+created: 600/900
+materials: [ceramic, limestone]
+dimensions: [11.5, 18]
+institution: museum-rietberg
+inventory_number: RMA 144
+wikidata_id: Q126911345
+metadata:
+  sources: [Wikidata Q126911345 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/mexico
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q126911345
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Urheber%2Ain_unbekannt_Okarina_in_Gestalt_eines_Tieres_Museum_Rietberg_RMA_0144.jpg/1280px-Urheber%2Ain_unbekannt_Okarina_in_Gestalt_eines_Tieres_Museum_Rietberg_RMA_0144.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Urheber*in_unbekannt_Okarina_in_Gestalt_eines_Tieres_Museum_Rietberg_RMA_0144.jpg
+    license: CC0
+    credit: Museum Rietberg
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q126911345
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q126911345
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q126911345
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q126911345
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q126911345
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q126911345

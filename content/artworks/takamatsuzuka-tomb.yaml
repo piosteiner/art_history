@@ -1,0 +1,59 @@
+public_id: 124468
+title: Takamatsuzuka Tomb
+names:
+  - text: Takamatsuzuka Kofun
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1039675
+  - text: Takamatsuzuka Tumulus
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1039675
+  - lang: fr
+    role: translation
+    text: Kofun de Takamatsuzuka
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1039675
+  - lang: it
+    role: translation
+    text: Takamatsuzuka
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1039675
+  - lang: ja
+    role: translation
+    text: 高松塚古墳
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1039675
+  - lang: ko
+    role: translation
+    text: 다카마쓰 고분
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1039675
+materials: [tuff]
+location: [135.80647, 34.46222]
+wikidata_id: Q1039675
+metadata:
+  sources: [Wikidata Q1039675 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/asuka
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Takamatsuzuka_2014.JPG/1280px-Takamatsuzuka_2014.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Takamatsuzuka_2014.JPG
+    license: CC BY-SA 4.0
+    credit: 8-hachiro
+identifiers:
+  viaf: "253039866"
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1039675
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q1039675

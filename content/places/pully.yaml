@@ -1,0 +1,29 @@
+public_id: 125822
+name: Pully
+names:
+  - lang: ru
+    role: translation
+    text: Пюли
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q69738
+kind: settlement
+parent: vaud
+country_code: CH
+location: [6.66667, 46.51667]
+wikidata_id: Q69738
+metadata:
+  sources: [Wikidata Q69738 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q69738
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q69738
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q69738

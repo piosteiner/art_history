@@ -175,6 +175,15 @@ relationships:
       - accessed: 2026-10-19
         property: P135
         wikidata: Q5580
+  - type: child_of
+    to: artist/albrecht-durer-the-elder
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q535910
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q5580
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/D%C3%BCrer_Alte_Pinakothek.jpg/1280px-D%C3%BCrer_Alte_Pinakothek.jpg
     source_url: https://commons.wikimedia.org/wiki/File:D%C3%BCrer_Alte_Pinakothek.jpg

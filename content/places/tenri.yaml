@@ -1,0 +1,41 @@
+public_id: 124501
+name: Tenri
+names:
+  - lang: ja
+    role: original
+    text: 天理市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502196
+  - lang: ko
+    role: translation
+    text: 덴리시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502196
+  - lang: ru
+    role: translation
+    text: Тэнри
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502196
+kind: settlement
+parent: nara-prefecture
+country_code: JP
+location: [135.83722, 34.59667]
+wikidata_id: Q502196
+metadata:
+  sources: [Wikidata Q502196 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q502196
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q502196
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q502196

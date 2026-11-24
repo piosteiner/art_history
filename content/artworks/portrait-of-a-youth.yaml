@@ -1,0 +1,159 @@
+public_id: 123014
+title_lang: en
+title: Portrait of a Youth
+names:
+  - lang: fr
+    role: translation
+    text: Portrait d'un Jeune
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20174444
+  - lang: de
+    role: translation
+    text: Porträt eines Jünglings mit roter Mütze
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20174444
+  - lang: ja
+    role: translation
+    text: 青年の肖像
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20174444
+creator: filippino-lippi
+created: c. 1485
+created_span: uncertain
+materials: [tempera, panel, oil paint]
+dimensions: [52.1, 36.5]
+institution: national-gallery-of-art
+inventory_number: 1937.1.20
+provenance_status: a_clear
+provenance_status_note: Bought by Andrew W. Mellon in November 1930; deeded 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q20174444
+metadata:
+  sources: [Wikidata Q20174444 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Lippi%2C_Filippino_-_Portrait_of_a_Youth_-_National_Gallery_of_Art.jpg/1280px-Lippi%2C_Filippino_-_Portrait_of_a_Youth_-_National_Gallery_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lippi,_Filippino_-_Portrait_of_a_Youth_-_National_Gallery_of_Art.jpg
+    license: Public domain
+    credit: Filippino Lippi
+provenance:
+  - owner: person/stefano-bardini
+    role: dealer
+    acquired_label: in the later 1880s
+    place: florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.22.html
+        note: (Stefano Bardini [1836-1922], Florence), in the later 1880s;
+        source: nga-1937-1-20
+        accessed: 2026-11-24
+  - owner: person/johann-ii-prince-of-liechtenstein
+    acquired: 1890
+    method: purchase
+    direct: true
+    place: vienna
+    label: presented to the export office of the Soprintendenza delle Belle Arti, Florence, 1890
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.22.html
+        note: purchased 1890 by Prince Johann II von Liechtenstein [1840-1929], Vienna;[1] — [1] … the painting is registered under the year 1890, when, after having been sold by Stefano Bardini to Prince Johann II of Liechtenstein, it was presented to the export office of the Soprintendenza delle Belle Arti in Florence.
+        source: nga-1937-1-20
+        accessed: 2026-11-24
+  - owner: person/franz-i-prince-of-liechtenstein
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.22.html
+        note: by descent to Prince Franz I von Liechtenstein [1853-1938], Vienna;
+        source: nga-1937-1-20
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: c. 1920
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: New York and London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.22.html
+        note: "(M. Knoedler & Co., New York and London), c. 1920; — [2] … already in 1921 Wilhelm von Bode (Sandro Botticelli, Berlin, 1921: 106) reports the work as having been purchased by an American collector"
+        source: nga-1937-1-20
+        accessed: 2026-11-24
+  - owner: person/frank-d-stout
+    acquired: 1924 or earlier
+    direct: true
+    place: chicago
+    label: exhibited in Chicago as part of the Stout Collection, 1924 (Shapley gives c. 1925 for the passage); with Mrs. Frank D. Stout
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.22.html
+        note: Mr. and Mrs. Frank D. Stout, Chicago, by 1924;[2] — [2] … in 1924 the painting was exhibited in Chicago as part of the Stout Collection.
+        source: nga-1937-1-20
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: agent
+    acquired: 1930-11
+    direct: true
+    place: new-york-city
+    label: consigned by Mrs. Stout; Knoedler no. CA 267
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.22.html
+        note: consigned November 1930 by Mrs. Stout to (M. Knoedler & Co., New York and London);[3] — [3] According to the Knoedler stock books, the painting was consigned by Mrs. Stout as Knoedler's number CA 267
+        source: nga-1937-1-20
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1930-11
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.22.html
+        note: sold November 1930 to Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-20
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1932-03-30
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.22.html
+        note: deeded 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[4]
+        source: nga-1937-1-20
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.22.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-20
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20174444
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20174444
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20174444
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20174444
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20174444
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20174444

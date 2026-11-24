@@ -1,0 +1,53 @@
+public_id: 128995
+name: Brno
+names:
+  - lang: ja
+    role: translation
+    text: ブルノ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q14960
+  - lang: zh
+    role: translation
+    text: 布爾諾
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q14960
+  - lang: ko
+    role: translation
+    text: 브르노
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q14960
+  - lang: de
+    role: translation
+    text: Brünn
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q14960
+  - lang: ru
+    role: translation
+    text: Брно
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q14960
+kind: settlement
+parent: czechia
+country_code: CZ
+location: [16.60833, 49.19528]
+wikidata_id: Q14960
+metadata:
+  sources: [Wikidata Q14960 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q14960
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q14960
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q14960

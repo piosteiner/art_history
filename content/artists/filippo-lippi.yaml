@@ -1,0 +1,18 @@
+public_id: 123205
+name: Filippo Lippi
+given_name: Filippo
+family_name: Lippi
+birth: c. 1406
+death: 1469-10-17
+wikidata_id: Q205148
+metadata:
+  sources: [Wikidata Q205148 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q205148
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q205148

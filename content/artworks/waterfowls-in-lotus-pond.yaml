@@ -1,0 +1,80 @@
+public_id: 124166
+title: Waterfowls in Lotus Pond
+names:
+  - text: Water Fowl in the Lotus Pond
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107046877
+  - text: Waterfowl in Lotus Pond
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107046877
+  - lang: ja
+    role: translation
+    text: 蓮池水禽図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107046877
+creator: tawara-sotatsu
+created: 17th century
+created_span: uncertain
+dimensions: [116, 50]
+institution: kyoto-national-museum
+inventory_number: A甲261
+wikidata_id: Q107046877
+metadata:
+  sources: [Wikidata Q107046877 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Water_fowl_in_the_lotus_pond.jpg/1280px-Water_fowl_in_the_lotus_pond.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Water_fowl_in_the_lotus_pond.jpg
+    license: Public domain
+    credit: Tawara Sōtatsu
+provenance:
+  - owner: artist/tawara-sotatsu
+    acquired: c. 1615
+    method: creation
+    label: ink painting with only the 'Inen' seal; dated about 1615 by its likeness to the lotus underpainting of the Hyakunin isshu scroll formerly in the Ōkura collection
+    sources:
+      - url: https://www.kyohaku.go.jp/jp/collection/meihin/kinsei/item03/
+        note: 俵屋宗達筆 … 江戸時代　17世紀前半 … 画面左下隅に「伊年」印があるのみで落款もないが、宗達の水墨技法の極を示す作といえよう。
+        source: kyohaku-a-ko-261
+        accessed: 2026-11-24
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100959&content_part_id=0&content_pict_id=0
+        note: 1615年頃作と推定される旧大倉家蔵「蓮下絵百人一首」の蓮の描写との類似から、その頃の制作と推定されている。
+        source: emuseum-100959-ja
+        accessed: 2026-11-24
+  - owner: institution/kyoto-national-museum
+    place: kyoto
+    label: owned by the National Institutes for Cultural Heritage, kept at the Kyoto National Museum (A甲261); the sources read give no date or way of acquisition; National Treasure 26 May 1964
+    sources:
+      - url: https://www.kyohaku.go.jp/jp/collection/meihin/kinsei/item03/
+        note: 京都国立博物館（A甲261）
+        source: kyohaku-a-ko-261
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/146
+        note: 国宝指定年月日 ： 1964.05.26(昭和39.05.26) … 保管施設の名称 ： 京都国立博物館 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-146
+        accessed: 2026-11-24
+identifiers:
+  emuseum: "100959"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107046877
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q107046877
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q107046877
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107046877
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q107046877

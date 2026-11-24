@@ -1,0 +1,23 @@
+public_id: 124626
+name: Tieleman Roosterman
+given_name: Tieleman
+family_name: Roosterman
+kind: person
+birth: 1598
+death: 1673
+wikidata_id: Q16863608
+metadata:
+  sources: [Wikidata Q16863608 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q16863608
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q16863608
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q16863608

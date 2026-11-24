@@ -1,0 +1,74 @@
+public_id: 124561
+title: Shimogamo Shrine
+names:
+  - text: Shimo-Gamo Shrine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q701620
+  - text: Kamomioya Shrine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q701620
+  - text: Kamo-mioya Shrine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q701620
+  - text: Yamashiro Ichinomiya
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q701620
+  - lang: nl
+    role: translation
+    text: Shimogamo-schrijn
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q701620
+  - lang: fr
+    role: translation
+    text: sanctuaire Shimogamo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q701620
+  - lang: es
+    role: translation
+    text: Santuario Shimogamo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q701620
+  - lang: ja
+    role: translation
+    text: 賀茂御祖神社
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q701620
+  - lang: ko
+    role: translation
+    text: 가모미오야 신사
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q701620
+  - lang: ru
+    role: translation
+    text: святилище Симогамо
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q701620
+location: [135.77301, 35.03907]
+wikidata_id: Q701620
+metadata:
+  sources: [Wikidata Q701620 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/64/Shimogamo_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shimogamo_01.jpg
+    license: CC BY-SA 3.0
+    credit: Mochi at Japanese Wikipedia
+identifiers:
+  viaf: "154050955"
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q701620

@@ -1,0 +1,141 @@
+public_id: 125204
+title_lang: en
+title: Sandvika, Norway
+names:
+  - lang: fr
+    role: translation
+    text: Sandvika, Norvège
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268524
+creator: claude-monet
+created: 1895
+materials: [oil paint, canvas]
+dimensions: [73.4, 92.5]
+institution: art-institute-of-chicago
+inventory_number: "1961.790"
+wikidata_id: Q20268524
+metadata:
+  sources: [Wikidata Q20268524 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts
+    to: place/norway
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20268524
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Monet_-_Sandviken%2C_Norwegen.jpg/1280px-Monet_-_Sandviken%2C_Norwegen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Monet_-_Sandviken,_Norwegen.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: artist/claude-monet
+    acquired: 1895
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/86998
+        note: The artist (d. 1926);
+        source: aic-1961-790
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1899-05-01
+    method: auction
+    direct: true
+    place: paris
+    label: donated by the artist to the Alfred Sisley Sale, Galerie Georges Petit, lot 65
+    sources:
+      - url: https://www.artic.edu/artworks/86998
+        note: donated to the Alfred Sisley Sale, Galerie Georges Petit, Paris, May 1, 1899, lot 65 [per Galerie Georges Petit 1899];
+        source: aic-1961-790
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1899-05-01
+    method: auction
+    direct: true
+    place: paris
+    label: "stock no. 5186, as Sandviken près Christiania; Wildenstein 1996: sold to Durand-Ruel and Bernheim-Jeune (one annotated catalogue notes 6000 and Bernheim)"
+    price:
+      amount: 6300
+      currency: FRF
+    sources:
+      - url: https://www.artic.edu/artworks/86998
+        note: sold to Durand-Ruel, Paris, for 6,300 francs [per Durand-Ruel,Paris, stock book for 1891–1901 (no. 5186, as Sandviken près Christiania) … According to Wildenstein 1996, the picture was sold on May 1, 1899, to Durand-Ruel and Bernheim-Jeune.
+        source: aic-1961-790
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1900
+    method: transfer
+    direct: true
+    place: new-york-city
+    label: from Durand-Ruel, Paris, 24 October or 13 November 1900 (the Paris and New York stock books differ)
+    sources:
+      - url: https://www.artic.edu/artworks/86998
+        note: sold to Durand-Ruel, New York, Oct. 24 or Nov. 13, 1900 [… the Paris and New York Durand-Ruel stock books give different dates for the sale];
+        source: aic-1961-790
+        accessed: 2026-11-24
+  - owner: person/harriet-borland
+    acquired: 1901-02-13
+    ended: 1933
+    method: purchase
+    direct: true
+    place: chicago
+    label: née Blair; Durand-Ruel New York stock no. 2391, as Sandviken, Norway
+    price:
+      amount: 3500
+      currency: USD
+    sources:
+      - url: https://www.artic.edu/artworks/86998
+        note: sold to Mrs. Harriet Borland (née Blair, d. 1933), Chicago, Feb. 13, 1901, for $3,500 [per Durand-Ruel, New York, stock book for 1894–1905 (no. 2391, as Sandviken, Norway)
+        source: aic-1961-790
+        accessed: 2026-11-24
+  - owner: person/bruce-borland
+    acquired: 1933
+    method: inheritance
+    direct: true
+    place: chicago
+    label: by descent, her son
+    sources:
+      - url: https://www.artic.edu/artworks/86998
+        note: by descent from her son, Bruce Borland, Chicago, 1933;
+        source: aic-1961-790
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1961/1963
+    method: gift
+    direct: true
+    place: chicago
+    label: given in undivided fractional interests from 1961; full ownership 1963
+    sources:
+      - url: https://www.artic.edu/artworks/86998
+        note: given to the Art Institute, beginning in 1961 [The painting was given to the Art Institute of Chicago in undivided fractional interests beginning in 1961. The Art Institute received the final fractional interest for one hundred percent ownership in 1963].
+        source: aic-1961-790
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268524
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20268524
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20268524
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20268524
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268524
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268524

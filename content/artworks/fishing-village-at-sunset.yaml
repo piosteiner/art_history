@@ -1,0 +1,47 @@
+public_id: 124241
+title: Fishing Village at Sunset
+names:
+  - text: Fishing Village in the Evening Glow
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045345
+  - lang: ja
+    role: translation
+    text: 漁村夕照図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045345
+creator: mu-qi
+created: 13th century
+created_span: uncertain
+institution: nezu-museum
+location: [139.717, 35.66225]
+wikidata_id: Q107045345
+metadata:
+  sources: [Wikidata Q107045345 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 13th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Muqi_%28Mokkei%29_-_Fishing_Village_at_Sunset.jpg/1280px-Muqi_%28Mokkei%29_-_Fishing_Village_at_Sunset.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Muqi_(Mokkei)_-_Fishing_Village_at_Sunset.jpg
+    license: Public domain
+    credit: Muqi
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107045345
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q107045345
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107045345
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107045345

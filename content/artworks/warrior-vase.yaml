@@ -1,0 +1,126 @@
+public_id: 123160
+title: Warrior Vase
+names:
+  - text: Warrior krater
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502078
+  - lang: nl
+    role: translation
+    text: Krijgersvaas
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502078
+  - lang: fr
+    role: translation
+    text: Vase aux Guerriers
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502078
+  - lang: de
+    role: translation
+    text: Kriegervase
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502078
+  - lang: it
+    role: translation
+    text: Vaso dei Guerrieri
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502078
+  - lang: es
+    role: translation
+    text: Vaso de los guerreros
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502078
+  - lang: ja
+    role: translation
+    text: 戦士のクラーテル
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502078
+  - lang: ko
+    role: translation
+    text: 전사의 항아리
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502078
+  - lang: ru
+    role: translation
+    text: Кратер воинов
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502078
+materials: [clay]
+institution: national-archaeological-museum-of-athens
+inventory_number: "1426"
+web_url: http://odysseus.culture.gr/h/4/eh430.jsp?obj_id=5462
+wikidata_id: Q502078
+metadata:
+  sources: [Wikidata Q502078 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Pottery_soldiers_12_c_BC%2C_NAMA_1246_080859.jpg/1280px-Pottery_soldiers_12_c_BC%2C_NAMA_1246_080859.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pottery_soldiers_12_c_BC,_NAMA_1246_080859.jpg
+    license: CC BY-SA 3.0
+    credit: Zde
+provenance:
+  - owner_label: House of the Warrior Krater, Mycenae citadel
+    acquired: 12th century BCE
+    label: part of the house's banqueting set, or a grave marker for a post-palatial burial after the building was abandoned; painted by the Stele Painter; in Mycenae
+    sources:
+      - url: https://www.namuseum.gr/en/monthly_artefact/the-face-of-farewell/
+        note: The vase was part of the banqueting set of the house or a grave marker for a burial which took place in the post-palatial period after the abandonment of the building
+        source: nam-p1426-face-of-farewell
+        accessed: 2026-11-24
+  - owner: person/heinrich-schliemann
+    acquired: 1876
+    method: find
+    label: collected in fragments in a house immediately south of Grave Circle A, since named after the krater; in Mycenae
+    sources:
+      - url: https://www.namuseum.gr/en/monthly_artefact/the-face-of-farewell/
+        note: The so-called Warrior Krater was collected in fragments by Heinrich Schliemann in 1876 within the Mycenae citadel, in a house which was named “House of the Warrior Krater” and was located immediately south of Grave Circle A.
+        source: nam-p1426-face-of-farewell
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Warrior_Vase
+        note: The Mycenaean Warrior Vase, found by Heinrich Schliemann on the acropolis of Mycenae, is one of the prominent treasures of the National Archaeological Museum, Athens.
+        source: wikipedia-en-warrior-vase
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    method: transfer
+    place: athens
+    label: inventory Π 1426; Exhibition of Mycenaean Antiquities, room 4, showcase Μ19
+    sources:
+      - url: https://www.namuseum.gr/en/monthly_artefact/the-face-of-farewell/
+        note: "National Archaeological Museum, Exhibition of Prehistoric Antiquities inv. no. Π 1426 … Display location: Exhibition of Mycenaean Antiquities, Room 4, showcase Μ19."
+        source: nam-p1426-face-of-farewell
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Kriegervase
+        note: Das … datierte Gefäß befindet sich heute im Archäologischen Nationalmuseum in Athen (NAMA) mit der Inventarnummer 1426.
+        source: wikipedia-de-kriegervase
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1940/1941
+    place: athens
+    label: the museum's antiquities concealed in 1940–41 (clay works packed and taken to air-raid shelters); uncovered after the war, first halls reopened 1947 — the page does not name this work
+    certainty: probable
+    sources:
+      - url: https://www.namuseum.gr/en/to-moyseio/istoria-toy-moyseioy/the-rescue-of-the-statues/
+        note: «When the occupation army entered the capital in April 1941, the task of concealing the ancient treasures of the National Museum had already been completed» … Sculptures, bronze and clay artworks had been packed and transported to various raid shelters in Athens … the large statues had been deposited in large trenches that were dug in the floor of the museum halls. … To uncover the buried antiquities was the main priority after the end of the war.
+        source: nam-athens-rescue-of-the-statues
+        accessed: 2026-11-24
+sources:
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q502078
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q502078
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q502078

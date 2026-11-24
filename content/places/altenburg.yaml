@@ -1,0 +1,22 @@
+public_id: 126137
+name: Altenburg
+kind: settlement
+parent: thuringen
+country_code: DE
+location: [12.43333, 50.985]
+wikidata_id: Q15976
+metadata:
+  sources: [Wikidata Q15976 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q15976
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q15976
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q15976

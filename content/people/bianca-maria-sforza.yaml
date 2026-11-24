@@ -1,0 +1,23 @@
+public_id: 122861
+name: Bianca Maria Sforza
+given_name: Bianca Maria
+family_name: Sforza
+kind: person
+birth: 1472-04-14
+death: 1511-01-10
+wikidata_id: Q161136
+metadata:
+  sources: [Wikidata Q161136 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q161136
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q161136
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q161136

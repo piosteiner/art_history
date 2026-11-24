@@ -26,6 +26,15 @@ relationships:
       - accessed: 2026-10-28
         property: P20
         wikidata: Q290407
+  - type: sibling_of
+    to: artist/giovanni-bellini
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q17169
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q290407
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Bellini_selfportrait.jpg/1280px-Bellini_selfportrait.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Bellini_selfportrait.jpg

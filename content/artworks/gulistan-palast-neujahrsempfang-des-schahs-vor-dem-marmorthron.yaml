@@ -1,0 +1,104 @@
+public_id: 124906
+title: Gulistan-Palast, Neujahrsempfang des Schahs vor dem Marmorthron
+created: 1880/1896
+created_label: c. 19th century
+created_span: uncertain
+materials: [paper, albumen print]
+dimensions: [21.5, 28.2]
+institution: museum-rietberg
+inventory_number: 2023.10.30
+wikidata_id: Q128940817
+metadata:
+  sources: [Wikidata Q128940817 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts
+    to: place/tehran
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q128940817
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Museum-Rietberg-Z%C3%BCrich-2023.00010.30.jpg/1280px-Museum-Rietberg-Z%C3%BCrich-2023.00010.30.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Museum-Rietberg-Z%C3%BCrich-2023.00010.30.jpg
+    license: Public domain
+    credit: Antoin Sevruguin
+provenance:
+  - owner_label: Antoin Sevruguin
+    acquired: c. 1880–1896
+    method: creation
+    place: tehran
+    label: photograph taken in Iran (Aufnahmeort Teheran)
+    sources:
+      - url: https://rietberg.ch/sammlungen/2023-10-30
+        note: "um 1880–1896: Antoin Sevruguin (1851–1933) in Iran"
+        source: rietberg-2023-10-30
+        accessed: 2026-11-24
+  - owner: person/emil-alpiger
+    acquired: 1875/1896
+    method: purchase
+    label: Karl Emil Ludwig Alpiger sen.; bought in Iran; oral family tradition, communicated by Dr. Rudolf Schnyder
+    sources:
+      - url: https://rietberg.ch/sammlungen/2023-10-30
+        note: "1875–1896: Karl Emil Ludwig Alpiger sen. (1841–1905), angekauft in Iran Mündliche Überlieferung der Familie, mitgeteilt durch Dr. Rudolf Schnyder."
+        source: rietberg-2023-10-30
+        accessed: 2026-11-24
+  - owner: person/karl-alpiger
+    acquired: 1905
+    acquired_label: probably 1905
+    method: inheritance
+    label: Karl Alpiger jun.; Langer (ed.), Emil Alpiger (1841-1905), 2018, p. 11
+    sources:
+      - url: https://rietberg.ch/sammlungen/2023-10-30
+        note: "vermutlich 1905: Karl Alpiger jun. (*1876–unbekannter Zeitpunkt), durch Erbgang erworben Axel Langer (Hrsg.), Emil Alpiger (1841-1905): Teppich-Kaufmann und Sammler, Zürich: Museum Rietberg, 2018, S. 11"
+        source: rietberg-2023-10-30
+        accessed: 2026-11-24
+  - owner: person/alfons-alpiger
+    acquired: before 1984
+    method: inheritance
+    label: oral tradition through Gabriel Alpiger
+    sources:
+      - url: https://rietberg.ch/sammlungen/2023-10-30
+        note: "vor 1984: Alfons Alpiger (1907–1984), durch Erbgang erworben Mündliche Überlieferung durch Gabriel Alpiger"
+        source: rietberg-2023-10-30
+        accessed: 2026-11-24
+  - owner: person/rudolf-schnyder
+    role: trustee
+    acquired: 1984
+    method: transfer
+    place: zurich
+    label: taken over in trust; oral information from Dr. Rudolf Schnyder
+    sources:
+      - url: https://rietberg.ch/sammlungen/2023-10-30
+        note: "1984: Rudolf Schnyder (1931–2015), treuhänderisch übernommen in Zürich Mündliche Auskunft von Dr. Rudolf Schnyder"
+        source: rietberg-2023-10-30
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 2010
+    method: gift
+    place: zurich
+    sources:
+      - url: https://rietberg.ch/sammlungen/2023-10-30
+        note: "2010: Museum Rietberg, als Geschenk erhalten"
+        source: rietberg-2023-10-30
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q128940817
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q128940817
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q128940817
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q128940817
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q128940817

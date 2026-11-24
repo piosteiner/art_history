@@ -1,0 +1,23 @@
+public_id: 123042
+name: John the Baptist
+given_name: John the
+family_name: Baptist
+kind: person
+birth: c. 6 BCE
+death: c. 30
+wikidata_id: Q40662
+metadata:
+  sources: [Wikidata Q40662 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q40662
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q40662
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q40662

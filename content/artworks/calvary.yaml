@@ -1,0 +1,258 @@
+public_id: 122799
+title_lang: en
+title: Calvary
+names:
+  - lang: fr
+    role: original
+    text: Le Calvaire
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20173937
+  - text: Golgatha
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20173937
+  - lang: nl
+    role: translation
+    text: Calvarieberg
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20173937
+  - lang: de
+    role: translation
+    text: Kalvarienberg
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20173937
+  - lang: it
+    role: translation
+    text: Calvario
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20173937
+  - lang: ru
+    role: translation
+    text: Кальвария
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20173937
+creator: master-of-the-munster-death-of-saint-nicholas
+created: c. 1470
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [129.5, 199.5]
+institution: national-gallery-of-art
+inventory_number: 2001.70.1
+provenance_status: d_seized
+provenance_status_note: Confiscated by the Nazis in July 1940 from André Seligmann, Paris (German Embassy, ERR card SEL 545); taken by Hermann Göring from the Jeu de Paume on 5 November 1940; recovered in Berchtesgaden, restituted to France 1946, MNR 622 at the Louvre from 1951, returned to Seligmann's daughters in 1999.
+wikidata_id: Q20173937
+metadata:
+  sources: [Wikidata Q20173937 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/jesus-christ
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20173937
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Meister_vom_Tod_des_Heiligen_Nikolaus_von_M%C3%BCnster_-_Kalvarie_%28Washington%2C_D.C.%29.jpg/1280px-Meister_vom_Tod_des_Heiligen_Nikolaus_von_M%C3%BCnster_-_Kalvarie_%28Washington%2C_D.C.%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Meister_vom_Tod_des_Heiligen_Nikolaus_von_M%C3%BCnster_-_Kalvarie_(Washington,_D.C.).jpg
+    license: Public domain
+    credit: Master of the Death of Saint Nicholas of Münster
+provenance:
+  - owner: person/leon-tabourier
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: Léon Tabourier;
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: person/leon-tabourier
+    role: estate
+    method: inheritance
+    direct: true
+    label: his estate
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: (his estate sale, Hôtel Drouot, Paris, 20-22 June 1898, no. 193, as Ecole Allemande);
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1898-06
+    ended: 1898-06
+    method: auction
+    direct: true
+    place: paris
+    label: his estate sale, Hôtel Drouot, Paris, 20–22 June 1898, no. 193, as Ecole Allemande
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: (his estate sale, Hôtel Drouot, Paris, 20-22 June 1898, no. 193, as Ecole Allemande);
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1898-06
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: (Durand-Ruel et Cie, Paris).
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: institution/galerie-f-kleinberger
+    role: dealer
+    acquired: 1913 or earlier
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: (F. Kleinberger Galleries, Paris), in 1913.
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: person/andre-j-seligmann
+    acquired: 1938 or earlier
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: André J. Seligmann [1898-1945], Paris, by 1938;[1]
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: institution/german-embassy-in-paris
+    role: possessor
+    acquired: 1940-07
+    method: confiscation
+    place: paris
+    label: seized from Jewish art dealerships by the Geheime Feldpolizei and taken to the German Embassy; Verzeichnis …, pp. 8–9
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: "[1] The painting was confiscated by the Nazis in July 1940 from the collection of André Seligmann and taken to the Germany Embassy in Paris (See Verzeichnis der im Juli 1940 durch die Geheime Feldpolizei in Paris gesicherten und in die Deutsche Botschaft überbrachten Gegenstände aus jüdischen Kunsthandlungen, p. 8-9"
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    method: transfer
+    direct: true
+    place: paris
+    label: transferred to the Jeu de Paume; ERR card no. SEL 545, as Westphalian, second half of the 15th century
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: ERR card no. SEL 545, as Westphalian, second half of the 15th century … It was transferred to the Jeu de Paume
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: person/hermann-goring
+    role: possessor
+    acquired: 1940-11-05
+    method: transfer
+    direct: true
+    place: paris
+    label: removed from the Jeu de Paume; Göring list dated 20 October 1942, no. 236
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: "It was transferred to the Jeu de Paume from where it was removed by Hermann Goering on 5 November 1940 (OSS Consolidated Report #2, The Goering Collection, 15 September 1945, Attachment 5, List der für die Sammlung des Reichsmarschalls Hermann Goering abgegebenen Kunstgegenstände dated 20 October 1942, no. 236"
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    ended: 1946-10-30
+    method: transfer
+    place: munich
+    label: recovered in Berchtesgaden; Munich property card no. 6772/1722, as Flemish c. 1480
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: "The records of the Munich Central Collecting Point indicate that the painting was recovered in Berchtesgaden and restituted to France on 30 October 1946 (see Munich property card #6772/1722 as Flemish c. 1480"
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner_label: France (French restitution authorities)
+    role: custodian
+    acquired: 1946-10-30
+    method: restitution
+    direct: true
+    label: French Receipt for Cultural Objects no. 14A, item no. 121
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: restituted to France on 30 October 1946 (… French Receipt for Cultural Objects No. 14A, item no. 121 …).
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: institution/musee-du-louvre
+    role: custodian
+    acquired: 1951
+    ended: 1999
+    method: transfer
+    direct: true
+    place: paris
+    label: deposited by the Office des Biens Privés; MNR 622
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: In 1951 the Office des Biens Privés deposited the painting at the Musée du Louvre in Paris (M.N.R. number 622). The painting remained there until 1999, when it was returned to André Seligmann's two daughters.
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner_label: André Seligmann's two daughters
+    acquired: 1999
+    method: restitution
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: his heirs; — [1] … The painting remained there until 1999, when it was returned to André Seligmann's two daughters.
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 2000-01-27
+    ended: 2000-01-27
+    method: auction
+    direct: true
+    place: new-york-city
+    label: sale, Christie, Manson & Woods, New York, 27 January 2000, no. 49
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: (sale, Christie, Manson & Woods, New York, 27 January 2000, no. 49);
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: institution/bernheimer
+    co_owners: [institution/galerie-otto-naumann, person/alfred-bader]
+    role: dealer
+    acquired: 2000-01-27
+    method: auction
+    direct: true
+    label: bought jointly by Bernheimer, Munich, Otto Naumann, New York, and Alfred Bader, Milwaukee
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: purchased jointly by (Bernheimer, Munich), (Otto Nauman, New York), and (Alfred Bader, Milwaukee);
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 2001-06-06
+    method: purchase
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.119049.html
+        note: purchased 6 June 2001 by NGA.
+        source: nga-2001-70-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20173937
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20173937
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20173937
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20173937
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20173937
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20173937

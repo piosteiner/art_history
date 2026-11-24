@@ -1,0 +1,233 @@
+public_id: 122823
+title_lang: en
+title: Bishop Altobello Averoldo
+names:
+  - lang: de
+    role: translation
+    text: Bischof Altobello Averoldo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20174943
+creator: francesco-francia
+created: c. 1505
+created_span: uncertain
+materials: [oil paint, panel]
+institution: national-gallery-of-art
+inventory_number: 1952.5.64
+provenance_status: d_seized
+provenance_status_note: Confiscated by the Nazis with the Rothschild collections in Austria in 1938; found at Kremsmünster, moved to Altaussee, under the Bundesdenkmalamt by August 1947 and restituted to the Rothschild family on 16 October 1947.
+wikidata_id: Q20174943
+metadata:
+  sources: [Wikidata Q20174943 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: artist/altobello-de-averoldi
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20174943
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Bishop_Altobello_Averoldo_A24770.jpg/1280px-Bishop_Altobello_Averoldo_A24770.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bishop_Altobello_Averoldo_A24770.jpg
+    license: Public domain
+    credit: Francesco Francia
+provenance:
+  - owner_label: Mr. Bonaldi
+    label: possibly the engraver Giovanni Antonio Bonaldi
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: from a certain Mr. Bonaldi;[1] — [1] Mr. Bonaldi was possibly the engraver Giovanni Antonio Bonaldi
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner: person/teodoro-lechi
+    acquired: 1837-03-24
+    method: purchase
+    direct: true
+    place: brescia
+    label: an early Lechi inventory attributed it to Raphael
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: Purchased 24 March 1837 by Generale Conte Teodoro Lechi [1778-1866], Brescia, from a certain Mr. Bonaldi;[1] — [2] … an early Lechi collection inventory attributed the work to Raphael
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner: person/samuel-von-festetits
+    acquired: 1847-05-31
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: sold 31 May 1847 to Graf Samuel von Festetits [1806-1859], Vienna;[2]
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner: person/heinrich-adamberger
+    acquired: 1859
+    method: purchase
+    direct: true
+    place: vienna
+    label: per Frimmel, Lexikon der Wiener Gemäldesammlungen
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: sold 1859 to Heinrich Adamberger, Vienna;[3] — [3] The von Festetits sale to Adamberger is referred to in Theodor von Frimmel, Lexikon der Wiener Gemäldesammlungen
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner_label: Posonyi, Vienna
+    role: agent
+    acquired: 1871-04
+    ended: 1871-04
+    method: auction
+    direct: true
+    place: vienna
+    label: Adamberger sale, Posonyi, Vienna, 24–28 April 1871, no. 1
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: (his sale, Posonyi, Vienna, 24-28 April 1871, no. 1);
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner: person/friedrich-jakob-gsell
+    method: auction
+    direct: true
+    place: vienna
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: Friedrich Jakob Gsell, Vienna;
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner_label: G. Plach, Vienna
+    role: agent
+    acquired: 1872-03-14
+    ended: 1872-03-14
+    method: auction
+    direct: true
+    place: vienna
+    label: Gsell sale, G. Plach, Vienna, 14 March 1872, no. 152
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: (his sale, G. Plach, Vienna, 14 March 1872, no. 152);
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner: person/nathaniel-mayer-von-rothschild
+    method: auction
+    direct: true
+    place: vienna
+    label: the Vienna Rothschild, not the one of Tring (Waterhouse 1980, correcting Shapley 1979)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: Baron Nathaniel Mayer von Rothschild [1836-1905], Vienna; — [4] … "The Baron Nathaniel de Rothschild...who owned the Francia portrait was not the one of Tring, but the one of Vienna"
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner: person/alphons-de-rothschild
+    method: inheritance
+    direct: true
+    place: vienna
+    label: his nephew
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: by inheritance to his nephew, Baron Alphons de Rothschild [1878-1942];[4]
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner_label: the Nazis (Austria)
+    role: possessor
+    acquired: 1938
+    method: confiscation
+    label: confiscated with the Rothschild collections in Austria
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: This painting was among the Rothschild collections confiscated by the Nazis in Austria in 1938.
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner_label: Kremsmünster repository
+    role: custodian
+    method: transfer
+    place: kremsmunster
+    label: discovered at the abbey of Kremsmünster
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: It was discovered at the abbey in Kremsmünster and transferred to the salt mine at Alt Aussee.
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner_label: Altaussee salt mine
+    role: custodian
+    method: transfer
+    direct: true
+    place: altaussee
+    label: Alt Aussee receipt for objects of Austrian origin, 14 July 1947, item no. 1169
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: transferred to the salt mine at Alt Aussee. … (Alt Aussee receipt for objects of Austrian origin, dated 14 July 1947, item number 1169
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner: institution/bundesdenkmalamt
+    role: custodian
+    acquired: August 1947 or earlier
+    ended: 1947-10-16
+    method: transfer
+    direct: true
+    place: vienna
+    label: index card AR 873; restitution decision Zl. 5739/47 of 23 September 1947; export licence Zl. 5905/47 of 3 October 1947
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: By August 1947 it was transferred to the control of the Bundesdenkmalamt, Vienna. … (Index card for AR 873, restitution decision in Zl. 5739/47 dated 23 September 1947; export license in Zl 5905/47 dated 3 October 1947
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner: person/clarice-de-rothschild
+    acquired: 1947-10-16
+    method: restitution
+    direct: true
+    label: Alphons de Rothschild's widow; restituted to the Rothschild family
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: It was restituted to the Rothschild family on 16 October 1947 … his widow, Baroness Clarice de Rothschild [1894-1967];
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner: person/frederick-mont
+    role: dealer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: (Frederick Mont, New York);
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1948-03-02
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: bill of sale from Frederick Mont dated 2 March 1948, marked paid three days later
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: sold 2 March 1948 to the Samuel H. Kress Foundation, New York;[5] — [5] The bill of sale from Frederick Mont to the Kress Foundation is dated 2 March 1948, and marked paid three days later
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41679.html
+        note: gift 1952 to NGA.
+        source: nga-1952-5-64
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20174943
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20174943
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20174943
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20174943
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20174943

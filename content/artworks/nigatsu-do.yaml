@@ -1,0 +1,63 @@
+public_id: 123898
+title: Nigatsu-dō
+names:
+  - text: Second Month Hall
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3341341
+  - text: Tōdai-ji Nigatsu-dō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3341341
+  - lang: fr
+    role: translation
+    text: pavillon du deuxième mois
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3341341
+  - lang: ja
+    role: translation
+    text: 東大寺二月堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3341341
+created: 8th century
+created_span: uncertain
+institution: todai-ji
+location: [135.84428, 34.68928]
+wikidata_id: Q3341341
+metadata:
+  sources: [Wikidata Q3341341 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nara
+    period: 8th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Nigatsu-d%C5%8D_at_Todaiji_1.jpg/1280px-Nigatsu-d%C5%8D_at_Todaiji_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nigatsu-d%C5%8D_at_Todaiji_1.jpg
+    license: CC BY-SA 4.0
+    credit: Christophe95
+provenance:
+  - owner: institution/todai-ji
+    acquired: late 8th century
+    method: creation
+    place: nara
+    label: hall of the Shuni-e (Omizutori) rite, east of the Great Buddha Hall; spared by the fires of 1180 and 1567, burnt during the Shuni-e in 1667 and rebuilt by December 1669 with the shogun Tokugawa Ietsuna as patron; owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/2457
+        note: 東大寺二月堂は、大仏殿の東方にあり、八世紀後期の成立と考えられている。治承四年（一一八〇）及び永禄十年（一五六七）の火難を免れ、古代・中世を通じて存続したが、寛文七年（一六六七）二月、修二会の行法中に内陣から出火して焼失し、同九年十二月に徳川家綱を檀越として再建された。 … 所有者名 ： 東大寺
+        source: kunishitei-102-2457
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%A4%A7%E5%AF%BA%E4%BA%8C%E6%9C%88%E5%A0%82
+        note: 修二会は大仏開眼供養と同年の752年（天平勝宝4年）に初めて行われたとされ、二月堂の創建もこの時とされる。ただし堂の創建については同時代の史料に言及がなく、確実なことは不明である。
+        source: wikipedia-ja-todai-ji-nigatsu-do
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3341341
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3341341

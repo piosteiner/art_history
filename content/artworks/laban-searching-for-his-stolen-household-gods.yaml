@@ -1,0 +1,188 @@
+public_id: 124645
+title_lang: en
+title: Laban Searching for his Stolen Household Gods
+creator: bartolome-esteban-murillo
+created: 1665
+materials: [oil paint, canvas]
+dimensions: [243, 362]
+institution: cleveland-museum-of-art
+inventory_number: "1965.469"
+web_url: https://clevelandart.org/art/1965.469
+wikidata_id: Q60469507
+metadata:
+  sources: [Wikidata Q60469507 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Bartolom%C3%A9_Esteban_Murillo_-_Laban_Searching_for_his_Stolen_Household_Gods_-_1965.469_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Bartolom%C3%A9_Esteban_Murillo_-_Laban_Searching_for_his_Stolen_Household_Gods_-_1965.469_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Murillo_-_Laban_Searching_for_his_Stolen_Household_Gods_-_1965.469_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Bartolomé Esteban Murillo
+provenance:
+  - owner_label: Marquis of Villamanrique
+    acquired: 1665
+    method: commission
+    place: seville
+    label: probably Manuel Luis de Guzmán y Manrique de Zúñiga, IV Marqués de Villamanrique (d. 1692); then likely by descent in the family
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: "Marquis of Villamanrique, Seville [1665-] — The Marquis of Villamanrique, probably Manuel Luis de Guzmán y Manrique de Zúñiga, IV Marqués de Villamanrique (d. 1692) commissioned this painting from Murillo. The painting then passed down through the family, likely following this line of descent: Melchor de Guzmán Osorio Davila Manrique de Zuñiga, V Marqués de Villamanrique (d. 1710); Ana Nicolasa de Guzmán Osorio Dávila y Manrique de Zúñiga, VI Marquesa de Villamanrique (d. 1762); Ventura Antonio Osorio de Moscoso y Guzmán Dávila y Aragón, VII Marqués de Villamanrique, (d. 1746); Ventura Osorio …"
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner_label: Marquis of Villamanrique
+    acquired: 1775 or earlier
+    method: inheritance
+    place: madrid
+    label: probably Ventura Osorio de Moscoso y Fernández de Córdoba, VIII Marqués de Villamanrique (d. 1776)
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: Marquis of Villamanrique, Mad[rid] [by 1775-1808] — Probably Ventura Osorio de Moscoso y Fernández de Córdoba, VIII Marqués de Villamanrique, who died in 1776.
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner_label: Marquis of Santiago
+    place: madrid
+    label: Santiago Palace, Madrid
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: Marquis of Santiago, Santiago Palace, Madrid, sold to William Buchanan and W.G. Coesvelt through G. Augustus Wallis
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner: person/g-augustus-wallis
+    role: agent
+    acquired: c. 1808
+    direct: true
+    label: William Buchanan's agent in Spain
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: (William Buchanan and W.G. Coesvelt, London, acquired in Spain through Buchanan’s agent, G. Augustus Wallis)
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner: person/william-buchanan
+    co_owners: [person/w-g-coesvelt]
+    role: dealer
+    acquired: c. 1808
+    ended_label: c. 1809
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: (William Buchanan and W.G. Coesvelt, London, acquired in Spain through Buchanan’s agent, G. Augustus Wallis), sold to the Marquis of Westminster) [c. 1808-1809]
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner: person/robert-grosvenor-marquis-of-westminster
+    acquired: after 1809
+    method: exchange
+    place: london
+    label: the Marquis of Westminster paid two Lorrains, a Poussin and 1200 livres; Robert's ownership undocumented, but in Grosvenor House by 1821
+    certainty: possible
+    price:
+      amount: 1200
+      currency: LIV
+      note: plus two paintings by Claude Lorrain and one by Poussin
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: Possibly Robert Grosvenor, Marquis of Westminster [1767-1845] [After 1809] — There is no documentation confirming that Robert Grosvenor owned this painting. However, it was in the collection of Grosvenor House by 1821 ... The Marquis of Westminster purchased the painting in exchange for two Lorrains, a Poussin, and 1200 livres.
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner: person/hugh-grosvenor-marquis-of-westminster
+    method: inheritance
+    place: london
+    label: Grosvenor House, London; passed to his grandson Hugh Richard Arthur Grosvenor
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: Hugh Grosvenor, Marquis of Westminster [1825-1899], Grosvenor House, London, to his grandson, Hugh Richard Arthur Grosvenor [Possibly until 1899]
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner: person/hugh-richard-arthur-grosvenor-2nd-duke-of-westminster
+    acquired: 1907 or earlier
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: Hugh Richard Arthur Grosvenor, second Duke of Westminster [1879 –1953] [By 1907-1924]
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1924-07-04
+    method: auction
+    direct: true
+    place: london
+    label: sale, Christie, Manson & Woods, London, 4 July 1924, no. 21
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: (Christie, Manson, and Woods, London, sale, July 4, 1924, no. 21, sold to Hibbard) [1924]
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner_label: Hibbard
+    acquired: 1924-07-04
+    method: auction
+    direct: true
+    label: buyer according to handwritten notes in several copies of the sale catalogue; first name not identified
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: Hibbard [1924-] — Several copies of the 1924 Christie's sale catalogue have handwritten notations indicating "Hibbard" that Hibbard was the buyer of this painting. Hibbard's first name has not been identified
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner: person/jacques-barou-de-la-lombardiere-de-canson
+    acquired: 1926 or earlier
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: Jacques Barou de la Lombardière de Canson [d. 1958], Paris [by 1926]
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner: person/carlos-guinle
+    acquired: 1931 or earlier
+    place: rio-de-janeiro
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: Carlos Guinle [1889-1956], Rio de Janeiro [by 1931]
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: (Wildenstein & Co., New York, NY, sold to the Cleveland Museum of Art) [Until 1965]
+        source: cma-1965-469
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1965
+    method: gift
+    direct: true
+    place: cleveland
+    label: Gift of the John Huntington Art and Polytechnic Trust (sold by Wildenstein)
+    sources:
+      - url: https://clevelandart.org/art/1965.469
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1965-]
+        source: cma-1965-469
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60469507
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60469507
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60469507
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60469507
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60469507
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60469507

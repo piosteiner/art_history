@@ -1,0 +1,121 @@
+public_id: 124653
+title_lang: de
+title: Jagdszene bei Schoss Hartenfels
+names:
+  - lang: en
+    role: translation
+    text: Hunting near Hartenfels Castle
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60465134
+  - lang: fr
+    role: translation
+    text: La chasse près du Château Hartenfels
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60465134
+  - lang: de
+    role: original
+    text: Jagdszene bei Schloss Hartenfels
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60465134
+  - lang: it
+    role: translation
+    text: battuta di caccia presso il castello di hartenfels
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60465134
+creator: lucas-cranach-the-elder
+created: 1540
+materials: [oil paint, panel]
+dimensions: [116.8, 170.2]
+institution: cleveland-museum-of-art
+inventory_number: "1958.425"
+web_url: https://clevelandart.org/art/1958.425
+wikidata_id: Q60465134
+metadata:
+  sources: [Wikidata Q60465134 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/john-frederick-i
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q60465134
+  - type: depicts_person
+    to: person/sibylle-of-cleves
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q60465134
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Lucas_Cranach_d.%C3%84._-_Hofjagd_bei_Schloss_Hartenfels.jpg/1280px-Lucas_Cranach_d.%C3%84._-_Hofjagd_bei_Schloss_Hartenfels.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lucas_Cranach_d.%C3%84._-_Hofjagd_bei_Schloss_Hartenfels.jpg
+    license: Public domain
+    credit: Lucas Cranach the Elder
+provenance:
+  - owner: person/maurice-of-saxony
+    acquired: 1543
+    method: gift
+    label: presented to Duke Maurice of Saxony, presumably this painting; Cranach paid 4 October 1543
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1958.425
+        note: On October 4, 1543, Cranach was paid 123 florins, 10 groschen, and 8 pfennig for various works (Staatsarchiv, Weimar Reg. Bb. 4551, Bl. 24b ...), including a hunting picture presented to Duke Maurice of Saxony [1521-1553], presumably the Cleveland painting.
+        source: cma-1958-425
+        accessed: 2026-11-24
+  - owner: institution/royal-collection-of-saxony
+    acquired_label: 1540 – 1950s
+    place: torgau
+    label: at Schloss Hartenfels, Torgau, for generations, then with the Dukes of Saxony at Schloss Moritzburg until the 1950s; House of Saxony inventory number (1577)
+    sources:
+      - url: https://clevelandart.org/art/1958.425
+        note: "Royal Collection of Saxony, Schloss Hartenfels and Schloss Moritzburg, consigned to M.H. Drey  [date: 1540-1950s] — A House of Saxony inventory number (1577) is inscribed in the lower right corner of the painting. The painting remained at Schloss Hartenfels, Torgau for generations, and with the Dukes of Saxony at Schloss Moritzburg until the 1950s."
+        source: cma-1958-425
+        accessed: 2026-11-24
+  - owner: institution/m-h-drey-ltd
+    role: dealer
+    direct: true
+    place: london
+    label: consigned by the Saxon royal collection
+    sources:
+      - url: https://clevelandart.org/art/1958.425
+        note: "Royal Collection of Saxony, ..., consigned to M.H. Drey / (M.H. Drey, London, sold to the Cleveland Museum of Art)  [date: Until 1958]"
+        source: cma-1958-425
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1958
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1958.425
+        note: "The Cleveland Museum of Art, Cleveland, Ohio  [date: 1958-]"
+        source: cma-1958-425
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60465134
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60465134
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60465134
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60465134
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60465134
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60465134

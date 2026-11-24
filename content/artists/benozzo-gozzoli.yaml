@@ -1,0 +1,18 @@
+public_id: 123047
+name: Benozzo Gozzoli
+given_name: Benozzo
+family_name: Gozzoli
+birth: 1420
+death: 1497-10-04
+wikidata_id: Q248615
+metadata:
+  sources: [Wikidata Q248615 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q248615
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q248615

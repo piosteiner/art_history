@@ -1,0 +1,113 @@
+public_id: 122831
+title_lang: en
+title: The Cartographer Professor Josef Jüttner and His Wife
+creator: ferdinand-georg-waldmuller
+created: 1824
+materials: [oil paint, panel]
+dimensions: [40.5, 32.5]
+institution: national-gallery-of-art
+inventory_number: 2006.157.1
+wikidata_id: Q20184900
+metadata:
+  sources: [Wikidata Q20184900 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/josef-juttner
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20184900
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/The_Cartographer_Professor_Josef_J%C3%BCttner_and_His_Wife_A11175.jpg/1280px-The_Cartographer_Professor_Josef_J%C3%BCttner_and_His_Wife_A11175.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Cartographer_Professor_Josef_J%C3%BCttner_and_His_Wife_A11175.jpg
+    license: Public domain
+    credit: Ferdinand Georg Waldmüller
+provenance:
+  - owner: institution/wawra
+    role: agent
+    acquired: 1900-12-17
+    method: auction
+    place: vienna
+    label: possibly sale, Wawra, Vienna, 17 December 1900, no. 204
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.137524.html
+        note: Possibly (sale, Wawra, Vienna, 17 December 1900, no. 204).
+        source: nga-2006-157-1
+        accessed: 2026-11-24
+  - owner: person/hermann-eissler
+    co_owners: [person/gottfried-eissler]
+    acquired: 1908 or earlier
+    place: vienna
+    label: first associated with the Eissler collection by Roessler 1908; it had left the collection by 1917 (not the Linz version, Feuchtmüller no. 136)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.137524.html
+        note: Dr. Hermann [1860-1953] and Dr. Gottfried [1862-1924] Eissler, Vienna, by 1908.[1] — [1] The picture is first associated with the Eissler collection of Vienna in Arthur Roessler, Ferdinand Georg Waldmüller, Vienna, 1908. … [2] … In either case, the picture would have left the Eissler collection by that time.
+        source: nga-2006-157-1
+        accessed: 2026-11-24
+  - owner_label: Honig collection, Vienna
+    place: vienna
+    label: perhaps Josef (d. 1930) and Vally Honig; 'Auktion Wawra 1917 (Honig)' suggests Honig was buyer or seller in 1917 — possibly the seller
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.137524.html
+        note: Possibly Honig collection, Vienna. — [2] … "Auktion Wawra 1917 (Honig)." This suggests that Honig was either the buyer or the seller in 1917. … The name Honig may refer to the Jewish Viennese collectors Josef (d. 1930) and Vally Honig. … It is therefore possible that Honig was the seller of the painting in question in 1917.
+        source: nga-2006-157-1
+        accessed: 2026-11-24
+  - owner: institution/wawra
+    role: agent
+    acquired: 1917-03-17
+    method: auction
+    place: vienna
+    label: sale, Wawra, Vienna, 17 March 1917, no. 165, of an 'important Viennese collector'; annotated as sold for 26,000 Kronen (Belvedere copy)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.137524.html
+        note: (sale, Wawra, Vienna, 17 March 1917, no. 165).[2] — [2] The NGA, Feuchtmüller no. 137, figures in a 1917 sale at Wawra, Vienna, of an "important Viennese collector." In a copy of the catalogue in the archives of the Österreichische Galerie Belvedere, Vienna, the painting is annotated as having sold for 26.000 Kronen.
+        source: nga-2006-157-1
+        accessed: 2026-11-24
+  - owner: person/john-herring
+    co_owners: [person/paul-herring]
+    acquired: 1970s
+    place: new-york-city
+    label: acquired in Switzerland; location unknown to Grimschitz in 1957
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.137524.html
+        note: Acquired 1970s in Switzerland by John and Paul Herring, New York. — [2] … In 1957 Grimschitz lists the location of the painting in question as unknown
+        source: nga-2006-157-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 2006
+    method: gift
+    direct: true
+    place: washington-d-c
+    label: "credit line: Gift of Marlene, Paul and John Herring (accession 2006.157.1)"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.137524.html
+        note: NGA 2006.157.1 · Gift of Marlene, Paul and John Herring
+        source: nga-2006-157-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20184900
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20184900
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20184900
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20184900
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20184900
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20184900

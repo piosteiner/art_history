@@ -1,0 +1,132 @@
+public_id: 122895
+title_lang: en
+title: Portrait of a Woman
+creator: rembrandt
+attribution_label: studio of Rembrandt van Rijn
+created: 1635 or earlier
+created_span: uncertain
+kind: oil painting
+medium: oil on wood
+dimensions: [77.5, 64.8]
+institution: cleveland-museum-of-art
+inventory_number: "1944.90"
+web_url: https://clevelandart.org/art/1944.90
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1944.90/1944.90_web.jpg
+    source_url: https://clevelandart.org/art/1944.90
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner_label: Capo de Lista family, Padua
+    place: padua
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1944.90
+        note: Capo de Lista family collection (?) (Padua, Italy)
+        source: cma-1944-90
+        accessed: 2026-11-24
+  - owner_label: Barbini-Breganze collection, Venice
+    ended: 1847
+    place: venice
+    label: catalogue 1847, no. 204
+    sources:
+      - url: https://clevelandart.org/art/1944.90
+        note: Barbini-Breganze coll., Venice (1847) cat. no. 204;
+        source: cma-1944-90
+        accessed: 2026-11-24
+  - owner: institution/stadelsches-kunstinstitut
+    acquired: 1847
+    direct: true
+    place: frankfurt
+    label: inv. no. 927, until 1882
+    sources:
+      - url: https://clevelandart.org/art/1944.90
+        note: Städelsches Kunstinstitut (Frankfurt am Main, Germany) (inv. no. 927), 1847 to 1882;
+        source: cma-1944-90
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1882-05-05
+    method: auction
+    direct: true
+    place: paris
+    label: sold, Paris, 5 May 1882, no. 30
+    sources:
+      - url: https://clevelandart.org/art/1944.90
+        note: sold, Paris, May 5, 1882, no. 30;
+        source: cma-1944-90
+        accessed: 2026-11-24
+  - owner: person/charles-sedelmeyer
+    role: dealer
+    direct: true
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1944.90
+        note: Charles Sedelmeyer (Paris, France);
+        source: cma-1944-90
+        accessed: 2026-11-24
+  - owner: person/karl-von-der-heydt
+    acquired: 1906 or earlier
+    direct: true
+    place: berlin
+    label: recorded 1906
+    sources:
+      - url: https://clevelandart.org/art/1944.90
+        note: Karl von der Heydt (Berlin, Germany) (1906);
+        source: cma-1944-90
+        accessed: 2026-11-24
+  - owner: institution/a-b-antik
+    role: dealer
+    place: stockholm
+    label: consigned to Knoedler & Co.
+    sources:
+      - url: https://clevelandart.org/art/1944.90
+        note: A.B. Antik (Stockholm, Sweden)
+        source: cma-1944-90
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: agent
+    acquired: 1919
+    direct: true
+    place: new-york-city
+    label: on consignment, New York and London, 1919
+    sources:
+      - url: https://clevelandart.org/art/1944.90
+        note: consigned to Knoedler & Co. (New York, and London, England, 1919);
+        source: cma-1944-90
+        accessed: 2026-11-24
+  - owner: person/elisabeth-severance-prentiss
+    acquired: 1919
+    ended: 1944
+    method: exchange
+    direct: true
+    place: cleveland
+    label: in exchange for John Hoppner, Portrait of Mrs. Jermingham, and Herman Kricheldorf, Still-Life with Lobster
+    sources:
+      - url: https://clevelandart.org/art/1944.90
+        note: sold to Elisabeth Severance Prentiss (Cleveland, Ohio), in exchange for John Hoppner, Portrait of Mrs. Jermingham and Herman Kricheldorf, Still-Life with Lobster, 1919, upon her death, held in trust by the estate
+        source: cma-1944-90
+        accessed: 2026-11-24
+  - owner_label: Estate of Elisabeth Severance Prentiss
+    role: estate
+    acquired: 1944
+    method: inheritance
+    direct: true
+    place: cleveland
+    label: held in trust by the estate
+    sources:
+      - url: https://clevelandart.org/art/1944.90
+        note: upon her death, held in trust by the estate — Estate of Elisabeth Severance Prentiss, by bequest to the Cleveland Museum of Art, 1944.
+        source: cma-1944-90
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1944
+    method: bequest
+    direct: true
+    place: cleveland
+    label: The Elisabeth Severance Prentiss Collection, inv. 1944.90
+    sources:
+      - url: https://clevelandart.org/art/1944.90
+        note: Estate of Elisabeth Severance Prentiss, by bequest to the Cleveland Museum of Art, 1944.
+        source: cma-1944-90
+        accessed: 2026-11-24

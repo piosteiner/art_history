@@ -1,0 +1,18 @@
+public_id: 122960
+name: Luca Signorelli
+given_name: Luca
+family_name: Signorelli
+birth: c. 1450
+death: 1523-10-26
+wikidata_id: Q7031
+metadata:
+  sources: [Wikidata Q7031 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q7031
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q7031

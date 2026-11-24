@@ -1,0 +1,126 @@
+public_id: 124304
+title: Haniwa Armored Man
+names:
+  - text: Warrior in Keiko Armor
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q91239334
+  - text: Haniwa Warrior in Keiko Armor
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q91239334
+  - lang: fr
+    role: translation
+    text: Haniwa représentant un homme armé debout
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q91239334
+  - lang: ja
+    role: translation
+    text: 埴輪 挂甲武人
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q91239334
+created: 6th century
+created_span: uncertain
+materials: [terracotta]
+dimensions: [130.5]
+institution: tokyo-national-museum
+inventory_number: J-36697
+web_url: http://www.emuseum.jp/detail/100200
+location: [139.7756, 35.71994]
+wikidata_id: Q91239334
+metadata:
+  sources: [Wikidata Q91239334 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 6th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Haniwa_-_Warrior_in_Keiko_Armor.jpg/1280px-Haniwa_-_Warrior_in_Keiko_Armor.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Haniwa_-_Warrior_in_Keiko_Armor.jpg
+    license: CC BY-SA 4.0
+    credit: Kakidai
+provenance:
+  - owner_label: a kofun at the Nagara shrine of Matsubara, Iizuka
+    acquired: 6th century
+    method: creation
+    place: ota
+    label: made for a tomb mound in Iizuka (former Kugo village, Nitta district), probably by a haniwa workshop based around Ōta
+    sources:
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=J36697
+        note: 時代・世紀 古墳時代・6世紀 … 出土地 群馬県太田市飯塚町出土
+        source: tnm-j-36697
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%9F%B4%E8%BC%AA_%E6%8C%82%E7%94%B2%E6%AD%A6%E4%BA%BA&oldid=111684996
+        note: 群馬県太田市飯塚町（旧新田郡九合村）の長良神社境内で出土した … 挂甲武人が出土したのは「マツバラ」の長良神社にあった古墳である
+        source: ja-wikipedia-haniwa-keiko-bujin
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    method: find
+    place: ota
+    label: dug up when the mound was levelled for road-building soil; many other finds there were left outside and scattered
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%9F%B4%E8%BC%AA_%E6%8C%82%E7%94%B2%E6%AD%A6%E4%BA%BA&oldid=111684996
+        note: 「マツバラ」の長良神社は合祀後も古墳は残されていたが、道路整備のために古墳を壊して土を利用した。その際に挂甲武人以外にも多数の出土品があったという。
+        source: ja-wikipedia-haniwa-keiko-bujin
+        accessed: 2026-11-24
+  - owner_label: a private owner
+    label: the fragments were joined and gaps filled with plaster before the museum bought it
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%9F%B4%E8%BC%AA_%E6%8C%82%E7%94%B2%E6%AD%A6%E4%BA%BA&oldid=111684996
+        note: その後1952年（昭和27年）5月29日付で東京国立博物館が個人所有者から購入したという … 破片の接合や欠損部への石膏の補填は博物館が購入する前に行われていたようで
+        source: ja-wikipedia-haniwa-keiko-bujin
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 1952-05-29
+    method: purchase
+    direct: true
+    place: tokyo
+    label: bought from a private owner; inv. J-36697
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%9F%B4%E8%BC%AA_%E6%8C%82%E7%94%B2%E6%AD%A6%E4%BA%BA&oldid=111684996
+        note: その後1952年（昭和27年）5月29日付で東京国立博物館が個人所有者から購入したという
+        source: ja-wikipedia-haniwa-keiko-bujin
+        accessed: 2026-11-24
+      - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=J36697
+        note: 機関管理番号 J-36697
+        source: tnm-j-36697
+        accessed: 2026-11-24
+  - owner: institution/national-institutes-for-cultural-heritage
+    method: transfer
+    place: tokyo
+    label: "owner today: the National Institutes for Cultural Heritage, the independent administrative institution running the national museums; kept at the Tokyo National Museum"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/871
+        note: 保管施設の名称 ： 東京国立博物館 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-871
+        accessed: 2026-11-24
+identifiers:
+  emuseum: "100200"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q91239334
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q91239334
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q91239334
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q91239334
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q91239334
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q91239334

@@ -1,0 +1,28 @@
+public_id: 124514
+title: Akashi Kuniyuki
+names:
+  - lang: ja
+    role: translation
+    text: 明石国行
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q81029490
+creator: kuniyuki
+institution: japanese-sword-museum
+wikidata_id: Q81029490
+metadata:
+  sources: [Wikidata Q81029490 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/%E5%A4%AA%E5%88%80_%E6%98%8E%E7%9F%B3%E5%9B%BD%E8%A1%8C%2C_Tachi%2C_Akashi_Kuniyuki.jpg/1280px-%E5%A4%AA%E5%88%80_%E6%98%8E%E7%9F%B3%E5%9B%BD%E8%A1%8C%2C_Tachi%2C_Akashi_Kuniyuki.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%A4%AA%E5%88%80_%E6%98%8E%E7%9F%B3%E5%9B%BD%E8%A1%8C,_Tachi,_Akashi_Kuniyuki.jpg
+    license: CC BY-SA 4.0
+    credit: SLIMHANNYA
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q81029490
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q81029490

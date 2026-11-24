@@ -32,6 +32,15 @@ relationships:
       - accessed: 2026-11-03
         property: P135
         wikidata: Q313194
+  - type: child_of
+    to: artist/jacob-gerritsz-cuyp
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q313194
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q554847
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e4/10_Albert_Cuyp%2C_Schilder%2C_1620-1691.jpg
     source_url: https://commons.wikimedia.org/wiki/File:10_Albert_Cuyp,_Schilder,_1620-1691.jpg

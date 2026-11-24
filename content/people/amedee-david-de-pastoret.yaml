@@ -1,0 +1,23 @@
+public_id: 125075
+name: Amédée-David de Pastoret
+given_name: Amédée-David
+family_name: de Pastoret
+kind: person
+birth: 1791-01-02
+death: 1857-05-18
+wikidata_id: Q15615042
+metadata:
+  sources: [Wikidata Q15615042 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q15615042
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q15615042
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q15615042

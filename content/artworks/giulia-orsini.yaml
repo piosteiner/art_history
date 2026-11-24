@@ -1,0 +1,93 @@
+public_id: 122997
+title_lang: en
+title: Giulia Orsini
+created: 16th century
+created_span: uncertain
+materials: [bronze]
+institution: national-gallery-of-art
+inventory_number: 1957.14.1091
+wikidata_id: Q63851195
+metadata:
+  sources: [Wikidata Q63851195 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Italian_16th_Century%2C_Giulia_Orsini%2C_16th_century%2C_NGA_45200.jpg/1280px-Italian_16th_Century%2C_Giulia_Orsini%2C_16th_century%2C_NGA_45200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Italian_16th_Century,_Giulia_Orsini,_16th_century,_NGA_45200.jpg
+    license: CC0
+    credit: Italian 16th Century
+provenance:
+  - owner_label: Douglas collection, Glasgow
+    acquired: 1887 or earlier
+    place: glasgow-city
+    label: a medal recorded by Armand (1887, vol. 3, p. 265, no. MMM) in this collection; the NGA medal may be the same specimen
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45200.html
+        note: Possibly Douglas collection, Glasgow, before 1887.[1] — [1] The medal was recorded by Alfred Armand … in this collection, and the NGA medal may be the same specimen.
+        source: nga-1957-14-1091
+        accessed: 2026-11-24
+  - owner: person/gustave-dreyfus
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45200.html
+        note: Gustave Dreyfus [1837-1914], Paris;
+        source: nga-1957-14-1091
+        accessed: 2026-11-24
+  - owner_label: heirs of Gustave Dreyfus (his widow and five children)
+    method: inheritance
+    direct: true
+    place: paris
+    label: bequeathed to his widow and five children; not sold until after the widow's death in April 1929
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45200.html
+        note: his heirs; — Bequeathed as part of his estate to Dreyfus’ widow and five children (a son and four daughters), who had differing opinions about its disposition, the collection was not sold until after his widow’s death in April 1929.
+        source: nga-1957-14-1091
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1930-07-09
+    method: purchase
+    direct: true
+    label: with the entire Dreyfus collection, after a sixteen-year pursuit
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45200.html
+        note: purchased with the entire Dreyfus collection 9 July 1930 by (Duveen Brothers, Inc., London, New York, and Paris);
+        source: nga-1957-14-1091
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1944-01-31
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: with the Dreyfus small bronzes, medals and plaquettes intact; paid in instalments every three months
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45200.html
+        note: sold 31 January 1944 to the Samuel H. Kress Foundation, New York; — Duveen did not wish to separate Dreyfus’ collection of small bronzes, medals, and plaquettes, and it was sold intact to the Kress Foundation for a price that was met by installment payments every three months.
+        source: nga-1957-14-1091
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1957
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45200.html
+        note: gift 1957 to NGA.
+        source: nga-1957-14-1091
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q63851195
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63851195
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63851195
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63851195

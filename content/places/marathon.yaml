@@ -1,0 +1,35 @@
+public_id: 126015
+name: Marathon
+names:
+  - lang: it
+    role: translation
+    text: Maratona
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q212150
+  - lang: ru
+    role: translation
+    text: Марафон
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q212150
+kind: settlement
+parent: attiki
+country_code: GR
+location: [23.96194, 38.15333]
+wikidata_id: Q212150
+metadata:
+  sources: [Wikidata Q212150 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q212150
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q212150
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q212150

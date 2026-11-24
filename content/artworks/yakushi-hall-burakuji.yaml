@@ -1,0 +1,48 @@
+public_id: 123969
+title: Yakushi hall, Burakuji
+names:
+  - lang: ja
+    role: translation
+    text: 豊楽寺薬師堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020659
+created: c. 1151
+created_span: uncertain
+institution: buraku-ji
+location: [133.7271, 33.79211]
+wikidata_id: Q107020659
+metadata:
+  sources: [Wikidata Q107020659 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/otoyo
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Burakuji_03.JPG/1280px-Burakuji_03.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Burakuji_03.JPG
+    license: CC BY-SA 3.0
+    credit: Reggaeman
+provenance:
+  - owner: institution/buraku-ji
+    acquired: c. 1151
+    method: creation
+    place: otoyo
+    label: undated; c. 1151 from the inscription inside the seated Buddha in the hall (Ninpei 1); the front porch added under the second Tosa lord Yamauchi Tadayoshi; owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3448
+        note: 薬師堂の建立年代についても、また明らかでないが、堂内安置の釈迦如来坐像（重要文化財）に仁平元年（一一五一）の胎内銘があるので、建築もまたこの頃の建立と思われる。 … 所有者名 ： 豊楽寺 所有者種別 ： 寺院
+        source: kunishitei-102-3448
+        accessed: 2026-11-24
+      - url: https://www.kochinet.ed.jp/bunkazai/details/110-1/110-1-01.htm
+        note: 高知県長岡郡大豊町寺内 ・ 豊楽寺 … 正面１間の向拝は、２代藩主忠義の時に付け加えられたものである。
+        source: kochi-bunkazai-buraku-ji-yakushido
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E8%B1%8A%E6%A5%BD%E5%AF%BA
+        note: 1574年に長宗我部元親が、1637年に山内忠義が修理し、1637年の修理で前面中央に1間の向拝が追加された
+        source: wikipedia-ja-buraku-ji
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020659

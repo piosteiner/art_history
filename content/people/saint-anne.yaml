@@ -1,0 +1,21 @@
+public_id: 125262
+name: Saint Anne
+kind: person
+birth: c. 55 BCE
+death: c. 12
+wikidata_id: Q164294
+metadata:
+  sources: [Wikidata Q164294 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q164294
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q164294
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q164294

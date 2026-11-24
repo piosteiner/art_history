@@ -1,0 +1,77 @@
+public_id: 124898
+title: Stele
+creator: anonymous
+created: 28 June 810 – 900
+materials: [limestone]
+dimensions: [135, 46]
+institution: museum-rietberg
+inventory_number: RMA 307
+wikidata_id: Q126911353
+metadata:
+  sources: [Wikidata Q126911353 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/chiapas
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q126911353
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Urheber%2Ain_unbekannt_Stele_Museum_Rietberg_RMA_0307.jpg/1280px-Urheber%2Ain_unbekannt_Stele_Museum_Rietberg_RMA_0307.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Urheber*in_unbekannt_Stele_Museum_Rietberg_RMA_0307.jpg
+    license: CC0
+    credit: Museum Rietberg
+provenance:
+  - owner_label: unknown maker (Maya)
+    acquired: 600/900
+    method: creation
+    label: Maya, Late Classic; made in the state of Chiapas; inscribed dates 550 and 28.06.810
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-307
+        note: "600–900: Urheber*in unbekannt"
+        source: rietberg-rma-307
+        accessed: 2026-11-24
+  - owner: person/earl-l-stendahl
+    role: dealer
+    acquired: before 8 July 1962
+    label: dealer; Inventarbuch III/183
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-307
+        note: "vor 08.07.1962: Earl L. Stendahl (1888–1966), Händler*in Inventarbuch III/183"
+        source: rietberg-rma-307
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1962-07-08
+    method: purchase
+    place: zurich
+    label: bought with funds of the Schweizerische Kreditanstalt and Elektro-Watt AG, a gift for the museum's 10th anniversary obtained by Ernst Gamper
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-307
+        note: "08.07.1962: Museum Rietberg, angekauft Die Mittel für den Ankauf der Maya-Stele waren ein Geschenk zum 10jährigen Bestehen des Museums, das Ernst Gamper erwirkt hat (Brief von Stadtpräsident Landolt an Ernst Gamper, 20. August 1962, in Geschenke 1956-1971)"
+        source: rietberg-rma-307
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q126911353
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q126911353
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q126911353
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q126911353
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q126911353
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q126911353

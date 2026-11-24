@@ -1,0 +1,42 @@
+public_id: 124484
+title: Jo-an
+names:
+  - text: Joan
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4924573
+  - lang: ja
+    role: translation
+    text: 如庵
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4924573
+  - lang: ko
+    role: translation
+    text: 죠안
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4924573
+created: 1618
+location: [136.94235, 35.38799]
+wikidata_id: Q4924573
+metadata:
+  sources: [Wikidata Q4924573 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/inuyama
+    period: 1618
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Joan_in_Urakuen%2C_Gomonsaki_Inuyama_Inuyama_City_2023.jpg/1280px-Joan_in_Urakuen%2C_Gomonsaki_Inuyama_Inuyama_City_2023.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joan_in_Urakuen,_Gomonsaki_Inuyama_Inuyama_City_2023.jpg
+    license: CC BY-SA 4.0
+    credit: Tomio344456
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q4924573
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q4924573

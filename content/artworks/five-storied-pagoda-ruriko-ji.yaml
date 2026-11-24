@@ -1,0 +1,71 @@
+public_id: 123954
+title: Five-storied Pagoda, Rurikō-ji
+names:
+  - lang: ja
+    role: translation
+    text: 瑠璃光寺五重塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020653
+created: 1442
+institution: ruriko-ji
+location: [131.4729, 34.19018]
+wikidata_id: Q107020653
+metadata:
+  sources: [Wikidata Q107020653 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/yamaguchi-2
+    period: 1442
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e2/%E7%91%A0%E7%92%83%E5%85%89%E5%AF%BA%E4%BA%94%E9%87%8D%E5%A1%94_-_panoramio_%281%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E7%91%A0%E7%92%83%E5%85%89%E5%AF%BA%E4%BA%94%E9%87%8D%E5%A1%94_-_panoramio_(1).jpg
+    license: CC BY 3.0
+    credit: 伊部リコ
+provenance:
+  - owner: institution/koshaku-ji-yamaguchi
+    acquired: 1442
+    method: creation
+    place: yamaguchi-2
+    label: built at Kōshaku-ji, the Rinzai temple founded by Ōuchi Yoshihiro, by his brother Ōuchi Morimi in his memory (inscription on the finial base recast 1661); dated by an ink inscription of Kakitsu 2 (1442) found in 1915
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3203
+        note: 香積寺は大内義弘（1356ｰ1399）が開いた臨済宗寺院で … 五重塔は、万治４年（1661）改鋳の相輪伏鉢の刻銘によると、義弘の死後、弟盛見が兄の菩提を弔うために建立したという。大正４年の解体修理のさい巻斗から嘉吉２年（1442）の墨書が発見され、建立年代が明らかになった。
+        source: kunishitei-102-3203
+        accessed: 2026-11-24
+      - url: https://yamaguchi-city.jp/details/aa_ruri_tou.html
+        note: 26代弟・盛見は兄の菩提を弔うため、香積寺に五重塔を造営中、九州の少貳勢と戦って戦死。五重塔はその後、嘉吉2年（1442年）頃落慶しました。
+        source: yamaguchi-city-ruriko-ji-pagoda
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1616
+    place: yamaguchi-2
+    label: Kōshaku-ji had been moved to Hagi in 1604 for the building of Hagi Castle; a plan to move the pagoda too was given up after a petition of the inhabitants
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3203
+        note: 慶長９年（1604）萩城築城にさいして萩へ移され、元和２年（1616）には五重塔も移されそうになったが、住民の請願によって残ることとなった。
+        source: kunishitei-102-3203
+        accessed: 2026-11-24
+  - owner: institution/ruriko-ji
+    acquired: 1690
+    place: yamaguchi-2
+    label: Rurikō-ji moved from Niho to the former site of Kōshaku-ji, where the pagoda stood; owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3203
+        note: 瑠璃光寺は、元禄３年（1690）に五重塔が残る香積寺の跡地へ移ってきた。 … 所有者名 ： 瑠璃光寺 所有者種別 ： 寺院
+        source: kunishitei-102-3203
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%91%A0%E7%92%83%E5%85%89%E5%AF%BA
+        note: 毛利輝元が慶長9年（1604年）に香積寺を萩に引寺したため、跡地に元禄3年（1690年）、仁保瑠璃光寺を移転した。これが現在の瑠璃光寺である
+        source: wikipedia-ja-ruriko-ji
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107020653
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020653

@@ -39,6 +39,16 @@ death: 1598-01-18
 wikidata_id: Q505918
 metadata:
   sources: [Wikidata Q505918 (retrieved 2026-10-30)]
+relationships:
+  - type: child_of
+    to: person/joachim-ii-hector-elector-of-brandenburg
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q505918
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q506527
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/JohannGeorg1564.JPG/1280px-JohannGeorg1564.JPG
     source_url: https://commons.wikimedia.org/wiki/File:JohannGeorg1564.JPG

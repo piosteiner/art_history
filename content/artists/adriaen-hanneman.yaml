@@ -1,0 +1,18 @@
+public_id: 123018
+name: Adriaen Hanneman
+given_name: Adriaen
+family_name: Hanneman
+birth: 1603
+death: 1671-07-11
+wikidata_id: Q864279
+metadata:
+  sources: [Wikidata Q864279 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q864279
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q864279

@@ -1,0 +1,59 @@
+public_id: 124755
+title_lang: en
+title: Seated Zenki and Koki
+institution: cleveland-museum-of-art
+inventory_number: "2012.40"
+web_url: https://clevelandart.org/art/2012.40
+wikidata_id: Q80078594
+metadata:
+  sources: [Wikidata Q80078594 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Japan%2C_Muromachi_period_%281392-1573%29%2C_15th_century_-_Seated_Zenki_and_Koki_-_2012.40_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Japan%2C_Muromachi_period_%281392-1573%29%2C_15th_century_-_Seated_Zenki_and_Koki_-_2012.40_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japan,_Muromachi_period_(1392-1573),_15th_century_-_Seated_Zenki_and_Koki_-_2012.40_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Cleveland Museum of Art
+provenance:
+  - owner: institution/myoshin-ji-wakayama
+    label: the collection of Myoshin-ji Temple, Wakayama Prefecture
+    sources:
+      - url: https://clevelandart.org/art/2012.40
+        note: The collection of Myoshin-ji Temple, Wakayama prefecture, Japan
+        source: cma-2012-40
+        accessed: 2026-11-24
+  - owner_label: Hosomi family, Kyoto
+    place: kyoto
+    sources:
+      - url: https://clevelandart.org/art/2012.40
+        note: The Hosomi family, Kyoto, Japan
+        source: cma-2012-40
+        accessed: 2026-11-24
+  - owner: institution/koichi-yanagi-oriental-fine-arts
+    role: dealer
+    ended: 2012
+    place: new-york-city
+    label: sold to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/2012.40
+        note: (Koichi Yanagi Oriental Fine Arts, New York, NY, sold to the Cleveland Museum of Art) [?-2012]
+        source: cma-2012-40
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2012
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Sundry Art - Japanese/Korean and Lillian Kern Memorial Fund
+    sources:
+      - url: https://clevelandart.org/art/2012.40
+        note: The Cleveland Museum of Art, Cleveland, OH [2012-] — Sundry Art - Japanese/Korean and Lillian Kern Memorial Fund
+        source: cma-2012-40
+        accessed: 2026-11-24
+sources:
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q80078594
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q80078594

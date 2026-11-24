@@ -1,0 +1,44 @@
+public_id: 123872
+title_lang: de
+title: Votivstele mit Buddha Shakyamuni
+attribution_label: Anonymous
+created: 542
+kind: relief
+medium: Kalkstein
+dimensions: [135.5, 67]
+institution: museum-rietberg
+inventory_number: RCH 113
+web_url: https://rietberg.ch/sammlungen/rch-113
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Wei_Votivstele_Museum_Rietberg_RCH_113.jpg/1280px-Wei_Votivstele_Museum_Rietberg_RCH_113.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wei_Votivstele_Museum_Rietberg_RCH_113.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner: person/c-t-loo
+    role: dealer
+    acquired: before 1930
+    place: paris
+    label: see photographs of the Pagoda from the estate of Janine Loo
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-113
+        note: |-
+          vor 1930: C. T.  Loo (1880–1957), Händler/in, Paris
+          siehe Fotos der Pagode aus dem Nachlass von Janine Loo
+        source: rietberg-rch-113
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    label: collector
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-113
+        note: Eduard von der Heydt (1882–1964), Sammler*in
+        source: rietberg-rch-113
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    method: gift
+    label: gift of Eduard von der Heydt (credit line)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-113
+        note: Creditline | Geschenk Eduard von der Heydt
+        source: rietberg-rch-113
+        accessed: 2026-11-24

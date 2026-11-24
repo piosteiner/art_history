@@ -27,6 +27,16 @@ death: 1713-10-31
 wikidata_id: Q465178
 metadata:
   sources: [Wikidata Q465178 (retrieved 2026-10-20)]
+relationships:
+  - type: child_of
+    to: person/cosimo-iii-de-medici
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q47292
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q465178
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/98/Portrait-Of-Ferdinand-II-De-Medici.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Portrait-Of-Ferdinand-II-De-Medici.jpg

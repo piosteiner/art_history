@@ -1,0 +1,23 @@
+public_id: 122991
+name: Paul the Apostle
+given_name: Paul the
+family_name: Apostle
+kind: person
+birth: c. 5
+death: August 64 – 67
+wikidata_id: Q9200
+metadata:
+  sources: [Wikidata Q9200 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q9200
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q9200
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q9200

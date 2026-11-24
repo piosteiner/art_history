@@ -1,0 +1,22 @@
+public_id: 126243
+name: Wilton
+kind: settlement
+parent: wiltshire
+country_code: GB
+location: [-1.864, 51.08]
+wikidata_id: Q1018668
+metadata:
+  sources: [Wikidata Q1018668 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1018668
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1018668
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1018668

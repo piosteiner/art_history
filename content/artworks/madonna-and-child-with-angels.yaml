@@ -1,0 +1,189 @@
+public_id: 123016
+title_lang: en
+title: Madonna and Child with Angels
+names:
+  - lang: nl
+    role: translation
+    text: Maria met kind en twee musicerende engelen
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20174266
+creator: hans-memling
+created: c. 1479
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [57.6, 46.4]
+institution: national-gallery-of-art
+inventory_number: 1937.1.41
+provenance_status: a_clear
+provenance_status_note: Bought by Andrew W. Mellon in November 1927; deeded 5 June 1931 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q20174266
+metadata:
+  sources: [Wikidata Q20174266 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20174266
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q20174266
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Memling-MaredeDeu-Nen-WashingtonNationalGallery.jpg/1280px-Memling-MaredeDeu-Nen-WashingtonNationalGallery.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Memling-MaredeDeu-Nen-WashingtonNationalGallery.jpg
+    license: Public domain
+    credit: Hans Memling
+provenance:
+  - owner: person/leopold-iii-friedrich-franz-duke-of-anhalt-dessau
+    place: worlitz
+    label: Gotisches Haus, Wörlitz; early catalogues not specific enough to identify the painting
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.48.html
+        note: Probably Leopold III Friedrich Franz, Duke of Anhalt-Dessau [1740-1817], Gotisches Haus, Wörlitz, near Dessau;[1] — [1] … The descriptions in the early catalogues of the Anhalt-Dessau collection are not sufficiently specific to identify the Madonna and Child with Angels.
+        source: nga-1937-1-41
+        accessed: 2026-11-24
+  - owner: person/leopold-iv-friedrich-duke-of-anhalt
+    method: inheritance
+    direct: true
+    place: worlitz
+    label: grandson; Gotisches Haus
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.48.html
+        note: probably by inheritance to his grandson, Leopold IV Friedrich, Duke of Anhalt [1794-1871], Gotisches Haus;
+        source: nga-1937-1-41
+        accessed: 2026-11-24
+  - owner: person/friedrich-i-duke-of-anhalt
+    method: inheritance
+    direct: true
+    place: worlitz
+    label: Gotisches Haus
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.48.html
+        note: by inheritance to his son, Friedrich I, Duke of Anhalt [1831-1904], Gotisches Haus;
+        source: nga-1937-1-41
+        accessed: 2026-11-24
+  - owner: person/friedrich-ii-duke-of-anhalt
+    method: inheritance
+    direct: true
+    place: worlitz
+    label: Gotisches Haus
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.48.html
+        note: by inheritance to his son, Friedrich II, Duke of Anhalt [1856-1918], Gotisches Haus;
+        source: nga-1937-1-41
+        accessed: 2026-11-24
+  - owner: person/eduard-duke-of-anhalt
+    method: inheritance
+    direct: true
+    place: worlitz
+    label: Eduard Georg Wilhelm; Gotisches Haus
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.48.html
+        note: by inheritance to his son, Eduard Georg Wilhelm, Duke of Anhalt [1861-1918], Gotisches Haus;
+        source: nga-1937-1-41
+        accessed: 2026-11-24
+  - owner: person/joachim-ernst-duke-of-anhalt
+    method: inheritance
+    direct: true
+    place: worlitz
+    label: Gotisches Haus
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.48.html
+        note: by inheritance to his son, Joachim Ernst, Duke of Anhalt [1901-1947], Gotisches Haus;
+        source: nga-1937-1-41
+        accessed: 2026-11-24
+  - owner: person/hugo-perls
+    role: dealer
+    acquired_label: early 1927
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.48.html
+        note: sold early 1927 to (Hugo Perls, Berlin);[2] — [2] According to a note on a photograph in the Friedländer archive, … (RKD), The Hague; and a letter of 23 October 1961 from Hugo Perls to the NGA
+        source: nga-1937-1-41
+        accessed: 2026-11-24
+  - owner_label: Mannheimer collection, Amsterdam
+    role: agent
+    direct: true
+    place: amsterdam
+    label: sold via the Mannheimer collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.48.html
+        note: sold via the Mannheimer collection, Amsterdam, to (Duveen Brothers, Inc., London, New York, and Paris);[3]
+        source: nga-1937-1-41
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    method: purchase
+    direct: true
+    label: London, New York and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.48.html
+        note: to (Duveen Brothers, Inc., London, New York, and Paris);[3]
+        source: nga-1937-1-41
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1927-11
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.48.html
+        note: purchased November 1927 by Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-41
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1931-06-05
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.48.html
+        note: deeded 5 June 1931 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1937-1-41
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.48.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-41
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20174266
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20174266
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20174266
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20174266
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20174266
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20174266

@@ -1,0 +1,22 @@
+public_id: 126116
+name: Άνω Πιτσά
+kind: settlement
+parent: greece
+country_code: GR
+location: [22.47969, 38.08376]
+wikidata_id: Q21591197
+metadata:
+  sources: [Wikidata Q21591197 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q21591197
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q21591197
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q21591197

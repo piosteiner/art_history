@@ -1,0 +1,222 @@
+public_id: 124569
+title_lang: en
+title: Landscape with a Church by a Torrent
+names:
+  - lang: nl
+    role: translation
+    text: Waterval met kerk
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20901925
+  - lang: fr
+    role: translation
+    text: Paysage avec une Église par un torrent
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20901925
+  - lang: de
+    role: translation
+    text: Landschaft mit Kirche bei einer Stromschnelle
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20901925
+  - lang: es
+    role: translation
+    text: Paisaje con una iglesia por un Torrent
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20901925
+creator: jacob-van-ruisdael
+created: 1670
+materials: [oil paint]
+dimensions: [71, 55.2]
+institution: cleveland-museum-of-art
+inventory_number: "1962.256"
+web_url: https://clevelandart.org/art/1962.256
+provenance_status: d_seized
+provenance_status_note: Confiscated by the Nazis from Alphonse von Rothschild, Vienna, 1938, and selected for Hitler's museum in Linz; recovered at Altaussee, repatriated to Austria 1946 and returned to his widow Clarice.
+wikidata_id: Q20901925
+metadata:
+  sources: [Wikidata Q20901925 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/netherlands
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q20901925
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Jacob_van_Ruisdael_-_Landscape_with_a_Church_by_a_Torrent_-_1962.256_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Jacob_van_Ruisdael_-_Landscape_with_a_Church_by_a_Torrent_-_1962.256_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_van_Ruisdael_-_Landscape_with_a_Church_by_a_Torrent_-_1962.256_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Jacob van Ruisdael
+provenance:
+  - owner_label: Marquis de La Rochebousseau
+    ended: 1873
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: Marquis de La Rochebousseau [Until 1873]
+        source: cma-1962-256
+        accessed: 2026-11-24
+  - owner_label: Pillet, Paris
+    role: agent
+    acquired: 1873-05-05
+    method: auction
+    direct: true
+    place: paris
+    label: Rochebousseau sale, 5–8 May 1873, no. 198; the catalogue's earlier provenance belongs to another Ruisdael (Slive no. 298)
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: (Rochebousseau sale, Pillet, Paris, May 5-8, 1873, no. 198, sold to Guénot)
+        source: cma-1962-256
+        accessed: 2026-11-24
+  - owner_label: Guénot
+    role: agent
+    acquired: 1873-05
+    method: auction
+    direct: true
+    label: buyer at the sale, likely as Anselm von Rothschild's agent
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: Additional details about Guénot are unknown, but he was likely Rothschild's agent given that the sale occurred in May of 1873 and Rothschild had the work in his possession by August of that same year
+        source: cma-1962-256
+        accessed: 2026-11-24
+  - owner: person/anselm-von-rothschild
+    acquired: August 1873 or earlier
+    ended: 1874
+    direct: true
+    place: vienna
+    label: lent to "Ausstellung alter Gemälde aus Wiener Privatbesitz", August/September 1873
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: Baron Anselm von Rothschild [1803-1874], Vienna, by descent to his son, Baron Nathaniel von Rothschild [Probably 1873-1874]
+        source: cma-1962-256
+        accessed: 2026-11-24
+  - owner: person/nathaniel-de-rothschild
+    acquired: 1874
+    ended: 1905
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: Baron Nathaniel von Rothschild, Vienna [1836-1905], by descent to his nephew, Baron Alphonse von Rothschild [1874-1905]
+        source: cma-1962-256
+        accessed: 2026-11-24
+  - owner: person/alphonse-von-rothschild
+    acquired: 1905
+    method: inheritance
+    direct: true
+    place: vienna
+    label: inv. AR 885
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: Baron Alphonse von Rothschild, Vienna [1878-1942], confiscated by the Nazis [Probably 1905-1938]
+        source: cma-1962-256
+        accessed: 2026-11-24
+  - owner: person/adolf-hitler
+    role: possessor
+    acquired: 1938
+    ended: 1945
+    method: confiscation
+    direct: true
+    place: vienna
+    label: seized from Alphonse von Rothschild (AR 885), first requested by the Landesmuseum Linz; selected for the Führermuseum, Linz (Linz Album IV, no. 4)
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: In possession of the Nazis; selected by Hitler for the Führermuseum, Linz [1938-1945] — This painting was seized from Alphonse von Rothschild’s collection and was initially requested by the Landesmuseum Linz.
+        source: cma-1962-256
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    acquired: 1945-10-22
+    ended: 1946-07-30
+    direct: true
+    place: munich
+    label: recovered by the Allies in the Altaussee salt mines (Aussee shipment no. 6512); Munich no. 11298; repatriated to Austria 30 July 1946
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: After recovering the painting in the salt mines at Alt Aussee, the Allies sent it (Alt Aussee shipment no. 6512) to the Munich Central Collecting Point, where it arrived on October 22, 1945 and was assigned Munich number 11298 [...] It was repatriated to Austria on July 30, 1946 and then returned to Alphonse’s widow, Clarice.
+        source: cma-1962-256
+        accessed: 2026-11-24
+  - owner: person/clarice-de-rothschild
+    acquired: 1946
+    method: restitution
+    direct: true
+    place: new-york-city
+    label: widow of Alphonse von Rothschild; returned after repatriation to Austria
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: Baroness Clarice von Rothschild [1894-1967], widow of Baron Alphonse, New York, NY, sold to Rosenberg & Stiebel [1946-1949]
+        source: cma-1962-256
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    acquired: 1949
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: (Rosenberg & Stiebel, New York, NY, sold to Jane Taft Ingalls) [1949]
+        source: cma-1962-256
+        accessed: 2026-11-24
+  - owner: person/jane-taft-ingalls
+    acquired: 1949
+    ended: 1962
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: Jane Taft Ingalls [1874-1962], Cleveland, OH, upon her death, held in trust by the estate Estate of Jane Taft Ingalls, by bequest to the Cleveland Museum of Art [1949-1962]
+        source: cma-1962-256
+        accessed: 2026-11-24
+  - owner_label: Estate of Jane Taft Ingalls
+    role: estate
+    acquired: 1962
+    method: inheritance
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: upon her death, held in trust by the estate Estate of Jane Taft Ingalls, by bequest to the Cleveland Museum of Art
+        source: cma-1962-256
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1962
+    method: bequest
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1962.256
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1962-]
+        source: cma-1962-256
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20901925
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20901925
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20901925
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20901925
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20901925
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20901925

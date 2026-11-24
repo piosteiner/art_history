@@ -1,0 +1,23 @@
+public_id: 125066
+name: Ludovico Madruzzo
+given_name: Ludovico
+family_name: Madruzzo
+kind: person
+birth: 1532
+death: 1600-04-20
+wikidata_id: Q1233211
+metadata:
+  sources: [Wikidata Q1233211 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1233211
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q1233211
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q1233211

@@ -1,0 +1,58 @@
+public_id: 124915
+title_lang: en
+title: Three-Storied Pagoda of Daihō-ji
+title_status: own
+names:
+  - kind: nickname
+    lang: ja
+    role: alternative
+    text: 見返りの塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020342
+  - lang: ja
+    role: original
+    text: 大法寺三重塔
+created: 1333
+institution: daiho-ji-temple
+location: [138.1484, 36.38221]
+wikidata_id: Q107020342
+metadata:
+  sources: [Wikidata Q107020342 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/aoki
+    period: 1333
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/18/Daihouji-aoki.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Daihouji-aoki.JPG
+    license: CC BY-SA 3.0
+    credit: ja:User:Masanori88
+provenance:
+  - owner: institution/daiho-ji-temple
+    acquired: 1333
+    method: creation
+    place: aoki
+    label: built in Shōkei 2 (1333), dated by an ink inscription found when the pagoda was dismantled for repair in 1920; known as the "Mikaeri no tō"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/979
+        note: 現存の塔は、大正九年解体修理の際に墨書が発見され、正慶二年（一三三三）の建立であることが判明した。 … 所有者名 ： 大法寺 所有者種別 ： 寺院
+        source: kunishitei-102-979
+        accessed: 2026-11-24
+      - url: https://www.daihoujitemple.com/
+        note: 大法寺三重塔は、正慶二年（1333年）に建てられました。
+        source: daihoji-temple-official
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%B3%95%E5%AF%BA
+        note: 特に国宝に指定されている三重塔や、重要文化財に指定されている厨子、須弥壇などの文化財は、浦野氏、北条氏などの地頭の支援により造られた。
+        source: wikipedia-ja-daiho-ji
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107020342
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020342

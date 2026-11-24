@@ -1,0 +1,143 @@
+public_id: 122887
+title_lang: en
+title: Countess Széchenyi
+creator: ferdinand-georg-waldmuller
+created: 1828
+kind: oil painting
+medium: oil on fabric
+dimensions: [97.8, 78.5]
+institution: cleveland-museum-of-art
+inventory_number: "1988.57"
+web_url: https://clevelandart.org/art/1988.57
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1988.57/1988.57_web.jpg
+    source_url: https://clevelandart.org/art/1988.57
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/izidor-deutsch
+    acquired_label: before 1906
+    place: budapest
+    label: red wax seal on the back "Dr. Deutsch Ügyved [attorney] Budapest"; no documentary confirmation, his will mentions no paintings
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1988.57
+        note: "Possibly Dr. Izidor Deutsch [d. 1906], Budapest [Before 1906] — A red wax seal on the back of the painting reads: “Dr. Deutsch Ügyved [attorney] Budapest.” This seal may refer to Dr. Izidor Deutsch, a Hungarian attorney who lived in Budapest, although thus far no documentary confirmation of his ownership has been located."
+        source: cma-1988-57
+        accessed: 2026-11-24
+  - owner: person/maximilian-mauthner
+    place: feistritz-am-wechsel
+    label: Schloss Feistritz, Wechsel; probably until 1925 (Feuchtmüller); a banker who bought Schloss Feistritz in 1922
+    sources:
+      - url: https://clevelandart.org/art/1988.57
+        note: Maximilian Mauthner, Schloss Feistritz, Wechsel, Austria [Probably until 1925] — Mautner, a banker, purchased Schloss Feistritz in 1922, so if the attachment of Feistritz to Mautner’s name in Rupert Feuchtmüller's Waldmüller catalogue raisonné is at all linked with Mautner’s place of residence when he owned the painting, then his earliest possible year of ownership would be 1922.
+        source: cma-1988-57
+        accessed: 2026-11-24
+  - owner: institution/dorotheum
+    role: agent
+    acquired: 1925-06-15
+    method: auction
+    place: vienna
+    label: sale, lot 69; Mautner as consignor not confirmed
+    sources:
+      - url: https://clevelandart.org/art/1988.57
+        note: (Sale, Dorotheum, Vienna, June 15, 1925, lot 69) [1925] — Feuchtmüller's catalogue raisonné says that Mautner had the painting until 1925. However, because the Dorotheum’s records do not include buyer/consignor information for sales prior to the late 1960s, that Mautner was the consignor to the sale has not been confirmed.
+        source: cma-1988-57
+        accessed: 2026-11-24
+  - owner: person/paul-eger
+    acquired_label: before 1940
+    place: basel
+    label: theatre director; named in Feuchtmüller's catalogue raisonné, Carritt gives a Basel private collection; the museum suspects a confusion with the Egger family of Budapest
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1988.57
+        note: Possibly Dr. Paul Eger [1881-1947], Basel [Before 1940] — The catalogue raisonné lists Dr. Paul Eger as a former owner of the Waldmüller, while the information provided to CMA by David Carritt, Ltd. situates it in a Basel private collection, presumably Eger's, prior to Galerie Nathan … one must consider the possibility that the name “Eg[g]er” was seen at some point in connection with the painting
+        source: cma-1988-57
+        accessed: 2026-11-24
+  - owner: institution/galerie-fischer
+    role: agent
+    acquired: 1940-11
+    method: auction
+    direct: true
+    place: lucerne
+    label: sale, Galerie Fischer, Lucerne, 7–9 November 1940, lot 1250, sold to Galerie Nathan
+    sources:
+      - url: https://clevelandart.org/art/1988.57
+        note: (Sale, Galerie Fischer, Lucerne, Nov. 7-9, 1940, lot 1250, sold to Galerie Nathan) [1940]
+        source: cma-1988-57
+        accessed: 2026-11-24
+  - owner: institution/kunsthandlung-fritz-und-peter-nathan
+    role: dealer
+    acquired: 1940
+    method: auction
+    direct: true
+    place: zurich
+    label: photograph in the gallery's 1941–1942 album; buyer not recorded, possibly von Kreibig; perhaps resold through Fischer 1941/42
+    sources:
+      - url: https://clevelandart.org/art/1988.57
+        note: (Galerie Nathan, Zürich) [1940-] — The records of Galerie Nathan include a photograph of the Waldmüller in the gallery's 1941-1942 album and describe its sale “durch [through] Fischer LU[cerne],” … Gallery records do not show to whom Nathan sold the painting, although Peter Nathan wrote to Ann Tzeutschler Lurie in 1993 that it was possible the buyer was von Kreibig
+        source: cma-1988-57
+        accessed: 2026-11-24
+  - owner: person/erich-von-kreibig
+    role: dealer
+    acquired: 1970 or earlier
+    place: munich
+    label: his family bought it in Switzerland; offered to the CMA 1970 (declined January 1971); Grimschitz 1957 names a Munich private collector
+    sources:
+      - url: https://clevelandart.org/art/1988.57
+        note: (Erich von Kreibig, Munich) [By 1970] — In late 1970, Munich dealer Erich von Kreibig corresponded extensively with CMA curator Ann Tzeutschler Lurie … All that is known about von Kreibig’s acquisition of the Waldmüller is that his family bought it in Switzerland.
+        source: cma-1988-57
+        accessed: 2026-11-24
+  - owner: institution/neumeister
+    role: agent
+    acquired: 1972-09
+    method: auction
+    place: munich
+    label: sale, Neumeister, Munich, 20–22 September 1972, lot 1689; consignor possibly von Kreibig
+    sources:
+      - url: https://clevelandart.org/art/1988.57
+        note: (Sale, Neumeister, Munich, Sept. 20-22, 1972, lot 1689 [1972] — … Kreibig wrote to Ann Tzeutschler Lurie on December 31, 1971 … that he had been unable to sell the painting, so he may have consigned it to Neumeister for sale.
+        source: cma-1988-57
+        accessed: 2026-11-24
+  - owner: institution/galerie-grunwald
+    role: dealer
+    acquired: 1972
+    place: munich
+    label: from 1972?; perhaps the buyer at the Neumeister sale; Feuchtmüller places it there in 1986; order with the Munich private collection unclear
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1988.57
+        note: (Galerie Grünwald, Munich) [From 1972?] — The order in which Galerie Grünwald and the unidentified Munich private collector should appear in this provenance is unclear. … CMA records indicate the painting was with Grünwald in 1972.
+        source: cma-1988-57
+        accessed: 2026-11-24
+  - owner_label: private collection, Munich
+    acquired: 1987 or earlier
+    place: munich
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1988.57
+        note: Private collection, Munich [By 1987?] — According to the provenance information provided to CMA by David Carritt, Ltd., the painting was in a Munich private collection in 1987.
+        source: cma-1988-57
+        accessed: 2026-11-24
+  - owner: institution/artemis-group-david-carritt-ltd
+    co_owners: [institution/galerie-sanct-lucas]
+    role: dealer
+    acquired: 1988
+    place: london
+    label: David Carritt, Ltd./Artemis Group, London, and Galerie Sanct Lucas, Vienna; sold to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1988.57
+        note: (David Carritt, Ltd./Artemis Group, London, and Galerie Sanct Lucas, Vienna, sold to the Cleveland Museum of Art) [1988]
+        source: cma-1988-57
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1988
+    method: purchase
+    direct: true
+    place: cleveland
+    label: John L. Severance Fund, inv. 1988.57
+    sources:
+      - url: https://clevelandart.org/art/1988.57
+        note: The Cleveland Museum of Art, Cleveland, OH [1988-]
+        source: cma-1988-57
+        accessed: 2026-11-24

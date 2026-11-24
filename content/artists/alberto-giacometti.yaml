@@ -56,6 +56,24 @@ relationships:
       - accessed: 2026-11-03
         property: P135
         wikidata: Q157194
+  - type: child_of
+    to: artist/giovanni-giacometti
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q157194
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q689411
+  - type: sibling_of
+    to: person/bruno-giacometti
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q124171
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q157194
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Emmy_Andriesse_-_Alberto_Giacometti_%28Ende_1940er_PK-F-A.06801%29_cut.jpg/1280px-Emmy_Andriesse_-_Alberto_Giacometti_%28Ende_1940er_PK-F-A.06801%29_cut.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Emmy_Andriesse_-_Alberto_Giacometti_(Ende_1940er_PK-F-A.06801)_cut.jpg

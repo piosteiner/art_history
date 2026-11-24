@@ -1,0 +1,194 @@
+public_id: 123821
+title_lang: de
+title: Reliefplatte mit Prinz Odogbo, Ama
+attribution_label: Königliche Gilde der Bronzegiesser am Hof von Benin
+created: 1501/1700
+kind: architectural element
+medium: Messing
+dimensions: [37.5, 18, 5.5]
+institution: museum-rietberg
+inventory_number: RAF 603
+web_url: https://rietberg.ch/sammlungen/raf-603
+on_loan: true
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Benin_Reliefplatte_1_Museum_Rietberg.jpg/1280px-Benin_Reliefplatte_1_Museum_Rietberg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Benin_Reliefplatte_1_Museum_Rietberg.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Königliche Gilde der Bronzegiesser am Hof von Benin
+    acquired: 16th–17th century
+    method: creation
+    place: benin-city
+    label: cast by the royal guild of brass casters at the court of Benin
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "16./17. Jh.: Königliche Gilde der Bronzegiesser am Hof von Benin in Benin City"
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: institution/royal-court-of-benin
+    acquired: 16th–17th century
+    method: commission
+    place: benin-city
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "16./17. Jh.: Königshaus Benin, beauftragt in Benin City"
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: person/ovonramwen-nogbaisi
+    acquired: 1888
+    method: inheritance
+    place: benin-city
+    label: Oba of Benin; by inheritance
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "1888: Oba Ovonramwen Nogbaisi (um 1857–1914), durch Erbgang erworben in Benin City"
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: institution/british-army
+    role: possessor
+    acquired: 1897
+    method: spoils_of_war
+    place: benin-city
+    label: probably looted in the British attack on Benin City
+    certainty: probable
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "1897: British Army, wahrscheinlich geplündert in Benin City"
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: person/paul-eluard
+    acquired: before 1931
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "vor 1931: Paul Eluard (1895–1952), Erwerbsumstände unbekannt Eduard von der Heydt an Charles Ratton, 19.4.1932 (Paris, Archiv Musée du Quai Branly?)"
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 2 – 3 July 1931
+    method: auction
+    direct: true
+    place: paris
+    label: consigned; sale Collection André Breton et Paul Eluard, Sculptures d'Afrique, d'Amérique, d'Océanie, Hôtel Drouot, 2–3 July 1931, no. 9, pl. 1
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "02.07.1931–03.07.1931: Hôtel Drouot (1852), in Kommission erhalten in Paris 1931: Auktion Hôtel Drouot, 2. und 3. Juli 1931 (Collection André Breton et Paul Eluard, Sculptures d'Afriques, d'Amérique, d'Océanie), Nr. 9."
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: person/charles-ratton
+    acquired: 2 – 3 July 1931
+    method: auction
+    direct: true
+    place: paris
+    label: bought at the Hôtel Drouot sale
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "02.07.1931–03.07.1931: Charles Ratton (1895–1986), angekauft in Paris Bellier Quelle"
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: 1932
+    method: purchase
+    direct: true
+    label: letters Ratton–von der Heydt, 14 and 19 April 1932
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "1932: Eduard von der Heydt (1882–1964), angekauft Inventar Leuzinger, Lit. Drouot, 1931. Archive du Musée d'Histoire Nationale, Inventarnummer, Brief von Charles Ratton an Eduard von der Heydt 14.04.1932."
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1952
+    method: gift
+    direct: true
+    place: zurich
+    label: original credit line "Geschenk Eduard von der Heydt"
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: '1952: Museum Rietberg, als Geschenk erhalten in Zürich Ursprüngliche Creditline: "Geschenk Eduard von der Heydt"'
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1968
+    method: theft
+    place: zurich
+    label: stolen from the Museum Rietberg by an unknown thief (NZZ no. 313, 23 May 1968)
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "1968: Unbekannte*r Akteur*in, gestohlen in Zürich NZZ No. 313, S.29, 23.05.1968, Diebstahl im Rietbergmuseum."
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: person/hildegard-kipf
+    acquired: 1970/1979
+    acquired_label: early 1970s
+    method: purchase
+    place: frankfurt
+    label: bought in the Frankfurt area
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "frühe 1970er Jahre: Hildegard Kipf, angekauft in Raum Frankfurt Schriftenarchiv Museum Rietberg Zürich, Ordner „Naked Boy“, Brief von Wolfgang Kipf an Frank Paulig, 04.04.1993."
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: person/wolfgang-kipf
+    acquired: 1989
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "1989: Wolfgang Kipf, durch Erbgang erworben Schriftenarchiv Museum Rietberg Zürich, Ordner „Naked Boy“, Brief Frank Paulig an Lorenz Homberger, 27.04.1993 und Brief von Wolfgang Kipf an Frank Paulig, 04.04.1993."
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: person/frank-paulig
+    acquired: 1993 or earlier
+    method: purchase
+    direct: true
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "spätestens 1993: Frank Paulig, angekauft Schriftenarchiv Museum Rietberg Zürich, Ordner „Naked Boy“, Brief Frank Paulig an Lorenz Homberger, 27.04.1993 und Brief von Wolfgang Kipf an Frank Paulig, 04.04.1993."
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    not_sold: true
+    acquired: 1993
+    direct: true
+    place: london
+    label: consigned in London, returned to the consignor; the stolen work was secured through Sotheby's
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "1993: Sotheby's London (1744), in Kommission erhalten, zurück an Einlieferer*in in London"
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1993-05-12
+    method: purchase
+    label: bought back with funds from Pierre Uldry, after the work stolen in 1968 was secured through Sotheby's
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: "12.05.1993: Museum Rietberg, angekauft Ankauf mit Mitteln von Pierre Uldry: Vgl. Schriftenarchiv Museum Rietberg Zürich, S.0002-0015, RAF 603, Zahlungsbeleg und Datenbank Museum Rietberg Zürich. Sicherstellung über Sothelby's: Schriftenarchiv Museum Rietberg Zürich, Ordner „Naked Boy“, Brief Frank Paulig an Lorenz Homberger, 27.04.1993 und Brief von Wolfgang Kipf an Frank Paulig, 04.04.1993 und Ebd., Unbekannter Autor, Zur Rückkehr einer im Jahre 1968 gestohlenen Benin-Bronze, Juli 1993."
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: institution/national-commission-for-museums-and-monuments
+    acquired: 2026-03-20
+    method: restitution
+    direct: true
+    place: zurich
+    label: transfer of ownership to Nigeria under the agreement between the City of Zurich and the NCMM, in a management agreement with the Benin Royal Palace
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: '20.03.2026: National Commission for Museums and Monuments, Nigeria (NCMM) (1979), Eigentumsübertragung in Zürich Gemäss dem "Agreement on the transfer of ownership and return of Benin Bronzes between the City of Zurich and the National Commission for Museums and Monuments of the Federal Ministry of Art, Culture, Tourism and the Creative Economy of Nigeria, representing the Federal Republic of Nigeria and in a management agreement with the Benin Royal Palace" vom 20.03.2026.'
+        source: rietberg-raf-603
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    role: custodian
+    acquired: 2026-03-20
+    direct: true
+    place: zurich
+    label: on loan from the National Commission for Museums and Monuments, Nigeria
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-603
+        note: '20.03.2026: Museum Rietberg, als Leihgabe erhalten in Zürich Gemäss dem "Agreement on the transfer of ownership and return of Benin Bronzes between the City of Zurich and the National Commission for Museums and Monuments of the Federal Ministry of Art, Culture, Tourism and the Creative Economy of Nigeria, representing the Federal Republic of Nigeria and in a management agreement with the Benin Royal Palace" vom 20.03.2026.'
+        source: rietberg-raf-603
+        accessed: 2026-11-24

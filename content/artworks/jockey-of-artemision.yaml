@@ -1,0 +1,118 @@
+public_id: 123128
+title: Jockey of Artemision
+names:
+  - lang: nl
+    role: translation
+    text: Ruiter van Artemision
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2066005
+  - lang: fr
+    role: translation
+    text: Jockey de l'Artémision
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2066005
+  - lang: de
+    role: translation
+    text: Reiter vom Kap Artemision
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2066005
+  - lang: it
+    role: translation
+    text: Fantino di Artemision
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2066005
+  - lang: es
+    role: translation
+    text: Jinete de Artemisión
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2066005
+  - lang: ja
+    role: translation
+    text: アルテミシオンの騎手
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2066005
+  - lang: zh
+    role: translation
+    text: 少年和马
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2066005
+  - lang: ru
+    role: translation
+    text: Всадник с мыса Артемисион
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2066005
+created: -150
+materials: [bronze]
+dimensions: [210]
+institution: national-archaeological-museum-of-athens
+wikidata_id: Q2066005
+metadata:
+  sources: [Wikidata Q2066005 (retrieved 2026-11-23)]
+relationships:
+  - type: associated_with
+    to: movement/hellenistic-art
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q2066005
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/NAMA_Jockey_Art%C3%A9mision.jpg/1280px-NAMA_Jockey_Art%C3%A9mision.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:NAMA_Jockey_Art%C3%A9mision.jpg
+    license: CC BY 2.5
+    credit: Unknown artist
+provenance:
+  - owner_label: unknown
+    role: event
+    label: lost in a shipwreck off Cape Artemision, north Euboea; Hemingway suggests it was taken from Corinth by Mummius in 146 BC and lost in transit to Pergamon; in Euboea
+    sources:
+      - url: https://en.wikipedia.org/wiki/Jockey_of_Artemision
+        note: this one was saved from destruction when it was lost in a shipwreck in antiquity … Seán Hemingway has suggested that it may have been plundered from Corinth in 146 BC by the Roman general Mummius in the Achaean War and given to Attalus but lost while in transit to Pergamon.
+        source: wikipedia-en-jockey-of-artemision
+        accessed: 2026-11-24
+  - owner_label: salvage of the Artemision shipwreck
+    acquired: 1928/1937
+    method: find
+    label: wreck discovered 1926; first parts recovered 1928, more pieces 1936 and/or 1937; in Euboea
+    sources:
+      - url: https://en.wikipedia.org/wiki/Jockey_of_Artemision
+        note: The statue was found in a shipwreck off Cape Artemision, in north Euboea, which was discovered in 1926. … The first parts of the equestrian statue were recovered in 1928, with more pieces found in 1936 and/or 1937.
+        source: wikipedia-en-jockey-of-artemision
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    method: transfer
+    place: athens
+    label: reassembled after restoration and on display since 1972; inventory X 15177, room XXI
+    sources:
+      - url: https://en.wikipedia.org/wiki/Jockey_of_Artemision
+        note: The statue was reassembled, after restoration of the horse's tail and body, and it went on display at the National Archaeological Museum, Athens in 1972.
+        source: wikipedia-en-jockey-of-artemision
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Reiter_vom_Kap_Artemision
+        note: Das Werk befindet sich im Saal XXI des Archäologischen Nationalmuseums von Athen und trägt die Inventarnummer X15177.
+        source: wikipedia-de-reiter-vom-kap-artemision
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q2066005
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q2066005
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q2066005
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q2066005

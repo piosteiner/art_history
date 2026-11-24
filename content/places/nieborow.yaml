@@ -1,0 +1,22 @@
+public_id: 128036
+name: Nieborów
+kind: settlement
+parent: poland
+country_code: PL
+location: [20.11667, 52.13333]
+wikidata_id: Q1002994
+metadata:
+  sources: [Wikidata Q1002994 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1002994
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1002994
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1002994

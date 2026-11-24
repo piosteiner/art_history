@@ -1,0 +1,197 @@
+public_id: 123083
+title_lang: en
+title: Portrait of the Artist's Parents, Salomon de Bray and Anna Westerbaen
+names:
+  - lang: nl
+    role: translation
+    text: Dubbelportret van Salomon de Bray (1597-1664) en Anna Westerbaen (....-1663)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177599
+creator: jan-de-bray
+created: 1664
+materials: [oil paint, panel]
+dimensions: [78.1, 63.5]
+institution: national-gallery-of-art
+inventory_number: 2001.86.1
+provenance_status: a_clear
+provenance_status_note: Joseph Fuller Feder, New York, from 1925 until his death in 1944, then by inheritance to his daughter.
+wikidata_id: Q20177599
+metadata:
+  sources: [Wikidata Q20177599 (retrieved 2026-11-23)]
+relationships:
+  - type: created_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-23
+        property: P1071
+        wikidata: Q20177599
+  - type: depicts_person
+    to: artist/salomon-de-bray
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20177599
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Salomondebray%26annawesterbaenin1664.jpg/1280px-Salomondebray%26annawesterbaenin1664.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Salomondebray%26annawesterbaenin1664.jpg
+    license: Public domain
+    credit: Jan de Bray
+provenance:
+  - owner: artist/jan-de-bray
+    acquired: 1664
+    method: creation
+    place: haarlem
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: The artist [c. 1627-1697];
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+  - owner: person/gaeff-fabritius
+    method: bequest
+    direct: true
+    place: haarlem
+    label: former burgomaster of Haarlem; the artist's first will (17 June 1664) left it to him, to pass to the city of Haarlem at his death
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: possibly bequeathed to Gaeff Fabritius, former burgomaster of Haarlem.[1] — The artist drew up his first will on 17 June 1664 … bequeathing "...to the Honourable Gaeff Fabritius … a portrait of his late father and mother … providing that on the death of the said Gaeff Fabritius both portraits shall pass to the city of Haarlem."
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+  - owner: person/john-charles-robinson
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: John Charles Robinson [1824-1913], London; — It is not known where or when Robinson … acquired the painting.
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1868-05-07
+    method: auction
+    direct: true
+    place: paris
+    label: Robinson sale, Hôtel Drouot, Paris, 7–8 May 1868, no. 11
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: (his sale, Hôtel Drouot, Paris, 7-8 May 1868, no. 11);
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+  - owner_label: Reiset
+    role: agent
+    acquired: 1868-05-07
+    method: auction
+    direct: true
+    label: bought at the 1868 sale for Princess Mathilde
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: Reiset, for Princess Mathilde … [2] An annotated copy of the sales catalogue in the NGA Library indicates that the painting was acquired by Reiset for Princess Mathilde.
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+  - owner: person/mathilde-bonaparte
+    acquired: 1868-05
+    method: auction
+    direct: true
+    place: paris
+    label: Princess Mathilde
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: Reiset, for Princess Mathilde [1820-1904, née Mathilde L.M. Bonaparte], Paris;[2]
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1904-05-17
+    method: auction
+    direct: true
+    place: paris
+    label: Princess Mathilde estate sale, Galerie Georges Petit, Paris, 17–21 May 1904, 1st day, no. 21
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: (her estate sale, Galerie Georges Petit, Paris, 17-21 May 1904, 1st day, no. 21).
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+  - owner: person/agenor-de-gramont
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: Agénor, duc de Gramont [1857-1925], Paris;
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1925-05-22
+    method: auction
+    direct: true
+    place: paris
+    label: Gramont sale, Galerie Georges Petit, Paris, 22 May 1925, no. 7
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: (his sale, Galerie Georges Petit, Paris, 22 May 1925, no. 7);
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+  - owner: person/joseph-fuller-feder
+    acquired: 1925-05-22
+    method: auction
+    direct: true
+    place: new-york-city
+    label: bought at the Gramont sale (annotated catalogue, Getty); hung in his apartment in the Sherry-Netherland
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: Joseph Fuller Feder [d. 1944], New York;[3] — [3] Annotated copy of sales catalogue, Getty Research Institute … A photograph … of the Feder apartment in The Sherry-Netherland on Fifth Avenue in New York shows the painting hanging in the living room.
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+  - owner: person/odette-feder-moffett
+    method: inheritance
+    direct: true
+    place: new-york-city
+    label: Mrs. George Monroe Moffett, née Odette Feder, formerly Countess du Bourg de Bozas and Mrs. J. Ronald McCrindle
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: by inheritance to his daughter, Mrs. George Monroe Moffett [d. 1956, née Odette Feder, formerly the Countess du Bourg de Bozas and Mrs. J. Ronald McCrindle], New York;[4]
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+  - owner: person/joseph-f-mccrindle
+    method: inheritance
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: by inheritance to her son, Joseph F. McCrindle [1923-2008], New York;
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 2001
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.108661.html
+        note: gift 2001 to NGA.
+        source: nga-2001-86-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177599
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177599
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177599
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177599
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177599
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177599

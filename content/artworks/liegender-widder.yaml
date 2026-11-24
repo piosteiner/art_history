@@ -1,0 +1,79 @@
+public_id: 123831
+title_lang: de
+title: Liegender Widder
+attribution_label: Anonymous
+created: 567/633
+kind: sculpture
+medium: Kalkstein
+dimensions: [122.3, 82.4, 39.5]
+institution: museum-rietberg
+inventory_number: RCH 139
+web_url: https://rietberg.ch/sammlungen/rch-139
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Sui_Widder_Museum_Rietberg_RCH_139.jpg/1280px-Sui_Widder_Museum_Rietberg_RCH_139.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sui_Widder_Museum_Rietberg_RCH_139.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: c. 580–620
+    method: creation
+    label: made in China, Sui dynasty, late 6th/early 7th century
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-139
+        note: "um 580–620: Urheber*in unbekannt in China"
+        source: rietberg-rch-139
+        accessed: 2026-11-24
+  - owner: person/paul-mallon
+    acquired: before 1923
+    place: paris
+    label: circumstances of acquisition unknown; lit. Cohn 1932
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-139
+        note: |-
+          vor 1923: Paul Mallon (1884–1975), Erwerbsumstände unbekannt in Paris
+          Lit. Cohn, 1932.
+        source: rietberg-rch-139
+        accessed: 2026-11-24
+  - owner: person/charles-vignier
+    acquired: before 1923
+    place: paris
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-139
+        note: "vor 1923: Charles Vignier (1863–1934), Erwerbsumstände unbekannt in Paris"
+        source: rietberg-rch-139
+        accessed: 2026-11-24
+  - owner: person/c-t-loo
+    acquired: before 1923
+    place: paris
+    label: circumstances of acquisition unknown; lit. D'Ardenne de Tizac 1923
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-139
+        note: |-
+          vor 1923: C. T. Loo (1880–1957), Erwerbsumstände unbekannt in Paris
+          Lit. D'Ardenne de Tizac, 1923.
+        source: rietberg-rch-139
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: 1924
+    label: circumstances of acquisition unknown; lit. With 1924
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-139
+        note: |-
+          1924: Eduard von der Heydt (1882–1964), Erwerbsumstände unbekannt
+          Lit. With, 1924.
+        source: rietberg-rch-139
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1952-05-24
+    method: gift
+    place: zurich
+    label: gift of Eduard von der Heydt; inventory book I, pp. 70–72, on the list "Sendungen aus deutschen Museen, Berlin"
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-139
+        note: |-
+          24.05.1952: Museum Rietberg, als Geschenk erhalten in Zürich
+          MRZ SA, S.0001-0001, Inventarbuch I, S. 70–72, auf der Liste "Sendungen aus deutschen Museen, Berlin"
+        source: rietberg-rch-139
+        accessed: 2026-11-24

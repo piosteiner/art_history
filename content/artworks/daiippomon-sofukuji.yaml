@@ -1,0 +1,47 @@
+public_id: 123977
+title: Daiippōmon, Sofukuji
+names:
+  - lang: ja
+    role: translation
+    text: 崇福寺第一峰門
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020660
+created: 1644
+institution: sofuku-ji-nagasaki
+location: [129.8832, 32.74265]
+wikidata_id: Q107020660
+metadata:
+  sources: [Wikidata Q107020660 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nagasaki
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Sofukuji_Nagasaki_Japan05n.jpg/1280px-Sofukuji_Nagasaki_Japan05n.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sofukuji_Nagasaki_Japan05n.jpg
+    license: CC BY 2.5
+    credit: 663highland
+provenance:
+  - owner: institution/sofuku-ji-nagasaki
+    acquired: 1644
+    method: creation
+    place: nagasaki
+    label: erected 1644 by tradition by the chief patron Hayashi Nihei from parts worked in China; Nagasaki City dates the present gate to a rebuilding of 1695; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3518
+        note: 寺伝によれば寛永二十一年（一六四四）檀首林仁兵衛の建立で、各部材は中国で工作し、これを舶載して現地に運び建築したという。 … 所有者名 ： 崇福寺 所有者種別 ： 寺院
+        source: kunishitei-102-3518
+        accessed: 2026-11-24
+      - url: https://www.city.nagasaki.lg.jp/page/1197.html
+        note: 中国寧波（ニンポー）で材を切組み、元禄8年(1695)唐船数隻に分載舶来（ぶんさいはくらい）し再建された。 … 当初はここが山門であったが、延宝元年(1673)この下段西向きに、新たに三門が建立されて、ここは二の門となった。
+        source: nagasaki-city-sofukuji-daiippomon
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%B4%87%E7%A6%8F%E5%AF%BA_(%E9%95%B7%E5%B4%8E%E5%B8%82)&oldid=111670261
+        note: 寛永6年（1629年） 長崎で貿易を行っていた福建省出身の華僑の人々が、福州から超然を招聘して創建。 … 第一峰門 - 1644年建立、四脚門、入母屋造、本瓦葺
+        source: wikipedia-ja-sofuku-ji-nagasaki
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020660

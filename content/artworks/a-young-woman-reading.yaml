@@ -1,0 +1,207 @@
+public_id: 123079
+title_lang: en
+title: A Young Woman Reading
+names:
+  - lang: nl
+    role: translation
+    text: Lezend jonge vrouw
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20188692
+  - lang: fr
+    role: translation
+    text: Jeune femme lisant
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20188692
+  - lang: de
+    role: translation
+    text: Lesende junge Frau
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20188692
+creator: gustave-courbet
+created: 1860/1869
+created_label: c. 1860s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [60, 72.9]
+institution: national-gallery-of-art
+inventory_number: 1963.10.114
+wikidata_id: Q20188692
+metadata:
+  sources: [Wikidata Q20188692 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/A_Young_Woman_Reading_A17297.jpg/1280px-A_Young_Woman_Reading_A17297.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:A_Young_Woman_Reading_A17297.jpg
+    license: Public domain
+    credit: Gustave Courbet
+provenance:
+  - owner: artist/gustave-courbet
+    method: creation
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: The artist
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1872
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: The artist to (Durand-Ruel et Cie., Paris) in 1872.[1] — According to a letter from Robert Fernier to David Rust dated 31 July 1972
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner_label: comte de R...
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: (sale, comte de R..., Hôtel Drouot, Paris, 27 January 1875, no. 14, as Femme lisant, 650 francs).
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1875-01-27
+    method: auction
+    direct: true
+    place: paris
+    label: sale of the comte de R..., Hôtel Drouot, 27 January 1875, no. 14, as Femme lisant
+    price:
+      amount: 650
+      currency: FRF
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: (sale, comte de R..., Hôtel Drouot, Paris, 27 January 1875, no. 14, as Femme lisant, 650 francs).
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: person/ad-reitlinger
+    acquired: 1882 or earlier
+    place: paris
+    label: lent to the Courbet exhibition, École des beaux-arts, Paris, 1882, no. 30
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: Ad. Reitlinger, Paris, by 1882.[2] — [2] Lent by Reitlinger to Exposition des Oeuvres de Gustave Courbet, Ecole national superieure des beaux-arts, Paris, 1882, no. 30.
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: artist/alexandre-berheim
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: Alexandre Bernheim-Jeune [d. 1915], Paris.[3] — [3] According to Chester Dale papers in NGA curatorial files.
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: person/alexandre-berthier-prince-de-wagram
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: Alexandre Berthier, 4th prince de Wagram [1883-1918], Paris.
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: person/jos-hessel
+    role: dealer
+    acquired_label: in 1923
+    place: paris
+    label: according to the Chester Dale papers; not in Fernier's catalogue raisonné
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: (Jos Hessel, Paris), in 1923.[4] — [4] According to Chester Dale papers in NGA curatorial files. In Robert Fernier … Hessel is not listed in the provenance except as an expert in the 1932 Silberberg sale.
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: institution/e-j-van-wisselingh-co
+    role: dealer
+    acquired_label: in 1924
+    place: amsterdam
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: (E.J. van Wisselingh & Co., Amsterdam), in 1924.
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: person/etienne-bignou
+    role: dealer
+    acquired_label: in 1924
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: (Etienne Bignou, Paris), in 1924; — Chester Dale papers in NGA curatorial files give Rosenberg and Bignou as joint owners, after van Wisselingh, in 1926.
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: person/paul-rosenberg
+    role: dealer
+    method: purchase
+    direct: true
+    place: paris
+    label: the Chester Dale papers give Rosenberg and Bignou as joint owners in 1926
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: sold to (Paul Rosenberg, Paris);[5] — [5] In a letter to Chester Dale dated 5 August 1932 … Paul Rosenberg says the painting went through several hands from the Reitlinger collection, and that Rosenberg bought the painting from Bignou and sold it to Silberberg.
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: person/max-silberberg
+    acquired_label: before 1931
+    method: purchase
+    direct: true
+    place: wroc-aw
+    label: Breslau; published in Scheffler, 'Die Sammlung Max Silberberg', Kunst und Künstler, October 1931
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: sold before 1931 to Max Silberberg [d. 1944], Breslau, Germany [now Wroclaw, Poland];[6]
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1932-06-09
+    method: auction
+    direct: true
+    place: paris
+    label: Silberberg sale, Galerie Georges Petit, Paris, 9 June 1932, no. 18
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: (his sale, Galerie Georges Petit, Paris, 9 June 1932, no. 18);
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: person/chester-dale
+    method: auction
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: Chester Dale [1883-1962], New York;
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1963
+    method: bequest
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46589.html
+        note: bequest 1963 to NGA.
+        source: nga-1963-10-114
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20188692
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20188692
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20188692
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20188692
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20188692
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20188692

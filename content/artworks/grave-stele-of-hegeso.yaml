@@ -1,0 +1,98 @@
+public_id: 123182
+title: Grave Stele of Hegeso
+names:
+  - lang: fr
+    role: translation
+    text: Stèle d'Hègèsô
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12877248
+  - lang: de
+    role: translation
+    text: Grabstele der Hegeso
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12877248
+  - lang: zh
+    role: translation
+    text: 赫格索墓碑
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12877248
+  - lang: ru
+    role: translation
+    text: Надгробие Гегесо
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q12877248
+creator: callimachus
+materials: [Pentelic marble]
+dimensions: [149, 92]
+institution: national-archaeological-museum-of-athens
+web_url: http://www.perseus.tufts.edu/hopper/artifact?name=Athens,+NM+3624&object=sculpture
+wikidata_id: Q12877248
+metadata:
+  sources: [Wikidata Q12877248 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3b/NAMA_St%C3%A8le_d%27H%C3%A8g%C3%A8s%C3%B4.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:NAMA_St%C3%A8le_d%27H%C3%A8g%C3%A8s%C3%B4.jpg
+    license: CC BY 2.5
+    credit: Kallimachos
+provenance:
+  - owner_label: grave plot of Koroibos, Kerameikos
+    acquired_label: 410–400 BC
+    method: creation
+    place: athens
+    label: grave stele of Hegeso, daughter of Proxenos, in her family's grave plot (that of Koroibos) in the Kerameikos cemetery
+    sources:
+      - url: http://www.namuseum.gr/collections/sculpture/classical/classic11-en.html
+        note: According to the inscription on the epistyle, the deceased is Hegeso, daughter of Proxenos. Her imposing appearance, along with the magnificence of the family grave plot, to which the stele belongs
+        source: nam-3624-hegeso
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Grabstele_der_Hegeso
+        note: Das Artefakt vom Ende des 5. Jahrhunderts v. Chr. wurde im Grabbezirk des Koroibos auf dem Kerameikos gefunden.
+        source: wikipedia-de-grabstele-der-hegeso
+        accessed: 2026-11-24
+  - owner: institution/archaeological-society-at-athens
+    acquired: 1870
+    method: find
+    place: athens
+    label: found in situ in the Kerameikos in the Archaeological Society's excavations under Athanasios S. Rhousopoulos; first set up there before going to the museum
+    sources:
+      - url: http://www.namuseum.gr/collections/sculpture/classical/classic11-en.html
+        note: Grave stele, made of Pentelic marble, found in 1870 in the ancient cemetery of the Kerameikos.
+        source: nam-3624-hegeso
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Grabstele_der_Hegeso
+        note: Es wurde wie die beiden anderen Reliefs des Grabbezirkes bei den Ausgrabungen der Archäologischen Gesellschaft 1870 unter der Leitung von Athanasios S. Rhousopoulos in situ gefunden.
+        source: wikipedia-de-grabstele-der-hegeso
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    place: athens
+    label: inventory 3624, room 18; a modern copy stands in the grave plot
+    sources:
+      - url: http://www.namuseum.gr/collections/sculpture/classical/classic11-en.html
+        note: 3624 The marble grave stele of Hegeso, found in Kerameikos, Athens 410-400 BC.
+        source: nam-3624-hegeso
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Grabstele_der_Hegeso
+        note: Das Original wird im Archäologischen Nationalmuseum in Athen (Inventarnummer 3624, Ausstellungsraum 18) ausgestellt. Im Gelände des Kerameikos steht heute eine moderne Kopie, die in die originale Kalksteinbasis eingelassen wurde.
+        source: wikipedia-de-grabstele-der-hegeso
+        accessed: 2026-11-24
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q12877248
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q12877248
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q12877248
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q12877248

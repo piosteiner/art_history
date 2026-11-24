@@ -1,0 +1,41 @@
+public_id: 125836
+name: Queensland
+names:
+  - lang: ja
+    role: translation
+    text: クイーンズランド州
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q36074
+  - lang: zh
+    role: translation
+    text: 昆士兰州
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q36074
+  - lang: ru
+    role: translation
+    text: Квинсленд
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q36074
+kind: settlement
+parent: australia
+country_code: AU
+location: [143, -20]
+wikidata_id: Q36074
+metadata:
+  sources: [Wikidata Q36074 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q36074
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q36074
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q36074

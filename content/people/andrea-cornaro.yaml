@@ -1,0 +1,23 @@
+public_id: 122867
+name: Andrea Cornaro
+given_name: Andrea
+family_name: Cornaro
+kind: person
+birth: 1511-12-28
+death: 1551-02-09
+wikidata_id: Q352258
+metadata:
+  sources: [Wikidata Q352258 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q352258
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q352258
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q352258

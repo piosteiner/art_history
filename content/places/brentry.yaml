@@ -1,0 +1,22 @@
+public_id: 127679
+name: Brentry
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-2.61, 51.51]
+wikidata_id: Q4961736
+metadata:
+  sources: [Wikidata Q4961736 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q4961736
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q4961736
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q4961736

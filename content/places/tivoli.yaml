@@ -1,0 +1,29 @@
+public_id: 126954
+name: Tivoli
+names:
+  - lang: ru
+    role: translation
+    text: Тиволи
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q159605
+kind: settlement
+parent: metropolitan-city-of-rome
+country_code: IT
+location: [12.8, 41.96667]
+wikidata_id: Q159605
+metadata:
+  sources: [Wikidata Q159605 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q159605
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q159605
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q159605

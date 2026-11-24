@@ -1,0 +1,23 @@
+public_id: 123217
+name: Willem IV van den Bergh
+given_name: Willem IV
+family_name: van den Bergh
+kind: person
+birth: 1537-12-24
+death: 1586-11-06
+wikidata_id: Q698977
+metadata:
+  sources: [Wikidata Q698977 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q698977
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q698977
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q698977

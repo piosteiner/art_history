@@ -1,0 +1,22 @@
+public_id: 128363
+name: New Canaan
+kind: settlement
+parent: connecticut
+country_code: US
+location: [-73.4949, 41.1468]
+wikidata_id: Q754951
+metadata:
+  sources: [Wikidata Q754951 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q754951
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q754951
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q754951

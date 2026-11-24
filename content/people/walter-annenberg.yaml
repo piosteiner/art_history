@@ -21,6 +21,16 @@ death: 2002-10-01
 wikidata_id: Q1750541
 metadata:
   sources: [Wikidata Q1750541 (retrieved 2026-10-30)]
+relationships:
+  - type: married_to
+    to: person/leonore-annenberg
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q1750541
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q3830643
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Walter_Annenberg_1981.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Walter_Annenberg_1981.jpg

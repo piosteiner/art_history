@@ -1,0 +1,16 @@
+public_id: 124846
+name: Sierra de los Tuxtlas
+kind: natural
+location: [-94.95, 18.45]
+wikidata_id: Q1080344
+metadata:
+  sources: [Wikidata Q1080344 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1080344
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1080344

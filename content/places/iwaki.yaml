@@ -1,0 +1,47 @@
+public_id: 123899
+name: Iwaki
+names:
+  - lang: ja
+    role: original
+    text: いわき市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q274384
+  - lang: zh
+    role: translation
+    text: 磐城市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q274384
+  - lang: ko
+    role: translation
+    text: 이와키시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q274384
+  - lang: ru
+    role: translation
+    text: Иваки
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q274384
+kind: settlement
+parent: japan
+country_code: JP
+location: [140.88772, 37.0505]
+wikidata_id: Q274384
+metadata:
+  sources: [Wikidata Q274384 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q274384
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q274384
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q274384

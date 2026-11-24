@@ -9,6 +9,16 @@ death: 1958-06-19
 wikidata_id: Q116495
 metadata:
   sources: [Wikidata Q116495 (retrieved 2026-11-02)]
+relationships:
+  - type: child_of
+    to: artist/auguste-baud-bovy
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q116495
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q116395
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/86/Daniel_Baud-Bovy%2C_1906.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Daniel_Baud-Bovy,_1906.jpg

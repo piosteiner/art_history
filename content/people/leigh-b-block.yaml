@@ -9,6 +9,16 @@ death: 1987
 wikidata_id: Q72967671
 metadata:
   sources: [Wikidata Q72967671 (retrieved 2026-11-02)]
+relationships:
+  - type: married_to
+    to: person/mary-lasker-block
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q72967671
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q73571644
 identifiers:
   gnd: "118914340"
   lc: n96001780

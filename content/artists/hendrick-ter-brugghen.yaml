@@ -1,0 +1,18 @@
+public_id: 122962
+name: Hendrick ter Brugghen
+given_name: Hendrick
+family_name: ter Brugghen
+birth: 1588
+death: 1629-11-01
+wikidata_id: Q437233
+metadata:
+  sources: [Wikidata Q437233 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q437233
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q437233

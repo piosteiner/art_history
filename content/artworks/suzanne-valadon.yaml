@@ -1,0 +1,132 @@
+public_id: 123009
+title_lang: en
+title: Suzanne Valadon
+creator: pierre-auguste-renoir
+created: c. 1885
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [41.3, 31.8]
+institution: national-gallery-of-art
+inventory_number: 1963.10.60
+wikidata_id: Q20189794
+metadata:
+  sources: [Wikidata Q20189794 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: artist/suzanne-valadon
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20189794
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/65/Pierre-Auguste_Renoir_-_Suzanne_Valadon_-_profile.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Suzanne_Valadon_-_profile.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46535.html
+        note: (Ambroise Vollard [1866-1939], Paris);
+        source: nga-1963-10-60
+        accessed: 2026-11-24
+  - owner_label: heirs of Ambroise Vollard
+    method: inheritance
+    direct: true
+    place: paris
+    label: Vollard's brother Lucian sold his share of the collection to Fabiani
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46535.html
+        note: his heirs; — [1] After Vollard's death, his brother Lucian sold his share of the collection to Fabiani, who had worked with the dealer and was the executor of his will.
+        source: nga-1963-10-60
+        accessed: 2026-11-24
+  - owner: person/martin-fabiani
+    role: dealer
+    method: purchase
+    direct: true
+    place: paris
+    label: had worked with Vollard and was the executor of his will; shipped the pictures from France
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46535.html
+        note: (Martin Fabiani, Paris);[1] — [1] … his brother Lucian sold his share of the collection to Fabiani, who had worked with the dealer and was the executor of his will. Fabiani shipped the pictures from France,
+        source: nga-1963-10-60
+        accessed: 2026-11-24
+  - owner_label: British authorities, Bermuda
+    role: possessor
+    method: confiscation
+    direct: true
+    label: Fabiani's shipment from France confiscated in Bermuda
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46535.html
+        note: Fabiani shipped the pictures from France, but the shipment was confiscated in Bermuda by British authorities.
+        source: nga-1963-10-60
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-canada
+    role: custodian
+    ended: 1949
+    direct: true
+    place: ottawa
+    label: held there during the war years
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46535.html
+        note: The pictures spent the war years at the National Gallery of Canada in Ottawa, from where they were released to Fabiani and another dealer, Eduoard Jonas, in 1949.
+        source: nga-1963-10-60
+        accessed: 2026-11-24
+  - owner: person/martin-fabiani
+    role: dealer
+    acquired: 1949
+    method: restitution
+    direct: true
+    label: released from Ottawa to Fabiani and the dealer Edouard Jonas; later shipped from France by René Haas acting for Fabiani
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46535.html
+        note: from where they were released to Fabiani and another dealer, Eduoard Jonas, in 1949. … [2] The painting was shipped from France by Rene Haas, acting for Fabiani, according to consular paperwork
+        source: nga-1963-10-60
+        accessed: 2026-11-24
+  - owner: person/chester-dale
+    acquired: 1950-03
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46535.html
+        note: sold March 1950 to Chester Dale [1882-1962], New York;[2]
+        source: nga-1963-10-60
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1963
+    method: bequest
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46535.html
+        note: bequest 1963 to NGA.
+        source: nga-1963-10-60
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20189794
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20189794
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20189794
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20189794
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20189794
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20189794

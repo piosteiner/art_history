@@ -1,0 +1,16 @@
+public_id: 124471
+name: Saitama Prefectural Museum of the Sakitama Ancient Burial Mounds
+kind: museum
+founded: 1969
+wikidata_id: Q5017775
+metadata:
+  sources: [Wikidata Q5017775 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q5017775
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q5017775

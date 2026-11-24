@@ -1,0 +1,22 @@
+public_id: 127623
+name: El Escorial
+kind: settlement
+parent: madrid-province
+country_code: ES
+location: [-4.12512, 40.58161]
+wikidata_id: Q985269
+metadata:
+  sources: [Wikidata Q985269 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q985269
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q985269
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q985269

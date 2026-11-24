@@ -1,0 +1,71 @@
+public_id: 124482
+title: Suda Hachiman Shrine Mirror
+names:
+  - lang: fr
+    role: translation
+    text: Miroir du sanctuaire Suda Hachiman
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q847274
+  - lang: ja
+    role: translation
+    text: 隅田八幡神社人物画像鏡
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q847274
+  - lang: zh
+    role: translation
+    text: 隅田八幡神社人物畫像鏡
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q847274
+  - lang: ko
+    role: translation
+    text: 스다하치만 신사 인물화상경
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q847274
+creator: kawachi-no-atai-ehito
+created: 443
+materials: [bronze]
+institution: suda-hachiman-shrine
+location: [139.7756, 35.71994]
+wikidata_id: Q847274
+metadata:
+  sources: [Wikidata Q847274 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+    period: 443
+  - type: co_creator
+    to: artist/imasuri
+    sources:
+      - accessed: 2026-11-24
+        property: P170
+        wikidata: Q847274
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/83/Sumida_Hatiman_Mirror.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Sumida_Hatiman_Mirror.JPG
+    license: Public domain
+    credit: ASUKAEN
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q847274
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q847274
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q847274
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q847274
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q847274

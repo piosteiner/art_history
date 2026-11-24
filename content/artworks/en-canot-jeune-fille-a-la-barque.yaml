@@ -178,7 +178,6 @@ provenance:
     check_after: 2026-11-18
   - owner: institution/sotheby-s
     role: agent
-    not_sold: true
     acquired: 2026-11-18
     method: auction
     direct: true
@@ -186,9 +185,22 @@ provenance:
     label: evening sale N12368, 18 November 2026, lot 8
     sources:
       - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
-        note: "Sotheby’s result: not sold"
+        note: the lot in this sale (the page shows the result only to logged-in visitors)
         source: sothebys-n12368-lot-8
         accessed: 2026-11-19
+      - note: "all 12 lots sold: “six of the collection’s 12 lots hammered below their low estimates, while five sold within or at their estimate ranges. Just one work exceeded expectations: the final lot”"
+        source: porterfield-2026-van-gogh-record
+        accessed: 2026-11-23
+  - owner_label: Private collection
+    acquired: 2026-11-18
+    method: auction
+    direct: true
+    place: new-york-city
+    label: bought at Sotheby’s, 18 November 2026 — the buyer is not named; the price is not reported
+    sources:
+      - note: "all 12 lots sold: “six of the collection’s 12 lots hammered below their low estimates, while five sold within or at their estimate ranges. Just one work exceeded expectations: the final lot”"
+        source: porterfield-2026-van-gogh-record
+        accessed: 2026-11-23
 numbers:
   - number: "261"
     source: daulte-1971

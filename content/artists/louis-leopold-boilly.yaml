@@ -1,0 +1,18 @@
+public_id: 122833
+name: Louis-Léopold Boilly
+given_name: Louis-Léopold
+family_name: Boilly
+birth: 1761-07-05
+death: 1845-01-04
+wikidata_id: Q715909
+metadata:
+  sources: [Wikidata Q715909 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q715909
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q715909

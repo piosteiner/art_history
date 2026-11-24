@@ -1,0 +1,23 @@
+public_id: 124240
+name: Zhang Ji
+given_name: Zhang
+family_name: Ji
+kind: person
+birth: c. 766
+death: c. 830
+wikidata_id: Q836849
+metadata:
+  sources: [Wikidata Q836849 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q836849
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q836849
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q836849

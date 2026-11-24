@@ -1,0 +1,152 @@
+public_id: 124694
+title_lang: en
+title: Under the Trees (from "The Public Gardens")
+names:
+  - lang: fr
+    role: translation
+    text: Sous les arbres d'un jardin public
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60516343
+  - lang: it
+    role: translation
+    text: Sotto gli alberi di un giardino pubblico)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60516343
+parent: jardins-publics
+creator: edouard-vuillard
+created: 1894
+materials: [canvas, oil paint]
+dimensions: [214.2, 96.3]
+institution: cleveland-museum-of-art
+inventory_number: "1953.212"
+web_url: https://clevelandart.org/art/1953.212
+wikidata_id: Q60516343
+metadata:
+  sources: [Wikidata Q60516343 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/%C3%89douard_vuillard%2C_sotto_gli_alberi_%28da_giardini_pubblici%29%2C_1894.jpg/1280px-%C3%89douard_vuillard%2C_sotto_gli_alberi_%28da_giardini_pubblici%29%2C_1894.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_vuillard,_sotto_gli_alberi_(da_giardini_pubblici),_1894.jpg
+    license: Public domain
+    credit: Sailko
+provenance:
+  - owner: person/alexandre-natanson
+    acquired: 1894
+    ended: 1929
+    method: commission
+    place: paris
+    label: one of nine Jardins publics canvases commissioned 1893 for his home, Avenue du Bois de Boulogne; reinstalled Avenue des Champs-Elysées 1908
+    sources:
+      - url: https://clevelandart.org/art/1953.212
+        note: This painting is one of nine canvases that Alexandre Natanson, director of La Revue blanche, commissioned from Vuillard in 1893 for his home in the Avenue du Bois de Boulogne.
+        source: cma-1953-212
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1929-05-16
+    method: auction
+    direct: true
+    place: paris
+    label: Natanson sale, Hôtel Drouot, Paris, 16 May 1929, lot 122; the cycle dispersed
+    sources:
+      - url: https://clevelandart.org/art/1953.212
+        note: "(Natanson sale, Hôtel Drouot, Paris, May 16, 1929, lot 122, sold to Georges Bénard) [date: 1929]"
+        source: cma-1953-212
+        accessed: 2026-11-24
+  - owner: person/georges-benard
+    acquired: 1929-05-16
+    ended: 1933
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1953.212
+        note: "Georges Bénard, Paris [date: 1929-1933]"
+        source: cma-1953-212
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1933-06-09
+    method: auction
+    direct: true
+    place: paris
+    label: Bénard sale, Hôtel Drouot, Paris, 9 June 1933, lot 90; sold together with La promenade (no. 89)
+    sources:
+      - url: https://clevelandart.org/art/1953.212
+        note: "(Bénard sale, Hôtel Drouot, Paris, June 9, 1933, lot 90, sold to Henri Blum) [date: 1933]"
+        source: cma-1953-212
+        accessed: 2026-11-24
+  - owner: person/henri-blum
+    acquired: 1933-06-09
+    method: auction
+    direct: true
+    place: paris
+    label: lent to the 1938 Vuillard exhibition, Musée des Arts Décoratifs
+    sources:
+      - url: https://clevelandart.org/art/1953.212
+        note: "Henri Blum, Paris [date: 1933-] — Blum, a collector of Impressonist works who was active in Paris throughout the 1930s and 1940s, lent the CMA painting to a 1938 Vuillard exhibition at the Musée des Arts Décoratifs."
+        source: cma-1953-212
+        accessed: 2026-11-24
+  - owner: person/cesar-mange-de-hauke
+    role: dealer
+    ended: 1953-05
+    place: new-york-city
+    label: sale to Knoedler perhaps brokered by Paul Brame (Galerie Hector Brame has no record of it)
+    sources:
+      - url: https://clevelandart.org/art/1953.212
+        note: "(César de Hauke, New York, sold to Knoedler & Co.) [date: Until 1953] — This sale may have been brokered by Parisian dealer, Paul Brame."
+        source: cma-1953-212
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1953-05
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: stock no. A5278
+    sources:
+      - url: https://clevelandart.org/art/1953.212
+        note: The Knoedler inventory card … does not specify the date de Hauke sold the painting (stock no. A5278) to Knoedler, but CMA records indicate the transaction took place in May 1953.
+        source: cma-1953-212
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1953
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Gift of the Hanna Fund
+    sources:
+      - url: https://clevelandart.org/art/1953.212
+        note: "(Knoedler & Co., New York, sold to the Cleveland Museum of Art) [date: 1953] The Cleveland Museum of Art, Cleveland, OH [date: 1953-]"
+        source: cma-1953-212
+        accessed: 2026-11-24
+sources:
+  parent:
+    - accessed: 2026-11-24
+      property: P179
+      wikidata: Q60516343
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60516343
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60516343
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60516343
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60516343
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60516343
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60516343

@@ -1,0 +1,92 @@
+public_id: 124142
+title: Shaka rising from the Gold Coffin
+names:
+  - lang: ja
+    role: translation
+    text: 釈迦金棺出現図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q47604352
+created: 11th century
+created_span: uncertain
+materials: [silk]
+dimensions: [160, 229.5]
+institution: kyoto-national-museum
+location: [135.7735, 34.98995]
+wikidata_id: Q47604352
+metadata:
+  sources: [Wikidata Q47604352 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+    period: 11th century
+  - type: depicts_person
+    to: person/the-buddha
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q47604352
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Syaka-Kinkan.jpg/1280px-Syaka-Kinkan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Syaka-Kinkan.jpg
+    license: Public domain
+    credit: Unknown author
+provenance:
+  - owner_label: unknown Buddhist painter
+    acquired: 11th century
+    method: creation
+    label: late Heian period
+    sources:
+      - url: https://www.kyohaku.go.jp/eng/collection/meihin/butsuga/item01/
+        note: Japan, Late-Heian Period, 11th century
+        source: knm-ak373
+        accessed: 2026-11-24
+  - owner: institution/choho-ji
+    label: formerly at Chōhō-ji (長法寺), Kyoto
+    sources:
+      - url: https://projects.mcah.columbia.edu/jaanus/node/3094
+        note: the only example of a painting devoted solely to this episode is that at Kyoto National Museum (formerly at Chōhōji 長法寺, Kyoto, late 11th century)
+        source: jaanus-kinkan-shutsugen-zu
+        accessed: 2026-11-24
+  - owner: institution/matsunaga-memorial-hall
+    label: Matsunaga Kinenkan (Matsunaga Memorial Hall)
+    sources:
+      - url: https://www.kyohaku.go.jp/eng/collection/meihin/butsuga/item01/
+        note: Donated by Matsunaga Kinen-kan
+        source: knm-ak373
+        accessed: 2026-11-24
+  - owner: institution/kyoto-national-museum
+    method: gift
+    direct: true
+    place: kyoto
+    label: gift of the Matsunaga Kinenkan, inv. AK373 (A甲373); owner of record the National Institutes for Cultural Heritage
+    sources:
+      - url: https://www.kyohaku.go.jp/eng/collection/meihin/butsuga/item01/
+        note: Donated by Matsunaga Kinen-kan | Kyoto National Museum (AK373)
+        source: knm-ak373
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/23
+        note: 保管施設の名称 ： 京都国立博物館 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-23
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q47604352
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q47604352
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q47604352
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q47604352
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q47604352

@@ -35,6 +35,20 @@ relationships:
       - accessed: 2026-11-02
         property: P937
         wikidata: Q1375891
+  - type: participated_in
+    to: event/shogakai-kimoiri-dispute-1838
+    label: one of the 23 literati
+    sources:
+      - source: campbell-1987-tenpoki-zengo-shogakai
+        locator: pp. 61–63
+        accessed: 2026-11-23
+  - type: participated_in
+    to: event/tani-buncho-manpachiro-gathering-1792
+    label: host
+    sources:
+      - source: koyama-2026-ryogoku-yanagibashi-shogakai
+        locator: p. 33, n. 4
+        accessed: 2026-11-23
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Portrait_of_Tani_Bunch%C5%8D.jpg/1280px-Portrait_of_Tani_Bunch%C5%8D.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Tani_Bunch%C5%8D.jpg

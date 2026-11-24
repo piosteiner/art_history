@@ -1,0 +1,16 @@
+public_id: 124247
+name: Dongting Lake
+kind: natural
+location: [112.95, 29.31667]
+wikidata_id: Q216083
+metadata:
+  sources: [Wikidata Q216083 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q216083
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q216083

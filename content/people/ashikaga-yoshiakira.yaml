@@ -1,0 +1,23 @@
+public_id: 124165
+name: Ashikaga Yoshiakira
+given_name: Ashikaga
+family_name: Yoshiakira
+kind: person
+birth: 1330-07-12
+death: 1368-01-05
+wikidata_id: Q466321
+metadata:
+  sources: [Wikidata Q466321 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q466321
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q466321
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q466321

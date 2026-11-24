@@ -1,0 +1,29 @@
+public_id: 126422
+name: Rorschacherberg
+names:
+  - lang: ru
+    role: translation
+    text: Роршахерберг
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q66269
+kind: settlement
+parent: sankt-gallen
+country_code: CH
+location: [9.5, 47.46639]
+wikidata_id: Q66269
+metadata:
+  sources: [Wikidata Q66269 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q66269
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q66269
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q66269

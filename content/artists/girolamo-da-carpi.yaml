@@ -1,0 +1,18 @@
+public_id: 125077
+name: Girolamo da Carpi
+given_name: Girolamo
+family_name: da Carpi
+birth: 1501
+death: 1556-08-01
+wikidata_id: Q2701846
+metadata:
+  sources: [Wikidata Q2701846 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2701846
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q2701846

@@ -16,6 +16,16 @@ death: 1687-12
 wikidata_id: Q9710430
 metadata:
   sources: [Wikidata Q9710430 (retrieved 2026-10-19)]
+relationships:
+  - type: child_of
+    to: person/maria-thins
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q4497888
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q9710430
 identifiers:
   viaf: "84256711"
 sources:

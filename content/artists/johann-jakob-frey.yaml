@@ -32,6 +32,15 @@ relationships:
       - accessed: 2026-11-12
         property: P937
         wikidata: Q1337730
+  - type: child_of
+    to: artist/samuel-frey
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q1337730
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q26278896
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Lepsius-Expedition-Cheops-Pyramide_%28full%29.jpg/1280px-Lepsius-Expedition-Cheops-Pyramide_%28full%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Lepsius-Expedition-Cheops-Pyramide_(full).jpg

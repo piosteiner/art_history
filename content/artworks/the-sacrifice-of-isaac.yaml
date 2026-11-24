@@ -1,0 +1,192 @@
+public_id: 124652
+title_lang: it
+title: Il sacrificio di Isacco
+names:
+  - lang: en
+    role: original
+    text: The Sacrifice of Isaac
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q59115342
+  - lang: de
+    role: translation
+    text: Abrahams Opfer
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q59115342
+creator: andrea-del-sarto
+created: c. 1527
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [178, 138]
+institution: cleveland-museum-of-art
+inventory_number: "1937.577"
+web_url: https://clevelandart.org/art/1937.577
+wikidata_id: Q59115342
+metadata:
+  sources: [Wikidata Q59115342 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Andrea_del_Sarto_-_Il_sacrificio_di_Isacco_%28Cleveland%29.jpg/1280px-Andrea_del_Sarto_-_Il_sacrificio_di_Isacco_%28Cleveland%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andrea_del_Sarto_-_Il_sacrificio_di_Isacco_(Cleveland).jpg
+    license: Public domain
+    credit: Andrea del Sarto
+provenance:
+  - owner: person/carlo-de-medici
+    acquired: 1649 or earlier
+    place: florence
+    label: Cardinal Carlo de' Medici
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: "Cardinal Carlo de' Medici, Florence  [date: By 1649]"
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner_label: Montalvi Collection, Florence
+    place: florence
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: Possibly the Montalvi Collection, Florence
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner_label: Peruzzi Collection, Florence
+    place: florence
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: Possibly the Peruzzi Collection, Florence
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner_label: Zondadari Collection, Florence
+    acquired: 1829 or earlier
+    place: florence
+    label: see Biadi, 1829
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: "Zondadari Collection, Florence  [date: By 1829] — See Biadi, 1829"
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner: person/william-cave
+    acquired: 1846
+    ended: 1858
+    method: purchase
+    place: brentry
+    label: bought in Florence in 1846; Brentry House, near Bristol
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: "William Cave, died 1858 (Brentry House, near Bristol, bought in Florence in 1846), by inheritance to his wife.  [date: 1846 - 1858]"
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    not_sold: true
+    acquired: 1854-06-29
+    method: auction
+    place: london
+    label: Christie's, London, 29 June 1854, lot 77, unsold
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: Unsold, Christie's, London, June 29, 1854, lot 77
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner_label: Mrs. William Cave
+    acquired: 1858
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: "William Cave, died 1858 (...), by inheritance to his wife. / Mrs. William Cave  [date: 1858]"
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1858-06-22
+    method: auction
+    place: london
+    label: Christie's, London, 22 June 1858, lot 102
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: "Sold, Christie's, London, June 22, 1858, lot 102  [date: 1858]"
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner_label: Peters
+    acquired_label: 1858 – 1882
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: "Possibly Peters  [date: 1858 - 1882]"
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner: person/george-cornwall-legh
+    acquired_label: "1882 – ? (RA catalogue 1882: purchased 1862 at Florence)"
+    place: high-legh
+    label: 'RA exhibition Winter 1882, no. 206: "purchased by George Cornwall Legh in 1862 at Florence; in the Tordanari collection"'
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: 'George Cornwall Legh, High Legh, Co. Chester  [date: 1882 - ?] — According to Royal Academy exhibition catalogue, Winter 1882, no. 206, "purchased by George Cornwall Legh in 1862 at Florence; in the Tordanari collection"'
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner: person/henry-cornwall-legh
+    place: high-legh
+    label: Lieutenant Colonel Henry Cornwall Legh
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: "Lieutenant Colonel Henry Cornwall Legh, High Legh, Co. Chester  [date: ? - 1935]"
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1935-05-21
+    method: auction
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: "Sold at Sotheby's, London, May 21, 1935, to Spencer Samuels  [date: 1935]"
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner: person/spencer-samuels
+    co_owners: [person/t-harris, institution/durlacher-brothers]
+    role: dealer
+    acquired: 1935-05-21
+    method: auction
+    direct: true
+    label: Spencer Samuels and T. Harris, London, and Durlacher Brothers, New York
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: "Spencer Samuels, T. Harris, London, and Durlacher Brothers, New York  [date: 1935 - 1937]"
+        source: cma-1937-577
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1937
+    method: purchase
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1937.577
+        note: "The Cleveland Museum of Art, Cleveland, OH  [date: 1937 -]"
+        source: cma-1937-577
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q59115342
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q59115342
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q59115342
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q59115342
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q59115342
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q59115342

@@ -1,0 +1,75 @@
+public_id: 124274
+title: Portrait of Lanxi Daolong
+names:
+  - lang: ja
+    role: translation
+    text: 蘭渓道隆像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045374
+created: 1271
+institution: kencho-ji-temple
+wikidata_id: Q107045374
+metadata:
+  sources: [Wikidata Q107045374 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/lanxi-daolong
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107045374
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/Lanxi_Daolong.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lanxi_Daolong.jpg
+    license: Public domain
+    credit: inscription by Lanxi Daolong
+provenance:
+  - owner_label: unknown painter
+    acquired: 1271
+    method: creation
+    place: kamakura
+    label: chinsō portrait of the Chan master Lanxi Daolong (Rankei Dōryū, 1213–1278) with his own inscription of Bun'ei 8 (1271)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/36
+        note: 時代 ： 鎌倉 | 年代 ： 1271 | 西暦 ： 1271 … ト書 ： 文永八年の自賛がある
+        source: kunishitei-201-36
+        accessed: 2026-11-24
+  - owner_label: Rōnen Koji (朗然居士)
+    acquired: 1271
+    label: painted for the lay Buddhist Rōnen Koji — possibly the lay name of Hōjō Tokimune (Wikipedia's query)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111453597
+        note: 上段に記された蘭渓道隆の自賛により、文永8年（1271年）に朗然居士（北条時宗の居士名か？）のために描かれたと分かる
+        source: wikipedia-ja-111453597
+        accessed: 2026-11-24
+  - owner: institution/kencho-ji-temple
+    place: kamakura
+    label: owned by Kenchō-ji, the temple Lanxi Daolong founded; Important Cultural Property 1905, National Treasure 29 March 1952
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/36
+        note: 重文指定年月日 ： 1905.08.29(明治38.08.29) | 国宝指定年月日 ： 1952.03.29(昭和27.03.29) … 所有者名 ： 建長寺
+        source: kunishitei-201-36
+        accessed: 2026-11-24
+  - owner: institution/komyo-ji-kamakura
+    role: custodian
+    place: kamakura
+    label: deposited by Kenchō-ji at the Kamakura Museum of National Treasures (date not stated); kunishitei names Kamakura City as manager
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/36
+        note: 管理団体・管理責任者名 ： 鎌倉市
+        source: kunishitei-201-36
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111821954
+        note: ※以下の国宝・重要文化財のうち「鎌倉市所有」とあるもの以外は社寺からの寄託品。 … 絹本淡彩蘭溪道隆像 - [[建長寺]]所有
+        source: wikipedia-ja-111821954
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111726627
+        note: その他の書画、工芸品の大部分は[[鎌倉国宝館]]に寄託されており
+        source: wikipedia-ja-111726627
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107045374

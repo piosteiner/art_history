@@ -1,0 +1,18 @@
+public_id: 123063
+name: Jean-Marc Nattier
+given_name: Jean-Marc
+family_name: Nattier
+birth: 1685-03-17
+death: 1766-11-07
+wikidata_id: Q277738
+metadata:
+  sources: [Wikidata Q277738 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q277738
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q277738

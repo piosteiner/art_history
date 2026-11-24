@@ -1,0 +1,23 @@
+public_id: 124763
+name: Kinokuniya Bunzaemon
+given_name: Kinokuniya
+family_name: Bunzaemon
+kind: person
+birth: 1669
+death: 1734-05-26
+wikidata_id: Q6414183
+metadata:
+  sources: [Wikidata Q6414183 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q6414183
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q6414183
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q6414183

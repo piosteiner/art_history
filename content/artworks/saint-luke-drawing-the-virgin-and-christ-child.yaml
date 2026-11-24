@@ -1,0 +1,236 @@
+public_id: 125078
+title_lang: en
+title: Saint Luke Drawing the Virgin and Christ Child
+creator: girolamo-da-carpi
+created: c. 1535
+created_span: uncertain
+dimensions: [47, 34]
+institution: art-institute-of-chicago
+inventory_number: "2007.246"
+wikidata_id: Q20266384
+metadata:
+  sources: [Wikidata Q20266384 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: artist/luke-the-evangelist
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20266384
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Girolamo_da_Carpi_-_Saint_Luke_Drawing_the_Virgin_and_Christ_Child_-_2007.246_-_Art_Institute_of_Chicago.jpg/1280px-Girolamo_da_Carpi_-_Saint_Luke_Drawing_the_Virgin_and_Christ_Child_-_2007.246_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Girolamo_da_Carpi_-_Saint_Luke_Drawing_the_Virgin_and_Christ_Child_-_2007.246_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Girolamo da Carpi
+provenance:
+  - owner: person/lucrezia-d-este
+    acquired: 1592 or earlier
+    place: ferrara
+    label: Duchess of Urbino; recorded 1592 in the oratory of the Palazzo d'Este as by Girolamo da Carpi; probably inherited from Ercole II d'Este (d. 1559) or Cardinal Ippolito II d'Este (d. 1572)
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: Lucrezia d’Este (died 1598), Duchess of Urbino, Ferrara, by 1592, when it was recorded in the oratory of the Palazzo d’Este, Ferrara, as “…San Luca che ritrae la Madonna con Nro Sigre in brazzo di mano di Girolamo da Carpi” […; Lucrezia had probably inherited it from her father Duke Ercole II d’Este (died 1559) or her uncle Cardinal Ippolito II d’Este (died 1572)];
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/pietro-aldobrandini
+    method: bequest
+    direct: true
+    place: rome
+    label: Cardinal; Rome and Frascati; 1603 Aldobrandini inventory no. 61, as by Raphael
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: bequeathed by her to Cardinal Pietro Aldobrandini (died 1621), Rome and Frascati, listed in 1603 Aldobrandini inventory as by Raphael, “San Luca, che sta ritrando la Madonna, di Raffaelle da Urbino”
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/ippolito-aldobrandini-2
+    method: inheritance
+    direct: true
+    place: rome
+    label: Cardinal, nephew of Pietro; Rome and Frascati; 1626 Aldobrandini inventory no. 42, as by Raphael
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: by descent to his nephew Cardinal Ippolito Aldobrandini (died 1638), Rome and Frascati, no. 42 in 1626 Aldobrandini inventory, “Un quadro con S luca che sta ritrahendo la Mad.a di mano di Raffael d’Urbino del n. 61”
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/olimpia-aldobrandini-2
+    method: inheritance
+    direct: true
+    place: rome
+    label: niece of Ippolito; Rome and Frascati; 1682 inventory no. 312, as by Raphael
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: by descent to his niece Olimpia Aldobrandini (died 1682), Rome and Frascati, in 1682 inventory as no. 312, “Un quadro in tavola con San Luca che sta ritrahendo la Madonna, … di mano di Raffaele d’Urbino…”
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/giovanni-battista-pamphili
+    method: inheritance
+    direct: true
+    place: rome
+    label: Prince; son of Olimpia Aldobrandini
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: probably by descent to her son Prince Giovanni Battista Pamphili (died 1709), Rome;
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/girolamo-pamphili
+    method: inheritance
+    direct: true
+    place: rome
+    label: Prince; son of Giovanni Battista Pamphili
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: probably by descent to his son Prince Girolamo Pamphili (died 1760), Rome.
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/richard-dalton
+    role: agent
+    acquired: c. 1763
+    method: purchase
+    place: rome
+    label: acquired for Sir Richard Grosvenor, as by Raphael
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: Acquired in Rome by Richard Dalton about 1763 for Sir Richard Grosvenor, 1st Earl Grosvenor, London, as by Raphael
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/richard-grosvenor-1st-earl-grosvenor
+    acquired: c. 1763
+    method: purchase
+    direct: true
+    place: london
+    label: as by Raphael; Young 1820 no. 56, Grosvenor House catalogue 1876 no. 69
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: Acquired in Rome by Richard Dalton about 1763 for Sir Richard Grosvenor, 1st Earl Grosvenor, London, as by Raphael [according to Young 1820, no. 56 and Grosvenor House Catalogue 1876, p. 24, no. 69];
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/hugh-richard-arthur-grosvenor-2nd-duke-of-westminster
+    ended_label: until at least 1903
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: by descent to Hugh Richard Arthur Grosvenor, 2nd Duke of Westminster, until at least 1903 [Berenson 1903].
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/alfred-charles-de-rothschild
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: Baron Alfred de Rothschild (died 1918), London [according to the 1925 sale catalogue of his daughter’s collection];
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/almina-herbert-countess-of-carnarvon
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: by descent to his daughter, Almina, Countess of Carnarvon;
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1925-05-22
+    method: auction
+    direct: true
+    place: london
+    label: sale of the Countess of Carnarvon, lot 89
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: her sale, Christie’s, London, May 22, 1925, lot no. 89, to Douglas
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/robert-langton-douglas
+    role: dealer
+    acquired: 1925-05-22
+    method: auction
+    direct: true
+    place: london
+    label: London and Fiesole
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: to Douglas [according to annotated copy of sale catalogue in Ryerson Library; copy in curatorial file]; R. Langton Douglas, London and Fiesole, 1925
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/georg-gronau
+    acquired: 1930 or earlier
+    place: fiesole
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: Georg Gronau (died 1938), Fiesole, by 1930;
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/hans-dietrich-gronau
+    method: inheritance
+    direct: true
+    place: london
+    label: London and Florence
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: by descent to his son, Hans-Dietrich Gronau (died 1951), London and Florence;
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: person/carmen-gronau
+    direct: true
+    place: london
+    label: widow of Hans-Dietrich Gronau; London and Florence
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: his widow, Carmen Gronau (died 1999), London and Florence;
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner_label: granddaughter of Carmen Gronau, London
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: by descent to her grand-daughter, London;
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: institution/michael-tollemache-fine-art
+    role: agent
+    direct: true
+    place: london
+    label: agent for the Gronau family
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: sold to the Art Institute of Chicago with Michael Tollemache Fine Art, London, as agent.
+        source: aic-2007-246
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 2007
+    method: purchase
+    direct: true
+    place: chicago
+    label: accession number 2007.246
+    sources:
+      - url: https://www.artic.edu/artworks/190405
+        note: sold to the Art Institute of Chicago with Michael Tollemache Fine Art, London, as agent.
+        source: aic-2007-246
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20266384
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20266384
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20266384
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20266384
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20266384

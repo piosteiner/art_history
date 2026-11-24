@@ -1,0 +1,47 @@
+public_id: 123968
+name: Otoyo
+names:
+  - lang: ja
+    role: original
+    text: 大豊町
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1206441
+  - lang: zh
+    role: translation
+    text: 大丰町
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1206441
+  - lang: ko
+    role: translation
+    text: 오토요초
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1206441
+  - lang: ru
+    role: translation
+    text: Отоё
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1206441
+kind: settlement
+parent: japan
+country_code: JP
+location: [133.64294, 33.76856]
+wikidata_id: Q1206441
+metadata:
+  sources: [Wikidata Q1206441 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1206441
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1206441
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1206441

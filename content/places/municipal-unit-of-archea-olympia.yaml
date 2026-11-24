@@ -1,0 +1,22 @@
+public_id: 123121
+name: Municipal Unit of Archea Olympia
+kind: settlement
+parent: greece
+country_code: GR
+location: [21.64107, 37.66423]
+wikidata_id: Q16737148
+metadata:
+  sources: [Wikidata Q16737148 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q16737148
+  parent:
+    - accessed: 2026-11-23
+      property: P131
+      wikidata: Q16737148
+  location:
+    - accessed: 2026-11-23
+      property: P625
+      wikidata: Q16737148

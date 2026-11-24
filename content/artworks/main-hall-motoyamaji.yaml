@@ -1,0 +1,43 @@
+public_id: 123948
+title: Main Hall, Motoyamaji
+names:
+  - lang: ja
+    role: translation
+    text: 本山寺本堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020655
+created: 1300
+institution: motoyama-ji
+location: [133.694, 34.1397]
+wikidata_id: Q107020655
+metadata:
+  sources: [Wikidata Q107020655 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/mitoyo
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/MotoyamaJi%2CKagawa-Hondou.jpg/1280px-MotoyamaJi%2CKagawa-Hondou.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MotoyamaJi,Kagawa-Hondou.jpg
+    license: CC BY-SA 3.0
+    credit: Toto-tarou
+provenance:
+  - owner: institution/motoyama-ji
+    acquired: 1300
+    method: creation
+    place: mitoyo
+    label: rebuilt in Shōan 2 (1300) per the ridge-beam and foundation-stone inscriptions; the temple, then called Chōfuku-ji, took the name Motoyama-ji in the Tenpō era; restored to its original form in 1955; owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3305
+        note: 本山寺は大同二年（八〇七）空海（七七四～八三五）の開基と伝え、もとは長福寺と号していた。 … さらに正安二年（一三〇〇）に改築されたという。この棟札銘のほか、珍しく礎石裏面にも正安二年の墨書があったので、再建であることが明確となった。 … 所有者名 ： 本山寺 所有者種別 ： 寺院
+        source: kunishitei-102-3305
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E6%9C%AC%E5%B1%B1%E5%AF%BA_%28%E4%B8%89%E8%B1%8A%E5%B8%82%29
+        note: 江戸時代には領主の生駒氏と京極氏により再興され、天保年間（1830–1844年）には地名から本山寺と改称された。
+        source: wikipedia-ja-motoyama-ji
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020655

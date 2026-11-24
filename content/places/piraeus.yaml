@@ -1,0 +1,59 @@
+public_id: 126113
+name: Piraeus
+names:
+  - lang: ko
+    role: translation
+    text: 피레오스
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q58976
+  - lang: fr
+    role: translation
+    text: Le Pirée
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q58976
+  - lang: de
+    role: translation
+    text: Piräus
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q58976
+  - lang: it
+    role: translation
+    text: Pireo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q58976
+  - lang: es
+    role: translation
+    text: El Pireo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q58976
+  - lang: ru
+    role: translation
+    text: Пирей
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q58976
+kind: settlement
+parent: attiki
+country_code: GR
+location: [23.64694, 37.943]
+wikidata_id: Q58976
+metadata:
+  sources: [Wikidata Q58976 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q58976
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q58976
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q58976

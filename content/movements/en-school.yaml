@@ -1,0 +1,11 @@
+public_id: 124994
+name: En school
+kind: movement
+wikidata_id: Q11394807
+metadata:
+  sources: [Wikidata Q11394807 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11394807

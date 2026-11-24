@@ -1,0 +1,24 @@
+public_id: 128860
+name: Cap d'Antibes
+names:
+  - lang: ru
+    role: translation
+    text: Кап-д'Антиб
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1994367
+kind: settlement
+country_code: FR
+location: [7.13, 43.54972]
+wikidata_id: Q1994367
+metadata:
+  sources: [Wikidata Q1994367 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1994367
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1994367

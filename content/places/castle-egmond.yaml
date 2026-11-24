@@ -1,0 +1,16 @@
+public_id: 125122
+name: Castle Egmond
+kind: building
+location: [4.65371, 52.6222]
+wikidata_id: Q2800737
+metadata:
+  sources: [Wikidata Q2800737 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2800737
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2800737

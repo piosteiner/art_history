@@ -1,0 +1,76 @@
+public_id: 124110
+title: Nezame Monogatari Emaki
+names:
+  - text: Scroll of the Nezame Monogatari
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q51685293
+  - text: Tale of Nezame Scroll
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q51685293
+  - lang: fr
+    role: translation
+    text: Roman enluminé de Nezame
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q51685293
+  - lang: ja
+    role: translation
+    text: 寝覚物語絵巻
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q51685293
+  - lang: zh
+    role: translation
+    text: 寝覺物語繪卷
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q51685293
+created: 12th century
+created_span: uncertain
+materials: [paper, paint, India ink, mica, gold, silver]
+dimensions: [25.8]
+institution: museum-yamato-bunkakan
+wikidata_id: Q51685293
+metadata:
+  sources: [Wikidata Q51685293 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/NEZAME_MONOGATARI1_handscroll.jpg/1280px-NEZAME_MONOGATARI1_handscroll.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:NEZAME_MONOGATARI1_handscroll.jpg
+    license: Public domain
+    credit: "Anonymus 12th century painter, Photo: YAMATO-BUNKAKAN(ACE1954)"
+provenance:
+  - owner: institution/kintetsu-group-holdings
+    label: owner of the scroll (National Treasure since 22 November 1962), kept at the Museum Yamato Bunkakan
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/63
+        note: 国宝指定年月日 ： 1962.11.22(昭和37.11.22) … 保管施設の名称 ： 公益財団法人大和文華館 所有者名 ： 近鉄グループホールディングス株式会社
+        source: kunishitei-201-63
+        accessed: 2026-11-24
+  - owner: institution/museum-yamato-bunkakan
+    role: custodian
+    place: nara
+    label: kept and shown at the Yamato Bunkakan
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/63
+        note: 所在地 ： 奈良県奈良市学園南1-11-6 保管施設の名称 ： 公益財団法人大和文華館
+        source: kunishitei-201-63
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q51685293
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q51685293
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q51685293
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q51685293

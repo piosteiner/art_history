@@ -1,0 +1,78 @@
+public_id: 122933
+title_lang: en
+title: Casket
+created: 1100/1150
+kind: enamel
+medium: gilded copper, champlevé enamel, wood core (modern)
+dimensions: [9.3, 23.4, 13.5]
+institution: cleveland-museum-of-art
+inventory_number: "1949.16"
+web_url: https://clevelandart.org/art/1949.16
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1949.16/1949.16_web.jpg
+    source_url: https://clevelandart.org/art/1949.16
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/debruge-dumenil
+    ended: 1849
+    sources:
+      - url: https://clevelandart.org/art/1949.16
+        note: Debruge Duménil (French, 1788-1838) [?-1849]
+        source: cma-1949-16
+        accessed: 2026-11-24
+  - owner: person/prince-peter-soltykoff
+    ended: 1861
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1949.16
+        note: Prince Peter Soltykoff (Russian, 1840 - 1861), Paris, France [?-1861]
+        source: cma-1949-16
+        accessed: 2026-11-24
+  - owner: person/george-attenborough
+    acquired: 1861
+    sources:
+      - url: https://clevelandart.org/art/1949.16
+        note: George Attenborough, esq. [1861-?]
+        source: cma-1949-16
+        accessed: 2026-11-24
+  - owner: person/paul-shuvalov
+    place: saint-petersburg
+    sources:
+      - url: https://clevelandart.org/art/1949.16
+        note: Count Paul Shuvalov (1830-1908), St. Petersburgh
+        source: cma-1949-16
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    place: saint-petersburg
+    sources:
+      - url: https://clevelandart.org/art/1949.16
+        note: The Hermitage, Leningrad
+        source: cma-1949-16
+        accessed: 2026-11-24
+  - owner: person/hans-heinrich-thyssen-bornemisza
+    place: lugano
+    sources:
+      - url: https://clevelandart.org/art/1949.16
+        note: Baron Thyssen-Bornemisza (1921-2002), Lugano, Switzerland
+        source: cma-1949-16
+        accessed: 2026-11-24
+  - owner: person/adolph-loewi
+    role: dealer
+    place: los-angeles
+    sources:
+      - url: https://clevelandart.org/art/1949.16
+        note: (Adolph Loewi, Los Angeles, sold to the Cleveland Museum of Art) [?-1949]
+        source: cma-1949-16
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1949
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Purchase from the J. H. Wade Fund
+    sources:
+      - url: https://clevelandart.org/art/1949.16
+        note: The Cleveland Museum of Art, Cleveland, OH [1949-]
+        source: cma-1949-16
+        accessed: 2026-11-24

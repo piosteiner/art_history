@@ -53,6 +53,15 @@ relationships:
       - accessed: 2026-10-09
         property: P135
         wikidata: Q285933
+  - type: child_of
+    to: artist/jan-brueghel-the-elder
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q209050
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q285933
 identifiers:
   gnd: "118702173"
   lc: n85095027

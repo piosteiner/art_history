@@ -1,0 +1,158 @@
+public_id: 122840
+title_lang: en
+title: Saint Jerome in the Desert
+names:
+  - lang: de
+    role: translation
+    text: Hl. Hieronymus in der Wüste
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q63809345
+  - lang: it
+    role: translation
+    text: San Girolamo in deserto
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q63809345
+creator: desiderio-da-settignano
+created: c. 1461
+created_span: uncertain
+materials: [marble]
+dimensions: [42.7, 54.8]
+institution: national-gallery-of-art
+inventory_number: 1942.9.113
+web_url: https://www.getty.edu/news/getty-museum-acquires-bust-young-boy-by-desiderio-da-settignano/
+provenance_status: a_clear
+provenance_status_note: Bought 1921 through Wilhelm R. Valentiner by the Estate of Peter A.B. Widener (funds of Joseph E. Widener); Joseph E. Widener, Lynnewood Hall, Elkins Park, until the gift to the NGA in 1942.
+wikidata_id: Q63809345
+metadata:
+  sources: [Wikidata Q63809345 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/jerome
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q63809345
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Desiderio_da_Settignano%2C_Saint_Jerome_in_the_Desert%2C_c._1461%2C_NGA_1252.jpg/1280px-Desiderio_da_Settignano%2C_Saint_Jerome_in_the_Desert%2C_c._1461%2C_NGA_1252.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Desiderio_da_Settignano,_Saint_Jerome_in_the_Desert,_c._1461,_NGA_1252.jpg
+    license: CC0
+    credit: Desiderio da Settignano
+provenance:
+  - owner_label: Palazzo Vecchio, Florence (Prima Stanza della guardaroba segreta)
+    acquired: 1553 or earlier
+    place: florence
+    label: possibly the marble 'basso relievo' of 'San Gírolamo' in the Prima Stanza della guardaroba segreta, 1553 (Conti 1893, cited by Penny 2007)
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1252.html
+        note: Possibly the marble "basso relievo" of "San Gírolamo" in the "Prima Stanza della guardaroba segreta" in Palazzo Vecchio in 1553.[1]
+        source: nga-1942-9-113
+        accessed: 2026-11-24
+  - owner: person/tito-gagliardi
+    role: dealer
+    place: florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1252.html
+        note: (Tito Gagliardi, Florence);
+        source: nga-1942-9-113
+        accessed: 2026-11-24
+  - owner: person/maria-nikolaevna
+    acquired: c. 1870
+    method: purchase
+    direct: true
+    label: Grand Duchess, daughter of Tsar Nicholas I; bought as a gift to Baron Karl Eduard von Liphart, her principal adviser
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1252.html
+        note: purchased c. 1870 by Grand Duchess Maria Nikolaévna [1819-1876, daughter of Czar Nicolas I] as a gift to Baron Karl Eduard von Liphart
+        source: nga-1942-9-113
+        accessed: 2026-11-24
+  - owner: person/karl-eduard-von-liphart
+    acquired: c. 1870
+    method: gift
+    direct: true
+    place: florence
+    label: gift of Grand Duchess Maria Nikolaevna; removed c. 1891 to the family estate, Raadi Manor (Schloss Ratshof) near Tartu, Estonia
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1252.html
+        note: as a gift to Baron Karl Eduard von Liphart [1808-1891], Florence;[2] removed c. 1891 to the family estate, Raadi Manor, near Tartu, Estonia (known in German as Schloss Ratshof, near Dorpat);[3]
+        source: nga-1942-9-113
+        accessed: 2026-11-24
+  - owner: person/renaud-de-liphart
+    acquired: 1907 or earlier
+    place: tartu
+    label: his grandson; Raadi Manor by 1907 (Schubring 1907), then Poland, later Copenhagen
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1252.html
+        note: his grandson, Baron Renaud de Liphart, Raadi Manor, by 1907,[4] then Poland,[5] and later Copenhagen;
+        source: nga-1942-9-113
+        accessed: 2026-11-24
+  - owner: person/wilhelm-r-valentiner
+    role: agent
+    acquired: 1921
+    direct: true
+    place: new-york-city
+    label: purchase through Valentiner (correspondence with Baron de Liphart, then in Copenhagen, 1921)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1252.html
+        note: purchased 1921 through (Wilhelm R. Valentiner, New York) — [6] See correspondence between Valentiner and Baron de Liphart, then in Copenhagen, dated 1921
+        source: nga-1942-9-113
+        accessed: 2026-11-24
+  - owner: person/peter-a-b-widener
+    role: estate
+    acquired: 1921
+    method: purchase
+    direct: true
+    place: elkins-park
+    label: bought by the Estate of Peter A.B. Widener with funds of Joseph E. Widener
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1252.html
+        note: by the Estate of Peter A.B. Widener;[6] … after purchase 1921 by funds of Joseph E. Widener;
+        source: nga-1942-9-113
+        accessed: 2026-11-24
+  - owner: person/joseph-e-widener
+    method: inheritance
+    direct: true
+    place: elkins-park
+    label: inheritance from the Estate of Peter Widener by gift through power of appointment of Joseph E. Widener; Lynnewood Hall
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1252.html
+        note: inheritance from the Estate of Peter Widener by gift through power of appointment of Joseph E. Widener, Lynnewood Hall, Elkins Park, Pennsylvania, after purchase 1921 by funds of Joseph E. Widener;
+        source: nga-1942-9-113
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1942
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1252.html
+        note: gift 1942 to NGA.
+        source: nga-1942-9-113
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q63809345
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q63809345
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63809345
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q63809345
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63809345
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63809345

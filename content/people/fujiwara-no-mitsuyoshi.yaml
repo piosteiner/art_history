@@ -1,0 +1,23 @@
+public_id: 124164
+name: Fujiwara no Mitsuyoshi
+given_name: Fujiwara no
+family_name: Mitsuyoshi
+kind: person
+birth: 1132
+death: 1183-03-30
+wikidata_id: Q11623067
+metadata:
+  sources: [Wikidata Q11623067 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11623067
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q11623067
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q11623067

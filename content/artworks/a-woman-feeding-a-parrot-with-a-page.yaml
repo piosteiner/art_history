@@ -1,0 +1,317 @@
+public_id: 122809
+title_lang: en
+title: A Woman Feeding a Parrot, with a Page
+names:
+  - lang: nl
+    role: translation
+    text: Jonge vrouw in venster, een papegaai voerend
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15804434
+  - lang: fr
+    role: translation
+    text: Femme au perroquet
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15804434
+  - lang: de
+    role: translation
+    text: Frau einen Papagei fütternd mit Diener
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15804434
+  - lang: es
+    role: translation
+    text: Mujer con un loro en una ventana
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15804434
+  - lang: ja
+    role: translation
+    text: 窓辺の女性とオウム
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15804434
+  - lang: ru
+    role: translation
+    text: Дама с попугаем у окна
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15804434
+creator: caspar-netscher
+created: 1666
+materials: [oil paint, canvas]
+dimensions: [46, 37]
+institution: national-gallery-of-art
+inventory_number: 2016.118.1
+provenance_status: d_seized
+provenance_status_note: Confiscated from Hugo and Elisabeth Andriesse in Brussels by the ERR on 3 December 1941 (HA 9) and acquired for Göring on 20 March 1944; restituted by the Von der Heydt-Museum to the Andriesse heirs in 2014.
+wikidata_id: Q15804434
+metadata:
+  sources: [Wikidata Q15804434 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Young_woman_in_a_window_feeding_a_parrot%2C_by_Caspar_Netscher.jpg/1280px-Young_woman_in_a_window_feeding_a_parrot%2C_by_Caspar_Netscher.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Young_woman_in_a_window_feeding_a_parrot,_by_Caspar_Netscher.jpg
+    license: Public domain
+    credit: Caspar Netscher
+provenance:
+  - owner: artist/caspar-netscher
+    acquired: 1666
+    method: creation
+    label: sold by the artist for 100 or 130 guilders, per his inscription on the ricordo drawing (British Museum, Oo,11.250)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: The artist.[1] — [1] … “Geschildert voor h..d..[crossed out] guldens / 1666” … indicating that the artist sold the painting for either one hundred or one hundred and thirty guilders.
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: person/gerrit-uylenburgh
+    role: dealer
+    acquired: 1674
+    method: purchase
+    place: amsterdam
+    label: 'no. 89 in his 1675 inventory and appraisal for the Amsterdam Bankruptcy Chamber: "Young woman with a parrot by Netscher, the same as I paid in cash last year – 140"'
+    price:
+      amount: 140
+      currency: NLG
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: Purchased 1674 for 140 guilders by (Gerrit Uylenburgh [1625 – 1679], Amsterdam);[2] — [2] … Uylenburgh lists as no. 89 “Young woman with a parrot by Netscher, the same as I paid in cash last year – 140”
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: artist/peter-lely
+    role: agent
+    acquired: 1675-04-19 or earlier
+    method: transfer
+    direct: true
+    place: london
+    label: consigned by Uylenburgh; one of eight paintings "with Mr. Pieter Lelij in England"; not identifiable in Lely's sale of 18 April 1682
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: consigned by 19 April 1675 to Sir Peter Lely [1618-1680], London.[3] — [3] … the Netscher is included in a list of eight paintings described as being “with Mr. Pieter Lelij in England.” … The eight paintings seem to have been with Lely on commission
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: person/pierre-plongeron
+    place: the-hague
+    label: 'agent and chamberlain to the Elector Palatine; estate inventory of 27 September 1694: "een vrouwtien … met papegaij op de hant, van Netsgaer"'
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: possibly Pierre Plongeron [d. 1694], The Hague.[4] — [4] Plongeron was agent and chamberlain to the Elector Palatinate. His estate inventory of 27 September 1694 lists “een vrouwtien geschildert op peneel met papegaij op de hant, van Netsgaer”
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: person/johann-wilhelm-elector-palatine
+    place: dusseldorf
+    label: Detail des Peintures du Cabinet Électoral de Dusseldorff (1719?), no. 80
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: Johann Wilhelm II [1658-1716], Elector Palatine, Düsseldorf; — [5] The painting was published an undated inventory (1719?) of the Elector’s collection, Detail des Peintures du Cabinet Électoral de Dusseldorff, no. 80.
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: person/charles-iii-philip-elector-palatine
+    method: inheritance
+    direct: true
+    place: mannheim
+    label: moved 1730 with the collection to the palace in Mannheim; in Van der Schlichten's drawing of the picture cabinet (1731) and the Mannheim catalogue of 1736, no. 71
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: by inheritance to Karl III Philipp [1661-1742], Elector Palatine, and transferred 1730 with the collection to the elector’s palace in Mannheim; — [5] … a 1731 drawing of the Elector’s picture cabinet in Mannheim made by Jan Philips van der Schlichten … the 1736 catalogue of the Mannheim cabinet … no. 71.
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: person/charles-theodore-elector-of-bavaria
+    method: inheritance
+    direct: true
+    place: mannheim
+    label: Elector Palatine and Elector of Bavaria, Mannheim and Munich
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: by inheritance to Karl Theodor [1724-1799], Elector Palatine and Elector of Bavaria, Mannheim and Munich;
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: institution/bavarian-state-painting-collections
+    acquired: 1799
+    method: transfer
+    direct: true
+    place: munich
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: transferred 1799 to Royal Bavarian collections;
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: institution/alte-pinakothek
+    acquired: 1836
+    method: transfer
+    direct: true
+    place: munich
+    label: inv. no. 417 (cat. no. 1399 up to 1930); no longer in the 1936 catalogue
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: transfered 1836 to the Alte Pinakothek, Munich;[5] — [5] … The painting was inventory no. 417 in the collection of the Alte Pinakothek (catalogue number 1399 in museum publications up through 1930).
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: institution/kunsthandlung-julius-bohler
+    co_owners: [institution/kunsthandel-ag, institution/galerie-fischer]
+    role: dealer
+    acquired: 1936
+    method: exchange
+    direct: true
+    place: lucerne
+    label: traded by the Pinakothek for a painting by Giuseppe Maria Crespi (first called Pietro Longhi); Böhler records suggest it may have gone to Lucerne in 1931/32, half owned by Theodor Fischer
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: traded 1936 with (Julius Böhler, Munich/Kunsthandlung AG Lucerne and the Galerie Fischer, Lucerne) in exchange for a painting by Giuseppe Maria Crespi;(6) — [6] … suggest that the painting may have been sent already in 1931 or 1932 to the Kunsthandel AG Lucerne (a sibling firm of Böhler) with a half share owned by Theodor Fischer. However, Lucerne index card L 10404 … confirms the exchange for the Crespi painting took place in 1936.
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: person/d-katz
+    role: dealer
+    acquired: 1937-01-01
+    method: purchase
+    direct: true
+    place: dieren
+    label: Firma D. Katz; Lucerne index card L 10404; shown in Katz's exhibition of Dutch art, 3 July–15 September 1937, no. 56
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: sold 1 January 1937 to (Firma D. Katz, Dieren, Netherlands).[7] — [7] See index card no. L 10404 … Katz included the painting in an exhibition of Dutch art from 3 July to 15 September 1937 (no. 56).
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: person/hugo-daniel-andriesse
+    co_owners: [person/elisabeth-j-spanjaard-andriesse]
+    acquired: 1938 or earlier
+    place: brussels
+    label: lent to an exhibition in Rotterdam opening late 1938; the couple fled Europe and settled in New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: Hugo Daniel [1867-1942] and Elisabeth J. Spanjaard [1871-1963] Andriesse, Brussels, by 1938.[8] — [8] Hugo Andriesse, a Dutch industrialist and philanthropist living in Brussels, lent the painting to an exhibition in Rotterdam that opened in late 1938
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: institution/royal-museums-of-fine-arts-of-belgium
+    role: custodian
+    acquired: 1939
+    method: transfer
+    place: brussels
+    label: deposited by Andriesse with other paintings of his collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: In 1939 he deposited it, with other paintings from his collection, with the Musées Royaux des Beaux-Arts, Brussels, before fleeing Europe with his wife and eventually settling in New York.
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    acquired: 1941-12-03
+    method: confiscation
+    place: brussels
+    label: confiscated with the rest of the Andriesse collection, ERR no. HA 9; taken to the Jeu de Paume, Paris, 12 March 1942
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: After the Germans occupied Belgium during World War II, the painting was confiscated with the rest of the Andriesse collection on 3 December 1941 by the Einsatztab Reichsleiter Rosenberg (ERR no. HA 9), and on 12 March 1942 transferred to the Jeu de Paume, in Paris.
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: person/hermann-goring
+    role: possessor
+    acquired: 1944-03-20
+    method: transfer
+    direct: true
+    place: potsdam
+    label: acquired for Göring, RM no. 1203; taken to his "Kurfürst" Luftwaffe bunker in Potsdam
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: On 20 March 1944 it was acquired for the Nazi’s Reichsmarschall Hermann Goering (RM no. 1203), and transferred to Goering’s “Kurfürst” bunker, a command center for the Nazi Luftwaffe, in Potsdam.
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: institution/kunsthandlung-abels
+    role: dealer
+    acquired_label: in 1950
+    place: cologne
+    label: how and when Abels acquired it is not known; the Von der Heydt-Museum's 1985 catalogue names the Wallraf-Richartz-Museum, Cologne, in the provenance (not confirmed)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: (Kunsthandlung Abels, Cologne), in 1950; — [9] How and when the Kunsthandlung Abels acquired the painting is not known. The 1985 catalogue … lists the Wallraf-Richartz-Museum in Cologne in the provenance; this has not yet been confirmed.
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: person/rudolf-ziersch
+    direct: true
+    place: wuppertal
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: Rudolf Ziersch [1887-1962], Wuppertal;
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: institution/von-der-heydt-museum
+    acquired: 1952
+    method: gift
+    direct: true
+    place: wuppertal
+    label: museum no. 659
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: gift 1952 to the Von der Heydt-Museum, Wuppertal;[9] — [9] … The painting was number 659 in the Von der Heydt-Museum collection.
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner_label: heirs of Hugo and Elisabeth Andriesse (the charities named in Mrs. Andriesse's will)
+    acquired: 2014
+    method: restitution
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: restituted 2014 to the heirs of Hugo and Elisabeth Andriesse;[10] — [10] Hugo and Elisabeth Andriesse had no children; the heirs were the charities named in Mrs. Andriesse's will.
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 2014-06-04
+    ended: 2014-06-04
+    method: auction
+    direct: true
+    place: new-york-city
+    label: sale, Christie's, New York, 4 June 2014, no. 16
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: (sale, Christie, Manson & Woods, New York, 4 June 2014, no. 16);
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: person/richard-green
+    role: dealer
+    method: auction
+    direct: true
+    place: london
+    label: Richard Green Fine Paintings
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: (Richard Green Fine Paintings, London);
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 2016-10
+    method: purchase
+    direct: true
+    place: washington-d-c
+    label: The Lee and Juliet Folger Fund
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.163917.html
+        note: purchased October 2016 by NGA.
+        source: nga-2016-118-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q15804434
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q15804434
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q15804434
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q15804434
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q15804434
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q15804434

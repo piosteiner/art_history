@@ -1,0 +1,213 @@
+public_id: 123089
+title_lang: en
+title: Venus with a Mirror
+names:
+  - lang: nl
+    role: translation
+    text: Venus met spiegel
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q7920648
+  - lang: fr
+    role: translation
+    text: Vénus au miroir
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q7920648
+  - lang: de
+    role: translation
+    text: Venus mit Spiegel
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q7920648
+  - lang: it
+    role: translation
+    text: Venere allo specchio
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q7920648
+  - lang: es
+    role: translation
+    text: Venus del espejo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q7920648
+  - lang: ja
+    role: translation
+    text: 鏡を見るヴィーナス
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q7920648
+  - lang: zh
+    role: translation
+    text: 照鏡子的維納斯
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q7920648
+  - lang: ru
+    role: translation
+    text: Венера перед зеркалом
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q7920648
+creator: titian
+created: c. 1555
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [124.5, 105.5]
+institution: national-gallery-of-art
+inventory_number: 1937.1.34
+wikidata_id: Q7920648
+metadata:
+  sources: [Wikidata Q7920648 (retrieved 2026-11-23)]
+relationships:
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q7920648
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Titian_-_Venus_with_a_Mirror_-_Google_Art_Project.jpg/1280px-Titian_-_Venus_with_a_Mirror_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Titian_-_Venus_with_a_Mirror_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Titian
+provenance:
+  - owner: artist/titian
+    ended: 1576
+    method: creation
+    place: venice
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41.html
+        note: The artist [c. 1490-1576], Venice;
+        source: nga-1937-1-34
+        accessed: 2026-11-24
+  - owner: person/pomponio-vecellio
+    method: inheritance
+    direct: true
+    place: venice
+    label: the artist's son
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41.html
+        note: by inheritance to his son, Pomponio Vecellio, Venice;
+        source: nga-1937-1-34
+        accessed: 2026-11-24
+  - owner: person/cristoforo-barbarigo
+    acquired: 1581-10-27
+    method: purchase
+    direct: true
+    place: venice
+    label: sold with the contents of Titian's house; his will of March 1600 names the Venus among four pictures by Titian left to his heirs
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41.html
+        note: sold 27 October 1581 with the contents of Titian's house to Cristoforo Barbarigo [1544-1614], Venice; — [1] … quoting the purchase document of October 1581 and Barbarigo’s will of March 1600, in which the Venus is mentioned as one of four pictures by Titian left to his heirs.
+        source: nga-1937-1-34
+        accessed: 2026-11-24
+  - owner: person/andrea-barbarigo
+    method: inheritance
+    direct: true
+    label: his son
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41.html
+        note: by inheritance to his son, Andrea Barbarigo;[1]
+        source: nga-1937-1-34
+        accessed: 2026-11-24
+  - owner_label: Barbarigo family, Palazzo Barbarigo della Terrazza, Venice
+    ended: 1850
+    method: inheritance
+    direct: true
+    place: venice
+    label: recorded in the palace by Ridolfi (1648), Boschini (1660), Martinioni (1663) and later; sold 1850 by the heirs of Giovanni di Alvise Barbarigo (d. 1843)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41.html
+        note: by inheritance in the Barbarigo family, Palazzo Barbarigo della Terrazza, Venice;[2] sold 1850 by the heirs of Giovanni di Alvise Barbarigo [d. 1843]
+        source: nga-1937-1-34
+        accessed: 2026-11-24
+  - owner: person/nicholas-i-of-russia
+    acquired: 1850
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41.html
+        note: sold 1850 by the heirs of Giovanni di Alvise Barbarigo [d. 1843] to Czar Nicholas I of Russia [1796-1855], Saint Petersburg;[3]
+        source: nga-1937-1-34
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    label: "Eremitage Impérial: Catalogue de la Galerie des Tableaux, 1863: 26, no. 99"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41.html
+        note: "Imperial Hermitage Gallery, St. Petersburg;[4] — [4] Eremitage Impérial: Catalogue de la Galerie des Tableaux, Saint Petersburg, 1863: 26, no. 99, and subsequent Hermitage catalogues."
+        source: nga-1937-1-34
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1931-04
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41.html
+        note: purchased April 1931 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1937-1-34
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1931-04
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41.html
+        note: purchased April 1931 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York) by Andrew W.  Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-34
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1931-06-05
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41.html
+        note: deeded 5 June 1931 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[5]
+        source: nga-1937-1-34
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-34
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q7920648
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q7920648
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q7920648
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q7920648
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q7920648
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q7920648

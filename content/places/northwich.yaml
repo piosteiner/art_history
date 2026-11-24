@@ -1,0 +1,22 @@
+public_id: 126230
+name: Northwich
+kind: settlement
+parent: cheshire-west-and-chester
+country_code: GB
+location: [-2.518, 53.259]
+wikidata_id: Q2009813
+metadata:
+  sources: [Wikidata Q2009813 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2009813
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2009813
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2009813

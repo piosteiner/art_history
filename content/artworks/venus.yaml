@@ -1,0 +1,160 @@
+public_id: 122983
+title_lang: en
+title: Venus
+created: 1580/1590
+created_label: c. 1580
+created_span: uncertain
+materials: [bronze]
+dimensions: [166, 44, 33.7]
+institution: national-gallery-of-art
+inventory_number: 1937.1.132
+wikidata_id: Q63809881
+metadata:
+  sources: [Wikidata Q63809881 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Milanese_16th_Century_%28model_attributed_to_Francesco_Brambilla_the_Younger%29%2C_Venus%2C_c._1580-1590%2C_NGA_139.jpg/1280px-Milanese_16th_Century_%28model_attributed_to_Francesco_Brambilla_the_Younger%29%2C_Venus%2C_c._1580-1590%2C_NGA_139.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Milanese_16th_Century_(model_attributed_to_Francesco_Brambilla_the_Younger),_Venus,_c._1580-1590,_NGA_139.jpg
+    license: CC0
+    credit: Milanese 16th Century (model attributed to Francesco Brambilla the Younger)
+provenance:
+  - owner_label: Villa Litta Visconti Borromeo, Lainate
+    acquired: before 1617
+    place: lainate
+    label: installed in the garden, outside the nymphaeum; possibly part of the original installation completed in 1589
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139.html
+        note: Installed in the garden, outside the nymphaeum of the Villa Litta Visconti Borromeo, Lainate, near Milan, before 1617 (and possibly part of the original installation completed in 1589);[1]
+        source: nga-1937-1-132
+        accessed: 2026-11-24
+  - owner: person/prince-napoleon
+    acquired: c. 1865
+    method: purchase
+    place: paris
+    label: '"Prince Napoleon", Palais Royal — probably Napoléon Joseph Charles Paul Bonaparte'
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139.html
+        note: purchased c. 1865 by "Prince Napoleon,"[2] Palais Royal, Paris; — [2] This was probably Napoleon Joseph Charles Paul Bonaparte (1822-1891), who was a first cousin to Napoleon III, and commonly known as Prince Napoleon
+        source: nga-1937-1-132
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1872-05-09
+    ended: 1872-05-11
+    method: auction
+    direct: true
+    place: london
+    label: Prince Napoleon's sale, 9–11 May 1872, 2nd day, no. 222 (NGA 1937.1.133 as no. 221)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139.html
+        note: (his sale, Christie, Manson & Woods, London, 9-11 May 1872, 2nd day, no. 222, with NGA 1937.1.133 as no. 221);
+        source: nga-1937-1-132
+        accessed: 2026-11-24
+  - owner_label: Wareham
+    role: dealer
+    direct: true
+    label: party in the case Trau v. Wareham
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139.html
+        note: (Wareham); — [3] Both sales, according to the catalogues, were ordered by the Chancery Division of the High Court of Justice as part of the case of Trau v. Wareham.
+        source: nga-1937-1-132
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    not_sold: true
+    acquired: 1891-07-25
+    ended: 1891-07-25
+    method: auction
+    direct: true
+    place: london
+    label: sale ordered by the Chancery Division in Trau v. Wareham, sellers recorded as Messrs. Rye and Eyre; no. 92 (NGA 1937.1.133 as no. 91), withdrawn
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139.html
+        note: (sale, Christie, Manson & Woods, London, 25 July 1891, no. 92, with NGA 1937.1.133 as no. 91, withdrawn); — [3] … The sellers are recorded in both years as Messrs. Rye and Eyre of Golden Square, London
+        source: nga-1937-1-132
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1892-05-20
+    method: auction
+    direct: true
+    place: london
+    label: sale ordered by the Chancery Division in Trau v. Wareham, sellers recorded as Messrs. Rye and Eyre; no. 147 (NGA 1937.1.133 as no. 146)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139.html
+        note: (sale, Christie, Manson & Woods, London, 20 May 1892, no. 147, with NGA 1937.1.133 as no. 146).[3]
+        source: nga-1937-1-132
+        accessed: 2026-11-24
+  - owner_label: buyer recorded as "J."
+    acquired: 1892-05-20
+    method: auction
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139.html
+        note: the buyer in 1892 is recorded only as the initial "J."
+        source: nga-1937-1-132
+        accessed: 2026-11-24
+  - owner: person/george-faudel-phillips
+    label: Sir George Faudel-Phillips, Lord Mayor of London 1896–1897
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139.html
+        note: Sir George Faudel-Phillips [1840-1922], Lord Mayor of London, 1896-1897.
+        source: nga-1937-1-132
+        accessed: 2026-11-24
+  - owner: person/george-jay-gould
+    label: Lakewood, New Jersey
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139.html
+        note: George Jay Gould [1864-1923], Lakewood, New Jersey;
+        source: nga-1937-1-132
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    direct: true
+    label: London, New York and Paris; invoiced as by Jacopo Sansovino
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139.html
+        note: (Duveen Brothers, Inc., London, New York, and Paris); … [4] The original Duveen Brothers invoice is in Gallery Archives …; the sculpture is listed as by Jacopo Sansovino.
+        source: nga-1937-1-132
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1936-12-15
+    method: purchase
+    direct: true
+    place: pittsburgh
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139.html
+        note: purchased 15 December 1936 by The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[4]
+        source: nga-1937-1-132
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.139.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-132
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q63809881
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63809881
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q63809881
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63809881
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63809881

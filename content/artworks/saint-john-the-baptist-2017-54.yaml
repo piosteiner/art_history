@@ -1,0 +1,144 @@
+public_id: 122903
+title_lang: en
+title: Saint John the Baptist
+creator: jan-crocq
+attribution_label: attributed to Jan Crocq
+created: c. 1500
+created_span: uncertain
+kind: sculpture
+medium: Tonnerre limestone
+dimensions: [163, 59, 40]
+institution: cleveland-museum-of-art
+inventory_number: "2017.54"
+web_url: https://clevelandart.org/art/2017.54
+images:
+  - url: https://openaccess-cdn.clevelandart.org/2017.54/2017.54_web.jpg
+    source_url: https://clevelandart.org/art/2017.54
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: institution/sainte-chapelle-dijon
+    ended_label: before 1792
+    place: dijon
+    label: by repute
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: By repute from the Sainte-Chapelle, Dijon (before 1792)
+        source: cma-2017-54
+        accessed: 2026-11-24
+  - owner_label: Mr. E. Ingels, Belgium
+    acquired: late 19th century
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: Mr. E. Ingels, Belgium, late 1800s
+        source: cma-2017-54
+        accessed: 2026-11-24
+  - owner_label: Madame François Flameng, Paris
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: Madame Francois Flameng , Paris, France [-1919]
+        source: cma-2017-54
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1919-05
+    method: auction
+    place: paris
+    label: sale, 26–27 May 1919, lot 195
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: "Sale: May 26-27, 1919, Galerie Georges Petit, Paris, France, lot 195"
+        source: cma-2017-54
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    acquired: 1919
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: (Jacques Seligmann, Paris, France) [1919-]
+        source: cma-2017-54
+        accessed: 2026-11-24
+  - owner: person/bela-hein
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: Bela Hein (1883-1931), Paris, sold to Brummer Galleries, New York [-1928]
+        source: cma-2017-54
+        accessed: 2026-11-24
+  - owner: institution/brummer-galleries
+    role: dealer
+    acquired: 1928
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: Brummer Galleries, New York, NY, sold to The William Rockhill Nelson Gallery of Art [1928-1933]
+        source: cma-2017-54
+        accessed: 2026-11-24
+  - owner: institution/nelson-atkins-museum
+    acquired: 1933
+    ended: 1991
+    method: purchase
+    direct: true
+    place: kansas-city
+    label: inv. no. 33-69; deaccessioned 1991
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: The William Rockhill Nelson Gallery of Art, Kansas City, Missouri, (after 1983 known as The Nelson-Atkins Museum of Art), inv. no. 33-69 [1933-1991]
+        source: cma-2017-54
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1991-06-01
+    method: auction
+    direct: true
+    place: new-york-city
+    label: sale, 1 June 1991, lot 18, deaccessioned by the Nelson-Atkins
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: De-Accessioned by the Nelson-Atkins in 1991; sold at Sotheby’s, New York, 1 June 1991, lot 18
+        source: cma-2017-54
+        accessed: 2026-11-24
+  - owner_label: Private collection, Belgium
+    acquired: 1991
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: Private collection, Belgium, sold at auction at Sotheby's, London [1991-2014]
+        source: cma-2017-54
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 2014-07-10
+    method: auction
+    direct: true
+    place: london
+    label: sale, 10 July 2014, lot 67
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: Sotheby’s, London (July 10, 2014), lot 67
+        source: cma-2017-54
+        accessed: 2026-11-24
+  - owner: institution/sam-fogg
+    role: dealer
+    acquired: 2014
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: Sam Fogg, London sold to the Cleveland Museum of Art [2014-2017]
+        source: cma-2017-54
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2017
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Purchase from the J. H. Wade Fund
+    sources:
+      - url: https://clevelandart.org/art/2017.54
+        note: Sam Fogg, London sold to the Cleveland Museum of Art — The Cleveland Museum of Art, Cleveland, OH [2017-]
+        source: cma-2017-54
+        accessed: 2026-11-24

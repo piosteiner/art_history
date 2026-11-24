@@ -40,6 +40,15 @@ relationships:
       - accessed: 2026-11-12
         property: P1066
         wikidata: Q3163927
+  - type: child_of
+    to: artist/alexandre-calame
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q621994
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q3163927
 identifiers:
   bnf: 14844900c
   gnd: "1089399707"

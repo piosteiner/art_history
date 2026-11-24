@@ -1,0 +1,23 @@
+public_id: 124511
+title: Nikkō Sukezane
+names:
+  - lang: ja
+    role: translation
+    text: 日光助真
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107044842
+creator: sukezane
+wikidata_id: Q107044842
+metadata:
+  sources: [Wikidata Q107044842 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Tachi_Sword_-_Sukezane%28Nikko%29_01.jpg/1280px-Tachi_Sword_-_Sukezane%28Nikko%29_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tachi_Sword_-_Sukezane(Nikko)_01.jpg
+    license: CC BY-SA 4.0
+    credit: Kakidai
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q107044842

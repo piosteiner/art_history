@@ -19,6 +19,15 @@ relationships:
       - accessed: 2026-10-30
         property: P19
         wikidata: Q233196
+  - type: child_of
+    to: person/maria-luisa-of-parma
+    sources:
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q233196
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q229854
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Vicente_Lop%C3%A9z_Porta%C3%B1a_%281772-1850%29_-_Portret_van_de_koningin_van_de_twee_Sicili%C3%ABn_%281831%29_-_Madrid_Bellas_Artes_19-03-2010_11-30-09.jpg/1280px-Vicente_Lop%C3%A9z_Porta%C3%B1a_%281772-1850%29_-_Portret_van_de_koningin_van_de_twee_Sicili%C3%ABn_%281831%29_-_Madrid_Bellas_Artes_19-03-2010_11-30-09.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Vicente_Lop%C3%A9z_Porta%C3%B1a_(1772-1850)_-_Portret_van_de_koningin_van_de_twee_Sicili%C3%ABn_(1831)_-_Madrid_Bellas_Artes_19-03-2010_11-30-09.jpg

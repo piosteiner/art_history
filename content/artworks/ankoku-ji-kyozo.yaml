@@ -1,0 +1,48 @@
+public_id: 124022
+title: Ankoku-ji Kyōzō
+names:
+  - lang: ja
+    role: translation
+    text: 安国寺経蔵
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020350
+created: 1408
+institution: ankoku-ji-takayama
+location: [137.2448, 36.22496]
+wikidata_id: Q107020350
+metadata:
+  sources: [Wikidata Q107020350 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/takayama
+    period: 1408
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/59/%E5%9B%BD%E5%AE%9D_%E5%AE%89%E5%9B%BD%E5%AF%BA%E7%B5%8C%E8%94%B5.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%9B%BD%E5%AE%9D_%E5%AE%89%E5%9B%BD%E5%AF%BA%E7%B5%8C%E8%94%B5.jpg
+    license: CC BY-SA 3.0
+    credit: いなかもの
+provenance:
+  - owner: institution/ankoku-ji-takayama
+    acquired: 1408
+    method: creation
+    place: takayama
+    label: sutra repository with a revolving octagonal sutra case (rinzō) of the Ankoku-ji of Hida province, Kokufu; dated 1408 (Ōei 15) by an inscription on the case's central post; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1107
+        note: 経蔵は内部に回転式の書架である八角形の輪蔵を設け、その心柱の応永一五年（一四〇八）の銘文があり、建立年代が明確である。… 所有者名 ： 安国寺
+        source: kunishitei-102-1107
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=安国寺_(高山市)
+        note: 天正年間（1532年～1555年）と永禄年間（1558年～1570年）の二度に渡って兵火を被り、経蔵、開山堂、および鎮守社の熊野神社以外の堂宇が焼失。
+        source: jawiki-ankoku-ji-takayama
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107020350
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020350

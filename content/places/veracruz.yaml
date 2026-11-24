@@ -1,0 +1,16 @@
+public_id: 124841
+name: Veracruz
+kind: site
+location: [-96.05562, 19.83936]
+wikidata_id: Q60130
+metadata:
+  sources: [Wikidata Q60130 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q60130
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q60130

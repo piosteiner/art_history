@@ -1,0 +1,38 @@
+public_id: 124922
+title_lang: en
+title: Amida Hall (Mida-dō) of Konren-ji
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 金蓮寺弥陀堂
+created: 1275/1332
+institution: konren-ji
+location: [137.0726, 34.80901]
+wikidata_id: Q107020357
+metadata:
+  sources: [Wikidata Q107020357 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nishio
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Konrenji.jpg/1280px-Konrenji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Konrenji.jpg
+    license: CC BY-SA 4.0
+    credit: Bariston
+provenance:
+  - owner: institution/konren-ji
+    acquired: 1275/1332
+    method: creation
+    place: nishio
+    label: Amida hall built probably in the late Kamakura period; the temple's founding is traditionally ascribed to Minamoto no Yoritomo (1186); Konren-ji is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1277
+        note: 金蓮寺は文治二年（一一八六）に源頼朝が創立したと伝えている。弥陀堂が建てられたのはやや遅れて鎌倉時代後期頃であろう。 … 所有者名 ： 金蓮寺
+        source: kunishitei-102-1277
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020357

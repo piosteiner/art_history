@@ -1,0 +1,170 @@
+public_id: 123052
+title_lang: en
+title: Chalice of Saint John the Evangelist [reverse]
+names:
+  - lang: de
+    role: translation
+    text: Kelch Johannes des Evangelisten (Rückseite)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20173944
+creator: hans-memling
+created: 1470s
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [31.2, 24.4]
+institution: national-gallery-of-art
+inventory_number: 1952.5.46.b
+wikidata_id: Q20173944
+metadata:
+  sources: [Wikidata Q20173944 (retrieved 2026-11-23)]
+relationships:
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q20173944
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/C%C3%A1liz_de_San_Juan_el_Evangelista%2C_por_Hans_Memling.jpg/1280px-C%C3%A1liz_de_San_Juan_el_Evangelista%2C_por_Hans_Memling.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:C%C3%A1liz_de_San_Juan_el_Evangelista,_por_Hans_Memling.jpg
+    license: Public domain
+    credit: Hans Memling
+provenance:
+  - owner: person/bernardo-bembo
+    label: Venice or Verona
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41660.html
+        note: Probably Bernardo Bembo, Venice or Verona [d. 1519].
+        source: nga-1952-5-46-b
+        accessed: 2026-11-24
+  - owner: person/pietro-bembo
+    place: padua
+    label: his son; Marcantonio Michiel's notes (1520s or early 1530s) name him as owner of what seems to be this diptych, as by Memling
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41660.html
+        note: Probably his son, Cardinal Pietro Bembo [1470-1547], Padua.[1] — [1] … Marcantonio Michiel's notes on what seems to be this diptych name the owner as the poet Pietro Bembo, another son of Bernardo … Pietro Bembo's paintings were then in Padua.
+        source: nga-1952-5-46-b
+        accessed: 2026-11-24
+  - owner: person/nicolai-nikitich-demidov
+    place: florence
+    label: Prince of San Donato, near Florence; according to the catalogue of the Demidov sale, 3 March 1870, no. 204
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41660.html
+        note: Nicolai Nikitich Demidov, Prince of San Donato [1773-1828], near Florence;[2] — [2] According to the catalogue of the Demidov sale, 3 March 1870, no. 204.
+        source: nga-1952-5-46-b
+        accessed: 2026-11-24
+  - owner: person/anatole-demidoff
+    method: inheritance
+    direct: true
+    place: florence
+    label: his son; Prince of San Donato, near Florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41660.html
+        note: his son, Anatoly Nikolaievich Demidov, Prince of San Donato [1812-1870], near Florence;
+        source: nga-1952-5-46-b
+        accessed: 2026-11-24
+  - owner_label: Demidov sale, Paris
+    role: agent
+    acquired: 1870-03-03
+    method: auction
+    direct: true
+    place: paris
+    label: his sale, Paris, 3 March 1870, no. 204, repro., etching by Rajou
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41660.html
+        note: (his sale, Paris, 3 March 1870, no. 204, repro., etching by Rajou).
+        source: nga-1952-5-46-b
+        accessed: 2026-11-24
+  - owner_label: Private collection, Italy
+    ended: c. 1928
+    label: according to Max J. Friedländer, Die altniederländische Malerei 6 (1928)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41660.html
+        note: Private collection, Italy, until c. 1928.[3]
+        source: nga-1952-5-46-b
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    role: dealer
+    place: berlin
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41660.html
+        note: (Matthiesen Gallery, Berlin).
+        source: nga-1952-5-46-b
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    role: dealer
+    place: berlin
+    label: according to Friedländer in Unknown Masterpieces (1930), no. 27
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41660.html
+        note: (Paul Cassirer, Berlin).[4]
+        source: nga-1952-5-46-b
+        accessed: 2026-11-24
+  - owner: person/heinrich-thyssen-bornemisza
+    acquired: 1930 or earlier
+    label: Schloss Rohoncz, Hungary, later Villa Favorita, Lugano-Castagnola; Sammlung Schloss Rohoncz exhibition, Munich 1930, no. 222
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41660.html
+        note: Baron Heinrich Thyssen-Bornemisza [1875-1947], Schloss Rohoncz, Hungary, and later, Villa Favorita, Lugano-Castagnola, Switzerland, by 1930;[5]
+        source: nga-1952-5-46-b
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: agent
+    acquired: 1950
+    direct: true
+    place: new-york-city
+    label: on consignment; Knoedler commission book no. 4, p. 143, no. CA 3725
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41660.html
+        note: on consigment 1950 with (M. Knoedler & Co., New York);
+        source: nga-1952-5-46-b
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41660.html
+        note: purchased 1951 by the Samuel H. Kress Foundation, New York; [6]
+        source: nga-1952-5-46-b
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    label: gift by exchange
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41660.html
+        note: gift 1952 by exchange to NGA.
+        source: nga-1952-5-46-b
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20173944
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20173944
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20173944
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20173944
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20173944
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20173944

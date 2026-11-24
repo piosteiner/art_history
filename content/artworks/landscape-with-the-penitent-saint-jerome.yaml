@@ -1,0 +1,103 @@
+public_id: 125194
+title_lang: en
+title: Landscape with the Penitent Saint Jerome
+names:
+  - lang: nl
+    role: translation
+    text: Bergachtig landschap met de boetvaardige H. Hieronymus
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20267558
+created: 1515/1525
+created_label: c. 16th century
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [37.5, 54.1]
+institution: art-institute-of-chicago
+inventory_number: "1953.27"
+wikidata_id: Q20267558
+metadata:
+  sources: [Wikidata Q20267558 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/jerome
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20267558
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Jacob_Patinir_-_Landscape_with_the_Penitent_Saint_Jerome_-_1953.27_-_Art_Institute_of_Chicago.jpg/1280px-Jacob_Patinir_-_Landscape_with_the_Penitent_Saint_Jerome_-_1953.27_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_Patinir_-_Landscape_with_the_Penitent_Saint_Jerome_-_1953.27_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: anonymous
+provenance:
+  - owner_label: Comte de Bousies, Brussels
+    place: brussels
+    label: per a fact sheet presumably from Knoedler; a Friedländer Archive (RKD) photo mount supports it, name transcribed “de Bourier”
+    sources:
+      - url: https://www.artic.edu/artworks/111453
+        note: Comte de Bousies, Brussels [according to a fact sheet in the curatorial file, presumably provided by Knoedler; an annotation on the mount of a photograph in the Friedländer Archive, at the Rijksbureau voor Kunsthistorische Documentatie, The Hague, supports this provenance, though the name is transcribed as “de Bourier”].
+        source: aic-1953-27
+        accessed: 2026-11-24
+  - owner: person/eric-emil-lyndhurst
+    acquired: January 1950 or earlier
+    place: brussels
+    label: owner or agent unclear; Friedländer's opinion given for “Lyndhurst, Brussels”, 5 January 1950; not among his stock confiscated in WWII
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/111453
+        note: Probably Eric-Emil Lyndhurst, Brussels, by January 1950 [the mount of the photograph mentioned above indicates that Friedländer’s opinion was provided for “Lyndhurst, Brussels” on January 5, 1950; whether the collector and dealer Eric-Emil Lyndhurst owned the picture or handled it as an agent is unclear;
+        source: aic-1953-27
+        accessed: 2026-11-24
+  - owner: institution/palais-des-beaux-arts
+    role: agent
+    acquired: 1951-05-21
+    method: auction
+    place: brussels
+    label: sale, Palais des Beaux-Arts, Brussels, 21 May 1951, no. 115, pl. 7, as Patinir
+    sources:
+      - url: https://www.artic.edu/artworks/111453
+        note: Sale, Palais des Beaux-Arts, Brussels, May 21, 1951, no. 115, pl. 7, as Patinir.
+        source: aic-1953-27
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1952 or earlier
+    place: new-york-city
+    label: lent by Knoedler to a 1952 exhibition
+    sources:
+      - url: https://www.artic.edu/artworks/111453
+        note: Knoedler, New York, by 1952 [Lent by Knoedler to 1952 exhibition];
+        source: aic-1953-27
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1953
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/111453
+        note: sold to the Art Institute, 1953.
+        source: aic-1953-27
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20267558
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20267558
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20267558
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20267558
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20267558

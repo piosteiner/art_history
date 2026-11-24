@@ -1,0 +1,23 @@
+public_id: 122850
+name: Martha Washington
+given_name: Martha
+family_name: Washington
+kind: person
+birth: 1731-06-13
+death: 1802-05-22
+wikidata_id: Q191789
+metadata:
+  sources: [Wikidata Q191789 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q191789
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q191789
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q191789

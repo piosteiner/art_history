@@ -38,6 +38,15 @@ relationships:
       - accessed: 2026-11-12
         property: P135
         wikidata: Q33978
+  - type: married_to
+    to: person/sonia-delaunay
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q232972
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q33978
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Robert_Delaunay_portrait_photograph.jpg/1280px-Robert_Delaunay_portrait_photograph.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Robert_Delaunay_portrait_photograph.jpg

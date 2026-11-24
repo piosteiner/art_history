@@ -1,0 +1,21 @@
+public_id: 124400
+title: Lady Tachibana's Amida Triad
+names:
+  - text: Amida Triad in the Tachibana Shrine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045989
+  - lang: ja
+    role: translation
+    text: 伝橘夫人念持仏阿弥陀三尊像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045989
+wikidata_id: Q107045989
+metadata:
+  sources: [Wikidata Q107045989 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ef/Amida_Triad_LadyTatibana_Horyuji.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Amida_Triad_LadyTatibana_Horyuji.JPG
+    license: Public domain
+    credit: OGAWA SEIYOU(1894-1960) a famous photographer in Japan

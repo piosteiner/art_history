@@ -1,0 +1,125 @@
+public_id: 125076
+title_lang: en
+title: The Temptation of the Magdalene
+names:
+  - lang: en
+    role: original
+    text: Temptation of Mary Magdalen
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20273442
+creator: jacob-jordaens
+created: 1611/1622
+created_label: c. 17th century
+created_span: uncertain
+dimensions: [126.2, 96.8]
+institution: art-institute-of-chicago
+inventory_number: "1991.111"
+wikidata_id: Q20273442
+metadata:
+  sources: [Wikidata Q20273442 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Jacob_Jordaens_-_The_Temptation_of_the_Magdalene_-_1991.111_-_Art_Institute_of_Chicago.jpg/1280px-Jacob_Jordaens_-_The_Temptation_of_the_Magdalene_-_1991.111_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_The_Temptation_of_the_Magdalene_-_1991.111_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Jacob Jordaens
+provenance:
+  - owner_label: Private collection, Brussels
+    acquired: 1928 or earlier
+    place: brussels
+    label: Brussels 1928, no. 34
+    sources:
+      - url: https://www.artic.edu/artworks/111613
+        note: Private collection, Brussels, 1928 [see Brussels 1928, no. 34].
+        source: aic-1991-111
+        accessed: 2026-11-24
+  - owner: person/edouard-mortier
+    place: paris
+    label: Édouard Napoléon César Edmond Mortier, duc de Trévise; not part of his sale in Paris, 19 May 1938
+    sources:
+      - url: https://www.artic.edu/artworks/111613
+        note: Édouard Napoléon César Edmond Mortier, duc de Trévise (died 1946), Paris [according to Jaffé in Ottawa 1968; it was not part of his sale in Paris, May 19, 1938].
+        source: aic-1991-111
+        accessed: 2026-11-24
+  - owner: institution/palais-des-beaux-arts
+    role: agent
+    acquired: 1951-03-12
+    method: auction
+    place: brussels
+    label: sale, Palais des Beaux-Arts, Brussels, 12 March 1951, no. 57
+    sources:
+      - url: https://www.artic.edu/artworks/111613
+        note: Sold, Palais des Beaux Arts, Brussels, March 12, 1951, no. 57.
+        source: aic-1991-111
+        accessed: 2026-11-24
+  - owner: person/morris-i-kaplan
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/111613
+        note: Morris I. Kaplan (died 1966), Chicago;
+        source: aic-1991-111
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    not_sold: true
+    acquired: 1968-06-12
+    method: auction
+    direct: true
+    place: london
+    label: sale, Sotheby's, London, 12 June 1968, no. 56, bought in
+    sources:
+      - url: https://www.artic.edu/artworks/111613
+        note: offered for sale, Sotheby's , London, June 12, 1968, no. 56, bought in;
+        source: aic-1991-111
+        accessed: 2026-11-24
+  - owner_label: heirs of Morris I. Kaplan
+    method: inheritance
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/111613
+        note: heirs of Morris I. Kaplan (on loan to the Art Institute of Chicago since 1969);
+        source: aic-1991-111
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    role: custodian
+    acquired: 1969
+    ended: 1991
+    place: chicago
+    label: on loan from the heirs of Morris I. Kaplan
+    sources:
+      - url: https://www.artic.edu/artworks/111613
+        note: (on loan to the Art Institute of Chicago since 1969)
+        source: aic-1991-111
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1991
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/111613
+        note: sold to the Art Institute, 1991.
+        source: aic-1991-111
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20273442
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20273442
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20273442
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20273442
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20273442

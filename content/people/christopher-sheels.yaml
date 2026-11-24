@@ -1,0 +1,18 @@
+public_id: 122851
+name: Christopher Sheels
+given_name: Christopher
+family_name: Sheels
+kind: person
+birth: 1774
+wikidata_id: Q1086962
+metadata:
+  sources: [Wikidata Q1086962 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q1086962
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q1086962

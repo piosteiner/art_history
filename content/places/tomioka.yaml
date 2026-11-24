@@ -1,0 +1,41 @@
+public_id: 123895
+name: Tomioka
+names:
+  - lang: ja
+    role: original
+    text: 富岡市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q873835
+  - lang: ko
+    role: translation
+    text: 도미오카시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q873835
+  - lang: ru
+    role: translation
+    text: Томиока
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q873835
+kind: settlement
+parent: gunma
+country_code: JP
+location: [138.88992, 36.25992]
+wikidata_id: Q873835
+metadata:
+  sources: [Wikidata Q873835 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q873835
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q873835
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q873835

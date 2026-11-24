@@ -1,0 +1,18 @@
+public_id: 124758
+name: Hosoda Eishi
+given_name: Hosoda
+family_name: Eishi
+birth: 1756-01-27
+death: 1829-08-01
+wikidata_id: Q2972127
+metadata:
+  sources: [Wikidata Q2972127 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2972127
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q2972127

@@ -1,0 +1,145 @@
+public_id: 122829
+title_lang: en
+title: The Slaughtered Hog
+creator: jan-victors
+created: 1653
+materials: [oil paint, panel]
+dimensions: [39, 52]
+institution: national-gallery-of-art
+inventory_number: 2018.31.1
+provenance_status: d_seized
+provenance_status_note: Confiscated by the German Nazi authorities in 1938 from the Haas home in Vienna and deposited in the Zentraldepot für beschlagnahmte Sammlungen; recovered after the war and restituted to the family in 1948.
+wikidata_id: Q58690805
+metadata:
+  sources: [Wikidata Q58690805 (retrieved 2026-11-23)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a5/Jan_Victors_-_The_Slaughtered_Hog_-_2018.31.1_-_National_Gallery_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Victors_-_The_Slaughtered_Hog_-_2018.31.1_-_National_Gallery_of_Art.jpg
+    license: Public domain
+    credit: Jan Victors
+provenance:
+  - owner: person/j-r-thomas
+    place: london
+    label: consignor to the 1920 Christie's sale; address in Christie's records 'King Street' — perhaps a local dealer
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.216037.html
+        note: J.R. Thomas, London;[1] — [1] … kindly supplied the name of the consignor of the painting to the 1920 sale, and she writes that his address in Christie's records is "King Street," which "may suggest that he was a well-known local dealer."
+        source: nga-2018-31-1
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1920-11-19
+    method: auction
+    direct: true
+    place: london
+    label: sale, Christie, Manson & Woods, London, 19 November 1920, no. 155, as The Butcher; among the lots of 'The Property of a Gentleman' (from no. 102), not the Cels collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.216037.html
+        note: (sale, Christie, Manson & Woods, London, 19 November 1920, no. 155, as The Butcher).[2] — [2] … while the auction catalogue begins with the Cels' collection, lots starting with no. 102, are "The Property of a Gentleman."
+        source: nga-2018-31-1
+        accessed: 2026-11-24
+  - owner_label: Smith [?]
+    acquired: 1920-11-19
+    method: auction
+    direct: true
+    label: buyer at the 1920 sale, for £28.8 as the NGA gives it; the name is queried in the source
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.216037.html
+        note: The painting was sold for £28.8 to Smith [?].
+        source: nga-2018-31-1
+        accessed: 2026-11-24
+  - owner: person/gustav-arens
+    place: vienna
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.216037.html
+        note: Dr. Gustav Arens [1867-1936], Vienna;
+        source: nga-2018-31-1
+        accessed: 2026-11-24
+  - owner: person/lise-arens-haas
+    method: inheritance
+    direct: true
+    place: vienna
+    label: his daughter, Mrs. Felix Haas; Vienna and later Berkeley, California
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.216037.html
+        note: by inheritance to his daughter, Lise Arens Haas [1903-2011, Mrs. Felix Haas], Vienna and Berkeley, California;[3]
+        source: nga-2018-31-1
+        accessed: 2026-11-24
+  - owner_label: German Nazi authorities
+    role: possessor
+    acquired: 1938
+    method: confiscation
+    place: vienna
+    label: confiscated from the Haas home in Vienna with other works of the Haas collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.216037.html
+        note: This painting, along with other works from the Haas collection, was confiscated by the German Nazi authorities in 1938 from the Haas home in Vienna
+        source: nga-2018-31-1
+        accessed: 2026-11-24
+  - owner: institution/zentraldepot-fur-beschlagnahmte-sammlungen
+    role: custodian
+    acquired: 1938
+    method: transfer
+    direct: true
+    place: vienna
+    label: central depot for confiscated collections, Vienna
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.216037.html
+        note: and deposited in the Zentraldepot für beschlagnahmte Sammlungen in that city.
+        source: nga-2018-31-1
+        accessed: 2026-11-24
+  - owner_label: Haas family
+    acquired: 1948
+    method: restitution
+    label: recovered after the war and restituted to the family (Munich Central Collecting Point restitution claim records, Austrian claims, Haas-Honig)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.216037.html
+        note: The painting was recovered after the war and restituted to the family in 1948. See U.S. National Archives, RG 260, Records of the Munich Central Collecting Point/Administrative Records/Restitution Claim Records/Austrian Claims/Alphabetical, Haas-Honig
+        source: nga-2018-31-1
+        accessed: 2026-11-24
+  - owner: person/eva-l-meigher
+    method: inheritance
+    place: chevy-chase
+    label: daughter of Lise Arens Haas; Chevy Chase, Maryland
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.216037.html
+        note: by inheritance to her daughter, Eva L. Meigher, Chevy Chase, Maryland;
+        source: nga-2018-31-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 2018
+    method: gift
+    direct: true
+    place: washington-d-c
+    label: gift in honor of Felix and Lise Haas
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.216037.html
+        note: gift 2018 to NGA.
+        source: nga-2018-31-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q58690805
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q58690805
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q58690805
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q58690805
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q58690805
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q58690805

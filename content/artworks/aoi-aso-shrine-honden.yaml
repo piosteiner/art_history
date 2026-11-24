@@ -1,0 +1,48 @@
+public_id: 123979
+title: Aoi Aso Shrine Honden
+names:
+  - lang: ja
+    role: translation
+    text: 青井阿蘇神社本殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020666
+created: 1610
+institution: aoi-aso-shrine
+location: [130.7528, 32.21357]
+wikidata_id: Q107020666
+metadata:
+  sources: [Wikidata Q107020666 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/hitoyoshi
+    period: 1610
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Aoi_Aso-jinja%2C_honden-1.jpg/1280px-Aoi_Aso-jinja%2C_honden-1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Aoi_Aso-jinja,_honden-1.jpg
+    license: CC0
+    credit: Saigen Jiro
+provenance:
+  - owner: institution/aoi-aso-shrine
+    acquired: 1610
+    method: creation
+    place: hitoyoshi
+    label: main sanctuary built 1610 by Sagara Nagatsune (Yorifusa), lord of Hitoyoshi, the first of the shrine buildings raised 1610–1613; the shrine is the owner today
+    sources:
+      - url: https://aoisan.jp/kokuhou/
+        note: 1610年 相良長毎が本殿、幣殿、廊を造営
+        source: aoisan-kokuhou
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3565
+        note: 青井阿蘇神社は、中世以降、領主相良氏の崇敬を受けた。現在の社殿は慶長十五年（一六一〇）より同一八年に建てられ … 所有者名 ： 青井阿蘇神社 所有者種別 ： 神社
+        source: kunishitei-102-3565
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107020666
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020666

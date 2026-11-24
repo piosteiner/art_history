@@ -1,0 +1,68 @@
+public_id: 124562
+title: Ujigami Shrine
+names:
+  - text: Ujikami Shrine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q583589
+  - lang: nl
+    role: translation
+    text: Ujigami-schrijn
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q583589
+  - lang: fr
+    role: translation
+    text: Ujigami-jinja
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q583589
+  - lang: de
+    role: translation
+    text: Ujigami-Schrein
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q583589
+  - lang: es
+    role: translation
+    text: Santuario Ujigami
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q583589
+  - lang: ja
+    role: translation
+    text: 宇治上神社
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q583589
+  - lang: ko
+    role: translation
+    text: 우지가미 신사
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q583589
+  - lang: ru
+    role: translation
+    text: Удзигами
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q583589
+location: [135.81146, 34.89209]
+wikidata_id: Q583589
+metadata:
+  sources: [Wikidata Q583589 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/uji
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Ujigami-jinja%2C_honden.jpg/1280px-Ujigami-jinja%2C_honden.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ujigami-jinja,_honden.jpg
+    license: CC0
+    credit: Saigen Jiro
+identifiers:
+  viaf: "123627274"
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q583589

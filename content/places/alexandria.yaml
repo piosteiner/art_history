@@ -1,0 +1,29 @@
+public_id: 126300
+name: Alexandria
+names:
+  - lang: ru
+    role: translation
+    text: Александрия
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q88
+kind: settlement
+parent: virginia
+country_code: US
+location: [-77.04722, 38.80472]
+wikidata_id: Q88
+metadata:
+  sources: [Wikidata Q88 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q88
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q88
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q88

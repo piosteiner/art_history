@@ -1,0 +1,18 @@
+public_id: 124686
+name: Dirck van Santvoort
+given_name: Dirck
+family_name: van Santvoort
+birth: 1610
+death: 1680-03-09
+wikidata_id: Q420452
+metadata:
+  sources: [Wikidata Q420452 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q420452
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q420452

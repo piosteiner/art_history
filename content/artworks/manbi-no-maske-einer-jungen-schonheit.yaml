@@ -1,0 +1,101 @@
+public_id: 123834
+title_lang: de
+title: Manbi, Nō-Maske einer jungen Schönheit
+attribution_label: Anonymous
+created: 18th century
+created_span: uncertain
+kind: mask
+medium: Hinoki, Holz japanischer Zypresse
+dimensions: [21, 13.2]
+institution: museum-rietberg
+inventory_number: RJP 4019
+web_url: https://rietberg.ch/sammlungen/rjp-4019
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/No-Maske_Manbi_Museum_Rietberg_RJP_4019.jpg/1280px-No-Maske_Manbi_Museum_Rietberg_RJP_4019.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:No-Maske_Manbi_Museum_Rietberg_RJP_4019.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: 18th century
+    method: creation
+    label: made in Japan, mid-Edo period
+    sources:
+      - url: https://rietberg.ch/sammlungen/rjp-4019
+        note: "Mitte Edo-Zeit, 18.Jh.: Urheber*in unbekannt, Urheber*in, Japan"
+        source: rietberg-rjp-4019
+        accessed: 2026-11-24
+  - owner_label: Nanokaichi-Maeda princely family, Kaga
+    acquired: before 1900
+    label: princely family Nanokaichi-Maeda, Kaga (present-day Ishikawa Prefecture); circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rjp-4019
+        note: "vor 1900: Fürstenfamilie Nanokaichi-Maeda, Kaga, Erwerbsumstände unbekannt, in Kaga (heutige Präfektur Ishikawa)"
+        source: rietberg-rjp-4019
+        accessed: 2026-11-24
+  - owner: person/hayashi-tadamasa
+    role: agent
+    acquired: before 1907
+    label: intermediary, with Kano Tessai, between Grosse and the Maeda family; unclear whether he bought and resold the masks or only made the contact
+    sources:
+      - url: https://rietberg.ch/sammlungen/rjp-4019
+        note: |-
+          vor 1907: Hayashi Tadamasa (1853–1906), Erwerbsumstände unbekannt
+          Hayashi Tadamasa und Kano Tessai fungierten als Vermittler zwischen Grosse und der Maeda Familie (Vgl. Wege de Kunst S. 185, 190-191). Es ist nicht klar, ob Hayashi Tadamasa die Objekte als Zwischenhändler an- und verkaufte oder nur den Kontakt herstellte.
+        source: rietberg-rjp-4019
+        accessed: 2026-11-24
+  - owner: person/ernst-grosse
+    acquired: 1907/1913
+    method: purchase
+    label: bought in Japan
+    sources:
+      - url: https://rietberg.ch/sammlungen/rjp-4019
+        note: "1907–1913: Ernst Grosse (1862–1927), angekauft, in Japan"
+        source: rietberg-rjp-4019
+        accessed: 2026-11-24
+  - owner: person/yasuko-grosse
+    acquired: 1927
+    method: inheritance
+    direct: true
+    place: freiburg-im-breisgau
+    label: see Georg Reinhart's notes on acquiring the Noh masks, "Zeddelkatalog", private archive, Winterthur
+    sources:
+      - url: https://rietberg.ch/sammlungen/rjp-4019
+        note: |-
+          1927: Yasuko Grosse, durch Erbgang erworben, in Freiburg im Breisgau
+          Siehe Georg Reinharts Ausführungen zum Erwerb der No-Masken, «Zeddelkatalog», No-Masken, Privatarchiv, Winterthur.
+        source: rietberg-rjp-4019
+        accessed: 2026-11-24
+  - owner: person/georg-reinhart
+    acquired: 1927
+    method: purchase
+    direct: true
+    place: winterthur
+    label: bought from Ernst Grosse's estate
+    sources:
+      - url: https://rietberg.ch/sammlungen/rjp-4019
+        note: |-
+          1927: Georg Reinhart (1877–1955), angekauft, in Winterthur
+          Erwerb aus dem Nachlass Ernst Grosse
+        source: rietberg-rjp-4019
+        accessed: 2026-11-24
+  - owner: person/balthasar-reinhart
+    acquired: 1955
+    method: inheritance
+    direct: true
+    place: winterthur
+    sources:
+      - url: https://rietberg.ch/sammlungen/rjp-4019
+        note: "1955: Balthasar Reinhart (1916–2005), durch Erbgang erworben, in Winterthur"
+        source: rietberg-rjp-4019
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1991
+    method: gift
+    place: zurich
+    label: gift of Balthasar and Nanni Reinhart
+    sources:
+      - url: https://rietberg.ch/sammlungen/rjp-4019
+        note: "1991: Museum Rietberg, als Geschenk erhalten, in Zürich"
+        source: rietberg-rjp-4019
+        accessed: 2026-11-24

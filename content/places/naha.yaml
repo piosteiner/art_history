@@ -1,0 +1,47 @@
+public_id: 124469
+name: Naha
+names:
+  - lang: ja
+    role: original
+    text: 那覇市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q181966
+  - lang: zh
+    role: translation
+    text: 那霸市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q181966
+  - lang: ko
+    role: translation
+    text: 나하시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q181966
+  - lang: ru
+    role: translation
+    text: Наха
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q181966
+kind: settlement
+parent: japan
+country_code: JP
+location: [127.67917, 26.21222]
+wikidata_id: Q181966
+metadata:
+  sources: [Wikidata Q181966 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q181966
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q181966
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q181966

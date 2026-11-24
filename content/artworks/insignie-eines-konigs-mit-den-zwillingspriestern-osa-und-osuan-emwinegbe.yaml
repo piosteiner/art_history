@@ -1,0 +1,87 @@
+public_id: 123828
+title_lang: de
+title: Insignie eines Königs mit den Zwillingspriestern Osa und Osuan, Emwinegbe
+attribution_label: Königliche Gilde der Elfenbeinschnitzer am Hof von Benin
+created: 1501/1700
+kind: jewellery
+medium: Elfenbein
+dimensions: [9.2, 9.5, 3.2]
+institution: museum-rietberg
+inventory_number: RAF 606
+web_url: https://rietberg.ch/sammlungen/raf-606
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9b/Benin_Schmuckanh%C3%A4nger_Museum_Rietberg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Benin_Schmuckanhänger_Museum_Rietberg.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Königliche Gilde der Elfenbeinschnitzer am Hof von Benin
+    acquired: 16th–17th century
+    method: creation
+    place: benin-city
+    label: carved by the royal guild of ivory carvers at the court of Benin
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-606
+        note: "16./17. Jh.: Königliche Gilde der Elfenbeinschnitzer am Hof von Benin in Benin City"
+        source: rietberg-raf-606
+        accessed: 2026-11-24
+  - owner: institution/royal-court-of-benin
+    acquired: 16th–17th century
+    method: commission
+    place: benin-city
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-606
+        note: "16./17. Jh.: Königshaus Benin, beauftragt in Benin City"
+        source: rietberg-raf-606
+        accessed: 2026-11-24
+  - owner: person/ovonramwen-nogbaisi
+    acquired: 1888
+    method: inheritance
+    place: benin-city
+    label: Oba of Benin; by inheritance
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-606
+        note: "1888: Oba Ovonramwen Nogbaisi (um 1857–1914), durch Erbgang erworben in Benin City"
+        source: rietberg-raf-606
+        accessed: 2026-11-24
+  - owner: institution/british-army
+    role: possessor
+    acquired: 1897
+    method: spoils_of_war
+    place: benin-city
+    label: probably looted in the British attack on Benin City
+    certainty: probable
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-606
+        note: "1897: British Army, wahrscheinlich geplündert in Benin City"
+        source: rietberg-raf-606
+        accessed: 2026-11-24
+  - owner_label: Nigerian art dealer
+    role: dealer
+    acquired: before 1965
+    label: unnamed "Nigerianischer Kunsthändler" (inventory card); circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-606
+        note: 'vor 1965: [...], ["Nigerianischer Kunsthändler"] Erwerbsumstände unbekannt Vgl. Schriftenarchiv Museum Rietberg, Inventarkarte RAF 606: "Nigerianischer Kunsthändler"'
+        source: rietberg-raf-606
+        accessed: 2026-11-24
+  - owner: person/elizabeth-zink-niehus
+    acquired: 1965
+    method: purchase
+    place: zurich
+    label: bought at the Globus department store, Zürich, exhibition "Verschenkt die Schweiz Geld"
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-606
+        note: '1965: Elizabeth Zink-Niehus, angekauft bei Globus Warenhaus (Zürich), Ausstellung "Verschenkt die Schweiz Geld" Vgl. Schriftenarchiv Museum Rietberg, Geschenke Legate und Tausch S.0003-S 0004 – 0005, RAF 606, Schenkungsurkunde.'
+        source: rietberg-raf-606
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1991
+    method: gift
+    direct: true
+    label: deed of gift; credit line "Geschenk Elisabeth Zink-Niehus"
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-606
+        note: "1991: Museum Rietberg, als Geschenk erhalten Vgl. Schriftenarchiv Museum Rietberg, Geschenke Legate und Tausch S.0003-0004 – 0005, RAF 606, Schenkungsurkunde sowie Inventarbuch Museum Rietberg Zürich, IV, S. 97."
+        source: rietberg-raf-606
+        accessed: 2026-11-24

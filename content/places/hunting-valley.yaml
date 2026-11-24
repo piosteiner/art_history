@@ -1,0 +1,22 @@
+public_id: 128739
+name: Hunting Valley
+kind: settlement
+parent: ohio
+country_code: US
+location: [-81.40178, 41.48922]
+wikidata_id: Q284734
+metadata:
+  sources: [Wikidata Q284734 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q284734
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q284734
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q284734

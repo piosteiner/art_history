@@ -1,0 +1,41 @@
+public_id: 123927
+name: Onomichi
+names:
+  - lang: ja
+    role: original
+    text: 尾道市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q696694
+  - lang: ko
+    role: translation
+    text: 오노미치시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q696694
+  - lang: ru
+    role: translation
+    text: Ономити
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q696694
+kind: settlement
+parent: japan
+country_code: JP
+location: [133.20544, 34.40911]
+wikidata_id: Q696694
+metadata:
+  sources: [Wikidata Q696694 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q696694
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q696694
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q696694

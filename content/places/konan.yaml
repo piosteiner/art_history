@@ -1,0 +1,41 @@
+public_id: 124053
+name: Konan
+names:
+  - lang: ja
+    role: original
+    text: 湖南市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q857194
+  - lang: ko
+    role: translation
+    text: 고난시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q857194
+  - lang: ru
+    role: translation
+    text: Конан
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q857194
+kind: settlement
+parent: shiga-prefecture
+country_code: JP
+location: [136.08472, 35.00408]
+wikidata_id: Q857194
+metadata:
+  sources: [Wikidata Q857194 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q857194
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q857194
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q857194

@@ -1,0 +1,117 @@
+public_id: 122917
+title_lang: en
+title: Portrait of Isabella Brant
+creator: peter-paul-rubens
+created: c. 1620–1625
+created_span: uncertain
+kind: oil painting
+medium: oil on wood
+dimensions: [53, 46]
+institution: cleveland-museum-of-art
+inventory_number: "1947.207"
+web_url: https://clevelandart.org/art/1947.207
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1947.207/1947.207_web.jpg
+    source_url: https://clevelandart.org/art/1947.207
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner_label: Lord Glanusk
+    ended: 1914
+    sources:
+      - url: https://clevelandart.org/art/1947.207
+        note: Lord Glanusk [1914]
+        source: cma-1947-207
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1914-04-29
+    method: auction
+    direct: true
+    place: london
+    label: Glanusk sale, 29 April 1914, no. 88
+    sources:
+      - url: https://clevelandart.org/art/1947.207
+        note: (Glanusk sale, Sotheby's, London, April 29, 1914, no. 88, sold to Hugh Blaker)
+        source: cma-1947-207
+        accessed: 2026-11-24
+  - owner: person/hugh-blaker
+    role: dealer
+    acquired: 1914-04-29
+    method: auction
+    direct: true
+    label: probably as dealer rather than owner; in Old Isleworth
+    sources:
+      - url: https://clevelandart.org/art/1947.207
+        note: (Hugh Blaker [1873–1936], Old Isleworth, Middlesex, England, sold to Marcus Kappel — It is not certain whether Blaker acted as owner or dealer in this case, but given that he dealt in Old Masters and had the painting for no more than a year, the latter is more likely.
+        source: cma-1947-207
+        accessed: 2026-11-24
+  - owner: person/marcus-kappel
+    acquired: 1914
+    ended: 1919
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://clevelandart.org/art/1947.207
+        note: Marcus Kappel [1839-1919], Berlin [1914-1919]
+        source: cma-1947-207
+        accessed: 2026-11-24
+  - owner: person/marcus-kappel
+    role: estate
+    acquired: 1919
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1947.207
+        note: Estate of Marcus Kappel [1919-1930]
+        source: cma-1947-207
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    co_owners: [institution/hugo-helbing]
+    role: agent
+    not_sold: true
+    acquired: 1930-11-25
+    method: auction
+    direct: true
+    place: berlin
+    label: "Kappel estate sale, 25 November 1930, no. 16, withdrawn: it failed to meet its reserve (Limite RM 150,000); Burchard received a photo through Caspari, Munich, 27 Feb. 1930"
+    sources:
+      - url: https://clevelandart.org/art/1947.207
+        note: "(Kappel estate sale, Paul Cassirer und Hugo Helbing, Berlin, Nov. 25, 1930, no. 16, withdrawn) — An annotation in the Rubenianum's copy of this sale catalogue indicates that the painting was withdrawn because it failed to meet its reserve price: \"Limite R[eichs] M[ark] 150.000\"."
+        source: cma-1947-207
+        accessed: 2026-11-24
+  - owner_label: heirs of Marcus Kappel (possibly Ellen Rathenau-Ettlinger and/or Ernst Rathenau)
+    acquired: 1930
+    method: inheritance
+    direct: true
+    label: the picture remained in the family; sold to Rosenberg & Stiebel in America, November 1945
+    sources:
+      - url: https://clevelandart.org/art/1947.207
+        note: Heirs of Marcus Kappel, sold to Rosenberg and Stiebel with Pinakos, Inc./Rudolf Heinemann [1930-1947] — “after Marcus Kappel’s death, the picture remained in the possession of the family.” … “Nov. 1945 in America den Kappel-Erben abgekauft von Rosenberg & Stiebel, New York.”
+        source: cma-1947-207
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    co_owners: [institution/pinakos-inc]
+    role: dealer
+    acquired: 1945-11
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: a half-share each; Pinakos (Rudolf Heinemann) may have bought its half after Rosenberg & Stiebel's purchase
+    sources:
+      - url: https://clevelandart.org/art/1947.207
+        note: Rosenberg and Stiebel and Pinakos, Inc./Rudolf Heinemann, New York, NY, sold to the Cleveland Museum of Art) — Each firm owned a half-share in the Rubens painting, but because Pinakos is not mentioned in the above correspondence, Rosenberg and Stiebel may have sold the half-share following their initial purchase of the painting in November 1945.
+        source: cma-1947-207
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1947
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Mr. and Mrs. William H. Marlatt Fund
+    sources:
+      - url: https://clevelandart.org/art/1947.207
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1947-]
+        source: cma-1947-207
+        accessed: 2026-11-24

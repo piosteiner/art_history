@@ -1,0 +1,23 @@
+public_id: 122865
+name: Marco Cornaro
+given_name: Marco
+family_name: Cornaro
+kind: person
+birth: 1482
+death: 1524-08-03
+wikidata_id: Q927473
+metadata:
+  sources: [Wikidata Q927473 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q927473
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q927473
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q927473

@@ -1,0 +1,35 @@
+public_id: 125829
+name: San Gimignano
+names:
+  - lang: zh
+    role: translation
+    text: 圣吉米亚诺
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q91413
+  - lang: ru
+    role: translation
+    text: Сан-Джиминьяно
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q91413
+kind: settlement
+parent: province-of-siena
+country_code: IT
+location: [11.04322, 43.46772]
+wikidata_id: Q91413
+metadata:
+  sources: [Wikidata Q91413 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q91413
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q91413
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q91413

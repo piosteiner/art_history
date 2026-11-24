@@ -1,0 +1,47 @@
+public_id: 129292
+name: Kinokawa
+names:
+  - lang: ja
+    role: original
+    text: 紀の川市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q697002
+  - lang: zh
+    role: translation
+    text: 紀之川市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q697002
+  - lang: ko
+    role: translation
+    text: 기노카와시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q697002
+  - lang: ru
+    role: translation
+    text: Кинокава
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q697002
+kind: settlement
+parent: wakayama-prefecture
+country_code: JP
+location: [135.36278, 34.26972]
+wikidata_id: Q697002
+metadata:
+  sources: [Wikidata Q697002 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q697002
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q697002
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q697002

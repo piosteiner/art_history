@@ -1,0 +1,197 @@
+public_id: 125069
+title_lang: de
+title: Am Brunnen bei Grottaferrara
+names:
+  - lang: en
+    role: translation
+    text: The Fountain at Grottaferrata
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20267116
+  - lang: it
+    role: translation
+    text: La Fontana a Grottaferrata
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20267116
+creator: ludwig-richter
+created: 1832
+materials: [oil paint, canvas]
+dimensions: [113, 99.5]
+institution: art-institute-of-chicago
+inventory_number: "2011.123"
+wikidata_id: Q20267116
+metadata:
+  sources: [Wikidata Q20267116 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ludwig_Richter_-_Am_Brunnen_bei_Grottaferrara_%281832%29.jpg/1280px-Ludwig_Richter_-_Am_Brunnen_bei_Grottaferrara_%281832%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ludwig_Richter_-_Am_Brunnen_bei_Grottaferrara_(1832).jpg
+    license: Public domain
+    credit: Ludwig Richter
+provenance:
+  - owner: artist/ludwig-richter
+    acquired: 1832
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: The artist;
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner: institution/sachsischer-kunstverein
+    acquired: 1832
+    method: purchase
+    direct: true
+    place: dresden
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: sold to the Sächsische Kunstverein, Dresden, 1832 [Hoff 1903];
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner_label: Oberlehrer Fritsche, Dessau
+    acquired: 1832
+    direct: true
+    place: dessau
+    label: won at a raffle hosted by the Sächsischer Kunstverein
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: won by Herr Oberlehrer Fritsche, Dessau, 1832 [the object was acquired by Fritsche at a raffle hosted by the Sächsische Kunstverein; Hoff 1922];
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner_label: wife of Oberlehrer Fritsche, Dessau
+    acquired: 1902 or earlier
+    method: inheritance
+    direct: true
+    place: dessau
+    label: by October 1902
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: by descent to his wife, Dessau, by Oct. 1902 [Woermann 1902];
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner: person/charlotte-esche
+    acquired: 1937 or earlier
+    method: inheritance
+    direct: true
+    place: munich
+    label: born Fritsche
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: by descent to her daughter, Charlotte Esche (1887–1944; born Fritsche), Munich, by 1937 [Friedrich 1937];
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner_label: children of Charlotte Esche
+    acquired: 1944
+    method: inheritance
+    direct: true
+    label: after the deaths of Esche and her husband in a Munich bombing; sold to support the children
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: by descent to her children, 1944 [this and the following according to email correspondence from John Schlichte-Bergen, May 9, 2011, in which he stated that the painting was sold to support Esche’s children following the deaths of Esche and her husband in a Munich bombing; copy in curatorial object file];
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner_label: Private collection, Berlin
+    acquired: 1946
+    method: purchase
+    direct: true
+    place: berlin
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: sold to private collection, Berlin, 1946;
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner: institution/kunsthaus-lempertz
+    role: agent
+    acquired: 1989-05-26
+    method: auction
+    direct: true
+    place: cologne
+    label: sale, Kunsthaus Lempertz, Cologne, 26 May 1989, lot 271
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: sold, Kunsthaus Lempertz, Cologne, May 26, 1989, lot 271,
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner_label: Private collection, Switzerland
+    acquired: 1989-05-26
+    method: auction
+    direct: true
+    label: then by descent through the family
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: to private collection, Switzerland; by descent through the family.
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner: institution/galerie-bruno-meissner
+    role: dealer
+    place: zurich
+    label: with the gallery, Zürich and Paris, 1992
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: With Galerie Bruno Meissner, Zürich and Paris, 1992.
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner_label: Kohler, Switzerland
+    label: until 2010
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: Kohler, Switzerland, until 2010;
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 2010-07-06
+    method: auction
+    direct: true
+    place: london
+    label: sale, Christie's, London, 6 July 2010, lot 57
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: sold, Christie’s, London, July 6, 2010, lot 57,
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner: institution/kunsthandel-schlichte-bergen
+    role: dealer
+    acquired: 2010-07-06
+    method: auction
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: to Kunsthandel Schlichte Bergen, Amsterdam;
+        source: aic-2011-123
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 2011
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/209942
+        note: sold to the Art Institute of Chicago, 2011.
+        source: aic-2011-123
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20267116
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20267116
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20267116
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20267116
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20267116
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20267116

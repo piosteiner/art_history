@@ -1,0 +1,54 @@
+public_id: 124478
+title: Tsūjun Bridge
+names:
+  - text: Tsūjun-kyō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3077059
+  - lang: fr
+    role: translation
+    text: pont de Tsūjun
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3077059
+  - lang: es
+    role: translation
+    text: puente de Tsūjun
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3077059
+  - lang: ja
+    role: translation
+    text: 通潤橋
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3077059
+  - lang: zh
+    role: translation
+    text: 通润桥
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3077059
+created: 1854
+location: [130.99361, 32.68167]
+wikidata_id: Q3077059
+metadata:
+  sources: [Wikidata Q3077059 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/yamato
+    period: 1854
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Tsujyunkyo.jpg/1280px-Tsujyunkyo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tsujyunkyo.jpg
+    license: CC BY-SA 3.0
+    credit: masamic
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3077059
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3077059

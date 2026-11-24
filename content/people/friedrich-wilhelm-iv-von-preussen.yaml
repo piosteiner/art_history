@@ -36,6 +36,16 @@ death: 1861-01-02
 wikidata_id: Q57180
 metadata:
   sources: [Wikidata Q57180 (retrieved 2026-10-27)]
+relationships:
+  - type: child_of
+    to: person/friedrich-wilhelm-iii-von-preussen
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q37134
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q57180
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/ed/Friedrich_Wilhelm_IV_of_Prussia_%281847%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Friedrich_Wilhelm_IV_of_Prussia_(1847).jpg

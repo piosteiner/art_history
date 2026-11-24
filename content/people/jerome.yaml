@@ -1,0 +1,21 @@
+public_id: 122819
+name: Jerome
+kind: person
+birth: c. 345
+death: 420-10-01
+wikidata_id: Q44248
+metadata:
+  sources: [Wikidata Q44248 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q44248
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q44248
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q44248

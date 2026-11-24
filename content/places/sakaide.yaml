@@ -1,0 +1,41 @@
+public_id: 123945
+name: Sakaide
+names:
+  - lang: ja
+    role: original
+    text: 坂出市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q855059
+  - lang: ko
+    role: translation
+    text: 사카이데시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q855059
+  - lang: ru
+    role: translation
+    text: Сакаиде
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q855059
+kind: settlement
+parent: japan
+country_code: JP
+location: [133.86028, 34.31667]
+wikidata_id: Q855059
+metadata:
+  sources: [Wikidata Q855059 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q855059
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q855059
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q855059

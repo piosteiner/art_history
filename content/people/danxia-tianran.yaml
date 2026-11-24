@@ -1,0 +1,23 @@
+public_id: 124229
+name: Danxia Tianran
+given_name: Danxia
+family_name: Tianran
+kind: person
+birth: 739
+death: 824
+wikidata_id: Q10840066
+metadata:
+  sources: [Wikidata Q10840066 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q10840066
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q10840066
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q10840066

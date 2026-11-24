@@ -1,0 +1,18 @@
+public_id: 124554
+name: Ono no Michikaze
+given_name: Ono no
+family_name: Michikaze
+birth: 894
+death: 966-02-14
+wikidata_id: Q1439775
+metadata:
+  sources: [Wikidata Q1439775 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q1439775
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q1439775

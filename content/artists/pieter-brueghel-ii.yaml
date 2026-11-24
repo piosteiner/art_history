@@ -40,6 +40,15 @@ relationships:
       - accessed: 2026-11-12
         property: P737
         wikidata: Q255828
+  - type: child_of
+    to: artist/pieter-brueghel-the-elder
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q43270
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q255828
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Van_Dyck_Pieter_Brueghel_the_Younger.jpg/1280px-Van_Dyck_Pieter_Brueghel_the_Younger.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Van_Dyck_Pieter_Brueghel_the_Younger.jpg

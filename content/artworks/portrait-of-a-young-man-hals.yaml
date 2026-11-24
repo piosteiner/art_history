@@ -1,0 +1,164 @@
+public_id: 123207
+title_lang: en
+title: Portrait of a Young Man
+names:
+  - lang: nl
+    role: translation
+    text: Portret van een zittende jonge man met een zwarte hoed
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q18010010
+  - lang: fr
+    role: translation
+    text: Portrait d'un jeune homme
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q18010010
+creator: frans-hals
+created: 1640s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [68, 55.4]
+institution: national-gallery-of-art
+inventory_number: 1937.1.71
+provenance_status: a_clear
+provenance_status_note: Bought by Andrew W. Mellon from the Hermitage in February 1931; deeded 1 May 1937 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q18010010
+metadata:
+  sources: [Wikidata Q18010010 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q18010010
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Hals_young_man.jpg/1280px-Hals_young_man.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hals_young_man.jpg
+    license: Public domain
+    credit: Frans Hals
+provenance:
+  - owner: person/robert-walpole
+    acquired: 1736 or earlier
+    label: Houghton Hall, Norfolk; Horace Walpole's manuscript catalogue of 1736, pp. 33–34
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.78.html
+        note: Sir Robert Walpole, 1st earl of Orford [1676-1745], Houghton Hall, Norfolk, by 1736;[1] — [1] Horace Walpole, "A Catalogue of the Right Honble. Sir Robert Walpole’s Collection of Pictures," 1736
+        source: nga-1937-1-71
+        accessed: 2026-11-24
+  - owner: person/robert-walpole-2nd-earl-of-orford
+    method: inheritance
+    direct: true
+    label: Houghton Hall
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.78.html
+        note: by inheritance to his son, Robert Walpole, 2nd earl of Orford [1700-1751], Houghton Hall;
+        source: nga-1937-1-71
+        accessed: 2026-11-24
+  - owner: person/george-walpole-3rd-earl-of-orford
+    method: inheritance
+    direct: true
+    label: Houghton Hall
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.78.html
+        note: by inheritance to his son, George Walpole, 3rd earl of Orford [1730-1791], Houghton Hall;
+        source: nga-1937-1-71
+        accessed: 2026-11-24
+  - owner: person/aleksei-semonovich-musin-pushkin
+    role: agent
+    acquired: 1779
+    direct: true
+    label: Russian ambassador to England; sale of the Houghton pictures to Catherine II
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.78.html
+        note: sold 1779 through Count Aleksei Semonovich Musin-Pushkin, Russian ambassador to England, to Catherine II
+        source: nga-1937-1-71
+        accessed: 2026-11-24
+  - owner: person/catherine-ii-of-russia
+    acquired: 1779
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.78.html
+        note: sold 1779 through Count Aleksei Semonovich Musin-Pushkin, Russian ambassador to England, to Catherine II, empress of Russia [1729-1796], Saint Petersburg;
+        source: nga-1937-1-71
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.78.html
+        note: Imperial Hermitage Gallery, Saint Petersburg;
+        source: nga-1937-1-71
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1931-02
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.78.html
+        note: sold February 1931 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1937-1-71
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1931-02
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.78.html
+        note: sold February 1931 through (…) to Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-71
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1937-05-01
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.78.html
+        note: deeded 1 May 1937 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1937-1-71
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.78.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-71
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q18010010
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q18010010
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q18010010
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q18010010
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q18010010
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q18010010

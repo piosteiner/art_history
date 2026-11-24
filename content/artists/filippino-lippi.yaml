@@ -1,0 +1,18 @@
+public_id: 123013
+name: Filippino Lippi
+given_name: Filippino
+family_name: Lippi
+birth: 1457
+death: 1504-04-28
+wikidata_id: Q296265
+metadata:
+  sources: [Wikidata Q296265 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q296265
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q296265

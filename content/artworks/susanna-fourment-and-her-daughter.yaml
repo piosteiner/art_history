@@ -1,0 +1,229 @@
+public_id: 122972
+title_lang: en
+title: Susanna Fourment and Her Daughter
+names:
+  - lang: nl
+    role: translation
+    text: Dubbelportret van Suzanna Fourment (1599-1628) en haar dochter Clara del Monte (1618-?)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177010
+  - lang: de
+    role: translation
+    text: Susanna Fourment und ihre Tochter
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177010
+creator: anthony-van-dyck
+created: 1621
+materials: [oil paint, canvas]
+dimensions: [172, 117]
+institution: national-gallery-of-art
+inventory_number: 1937.1.48
+web_url: https://www.karoline-luise.la-bw.de/kunstobjekt.php?id=37
+provenance_status: a_clear
+provenance_status_note: Andrew W. Mellon bought it from the Hermitage in March 1930 and deeded it on 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q20177010
+metadata:
+  sources: [Wikidata Q20177010 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/susanna-fourment
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20177010
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Susanna_Fourment_and_Her_Daughter.jpg/1280px-Susanna_Fourment_and_Her_Daughter.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Susanna_Fourment_and_Her_Daughter.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+provenance:
+  - owner: person/anna-theresia-van-halen
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: Probably Anna Theresia van Halen;
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner_label: Anna Theresia van Halen sale, Antwerp
+    role: agent
+    acquired: 1749-08-19
+    method: auction
+    direct: true
+    place: province-of-antwerp
+    label: her sale, Antwerp, 19 August 1749, no. 1 (described by Gerard Hoet, Catalogus of naamlyst, 2:256)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: (her sale, Antwerp, 19 August 1749, no. 1);
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner: person/gaillard-de-gagny
+    direct: true
+    place: grenoble
+    label: receiver of finances
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: Gaillard de Gagny (receiver of finances), Grenoble;[1]
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner: person/pierre-remy
+    role: agent
+    acquired: 1762-03-29
+    method: auction
+    direct: true
+    place: paris
+    label: estate sale of Gaillard de Gagny, Paris, 29 March 1762, no. 9
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: (his estate sale, Pierre Remy, Paris, 29 March 1762, no. 9);
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner: person/karoline-luise-von-baden
+    acquired: 1762-03-29
+    method: auction
+    direct: true
+    label: Margravine of Baden; bought for her at the sale by Jean-Henri Eberts
+    price:
+      amount: 2050
+      currency: LIV
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: purchased by Jean-Henri Eberts for Markgräfin Karoline Luise von Baden [1723-1783];[2] — [3] Eberts in 1762 purchased the painting for 2,050 livres
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner_label: Karoline Luise von Baden sale, Amsterdam
+    role: agent
+    acquired: 1769-03-06
+    method: auction
+    direct: true
+    place: amsterdam
+    label: her sale, Amsterdam, 6 March 1769, no. 3
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: (her sale, Amsterdam, 6 March 1769, no. 3);
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner: person/etienne-francois-de-choiseul
+    direct: true
+    place: paris
+    label: duc de Choiseul; Paris and Château de Chanteloup, Touraine
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: Etienne-François, duc de Choiseul [1719-1785], Paris and Château de Canteloup, Touraine;
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner_label: Choiseul sale, Paris
+    role: agent
+    acquired: 1772-04-06
+    method: auction
+    direct: true
+    place: paris
+    label: his sale at his residence, Paris, 6–10 April 1772, no. 1
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: (his sale, at his residence, Paris, 6-10 April 1772, no. 1);
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner: person/augustin-menageot
+    role: dealer
+    acquired: 1772-04
+    method: auction
+    direct: true
+    place: paris
+    price:
+      amount: 7380
+      currency: LIV
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: purchased through (Augustin Ménageot, Paris) … — [3] Ménageot in 1772 bought it for 7,380 livres.
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner: person/catherine-ii-of-russia
+    acquired: 1772
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: bought through Prince Alexander M. Golitzyn, for the Imperial Hermitage Gallery
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: by Prince Alexander M. Golitzyn for Catherine II, empress of Russia [1729-1796], for the Imperial Hermitage Gallery, Saint Petersburg;[3]
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: for the Imperial Hermitage Gallery, Saint Petersburg;[3]
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1930-03
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York); as a painting by Peter Paul Rubens
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: purchased March 1930, as a painting by Peter Paul Rubens, through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1930-03
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.; as a painting by Peter Paul Rubens
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: purchased March 1930, as a painting by Peter Paul Rubens, through (…) by Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1932-03-30
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: deeded 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[4]
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-48
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177010
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177010
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177010
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177010
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177010
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177010

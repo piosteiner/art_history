@@ -1,0 +1,43 @@
+public_id: 124228
+title: Danxia Burning Buddhist Statues
+names:
+  - lang: ja
+    role: translation
+    text: 禅機図断簡 丹霞焼仏図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045329
+parent: deeds-of-the-zen-masters
+institution: ishibashi-foundation-art-research-center
+web_url: https://www.artizon.museum/collection/category/detail/199
+location: [139.3817, 35.60021]
+wikidata_id: Q107045329
+metadata:
+  sources: [Wikidata Q107045329 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+  - type: depicts_person
+    to: person/danxia-tianran
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107045329
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a5/Detached_Segment_from_The_Deeds_of_the_Zen_Masters.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Detached_Segment_from_The_Deeds_of_the_Zen_Masters.jpg
+    license: Public domain
+    credit: Indara (Yintuoluo)
+sources:
+  parent:
+    - accessed: 2026-11-24
+      property: P179
+      wikidata: Q107045329
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107045329
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107045329

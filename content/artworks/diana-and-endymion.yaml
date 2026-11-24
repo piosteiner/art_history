@@ -1,0 +1,173 @@
+public_id: 122998
+title_lang: en
+title: Diana and Endymion
+names:
+  - lang: fr
+    role: translation
+    text: Diane et Endymion
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20178055
+  - lang: de
+    role: translation
+    text: Diana und Endymion
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20178055
+  - lang: ja
+    role: translation
+    text: ディアナとエンデュミオン
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20178055
+creator: jean-honore-fragonard
+created: c. 1753
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [94.9, 136.8]
+institution: national-gallery-of-art
+inventory_number: 1960.6.2
+wikidata_id: Q20178055
+metadata:
+  sources: [Wikidata Q20178055 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Diana_and_Endymion_A31382.jpg/1280px-Diana_and_Endymion_A31382.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Diana_and_Endymion_A31382.jpg
+    license: Public domain
+    credit: Jean-Honoré Fragonard
+provenance:
+  - owner: person/richard-wallace
+    acquired: 1883 or earlier
+    place: paris
+    label: Sir Richard Wallace, 1st Bt., London and Paris; the Boucher of the same title, not this painting, was in the Paris sales of 1773, 1779 and 1830
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46026.html
+        note: Sir Richard Wallace, 1st bt. [1818-1890], London and Paris, by 1883;[1]
+        source: nga-1960-6-2
+        accessed: 2026-11-24
+  - owner: person/julie-amelie-charlotte-castelnau
+    method: inheritance
+    direct: true
+    place: paris
+    label: his wife, Lady Wallace, Paris and London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46026.html
+        note: by inheritance to his wife, Julie-Amélie-Charlotte Castelnau, Lady Wallace [1819-1897], Paris and London;
+        source: nga-1960-6-2
+        accessed: 2026-11-24
+  - owner: person/john-murray-scott-2
+    method: inheritance
+    direct: true
+    place: paris
+    label: Sir John Murray Scott, her adviser and secretary, London and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46026.html
+        note: by inheritance to her adviser and secretary, Sir John Murray Scott [1847-1912], London and Paris;
+        source: nga-1960-6-2
+        accessed: 2026-11-24
+  - owner: person/victoria-sackville-west
+    method: inheritance
+    direct: true
+    place: paris
+    label: Josephine Victoria Sackville-West, Lady Sackville, his friend, of Sevenoaks, Kent; the painting remained in Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46026.html
+        note: by inheritance to his friend, Josephine Victoria Sackville-West, Lady Sackville [1864-1936], Sevenoaks, Kent [painting remained in Paris during this time];
+        source: nga-1960-6-2
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    acquired: 1913
+    method: purchase
+    direct: true
+    place: paris
+    label: Seligmann inventory no. 579
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46026.html
+        note: sold 1913 to (Jacques Seligmann and Co., Inc., Paris and New York, no. 579 of Seligmann inventory);
+        source: nga-1960-6-2
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1914
+    method: purchase
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46026.html
+        note: sold 1914 to (M. Knoedler & Co., London, New York, and Paris);
+        source: nga-1960-6-2
+        accessed: 2026-11-24
+  - owner: person/john-mccormack
+    acquired: 1922-03
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46026.html
+        note: sold March 1922 to John McCormack [1884-1945], New York;
+        source: nga-1960-6-2
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46026.html
+        note: (M. Knoedler & Co., London, New York, and Paris);
+        source: nga-1960-6-2
+        accessed: 2026-11-24
+  - owner: person/william-r-timken
+    acquired: 1924
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Knoedler's dealings 1914–1924 from Knoedler's librarian (telephone notes, 15 July 1981)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46026.html
+        note: sold 1924 to William R. Timken [1866-1949], New York;[2]
+        source: nga-1960-6-2
+        accessed: 2026-11-24
+  - owner: person/lillian-guyer-timken
+    method: inheritance
+    direct: true
+    place: new-york-city
+    label: his widow
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46026.html
+        note: by inheritance to his widow, Lillian Guyer Timken [1881-1959] New York;
+        source: nga-1960-6-2
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1960
+    method: bequest
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46026.html
+        note: bequest 1960 to NGA.
+        source: nga-1960-6-2
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20178055
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20178055
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20178055
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20178055
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20178055
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20178055

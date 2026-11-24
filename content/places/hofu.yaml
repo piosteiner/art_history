@@ -1,0 +1,47 @@
+public_id: 124215
+name: Hofu
+names:
+  - lang: ja
+    role: original
+    text: 防府市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502209
+  - lang: ko
+    role: translation
+    text: 호후시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502209
+  - lang: fr
+    role: translation
+    text: Hōfu
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502209
+  - lang: ru
+    role: translation
+    text: Хофу
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502209
+kind: settlement
+parent: yamaguchi
+country_code: JP
+location: [131.56256, 34.05128]
+wikidata_id: Q502209
+metadata:
+  sources: [Wikidata Q502209 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q502209
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q502209
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q502209

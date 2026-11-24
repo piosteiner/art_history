@@ -1,0 +1,76 @@
+public_id: 123855
+title_lang: de
+title: Modell eines Schafstalls
+attribution_label: Anonymous
+created: 1/200
+kind: sculpture
+medium: Tonware mit grüner Bleiglasur
+dimensions: [12.9, 21.7, 22.7]
+institution: museum-rietberg
+inventory_number: RCH 433
+web_url: https://rietberg.ch/sammlungen/rch-433
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Modell_Schafstall_%C3%B6stliche_Han-Dynastie_Museum_Rietberg.jpg/1280px-Modell_Schafstall_%C3%B6stliche_Han-Dynastie_Museum_Rietberg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Modell_Schafstall_östliche_Han-Dynastie_Museum_Rietberg.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired_label: Eastern Han dynasty, 1st/2nd century
+    method: creation
+    label: made in China (Eastern Han dynasty)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-433
+        note: "Östliche Han-Dynastie, 1./2. Jh.: Urheber*in unbekannt in China"
+        source: rietberg-rch-433
+        accessed: 2026-11-24
+  - owner: person/osvald-siren
+    acquired: before 1966
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-433
+        note: "vor 1966: Osvald Sirén (1879–1966), Erwerbsumstände unbekannt"
+        source: rietberg-rch-433
+        accessed: 2026-11-24
+  - owner: person/charles-a-drenowatz
+    acquired: before 1979
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-433
+        note: "vor 1979: Charles A. Drenowatz (1908–1979), Erwerbsumstände unbekannt"
+        source: rietberg-rch-433
+        accessed: 2026-11-24
+  - owner_label: heirs of Charles Drenowatz
+    role: estate
+    acquired: 1979
+    method: inheritance
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-433
+        note: "1979: Erb*innen von Charles Drenowatz, durch Erbgang erworben"
+        source: rietberg-rch-433
+        accessed: 2026-11-24
+  - owner: institution/koller-auktionen
+    role: agent
+    acquired: before 24 May 1984
+    place: zurich
+    label: on consignment; purchase files 1984
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-433
+        note: |-
+          vor 24.05.1984: Koller Auktionen, Zürich (1958), in Kommission erhalten
+          Ankäufe 1984
+        source: rietberg-rch-433
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1984-05-24
+    method: purchase
+    place: zurich
+    label: bought at Galerie Koller AG with funds of the City of Zürich
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-433
+        note: |-
+          24.05.1984: Museum Rietberg, angekauft in Zürich
+          Galerie Koller AG
+          Creditline: Ankauf mit Mitteln der Stadt Zürich
+        source: rietberg-rch-433
+        accessed: 2026-11-24

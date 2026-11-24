@@ -1,0 +1,175 @@
+public_id: 123005
+title_lang: en
+title: The Magdalen
+creator: bernardino-luini
+created: 1520/1525
+created_label: c. 1520s
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [58.8, 47.8]
+institution: national-gallery-of-art
+inventory_number: 1961.9.56
+wikidata_id: Q20175833
+metadata:
+  sources: [Wikidata Q20175833 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Bernardino_Luini_-_The_Magdalen_-_WGA13766.jpg/1280px-Bernardino_Luini_-_The_Magdalen_-_WGA13766.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernardino_Luini_-_The_Magdalen_-_WGA13766.jpg
+    license: Public domain
+    credit: Bernardino Luini
+provenance:
+  - owner: person/federico-borromeo
+    acquired: 1607 or earlier
+    place: milan
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: Federico Borromeo [1564-1631], by 1607;
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+  - owner: institution/biblioteca-ambrosiana
+    ended: 1796
+    direct: true
+    place: milan
+    label: Biblioteca and Pinacoteca Ambrosiana, until 1796
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: Biblioteca and Pinacoteca Ambrosiana, Milan, until 1796;[1]
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+  - owner: person/lucien-bonaparte
+    acquired: 1812 or earlier
+    direct: true
+    label: Prince de Canino, Paris and Rome; etched in the 1812 London catalogue of his gallery
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: Lucien Bonaparte [d. 1840], Prince de Canino, Paris and Rome, by 1812;[2]
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1815-02-06
+    place: london
+    label: exhibited for private sale of the Lucien Bonaparte collection, London, 6 February 1815, no. 23, as by Leonardo
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: (Exhibited for private sale of Lucian Bonaparte collection, London, 6 February 1815, no. 23, as by Leonardo);
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+  - owner_label: Stanley (auctioneer), London
+    role: agent
+    acquired: 1816-05-15
+    method: auction
+    direct: true
+    place: london
+    label: Bonaparte sale, Stanley, London, 15 May 1816, no. 165, as by Leonardo
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: (Bonaparte sale, Stanley, London, 15 May 1816, no. 165, as by Leonardo).
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+  - owner: person/henry-petty-fitzmaurice-4th-marquess-of-lansdowne
+    acquired: 1844 or earlier
+    label: Bowood Hall, Wiltshire; in Anna Jameson's Companion to the Most Celebrated Private Galleries of Art in London, 1844
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: Henry Petty-FitzMaurice, 4th Marquess of Lansdowne [1816-1866], Bowood Hall, Wiltshire, by 1844;[3]
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+  - owner: person/henry-petty-fitzmaurice-5th-marquess-of-lansdowne
+    method: inheritance
+    direct: true
+    label: Bowood Hall
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: by inheritance to Henry Charles Keith Petty-FitzMaurice [1845-1927], 5th Marquess of Landsdowne, Bowood Hall;
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+  - owner: person/henry-petty-fitzmaurice-6th-marquess-of-lansdowne
+    method: inheritance
+    direct: true
+    label: Bowood Hall
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: by inheritance to Henry William Edmund Petty-FitzMaurice [1872-1936], 6th Marquess of Landsdowne, Bowood Hall;
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1952-04-25
+    direct: true
+    place: london
+    label: Agnew stockbook no. 0718
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: acquired 25 April 1952 by (Thomas Agnew and Sons, London);
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+  - owner: person/rudolf-j-heinemann
+    role: dealer
+    acquired: 1952-04-29
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: sold 29 April 1952 to(Rudolf Heinemann, New York);[4]
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+  - owner: person/rudolf-j-heinemann
+    co_owners: [institution/m-knoedler-co]
+    role: dealer
+    acquired: 1952
+    direct: true
+    place: new-york-city
+    label: on joint account; Knoedler stock book no. 10, p. 78, no. A4905
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: on joint account 1952 with (M. Knoedler and Co., London and New York); — Stock book no. 10, p. 78, no. A4905
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1957
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Knoedler sales book no. 17, p. 314; receipt from Knoedler dated 2 January 1957
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: sold 1957 to the Samuel H. Kress Foundation, New York;[5] — Sales book no. 17, p. 314. Receipt from Knoedler dated 2 January 1957.
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1961
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46155.html
+        note: gift 1961 to NGA.
+        source: nga-1961-9-56
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20175833
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20175833
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20175833
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20175833
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20175833
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20175833

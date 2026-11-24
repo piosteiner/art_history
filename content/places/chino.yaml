@@ -1,0 +1,41 @@
+public_id: 124294
+name: Chino
+names:
+  - lang: ja
+    role: original
+    text: 茅野市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q838660
+  - lang: ko
+    role: translation
+    text: 지노시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q838660
+  - lang: ru
+    role: translation
+    text: Тино
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q838660
+kind: settlement
+parent: japan
+country_code: JP
+location: [138.15881, 35.99553]
+wikidata_id: Q838660
+metadata:
+  sources: [Wikidata Q838660 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q838660
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q838660
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q838660

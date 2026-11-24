@@ -1,0 +1,91 @@
+public_id: 124113
+title: Hell Scroll
+names:
+  - lang: ja
+    role: translation
+    text: 安住院本地獄草紙
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q16939154
+created: 12th century
+created_span: uncertain
+institution: tokyo-national-museum
+inventory_number: A-10942
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10942
+location: [139.7756, 35.71994]
+wikidata_id: Q16939154
+metadata:
+  sources: [Wikidata Q16939154 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/10/Jigoku-Zoushi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jigoku-Zoushi.jpg
+    license: Public domain
+    credit: Strange Arrow
+provenance:
+  - owner: institution/sanjusangen-do
+    acquired: 12th century
+    method: creation
+    place: kyoto
+    label: Heian period, 12th century; thought to have been kept with the Gaki zōshi and other scrolls in Go-Shirakawa's treasure house of Rengeō-in
+    certainty: probable
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&content_base_id=100155&content_part_id=000&content_pict_id=0
+        note: 平安時代・12世紀 … 「餓鬼草紙（がきぞうし）」（No.8）などとともに後白河天皇（ごしらかわてんのう）の蓮華王院宝蔵（れんげおういんほうぞう）に納められていたと考えられる
+        source: emuseum-100155
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%9C%B0%E7%8D%84%E8%8D%89%E7%B4%99&oldid=107230249
+        note: これらが蓮華王院の宝蔵にあったものだと断定はできないが、時代的には後白河の時代、すなわち12世紀頃の制作と考えられている。
+        source: wikipedia-ja-jigoku-zoshi
+        accessed: 2026-11-24
+  - owner_label: Saionji family
+    role: custodian
+    acquired: late 14th century
+    label: possibly in the care of the Saionji family
+    certainty: possible
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&content_base_id=100155&content_part_id=000&content_pict_id=0
+        note: 14世紀後半には西園寺（さいおんじ）家の管理下にあった可能性がある。
+        source: emuseum-100155
+        accessed: 2026-11-24
+  - owner: institution/anju-in
+    acquired_label: in the Edo period
+    place: okayama
+    label: handed down at Anju-in, Okayama — hence 'Anju-in version'
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&content_base_id=100155&content_part_id=000&content_pict_id=0
+        note: その後江戸時代には岡山の安住院（あんじゅういん）に伝来し
+        source: emuseum-100155
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%9C%B0%E7%8D%84%E8%8D%89%E7%B4%99&oldid=107230249
+        note: 旧蔵者にちなみ「安住院本」ともいう。
+        source: wikipedia-ja-jigoku-zoshi
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 1950
+    place: tokyo
+    label: entered the museum's collection in Shōwa 25; National Treasure since 28 June 1956
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&content_base_id=100155&content_part_id=000&content_pict_id=0
+        note: 昭和25年、東京国立博物館の収蔵品となった。
+        source: emuseum-100155
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/129
+        note: 国宝指定年月日 ： 1956.06.28(昭和31.06.28) … 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-129
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q16939154
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q16939154
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q16939154

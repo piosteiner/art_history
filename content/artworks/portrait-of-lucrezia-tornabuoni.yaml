@@ -1,0 +1,161 @@
+public_id: 123054
+title_lang: en
+title: Lucrezia Tornabuoni
+names:
+  - lang: en
+    role: original
+    text: Portrait of Lucrezia Tornabuoni
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20174171
+  - lang: it
+    role: translation
+    text: Ritratto di Lucrezia Tornabuoni
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20174171
+creator: domenico-ghirlandaio
+attribution_label: attributed to Domenico Ghirlandaio
+created: c. 1475
+created_span: uncertain
+materials: [tempera painting, oil paint, poplar panel]
+dimensions: [53.3, 39.9]
+institution: national-gallery-of-art
+inventory_number: 1952.5.62
+wikidata_id: Q20174171
+metadata:
+  sources: [Wikidata Q20174171 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/lucrezia-tornabuoni
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20174171
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q20174171
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Lucrezia_Tornabuoni_A27994.jpg/1280px-Lucrezia_Tornabuoni_A27994.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lucrezia_Tornabuoni_A27994.jpg
+    license: Public domain
+    credit: Attributed to Domenico Ghirlandaio
+provenance:
+  - owner_label: Palazzo Tornabuoni, Florence
+    ended: c. 1850
+    place: florence
+    label: possibly the portrait in the 1497 inventory of Giovanni Tornabuoni's household
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41677.html
+        note: Possibly Palazzo Tornabuoni, Florence, until c. 1850.[1] — [1] … the 1497 inventory of the household of Lucrezia's brother, Giovanni Tornabuoni, lists "1o quadretto d'una testa e busto di Mona Luchrezia de' Medicj" … the NGA portrait, not a profile, would presumably be the one from the Tornabuoni collection.
+        source: nga-1952-5-62
+        accessed: 2026-11-24
+  - owner: person/william-graham
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41677.html
+        note: William Graham [1817-1885], London;
+        source: nga-1952-5-62
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    not_sold: true
+    acquired: 1886-04
+    method: auction
+    direct: true
+    place: london
+    label: his estate sale, 2–3 and 8–10 April 1886, 3rd day, no. 200, as Portrait of a Lady; bought in by Agnew's for the executors of the Graham estate
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41677.html
+        note: (his estate sale, Christie, Manson & Woods, London, 2-3 and 8-10 April 1886, 3rd day, no. 200, as _Portrait of a Lady_, bought in by Agnew's for executors of Graham estate);
+        source: nga-1952-5-62
+        accessed: 2026-11-24
+  - owner: person/amelia-margaret-muir-mackenzie
+    co_owners: [person/kenneth-muir-mackenzie]
+    method: inheritance
+    direct: true
+    place: london
+    label: Graham's daughter Amy and her husband, 1st Baron Muir-Mackenzie; the daughters divided the bought-in paintings; she must have acquired it, though his name is published
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41677.html
+        note: his daughter and son-in-law, Lady Muir-MacKenzie [née Amelia Margaret "Amy" Graham, 1852-1900] and Kenneth Muir-MacKenzie, 1st baron Muir-Mackenzie [1845-1930], London;[2]
+        source: nga-1952-5-62
+        accessed: 2026-11-24
+  - owner: person/dorothea-muir-mackenzie-hambourg
+    method: inheritance
+    direct: true
+    place: london
+    label: their daughter, Mrs. Mark Hambourg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41677.html
+        note: by inheritance to their daughter, Dorothea Muir-Mackenzie Hambourg [Mrs. Mark Hambourg], London.
+        source: nga-1952-5-62
+        accessed: 2026-11-24
+  - owner: person/frank-t-sabin
+    role: dealer
+    acquired_label: in 1937
+    place: london
+    label: shown in an exhibition at the Sabin gallery in 1937
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41677.html
+        note: (Frank T. Sabin, London), in 1937.[3]
+        source: nga-1952-5-62
+        accessed: 2026-11-24
+  - owner: person/alessandro-contini-bonacossi
+    role: dealer
+    place: florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41677.html
+        note: (Count Alessandro Contini Bonacossi, Florence);
+        source: nga-1952-5-62
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1950-07
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: offer of 17 June 1950 for 125 paintings and one sculpture, accepted 1 July, released 6 July
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41677.html
+        note: sold July 1950 to the Samuel H. Kress Foundation, New York;[4] — [4] The Kress Foundation made an offer to Contini Bonacossi on 17 June 1950 for a group of 125 paintings and one sculpture, including NGA 1952.5.62. The offer was accepted on July 1, and the works of art were released to the Foundation on July 6
+        source: nga-1952-5-62
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41677.html
+        note: gift 1952 to NGA.
+        source: nga-1952-5-62
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20174171
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20174171
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20174171
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20174171
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20174171
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20174171

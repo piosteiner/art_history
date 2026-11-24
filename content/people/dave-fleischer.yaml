@@ -45,6 +45,15 @@ relationships:
       - accessed: 2026-11-10
         property: P20
         wikidata: Q1173200
+  - type: sibling_of
+    to: person/max-fleischer
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q93788
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q1173200
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/c2/Dave_Fleischer_-_Motion_Picture_Herald%2C_Feb_3_1940_page_29_%28cropped%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Dave_Fleischer_-_Motion_Picture_Herald,_Feb_3_1940_page_29_(cropped).jpg

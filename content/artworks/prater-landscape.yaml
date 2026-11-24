@@ -1,0 +1,141 @@
+public_id: 124684
+title_lang: en
+title: Prater Landscape
+creator: ferdinand-georg-waldmuller
+created: c. 1831
+created_span: uncertain
+dimensions: [25, 31]
+institution: cleveland-museum-of-art
+inventory_number: "1983.155"
+web_url: https://clevelandart.org/art/1983.155
+wikidata_id: Q60475169
+metadata:
+  sources: [Wikidata Q60475169 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts
+    to: place/prater
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q60475169
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Ferdinand_Georg_Waldm%C3%BCller_-_Prater_Landscape_-_1983.155_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Ferdinand_Georg_Waldm%C3%BCller_-_Prater_Landscape_-_1983.155_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Georg_Waldm%C3%BCller_-_Prater_Landscape_-_1983.155_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Ferdinand Georg Waldmüller
+provenance:
+  - owner_label: Herr von Beer
+    acquired_label: 1865?
+    label: known only from Feuchtmüller's catalogue raisonné; perhaps 'Herr von Behr'
+    sources:
+      - url: https://clevelandart.org/art/1983.155
+        note: "Herr von Beer [date: 1865?] — Rupert Feuchtmüller’s Waldmüller catalogue raisonné is the only known source for the inclusion in the provenance of Herr von Beer, about whom further details are unknown."
+        source: cma-1983-155
+        accessed: 2026-11-24
+  - owner: institution/kunsthandlung-arnot
+    role: dealer
+    place: vienna
+    label: date unknown
+    sources:
+      - url: https://clevelandart.org/art/1983.155
+        note: "(Kunsthandlung Arnot, Vienna) [date: ?]"
+        source: cma-1983-155
+        accessed: 2026-11-24
+  - owner_label: Private collection, Vienna
+    acquired: 1930 or earlier
+    place: vienna
+    label: per the Hagenbund Waldmüller exhibition, Vienna, January–March 1930
+    sources:
+      - url: https://clevelandart.org/art/1983.155
+        note: "Private collection, Vienna [date: By 1930] — Künstlerbund Hagen. Ferdinand Georg Waldmüller: Jänner-März 1930, in den Räumen des Hagenbundes."
+        source: cma-1983-155
+        accessed: 2026-11-24
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1937
+    label: may well have bought it in Vienna before 1937 (Johannes Nathan)
+    sources:
+      - url: https://clevelandart.org/art/1983.155
+        note: "Fritz Nathan, sold to Dr. Tobler [date: Until 1937] — According to Johannes Nathan, Fritz Nathan was frequently in Vienna in the 1930s and may very well have purchased the painting there prior to 1937."
+        source: cma-1983-155
+        accessed: 2026-11-24
+  - owner_label: Dr. Tobler
+    acquired: 1937
+    method: purchase
+    direct: true
+    label: Galerie Nathan's archives record the sale to Dr. Tobler in 1937; 'Dr. Tobler' handwritten on the von Hirsch label
+    sources:
+      - url: https://clevelandart.org/art/1983.155
+        note: "Dr. Tobler [date: 1937-] — The archives of Galerie Nathan show that they sold the painting to one Dr. Tobler in 1937."
+        source: cma-1983-155
+        accessed: 2026-11-24
+  - owner: person/robert-von-hirsch
+    acquired: 1943 or earlier
+    place: basel
+    label: lent to the Kunsthalle Basel's 1943 exhibition of 19th-century art; perhaps sold to him by Fritz Nathan on Tobler's behalf (unconfirmed)
+    sources:
+      - url: https://clevelandart.org/art/1983.155
+        note: "Baron Robert von Hirsch [1883-1977], Basel, sold to Dr. Fritz Nathan [date: By 1943 - by 1945] — German industrialist von Hirsch lent the Waldmüller to an exhibition of nineteenth-century artworks at the Basel Kunsthalle in 1943."
+        source: cma-1983-155
+        accessed: 2026-11-24
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1945 or earlier
+    method: purchase
+    direct: true
+    place: st-gallen
+    label: bought from von Hirsch during the war (recollection of Peter Nathan); sold to a Swiss private collector
+    sources:
+      - url: https://clevelandart.org/art/1983.155
+        note: "Dr. Fritz Nathan, St. Gallen, sold to a Swiss private collector [date: By 1945] — Peter Nathan recalled that his father, dealer Fritz Nathan, had purchased the painting from von Hirsch during the war."
+        source: cma-1983-155
+        accessed: 2026-11-24
+  - owner_label: Private collection, Zurich
+    acquired: 1953 or earlier
+    place: zurich
+    label: Zurich private collector named in the 1953 Salzburg exhibition and Grimschitz 1957; likely the buyer from Fritz Nathan
+    sources:
+      - url: https://clevelandart.org/art/1983.155
+        note: "Private collection, Zurich [date: By 1957] — A 1953 Waldmüller exhibition at the Salzburg Residenz and Bruno Grimschitz’s 1957 Waldmüller monograph both give the painting's current owner as a Zurich private collector, likely the Swiss collector to whom Fritz Nathan had sold it previously."
+        source: cma-1983-155
+        accessed: 2026-11-24
+  - owner: institution/kunsthandlung-fritz-und-peter-nathan
+    role: dealer
+    ended: 1983
+    place: zurich
+    sources:
+      - url: https://clevelandart.org/art/1983.155
+        note: "(Galerie Nathan, Zürich, sold to the Cleveland Museum of Art) [date: Until 1983]"
+        source: cma-1983-155
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1983
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1983.155
+        note: "The Cleveland Museum of Art, Cleveland, OH [date: 1983-]"
+        source: cma-1983-155
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60475169
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60475169
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60475169
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60475169
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60475169

@@ -1,0 +1,214 @@
+public_id: 122826
+title_lang: en
+title: Portrait of a Man
+names:
+  - lang: nl
+    role: translation
+    text: Portret van een man
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175773
+  - lang: fr
+    role: translation
+    text: Portrait d'homme
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175773
+  - lang: de
+    role: translation
+    text: Porträt eines Mannes
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175773
+  - lang: it
+    role: translation
+    text: Ritratto d'un uomo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175773
+  - lang: es
+    role: translation
+    text: Retrato de un hombre
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175773
+  - lang: ja
+    role: translation
+    text: 男の肖像
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175773
+  - lang: ru
+    role: translation
+    text: Мужской портрет
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175773
+creator: lucas-cranach-the-elder
+created: 1522
+materials: [oil paint, panel]
+dimensions: [57.6, 39.9]
+institution: national-gallery-of-art
+inventory_number: 1959.9.1
+web_url: https://www.nga.gov/collection/art-object-page.45886.html
+provenance_status: d_seized
+provenance_status_note: Confiscated by the Nazis in 1938 with other works of the Lederer collection, Vienna; discovered in the Alt Aussee salt mine after the war and restituted to the Austrian government in 1947 (receipt of 14 July 1947, item no. 841); later acquired from the Lederer family by Rosenberg & Stiebel.
+wikidata_id: Q20175773
+metadata:
+  sources: [Wikidata Q20175773 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Lucas_Cranach_d.%C3%84._-_Portr%C3%A4t_eines_Mannes.jpg/1280px-Lucas_Cranach_d.%C3%84._-_Portr%C3%A4t_eines_Mannes.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lucas_Cranach_d.%C3%84._-_Portr%C3%A4t_eines_Mannes.jpg
+    license: Public domain
+    credit: Lucas Cranach the Elder
+provenance:
+  - owner: person/friedrich-campe
+    acquired: 1844 or earlier
+    place: nuremberg
+    label: art and book dealer; Heller 1844 lists 'Ein männliches und ein weibliches Brustbild, bezeichnet mit 1522 und der Schlange' as his; confirmed by Dieter Gleisberg 1999
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: Dr. Friedrich Campe [1777-1846], Nuremberg, by 1844.[1] — [1] … Joseph Heller, Das Leben und die Werke Lucas Cranach's (Bamberg, 1844), 89, lists "Ein männliches und ein weibliches Brustbild, bezeichnet mit 1522 und der Schlange" as belonging to the art and book dealer Dr. Friedrich Campe of Nuremberg … correspondence from Dr. Dieter Gleisberg … does confirm Campe's ownership
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+  - owner: person/bernhard-von-lindenau
+    place: altenburg
+    label: he ordered his papers destroyed after his death, so his date of acquisition is unknown
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: Bernhard von Lindenau [1845-1920], Altenburg; — [2] … Bernhard von Lindenau ordered all his papers destroyed after his death, so it is not possible to determine, for example, when he acquired the painting.
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+  - owner_label: Mrs. von Watzdorf-Bachoff
+    method: inheritance
+    direct: true
+    place: altenburg
+    label: his niece
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: by inheritance to his niece, Mrs. von Watzdorf-Bachoff, Altenburg.[2]
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    role: dealer
+    acquired: 1921 or earlier
+    method: purchase
+    direct: true
+    place: berlin
+    label: bought from Mrs. von Watzdorf-Bachoff (Gabelentz 1968); with Cassirer according to Scheffler 1921
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: (Paul Cassirer, Berlin, by 1921).[3] — [3] Karl Scheffler. "Kunstausstellungen." Kunst und Künstler 19 (1921), 298, cites the painting as being with Cassirer. Gabelentz … says that Mrs. von Watzdorf-Bachoff sold the portrait to Cassirer.
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+  - owner_label: private collection (possibly von der Heydt)
+    label: von der Heydt named by Gabelentz 1968, not verified; Scheffler 1921 says only that it went from Cassirer into a private collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: Private collection, possibly von der Heydt.[4] — [4] Not verified. Gabelentz … states that the portrait was in the von der Heydt collection, but it has not been possible to locate it in any catalogues associated with the name von der Heydt.
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+  - owner: person/august-lederer
+    co_owners: [person/serena-lederer]
+    acquired_label: possibly by 1923 (or even 1921), but certainly before 1932
+    place: vienna
+    label: "Glaser 1923: private collection, Vienna; Friedländer and Rosenberg 1932 first name Lederer"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: August and Serena Lederer, Vienna, possibly by 1923, but certainly before 1932;[5] — [5] Curt Glaser. Lukas Cranach. (Leipzig, 1923), 179, reproduces the portrait as being in a private collection, Vienna … Friedländer and Rosenberg … (Berlin, 1932) … are the first to mention Lederer as owner.
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+  - owner_label: Nazi authorities
+    role: possessor
+    acquired: 1938
+    method: confiscation
+    place: vienna
+    label: confiscated with other works of the Lederer collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: This painting was confiscated by the Nazis in 1938 with others in the Lederer collection.
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired_label: after the war
+    place: altaussee
+    label: discovered in the Alt Aussee salt mine
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: It was discovered in the Alt Aussee salt mine after the war
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+  - owner: institution/republic-of-austria
+    acquired: 1947
+    method: restitution
+    label: restituted to the Austrian government; receipt for objects of Austrian origin, 14 July 1947, item no. 841
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: and restituted to the Austrian government in 1947. [Receipt for objects of Austrian origin, dated 14 July 1947, item no. 841, National Archives RG 260/USACA/Box 1, copy in NGA curatorial files.]
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+  - owner_label: Lederer family
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: Lederer family; — this and 1959.9.2 were acquired from the Lederer family by the firm of Rosenberg & Stiebel
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    acquired: 1954 or earlier
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: acquired from the Lederer family together with its pendant 1959.9.2 (Gerald G. Stiebel, letter of 10 April 1987)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: sold by 1954 to (Rosenberg & Stiebel, Inc., New York); — According to a letter dated 10 April 1987 from Gerald G. Stiebel to John Hand … this and 1959.9.2 were acquired from the Lederer family by the firm of Rosenberg & Stiebel, who sold the paintings to the Kress Foundation in 1954.
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1954-01
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: invoice of 29 January 1954
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: purchased January 1954 by the Samuel H. Kress Foundation, New York;[6] — [6] Invoice of 29 January 1954 and letter of 30 January 1954 from Saemy Rosenberg to John Walker
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1959
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.45886.html
+        note: gift 1959 to NGA.
+        source: nga-1959-9-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20175773
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20175773
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20175773
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20175773
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20175773
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20175773

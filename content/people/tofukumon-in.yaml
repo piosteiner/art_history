@@ -22,6 +22,16 @@ death: 1678
 wikidata_id: Q911334
 metadata:
   sources: [Wikidata Q911334 (retrieved 2026-11-01)]
+relationships:
+  - type: married_to
+    to: person/emperor-go-mizunoo
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q320229
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q911334
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Tokugawa_Masako.jpg/1280px-Tokugawa_Masako.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Tokugawa_Masako.jpg

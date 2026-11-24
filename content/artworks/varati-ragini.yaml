@@ -1,0 +1,78 @@
+public_id: 123845
+title_lang: de
+title: Varati Ragini
+creator: nisaradi
+created: 1605
+kind: painting
+medium: Pigmentmalerei auf Papier
+dimensions: [20.5, 19]
+institution: museum-rietberg
+inventory_number: RVI 1786
+web_url: https://rietberg.ch/sammlungen/rvi-1786
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c5/Varati_Ragini_from_chawand_Ragamala_1605.png
+    source_url: https://commons.wikimedia.org/wiki/File:Varati_Ragini_from_chawand_Ragamala_1605.png
+    license: Public domain
+    credit: Nasiruddin
+provenance:
+  - owner: artist/nisaradi
+    acquired: 1605
+    method: creation
+    label: painted at Chawand (Mewar) for the Chawand Ragamala series
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-1786
+        note: "1605: Nisaradi aus Chawand, Urheber*in, Chawand"
+        source: rietberg-rvi-1786
+        accessed: 2026-11-24
+  - owner: person/gopi-krishna-kanoria
+    acquired: before 1959
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-1786
+        note: "vor 1959: Gopi Krishna Kanoria (1917–1987)"
+        source: rietberg-rvi-1786
+        accessed: 2026-11-24
+  - owner: person/william-g-archer
+    acquired: 1959
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-1786
+        note: "1959: William G. Archer (1907–1979)"
+        source: rietberg-rvi-1786
+        accessed: 2026-11-24
+  - owner: person/michael-archer
+    co_owners: [person/margareth-paish]
+    acquired: before 1994
+    label: family members of William G. Archer
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-1786
+        note: "vor 1994: Michael Archer und Margareth Paish, Familienangehörige*r"
+        source: rietberg-rvi-1786
+        accessed: 2026-11-24
+  - owner: institution/toby-falk-associates-limited
+    role: agent
+    acquired: 1994
+    place: london
+    label: Toby Falk Associates Limited, Surrey, as intermediary
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-1786
+        note: "1994: Toby Falk Associates Limited, Surrey (1978), Vermittler*in, London"
+        source: rietberg-rvi-1786
+        accessed: 2026-11-24
+  - owner: person/martin-escher
+    co_owners: [person/sylvia-escher]
+    acquired: 1994
+    method: purchase
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-1786
+        note: "1994: Martin und Sylvia Escher, Käufer*in"
+        source: rietberg-rvi-1786
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1994
+    method: gift
+    place: zurich
+    label: gift of Dr. Martin and Sylvia Escher
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-1786
+        note: "1994: Museum Rietberg, Begünstigte*r, Zürich"
+        source: rietberg-rvi-1786
+        accessed: 2026-11-24

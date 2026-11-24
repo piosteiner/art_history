@@ -1,0 +1,47 @@
+public_id: 126254
+name: Tartu
+names:
+  - lang: ja
+    role: translation
+    text: タルトゥ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q13972
+  - lang: zh
+    role: translation
+    text: 答尔丢夫
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q13972
+  - lang: ko
+    role: translation
+    text: 타르투
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q13972
+  - lang: ru
+    role: translation
+    text: Тарту
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q13972
+kind: settlement
+parent: estonia
+country_code: EE
+location: [26.7225, 58.38]
+wikidata_id: Q13972
+metadata:
+  sources: [Wikidata Q13972 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q13972
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q13972
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q13972

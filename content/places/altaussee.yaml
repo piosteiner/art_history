@@ -1,0 +1,22 @@
+public_id: 123757
+name: Altaussee
+kind: settlement
+parent: steiermark
+country_code: AT
+location: [13.76333, 47.63944]
+wikidata_id: Q262951
+metadata:
+  sources: [Wikidata Q262951 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q262951
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q262951
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q262951

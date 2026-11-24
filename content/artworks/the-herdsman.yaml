@@ -1,0 +1,195 @@
+public_id: 123045
+title_lang: en
+title: The Herdsman
+names:
+  - lang: fr
+    role: translation
+    text: Le Berger
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176863
+  - lang: de
+    role: translation
+    text: Der Hirte
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176863
+attribution_label: follower of Claude Lorrain
+created: 17th century
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [120.7, 160]
+institution: national-gallery-of-art
+inventory_number: 1946.7.12
+wikidata_id: Q20176863
+metadata:
+  sources: [Wikidata Q20176863 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Claude_Lorrain_%28suiveur_de%29_-_Le_Berger.jpg/1280px-Claude_Lorrain_%28suiveur_de%29_-_Le_Berger.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Lorrain_(suiveur_de)_-_Le_Berger.jpg
+    license: Public domain
+    credit: Follower of Claude Lorrain
+provenance:
+  - owner: person/augustin-lapeyriere
+    place: paris
+    label: Jean-Joseph-Pierre-Augustin Lapeyrière, later Augustin de Lapeyrière; receveur général des contributions of the Seine
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: Jean-Joseph-Pierre-Augustin Lapeyrière [1779-1831, known as Augustin Lapeyrière, then Augustin de Lapeyrière]; — [1] Lapeyrière is identified on the title page of the sale catalogue as "receveur general des contributions du Département de la Seine."
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner_label: Henry, at Galerie Le Brun, Paris
+    role: agent
+    acquired: 1825-04-19
+    method: auction
+    direct: true
+    place: paris
+    label: "Lapeyrière sale, Henry at Galerie Le Brun, 19 April 1825 and following days (first set for 14 March), no. 72; buyer's name in the NGA Library copy barely legible: \"Const. . .\""
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: "(his sale, Henry at Galerie Le Brun, Paris, 19 April 1825 and days following [originally scheduled for 14 March and days following], no. 72).[1] — An annotation in the NGA Library's copy appears to give a buyer's name that is not entirely legible: \"Const. . .\""
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner: person/sebastien-erard
+    place: paris
+    label: Château de la Muette, near the Bois de Boulogne
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: Chevalier Sébastien Érard [1752-1831], Château de la Muette, near the Bois de Boulogne, Paris;
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner_label: Lacoste and Coutelier, auctioneers, Paris
+    role: agent
+    acquired: 1832-08
+    method: auction
+    direct: true
+    place: paris
+    label: Érard estate sale at his residence, 7–14 August 1832 (first set for 23 April), no. 183
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: (his estate sale, at his residence by Lacoste and Coutelier, 7-14 August 1832 [originally scheduled for 23 April and days following], no. 183);[2]
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner_label: Dougas
+    acquired: 1832-08
+    method: auction
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: bought by Dougas.
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner: person/william-williams-hope
+    label: Rushton Hall, Northamptonshire, and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: William Williams Hope [1802-1855], Rushton Hall, Northamptonshire, and Paris;
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1858-05-11
+    method: auction
+    direct: true
+    place: paris
+    label: Hope estate sale, Hôtel Drouot, 11 May 1858, no. 1
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: (his estate sale, Hôtel Drouot, Paris, 11 May 1858, no. 1);
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner: person/james-de-rothschild
+    acquired: 1858-05-11
+    method: auction
+    direct: true
+    place: paris
+    label: bought for him at the sale
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: bought for Baron James de Rothschild [1792-1868];
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner: person/gustave-de-rothschild
+    direct: true
+    label: his son Gustave Salomon de Rothschild
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: his son, Baron Gustave Salomon de Rothschild [1829-1911];
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner: person/aline-de-rothschild-sassoon
+    direct: true
+    label: his daughter
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: his daughter Aline de Rothschild Sassoon [1865-1909];
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner: person/edward-sassoon
+    direct: true
+    label: her husband, Sir Edward Sassoon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: her husband Sir Edward Sassoon [1856-1912];
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner: person/sybil-sassoon
+    direct: true
+    label: their daughter, from 1913 Marchioness of Cholmondeley; Houghton Hall, Norfolk
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: their daughter, Sybil Sassoon [1894-1989, who married in 1913 George Horatio Charles, 5th marquess of Cholmondeley], Houghton Hall, Norfolk;
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1939
+    method: purchase
+    direct: true
+    label: Paris, New York and London; per Lady Sybil Cholmondeley's letters to John Walker, 1965 and 1969
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: sold 1939 to (Wildenstein & Co., Paris, New York, and London);[3] — [3] See Lady Sybil Cholmondeley, letters to John Walker, 11 October 1965 and 3 February 1969, in NGA curatorial files.
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1945
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: sold 1945 to the Samuel H. Kress Foundation, New York;[4]
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1946
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32690.html
+        note: gift 1946 to NGA.
+        source: nga-1946-7-12
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20176863
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20176863
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20176863
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20176863
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20176863

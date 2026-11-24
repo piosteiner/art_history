@@ -1,0 +1,96 @@
+public_id: 123830
+title_lang: de
+title: Sonnenmaske
+attribution_label: Anonymous
+created: 1767/1833
+kind: mask
+medium: Holz, blaugrün bemalt, Ergänzungen in Rot und Schwarzbraun
+dimensions: [18.5, 17.8, 12.4]
+institution: museum-rietberg
+inventory_number: RNA 204
+web_url: https://rietberg.ch/sammlungen/rna-204
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Tlingit_sun_mask_Museum_Rietberg_RNA_204.jpg/1280px-Tlingit_sun_mask_Museum_Rietberg_RNA_204.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tlingit_sun_mask_Museum_Rietberg_RNA_204.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker (Tlingit)
+    acquired: 1780/1820
+    method: creation
+    label: made in Alaska; date from the index card
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-204
+        note: "1780–1820: Urheber*in unbekannt in Bundesstaat Alaska (USA) Angabe der Karteikarte"
+        source: rietberg-rna-204
+        accessed: 2026-11-24
+  - owner: person/george-thornton-emmons
+    acquired: 1886
+    place: yakutat
+    label: circumstances unknown; possibly taken from a shaman's grave house near Port Mulgrave, Yakutat, where he found painted wooden masks in 1886
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-204
+        note: '1886: George Thornton Emmons (1852–1945), Erwerbsumstände unbekannt in Yakutat "Möglicherweise wurde die Sonnenmaske 1886 aus dem Grabhaus geholt. In diesem Jahr hatte der Leutnant nämlich in einem Schamanengrab in der Nähe von Port Mulgrave, Yakutat, neben anderen Objekten eine Anzahl von bemalten Holzmasken gefunden." (Vgl. Wege der Kunst, S. 40)'
+        source: rietberg-rna-204
+        accessed: 2026-11-24
+  - owner: institution/american-museum-of-natural-history
+    acquired: 1888/1893
+    method: purchase
+    place: new-york-city
+    label: "not documented: a mask with a similar historical inventory number suggests the same route"
+    certainty: possible
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-204
+        note: '1888–1893: American Museum of Natural History, New York (1869), angekauft, in New York Nicht belegt: Eine Maske mit ähnlicher hist. Inventarnummer legt nahe, dass die Sonnenmaske denselben Weg machte. Emmons bot 1888 dem AMNH Objekte an, 1893 wurden nach Leihgabe durch Emmons für die "Worlds Columbian Exposition" in Chicago weitere gekauft. (Vgl. Wege der Kunst, S. 40)'
+        source: rietberg-rna-204
+        accessed: 2026-11-24
+  - owner: person/george-thornton-emmons
+    acquired: 1922
+    method: purchase
+    place: new-york-city
+    label: bought back from the American Museum of Natural History (not documented; inferred from a similar mask)
+    certainty: possible
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-204
+        note: "1922: George Thornton Emmons (1852–1945), angekauft in New York Nicht belegt: Eine Maske mit ähnlicher hist. Inventarnummer legt nahe, dass die Sonnenmaske denselben Weg machte. Emmons kaufte diese 1922 vom American Museum of Natural History zurück. (Vgl. Wege der Kunst, S. 40)"
+        source: rietberg-rna-204
+        accessed: 2026-11-24
+  - owner: institution/museum-of-the-american-indian
+    acquired: 1922
+    method: purchase
+    place: new-york-city
+    label: buyer (not documented; inferred from a similar mask)
+    certainty: possible
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-204
+        note: "1922: Museum of the American Indian, New York (1916–1989), Käufer*in, New York Nicht belegt: Eine Maske mit ähnlicher hist. Inventarnummer legt nahe, dass die Sonnenmaske denselben Weg machte."
+        source: rietberg-rna-204
+        accessed: 2026-11-24
+  - owner: person/charles-ratton
+    acquired: 1930/1938
+    label: circumstances unknown; possibly reached him through intermediaries
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-204
+        note: "1930–1938: Charles Ratton (1895–1986), Erwerbsumstände unbekannt Gelangte möglicherweise über Zwischenhändler in den Besitz Charles Rattons."
+        source: rietberg-rna-204
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: 1938
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-204
+        note: "1938: Eduard von der Heydt (1882–1964), angekauft, in Paris"
+        source: rietberg-rna-204
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1957-05-01
+    method: gift
+    direct: true
+    label: credit line "Geschenk Eduard von der Heydt"
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-204
+        note: "01.05.1957: Museum Rietberg, als Geschenk erhalten"
+        source: rietberg-rna-204
+        accessed: 2026-11-24

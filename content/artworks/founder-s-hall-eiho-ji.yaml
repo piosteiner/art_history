@@ -1,0 +1,43 @@
+public_id: 124025
+title: Founder's Hall, Eihō-ji
+names:
+  - text: Senkodō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020351
+  - lang: ja
+    role: translation
+    text: 永保寺開山堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020351
+created: 1333/1392
+institution: eiho-ji
+location: [137.1292, 35.34614]
+wikidata_id: Q107020351
+metadata:
+  sources: [Wikidata Q107020351 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tajimi
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c6/%E8%99%8E%E6%B8%93%E5%B1%B1%E6%B0%B8%E4%BF%9D%E5%AF%BA%E9%96%8B%E5%B1%B1%E5%A0%82_-_panoramio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E8%99%8E%E6%B8%93%E5%B1%B1%E6%B0%B8%E4%BF%9D%E5%AF%BA%E9%96%8B%E5%B1%B1%E5%A0%82_-_panoramio.jpg
+    license: CC BY-SA 3.0
+    credit: たじみ百景クラブ
+provenance:
+  - owner: institution/eiho-ji
+    acquired: 1333/1392
+    method: creation
+    place: tajimi
+    label: hall for the founding abbot Gen'ō Hongen (1281–1332); the inner shrine probably the founder's stupa hall of 1347 (Jōwa 3) named in the Edo-period abbots' list, the worship hall of the Nanboku-chō period; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1043
+        note: 永保寺の開山、元翁本元（1281-1332）をまつる堂である。… 江戸時代の『住持歴代』に開山塔を貞和3年（1347）の建立とするのは祀堂に相当すると考えられ、昭堂は南北朝時代の作であろう。… 西暦 ： 1333-1392 … 所有者名 ： 永保寺
+        source: kunishitei-102-1043
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020351

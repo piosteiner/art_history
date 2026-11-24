@@ -1,0 +1,142 @@
+public_id: 124640
+title_lang: fr
+title: Sous-bois à l'Hermitage, Pontoise
+names:
+  - lang: en
+    role: original
+    text: Edge of the Woods Near L'Hermitage, Pontoise
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q21785872
+  - lang: fr
+    role: original
+    text: Sous-bois à l'Hermitage, Pontoise / Le Fond de L´Hermitage
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q21785872
+creator: camille-pissarro
+created: 1879
+materials: [canvas, oil paint]
+dimensions: [125, 163]
+institution: cleveland-museum-of-art
+inventory_number: "1951.356"
+web_url: https://clevelandart.org/art/1951.356
+wikidata_id: Q21785872
+metadata:
+  sources: [Wikidata Q21785872 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edge_of_the_Woods_Near_L%27Hermitage%2C_Pontoise%2C_by_Camille_Pissarro%2C_Cleveland_Museum_of_Art%2C_1951.356.jpg/1280px-Edge_of_the_Woods_Near_L%27Hermitage%2C_Pontoise%2C_by_Camille_Pissarro%2C_Cleveland_Museum_of_Art%2C_1951.356.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edge_of_the_Woods_Near_L%27Hermitage,_Pontoise,_by_Camille_Pissarro,_Cleveland_Museum_of_Art,_1951.356.jpg
+    license: Public domain
+    credit: Camille Pissarro
+provenance:
+  - owner: person/julie-pissarro
+    acquired: 1903
+    method: inheritance
+    label: family of the artist; sold by the artist's widow
+    sources:
+      - url: https://clevelandart.org/art/1951.356
+        note: Family of the artist, sold to Bernheim-Jeune [1903-1913] — Bernheim-Jeune purchased the painting (stock number 20114) from Julie Pissarro, the artist's widow, on December 17, 1913.
+        source: cma-1951-356
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1913-12-17
+    method: purchase
+    direct: true
+    place: paris
+    label: stock no. 20114
+    sources:
+      - url: https://clevelandart.org/art/1951.356
+        note: (Bernheim-Jeune, Paris, sold to L’Art Moderne) [1913-1935] — Bernheim-Jeune purchased the painting (stock number 20114) from Julie Pissarro, the artist's widow, on December 17, 1913.
+        source: cma-1951-356
+        accessed: 2026-11-24
+  - owner: person/l-art-moderne
+    role: dealer
+    acquired: 1935
+    method: transfer
+    direct: true
+    place: lucerne
+    label: the Lucerne branch of Bernheim-Jeune
+    sources:
+      - url: https://clevelandart.org/art/1951.356
+        note: (L'Art Moderne, Lucerne) [1935] — L’Art Moderne was a branch of Bernheim-Jeune located in Lucerne, Switzerland; a number of works from its stock were auctioned at Hôtel Drouot on June 20, 1935.
+        source: cma-1951-356
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1935-06-20
+    method: auction
+    direct: true
+    place: paris
+    label: L'Art Moderne sale, Hôtel Drouot, Paris, 20 June 1935, no. 59
+    sources:
+      - url: https://clevelandart.org/art/1951.356
+        note: (L'Art Moderne sale, Hôtel Drouot, June 20, 1935 (no. 59), sold to André Schoeller) [1935]
+        source: cma-1951-356
+        accessed: 2026-11-24
+  - owner: person/andre-schoeller
+    role: dealer
+    acquired: 1935-06-20
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1951.356
+        note: (André Schoeller [1898-1991], Paris) [1935-]
+        source: cma-1951-356
+        accessed: 2026-11-24
+  - owner: person/charles-comiot
+    place: paris
+    label: businessman and collector of Impressionists; named as owner in the Wildenstein Pissarro catalogue raisonné without dates or documentation
+    sources:
+      - url: https://clevelandart.org/art/1951.356
+        note: (Charles Comiot, Paris [?] — Comiot was a businessman and art collector who had amassed a significant collection of Impresisonist works by the late 1920s. The Wildenstein Pissarro catalogue raisonné includes Comiot as a previous owner of the painting, but does not provide dates or documentation for his ownership.
+        source: cma-1951-356
+        accessed: 2026-11-24
+  - owner: person/cesar-mange-de-hauke
+    co_owners: [person/hector-brame]
+    role: dealer
+    place: paris
+    label: not in Galerie Brame & Lorenceau's stock books; Brame, a close associate of de Hauke, likely brokered the sale
+    sources:
+      - url: https://clevelandart.org/art/1951.356
+        note: (César de Hauke and Hector Brame, Paris, sold to the Cleveland Museum of Art) [Until 1951] — The Pissarro does not appear in Galerie Brame & Lorenceau’s stock books, so it is likely that Hector Brame, a close business associate of de Hauke, brokered the sale of the painting to CMA.
+        source: cma-1951-356
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1951
+    method: gift
+    direct: true
+    place: cleveland
+    label: Gift of the Hanna Fund
+    sources:
+      - url: https://clevelandart.org/art/1951.356
+        note: The Cleveland Museum of Art, Cleveland, OH [1951-]
+        source: cma-1951-356
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q21785872
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q21785872
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q21785872
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q21785872
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q21785872
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q21785872

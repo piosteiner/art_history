@@ -14,6 +14,15 @@ relationships:
       - accessed: 2026-11-02
         property: P27
         wikidata: Q3090653
+  - type: child_of
+    to: artist/fujiwara-no-takanobu
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q2245281
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q3090653
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Fujiwara_no_Nobuzane.jpg/1280px-Fujiwara_no_Nobuzane.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Fujiwara_no_Nobuzane.jpg

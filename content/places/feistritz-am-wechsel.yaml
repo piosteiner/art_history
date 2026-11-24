@@ -1,0 +1,22 @@
+public_id: 125797
+name: Feistritz am Wechsel
+kind: settlement
+parent: niederosterreich
+country_code: AT
+location: [16.05361, 47.59944]
+wikidata_id: Q585693
+metadata:
+  sources: [Wikidata Q585693 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q585693
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q585693
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q585693

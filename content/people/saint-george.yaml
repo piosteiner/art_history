@@ -1,0 +1,21 @@
+public_id: 122965
+name: Saint George
+kind: person
+birth: 275
+death: 303-04-24
+wikidata_id: Q48438
+metadata:
+  sources: [Wikidata Q48438 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q48438
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q48438
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q48438

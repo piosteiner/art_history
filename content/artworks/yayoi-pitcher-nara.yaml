@@ -9,6 +9,7 @@ materials: [clay]
 dimensions: [21.9]
 institution: kashihara-archaeological-institute
 description_md: A Middle Yayoi pitcher on a tall base with leaf-shaped openings, its neck and body divided into bands decorated with a comb pressed and dragged through the clay. [[source/history-of-japanese-art|p. 27, fig. 22]]
+wikidata_id: Q132397
 relationships:
   - type: created_in
     to: place/nara-prefecture

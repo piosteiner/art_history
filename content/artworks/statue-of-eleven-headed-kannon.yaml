@@ -1,0 +1,24 @@
+public_id: 124427
+title: Statue of Eleven-headed Kannon
+names:
+  - lang: ja
+    role: translation
+    text: 聖林寺十一面観音立像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107046081
+created: 760s
+created_span: uncertain
+wikidata_id: Q107046081
+metadata:
+  sources: [Wikidata Q107046081 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Eleven-faced_Kannon_Shorinji.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Eleven-faced_Kannon_Shorinji.JPG
+    license: Public domain
+    credit: OGAWA SEIYOU
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107046081

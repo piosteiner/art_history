@@ -1,0 +1,127 @@
+public_id: 125225
+title_lang: en
+title: Vétheuil
+creator: claude-monet
+created: 1901
+materials: [oil paint, canvas]
+dimensions: [90, 93]
+institution: art-institute-of-chicago
+inventory_number: "1933.1161"
+provenance_status: a_clear
+provenance_status_note: Bequeathed by Martin A. Ryerson (d. 1932) to the Art Institute of Chicago in 1933.
+wikidata_id: Q20269469
+metadata:
+  sources: [Wikidata Q20269469 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Claude_Monet_-_V%C3%A9theuil_-_1933.1161_-_Art_Institute_of_Chicago.jpg/1280px-Claude_Monet_-_V%C3%A9theuil_-_1933.1161_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_V%C3%A9theuil_-_1933.1161_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: artist/claude-monet
+    acquired: 1901
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/16579
+        note: The artist (d. 1926);
+        source: aic-1933-1161
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1905-12-08
+    method: purchase
+    direct: true
+    place: paris
+    label: DR Paris stock book 1901–13, no. 8051, as Vétheuil au soleil couchant, 1901
+    price:
+      amount: 12000
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/16579
+        note: sold to Durand-Ruel, Paris, Dec. 8, 1905, for 12,000 francs [this and the following per Durand-Ruel, Paris, stock book for 1901–13 (no. 8051, as Vétheuil au soleil couchant, 1901) …];
+        source: aic-1933-1161
+        accessed: 2026-11-24
+  - owner: person/paul-mulle-de-jaegher
+    acquired: 1911-11-08
+    method: purchase
+    direct: true
+    place: roubaix
+    price:
+      amount: 20000
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/16579
+        note: sold to Paul Mulle de Jaegher, Roubaix, France, Nov. 8, 1911, for 20,000 francs.
+        source: aic-1933-1161
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1912-04-18 or earlier
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/16579
+        note: Bernheim-Jeune, Paris, by Apr. 18, 1912 [this and the following per Durand-Ruel, Paris, stock book for 1901–13 (no. 10004, as Vétheuil au soleil couchant, 1901) …];
+        source: aic-1933-1161
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1912-04-18
+    method: purchase
+    direct: true
+    place: paris
+    label: DR Paris stock no. 10004; sent to Durand-Ruel, New York, for Martin A. Ryerson, 31 July 1914
+    price:
+      amount: 16000
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/16579
+        note: sold to Durand-Ruel, Paris, Apr. 18, 1912, for 16,000 francs; sent to Durand-Ruel, New York (for Martin A. Ryerson, Chicago), July 31, 1914
+        source: aic-1933-1161
+        accessed: 2026-11-24
+  - owner: person/martin-antoine-ryerson
+    acquired: 1914-07-31
+    ended: 1932
+    method: purchase
+    direct: true
+    place: chicago
+    label: died 1932; see also Durand-Ruel to Ryerson, 20 August 1914, on a shipment sent to him
+    sources:
+      - url: https://www.artic.edu/artworks/16579
+        note: sold to Martin A. Ryerson (died 1932), Chicago, July 31, 1914;
+        source: aic-1933-1161
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1933
+    method: bequest
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/16579
+        note: bequeathed to the Art Institute of Chicago, 1933.
+        source: aic-1933-1161
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20269469
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20269469
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20269469
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20269469
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20269469
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20269469

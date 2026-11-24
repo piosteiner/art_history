@@ -1,0 +1,43 @@
+public_id: 123929
+title: Main Hall, Jōdo-ji
+names:
+  - lang: ja
+    role: translation
+    text: 浄土寺本堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020647
+created: 1327-04
+institution: jodo-ji-temple
+location: [133.2105, 34.41197]
+wikidata_id: Q107020647
+metadata:
+  sources: [Wikidata Q107020647 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/onomichi
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Onomichi_Jodoji_06.JPG/1280px-Onomichi_Jodoji_06.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Onomichi_Jodoji_06.JPG
+    license: CC BY-SA 3.0
+    credit: by Reggaeman
+provenance:
+  - owner: institution/jodo-ji-temple
+    acquired: 1327-04
+    method: creation
+    place: onomichi
+    label: built as the Kondō (Kannon-dō) when the temple, revived by the monk Jōshō from 1306, was rebuilt after the fire of 1325; rebuilding paid for by the Onomichi couple Dōren and Dōshō (Wikipedia)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3125
+        note: ところが間もなく正中二年（一三二五）六月寺は火災にかかり、塔婆はすべて焼失した。その後直ちに再興に着手し、嘉暦二年（一三二七）四月金堂（観音堂）、元徳元年（一三二九）多宝塔 … この再建当時のもので現存するものは観音堂（現本堂） … 所有者名 ： 浄土寺
+        source: kunishitei-102-3125
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E6%B5%84%E5%9C%9F%E5%AF%BA_(%E5%B0%BE%E9%81%93%E5%B8%82)
+        note: 正中2年（1325年）に焼失したが、尾道の有徳人道蓮・道性夫妻によって復興された。現存する国宝の本堂・多宝塔、重要文化財の阿弥陀堂はこの時再興された建物である。
+        source: wikipedia-ja-jodo-ji-onomichi
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020647

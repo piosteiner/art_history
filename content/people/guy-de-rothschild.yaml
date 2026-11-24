@@ -24,6 +24,16 @@ death: 2007-06-12
 wikidata_id: Q1379005
 metadata:
   sources: [Wikidata Q1379005 (retrieved 2026-10-20)]
+relationships:
+  - type: child_of
+    to: person/edouard-alphonse-james-de-rothschild
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q1379005
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q2443913
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e8/Guy_de_Rothschild_1964.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Guy_de_Rothschild_1964.jpg

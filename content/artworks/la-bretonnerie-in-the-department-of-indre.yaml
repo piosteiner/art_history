@@ -1,0 +1,184 @@
+public_id: 122804
+title_lang: en
+title: La Bretonnerie in the Department of Indre
+creator: gustave-courbet
+created: 1856
+materials: [oil paint, canvas]
+dimensions: [60.8, 73.3]
+institution: national-gallery-of-art
+inventory_number: 1972.9.8
+provenance_status: d_seized
+provenance_status_note: Deposited by Paul Rosenberg at the Banque Nationale pour le Commerce et l'Industrie, Libourne; confiscated there by the ERR on 28 April 1941; selected by Göring at the Jeu de Paume 14 September 1941; recovered at Berchtesgaden, restituted to France 29 January 1946 and returned to the Rosenbergs 17 May 1946.
+wikidata_id: Q20188377
+metadata:
+  sources: [Wikidata Q20188377 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Gustave_Courbet_-_La_Bretonnerie_in_the_Department_of_Indre_-_National_Gallery_of_Art_Washington.jpg/1280px-Gustave_Courbet_-_La_Bretonnerie_in_the_Department_of_Indre_-_National_Gallery_of_Art_Washington.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_La_Bretonnerie_in_the_Department_of_Indre_-_National_Gallery_of_Art_Washington.jpg
+    license: Public domain
+    credit: Gustave Courbet
+provenance:
+  - owner: artist/gustave-courbet
+    method: creation
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: Gift from the artist to Clément Laurier [1831-1878].[1]
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner: person/clement-laurier
+    method: gift
+    direct: true
+    label: according to Robert Fernier (letter of 31 July 1972)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: Gift from the artist to Clément Laurier [1831-1878].[1] — [1] Letter from Robert Fernier to David Rust, dated 31 July 1972
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner_label: Private collection, Poitiers
+    acquired: 1935 or earlier
+    place: poitiers
+    label: lent to the Courbet exhibition, Kunsthaus Zürich, 1935, no. 44
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: Private collection, Poitiers, France, by 1935.[2] — [2] Lent to Gustave Courbet, Kunsthaus, Zurich, 1935, no. 44, from a private collection in Poitiers.
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1937 or earlier
+    place: paris
+    label: Paul Rosenberg et Cie.; exhibited at the Paul Rosenberg Galleries, Paris, 1937
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: (Paul Rosenberg et Cie., Paris), by 1937;[3] — [3] Exhibited at Paul Rosenberg Galleries in Paris in 1937.
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner: institution/banque-nationale-pour-le-commerce-et-l-industrie
+    role: custodian
+    method: transfer
+    place: libourne
+    label: deposited with part of the Rosenberg collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: It was deposited with part of the Rosenberg collection at the Banque Nationale pour le Commerce et l'Industrie in Libourne
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    acquired: 1941-04-28
+    method: confiscation
+    place: libourne
+    label: confiscated from the bank in Libourne
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: from which it was confiscated by the Nazi's ERR on 28 April 1941 (see Rosenberg claim file
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner: person/hermann-goring
+    role: possessor
+    acquired: 1941-09-14
+    method: transfer
+    direct: true
+    place: paris
+    label: selected at the Jeu de Paume; Göring list dated 20 October 1942, no. 52
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: "the painting had been selected by Hermann Goering on 14 September 1941 from the Jeu de Paume (OSS Consolidated Interrogation Report #2, The Goering Collection, 15 September 1945, Attachment 5, Liste der für die Sammlung des Reichsmarschalls Hermann Göring abgegebenen Kunstgegenstände, dated 20 October 1942, no. 52"
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    ended: 1946-01-29
+    method: transfer
+    place: munich
+    label: recovered at Berchtesgaden; Munich property card no. 5836/788
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: "The records of the Munich Central Collecting Point indicate that the painting was recovered at Berchtesgaden and restituted to France on 29 January 1946 (Munich property card #5836/788;"
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner_label: France (French restitution authorities)
+    role: custodian
+    acquired: 1946-01-29
+    ended: 1946-05-17
+    method: restitution
+    direct: true
+    label: French Receipt for Cultural Objects no. IIIa, item no. 167
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: restituted to France on 29 January 1946 (… French Receipt for Cultural Objects no. IIIa, item no. 167 …). The painting was returned to the Rosenbergs on 17 May 1946
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner_label: the Rosenbergs
+    acquired: 1946-05-17
+    method: restitution
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: The painting was returned to the Rosenbergs on 17 May 1946 (see correspondence dated 23 June 2000 from the French Ministere des Affaires Étrangeres
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner: person/paul-rosenberg
+    role: dealer
+    place: new-york-city
+    label: Paul Rosenberg and Co., New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: (Paul Rosenberg and Co., New York);
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner: person/marie-n-harriman
+    co_owners: [person/w-averell-harriman]
+    acquired: 1947-06
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: sold June 1947 to Marie N. Harriman [1903-1970] and W. Averell Harriman [1891-1986], New York;[4]
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner: institution/w-averell-harriman-foundation
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: The W. Averell Harriman Foundation, New York;
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1972
+    method: gift
+    direct: true
+    place: washington-d-c
+    label: in memory of Marie N. Harriman
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53126.html
+        note: gift 1972 to NGA.
+        source: nga-1972-9-8
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20188377
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20188377
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20188377
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20188377
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20188377
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20188377

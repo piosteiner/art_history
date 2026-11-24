@@ -1,0 +1,153 @@
+public_id: 122984
+title_lang: en
+title: Bacchus and a Faun
+created: 1580/1600
+created_label: c. 1580
+created_span: uncertain
+materials: [bronze]
+dimensions: [181.5, 76, 65.2]
+institution: national-gallery-of-art
+inventory_number: 1937.1.133
+wikidata_id: Q63810086
+metadata:
+  sources: [Wikidata Q63810086 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Probably_Milanese_16th_Century%2C_Bacchus_and_a_Faun%2C_1580-1600%2C_NGA_140.jpg/1280px-Probably_Milanese_16th_Century%2C_Bacchus_and_a_Faun%2C_1580-1600%2C_NGA_140.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Probably_Milanese_16th_Century,_Bacchus_and_a_Faun,_1580-1600,_NGA_140.jpg
+    license: CC0
+    credit: Probably Milanese 16th Century
+provenance:
+  - owner_label: owners of the Villa Litta Visconti Borromeo, Lainate
+    acquired_label: before 1617 (possibly part of the original installation completed in 1589)
+    place: lainate
+    label: installed in the garden outside the nymphaeum of the Villa Litta Visconti Borromeo, Lainate, near Milan
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.140.html
+        note: Installed in the garden, outside the nymphaeum, of the Villa Litta Visconti Borromeo, Lainate, near Milan, before 1617 (and possibly part of the original installation completed in 1589);[1]
+        source: nga-1937-1-133
+        accessed: 2026-11-24
+  - owner: person/prince-napoleon
+    acquired: c. 1865
+    method: purchase
+    direct: true
+    place: paris
+    label: Palais Royal, Paris; 'Prince Napoleon', probably Napoléon Joseph Charles Paul Bonaparte (NGA's identification)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.140.html
+        note: purchased c. 1865 by "Prince Napoleon,"[2] Palais Royal, Paris; — [2] This was probably Napoleon Joseph Charles Paul Bonaparte (1822-1891), who was a first cousin to Napoleon III
+        source: nga-1937-1-133
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1872-05
+    method: auction
+    direct: true
+    place: london
+    label: his sale, London, 9–11 May 1872, 2nd day, no. 221, with NGA 1937.1.132 as no. 222
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.140.html
+        note: (his sale, Christie, Manson & Woods, London, 9-11 May 1872, 2nd day, no. 221, with NGA 1937.1.132 as no. 222);
+        source: nga-1937-1-133
+        accessed: 2026-11-24
+  - owner_label: Wareham
+    direct: true
+    label: party in the case Trau v. Wareham
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.140.html
+        note: Wareham; — [3] Both sales, according to the catalogues, were ordered by the Chancery Division of the High Court of Justice as part of the case of Trau v. Wareham.
+        source: nga-1937-1-133
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    not_sold: true
+    acquired: 1891-07-25
+    method: auction
+    direct: true
+    place: london
+    label: sale ordered by the Chancery Division (Trau v. Wareham), sellers Rye and Eyre, Golden Square; no. 91, with NGA 1937.1.132 as no. 92; withdrawn
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.140.html
+        note: (sale, Christie, Manson & Woods, London, 25 July 1891, no. 91, with NGA 1937.1.132 as no. 92, withdrawn); — [3] … ordered by the Chancery Division of the High Court of Justice as part of the case of Trau v. Wareham. The sellers are recorded in both years as Messrs. Rye and Eyre of Golden Square, London
+        source: nga-1937-1-133
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1892-05-20
+    method: auction
+    direct: true
+    place: london
+    label: sale ordered by the Chancery Division (Trau v. Wareham), sellers Rye and Eyre; no. 147, with NGA 1937.1.132 as no. 146
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.140.html
+        note: (sale, Christie, Manson & Woods, London, 20 May 1892, no. 147, with NGA 1937.1.132 as no. 146).[3] — [3] … The sellers are recorded in both years as Messrs. Rye and Eyre of Golden Square, London; the buyer in 1892 is recorded only as the initial "J."
+        source: nga-1937-1-133
+        accessed: 2026-11-24
+  - owner_label: buyer recorded as "J."
+    acquired: 1892-05-20
+    method: auction
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.140.html
+        note: the buyer in 1892 is recorded only as the initial "J."
+        source: nga-1937-1-133
+        accessed: 2026-11-24
+  - owner_label: Marquis de Ganay, Paris
+    acquired: 1913 or earlier
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.140.html
+        note: Marquis de Ganay, Paris, by 1913;
+        source: nga-1937-1-133
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    method: purchase
+    direct: true
+    label: London, New York and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.140.html
+        note: purchased by (Duveen Brothers, Inc., London, New York, and Paris);[4]
+        source: nga-1937-1-133
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1936-12-15
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Duveen invoice lists it as by Jacopo Sansovino
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.140.html
+        note: purchased 15 December 1936 by The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[5] — [5] The original Duveen Brothers invoice is in Gallery Archives … the sculpture is listed as by Jacopo Sansovino.
+        source: nga-1937-1-133
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.140.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-133
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q63810086
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63810086
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q63810086
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63810086
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63810086

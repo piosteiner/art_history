@@ -1,0 +1,66 @@
+public_id: 122908
+title_lang: en
+title: Madonna and Child
+creator: lippo-memmi
+attribution_label: attributed to Lippo Memmi
+created: c. 1350
+created_span: uncertain
+kind: painting
+medium: tempera and gold on poplar panel
+dimensions: [71.3, 44]
+institution: cleveland-museum-of-art
+inventory_number: "1952.110"
+web_url: https://clevelandart.org/art/1952.110
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1952.110/1952.110_web.jpg
+    source_url: https://clevelandart.org/art/1952.110
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/richard-von-kaufmann
+    place: berlin
+    sources:
+      - url: https://clevelandart.org/art/1952.110
+        note: Richard von Kaufman (1850–1908), Berlin, Germany
+        source: cma-1952-110
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    co_owners: [institution/hugo-helbing]
+    role: agent
+    acquired: 1917-12
+    method: auction
+    place: berlin
+    label: sale, 4–5 December 1917
+    sources:
+      - url: https://clevelandart.org/art/1952.110
+        note: "(Sale: Paul Cassirer und Hugo Helbing, Berlin, Germany, December 4-5, 1917)"
+        source: cma-1952-110
+        accessed: 2026-11-24
+  - owner: person/august-lederer
+    place: vienna
+    label: the museum dates this line 1924
+    sources:
+      - url: https://clevelandart.org/art/1952.110
+        note: August Lederer (1857–1936), Vienna, Austria to Erich Lederer [1924]
+        source: cma-1952-110
+        accessed: 2026-11-24
+  - owner: person/erich-lederer
+    direct: true
+    place: geneva
+    label: from his father August Lederer
+    sources:
+      - url: https://clevelandart.org/art/1952.110
+        note: August Lederer (1857–1936), Vienna, Austria to Erich Lederer — Erich Lederer, Geneva, Switzerland, sold to the Cleveland Museum of Art [-1952]
+        source: cma-1952-110
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1952
+    method: purchase
+    direct: true
+    place: cleveland
+    label: "credit line: Gift of the Hanna Fund"
+    sources:
+      - url: https://clevelandart.org/art/1952.110
+        note: Erich Lederer, Geneva, Switzerland, sold to the Cleveland Museum of Art — The Cleveland Museum of Art, Cleveland, OH [1952-]
+        source: cma-1952-110
+        accessed: 2026-11-24

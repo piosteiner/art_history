@@ -1,0 +1,205 @@
+public_id: 125203
+title_lang: en
+title: Young Woman at an Open Half-Door
+names:
+  - lang: nl
+    role: original
+    text: Jonge vrouw aan de onderdeur
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20271957
+  - lang: de
+    role: translation
+    text: Junge Frau an der offenen Halbtür
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20271957
+creator: samuel-van-hoogstraten
+attribution_label: workshop of Rembrandt van Rijn
+created: 1645
+materials: [oil paint, canvas]
+dimensions: [102.5, 85]
+institution: art-institute-of-chicago
+inventory_number: "1894.1022"
+wikidata_id: Q20271957
+metadata:
+  sources: [Wikidata Q20271957 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Samuel_van_Hoogstraten_-_Young_woman_at_an_open_half-door_%281645%29.jpg/1280px-Samuel_van_Hoogstraten_-_Young_woman_at_an_open_half-door_%281645%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Samuel_van_Hoogstraten_-_Young_woman_at_an_open_half-door_(1645).jpg
+    license: Public domain
+    credit: Attributed to Samuel van Hoogstraten / Formerly attributed to Rembrandt / Formerly attributed to Nicolaes Maes
+provenance:
+  - owner_label: De Gueffier, Paris
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: De Gueffier, Paris;
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner: person/alexandre-joseph-paillet
+    role: agent
+    acquired: 1791-03-01
+    method: auction
+    direct: true
+    place: paris
+    label: sale, Paillet, Paris, 1 March 1791, no. 67, “Une jeune Fille du pays de Frise, appuyée devant une croisée”, with a young soldier in armour buckling his sword belt
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: sold Paillet, Paris, 1 March 1791, no. 67, “Une jeune Fille du pays de Frise, appuyée devant une croisée” (a young girl from Friesland leaning on a half-door”) together with a painting at half-length of a young soldier in armor, buckling his sword belt.
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner: person/francois-antoine-robit
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: François-Antoine Robit, Paris,
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner_label: Paillet and Delaroche
+    role: agent
+    acquired: 1801-05-11
+    method: auction
+    direct: true
+    place: paris
+    label: Robit sale, Paris, 11 May 1801 and following days, no. 120, as a pendant to no. 119, portrait of a young warrior
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: sold Paillet and Delaroche, Paris, May 11 and following, 1801, no. 120, as a pendant to no. 119, portrait of a young warrior,
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner: person/michael-bryan
+    acquired: 1801-05
+    method: auction
+    direct: true
+    label: bought through Lafontaine as his agent (Edwards 1996, p. 304)
+    price:
+      amount: 2500
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: for 2500 fr. to Lafontaine as an agent for Michael Bryan [see Edwards 1996, p. 304];
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner: person/george-hibbert
+    direct: true
+    place: london
+    label: Hibbert and Sir Simon Clarke funded Bryan's purchases at the Robit sale and kept many of the pictures
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: to George Hibbert, London [Hibbert and Sir Simon Clarke supplied the funds for Bryan’s extensive purchases at the Robit sale and retained many of the pictures];
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    not_sold: true
+    acquired: 1829
+    method: auction
+    direct: true
+    place: london
+    label: offered for sale, Christie's, London, “13 1829” (month missing in the record), no. 68, bought in
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: offered for sale, Christie’s London, 13 1829, no. 68, bought in;
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner: person/nathaniel-hibbert
+    ended: 1875
+    method: inheritance
+    direct: true
+    label: lent by him to London, 1857
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: by descent to Nathaniel Hibbert, until until 1875 [lent by him to London 1857 and memorandum dated April 28, 1905 of a conversation with Holland Hibbert in the Art Institute archives; copy in curatorial file];
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner: person/a-holland-hibbert
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: by descent to A. Holland Hibbert [for this and the following transaction see the memorandum cited above];
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner: person/paul-demidoff-2
+    acquired: 1880
+    ended: 1885
+    method: purchase
+    direct: true
+    place: florence
+    label: San Donato
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: sold by him to Prince Paul Demidoff (died 1885), San Donato, 1880;
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner_label: Pillet, Le Roy and Mannheim
+    role: agent
+    not_sold: true
+    acquired: 1880-03-15
+    method: auction
+    direct: true
+    place: florence
+    label: San Donato sale, Florence, 15 March – 10 April 1880, no. 1114 (engraved), bought in; the young warrior was no. 1120
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: offered for sale Florence, Pillet, Le Roy and Mannheim, March 15-April 10, 1880, no. 1114, engraved, bought in [a half-length of a young warrior buckling his sword belt was no. 1120 in this sale, also engraved, and sold with 1894.1022 in the Gueffier, Robit and Hibbert sales, see Bikker 2005, no. R21];
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner_label: Princess Demidoff, formerly Princess Lise Troubetzkoi
+    acquired: 1885
+    method: inheritance
+    direct: true
+    label: widow of Paul Demidoff (by descent)
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: by descent to Princess Demidoff (formerly Princess Lise Troubetzkoi), 1885;
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: agent
+    acquired: 1890-06
+    direct: true
+    place: paris
+    label: sold through Durand-Ruel as part of a group of Dutch and Flemish paintings, many from the Demidoff collection
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: sold through Durand-Ruel, Paris, June 1890, as part of a group of Dutch and Flemish paintings, many from the Demidoff collection,
+        source: aic-1894-1022
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1890-06
+    method: purchase
+    direct: true
+    place: chicago
+    label: bought with funds advanced by Martin A. Ryerson and other trustees; cost reimbursed by Ryerson (accession 1894)
+    sources:
+      - url: https://www.artic.edu/artworks/94840
+        note: with funds advanced by Martin A. Ryerson and other trustees of the Art Institute [annual report 1891]; the cost of 1894.1022 was re-imbursed by Ryerson.
+        source: aic-1894-1022
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20271957
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20271957
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20271957
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20271957
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20271957
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20271957

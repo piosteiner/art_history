@@ -1,0 +1,41 @@
+public_id: 125900
+name: Libourne
+names:
+  - lang: ja
+    role: translation
+    text: リブルヌ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6544
+  - lang: zh
+    role: translation
+    text: 利布爾訥
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6544
+  - lang: ru
+    role: translation
+    text: Либурн
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q6544
+kind: settlement
+parent: france
+country_code: FR
+location: [-0.24389, 44.91528]
+wikidata_id: Q6544
+metadata:
+  sources: [Wikidata Q6544 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q6544
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q6544
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q6544

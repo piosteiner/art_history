@@ -1,0 +1,48 @@
+public_id: 124923
+title_lang: en
+title: Main Hall (Hondō) of Zensui-ji
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 善水寺本堂
+created: 1366-05
+institution: zensui-ji
+location: [136.1125, 35.00639]
+wikidata_id: Q107020399
+metadata:
+  sources: [Wikidata Q107020399 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/konan
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/81/Shiga_Zensuiji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shiga_Zensuiji.jpg
+    license: Public domain
+    credit: Yusuke
+provenance:
+  - owner: institution/zensui-ji
+    acquired: 1366-05
+    method: creation
+    place: konan
+    label: rebuilt after the fire of 1360, according to the temple's tradition; Zensui-ji (Tendai) is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1461
+        note: 今の本堂は延文五年（一三六〇）炎上後、貞治五年（一三六六）五月建立されたものという。様式手法をみてもこの時の建築と考えてよい。 … 所有者名 ： 善水寺 所有者種別 ： 寺院
+        source: kunishitei-102-1461
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1571-09-15
+    place: konan
+    label: the temple burnt by Oda Nobunaga three days after Enryaku-ji; the main hall, pagoda, Niō gate and Rokusho Gongen shrine escaped
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E5%96%84%E6%B0%B4%E5%AF%BA
+        note: 元亀2年（1571年）9月12日に織田信長によって延暦寺は焼き討ちされたが、その3日後の9月15日には当寺も焼き討ちされている。しかし、本堂、塔、仁王門、六所権現社の4棟は辛くも被害を免れた。
+        source: wikipedia-ja-zensui-ji
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020399

@@ -1,0 +1,43 @@
+public_id: 124436
+title: Statue of Eison
+names:
+  - lang: ja
+    role: translation
+    text: 西大寺叡尊像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107046084
+creator: zenshun
+created: 1280
+location: [135.7795, 34.69362]
+wikidata_id: Q107046084
+metadata:
+  sources: [Wikidata Q107046084 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nara
+    period: 1280
+  - type: depicts_person
+    to: person/eison
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107046084
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Eison_by_Zenshun_%28Saidaiji_Nara%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eison_by_Zenshun_(Saidaiji_Nara).jpg
+    license: Public domain
+    credit: Zenshun
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107046084
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q107046084
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107046084

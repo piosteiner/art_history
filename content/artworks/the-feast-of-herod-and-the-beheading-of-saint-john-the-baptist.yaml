@@ -1,0 +1,132 @@
+public_id: 123048
+title_lang: en
+title: The Feast of Herod and the Beheading of Saint John the Baptist
+names:
+  - lang: de
+    role: translation
+    text: Das Fest des Herodes und die Enthauptung des hl. Johannes des Täufers
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20173823
+creator: benozzo-gozzoli
+created: 1461/1462
+created_label: c. 1460s
+created_span: uncertain
+materials: [tempera, poplar panel]
+dimensions: [23.8, 34.5]
+institution: national-gallery-of-art
+inventory_number: 1952.2.3
+wikidata_id: Q20173823
+metadata:
+  sources: [Wikidata Q20173823 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Gozzoli%2C_Benozzo_-_The_Dance_of_Salome_-_1461-62.jpg/1280px-Gozzoli%2C_Benozzo_-_The_Dance_of_Salome_-_1461-62.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gozzoli,_Benozzo_-_The_Dance_of_Salome_-_1461-62.jpg
+    license: CC BY-SA 4.0
+    credit: Benozzo Gozzoli
+provenance:
+  - owner: institution/compagnia-della-purificazione-della-vergine-e-di-san-zanobi
+    acquired: 1461-10-23
+    ended_label: until 1785 (altarpiece in the refectory of the Ospedale dei Pellegrini, under the confraternity's charge, from at least 1757)
+    method: commission
+    place: florence
+    label: predella of the altarpiece for the confraternity's altar near San Marco; moved 1 May 1506 to its new Oratory beside San Marco, 1570 to its new seat in Via San Gallo (possibly then divided from the altarpiece)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41582.html
+        note: Part of the predella of the altarpiece commissioned 23 October 1461 for the altar of the Compagnia della Purificazione della Vergine (also called of San Marco or of San Zanobi) [Confraternity of the Purification of the Virgin] in the confraternity's meeting place near the church of San Marco, Florence;[1] transferred 1 May 1506 to the newly built Oratory of the confraternity across the street flanking San Marco,[2] and in 1570, possibly divided from the altarpiece, to the confraternity's new seat in Via San Gallo.[3] by 1757 the altarpiece, possibly no longer complete with predella, was in the…
+        source: nga-1952-2-3
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1784
+    method: dissolution
+    label: confraternity and Ospedale suppressed 1784; property inventoried August 1785 ("cinque quadretti traversi" — practically certainly the five predella panels) and sold
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41582.html
+        note: '[4] … The Ospedale and compagnia were suppressed in 1784 and its property sold, after having been inventoried in August 1785 … It seems practically certain that the "cinque quadretti traversi larghi soldi 12 di braccia alti 8 soldi" described in the inventory of 1785 are the five panels of the already dismembered predella'
+        source: nga-1952-2-3
+        accessed: 2026-11-24
+  - owner: person/alfonso-tacoli-canacci
+    acquired: 1796 or earlier
+    ended: 1801
+    place: florence
+    label: in his printed catalogue raisonné, Parma, 1796 (not in the manuscript of 1789)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41582.html
+        note: marchese Alfonso Tacoli Canacci [1724-1801], Florence, by 1796; — [5] The printed Catalogue raisonné … Parma, 1796, includes, apart from NGA 1952.2.3, the Presentation now in Philadelphia, whereas the manuscript version of 1789 … omits them
+        source: nga-1952-2-3
+        accessed: 2026-11-24
+  - owner: person/pietro-tacoli
+    acquired: 1801
+    method: inheritance
+    direct: true
+    place: modena
+    label: his nephew ("Petro" in the main text); the collection was dispersed
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41582.html
+        note: by inheritance to his nephew, Petro Tacoli [1773-1847], Modena.[5] — After Tacoli Canacci's death in 1801, his collection was inherited by nephew, Pietro Tacoli, and dispersed.
+        source: nga-1952-2-3
+        accessed: 2026-11-24
+  - owner: person/vittorio-cini
+    acquired: 1940s
+    place: venice
+    label: Count Vittorio Cini; probably among the 15th-century Florentine paintings he bought in Modena in 1942
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41582.html
+        note: Count Vittorio Cini [1885-1977], Venice, in the 1940s.[6] — [6] Vittorio Cini in 1942 bought several fifteenth century Florentine paintings in Modena … It is probable that this panel comes from the same source.
+        source: nga-1952-2-3
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41582.html
+        note: (Wildenstein & Co., Inc., New York);
+        source: nga-1952-2-3
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1949-06
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Wildenstein invoice of 23 June 1949 for 16 items
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41582.html
+        note: sold June 1949 to the Samuel H. Kress Foundation, New York;[7] — [7] The Wildenstein invoice to the Kress Foundation for 16 items, including the Gozzoli painting, is dated 23 June 1949
+        source: nga-1952-2-3
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41582.html
+        note: gift 1952 to NGA.
+        source: nga-1952-2-3
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20173823
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20173823
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20173823
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20173823
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20173823
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20173823

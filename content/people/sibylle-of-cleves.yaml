@@ -1,0 +1,21 @@
+public_id: 124655
+name: Sibylle of Cleves
+kind: person
+birth: 1512-01-27
+death: 1554-03-03
+wikidata_id: Q69980
+metadata:
+  sources: [Wikidata Q69980 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q69980
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q69980
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q69980

@@ -1,0 +1,143 @@
+public_id: 124173
+title_lang: en
+title: Illustrated Biography of Priest Ippen, Vol. 7
+names:
+  - lang: ja
+    role: translation
+    text: 東博本一遍聖絵
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28803785
+creator: en-i
+created: 1299
+dimensions: [37.8, 895.4]
+institution: tokyo-national-museum
+inventory_number: A-10944
+wikidata_id: Q28803785
+metadata:
+  sources: [Wikidata Q28803785 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/ippen
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q28803785
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Hogen_En%E2%80%99i_-_Illustrated_Biography_of_Priest_Ippen%2C_Vol._7_-_Google_Art_Project.jpg/1280px-Hogen_En%E2%80%99i_-_Illustrated_Biography_of_Priest_Ippen%2C_Vol._7_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hogen_En%E2%80%99i_-_Illustrated_Biography_of_Priest_Ippen,_Vol._7_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Hogen En’i (1201 - 1400) Details on Google Art Project
+provenance:
+  - owner: artist/en-i
+    acquired: 1299
+    method: creation
+    label: scroll 7 of the twelve-scroll Ippen hijiri-e, compiled by Shōkai and painted by Hōgen En'i; colophon of scroll 12 dated 23rd day, 8th month, Shōan 1 (1299)
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100156&content_part_id=0&content_pict_id=0
+        note: 正安元年（1299）8月23日に記された巻第十二の奥書（おくがき）によれば、この絵巻は一遍の実弟とみられる聖戒（しょうかい）が撰述し、法眼円伊が絵を担ったという。
+        source: emuseum-100156-ja
+        accessed: 2026-11-24
+      - note: The Ippen Hijiri-e (Pictures of the Holy Man Ippen), an illustrated set of twelve scrolls depicting Ippen's life and travels … The text was composed in 1299 by Ippen's younger brother Shokai, himself a monk and an adherent of the Ji sect, and was illustrated by an artist named Eni
+        source: history-of-japanese-art
+        locator: pp. 203–204
+        accessed: 2026-11-24
+  - owner: institution/kankiko-ji
+    ended_label: late Edo period
+    place: kyoto
+    label: the set at Kankikō-ji, Kyoto; repaired in 1755 by the temple's 30th abbot (colophon); scroll 7 separated from the set in the late Edo period (the rest now at Shōjōkō-ji)
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100156&content_part_id=0&content_pict_id=0
+        note: 京都・歓喜光寺（かんきこうじ）へと遡るという。 … 〔奥書〕此壱巻 寶暦五秊｛乙／亥｝八月廿三日及破損間修補之 當寺三十世彌阿輪山
+        source: emuseum-100156-ja
+        accessed: 2026-11-24
+      - url: https://emuseum.nich.go.jp/detail?langId=en&webView=&content_base_id=100156&content_part_id=0&content_pict_id=0
+        note: In the latter part of the Edo period (1615-1868), the original twelve handscrolls of this set in Kankikô-ji Temple in Kyoto were separated.
+        source: emuseum-100156-en
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111877863
+        note: 元の第7巻は江戸時代後期に歓喜光寺から流出し、原富太郎（原三溪）らの所蔵を経て、第2次大戦後、現在東京国立博物館が所蔵する。
+        source: jawiki-111877863
+        accessed: 2026-11-24
+  - owner: person/asano-nagayoshi
+    place: kyoto
+    label: Asano Baidō, town magistrate of Kyoto; this and the next two owners from Hara Sankei's notes
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100156&content_part_id=0&content_pict_id=0
+        note: その手記によれば、三溪の前は三崎亀之助（みさきかめのすけ）（1858～1906）、税所（さいしょ）子爵（篤（あつし）か）、京都町奉行浅野梅堂（あさのばいどう）（長祚（ながよし）、1816～80）、京都・歓喜光寺（かんきこうじ）へと遡るという。
+        source: emuseum-100156-ja
+        accessed: 2026-11-24
+  - owner_label: Viscount Saisho (perhaps Saisho Atsushi)
+    label: per Hara Sankei's notes; the museum identifies him only tentatively as Saisho Atsushi
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100156&content_part_id=0&content_pict_id=0
+        note: 税所（さいしょ）子爵（篤（あつし）か）
+        source: emuseum-100156-ja
+        accessed: 2026-11-24
+  - owner: person/misaki-kamenosuke
+    label: per Hara Sankei's notes
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100156&content_part_id=0&content_pict_id=0
+        note: 三溪の前は三崎亀之助（みさきかめのすけ）（1858～1906）
+        source: emuseum-100156-ja
+        accessed: 2026-11-24
+  - owner: person/hara-sankei
+    ended: 1939
+    label: Hara Tomitarō (Sankei), businessman and collector
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100156&content_part_id=0&content_pict_id=0
+        note: 東博本の前所有者は、明治時代の実業家原三溪（はらさんけい）で
+        source: emuseum-100156-ja
+        accessed: 2026-11-24
+      - url: https://emuseum.nich.go.jp/detail?langId=en&webView=&content_base_id=100156&content_part_id=0&content_pict_id=0
+        note: Scroll seven was at one time owned by the collector Hara Sankei (Tomitarô, 1868-1939).
+        source: emuseum-100156-en
+        accessed: 2026-11-24
+  - owner_label: Hara family
+    acquired: 1939
+    method: inheritance
+    direct: true
+    label: Hara Sankei's family after his death
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100156&content_part_id=0&content_pict_id=0
+        note: 当館は三溪没後の昭和25年に原家から購入した。
+        source: emuseum-100156-ja
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 1950
+    method: purchase
+    direct: true
+    place: tokyo
+    label: bought from the Hara family (A-10944); owner today the National Institutes for Cultural Heritage
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100156&content_part_id=0&content_pict_id=0
+        note: 当館は三溪没後の昭和25年に原家から購入した。
+        source: emuseum-100156-ja
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/32
+        note: 保管施設の名称 ： 東京国立博物館 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-32
+        accessed: 2026-11-24
+identifiers:
+  emuseum: "100156"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q28803785
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q28803785
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q28803785
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q28803785
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q28803785

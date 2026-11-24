@@ -1,0 +1,22 @@
+public_id: 125959
+name: Bridgwater
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-2.993, 51.128]
+wikidata_id: Q914015
+metadata:
+  sources: [Wikidata Q914015 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q914015
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q914015
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q914015

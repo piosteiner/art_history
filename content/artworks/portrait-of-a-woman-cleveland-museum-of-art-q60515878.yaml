@@ -1,0 +1,145 @@
+public_id: 124982
+title_lang: en
+title: Portrait of a Woman
+names:
+  - lang: nl
+    role: translation
+    text: Portret van een vrouw
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60515878
+  - lang: fr
+    role: translation
+    text: Portrait de femme
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60515878
+  - lang: de
+    role: translation
+    text: Porträt einer Frau
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60515878
+  - lang: it
+    role: translation
+    text: Ritratto di donna
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60515878
+  - lang: es
+    role: translation
+    text: Retrato de una mujer
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60515878
+  - lang: ru
+    role: translation
+    text: Женский портрет
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60515878
+creator: amedeo-modigliani
+created: 1917/1918
+created_label: c. 1910s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [65, 48.3]
+institution: cleveland-museum-of-art
+inventory_number: "1951.358"
+web_url: https://clevelandart.org/art/1951.358
+wikidata_id: Q60515878
+metadata:
+  sources: [Wikidata Q60515878 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ae/Modigliani_%28secretmodigliani%29_-_1917-w-81.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Modigliani_(secretmodigliani)_-_1917-w-81.jpg
+    license: Public domain
+    credit: Amedeo Modigliani
+provenance:
+  - owner: institution/galerie-paul-guillaume
+    role: dealer
+    place: paris
+    label: the gallery's label is on the back of the painting; date unknown
+    sources:
+      - url: https://clevelandart.org/art/1951.358
+        note: "(Galerie Paul Guillaume, Paris, France) [date: ?] — The label for Galerie Paul Guillaume is present on the back of the painting."
+        source: cma-1951-358
+        accessed: 2026-11-24
+  - owner: person/georges-benard
+    ended: 1933
+    place: paris
+    label: banker and collector of Impressionist works
+    sources:
+      - url: https://clevelandart.org/art/1951.358
+        note: "Georges Bénard, Paris [date: Until 1933] — Georges Bénard was a banker and collector of Impressionist works."
+        source: cma-1951-358
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1933-06-09
+    ended: 1933-06-09
+    method: auction
+    direct: true
+    place: paris
+    label: Bénard sale, Hôtel Drouot, Paris, 9 June 1933, no. 67, sold to G. Bernheim
+    sources:
+      - url: https://clevelandart.org/art/1951.358
+        note: "(Bénard sale, Hôtel Drouot, June 9, 1933 (no. 67), sold to G. Bernheim) [date: 1933]"
+        source: cma-1951-358
+        accessed: 2026-11-24
+  - owner: person/georges-bernheim
+    acquired: 1933-06-09
+    method: auction
+    direct: true
+    place: paris
+    label: buyer 'G. Bernheim', probably the dealer Georges Bernheim (Dauberville); not in his 1935 sale nor in ERR lists of works seized from him
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1951.358
+        note: "Probably Georges Bernheim, Paris, France [date: 1933-] — Guy-Patrice Dauberville believes that “G. Bernheim,” the buyer at the 1933 sale, refers to Georges Bernheim, an art dealer … A sale of Bernheim’s collection on June 7, 1935 does not include the Cleveland picture. It also does not appear among the list of works confiscated from Bernheim’s collection by the Einsatzstab Reichsleiter Rosenberg"
+        source: cma-1951-358
+        accessed: 2026-11-24
+  - owner: person/cesar-mange-de-hauke
+    role: dealer
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1951.358
+        note: "(César de Hauke, Paris, sold to the Cleveland Museum of Art) [date: Until 1951]"
+        source: cma-1951-358
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Gift of the Hanna Fund
+    sources:
+      - url: https://clevelandart.org/art/1951.358
+        note: "The Cleveland Museum of Art [date: 1951-]"
+        source: cma-1951-358
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60515878
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60515878
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60515878
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60515878
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60515878
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60515878

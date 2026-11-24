@@ -1,0 +1,84 @@
+public_id: 124559
+title: Kamigamo Shrine
+names:
+  - text: Kami-Gamo Shrine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q700448
+  - text: Kamo-wake-ikazuchi Shrine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q700448
+  - text: Kamowake Ikazuchi Shrine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q700448
+  - text: Kamo-wakeikazuchi Shrine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q700448
+  - text: Yamashiro Ichinomiya
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q700448
+  - lang: nl
+    role: translation
+    text: Kamigamo-schrijn
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q700448
+  - lang: fr
+    role: translation
+    text: sanctuaire Kamigamo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q700448
+  - lang: es
+    role: translation
+    text: Santuario Kamigamo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q700448
+  - lang: ja
+    role: translation
+    text: 賀茂別雷神社
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q700448
+  - lang: ko
+    role: translation
+    text: 가모와케이카즈치 신사
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q700448
+  - lang: ru
+    role: translation
+    text: святилице Камигамо
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q700448
+created: 678
+location: [135.75275, 35.06051]
+wikidata_id: Q700448
+metadata:
+  sources: [Wikidata Q700448 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+    period: 678
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Kamo-wakeikazuchi-jinja24n3200.jpg/1280px-Kamo-wakeikazuchi-jinja24n3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kamo-wakeikazuchi-jinja24n3200.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  viaf: "260208939"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q700448
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q700448

@@ -1,0 +1,119 @@
+public_id: 124634
+title_lang: en
+title: Cupid (Amor)
+creator: johann-liss
+created: c. 1630
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [87.7, 65.7]
+institution: cleveland-museum-of-art
+inventory_number: "1971.100"
+web_url: https://clevelandart.org/art/1971.100
+wikidata_id: Q60471233
+metadata:
+  sources: [Wikidata Q60471233 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Johann_Liss_-_Cupid_%28Amor%29_-_1971.100_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Johann_Liss_-_Cupid_%28Amor%29_-_1971.100_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Liss_-_Cupid_(Amor)_-_1971.100_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Johann Liss
+provenance:
+  - owner_label: Agosti and Mendoza collection
+    ended_label: until 1936
+    label: many of its works formerly in the Achillito Chiesa collection (sold 1925–27 by the American Art Association, New York — the Liss not in that catalogue)
+    sources:
+      - url: https://clevelandart.org/art/1971.100
+        note: Agosti and Mendoza collection, probably consigned to the Galleria Pesaro. [until 1936] — Many of the works in the Agosti and Mendoza collection were formerly part of the Achillito Chiesa collection, which was sold in 1925-27 by the American Art Association in New York. The Liss painting is not listed in that sale catalogue, although that does not preclude the possibility Chiesa owned it at some point.
+        source: cma-1971-100
+        accessed: 2026-11-24
+  - owner: institution/galleria-pesaro
+    role: agent
+    acquired: 1936
+    direct: true
+    place: milan
+    label: probably on consignment; the gallery's January 1937 sale of the Agosti and Mendoza collection does not include the Liss
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1971.100
+        note: (Galleria Pesaro, Milan, probably sold through Mauro Pellicioli to Alessandro Basevi). [1936] — In January of 1937, the Galleria Pesaro held a sale of the Agosti and Mendoza collection. The Liss painting does not appear in the sale catalogue, and thus Mauro Pellicioli, working with the Galleria Pesaro, probably sold it directly to Basevi.
+        source: cma-1971-100
+        accessed: 2026-11-24
+  - owner: person/mauro-pellicioli
+    role: agent
+    acquired: 1936
+    direct: true
+    label: painter and restorer ("Dr. Pellicioli"), who may have acted as agent or otherwise facilitated the sale
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1971.100
+        note: Andrea Basevi, Alessandro Basevi’s grandson, recalled that his grandfather purchased the Liss in November 1936 from the Galleria Pesaro in Milan through a “Dr. Pellicioli” – probably Mauro Pellicioli, a painter and restorer – who may have acted as an agent or otherwise facilitated the sale.
+        source: cma-1971-100
+        accessed: 2026-11-24
+  - owner: person/alessandro-basevi
+    acquired: 1936-11
+    ended: 1959
+    method: purchase
+    direct: true
+    place: genoa
+    label: the SS seized his silver, gold and other precious objects in March 1944, but no paintings; lent it as owner to an exhibition at the Palazzo Reale, Genoa, 1947
+    sources:
+      - url: https://clevelandart.org/art/1971.100
+        note: Alessandro Basevi [1877-1959], Genoa, probably by descent to his daughter, Enrica Basevi [1936–1959] — In March 1944, Basevi’s collection of silver, gold, and other precious objects was seized by the SS ... It seems that Basevi retained possession of the Liss painting throughout the war, as no paintings appear on the list of items confiscated ... The painting was certainly with Basevi in 1947, when he is listed as the owner in an exhibition at the Palazzo Reale in Genoa.
+        source: cma-1971-100
+        accessed: 2026-11-24
+  - owner: person/enrica-basevi
+    acquired: 1959
+    method: inheritance
+    direct: true
+    place: genoa
+    label: his daughter; the collection was dispersed after his death, privately or at auction; a certificate for the painting was found among her belongings
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1971.100
+        note: Probably Enrica Basevi, Genoa. [likely beginning in 1959] — Alessandro’s daughter, Enrica Basevi, wrote to CMA curator Anne Tzeutschler Lurie in 1972 that after the death of her father, his collection of paintings had been dispersed. It is unclear at this point whether the Liss was sold privately or at auction.
+        source: cma-1971-100
+        accessed: 2026-11-24
+  - owner: institution/heim-gallery
+    role: dealer
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1971.100
+        note: (Heim Gallery, London, sold to the Cleveland Museum of Art). [until 1971]
+        source: cma-1971-100
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1971
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/1971.100
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1971–present]
+        source: cma-1971-100
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60471233
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60471233
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60471233
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60471233
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60471233
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60471233

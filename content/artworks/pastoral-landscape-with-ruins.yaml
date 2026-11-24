@@ -1,0 +1,212 @@
+public_id: 125124
+title_lang: en
+title: Pastoral Landscape with Ruins
+names:
+  - lang: nl
+    role: translation
+    text: Italianiserend landschap met ruïnes
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20272316
+creator: adriaen-van-de-velde
+created: 1664
+materials: [oil paint, canvas]
+dimensions: [67, 78.4]
+institution: art-institute-of-chicago
+inventory_number: "1894.1024"
+wikidata_id: Q20272316
+metadata:
+  sources: [Wikidata Q20272316 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Adriaen_van_de_Velde_-_Pastoral_Landscape_with_Ruins_-_1894.1024_-_Art_Institute_of_Chicago.jpg/1280px-Adriaen_van_de_Velde_-_Pastoral_Landscape_with_Ruins_-_1894.1024_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Adriaen_van_de_Velde_-_Pastoral_Landscape_with_Ruins_-_1894.1024_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Adriaen van de Velde
+provenance:
+  - owner: person/gerrit-braamcamp
+    acquired: 1766 or earlier
+    ended: 1771
+    place: amsterdam
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: Gerrit Braamcamp (died 1771), Amsterdam, by 1766 [see Bastide 1766 and Bille 1961];
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner: person/gerrit-braamcamp
+    role: estate
+    acquired: 1771
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: his estate sale Van der Schley, etc., Amsterdam, July 31, 1771
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner_label: Van der Schley, etc.
+    role: agent
+    acquired: 1771-07-31
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Braamcamp estate sale, no. 235; no. 234, considered its pendant, fetched 2,400 florins
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: his estate sale Van der Schley, etc., Amsterdam, July 31, 1771, no. 235
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner: person/jan-gildemeester-jansz
+    acquired: 1771-07-31
+    method: auction
+    direct: true
+    place: amsterdam
+    label: bought together with no. 234, its presumed pendant (2,400 florins)
+    price:
+      amount: 2420
+      currency: NLG
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: for 2,420 florins to Jan Gildemeester Jansz. along with no. 234, which was considered to be its pendant and fetched 2400 florins [prices and buyer according to an annotated copy of the sale catalogue in the Rijksbureau voor Kunsthistorische Documentatie, The Hague]; Jan Gildemeester Jansz. (died 1799), Amsterdam;
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner_label: Van der Schley, etc.
+    role: agent
+    acquired: 1800-06-11
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Gildemeester sale, no. 239; no. 238, considered its pendant, was sold separately (now Royal Collection, Windsor)
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: his sale, Van der Schley, etc., Amsterdam, June 11, 1800, no. 239
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner: person/pieter-van-winter
+    acquired: 1800-06-11
+    ended: 1807
+    method: auction
+    direct: true
+    place: amsterdam
+    label: bought through Jan Yver as his agent
+    price:
+      amount: 4825
+      currency: NLG
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: for 4,825 florins to Jan Yver as agent for Pieter van Winter [price and buyer according to an annotated copy of the sale catalogue in the Rijksbureau voor Kunsthistorische Documentatie, The Hague; see Priem 1997 for the connection between Yver and van Winter; …]; Pieter van Winter (died 1807), Amsterdam;
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner_label: heirs of Pieter van Winter
+    acquired: 1807
+    ended: 1818
+    method: inheritance
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: his heirs until the division of his property in 1818,
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner: person/anna-louisa-agatha-van-winter
+    co_owners: [person/willem-van-loon]
+    acquired: 1818
+    method: inheritance
+    direct: true
+    place: amsterdam
+    label: assigned to their portion in the division of Pieter van Winter's property
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: when it was assigned to the portion of his daughter Anna Louisa Agatha and her husband Willem van Loon (died 1877 and 1847 respectively) [see de Groot 1905 and Priem 1997].
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner: person/anatole-demidoff
+    ended: 1870
+    place: florence
+    label: Villa San Donato, near Florence
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: Presumably Prince Anatole Demidoff, Villa San Donato, near Florence (died 1870);
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner: person/paul-demidoff-2
+    acquired: 1870
+    ended: 1885
+    method: inheritance
+    direct: true
+    place: florence
+    label: by descent from his uncle; Villa San Donato
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: by descent to his nephew Prince Paul Demidoff (died 1885);
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner_label: Pillet, Le Roy and Mannheim
+    role: agent
+    not_sold: true
+    acquired: 1880-03-15
+    method: auction
+    direct: true
+    place: florence
+    label: San Donato sale, Florence, 15 March – 10 April 1880, lot 1116 (engraved), bought in
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: offered for sale Florence, Pillet, Le Roy and Mannheim, Villa San Donato, March 15-April 10, 1880, lot 1116, engraved, bought in;
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner_label: Princess Demidoff, formerly Princess Lise Troubetzkoi
+    acquired: 1885
+    method: inheritance
+    direct: true
+    label: widow of Paul Demidoff (by descent)
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: by descent to Princess Demidoff (formerly Princess Lise Troubetzkoi), 1885;
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: agent
+    acquired: 1890-06
+    direct: true
+    place: paris
+    label: sold through Durand-Ruel as part of a group of Dutch and Flemish paintings, many from the Demidoff collection
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: sold through Durand-Ruel, Paris, June 1890, as part of a group of Dutch and Flemish paintings, many from the Demidoff collection,
+        source: aic-1894-1024
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1890-06
+    method: purchase
+    direct: true
+    place: chicago
+    label: bought with funds advanced by Martin A. Ryerson and other trustees; cost reimbursed by the Sydney A. Kent Fund (accession 1894)
+    sources:
+      - url: https://www.artic.edu/artworks/863
+        note: with funds advanced by Martin A. Ryerson and other trustees of the Art Institute [annual report 1891]; the cost of 1894.1024 was reimbursed by the Sydney A. Kent Fund.
+        source: aic-1894-1024
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20272316
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20272316
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20272316
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20272316
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20272316
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20272316

@@ -6,6 +6,16 @@ death: 1097-01-12
 wikidata_id: Q49961
 metadata:
   sources: [Wikidata Q49961 (retrieved 2026-11-09)]
+relationships:
+  - type: sibling_of
+    to: person/robert-count-of-mortain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q49961
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q724235
 sources:
   kind:
     - accessed: 2026-11-09

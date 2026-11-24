@@ -20,6 +20,16 @@ description_md: Emperor of Japan; the era of his reign is [[heisei-era|Heisei]] 
 wikidata_id: Q37979
 metadata:
   sources: [Wikidata Q37979 (retrieved 2026-11-02)]
+relationships:
+  - type: child_of
+    to: person/hirohito
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q34479
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q37979
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/1d/Emperor_Akihito_%282016%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Emperor_Akihito_(2016).jpg

@@ -1,0 +1,35 @@
+public_id: 124914
+name: Aoki
+names:
+  - lang: ja
+    role: original
+    text: 青木村
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q615719
+  - lang: ko
+    role: translation
+    text: 아오키무라
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q615719
+kind: settlement
+parent: japan
+country_code: JP
+location: [138.12847, 36.37014]
+wikidata_id: Q615719
+metadata:
+  sources: [Wikidata Q615719 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q615719
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q615719
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q615719

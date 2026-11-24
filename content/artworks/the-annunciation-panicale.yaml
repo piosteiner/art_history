@@ -1,0 +1,181 @@
+public_id: 123208
+title_lang: en
+title: The Annunciation
+names:
+  - lang: nl
+    role: translation
+    text: Annunciazione
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3618180
+  - lang: fr
+    role: translation
+    text: L'Annonciation
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3618180
+  - lang: de
+    role: translation
+    text: Verkündigung
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3618180
+  - lang: ja
+    role: translation
+    text: 受胎告知 (マソリーノ)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3618180
+creator: masolino-da-panicale
+created: 1423
+materials: [tempera, panel]
+dimensions: [148.8, 115.1]
+institution: national-gallery-of-art
+inventory_number: 1937.1.16
+provenance_status: a_clear
+provenance_status_note: Henry Goldman, New York, from about 1916; bought from his estate by Duveen Brothers and sold to the A.W. Mellon Educational and Charitable Trust on 26 April 1937.
+wikidata_id: Q3618180
+metadata:
+  sources: [Wikidata Q3618180 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q3618180
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Masolino_Annunciation.jpg/1280px-Masolino_Annunciation.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Masolino_Annunciation.jpg
+    license: Public domain
+    credit: Masolino da Panicale
+provenance:
+  - owner: institution/san-niccolo-oltrarno-florence
+    acquired: 1417/1426
+    ended: c. 1800
+    method: creation
+    place: florence
+    label: altarpiece of the Guardini chapel (founded by Michele Guardini's will of 1417); moved c. 1567 and 1576 to the sacristy; removed from the church by c. 1800
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.18.html
+        note: Painted to serve as the altarpiece of the Guardini chapel on the left side of the rood screen in the church of San Niccolò Oltrarno, Florence, and probably in place by 1426;[1] transferred by c. 1567 (the date of the demolition of the rood screen) to the altar of the other chapel of the Guardini family in the same church; moved 1576 to the Sacristy (and replaced by the Annunciation altarpiece newly painted by Alessandro Fei);[2] in a room annexed to the sacristy, probably until the end of the eighteenth century.[3]
+        source: nga-1937-1-16
+        accessed: 2026-11-24
+  - owner: person/francis-wemyss-charteris-douglas-9th-earl-of-wemyss
+    place: longniddry
+    label: Gosford House, Longniddry, Scotland
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.18.html
+        note: possibly Francis Weymss-Charteris-Douglas, 9th earl of Wemyss [1796-1883], Gosford House, Longniddry, Scotland;[4]
+        source: nga-1937-1-16
+        accessed: 2026-11-24
+  - owner: person/francis-richard-charteris-10th-earl-of-wemyss
+    acquired: 1886 or earlier
+    method: inheritance
+    direct: true
+    place: longniddry
+    label: Gosford House; lent to the Royal Academy, London, 1886
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.18.html
+        note: by inheritance to his son, Francis Richard Charteris, 10th earl of Wemyss [1818-1914], Gosford House, by 1886;[5] — [5] The painting appeared in the exhibition of the Royal Academy in London in 1886 as belonging to the collection of the earl of Wemyss.
+        source: nga-1937-1-16
+        accessed: 2026-11-24
+  - owner: person/hugo-richard-charteris-11th-earl-of-wemyss
+    method: inheritance
+    direct: true
+    place: longniddry
+    label: Gosford House
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.18.html
+        note: by inheritance to his son, Hugo Richard Charteris, 11th earl of Wemyss, [1857-1937], Gosford House;
+        source: nga-1937-1-16
+        accessed: 2026-11-24
+  - owner: person/robert-langton-douglas
+    role: dealer
+    acquired: c. 1915
+    method: purchase
+    direct: true
+    place: london
+    label: first offered it to the Fogg Museum
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.18.html
+        note: sold c. 1915 to (Robert Langton Douglas, London);[6] — [6] … according to whom Douglas first offered the panel for sale to the Fogg Museum in Cambridge, Massachusetts.
+        source: nga-1937-1-16
+        accessed: 2026-11-24
+  - owner: person/henry-goldman
+    acquired: 1916 or earlier
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.18.html
+        note: sold to Henry Goldman [1857-1937], New York, by 1916;[7]
+        source: nga-1937-1-16
+        accessed: 2026-11-24
+  - owner: person/henry-goldman
+    role: estate
+    method: inheritance
+    direct: true
+    place: new-york-city
+    label: estate of Henry Goldman
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.18.html
+        note: "[7] … According to their prospectus (in NGA curatorial files), Duveen purchased the painting from Goldman's estate."
+        source: nga-1937-1-16
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    method: purchase
+    direct: true
+    label: London and New York; bought from Goldman's estate
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.18.html
+        note: (Duveen Brothers, Inc., London and New York);[8] — [7] … Duveen purchased the painting from Goldman's estate.
+        source: nga-1937-1-16
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1937-04-26
+    method: purchase
+    direct: true
+    place: pittsburgh
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.18.html
+        note: purchased 26 April 1937 by The A.W.  Mellon Educational and Charitable Trust, Pittsburgh;[9]
+        source: nga-1937-1-16
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.18.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-16
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3618180
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q3618180
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3618180
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3618180
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3618180
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q3618180

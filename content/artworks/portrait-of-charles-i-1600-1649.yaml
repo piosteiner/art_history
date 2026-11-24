@@ -1,0 +1,118 @@
+public_id: 124649
+title_lang: en
+title: Portrait of Charles I (1600–1649)
+created: 1600/1699
+created_label: c. 17th century
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [116.8, 96.3]
+institution: cleveland-museum-of-art
+inventory_number: "1916.1039"
+web_url: https://clevelandart.org/art/1916.1039
+wikidata_id: Q60502360
+metadata:
+  sources: [Wikidata Q60502360 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/flanders
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q60502360
+  - type: depicts_person
+    to: person/charles-i-of-england
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q60502360
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Anthony_van_Dyck_-_Portrait_of_Charles_I_%281600-1649%29_-_1916.1039_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Anthony_van_Dyck_-_Portrait_of_Charles_I_%281600-1649%29_-_1916.1039_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anthony_van_Dyck_-_Portrait_of_Charles_I_(1600-1649)_-_1916.1039_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Anthony van Dyck
+provenance:
+  - owner_label: Duke of Hamilton
+    ended: 1882-06-17
+    label: sale, Paris, 17 June 1882, no. 6
+    sources:
+      - url: https://clevelandart.org/art/1916.1039
+        note: "Duke of Hamilton (sale: Paris, June 17, 1882., no. 6);"
+        source: cma-1916-1039
+        accessed: 2026-11-24
+  - owner: person/charles-sedelmeyer
+    role: dealer
+    direct: true
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1916.1039
+        note: "[Charles Sedelmeyer, Paris];"
+        source: cma-1916-1039
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    direct: true
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1916.1039
+        note: "[Durand-Ruel, Paris];"
+        source: cma-1916-1039
+        accessed: 2026-11-24
+  - owner: person/h-o-havemeyer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1916.1039
+        note: H. O. Havemeyer. New York;
+        source: cma-1916-1039
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1916.1039
+        note: "[Durand-Ruel, New York], sold to Mr. and Mrs. Jeptha H. Wade, 1897"
+        source: cma-1916-1039
+        accessed: 2026-11-24
+  - owner: person/jeptha-h-wade
+    acquired: 1897
+    method: purchase
+    direct: true
+    place: gates-mills
+    label: with Mrs. Jeptha H. Wade
+    sources:
+      - url: https://clevelandart.org/art/1916.1039
+        note: "[Durand-Ruel, New York], sold to Mr. and Mrs. Jeptha H. Wade, 1897 / Mr. and Mrs. Jeptha H. Wade (Gates Mills, Ohio), by gift to the Cleveland Museum of Art, 1916."
+        source: cma-1916-1039
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1916
+    method: gift
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1916.1039
+        note: Mr. and Mrs. Jeptha H. Wade (Gates Mills, Ohio), by gift to the Cleveland Museum of Art, 1916.
+        source: cma-1916-1039
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60502360
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60502360
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60502360
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60502360
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60502360

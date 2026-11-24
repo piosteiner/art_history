@@ -1,0 +1,21 @@
+public_id: 122981
+name: Innocent X
+kind: person
+birth: 1574-05-16
+death: 1655-01-07
+wikidata_id: Q101266
+metadata:
+  sources: [Wikidata Q101266 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q101266
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q101266
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q101266

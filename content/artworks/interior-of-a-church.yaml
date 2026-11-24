@@ -1,0 +1,138 @@
+public_id: 124624
+title_lang: en
+title: Interior of a Church
+names:
+  - lang: de
+    role: translation
+    text: Inneres einer Kirche
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60471212
+creator: emanuel-de-witte
+created: c. 1680
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [62, 54]
+institution: cleveland-museum-of-art
+inventory_number: "1971.1"
+web_url: https://clevelandart.org/art/1971.1
+wikidata_id: Q60471212
+metadata:
+  sources: [Wikidata Q60471212 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/netherlands
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q60471212
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Clevelandart_1971.1.jpg/1280px-Clevelandart_1971.1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Clevelandart_1971.1.jpg
+    license: CC0
+    credit: Emanuel de Witte
+provenance:
+  - owner: person/theodor-stroefer
+    ended: 1927
+    place: nuremberg
+    sources:
+      - url: https://clevelandart.org/art/1971.1
+        note: Theodor Stroefer [1843-1927], Nürnberg [Until 1927]
+        source: cma-1971-1
+        accessed: 2026-11-24
+  - owner_label: family of Theodor Stroefer, Nuremberg
+    acquired: 1927
+    method: inheritance
+    direct: true
+    place: nuremberg
+    sources:
+      - url: https://clevelandart.org/art/1971.1
+        note: Family of Theodor Stroefer, Nürnberg [1927-1937]
+        source: cma-1971-1
+        accessed: 2026-11-24
+  - owner: institution/kunsthandlung-julius-bohler
+    role: agent
+    acquired: 1937-10-28
+    method: auction
+    direct: true
+    place: munich
+    label: Stroefer sale, no. 122; buyer "Bohnewald" [sic] in the annotated price list
+    price:
+      amount: 13000
+      currency: RM
+    sources:
+      - url: https://clevelandart.org/art/1971.1
+        note: (Julius Böhler, Munich, Stroefer sale, Oct. 28, 1937, no. 122 [13,000 Reichsmarks, sold to Curt Bohnewand)
+        source: cma-1971-1
+        accessed: 2026-11-24
+  - owner: person/curt-bohnewand
+    acquired: 1937-10-28
+    method: auction
+    direct: true
+    place: berlin
+    label: tobacconist and collector, Berlin and Rottach-Egern; kept it until his death, sold in his posthumous sale
+    sources:
+      - url: https://clevelandart.org/art/1971.1
+        note: Curt Bohnewand [1888-1966], Berlin and Rottach-Egern, Germany [1937 - 1969] — the painting remained with Bohnewand until his death and was sold in the posthumous sale of his collection in 1969.
+        source: cma-1971-1
+        accessed: 2026-11-24
+  - owner: institution/kunsthaus-lempertz
+    role: agent
+    acquired: 1969-03-28
+    method: auction
+    direct: true
+    place: cologne
+    label: Bohnewand sale, no. 25
+    sources:
+      - url: https://clevelandart.org/art/1971.1
+        note: (Kunsthaus Lempertz, Cologne, Bohnewand sale, March 28, 1969, no. 25, probably sold to Schaeffer Galleries)
+        source: cma-1971-1
+        accessed: 2026-11-24
+  - owner: institution/schaeffer-galleries
+    role: dealer
+    acquired: 1969
+    method: auction
+    direct: true
+    place: new-york-city
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1971.1
+        note: (Schaeffer Galleries, New York, NY, sold to the Cleveland Museum of Art) [Probably 1969-1970]
+        source: cma-1971-1
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1971
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Mr. and Mrs. William H. Marlatt Fund
+    sources:
+      - url: https://clevelandart.org/art/1971.1
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1971-]
+        source: cma-1971-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60471212
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60471212
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60471212
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60471212
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60471212
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60471212

@@ -1,0 +1,29 @@
+public_id: 127014
+name: Alnwick
+names:
+  - lang: ko
+    role: translation
+    text: 알른윅
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1002826
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-1.70691, 55.4134]
+wikidata_id: Q1002826
+metadata:
+  sources: [Wikidata Q1002826 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1002826
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1002826
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1002826

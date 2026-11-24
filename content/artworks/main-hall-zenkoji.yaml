@@ -1,0 +1,43 @@
+public_id: 124005
+title: Main Hall, Zenkoji
+names:
+  - lang: ja
+    role: translation
+    text: 善光寺本堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020341
+created: 1705/1707
+institution: zenko-ji
+location: [138.1876, 36.66155]
+wikidata_id: Q107020341
+metadata:
+  sources: [Wikidata Q107020341 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nagano
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Main_Hall_of_Zenk%C5%8D-ji_1.jpg/1280px-Main_Hall_of_Zenk%C5%8D-ji_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Main_Hall_of_Zenk%C5%8D-ji_1.jpg
+    license: CC BY-SA 4.0
+    credit: Christophe95
+provenance:
+  - owner: institution/zenko-ji
+    acquired: 1705/1707
+    method: creation
+    place: nagano-prefecture
+    label: main hall rebuilt after the fire of 1700, begun 1705 (Hōei 2), completed 1707 (Hōei 4); designed by the shogunate's master carpenter Kōra Muneyoshi, master builder his pupil Kimura Manbei; built under Keiun of Daikanjin on the shogunate's order; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/907
+        note: 現在の本堂は元禄十三年（一七〇〇）の炎上のあとの再建であって、宝永二年（一七〇五）着工、同四年（一七〇七）竣工した。設計は幕府の棟梁甲良宗賀であり、棟梁は弟子木村万兵衛であった。… 所有者名 ： 善光寺 所有者種別 ： 寺院
+        source: kunishitei-102-907
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=善光寺&oldid=111300648
+        note: 元禄13年（1700年）：本堂再建という幕府の特命で、柳沢吉保の甥・慶運が別当、吉保の娘・智善が大本願上人で入山 … 宝永4年（1707年）：慶運により本堂再建、現在に至る。
+        source: jawiki-zenko-ji
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020341

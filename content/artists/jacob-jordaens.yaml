@@ -1,0 +1,18 @@
+public_id: 124690
+name: Jacob Jordaens
+given_name: Jacob
+family_name: Jordaens
+birth: 1593-05-19
+death: 1678-10-18
+wikidata_id: Q270658
+metadata:
+  sources: [Wikidata Q270658 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q270658
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q270658

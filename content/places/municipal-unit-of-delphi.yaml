@@ -1,0 +1,8 @@
+public_id: 123117
+name: Municipal Unit of Delphi
+kind: settlement
+parent: greece
+country_code: GR
+location: [22.47765, 38.49847]
+metadata:
+  sources: [Wikidata null (retrieved 2026-11-23)]

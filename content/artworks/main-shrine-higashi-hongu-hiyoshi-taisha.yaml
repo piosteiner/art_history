@@ -1,0 +1,47 @@
+public_id: 124077
+title: Main Shrine, Higashi-hongū, Hiyoshi Taisha
+names:
+  - lang: ja
+    role: translation
+    text: 日吉大社東本宮本殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020407
+created: 1595
+institution: hiyoshi-taisha
+location: [135.865, 35.07343]
+wikidata_id: Q107020407
+metadata:
+  sources: [Wikidata Q107020407 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/otsu
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Hiyoshi-taisha_higashihongu-honden01nt3200.jpg/1280px-Hiyoshi-taisha_higashihongu-honden01nt3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hiyoshi-taisha_higashihongu-honden01nt3200.jpg
+    license: CC BY 2.5
+    credit: 663highland
+provenance:
+  - owner: institution/hiyoshi-taisha
+    acquired: 1595
+    method: creation
+    place: otsu
+    label: rebuilt 1595 (Bunroku 4) in the hie-zukuri style after Oda Nobunaga's burning of Mount Hiei and the shrine in 1571; the shrine, then Enryaku-ji's guardian shrine, left Enryaku-ji's control in 1868; owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1346
+        note: 社殿は創立以来たびたび焼失と造替とを繰り返した。現在の社殿は西本宮本殿が天正十四年（一五八六）、東本宮本殿が文禄四年（一五九五）の造立である。この両社殿は日吉造の代表作である。 … 所有者名 ： 日吉大社 所有者種別 ： 神社
+        source: kunishitei-102-1346
+        accessed: 2026-11-24
+      - note: 62 Shinto shrine types. Façades, side views and ground plans … 6. Hie (Hie Shrine at Shiga).
+        source: history-of-japanese-art
+        locator: p. 56, fig. 62
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%97%A5%E5%90%89%E5%A4%A7%E7%A4%BE&oldid=111651670
+        note: 元亀2年（1571年）、織田信長の比叡山焼き討ちにより、日吉社も全て焼かれて灰燼に帰し … 日吉社は率先して仏教色を一掃すると、延暦寺から独立して社名を日吉神社（ひえじんじゃ）とした。
+        source: wikipedia-ja-hiyoshi-taisha
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020407

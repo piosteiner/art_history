@@ -1,0 +1,18 @@
+public_id: 125254
+name: Benjamin West
+given_name: Benjamin
+family_name: West
+birth: 1738-10-10
+death: 1820-03-11
+wikidata_id: Q313498
+metadata:
+  sources: [Wikidata Q313498 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q313498
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q313498

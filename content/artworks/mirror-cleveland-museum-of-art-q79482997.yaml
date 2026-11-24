@@ -1,0 +1,50 @@
+public_id: 124984
+title_lang: en
+title: Mirror
+institution: cleveland-museum-of-art
+inventory_number: "1917.640"
+web_url: https://clevelandart.org/art/1917.640
+wikidata_id: Q79482997
+metadata:
+  sources: [Wikidata Q79482997 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Japan%2C_Kamakura_Period_-_Mirror_-_1917.640_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Japan%2C_Kamakura_Period_-_Mirror_-_1917.640_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japan,_Kamakura_Period_-_Mirror_-_1917.640_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Cleveland Museum of Art
+provenance:
+  - owner: institution/yamanaka-co
+    role: dealer
+    sources:
+      - url: https://clevelandart.org/art/1917.640
+        note: (Yamanaka and Co.)
+        source: cma-1917-640
+        accessed: 2026-11-24
+  - owner: person/d-z-norton
+    ended: 1917
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1917.640
+        note: "D. Z. Norton [1851–1928], Cleveland, OH, given to the Cleveland Museum of Art [date: ?–1917]"
+        source: cma-1917-640
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1917
+    method: gift
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1917.640
+        note: "The Cleveland Museum of Art, Cleveland, OH [date: 1917–]"
+        source: cma-1917-640
+        accessed: 2026-11-24
+sources:
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q79482997
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q79482997

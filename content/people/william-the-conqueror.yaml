@@ -8,6 +8,25 @@ death: 1087-09-15
 wikidata_id: Q37594
 metadata:
   sources: [Wikidata Q37594 (retrieved 2026-11-09)]
+relationships:
+  - type: sibling_of
+    to: person/odo-earl-of-kent
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q37594
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q49961
+  - type: sibling_of
+    to: person/robert-count-of-mortain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q37594
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q724235
 sources:
   kind:
     - accessed: 2026-11-09

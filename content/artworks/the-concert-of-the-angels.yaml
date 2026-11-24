@@ -1,0 +1,123 @@
+public_id: 123184
+title_lang: es
+title: Concierto de angeles
+names:
+  - lang: el
+    role: original
+    text: Η Συναυλία των Αγγέλων
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q5781032
+  - lang: en
+    role: translation
+    text: The Concert of the Angels
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q5781032
+  - lang: nl
+    role: translation
+    text: Engelenconcert
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q5781032
+  - lang: fr
+    role: translation
+    text: Le Concert des anges
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q5781032
+  - lang: de
+    role: translation
+    text: Das Konzert der Engel
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q5781032
+  - lang: it
+    role: translation
+    text: Concierto di angelos
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q5781032
+  - lang: es
+    role: original
+    text: Concierto de ángeles
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q5781032
+creator: el-greco
+created: 1608/1614
+created_label: c. 1600s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [115, 217]
+institution: national-gallery-of-athens
+inventory_number: Π.152
+wikidata_id: Q5781032
+metadata:
+  sources: [Wikidata Q5781032 (retrieved 2026-11-24)]
+relationships:
+  - type: associated_with
+    to: movement/mannerism
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q5781032
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/El_Greco_-_The_Concert_of_the_Angels%2C_ca_1608-1614%2C_%CE%A0.152.jpg/1280px-El_Greco_-_The_Concert_of_the_Angels%2C_ca_1608-1614%2C_%CE%A0.152.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:El_Greco_-_The_Concert_of_the_Angels,_ca_1608-1614,_%CE%A0.152.jpg
+    license: Public domain
+    credit: El Greco
+provenance:
+  - owner: artist/el-greco
+    acquired: c. 1608–1614
+    method: creation
+    place: toledo
+    label: upper (heavenly) part of an Annunciation, probably for the chapel of the Hospital de Tavera, Toledo; left unfinished; later cut down (when unknown)
+    sources:
+      - url: https://www.nationalgallery.gr/en/artwork/the-concert-of-the-angels/
+        note: This strange yet “modern” painting is the heavenly section of an “Annunciation”, today in the collections of a Madrid bank. It is one of the very last works painted by Greco shortly before he died in Toledo in 1614. Left unfinished, the painting teaches us a lot about the artist’s technique.
+        source: national-gallery-athens-p152
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Concert_of_Angels
+        note: art historians have disputed whether this painting is a finished work or part of a working study for a commission of the Annunciation for the chapel of the Hospital de Tavera. … It once formed part of a threesome of paintings for the chapel. It is unknown when the paintings were removed from the chapel. It is also unknown when this painting was cut down, but Tiziana Frati assumes it was done in the latter half of the 19th century.
+        source: wikipedia-en-concert-of-angels
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-athens
+    acquired: 1931
+    method: auction
+    place: athens
+    label: bought at auction in Munich for 5,900,775 drachmas; the National Gallery's most important acquisition; inventory Π.152
+    sources:
+      - url: https://nationalgallery.gr/en/?p=46651
+        note: "In 1931, moreover, the National Gallery’s most important acquisition was made at auction in Munich: Domenikos Theotokopoulos’s Concert of the Angels , the upper part of his Annunciation, was acquired for the sum of 5,900,775 Drachmas."
+        source: national-gallery-athens-history
+        accessed: 2026-11-24
+      - url: https://www.nationalgallery.gr/en/artwork/the-concert-of-the-angels/
+        note: The Concert of the Angels, ca 1608-1614 Oil on canvas, 115 x 217 cm Inv. Number Π.152 On view Main Building
+        source: national-gallery-athens-p152
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q5781032
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q5781032
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q5781032
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q5781032
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q5781032
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q5781032

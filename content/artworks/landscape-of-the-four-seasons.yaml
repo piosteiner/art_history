@@ -1,0 +1,100 @@
+public_id: 124216
+title: Landscape of the Four Seasons
+names:
+  - text: Sansui Chōkan
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q42192051
+  - text: Landscapes of the Four Seasons
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q42192051
+  - text: Long Landscape Scroll
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q42192051
+  - lang: ja
+    role: translation
+    text: 四季山水図
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q42192051
+creator: sesshu-toyo
+created: 1486
+institution: mori-museum
+location: [131.5883, 34.06346]
+wikidata_id: Q42192051
+metadata:
+  sources: [Wikidata Q42192051 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/hofu
+    period: 1486
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Landscapes_of_the_Four_Seasons_by_Sesshu_%28Mori_Museum%29.jpg/1280px-Landscapes_of_the_Four_Seasons_by_Sesshu_%28Mori_Museum%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Landscapes_of_the_Four_Seasons_by_Sesshu_(Mori_Museum).jpg
+    license: Public domain
+    credit: Sesshū Tōyō
+provenance:
+  - owner: artist/sesshu-toyo
+    acquired: 1486
+    method: creation
+    label: the long handscroll (Sansui chōkan), c. 16 m; colophon dated Bunmei 18 (1486), painted at 67
+    sources:
+      - url: https://mohri-museum.com/museum/
+        note: 「山水長巻」と一般に呼ばれているこの図巻は、画聖と呼ばれる雪舟の代表作として知られている。 … 奥書に文明18年（1486）67歳の作とあることから、雪舟は、応永27年（1420）生まれであることがわかる。
+        source: mohri-museum-collection
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/29
+        note: 年代 ： 1486 … ト書 ： 文明十八年の年記がある
+        source: kunishitei-201-29
+        accessed: 2026-11-24
+  - owner_label: Ōuchi family
+    place: yamaguchi-2
+    label: formerly owned by the Ōuchi, Sesshū's patrons in Yamaguchi
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111770506
+        note: 大内氏の旧蔵で全長15メートル余りの画面に四季の風景を描いた巻物。毛利氏が所有以降、家の宝として大切に保存された。
+        source: jawiki-111770506
+        accessed: 2026-11-24
+  - owner_label: Mōri family
+    acquired_label: after the fall of the Ōuchi
+    label: the Mōri, later lords of Hagi (Chōshū) and princes, kept it as a family treasure
+    sources:
+      - url: https://mohri-museum.com/museum/
+        note: 本作品は大内氏の滅亡後、毛利氏が所有するようになり、以降毛利家の至宝として大切に保存され、現在にいたっている。
+        source: mohri-museum-collection
+        accessed: 2026-11-24
+  - owner: institution/mori-museum
+    place: hofu
+    label: owned by the Mōri Hōkōkai foundation, which runs the museum in the former Mōri residence; National Treasure 9 June 1951
+    sources:
+      - url: https://mohri-museum.com/museum/
+        note: 所蔵している文化財は、すべて旧公爵毛利家に伝来したものであり … 運営 公益財団法人毛利報公会
+        source: mohri-museum-collection
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/29
+        note: 国宝指定年月日 ： 1951.06.09(昭和26.06.09) … 所在都道府県 ： 山口県 … 所有者名 ： 公益財団法人毛利報公会
+        source: kunishitei-201-29
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=110006369
+        note: 雪舟の四季山水図（国宝）、毛利元就自筆の三子教訓状（重要文化財）など約2万点の文化財などを所蔵する博物館。昭和41年（1966年）に発足した財団法人（現・公益財団法人）防府毛利報公会により開設される。
+        source: jawiki-110006369
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q42192051
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q42192051
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q42192051
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q42192051

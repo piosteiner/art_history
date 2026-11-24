@@ -1,0 +1,118 @@
+public_id: 123130
+title_lang: en
+title: Antikythera Ephebe (Youth of Antikythera)
+names:
+  - text: Youth of Antikythera
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2668248
+  - lang: en
+    role: original
+    text: Antikythera Ephebe
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2668248
+  - lang: fr
+    role: translation
+    text: Éphèbe d'Anticythère
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2668248
+  - lang: it
+    role: translation
+    text: Efebo di Anticitera
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2668248
+  - lang: es
+    role: translation
+    text: Efebo de Anticitera
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2668248
+  - lang: zh
+    role: translation
+    text: 安迪基西拉青年
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2668248
+  - lang: ru
+    role: translation
+    text: Эфеб с Антикитеры
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2668248
+created: c. 340 BCE
+created_span: uncertain
+materials: [bronze]
+institution: national-archaeological-museum-of-athens
+wikidata_id: Q2668248
+metadata:
+  sources: [Wikidata Q2668248 (retrieved 2026-11-23)]
+relationships:
+  - type: associated_with
+    to: movement/greek-late-classical-period
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q2668248
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2d/0027MAN_Paris_or_Perseus2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:0027MAN_Paris_or_Perseus2.jpg
+    license: CC BY-SA 3.0
+    credit: Ricardo André FrantzUser:Tetraktys
+provenance:
+  - owner_label: unknown
+    role: event
+    acquired: c. 70–60 BCE
+    label: lost in the Antikythera shipwreck; the ship had probably begun its journey on the Ionian coast; in Antikythera
+    sources:
+      - url: https://en.wikipedia.org/wiki/Antikythera_Ephebe
+        note: The wreck site, which is dated about 70–60 BC … leading scholars to surmise that it had begun its journey on the Ionian coast, perhaps at Ephesus
+        source: wikipedia-en-antikythera-ephebe
+        accessed: 2026-11-24
+  - owner_label: sponge divers
+    acquired: 1900
+    method: find
+    label: retrieved in numerous fragments; in Antikythera
+    sources:
+      - url: https://en.wikipedia.org/wiki/Antikythera_Ephebe
+        note: a Greek bronze statue of a young man of languorous grace that was found in 1900 by sponge-divers in the area of the ancient Antikythera shipwreck off the island of Antikythera, Greece. … was retrieved in numerous fragments.
+        source: wikipedia-en-antikythera-ephebe
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    method: transfer
+    place: athens
+    label: registered as 'Bronze statue of a youth', inventory X 13396; first restoration revised in the 1950s under Christos Karouzos
+    sources:
+      - url: https://en.wikipedia.org/wiki/Antikythera_Ephebe
+        note: The Antikythera Ephebe, registered as Bronze statue of a youth in the museum collections … Its first restoration was revised in the 1950s, under the direction of Christos Karouzos
+        source: wikipedia-en-antikythera-ephebe
+        accessed: 2026-11-24
+      - url: https://www.namuseum.gr/en/to-moyseio/istoria-toy-moyseioy/the-rescue-of-the-statues/
+        note: Bronze statue of a youth. From the Antikythera shipwreck (retrieved in 1900-1901). Around 340-330 BC (X 13396).
+        source: nam-athens-rescue-of-the-statues
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1940/1941
+    place: athens
+    label: photographed among the antiquities hidden by the museum in 1940–1941; the occupation forces' request of June 1941 to exhibit it among 103 statues was never carried out
+    sources:
+      - url: https://www.namuseum.gr/en/to-moyseio/istoria-toy-moyseioy/the-rescue-of-the-statues/
+        note: Indeed, already in June 1941 Hans Ulrich von Schönebeck … had asked persistently for the re-opening of the National Museum. For this purpose, the occupation forces compiled a list of 103 statues with the request to be exhibited, among them the Poseidon of Artemision, the ephebe of Anticythera and the ephebe of Marathon, an order that was never implemented.
+        source: nam-athens-rescue-of-the-statues
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q2668248
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q2668248
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q2668248

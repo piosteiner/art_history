@@ -1,0 +1,74 @@
+public_id: 123202
+title_lang: en
+title: The Holy Kinship
+created: 1480/1490
+created_label: c. 1480
+created_span: uncertain
+dimensions: [128, 112.5, 27]
+institution: national-gallery-of-art
+inventory_number: 2002.13.1
+wikidata_id: Q63861614
+metadata:
+  sources: [Wikidata Q63861614 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/South_German_15th_Century_%28Swabian_or_Franconian%29%2C_The_Holy_Kinship%2C_c._1480-1490%2C_NGA_123018.jpg/1280px-South_German_15th_Century_%28Swabian_or_Franconian%29%2C_The_Holy_Kinship%2C_c._1480-1490%2C_NGA_123018.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:South_German_15th_Century_(Swabian_or_Franconian),_The_Holy_Kinship,_c._1480-1490,_NGA_123018.jpg
+    license: CC0
+    credit: South German 15th Century (Swabian or Franconian)
+provenance:
+  - owner: institution/cistercian-convent-of-kirchheim-am-ries
+    place: kirchheim-am-ries
+    label: near Nördlingen; closely connected with the Oettingen-Wallersteins
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.123018.html
+        note: Probably the Cistercian convent of Kirchheim, near Nordlingen.
+        source: nga-2002-13-1
+        accessed: 2026-11-24
+  - owner_label: Princes zu Oettingen-Wallerstein, Schloss Wallerstein
+    acquired: early 19th century
+    method: transfer
+    place: wallerstein
+    label: received Kirchheim with its possessions at the secularisation; Prince Ludwig set it in a neo-Gothic retable for the chapel of Saint Anne, separated late 20th century
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.123018.html
+        note: Princes zu Oettingen-Wallerstein, Schloss Wallerstein, since the early 19th century;[1] — [1] … In the wake of secularisation during Napoleon's reorganization of Germany, the princely house received seven convents, including Kirchheim, together with all their possessions in compensation for lost territory on the left bank of the Rhine.
+        source: nga-2002-13-1
+        accessed: 2026-11-24
+  - owner: person/alexander-rudigier
+    role: agent
+    acquired: 2002
+    direct: true
+    place: munich
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.123018.html
+        note: purchased 7 February 2002 through (Alexander Rudigier, Munich) by NGA.
+        source: nga-2002-13-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 2002-02-07
+    method: purchase
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.123018.html
+        note: purchased 7 February 2002 through (Alexander Rudigier, Munich) by NGA.
+        source: nga-2002-13-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q63861614
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q63861614
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q63861614
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q63861614

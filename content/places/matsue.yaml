@@ -1,0 +1,41 @@
+public_id: 123893
+name: Matsue
+names:
+  - lang: ja
+    role: original
+    text: 松江市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q207321
+  - lang: ko
+    role: translation
+    text: 마쓰에시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q207321
+  - lang: ru
+    role: translation
+    text: Мацуэ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q207321
+kind: settlement
+parent: japan
+country_code: JP
+location: [133.04853, 35.46811]
+wikidata_id: Q207321
+metadata:
+  sources: [Wikidata Q207321 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q207321
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q207321
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q207321

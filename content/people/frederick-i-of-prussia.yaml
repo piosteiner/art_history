@@ -45,6 +45,15 @@ relationships:
       - accessed: 2026-10-30
         property: P112
         wikidata: Q414110
+  - type: child_of
+    to: person/frederick-william-of-brandenburg
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q151826
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q152727
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Antoine_Pesne%3B_Frederik_I_von_Preu%C3%9Fen.jpg/1280px-Antoine_Pesne%3B_Frederik_I_von_Preu%C3%9Fen.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Antoine_Pesne;_Frederik_I_von_Preu%C3%9Fen.jpg

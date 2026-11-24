@@ -1,0 +1,22 @@
+public_id: 124144
+name: Orrouy
+kind: settlement
+parent: oise
+country_code: FR
+location: [2.86028, 49.29333]
+wikidata_id: Q1337064
+metadata:
+  sources: [Wikidata Q1337064 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1337064
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1337064
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1337064

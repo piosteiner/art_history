@@ -1,0 +1,37 @@
+public_id: 124913
+title_lang: en
+title: Shōden-dō of Kangi-in
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 歓喜院聖天堂
+institution: kangi-in-temple
+location: [139.3746, 36.22588]
+wikidata_id: Q107020328
+metadata:
+  sources: [Wikidata Q107020328 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/kumagaya
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Menuma_Shouden_Kangi-in_01.JPG/1280px-Menuma_Shouden_Kangi-in_01.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Menuma_Shouden_Kangi-in_01.JPG
+    license: CC BY 3.0
+    credit: tak1701d
+provenance:
+  - owner: institution/kangi-in-temple
+    acquired: 1735/1760
+    method: creation
+    place: kumagaya
+    label: rebuilt after the Menuma fire of 1670 by the local carpenter Hayashi Hyōgo Masakiyo (from 1735) and his son Masanobu (1755–60), funded by donations collected with the abbot Kaisan
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/463
+        note: 享保五年（一七二〇）に地元の大工林兵庫正清が再建を志し、歓喜院主海算と諮って広く寄進を募った。造営は享保二〇年に奥殿からとりかかり、…宝暦五年（一七五五）に正清の子の林兵庫正信が中心となって拝殿の造営が再開され、翌六年に上棟、同一〇年に中殿とともに完成をみた … 所有者名 ： 歓喜院
+        source: kunishitei-102-463
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020328

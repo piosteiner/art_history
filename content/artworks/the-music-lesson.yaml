@@ -1,0 +1,213 @@
+public_id: 125174
+title_lang: en
+title: The Music Lesson
+creator: gerard-ter-borch
+created: c. 1670
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [63.6, 50.4]
+institution: art-institute-of-chicago
+inventory_number: "1891.1"
+wikidata_id: Q20267677
+metadata:
+  sources: [Wikidata Q20267677 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/G%C3%A9raerd_Ter_Borch_-_The_Music_Lesson_-_1891.1_-_Art_Institute_of_Chicago.jpg/1280px-G%C3%A9raerd_Ter_Borch_-_The_Music_Lesson_-_1891.1_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:G%C3%A9raerd_Ter_Borch_-_The_Music_Lesson_-_1891.1_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Gerard ter Borch
+provenance:
+  - owner_label: unknown
+    role: event
+    acquired: 1738-10-01
+    method: auction
+    place: amsterdam
+    label: possibly the work sold in Amsterdam, 1 October 1738, no. 19 (Gudlaugsson 1960; Hoet 1752, p. 556)
+    certainty: possible
+    price:
+      amount: 200
+      currency: NLG
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: Possibly sold Amsterdam, October 1, 1738, no. 19 for 200 florins [according to Gudlaugsson 1960; see Gerard Hoet, Catalogus of naamlyst van Schilderyen (The Hague, 1752), p. 556].
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner: person/johan-pieter-wierman
+    place: leiden
+    label: the music master beats time with a bow (strykstok), unlike the Getty version
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: Probably Johan Pieter Wierman, Leyden;
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner_label: Diemen
+    acquired: 1762-08-18
+    method: auction
+    direct: true
+    label: Wierman sale, Amsterdam, 18 August 1762, no. 34
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: his sale, Amsterdam, August 18, 1762, no. 34 to Diemen [price and buyer according to an annotated sale catalogue in the Rijksbureau voor Kunsthistorische Documentatie, The Hague; …]
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner: person/jan-jacob-brants
+    ended: 1813
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: Probably Jan Jacob Brants (died 1813);
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner: person/pieter-yver
+    role: agent
+    acquired: 1813-04-20
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Brants sale, lot 30
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: sold his sale Pieter Yver, Amsterdam, April 20, 1813, lot 30
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner: person/jeronimo-de-vries
+    acquired: 1813-04-20
+    method: auction
+    direct: true
+    place: amsterdam
+    label: buyer given as "Jer. deVries"
+    certainty: probable
+    price:
+      amount: 275
+      currency: NLG
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: for 275 florins to Jer. deVries [price and buyer according to an annotated sale catalogue in the Rijksbureau voor Kunsthistorische Documentatie, The Hague; …]
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner: person/john-fairlie
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: Possibly John Fairlie, Esq. [according to Smith 1833];
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner: person/michael-peacock
+    acquired: 1830
+    method: auction
+    direct: true
+    place: london
+    label: Fairlie sale, 1830, 130 guineas (Smith 1833)
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: possibly his sale, 1830, for 130 gs to Michael Peacock [sale information according to Smith 1833]; possibly Michael Peacock (died 1843), London;
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner: institution/foster-s
+    role: agent
+    acquired: 1844-02-28
+    method: auction
+    direct: true
+    label: Peacock sale, Foster and Son, 28 February 1844, lot 12
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: possibly sold his sale Foster and Son, February 28, 1844, lot 12.
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner: person/anatole-demidoff
+    ended: 1870
+    place: florence
+    label: Villa San Donato, near Florence
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: Presumably Prince Anatole Demidoff, Villa San Donato, near Florence (died 1870);
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner: person/paul-demidoff-2
+    acquired: 1870
+    ended: 1885
+    method: inheritance
+    direct: true
+    place: florence
+    label: by descent from his uncle; Villa San Donato
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: by descent to his nephew Prince Paul Demidoff (died 1885), San Donato;
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner_label: Pillet, Le Roy and Mannheim
+    role: agent
+    not_sold: true
+    acquired: 1880-03-15
+    method: auction
+    direct: true
+    place: florence
+    label: San Donato sale, Florence, 15 March – 10 April 1880, no. 1049, bought in
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: offered for sale Florence, Pillet, Le Roy and Mannheim, March 15-April 10, 1880, no. 1049, bought in;
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner_label: Princess Demidoff, formerly Princess Lise Troubetzkoi
+    acquired: 1885
+    method: inheritance
+    direct: true
+    label: widow of Paul Demidoff (by descent)
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: by descent to Princess Demidoff (formerly Princess Lise Troubetzkoi), 1885;
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: agent
+    acquired: 1890-06
+    direct: true
+    place: paris
+    label: sold through Durand-Ruel as part of a group of Dutch and Flemish paintings, many from the Demidoff collection
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: sold through Durand-Ruel, Paris, June 1890, as part of a group of Dutch and Flemish paintings, many from the Demidoff collection,
+        source: aic-1891-1
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1890-06
+    method: purchase
+    direct: true
+    place: chicago
+    label: bought with funds advanced by Martin A. Ryerson and other trustees; cost reimbursed by Charles T. Yerkes (accession 1891)
+    sources:
+      - url: https://www.artic.edu/artworks/512
+        note: with funds advanced by Martin A. Ryerson and other trustees of the Art Institute [annual report 1891]; the cost of 1891.1 was re-imbursed by Charles T. Yerkes.
+        source: aic-1891-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20267677
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20267677
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20267677
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20267677
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20267677
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20267677

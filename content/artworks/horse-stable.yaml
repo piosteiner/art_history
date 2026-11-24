@@ -1,0 +1,84 @@
+public_id: 124704
+title_lang: en
+title: Horses and Grooms in the Stable
+names:
+  - lang: en
+    role: original
+    text: Horse Stable
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60513917
+created: 1500/1525
+created_label: c. 16th century
+created_span: uncertain
+institution: cleveland-museum-of-art
+inventory_number: "1934.373"
+web_url: https://clevelandart.org/art/1934.373
+wikidata_id: Q60513917
+metadata:
+  sources: [Wikidata Q60513917 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Tosa_School_-_Horses_and_Grooms_in_the_Stable_-_1934.373_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Tosa_School_-_Horses_and_Grooms_in_the_Stable_-_1934.373_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tosa_School_-_Horses_and_Grooms_in_the_Stable_-_1934.373_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Tosa School
+provenance:
+  - owner_label: Marquis Tokugawa of the Shizuoka branch of the Tokugawa family
+    ended: 1927
+    sources:
+      - url: https://clevelandart.org/art/1934.373
+        note: Marquis Tokugawa of the Shizuoka branch of the Tokugawa family [?–1927]
+        source: cma-1934-373
+        accessed: 2026-11-24
+  - owner: institution/tokyo-art-club
+    role: agent
+    acquired: 1927-04-04
+    method: auction
+    place: tokyo
+    label: sale, Tokyo Art Club (Tokyo Bijutsu Kurabu), 4 April 1927, lot 100
+    sources:
+      - url: https://clevelandart.org/art/1934.373
+        note: (Tokyo Art Club [Tokyo Bijutsu Kurabu], Tokyo, Japan, April 4, 1927 sale, Lot 100)
+        source: cma-1934-373
+        accessed: 2026-11-24
+  - owner: person/shima-tokuzo
+    place: osaka
+    sources:
+      - url: https://clevelandart.org/art/1934.373
+        note: Shima Tokuzō 島 德藏 [1875–1938], Osaka, Japan
+        source: cma-1934-373
+        accessed: 2026-11-24
+  - owner: institution/osaka-art-club
+    role: agent
+    acquired: 1934-11-29
+    method: auction
+    place: osaka
+    label: sale, Osaka Art Club (Osaka Bijutsu Kurabu 大阪美術俱楽部), 29 Nov. 1934, lot 82
+    sources:
+      - url: https://clevelandart.org/art/1934.373
+        note: (Osaka Art Club [Osaka Bijutsu Kurabu 大阪美術俱楽部], Osaka, Japan, November 29, 1934, sale, Lot 82)
+        source: cma-1934-373
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1934
+    method: purchase
+    place: cleveland
+    label: Edward L. Whittemore Fund
+    sources:
+      - url: https://clevelandart.org/art/1934.373
+        note: The Cleveland Museum of Art, Cleveland, OH [1934–]
+        source: cma-1934-373
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60513917
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60513917
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60513917

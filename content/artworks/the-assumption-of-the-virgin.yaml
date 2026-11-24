@@ -1,0 +1,242 @@
+public_id: 125063
+title_lang: es
+title: La Asunción de la Virgen María
+names:
+  - lang: en
+    role: translation
+    text: The Assumption of the Virgin
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11837891
+  - lang: fr
+    role: translation
+    text: L'Assomption de la Vierge
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11837891
+  - lang: de
+    role: translation
+    text: Himmelfahrt Marias
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11837891
+  - lang: it
+    role: translation
+    text: L'Assunzione della Vergine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11837891
+  - lang: es
+    role: original
+    text: La Asunción de María (Santo Domingo el Antiguo)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11837891
+  - lang: ja
+    role: translation
+    text: 聖母被昇天
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11837891
+  - lang: zh
+    role: translation
+    text: 圣母升天
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11837891
+  - lang: ru
+    role: translation
+    text: Успение Богородицы
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11837891
+creator: el-greco
+created: 1577
+materials: [oil paint, canvas]
+dimensions: [403.2, 211.8]
+institution: art-institute-of-chicago
+inventory_number: "1906.99"
+wikidata_id: Q11837891
+metadata:
+  sources: [Wikidata Q11837891 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Domenikos_Theotok%C3%B3poulos%2C_called_El_Greco_-_The_Assumption_of_the_Virgin_-_Google_Art_Project.jpg/1280px-Domenikos_Theotok%C3%B3poulos%2C_called_El_Greco_-_The_Assumption_of_the_Virgin_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Domenikos_Theotok%C3%B3poulos,_called_El_Greco_-_The_Assumption_of_the_Virgin_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: El Greco
+provenance:
+  - owner: person/diego-de-castilla
+    acquired: 1577
+    method: commission
+    place: toledo
+    label: commissioned for the convent church of Santo Domingo el Antiguo
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: Commissioned 1577 by Don Diego de Castilla for the convent church of Santo Domingo el Antiguo, Toledo;
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner: institution/santo-domingo-el-antiguo
+    acquired: 1579 or earlier
+    direct: true
+    place: toledo
+    label: convent church; installed with other paintings in the main retable by September 1579
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: for the convent church of Santo Domingo el Antiguo, Toledo; installed with other paintings in the main retable by September 1579;
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner: person/sebastian-gabriel-de-borbon-y-braganza
+    acquired: c. 1830
+    method: purchase
+    direct: true
+    place: madrid
+    label: Infante; Madrid and later Pau, France
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: sold c. 1830 to the Infante Don Sebastián Gabriel de Borbón y Braganza (died 1875), Madrid and later Pau, France,
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner: institution/spanish-government
+    role: possessor
+    acquired: 1835
+    ended: 1861
+    method: confiscation
+    place: madrid
+    label: confiscated from Don Sebastián
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: but confiscated from him by the Spanish government and installed in the Museo Nacional de la Trinidad, Madrid, in 1835
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner: institution/museo-nacional-de-la-trinidad
+    role: custodian
+    acquired: 1835
+    ended: 1861
+    method: transfer
+    place: madrid
+    label: Lavice 1864 recorded it on display in the Museo Nacional de Pinturas (not confirmed)
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: installed in the Museo Nacional de la Trinidad, Madrid, in 1835 [Lavice 1864 recorded that the Assumption was on display in the Museo Nacional de Pinturas, but this cannot be confirmed]; returned to Don Sebastián in 1861;
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner: person/sebastian-gabriel-de-borbon-y-braganza
+    acquired: 1861
+    method: restitution
+    direct: true
+    place: madrid
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: returned to Don Sebastián in 1861;
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner: person/sebastian-gabriel-de-borbon-y-braganza
+    role: estate
+    acquired: 1875
+    ended: 1887
+    direct: true
+    label: estate of the Infante Don Sebastián
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: his estate in custody of the Spanish government, 1875–87 [see María Teresa Baratech Zelama, “La testamentario del Infante Don Sebastián Gabriel de Borbón y Braganza,” Archivo español de arte 62 (1989), pp. 372–77 for the status of his estate];
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner: institution/spanish-government
+    role: custodian
+    acquired: 1875
+    ended: 1887
+    label: custody of the Infante's estate
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: his estate in custody of the Spanish government, 1875–87
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner: person/maria-cristina-de-borbon
+    direct: true
+    place: madrid
+    label: his widow; Aranjuez and Madrid
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: his widow, the Infanta María Cristina de Borbón (died 1902), Aranjuez and Madrid;
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1902-10
+    place: madrid
+    label: offered for sale, Madrid, October 1902, no. 2, bought in
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: offered for sale, Madrid, October 1902, no. 2, but bought in,
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner_label: heirs of the Infanta María Cristina de Borbón
+    acquired: 1902
+    method: inheritance
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: then lent by the Infanta’s heirs to the Museo del Prado, Madrid, 1902–04
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner: institution/museo-del-prado
+    role: custodian
+    acquired: 1902
+    ended: 1904
+    place: madrid
+    label: on loan from the Infanta's heirs
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: lent by the Infanta’s heirs to the Museo del Prado, Madrid, 1902–04 [see Cossío 1908, p. 594, no. 279];
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1904-10
+    method: purchase
+    direct: true
+    place: paris
+    label: bought from the Infanta's heirs with funds provided by Henry O. Havemeyer, New York
+    price:
+      amount: 100000
+      currency: FRF
+      note: $17,000
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: purchased from them by Galerie Durand-Ruel, Paris, for 100,000 frs. ($17,000), October 1904, with funds provided by Henry O. Havemeyer, New York [see Havemeyer 1961, p. 155];
+        source: aic-1906-99
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1906-07-17
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/87479
+        note: sold to the Art Institute, July 17, 1906.
+        source: aic-1906-99
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11837891
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q11837891
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q11837891
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q11837891
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q11837891
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q11837891

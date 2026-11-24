@@ -32,6 +32,15 @@ relationships:
       - accessed: 2026-11-03
         property: P937
         wikidata: Q3109427
+  - type: child_of
+    to: artist/el-greco
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q301
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q3109427
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/4e/El_Greco_-_Portrait_of_the_Artist%27s_Son_Jorge_Manuel_Theotokopoulos_-_WGA10567.jpg
     source_url: https://commons.wikimedia.org/wiki/File:El_Greco_-_Portrait_of_the_Artist%27s_Son_Jorge_Manuel_Theotokopoulos_-_WGA10567.jpg

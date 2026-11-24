@@ -1,0 +1,58 @@
+public_id: 122925
+title_lang: en
+title: Virgin and Child
+creator: jacopo-sansovino
+created: 1530/1534
+kind: sculpture
+medium: bronze
+dimensions: [47.6, 17.2, 11.5]
+institution: cleveland-museum-of-art
+inventory_number: "1951.316"
+web_url: https://clevelandart.org/art/1951.316
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1951.316/1951.316_web.jpg
+    source_url: https://clevelandart.org/art/1951.316
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/otto-o-meara
+    place: saint-petersburg
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1951.316
+        note: Possibly Otto O'Meara (St. Petersburg, Russia)
+        source: cma-1951-316
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    place: saint-petersburg
+    sources:
+      - url: https://clevelandart.org/art/1951.316
+        note: The Hermitage (Leningrad, USSR)
+        source: cma-1951-316
+        accessed: 2026-11-24
+  - owner: person/heinrich-thyssen-bornemisza
+    place: lugano
+    sources:
+      - url: https://clevelandart.org/art/1951.316
+        note: Baron Heinrich Thyssen-Bornemiza, 1875-1947 (Lugano, Switzerland)
+        source: cma-1951-316
+        accessed: 2026-11-24
+  - owner: person/adolph-loewi
+    role: dealer
+    place: los-angeles
+    sources:
+      - url: https://clevelandart.org/art/1951.316
+        note: Adolph Loewi (Los Angeles, California), sold to the Cleveland Museum of Art, 1951.
+        source: cma-1951-316
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: cleveland
+    label: John L. Severance Fund
+    sources:
+      - url: https://clevelandart.org/art/1951.316
+        note: Adolph Loewi (Los Angeles, California), sold to the Cleveland Museum of Art, 1951.
+        source: cma-1951-316
+        accessed: 2026-11-24

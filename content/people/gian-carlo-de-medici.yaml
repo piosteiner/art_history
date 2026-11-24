@@ -30,6 +30,15 @@ wikidata_id: Q1316745
 metadata:
   sources: [Wikidata Q1316745 (retrieved 2026-10-20)]
 relationships:
+  - type: child_of
+    to: person/cosimo-ii-de-medici
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q312297
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q1316745
   - type: sibling_of
     to: person/leopoldo-de-medici
     sources:

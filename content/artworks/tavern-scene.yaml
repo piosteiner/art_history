@@ -1,0 +1,246 @@
+public_id: 123081
+title_lang: en
+title: Tavern Scene
+names:
+  - lang: nl
+    role: translation
+    text: Herbergscène
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177486
+  - lang: de
+    role: translation
+    text: Wirtshausszene (Washington)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177486
+creator: david-teniers-the-younger
+created: 1658
+materials: [oil paint, panel]
+dimensions: [48.7, 68.7]
+institution: national-gallery-of-art
+inventory_number: 1975.77.1
+wikidata_id: Q20177486
+metadata:
+  sources: [Wikidata Q20177486 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Tavern_Scene-1658-David_Teniers_II.jpg/1280px-Tavern_Scene-1658-David_Teniers_II.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tavern_Scene-1658-David_Teniers_II.jpg
+    license: Public domain
+    credit: David Teniers the Younger
+provenance:
+  - owner_label: Prince Golitzyn, Paris
+    place: paris
+    label: "identity unknown: possibly Dmitry Alexeyevich (1734–1803) or Dmitry Mikhailovich Golitsyn (1721–1793)"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: Prince Golitzyn, Paris; — [1] The exact identity of the prince is unknown; two possibilities are Dmitry Alexseevich Golitzyn (1734-1803) … or Dmitry Mikhailovich Golitzyn (1721-1793)
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner_label: Lebrun, Paris
+    role: agent
+    acquired: 1825-02-28
+    method: auction
+    direct: true
+    place: paris
+    label: sale, Lebrun, Paris, 28 February 1825, no. 40, as Chapeau rouge
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: (sale, Lebrun, Paris, 28 February 1825, no. 40, as Chapeau rouge);
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner_label: De Fontaine
+    role: dealer
+    acquired: 1825-02-28
+    method: auction
+    direct: true
+    label: buyer at the 1825 sale (annotated catalogue, RKD)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: (De Fontaine).[1] — An annotated copy of the catalogue in the Rijksbureau voor Kunsthistorische Documentatie (RKD) lists the buyer as "de Fontaine."
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner_label: M. Boursault, Paris
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: M. Boursault, Paris;
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner_label: Coutellier and Paillet
+    role: agent
+    acquired: 1832-05-07
+    method: auction
+    direct: true
+    place: paris
+    label: Boursault sale at his residence, Paris, 7 May 1832, no. 53
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: (his sale, at his residence, Coutellier and Paillet, Paris, 7 May 1832, no. 53);
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner_label: Falkner
+    role: agent
+    acquired: 1832-05-07
+    method: auction
+    direct: true
+    label: buyer at the 1832 sale, probably for Edmund Higginson
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: purchased by (Falkner), probably for Edmund Higginson … [2] An annotated copy of the 1832 sale catalogue in the RKD lists the buyer as "Falkner"
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner: person/edmund-higginson
+    method: purchase
+    direct: true
+    place: bromyard
+    label: Saltmarshe Castle, near Bromyard, Herefordshire; 'purchased with the Boursault Collection' (Smith 1842)
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: probably for Edmund Higginson [1802-1871], Saltmarshe Castle, near Bromyard, Herefordshire;[2] — John Smith … describes the painting as "Purchased with the Boursault Collection for E. Higginson, Esq."
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1846-06-04
+    method: auction
+    direct: true
+    place: london
+    label: Higginson sale, Christie & Manson, London, 4 June 1846, no. 207, as Card Players-Chapeau Rouge
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: (his sale, Christie & Manson, London, 4 June 1846, no. 207, as Card Players-Chapeau Rouge);
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner_label: Falkner
+    acquired: 1846-06-04
+    method: auction
+    direct: true
+    label: buyer at the 1846 sale ('Faulkner' in Graves); possibly the buyer of 1832
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: Falkner.[3] — [3] Algernon Graves … cites "Faulkner" as the purchaser, although the name is spelled "Falkner" in an annotated copy of the sale catalogue … This is possibly the same buyer as at the 1832 sale.
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner: person/samuel-sandars
+    acquired: 1882 or earlier
+    label: owner when exhibited at the Royal Academy, 1882
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: Samuel Sandars, Esq.; — [4] Mr. Sandars is listed as the owner of the painting when it was exhibited at the Royal Academy in 1882.
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner_label: Mrs. Samuel Sandars
+    method: inheritance
+    direct: true
+    label: owner at the Royal Academy Winter Exhibition, 1908
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: by inheritance to his wife, Mrs. Samuel Sandars.[4] — she is listed as its owner in the 1908 Winter Exhibition at the Royal Academy.
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner: person/alan-rofe
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: Alan Rofe, London.[5] — [5] Alan Rofe is cited as a previous owner, following Sandars, in the 1970 auction catalogue.
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1929-03-15
+    method: auction
+    place: london
+    label: sale, Christie, Manson & Woods, London, 15 March 1929, no. 70
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: (sale, Christie, Manson & Woods, London, 15 March 1929, no. 70);
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner_label: De Casseres
+    role: dealer
+    acquired: 1929-03-15
+    method: auction
+    direct: true
+    label: buyer at the 1929 sale; possibly a dealer or Arthur de Casseres
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: (De Casseres).[6] — [6] The name De Casseres (possibly an art dealer or Arthur de Casseres) is found in an annotated copy of the auction catalogue in the Frick Art Reference Library
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner: person/ernst-wilhelm-sachs
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: Ernst Wilhelm Sachs, London;
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1970-06-24
+    method: auction
+    direct: true
+    place: london
+    label: sale, Sotheby's, London, 24 June 1970, no. 99, as A Tavern Scene ("Le Chapeau Rouge")
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: (sale, Sotheby's, London, 24 June 1970, no. 99, as A Tavern Scene ["Le Chapeau Rouge"]);
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner: institution/h-terry-engell-gallery
+    role: dealer
+    method: auction
+    direct: true
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: (Terry-Engell Gallery, London);
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner: person/robert-h-smith
+    co_owners: [person/clarice-smith]
+    acquired: 1972-10
+    method: purchase
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: sold October 1972 to Robert H. and Clarice Smith, Washington, D.C.;
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1975
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.55505.html
+        note: gift 1975 to NGA.
+        source: nga-1975-77-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177486
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177486
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177486
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177486
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177486
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177486

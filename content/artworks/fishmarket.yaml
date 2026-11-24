@@ -1,0 +1,172 @@
+public_id: 124632
+title_lang: en
+title: Fishmarket
+names:
+  - lang: fr
+    role: translation
+    text: La Poissonnerie à Dieppe
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q87480807
+creator: camille-pissarro
+created: 1902
+materials: [oil paint, canvas]
+dimensions: [66, 81.3]
+institution: cleveland-museum-of-art
+inventory_number: "2020.113"
+web_url: https://clevelandart.org/art/2020.113
+wikidata_id: Q87480807
+metadata:
+  sources: [Wikidata Q87480807 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Camille_Pissarro_%28French%2C_1830-1903%29_-_Fishmarket_-_2020.113_-_Cleveland_Museum_of_Art.jpg/1280px-Camille_Pissarro_%28French%2C_1830-1903%29_-_Fishmarket_-_2020.113_-_Cleveland_Museum_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Camille_Pissarro_(French,_1830-1903)_-_Fishmarket_-_2020.113_-_Cleveland_Museum_of_Art.jpg
+    license: CC0
+    credit: Camille Pissarro
+provenance:
+  - owner: person/georges-petit
+    place: paris
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/2020.113
+        note: Possibly Georges Petit [1856-1920] Paris, France
+        source: cma-2020-113
+        accessed: 2026-11-24
+  - owner: person/duval-fleury
+    role: dealer
+    acquired: 1918-02-14
+    method: purchase
+    place: paris
+    label: provenance to 1918 after the Pissarro catalogue raisonné (Pissarro and Durand-Ruel Snollaerts 2005, no. 1439)
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/2020.113
+        note: "(possibly sold to dealer Duval-Fleury, Paris, France, February 14, 1918) [1918] — Provenance until 1918 is according to Joachim Pissarro and Claire Durand-Ruel Snollaerts, Pissarro: Critical Catalogue of Paintings (Paris: Wildenstein Institute Publications, 2005), vol. III, p. 879, cat. no. 1439."
+        source: cma-2020-113
+        accessed: 2026-11-24
+  - owner: person/wilhelm-hansen
+    acquired: 1918
+    place: copenhagen
+    label: known to work with Duval-Fleury; may have bought it directly from the French dealer
+    sources:
+      - url: https://clevelandart.org/art/2020.113
+        note: Wilhelm Hansen [1868-1936] Copenhagen, Denmark, sold to Baron Kojiro Matsudata [1918–1923] — Wilhelm Hansen was known to work with Duval-Fleury on other art purchases and may have bought this painting directly from the French dealer.
+        source: cma-2020-113
+        accessed: 2026-11-24
+  - owner: person/kojiro-matsukata
+    acquired: 1923
+    method: purchase
+    direct: true
+    place: kobe
+    label: forced in 1927 to dispose of his own property to sustain his company through an economic crisis
+    sources:
+      - url: https://clevelandart.org/art/2020.113
+        note: Baron Kojiro Matsukata [1865–1950] Kobe, Japan, sold to the 15th Bank of Japan [1923–1927] — In 1927, Baron Matsukata was forced to dispose of his own property to sustain his company through an economic crisis.
+        source: cma-2020-113
+        accessed: 2026-11-24
+  - owner: institution/the-15th-bank
+    acquired: 1927
+    ended: 1928
+    method: purchase
+    direct: true
+    place: tokyo
+    label: the 2003 Sotheby's catalogue names "the 5th Bank of Japan" as owner until 1928
+    sources:
+      - url: https://clevelandart.org/art/2020.113
+        note: The 15th Bank, Tokyo, Japan [1927–1928] — According to the 2003 Sotheby’s sale catalogue, the 5th Bank of Japan owned the painting until 1928.
+        source: cma-2020-113
+        accessed: 2026-11-24
+  - owner: person/kyuzaemon-wada
+    acquired: after 1928
+    place: osaka
+    sources:
+      - url: https://clevelandart.org/art/2020.113
+        note: Kyuzaemon Wada [1890–1968] Osaka, Japan [after 1928–before 1971]
+        source: cma-2020-113
+        accessed: 2026-11-24
+  - owner: institution/fujikawa-galleries
+    role: dealer
+    acquired: 1971
+    place: tokyo
+    label: provenance 1918–2003 after the 2003 Sotheby's sale catalogue
+    sources:
+      - url: https://clevelandart.org/art/2020.113
+        note: (Fujikawa Galleries, Tokyo, Japan, sold to Private Collection) [1971–1974] — Provenance 1918-2003 is according to the 2003 Sotheby’s sale catalogue.
+        source: cma-2020-113
+        accessed: 2026-11-24
+  - owner_label: Private collection
+    acquired: 1974
+    method: purchase
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2020.113
+        note: (Fujikawa Galleries, Tokyo, Japan, sold to Private Collection) [1971–1974]
+        source: cma-2020-113
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 2003-11-05
+    method: auction
+    place: new-york-city
+    label: sale, Sotheby's, New York, 5 November 2003, lot 5
+    sources:
+      - url: https://clevelandart.org/art/2020.113
+        note: (sold at Sotheby’s, New York, NY, November 5, 2003, lot 5) [2003]
+        source: cma-2020-113
+        accessed: 2026-11-24
+  - owner: institution/acquavella-galleries
+    role: dealer
+    acquired: 2004
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/2020.113
+        note: (Acquavella Galleries, New York, NY, sold to Nancy F. and Joseph P. Keithley) [2004]
+        source: cma-2020-113
+        accessed: 2026-11-24
+  - owner: person/nancy-f-keithley
+    co_owners: [person/joseph-p-keithley]
+    acquired: 2004
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/2020.113
+        note: Nancy F. and Joseph P. Keithley, Cleveland, OH, given to the Cleveland Museum of Art [2004–2020]
+        source: cma-2020-113
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2020
+    method: gift
+    direct: true
+    place: cleveland
+    label: Nancy F. and Joseph P. Keithley Collection Gift
+    sources:
+      - url: https://clevelandart.org/art/2020.113
+        note: The Cleveland Museum of Art, Cleveland, OH [2020–]
+        source: cma-2020-113
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q87480807
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q87480807
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q87480807
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q87480807
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q87480807
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q87480807

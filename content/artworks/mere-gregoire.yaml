@@ -1,0 +1,135 @@
+public_id: 125116
+title_lang: en
+title: Mère Grégoire
+names:
+  - lang: fr
+    role: translation
+    text: La Mère Grégoire
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20275970
+  - lang: de
+    role: translation
+    text: Mutter Grégoire
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20275970
+creator: gustave-courbet
+created: 1855/1859
+created_label: c. 1850s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [129]
+institution: art-institute-of-chicago
+inventory_number: "1930.78"
+wikidata_id: Q20275970
+metadata:
+  sources: [Wikidata Q20275970 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Gustave_Courbet_-_M%C3%A8re_Gr%C3%A9goire_-_1930.78_-_Art_Institute_of_Chicago.jpg/1280px-Gustave_Courbet_-_M%C3%A8re_Gr%C3%A9goire_-_1930.78_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_M%C3%A8re_Gr%C3%A9goire_-_1930.78_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Gustave Courbet
+provenance:
+  - owner: artist/gustave-courbet
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/4428
+        note: Possession of the artist [for this and the following until 1873 see Riat 1906 and Fernier 1977];
+        source: aic-1930-78
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1872/1873
+    method: theft
+    label: stolen from the artist
+    sources:
+      - url: https://www.artic.edu/artworks/4428
+        note: stolen between 1872–73;
+        source: aic-1930-78
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1873
+    place: paris
+    label: found by Étienne Baudry at an art dealer in Paris
+    sources:
+      - url: https://www.artic.edu/artworks/4428
+        note: found by Étienne Baudry at an art dealer in Paris, 1873.
+        source: aic-1930-78
+        accessed: 2026-11-24
+  - owner: institution/galerie-barbazanges
+    role: dealer
+    acquired: 1912 or earlier
+    place: paris
+    label: lent to Saint Petersburg 1912
+    sources:
+      - url: https://www.artic.edu/artworks/4428
+        note: Galerie Barbzanges, Paris, by 1912 [Saint Petersburg 1912].
+        source: aic-1930-78
+        accessed: 2026-11-24
+  - owner: person/alexandre-berthier-prince-de-wagram
+    place: paris
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/4428
+        note: Possibly Alexandre Louis Philippe Marie Berthier, 4th Prince of Wagram (died 1918), Paris [according to Art Institute of Chicago 1961 and Fernier 1977];
+        source: aic-1930-78
+        accessed: 2026-11-24
+  - owner: person/elisabeth-de-la-tour-d-auvergne
+    acquired: 1918
+    method: inheritance
+    direct: true
+    place: paris
+    label: née Berthier de Wagram; sister of the 4th Prince of Wagram
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/4428
+        note: possibly at his death to his sister, Elisabeth de la Tour d’Auvergne (née Elisabeth Bertier de Wagram), Paris (according to Art Institute of Chicago 1961 and Fernier 1977).
+        source: aic-1930-78
+        accessed: 2026-11-24
+  - owner: institution/alex-reid-lefevre
+    role: dealer
+    acquired: 1929 or earlier
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/4428
+        note: Alex Reid & Lefèvre, Ltd., London, by 1929 [according to the receipt of sale to the Art Institute, dated November 20, 1929];
+        source: aic-1930-78
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1929-11-20
+    method: purchase
+    direct: true
+    place: chicago
+    label: receipt of sale dated 20 November 1929; accessioned 1930
+    sources:
+      - url: https://www.artic.edu/artworks/4428
+        note: purchased by the Art Institute, 1929; accessioned 1930.
+        source: aic-1930-78
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20275970
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20275970
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20275970
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20275970
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20275970
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20275970

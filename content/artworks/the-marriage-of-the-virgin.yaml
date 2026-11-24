@@ -1,0 +1,185 @@
+public_id: 122961
+title_lang: en
+title: The Marriage of the Virgin
+names:
+  - lang: de
+    role: translation
+    text: Hochzeit der Jungfrau Maria
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20174529
+creator: luca-signorelli
+created: c. 1490
+created_span: uncertain
+materials: [tempera, panel]
+dimensions: [21.6, 48]
+institution: national-gallery-of-art
+inventory_number: 1961.9.39
+provenance_status: d_seized
+provenance_status_note: Half-owned by Jacques Goudstikker and Hans Wendland; after Miedl took over the Goudstikker firm in July 1940 the painting (excluded from that sale) was held by Miedl and found in one of his buildings after the war; returned to Goudstikker's widow on 18 May 1949.
+wikidata_id: Q20174529
+metadata:
+  sources: [Wikidata Q20174529 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/The_Marriage_of_the_Virgin_A17453.jpg/1280px-The_Marriage_of_the_Virgin_A17453.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Marriage_of_the_Virgin_A17453.jpg
+    license: Public domain
+    credit: Luca Signorelli
+provenance:
+  - owner: person/thomas-blayds
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: Thomas Blayds, London;
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1849-03-30
+    method: auction
+    direct: true
+    place: london
+    label: Blayds sale, London, 30–31 March 1849, 1st day, no. 81, as 'The Birth of St. John; and the companion'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: (his sale, Christie & Manson, London, 30-31 March 1849, 1st day, no. 81, as The Birth of St. John; and the companion);
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+  - owner_label: Harris
+    acquired: 1849-03-30
+    method: auction
+    direct: true
+    place: london
+    label: buyer named in an annotated copy of the sale catalogue (Getty Library)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: Harris.[1] — The buyer's name at the Blayds sale appears in an annotated copy of the sale catalogue in the Getty Library
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+  - owner: person/edward-habich
+    acquired_label: probably from the 1890s
+    place: kassel
+    label: probably from the 1890s; apparently not yet his at the 1892 sale of his collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: Edward Habich [1818-1901], Kassel, probably from the 1890s;[2] — At the time of the 1892 sale of his collection … the NGA painting was apparently not yet in his possession.
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+  - owner: institution/konigliche-gemaldegalerie-kassel
+    acquired: 1900
+    ended: c. 1920
+    method: gift
+    direct: true
+    place: kassel
+    label: sold around 1920; no record of the sale found
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: presented 1900 to the Königliche Gemäldegalerie, Kassel;[3] sold around 1920;[4] — Miklós Boskovits … could not find any record of the sale, which probably occurred in the years of Germany's economic and political crisis just after World War I.
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+  - owner: person/rudolf-chillingworth
+    direct: true
+    place: nuremberg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: Rudolf Chillingworth, Nürnberg;
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+  - owner: institution/galerie-fischer
+    co_owners: [institution/frederik-muller-cie]
+    role: agent
+    acquired: 1922-09-05
+    method: auction
+    direct: true
+    place: lucerne
+    label: Chillingworth sale, Grand Hotel National, Lucerne, 5 September 1922, no. 111, in one lot with a Presentation of the Virgin
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: (his sale, Galerie Fischer, Lucerne, 5 September 1922, no. 111, in same lot as Presentation of Virgin);[5] — for the sale held at the Grand Hotel National in Lucerne under the direction of Galeries Fischer, Lucerne, and Frederik Muller & Cie., Amsterdam, 5 September 1922
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+  - owner: person/jacques-goudstikker
+    co_owners: [person/hans-wendland]
+    role: dealer
+    acquired: 1930 or earlier
+    place: amsterdam
+    label: half share with Dr. Hans Wenland [Wendland]; Goudstikker's 'Black Book' no. 2585; exhibited Amsterdam and Rotterdam 1930–31
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: (Jacques Goudstikker, Amsterdam), by 1930; — The NGA painting is no. 2585 in Goudstikker's personal record of the works of art he acquired, his so-called "Black Book," which indicates the dealer owned a half share of the painting with Dr. Hans Wenland
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+  - owner: person/alois-miedl
+    role: possessor
+    direct: true
+    label: the Goudstikker firm sold to Miedl in July 1940 (works with third-party interest excluded); not sold to Göring; found in one of Miedl's buildings after the war
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: The Goudstikker firm and most of its contents were sold in July 1940 to Alois Miedl, an agent of Hermann Goering … the July 1940 contract for the sale of the firm specifically noted that any works of art in which third parties held interest were not included in the sale … It was discovered in one of Miedl's buildings in the Netherlands after the war
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+  - owner: person/desiree-goudstikker-von-saher
+    acquired: 1949-05-18
+    method: restitution
+    direct: true
+    label: Goudstikker's widow; returned by the Dutch state (NBI 857, nr. 7)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: Desirée Goudstikker von Saher, from 1949.[6] — returned to Goudstikker's widow, Desirée Goudstikker von Saher, on 18 May 1949
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+  - owner: person/piero-tozzi
+    role: dealer
+    place: new-york-city
+    label: possibly on half share with Acquavella Galleries, New York (Tozzi card no. 147)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: (Piero Tozzi [1882-1974], New York);[7] — Possibly on half share with Aquavella Galleries, New York, according to Tozzi card no. 147
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1955-02
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Tozzi's bill dated 9 February 1955
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: sold February 1955 to the Samuel H. Kress Foundation, New York;[8] — The bill from Piero Tozzi to the Kress Foundation is dated 9 February 1955
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1961
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46138.html
+        note: gift 1961 to NGA.
+        source: nga-1961-9-39
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20174529
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20174529
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20174529
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20174529
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20174529
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20174529

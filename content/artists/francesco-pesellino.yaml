@@ -1,0 +1,18 @@
+public_id: 123095
+name: Francesco Pesellino
+given_name: Francesco
+family_name: Pesellino
+birth: 1422
+death: 1457-07
+wikidata_id: Q930831
+metadata:
+  sources: [Wikidata Q930831 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q930831
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q930831

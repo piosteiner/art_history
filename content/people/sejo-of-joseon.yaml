@@ -43,6 +43,16 @@ description_md: "King of Joseon. Korean sources date the years of his reign by h
 wikidata_id: Q334308
 metadata:
   sources: [Wikidata Q334308 (retrieved 2026-11-02)]
+relationships:
+  - type: child_of
+    to: person/sejong-the-great
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q37682
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q334308
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/%EC%84%B8%EC%A1%B0_%EC%96%B4%EC%A7%84_%EC%B4%88%EB%B3%B8.jpg/1280px-%EC%84%B8%EC%A1%B0_%EC%96%B4%EC%A7%84_%EC%B4%88%EB%B3%B8.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%EC%84%B8%EC%A1%B0_%EC%96%B4%EC%A7%84_%EC%B4%88%EB%B3%B8.jpg

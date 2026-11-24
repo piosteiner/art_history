@@ -1,0 +1,21 @@
+public_id: 123032
+name: Saint Lucy
+kind: person
+birth: c. 283
+death: 304
+wikidata_id: Q183240
+metadata:
+  sources: [Wikidata Q183240 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q183240
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q183240
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q183240

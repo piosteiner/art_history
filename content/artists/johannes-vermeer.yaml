@@ -52,6 +52,15 @@ relationships:
       - accessed: 2026-10-28
         property: P135
         wikidata: Q41264
+  - type: married_to
+    to: person/catharina-bolnes
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q9710430
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q41264
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/46/Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg

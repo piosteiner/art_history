@@ -1,0 +1,16 @@
+public_id: 124706
+name: Kanō Naonobu
+birth: 1607-11-25
+death: 1650-05-07
+wikidata_id: Q3192787
+metadata:
+  sources: [Wikidata Q3192787 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q3192787
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q3192787

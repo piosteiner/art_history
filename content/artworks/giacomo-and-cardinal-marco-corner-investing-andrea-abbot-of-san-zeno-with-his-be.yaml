@@ -1,0 +1,201 @@
+public_id: 122863
+title_lang: en
+title: Giacomo and Cardinal Marco Corner, investing Andrea, Abbot of San Zeno, with his Benefice
+names:
+  - text: Giacomo and Cardinal Marco, investing Andrea, Abbot of San Zeno, with his Benefice
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175608
+  - text: Giacomo and Cardinal Marco Corner, investing Marco, Abbot of Carrara, with his Benefice
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175608
+  - lang: fr
+    role: translation
+    text: Giacomo et le cardinal Marco Corner investissant Andrea, abbé de San Zeno
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175608
+  - lang: it
+    role: translation
+    text: Ritratto di gruppo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20175608
+attribution_label: follower of Titian
+created: c. 1524
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [99.8, 132.1]
+institution: national-gallery-of-art
+inventory_number: 1960.6.38
+wikidata_id: Q20175608
+metadata:
+  sources: [Wikidata Q20175608 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts
+    to: event/house-of-cornaro
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20175608
+  - type: depicts_person
+    to: person/andrea-cornaro
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20175608
+  - type: depicts_person
+    to: person/giacomo-corner
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20175608
+  - type: depicts_person
+    to: person/marco-cornaro
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20175608
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q20175608
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q20175608
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Follower_of_Titian%2C_Girolamo_and_Cardinal_Marco_Corner_Investing_Marco%2C_Abbot_of_Carrara%2C_with_His_Benefice%2C_c._1520-1525%2C_NGA_46062.jpg/1280px-Follower_of_Titian%2C_Girolamo_and_Cardinal_Marco_Corner_Investing_Marco%2C_Abbot_of_Carrara%2C_with_His_Benefice%2C_c._1520-1525%2C_NGA_46062.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Follower_of_Titian,_Girolamo_and_Cardinal_Marco_Corner_Investing_Marco,_Abbot_of_Carrara,_with_His_Benefice,_c._1520-1525,_NGA_46062.jpg
+    license: Public domain
+    credit: Follower of Titian
+provenance:
+  - owner_label: Corner (Cornaro) family, Venice
+    place: venice
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46062.html
+        note: Corner (Cornaro) family, Venice;
+        source: nga-1960-6-38
+        accessed: 2026-11-24
+  - owner: person/john-udny
+    direct: true
+    place: venice
+    label: British Resident in Venice; acquired it from the Corner family (Gavin Hamilton's letter of 1788 to G.M. Sasso)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46062.html
+        note: John Udny [1757-1800], British Resident in Venice; … [1] The transfer of ownership from the Corner family to Kauffmann by way of Udny is documented by a letter of 1788 from Gavin Hamilton to the dealer G.M. Sasso in Venice.
+        source: nga-1960-6-38
+        accessed: 2026-11-24
+  - owner: artist/angelika-kauffmann
+    acquired: 1788 or earlier
+    direct: true
+    place: rome
+    label: owned by her by 1788 (Gavin Hamilton's letter); named in her will of 1803 as a Titian
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46062.html
+        note: Angelica Kauffmann [1741-1807], painter, Rome;[1] … Kauffmann herself mentions the picture in her will of 1803
+        source: nga-1960-6-38
+        accessed: 2026-11-24
+  - owner: artist/antonio-canova
+    direct: true
+    place: rome
+    label: probably acquired from Kauffmann's estate
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46062.html
+        note: probably acquired from her estate by Antonio Canova [1757-1822], sculptor, Rome;
+        source: nga-1960-6-38
+        accessed: 2026-11-24
+  - owner: person/william-richard-hamilton
+    acquired: 1816
+    method: gift
+    direct: true
+    place: london
+    label: gift from Canova in gratitude for his role in returning Napoleon's spoils to the Papal States; recorded in the inscription on the back
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46062.html
+        note: gift 1816 to William Richard Hamilton [1777-1859], London;[2] — [2] The gift, recorded in the inscription on the back of the painting, was made following Canova’s meeting with Hamilton in Paris in 1815.
+        source: nga-1960-6-38
+        accessed: 2026-11-24
+  - owner_label: descendants of William Richard Hamilton
+    ended_label: until the early twentieth century
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46062.html
+        note: his descendants until the early twentieth century.[3]
+        source: nga-1960-6-38
+        accessed: 2026-11-24
+  - owner: institution/p-d-colnaghi-co-ltd
+    role: dealer
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46062.html
+        note: (P. and D. Colnaghi, London).
+        source: nga-1960-6-38
+        accessed: 2026-11-24
+  - owner: institution/howard-young-galleries
+    role: dealer
+    acquired: 1930 or earlier
+    place: new-york-city
+    label: with them in 1930
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46062.html
+        note: (Howard Young Galleries, New York), in 1930.
+        source: nga-1960-6-38
+        accessed: 2026-11-24
+  - owner: person/william-r-timken
+    acquired: 1933 or earlier
+    place: new-york-city
+    label: published as in the Timken collection by Lionello Venturi, 1933
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46062.html
+        note: William R. Timken [1866-1949], New York, by 1933;[4]
+        source: nga-1960-6-38
+        accessed: 2026-11-24
+  - owner: person/lillian-guyer-timken
+    method: inheritance
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46062.html
+        note: by inheritance to his widow, Lillian Guyer Timken [1881-1959], New York;
+        source: nga-1960-6-38
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1960
+    method: bequest
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46062.html
+        note: bequest 1960 to NGA.
+        source: nga-1960-6-38
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20175608
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20175608
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20175608
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20175608
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20175608

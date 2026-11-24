@@ -106,6 +106,46 @@ images:
     source_url: https://www.artic.edu/artworks/87005
     license: Public domain
     credit: Art Institute of Chicago, Clarence Buckingham Collection
+provenance:
+  - owner: institution/yamanaka-co
+    role: dealer
+    sources:
+      - url: https://www.artic.edu/artworks/87005
+        note: Yamanaka & Company;
+        source: aic-1925-3243
+        accessed: 2026-11-24
+  - owner: person/clarence-buckingham
+    acquired: 1905-12
+    ended: 1913
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/87005
+        note: sold to Clarence Buckingham (1854–1913), Chicago, Dec. 1905;
+        source: aic-1925-3243
+        accessed: 2026-11-24
+  - owner: person/lucy-maud-buckingham
+    co_owners: [person/kate-sturges-buckingham]
+    acquired: 1913
+    method: inheritance
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/87005
+        note: by descent to his sisters Lucy Maud Buckingham (1870–1920) and Kate Sturges Buckingham (1858–1937), Chicago, 1913;
+        source: aic-1925-3243
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1925
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/87005
+        note: given to the Art Institute of Chicago, 1925.
+        source: aic-1925-3243
+        accessed: 2026-11-24
 sources:
   parent:
     - accessed: 2026-11-03

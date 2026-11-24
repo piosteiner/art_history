@@ -1,0 +1,63 @@
+public_id: 125246
+title_lang: en
+title: The Dreamer (La Rêveuse)
+names:
+  - lang: en
+    role: original
+    text: The Dreamer
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20275765
+  - lang: fr
+    role: translation
+    text: La Rêveuse
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20275765
+  - lang: ru
+    role: translation
+    text: Мечтательница
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20275765
+creator: jean-antoine-watteau
+created: 1712/1714
+created_label: c. 1710s
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [23.2, 17]
+institution: art-institute-of-chicago
+inventory_number: "1960.305"
+wikidata_id: Q20275765
+metadata:
+  sources: [Wikidata Q20275765 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Jean_Antoine_Watteau_-_The_Dreamer_%28La_R%C3%AAveuse%29_-_1960.305_-_Art_Institute_of_Chicago.jpg/1280px-Jean_Antoine_Watteau_-_The_Dreamer_%28La_R%C3%AAveuse%29_-_1960.305_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean_Antoine_Watteau_-_The_Dreamer_(La_R%C3%AAveuse)_-_1960.305_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Jean-Antoine Watteau
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20275765
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20275765
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20275765
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20275765
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20275765
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20275765

@@ -19,6 +19,24 @@ relationships:
       - accessed: 2026-10-30
         property: P20
         wikidata: Q2630473
+  - type: child_of
+    to: person/charles-iii-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q36234
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q2630473
+  - type: sibling_of
+    to: person/infanta-maria-josefa-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q604419
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q2630473
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Lopez_Porta%C3%B1a_-_Infante_Antonio_Pascual%2C_Prado.jpg/1280px-Lopez_Porta%C3%B1a_-_Infante_Antonio_Pascual%2C_Prado.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Lopez_Porta%C3%B1a_-_Infante_Antonio_Pascual,_Prado.jpg

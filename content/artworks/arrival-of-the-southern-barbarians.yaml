@@ -1,0 +1,72 @@
+public_id: 124714
+title_lang: en
+title: Arrival of the "Southern Barbarians"
+names:
+  - lang: ja
+    role: translation
+    text: 南蛮図屏風
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60465474
+created: c. 1600
+created_span: uncertain
+institution: cleveland-museum-of-art
+inventory_number: "1960.193"
+web_url: https://clevelandart.org/art/1960.193
+wikidata_id: Q60465474
+metadata:
+  sources: [Wikidata Q60465474 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Japan%2C_Momoyama_period_-_Arrival_of_the_%22Southern_Barbarians%22_-_1960.193_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Japan%2C_Momoyama_period_-_Arrival_of_the_%22Southern_Barbarians%22_-_1960.193_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japan,_Momoyama_period_-_Arrival_of_the_%22Southern_Barbarians%22_-_1960.193_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: anonymous
+provenance:
+  - owner: person/ogiware-yasunosuke
+    sources:
+      - url: https://clevelandart.org/art/1960.193
+        note: Ogiware Yasunosuke
+        source: cma-1960-193
+        accessed: 2026-11-24
+  - owner: person/nagami-tokutaro
+    place: nagasaki
+    label: 永見徳太郎 (the museum spells him Nagami Takutaro)
+    sources:
+      - url: https://clevelandart.org/art/1960.193
+        note: Nagami Takutaro 永見 徳太郎 [1890–1950], Nagasaki, Japan
+        source: cma-1960-193
+        accessed: 2026-11-24
+  - owner: institution/mayuyama-co
+    role: dealer
+    ended: 1960
+    place: tokyo
+    label: Mayuyama and Company; sold to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1960.193
+        note: (Mayuyama and Company, Tokyo, Japan, sold to the Cleveland Museum of Art) [?–1960]
+        source: cma-1960-193
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1960
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/1960.193
+        note: The Cleveland Museum of Art, Cleveland, OH [1960–] — Leonard C. Hanna Jr. Fund
+        source: cma-1960-193
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60465474
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60465474
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60465474

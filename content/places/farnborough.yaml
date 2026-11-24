@@ -1,0 +1,35 @@
+public_id: 126645
+name: Farnborough
+names:
+  - lang: zh
+    role: translation
+    text: 法恩伯勒
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q547071
+  - lang: ru
+    role: translation
+    text: Фарнборо
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q547071
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-0.75, 51.29]
+wikidata_id: Q547071
+metadata:
+  sources: [Wikidata Q547071 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q547071
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q547071
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q547071

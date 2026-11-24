@@ -1,0 +1,23 @@
+public_id: 122853
+name: Eleanor Parke Custis Lewis
+given_name: Eleanor Parke Custis
+family_name: Lewis
+kind: person
+birth: 1779-03-31
+death: 1852-07-15
+wikidata_id: Q1325736
+metadata:
+  sources: [Wikidata Q1325736 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q1325736
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q1325736
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q1325736

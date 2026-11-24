@@ -1,0 +1,47 @@
+public_id: 124924
+name: Sakurai
+names:
+  - lang: ja
+    role: original
+    text: 桜井市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q127026
+  - lang: zh
+    role: translation
+    text: 櫻井市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q127026
+  - lang: ko
+    role: translation
+    text: 사쿠라이시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q127026
+  - lang: ru
+    role: translation
+    text: Сакураи
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q127026
+kind: settlement
+parent: nara-prefecture
+country_code: JP
+location: [135.84322, 34.51872]
+wikidata_id: Q127026
+metadata:
+  sources: [Wikidata Q127026 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q127026
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q127026
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q127026

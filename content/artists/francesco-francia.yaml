@@ -1,0 +1,18 @@
+public_id: 122822
+name: Francesco Francia
+given_name: Francesco
+family_name: Francia
+birth: c. 1447
+death: 1517-01-15
+wikidata_id: Q260057
+metadata:
+  sources: [Wikidata Q260057 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q260057
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q260057

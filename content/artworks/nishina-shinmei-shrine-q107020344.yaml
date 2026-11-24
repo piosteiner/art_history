@@ -1,0 +1,42 @@
+public_id: 124917
+title_lang: en
+title: Main Hall (Honden) of Nishina Shinmei-gū
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 仁科神明宮本殿
+institution: nishina-shinmei-shrine
+location: [137.8787, 36.44941]
+wikidata_id: Q107020344
+metadata:
+  sources: [Wikidata Q107020344 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/omachi
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/33/Nishina_Shinmei_Shrine-Honden.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nishina_Shinmei_Shrine-Honden.jpg
+    license: CC BY-SA 3.0
+    credit: The original uploader was NMC100 at Japanese Wikipedia.
+provenance:
+  - owner: institution/nishina-shinmei-shrine
+    acquired_label: 1636 according to tradition; perhaps c. 1676
+    method: commission
+    place: omachi
+    label: built, according to tradition, by Matsudaira Naomasa, lord of Matsumoto, at the shrine's periodic rebuilding of 1636; perhaps rather of the 1676 rebuilding (all pillars replaced)
+    certainty: probable
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/957
+        note: 現在の社殿は寛永十三年（一六三六）松本藩主松平直政が式年造替に際して造営したものと伝わるが、延宝四年（一六七六）の造営文書に全柱の取替材が含まれており、修理とは特定し難く、この頃の造営と見るべきかもしれない。 … 所有者名 ： 仁科神明宮 所有者種別 ： 神社
+        source: kunishitei-102-957
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E4%BB%81%E7%A7%91%E7%A5%9E%E6%98%8E%E5%AE%AE
+        note: 仁科氏が主家の武田氏と共に滅亡してからは、松本藩主がこれに代わって式年造替を奉仕したが、1636年（寛永13年）の造替を最後として、その後は新築ではなく修造に留まり現在に至っている。
+        source: wikipedia-ja-nishina-shinmei-gu
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020344

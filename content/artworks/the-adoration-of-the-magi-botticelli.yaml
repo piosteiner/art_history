@@ -1,0 +1,169 @@
+public_id: 123203
+title_lang: it
+title: Adorazione dei Magi
+names:
+  - lang: en
+    role: translation
+    text: Adoration of the Magi
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3201474
+  - lang: fr
+    role: translation
+    text: L'Adoration des mages
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3201474
+  - lang: de
+    role: translation
+    text: Anbetung der Könige
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3201474
+  - lang: zh
+    role: translation
+    text: 三博士來朝
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3201474
+creator: sandro-botticelli
+created: 1482
+materials: [tempera, panel]
+dimensions: [68, 102]
+institution: national-gallery-of-art
+inventory_number: 1937.1.22
+wikidata_id: Q3201474
+metadata:
+  sources: [Wikidata Q3201474 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q3201474
+  - type: associated_with
+    to: movement/early-renaissance
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q3201474
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Sandro_Botticelli_009.jpg/1280px-Sandro_Botticelli_009.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_009.jpg
+    license: Public domain
+    credit: National Gallery of Art
+provenance:
+  - owner_label: private collection, Rome
+    place: rome
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.24.html
+        note: Said to have been acquired from a private collection in Rome by the engraver Peralli.[1]
+        source: nga-1937-1-22
+        accessed: 2026-11-24
+  - owner_label: the engraver Peralli
+    direct: true
+    label: according to the Hermitage catalogue of 1891, on Vivant Denon's word; possibly Piero Pieralli (NGA note)
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.24.html
+        note: "Said to have been acquired from a private collection in Rome by the engraver Peralli.[1] — [1] Information given by E. Brüningk and Andrei Somov, … 1891: 73: \"d'après le témoignage du baron Vivant Denon.\""
+        source: nga-1937-1-22
+        accessed: 2026-11-24
+  - owner: person/dominique-vivant-denon
+    place: paris
+    label: the 1891 Hermitage catalogue says only that it was acquired through his intermediation; NGA thinks his ownership quite possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.24.html
+        note: "Dominique Vivant Denon [1747-1825], Paris;[2] — [2] Actually Brüningk and Somov 1891: 73 say only that the painting was acquired \"par l'entremise\" (\"through the intermediation\") of Denon.  It is quite possible, however, that Denon … was already in possession of The Adoration of the Magi when in 1808 he was entrusted with augmenting the Russian Imperial collections"
+        source: nga-1937-1-22
+        accessed: 2026-11-24
+  - owner: person/alexander-i-of-russia
+    acquired: 1808
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.24.html
+        note: sold 1808 to Czar Alexander I of Russia, [1777-1825], Saint Petersburg;
+        source: nga-1937-1-22
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    label: the catalogues' mark 'A' (acquired by Paul I) is an error, the NGA says
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.24.html
+        note: Imperial Hermitage Gallery, Saint Petersburg;[3]
+        source: nga-1937-1-22
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1931-01
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York); Matthiesen announced the purchase to his associates on 9 February 1931
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.24.html
+        note: purchased January 1931 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London and New York; and M. Knoedler & Co., New York and London) — [4] … Matthiessen announced to his associates on 9 February 1931 that he had succeeded in buying The Adoration of the Magi.
+        source: nga-1937-1-22
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1931-01
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.; sale confirmed by a January 1931 Knoedler sales book (Getty, 2012.M.54)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.24.html
+        note: purchased January 1931 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London and New York; and M. Knoedler & Co., New York and London) by Andrew W. Mellon, Pittsburgh and Washington, D.C.;[4] — An entry from a January 1931 Knoedler sales book confirms the sale to Mellon
+        source: nga-1937-1-22
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1931-06-05
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.24.html
+        note: deeded 5 June 1931 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[5]
+        source: nga-1937-1-22
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.24.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-22
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3201474
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q3201474
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3201474
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3201474
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3201474
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q3201474

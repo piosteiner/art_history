@@ -1,0 +1,43 @@
+public_id: 124843
+title: Gefäss in Gestalt eines Kopfes
+creator: anonymous
+materials: [ceramic]
+dimensions: [19.5, 15.6]
+institution: museum-rietberg
+inventory_number: RMA 36
+wikidata_id: Q126911291
+metadata:
+  sources: [Wikidata Q126911291 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/oaxaca
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q126911291
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Urheber%2Ain_unbekannt_Gef%C3%A4ss_in_Gestalt_eines_Kopfes_Museum_Rietberg_RMA_0036.jpg/1280px-Urheber%2Ain_unbekannt_Gef%C3%A4ss_in_Gestalt_eines_Kopfes_Museum_Rietberg_RMA_0036.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Urheber*in_unbekannt_Gef%C3%A4ss_in_Gestalt_eines_Kopfes_Museum_Rietberg_RMA_0036.jpg
+    license: CC0
+    credit: Museum Rietberg
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q126911291
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q126911291
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q126911291
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q126911291
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q126911291

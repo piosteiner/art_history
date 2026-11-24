@@ -1,0 +1,230 @@
+public_id: 122825
+title_lang: en
+title: The Crucifixion with the Virgin, Saint John, Saint Jerome, and Saint Mary Magdalene
+names:
+  - text: Crucifixion with Virgin Mary and Saints John Evangelist, Jerome and Mary Magdalene
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3539570
+  - text: Galitzin triptych
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3539570
+  - lang: fr
+    role: translation
+    text: triptyque Galitzin
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3539570
+  - lang: de
+    role: translation
+    text: Galitzin-Triptychon
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3539570
+  - lang: it
+    role: translation
+    text: Trittico Galitzin
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3539570
+  - lang: ja
+    role: translation
+    text: ガリツィン三連祭壇画
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3539570
+creator: pietro-perugino
+created: 1481
+materials: [tempera, canvas]
+dimensions: [95, 30]
+institution: national-gallery-of-art
+inventory_number: 1937.1.27.a-c
+provenance_status: a_clear
+provenance_status_note: Andrew W. Mellon bought it from the Hermitage in April 1931 and deeded it on 5 June 1931 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q3539570
+metadata:
+  sources: [Wikidata Q3539570 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/jesus-christ
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q3539570
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q3539570
+  - type: depicts_person
+    to: person/mary-magdalene
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q3539570
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q3539570
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Perugino_-_The_Crucifixion_with_the_Virgin%2C_Saints_John%2C_Jerome%2C_and_Mary_Magdalene_-_Galitzin-Triptych.jpg/1280px-Perugino_-_The_Crucifixion_with_the_Virgin%2C_Saints_John%2C_Jerome%2C_and_Mary_Magdalene_-_Galitzin-Triptych.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Perugino_-_The_Crucifixion_with_the_Virgin,_Saints_John,_Jerome,_and_Mary_Magdalene_-_Galitzin-Triptych.jpg
+    license: Public domain
+    credit: Attributed to Pietro Perugino / Formerly attributed to Raphael
+provenance:
+  - owner: person/bartolommeo-bartoli
+    method: commission
+    label: Bishop of Cagli (also called Bartolommeo di Bartolo); the coats of arms on the modern frame have no bearing on the provenance
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.206127.html
+        note: Probably commissioned by Bartolommeo Bartoli (or di Bartolo), Bishop of Cagli [d. 1497];[1] — [1] The frame on the painting is modern and thus the coats-of-arms decorating it have no bearing on the provenance.
+        source: nga-1937-1-27-a-c
+        accessed: 2026-11-24
+  - owner: institution/san-domenico-san-gimignano
+    method: gift
+    direct: true
+    place: san-gimignano
+    label: gift from the Bishop of Cagli to the church
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.206127.html
+        note: by gift from him to the church of San Domenico, San Gimignano;
+        source: nga-1937-1-27-a-c
+        accessed: 2026-11-24
+  - owner_label: Napoleonic troops
+    role: possessor
+    acquired: 1796/1797
+    method: confiscation
+    direct: true
+    place: san-gimignano
+    label: seized by Napoleonic troops
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.206127.html
+        note: seized 1796/1797 by Napoleonic troops;
+        source: nga-1937-1-27-a-c
+        accessed: 2026-11-24
+  - owner_label: Dr. Buzzi
+    acquired: 1796/1797
+    direct: true
+    label: Buzzi had the French painter François Xavier Fabre treat the picture
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.206127.html
+        note: acquired 1796/1797 by Dr. Buzzi, and sold soon thereafter — [2] He also notes that Buzzi had the French artist Baron François Xavier Fabre treat the picture
+        source: nga-1937-1-27-a-c
+        accessed: 2026-11-24
+  - owner: person/alexander-mikhailovich-galitzin
+    method: purchase
+    direct: true
+    place: rome
+    label: Russian ambassador to Rome; bought soon after 1796/1797
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.206127.html
+        note: and sold soon thereafter to Prince Alexander Mikhailovich Galitzin [1772-1821], Russian ambassador to Rome;
+        source: nga-1937-1-27-a-c
+        accessed: 2026-11-24
+  - owner: person/theodore-alexandrovich-galitzin
+    method: inheritance
+    direct: true
+    place: rome
+    label: his son; Palazzo Galitzin, Rome; after his death the painting stayed in a storage closet of the palace until 1862
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.206127.html
+        note: by inheritance to his son, Theodore Alexandrovich Galitzin [d. 1848], Palazzo Galitzin, Rome; — [2] after Theodore Galitzin's death, the painting languished in a storage closet of his palace until 1862.
+        source: nga-1937-1-27-a-c
+        accessed: 2026-11-24
+  - owner: person/sergei-mikhailovich-galitzin
+    method: inheritance
+    direct: true
+    place: moscow
+    label: his nephew; displayed from 1865 at the Museum of Western European Painting of Prince S.M. Galitzin, Moscow
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.206127.html
+        note: by inheritance to his nephew, Sergei Mikhailovich Galitzin [1843-1915], Moscow; displayed from 1865 at the Museum of Western European Painting of Prince S.M. Galitzin, Moscow;[2]
+        source: nga-1937-1-27-a-c
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    acquired: 1886
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: bought with the Galitzin collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.206127.html
+        note: purchased 1886 with the Galitzin collection by the Imperial Hermitage Gallery, Saint Petersburg;
+        source: nga-1937-1-27-a-c
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1931-04
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London and New York) and Knoedler (New York and London)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.206127.html
+        note: purchased April 1931 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London and New York; and M. Knoedler & Co., New York and London)
+        source: nga-1937-1-27-a-c
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1931-04
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.206127.html
+        note: purchased April 1931 through (…) by Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-27-a-c
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1931-06-05
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.206127.html
+        note: deeded 5 June 1931 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[3]
+        source: nga-1937-1-27-a-c
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.206127.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-27-a-c
+        accessed: 2026-11-24
+identifiers:
+  gnd: "1209507439"
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q3539570
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q3539570
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q3539570
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q3539570
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q3539570
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q3539570

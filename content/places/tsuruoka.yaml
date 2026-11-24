@@ -1,0 +1,41 @@
+public_id: 123909
+name: Tsuruoka
+names:
+  - lang: ja
+    role: original
+    text: 鶴岡市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q734416
+  - lang: ko
+    role: translation
+    text: 쓰루오카시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q734416
+  - lang: ru
+    role: translation
+    text: Цуруока
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q734416
+kind: settlement
+parent: japan
+country_code: JP
+location: [139.82667, 38.72722]
+wikidata_id: Q734416
+metadata:
+  sources: [Wikidata Q734416 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q734416
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q734416
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q734416

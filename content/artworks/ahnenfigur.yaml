@@ -1,0 +1,60 @@
+public_id: 123851
+title_lang: de
+title: Ahnenfigur
+attribution_label: Anonymous
+created: 19th century
+created_span: uncertain
+kind: sculpture
+medium: Baumfaser
+dimensions: [142]
+institution: museum-rietberg
+inventory_number: RME 701
+web_url: https://rietberg.ch/sammlungen/rme-701
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Vanuatu_Ahnenfigur_aus_Ambrym_Museum_Rietberg_RME_701.jpg/1280px-Vanuatu_Ahnenfigur_aus_Ambrym_Museum_Rietberg_RME_701.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vanuatu_Ahnenfigur_aus_Ambrym_Museum_Rietberg_RME_701.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: 19th century
+    method: creation
+    label: made in Vanuatu (Ambrym Island, New Hebrides)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rme-701
+        note: "19. Jh.: Urheber*in unbekannt, in Vanuatu"
+        source: rietberg-rme-701
+        accessed: 2026-11-24
+  - owner: person/charles-ratton
+    label: circumstances of acquisition unknown; undated
+    sources:
+      - url: https://rietberg.ch/sammlungen/rme-701
+        note: Charles Ratton (1895–1986), Erwerbsumstände unbekannt
+        source: rietberg-rme-701
+        accessed: 2026-11-24
+  - owner: artist/andre-breton
+    co_owners: [person/paul-eluard]
+    acquired: before 1931
+    label: circumstances of acquisition unknown; Collection André Breton et Paul Eluard (Hôtel Drouot), 1931, no. 129
+    sources:
+      - url: https://rietberg.ch/sammlungen/rme-701
+        note: "vor 1931: André Breton und Paul Eluard, Erwerbsumstände unbekannt Lit. Coll. Breton/Eluard, 1931, Nr. 129."
+        source: rietberg-rme-701
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: 1931
+    method: purchase
+    sources:
+      - url: https://rietberg.ch/sammlungen/rme-701
+        note: "1931: Eduard von der Heydt (1882–1964), angekauft"
+        source: rietberg-rme-701
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    method: gift
+    place: zurich
+    label: gift of Eduard von der Heydt (creditline); date not given
+    sources:
+      - url: https://rietberg.ch/sammlungen/rme-701
+        note: Creditline Geschenk Eduard von der Heydt
+        source: rietberg-rme-701
+        accessed: 2026-11-24

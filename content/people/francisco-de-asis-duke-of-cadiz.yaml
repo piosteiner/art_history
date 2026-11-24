@@ -39,6 +39,16 @@ death: 1902-04-17
 wikidata_id: Q356522
 metadata:
   sources: [Wikidata Q356522 (retrieved 2026-10-19)]
+relationships:
+  - type: child_of
+    to: person/infante-francisco-de-paula-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q356522
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q462892
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Francis_King_consort_of_Spain.jpg/1280px-Francis_King_consort_of_Spain.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Francis_King_consort_of_Spain.jpg

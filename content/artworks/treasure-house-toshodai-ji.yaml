@@ -1,0 +1,53 @@
+public_id: 124092
+title: Treasure House, Toshodai-ji
+names:
+  - lang: ja
+    role: translation
+    text: 唐招提寺宝蔵
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020492
+created: 8th century
+created_span: uncertain
+institution: toshodai-ji
+location: [135.7855, 34.67575]
+wikidata_id: Q107020492
+metadata:
+  sources: [Wikidata Q107020492 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nara
+    period: 8th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Toshodai-ji_National_Treasure_World_heritage_%E5%9B%BD%E5%AE%9D%E3%83%BB%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E5%94%90%E6%8B%9B%E6%8F%90%E5%AF%BA49.JPG/1280px-Toshodai-ji_National_Treasure_World_heritage_%E5%9B%BD%E5%AE%9D%E3%83%BB%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E5%94%90%E6%8B%9B%E6%8F%90%E5%AF%BA49.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Toshodai-ji_National_Treasure_World_heritage_%E5%9B%BD%E5%AE%9D%E3%83%BB%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E5%94%90%E6%8B%9B%E6%8F%90%E5%AF%BA49.JPG
+    license: CC BY-SA 4.0
+    credit: Nekosuki
+provenance:
+  - owner: institution/toshodai-ji
+    acquired: 8th century
+    method: creation
+    place: nara
+    label: log storehouse (azekura) probably built when the temple was founded (from 759); twice dismantled and repaired before, and raised about 1 m (found at the 1958 restoration); the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/2480
+        note: 宝蔵の建立は明らかでないが、奈良時代にこの寺が創立された頃であろう。沿革についても明らかでないが、昭和三十三年の解体修理にあたり、かつて二回の解体修理を受け、また一メートル程の地上げも行われていることが判明した。… 所有者名 ： 宗教法人唐招提寺 所有者種別 ： 寺院
+        source: kunishitei-102-2480
+        accessed: 2026-11-24
+      - note: And in 759 the first steps towards the building of Toshodaiji were taken. … There are no clear records concerning the dates at which specific buildings were completed.
+        source: history-of-japanese-art
+        locator: p. 70
+        accessed: 2026-11-24
+      - url: https://toshodaiji.jp/about_houzoh.html
+        note: 経蔵とともに並んで建つ校倉で、北側の蔵です。 唐招提寺創建にあわせて建立されたといわれ
+        source: toshodaiji-houzoh
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107020492
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020492

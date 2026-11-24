@@ -1,0 +1,133 @@
+public_id: 122807
+title_lang: en
+title: View of Munich
+names:
+  - lang: de
+    role: translation
+    text: Blick auf München
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q19681646
+  - lang: it
+    role: translation
+    text: Vista di Monaco di Baviera
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q19681646
+creator: bernardo-bellotto
+attribution_label: Bernardo Bellotto and workshop
+created: 1760s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [69.2, 119.8]
+institution: national-gallery-of-art
+inventory_number: 1961.9.64
+wikidata_id: Q19681646
+metadata:
+  sources: [Wikidata Q19681646 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Bernardo_Bellotto%2C_il_Canaletto_-_Vista_di_Monaco_di_Baviera.jpg/1280px-Bernardo_Bellotto%2C_il_Canaletto_-_Vista_di_Monaco_di_Baviera.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernardo_Bellotto,_il_Canaletto_-_Vista_di_Monaco_di_Baviera.jpg
+    license: Public domain
+    credit: Bernardo Bellotto
+provenance:
+  - owner: person/augustus-iii-of-poland
+    label: elector of Saxony; only according to an inscription on a photograph of the painting in the Witt Library, London
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46163.html
+        note: "[1] A photograph of the painting in the Witt Library, London, is inscribed with the information that the painting was once in the collection of Augustus III, elector of Saxony"
+        source: nga-1961-9-64
+        accessed: 2026-11-24
+  - owner_label: Private collection, Saxony
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46163.html
+        note: Private collection, Saxony.[1]
+        source: nga-1961-9-64
+        accessed: 2026-11-24
+  - owner_label: Sabin, London (dealer)
+    role: dealer
+    place: london
+    label: one of Haberstock's two Bellotto views of Munich came from Sabin in April 1928
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46163.html
+        note: Possibly (Sabin, London); — [2] One of the two Bellottos was acquired by Haberstock from Sabin in London in April 1928
+        source: nga-1961-9-64
+        accessed: 2026-11-24
+  - owner: person/karl-haberstock
+    role: dealer
+    acquired: 1928
+    ended_label: possibly until 1936
+    method: purchase
+    direct: true
+    place: berlin
+    label: he handled two Bellotto views of Munich — this one and one sold to the Sonderauftrag Linz (Munich CCP no. 7573); at least one still his in 1936 (Fritzsche 1936)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46163.html
+        note: "sold 1928 to (Karl Haberstock, Berlin), possibly until 1936.[2] — [2] Karl Haberstock appears to have handled two Bellotto views of Munich: the Gallery version and one that was sold to the Sonderauftrag Linz … at least one was still in his possession as of 1936"
+        source: nga-1961-9-64
+        accessed: 2026-11-24
+  - owner: person/gustav-mez
+    acquired_label: from a Dresden collection during World War II (Saemy Rosenberg, 1955); possibly from Haberstock in 1929
+    place: rorschacherberg
+    label: collector named by Kozakiewicz 1972; a German resident in Switzerland
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46163.html
+        note: Acquired by Dr. Gustav Mez [d. 1944], Rorschacherberg, Switzerland;[3] — [3] According to Saemy Rosenberg … the painting was acquired by a private collector from a Dresden collection during World War II. Stefan Kozakiewicz … identified the collector as Gustav Mez … It is possible that both this painting and its companion (NGA 1961.9.63) were acquired by Mez from Haberstock in 1929
+        source: nga-1961-9-64
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46163.html
+        note: (Rosenberg and Stiebel, New York);
+        source: nga-1961-9-64
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46163.html
+        note: purchased 1951 by the Samuel H. Kress Foundation, New York;[4]
+        source: nga-1961-9-64
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1961
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46163.html
+        note: gift 1961 to NGA.
+        source: nga-1961-9-64
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q19681646
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q19681646
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q19681646
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q19681646
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q19681646
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q19681646

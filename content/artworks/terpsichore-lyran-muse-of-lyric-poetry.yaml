@@ -1,0 +1,95 @@
+public_id: 124650
+title_lang: en
+title: Terpsichore Lyran (Muse of Lyric Poetry)
+creator: antonio-canova
+created: 1816
+institution: cleveland-museum-of-art
+inventory_number: "1968.212"
+web_url: https://www.clevelandart.org/art/1968.212
+wikidata_id: Q60780833
+metadata:
+  sources: [Wikidata Q60780833 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Clevelandart_1968.212.jpg/1280px-Clevelandart_1968.212.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Clevelandart_1968.212.jpg
+    license: CC0
+    credit: Antonio Canova
+provenance:
+  - owner: person/simon-h-clarke
+    place: east-barnet
+    label: Sir Simon H. Clarke, 9th Baronet, Oak Hill
+    sources:
+      - url: https://clevelandart.org/art/1968.212
+        note: Simon H. Clarke, 9th Bt., 1764-1832 (Oak Hill, East Barnet, England);
+        source: cma-1968-212
+        accessed: 2026-11-24
+  - owner: person/alfred-charles-de-rothschild
+    ended: 1918
+    direct: true
+    label: Halton, Buckinghamshire
+    sources:
+      - url: https://clevelandart.org/art/1968.212
+        note: Alfred de Rothschild, 1842-1918 (Halton, Buckinghamshire, England), by inheritance to his nephew, Lionel de Rothschild, 1918;
+        source: cma-1968-212
+        accessed: 2026-11-24
+  - owner: person/lionel-nathan-de-rothschild
+    acquired: 1918
+    ended: 1942
+    method: inheritance
+    direct: true
+    place: exbury
+    label: by inheritance from his uncle
+    sources:
+      - url: https://clevelandart.org/art/1968.212
+        note: Lionel Nathan de Rothschild, 1882-1942 (Exbury, Hampshire, England), 1918-1942, by inheritance to his first son, Edmund Leopold de Rothschild, 1942;
+        source: cma-1968-212
+        accessed: 2026-11-24
+  - owner: person/edmund-leopold-de-rothschild
+    acquired: 1942
+    method: inheritance
+    direct: true
+    place: exbury
+    label: by inheritance from his father
+    sources:
+      - url: https://clevelandart.org/art/1968.212
+        note: Edmund Leopold de Rothschild, born 1916 (Exbury, Hampshire, England), sold to Wildenstein & Co., 1963;
+        source: cma-1968-212
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1963
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1968.212
+        note: Edmund Leopold de Rothschild, born 1916 (Exbury, Hampshire, England), sold to Wildenstein & Co., 1963; Wildenstein & Co. (New York, New York), sold to the Cleveland Museum of Art, 1968.
+        source: cma-1968-212
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1968
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1968.212
+        note: Wildenstein & Co. (New York, New York), sold to the Cleveland Museum of Art, 1968.
+        source: cma-1968-212
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60780833
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60780833
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60780833
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60780833

@@ -1,0 +1,18 @@
+public_id: 125256
+name: Antonis Mor
+given_name: Antonis
+family_name: Mor
+birth: c. 1519
+death: 1575
+wikidata_id: Q176694
+metadata:
+  sources: [Wikidata Q176694 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q176694
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q176694

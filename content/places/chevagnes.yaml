@@ -1,0 +1,22 @@
+public_id: 127859
+name: Chevagnes
+kind: settlement
+parent: france
+country_code: FR
+location: [3.55083, 46.61139]
+wikidata_id: Q843076
+metadata:
+  sources: [Wikidata Q843076 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q843076
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q843076
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q843076

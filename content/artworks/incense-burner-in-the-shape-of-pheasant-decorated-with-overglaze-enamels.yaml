@@ -1,0 +1,60 @@
+public_id: 124324
+title: Incense burner in the shape of pheasant decorated with overglaze enamels
+names:
+  - text: Iroe Kiji Kōro
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11614521
+  - text: Pheasant-shaped Incense Burner
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11614521
+  - text: Male Pheasant Incense Burner
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11614521
+  - lang: ja
+    role: translation
+    text: 色絵雉香炉
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11614521
+creator: nonomura-ninsei
+created: 17th century
+created_span: uncertain
+institution: ishikawa-prefectural-museum-of-art
+inventory_number: "01000100"
+location: [136.6612, 36.56016]
+wikidata_id: Q11614521
+metadata:
+  sources: [Wikidata Q11614521 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/kanazawa
+    period: 17th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Incense_burners_in_the_shape_of_pheasant_decorated_with_overglaze_enamels%28male_and_female%29.jpg/1280px-Incense_burners_in_the_shape_of_pheasant_decorated_with_overglaze_enamels%28male_and_female%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Incense_burners_in_the_shape_of_pheasant_decorated_with_overglaze_enamels(male_and_female).jpg
+    license: CC BY-SA 4.0
+    credit: 掬茶
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11614521
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q11614521
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11614521
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q11614521
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q11614521

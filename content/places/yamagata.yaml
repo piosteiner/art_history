@@ -1,0 +1,41 @@
+public_id: 124326
+name: Yamagata
+names:
+  - lang: ja
+    role: original
+    text: 山形市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q205526
+  - lang: ko
+    role: translation
+    text: 야마가타시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q205526
+  - lang: ru
+    role: translation
+    text: Ямагата
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q205526
+kind: settlement
+parent: japan
+country_code: JP
+location: [140.33961, 38.25542]
+wikidata_id: Q205526
+metadata:
+  sources: [Wikidata Q205526 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q205526
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q205526
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q205526

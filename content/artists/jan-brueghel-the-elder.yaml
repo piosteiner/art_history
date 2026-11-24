@@ -106,6 +106,24 @@ relationships:
       - accessed: 2026-10-18
         property: P135
         wikidata: Q209050
+  - type: child_of
+    to: artist/pieter-brueghel-the-elder
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q209050
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q43270
+  - type: sibling_of
+    to: artist/pieter-brueghel-ii
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q209050
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q255828
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/43/Anthony_van_Dyck_%28possibly%29_-_Portrait_of_Jan_Brueghel_the_Elder.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Anthony_van_Dyck_(possibly)_-_Portrait_of_Jan_Brueghel_the_Elder.jpg

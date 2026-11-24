@@ -1,0 +1,47 @@
+public_id: 125700
+name: Wuppertal
+names:
+  - lang: ja
+    role: translation
+    text: ヴッパータール
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2107
+  - lang: zh
+    role: translation
+    text: 伍珀塔尔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2107
+  - lang: ko
+    role: translation
+    text: 부퍼탈
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2107
+  - lang: ru
+    role: translation
+    text: Вупперталь
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2107
+kind: settlement
+parent: nordrhein-westfalen
+country_code: DE
+location: [7.18333, 51.26667]
+wikidata_id: Q2107
+metadata:
+  sources: [Wikidata Q2107 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2107
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2107
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2107

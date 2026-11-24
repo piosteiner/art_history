@@ -1,0 +1,16 @@
+public_id: 123123
+name: Greek late classical period
+kind: movement
+period: 370
+wikidata_id: Q57449805
+metadata:
+  sources: [Wikidata Q57449805 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q57449805
+  period:
+    - accessed: 2026-11-23
+      property: P580
+      wikidata: Q57449805

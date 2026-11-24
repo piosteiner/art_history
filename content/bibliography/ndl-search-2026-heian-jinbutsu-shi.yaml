@@ -1,0 +1,12 @@
+public_id: 122730
+kind: web
+name_lang: ja
+name: "NDL Search (国立国会図書館サーチ): catalogue records of 平安人物志 / 平安人物誌 (union records of NDL, CiNii, university and prefectural libraries)"
+container: 国立国会図書館サーチ
+place: Tokyo
+publisher: National Diet Library
+year: "2026"
+url: https://ndlsearch.ndl.go.jp/api/opensearch?cnt=200&title=%E5%B9%B3%E5%AE%89%E4%BA%BA%E7%89%A9
+accessed: 2026-11-23
+reliability: institution
+description_md: Each finding names the individual record (R… id) as locator; raw response saved in work-jinbutsu/ndl.xml.

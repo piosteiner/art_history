@@ -1,0 +1,227 @@
+public_id: 122842
+title_lang: en
+title: Lorenzo de' Medici
+created: 1478/1521
+materials: [terracotta]
+dimensions: [65.8, 59.1, 32.7]
+institution: national-gallery-of-art
+inventory_number: 1943.4.92
+web_url: https://www.nga.gov/collection/art-object-page.12189.html
+wikidata_id: Q63809408
+metadata:
+  sources: [Wikidata Q63809408 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/lorenzo-il-magnifico
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q63809408
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Florentine_15th_or_16th_Century%2C_probably_after_a_model_by_Andrea_del_Verrocchio_and_Orsino_Benintendi%2C_Lorenzo_de%27_Medici%2C_1478-1521%2C_NGA_12189.jpg/1280px-Florentine_15th_or_16th_Century%2C_probably_after_a_model_by_Andrea_del_Verrocchio_and_Orsino_Benintendi%2C_Lorenzo_de%27_Medici%2C_1478-1521%2C_NGA_12189.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Florentine_15th_or_16th_Century,_probably_after_a_model_by_Andrea_del_Verrocchio_and_Orsino_Benintendi,_Lorenzo_de%27_Medici,_1478-1521,_NGA_12189.jpg
+    license: CC0
+    credit: probably after a model by Andrea del Verrocchio and Orsino Benintendi
+provenance:
+  - owner: person/alessandro-rivani
+    place: florence
+    label: the 'Avvocato' Rivani, scholar and collector, secretary of the Società Colombaria (Sanford's letter quoted by Dennys, 1843)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: Alessandro Rivani [1746-c. 1832], Florence.[1] — [1] … "It was previously in the possession of the 'Avvocati Rivani, a very distinguished scholar and collector of works of Art, who died about ten years since. He was Secretary to the Antiquarian Society called Colombaria."
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: person/carlo-ernesto-liverati
+    ended: c. 1835
+    place: florence
+    label: for sale in the artist's studio as the undoubted work of Michelangelo
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: Carlo Ernesto Liverati [1805-1844], Florence, until c. 1835;[2] — [2] … Sanford tells Dennys that he (Sanford) "purchased it of an artist, in whose studio he found it for sale as the undoubted work of Michael Angelo [sic]." Giancarlo Gentilini … confirms the artist as Liverati
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: person/john-sanford
+    acquired: c. 1835
+    method: purchase
+    direct: true
+    place: florence
+    label: Rev. John Sanford, Florence and London; had Aristodemo Costoli make a cast and a marble version; took the bust to England
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: Rev. John Sanford [1777-1855], Florence and London;[3] — [3] … Sanford commissioned Aristodemo Costoli to make a cast of the bust and to carve a marble version. … Sanford took the bust to England, and offered it for sale
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner_label: commission-agent, Old Bond Street, London
+    role: agent
+    acquired: c. 1841
+    direct: true
+    place: london
+    label: offered for sale by Sanford in the gallery of a commission-agent in Old Bond Street
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: '[3] … Sanford took the bust to England, and offered it for sale, according to Dennys (see note 1), around 1841 "in the gallery of a commission-agent in Old Bond-street."'
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: person/edward-nicholls-dennys
+    acquired: c. 1841
+    method: purchase
+    direct: true
+    place: london
+    label: owned until at least 1850; lent to an exhibition at the House of the Society of Arts, London, 1850
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: sold c. 1841 to Edward Nicholls Dennys, London, until at least 1850.[4] — [4] … Dennys lent the bust to an exhibition at the House of the Society of Arts in London in 1850.
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: person/henry-labouchere-1st-baron-taunton
+    acquired: 1862 or earlier
+    place: over-stowey
+    label: Stoke Park, Over-Stowey, Somersetshire
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: Henry Labouchere, 1st baron Taunton [1798-1869], Stoke Park, Over-Stowey, Somersetshire, by 1862;
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: institution/victoria-and-albert-museum
+    role: custodian
+    acquired: 1862
+    ended: 1864
+    place: london
+    label: lent by Lord Taunton to an extended exhibition
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: "[5] Lord Taunton lent the bust to an extended exhibition from 1862 to 1864 at the South Kensington Museum in London."
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: person/edward-james-stanley
+    method: inheritance
+    direct: true
+    place: bridgwater
+    label: by inheritance to Lord Taunton's son-in-law; Quantock Lodge, Bridgewater, Somersetshire
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: by inheritance to his son-in-law, Edward James Stanley [1826-1907], Quantock Lodge, Bridgewater, Somersetshire;
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: person/edward-arthur-vesey-stanley
+    method: inheritance
+    direct: true
+    place: bridgwater
+    label: by inheritance to his son; Quantock Lodge
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: by inheritance to his son, Edward Arthur Vesey Stanley [1879-1941], Quantock Lodge;[5]
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1920-07-16
+    method: auction
+    direct: true
+    place: london
+    label: Stanley sale, Sotheby's, London, 16 July 1920, no. 17 (catalogue wrongly gives a purchase from Santarelli, which concerns the Ashmolean bust)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: (his sale, Sotheby's, London, 16 July 1920, no. 17);[6] — [6] The 1920 sale catalogue incorrectly states that the bust was bought in Italy during the 1840s by Lord Taunton from Professor Santarelli
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1920
+    method: auction
+    direct: true
+    place: london
+    label: probably purchased by Duveen Brothers, London, New York and Paris; Bode wrote to Joseph Duveen about the bust 25 June 1920; Duveen showed it to Mary Berenson July 1920
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: probably purchased by (Duveen Brothers, Inc., London, New York, and Paris);[7] — [7] Wilhelm Bode wrote to Joseph Duveen on 25 June 1920 … Mary Berenson wrote to her husband, Bernard Berenson, on 17 July 1920, describing Duveen showing her the bust
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: person/clarence-mackay
+    acquired: 1923 or earlier
+    method: purchase
+    direct: true
+    place: village-of-roslyn
+    label: Clarence H. Mackay, Roslyn, New York (Bode, Art in America, December 1923)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: sold to Clarence H. Mackay [1874-1938], Roslyn, New York, by 1923;[8]
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: person/clarence-mackay
+    role: estate
+    acquired: 1938
+    method: inheritance
+    direct: true
+    place: village-of-roslyn
+    label: estate of Clarence H. Mackay
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: his estate;
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: agent
+    acquired: 1940
+    direct: true
+    place: new-york-city
+    label: sold through Jacques Seligmann and Co. (Mackay files in the Seligmann papers, Archives of American Art)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: sold 1940 through (Jacques Seligmann and Co., New York) to (Duveen Brothers, Inc., London, New York, and Paris);[9]
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1940
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: sale to Duveen announced in The Art Digest, 15 May 1940
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: 'sold 1940 through (Jacques Seligmann and Co., New York) to (Duveen Brothers, Inc., London, New York, and Paris);[9] — [9] … The sale to Duveen was announced in The Art Digest ("Il Magnifico," [15 May 1940]: 8).'
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1941
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: purchased 1941 by the Samuel H. Kress Foundation, New York;
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1943
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12189.html
+        note: gift 1943 to NGA.
+        source: nga-1943-4-92
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q63809408
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63809408
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q63809408
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63809408
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63809408

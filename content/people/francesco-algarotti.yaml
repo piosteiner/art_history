@@ -29,6 +29,12 @@ relationships:
       - accessed: 2026-10-19
         property: P20
         wikidata: Q439081
+  - type: sibling_of
+    to: person/bonomo-algarotti
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q133609885
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Jean-%C3%89tienne_Liotard_-_Portret_van_Graaf_Francesco_Algarotti.jpg/1280px-Jean-%C3%89tienne_Liotard_-_Portret_van_Graaf_Francesco_Algarotti.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Jean-%C3%89tienne_Liotard_-_Portret_van_Graaf_Francesco_Algarotti.jpg

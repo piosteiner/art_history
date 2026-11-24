@@ -1,0 +1,18 @@
+public_id: 123061
+name: Pietro della Vecchia
+given_name: Pietro
+family_name: della Vecchia
+birth: 1602/1603
+death: 1678-09-06
+wikidata_id: Q1529806
+metadata:
+  sources: [Wikidata Q1529806 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q1529806
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q1529806

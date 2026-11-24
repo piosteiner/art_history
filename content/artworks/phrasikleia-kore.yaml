@@ -1,0 +1,127 @@
+public_id: 123167
+title: Phrasikleia Kore
+names:
+  - lang: nl
+    role: translation
+    text: Phrasikleia-korè
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1307686
+  - lang: fr
+    role: translation
+    text: Korè Phrasikleia
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1307686
+  - lang: de
+    role: translation
+    text: Kore Phrasikleia
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1307686
+  - lang: es
+    role: translation
+    text: Kore de Frasiclea
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1307686
+  - lang: ja
+    role: translation
+    text: フラシクレイアのコレー像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1307686
+creator: aristion-of-paros
+materials: [Parian marble]
+dimensions: [211.5]
+institution: national-archaeological-museum-of-athens
+web_url: http://odysseus.culture.gr/h/4/eh430.jsp?obj_id=5441
+wikidata_id: Q1307686
+metadata:
+  sources: [Wikidata Q1307686 (retrieved 2026-11-24)]
+relationships:
+  - type: associated_with
+    to: movement/archaic-greek-sculpture
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q1307686
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Aristone_di_paros%2C_kore_per_la_tomba_di_phrasikleia%2C_da_merenda_%28myrrhinous%29_in_attica%2C_550-540_ac_ca._01%2C_n._4889.jpg/1280px-Aristone_di_paros%2C_kore_per_la_tomba_di_phrasikleia%2C_da_merenda_%28myrrhinous%29_in_attica%2C_550-540_ac_ca._01%2C_n._4889.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Aristone_di_paros,_kore_per_la_tomba_di_phrasikleia,_da_merenda_(myrrhinous)_in_attica,_550-540_ac_ca._01,_n._4889.jpg
+    license: CC BY-SA 4.0
+    credit: Francesco Bini
+provenance:
+  - owner_label: grave of Phrasikleia, Myrrhinous
+    acquired: c. 540 BCE
+    method: creation
+    label: funerary statue for the grave of the maiden Phrasikleia at Myrrhinous (modern Merenta, Attica), by Aristion of Paros, as the inscribed pedestal names them
+    sources:
+      - url: https://en.wikipedia.org/wiki/Phrasikleia_Kore
+        note: The Phrasikleia Kore is an Archaic Greek funerary statue by the artist Aristion of Paros, created between 550 and 540 BCE.
+        source: wikipedia-en-phrasikleia-kore
+        accessed: 2026-11-24
+      - url: http://odysseus.culture.gr/h/4/eh430.jsp?obj_id=5441
+        note: "It is the funerary statue of maiden, whose name, Phrasikleia, is inscribed on the pedestal along with that of the sculptor, Aristion from Paros. … Date: Archaic period, 540 B.C."
+        source: odysseus-nam-4889-phrasikleia
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired_label: in antiquity
+    label: buried in antiquity in a pit at Myrrhinous together with a kouros; the inscribed base was later built into the church of the Panagia at Merenta (described by Fourmont 1729–30)
+    sources:
+      - url: https://en.wikipedia.org/wiki/Phrasikleia_Kore
+        note: It was found carefully buried in the ancient city of Myrrhinous (modern Merenta) in Attica and excavated in 1972. … Michel Fourmont, who visited Greece in the years 1729–1730, described a block of marble with an inscription that was found in the church of Panagia (All Saints) of Merenta.
+        source: wikipedia-en-phrasikleia-kore
+        accessed: 2026-11-24
+      - url: http://odysseus.culture.gr/h/4/eh430.jsp?obj_id=5441
+        note: This statue was buried together with a kouros (naked youth) statue in antiquity.
+        source: odysseus-nam-4889-phrasikleia
+        accessed: 2026-11-24
+  - owner: person/efthymios-mastrokostas
+    acquired: 1972
+    method: find
+    label: excavated in the cemetery of Myrrhinous (Merenta, Attica) with the Merenda Kouros; the inscribed base, removed from the church in 1968 to the Epigraphical Museum, Athens, matched by the lead ring
+    sources:
+      - url: https://en.wikipedia.org/wiki/Phrasikleia_Kore
+        note: In 1968, the block was removed and placed in the Epigraphical Museum of Athens. By 1972, the archaeologist Efthymios Mastrokostas discovered two marble statues in the tombs at Myrrhinous, a kouros and the Phrasikleia Kore.
+        source: wikipedia-en-phrasikleia-kore
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Kore_Phrasikleia
+        note: 1968 wurde der Block entfernt und in das Epigraphische Museum von Athen gebracht. Vier Jahre später entdeckte der Archäologe Efthymios Mastrokostas an der Gräberstraße von Myrrhinous zwei Marmorstatuen, einen Kouros und eine Kore, die offensichtlich zusammen gehörten.
+        source: wikipedia-de-kore-phrasikleia
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/Κόρη_Φρασίκλεια
+        note: Τέσσερα χρόνια αργότερα και διακόσια μέτρα πιο κάτω, στην νεκρόπολη του Μυρινούντος, ανακαλύφθηκαν από τον αρχαιολόγο Ευάγγελο Κακαβογιάννη δύο αγάλματα
+        source: wikipedia-el-kore-phrasikleia
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    method: transfer
+    place: athens
+    label: statue and inscribed base reunited; inventory 4889, room 11
+    sources:
+      - url: https://en.wikipedia.org/wiki/Phrasikleia_Kore
+        note: The statue is now in the National Archaeological Museum of Athens and is displayed in Room 11, catalog number 4889.
+        source: wikipedia-en-phrasikleia-kore
+        accessed: 2026-11-24
+      - url: http://odysseus.culture.gr/h/4/eh430.jsp?obj_id=5441
+        note: "The Sculpture Collection Frasikleia … Place of discovery: Attica, Attica, Merenda (ancient Myrrinous), Mesogeia … Inventory number: 4889 Exhibition hole: Exhibition hall 11"
+        source: odysseus-nam-4889-phrasikleia
+        accessed: 2026-11-24
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q1307686
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q1307686
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q1307686
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q1307686

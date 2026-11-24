@@ -1,0 +1,22 @@
+public_id: 124987
+title: 線刻千手観音等鏡像
+created: 11th century
+created_span: uncertain
+materials: [cupronickel]
+wikidata_id: Q107044824
+metadata:
+  sources: [Wikidata Q107044824 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/69/Suijinja_goshinkyo.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Suijinja_goshinkyo.JPG
+    license: CC BY-SA 3.0
+    credit: Morigen at Japanese Wikipedia
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107044824
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q107044824

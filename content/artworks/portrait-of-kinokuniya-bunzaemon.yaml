@@ -1,0 +1,81 @@
+public_id: 124762
+title_lang: en
+title: Portrait of Kinokuniya Bunzaemon
+creator: utagawa-toyokuni
+created: 1800/1825
+created_label: c. 19th century
+created_span: uncertain
+institution: cleveland-museum-of-art
+inventory_number: "1985.276"
+web_url: https://clevelandart.org/art/1985.276
+wikidata_id: Q60475611
+metadata:
+  sources: [Wikidata Q60475611 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/kinokuniya-bunzaemon
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q60475611
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Utagawa_Toyokuni_-_Portrait_of_Kinokuniya_Bunzaemon_-_1985.276_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Utagawa_Toyokuni_-_Portrait_of_Kinokuniya_Bunzaemon_-_1985.276_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Utagawa_Toyokuni_-_Portrait_of_Kinokuniya_Bunzaemon_-_1985.276_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Utagawa Toyokuni I
+provenance:
+  - owner: artist/kaburaki-kiyokata
+    label: 鏑木 清方
+    sources:
+      - url: https://clevelandart.org/art/1985.276
+        note: Kaburaki Kiyokata 鏑木 清方 [1878–1972]
+        source: cma-1985-276
+        accessed: 2026-11-24
+  - owner: person/mathias-komor-2
+    role: dealer
+    place: new-york-city
+    label: sold to Mr. and Mrs. Kelvin Smith
+    sources:
+      - url: https://clevelandart.org/art/1985.276
+        note: (Mathias Komor, New York, NY, sold to Mr. and Mrs. Kelvin Smith)
+        source: cma-1985-276
+        accessed: 2026-11-24
+  - owner: person/kelvin-smith
+    co_owners: [person/eleanor-armstrong-smith]
+    method: purchase
+    direct: true
+    place: cleveland
+    label: The Kelvin Smith Collection; given by Mrs. Kelvin Smith to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1985.276
+        note: The Kelvin Smith Collection, Cleveland, OH, given by Mrs. Kelvin [Eleanor Armstrong] Smith [1899–1998] to the Cleveland Museum of Art [?–1985]
+        source: cma-1985-276
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1985
+    method: gift
+    direct: true
+    place: cleveland
+    label: The Kelvin Smith Collection, given by Mrs. Kelvin Smith
+    sources:
+      - url: https://clevelandart.org/art/1985.276
+        note: The Cleveland Museum of Art, Cleveland, OH [1985–] — The Kelvin Smith Collection, given by Mrs. Kelvin Smith
+        source: cma-1985-276
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60475611
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60475611
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60475611
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60475611

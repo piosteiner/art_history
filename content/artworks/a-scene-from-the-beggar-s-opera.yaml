@@ -1,0 +1,125 @@
+public_id: 123087
+title_lang: en
+title: A Scene from The Beggar's Opera
+creator: william-hogarth
+created: 1728/1729
+created_label: c. 1720s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [51.1, 61.2]
+institution: national-gallery-of-art
+inventory_number: 1983.1.42
+provenance_status: a_clear
+provenance_status_note: "Capel Cure family, England: Francis Capel Cure by 1905, by descent to Nigel Capel Cure, owner by 1965."
+wikidata_id: Q20177829
+metadata:
+  sources: [Wikidata Q20177829 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/A_Scene_from_the_Beggar%27s_Opera.jpg/1280px-A_Scene_from_the_Beggar%27s_Opera.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:A_Scene_from_the_Beggar%27s_Opera.jpg
+    license: Public domain
+    credit: William Hogarth
+provenance:
+  - owner: person/edward-cheney
+    label: of Badger Hall; ownership after Lewis and Hofer 1965
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.61392.html
+        note: Edward Cheney.[1] — According to The Provenance Index … Edward Cheney [1803-1884] is listed as the inheritor of the Badger Hall estate from his brother, R. Henry Cheney [d. 1866]
+        source: nga-1983-1-42
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1885-04-29
+    method: auction
+    direct: true
+    place: london
+    label: possibly the Cheney sale, Sotheby's, 29 April 1885 et seq., 3rd day, no. 332, as 'Garden Scene with many figures, in colours'
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.61392.html
+        note: (Possibly--although, if so, inaccurately described as a "Garden Scene with many figures, in colours"--sale, Sotheby's, 29 April 1885 et seq., 3rd day, no. 332);
+        source: nga-1983-1-42
+        accessed: 2026-11-24
+  - owner: institution/p-d-colnaghi-co-ltd
+    role: dealer
+    method: auction
+    direct: true
+    place: london
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.61392.html
+        note: bought by (P. & D. Colnaghi & Co., London).
+        source: nga-1983-1-42
+        accessed: 2026-11-24
+  - owner: person/francis-capel-cure
+    acquired: 1905 or earlier
+    label: Badger Hall; the house came to him from Edward Cheney through Col. Alfred Capel Cure
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.61392.html
+        note: Francis Capel Cure [1854-1933], Badger Hall, Essex, by 1905; — Alfred inherited Badger Hall from Cheney; the house then passed by descent to Alfred's nephew, Francis Capel Cure.
+        source: nga-1983-1-42
+        accessed: 2026-11-24
+  - owner: person/nigel-capel-cure
+    acquired: 1965 or earlier
+    method: inheritance
+    direct: true
+    place: chipping-ongar
+    label: Blake Hall, Ongar, Essex
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.61392.html
+        note: by descent to his nephew, Nigel Capel Cure [b.1908], Blake Hall, Ongar, Essex, by 1965.[2]
+        source: nga-1983-1-42
+        accessed: 2026-11-24
+  - owner: institution/john-baskett-ltd
+    role: dealer
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.61392.html
+        note: (John Baskett, Ltd., London);
+        source: nga-1983-1-42
+        accessed: 2026-11-24
+  - owner: person/paul-mellon
+    acquired: 1975-06
+    method: purchase
+    direct: true
+    place: upperville
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.61392.html
+        note: purchased June 1975 by Paul Mellon, Upperville, Virginia;
+        source: nga-1983-1-42
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1983
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.61392.html
+        note: gift 1983 to NGA.
+        source: nga-1983-1-42
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177829
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177829
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177829
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177829
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177829
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177829

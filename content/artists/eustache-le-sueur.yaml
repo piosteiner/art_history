@@ -1,0 +1,18 @@
+public_id: 125241
+name: Eustache Le Sueur
+given_name: Eustache
+family_name: Le Sueur
+birth: 1616-11-19
+death: 1655-04-30
+wikidata_id: Q1378723
+metadata:
+  sources: [Wikidata Q1378723 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q1378723
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q1378723

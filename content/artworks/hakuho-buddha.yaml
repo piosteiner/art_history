@@ -1,0 +1,35 @@
+public_id: 124356
+title: Hakuhō Buddha
+names:
+  - text: Hakuhoh Buddha
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045230
+  - text: Shaka Nyorai Izō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045230
+  - text: Buddha sitting on a chair
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045230
+  - lang: fr
+    role: translation
+    text: Bouddha Hakuhō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045230
+  - lang: ja
+    role: translation
+    text: 深大寺釈迦如来像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045230
+wikidata_id: Q107045230
+metadata:
+  sources: [Wikidata Q107045230 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f0/Statue_of_sitting_Gautama_Buddha%2C_Jindai-ji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Statue_of_sitting_Gautama_Buddha,_Jindai-ji.jpg
+    license: Public domain
+    credit: Unknown author

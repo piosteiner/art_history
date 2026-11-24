@@ -1,0 +1,22 @@
+public_id: 126040
+name: Natá
+kind: settlement
+parent: panama
+country_code: PA
+location: [-80.52, 8.33]
+wikidata_id: Q2215891
+metadata:
+  sources: [Wikidata Q2215891 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2215891
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2215891
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2215891

@@ -1,0 +1,127 @@
+public_id: 125193
+title_lang: en
+title: Allegory of Venus and Cupid
+names:
+  - lang: it
+    role: translation
+    text: Riconciliazione di Venere e Cupido
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268873
+attribution_label: imitator of Titian
+created: 1595/1605
+materials: [oil paint, canvas]
+dimensions: [129.9, 155.3]
+institution: art-institute-of-chicago
+inventory_number: "1943.90"
+wikidata_id: Q20268873
+metadata:
+  sources: [Wikidata Q20268873 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Imitator_of_Titian_-_Allegory_of_Venus_and_Cupid%2C_c._1600.jpg/1280px-Imitator_of_Titian_-_Allegory_of_Venus_and_Cupid%2C_c._1600.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Imitator_of_Titian_-_Allegory_of_Venus_and_Cupid,_c._1600.jpg
+    license: Public domain
+    credit: Follower of Titian
+provenance:
+  - owner: person/francis-8th-earl-of-wemyss
+    acquired: 1835 or earlier
+    ended: 1853
+    label: Gosford House, Longniddry, East Lothian, Scotland; lent by him to London, 1835 (Graves, A Century of Loan Exhibitions, vol. 3, pp. 1318–19)
+    sources:
+      - url: https://www.artic.edu/artworks/46314
+        note: Francis, eighth Earl of Wemyss (died 1853), Gosford House, Longniddry, East Lothian, Scotland, by 1835 [lent by him to London, 1835; see A. Graves, A Century of Loan Exhibition, 1813–1912, New York [1968], vol. 3, pp. 1318–19];
+        source: aic-1943-90
+        accessed: 2026-11-24
+  - owner: person/hugo-richard-11th-earl-of-wemyss
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/46314
+        note: by descent to Hugo Richard, eleventh Earl of Wemyss;
+        source: aic-1943-90
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1927
+    method: purchase
+    direct: true
+    place: paris
+    label: according to Ay-Whang Hsia, Wildenstein, New York, to Lisa Dunn, 11 October 1991
+    sources:
+      - url: https://www.artic.edu/artworks/46314
+        note: sold by him to Wildenstein, Paris, 1927 [according to Ay-Whang Hsia, Wildenstein, New York, in conversation with Lisa Dunn, October 11, 1991];
+        source: aic-1943-90
+        accessed: 2026-11-24
+  - owner: person/heinrich-thyssen-bornemisza
+    acquired: 1930 or earlier
+    direct: true
+    label: owner named in a letter of 3 February 1937 from Felix Wildenstein to Daniel Catton Rich (Valentiner 1930)
+    sources:
+      - url: https://www.artic.edu/artworks/46314
+        note: Baron Heinrich Thyssen-Bornemisza, by 1930 [Valentiner 1930; the identity of the owner is given in a letter of February 3, 1937 from Felix Wildenstein to Daniel Catton Rich in curatorial file];
+        source: aic-1943-90
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1935 or earlier
+    direct: true
+    label: Paris and New York; Wildenstein stock books read as the purchaser (Thyssen) returning the painting in the mid-1930s
+    sources:
+      - url: https://www.artic.edu/artworks/46314
+        note: Wildenstein, Paris and New York, by 1935 [Ay-Whang Hsia interpreted the Wildenstein stock books as indicating that the purchaser of the painting – i.e. Thyssen, though no name is given–returned the paintings to Wildenstein in the mid 1930s;
+        source: aic-1943-90
+        accessed: 2026-11-24
+  - owner: person/charles-h-worcester
+    acquired: 1936
+    method: purchase
+    direct: true
+    place: chicago
+    label: correspondence Felix Wildenstein – Robert B. Harshe, 8 June 1936, and Worcester – Felix Wildenstein, 21 November 1936
+    sources:
+      - url: https://www.artic.edu/artworks/46314
+        note: sold by Wildenstein to Charles H. Worcester, Chicago, 1936 [according to correspondence from Felix Wildenstein to Robert B. Harshe of June 8, 1936, and from Charles H. Worcester to Felix Wildenstein of November 21, 1936, in curatorial file];
+        source: aic-1943-90
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    role: custodian
+    acquired: 1936
+    ended: 1943
+    direct: true
+    place: chicago
+    label: on loan from Charles H. Worcester
+    sources:
+      - url: https://www.artic.edu/artworks/46314
+        note: on loan to the Art Institute from 1936;
+        source: aic-1943-90
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1943
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/46314
+        note: given to the Art Institute, 1943.
+        source: aic-1943-90
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268873
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20268873
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20268873
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268873
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268873

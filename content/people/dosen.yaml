@@ -1,0 +1,11 @@
+public_id: 124379
+name: Dosen
+kind: person
+wikidata_id: Q11641808
+metadata:
+  sources: [Wikidata Q11641808 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11641808

@@ -1,0 +1,139 @@
+public_id: 122873
+title_lang: en
+title: Antiochus and Stratonice
+creator: jean-auguste-dominique-ingres
+created: c. 1838
+created_span: uncertain
+kind: oil painting
+medium: oil on linen
+dimensions: [48.1, 63.9]
+institution: cleveland-museum-of-art
+inventory_number: "1966.13"
+web_url: https://clevelandart.org/art/1966.13
+provenance_status: d_seized
+provenance_status_note: Seized by the Germans from Alphonse Kann, Paris, in 1941; recovered after the Second World War and sold by Kann's heirs.
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1966.13/1966.13_web.jpg
+    source_url: https://clevelandart.org/art/1966.13
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: artist/jean-auguste-dominique-ingres
+    role: estate
+    place: paris
+    label: Ingres estate
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Ingres estate sale, Paris, Drouot, 27 April 1867 (lot 6)
+        source: cma-1966-13
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1867-04-27
+    method: auction
+    direct: true
+    place: paris
+    label: Ingres estate sale, lot 6, "Stratonice, Répétition presque terminée du même sujet [Stratonice], 1834"
+    price:
+      amount: 4220
+      currency: FRF
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Ingres estate sale, Paris, Drouot, 27 April 1867 (lot 6), Stratonice, Répétition presque terminée du même sujet [Stratonice], 1834, ff 4,220.
+        source: cma-1966-13
+        accessed: 2026-11-24
+  - owner_label: Mme Ingres
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Mme Ingres.
+        source: cma-1966-13
+        accessed: 2026-11-24
+  - owner: person/louis-bazille
+    acquired_label: (1870)
+    place: montpellier
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Louis Bazille, Montpellier (1870).
+        source: cma-1966-13
+        accessed: 2026-11-24
+  - owner: person/pierre-leenhardt
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Pierre Leenhardt, Paris sale, Georges Petit, 4 May 1922 (lot 29, repr.)
+        source: cma-1966-13
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1922-05-04
+    method: auction
+    direct: true
+    place: paris
+    label: Pierre Leenhardt sale, lot 29, repr., as "Stratonice, ou la maladie d'Antiochus"
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Pierre Leenhardt, Paris sale, Georges Petit, 4 May 1922 (lot 29, repr.), Stratonice, ou la maladie d'Antiochus.
+        source: cma-1966-13
+        accessed: 2026-11-24
+  - owner: person/alphonse-kann
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Alphonse Kann, Paris.
+        source: cma-1966-13
+        accessed: 2026-11-24
+  - owner_label: the Germans (occupying forces)
+    role: possessor
+    acquired: 1941
+    method: confiscation
+    direct: true
+    label: seized by the Germans
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Seized by the Germans in 1941.
+        source: cma-1966-13
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: after 1945
+    label: recovered after the Second World War
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Recovered after WWII.
+        source: cma-1966-13
+        accessed: 2026-11-24
+  - owner_label: heirs of Alphonse Kann
+    label: recovered after the war; sold by Kann's heirs
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Recovered after WWII. Sold by Kann's heirs.
+        source: cma-1966-13
+        accessed: 2026-11-24
+  - owner: institution/galerie-charpentier
+    role: agent
+    acquired: 1950-05-12
+    method: auction
+    place: paris
+    label: anonymous sale, lot 30, repr., as "Stratonice, ou la maladie d'Antiochus"
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Anonymous sale, Paris, Galerie Charpentier, 12 May 1950 (lot 30, repr.), Stratonice, ou la maladie d'Antiochus.
+        source: cma-1966-13
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Jacques Seligmann, New York.
+        source: cma-1966-13
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1966-01-03
+    method: purchase
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1966.13
+        note: Purchased by the cma on 3 January 1966.
+        source: cma-1966-13
+        accessed: 2026-11-24

@@ -104,6 +104,15 @@ relationships:
       - accessed: 2026-11-12
         property: P135
         wikidata: Q160422
+  - type: married_to
+    to: person/nelly-van-doesburg
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q3114275
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q160422
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Theo_van_Doesburg_in_military_service.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Theo_van_Doesburg_in_military_service.JPG

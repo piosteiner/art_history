@@ -1,0 +1,22 @@
+public_id: 125711
+name: Kriens
+kind: settlement
+parent: canton-of-lucerne
+country_code: CH
+location: [8.28, 47.03444]
+wikidata_id: Q14571
+metadata:
+  sources: [Wikidata Q14571 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q14571
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q14571
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q14571

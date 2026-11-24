@@ -1,0 +1,22 @@
+public_id: 125971
+name: Village of Roslyn
+kind: settlement
+parent: new-york
+country_code: US
+location: [-73.65, 40.7997]
+wikidata_id: Q2039075
+metadata:
+  sources: [Wikidata Q2039075 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2039075
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2039075
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2039075

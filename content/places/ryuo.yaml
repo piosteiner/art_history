@@ -1,0 +1,47 @@
+public_id: 124072
+name: Ryuo
+names:
+  - lang: ja
+    role: original
+    text: 竜王町
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1087560
+  - lang: zh
+    role: translation
+    text: 龍王町
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1087560
+  - lang: ko
+    role: translation
+    text: 류오초
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1087560
+  - lang: ru
+    role: translation
+    text: Рюо
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1087560
+kind: settlement
+parent: shiga-prefecture
+country_code: JP
+location: [136.12447, 35.06081]
+wikidata_id: Q1087560
+metadata:
+  sources: [Wikidata Q1087560 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1087560
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1087560
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1087560

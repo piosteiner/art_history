@@ -1,0 +1,98 @@
+public_id: 122890
+title_lang: en
+title: Portrait of a Woman
+creator: gerard-ter-borch
+created: c. 1665
+created_span: uncertain
+kind: oil painting
+medium: oil on canvas
+dimensions: [63.3, 52.7]
+institution: cleveland-museum-of-art
+inventory_number: "1944.93"
+web_url: https://clevelandart.org/art/1944.93
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1944.93/1944.93_web.jpg
+    source_url: https://clevelandart.org/art/1944.93
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/jan-jacob-faesch
+    place: amsterdam
+    label: presumably; Jean-Jacques de Faesch; formerly confused with Cardinal Joseph Fesch
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1944.93
+        note: (presumably) Jan Jacob [Jean-Jacques de] Faesch [1755-1831], Amsterdam) — Previous provenance erroneously identified the seller with the renowned collector Cardinal Joseph Fesch (1763–1839). Jan Jacob Faesch was one of the richest Amsterdammers of his day.
+        source: cma-1944-93
+        accessed: 2026-11-24
+  - owner: person/jean-jacques-de-faesch
+    direct: true
+    place: amsterdam
+    label: seller named in the 1833 sale catalogue "Jean-Jacques de Jean-Jacques de Faesch", probably a similarly named son of Jan Jacob Faesch
+    sources:
+      - url: https://clevelandart.org/art/1944.93
+        note: The 1833 auction sale catalogue refers to the seller as “Jean-Jacques de Jean-Jacques de Faesch”—probably an indication that the seller was a similarly-named son of Faesch, who had died two years earlier
+        source: cma-1944-93
+        accessed: 2026-11-24
+  - owner_label: de Vries … Roos, Amsterdam (auctioneers)
+    role: agent
+    acquired: 1833-07-03
+    method: auction
+    direct: true
+    place: amsterdam
+    label: sale Jean-Jacques de Faesch, no. 56, "Een prachtig gekleed Dame, staande bij een tafel en stoel …", canvas 6p 3d x 5p 1d
+    sources:
+      - url: https://clevelandart.org/art/1944.93
+        note: (de Vries … Roos, Amsterdam, sale Jean-Jacques de Jean-Jacques de Faesch, July 3, 1833, no. 56 [“Een prachtig gekleed Dame, staande bij een tafel en stoel, beide met rood bekleedsel”, canvas, 6p 3d x 5p 1d; fl. 90, to Chaplin or Chaplen or Chapplaen])
+        source: cma-1944-93
+        accessed: 2026-11-24
+  - owner_label: Chaplin (or Chaplen, Chapplaen)
+    acquired: 1833-07-03
+    method: auction
+    direct: true
+    price:
+      amount: 90
+      currency: NLG
+    sources:
+      - url: https://clevelandart.org/art/1944.93
+        note: fl. 90, to Chaplin or Chaplen or Chapplaen
+        source: cma-1944-93
+        accessed: 2026-11-24
+  - owner_label: F. Austen, London
+    acquired: 1877 or earlier
+    place: london
+    label: recorded 1877; possibly [John] Francis Austen (1817–1893) of Capel Manor, Horsmonden, Kent — not in his Christie's sale of 18 March 1921
+    sources:
+      - url: https://clevelandart.org/art/1944.93
+        note: F. Austen, London [1877] — Possibly [John] Francis Austen (1817–1893) of Capel Manor, Horsmonden, Kent. No painting of this description was included in the sale of the late J. F. Austen, London (Christie’s), March 18, 1921.
+        source: cma-1944-93
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1944.93
+        note: "[M. Knoedler & Co., New York];"
+        source: cma-1944-93
+        accessed: 2026-11-24
+  - owner: person/elisabeth-severance-prentiss
+    acquired: 1923 or earlier
+    direct: true
+    place: cleveland
+    label: René Gimpel saw it in her home on 31 May 1923 (Diary of an Art Dealer, p. 227)
+    sources:
+      - url: https://clevelandart.org/art/1944.93
+        note: Elisabeth Severance Prentiss, Cleveland, 1923, by bequest to the Cleveland Museum of Art, 1944. [by 1923] — The art dealer René Gimpel mentions seeing the painting on a visit to the Prentiss home on May 31, 1923
+        source: cma-1944-93
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1944
+    method: bequest
+    direct: true
+    place: cleveland
+    label: The Elisabeth Severance Prentiss Collection, inv. 1944.93
+    sources:
+      - url: https://clevelandart.org/art/1944.93
+        note: by bequest to the Cleveland Museum of Art, 1944.
+        source: cma-1944-93
+        accessed: 2026-11-24

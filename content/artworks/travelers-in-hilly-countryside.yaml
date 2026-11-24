@@ -1,0 +1,171 @@
+public_id: 122880
+title_lang: en
+title: Travelers in Hilly Countryside
+creator: aelbert-cuyp
+created: c. 1650
+created_span: uncertain
+kind: oil painting
+medium: oil on wood
+dimensions: [48, 74.5]
+institution: cleveland-museum-of-art
+inventory_number: "1942.637"
+web_url: https://clevelandart.org/art/1942.637
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1942.637/1942.637_web.jpg
+    source_url: https://clevelandart.org/art/1942.637
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/johan-van-der-linden-van-slingeland
+    place: dordrecht
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: Johan van der Linden van Slingeland, Dordrecht (sale:Yver, Dordrecht, August 22, 1785, no. 87);
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner_label: Yver (auctioneer)
+    role: agent
+    acquired: 1785-08-22
+    method: auction
+    direct: true
+    place: dordrecht
+    label: van der Linden van Slingeland sale, no. 87
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: (sale:Yver, Dordrecht, August 22, 1785, no. 87);
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: person/sir-simon-clarke
+    place: london
+    label: Sir Simon Clarke
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: "Sir Simon Clarke, London (sale: Christie's, London, May 14, 1802);"
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1802-05-14
+    method: auction
+    direct: true
+    place: london
+    label: Sir Simon Clarke sale
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: "(sale: Christie's, London, May 14, 1802);"
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: person/george-hibbert
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: "George Hibbert, London (sale: Christie's, London, June 13,1829, no. 66);"
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1829-06-13
+    method: auction
+    direct: true
+    place: london
+    label: George Hibbert sale, no. 66
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: "(sale: Christie's, London, June 13,1829, no. 66);"
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: person/richard-foster
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: "Richard Foster, London (sale: Christie's, November 14, 1835);"
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1835-11-14
+    method: auction
+    direct: true
+    place: london
+    label: Richard Foster sale
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: "(sale: Christie's, November 14, 1835);"
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: person/henry-bevan
+    acquired_label: "1842"
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: Henry Bevan, London, 1842;
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: person/john-dean-paul
+    direct: true
+    label: Sir John Dean Paul, grandson of Henry Bevan
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: Sir John Dean Paul (grandson of Henry Bevan);
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: person/a-wertheimer
+    role: dealer
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: "[A. Wertheimer, London];"
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: person/alfred-charles-de-rothschild
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: Alfred de Rothschild, London;
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: institution/galerie-charles-brunner
+    role: dealer
+    acquired: 1912
+    direct: true
+    place: paris
+    label: 1912, no. 7
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: "[Galerie Charles Brunner, Paris, 1912, no. 7];"
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: person/john-l-severance
+    acquired: 1923
+    ended: 1936
+    place: cleveland
+    label: held in trust by his estate after his death
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: John L. Severance, Cleveland, 1923, upon his death, held in trust by the estate
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: person/john-l-severance
+    role: estate
+    acquired: 1936
+    ended: 1942
+    method: inheritance
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: Estate of John L. Severance, 1936, by bequest to the Cleveland Museum of Art, 1942.
+        source: cma-1942-637
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1942
+    method: bequest
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1942.637
+        note: Estate of John L. Severance, 1936, by bequest to the Cleveland Museum of Art, 1942.
+        source: cma-1942-637
+        accessed: 2026-11-24

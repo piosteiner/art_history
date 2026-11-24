@@ -1,0 +1,35 @@
+public_id: 124339
+title: Agyō
+names:
+  - lang: fr
+    role: translation
+    text: Kongo Rikishi (Vajrapani), Agyo (bouche ouverte)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q61726930
+  - lang: ja
+    role: translation
+    text: 木造金剛力士立像（阿形）
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q61726930
+created: 13th century
+created_span: uncertain
+materials: [wood, paint, rock crystal]
+wikidata_id: Q61726930
+metadata:
+  sources: [Wikidata Q61726930 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Kongorikishi_Kofukuji_1.jpg/1280px-Kongorikishi_Kofukuji_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kongorikishi_Kofukuji_1.jpg
+    license: Public domain
+    credit: "Statue: Jōkei I; Photo: Nara National Museum 奈良帝室博物館 (Showa 8 - 1933)"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q61726930
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q61726930

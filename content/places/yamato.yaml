@@ -1,0 +1,41 @@
+public_id: 124477
+name: Yamato
+names:
+  - lang: ja
+    role: original
+    text: 山都町
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1184757
+  - lang: ko
+    role: translation
+    text: 야마토초
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1184757
+  - lang: ru
+    role: translation
+    text: Ямато
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1184757
+kind: settlement
+parent: japan
+country_code: JP
+location: [130.98594, 32.68578]
+wikidata_id: Q1184757
+metadata:
+  sources: [Wikidata Q1184757 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1184757
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1184757
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1184757

@@ -1,0 +1,18 @@
+public_id: 122844
+name: Jean-Baptiste-Siméon Chardin
+given_name: Jean-Baptiste-Siméon
+family_name: Chardin
+birth: 1699-11-02
+death: 1779-12-06
+wikidata_id: Q207447
+metadata:
+  sources: [Wikidata Q207447 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q207447
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q207447

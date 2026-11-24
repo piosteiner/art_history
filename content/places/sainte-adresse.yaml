@@ -1,0 +1,16 @@
+public_id: 125199
+name: Sainte-Adresse
+kind: settlement
+location: [0.08333, 49.50639]
+wikidata_id: Q604222
+metadata:
+  sources: [Wikidata Q604222 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q604222
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q604222

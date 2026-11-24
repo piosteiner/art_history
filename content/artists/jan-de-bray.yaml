@@ -1,0 +1,18 @@
+public_id: 123082
+name: Jan de Bray
+given_name: Jan
+family_name: de Bray
+birth: 1627
+death: 1697-12
+wikidata_id: Q541789
+metadata:
+  sources: [Wikidata Q541789 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q541789
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q541789

@@ -1,0 +1,11 @@
+public_id: 122858
+name: Venantius
+kind: person
+wikidata_id: Q97764245
+metadata:
+  sources: [Wikidata Q97764245 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q97764245

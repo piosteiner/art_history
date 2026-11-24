@@ -1,0 +1,127 @@
+public_id: 122996
+title_lang: en
+title: A Vestal
+names:
+  - lang: de
+    role: translation
+    text: Vestalin
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q63809335
+creator: claude-michel
+created: 1770
+materials: [marble]
+dimensions: [95.5, 42.1, 35]
+institution: national-gallery-of-art
+inventory_number: 1952.5.99
+web_url: https://purl.org/nga/collection/artobject/41714
+wikidata_id: Q63809335
+metadata:
+  sources: [Wikidata Q63809335 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Clodion%2C_A_Vestal%2C_1770%2C_NGA_41714.jpg/1280px-Clodion%2C_A_Vestal%2C_1770%2C_NGA_41714.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Clodion,_A_Vestal,_1770,_NGA_41714.jpg
+    license: CC0
+    credit: Claude Michel
+provenance:
+  - owner: person/catherine-ii-of-russia
+    place: saint-petersburg
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41714.html
+        note: Probably Catherine II of Russia [1729-1796], Saint Petersburg;
+        source: nga-1952-5-99
+        accessed: 2026-11-24
+  - owner: person/grigory-potemkin
+    direct: true
+    label: Prince Gregory Alexandrovich Potemkin
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41714.html
+        note: Prince Gregory Alexandrovich Potemkin;
+        source: nga-1952-5-99
+        accessed: 2026-11-24
+  - owner: person/darja-nikolajewna-lopouchina
+    direct: true
+    place: moscow
+    label: Potemkin's grand niece
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41714.html
+        note: his grand niece, Darja Nikolajewna Lopouchina, Moscow;
+        source: nga-1952-5-99
+        accessed: 2026-11-24
+  - owner: person/w-n-isakoff
+    acquired: 1904 or earlier
+    ended_label: probably until 1923
+    direct: true
+    place: kyiv
+    label: Kiev; published by Prachoff 1904; probably the marble in an unnamed St. Petersburg private collection mentioned by Bange 1923
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41714.html
+        note: W.N. Isakoff, Kiev, before 1904 until probably 1923.[1]
+        source: nga-1952-5-99
+        accessed: 2026-11-24
+  - owner: person/david-david-weill
+    acquired: 1925 or earlier
+    place: neuilly-sur-seine
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41714.html
+        note: David David-Weill [1871-1952], Neuilly-sur-Seine, before 1925;[2]
+        source: nga-1952-5-99
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1937
+    ended_label: until at least 1940
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: sale of the David-Weill collection (Art News, 27 February 1937); exhibited by Wildenstein in 1940 as formerly David-Weill
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41714.html
+        note: 'sold 1937 to (Wildenstein & Co., New York), until at least 1940.[3] — [3] "Sale of the David-Weill Collection," _Art News_ 35 (27 February 1937): 12. The sculpture was exhibited by Wildenstein in 1940 as formerly part of the David-Weill collection.'
+        source: nga-1952-5-99
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1949
+    method: purchase
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41714.html
+        note: purchased 1949 by the Samuel H. Kress Foundation, New York;
+        source: nga-1952-5-99
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41714.html
+        note: gift 1952 to NGA.
+        source: nga-1952-5-99
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q63809335
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q63809335
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63809335
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q63809335
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63809335
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63809335

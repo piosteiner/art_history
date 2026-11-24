@@ -38,6 +38,16 @@ description_md: "King of Joseon. Korean sources date the years of his reign by h
 wikidata_id: Q459964
 metadata:
   sources: [Wikidata Q459964 (retrieved 2026-11-02)]
+relationships:
+  - type: child_of
+    to: person/jeongjo-of-joseon
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q26530
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q459964
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/10/%EC%88%9C%EC%A1%B0%EC%96%B4%EC%A7%84.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%EC%88%9C%EC%A1%B0%EC%96%B4%EC%A7%84.jpg

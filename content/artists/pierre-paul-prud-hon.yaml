@@ -1,0 +1,18 @@
+public_id: 123074
+name: Pierre-Paul Prud'hon
+given_name: Pierre-Paul
+family_name: Prud'hon
+birth: 1758-04-04
+death: 1823-02-16
+wikidata_id: Q469056
+metadata:
+  sources: [Wikidata Q469056 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q469056
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q469056

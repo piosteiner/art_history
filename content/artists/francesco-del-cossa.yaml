@@ -1,0 +1,18 @@
+public_id: 123028
+name: Francesco del Cossa
+given_name: Francesco
+family_name: del Cossa
+birth: 1436
+death: c. 1477
+wikidata_id: Q454892
+metadata:
+  sources: [Wikidata Q454892 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q454892
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q454892

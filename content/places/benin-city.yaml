@@ -1,0 +1,65 @@
+public_id: 125720
+name: Benin City
+names:
+  - lang: ja
+    role: translation
+    text: ベニンシティ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q320704
+  - lang: zh
+    role: translation
+    text: 贝宁城
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q320704
+  - lang: ko
+    role: translation
+    text: 베닌시티
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q320704
+  - lang: de
+    role: translation
+    text: Benin-Stadt
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q320704
+  - lang: es
+    role: translation
+    text: Ciudad de Benín
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q320704
+  - lang: ru
+    role: translation
+    text: Бенин-Сити
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q320704
+  - lang: pt
+    role: translation
+    text: Cidade do Benim
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q320704
+kind: settlement
+parent: tokyo
+country_code: NG
+location: [5.6145, 6.3176]
+wikidata_id: Q320704
+metadata:
+  sources: [Wikidata Q320704 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q320704
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q320704
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q320704

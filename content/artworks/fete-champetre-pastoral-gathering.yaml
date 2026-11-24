@@ -1,0 +1,209 @@
+public_id: 125117
+title_lang: en
+title: Fête champêtre (Pastoral Gathering)
+creator: jean-antoine-watteau
+created: 1718
+materials: [oil paint, panel]
+dimensions: [48.6, 64.5]
+institution: art-institute-of-chicago
+inventory_number: "1954.295"
+wikidata_id: Q20274683
+metadata:
+  sources: [Wikidata Q20274683 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Jean_Antoine_Watteau_-_F%C3%AAte_champ%C3%AAtre_%28Pastoral_Gathering%29_-_1954.295_-_Art_Institute_of_Chicago.jpg/1280px-Jean_Antoine_Watteau_-_F%C3%AAte_champ%C3%AAtre_%28Pastoral_Gathering%29_-_1954.295_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean_Antoine_Watteau_-_F%C3%AAte_champ%C3%AAtre_(Pastoral_Gathering)_-_1954.295_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Jean-Antoine Watteau
+provenance:
+  - owner: person/jean-baptiste-pierre-lebrun
+    acquired: 1773 or earlier
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: Probably Jean Baptiste Pierre Le Brun, Paris, by 1773;
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner: person/pierre-remy
+    role: agent
+    acquired: 1773-12
+    method: auction
+    direct: true
+    place: paris
+    label: Le Brun sale, 20, 22 and 23 December 1773, no. 117, as Watteau; catalogue annotated with sketches by Gabriel de Saint-Aubin
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: probably his sale, Pierre Rémy, Paris, December 20, 22 and 23, 1773, no. 117, as Watteau, … [sale cat. in the Bibliothèque national de France, annotated by Gabriel de Saint-Aubin (1724–1780) with his illustrations of the painting …]
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner: person/daniel-saint
+    acquired: 1845 or earlier
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: probably Daniel Saint, Paris, by 1845;
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner_label: Hôtel des Ventes, Paris
+    role: agent
+    acquired: 1846-05-04
+    method: auction
+    direct: true
+    place: paris
+    label: no. 57, as Watteau
+    price:
+      amount: 4900
+      currency: FRF
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: sold Hôtel des Ventes, Paris, May 4, 1846, no. 57, as Watteau, for Fr 4900, probably to Richard Seymour Conway, fourth marquess of Hertford [Goncourt 1875].
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner: person/richard-seymour-conway-4th-marquess-of-hertford
+    acquired: 1846-05-04
+    method: auction
+    direct: true
+    place: paris
+    label: probably the buyer in 1846; in his collection per Waagen 1857
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: probably to Richard Seymour Conway, fourth marquess of Hertford [Goncourt 1875].  Richard Seymour Conway, fourth marquess of Hertford (d.1870), Paris [Waagen1857, pp. 79, 84];
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner: person/richard-wallace
+    acquired: 1870
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: by descent to Sir Richard Wallace, Bt. (d.1890);
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner_label: Lady Wallace
+    acquired: 1890
+    ended: 1897
+    method: inheritance
+    direct: true
+    label: widow of Sir Richard Wallace
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: at his death to his widow, Lady Wallace (d. 1897);
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner: person/john-murray-scott-2
+    acquired: 1897
+    method: bequest
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: at her death to Sir John E. A. Murray Scott, Bt. (died1912);
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1913-06-27
+    method: auction
+    direct: true
+    place: london
+    label: no. 134, as Pater; sold for 2,415 guineas
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: sold at Christie’s, London, June 27, 1913, no. 134 (ill.), as Pater, to Agnew, London, for 2415 gns. [annotated sales catalogue, Christie’s];
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1913-06-27
+    method: auction
+    direct: true
+    place: london
+    label: bought for 2,415 guineas
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: to Agnew, London, for 2415 gns. [annotated sales catalogue, Christie’s];
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner: person/walter-s-m-burns
+    acquired: 1919
+    method: purchase
+    direct: true
+    place: hatfield
+    label: North Mymms Park, Hatfield; as Pater
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: sold, as Pater, to Walter S. M. Burns, Esq. (d. 1930), North Myms Park, Hatfield, 1919 [letter of April 7, 1981 from William Joll, Agnew’s, in curatorial file];
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1930-06-20
+    method: auction
+    direct: true
+    place: london
+    label: no. 106, as Lancret; sold for 3,045 guineas
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: sold Christie’s, London, June 20, 1930, no. 106 (ill.), as Lancret, to Frank T. Sabin, London, for 3045 gns. [annotated catalogue in Ryerson Library, Art Institute];
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner: person/frank-t-sabin
+    role: dealer
+    acquired: 1930-06-20
+    method: auction
+    direct: true
+    place: london
+    label: bought for 3,045 guineas
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: to Frank T. Sabin, London, for 3045 gns.
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner: person/max-epstein
+    co_owners: [person/leola-epstein]
+    acquired: 1934
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: sold to Max and Leola Epstein, Chicago, 1934 [Art Institute registrar’s receipt];
+        source: aic-1954-295
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1954
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/107938
+        note: given to the Art Institute, 1954.
+        source: aic-1954-295
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20274683
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20274683
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20274683
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20274683
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20274683
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20274683

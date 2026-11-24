@@ -33,6 +33,15 @@ relationships:
       - accessed: 2026-11-12
         property: P20
         wikidata: Q3659130
+  - type: child_of
+    to: artist/arnold-bocklin
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q123071
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q3659130
 identifiers:
   dome: "12729"
   gnd: "116217103"

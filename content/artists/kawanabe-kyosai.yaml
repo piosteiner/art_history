@@ -1,0 +1,153 @@
+public_id: 122583
+name: Kawanabe Kyōsai
+names:
+  - lang: ja
+    role: original
+    text: 河鍋暁斎
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Nyokū Nyūdō
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Seisei Kyōsai
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Tōka Kawanabe
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Kawanabé Kiosa
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Shuransai Raisui
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Dōiku
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Dōiku Kawanabe
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Shōjō Kyōsai
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Kyōsai Kawanabe
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Suiraibō
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Shūzaburō Kawanabe
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Shūma
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Kawanabe Gyōsai
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Zekū Nyūdō
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Gyōsai Kawanabe
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Tōiku Noriyuki
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Tōiku Noriyuki Kawanabe
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Kawanabe Kiosa
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Kawanabe Kyosai
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Kawanabe Kyousai
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Kyôsai Kawanabe
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: (Nyokū) Gyōsai
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Shōjō/ Shōjōan
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - text: Bankoku
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - lang: ko
+    role: translation
+    text: 가와나베 교사이
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+  - lang: ru
+    role: translation
+    text: Каванабэ Кёсай
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2838030
+birth: 1831-05-18
+death: 1889-04-26
+wikidata_id: Q2838030
+metadata:
+  sources: [Wikidata Q2838030 (retrieved 2026-11-23)]
+relationships:
+  - type: participated_in
+    to: event/kawanabe-kyosai-arrest-1870
+    label: arrested
+    sources:
+      - source: shimizu-sekai-daihyakka-kawanabe-kyosai
+        locator: s.v. 河鍋暁斎
+        accessed: 2026-11-23
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6d/Kawanabe_Kyosai_photo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kawanabe_Kyosai_photo.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 17165790g
+  gnd: "118725688"
+  idref: 13362949X
+  lc: n82024831
+  nlk: KAC201007488
+  rkd: "343292"
+  ulan: "500092866"
+  viaf: "50020258"
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q2838030
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q2838030

@@ -1,0 +1,47 @@
+public_id: 125792
+name: Delphi
+names:
+  - lang: fr
+    role: translation
+    text: Delphes
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q954068
+  - lang: de
+    role: translation
+    text: Delfi
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q954068
+  - lang: es
+    role: translation
+    text: Delfos
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q954068
+  - lang: ru
+    role: translation
+    text: Дельфы
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q954068
+kind: settlement
+parent: greece
+country_code: GR
+location: [22.4923, 38.4807]
+wikidata_id: Q954068
+metadata:
+  sources: [Wikidata Q954068 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q954068
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q954068
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q954068

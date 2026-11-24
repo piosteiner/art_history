@@ -1,0 +1,18 @@
+public_id: 122817
+name: Pietro Perugino
+given_name: Pietro
+family_name: Perugino
+birth: 1448
+death: 1523
+wikidata_id: Q5827
+metadata:
+  sources: [Wikidata Q5827 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q5827
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q5827

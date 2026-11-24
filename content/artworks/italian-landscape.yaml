@@ -1,0 +1,87 @@
+public_id: 124689
+title_lang: en
+title: Italian Landscape
+creator: claude-lorrain
+created: c. 1630
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [97.5, 134.2]
+institution: cleveland-museum-of-art
+inventory_number: "1946.73"
+web_url: https://clevelandart.org/art/1946.73
+wikidata_id: Q60515350
+metadata:
+  sources: [Wikidata Q60515350 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Claude_Lorrain_-_Italian_Landscape_-_1946.73_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Claude_Lorrain_-_Italian_Landscape_-_1946.73_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Lorrain_-_Italian_Landscape_-_1946.73_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Claude Lorrain
+provenance:
+  - owner_label: Earls of Effingham, England (last owner H.A. Gordon, fourth Earl of Effingham)
+    sources:
+      - url: https://clevelandart.org/art/1946.73
+        note: Earls of Effingham, England (last owner, H.A. Gordon, fourth Earl of Effingham);
+        source: cma-1946-73
+        accessed: 2026-11-24
+  - owner_label: Private collection, England
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1946.73
+        note: private collection, England;
+        source: cma-1946-73
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1946.73
+        note: "[Thomas Agnew, London];"
+        source: cma-1946-73
+        accessed: 2026-11-24
+  - owner: institution/arnold-seligmann-rey-co
+    role: dealer
+    ended: 1946
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1946.73
+        note: "[Arnold Seligmann, Rey & Co., New York], sold to the Cleveland Museum of Art, 1946."
+        source: cma-1946-73
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1946
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1946.73
+        note: sold to the Cleveland Museum of Art, 1946.
+        source: cma-1946-73
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60515350
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60515350
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60515350
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60515350
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60515350
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60515350

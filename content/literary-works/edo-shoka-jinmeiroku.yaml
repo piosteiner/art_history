@@ -1,0 +1,37 @@
+public_id: 122768
+name_lang: ja-Latn
+name: Edo shoka jinmeiroku
+names:
+  - lang: ja
+    role: original
+    text: 江戸當時諸家人名録
+  - lang: ja
+    role: alternative
+    text: 江戸現在廣益諸家人名録
+    note: title from 1836
+  - lang: ja
+    role: alternative
+    text: 諸家人名録
+kind: jinmeiroku
+written: 1815/1861
+description_md: "The *Shoka jinmeiroku* (諸家人名録, ‘Register of masters’) was the directory of the scholars, poets, calligraphers, painters and other notables living in Edo, the counterpart of Kyoto’s *[[literature/heian-jinbutsu-shi|Heian jinbutsu shi]]*. Its first series, *Edo tōji shoka jinmeiroku* (江戸當時諸家人名録), was compiled by Senmentei and issued in the ninth month of 1815 by the fan dealer Ōgiya Denshirō and the bookseller Nishimura Sōshichi [[source/senmentei-1815-edo-toji-shoka-jinmeiroku|colophon]]; a second series followed in the twelfth month of 1818 [[source/senmentei-1818-edo-toji-shoka-jinmeiroku-nihen|colophon]]. Its notes say it was made for people from other provinces who came to Edo to study, so that they could present their cards to the masters, and that the order of names follows when the compiler heard of them and ranks no one [[source/senmentei-1815-edo-toji-shoka-jinmeiroku|凡例]]. Both volumes were in use for nearly twenty years; after a third series was lost in the fire of 1829, the work was revised as the *Edo genzai kōeki shoka jinmeiroku* (江戸現在廣益諸家人名録) of 1836 [[source/nishimura-1836-edo-genzai-koeki-shoka-jinmeiroku|凡例, frames 8–9]]. That edition lists 564 people in *iroha* order with field, address and origin, and adds the most famous of those who had died since 1801 [[source/tokyo-metropolitan-library-2006-koeki-shoka-jinmeiroku|text]] [[source/nishimura-1836-edo-genzai-koeki-shoka-jinmeiroku|frame 53]]. Many entries also name fixed ‘meeting days’ of the month [[source/nishimura-1836-edo-genzai-koeki-shoka-jinmeiroku|frames 14, 21, 39]]. Its preface is by the Confucian Tōjō Kindai, an active host of *[[term/shogakai|shogakai]]*, who also prefaced the second series of 1842 [[source/nishimura-1836-edo-genzai-koeki-shoka-jinmeiroku|preface]] [[source/nishimura-1842-koeki-shoka-jinmeiroku-nihen|preface]]. The notes of 1842 add that a visitor could use the book to ask the masters for brushwork, and complain that people who had asked to be listed objected to being included [[source/nishimura-1842-koeki-shoka-jinmeiroku-nihen|凡例]]. Library catalogues disagree about the compiler of the *Kōeki* editions: the National Diet Library names Nishimura Sōshichi, other records Senmentei [[source/ndl-search-2026-edo-shoka-jinmeiroku|records]]. A third series appeared in 1861 [[source/ndl-search-2026-edo-shoka-jinmeiroku|records]]."
+metadata:
+  editions: [初編 1815, 二編 1818, 江戸現在廣益諸家人名録 1836, 二編 1842, 三編 1861]
+  compilers: Senmentei (1815, 1818); Nishimura Sōshichi / Senmentei (Kōeki editions — sources differ)
+relationships:
+  - type: written_by
+    to: person/senmentei-denshiro
+    label: compiler (1815, 1818)
+    sources:
+      - source: senmentei-1815-edo-toji-shoka-jinmeiroku
+        locator: colophon
+        accessed: 2026-11-23
+sources:
+  kind:
+    - source: tokyo-metropolitan-library-2006-koeki-shoka-jinmeiroku
+      locator: text
+      accessed: 2026-11-23
+  written:
+    - source: senmentei-1815-edo-toji-shoka-jinmeiroku
+      locator: colophon
+      accessed: 2026-11-23

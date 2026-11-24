@@ -19,6 +19,16 @@ death: 1950-02-11
 wikidata_id: Q96090154
 metadata:
   sources: [Wikidata Q96090154 (retrieved 2026-10-20)]
+relationships:
+  - type: child_of
+    to: person/karl-wittgenstein
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q563305
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q96090154
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/6/6b/Hermine_Wittgenstein.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Hermine_Wittgenstein.jpg

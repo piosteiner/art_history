@@ -1,0 +1,98 @@
+public_id: 122845
+title_lang: en
+title: Still Life with Game
+creator: jean-baptiste-simeon-chardin
+created: c. 1750
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [49.6, 59.4]
+institution: national-gallery-of-art
+inventory_number: 1952.5.36
+web_url: https://www.nga.gov/collection/art-object-page.41648.html
+provenance_status: a_clear
+provenance_status_note: Bought from David David-Weill with his collection by Wildenstein in February/March 1937 and sent to their New York branch, where it was exhibited in 1937; sold to the Kress Foundation in 1946.
+wikidata_id: Q20178038
+metadata:
+  sources: [Wikidata Q20178038 (retrieved 2026-11-23)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/99/Jean_Sim%C3%A9on_Chardin_-_Still-Life_with_Pheasant_-_WGA04771.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean_Sim%C3%A9on_Chardin_-_Still-Life_with_Pheasant_-_WGA04771.jpg
+    license: Public domain
+    credit: Jean-Baptiste-Siméon Chardin
+provenance:
+  - owner: institution/wildenstein-co
+    role: dealer
+    place: paris
+    label: Eisler 1977 says David-Weill acquired the painting from Wildenstein; no records in Wildenstein's Paris office
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41648.html
+        note: "Possibly (Wildenstein & Co., Paris, New York, and London);[1] — [1] Eisler 1977: 314 indicates that David-Weill acquired the painting from Wildenstein, whose Paris office no longer has records to confirm this transaction"
+        source: nga-1952-5-36
+        accessed: 2026-11-24
+  - owner: person/david-david-weill
+    acquired: 1925 or earlier
+    place: neuilly-sur-seine
+    label: seen in the background of Vuillard's portrait of David-Weill (1925); catalogued by Georges Henriot, 1926
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41648.html
+        note: David David-Weill [1871-1952], Neuilly-sur-Seine, France, by 1925;[2] — [2] The painting appears in the background of a portrait of David-Weill painted by Edouard Vuillard in 1925, and was catalogued in the David-Weill collection by Georges Henriot in 1926.
+        source: nga-1952-5-36
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1937
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: bought February/March 1937 with the David-Weill collection; sent via Wildenstein's London branch to New York and exhibited there in 1937
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41648.html
+        note: purchased February/March 1937 with the David-Weill collection by (Wildenstein & Co., Paris, New York, and London);[3] — [3] … Some of the collection was consigned to Wildenstein's in London, who in turn sent some of the paintings, including this Chardin, to their New York branch where they were exhibited in 1937.
+        source: nga-1952-5-36
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1946
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41648.html
+        note: sold 1946 to the Samuel H. Kress Foundation, New York;[4]
+        source: nga-1952-5-36
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1952
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.41648.html
+        note: gift 1952 to NGA.
+        source: nga-1952-5-36
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20178038
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20178038
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20178038
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20178038
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20178038
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20178038

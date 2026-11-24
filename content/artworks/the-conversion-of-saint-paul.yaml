@@ -1,0 +1,99 @@
+public_id: 123066
+title_lang: en
+title: The Conversion of Saint Paul
+names:
+  - lang: fr
+    role: translation
+    text: La Conversation de saint Paul
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176379
+creator: jacopo-tintoretto
+created: c. 1545
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [152, 236]
+institution: national-gallery-of-art
+inventory_number: 1961.9.43
+wikidata_id: Q20176379
+metadata:
+  sources: [Wikidata Q20176379 (retrieved 2026-11-23)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d5/Jacopo_Tintoretto_-_The_Conversion_of_Saul_-_WGA22425.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacopo_Tintoretto_-_The_Conversion_of_Saul_-_WGA22425.jpg
+    license: Public domain
+    credit: Jacopo Tintoretto
+provenance:
+  - owner_label: Palazzo Pisani a Santo Stefano, Venice
+    ended: c. 1809
+    place: venice
+    label: "proposed by Lino Moretti: a Conversion of Saint Paul attributed to Schiavone in Pietro Edwards's 1809 inventory; the paintings were then sold and dispersed"
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46142.html
+        note: Probably Palazzo Pisani a Santo Stefano until c. 1809.[1] — [1] As proposed by Lino Moretti … The 1809 inventory by Pietro Edwards of the painting gallery of the Palazzo Pisani a Santo Stefano lists a _Conversion of Saint Paul_ attributed to Andrea Schiavone … The paintings were sold and dispersed
+        source: nga-1961-9-43
+        accessed: 2026-11-24
+  - owner: person/george-william-fox-kinnaird
+    acquired: 1857 or earlier
+    label: 9th Baron Kinnaird, Rossie Priory, Perthshire; seen by Waagen (1857)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46142.html
+        note: George William Fox, 9th baron Kinnaird [1807-1878], Rossie Priory, Perthshire, Scotland, by 1857.[2]
+        source: nga-1961-9-43
+        accessed: 2026-11-24
+  - owner: person/alessandro-contini-bonacossi
+    acquired: 1939 or earlier
+    place: florence
+    label: published by Suida in Pantheon 1939 as in the Contini Bonacossi collection; 'from my personal collection in Florence'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46142.html
+        note: Count Alessandro Contini Bonacossi [1878-1955], Florence, by 1939;[3]
+        source: nga-1961-9-43
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1954-06
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: offer of 7 June 1954 for sixteen paintings, accepted 30 June 1954; final payment early 1957
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46142.html
+        note: sold June 1954 to the Samuel H. Kress Foundation, New York;[4] — [4] On 7 June 1954 the Kress Foundation made an offer to Contini Bonacossi for sixteen paintings, including the NGA painting. … The Count accepted the offer on 30 June 1954; the final payment for the purchase was ultimately made in early 1957
+        source: nga-1961-9-43
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1961
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46142.html
+        note: gift 1961 to NGA.
+        source: nga-1961-9-43
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20176379
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20176379
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20176379
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20176379
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20176379
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20176379

@@ -1,0 +1,176 @@
+public_id: 123021
+title_lang: en
+title: The Suitor's Visit
+names:
+  - lang: nl
+    role: translation
+    text: Man die een interieur binnentreedt en een vrouw die hem verwelkomt en andere figuren
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177479
+  - lang: fr
+    role: translation
+    text: La Visite d’un prétendant
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177479
+  - lang: de
+    role: translation
+    text: Der Besuch des Verehrers
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177479
+  - lang: ja
+    role: translation
+    text: 求婚者の訪問 (テル・ボルフ)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177479
+creator: gerard-ter-borch
+created: c. 1658
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [80, 75]
+institution: national-gallery-of-art
+inventory_number: 1937.1.58
+provenance_status: a_clear
+provenance_status_note: Bought by Andrew W. Mellon in July 1922; deeded 28 December 1934 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q20177479
+metadata:
+  sources: [Wikidata Q20177479 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Gerard_ter_Borch_the_Younger_-_The_Suitor%27s_Visit_-_Google_Art_Project.jpg/1280px-Gerard_ter_Borch_the_Younger_-_The_Suitor%27s_Visit_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gerard_ter_Borch_the_Younger_-_The_Suitor%27s_Visit_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Gerard ter Borch
+provenance:
+  - owner: person/charles-de-morny
+    place: paris
+    label: duc de Morny
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.65.html
+        note: Charles-Auguste-Louis-Joseph, duc de Morny [1811-1865], Paris;
+        source: nga-1937-1-58
+        accessed: 2026-11-24
+  - owner_label: estate sale of the duc de Morny
+    role: agent
+    acquired_label: 31 May – 12 June 1865
+    method: auction
+    direct: true
+    place: paris
+    label: estate sale at the Palais de la Présidence du Corps Législatif, Paris, 31 May–12 June 1865, no. 82
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.65.html
+        note: (his estate sale, at the Palais de la Présidence du Corps Législatif, Paris, 31 May-12 June 1865, no. 82);
+        source: nga-1937-1-58
+        accessed: 2026-11-24
+  - owner: person/jose-de-salamanca-y-mayol
+    acquired: 1865
+    method: auction
+    direct: true
+    place: madrid
+    label: Marqués de Salamanca
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.65.html
+        note: Josè Salamanca y Mayol [Marquès de Salamanca, d. 1866], Madrid;
+        source: nga-1937-1-58
+        accessed: 2026-11-24
+  - owner: person/charles-pillet
+    role: agent
+    acquired_label: 3–6 June 1867
+    method: auction
+    direct: true
+    place: paris
+    label: sale at Salamanca's residence, Paris, 3–6 June 1867, no. 126
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.65.html
+        note: (sale, at his residence by Charles Pillet, Paris, 3-6 June 1867, no. 126);
+        source: nga-1937-1-58
+        accessed: 2026-11-24
+  - owner: person/adolphe-de-rothschild
+    acquired: 1867
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.65.html
+        note: Baron Adolphe de Rothschild [1823-1900], Paris;
+        source: nga-1937-1-58
+        accessed: 2026-11-24
+  - owner: person/maurice-edmond-charles-de-rothschild
+    method: inheritance
+    direct: true
+    place: paris
+    label: first cousin once removed of Adolphe
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.65.html
+        note: by inheritance to his first cousin once-removed, Baron Maurice de Rothschild [1881-1957], Paris;
+        source: nga-1937-1-58
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    method: purchase
+    direct: true
+    label: London, New York and Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.65.html
+        note: (Duveen Brothers, Inc., London, New York, and Paris);
+        source: nga-1937-1-58
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1922-07
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.65.html
+        note: sold July 1922 to Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-58
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1934-12-28
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.65.html
+        note: deeded 28 December 1934 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1937-1-58
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.65.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-58
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177479
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177479
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177479
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177479
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177479
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177479

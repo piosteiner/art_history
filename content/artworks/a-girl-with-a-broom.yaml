@@ -1,0 +1,166 @@
+public_id: 123008
+title_lang: en
+title: A Girl with a Broom
+names:
+  - text: Girl with a Broom
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177232
+  - lang: nl
+    role: translation
+    text: Meisje met een bezem
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177232
+attribution_label: workshop of Rembrandt (possibly Carel Fabritius)
+created: 1651
+materials: [oil paint, canvas]
+dimensions: [107.3, 91.4]
+institution: national-gallery-of-art
+inventory_number: 1937.1.74
+provenance_status: a_clear
+provenance_status_note: Bought by Andrew W. Mellon from the Hermitage in February 1931; deeded 1 May 1937 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q20177232
+metadata:
+  sources: [Wikidata Q20177232 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Girl_with_a_Broom.jpg/1280px-Girl_with_a_Broom.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Girl_with_a_Broom.jpg
+    license: Public domain
+    credit: Workshop of Rembrandt / Possibly Carel Fabritius
+provenance:
+  - owner: person/herman-becker
+    place: amsterdam
+    label: almost certainly; in his 1678 inventory, fol. 285r, as "Een vrouwtje aende put van Rembrandt van Rijn"
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.81.html
+        note: Almost certainly Herman Becker [c. 1617-1678], Amsterdam.[1] — [1] … The painting appears in the 1678 inventory (fol. 285r as "Een vrouwtje aende put van Rembrandt van Rijn").
+        source: nga-1937-1-74
+        accessed: 2026-11-24
+  - owner: person/pierre-crozat
+    acquired: before 1740
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.81.html
+        note: Pierre Crozat [1665-1740], Paris, before 1740;
+        source: nga-1937-1-74
+        accessed: 2026-11-24
+  - owner: person/louis-francois-crozat
+    acquired: 1740
+    ended: 1750
+    method: inheritance
+    direct: true
+    place: paris
+    label: nephew of Pierre Crozat; marquis du Châtel
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.81.html
+        note: by inheritance to his nephews, first to Louis-François Crozat, marquis du Châtel [1691-1750], Paris,
+        source: nga-1937-1-74
+        accessed: 2026-11-24
+  - owner: person/louis-antoine-crozat
+    acquired: 1750
+    ended: 1770
+    method: inheritance
+    direct: true
+    place: paris
+    label: nephew of Pierre Crozat; baron de Thiers; on Louis-François' death without a male heir
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.81.html
+        note: and then [on Louis-François' death without a male heir] to Louis-Antoine Crozat, baron de Thiers [1699-1770], Paris;
+        source: nga-1937-1-74
+        accessed: 2026-11-24
+  - owner_label: heirs of Louis-Antoine Crozat, baron de Thiers
+    acquired: 1770
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.81.html
+        note: the latter's heirs;
+        source: nga-1937-1-74
+        accessed: 2026-11-24
+  - owner: person/catherine-ii-of-russia
+    acquired: 1772
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: bought through Denis Diderot (1713–1784) as an intermediary, for the Imperial Hermitage Gallery
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.81.html
+        note: purchased 1772, through Denis Diderot [1713-1784] as an intermediary, by Catherine II, empress of Russia [1729-1796], for the Imperial Hermitage Gallery, Saint Petersburg;
+        source: nga-1937-1-74
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.81.html
+        note: for the Imperial Hermitage Gallery, Saint Petersburg; sold February 1931, as a painting by Rembrandt,
+        source: nga-1937-1-74
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1931-02
+    method: purchase
+    direct: true
+    label: sale from the Hermitage, as a painting by Rembrandt, to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.81.html
+        note: sold February 1931, as a painting by Rembrandt, through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York) to Andrew W. Mellon
+        source: nga-1937-1-74
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1931-02
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.81.html
+        note: sold February 1931 … to Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-74
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1937-05-01
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.81.html
+        note: deeded 1 May 1937 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1937-1-74
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.81.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-74
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177232
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177232
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177232
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177232
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177232

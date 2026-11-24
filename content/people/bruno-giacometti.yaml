@@ -21,6 +21,15 @@ relationships:
       - accessed: 2026-11-12
         property: P20
         wikidata: Q124171
+  - type: child_of
+    to: artist/giovanni-giacometti
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q124171
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q689411
 identifiers:
   bnf: 13613133s
   gnd: "136064787"

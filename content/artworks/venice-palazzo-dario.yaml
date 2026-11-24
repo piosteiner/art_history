@@ -1,0 +1,180 @@
+public_id: 125222
+title_lang: en
+title: Venice, Palazzo Dario
+creator: claude-monet
+created: 1908
+materials: [oil paint, canvas]
+dimensions: [66.2, 81.8]
+institution: art-institute-of-chicago
+inventory_number: "1933.446"
+provenance_status: a_clear
+provenance_status_note: Bequeathed by Annie Swan Coburn (d. 1932) to the Art Institute of Chicago in 1933.
+wikidata_id: Q20268687
+metadata:
+  sources: [Wikidata Q20268687 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Monet_-_Venice%2C_Palazzo_Dario%2C_1908.jpg/1280px-Monet_-_Venice%2C_Palazzo_Dario%2C_1908.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Monet_-_Venice,_Palazzo_Dario,_1908.jpg
+    license: CC BY-SA 4.0
+    credit: Claude Monet
+provenance:
+  - owner: artist/claude-monet
+    acquired: 1908
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/14630
+        note: The artist (d. 1926);
+        source: aic-1933-446
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    co_owners: [institution/durand-ruel]
+    role: dealer
+    acquired: 1912-04-10
+    method: purchase
+    direct: true
+    place: paris
+    label: in half-shares; Durand-Ruel, Paris, stock book 1901–13, no. 10000, as Palais Dario
+    price:
+      amount: 10000
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/14630
+        note: sold in half-shares, to Bernheim-Jeune, Paris, and Durand-Ruel, Paris, Apr. 10, 1912, for 10,000 francs [per Durand-Ruel, Paris, stock book for 1901–13 (no. 10000, as Palais Dario) …];
+        source: aic-1933-446
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1912-10
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: sold to Durand-Ruel, New York, on 11 or 17 October 1912 (the stock books differ; the Paris book says 11 October 1911); New York stock no. 3542
+    sources:
+      - url: https://www.artic.edu/artworks/14630
+        note: "sold to Durand-Ruel, New York, Oct. 11, 1912, or Oct. 17, 1912 [The Paris and New York Durand-Ruel stock books record different dates for the sale. The Paris stock book states: “Sold to DR New York on 11 October 1911.” The New York stock book for 1904–24 states: “Purchased by DR New York on 17 October 1912 as Venise, Palais Dario, 1908 / Stock DR New York no. 3542,” …];"
+        source: aic-1933-446
+        accessed: 2026-11-24
+  - owner: person/arthur-b-emmons
+    acquired: 1912-12-26
+    ended: 1913-05-27
+    method: purchase
+    direct: true
+    place: newport
+    label: Durand-Ruel, New York, stock book 1904–24, no. 3542
+    price:
+      amount: 7500
+      currency: USD
+    sources:
+      - url: https://www.artic.edu/artworks/14630
+        note: sold to Arthur B. Emmons, Newport, Rhode Island, Dec. 26, 1912, for $7,500 [per Durand-Ruel, New York, stock book for 1904–24 (no. 3542, as Venise, Palais Dario, 1908) …];
+        source: aic-1933-446
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1913-05-27
+    ended: 1913-05-27
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: sold back to Durand-Ruel, New York; stock no. 3647
+    price:
+      amount: 37600
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/14630
+        note: sold back to Durand-Ruel, New York, May 27, 1913, for 37,600 francs [this and the following per Durand-Ruel, New York, stock book for 1904–24 (no. 3647, as Venise, Palais Dario, 1908) …];
+        source: aic-1933-446
+        accessed: 2026-11-24
+  - owner: person/arthur-b-emmons
+    acquired: 1913-05-27
+    method: purchase
+    direct: true
+    place: newport
+    label: sold back to Arthur B. Emmons
+    price:
+      amount: 6500
+      currency: USD
+    sources:
+      - url: https://www.artic.edu/artworks/14630
+        note: sold back to Arthur B. Emmons, Newport, Rhode Island, May 27, 1913, for $6,500;
+        source: aic-1933-446
+        accessed: 2026-11-24
+  - owner: institution/american-art-association
+    role: agent
+    acquired: 1920-01-14
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Arthur B. Emmons sale, American Art Association, New York, 14 January 1920, lot 42
+    sources:
+      - url: https://www.artic.edu/artworks/14630
+        note: sold at the Arthur B. Emmons, Newport, Rhode Island, sale, American Art Association, New York, Jan. 14, 1920, lot 42,
+        source: aic-1933-446
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    co_owners: [institution/m-knoedler-co]
+    role: dealer
+    acquired: 1920-01-14
+    method: auction
+    direct: true
+    place: new-york-city
+    label: bought in half-shares at the Emmons sale, lot 42
+    price:
+      amount: 5800
+      currency: USD
+    sources:
+      - url: https://www.artic.edu/artworks/14630
+        note: to Durand-Ruel, New York, and Knoedler, New York, in half-shares, for $5,800 [per Durand-Ruel Archives and the Durand-Ruel, New York, stock book 1904–1924 …];
+        source: aic-1933-446
+        accessed: 2026-11-24
+  - owner: person/annie-swan-coburn
+    acquired: 1923-02-08
+    ended: 1932
+    method: purchase
+    direct: true
+    place: chicago
+    label: Durand-Ruel, New York, stock book 1904–24, no. 4408
+    price:
+      amount: 9735
+      currency: USD
+      note: + tax
+    sources:
+      - url: https://www.artic.edu/artworks/14630
+        note: sold to Annie Swan Coburn (d. 1932), Chicago, Feb. 8, 1923, for $9,735 + tax [per Durand-Ruel, New York, stock book for 1904–24 (no. 4408, as Venise, Palais Dario, 1908) …];
+        source: aic-1933-446
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1933
+    method: bequest
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/14630
+        note: bequeathed to the Art Institute of Chicago, 1933.
+        source: aic-1933-446
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268687
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20268687
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20268687
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20268687
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268687
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268687

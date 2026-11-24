@@ -1,0 +1,166 @@
+public_id: 124683
+title_lang: en
+title: Hunters Near Ruins
+creator: jan-baptist-weenix
+created: 1648
+materials: [oil paint, canvas]
+dimensions: [98.8, 129.2]
+institution: cleveland-museum-of-art
+inventory_number: "1964.294"
+web_url: https://clevelandart.org/art/1964.294
+wikidata_id: Q60469207
+metadata:
+  sources: [Wikidata Q60469207 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/netherlands
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q60469207
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Jan_Baptist_Weenix_-_Hunters_Near_Ruins_-_1964.294_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Jan_Baptist_Weenix_-_Hunters_Near_Ruins_-_1964.294_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Baptist_Weenix_-_Hunters_Near_Ruins_-_1964.294_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Jan Baptist Weenix
+provenance:
+  - owner: person/duc-de-choiseul-praslin
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1964.294
+        note: "Duc de Choiseul-Praslin, Paris (sale: Paillet, Paris, February 18-25, 1793, no. 102);"
+        source: cma-1964-294
+        accessed: 2026-11-24
+  - owner: person/alexandre-joseph-paillet
+    role: agent
+    acquired: 1793-02
+    method: auction
+    direct: true
+    place: paris
+    label: Choiseul-Praslin sale, Paillet, Paris, 18–25 February 1793, no. 102
+    sources:
+      - url: https://clevelandart.org/art/1964.294
+        note: "(sale: Paillet, Paris, February 18-25, 1793, no. 102);"
+        source: cma-1964-294
+        accessed: 2026-11-24
+  - owner: person/marquis-of-montcalm
+    place: montpellier
+    sources:
+      - url: https://clevelandart.org/art/1964.294
+        note: "Marquis of Montcalm, Montpellier (sale: Laneuville, Paris, March 25, 1850, no. 28);"
+        source: cma-1964-294
+        accessed: 2026-11-24
+  - owner_label: Laneuville, Paris
+    role: agent
+    acquired: 1850-03-25
+    method: auction
+    direct: true
+    place: paris
+    label: Montcalm sale, Laneuville, Paris, 25 March 1850, no. 28
+    sources:
+      - url: https://clevelandart.org/art/1964.294
+        note: "(sale: Laneuville, Paris, March 25, 1850, no. 28);"
+        source: cma-1964-294
+        accessed: 2026-11-24
+  - owner_label: Pierard collection, Paris
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1964.294
+        note: "Pierard collection, Paris (sale: Laneuville, Paris, March 20-21, 1860, no. 95);"
+        source: cma-1964-294
+        accessed: 2026-11-24
+  - owner_label: Laneuville, Paris
+    role: agent
+    acquired: 1860-03
+    method: auction
+    direct: true
+    place: paris
+    label: Pierard sale, Laneuville, Paris, 20–21 March 1860, no. 95
+    sources:
+      - url: https://clevelandart.org/art/1964.294
+        note: "(sale: Laneuville, Paris, March 20-21, 1860, no. 95);"
+        source: cma-1964-294
+        accessed: 2026-11-24
+  - owner_label: Bourlon de Sarty collection, Paris
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1964.294
+        note: "Bourlon de Sarty collection, Paris (sale: Hotel Drouot, Paris, March 9-11, 1868, no. 20);"
+        source: cma-1964-294
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1868-03
+    method: auction
+    direct: true
+    place: paris
+    label: Bourlon de Sarty sale, Hôtel Drouot, Paris, 9–11 March 1868, no. 20
+    sources:
+      - url: https://clevelandart.org/art/1964.294
+        note: "(sale: Hotel Drouot, Paris, March 9-11, 1868, no. 20);"
+        source: cma-1964-294
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1883-02-02
+    method: auction
+    place: paris
+    label: sale, Hôtel Drouot, Paris, 2 February 1883, no. 25 (consignor not named)
+    sources:
+      - url: https://clevelandart.org/art/1964.294
+        note: "(sale: Hotel Drouot, Paris, February 2, 1883, no. 25);"
+        source: cma-1964-294
+        accessed: 2026-11-24
+  - owner: institution/galerie-heim
+    role: dealer
+    direct: true
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1964.294
+        note: "[Galerie Heim, Paris];"
+        source: cma-1964-294
+        accessed: 2026-11-24
+  - owner: person/severance-a-millikin
+    co_owners: [person/greta-millikin]
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1964.294
+        note: Mr. and Mrs. Severance Millikin, Cleveland, 1964, by gift to the Cleveland Museum of Art, 1964.
+        source: cma-1964-294
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1964
+    method: gift
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1964.294
+        note: by gift to the Cleveland Museum of Art, 1964.
+        source: cma-1964-294
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60469207
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60469207
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60469207
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60469207
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60469207
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60469207

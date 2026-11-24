@@ -1,0 +1,21 @@
+public_id: 124288
+name: Hōjō Sadayuki
+kind: person
+birth: 1302
+death: 1333-07-12
+wikidata_id: Q2539353
+metadata:
+  sources: [Wikidata Q2539353 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2539353
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2539353
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q2539353

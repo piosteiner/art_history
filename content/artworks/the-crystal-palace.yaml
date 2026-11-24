@@ -1,0 +1,186 @@
+public_id: 125220
+title_lang: en
+title: The Crystal Palace
+names:
+  - lang: fr
+    role: translation
+    text: Le Crystal Palace, Londres
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20088061
+  - lang: de
+    role: translation
+    text: Der Kristallpalast, London
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20088061
+  - lang: it
+    role: translation
+    text: il crystal palace
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20088061
+  - lang: ja
+    role: translation
+    text: クリスタル・パレス
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20088061
+creator: camille-pissarro
+created: 1871
+materials: [oil paint, canvas]
+dimensions: [47.2, 73.5]
+institution: art-institute-of-chicago
+inventory_number: "1972.1164"
+provenance_status: a_clear
+provenance_status_note: With Durand-Ruel, New York, from by January 1931 until its sale to Henry Johnson Fisher, Greenwich, Conn., in 1941 (Durand-Ruel Archives).
+wikidata_id: Q20088061
+metadata:
+  sources: [Wikidata Q20088061 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts
+    to: place/the-crystal-palace
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20088061
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Camille_Pissarro_-_Le_Crystal_Palace%2C_Londres.jpg/1280px-Camille_Pissarro_-_Le_Crystal_Palace%2C_Londres.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_Le_Crystal_Palace,_Londres.jpg
+    license: Public domain
+    credit: Camille Pissarro
+provenance:
+  - owner: person/charles-j-galloway
+    acquired: 1892 or earlier
+    place: knutsford
+    label: Thorneyholme, Knutsford, Cheshire (spelt Kunstford in the record); Galloway 1892
+    sources:
+      - url: https://www.artic.edu/artworks/110541
+        note: Charles J. Galloway, Thorneyholme, Kunstford, Cheshire, by 1892 [per Galloway 1892];
+        source: aic-1972-1164
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1905-06-26
+    method: auction
+    direct: true
+    place: london
+    label: Charles J. Galloway estate sale, Christie's, London, 26 June 1905, lot 279
+    sources:
+      - url: https://www.artic.edu/artworks/110541
+        note: sold Sold at the Charles J. Galloway estate sale, Christie’s, London, June 26, 1905, lot 279, to Bernheim–Jeune, Paris, for £68.5 [per Christie’s sale cat. 1905];
+        source: aic-1972-1164
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1905-06-26
+    method: auction
+    direct: true
+    place: paris
+    label: bought at the Galloway sale, lot 279, for £68.5 (as given)
+    sources:
+      - url: https://www.artic.edu/artworks/110541
+        note: to Bernheim–Jeune, Paris, for £68.5 [per Christie’s sale cat. 1905];
+        source: aic-1972-1164
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1905-07-04
+    method: purchase
+    direct: true
+    place: paris
+    label: Durand-Ruel Archives (Caroline Durand-Ruel Godfroy to the Art Institute, 30 March 2000)
+    sources:
+      - url: https://www.artic.edu/artworks/110541
+        note: sold to Durand-Ruel, Paris, July 4, 1905 [this and the three following per Durand-Ruel Archives, as confirmed by Caroline Durand-Ruel Godfroy, Durand-Ruel Archives, to the Art Institute, Mar. 30, 2000, curatorial object file];
+        source: aic-1972-1164
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: January 1931 or earlier
+    method: transfer
+    direct: true
+    place: new-york-city
+    label: transferred to Durand-Ruel, New York
+    sources:
+      - url: https://www.artic.edu/artworks/110541
+        note: transferred to Durand-Ruel, New York, by January 1931;
+        source: aic-1972-1164
+        accessed: 2026-11-24
+  - owner: person/henry-johnson-fisher
+    acquired: 1941-06-19
+    method: purchase
+    direct: true
+    place: greenwich-2
+    sources:
+      - url: https://www.artic.edu/artworks/110541
+        note: sold to Henry Johnson Fisher (d. 1965), Greenwich, Conn., June 19, 1941;
+        source: aic-1972-1164
+        accessed: 2026-11-24
+  - owner_label: family of Henry Johnson Fisher
+    method: inheritance
+    direct: true
+    label: by descent (Phillips Academy, Addison Gallery, 1967)
+    sources:
+      - url: https://www.artic.edu/artworks/110541
+        note: by descent to his family [per Phillips Academy, Addison Gallery, 1967];
+        source: aic-1972-1164
+        accessed: 2026-11-24
+  - owner: institution/hirschl-adler-galleries
+    role: dealer
+    acquired: 1970-04-06
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Greg Hedberg, Hirschl and Adler, to Gloria Groom, 1 December 2014
+    sources:
+      - url: https://www.artic.edu/artworks/110541
+        note: sold to Hirschl & Adler, New York, Apr. 6, 1970 [this and the following per Greg Hedberg, Hirschl and Adler, to Gloria Groom, e-mail correspondence, Dec. 1, 2014, curatorial object file];
+        source: aic-1972-1164
+        accessed: 2026-11-24
+  - owner: person/b-e-bensinger
+    acquired: 1971-06-14
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/110541
+        note: sold to Mr. B. E. Bensinger, Chicago, June 14, 1971;
+        source: aic-1972-1164
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1972/1974
+    method: gift
+    direct: true
+    place: chicago
+    label: given in undivided fractional interests beginning in 1972; the final fractional interest received in 1974
+    sources:
+      - url: https://www.artic.edu/artworks/110541
+        note: given to the Art Institute of Chicago, beginning in 1972 [The painting was given to the Art Institute of Chicago in undivided fractional interests beginning in 1972. The Art Institute received the final fractional interest for one hundred percent ownership in 1974].
+        source: aic-1972-1164
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20088061
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20088061
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20088061
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20088061
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20088061
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20088061

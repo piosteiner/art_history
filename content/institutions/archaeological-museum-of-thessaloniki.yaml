@@ -1,0 +1,16 @@
+public_id: 123156
+name: Archaeological Museum of Thessaloniki
+kind: museum
+founded: 1912
+wikidata_id: Q2658285
+metadata:
+  sources: [Wikidata Q2658285 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2658285
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q2658285

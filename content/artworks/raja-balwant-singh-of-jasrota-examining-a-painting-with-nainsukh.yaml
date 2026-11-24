@@ -1,0 +1,52 @@
+public_id: 124838
+title_lang: en
+title: Raja Balwant Singh of Jasrota examining a painting with Nainsukh
+names:
+  - text: Raja Balwant Singh examining a painting with Nainsukh
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q115509788
+created: 1745/1750
+created_label: c. 1740s
+created_span: uncertain
+materials: [gouache paint, gold, paper]
+dimensions: [21, 30]
+institution: museum-rietberg
+inventory_number: RVI 1551
+web_url: https://emp-web-101.zetcom.ch:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=39189&viewType=detailView
+wikidata_id: Q115509788
+metadata:
+  sources: [Wikidata Q115509788 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: artist/nainsukh
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q115509788
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Raja_Balwant_Singh_of_Jasrota_examining_a_painting_with_Nainsukh.jpg/1280px-Raja_Balwant_Singh_of_Jasrota_examining_a_painting_with_Nainsukh.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raja_Balwant_Singh_of_Jasrota_examining_a_painting_with_Nainsukh.jpg
+    license: Public domain
+    credit: Nainsukh
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q115509788
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q115509788
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q115509788
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q115509788
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q115509788

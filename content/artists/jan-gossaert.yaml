@@ -1,0 +1,18 @@
+public_id: 125060
+name: Jan Gossaert
+given_name: Jan
+family_name: Gossaert
+birth: 1478
+death: 1532-10-11
+wikidata_id: Q346952
+metadata:
+  sources: [Wikidata Q346952 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q346952
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q346952

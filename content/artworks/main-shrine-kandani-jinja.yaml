@@ -1,0 +1,53 @@
+public_id: 123946
+title: Main Shrine, Kandani-jinja
+names:
+  - lang: ja
+    role: translation
+    text: 神谷神社本殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020654
+created: 1219
+institution: kandani-shrine
+location: [133.9167, 34.32483]
+wikidata_id: Q107020654
+metadata:
+  sources: [Wikidata Q107020654 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/sakaide
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/59/Kandani_Shrine.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kandani_Shrine.JPG
+    license: CC BY-SA 3.0
+    credit: by Reggaeman
+provenance:
+  - owner: institution/kandani-shrine
+    acquired: 1219
+    method: creation
+    place: sakaide
+    label: built in Kenpō 7 (1219), per the ink inscription under the ridge beam, which names the manager Osakabe no Masanaga; repaired 1540, 1568, 1660 and 1759 (ridge tablets); owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3287
+        note: 本殿は化粧棟木下端の墨書により、建保七年（一二一九）の建立になることが明らかであり、以後天文九年（一五四〇）、永禄十一年（一五六八）、万治三年（一六六〇）、宝暦九年（一七五九）に修理のあったことが棟札によって知られる。 … 所有者名 ： 神谷神社 所有者種別 ： 神社
+        source: kunishitei-102-3287
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%A5%9E%E8%B0%B7%E7%A5%9E%E7%A4%BE
+        note: 現在の本殿の棟木には、建立された年の建保7年（1219年）の墨書銘に「正一位神谷大明神御宝殿、建保七年歳次己卯二月十日丁未日始之、惣官散位刑部宿祢正長」とあり
+        source: wikipedia-ja-kandani-jinja
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 2022-09-27
+    place: sakaide
+    label: struck by lightning; about a third of the roof burnt; restoration begun 12 October 2023
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E7%A5%9E%E8%B0%B7%E7%A5%9E%E7%A4%BE
+        note: 2022年（令和4年）9月27日、本殿に落雷があり屋根の3分の1を焼失した。2023年（令和5年）10月12日に本殿保存修理工事の起工式が行われ、2025年秋に完了する予定である。
+        source: wikipedia-ja-kandani-jinja
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020654

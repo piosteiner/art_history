@@ -1,0 +1,58 @@
+public_id: 123865
+title_lang: de
+title: Rati, Göttin der Leidenschaft und Liebe
+attribution_label: Anonymous
+created: 19th century
+created_span: uncertain
+kind: sculpture
+medium: Holz, bemalt
+dimensions: [70, 28, 26]
+institution: museum-rietberg
+inventory_number: RIN 520
+web_url: https://rietberg.ch/sammlungen/rin-520
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Bali_Rati_Museum_Rietberg_RIN_520.jpg/1280px-Bali_Rati_Museum_Rietberg_RIN_520.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bali_Rati_Museum_Rietberg_RIN_520.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner: person/l-d-petit
+    place: amsterdam
+    label: Karl With tracked the figure down in Amsterdam and persuaded von der Heydt to buy it (Jager, With, 1997, p. 106)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rin-520
+        note: |-
+          L. D. Petit, Amsterdam
+          With hat die Figur in Amsterdam aufgespürt und von der Heydt zum Kauf bewogen (Jager, With, 1997, S. 106)
+        source: rietberg-rin-520
+        accessed: 2026-11-24
+  - owner: person/douwe-komter
+    role: dealer
+    place: amsterdam
+    label: in the business books in Amsterdam
+    sources:
+      - url: https://rietberg.ch/sammlungen/rin-520
+        note: |-
+          Douwe Komter, Amsterdam
+          In den Geschäftsbüchern in Amsterdam
+        source: rietberg-rin-520
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: before 1922
+    method: purchase
+    label: lit. With 1922; With 1924
+    sources:
+      - url: https://rietberg.ch/sammlungen/rin-520
+        note: |-
+          vor 1922: Eduard von der Heydt (1882–1964)
+          Lit. With, 1922; With, 1924.
+        source: rietberg-rin-520
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    method: gift
+    label: gift of Eduard von der Heydt (credit line)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rin-520
+        note: Creditline | Geschenk Eduard von der Heydt
+        source: rietberg-rin-520
+        accessed: 2026-11-24

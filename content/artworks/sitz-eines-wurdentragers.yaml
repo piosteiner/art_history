@@ -1,0 +1,65 @@
+public_id: 123866
+title_lang: de
+title: Sitz eines Würdenträgers
+attribution_label: Anonymous
+created: 1801/1933
+kind: furniture
+medium: Holz
+dimensions: [53, 31, 37]
+institution: museum-rietberg
+inventory_number: RAC 126
+web_url: https://rietberg.ch/sammlungen/rac-126
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Hemba_Stuhl_Museum_Rietberg_RAC_126.jpg/1280px-Hemba_Stuhl_Museum_Rietberg_RAC_126.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hemba_Stuhl_Museum_Rietberg_RAC_126.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Urheber*in unbekannt
+    acquired_label: 19./frühes 20. Jh.
+    method: creation
+    label: made by an unknown Hemba maker in Katanga, 19th/early 20th century
+    sources:
+      - url: https://rietberg.ch/sammlungen/rac-126
+        note: "19./frühes 20. Jh.: Urheber*in unbekannt in Katanga"
+        source: rietberg-rac-126
+        accessed: 2026-11-24
+  - owner_label: Oostrom
+    acquired: before 1970
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rac-126
+        note: "vor 1970: Oostrom, Erwerbsumstände unbekannt"
+        source: rietberg-rac-126
+        accessed: 2026-11-24
+  - owner: person/henri-luis-schouten
+    acquired: before 1970
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rac-126
+        note: "vor 1970: Henri Luis Schouten, Erwerbsumstände unbekannt"
+        source: rietberg-rac-126
+        accessed: 2026-11-24
+  - owner: person/jacques-kerchache
+    acquired: before 1977
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rac-126
+        note: "vor 1977: Jacques Kerchache (1942–2001), Erwerbsumstände unbekannt"
+        source: rietberg-rac-126
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1977-05-01
+    method: purchase
+    place: zurich
+    label: bought with funds of the Rietberg-Gesellschaft; purchases 1977, minutes of the RBG board meeting 25 May 1977
+    price:
+      amount: 87000
+      currency: CHF
+    sources:
+      - url: https://rietberg.ch/sammlungen/rac-126
+        note: |-
+          01.05.1977: Museum Rietberg, angekauft in Zürich
+          Ankäufe 1977, Protokoll Vorstandssitzung RBG 25.5.1977, Preis 87'000 CHF
+        source: rietberg-rac-126
+        accessed: 2026-11-24

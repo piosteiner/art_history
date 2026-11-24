@@ -1,0 +1,93 @@
+public_id: 124295
+title: Jōmon Venus
+names:
+  - lang: fr
+    role: translation
+    text: Vénus de Jōmon
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11608105
+  - lang: de
+    role: translation
+    text: Jōmon-Venus
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11608105
+  - lang: es
+    role: translation
+    text: Venus de Jōmon
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11608105
+  - lang: ja
+    role: translation
+    text: 縄文のビーナス
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11608105
+  - lang: zh
+    role: translation
+    text: 繩文維納斯
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11608105
+  - lang: ko
+    role: translation
+    text: 조몬의 비너스
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11608105
+dimensions: [27]
+institution: togariishi-jomon-archaeological-museum
+location: [138.1588, 35.99557]
+wikidata_id: Q11608105
+metadata:
+  sources: [Wikidata Q11608105 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/chino
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Dog%C5%AB_of_J%C5%8Dmon_Venus.JPG/1280px-Dog%C5%AB_of_J%C5%8Dmon_Venus.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Dog%C5%AB_of_J%C5%8Dmon_Venus.JPG
+    license: CC BY-SA 3.0
+    credit: Takuma-sa
+provenance:
+  - owner_label: excavation of the Tanabatake site
+    acquired: 1986-09-08
+    method: find
+    place: chino
+    label: found complete in a pit in the central plaza of the southern ring settlement, excavated ahead of an industrial estate
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/10063
+        note: 遺跡は、八ケ岳西南麓に位置し、昭和六十一年、工業団地建設に先立って調査され … 本土偶は、このうち南環状集落の中央広場内、深さ〇・三メートルの不整形な土壙内から、完全な形で、右体側部を下にして単独で出土した。
+        source: kunishitei-201-10063
+        accessed: 2026-11-24
+      - url: https://www.city.chino.lg.jp/site/togariishi/1752.html
+        note: The "Dogu" ("Jomon no Venus") [Clay Figurine (the Venus of Jomon)] of the Tanabatake site Excavated on Sep. 8, 1986
+        source: chino-togariishi-jomon-venus
+        accessed: 2026-11-24
+  - owner: place/chino
+    label: "owner: the City of Chino"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/10063
+        note: 所有者名 ： 茅野市
+        source: kunishitei-201-10063
+        accessed: 2026-11-24
+  - owner: institution/togariishi-jomon-archaeological-museum
+    role: custodian
+    place: chino
+    label: kept and shown at the city's Togariishi museum
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/10063
+        note: 保管施設の名称 ： 茅野市尖石縄文考古館 所有者名 ： 茅野市
+        source: kunishitei-201-10063
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11608105
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q11608105

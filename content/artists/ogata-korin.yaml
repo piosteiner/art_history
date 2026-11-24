@@ -24,6 +24,15 @@ relationships:
       - accessed: 2026-11-02
         property: P937
         wikidata: Q952938
+  - type: sibling_of
+    to: artist/ogata-kenzan
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q952938
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q534279
 identifiers:
   bnf: 16943554d
   gnd: "128773421"

@@ -1,0 +1,24 @@
+public_id: 124378
+title: Statue of Dōsen Risshi
+names:
+  - lang: ja
+    role: translation
+    text: 道詮律師像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045976
+wikidata_id: Q107045976
+metadata:
+  sources: [Wikidata Q107045976 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/dosen
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107045976
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Dosen_Yumedono_Horyuji.jpg/1280px-Dosen_Yumedono_Horyuji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dosen_Yumedono_Horyuji.jpg
+    license: Public domain
+    credit: 東京美術学校

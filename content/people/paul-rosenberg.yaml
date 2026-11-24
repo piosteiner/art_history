@@ -22,6 +22,33 @@ relationships:
       - accessed: 2026-10-30
         property: P20
         wikidata: Q560643
+  - type: child_of
+    to: person/alexandre-rosenberg
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q18379827
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q560643
+  - type: child_of
+    to: person/mathilde-rosenberg
+    sources:
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q560643
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q116472137
+  - type: sibling_of
+    to: person/leonce-rosenberg
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q947522
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q560643
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/f6/Henri_Manuel_Syndicat_des_%C3%A9diteurs_d%E2%80%99art_1938.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Henri_Manuel_Syndicat_des_%C3%A9diteurs_d%E2%80%99art_1938.jpg

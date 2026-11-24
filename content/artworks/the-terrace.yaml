@@ -1,0 +1,215 @@
+public_id: 125126
+title_lang: en
+title: The Terrace
+created: c. 1660
+created_span: uncertain
+materials: [oil paint, canvas]
+institution: art-institute-of-chicago
+inventory_number: "1948.81"
+wikidata_id: Q20275199
+metadata:
+  sources: [Wikidata Q20275199 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Anonymous_-_The_Terrace_-_1948.81_-_Art_Institute_of_Chicago.jpg/1280px-Anonymous_-_The_Terrace_-_1948.81_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anonymous_-_The_Terrace_-_1948.81_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Possibly Ludolf de Jongh / Manner of Carel Fabritius
+provenance:
+  - owner: person/aernout-eelbrecht
+    acquired: 1683 or earlier
+    place: leiden
+    label: 'inventory 1683: "a piece by Fabritius, in which Van Aelst painted his sword" (suggested by J. G. van Gelder, 1935)'
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: Possibly Aernout Eelbrecht, Leiden, inventory 1683 ["Een stuck van Fabritius, daar van Aelst sijn degen ingeschildert heeft" (A piece by Fabritius, in which Van Aelst painted his sword); suggested by J. G. van Gelder in Rotterdam 1935].
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: person/pierre-fouquet
+    acquired_label: before 1802
+    place: amsterdam
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: Pierre Fouquet, Amsterdam, before 1802 [according to Mettra Fils, Notice d'une collection..., 1802, no. 111 and manuscript version cited below].
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: institution/mettra-fils
+    role: dealer
+    acquired: 1802 or earlier
+    place: berlin
+    label: Magasin du Bureau des Arts; Notice d'une collection…, 1802, no. 111, as Metzu
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: Mettra Fils (Magasin du Bureau des Arts), Berlin, by 1802 [see Notice d'une collection..., no. 111, ill., as Metzu [sic] and manuscript version of this catalogue  in the Staatsbibliothek zu Berlin, Libri. PIct. A112];
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner_label: Prince Radziwill, Nieborów
+    acquired: 1803 or earlier
+    method: purchase
+    direct: true
+    place: nieborow
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: presumably sold by Mettra Fils to  Prince Radziwill, Nieborow, by 1803;
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: person/sigismund-radziwill
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: by descent to Prince Sigismund Radziwill, Paris, 1866;
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: person/theophile-thore-burger
+    acquired: 1866-03-22
+    method: auction
+    direct: true
+    place: paris
+    label: Radziwill sale, 22–23 March 1866, lot 78, as Metsu, Intérieur de cour d'une maison hollandaise
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: sold, March 22–23, 1866, lot. 78, as Metsu, Interior de cour d'une maison hollandaise to Théophile Thoré-Bürger [see Jowell, 2003 pp. 72, 98];
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1870-02
+    method: purchase
+    direct: true
+    place: paris
+    label: private sale of Thoré-Bürger's collection, as Metzu, Intérieur hollandais; buyer not named
+    price:
+      amount: 15000
+      currency: FRF
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: sold his private sale, Paris, February 1870, listed as Metzu [sic], Interior hollandais for F15,000 [see Jowell 2003 p. 114, appendix 4].
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: person/george-nicolaevich-de-leuchtenberg
+    place: saint-petersburg
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: Duke George Nicolaevich de Leuchtenberg (died 1929), St. Petersburg [according to Rotterdam exhibition 1935].
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: institution/spink-son
+    role: dealer
+    acquired: 1920 or earlier
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: Spink, London, by 1920 [according to Colnaghi index card];
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: institution/p-d-colnaghi-co-ltd
+    role: dealer
+    acquired: 1920 or earlier
+    direct: true
+    place: london
+    label: by March 1920
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: P. and D. Colnaghi, London, by March 1920;
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: person/calouste-s-gulbenkian
+    acquired: 1920-03-03
+    method: purchase
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: sold by Colnaghi to Calouste S. Gulbenkian on 3 March 1920 [according to Colnaghi index card];
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: institution/p-d-colnaghi-co-ltd
+    role: dealer
+    acquired: 1929 or earlier
+    direct: true
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: P. and D. Colnaghi, London, by 1929 [according to Valentiner 1929].
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: person/leonard-gow
+    acquired: 1935 or earlier
+    ended: 1936
+    label: Camis Eskan, Dumbartonshire
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: Leonard Gow, Camis Eskan, Dumbartonshire (died 1936), by 1935 [according to Heppner 1935];
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: person/leonard-harper-gow
+    method: inheritance
+    direct: true
+    place: glasgow-city
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: by descent to Leonard Harper Gow, Glasgow;
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: person/d-katz
+    role: agent
+    acquired: 1939
+    direct: true
+    place: dieren
+    label: as agent for Leonard Harper Gow
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: sold through D. Katz, Dieren, The Netherlands, as agent for Gow
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: institution/risd-museum
+    acquired: 1939
+    method: purchase
+    direct: true
+    place: providence
+    label: Museum of Art, Rhode Island School of Design
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: to the Museum of Art, Rhode Island School of Design, 1939 [RISD Museum Committee meeting minutes, March 7, 1939];
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: institution/e-a-silberman-galleries
+    role: dealer
+    acquired: 1945-02
+    method: exchange
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: exchanged through E. and A. Silberman, New York, February 1945 [according to records of RISD, copy in curatorial file];
+        source: aic-1948-81
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1948-02
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/62460
+        note: sold by Silberman to the Art Institute, February 1948.
+        source: aic-1948-81
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20275199
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20275199
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20275199
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20275199

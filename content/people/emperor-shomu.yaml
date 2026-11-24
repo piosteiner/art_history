@@ -27,6 +27,16 @@ death: 756-06-08
 wikidata_id: Q349263
 metadata:
   sources: [Wikidata Q349263 (retrieved 2026-11-01)]
+relationships:
+  - type: married_to
+    to: person/empress-komyo
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q349263
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q837932
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Emperor_Shomu.jpg/1280px-Emperor_Shomu.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Emperor_Shomu.jpg

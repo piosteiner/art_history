@@ -1,0 +1,43 @@
+public_id: 124926
+title_lang: en
+title: Main Sanctuary (Honden) of Sumiyoshi Shrine
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 住吉神社本殿
+created: 1370
+institution: sumiyoshi-shrine
+location: [130.9565, 33.99966]
+wikidata_id: Q107020652
+metadata:
+  sources: [Wikidata Q107020652 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/shimonoseki
+    period: 1370
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Sumiyoshi-jinja_%28Shimonoseki%29_Honden.JPG/1280px-Sumiyoshi-jinja_%28Shimonoseki%29_Honden.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Sumiyoshi-jinja_(Shimonoseki)_Honden.JPG
+    license: CC BY-SA 3.0
+    credit: ChiefHira
+provenance:
+  - owner: institution/sumiyoshi-shrine
+    acquired: 1370
+    method: creation
+    place: shimonoseki
+    label: built by Ōuchi Hiroyo; the shrine (first shrine of Nagato Province) is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3199
+        note: 住吉神社は神功皇后が創祀したと伝え、のち長門国一の宮と称された。本殿は応安三年（一三七〇）大内弘世の造営になる。 … 所有者名 ： 住吉神社 所有者種別 ： 神社
+        source: kunishitei-102-3199
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107020652
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020652

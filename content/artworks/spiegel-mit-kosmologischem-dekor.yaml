@@ -1,0 +1,62 @@
+public_id: 123869
+title_lang: de
+title: Spiegel mit kosmologischem Dekor
+attribution_label: Anonymous
+created: c. 600
+created_span: uncertain
+kind: gerät / zubehör / kleinobjekt
+medium: Bronze
+institution: museum-rietberg
+inventory_number: RCH 42
+web_url: https://rietberg.ch/sammlungen/rch-42
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Siu_Spiegel_mit_kosmologischem_Dekor_Museum_Rietberg_RCH_42.jpg/1280px-Siu_Spiegel_mit_kosmologischem_Dekor_Museum_Rietberg_RCH_42.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Siu_Spiegel_mit_kosmologischem_Dekor_Museum_Rietberg_RCH_42.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner: person/herbert-ginsberg
+    acquired: c. 1910
+    label: collector; catalogue of the Ginsberg collection, c. 1929, p. 4, no. 8
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-42
+        note: |-
+          um 1910: Herbert Ginsberg (1881–1962), Sammler*in
+          Katalog Sammlung Ginsberg, ca. 1929, S. 4. Nr. 8
+        source: rietberg-rch-42
+        accessed: 2026-11-24
+  - owner: person/marianne-gilbert
+    acquired: 1962
+    method: inheritance
+    direct: true
+    place: new-york-city
+    label: daughter of Herbert Ginsberg; on permanent loan to the Museum Rietberg 1974–1982
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-42
+        note: |-
+          1962: Marianne Gilbert (1911–1996), durch Erbgang erworben in New York
+          Tochter von Herbert Ginsberg; Dauerleihgabe im Museum Rietberg 1974-1982
+        source: rietberg-rch-42
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    role: custodian
+    acquired: 1974
+    ended: 1982
+    place: zurich
+    label: permanent loan from Marianne Gilbert
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-42
+        note: "1974: Museum Rietberg, als Leihgabe erhalten, in Zürich"
+        source: rietberg-rch-42
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1982
+    method: purchase
+    direct: true
+    place: zurich
+    label: bought with funds of the City of Zürich; the record's first line gives 1989 instead
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-42
+        note: "1982: Museum Rietberg, Käufer*in, Zürich"
+        source: rietberg-rch-42
+        accessed: 2026-11-24

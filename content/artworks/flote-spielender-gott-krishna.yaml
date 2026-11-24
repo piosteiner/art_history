@@ -1,0 +1,71 @@
+public_id: 123862
+title_lang: de
+title: Flöte spielender Gott Krishna
+attribution_label: Anonymous
+created: 1401/1600
+kind: relief
+medium: Granit
+dimensions: [102, 43.5, 26]
+institution: museum-rietberg
+inventory_number: RVI 226
+web_url: https://rietberg.ch/sammlungen/rvi-226
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Fl%C3%B6te_spielender_Gott_Krishna_Museum_Rietberg_RVI_226.jpg/1280px-Fl%C3%B6te_spielender_Gott_Krishna_Museum_Rietberg_RVI_226.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Flöte_spielender_Gott_Krishna_Museum_Rietberg_RVI_226.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired_label: 15th/16th century
+    method: creation
+    label: made in India
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-226
+        note: "15./16. Jh.: Urheber*in unbekannt"
+        source: rietberg-rvi-226
+        accessed: 2026-11-24
+  - owner: institution/galerie-rene-jaquerod
+    role: dealer
+    place: pully
+    label: dealer, Pully and Zürich; undated; inventory book III/186
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-226
+        note: |-
+          Galerie René Jaquerod, Pully und Zürich, Händler*in
+          Inventarbuch III/186
+        source: rietberg-rvi-226
+        accessed: 2026-11-24
+  - owner: person/max-bangerter-2
+    acquired: before 7 September 1964
+    label: circumstances unknown; Elsy Leuzinger's letter of thanks to Max Bangerter of 7 September 1964
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-226
+        note: |-
+          vor 07.09.1964: Max Bangerter, Erwerbsumstände unbekannt
+          MRZ SAr S.3-3-2, Geschenke und Legate, "B": Dankesschreiben von Elsy Leuzinger an Max Bangerter vom 07.09.1964.
+        source: rietberg-rvi-226
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    role: custodian
+    acquired: 1964-08-26
+    place: zurich
+    label: received on loan in Zürich/Montreux; Elsy Leuzinger's confirmation of the loans
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-226
+        note: |-
+          26.08.1964: Museum Rietberg, Zürich, als Leihgabe erhalten in Zürich/Montreux
+          MRZ SAr S.3-3-2, Geschenke und Legate, "B": Bestägigung der Leihgaben von Elsy Leuzinger
+        source: rietberg-rvi-226
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1967-01-13
+    method: gift
+    place: zurich
+    label: gift of Max Bangerter; confirmation of gift, January 1967
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-226
+        note: |-
+          13.01.1967: Museum Rietberg, Zürich, als Geschenk erhalten in Zürich
+          MRZ SAr, S.3-3-2: Geschenke und Legate, "B": Schenkungsbestätigung von Max Bangerter an Elsy Leuzinger vom Januar 1967.
+        source: rietberg-rvi-226
+        accessed: 2026-11-24

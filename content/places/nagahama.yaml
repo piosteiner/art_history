@@ -1,0 +1,47 @@
+public_id: 124075
+name: Nagahama
+names:
+  - lang: ja
+    role: original
+    text: 長浜市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q844130
+  - lang: zh
+    role: translation
+    text: 長濱市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q844130
+  - lang: ko
+    role: translation
+    text: 나가하마시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q844130
+  - lang: ru
+    role: translation
+    text: Нагахама
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q844130
+kind: settlement
+parent: shiga-prefecture
+country_code: JP
+location: [136.27833, 35.38083]
+wikidata_id: Q844130
+metadata:
+  sources: [Wikidata Q844130 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q844130
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q844130
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q844130

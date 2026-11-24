@@ -1,0 +1,23 @@
+public_id: 124688
+name: Elisabeth Spiegel
+given_name: Elisabeth
+family_name: Spiegel
+kind: person
+birth: 1628
+death: 1707
+wikidata_id: Q116047369
+metadata:
+  sources: [Wikidata Q116047369 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q116047369
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q116047369
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q116047369

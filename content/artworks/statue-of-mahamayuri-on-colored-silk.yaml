@@ -1,0 +1,110 @@
+public_id: 124134
+title_lang: en
+title: Kujaku Myoo (Mahamayuri)
+names:
+  - text: kenpon choshoku kujaku myōōzō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28808914
+  - lang: en
+    role: original
+    text: Statue of Mahamayuri on Colored Silk
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28808914
+  - lang: ja
+    role: translation
+    text: 絹本著色孔雀明王像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28808914
+created: 12th century
+created_span: uncertain
+dimensions: [14.79, 9.89]
+institution: tokyo-national-museum
+inventory_number: A-11529
+wikidata_id: Q28808914
+metadata:
+  sources: [Wikidata Q28808914 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Kujaku_Myoo.jpg/1280px-Kujaku_Myoo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kujaku_Myoo.jpg
+    license: Public domain
+    credit: anonymous
+provenance:
+  - owner_label: unknown Buddhist painter
+    acquired: 12th century
+    method: creation
+    label: Heian period; based on the Kūkai-related icon then at Ninna-ji; a high-ranking noble may have had it made to pray for a safe childbirth
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=0&content_base_id=100158&content_part_id=0&content_pict_id=0
+        note: 平安時代・12世紀 … 当時仁和寺（にんなじ）にあった由緒ある作例にもとづいたことが明らかにされている。 … 図像の改変には高位の貴族がかかわり安産祈願を目的に制作されたこと … が指摘されている。
+        source: emuseum-100158
+        accessed: 2026-11-24
+  - owner: person/inoue-kaoru
+    label: formerly owned by the Meiji statesman Inoue Kaoru
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=0&content_base_id=100158&content_part_id=0&content_pict_id=0
+        note: 本図は明治・大正期の政治家、井上馨（いのうえかおる）旧蔵である。
+        source: emuseum-100158
+        accessed: 2026-11-24
+  - owner: person/hara-sankei
+    acquired: 1903
+    method: purchase
+    label: bought by Hara Sankei (Tomitarō), then 35, for the unheard-of price of ¥10,000 — the purchase that made his name as a collector
+    price:
+      amount: 10000
+      currency: JPY
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=0&content_base_id=100158&content_part_id=0&content_pict_id=0
+        note: 明治36年（1903）、当時35歳の原三渓（はらさんけい）（富太郎（とみたろう）、1868～1939）が一万円という破格の値段で入手し、美術コレクターとして彼の名を知らしめる契機となった作品である。
+        source: emuseum-100158
+        accessed: 2026-11-24
+  - owner_label: Hara family
+    label: remained with the Hara family
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=0&content_base_id=100158&content_part_id=0&content_pict_id=0
+        note: 原家から購入した文化財保護委員からの管理換
+        source: emuseum-100158
+        accessed: 2026-11-24
+  - owner: institution/national-commission-for-the-protection-of-cultural-properties
+    method: purchase
+    place: tokyo
+    label: bought from the Hara family
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=0&content_base_id=100158&content_part_id=0&content_pict_id=0
+        note: 原家から購入した文化財保護委員からの管理換（かんりがえ）によって
+        source: emuseum-100158
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 1968
+    method: transfer
+    direct: true
+    place: tokyo
+    label: transfer of administration (kanrigae) from the Commission, inv. A-11529; owner of record today the National Institutes for Cultural Heritage
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=0&content_base_id=100158&content_part_id=0&content_pict_id=0
+        note: 原家から購入した文化財保護委員からの管理換（かんりがえ）によって、昭和43年、当館に収蔵された。
+        source: emuseum-100158
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/10
+        note: 保管施設の名称 ： 東京国立博物館 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-10
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q28808914
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q28808914
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q28808914
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q28808914

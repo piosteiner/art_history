@@ -1,0 +1,32 @@
+public_id: 124403
+title: Seated Priest Gien
+names:
+  - text: Statue of Gien
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107046079
+  - text: Seated Statue of Gien Sōjō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107046079
+  - lang: ja
+    role: translation
+    text: 義淵僧正坐像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107046079
+wikidata_id: Q107046079
+metadata:
+  sources: [Wikidata Q107046079 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/gien
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q107046079
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Seated_Priest_Gien_%28Oka-dera_Temple%29.jpg/1280px-Seated_Priest_Gien_%28Oka-dera_Temple%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Seated_Priest_Gien_(Oka-dera_Temple).jpg
+    license: Public domain
+    credit: Unknown author

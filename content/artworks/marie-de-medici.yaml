@@ -1,0 +1,140 @@
+public_id: 125212
+title_lang: en
+title: Marie de Médicis
+names:
+  - lang: en
+    role: original
+    text: Marie de Médici
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268417
+  - lang: nl
+    role: translation
+    text: Maria de' Medici
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268417
+creator: frans-pourbus-the-younger
+created: 1616
+materials: [oil paint, canvas]
+dimensions: [99.7, 77.5]
+institution: art-institute-of-chicago
+inventory_number: "1920.1034"
+wikidata_id: Q20268417
+metadata:
+  sources: [Wikidata Q20268417 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/marie-de-medici
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20268417
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Frans_Pourbus%2C_the_Younger_-_Marie_de_M%C3%A9dicis_-_1920.1034_-_Art_Institute_of_Chicago.jpg/1280px-Frans_Pourbus%2C_the_Younger_-_Marie_de_M%C3%A9dicis_-_1920.1034_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Frans_Pourbus,_the_Younger_-_Marie_de_M%C3%A9dicis_-_1920.1034_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Frans Pourbus the Younger
+provenance:
+  - owner_label: patrician family, Venice
+    place: venice
+    label: a patrician family whose ancestors included ambassadors to France (Baschet 1868); with the portraits of Louis XIII and Anne of Austria, now Karlsruhe
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/78591
+        note: Possibly Venetian private collection [according to Baschet 1868, paintings of Marie de Médicis, Louis XIII, and Anne of Austria [sic] hanging together in the hôtel of Princesse Mathilde were acquired in Venice from a patrician family whose ancestors included ambassadors to France
+        source: aic-1920-1034
+        accessed: 2026-11-24
+  - owner: person/mathilde-bonaparte
+    acquired: 1868 or earlier
+    ended: 1904
+    direct: true
+    place: paris
+    label: acquired in Venice
+    sources:
+      - url: https://www.artic.edu/artworks/78591
+        note: Princesse Mathilde Bonaparte, Paris, by 1868, died 1904;
+        source: aic-1920-1034
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1904-05
+    method: auction
+    direct: true
+    place: paris
+    label: Princesse Mathilde sale, 17–21 May 1904, no. 14
+    sources:
+      - url: https://www.artic.edu/artworks/78591
+        note: sold Paris, Galerie Georges Petit, 17-21 May, 1904, no. 14.
+        source: aic-1920-1034
+        accessed: 2026-11-24
+  - owner_label: M. de Saint Alary
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/78591
+        note: M. de Saint Alary, Paris [according to report on the Buckingham Collection, Art Institute Archives].
+        source: aic-1920-1034
+        accessed: 2026-11-24
+  - owner: institution/o-brien-son
+    role: dealer
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/78591
+        note: O’Brien & Son, Chicago [Buckingham report cited above].
+        source: aic-1920-1034
+        accessed: 2026-11-24
+  - owner: person/kate-sturges-buckingham
+    acquired: 1920 or earlier
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/78591
+        note: Kate Buckingham, Chicago, by 1920, when lent to the Art Institute;
+        source: aic-1920-1034
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    role: custodian
+    acquired: 1920
+    method: transfer
+    place: chicago
+    label: lent by Kate Buckingham
+    sources:
+      - url: https://www.artic.edu/artworks/78591
+        note: Kate Buckingham, Chicago, by 1920, when lent to the Art Institute;
+        source: aic-1920-1034
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1932
+    method: gift
+    direct: true
+    place: chicago
+    label: receipt 3053
+    sources:
+      - url: https://www.artic.edu/artworks/78591
+        note: accepted as a gift, 1932 [receipt 3053 and other documentation in curatorial file].
+        source: aic-1920-1034
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268417
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20268417
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20268417
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20268417
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268417
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268417

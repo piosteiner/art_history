@@ -1,0 +1,21 @@
+public_id: 124290
+name: Hōjō Sadaaki
+kind: person
+birth: 1278
+death: 1333-07-12
+wikidata_id: Q1083385
+metadata:
+  sources: [Wikidata Q1083385 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1083385
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q1083385
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q1083385

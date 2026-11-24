@@ -1,0 +1,22 @@
+public_id: 127638
+name: East Barnet
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-0.1567, 51.6348]
+wikidata_id: Q150212
+metadata:
+  sources: [Wikidata Q150212 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q150212
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q150212
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q150212

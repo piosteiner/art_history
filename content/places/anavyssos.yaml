@@ -1,0 +1,35 @@
+public_id: 125890
+name: Anavyssos
+names:
+  - lang: fr
+    role: translation
+    text: Anávyssos
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2532160
+  - lang: ru
+    role: translation
+    text: Анависос
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2532160
+kind: settlement
+parent: attiki
+country_code: GR
+location: [23.95, 37.73333]
+wikidata_id: Q2532160
+metadata:
+  sources: [Wikidata Q2532160 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2532160
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2532160
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2532160

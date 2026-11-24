@@ -1,0 +1,63 @@
+public_id: 123850
+title_lang: de
+title: Kopf einer Chimäre
+attribution_label: Anonymous
+created: early 6th century
+created_span: uncertain
+kind: sculpture
+medium: Kalkstein
+dimensions: [66, 37]
+institution: museum-rietberg
+inventory_number: RCH 105
+web_url: https://rietberg.ch/sammlungen/rch-105
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Kopf_einer_Chim%C3%A4re_Museum_Rietberg_RCH_105.jpg/1280px-Kopf_einer_Chim%C3%A4re_Museum_Rietberg_RCH_105.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kopf_einer_Chimäre_Museum_Rietberg_RCH_105.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: early 6th century
+    method: creation
+    label: made in Henan Province, Qi or Liang dynasty
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-105
+        note: Herstellungsort Provinz Henan, China, Asien Datierung Qi- oder Liang-Dynastie, frühes 6. Jh.
+        source: rietberg-rch-105
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1920s
+    label: imported from China to Europe
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-105
+        note: "1920er Jahre: [...] [Einfuhr aus China nach Europa]"
+        source: rietberg-rch-105
+        accessed: 2026-11-24
+  - owner: person/c-t-loo
+    role: dealer
+    acquired: 1929
+    place: paris
+    label: exhibited Chinesische Kunst, Berlin, 1929, no. 88; photograph from the Pagoda, estate of Janine Loo
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-105
+        note: "1929: C. T.  Loo (1880–1957), Händler/in, Paris Ausst. Chinesische Kunst, Berlin, 1929, Nr. 88., Foto aus der Pagode aus dem Nachlass Janine Loo"
+        source: rietberg-rch-105
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: 1929
+    label: published by Cohn, 1929
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-105
+        note: "1929: Eduard von der Heydt (1882–1964) Lit. Cohn, 1929."
+        source: rietberg-rch-105
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    method: gift
+    place: zurich
+    label: gift of Eduard von der Heydt (creditline); date not given
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-105
+        note: Creditline Geschenk Eduard von der Heydt
+        source: rietberg-rch-105
+        accessed: 2026-11-24

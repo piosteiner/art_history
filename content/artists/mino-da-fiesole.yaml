@@ -1,0 +1,18 @@
+public_id: 124678
+name: Mino da Fiesole
+given_name: Mino
+family_name: da Fiesole
+birth: 1429
+death: 1484-07-20
+wikidata_id: Q477441
+metadata:
+  sources: [Wikidata Q477441 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q477441
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q477441

@@ -1,0 +1,70 @@
+public_id: 123852
+title_lang: de
+title: Beschneidungsmesser
+attribution_label: Anonymous
+created: 1867/1933
+kind: gerät / zubehör / kleinobjekt
+medium: Holz, Eisen
+institution: museum-rietberg
+inventory_number: RAC 15
+web_url: https://rietberg.ch/sammlungen/rac-15
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Mangbetu_Beschneidungsmesser_Museum_Rietberg_RAC_15.jpg/1280px-Mangbetu_Beschneidungsmesser_Museum_Rietberg_RAC_15.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mangbetu_Beschneidungsmesser_Museum_Rietberg_RAC_15.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired_label: late 19th/early 20th century
+    method: creation
+    label: made in the Mangbetu region, Democratic Republic of the Congo
+    sources:
+      - url: https://rietberg.ch/sammlungen/rac-15
+        note: "spätes 19./frühes 20. Jh.: Urheber*in unbekannt, Urheber*in, Demokratische Republik Kongo, Mangbetu-Region"
+        source: rietberg-rac-15
+        accessed: 2026-11-24
+  - owner_label: Belgian colonial family, Brussels
+    acquired: before 1917
+    place: brussels
+    label: an unnamed Belgian colonial family (name in square brackets in the record); purchase files 1994
+    sources:
+      - url: https://rietberg.ch/sammlungen/rac-15
+        note: |-
+          vor 1917: [...] [Belgische Kolonialfamilie, Brüssel]
+          Ankäufe 1994
+        source: rietberg-rac-15
+        accessed: 2026-11-24
+  - owner: person/hermann-kuhn
+    acquired: 1970
+    label: collector; purchase files 1994
+    sources:
+      - url: https://rietberg.ch/sammlungen/rac-15
+        note: |-
+          1970: Hermann Kühn, Sammler*in
+          Ankäufe 1994
+        source: rietberg-rac-15
+        accessed: 2026-11-24
+  - owner: institution/galerie-fred-jahn
+    role: dealer
+    acquired: 1993
+    place: munich
+    label: dealer, Munich (founded 1978); purchase files 1994
+    sources:
+      - url: https://rietberg.ch/sammlungen/rac-15
+        note: |-
+          1993: Galerie Fred Jahn, München (1978), Händler*in
+          Ankäufe 1994
+        source: rietberg-rac-15
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1994-03-31
+    method: purchase
+    place: zurich
+    label: bought with funds of the City of Zürich
+    sources:
+      - url: https://rietberg.ch/sammlungen/rac-15
+        note: |-
+          31.03.1994: Museum Rietberg, Käufer*in
+          Creditline: Ankauf mit Mitteln der Stadt Zürich
+        source: rietberg-rac-15
+        accessed: 2026-11-24

@@ -1,0 +1,171 @@
+public_id: 124629
+title_lang: fr
+title: Portrait du cardinal Guillaume Dubois
+names:
+  - lang: en
+    role: original
+    text: Portrait of Cardinal Guillaume Dubois
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60469754
+creator: hyacinthe-rigaud
+created: 1723
+materials: [oil paint, canvas]
+dimensions: [146.7, 113.7]
+institution: cleveland-museum-of-art
+inventory_number: "1967.17"
+web_url: https://clevelandart.org/art/1967.17
+wikidata_id: Q60469754
+metadata:
+  sources: [Wikidata Q60469754 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/guillaume-dubois
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q60469754
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Hyacinthe_Rigaud_-_Portrait_of_Cardinal_Guillaume_Dubois_-_1967.17_-_Cleveland_Museum_of_Art.jpg/1280px-Hyacinthe_Rigaud_-_Portrait_of_Cardinal_Guillaume_Dubois_-_1967.17_-_Cleveland_Museum_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hyacinthe_Rigaud_-_Portrait_of_Cardinal_Guillaume_Dubois_-_1967.17_-_Cleveland_Museum_of_Art.jpg
+    license: Public domain
+    credit: Hyacinthe Rigaud
+provenance:
+  - owner_label: Mlle. Violat
+    acquired: 1764 or earlier
+    label: heiress of Cardinal Dubois, at the Château de Villemenon near Brie-Comte-Robert; documented in the Cochin–Marigny correspondence
+    sources:
+      - url: https://clevelandart.org/art/1967.17
+        note: Mlle. Violat (heiress of Cardinal Dubois), Chateau de Villemenon, near Brie-Comte-Robert [by 1764] — The Archives de l'art français ... vol. 19, pp. 312-315 contains the correspondence between Charles-Nicolas Cochin and the Marquis de Marigny that refer to Violat's possession of the painting.
+        source: cma-1967-17
+        accessed: 2026-11-24
+  - owner: person/george-wyndham-4th-earl-of-egremont
+    ended: 1845
+    label: whereabouts from his death in 1845 until the 1892 sale unknown
+    sources:
+      - url: https://clevelandart.org/art/1967.17
+        note: George Francis Wyndham, 4th Earl of Egremont [1786 – 1845] [-1845]
+        source: cma-1967-17
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1892-05-21
+    method: auction
+    place: london
+    label: sale, Christie, Manson & Woods, London, 21 May 1892, no. 68 (a sale including the collection of the 4th Earl of Egremont)
+    sources:
+      - url: https://clevelandart.org/art/1967.17
+        note: (Sale, Christie, Manson & Woods, London, May 21, 1892, no. 68, possibly sold to P. & D. Colnaghi) — The sale does include the collection of the 4th Earl of Egremont, but the whereabouts of the painting from his death in 1845 until the sale in 1892 are unknown.
+        source: cma-1967-17
+        accessed: 2026-11-24
+  - owner: institution/p-d-colnaghi-co-ltd
+    role: dealer
+    acquired: 1892-05-21
+    method: auction
+    direct: true
+    place: london
+    label: buyer according to the Frick Art Reference Library's annotated copy of the 1892 sale catalogue; not confirmed by Colnaghi's stock books
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1967.17
+        note: (Possibly P. & D. Colnaghi, London) — According to the Frick Art Reference Library's annotated copy of the 1892 Christie's sale catalogue, the painting was purchased by Colnaghi. Unfortunately, Colnaghi's stock books do not go back as far as 1892 and thus this purchase cannot be confirmed.
+        source: cma-1967-17
+        accessed: 2026-11-24
+  - owner: person/rodolphe-kann
+    acquired: 1900 or earlier
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1967.17
+        note: Rodolphe Kann, Paris, collection purchased by the Duveen Brothers [By 1900-1907]
+        source: cma-1967-17
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1905
+    method: purchase
+    direct: true
+    place: paris
+    label: purchase of Kann's entire collection announced 1905, completed 7 August 1907 (Kann left no will); Duveen stock no. 156
+    sources:
+      - url: https://clevelandart.org/art/1967.17
+        note: (Duveen Brothers, Paris, sold to Edouard Kann) [1905-1907] — In 1905, shortly after Rodolphe Kann's death, Duveen announced its purchase of Kann's entire collection ... on August 7, 1907 the completion of the sale was published ... The Rigaud appears under stock no. 156 in the Duveen stock book that inventories the Rodolphe Kann collection.
+        source: cma-1967-17
+        accessed: 2026-11-24
+  - owner: person/edouard-kann
+    acquired: 1907-08-04
+    method: purchase
+    direct: true
+    place: berlin
+    label: called Rodolphe Kann's son here; bought it with other works from that collection ("K" in the Duveen stock book); also owned Aved's du Theil (CMA 1964.89)
+    sources:
+      - url: https://clevelandart.org/art/1967.17
+        note: Edouard Kann, Berlin [1907] — The Duveen Brothers stock book indicates, through a "K" in the "remarks" column, that on August 4, 1907, Edouard Kann, Rodolphe's son, purchased the Rigaud and other works from his father's collection
+        source: cma-1967-17
+        accessed: 2026-11-24
+  - owner_label: Mme. Delaney
+    label: may have been in the Delaney collection, as the Aved portrait (CMA 1964.89) owned by Kann and sold at the same 1956 sale; possibly the consignor
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1967.17
+        note: Prior to this auction, the Rigaud, like the Aved, may have been in the Delaney collection. The Aved painting ... were both owned by Edouard Kann and then by “Mme. Delaney,” who may or may not have been the consignor to the 1956 Drouot sale.
+        source: cma-1967-17
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1956-12-10
+    method: auction
+    place: paris
+    label: sale, Hôtel Drouot, Paris, 10 December 1956, lot Q
+    sources:
+      - url: https://clevelandart.org/art/1967.17
+        note: (Hôtel Drouot, sale, Dec. 10, 1956, lot Q, sold to Wildenstein & Co.) [1956]
+        source: cma-1967-17
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1956-12-10
+    method: auction
+    direct: true
+    place: new-york-city
+    label: bought at the Drouot sale together with Aved's Portrait of Jean-Gabriel du Theil (CMA 1964.89)
+    sources:
+      - url: https://clevelandart.org/art/1967.17
+        note: (Wildenstein & Co., New York, NY, sold to the Cleveland Museum of Art) [1956-1957] — In addition to the Rigaud painting, Wildenstein also purchased Aved's Portrait of Jean-Gabriel du Theil at the Signing of the Treaty of Vienna (CMA 1964.89) at this sale.
+        source: cma-1967-17
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1967
+    method: purchase
+    direct: true
+    place: cleveland
+    label: John L. Severance Fund
+    sources:
+      - url: https://clevelandart.org/art/1967.17
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1967-]
+        source: cma-1967-17
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60469754
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60469754
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60469754
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60469754
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60469754
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60469754

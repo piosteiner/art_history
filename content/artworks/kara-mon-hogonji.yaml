@@ -1,0 +1,66 @@
+public_id: 124084
+title: Kara-mon, Hogonji
+names:
+  - lang: ja
+    role: translation
+    text: 宝厳寺唐門
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020408
+institution: hogon-ji-temple
+location: [136.1435, 35.42063]
+wikidata_id: Q107020408
+metadata:
+  sources: [Wikidata Q107020408 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nagahama
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Hogonji08s3200.jpg/1280px-Hogonji08s3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hogonji08s3200.jpg
+    license: CC BY 2.5
+    credit: 663highland
+provenance:
+  - owner: person/toyotomi-hideyoshi
+    method: commission
+    place: osaka
+    label: said to have been the Gokurakubashi (Paradise Bridge) of Osaka Castle, north of the main enclosure, built by Hideyoshi — the temple calls it probably the only surviving structure of his castle
+    certainty: possible
+    sources:
+      - url: https://www.chikubushima.jp/precincts/precincts1.html
+        note: 『唐門』の前身であったと伝えられている大坂城の本丸北方に架けられていた『極楽橋』の姿が描かれており、その絵図から判断して、『唐門』こそが、秀吉が建てた幻の大坂城の唯一の遺構であろうと昨今注目を集めています。
+        source: chikubushima-precincts1
+        accessed: 2026-11-24
+  - owner: institution/toyokuni-shrine
+    method: transfer
+    place: kyoto
+    label: the Gokuraku-mon (Paradise Gate) of the Toyokuni mausoleum of Hideyoshi in Higashiyama, Kyoto; kunishitei leaves open whether the gate is the one the Shunkyūki names
+    certainty: probable
+    sources:
+      - url: https://www.chikubushima.jp/precincts/precincts1.html
+        note: この『唐門』は、秀吉を祀った京都東山の豊国廟に建っていた『極楽門』を豊臣秀頼の命により片桐且元を普請奉行として移築されたものです。… 大坂城の極楽橋が豊国神社に移築された旨の記述があり
+        source: chikubushima-precincts1
+        accessed: 2026-11-24
+  - owner: institution/hogon-ji-temple
+    acquired: 1602/1603
+    method: gift
+    place: nagahama
+    label: "moved to Chikubushima by order of Toyotomi Hideyori with Katagiri Katsumoto as commissioner (Shunkyūki: dismantling for the donation began 1602; dated 1603 by kunishitei); the temple kept it at the 1883 division of property with Tsukubusuma Shrine and is the owner today"
+    sources:
+      - url: https://www.chikubushima.jp/precincts/precincts1.html
+        note: 豊国廟社僧の梵舜が『舜旧記』 にて、豊国極楽門を竹生島に寄進したとの記述を残しています。
+        source: chikubushima-precincts1
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1521
+        note: 年代 ： 慶長8 西暦 ： 1603 … 向唐門で慶長八年（一六〇三）豊臣秀頼が片桐且元を奉行として、観音堂とともにほかより移建したものである。唐門については舜旧記（内閣文庫所蔵）慶長七年（一六〇二）六月十一日の条に「今日ヨリ豊国極楽門内府ヨリ竹生島ヘ依寄進壊始」とあるものに該当するものかどうか、明らかでない … 所有者名 ： 宝厳寺 所有者種別 ： 寺院
+        source: kunishitei-102-1521
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111552333
+        note: 1874年（明治7年）に「寺」と「神社」の境界が決まると、当寺の本堂であった建物は都久夫須麻神社の本殿となった。所有財産は寺と神社それぞれに分けた1883年（明治16年）以降、今日までそれぞれの管理下にある。
+        source: wikipedia-ja-111552333
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020408

@@ -1,0 +1,49 @@
+public_id: 124086
+title: Belfry, Todaiji
+names:
+  - lang: fr
+    role: translation
+    text: tour du clocher du temple Tōdai
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020494
+  - lang: ja
+    role: translation
+    text: 東大寺鐘楼
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020494
+created: 1207/1210
+institution: todai-ji
+location: [135.842, 34.68869]
+wikidata_id: Q107020494
+metadata:
+  sources: [Wikidata Q107020494 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nara
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Bell_Tower_of_Todaiji.jpg/1280px-Bell_Tower_of_Todaiji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bell_Tower_of_Todaiji.jpg
+    license: CC BY-SA 4.0
+    credit: Christophe95
+provenance:
+  - owner: institution/todai-ji
+    acquired: 1207/1210
+    method: creation
+    place: nara
+    label: belfry rebuilt in the Jōgen era by Eisai (Yōsai), Chōgen's successor as chief fundraiser (daikanjin); the first belfry was probably built in 752 when the great bell was hung; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/2437
+        note: 東大寺に初めて鐘を懸けたのは天平勝宝四年（七五二）であるから、鐘楼もこの年に創建されたと思われ … 現存の鐘楼は鎌倉時代前期の再建で、重源に次いで勧進職となった栄西（一一四一～一二一五）が承元年間（一二〇七～一一）頃に建てたものである。… 所有者名 ： 東大寺 所有者種別 ： 寺院
+        source: kunishitei-102-2437
+        accessed: 2026-11-24
+      - url: https://www.todaiji.or.jp/information/shoro/
+        note: 現在の建物は、重源上人のあとを継いで東大寺の大勧進となられた栄西（ようさい）禅師が鎌倉時代（承元年間・1207～10）に再建したもの。
+        source: todaiji-shoro
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020494

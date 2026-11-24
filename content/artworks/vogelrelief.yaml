@@ -1,0 +1,55 @@
+public_id: 123843
+title_lang: de
+title: Vogelrelief
+attribution_label: Anonymous
+created: c. 560
+created_span: uncertain
+kind: relief
+medium: Kalkstein
+dimensions: [42, 19]
+institution: museum-rietberg
+inventory_number: RCH 148
+web_url: https://rietberg.ch/sammlungen/rch-148
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Tang_Sitzender_Bodhisattva_Museum_Rietberg.jpg/1280px-Tang_Sitzender_Bodhisattva_Museum_Rietberg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tang_Sitzender_Bodhisattva_Museum_Rietberg.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: c. 560
+    method: creation
+    place: taiyuan-city
+    label: made for Cave 16, Tianlongshan Grottoes, Northern Qi dynasty
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-148
+        note: Herstellungsort Höhle 16, Tianlongshan-Grotten, Taiyuan, Provinz Shanxi, China, Asien Datierung Nördliche Qi-Dynastie, um 560
+        source: rietberg-rch-148
+        accessed: 2026-11-24
+  - owner: institution/yamanaka-co
+    role: dealer
+    acquired: before 1932
+    place: new-york-city
+    label: Yamanaka & Co., Ltd., New York; whereabouts before unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-148
+        note: "[...] Verbleib unbekannt vor 1932: Yamanaka & Co., Ltd., New York (1894), Händler*in, [New York]"
+        source: rietberg-rch-148
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: before 1932
+    label: Sammlung Eduard von der Heydt
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-148
+        note: "vor 1932: Sammlung Eduard von der Heydt, Sammler/in"
+        source: rietberg-rch-148
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    method: gift
+    place: zurich
+    label: gift of Eduard von der Heydt (creditline); date not given
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-148
+        note: Museum Rietberg (1952), Begünstigte/r, Zürich
+        source: rietberg-rch-148
+        accessed: 2026-11-24

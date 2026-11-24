@@ -1,0 +1,88 @@
+public_id: 122754
+name_lang: ja-Latn
+name: Heian jinbutsu shi
+names:
+  - lang: ja
+    role: original
+    text: 平安人物志
+  - lang: ja
+    role: alternative
+    text: 平安人物誌
+    note: title of most editions from 1775 on in library records
+  - lang: ja-Latn
+    role: alternative
+    text: Heian jinbutsushi
+  - lang: en
+    role: translation
+    text: Who’s Who in Old Kyoto
+    note: Nichibunken’s English title
+  - lang: en
+    role: translation
+    text: Record of Heian (Kyoto) Notables
+    note: Maske 2023 / Fister
+kind: jinmeiroku
+written: 1768/1867
+description_md: |-
+  The *Heian jinbutsu shi* (平安人物志, also written 平安人物誌) is a printed directory of the scholars, poets, calligraphers, painters and other cultural figures living in [[place/kyoto|Kyoto]], compiled under the name Rōkanshi (弄翰子) [[source/cinii-bc07145531-heian-jinbutsu-shi-1768|見返し, 巻頭]]. Its first edition, dated the third month of Meiwa 5 (1768), promised on its inside cover to give each person’s surname, given name, courtesy name, art name, residence and common name [[source/cinii-bc07145531-heian-jinbutsu-shi-1768|見返し, 刊記]]. Nine editions followed one another, roughly one a decade: 1768, 1775, 1782, 1813, 1822, 1830, 1838, 1852 and 1867 [[source/ahn-2010-kinsei-kyoto-eshi-kyoju|p. 2063]]. They were small books of about 16 cm, bound as one volume; the 1813 edition is divided into three *kan* and an appendix [[source/ndl-search-2026-heian-jinbutsu-shi|R000000050-I000088310; R100000136-I1970023484851994652]]. The 1813 contents run from Confucian scholars, poets, calligraphers, seal carvers and painters through waka and renga poets, court-dress experts and connoisseurs to physicians, naturalists, mathematicians, collectors, scholars of Dutch learning and craftsmen, with women and monks in an appendix [[source/rokanshi-1813-heian-jinbutsu-shi|目次]]. The editors left out martial and ‘vulgar’ arts because letters were the main concern, and stated that names were entered as heard, in no order of rank [[source/rokanshi-1813-heian-jinbutsu-shi|凡例 1–2]]. Iwasa nevertheless found that the 73 painters of 1813 open with the heads of the Tosa, Tsurusawa, Kyō-Kanō, Yamamoto, Kishi, Katsuyama, Maruyama, Hara and Yoshimura houses and their sons, an order conscious of standing [[source/iwasa-1997-ki-no-hironari-gagyo|p. 100]]. The number of painters grew from 16 in 1768 to 163 in 1830 and fell to 102 in 1867 [[source/ahn-2010-kinsei-kyoto-eshi-kyoju|table 1]]. Literati painters were listed with the others until 1782 and had their own section from 1822 [[source/ahn-2010-kinsei-kyoto-eshi-kyoju|n. 13]]. Because the book was reissued in the same form, historians compare editions to date careers, ranks and moves: Iwasa follows Ki no Hironari from no. 52 among the painters in 1813 to no. 29 in 1830 and dates his move to Saga between 1813 and 1822 [[source/iwasa-1997-ki-no-hironari-gagyo|pp. 100–101]]. Ahn maps painters’ addresses edition by edition [[source/ahn-2010-kinsei-kyoto-eshi-kyoju|p. 2063]]. The International Research Center for Japanese Studies (Nichibunken) offers images, full text and an index of its copies of the editions from 1768 to 1867 [[source/nichibunken-2002-heian-jinbutsu-shi-db|description]].
+
+  **Editions.** 1768 (明和5), 1775 (安永4), 1782 (天明2), 1813 (文化10), 1822 (文政5), 1830 (文政13), 1838 (天保9), 1852 (嘉永5), 1867 (慶応3); the publishers named in the library records change from edition to edition — 百足屋治郎兵衛 and 銭屋七郎兵衛 in 1768, 林伊兵衛 in 1813, 堺屋仁兵衛 (Shōshodō) from 1822 on [[source/ndl-search-2026-heian-jinbutsu-shi|R100000136-I1970586434872521252; R100000002-I000007315703]]. Library records, Ahn and Iwasa date the third edition Tenmei 2 (1782) [[source/ahn-2010-kinsei-kyoto-eshi-kyoju|table 1]]; the Ashmolean Museum gives 1783 [[source/ashmolean-2013-nanga-nanpin-school|text]]. The 1852 edition closes with an appendix of women, headed ‘placed without regard to rank’ (位置不問甲乙), among them the poet-nun Ōtagaki Rengetsu [[source/rokanshi-1852-heian-jinbutsu-shi|附録 女流]]. Tohoku University Library offers its copies of the 1813, 1822, 1830/1838 and 1852 editions as images under CC BY [[source/tohoku-university-library-heian-jinbutsu-shi-records|records 10010000007700–7705]].
+
+  In Kyoto the directory went together with a culture of public exhibitions of calligraphy and painting. From 1792 the scholar Minagawa Kien held ‘new calligraphy and painting exhibitions’ at Higashiyama, fourteen of them to 1798, each with three to four hundred works sent from all over Japan [[source/iwasa-1997-ki-no-hironari-gagyo|p. 101]]. The *Kōto shoga jinmeiroku* (1847), a Kyoto directory of painters and calligraphers, prints in its colophon the rules for such an exhibition [[source/iwasa-1997-ki-no-hironari-gagyo|p. 101]]. Iwasa Shin’ichi reconstructs the career of the painter Ki no Hironari from both kinds of record: his places in the *Heian jinbutsu shi* of 1813, 1822, 1830 and 1838, and the exhibitions of 1809, 1810 and 1814 to which he sent works [[source/iwasa-1997-ki-no-hironari-gagyo|pp. 100–102]]. The Edo directory [[literature/edo-shoka-jinmeiroku|Edo shoka jinmeiroku]], by contrast, was compiled by an organiser of *[[term/shogakai|shogakai]]*, [[person/senmentei-denshiro|Senmentei]] [[source/senmentei-1815-edo-toji-shoka-jinmeiroku|colophon]] [[source/campbell-1987-tenpoki-zengo-shogakai|pp. 50–51]].
+metadata:
+  online: [https://lapis.nichibun.ac.jp/heian/index.html, https://touda.tohoku.ac.jp/collection/database/library/10010000007700, https://touda.tohoku.ac.jp/collection/database/library/10010000007705]
+  compiler: 弄翰子 (Rōkanshi)
+  editions:
+    - era: 明和5
+      year: "1768"
+      records: R100000136-I1970586434872521252; R100000092-I2324_6782443 (Kyushu Univ.)
+      publishers: 百足屋治郎兵衛 and 銭屋七郎兵衛 (imprint 博昌堂・芸香堂)
+    - era: 安永4
+      year: "1775"
+      records: R100000136-I1970023484937332008; R100000092-I2324_6782435
+      publishers: 銭屋七郎兵衛, 林伊兵衛, 西村市良右衛門, 石田善蔵; title 改刻平安人物志
+    - era: 天明2
+      year: "1782"
+      records: R100000136-I1970304959901729085; R100000092-I2324_6782383
+      publishers: 銭屋七郎兵衛, 美濃屋次右衛門, 西村市良右衛門, 林伊兵衛; title 天明新刻平安人物志
+    - era: 文化10
+      year: "1813"
+      records: R100000136-I1970023484851994652 (文化10.10[1813]); R100000092-I2324_6782387
+      publishers: 林伊兵衛; 3 巻 + 附録 1 巻; title 文化再板平安人物志
+    - era: 文政5
+      year: "1822"
+      records: R100000002-I000007315703; R100000092-I2324_6782384
+      publishers: 尚書堂 (堺屋仁兵衛); title 文政再板平安人物志
+    - era: 文政13
+      year: "1830"
+      records: R100000001-I2712B17345499; R100000092-I2324_6782386
+      publishers: 竹簡堂桝屋利助 and 尚書堂堺屋仁兵衛; 3 巻 (+附録), 3 + 70 leaves, 16 cm; title 文政再刻平安人物誌
+    - era: 天保9
+      year: "1838"
+      records: R100000136-I1970023484854232739; R100000092-I2324_6782385
+      publishers: 尚書堂堺屋仁兵衛 and 竹簡堂桝屋利助; title 天保改刻平安人物誌
+    - era: 嘉永5
+      year: "1852"
+      records: R100000002-I024236183; R100000116-I5779; R100000092-I2324_6782389
+      publishers: 堺屋仁兵衛 and 河内屋和助; 3 巻 + 附録; 2 + 67 + 10 leaves, 15.8 cm, published first month; title 嘉永改刻平安人物誌
+    - era: 慶応3
+      year: "1867"
+      records: R100000002-I000007315710; R100000092-I2324_6782445
+      publishers: 堺屋仁兵衛 (尚書堂); 3 巻; title 慶應改刻平安人物誌
+  reprints: ["芸苑叢書 第2期, 風俗絵巻図画刊行会 1923–25 (NDL pid 1240967)", "森銑三・中島理寿編『近世人名録集成』第1巻, 勉誠社 1976"]
+relationships:
+  - type: written_by
+    to: person/rokanshi
+    label: compiler
+    sources:
+      - source: cinii-bc07145531-heian-jinbutsu-shi-1768
+        locator: 巻頭
+        accessed: 2026-11-23
+sources:
+  kind:
+    - source: tokyo-metropolitan-library-2006-koeki-shoka-jinmeiroku
+      locator: text
+      accessed: 2026-11-23
+  written:
+    - source: ahn-2010-kinsei-kyoto-eshi-kyoju
+      locator: p. 2063
+      accessed: 2026-11-23

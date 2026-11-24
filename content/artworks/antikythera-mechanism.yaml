@@ -1,0 +1,126 @@
+public_id: 123102
+title: Antikythera mechanism
+names:
+  - lang: nl
+    role: translation
+    text: mechanisme van Antikythera
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q182324
+  - lang: fr
+    role: translation
+    text: machine d'Anticythère
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q182324
+  - lang: de
+    role: translation
+    text: Mechanismus von Antikythera
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q182324
+  - lang: it
+    role: translation
+    text: macchina di Anticitera
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q182324
+  - lang: es
+    role: translation
+    text: mecanismo de Anticitera
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q182324
+  - lang: ja
+    role: translation
+    text: アンティキティラ島の機械
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q182324
+  - lang: zh
+    role: translation
+    text: 安迪基西拉机械装置
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q182324
+  - lang: ko
+    role: translation
+    text: 안티키테라 메커니즘
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q182324
+  - lang: ru
+    role: translation
+    text: Антикитерский механизм
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q182324
+materials: [bronze]
+institution: national-archaeological-museum-of-athens
+web_url: http://odysseus.culture.gr/h/4/eh430.jsp?obj_id=5582
+location: [23.305, 35.86417]
+wikidata_id: Q182324
+metadata:
+  sources: [Wikidata Q182324 (retrieved 2026-11-23)]
+relationships:
+  - type: created_in
+    to: place/municipal-unit-of-antikythira
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/66/NAMA_Machine_d%27Anticyth%C3%A8re_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:NAMA_Machine_d%27Anticyth%C3%A8re_1.jpg
+    license: CC BY 2.5
+    credit: No machine-readable author provided. Marsyas assumed (based on copyright claims).
+provenance:
+  - owner_label: unknown
+    role: event
+    acquired: c. 70–60 BCE
+    label: lost in the wreck of a Roman cargo ship off Point Glyphadia, Antikythera; how the mechanism came on board is unknown; in Antikythera
+    sources:
+      - url: https://en.wikipedia.org/wiki/Antikythera_mechanism
+        note: This wreck of a Roman cargo ship was found at a depth of 45 m off Point Glyphadia on the Greek island of Antikythera. … It is unknown how the mechanism came to be on the cargo ship.
+        source: wikipedia-en-antikythera-mechanism
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Antikythera_Ephebe
+        note: The wreck site, which is dated about 70–60 BC, also yielded the Antikythera mechanism
+        source: wikipedia-en-antikythera-ephebe
+        accessed: 2026-11-24
+  - owner: person/dimitrios-kontos
+    acquired: 1901
+    method: find
+    label: wreck discovered early 1900; retrieved in 1901, probably July, during the first expedition with the Hellenic Royal Navy (1900–1901); in Antikythera; with sponge divers from Symi
+    sources:
+      - url: https://en.wikipedia.org/wiki/Antikythera_mechanism
+        note: Captain Dimitrios Kontos (Δημήτριος Κοντός) and a crew of sponge divers from Symi island discovered the Antikythera wreck in early 1900, and recovered artefacts during the first expedition with the Hellenic Royal Navy, in 1900–1901. … The mechanism was retrieved from the wreckage in 1901, probably July.
+        source: wikipedia-en-antikythera-mechanism
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    acquired: 1902 or earlier
+    method: transfer
+    direct: true
+    place: athens
+    label: gear wheel recognised by Valerios Stais on 17 May 1902; inventory Χ 15087
+    sources:
+      - url: https://en.wikipedia.org/wiki/Antikythera_mechanism
+        note: All of the items retrieved from the wreckage were transferred to the National Museum of Archaeology in Athens for storage and analysis. … On 17 May 1902, archaeologist Valerios Stais, together with his cousin, the Greek politician Spyridon Stais, found one of the pieces of rock had a gear wheel embedded in it.
+        source: wikipedia-en-antikythera-mechanism
+        accessed: 2026-11-24
+      - url: http://odysseus.culture.gr/h/4/eh430.jsp?obj_id=5582
+        note: "The Metals Collection. The Antikythera mechanism … Inventory number: Χ15087"
+        source: odysseus-nam-antikythera-mechanism
+        accessed: 2026-11-24
+identifiers:
+  gnd: 7738934-7
+  viaf: "196750699"
+sources:
+  location:
+    - accessed: 2026-11-23
+      property: P625
+      wikidata: Q182324
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q182324
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q182324

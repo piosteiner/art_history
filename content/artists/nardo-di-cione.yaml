@@ -1,0 +1,18 @@
+public_id: 123033
+name: Nardo di Cione
+given_name: Nardo
+family_name: di Cione
+birth: c. 1320
+death: 1365/1366
+wikidata_id: Q748491
+metadata:
+  sources: [Wikidata Q748491 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q748491
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q748491

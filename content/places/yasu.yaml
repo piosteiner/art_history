@@ -1,0 +1,41 @@
+public_id: 124038
+name: Yasu
+names:
+  - lang: ja
+    role: original
+    text: 野洲市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q611642
+  - lang: ko
+    role: translation
+    text: 야스시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q611642
+  - lang: ru
+    role: translation
+    text: Ясу
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q611642
+kind: settlement
+parent: shiga-prefecture
+country_code: JP
+location: [136.02583, 35.06747]
+wikidata_id: Q611642
+metadata:
+  sources: [Wikidata Q611642 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q611642
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q611642
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q611642

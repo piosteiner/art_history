@@ -1,0 +1,23 @@
+public_id: 123058
+name: Robert Liston
+given_name: Robert
+family_name: Liston
+kind: person
+birth: 1742-10-08
+death: 1836-07-15
+wikidata_id: Q5960100
+metadata:
+  sources: [Wikidata Q5960100 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q5960100
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q5960100
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q5960100

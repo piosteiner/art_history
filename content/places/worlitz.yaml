@@ -1,0 +1,22 @@
+public_id: 127484
+name: Wörlitz
+kind: settlement
+parent: sachsen-anhalt
+country_code: DE
+location: [12.42028, 51.84167]
+wikidata_id: Q518275
+metadata:
+  sources: [Wikidata Q518275 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q518275
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q518275
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q518275

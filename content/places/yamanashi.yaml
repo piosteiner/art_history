@@ -1,0 +1,41 @@
+public_id: 123994
+name: Yamanashi
+names:
+  - lang: ja
+    role: original
+    text: 山梨市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q840610
+  - lang: ko
+    role: translation
+    text: 야마나시시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q840610
+  - lang: ru
+    role: translation
+    text: Яманаси
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q840610
+kind: settlement
+parent: japan
+country_code: JP
+location: [138.68689, 35.69344]
+wikidata_id: Q840610
+metadata:
+  sources: [Wikidata Q840610 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q840610
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q840610
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q840610

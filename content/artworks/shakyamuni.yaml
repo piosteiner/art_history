@@ -1,0 +1,64 @@
+public_id: 124761
+title_lang: en
+title: Shakyamuni
+created: c. 900
+created_span: uncertain
+institution: cleveland-museum-of-art
+inventory_number: "1986.7"
+web_url: https://clevelandart.org/art/1986.7
+wikidata_id: Q79939282
+metadata:
+  sources: [Wikidata Q79939282 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Japan%2C_Heian_Period_-_Seated_Shaka_-_1986.7_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Japan%2C_Heian_Period_-_Seated_Shaka_-_1986.7_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japan,_Heian_Period_-_Seated_Shaka_-_1986.7_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Cleveland Museum of Art
+provenance:
+  - owner: person/ito-shobei
+    sources:
+      - url: https://clevelandart.org/art/1986.7
+        note: Ito Shobei
+        source: cma-1986-7
+        accessed: 2026-11-24
+  - owner: person/nakamura-shoichiro
+    place: sakai
+    sources:
+      - url: https://clevelandart.org/art/1986.7
+        note: Nakamura Shoichiro, Sakai, Japan
+        source: cma-1986-7
+        accessed: 2026-11-24
+  - owner: institution/yanagi-fine-art-shop-kyoto
+    role: dealer
+    ended: 1986
+    place: kyoto
+    label: sold to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1986.7
+        note: (Yanagi Fine Art Shop, Kyoto, Japan, sold to the Cleveland Museum of Art) [?–1986]
+        source: cma-1986-7
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1986
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/1986.7
+        note: The Cleveland Museum of Art, Cleveland, OH [1986–] — Leonard C. Hanna Jr. Fund
+        source: cma-1986-7
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q79939282
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q79939282
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q79939282

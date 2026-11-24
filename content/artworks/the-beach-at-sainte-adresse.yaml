@@ -1,0 +1,232 @@
+public_id: 125198
+title_lang: en
+title: The Beach at Sainte-Adresse
+names:
+  - lang: nl
+    role: translation
+    text: Het strand van Sainte-Adresse
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3966658
+  - lang: fr
+    role: translation
+    text: La Plage de Sainte-Adresse
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3966658
+  - lang: de
+    role: translation
+    text: Der Strand von Sainte-Adresse
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3966658
+  - lang: it
+    role: translation
+    text: Spiaggia a Sainte-Adresse
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3966658
+  - lang: zh
+    role: translation
+    text: 聖阿德雷斯的海灘
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3966658
+  - lang: ko
+    role: translation
+    text: 생타드레스의 해변
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3966658
+  - lang: ru
+    role: translation
+    text: Пляж в Сент-Адрессе
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3966658
+creator: claude-monet
+created: 1867
+materials: [oil paint, canvas]
+dimensions: [75.8, 102.5]
+institution: art-institute-of-chicago
+inventory_number: "1933.439"
+wikidata_id: Q3966658
+metadata:
+  sources: [Wikidata Q3966658 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/sainte-adresse
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q3966658
+  - type: depicts
+    to: place/sainte-adresse
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q3966658
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q3966658
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Claude_Monet_-_The_Beach_at_Sainte-Adresse_-_Google_Art_Project.jpg/1280px-Claude_Monet_-_The_Beach_at_Sainte-Adresse_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_The_Beach_at_Sainte-Adresse_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: artist/claude-monet
+    acquired: 1867
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/14598
+        note: The artist (d. 1926);
+        source: aic-1933-439
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1873-02-28
+    method: purchase
+    direct: true
+    place: paris
+    label: stock book 1868–73, no. 2585, as Marine, temps gris
+    price:
+      amount: 400
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/14598
+        note: sold to Durand-Ruel, Paris, Feb. 28, 1873, for 400 francs [per Durand-Ruel, Paris, stock book for 1868–73 (no. 2585, as Marine, temps gris),
+        source: aic-1933-439
+        accessed: 2026-11-24
+  - owner: person/jean-baptiste-faure
+    acquired: 1876 or earlier
+    method: purchase
+    direct: true
+    place: paris
+    label: per Wildenstein 1996; the Durand-Ruel Archives cannot confirm the purchase
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/14598
+        note: probably sold to Jean-Baptiste Faure, Paris, by 1876 [per Wildenstein 1996; the Durand-Ruel Archives are unable to confirm Faure's purchase
+        source: aic-1933-439
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1893-01-09
+    method: purchase
+    direct: true
+    place: paris
+    label: stock book 1891, no. 2585, as Sainte-Adresse
+    price:
+      amount: 7000
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/14598
+        note: sold to Durand-Ruel, Paris, Jan. 9, 1893, for 7,000 francs [this and the following per Durand-Ruel, Paris, stock book for 1891 (no. 2585, as Sainte-Adresse)
+        source: aic-1933-439
+        accessed: 2026-11-24
+  - owner: person/henri-vever
+    acquired: 1893-01-17
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 8000
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/14598
+        note: sold to Henri Véver, Paris, Jan. 17, 1893, for 8,000 francs;
+        source: aic-1933-439
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1897-02-01
+    method: auction
+    direct: true
+    place: paris
+    label: Henri Véver sale, Galerie Georges Petit, Paris, 1–2 February 1897, lot 79
+    sources:
+      - url: https://www.artic.edu/artworks/14598
+        note: sold Henri Véver, Paris, sale, Galerie Georges Petit, Paris, Feb. 1–2, 1897, lot 79,
+        source: aic-1933-439
+        accessed: 2026-11-24
+  - owner: person/georges-kohn
+    acquired: 1897-02
+    method: auction
+    direct: true
+    place: paris
+    label: "bought through Boulley as his agent; Durand-Ruel Archives: “acheté à G. Kohn (et non pas Kahn)”"
+    price:
+      amount: 9000
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/14598
+        note: to Boulley, as the agent for Georges Kohn, Paris, for 9,000 francs [per Galerie Georges Petit, Paris, sale cat. Feb. 1–2, 1897, the Durand-Ruel Archives also confirms that the painting was “acheté à G. Kohn (et non pas Kahn)”
+        source: aic-1933-439
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    co_owners: [institution/bernheim-jeune]
+    role: dealer
+    acquired: 1920-06-11
+    method: purchase
+    direct: true
+    place: paris
+    label: bought jointly; Durand-Ruel stock book 1921, no. 11701, as Sainte-Adresse
+    price:
+      amount: 40000
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/14598
+        note: sold jointly to Durand-Ruel, Paris, and Bernheim-Jeune, Paris, June 11, 1920, for 40,000 francs [per Durand-Ruel, Paris, stock book for 1921 (no. 11701, as Sainte-Adresse)
+        source: aic-1933-439
+        accessed: 2026-11-24
+  - owner: person/annie-swan-coburn
+    acquired: 1923-02-08
+    ended: 1932
+    method: purchase
+    direct: true
+    place: chicago
+    label: Durand-Ruel, New York, deposit book 1894–1925, no. 8044; purchase confirmed in a Durand-Ruel letter of 18 March 1932
+    sources:
+      - url: https://www.artic.edu/artworks/14598
+        note: sold to Annie Swan Coburn, Chicago (d. 1932), Feb. 8, 1923 [per Durand-Ruel, New York, deposit book for 1894–1925 (no. 8044, as Sainte-Adresse), … see also a letter on Durand-Ruel letterhead, Mar. 18, 1932, verifying that Coburn purchased the painting from Durand-Ruel]
+        source: aic-1933-439
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1933
+    method: bequest
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/14598
+        note: Bequeathed to the Art Institute of Chicago, 1933.
+        source: aic-1933-439
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3966658
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q3966658
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3966658
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3966658
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3966658
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q3966658

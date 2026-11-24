@@ -1,0 +1,229 @@
+public_id: 124027
+title: Inui Kotenshu
+names:
+  - lang: ja
+    role: translation
+    text: 松本城乾小天守
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020349
+created: 1594
+institution: ministry-of-education-culture-sports-science-and-technology
+location: [137.9688, 36.2388]
+wikidata_id: Q107020349
+metadata:
+  sources: [Wikidata Q107020349 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/matsumoto
+    period: 1594
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Matsumoto_Castle_04-focused-left.jpg/1280px-Matsumoto_Castle_04-focused-left.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Matsumoto_Castle_04-focused-left.jpg
+    license: CC BY 3.0
+    credit: Σ64
+provenance:
+  - owner: person/ishikawa-yasunaga
+    acquired: 1593/1594
+    ended: 1613
+    method: commission
+    place: matsumoto
+    label: lord of Matsumoto from 1592 after his father Kazumasa; built the keeps (Inui small keep, connecting turret, main keep), probably 1593–1594 (city's official view); attainted 1613 over the Ōkubo Nagayasu affair
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 康長は父の企てた城普請を継ぎ天守を建て、総堀を浚い幅を広くし、岸を高くして石垣を築き、渡り矢倉を造り … 康長（やすなが） 文禄元～慶長18（1613） … 1613（慶長18） 石川康長が大久保長安事件に連座して改易になる。
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+      - url: https://www.matsumoto-castle.jp/value/construction
+        note: 平成24年文化庁文化財部参事官（建造物担当）が発行した『国宝・重要文化財建造物目録』では、乾小天守を文禄元年、天守・渡櫓を元和初年頃としています。 … 天守の築造は文禄2年から3年にかけて行われ、乾小天守・渡櫓・大天守が造られた可能性が非常に高いということを答申しました。現在、松本市の公式な見解は、この検討結果をもとにしています。
+        source: matsumoto-castle-construction
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/921
+        note: 棟名 ： 乾小天守 … 時代 ： 桃山 年代 ： 文禄元 西暦 ： 1592 … 天正十八年（一五九〇）この地に封ぜられた石川数正はただちに改修に着手したが、文禄二年に没したので、その子康長がこれを継ぎ、天守を築き城郭を整備した。
+        source: kunishitei-102-921
+        accessed: 2026-11-24
+  - owner: person/ogasawara-hidemasa
+    acquired: 1613
+    ended: 1615
+    method: transfer
+    direct: true
+    place: matsumoto
+    label: moves from Iida; killed with his son Tadanaga in the summer campaign of Osaka, 1615
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 小笠原秀政が信濃飯田から松本へ入る。 … 1615（慶長20） 小笠原秀政・忠脩親子が大坂夏の陣で戦死する。
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+  - owner: person/ogasawara-tadamasa
+    acquired: 1615
+    ended: 1617
+    method: inheritance
+    direct: true
+    place: matsumoto
+    label: Ogasawara Tadamasa (later Tadazane); moved to Akashi in Harima
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 忠政（ただまさ） ［忠真（ただざね）］ 元和元（1615）～元和3（1617）
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+  - owner_label: Toda family (Toda Yasunaga, Toda Yasunao)
+    acquired: 1617
+    ended: 1633
+    method: transfer
+    direct: true
+    place: matsumoto
+    label: Toda Yasunaga moves from Takasaki (1617–1632), followed by Yasunao (1633)
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 戸田氏 康長（やすなが） 元和3～寛永9（1632） 康直（やすなお） 寛永10（1633）
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+  - owner: person/matsudaira-naomasa
+    acquired: 1633
+    ended: 1638
+    method: transfer
+    direct: true
+    place: matsumoto
+    label: adds the Tatsumi annex turret and the moon-viewing turret to the keep
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 1633（寛永10） 松平直政が松本城主となり、以後辰巳附櫓や月見櫓を天守に増設したり、城内外を整備したりする。
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+  - owner: person/hotta-masamori
+    acquired: 1638
+    ended: 1642
+    method: transfer
+    direct: true
+    place: matsumoto
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 堀田氏 正盛（まさもり） 寛永15～寛永19（1642）
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+  - owner_label: Mizuno family
+    acquired: 1642
+    ended: 1725
+    method: transfer
+    direct: true
+    place: matsumoto
+    label: six lords from Mizuno Tadakiyo to Tadatsune; attainted after Tadatsune's sword attack in Edo Castle
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 水野氏 忠清（ただきよ） 寛永19～正保4（1647） … 1725（享保10） 水野忠恒が江戸城内で刃傷事件を起こし、水野家は改易になる。
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+  - owner: institution/tokugawa-shogunate-2
+    acquired: 1725
+    ended: 1726
+    method: confiscation
+    direct: true
+    place: matsumoto
+    label: taken back by the shogunate; received and held for it by the Sanada of Matsushiro
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 松本城は幕府が収公し、松代の真田氏が城を受けとり預かる。
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+  - owner_label: Toda family
+    acquired: 1726
+    ended: 1871
+    method: transfer
+    direct: true
+    place: matsumoto
+    label: nine lords from Toda Mitsuchika to Toda Mitsuhisa, the last, who left for Tokyo after the abolition of the domains
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 1726（享保11） 戸田氏が再び松本へ入る。 … 同4年7月に、廃藩置県で松本藩は松本県となり、8月には城主・藩知事であった戸田氏は東京へ移っていきました。
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+  - owner: institution/ministry-of-war-hyobusho
+    acquired: 1871-10
+    method: transfer
+    direct: true
+    place: matsumoto
+    label: main bailey and keep handed over by Matsumoto Prefecture to the Ministry of War
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 1871（明治4） 廃藩置県で松本県になる 城郭の諸門の破壊が始まる。天守は兵部省が接収する。
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+      - url: https://www.matsumoto-castle.jp/value/citizens
+        note: 松本城本丸・天守は明治4年（1871）10月に松本県から兵部省へ引き渡されました。
+        source: matsumoto-castle-citizens
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1872
+    place: matsumoto
+    label: keep offered for sale by tender; knocked down for 235 ryō 1 bu 150 mon (Shinpi Shinbun no. 1, October 1872), but not demolished
+    sources:
+      - url: https://www.matsumoto-castle.jp/value/citizens
+        note: 明治5年10月の「信飛新聞」第1号には 「 松本城内天守櫓入札御払下ケ仰セ出サレ代金二百三十五両一分永百五十文ニテ落札相成タリ 」 との記事があります。
+        source: matsumoto-castle-citizens
+        accessed: 2026-11-24
+  - owner: person/ichikawa-ryozo
+    role: custodian
+    acquired: November 1873 or earlier
+    ended: 1876
+    place: matsumoto
+    label: asked Chikuma Prefecture to lend him the main bailey and keep for exhibitions, offering the bid money raised with supporters; five exhibitions held in the keep 1873–1876
+    certainty: probable
+    sources:
+      - url: https://www.matsumoto-castle.jp/value/citizens
+        note: 「 落札金員三百三十余両ハ、同志ヲ募リ献納イタシ、併セテ地租等モ相納可申候間、自今十ヶ年右破却ノ命ヲ弛、拝借被仰付様仕度 」 と本丸・天守の借り受けを申し出ています。 この結果、博覧会は明治6年11月の第1回を皮切りに、明治9年まで天守をつかって5回開催されています。
+        source: matsumoto-castle-citizens
+        accessed: 2026-11-24
+  - owner: institution/matsumoto-nojikai-matsumoto-agricultural-society
+    role: custodian
+    acquired: 1880
+    place: matsumoto
+    label: society of 50 men of Azumi and Chikuma districts; rented the main bailey, keep and storehouse as a trial ground for fruit and vegetables; returned when the main bailey became the middle school's grounds
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 明治13年（1880）に安曇郡・筑摩郡の有志50人によって松本農事会が組織されました。この会は、農業試験場にあてる目的で松本城本丸と天守および附属の官庫を借りいれ、果樹蔬菜（野菜）の新種を試験栽培し会員に配布しました。
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+  - owner: institution/matsumoto-middle-school
+    role: custodian
+    acquired: 1902
+    ended: 1931
+    place: matsumoto
+    label: Nagano Prefectural Matsumoto Middle School used the main bailey as its grounds from 1902; the management passed from it to the city in 1931
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 明治35年には、校庭の拡張の必要から本丸庭園を中学校の校庭として使用するようにしました。 … 昭和5年（1930）に松本城が国の史跡に指定されると、これが転機となり翌6年には管理が松本中学校から松本市へ移管されました。
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+  - owner: place/matsumoto
+    role: custodian
+    acquired: 1931
+    direct: true
+    place: matsumoto
+    label: City of Matsumoto manages the castle (managing body under the Cultural Properties law)
+    sources:
+      - url: https://www.matsumoto-castle.jp/about/history
+        note: 昭和5年（1930）に松本城が国の史跡に指定されると、これが転機となり翌6年には管理が松本中学校から松本市へ移管されました。
+        source: matsumoto-castle-history
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/921
+        note: 管理団体・管理責任者名 ： 松本市 松本城乾小天守
+        source: kunishitei-102-921
+        accessed: 2026-11-24
+  - owner: institution/ministry-of-education-culture-sports-science-and-technology
+    place: matsumoto
+    label: owned by the State of Japan (Ministry of Education, Culture, Sports, Science and Technology); designated a National Treasure 1936, again 1952
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/921
+        note: 所有者名 ： 国(文部科学省) 所有者種別 ： 国 管理団体・管理責任者名 ： 松本市 … 重文指定年月日 ： 1936.04.20(昭和11.04.20) 国宝指定年月日 ： 1952.03.29(昭和27.03.29)
+        source: kunishitei-102-921
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107020349
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020349

@@ -1,0 +1,73 @@
+public_id: 124711
+title_lang: en
+title: Eight Views of Xiao-Xiang
+creator: sesson-shukei
+created: 1500/1600
+created_label: c. 16th century
+created_span: uncertain
+institution: cleveland-museum-of-art
+inventory_number: "1979.77"
+web_url: https://clevelandart.org/art/1979.77
+wikidata_id: Q60474295
+metadata:
+  sources: [Wikidata Q60474295 (retrieved 2026-11-24)]
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1979.77/1979.77_web.jpg
+    source_url: https://clevelandart.org/art/1979.77
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: institution/setsu-gatodo-co-ltd
+    role: dealer
+    place: tokyo
+    sources:
+      - url: https://clevelandart.org/art/1979.77
+        note: (Setsu Gatodo Co., Ltd., Tokyo, Japan, sold to John D. Rockefeller III)
+        source: cma-1979-77
+        accessed: 2026-11-24
+  - owner: person/john-d-rockefeller-iii
+    acquired_label: before 1978
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1979.77
+        note: John D. Rockefeller III [1906–1978], New York, NY [? before 1978]
+        source: cma-1979-77
+        accessed: 2026-11-24
+  - owner: person/sherman-e-lee
+    ended: 1979
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1979.77
+        note: Dr. Sherman E. Lee [1918–2008], Cleveland, OH, given to the Cleveland Museum of Art [?–1979]
+        source: cma-1979-77
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1979
+    method: gift
+    direct: true
+    place: cleveland
+    label: Gift of Sherman E. Lee in memory of John D. Rockefeller, 3rd
+    sources:
+      - url: https://clevelandart.org/art/1979.77
+        note: The Cleveland Museum of Art, Cleveland, OH [1979–]
+        source: cma-1979-77
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60474295
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60474295
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60474295
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60474295

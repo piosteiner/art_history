@@ -1,0 +1,117 @@
+public_id: 122834
+title_lang: en
+title: A Painter's Studio
+names:
+  - lang: nl
+    role: translation
+    text: Een schildersatelier
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20180945
+creator: louis-leopold-boilly
+created: c. 1800
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [73.5, 59.5]
+institution: national-gallery-of-art
+inventory_number: 1943.7.1
+provenance_status: a_clear
+provenance_status_note: Sold at André Vincent's sale, Galerie Jean Charpentier, Paris, 25 May 1933, to Étienne Bignou, who sold it in 1933 to Chester Dale, New York; bequest 1943 to the NGA.
+wikidata_id: Q20180945
+metadata:
+  sources: [Wikidata Q20180945 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/A_Painter%27s_Studio_sc000450.jpg/1280px-A_Painter%27s_Studio_sc000450.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:A_Painter%27s_Studio_sc000450.jpg
+    license: Public domain
+    credit: Louis-Léopold Boilly
+provenance:
+  - owner_label: anonymous sale [Prince Galitzin?], Paris
+    role: agent
+    acquired: 1826-12-18
+    method: auction
+    place: paris
+    label: possibly anonymous sale [Prince Galitzin?], Paris, 18 December 1826, no. 140
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12199.html
+        note: Possibly (anonymous sale [Prince Galitzin?], Paris, 18 December 1826, no. 140).
+        source: nga-1943-7-1
+        accessed: 2026-11-24
+  - owner: person/andre-vincent
+    acquired: 1930 or earlier
+    place: paris
+    label: lent by him to an exhibition in Paris in 1930
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12199.html
+        note: André Vincent, Paris, by 1930;[1] — [1] Lent by Vincent to an exhibition in Paris in 1930.
+        source: nga-1943-7-1
+        accessed: 2026-11-24
+  - owner: institution/galerie-charpentier
+    role: agent
+    acquired: 1933-05-25
+    method: auction
+    direct: true
+    place: paris
+    label: Vincent's sale, 25 May 1933, no. 15; the catalogue confused it with the Henri de Rothschild version and misnamed it The Young Artist
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12199.html
+        note: (his sale, Galerie Jean Charpentier, Paris, 25 May 1933, no. 15);[2] — [2] The catalogue of the Vincent sale both confuses the provenance of this picture with that of its composition's other version, then in the collection of Baron Henri de Rothschild, and misidentifies it as The Young Artist
+        source: nga-1943-7-1
+        accessed: 2026-11-24
+  - owner: person/etienne-bignou
+    role: dealer
+    acquired: 1933-05-25
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12199.html
+        note: purchased by (Étienne Bignou, Paris, France);
+        source: nga-1943-7-1
+        accessed: 2026-11-24
+  - owner: person/chester-dale
+    acquired: 1933
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12199.html
+        note: sold 1933 to Chester Dale [1883-1962], New York;
+        source: nga-1943-7-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1943
+    method: bequest
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.12199.html
+        note: bequest 1943 to NGA.
+        source: nga-1943-7-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20180945
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20180945
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20180945
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20180945
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20180945
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20180945

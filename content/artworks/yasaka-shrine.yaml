@@ -1,0 +1,80 @@
+public_id: 124560
+title: Yasaka Shrine
+names:
+  - text: Yasaka-jinja
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q692714
+  - lang: nl
+    role: translation
+    text: Yasaka-schrijn
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q692714
+  - lang: fr
+    role: translation
+    text: sanctuaire de Yasaka
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q692714
+  - lang: de
+    role: translation
+    text: Yasaka-Schrein
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q692714
+  - lang: it
+    role: translation
+    text: santuario di Yasaka
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q692714
+  - lang: es
+    role: translation
+    text: Santuario Yasaka
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q692714
+  - lang: ja
+    role: translation
+    text: 八坂神社
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q692714
+  - lang: ko
+    role: translation
+    text: 야사카 신사
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q692714
+  - lang: ru
+    role: translation
+    text: Храм Ясака
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q692714
+created: 656
+location: [135.77853, 35.00365]
+wikidata_id: Q692714
+metadata:
+  sources: [Wikidata Q692714 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+    period: 656
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Kyoto_Yasaka-jinja_B%C3%BChne_%26_Nebentor_2.jpg/1280px-Kyoto_Yasaka-jinja_B%C3%BChne_%26_Nebentor_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kyoto_Yasaka-jinja_B%C3%BChne_%26_Nebentor_2.jpg
+    license: CC BY-SA 4.0
+    credit: Zairon
+identifiers:
+  viaf: "155220504"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q692714
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q692714

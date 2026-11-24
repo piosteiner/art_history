@@ -1,0 +1,18 @@
+public_id: 124682
+name: Jan Baptist Weenix
+given_name: Jan Baptist
+family_name: Weenix
+birth: 1621
+death: 1659
+wikidata_id: Q875076
+metadata:
+  sources: [Wikidata Q875076 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q875076
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q875076

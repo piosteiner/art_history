@@ -1,0 +1,53 @@
+public_id: 125855
+name: Ancient Olympia
+names:
+  - lang: ko
+    role: translation
+    text: 아르헤아올림피아
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q632542
+  - lang: fr
+    role: translation
+    text: Ancienne-Olympie
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q632542
+  - lang: de
+    role: translation
+    text: Archaia Olympia
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q632542
+  - lang: it
+    role: translation
+    text: Olimpia
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q632542
+  - lang: ru
+    role: translation
+    text: Архея Олимпия
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q632542
+kind: settlement
+parent: greece
+country_code: GR
+location: [21.62531, 37.64433]
+wikidata_id: Q632542
+metadata:
+  sources: [Wikidata Q632542 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q632542
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q632542
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q632542

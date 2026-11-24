@@ -1,0 +1,61 @@
+public_id: 122696
+title_lang: en
+title: Invitation to a shogakai at Yanagibashi, Ryōgoku
+names:
+  - lang: ja
+    role: original
+    text: 両国柳橋書画会案内状
+attribution_label: Kita Buichi (host); printer unknown
+created: 1826/1828
+created_span: uncertain
+kind: handbill
+dimensions: [15.7, 22.5]
+dimensions_note: later backing paper
+institution: edo-tokyo-museum
+inventory_number: "90210558"
+description_md: This printed invitation announces a *[[term/shogakai|shogakai]]* on the 28th day of the eighth month at the restaurant Kawachiya Hanjirō in Yanagibashi, rain or shine, at which 'the masters will write and paint at the table' [[source/koyama-2026-ryogoku-yanagibashi-shogakai|pp. 31–32]]. The host was the painter Kita Buichi, son of Kita Busei; the sheet lists 69 names, among them [[artist/sakai-hoitsu|Sakai Hōitsu]], [[artist/watanabe-kazan|Watanabe Kazan]], Ōkubo Shibutsu, Kikuchi Gozan and 25 of the Kitas' pupils [[source/koyama-2026-ryogoku-yanagibashi-shogakai|pp. 32, 35–36]]. Since Hōitsu died in 1828 and the youngest participant, Hasegawa Settei, was active from 1826, Shūko Koyama dates it between 1826 and 1828 [[source/koyama-2026-ryogoku-yanagibashi-shogakai|pp. 32–33]]. It measures 15.7 × 22.5 cm and was bought by the [[institution/edo-tokyo-museum|Edo-Tokyo Museum]] from a bookseller in 1990 [[source/koyama-2026-ryogoku-yanagibashi-shogakai|p. 31]].
+provenance:
+  - owner_label: bookseller (unnamed)
+    ended: 1990
+    direct: true
+    sources:
+      - source: koyama-2026-ryogoku-yanagibashi-shogakai
+        locator: provenance
+        accessed: 2026-11-23
+  - owner: institution/edo-tokyo-museum
+    acquired: 1990
+    method: purchase
+    direct: true
+    sources:
+      - source: koyama-2026-ryogoku-yanagibashi-shogakai
+        locator: provenance
+        accessed: 2026-11-23
+sources:
+  kind:
+    - source: koyama-2026-ryogoku-yanagibashi-shogakai
+      locator: pp. 31–32
+      accessed: 2026-11-23
+  medium:
+    - source: koyama-2026-ryogoku-yanagibashi-shogakai
+      locator: pp. 31–32
+      accessed: 2026-11-23
+  created:
+    - source: koyama-2026-ryogoku-yanagibashi-shogakai
+      locator: pp. 31–32
+      accessed: 2026-11-23
+  creator:
+    - source: koyama-2026-ryogoku-yanagibashi-shogakai
+      locator: pp. 31–32
+      accessed: 2026-11-23
+  dimensions:
+    - source: koyama-2026-ryogoku-yanagibashi-shogakai
+      locator: pp. 31–32
+      accessed: 2026-11-23
+  institution:
+    - source: koyama-2026-ryogoku-yanagibashi-shogakai
+      locator: pp. 31–32
+      accessed: 2026-11-23
+  inventory_number:
+    - source: koyama-2026-ryogoku-yanagibashi-shogakai
+      locator: pp. 31–32
+      accessed: 2026-11-23

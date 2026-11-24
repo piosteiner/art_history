@@ -27,6 +27,15 @@ relationships:
       - url: https://collection.kunsthaus.ch/de/collection/item/3084/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
+  - type: child_of
+    to: person/johan-steengracht-van-oostkapelle
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q2387328
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q60026489
 identifiers:
   rkd: "426316"
 sources:

@@ -1,0 +1,23 @@
+public_id: 124654
+name: John Frederick I
+given_name: John, I
+family_name: Frederick
+kind: person
+birth: 1503-07-10
+death: 1554-03-13
+wikidata_id: Q506182
+metadata:
+  sources: [Wikidata Q506182 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q506182
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q506182
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q506182

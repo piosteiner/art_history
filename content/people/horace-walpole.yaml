@@ -34,6 +34,15 @@ relationships:
       - url: https://collection.kunsthaus.ch/de/collection/item/229/
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-12
+  - type: child_of
+    to: person/robert-walpole
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q309903
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q104190
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/a/a0/Horace_Walpole.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Horace_Walpole.jpg

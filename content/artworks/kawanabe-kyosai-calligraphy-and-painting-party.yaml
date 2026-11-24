@@ -1,0 +1,73 @@
+public_id: 122693
+title_lang: en
+title: Calligraphy and Painting Party
+names:
+  - lang: ja
+    role: original
+    text: 書画会
+  - lang: en
+    role: former
+    text: Painting Party
+    note: earlier museum title (still on the Google Arts & Culture and AMICA records)
+creator: kawanabe-kyosai
+attribution_label: Kawanabe Kyōsai and ten literati
+created: 1880
+kind: kakemono
+medium: ink and colour on paper
+dimensions: [139, 69]
+dimensions_note: painting only; with mounting 221 × 97.5 cm
+institution: cleveland-museum-of-art
+inventory_number: "1983.88"
+web_url: https://clevelandart.org/art/1983.88
+description_md: "A *[[term/shogakai|shogakai]]* painted by the guests themselves: [[artist/kawanabe-kyosai|Kawanabe Kyōsai]] drew the figures and the outlines of the screens and scrolls, and ten literati completed the pictures and calligraphy within it, each with his own signature [[source/cma-1983-88|1983.88]]. The physician and calligrapher Nakane Hanrei wrote 'longevity' (壽) with an enormous brush, Fukushima Ryūho painted the plum on the folding screen and Matsuoka Kansui the lotus [[source/cma-1983-88|1983.88]]. The hanging scroll, dated 1880, measures 139 × 69 cm and came to Cleveland in 1983 from David Newman, New York [[source/cma-1983-88|1983.88]]."
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1983.88/1983.88_web.jpg
+    source_url: https://clevelandart.org/art/1983.88
+    license: CC0
+    credit: Cleveland Museum of Art
+provenance:
+  - owner_label: David Newman, New York
+    role: dealer
+    ended: 1983
+    direct: true
+    sources:
+      - source: cma-1983-88
+        locator: provenance
+        accessed: 2026-11-23
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1983
+    method: purchase
+    direct: true
+    sources:
+      - source: cma-1983-88
+        locator: provenance
+        accessed: 2026-11-23
+sources:
+  kind:
+    - source: cma-1983-88
+      locator: "1983.88"
+      accessed: 2026-11-23
+  medium:
+    - source: cma-1983-88
+      locator: "1983.88"
+      accessed: 2026-11-23
+  created:
+    - source: cma-1983-88
+      locator: "1983.88"
+      accessed: 2026-11-23
+  creator:
+    - source: cma-1983-88
+      locator: "1983.88"
+      accessed: 2026-11-23
+  dimensions:
+    - source: cma-1983-88
+      locator: "1983.88"
+      accessed: 2026-11-23
+  institution:
+    - source: cma-1983-88
+      locator: "1983.88"
+      accessed: 2026-11-23
+  inventory_number:
+    - source: cma-1983-88
+      locator: "1983.88"
+      accessed: 2026-11-23

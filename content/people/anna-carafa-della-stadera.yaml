@@ -8,6 +8,16 @@ death: 1644
 wikidata_id: Q3617681
 metadata:
   sources: [Wikidata Q3617681 (retrieved 2026-10-19)]
+relationships:
+  - type: married_to
+    to: person/ramiro-nunez-de-guzman
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q3617681
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q3929881
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/Anna_Carafa_della_Stadera.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Anna_Carafa_della_Stadera.jpg

@@ -1,0 +1,18 @@
+public_id: 122782
+name: Hans Holbein the Younger
+given_name: Hans, the Younger
+family_name: Holbein
+birth: 1497
+death: 1543-12-09
+wikidata_id: Q48319
+metadata:
+  sources: [Wikidata Q48319 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q48319
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q48319

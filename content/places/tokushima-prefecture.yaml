@@ -1,0 +1,83 @@
+public_id: 124466
+name: Tokushima Prefecture
+names:
+  - lang: ja
+    role: original
+    text: 徳島県
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q160734
+  - lang: zh
+    role: translation
+    text: 德岛县
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q160734
+  - lang: ko
+    role: translation
+    text: 도쿠시마현
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q160734
+  - lang: fr
+    role: translation
+    text: Préfecture de Tokushima
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q160734
+  - lang: de
+    role: translation
+    text: Präfektur Tokushima
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q160734
+  - lang: it
+    role: translation
+    text: Prefettura di Tokushima
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q160734
+  - lang: nl
+    role: translation
+    text: Prefectuur Tokushima
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q160734
+  - lang: es
+    role: translation
+    text: Prefectura de Tokushima
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q160734
+  - lang: ru
+    role: translation
+    text: Токусима
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q160734
+  - lang: pt
+    role: translation
+    text: Prefeitura de Tokushima
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q160734
+kind: settlement
+parent: japan
+country_code: JP
+location: [134.55917, 34.06556]
+wikidata_id: Q160734
+metadata:
+  sources: [Wikidata Q160734 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q160734
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q160734
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q160734

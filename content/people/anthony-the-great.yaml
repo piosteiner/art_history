@@ -1,0 +1,23 @@
+public_id: 122857
+name: Anthony the Great
+given_name: Anthony the
+family_name: Great
+kind: person
+birth: 251
+death: c. 357
+wikidata_id: Q170547
+metadata:
+  sources: [Wikidata Q170547 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q170547
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q170547
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q170547

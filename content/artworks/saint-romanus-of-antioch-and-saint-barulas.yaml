@@ -1,0 +1,203 @@
+public_id: 125067
+title_lang: en
+title: Saint Romanus of Antioch and Saint Barulas
+names:
+  - lang: de
+    role: translation
+    text: Hl. Romanus und Hl. Barulas von Antiochien
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20265152
+  - lang: it
+    role: translation
+    text: San Romano d'Antiochia e San Barula
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20265152
+creator: francisco-de-zurbaran
+created: 1638
+materials: [oil paint, canvas]
+dimensions: [246.5, 160.1]
+institution: art-institute-of-chicago
+inventory_number: "1947.793"
+wikidata_id: Q20265152
+metadata:
+  sources: [Wikidata Q20265152 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Francisco_de_Zurbar%C3%A1n_-_Saint_Romanus_of_Antioch_and_Saint_Barulas_-_1947.793_-_Art_Institute_of_Chicago.jpg/1280px-Francisco_de_Zurbar%C3%A1n_-_Saint_Romanus_of_Antioch_and_Saint_Barulas_-_1947.793_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n_-_Saint_Romanus_of_Antioch_and_Saint_Barulas_-_1947.793_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Francisco de Zurbarán
+provenance:
+  - owner: institution/church-of-san-roman-seville
+    ended_label: until at least 1800
+    place: seville
+    label: Ceán Bermúdez 1800
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: Church of San Roman, Seville, until at least 1800 [Cean Bermudez 1800];
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner: institution/alcazar-of-seville
+    role: custodian
+    acquired: 1810
+    method: transfer
+    direct: true
+    place: seville
+    label: removed from the church by government decree and deposited (Gómez Imaz 1896, no. 11)
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: removed by government decree and deposited in the Alcazar, Seville, 1810 [lmaz 1896, no. 11];
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner: person/jean-de-dieu-soult
+    role: possessor
+    acquired: 1812 or earlier
+    direct: true
+    place: paris
+    label: taken by Marshal Soult, 1st Duke of Dalmatia
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: taken by Marshal Jean-de-Dieu Soult (1769-1851), 1st Duke of Dalmatia, Paris, by 1812 [see the Getty Provenance Index database, F-23, which lists the painting in Sault's estate inventory of February 5, 1852, as no. 150; date of acquisition according to Delenda 2009];
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner: person/jean-de-dieu-soult
+    role: estate
+    acquired: 1851
+    label: estate inventory, 5 February 1852, no. 150 (Getty Provenance Index F-23)
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: which lists the painting in Sault's estate inventory of February 5, 1852, as no. 150
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner: institution/galerie-lebrun
+    role: agent
+    not_sold: true
+    acquired: 1852-05
+    method: auction
+    direct: true
+    place: paris
+    label: estate sale, Galerie Lebrun, Paris, 19–22 May 1852, lot 28, presumably bought in
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: sale of his estate, Galerie Lebrun, Paris, May 19-22, 1852, lot no. 28, presumably bought in [according to an annotated copy of the sale catalogue, Rijksbureau voor Kunsthistorische Documentatie, The Hague; copies in curatorial file, and Baticle 1999];
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner: person/napoleon-hector-soult
+    method: inheritance
+    direct: true
+    place: paris
+    label: his son, 2nd Duke of Dalmatia; postmortem inventory 18 January 1858, no. 9
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: by descent to his son, Napoleon-Hector Soult (1802-1857), 2nd Duke of Dalmatia, Paris [according to a postmortem inventory of his collection, dated January 18, 1858; Getty Provenance Index database, F-197, no. 9];
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner_label: heirs of Napoléon-Hector Soult
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: by descent;
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1867-04-17
+    method: auction
+    direct: true
+    place: paris
+    label: sale, collection of Marshal Soult, Hôtel Drouot, Paris, 17 April 1867, lot 6
+    price:
+      amount: 5330
+      currency: FRF
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: sold, collection of Marshal Soult, Hotel Drouot, Paris, April 17, 1867, lot no. 6, for 5,330 francs [according to an annotated copy of the sale catalogue, Rijksbureau voor Kunsthistorische Documentatie, The Hague; copy in curatorial file].
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner: person/sergei-ivanovich-stchoukine
+    ended: 1910
+    place: paris
+    label: Paris and Moscow
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: Sergei Ivanovich Stchoukine, Paris and Moscow, until 1910 [this and the following according to London 1913; date according to Delenda 2009].
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner: person/joachim-carvallo
+    acquired: 1910
+    ended: 1914
+    place: villandry
+    label: Château de Villandry (named “Caravallo” in the source)
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: Joachim Caravallo, Château de Villandry, France, from 1910 to 1914.
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner: institution/grafton-galleries
+    role: custodian
+    acquired: 1914
+    ended: 1918
+    place: london
+    label: at the Grafton Galleries; the source does not say in what capacity
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: Grafton Galleries, London, from 1914 to 1918 [Kehrer 1918; date according to Delenda 2009].
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner: person/charles-deering
+    acquired: 1918 or earlier
+    place: chicago
+    label: Chicago and Miami
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: Charles Deering (1852-1927), Chicago and Miami, by 1918 [Arroyo 1918];
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner: person/marion-deering-mccormick
+    co_owners: [person/barbara-deering-danielson]
+    method: inheritance
+    direct: true
+    label: his daughters Mrs. Chauncey McCormick and Mrs. Richard Ely Danielson
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: by descent to his daughters, Mrs. Chauncey McCormick (née Marion Deering) and Mrs. Richard Ely Danielson (née Barbara Deering);
+        source: aic-1947-793
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1947
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/61665
+        note: given to the Art Institute of Chicago, 1947.
+        source: aic-1947-793
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20265152
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20265152
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20265152
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20265152
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20265152
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20265152

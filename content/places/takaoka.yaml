@@ -1,0 +1,41 @@
+public_id: 123983
+name: Takaoka
+names:
+  - lang: ja
+    role: original
+    text: 高岡市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502988
+  - lang: ko
+    role: translation
+    text: 다카오카시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502988
+  - lang: ru
+    role: translation
+    text: Такаока
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q502988
+kind: settlement
+parent: japan
+country_code: JP
+location: [137.02567, 36.75406]
+wikidata_id: Q502988
+metadata:
+  sources: [Wikidata Q502988 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q502988
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q502988
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q502988

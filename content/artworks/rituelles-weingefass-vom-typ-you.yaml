@@ -1,0 +1,72 @@
+public_id: 123864
+title_lang: de
+title: Rituelles Weingefäss vom Typ you
+attribution_label: Anonymous
+created: -1046/-977
+kind: vessel
+medium: Bronze
+dimensions: [27, 17]
+institution: museum-rietberg
+inventory_number: RCH 16
+web_url: https://rietberg.ch/sammlungen/rch-16
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Zhou_Weingef%C3%A4ss_you_Museum_Rietberg_RCH_16.jpg/1280px-Zhou_Weingef%C3%A4ss_you_Museum_Rietberg_RCH_16.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Zhou_Weingefäss_you_Museum_Rietberg_RCH_16.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Urheber*in unbekannt
+    acquired_label: frühe Westliche Zhou-Dynastie, ca. 1046–977 v. Chr.
+    method: creation
+    label: made by an unknown maker in China, early Western Zhou dynasty, c. 1046–977 BC
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-16
+        note: "frühe Westliche Zhou-Dynastie, ca. 1046–977 v. Chr.: Urheber*in unbekannt in China"
+        source: rietberg-rch-16
+        accessed: 2026-11-24
+  - owner_label: unknown excavators
+    acquired: 1927
+    method: find
+    label: probably excavated in China in 1927 (according to Trübner 1929)
+    certainty: probable
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-16
+        note: |-
+          vermutlich 1927: [...], aus Grabung in China
+          Nach Trübner 1929 wahrscheinlich 1927 ausgegraben.
+        source: rietberg-rch-16
+        accessed: 2026-11-24
+  - owner: person/leon-wannieck
+    acquired: before August 1928
+    label: Léon Joseph Benjamin Wannieck; circumstances of acquisition unknown; list of the Menten collection in the Rietberg archive
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-16
+        note: |-
+          vor 08.1928: Léon Joseph Benjamin Wannieck (1875–1931), Erwerbsumstände unbekannt
+          nach Liste Sammlung Menten im Archiv MRZ
+        source: rietberg-rch-16
+        accessed: 2026-11-24
+  - owner: person/jacques-hubert-pierre-francois-menten
+    acquired: 1928-08
+    method: purchase
+    place: paris
+    label: bought in Paris; Menten object list
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-16
+        note: |-
+          08.1928: J. F. H. Menten (1873–1964), angekauft in Paris
+          Angaben in Objektliste Menten
+        source: rietberg-rch-16
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1956
+    method: purchase
+    place: zurich
+    label: bought with funds of the City of Zürich; purchase contract for the Menten collection
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-16
+        note: |-
+          1956: Museum Rietberg, angekauft in Zürich
+          Kaufvertrag Sammlung Menten
+        source: rietberg-rch-16
+        accessed: 2026-11-24

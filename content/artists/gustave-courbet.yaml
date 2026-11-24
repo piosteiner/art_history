@@ -103,6 +103,15 @@ relationships:
       - accessed: 2026-10-28
         property: P135
         wikidata: Q34618
+  - type: sibling_of
+    to: person/juliette-courbet
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q17310916
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q34618
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Gustave_Courbet%2C_photograph_Atelier_Nadar%2C_c._1860s.jpg/1280px-Gustave_Courbet%2C_photograph_Atelier_Nadar%2C_c._1860s.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet,_photograph_Atelier_Nadar,_c._1860s.jpg

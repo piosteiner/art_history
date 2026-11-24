@@ -1,0 +1,41 @@
+public_id: 124004
+name: Nagano
+names:
+  - lang: ja
+    role: original
+    text: 長野市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q128849
+  - lang: ko
+    role: translation
+    text: 나가노시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q128849
+  - lang: ru
+    role: translation
+    text: Нагано
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q128849
+kind: settlement
+parent: japan
+country_code: JP
+location: [138.19469, 36.64867]
+wikidata_id: Q128849
+metadata:
+  sources: [Wikidata Q128849 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q128849
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q128849
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q128849

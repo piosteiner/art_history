@@ -1,0 +1,61 @@
+public_id: 125227
+title_lang: en
+title: Rabbit Warren at Pontoise, Snow
+names:
+  - lang: fr
+    role: original
+    text: La Garenne, à Pontoise; effet de neige
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20271357
+  - lang: fr
+    role: original
+    text: La Garenne, côte Saint-Denis à Pontoise, effet de neige
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20271357
+  - lang: it
+    role: translation
+    text: conigliera a pontoise, neve
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20271357
+creator: camille-pissarro
+created: 1879
+materials: [canvas, oil paint]
+dimensions: [59.2, 72.3]
+institution: art-institute-of-chicago
+inventory_number: "1964.200"
+wikidata_id: Q20271357
+metadata:
+  sources: [Wikidata Q20271357 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/The_Rabbit-Warren%2C_C%C3%B4te_Saint-Denis_at_Pontoise%2C_Effect_of_Snow.jpg/1280px-The_Rabbit-Warren%2C_C%C3%B4te_Saint-Denis_at_Pontoise%2C_Effect_of_Snow.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Rabbit-Warren,_C%C3%B4te_Saint-Denis_at_Pontoise,_Effect_of_Snow.jpg
+    license: CC0
+    credit: Camille Pissarro
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20271357
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20271357
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20271357
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20271357
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20271357
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20271357

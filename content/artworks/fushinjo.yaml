@@ -1,0 +1,36 @@
+public_id: 124527
+title: Fūshinjō
+names:
+  - lang: ja
+    role: translation
+    text: 風信帖
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q5295451
+created: 810s
+created_span: uncertain
+institution: to-ji
+wikidata_id: Q5295451
+metadata:
+  sources: [Wikidata Q5295451 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/otokuni-dera
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q5295451
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Huushincho_1.jpg/1280px-Huushincho_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Huushincho_1.jpg
+    license: Public domain
+    credit: Hachiro Onoue
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q5295451
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q5295451

@@ -1,0 +1,16 @@
+public_id: 123124
+name: Acropolis Museum
+kind: museum
+founded: 2009
+wikidata_id: Q421084
+metadata:
+  sources: [Wikidata Q421084 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q421084
+  founded:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q421084

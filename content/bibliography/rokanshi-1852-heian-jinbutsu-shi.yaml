@@ -1,0 +1,17 @@
+public_id: 122735
+kind: book
+name_lang: ja
+name: 平安人物誌
+compilers: [Rōkanshi]
+volumes_total: 3 巻 + 附録, bound as 1 冊
+edition: 嘉永改刻 (Kaei 5)
+place: Kyoto
+publisher: 堺屋仁兵衛
+year: "1852"
+url: https://touda.tohoku.ac.jp/collection/database/library/10010000007705
+accessed: 2026-11-23
+archive: Tohoku University Library, Kanō Bunko
+primary_source: true
+reliability: primary
+edition_of: heian-jinbutsu-shi
+description_md: Read from the IIIF images (75 frames, CC BY); frames 4–5 = end of 凡例 dated 嘉永五年壬子春 弄翰子記 and 目次; frames 62–63 = 附録 女流; frame 63 緇流. Manifest https://touda.tohoku.ac.jp/collection/iiif/metadata/10010000007705/manifest.json

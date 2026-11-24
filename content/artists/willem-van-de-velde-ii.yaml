@@ -52,6 +52,15 @@ relationships:
       - accessed: 2026-11-04
         property: P1066
         wikidata: Q432266
+  - type: child_of
+    to: artist/willem-van-de-velde-the-elder
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q722912
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q432266
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Willem_van_de_Velde_II_%281633-1707%29_-_%28by_Lodewijk_van_der_Helst%2C_1672%29.jpg/1280px-Willem_van_de_Velde_II_%281633-1707%29_-_%28by_Lodewijk_van_der_Helst%2C_1672%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Willem_van_de_Velde_II_(1633-1707)_-_(by_Lodewijk_van_der_Helst,_1672).jpg

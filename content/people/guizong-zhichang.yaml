@@ -1,0 +1,18 @@
+public_id: 124239
+name: Guizong Zhichang
+given_name: Guizong
+family_name: Zhichang
+kind: person
+birth: 701/800
+wikidata_id: Q9282631
+metadata:
+  sources: [Wikidata Q9282631 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q9282631
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q9282631

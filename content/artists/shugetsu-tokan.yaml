@@ -1,0 +1,16 @@
+public_id: 124753
+name: Shūgetsu Tōkan
+birth: 1401/1500
+death: c. 1510
+wikidata_id: Q16145957
+metadata:
+  sources: [Wikidata Q16145957 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q16145957
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q16145957

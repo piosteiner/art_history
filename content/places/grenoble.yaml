@@ -1,0 +1,47 @@
+public_id: 126311
+name: Grenoble
+names:
+  - lang: ja
+    role: translation
+    text: グルノーブル
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1289
+  - lang: zh
+    role: translation
+    text: 格勒诺布尔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1289
+  - lang: ko
+    role: translation
+    text: 그르노블
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1289
+  - lang: ru
+    role: translation
+    text: Гренобль
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1289
+kind: settlement
+parent: france
+country_code: FR
+location: [5.72639, 45.18694]
+wikidata_id: Q1289
+metadata:
+  sources: [Wikidata Q1289 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1289
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1289
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1289

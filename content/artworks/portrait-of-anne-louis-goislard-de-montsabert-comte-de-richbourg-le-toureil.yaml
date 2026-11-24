@@ -1,0 +1,210 @@
+public_id: 124676
+title_lang: en
+title: Portrait of Anne Louis Goislard de Montsabert, Comte de Richbourg-le-Toureil
+names:
+  - lang: de
+    role: translation
+    text: Porträt von Anne Louis Goislard de Montsabert, Graf von Richbourg-le-Toureil
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60470851
+creator: nicolas-de-largilliere
+created: 1734
+materials: [oil paint, canvas]
+dimensions: [80.6, 63.8]
+institution: cleveland-museum-of-art
+inventory_number: "1970.31"
+web_url: https://clevelandart.org/art/1970.31
+wikidata_id: Q60470851
+metadata:
+  sources: [Wikidata Q60470851 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/anne-louis-de-goislard-de-monsabert
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q60470851
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Clevelandart_1970.31.jpg/1280px-Clevelandart_1970.31.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Clevelandart_1970.31.jpg
+    license: CC0
+    credit: Nicolas de Largillière
+provenance:
+  - owner: person/anne-louis-goislard-de-montsabert
+    label: the sitter and his family; with Montsabert family
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: Anne Louis Goislard de Montsabert and the Montsabert family
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner: person/andre-de-ganay
+    place: paris
+    label: Comte André de Ganay; perhaps the 'Portrait d'homme' of the Ganay sale, 4 June 1903; Cailleux doubted it
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: Possibly Comte André de Ganay [1863-1912], Paris — The catalogue of the 1914 Galerie Georges Petit sale of the Fairfax Murray collection says that this painting was formerly in the Comte de Ganay collection. ... It is possible that the Galerie Georges Petit incorrectly assumed that the Largillière in the 1903 sale was the painting in Fairfax Murray’s collection, and that Ganay should not be in this provenance.
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner: person/charles-fairfax-murray
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: Charles Fairfax Murray [1849 – 1919], London, sold to Thomas Agnew & Sons
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1905-06
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: (Thomas Agnew & Sons, London, sold to Calouste S. Gulbenkian) — After buying the painting from Charles Fairfax Murray in June 1905, Thomas Agnew & Sons sold it to Gulbenkian in June 1907
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner: person/calouste-s-gulbenkian
+    acquired: 1907-06
+    method: purchase
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: Calouste S. Gulbenkian [1869 –1955], sold to Thomas Agnew & Sons — Thomas Agnew & Sons sold it to Gulbenkian in June 1907, only to buy it back
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    method: purchase
+    direct: true
+    place: london
+    label: bought back from Gulbenkian
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: (Thomas Agnew & Sons, London, sold to Charles Fairfax Murray)
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner: person/charles-fairfax-murray
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: Charles Fairfax Murray [1849 – 1919], London
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1914-06-15
+    method: auction
+    direct: true
+    place: paris
+    label: Fairfax Murray sale, 15 June 1914, no. 24
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: (Galerie Georges Petit, Paris, Fairfax Murray sale, June 15, 1914, no. 24, sold to Bousquet)
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner_label: Bousquet
+    acquired: 1914-06-15
+    method: auction
+    direct: true
+    label: buyer named in a handwritten note in the Frick Art Reference Library's copy of the sale catalogue
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: "Bousquet 1  [date: 1914-] — The Frick Art Reference Library copy of the Fairfax Murray sale catalogue has a handwritten notation listing Bousquet as the buyer."
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner: institution/galerie-cailleux
+    role: dealer
+    acquired: 1959
+    method: purchase
+    place: paris
+    label: bought on the Paris art market, not directly from Bousquet
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: "Galerie Cailleux, Paris, sold to the Detroit Institute of Arts with funds provided by Ernest Kanzler [date: 1959-1966] — Cailleux purchased the painting on the Parisian art market ... indicating that Cailleux did not purchase it directly from Bousquet."
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner: institution/detroit-institute-of-arts
+    acquired: 1966-01
+    ended: 1967-06
+    method: purchase
+    direct: true
+    place: detroit
+    label: bought with funds from Ernest Kanzler (also broker), who kept the right to buy it back; study collection, never accessioned
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: In January 1966 the Detroit Institute of Arts acquired the painting from Cailleux with funds provided by Kanzler, who also served as broker in the sale. ... The portrait was temporarily placed in the DIA’s study collection between 1966 and 1967 and was never officially accessioned.
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner: person/ernest-kanzler
+    acquired: 1967-06
+    ended: 1967
+    method: purchase
+    direct: true
+    place: detroit
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: "Ernest Kanzler [1892-1967], Detroit, MI 1  [date: 1966-1967] — During those two years, the painting traveled back and forth between the museum and Kanzler several times before Kanzler officially purchased the painting from the DIA in June 1967."
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner_label: Estate of Ernest Kanzler and Rosemarie Kanzler
+    role: estate
+    acquired: 1967
+    method: inheritance
+    direct: true
+    place: detroit
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: "The estate of Ernest Kanzler and Rosemarie Kanzler, sold to Eugene V. Thaw  [date: 1967-1970]"
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner: person/eugene-thaw
+    role: dealer
+    acquired: 1970
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: bought from the Kanzler estate through Mrs. Kanzler's agent
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: "(Eugene V. Thaw, New York, sold to the Cleveland Museum of Art)1  [date: 1970] — Thaw purchased the painting from Kanzler's estate through Mrs. Kanzler's agent."
+        source: cma-1970-31
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1970
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1970.31
+        note: "The Cleveland Museum of Art, Cleveland, Ohio  [date: 1970-]"
+        source: cma-1970-31
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60470851
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60470851
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60470851
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60470851
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60470851
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60470851

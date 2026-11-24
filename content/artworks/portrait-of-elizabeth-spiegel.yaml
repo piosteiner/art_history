@@ -1,0 +1,203 @@
+public_id: 124687
+title_lang: en
+title: Portrait of Elizabeth Spiegel
+names:
+  - lang: nl
+    role: translation
+    text: Elisabeth Spiegel (1628-1707) als het Gehoor
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60472942
+creator: dirck-van-santvoort
+created: 1639
+materials: [oil paint, panel]
+dimensions: [62.7, 49.5]
+institution: cleveland-museum-of-art
+inventory_number: "1975.81"
+web_url: https://clevelandart.org/art/1975.81
+wikidata_id: Q60472942
+metadata:
+  sources: [Wikidata Q60472942 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/netherlands
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q60472942
+  - type: depicts_person
+    to: person/elisabeth-spiegel
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q60472942
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Dirck_Dircksz._Santvoort_-_Portrait_of_Elizabeth_Spiegel_-_1975.81_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Dirck_Dircksz._Santvoort_-_Portrait_of_Elizabeth_Spiegel_-_1975.81_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dirck_Dircksz._Santvoort_-_Portrait_of_Elizabeth_Spiegel_-_1975.81_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Dirck van Santvoort
+provenance:
+  - owner_label: M. Muyser (Muijser), The Hague
+    ended: 1883
+    place: the-hague
+    label: perhaps J.L. Muyser, collector (and controller of the royal household, 1864)
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "M. Muyser, The Hague [date: Until 1883] — M. Muyser (sometimes spelled “Muijser”) could be J.L. Muyser, who is referred to in Hofstede de Groot’s A Catalogue Raisonné … as owning or previously owning several other paintings."
+        source: cma-1975-81
+        accessed: 2026-11-24
+  - owner: institution/nahuys-hodgson
+    role: agent
+    acquired: 1883-11-14
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Royer-Kerst and Muyser sale, Nahuys-Hodgson, Amsterdam, 14 November 1883, no. 142 (MS addition by Victor de Stuers); buyer not listed, perhaps unsold
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "(Royer-Kerst and Muyser sale, Nahuys-Hodgson, Amsterdam, Nov. 14, 1883, no. 142, MS addition to sales catalogue by Victor Stuers) [date: 1883]"
+        source: cma-1975-81
+        accessed: 2026-11-24
+  - owner_label: J.L. Muyser or possibly another private collector, Holland
+    acquired: 1883
+    ended: 1895
+    label: possibly unsold in 1883 and kept by Muyser until 1895
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "J.L. Muyser or possibly another private collector, Holland [date: 1883-1895] — it is possible that the painting failed to sell at the auction and Muyser remained in possession of it until Macbeth bought it from him twelve years later."
+        source: cma-1975-81
+        accessed: 2026-11-24
+  - owner: person/william-macbeth
+    acquired: 1895-08
+    ended: 1916
+    method: purchase
+    place: new-york-city
+    label: bought with the Muijser collection in The Hague, August 1895; stored as part of his Old Masters collection
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "William Macbeth, New York, consigned to the Anderson Galleries [date: 1895-1916] — the Santvoort and numerous other Old Master paintings are listed under “Collection bought of M. Muisjer, The Hague, Holland, August 1895.”"
+        source: cma-1975-81
+        accessed: 2026-11-24
+  - owner: institution/anderson-galleries
+    role: agent
+    acquired: 1916-04
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Macbeth sale, Anderson Galleries, New York, 3–5 April 1916, no. 152, illus. p. 42
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "(Sale, Anderson Galleries, New York, April 3-5, 1916, no. 152, illus. p. 42, sold to J.T. or J.F. Drake) [date: 1916]"
+        source: cma-1975-81
+        accessed: 2026-11-24
+  - owner_label: J.T. or J.F. Drake
+    acquired: 1916-04
+    method: auction
+    direct: true
+    label: buyer's name barely legible in the annotated catalogue; American Art News gives J.T. Drake, $430
+    price:
+      amount: 430
+      currency: USD
+      note: per American Art News
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "J.T. or J.F. Drake [date: 1916-] — The published auction results in American Art News say that “J.T. Drake” paid $430 for the Santvoort"
+        source: cma-1975-81
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: after 1916
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "(M. Knoedler & Co., New York, probably sold to a private collector) [date: After 1916]"
+        source: cma-1975-81
+        accessed: 2026-11-24
+  - owner_label: Private collection
+    acquired: after 1916
+    label: probably bought from Knoedler; whether the same collector as the 1972 estate is unknown
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "Private collection [date: After 1916-by 1972] — While it is likely that Knoedler sold the Santvoort to a private collector, it is not known if the buyer was the same private collector from whose estate Sotheby Parke Bernet sold the painting in 1972."
+        source: cma-1975-81
+        accessed: 2026-11-24
+  - owner_label: Estate of a private collector
+    role: estate
+    ended: 1972
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "Estate of private collector, consigned to Sotheby Parke Bernet [date: Until 1972]"
+        source: cma-1975-81
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1972-11-03
+    method: auction
+    direct: true
+    place: new-york-city
+    label: sale, Sotheby Parke Bernet, New York, 3 November 1972, no. 38
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "(Sale, Sotheby Parke Bernet, New York, Nov. 3, 1972, no. 38, sold to an American art dealer) [date: 1972]"
+        source: cma-1975-81
+        accessed: 2026-11-24
+  - owner_label: Art dealer, United States
+    role: dealer
+    acquired: 1972-11-03
+    method: auction
+    direct: true
+    label: unnamed American dealer (Christie's could not disclose)
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "(Art dealer, United States, probably sold to Noah L. and Muriel S. Butkin) [date: 1972]"
+        source: cma-1975-81
+        accessed: 2026-11-24
+  - owner: person/noah-l-butkin
+    co_owners: [person/muriel-s-butkin]
+    acquired: c. 1972
+    method: purchase
+    direct: true
+    place: cleveland
+    label: probably bought from the dealer shortly after the 1972 sale
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "Noah L. [1918-1980] and Muriel S. Butkin [1915-1998], Cleveland, OH, given to the Cleveland Museum of Art [date: c. 1972-1975]"
+        source: cma-1975-81
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1975
+    method: gift
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1975.81
+        note: "The Cleveland Museum of Art, Cleveland, Ohio [date: 1975-]"
+        source: cma-1975-81
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60472942
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60472942
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60472942
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60472942
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60472942
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60472942

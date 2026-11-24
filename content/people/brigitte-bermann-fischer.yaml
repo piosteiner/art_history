@@ -10,6 +10,16 @@ death: 1991-05-28
 wikidata_id: Q59628896
 metadata:
   sources: [Wikidata Q59628896 (retrieved 2026-10-31)]
+relationships:
+  - type: child_of
+    to: person/samuel-fischer
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q95541
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q59628896
 identifiers:
   bnf: 12207750z
   gnd: "118533223"

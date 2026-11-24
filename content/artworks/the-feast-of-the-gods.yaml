@@ -1,0 +1,362 @@
+public_id: 122910
+title_lang: en
+title: The Feast of the Gods
+names:
+  - lang: it
+    role: original
+    text: Festino degli dei
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15008032
+  - text: Feast of the Gods
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15008032
+  - lang: nl
+    role: translation
+    text: Het feest van de goden
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15008032
+  - lang: fr
+    role: translation
+    text: Le Festin des Dieux
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15008032
+  - lang: de
+    role: translation
+    text: Fest der Götter
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15008032
+  - lang: es
+    role: translation
+    text: El festín de los dioses
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15008032
+  - lang: ja
+    role: translation
+    text: 神々の饗宴
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15008032
+  - lang: zh
+    role: translation
+    text: 眾神的宴會
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15008032
+  - lang: ru
+    role: translation
+    text: Пир богов
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q15008032
+creator: giovanni-bellini
+created: 1514
+materials: [oil paint, canvas]
+dimensions: [170.2, 188]
+institution: national-gallery-of-art
+inventory_number: 1942.9.1
+wikidata_id: Q15008032
+metadata:
+  sources: [Wikidata Q15008032 (retrieved 2026-11-23)]
+relationships:
+  - type: co_creator
+    to: artist/titian
+    sources:
+      - accessed: 2026-11-23
+        property: P170
+        wikidata: Q15008032
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q15008032
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q15008032
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Giovanni_Bellini_and_Titian_-_The_Feast_of_the_Gods_-_Google_Art_Project.jpg/1280px-Giovanni_Bellini_and_Titian_-_The_Feast_of_the_Gods_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Bellini_and_Titian_-_The_Feast_of_the_Gods_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Giovanni Bellini / Titian
+provenance:
+  - owner: person/alfonso-i-d-este
+    acquired: 1514 or earlier
+    method: commission
+    place: ferrara
+    label: final payment to Bellini 1514 (possibly commissioned by his sister Isabella d'Este); in the Camerino d'Alabastro of the Castello
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: Probably commissioned by Alfonso I d'Este, Duke of Ferrara [d. 1534);[1] — [1] Possibly commissioned by his sister Isabella d'Este; final payment made to Bellini by Alfonso in 1514; painting located in Camerino d'Alabastro of the Castello until 1598.
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/ercole-ii-d-este
+    method: inheritance
+    direct: true
+    place: ferrara
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: by inheritance to his son, Ercole II d'Este, Duke of Ferrara [d. 1559];
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/alfonso-ii-d-este
+    method: inheritance
+    direct: true
+    place: ferrara
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: by inheritance to his son, Alfonso II d'Este, Duke of Ferrara [d. 1597];
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/cesare-d-este
+    ended: 1598
+    method: inheritance
+    direct: true
+    place: ferrara
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: by inheritance to his cousin, Cesare d'Este, Duke of Ferrara;
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/pietro-aldobrandini
+    acquired: 1598
+    method: confiscation
+    direct: true
+    place: rome
+    label: confiscated from the Castello at Ferrara while Papal Legate; recorded in his inventory of 1603
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: confiscated 1598 from the Castello at Ferrara by Cardinal Pietro Aldobrandini [d. 1621], Rome, when he was acting as Papal Legate and recorded in his inventory of 1603;
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/ippolito-aldobrandini
+    method: inheritance
+    direct: true
+    place: rome
+    label: recorded in his inventory of 1626
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: by inheritance to his nephew, Cardinal Ippolito Aldobrandini [d. 1638], Rome, and recorded in his inventory of 1626;
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/olimpia-aldobrandini
+    method: inheritance
+    direct: true
+    place: rome
+    label: Olimpia Aldobrandini Borghese Pamphilj; recorded in her pre-1665 inventory and 1682 posthumous inventory
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: by inheritance to his niece, Olimpia Aldobrandini Borghese Pamphilj [d. 1681], Rome, and recorded in her pre-1665 inventory and 1682 posthumous inventory;
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/giovan-battista-pamphilj-aldobrandini
+    method: inheritance
+    direct: true
+    place: rome
+    label: son of Olimpia by Camillo Pamphili; took the name Aldobrandini on inheriting
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: by inheritance to her son, Giovan Battista Pamphilj Aldobrandini [d. 1710], Rome;[2]
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner_label: Aldobrandini heirs
+    ended: 1760
+    method: inheritance
+    direct: true
+    place: rome
+    label: until the line became extinct in 1760; then a lawsuit between the Colonna and Borghese
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: Aldobrandini heirs, until the line became extinct in 1760;[3] — [3] In 1760, the paintings were involved in a lawsuit between the Colonna and Borghese
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/paolo-borghese-aldobrandini
+    acquired: 1769
+    method: inheritance
+    direct: true
+    place: rome
+    label: settled on him, second son of the head of the Borghese, after the Colonna–Borghese lawsuit
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: by inheritance 1769 to Paolo Borghese Aldobrandini [d. 1792], Rome; — and were settled on the second son of the head of the Borghese in 1769.
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/giovan-battista-borghese-aldobrandini
+    method: inheritance
+    direct: true
+    place: rome
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: by inheritance to his nephew, Giovan Battista Borghese Aldobrandini [d. 1802], Rome;
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/pietro-camuccini
+    role: agent
+    acquired: 1796/1797
+    method: purchase
+    direct: true
+    place: rome
+    label: bought for his brother Vincenzo's collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: purchased 1796/1797 by Pietro Camuccini [1761-1833] for the collection of his brother, Vincenzo Camuccini [1771-1844], Rome;[4]
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/vincenzo-camuccini
+    acquired: 1796/1797
+    method: purchase
+    direct: true
+    place: rome
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: purchased 1796/1797 by Pietro Camuccini [1761-1833] for the collection of his brother, Vincenzo Camuccini [1771-1844], Rome;[4]
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/giovanni-battista-camuccini
+    method: inheritance
+    direct: true
+    place: rome
+    label: presumably by inheritance
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: presumably by inheritance to Vincenzo's son, Giovanni Battista Camuccini [1819-1904], Rome;
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/antonio-giacinto-saverio-cabral
+    role: agent
+    acquired: 1853
+    direct: true
+    place: rome
+    label: Count Cabral, Northumberland's attorney in Rome, negotiated the sale; a seal probably with his arms on the back
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: sold 1853 with the entire Camuccini collection through Antonio Giacinto Saverio, Count Cabral, Rome,[5] — [5] Cabral was Northumberland's attorney in Rome; he negotiated the transaction with Camuccini
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/algernon-percy-4th-duke-of-northumberland
+    acquired: 1853
+    method: purchase
+    direct: true
+    place: alnwick
+    label: bought with the entire Camuccini collection; Alnwick Castle
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: to Algernon Percy, 4th duke of Northumberland [1792-1865], Alnwick Castle, Northumberland;
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/george-percy-5th-duke-of-northumberland
+    method: inheritance
+    direct: true
+    place: alnwick
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: by inheritance to his cousin, George Percy, 5th duke of Northumberland [1778-1867], Alnwick Castle;
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/algernon-george-percy-6th-duke-of-northumberland
+    method: inheritance
+    direct: true
+    place: alnwick
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: by inheritance to his son, Algernon George Percy, 6th duke of Northumberland [1810-1899], Alnwick Castle;
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/henry-george-percy-7th-duke-of-northumberland
+    method: inheritance
+    direct: true
+    place: alnwick
+    label: tried to sell it to Joseph Widener before World War I (Widener's account)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: by inheritance to his son, Henry George Percy, 7th duke of Northumberland 1846-1918], Alnwick Castle;
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    co_owners: [institution/arthur-j-sulley-and-co]
+    role: dealer
+    acquired: 1916-06-16
+    method: purchase
+    direct: true
+    place: london
+    label: on joint account; Agnew's stock no. J1755 (Picture Stock Book 1904–1933, section 2); not recorded as sold until 1922
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: sold 16 June 1916 to (Thomas Agnew & Sons, London) on joint account with (Arthur J. Sulley and Co., London);[6]
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/carl-w-hamilton-2
+    role: custodian
+    acquired: 1920 or earlier
+    place: new-york-city
+    label: exhibited 1920 at the Metropolitan Museum as his; probably only on credit, payments never completed
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: "[7] Although the painting was exhibited in 1920 at the Metropolitan Museum of Art as from the collection of Carl W. Hamilton, New York, he probably only had it on credit … Mr. Hamilton never completed the payments on it."
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/peter-a-b-widener
+    role: estate
+    acquired: 1921
+    method: purchase
+    label: bought with funds of the estate; the sale apparently handled by Arthur Sulley, delivery around 10 October 1921; in Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park, Pennsylvania, after purchase in 1921 by funds of the estate;[7] — Arthur Sulley appears to have handled the sale to Widener. … his letter of 26 September 1921 to Widener states that the painting will be delivered around 10 October 1921
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: person/joseph-e-widener
+    method: inheritance
+    direct: true
+    label: by gift through his power of appointment; in Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park, Pennsylvania
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1942
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1138.html
+        note: gift 1942 to NGA.
+        source: nga-1942-9-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q15008032
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q15008032
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q15008032
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q15008032
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q15008032
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q15008032

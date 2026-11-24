@@ -1,0 +1,107 @@
+public_id: 122926
+title_lang: en
+title: Rest on the Flight into Egypt
+creator: claude-lorrain
+created: 1640/1644
+kind: oil painting
+medium: oil on canvas
+dimensions: [208, 152.5]
+institution: cleveland-museum-of-art
+inventory_number: "1962.151"
+web_url: https://clevelandart.org/art/1962.151
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1962.151/1962.151_web.jpg
+    source_url: https://clevelandart.org/art/1962.151
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner_label: Count Francesco Crescenzi or Giovanni Battista Crescenzi (1577–1660?), Marqués de la Torre
+    label: the museum names either Count Francesco Crescenzi or Giovanni Battista Crescenzi
+    sources:
+      - url: https://clevelandart.org/art/1962.151
+        note: Count Francesco Crescenzi or Giovanni Battista Crescenzi (1577-1660?), Spanish Marquess de la Torre;
+        source: cma-1962-151
+        accessed: 2026-11-24
+  - owner: person/sir-william-lowther-3rd-baronet
+    label: third and last Baronet of Marske, at Holker Hall, Lancashire; in Holker Hall
+    sources:
+      - url: https://clevelandart.org/art/1962.151
+        note: Sir William Lowther (1727-1753), third and last Baronet of Marske (Holker Hall, Lancashire);
+        source: cma-1962-151
+        accessed: 2026-11-24
+  - owner: person/lord-george-augustus-cavendish
+    method: inheritance
+    direct: true
+    label: in Holker Hall
+    sources:
+      - url: https://clevelandart.org/art/1962.151
+        note: by inheritance to Lord George Augustus Cavendish (died 1794), Holker Hall, Lancashire;
+        source: cma-1962-151
+        accessed: 2026-11-24
+  - owner: person/william-cavendish-7th-duke-of-devonshire
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1962.151
+        note: by inheritance to William Cavendish (1808-1891), seventh Duke of Devonshire and second Earl of Burlington;
+        source: cma-1962-151
+        accessed: 2026-11-24
+  - owner: person/lord-richard-frederick-cavendish
+    sources:
+      - url: https://clevelandart.org/art/1962.151
+        note: Lord Richard Frederick Cavendish (1871-1946)
+        source: cma-1962-151
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1930-12-12
+    method: auction
+    direct: true
+    place: london
+    label: sale, Christie's, London, 12 December 1930, no. 37
+    sources:
+      - url: https://clevelandart.org/art/1962.151
+        note: sale, Christie's, London, December 12, 1930, no. 37, illus.;
+        source: cma-1962-151
+        accessed: 2026-11-24
+  - owner: person/richard-edward-osborne-cavendish
+    label: in Holker Hall
+    sources:
+      - url: https://clevelandart.org/art/1962.151
+        note: Richard Edward Osborne Cavendish, Esq., Holker Hall, Lancashire;
+        source: cma-1962-151
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1960-04-01
+    method: auction
+    direct: true
+    place: london
+    label: sale, Christie's, London, 1 April 1960, no. 87
+    sources:
+      - url: https://clevelandart.org/art/1962.151
+        note: sold, Christie's, London, April 1, 1960, no. 87, illus., to Rudolf Heinemann, New York;
+        source: cma-1962-151
+        accessed: 2026-11-24
+  - owner: person/rudolf-j-heinemann
+    role: dealer
+    acquired: 1960-04-01
+    method: auction
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1962.151
+        note: sold, Christie's, London, April 1, 1960, no. 87, illus., to Rudolf Heinemann, New York;
+        source: cma-1962-151
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1962
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/1962.151
+        note: sold the the Cleveland Museum of Art, 1962.
+        source: cma-1962-151
+        accessed: 2026-11-24

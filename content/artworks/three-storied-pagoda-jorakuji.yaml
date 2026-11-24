@@ -1,0 +1,47 @@
+public_id: 124071
+title: Three-storied Pagoda, Jorakuji
+names:
+  - lang: ja
+    role: translation
+    text: 常楽寺三重塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020397
+created: 1400
+institution: joraku-ji
+location: [136.0482, 34.98996]
+wikidata_id: Q107020397
+metadata:
+  sources: [Wikidata Q107020397 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/konan
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/00/Shiga_jyourakuji2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shiga_jyourakuji2.jpg
+    license: Public domain
+    credit: by Yusuke.ogawa
+provenance:
+  - owner: institution/joraku-ji
+    acquired: 1400
+    method: creation
+    place: konan
+    label: "built c. 1398–1400: a subscription scroll of Ōei 5 (1398) and roof tiles inscribed Ōei 7 (1400); a Tendai temple of the Enryaku-ji line then; owner today"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1458
+        note: 建立年代については応永五年(一三九八)の勧進状が残っているほか、瓦に同七年の箆書をもつものがあって明らかである。 … 所有者名 ： 常楽寺 所有者種別 ： 寺院
+        source: kunishitei-102-1458
+        accessed: 2026-11-24
+      - url: https://www.eonet.ne.jp/~jo-rakuji/engi.html
+        note: 応永７年（1400） 三重塔再建
+        source: jorakuji-engi
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%B8%B8%E6%A5%BD%E5%AF%BA_%28%E6%B9%96%E5%8D%97%E5%B8%82%29&oldid=111639326
+        note: 応永7年（1400年）に三重塔が再建される
+        source: wikipedia-ja-joraku-ji-konan
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020397

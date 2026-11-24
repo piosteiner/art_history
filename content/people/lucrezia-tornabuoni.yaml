@@ -1,0 +1,23 @@
+public_id: 123055
+name: Lucrezia Tornabuoni
+given_name: Lucrezia
+family_name: Tornabuoni
+kind: person
+birth: 1427-07-01
+death: 1482-04-06
+wikidata_id: Q1113645
+metadata:
+  sources: [Wikidata Q1113645 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q1113645
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q1113645
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q1113645

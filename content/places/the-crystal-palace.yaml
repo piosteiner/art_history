@@ -1,0 +1,16 @@
+public_id: 125221
+name: The Crystal Palace
+kind: building
+location: [-0.07579, 51.42229]
+wikidata_id: Q202902
+metadata:
+  sources: [Wikidata Q202902 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q202902
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q202902

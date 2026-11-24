@@ -1,0 +1,18 @@
+public_id: 125208
+name: Adriaen van Ostade
+given_name: Adriaen
+family_name: van Ostade
+birth: 1610-12-10
+death: 1685
+wikidata_id: Q352438
+metadata:
+  sources: [Wikidata Q352438 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q352438
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q352438

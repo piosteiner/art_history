@@ -1,0 +1,140 @@
+public_id: 123822
+title_lang: de
+title: Fragment eines Elfenbeinzahnes
+attribution_label: Königliche Gilde der Elfenbeinschnitzer am Hof von Benin
+created: 18th century
+created_span: uncertain
+kind: relief
+medium: Elfenbein
+dimensions: [21.5, 15.5, 17.5]
+institution: museum-rietberg
+inventory_number: RAF 621
+web_url: https://rietberg.ch/sammlungen/raf-621
+on_loan: true
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Benin_Fragment_Elefantenstosszahn_Museum_Rietberg_RAF_621.jpg/1280px-Benin_Fragment_Elefantenstosszahn_Museum_Rietberg_RAF_621.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Benin_Fragment_Elefantenstosszahn_Museum_Rietberg_RAF_621.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Königliche Gilde der Elfenbeinschnitzer am Hof von Benin
+    acquired: 18th century
+    method: creation
+    place: benin-city
+    label: carved by the royal guild of ivory carvers at the court of Benin
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-621
+        note: "18. Jh.: Königliche Gilde der Elfenbeinschnitzer am Hof von Benin in Benin City"
+        source: rietberg-raf-621
+        accessed: 2026-11-24
+  - owner: institution/royal-court-of-benin
+    acquired: 18th century
+    method: commission
+    place: benin-city
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-621
+        note: "18. Jh.: Königshaus Benin, beauftragt in Benin City"
+        source: rietberg-raf-621
+        accessed: 2026-11-24
+  - owner: person/ovonramwen-nogbaisi
+    acquired: 1888
+    method: inheritance
+    place: benin-city
+    label: Oba of Benin; by inheritance (queried in the source)
+    certainty: possible
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-621
+        note: "1888: Oba Ovonramwen Nogbaisi (?) (um 1857–1914), durch Erbgang erworben in Benin City"
+        source: rietberg-raf-621
+        accessed: 2026-11-24
+  - owner: institution/british-army
+    role: possessor
+    acquired: 1897
+    method: spoils_of_war
+    place: benin-city
+    label: probably looted in the British attack on Benin City
+    certainty: probable
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-621
+        note: "1897: British Army, wahrscheinlich geplündert in Benin City"
+        source: rietberg-raf-621
+        accessed: 2026-11-24
+  - owner: person/han-coray
+    acquired: before 1928
+    ended: before 1939
+    label: whereabouts unknown before; circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-621
+        note: "Verbleib unbekannt vor 1928–vor 1939: Han Coray (1880–1974), Erwerbsumstände unbekannt"
+        source: rietberg-raf-621
+        accessed: 2026-11-24
+  - owner: institution/schweizerische-volksbank
+    role: trustee
+    acquired: 1931
+    label: distrained (gepfändet) from Han Coray
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-621
+        note: "1931: Schweizerische Volksbank (SVB) (1869), gepfändet Vgl. Schriftenarchiv Museum Rietberg, S.0005-0006a, Fotoalbum Han Coray."
+        source: rietberg-raf-621
+        accessed: 2026-11-24
+  - owner: institution/volkerkundemuseum-der-universitat-zurich
+    role: trustee
+    acquired: 1940
+    method: transfer
+    label: taken over in trust
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-621
+        note: "1940: Völkerkundemuseum der Universität Zürich (1888), treuhänderisch übernommen"
+        source: rietberg-raf-621
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: 1940
+    method: purchase
+    place: zurich
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-621
+        note: "1940: Eduard von der Heydt (1882–1964), angekauft in Zürich"
+        source: rietberg-raf-621
+        accessed: 2026-11-24
+  - owner: institution/museum-fur-gestaltung-zurich
+    role: custodian
+    acquired: 1940
+    place: zurich
+    label: on loan
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-621
+        note: "1940: Kunstgewerbemuseum Zürich (1875), als Leihgabe erhalten in Zürich"
+        source: rietberg-raf-621
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1961
+    method: transfer
+    place: zurich
+    label: transfer of ownership
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-621
+        note: "1961: Museum Rietberg, Eigentumsübertragung in Zürich"
+        source: rietberg-raf-621
+        accessed: 2026-11-24
+  - owner: institution/national-commission-for-museums-and-monuments
+    acquired: 2026-03-20
+    method: restitution
+    direct: true
+    place: zurich
+    label: transfer of ownership to Nigeria under the agreement between the City of Zurich and the NCMM, in a management agreement with the Benin Royal Palace
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-621
+        note: '20.03.2026: National Commission for Museums and Monuments, Nigeria (NCMM) (1979), Eigentumsübertragung in Zürich Gemäss dem "Agreement on the transfer of ownership and return of Benin Bronzes between the City of Zurich and the National Commission for Museums and Monuments of the Federal Ministry of Art, Culture, Tourism and the Creative Economy of Nigeria, representing the Federal Republic of Nigeria and in a management agreement with the Benin Royal Palace" vom 20.03.2026.'
+        source: rietberg-raf-621
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    role: custodian
+    acquired: 2026-03-20
+    direct: true
+    place: zurich
+    label: on loan from the National Commission for Museums and Monuments, Nigeria
+    sources:
+      - url: https://rietberg.ch/sammlungen/raf-621
+        note: '20.03.2026: Museum Rietberg, als Leihgabe erhalten in Zürich Gemäss dem "Agreement on the transfer of ownership and return of Benin Bronzes between the City of Zurich and the National Commission for Museums and Monuments of the Federal Ministry of Art, Culture, Tourism and the Creative Economy of Nigeria, representing the Federal Republic of Nigeria and in a management agreement with the Benin Royal Palace" vom 20.03.2026.'
+        source: rietberg-raf-621
+        accessed: 2026-11-24

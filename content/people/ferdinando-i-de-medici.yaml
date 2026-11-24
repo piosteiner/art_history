@@ -35,6 +35,16 @@ death: 1609-02-17
 wikidata_id: Q297483
 metadata:
   sources: [Wikidata Q297483 (retrieved 2026-10-20)]
+relationships:
+  - type: child_of
+    to: person/cosimo-i-de-medici
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q48547
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q297483
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/1f/Pulzone%2C_Scipione_-_Ferdinando_I_de%27_Medici%2C_granduca_di_Toscana_-_1590.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Pulzone,_Scipione_-_Ferdinando_I_de%27_Medici,_granduca_di_Toscana_-_1590.jpg

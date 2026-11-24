@@ -1,0 +1,135 @@
+public_id: 124699
+title_lang: en
+title: Triptych with The Lamentation of Christ (center), St. Barbara (left wing), St. Catherine of Alexandria (right wing), The Annunciation (reverse wings)
+creator: master-of-the-krainburg-altar
+created: c. 1500
+created_span: uncertain
+institution: cleveland-museum-of-art
+inventory_number: "2022.86"
+web_url: https://clevelandart.org/art/2022.86
+wikidata_id: Q117247332
+metadata:
+  sources: [Wikidata Q117247332 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Master_of_the_Krainburg_Altar_%28Austrian%2C_active_c._1485%E2%80%931510%29_-_Triptych_with_The_Lamentation_of_Christ_%28center%29%2C_St._Barbara_%28left_wing%29%2C_St._Catherine_of_Alexandr_-_2022.86_-_Cleveland_Museum_of_Art.jpg/1280px-thumbnail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Master_of_the_Krainburg_Altar_(Austrian,_active_c._1485%E2%80%931510)_-_Triptych_with_The_Lamentation_of_Christ_(center),_St._Barbara_(left_wing),_St._Catherine_of_Alexandr_-_2022.86_-_Cleveland_Museum_of_Art.jpg
+    license: Public domain
+    credit: Master of the Krainburg Altar
+provenance:
+  - owner: person/richard-von-kaufmann
+    place: berlin
+    sources:
+      - url: https://clevelandart.org/art/2022.86
+        note: Richard von Kaufmann, Berlin, Germany
+        source: cma-2022-86
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    co_owners: [institution/hugo-helbing]
+    role: agent
+    acquired: 1917
+    method: auction
+    place: berlin
+    label: sale, Cassirer and Helbing, Berlin, 1917, part II, lot 122
+    sources:
+      - url: https://clevelandart.org/art/2022.86
+        note: "(Sale: Cassirer and Helbing, Berlin, 1917, II, lot 122)"
+        source: cma-2022-86
+        accessed: 2026-11-24
+  - owner: person/alfred-bum
+    place: brno
+    sources:
+      - url: https://clevelandart.org/art/2022.86
+        note: Alfred Bum Collection, Brno, Czechoslovakia, by descent to his son, Martin Bum
+        source: cma-2022-86
+        accessed: 2026-11-24
+  - owner: person/martin-bum
+    method: inheritance
+    direct: true
+    place: new-york-city
+    label: by descent from his father; name changed to Boome
+    sources:
+      - url: https://clevelandart.org/art/2022.86
+        note: Martin Bum (changed to Boome), New York, NY
+        source: cma-2022-86
+        accessed: 2026-11-24
+  - owner: institution/parke-bernet
+    role: agent
+    acquired: 1942-11-05
+    method: auction
+    place: new-york-city
+    label: sale, Parke-Bernet Galleries, New York, 5 Nov. 1942, lot 46
+    sources:
+      - url: https://clevelandart.org/art/2022.86
+        note: "(Sale: Parke-Bernet Galleries, New York, 5 November 1942, lot 46)"
+        source: cma-2022-86
+        accessed: 2026-11-24
+  - owner: person/clarence-y-palitz
+    place: new-york-city
+    label: with Mrs. Clarence Y. Palitz
+    sources:
+      - url: https://clevelandart.org/art/2022.86
+        note: Mr. and Mrs. Clarence Y. Palitz, New York, NY
+        source: cma-2022-86
+        accessed: 2026-11-24
+  - owner_label: heirs of Mr. and Mrs. Clarence Y. Palitz
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2022.86
+        note: Thence By Decent
+        source: cma-2022-86
+        accessed: 2026-11-24
+  - owner: institution/richard-l-feigen-co
+    role: dealer
+    sources:
+      - url: https://clevelandart.org/art/2022.86
+        note: Richard L. Feigen & Co.
+        source: cma-2022-86
+        accessed: 2026-11-24
+  - owner_label: Private collection, USA
+    acquired: c. 2009
+    label: sold through Ben Elwes Fine Art
+    sources:
+      - url: https://clevelandart.org/art/2022.86
+        note: Private Collection, USA, sold through Ben Elwes Fine Art, to the Cleveland Museum of Art [c. 2009-2022]
+        source: cma-2022-86
+        accessed: 2026-11-24
+  - owner: institution/ben-elwes-fine-art
+    role: agent
+    acquired: 2022
+    method: purchase
+    direct: true
+    label: sold on behalf of the private collection to the museum
+    sources:
+      - url: https://clevelandart.org/art/2022.86
+        note: Private Collection, USA, sold through Ben Elwes Fine Art, to the Cleveland Museum of Art
+        source: cma-2022-86
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2022
+    method: purchase
+    direct: true
+    place: cleveland
+    label: John L. Severance Fund
+    sources:
+      - url: https://clevelandart.org/art/2022.86
+        note: The Cleveland Museum of Art, Cleveland, OH [2022-]
+        source: cma-2022-86
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q117247332
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q117247332
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q117247332
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q117247332

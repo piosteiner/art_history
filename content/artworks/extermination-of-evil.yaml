@@ -1,0 +1,118 @@
+public_id: 124097
+title: Extermination of Evil
+names:
+  - lang: fr
+    role: translation
+    text: peintures pour chasser les démons
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3007715
+  - lang: es
+    role: translation
+    text: Exterminación del mal
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3007715
+  - lang: ja
+    role: translation
+    text: 辟邪絵
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3007715
+  - lang: zh
+    role: translation
+    text: 辟邪绘
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3007715
+  - lang: ko
+    role: translation
+    text: 벽사회
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3007715
+created: 12th century
+created_span: uncertain
+institution: nara-national-museum
+inventory_number: 1106-0
+web_url: https://colbase.nich.go.jp/collection_items/narahaku/1106-0
+location: [135.8379, 34.68304]
+wikidata_id: Q3007715
+metadata:
+  sources: [Wikidata Q3007715 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nara
+    period: 12th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Extermination_of_Evil_Tenkeisei.jpg/1280px-Extermination_of_Evil_Tenkeisei.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Extermination_of_Evil_Tenkeisei.jpg
+    license: Public domain
+    credit: Unknown artist
+provenance:
+  - owner: institution/sanjusangen-do
+    acquired: late 12th century
+    method: creation
+    place: kyoto
+    label: presumably made, as a handscroll, with other scrolls of the Six Realms in the time of the cloistered emperor Go-Shirakawa (1127–92) and kept in the treasure house of Rengeō-in
+    certainty: probable
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&content_base_id=100247&content_part_id=000&content_pict_id=0
+        note: 他の地獄草紙などと一連の六道絵巻として、平安時代末期、後白河法皇（ごしらかわほうおう）（1127-92）のころに制作され、蓮華王院（れんげおういん）の宝蔵に納められていたものと推測される。
+        source: emuseum-100247
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/161
+        note: 少なくともそれらと同時期、平安時代末から鎌倉時代初め頃の製作と考えられ
+        source: kunishitei-201-161
+        accessed: 2026-11-24
+  - owner: person/masuda-takashi
+    label: handed down in the Masuda family; known as the second (otsu) scroll of the Masuda family Hell Scrolls (Jigoku zōshi Masuda-ke otsu-bon)
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&content_base_id=100247&content_part_id=000&content_pict_id=0
+        note: かつては「益田家本地獄草紙乙巻」と呼ばれた絵巻であった
+        source: emuseum-100247
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/161
+        note: 益田家伝来、中沢家旧蔵。
+        source: kunishitei-201-161
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%BE%9F%E9%82%AA%E7%B5%B5&oldid=107230275
+        note: この絵巻は、かつて実業家で茶人の益田孝（益田鈍翁）が所蔵しており、「地獄草紙益田家乙本」と呼ばれていた。
+        source: wikipedia-ja-hekija-e
+        accessed: 2026-11-24
+  - owner_label: Nakazawa family
+    label: formerly in the Nakazawa family
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/161
+        note: 益田家伝来、中沢家旧蔵。
+        source: kunishitei-201-161
+        accessed: 2026-11-24
+  - owner: institution/nara-national-museum
+    place: nara
+    label: cut after the war into five hanging scrolls; owned by the National Institutes for Cultural Heritage; National Treasure since 6 June 1985
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&content_base_id=100247&content_part_id=000&content_pict_id=0
+        note: かつては「益田家本地獄草紙乙巻」と呼ばれた絵巻であったが、戦後に切断されて掛幅装になった。 … 奈良国立博物館 1106
+        source: emuseum-100247
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/161
+        note: 国宝指定年月日 ： 1985.06.06(昭和60.06.06) … 保管施設の名称 ： 奈良国立博物館 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-161
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3007715
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3007715
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3007715
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q3007715

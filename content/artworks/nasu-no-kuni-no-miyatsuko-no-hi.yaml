@@ -1,0 +1,37 @@
+public_id: 124552
+title: Nasu no Kuni no Miyatsuko no Hi
+names:
+  - text: Nasu no Kuninomiyatsuko no Hi
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11642908
+  - text: Nasu Kokuzō Hi
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11642908
+  - lang: ja
+    role: translation
+    text: 那須国造碑
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11642908
+created: 700
+materials: [granite]
+web_url: https://www.city.ohtawara.tochigi.jp/docs/2013082778383/
+wikidata_id: Q11642908
+metadata:
+  sources: [Wikidata Q11642908 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/34/Nasunokuninomiyatsukonohi-2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nasunokuninomiyatsukonohi-2.jpg
+    license: Public domain
+    credit: 乙川某
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11642908
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q11642908

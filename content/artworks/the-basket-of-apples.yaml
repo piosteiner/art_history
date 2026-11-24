@@ -1,0 +1,201 @@
+public_id: 125214
+title_lang: fr
+title: La Corbeille de pommes
+names:
+  - lang: en
+    role: translation
+    text: The Basket of Apples
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3956440
+  - lang: nl
+    role: translation
+    text: Mand met appelen
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3956440
+  - lang: it
+    role: translation
+    text: il cesto di mele
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3956440
+  - lang: es
+    role: translation
+    text: Cesto de manzanas
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3956440
+  - lang: zh
+    role: translation
+    text: 蘋果籃
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3956440
+  - lang: ko
+    role: translation
+    text: 사과 바구니
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3956440
+  - lang: ru
+    role: translation
+    text: Корзина с яблоками
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3956440
+creator: paul-cezanne
+created: c. 1893
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [65, 80]
+institution: art-institute-of-chicago
+inventory_number: "1926.252"
+web_url: https://www.cezannecatalogue.com/catalogue/entry.php?id=776
+provenance_status: a_clear
+provenance_status_note: In the Art Institute of Chicago since 1926.
+wikidata_id: Q3956440
+metadata:
+  sources: [Wikidata Q3956440 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Paul_C%C3%A9zanne_-_The_Basket_of_Apples_-_1926.252_-_Art_Institute_of_Chicago.jpg/1280px-Paul_C%C3%A9zanne_-_The_Basket_of_Apples_-_1926.252_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_The_Basket_of_Apples_-_1926.252_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Paul Cézanne
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: November 1895 or earlier
+    place: paris
+    label: according to the exhibition catalogue New York 2006–7
+    sources:
+      - url: https://www.artic.edu/artworks/111436
+        note: Ambroise Vollard (1866–1939), Paris by Nov. 1895 [this and the following information according to New York 2006-7];
+        source: aic-1926-252
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    direct: true
+    place: paris
+    label: Bernheim-Jeune archive; 5538?
+    sources:
+      - url: https://www.artic.edu/artworks/111436
+        note: Galerie Bernheim-Jeune, Paris [Bernheim-Jeune archive; 5538?].
+        source: aic-1926-252
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    role: dealer
+    acquired: 1904-06-01
+    place: berlin
+    label: Paul Cassirer, Berlin; Paul Cassirer archive 5775 (5538)
+    sources:
+      - url: https://www.artic.edu/artworks/111436
+        note: Paul Cassirer, Berlin, June 1, 1904 [Paul Cassirer archive 5775 (5538)];
+        source: aic-1926-252
+        accessed: 2026-11-24
+  - owner: person/max-linde
+    acquired: 1904-06-01
+    direct: true
+    place: lubeck
+    sources:
+      - url: https://www.artic.edu/artworks/111436
+        note: Max Linde, Lübeck, Germany, June 1, 1904.
+        source: aic-1926-252
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: July 1907 or earlier
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/111436
+        note: Galerie Bernheim-Jeune, Paris, by July 1907;
+        source: aic-1926-252
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    role: agent
+    acquired: 1907-07
+    ended: 1908-11
+    direct: true
+    place: berlin
+    label: sent by Bernheim-Jeune to Paul Cassirer, Berlin; returned to Bernheim-Jeune, Paris, Nov. 1908
+    sources:
+      - url: https://www.artic.edu/artworks/111436
+        note: sent to Paul Cassirer, Berlin, July 1907; returned to Bernheim-Jeune, Paris, Nov. 1908.
+        source: aic-1926-252
+        accessed: 2026-11-24
+  - owner: person/jos-hessel
+    acquired: 1913 or earlier
+    ended_label: until at least 1920
+    place: paris
+    label: based on an inscription on the reverse; New York Times 1913, Borgmeyer 1913, exhibition Paris 1920
+    sources:
+      - url: https://www.artic.edu/artworks/111436
+        note: Jos Hessel (1859–1942), Paris, by 1913 until at least 1920 [based on inscription on reverse; see also New York Times 1913, Borgmeyer 1913, Paris 1920].
+        source: aic-1926-252
+        accessed: 2026-11-24
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1922 or earlier
+    place: paris
+    label: see exhibition Paris 1922
+    sources:
+      - url: https://www.artic.edu/artworks/111436
+        note: Paul Rosenberg, Paris, by 1922 [see Paris 1922];
+        source: aic-1926-252
+        accessed: 2026-11-24
+  - owner: institution/french-galleries
+    role: agent
+    direct: true
+    place: new-york-city
+    label: sold through Joseph Stransky of French Galleries, New York
+    sources:
+      - url: https://www.artic.edu/artworks/111436
+        note: sold through Joseph Stransky of French Galleries, New York to Frederick Clay Bartlett
+        source: aic-1926-252
+        accessed: 2026-11-24
+  - owner: person/frederic-clay-bartlett
+    acquired: 1925 or earlier
+    method: purchase
+    direct: true
+    place: chicago
+    label: the record misprints his dates as 1873–1593
+    sources:
+      - url: https://www.artic.edu/artworks/111436
+        note: to Frederick Clay Bartlett (1873–1593), Chicago , by 1925;
+        source: aic-1926-252
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1926
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/111436
+        note: given to the Art Institute of Chicago, 1926.
+        source: aic-1926-252
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3956440
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q3956440
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3956440
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3956440
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3956440
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q3956440

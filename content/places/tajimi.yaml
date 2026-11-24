@@ -1,0 +1,41 @@
+public_id: 124024
+name: Tajimi
+names:
+  - lang: ja
+    role: original
+    text: 多治見市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q819689
+  - lang: ko
+    role: translation
+    text: 다지미시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q819689
+  - lang: ru
+    role: translation
+    text: Тадзими
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q819689
+kind: settlement
+parent: gifu-prefecture
+country_code: JP
+location: [137.13203, 35.33278]
+wikidata_id: Q819689
+metadata:
+  sources: [Wikidata Q819689 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q819689
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q819689
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q819689

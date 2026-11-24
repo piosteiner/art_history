@@ -1,0 +1,47 @@
+public_id: 125249
+title_lang: en
+title: Waterloo Bridge, Gray Weather
+parent: waterloo-bridge-series
+creator: claude-monet
+created: 1900
+materials: [oil paint, canvas]
+dimensions: [65.4, 92.6]
+institution: art-institute-of-chicago
+inventory_number: "1984.1173"
+wikidata_id: Q20268526
+metadata:
+  sources: [Wikidata Q20268526 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Monet_-_Waterloo_Bridge%2C_Gray_Weather%2C_1900.jpg/1280px-Monet_-_Waterloo_Bridge%2C_Gray_Weather%2C_1900.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Monet_-_Waterloo_Bridge,_Gray_Weather,_1900.jpg
+    license: CC BY-SA 4.0
+    credit: Claude Monet
+sources:
+  parent:
+    - accessed: 2026-11-24
+      property: P179
+      wikidata: Q20268526
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268526
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20268526
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20268526
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20268526
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268526
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268526

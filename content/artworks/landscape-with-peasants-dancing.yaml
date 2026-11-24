@@ -1,0 +1,155 @@
+public_id: 122916
+title_lang: en
+title: Landscape with Peasants Dancing
+creator: david-teniers-the-younger
+created: c. 1645–1650
+created_span: uncertain
+kind: oil painting
+medium: oil on wood
+dimensions: [49, 78]
+institution: cleveland-museum-of-art
+inventory_number: "1996.271"
+web_url: https://clevelandart.org/art/1996.271
+provenance_status: d_seized
+provenance_status_note: Confiscated by the Nazis in 1938 from Louis de Rothschild, Vienna, and selected by Hitler for the Führermuseum in Linz; recovered at Altaussee, repatriated to Austria on 16 May 1946 and restituted to Rothschild on 28 September 1946.
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1996.271/1996.271_web.jpg
+    source_url: https://clevelandart.org/art/1996.271
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/albert-salomon-von-rothschild
+    ended: 1911
+    place: vienna
+    label: Baron Albert de Rothschild; probably until 1911
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1996.271
+        note: Baron Albert de Rothschild [1844- 1911], Vienna, by descent to his son, Baron Louis de Rothschild [Probably until 1911]
+        source: cma-1996-271
+        accessed: 2026-11-24
+  - owner: person/louis-de-rothschild
+    acquired: 1911
+    method: inheritance
+    direct: true
+    place: vienna
+    label: by descent from his father; probably from 1911; inv. LR 3
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1996.271
+        note: Baron Louis de Rothschild [1882-1955], Vienna, confiscated by the Nazis [Probably 1911-1938]
+        source: cma-1996-271
+        accessed: 2026-11-24
+  - owner: person/adolf-hitler
+    role: possessor
+    acquired: 1938
+    method: confiscation
+    direct: true
+    place: vienna
+    label: confiscated from Louis de Rothschild (inv. LR 3); selected for the Führermuseum, Linz — Linz album II, no. 17; in Posse's lists of 20 October 1939 and 31 July 1940
+    sources:
+      - url: https://clevelandart.org/art/1996.271
+        note: Confiscated by the Nazis in 1938 from Louis de Rothschild’s collection in Vienna, this painting was selected by Hitler to be part of his planned Führermuseum in Linz. It appears as no. 17, Landschaft mit Bauerntanz (49:78), in Album II of Hitler’s Gemäldegalerie Linz Album
+        source: cma-1996-271
+        accessed: 2026-11-24
+  - owner: institution/kremsmunster-abbey
+    role: custodian
+    method: transfer
+    place: kremsmunster
+    label: stored at the monastery
+    sources:
+      - url: https://clevelandart.org/art/1996.271
+        note: The painting was stored at the monastery in Kremsmünster (Felicitas Kunth, Die Rothschild'schen Gemäldesammlungen in Wien, 2006)
+        source: cma-1996-271
+        accessed: 2026-11-24
+  - owner_label: Altaussee salt mine
+    role: custodian
+    acquired_label: toward the end of the war
+    method: transfer
+    direct: true
+    place: altaussee
+    label: hidden by the Nazis; recovered there by the Allies
+    sources:
+      - url: https://clevelandart.org/art/1996.271
+        note: and then moved to the salt mine at Alt Aussee toward the end of the war. … The painting was recovered by the Allies at the Alt Ausee salt mine, where it had been hidden by the Nazis
+        source: cma-1996-271
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    acquired: 1945-07-13
+    ended: 1946-05-16
+    method: transfer
+    direct: true
+    place: munich
+    label: Alt Aussee shipment no. 2777, Munich no. 4040, as “Peasants Inn with Landscape”; repatriated to Austria 16 May 1946
+    sources:
+      - url: https://clevelandart.org/art/1996.271
+        note: sent to the Munich Central Collecting Point (Alt Aussee shipment no. 2777), arriving on July 13, 1945 and assigned Munich number 4040 … the painting, titled “Peasants Inn with Landscape,” was repatriated to Austria on May 16, 1946
+        source: cma-1996-271
+        accessed: 2026-11-24
+  - owner: institution/united-states-forces-in-austria
+    role: custodian
+    acquired: 1946-05-16
+    ended: 1946-09-28
+    method: transfer
+    direct: true
+    label: USFA; repatriated to Austria, then restituted to Louis de Rothschild
+    sources:
+      - url: https://clevelandart.org/art/1996.271
+        note: In possession of the United States Forces in Austria (USFA), restituted to Louis de Rothschild [1945-1946] — was repatriated to Austria on May 16, 1946, and then restituted to Louis de Rothschild on September 28 of that year.
+        source: cma-1996-271
+        accessed: 2026-11-24
+  - owner: person/louis-de-rothschild
+    acquired: 1946-09-28
+    method: restitution
+    direct: true
+    place: east-barnard
+    sources:
+      - url: https://clevelandart.org/art/1996.271
+        note: restituted to Louis de Rothschild on September 28 of that year. Baron Louis de Rothschild [1882-1955], East Barnard, VT, sold to Rosenberg & Stiebel [1946-1949]
+        source: cma-1996-271
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    acquired: 1949
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1996.271
+        note: Rosenberg & Stiebel, New York, NY, sold to Jane Taft Ingalls [1949]
+        source: cma-1996-271
+        accessed: 2026-11-24
+  - owner: person/jane-taft-ingalls
+    acquired: 1949
+    ended: 1962
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1996.271
+        note: Jane Taft Ingalls [1874-1962], Cleveland, OH, by descent to her daughter-in-law, Frances W. Ingalls [1949-1962]
+        source: cma-1996-271
+        accessed: 2026-11-24
+  - owner: person/frances-w-ingalls
+    acquired: 1962
+    method: inheritance
+    direct: true
+    place: cleveland
+    label: by descent from her mother-in-law
+    sources:
+      - url: https://clevelandart.org/art/1996.271
+        note: Frances W. Ingalls [1926-1996], Cleveland, OH, given to the Cleveland Museum of Art [1962-1996]
+        source: cma-1996-271
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1996
+    method: gift
+    direct: true
+    place: cleveland
+    label: Gift of the Frances W. Ingalls Trust
+    sources:
+      - url: https://clevelandart.org/art/1996.271
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1996-]
+        source: cma-1996-271
+        accessed: 2026-11-24

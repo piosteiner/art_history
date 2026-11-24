@@ -19,6 +19,69 @@ relationships:
       - accessed: 2026-10-30
         property: P20
         wikidata: Q233587
+  - type: child_of
+    to: person/maria-luisa-of-parma
+    sources:
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q233587
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q229854
+  - type: sibling_of
+    to: person/carlos-de-borbon-y-borbon-parma
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233587
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q343621
+  - type: sibling_of
+    to: person/carlota-joaquina-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233587
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233603
+  - type: sibling_of
+    to: person/ferdinand-vii-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q186256
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233587
+  - type: sibling_of
+    to: person/infante-francisco-de-paula-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233587
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q462892
+  - type: sibling_of
+    to: person/maria-isabella-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233196
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q233587
+  - type: married_to
+    to: person/louis-of-parma-king-of-etruria
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q233587
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q444290
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/a/ac/Maria_Luisa_of_Spain%2C_duchess_of_Lucca.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Maria_Luisa_of_Spain,_duchess_of_Lucca.jpg

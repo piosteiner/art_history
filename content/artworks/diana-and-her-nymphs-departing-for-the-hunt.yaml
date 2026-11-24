@@ -1,0 +1,356 @@
+public_id: 124568
+title_lang: en
+title: Diana and Her Nymphs Departing for the Hunt
+names:
+  - lang: nl
+    role: translation
+    text: Diane en haar Nmfen maken zich klaar voor de jacht
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60465206
+  - lang: fr
+    role: translation
+    text: Diana avec des nymphes, au départ à la chasse
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60465206
+  - lang: de
+    role: translation
+    text: Diana mit Nymphen, beim Aufbruch zur Jagd
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60465206
+  - lang: it
+    role: translation
+    text: Diana e le sue ninfe che partono
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60465206
+creator: peter-paul-rubens
+attribution_label: Peter Paul Rubens and workshop
+created: c. 1615
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [216, 178.7]
+institution: cleveland-museum-of-art
+inventory_number: "1959.190"
+web_url: https://clevelandart.org/art/1959.190
+provenance_status: d_seized
+provenance_status_note: Confiscated by the ERR from Édouard de Rothschild's collection hidden at the Château de Reux in September 1940; taken by Hermann Göring in 1942; recovered at Berchtesgaden, repatriated to France 1948 and returned to Édouard and Germaine de Rothschild.
+wikidata_id: Q60465206
+metadata:
+  sources: [Wikidata Q60465206 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/flanders
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q60465206
+  - type: depicts_person
+    to: person/isabella-brant
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q60465206
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Clevelandart_1959.190.jpg/1280px-Clevelandart_1959.190.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Clevelandart_1959.190.jpg
+    license: Public domain
+    credit: Peter Paul Rubens / Workshop of Peter Paul Rubens
+provenance:
+  - owner: person/wouter-valckenier
+    ended: 1784
+    place: amsterdam
+    label: Wouter Valckenier and family
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: Wouter Valckenier and family [1705-1784], Amsterdam, by descent to his widow, Elisabeth Hooft [Until 1784]
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/elisabeth-hooft
+    acquired: 1784
+    ended: 1796
+    method: inheritance
+    direct: true
+    place: amsterdam
+    label: widow of Wouter Valckenier
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: Elisabeth Hooft [c. 1711-1796], Amsterdam [1784-1796]
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner_label: C. Blasius et al., Amsterdam
+    role: agent
+    acquired: 1796-08-31
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Hooft estate sale, no. 32
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: (C. Blasius, et.al., Amsterdam, Hooft estate sale, August 31, 1796, no. 32, sold to van Coevorden)
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner_label: van Coevorden
+    acquired: 1796
+    method: auction
+    direct: true
+    label: buyer's name written in the Hooft sale catalogue; identity unknown, perhaps Michael Bryan's agent
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: Van Coevorden [1796] — This buyer's identity is unknown. The name is written next to the painting in the catalogue of the Hooft sale and appears to read "van Coevorden." He may have been the agent for Michael Bryan.
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/michael-bryan
+    place: london
+    label: art historian, dealer and connoisseur; his 1798 catalogue says he bought it from a descendant of the Valckenier family
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: Michael Bryan [1757 – 1821], London [Until 1798] — The 1798 sale catalogue of Bryan's collection says that Bryan, an art historian, dealer, and connoisseur, purchased the painting from a descendant of the Valckenier family.
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: institution/coxe-burrel-foster
+    role: agent
+    acquired: 1798-05-17
+    method: auction
+    direct: true
+    place: london
+    label: Bryan sale, no. 42
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: (Coxe, Burrel & Foster, London, Bryan sale, May 17, 1798, no. 42, sold to Simon H. Clarke)
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/sir-simon-clarke
+    co_owners: [person/george-hibbert]
+    acquired: 1798
+    method: auction
+    direct: true
+    label: Sir Simon Haughton Clarke, 9th Baronet, of Oakhill, Hertfordshire, and his business associate George Hibbert; the Getty Provenance Index says it may have been bought in
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: Sir Simon Haughton Clarke, 9th Baronet Clarke [1764-1832], Oakhill, Hertfordshire, and George Hibbert [1757-1837] [Probably 1798-1802] — Clarke indeed most likely purchased the painting at the 1798 sale
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1802-05-14
+    method: auction
+    direct: true
+    place: london
+    label: Clarke/Hibbert sale ("the united cabinet of Sir Simon Clarke, Bart. and George Hibbert, Esq."), 14–15 May 1802, no. 71
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: (Clarke/Hibbert sale, Christie's, London, May 14-15, 1802, no. 71, sold to Michael Bryan)
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/michael-bryan
+    role: dealer
+    acquired: 1802
+    method: auction
+    direct: true
+    place: london
+    label: named as buyer in the catalogue (the Getty Provenance Index says bought in); perhaps the consignor ("Birch"?) of the 1803 sale
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: (Michael Bryan, London?) [1802-1803] — If Bryan was indeed the consignor, this would account for the small provenance gap from 1802-1803, and would, of course, make sense chronologically, given that Bryan purchased the painting at the 1802 sale.
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner_label: Greenwood & Co., London
+    role: agent
+    acquired: 1803-02-19
+    method: auction
+    direct: true
+    place: london
+    label: sale; the Rubens handwritten on p. 3 of the Courtauld copy of the catalogue with "Clarke" as buyer
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: (Sale, Greenwood & Co., London, Feb. 19, 1803, probably sold to Simon H. Clarke) — "Clarke" is written in as the buyer for the CMA painting
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/simon-haughton-clarke
+    acquired: 1803
+    ended: 1840
+    method: auction
+    direct: true
+    label: Sir Simon H. Clarke, 10th Baronet, Oakhill, Hertfordshire (the museum names the 10th Baronet from 1803)
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: Sir Simon H. Clarke, 10th Baronet Clarke [1818-1849], Oakhill, Hertfordshire [1803-1840]
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1840-05-08
+    method: auction
+    direct: true
+    place: london
+    label: Clarke sale, 8–9 May 1840, no. 52
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: (Clarke sale, Christie's, London, May 8-9, 1840, no. 52, sold to C. Nieuwenhuys)
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/christianus-johannes-nieuwenhuys
+    role: dealer
+    acquired: 1840
+    method: auction
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: C. Nieuwenhuys, sold to Thomas Baring [1840-by 1854]
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/thomas-baring
+    acquired: 1857 or earlier
+    ended: 1873
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: Thomas Baring, Esq. [1799-1873], London, by descent to his nephew Thomas George Baring [By 1857-1873]
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/thomas-george-baring
+    acquired: 1873
+    method: inheritance
+    direct: true
+    label: First Earl of Northbrook; not in his collection catalogue of 1889, so sold by then (c. 1890 per Ludwig Burchard)
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: Thomas George Baring, First Earl of Northbrook [1826-1904], sold to Mayer Alphonse de Rothschild [1873-probably by 1889]
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/alphonse-james-de-rothschild
+    acquired: 1889 or earlier
+    ended: 1905
+    method: purchase
+    direct: true
+    label: "Ferrières; Mayer Alphonse de Rothschild; bought probably by 1889 (Burchard: c. 1890)"
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: Mayer Alphonse de Rothschild [1827-1905], Ferrières, by descent to his son, Édouard de Rothschild [Probably by 1899-1905]
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/edouard-alphonse-james-de-rothschild
+    co_owners: [person/germaine-de-rothschild]
+    acquired: 1905
+    method: inheritance
+    direct: true
+    label: Ferrières; by 1940 hidden with much of the collection at the family's Château de Reux, Calvados
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: Édouard [1868-1949] and Germaine [1884-1975] de Rothschild, Ferrières, confiscated by the Einsatzstab Reichsleiter Rosenberg (ERR) [Probably 1905-1940] — By 1940, Édouard de Rothschild had hidden much of his collection at the family’s Chateau de Reux in Calvados
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    acquired: 1940-09
+    method: confiscation
+    direct: true
+    place: paris
+    label: found at the Château de Reux and confiscated; taken to the Jeu de Paume, Paris (ERR card no. R 90)
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: The ERR located Rothschild's hidden collection at the Chateau de Reux and confiscated it, including the Rubens, in September 1940 [...] After its confiscation, the painting was taken to the Jeu de Paume in Paris (ERR Card No. R 90).
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/hermann-goring
+    role: possessor
+    acquired: 1942-10-20
+    ended: 1945
+    method: transfer
+    direct: true
+    label: selected at the Jeu de Paume (list of 20 Oct. 1942, no. 163, "Diana mit Gefolge"); probably at Carinhall; Feb.–Apr. 1945 to Veldenstein (no. 404), on 10 April by train to Berchtesgaden
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: In possession of Hermann Goering [1893-1946], probably Carinhall, Brandenburg [1942-1945] — On October 20, 1942, Goering selected works at the Jeu de Paume for his personal collection. This painting is No. 163 (as “Diana mit Gefolge")
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    acquired: 1945-07-25
+    ended: 1948-06-03
+    direct: true
+    place: munich
+    label: found by the Allies at Berchtesgaden; Munich no. 5133; Répertoire des biens spoliés II, no. 3294; repatriated to France 3 June 1948
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: the Allies found this painting at Berchtesgaden [...] The painting arrived at the Collecting Point on July 25, 1945 and was assigned number 5133. On June 3, 1948 the Rubens was repatriated to France and then returned to Édouard and Germaine de Rothschild.
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/edouard-alphonse-james-de-rothschild
+    co_owners: [person/germaine-de-rothschild]
+    acquired: 1948
+    method: restitution
+    direct: true
+    place: chantilly
+    label: returned after repatriation to France; sold to Rosenberg & Stiebel through Robert Leclerc
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: Édouard [1868-1949] and Germaine [1884-1975] de Rothschild, Chantilly, sold to Rosenberg & Stiebel through Robert Leclerc [1948-1959]
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/robert-leclerc
+    role: agent
+    acquired: 1959
+    direct: true
+    label: banker for various members of the Rothschild family; the sale went through him
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: sold to Rosenberg & Stiebel through Robert Leclerc — Leclerc was a banker for various members of the Rothschild family.
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    acquired: 1959
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: (Rosenberg & Stiebel, New York, NY, sold to the Cleveland Museum of Art) [1959]
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1959
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1959-]
+        source: cma-1959-190
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60465206
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60465206
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60465206
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60465206
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60465206
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60465206

@@ -1,0 +1,47 @@
+public_id: 129391
+name: Roubaix
+names:
+  - lang: ja
+    role: translation
+    text: ルーベ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q34001
+  - lang: zh
+    role: translation
+    text: 鲁贝
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q34001
+  - lang: ko
+    role: translation
+    text: 루베
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q34001
+  - lang: ru
+    role: translation
+    text: Рубе
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q34001
+kind: settlement
+parent: nord
+country_code: FR
+location: [3.18167, 50.69]
+wikidata_id: Q34001
+metadata:
+  sources: [Wikidata Q34001 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q34001
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q34001
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q34001

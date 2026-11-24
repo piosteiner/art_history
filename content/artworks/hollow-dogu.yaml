@@ -1,0 +1,97 @@
+public_id: 124300
+title: Hollow Dogū
+names:
+  - lang: es
+    role: translation
+    text: Dogū hueco
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11366844
+  - lang: ja
+    role: translation
+    text: 中空土偶
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11366844
+institution: hakodate-jomon-culture-center
+location: [140.7146, 41.75595]
+wikidata_id: Q11366844
+metadata:
+  sources: [Wikidata Q11366844 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/hakodate
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/%E4%B8%AD%E7%A9%BA%E5%9C%9F%E5%81%B6.jpg/1280px-%E4%B8%AD%E7%A9%BA%E5%9C%9F%E5%81%B6.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E7%A9%BA%E5%9C%9F%E5%81%B6.jpg
+    license: CC0
+    credit: 函館市縄文文化交流センター
+provenance:
+  - owner_label: unknown
+    role: event
+    acquired: 1975-08-24
+    method: find
+    place: hakodate
+    label: found by a local housewife while working a potato field at Chobonaino, then Minamikayabe (now Hakodate); the town's board of education then investigated the find-spot (a pit grave)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/9985
+        note: 本土偶は亀田半島北部、噴火湾に東面した低位段丘のうち、著保内野段丘の中ほど、標高約35mの地で昭和50年に畑の耕作中に発見されたものである。翌昭和51年、南茅部町教育委員会は本土偶の性格を明らかにするため出土地点およびその周辺の緊急調査を行い
+        source: kunishitei-201-9985
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E4%B8%AD%E7%A9%BA%E5%9C%9F%E5%81%B6&oldid=97859795
+        note: 1975年（昭和50年）8月24日、北海道の旧南茅部町（現在の函館市尾札部町）でジャガイモ畑から中空土偶が発見された … 地元の主婦が農作業をしていたところ、畑から人型の焼き物が出土したもので … 主婦は地元役場に相談した。
+        source: ja-wikipedia-chuku-dogu
+        accessed: 2026-11-24
+  - owner_label: Town of Minamikayabe
+    acquired: 1975
+    ended: 2004-12
+    place: hakodate
+    label: the town of Minamikayabe (now part of Hakodate) kept it for about thirty years in the town hall (in a paulownia box in the vault), rarely shown
+    certainty: probable
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/9985
+        note: 長年、町役場で保管され、公開される機会の少なかった土偶であり
+        source: kunishitei-201-9985
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/w/index.php?title=Hollow_Dog%C5%AB&oldid=1339763616
+        note: the figurine was kept in a paulownia box nested within a safety deposit box in the vault of Minamikayabe Town Hall for thirty years
+        source: en-wikipedia-hollow-dogu
+        accessed: 2026-11-24
+  - owner: place/hakodate
+    acquired: 2004-12
+    method: transfer
+    direct: true
+    place: hakodate
+    label: "the town of Minamikayabe merged into Hakodate; owner today: the City of Hakodate"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/9985
+        note: 所有者名 ： 函館市
+        source: kunishitei-201-9985
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E4%B8%AD%E7%A9%BA%E5%9C%9F%E5%81%B6&oldid=97859795
+        note: 2004年（平成16年）12月、いわゆる「平成の大合併」により、函館市と南茅部町が合併した。
+        source: ja-wikipedia-chuku-dogu
+        accessed: 2026-11-24
+  - owner: institution/hakodate-jomon-culture-center
+    role: custodian
+    acquired: 2011-10-01
+    place: hakodate
+    label: shown permanently at the city's Jōmon Culture Center from its opening
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/9985
+        note: 保管施設の名称 ： 函館市縄文文化交流センター 所有者名 ： 函館市
+        source: kunishitei-201-9985
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E4%B8%AD%E7%A9%BA%E5%9C%9F%E5%81%B6&oldid=97859795
+        note: 2011年10月1日、「茅空」の現物を常設展示する博物館「函館市縄文文化交流センター」が函館市臼尻町にオープンした。
+        source: ja-wikipedia-chuku-dogu
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11366844
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q11366844

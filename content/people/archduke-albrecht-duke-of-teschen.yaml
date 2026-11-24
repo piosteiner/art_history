@@ -35,6 +35,16 @@ death: 1895-02-18
 wikidata_id: Q310807
 metadata:
   sources: [Wikidata Q310807 (retrieved 2026-10-19)]
+relationships:
+  - type: child_of
+    to: person/archduke-charles-duke-of-teschen
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q84201
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q310807
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Erzherzog_Albrecht_in_der_preu%C3%9Fischen_Marschalls-Uniform_1895_Hof-Atelier_Adele.jpg/1280px-Erzherzog_Albrecht_in_der_preu%C3%9Fischen_Marschalls-Uniform_1895_Hof-Atelier_Adele.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Erzherzog_Albrecht_in_der_preu%C3%9Fischen_Marschalls-Uniform_1895_Hof-Atelier_Adele.jpg

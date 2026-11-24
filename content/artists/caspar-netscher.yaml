@@ -1,0 +1,18 @@
+public_id: 122808
+name: Caspar Netscher
+given_name: Caspar
+family_name: Netscher
+birth: 1639
+death: 1684-01-15
+wikidata_id: Q217715
+metadata:
+  sources: [Wikidata Q217715 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q217715
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q217715

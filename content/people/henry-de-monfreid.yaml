@@ -33,6 +33,15 @@ relationships:
       - accessed: 2026-10-30
         property: P27
         wikidata: Q911033
+  - type: child_of
+    to: person/daniel-de-monfreid
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q517792
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q911033
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/24/Henry_de_Monfreid_NYT_cropped.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Henry_de_Monfreid_NYT_cropped.jpg

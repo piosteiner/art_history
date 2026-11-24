@@ -1,0 +1,69 @@
+public_id: 123941
+title_lang: en
+title: Saint Bartholomew
+attribution_label: Anonymous, German
+created: c. 1350
+created_span: uncertain
+kind: sculpture
+medium: Gilt bronze
+dimensions: [32.4, 9.2]
+institution: art-institute-of-chicago
+inventory_number: "1952.253"
+web_url: https://www.artic.edu/artworks/77130
+images:
+  - url: https://www.artic.edu/iiif/2/1c8a5ab3-83da-6f60-794c-49df401acee2/full/843,/0/default.jpg
+    source_url: https://www.artic.edu/artworks/77130
+    license: CC0
+    credit: Art Institute of Chicago, Kate S. Buckingham Endowment
+provenance:
+  - owner: person/ferdinand-robert-turnow
+    ended: 1875
+    place: berlin
+    label: letter from Saemy Rosenberg to Hans Huth, 30 October 1951; Bode, Mein Leben, vol. 1, pp. 83–85
+    sources:
+      - url: https://www.artic.edu/artworks/77130
+        note: "Ferdinand Robert-Turnow (died 1875), Berlin [according to letter from Saemy Rosenberg to Hans Huth, 30 October 1951, in curatorial file; see also Wilhelm von Bode: Mein Leben, Thomas Gaehtgens and Barbara Paul, eds., vol. 1 (Berlin, 1997), pp. 83–85];"
+        source: aic-1952-253
+        accessed: 2026-11-24
+  - owner: person/victoria-empress-frederick
+    ended: 1901
+    method: bequest
+    direct: true
+    place: berlin
+    label: bequeathed to Empress Friedrich (the former Crown Princess Victoria); Berlin and Schloss Friedrichshof, Taunus
+    sources:
+      - url: https://www.artic.edu/artworks/77130
+        note: bequeathed by him to Empress Friedrich (the former Crown Princess Victoria), whose husband reigned briefly as Friedrich III, Berlin, and Schloss Friedrichshof, Taunus;
+        source: aic-1952-253
+        accessed: 2026-11-24
+  - owner: person/princess-margarete-of-prussia
+    acquired: 1901
+    method: bequest
+    direct: true
+    label: bequeathed on the Empress's death; Landgravine of Hesse, Schloss Friedrichshof, Taunus
+    sources:
+      - url: https://www.artic.edu/artworks/77130
+        note: on her death in 1901 bequeathed to her daughter, Princess Margarete of Prussia, Landgravin of Hesse (d. 1953), Schloss Friedrichshof, Taunus [according to letter cited above];
+        source: aic-1952-253
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/77130
+        note: sold to Rosenberg & Stiebel, New York, 1951 [according to copy of letter from Saemy Rosenberg to Hans Huth, 30 October 1951, cited above];
+        source: aic-1952-253
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1952
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/77130
+        note: sold to the Art Institute 1952.
+        source: aic-1952-253
+        accessed: 2026-11-24

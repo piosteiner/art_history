@@ -29,6 +29,24 @@ relationships:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q666331
+  - type: child_of
+    to: person/emil-georg-buhrle
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q1221807
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q96297
+  - type: sibling_of
+    to: person/hortense-anda-buhrle
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q1630202
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q1221807
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/ETH-BIB-Oerlikon_B%C3%BChrle%2C_Direktor_Dieter_B%C3%BChrle-Com_L31-0463-0001-0001.tif/lossy-page1-1280px-ETH-BIB-Oerlikon_B%C3%BChrle%2C_Direktor_Dieter_B%C3%BChrle-Com_L31-0463-0001-0001.tif.jpg
     source_url: https://commons.wikimedia.org/wiki/File:ETH-BIB-Oerlikon_B%C3%BChrle,_Direktor_Dieter_B%C3%BChrle-Com_L31-0463-0001-0001.tif

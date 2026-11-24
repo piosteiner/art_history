@@ -1,0 +1,235 @@
+public_id: 122848
+title_lang: en
+title: The Washington Family
+names:
+  - lang: fr
+    role: translation
+    text: La Famille Washington
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2415079
+  - lang: it
+    role: translation
+    text: La famiglia Washington
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2415079
+  - lang: ko
+    role: translation
+    text: 워싱턴 가족
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q2415079
+creator: edward-savage
+created: 1796
+materials: [oil paint, canvas]
+dimensions: [213.6, 284.2]
+institution: national-gallery-of-art
+inventory_number: 1940.1.2
+wikidata_id: Q2415079
+metadata:
+  sources: [Wikidata Q2415079 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/christopher-sheels
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q2415079
+  - type: depicts_person
+    to: person/eleanor-parke-custis-lewis
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q2415079
+  - type: depicts_person
+    to: person/george-washington
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q2415079
+  - type: depicts_person
+    to: person/george-washington-parke-custis
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q2415079
+  - type: depicts_person
+    to: person/martha-washington
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q2415079
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Edward_Savage_-_The_Washington_Family_-_Google_Art_Project.jpg/1280px-Edward_Savage_-_The_Washington_Family_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edward_Savage_-_The_Washington_Family_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Edward Savage
+provenance:
+  - owner: artist/edward-savage
+    method: creation
+    place: boston
+    label: in Savage's museum in Boston at his death
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: The artist;[1] — [1] … "Inventory of the estate of Edward Savage, late of Princeton in the County of Worcester deceased, lying and being in Boston …," 12 September 1817, no. 51 … This inventory of the contents of Savage's museum in Boston
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+  - owner: artist/edward-savage
+    role: estate
+    acquired: 1817
+    method: inheritance
+    direct: true
+    place: boston
+    label: estate of Edward Savage, administered by his son Edward Savage Jr. (1795–1858); estate inventory of 12 September 1817, no. 51
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: "[1] Ethan Allen Greenwood, John R. Penniman, and William M.S. Doyle, \"Inventory of the estate of Edward Savage, late of Princeton in the County of Worcester deceased …,\" 12 September 1817, no. 51 — [2] Bill of sale signed by Savage's son Edward Savage, Jr. (1795-1858), Boston, administrator of his father's estate"
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+  - owner: person/ethan-allen-greenwood
+    acquired: 1820-11-14
+    method: purchase
+    direct: true
+    place: boston
+    label: bill of sale signed by Edward Savage Jr.; New England Museum and Gallery of Fine Arts
+    price:
+      amount: 1000
+      currency: USD
+      note: together with a marble statue of the Venus de' Medici
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: purchased from his estate, 14 November 1820, by Ethan Allen Greenwood [1779-1856], Boston;[2] — [2] … The price of $1,000 was for "One Marble Statue of the Venus de Medicis and the large Painting of the Washington Family."
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+  - owner: person/moses-kimball
+    acquired: 1839
+    method: purchase
+    direct: true
+    place: boston
+    label: bought with the contents of the New England Museum and Gallery of Fine Arts; Kimball opened the Boston Museum in 1841
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: sold 1839 to Moses Kimball [1809-1895], Boston, with the contents of the New England Museum and Gallery of Fine Arts;[3]
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+  - owner: person/samuel-p-avery-jr
+    role: dealer
+    acquired: 1891-12
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Kimball's letter of 28 December 1891 confirming the sale; recovered from the Boston Museum and cleaned
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: sold December 1891 to (Samuel P. Avery, Jr., New York);[4] — [4] Letter from Moses Kimball to Samuel P. Avery, Jr., 28 December 1891, confirming the sale
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+  - owner: person/william-frederick-havemeyer
+    acquired: 1892
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: for his Museum of Washingtoniana; owned by 3 January 1893 (not lent to the 1893 World's Columbian Exposition)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: sold 1892 to William Frederick Havemeyer [1850-1913], New York.[5] — [5] … "Mr. William F. Havemeyer has recently bought it to add to his extensive Museum of Washingtoniana." Havemeyer owned the painting by 3 January 1893
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+  - owner: institution/national-democratic-club
+    place: new-york-city
+    label: recorded by Charles Henry Hart, 1905
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: National Democratic Club, New York;[6] — [6] Charles Henry Hart, Edward Savage, Painter and Engraver … Boston, 1905, 10.
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+  - owner: institution/art-house-inc
+    role: dealer
+    acquired: 1922-12-15
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: receipt signed for the National Democratic Club by F. Newlin Price
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: sold 15 December 1922 to (Art House, Inc., New York);[7] — [7] … The receipt for payment by Art House, Inc., dated 15 December 1922, is signed on behalf of the National Democratic Club by F. Newlin Price
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+  - owner: person/thomas-b-clarke
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: Thomas B. Clarke [1848-1931], New York;
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+  - owner: person/thomas-b-clarke
+    role: estate
+    acquired: 1931
+    method: inheritance
+    direct: true
+    place: new-york-city
+    label: estate of Thomas B. Clarke
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: his estate;
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: agent
+    acquired: 1936-01-29
+    direct: true
+    place: new-york-city
+    label: sold as part of the Clarke collection through Knoedler
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: sold as part of the Clarke collection 29 January 1936, through (M. Knoedler & Co., New York),
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1936-01-29
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: bought with the Clarke collection
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: sold as part of the Clarke collection 29 January 1936, through (M. Knoedler & Co., New York), to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1940
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.561.html
+        note: gift 1940 to NGA.
+        source: nga-1940-1-2
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q2415079
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q2415079
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q2415079
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q2415079
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q2415079
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q2415079

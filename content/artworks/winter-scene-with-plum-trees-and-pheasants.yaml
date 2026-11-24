@@ -1,0 +1,80 @@
+public_id: 124707
+title_lang: en
+title: Winter Scene with Plum Trees and Pheasants
+creator: kano-naonobu
+created: 1600/1699
+created_label: c. 17th century
+created_span: uncertain
+institution: cleveland-museum-of-art
+inventory_number: "2006.142"
+web_url: https://clevelandart.org/art/2006.142
+wikidata_id: Q60480349
+metadata:
+  sources: [Wikidata Q60480349 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Kano_Naonobu_-_Winter_Scene_with_Plum_Trees_and_Pheasants_-_2006.142_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Kano_Naonobu_-_Winter_Scene_with_Plum_Trees_and_Pheasants_-_2006.142_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kano_Naonobu_-_Winter_Scene_with_Plum_Trees_and_Pheasants_-_2006.142_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Kanō Naonobu
+provenance:
+  - owner: person/john-d-rockefeller-jr
+    co_owners: [person/abigail-greene-aldrich]
+    sources:
+      - url: https://clevelandart.org/art/2006.142
+        note: Collection of John D. Rockefeller, Jr. [1874–1960] and Abby Aldrich Rockefeller [1874–1948]
+        source: cma-2006-142
+        accessed: 2026-11-24
+  - owner: person/abby-rockefeller-mauze
+    method: inheritance
+    direct: true
+    label: their daughter Abby Rockefeller
+    sources:
+      - url: https://clevelandart.org/art/2006.142
+        note: by descent to their daughter, Abby Rockefeller [1903–1976]
+        source: cma-2006-142
+        accessed: 2026-11-24
+  - owner: person/marilyn-m-simpson
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2006.142
+        note: by descent to her daughter, Marilyn M. Simpson [1931–1980]
+        source: cma-2006-142
+        accessed: 2026-11-24
+  - owner: person/william-kelly-simpson
+    ended: 2006
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2006.142
+        note: by descent to her husband, William Kelly Simpson [1928–2017], given to the Cleveland Museum of Art [?-2006]
+        source: cma-2006-142
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2006
+    method: gift
+    direct: true
+    place: cleveland
+    label: Gift of William Kelly Simpson in memory of his wife Marilyn M. Simpson and her grandparents Mr. and Mrs. John D. Rockefeller Jr.
+    sources:
+      - url: https://clevelandart.org/art/2006.142
+        note: The Cleveland Museum of Art, Cleveland, OH [2006–]
+        source: cma-2006-142
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60480349
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60480349
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60480349
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60480349

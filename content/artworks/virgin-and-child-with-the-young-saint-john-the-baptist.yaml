@@ -1,0 +1,210 @@
+public_id: 124700
+title_lang: en
+title: Virgin and Child with the Young Saint John the Baptist
+names:
+  - lang: nl
+    role: translation
+    text: Aanbidding van het kind met de jonge Johannes de Dooper
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7934011
+  - lang: fr
+    role: translation
+    text: La Vierge et l'Enfant avec le petit saint Jean-Baptiste
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7934011
+  - lang: de
+    role: translation
+    text: Madonna und Kind mit dem Johannesknaben
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7934011
+  - lang: it
+    role: translation
+    text: Madonna col Bambino e san Giovannino (Botticelli Cleveland)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7934011
+creator: sandro-botticelli
+attribution_label: Sandro Botticelli and workshop
+created: c. 1490
+created_span: uncertain
+materials: [tempera, oil paint, panel]
+dimensions: [68]
+institution: cleveland-museum-of-art
+inventory_number: "1970.160"
+web_url: https://clevelandart.org/art/1970.160
+wikidata_id: Q7934011
+metadata:
+  sources: [Wikidata Q7934011 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/john-the-baptist
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q7934011
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q7934011
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Sandro_Botticelli_-_Virgin_and_Child_with_the_Young_Saint_John_the_Baptist_-_1970.160_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Sandro_Botticelli_-_Virgin_and_Child_with_the_Young_Saint_John_the_Baptist_-_1970.160_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_Virgin_and_Child_with_the_Young_Saint_John_the_Baptist_-_1970.160_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Sandro Botticelli
+provenance:
+  - owner: person/robert-hoe-iii
+    ended: 1909
+    place: new-york-city
+    label: founder and first president of the Grolier Club; how he acquired it is unknown
+    sources:
+      - url: https://clevelandart.org/art/1970.160
+        note: Robert Hoe III [1839-1909], New York, NY, after his death, held in trust by his estate [Until 1909] — The circumstances of Hoe’s acquisition of the painting are unknown
+        source: cma-1970-160
+        accessed: 2026-11-24
+  - owner: person/robert-hoe-iii
+    role: estate
+    acquired: 1909
+    method: inheritance
+    direct: true
+    place: new-york-city
+    label: held in trust by his estate
+    sources:
+      - url: https://clevelandart.org/art/1970.160
+        note: after his death, held in trust by his estate
+        source: cma-1970-160
+        accessed: 2026-11-24
+  - owner: institution/american-art-association
+    role: agent
+    acquired: 1911-02-15
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Hoe sale, 15 Feb. 1911; annotated catalogues give 'A. Haviland' as buyer, CMA files say bought in
+    sources:
+      - url: https://clevelandart.org/art/1970.160
+        note: (Hoe sale, American Art Association, New York, Feb. 15, 1911, to Arthur Hoe) — CMA files note, “as sold to A. Haviland but [bought] in,” … However, annotated copies of the sale catalogue indicate the buyer was “A. Haviland.”
+        source: cma-1970-160
+        accessed: 2026-11-24
+  - owner: person/arthur-i-hoe
+    acquired: 1911
+    method: auction
+    direct: true
+    place: bedford-hills
+    label: Robert Hoe's son; 'bought the picture back at his father's sale' (Forbes to Pope, 1914), possibly through A. Haviland as his agent
+    sources:
+      - url: https://clevelandart.org/art/1970.160
+        note: Arthur I. Hoe [1880-1956], Bedford Hills, NY [1911-at least 1916] — It is possible that Arthur Hoe bought his father's painting back through Haviland, who may have acted as his agent. Furthermore, a letter from Fogg Museum director Edward W. Forbes to Harvard professor of art history Arthur Pope (April 9, 1914) notes that Arthur "bought the picture back at his father's sale."
+        source: cma-1970-160
+        accessed: 2026-11-24
+  - owner: institution/fogg-museum
+    role: custodian
+    acquired: 1914-11
+    ended: 1916-03
+    place: cambridge-massachusetts
+    label: lent by Arthur Hoe, likely shown in an exhibition of Italian primitive paintings; Hoe retrieved it to sell (2 March 1916)
+    sources:
+      - url: https://clevelandart.org/art/1970.160
+        note: Hoe would later lend the CMA picture to the Fogg from November 1914 to March 1916, when it was likely included in an exhibition of Italian primitive paintings (no catalogue). On March 2, 1916 Hoe informed Forbes that there were several parties interested in purchasing the Botticelli and that he would like to come to Cambridge to retrieve it
+        source: cma-1970-160
+        accessed: 2026-11-24
+  - owner: institution/ehrich-galleries
+    role: dealer
+    acquired_label: before 1925; when and from whom is unclear
+    place: new-york-city
+    label: possibly the 'Madonna, Child, and Saint John' (Botticelli School) in a 1918 Ehrich exhibition; Mandel and Levey (1967) say Ehrich acquired it c. 1925
+    sources:
+      - url: https://clevelandart.org/art/1970.160
+        note: (Ehrich Galleries, New York) [Before 1925] — It is unclear when and from whom Ehrich Galleries acquired this painting, as various sources provide differing information.
+        source: cma-1970-160
+        accessed: 2026-11-24
+  - owner: person/michele-lazzaroni
+    acquired: 1925 or earlier
+    place: rome
+    label: collector and restorer; in his collection in Yashiro's 1925 catalogue raisonné
+    sources:
+      - url: https://clevelandart.org/art/1970.160
+        note: Baron Michele Lazzaroni [1863-1934], Rome [by 1925] — Lazzaroni, a collector and restorer, certainly owned the Botticelli by 1925, when Yashiro's catalogue raisonné situates the painting in his collection.
+        source: cma-1970-160
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1953-05-06
+    method: auction
+    place: paris
+    label: Lazzaroni collection sale, 6 May 1953, no. 26, 'La Vierge, l’Enfant et Saint Jean dans un paysage' (Florentine school, tondo 73 cm) — possibly this work
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1970.160
+        note: A May 6, 1953 Drouot sale of works from the Lazzaroni collection contains “La Vierge, l’Enfant et Saint Jean dans un paysage” (no. 26) attributed to the Florentine school … it is possible that the tondo in the Lazzaroni sale may be the CMA picture.
+        source: cma-1970-160
+        accessed: 2026-11-24
+  - owner: person/guglielmo-canessa
+    role: dealer
+    acquired: 1959 or earlier
+    place: milan
+    label: Sherman Lee asked in 1959 to see it if it was 'in [Canessa's] hands'; whether owner or dealer, and to whom he sold it, is unclear
+    sources:
+      - url: https://clevelandart.org/art/1970.160
+        note: (Guglielmo Canessa, Milan, Italy) [By 1959] — In a letter to art dealer Guglielmo Canessa from 1959 CMA director Sherman Lee writes that he will be visiting Milan and if the painting was “in [Canessa’s] hands,” he would like to see it.
+        source: cma-1970-160
+        accessed: 2026-11-24
+  - owner_label: Private collection, Milan
+    acquired_label: before 1970
+    place: milan
+    label: per Iolanda d'Antoni's invoice; possibly Canessa himself
+    sources:
+      - url: https://clevelandart.org/art/1970.160
+        note: Private collection, Milan [Before 1970] — According to the invoice from Iolanda d’Antoni, the painting was in a private Milanese collection before she acquired it.
+        source: cma-1970-160
+        accessed: 2026-11-24
+  - owner: person/iolanda-d-antoni
+    role: dealer
+    ended: 1970
+    direct: true
+    place: lugano
+    sources:
+      - url: https://clevelandart.org/art/1970.160
+        note: (Iolanda d'Antoni, Lugano, Switzerland, sold to the Cleveland Museum of Art) [Until 1970]
+        source: cma-1970-160
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1970
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/1970.160
+        note: The Cleveland Museum of Art, Cleveland, OH [1970-]
+        source: cma-1970-160
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q7934011
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q7934011
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q7934011
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q7934011
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q7934011
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q7934011

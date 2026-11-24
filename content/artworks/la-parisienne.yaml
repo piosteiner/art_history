@@ -1,0 +1,89 @@
+public_id: 123162
+title_lang: fr
+title: La Parisienne
+names:
+  - text: Minoan Lady
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1644772
+  - lang: de
+    role: translation
+    text: Die Pariserin
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1644772
+  - lang: it
+    role: translation
+    text: La Parigina
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1644772
+  - lang: ja
+    role: translation
+    text: パリジェンヌ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1644772
+  - lang: ru
+    role: translation
+    text: Парижанка
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1644772
+materials: [fresco]
+dimensions: [25]
+institution: heraklion-archaeological-museum
+wikidata_id: Q1644772
+metadata:
+  sources: [Wikidata Q1644772 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Knossos_Pariserin_01.jpg/1280px-Knossos_Pariserin_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Knossos_Pariserin_01.jpg
+    license: CC BY 3.0
+    credit: Olaf Tausch
+provenance:
+  - owner_label: palace of Knossos
+    acquired: c. 1450–1350 BCE
+    method: creation
+    place: knossos
+    label: part of the Camp Stool Fresco, probably painted on a wall of the Sanctuary Hall on the upper floor (piano nobile)
+    sources:
+      - url: https://en.wikipedia.org/wiki/La_Parisienne_(fresco)
+        note: The Minoan fresco fragment known as La Parisienne, or sometimes the Minoan Lady, is part of the Camp Stool Fresco, which was probably painted on the wall of the Sanctuary Hall on the room sometimes called the piano nobile at the palace of Knossos on Crete. It dates to the Final Palatial Period, c. 1450–1350/1300 BC
+        source: wikipedia-en-la-parisienne-fresco
+        accessed: 2026-11-24
+  - owner: person/arthur-evans
+    acquired: 1901
+    method: find
+    place: knossos
+    label: excavated by Arthur Evans; restored by Émile Gilliéron for him — critics call the recreation almost an invention
+    sources:
+      - url: https://en.wikipedia.org/wiki/La_Parisienne_(fresco)
+        note: The fragment was excavated in 1901 by the British archaeologist Arthur Evans. Evans employed the services of Emile Gillieron to restore some of the excavated frescoes (including La Parisienne).
+        source: wikipedia-en-la-parisienne-fresco
+        accessed: 2026-11-24
+  - owner: institution/heraklion-archaeological-museum
+    method: transfer
+    place: heraklion
+    sources:
+      - url: https://en.wikipedia.org/wiki/La_Parisienne_(fresco)
+        note: It dates to the Final Palatial Period, c. 1450–1350/1300 BC, and is now in the Heraklion Archaeological Museum.
+        source: wikipedia-en-la-parisienne-fresco
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/%CE%97_%CE%A0%CE%B1%CF%81%CE%B9%CE%B6%CE%B9%CE%AC%CE%BD%CE%B1_(%CF%84%CE%BF%CE%B9%CF%87%CE%BF%CE%B3%CF%81%CE%B1%CF%86%CE%AF%CE%B1)
+        note: Η Παριζιάνα, όπως έχει παραδοθεί, τοιχογραφία από το ανάκτορο της Κνωσού, είναι έργο της Νεοανακτορικής περιόδου και βρίσκεται στο Αρχαιολογικό Μουσείο Ηρακλείου.
+        source: wikipedia-el-i-parizianna-toichografia
+        accessed: 2026-11-24
+sources:
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q1644772
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q1644772
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q1644772

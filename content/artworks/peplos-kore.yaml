@@ -1,0 +1,136 @@
+public_id: 123158
+title_lang: en
+title: Peplos Kore
+names:
+  - lang: nl
+    role: translation
+    text: Peploskorè
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q492894
+  - lang: fr
+    role: translation
+    text: Korè en péplos
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q492894
+  - lang: de
+    role: translation
+    text: Peploskore
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q492894
+  - lang: it
+    role: translation
+    text: Kore col peplo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q492894
+  - lang: es
+    role: translation
+    text: Koré del Peplo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q492894
+  - lang: ja
+    role: translation
+    text: ぺプロス・コレー
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q492894
+  - lang: zh
+    role: translation
+    text: 佩普洛斯科雷
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q492894
+materials: [marble, Parian marble]
+dimensions: [120]
+institution: acropolis-museum
+location: [23.7283, 37.96911]
+wikidata_id: Q492894
+metadata:
+  sources: [Wikidata Q492894 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/athens
+  - type: associated_with
+    to: movement/archaic-greek-sculpture
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q492894
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e1/ACMA_679_Kore_1.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:ACMA_679_Kore_1.JPG
+    license: CC BY-SA 2.5
+    credit: Unknown artist
+provenance:
+  - owner_label: Acropolis of Athens
+    acquired: c. 530 BCE
+    method: creation
+    place: athens
+    label: painted marble statue standing on the Athenian Acropolis
+    sources:
+      - url: https://en.wikipedia.org/wiki/Peplos_Kore
+        note: The 118 cm high white marble statue was made around 530 BC and originally was colourfully painted.
+        source: wikipedia-en-peplos-kore
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Peploskore
+        note: Die 117 Zentimeter hohe Statue aus weißem, parischem Marmor entstand etwa 530 v. Chr. und stand ursprünglich bunt bemalt auf der Athener Akropolis.
+        source: wikipedia-de-peploskore
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: -480
+    place: athens
+    label: the Acropolis destroyed by the Persians; the kore was later found in its ruins
+    sources:
+      - url: https://el.wikipedia.org/wiki/%CE%A0%CE%B5%CF%80%CE%BB%CE%BF%CF%86%CF%8C%CF%81%CE%BF%CF%82_%CE%BA%CF%8C%CF%81%CE%B7
+        note: Η κόρη βρέθηκε στα ερείπια της Ακρόπολης που καταστράφηκε το 480 π.Χ. από τους Πέρσες.
+        source: wikipedia-el-peplophoros-kore
+        accessed: 2026-11-24
+  - owner_label: excavation on the Athenian Acropolis
+    acquired: 1886
+    method: find
+    place: athens
+    label: found in three pieces north-west of the Erechtheion
+    sources:
+      - url: https://en.wikipedia.org/wiki/Peplos_Kore
+        note: The statue was found, in three pieces, in an 1886 excavation north-west of the Erechtheion on the Acropolis of Athens and is now in the Acropolis Museum in Athens.
+        source: wikipedia-en-peplos-kore
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Peploskore
+        note: Sie wurde 1886 westlich des Erechtheions auf der Akropolis gefunden und befindet sich heute im Athener Akropolismuseum.
+        source: wikipedia-de-peploskore
+        accessed: 2026-11-24
+  - owner: institution/acropolis-museum
+    method: transfer
+    place: athens
+    label: inventory 679
+    sources:
+      - url: https://en.wikipedia.org/wiki/Peplos_Kore
+        note: … and is now in the Acropolis Museum in Athens.
+        source: wikipedia-en-peplos-kore
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Peploskore
+        note: Heute wird sie unter der Inventarnummer 679 im Akropolismuseum ausgestellt.
+        source: wikipedia-de-peploskore
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q492894
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q492894
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q492894
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q492894

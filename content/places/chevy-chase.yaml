@@ -1,0 +1,22 @@
+public_id: 126385
+name: Chevy Chase
+kind: settlement
+parent: maryland
+country_code: US
+location: [-77.08333, 38.98194]
+wikidata_id: Q5094454
+metadata:
+  sources: [Wikidata Q5094454 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q5094454
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q5094454
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q5094454

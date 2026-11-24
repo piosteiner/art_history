@@ -1,0 +1,64 @@
+public_id: 124076
+title: Main Shrine, Tsukubusuma-jinja
+names:
+  - lang: fr
+    role: translation
+    text: pavillon principal du sanctuaire Tsukubusuma
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020401
+  - lang: ja
+    role: translation
+    text: 都久夫須麻神社本殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020401
+created: 1567
+institution: tsukubusuma-shrine
+location: [136.1441, 35.42072]
+wikidata_id: Q107020401
+metadata:
+  sources: [Wikidata Q107020401 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/nagahama
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Chikubusumajinja113207.jpg/1280px-Chikubusumajinja113207.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chikubusumajinja113207.jpg
+    license: CC BY 2.1 jp
+    credit: 日:Jnn
+provenance:
+  - owner: institution/hogon-ji-temple
+    acquired: 1567
+    method: creation
+    place: nagahama
+    label: eaves and porch rebuilt 1567 after the fire of 1558 as the main hall of the Benzaiten shrine on Chikubushima (shrine and Hōgon-ji then one); in 1602 Toyotomi Hideyori, through Katagiri Katsumoto, set a moved building in it as its core
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1519
+        note: 本殿は創建以来数度の火災にあい、永禄元年の火災後、同十年（一五六七）再建されたが、さらに慶長七年（一六〇二）に豊臣秀頼が片桐且元を奉行として旧本殿を改造し、ほかよりの移建建物と組み合わせて造った。これが今の本殿である。
+        source: kunishitei-102-1519
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%83%BD%E4%B9%85%E5%A4%AB%E9%A0%88%E9%BA%BB%E7%A5%9E%E7%A4%BE&oldid=111731126
+        note: 永禄元年の大火後、慶長7年（1602年）に豊臣秀頼が片桐且元を普請奉行として竹生島権現を復興している。この際復興されたのが現・宝厳寺の唐門・観音堂・渡り廊下、その渡り廊下と繋がっている現・都久夫須麻神社本殿である本堂である。 … 現・当社本殿は伏見城の日暮御殿を移築したものである
+        source: wikipedia-ja-tsukubusuma-jinja
+        accessed: 2026-11-24
+  - owner: institution/tsukubusuma-shrine
+    acquired: 1874
+    method: transfer
+    direct: true
+    place: nagahama
+    label: "Meiji separation of Shinto and Buddhism: in 1871 the Ōtsu prefectural office ordered the shrine renamed Tsukubusuma Shrine; boundary with Hōgon-ji fixed 1874, the hall becoming the shrine's main sanctuary; property divided 1883; owner today"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1519
+        note: 所有者名 ： 都久夫須麻神社 所有者種別 ： 神社
+        source: kunishitei-102-1519
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%83%BD%E4%B9%85%E5%A4%AB%E9%A0%88%E9%BA%BB%E7%A5%9E%E7%A4%BE&oldid=111731126
+        note: 大津県庁は竹生島権現宝厳寺を廃寺にして神社としたうえで、社名を『延喜式神名帳』から採った「都久夫須麻神社」に改めるよう命じた。 … 1874年（明治7年）に都久夫須麻神社と宝厳寺の境界が決められ、これまでの本堂が都久夫須麻神社の本殿となった。1883年（明治16年）には寺の財産と神社の財産が区別されて今日に至っている。
+        source: wikipedia-ja-tsukubusuma-jinja
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020401

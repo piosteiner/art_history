@@ -1,0 +1,47 @@
+public_id: 123810
+name: Nancy
+names:
+  - lang: ja
+    role: translation
+    text: ナンシー
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q40898
+  - lang: zh
+    role: translation
+    text: 南锡
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q40898
+  - lang: ko
+    role: translation
+    text: 낭시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q40898
+  - lang: ru
+    role: translation
+    text: Нанси
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q40898
+kind: settlement
+parent: france
+country_code: FR
+location: [6.18361, 48.69278]
+wikidata_id: Q40898
+metadata:
+  sources: [Wikidata Q40898 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q40898
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q40898
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q40898

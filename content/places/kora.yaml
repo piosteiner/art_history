@@ -1,0 +1,47 @@
+public_id: 124049
+name: Kora
+names:
+  - lang: ja
+    role: original
+    text: 甲良町
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1354747
+  - lang: ko
+    role: translation
+    text: 고라초
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1354747
+  - lang: it
+    role: translation
+    text: Kōra
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1354747
+  - lang: ru
+    role: translation
+    text: Кора
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1354747
+kind: settlement
+parent: shiga-prefecture
+country_code: JP
+location: [136.26133, 35.20419]
+wikidata_id: Q1354747
+metadata:
+  sources: [Wikidata Q1354747 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1354747
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1354747
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1354747

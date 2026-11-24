@@ -145,6 +145,17 @@ provenance:
         note: Retrouvé en 1913 après que le voleur a tenté d'approcher un marchand d'art de Florence, le tableau est restitué à l'ambassadeur français à Rome le 19 décembre 1913. […] la peinture est exposée à travers toute l'Italie dans une grande tournée d'adieu avant d'être retournée en grande pompe au Louvre début 1914.
         source: wikipedia-fr-vol-de-la-joconde
         accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1914-01/1914-03
+    acquired_label: early 1914
+    method: restitution
+    direct: true
+    place: paris
+    notes_md: After a farewell tour through Italy, returned to the Louvre with great ceremony at the beginning of 1914.
+    sources:
+      - source: wikipedia-fr-vol-de-la-joconde
+        locator: introduction
+        accessed: 2026-11-23
 numbers:
   - number: MR 316
     institution: department-of-paintings-of-the-louvre

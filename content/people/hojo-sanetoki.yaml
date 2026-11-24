@@ -1,0 +1,21 @@
+public_id: 124292
+name: Hōjō Sanetoki
+kind: person
+birth: 1224
+death: 1276-12-07
+wikidata_id: Q596360
+metadata:
+  sources: [Wikidata Q596360 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q596360
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q596360
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q596360

@@ -1,0 +1,162 @@
+public_id: 124642
+title_lang: en
+title: Study for "Bathers at Asnières"
+names:
+  - lang: de
+    role: translation
+    text: Studie für "Badende in Asnières" (Studie IV)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60465161
+  - lang: it
+    role: translation
+    text: studio per i bagnanti ad asnières IV
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60465161
+creator: georges-seurat
+created: 1880s
+created_span: uncertain
+materials: [panel, oil paint]
+dimensions: [15.7, 24.9]
+institution: cleveland-museum-of-art
+inventory_number: "1958.51"
+web_url: https://clevelandart.org/art/1958.51
+wikidata_id: Q60465161
+metadata:
+  sources: [Wikidata Q60465161 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Georges_Seurat_-_Study_for_%22Bathers_at_Asni%C3%A8res%22_-_1958.51_-_Cleveland_Museum_of_Art.jpg/1280px-Georges_Seurat_-_Study_for_%22Bathers_at_Asni%C3%A8res%22_-_1958.51_-_Cleveland_Museum_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Georges_Seurat_-_Study_for_%22Bathers_at_Asni%C3%A8res%22_-_1958.51_-_Cleveland_Museum_of_Art.jpg
+    license: Public domain
+    credit: Georges Seurat
+provenance:
+  - owner: artist/georges-seurat
+    acquired_label: c. 1883/1884
+    ended: 1891
+    method: creation
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1958.51
+        note: Estate of the artist, distributed to Théo van Rysselberghe [c. 1883/1884-1891]
+        source: cma-1958-51
+        accessed: 2026-11-24
+  - owner: artist/georges-seurat
+    role: estate
+    acquired: 1891
+    method: inheritance
+    direct: true
+    place: paris
+    label: studio contents inventoried and distributed by Signac, Fénéon and Luce for the family; no. 80 in the posthumous inventory of 3 May 1891
+    sources:
+      - url: https://clevelandart.org/art/1958.51
+        note: Upon Seurat’s death in 1891, the artist's family appointed Paul Signac, Félix Fénéon, and Maximilien Luce to inventory the contents of the his studio and to distribute works to his friends and colleagues. This painting was No. 80 in the posthumous inventory, dated May 3, 1891.
+        source: cma-1958-51
+        accessed: 2026-11-24
+  - owner: person/theo-van-rysselberghe
+    acquired: 1891
+    method: gift
+    direct: true
+    label: Belgian Neo-Impressionist and friend of Seurat, received it from the estate; at Saint-Clair, Var
+    sources:
+      - url: https://clevelandart.org/art/1958.51
+        note: Théo van Rysselberghe [1862-1926], Saint-Clair, Var, France [1891-?] — Belgian Neo-Impressionist and friend of Seurat, Théo van Rysselberghe received a number of works from Seurat’s estate, among them, this painting.
+        source: cma-1958-51
+        accessed: 2026-11-24
+  - owner: person/felix-feneon
+    place: paris
+    label: offered it with two other Seurats to de Hauke on 4 August 1929
+    sources:
+      - url: https://clevelandart.org/art/1958.51
+        note: Felix Fénéon [1861-1944], Paris, sold to Anson Conger Goodyear through de Hauke & Co [Until 1929] — On August 4, 1929, Fénéon wrote to de Hauke, offering three works by Seurat, including the Cleveland picture
+        source: cma-1958-51
+        accessed: 2026-11-24
+  - owner: person/cesar-mange-de-hauke
+    role: agent
+    acquired: 1929
+    direct: true
+    label: sale brokered by de Hauke & Co. (Seligmann/de Hauke & Co. records); invoiced to Goodyear 22 October 1929
+    sources:
+      - url: https://clevelandart.org/art/1958.51
+        note: ultimately selling it, as indicated by the correspondence among Fénéon, de Hauke, and Goodyear in the Seligmann/de Hauke & Co. records, to Goodyear in a sale brokered by de Hauke & Co. De Hauke invoiced Goodyear for the Seurat study on October 22, 1929.
+        source: cma-1958-51
+        accessed: 2026-11-24
+  - owner: person/anson-conger-goodyear
+    acquired: 1929
+    method: purchase
+    direct: true
+    place: village-of-old-westbury
+    sources:
+      - url: https://clevelandart.org/art/1958.51
+        note: Anson Conger Goodyear [1877-1964], Old Westbury, NY [1929-]
+        source: cma-1958-51
+        accessed: 2026-11-24
+  - owner: person/paul-rosenberg
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1958.51
+        note: (Paul Rosenberg & Co., New York) [?]
+        source: cma-1958-51
+        accessed: 2026-11-24
+  - owner: person/walter-bareiss
+    place: greenwich-2
+    sources:
+      - url: https://clevelandart.org/art/1958.51
+        note: Walter Bareiss [1919-2007], Greenwich, CT [?]
+        source: cma-1958-51
+        accessed: 2026-11-24
+  - owner: person/paul-rosenberg
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1958.51
+        note: (Paul Rosenberg & Co., New York, sold to Leonard C. Hanna, Jr.)
+        source: cma-1958-51
+        accessed: 2026-11-24
+  - owner: person/leonard-c-hanna-jr
+    acquired: 1952
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1958.51
+        note: (Leonard C. Hanna, Jr. [1889-1957], Cleveland, OH, bequeathed to the Cleveland Museum of Art) [1952-1958]
+        source: cma-1958-51
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1958
+    method: bequest
+    direct: true
+    place: cleveland
+    label: Bequest of Leonard C. Hanna Jr.
+    sources:
+      - url: https://clevelandart.org/art/1958.51
+        note: The Cleveland Museum of Art, Cleveland, OH [1958-]
+        source: cma-1958-51
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60465161
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60465161
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60465161
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60465161
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60465161
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60465161

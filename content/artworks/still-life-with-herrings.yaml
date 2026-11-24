@@ -1,0 +1,221 @@
+public_id: 124631
+title_lang: en
+title: Still Life with Herrings
+names:
+  - lang: de
+    role: translation
+    text: Stilleben mit Heringen
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60472554
+  - lang: it
+    role: translation
+    text: natura morta con aringhe
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60472554
+creator: jean-baptiste-simeon-chardin
+created: c. 1735
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [41, 33.6]
+institution: cleveland-museum-of-art
+inventory_number: "1974.1"
+web_url: https://clevelandart.org/art/1974.1
+wikidata_id: Q60472554
+metadata:
+  sources: [Wikidata Q60472554 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Clevelandart_1974.1.jpg/1280px-Clevelandart_1974.1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Clevelandart_1974.1.jpg
+    license: CC0
+    credit: Jean-Baptiste-Siméon Chardin
+provenance:
+  - owner_label: Dr. Benoist
+    ended: 1857
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: Dr. Benoist [Until 1857]
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1857-03-30
+    method: auction
+    direct: true
+    place: paris
+    label: Benoist sale, Hôtel Drouot, Paris, 30 March 1857, no. 12
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: (Benoist sale, Hôtel Drouot, Paris, March 30, 1857, no. 12, probably sold to Monsieur R.) [March 30, 1857]
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner_label: Monsieur R.
+    acquired: 1857-03-30
+    method: auction
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: Monsieur R., Paris [Probably 1857-1860]
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner_label: Rouillard
+    role: agent
+    acquired: 1860-04-28
+    method: auction
+    direct: true
+    place: paris
+    label: Monsieur R. collection sale, Rouillard, Paris, 28 April 1860, no. 12 (called the Lecocq sale in a footnote)
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: (Monsieur R. collection sale, Rouillard, Paris, April 28, 1860, no. 12, possibly sold to Henri [April 28, 1860]
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner: person/henri-viollet
+    acquired: 1860
+    ended_label: most likely no longer his by 1881 (not in the 1881 Drouot sale of his collection)
+    method: auction
+    direct: true
+    place: tours
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: Henri Viollet [1849-1926?], Tours, France [Possibly 1860-by 1881] — Viollet may have purchased the painting at the 1860 Lecocq sale of the collection of Monsieur R. The 1881 sale at Hôtel Drouot of Viollet's collection does not include this painting, and thus, it was most likely no longer in his possession by that point.
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner: person/alfred-mame
+    co_owners: [person/paul-mame]
+    place: tours
+    label: father and son
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: Alfred [1811-1893] and Paul [1833-1903] Mame, Tours, France [Until 1904] — Alfred and Paul Mame were father and son.
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1904-04
+    method: auction
+    direct: true
+    place: paris
+    label: Mame sale, Galerie Georges Petit, Paris, 26–29 April 1904, no. 7
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: (Mame sale, Galerie Georges Petit, Paris, France, April 26-29, 1904, no. 7, sold to Alexis Vollon) [April 26-29, 1904]
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner: person/alexis-vollon
+    acquired: 1904-04
+    ended: 1909
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: Alexis Vollon [1865-1945], Paris, France [1904-1909]
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner: person/david-david-weill
+    acquired: 1925 or earlier
+    ended: 1952
+    place: paris
+    label: much of his collection was seized by the Nazis after he fled Paris in 1940; this painting apparently stayed with him through the war (in no database of looted objects)
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: David David-Weill [1871-1952], Paris, France [By 1925-1952] — In 1937 he sold many objects to Wildenstein & Co., and then in 1940, he fled Paris. At this time, much of his collection was seized by the Nazis, and many of these items were returned to him after the war. This painting, however, appears to have remained in David-Weill’s collection throughout the war and until 1952; it appears in no databases of looted objects or in NARA’s archival records.
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner: institution/lazard-freres
+    role: agent
+    acquired: 1952
+    direct: true
+    label: the financial firm of which David-Weill was chairman, sold it to Rosenberg and Stiebel
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: Rosenberg and Stiebel purchased this painting from Lazard Frères, the financial firm of which David-Weill was chairman.
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    acquired: 1952
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: (Rosenberg and Stiebel, New York, NY, sold to Sidney J. Lamon) [1952]
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner: person/sidney-j-lamon
+    acquired: 1952
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: Sidney J. Lamon [d. 1973], New York, NY [1952-1973]
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1973-06-29
+    method: auction
+    direct: true
+    place: london
+    label: sale, Christie's, London, 29 June 1973, no. 21
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: (Sale, Christie’s, London, June 29, 1973, no. 21, sold to Frederick Mont/Newhouse Galleries)
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner: person/frederick-mont
+    co_owners: [institution/newhouse-gallery]
+    role: dealer
+    acquired: 1973-06-29
+    method: auction
+    direct: true
+    place: new-york-city
+    label: the buyer in the sale catalogue is given as "Newhoune" [sic]
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: (Frederick Mont and Newhouse Galleries, New York, NY, sold to the Cleveland Museum of Art) [1973-1974] — The buyer listed in the catalogue is "Newhoune" [sic].
+        source: cma-1974-1
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1974
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/1974.1
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1974-]
+        source: cma-1974-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60472554
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60472554
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60472554
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60472554
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60472554
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60472554

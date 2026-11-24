@@ -1,0 +1,75 @@
+public_id: 123849
+title_lang: de
+title: Relief
+attribution_label: Anonymous
+created: c. 780
+created_span: uncertain
+kind: relief
+medium: Kalkstein
+dimensions: [3]
+institution: museum-rietberg
+inventory_number: RMA 308
+web_url: https://rietberg.ch/sammlungen/rma-308
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Maya_Relief_Museum_Rietberg_RMA_308.jpg/1280px-Maya_Relief_Museum_Rietberg_RMA_308.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maya_Relief_Museum_Rietberg_RMA_308.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: 771/790
+    method: creation
+    label: made at Pomona, Tabasco (Maya, Late Classic)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-308
+        note: "771–790: Urheber*in unbekannt, Urheber*in, Pomona, Tabasco, Mexiko"
+        source: rietberg-rma-308
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1961
+    method: theft
+    label: looted at Pomona, Tabasco
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-308
+        note: "1961: [...], geplündert, Pomona, Tabasco, Mexiko"
+        source: rietberg-rma-308
+        accessed: 2026-11-24
+  - owner: person/earl-l-stendahl
+    acquired: 1961/1962
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-308
+        note: "1961–1962: Earl L. Stendahl (1888–1966), Erwerbsumstände unbekannt"
+        source: rietberg-rma-308
+        accessed: 2026-11-24
+  - owner: person/robert-l-stolper
+    role: agent
+    acquired: before 1963
+    label: on consignment; unclear whether Stolper acted for Ancient Arts Ltd. or as intermediary for it
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-308
+        note: "vor 1963: Robert L. Stolper (*1920), in Kommission erhalten Informationen zu Stolper in den Akten zum Ankauf durch das Museum Rietberg (K.0005-0024)."
+        source: rietberg-rma-308
+        accessed: 2026-11-24
+  - owner: institution/ancient-arts-ltd
+    role: dealer
+    acquired: 1963-03
+    place: blonay-saint-legier
+    label: Ancient Arts Ltd., St. Légier; invoiced the sale to the Museum Rietberg
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-308
+        note: "03.1963: Ancient Arts Ltd., St. Légier (1962), Händler*in Korrespondenz mit Händlern, verschiedene Briefe 1963 Rechnungssteller an das Museum Rietberg beim Kauf, siehe K.0005-0024. Es ist unklar, ob Stolper als Vertreter von AAL agierte oder als Vermittler für diese."
+        source: rietberg-rma-308
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1963
+    method: purchase
+    direct: true
+    place: zurich
+    label: bought with funds of the City of Zürich; purchase correspondence with Stolper, invoice from Ancient Arts Ltd.
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-308
+        note: "1963: Museum Rietberg, angekauft, in Zürich Vgl. Akten im Stadtarchiv Zürich: V.G.c.64, Protokoll der Ankaufskommission, Erwerb Maya-Relief, Protokoll S. 2. Ankaufskorrespondenz mit Stolper, Rechnung aber von Ancient Arts Ltd. ausgestellt."
+        source: rietberg-rma-308
+        accessed: 2026-11-24

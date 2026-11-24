@@ -1,0 +1,31 @@
+public_id: 124230
+title: Illustrated Handscroll of The Tale of Genji
+names:
+  - lang: ja
+    role: translation
+    text: 五島本源氏物語絵巻
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045333
+institution: gotoh-museum
+location: [139.6355, 35.61229]
+wikidata_id: Q107045333
+metadata:
+  sources: [Wikidata Q107045333 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Genji_emaki_SUZUMUSHI.JPG/1280px-Genji_emaki_SUZUMUSHI.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Genji_emaki_SUZUMUSHI.JPG
+    license: Public domain
+    credit: Anonymous
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107045333
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107045333

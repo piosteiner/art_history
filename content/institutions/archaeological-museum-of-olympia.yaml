@@ -1,0 +1,16 @@
+public_id: 123120
+name: Archaeological Museum of Olympia
+kind: museum
+founded: 1882
+wikidata_id: Q637038
+metadata:
+  sources: [Wikidata Q637038 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q637038
+  founded:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q637038

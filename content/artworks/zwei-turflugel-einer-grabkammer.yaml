@@ -1,0 +1,44 @@
+public_id: 123871
+title_lang: de
+title: Zwei Türflügel einer Grabkammer
+attribution_label: Anonymous
+created: 25/220
+kind: architectural element
+medium: Sandstein
+dimensions: [129.5, 125]
+institution: museum-rietberg
+inventory_number: RCH 103
+web_url: https://rietberg.ch/sammlungen/rch-103
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Han_T%C3%BCrfl%C3%BCgel_einer_Grabkammer_Museum_Rietberg_RCH_103.jpg/1280px-Han_T%C3%BCrfl%C3%BCgel_einer_Grabkammer_Museum_Rietberg_RCH_103.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Han_Türflügel_einer_Grabkammer_Museum_Rietberg_RCH_103.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner: person/c-t-loo
+    role: dealer
+    acquired: before 1930
+    place: paris
+    label: see photographs of the Pagoda from the estate of Janine Loo
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-103
+        note: |-
+          vor 1930: C. T.  Loo (1880–1957), Händler/in, Paris
+          siehe Fotos der Pagode aus dem Nachlass von Janine Loo
+        source: rietberg-rch-103
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    label: collector
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-103
+        note: Eduard von der Heydt (1882–1964), Sammler*in
+        source: rietberg-rch-103
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    method: gift
+    label: gift of Eduard von der Heydt (credit line)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-103
+        note: Creditline | Geschenk Eduard von der Heydt
+        source: rietberg-rch-103
+        accessed: 2026-11-24

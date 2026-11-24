@@ -1,0 +1,41 @@
+public_id: 126956
+name: Livorno
+names:
+  - lang: ko
+    role: translation
+    text: 리보르노
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q16200
+  - lang: fr
+    role: translation
+    text: Livourne
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q16200
+  - lang: ru
+    role: translation
+    text: Ливорно
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q16200
+kind: settlement
+parent: italy
+country_code: IT
+location: [10.31667, 43.55]
+wikidata_id: Q16200
+metadata:
+  sources: [Wikidata Q16200 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q16200
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q16200
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q16200

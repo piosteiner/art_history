@@ -1,0 +1,18 @@
+public_id: 124675
+name: Nicolas de Largillière
+given_name: Nicolas
+family_name: de Largillière
+birth: 1656-10-20
+death: 1746-03-20
+wikidata_id: Q550302
+metadata:
+  sources: [Wikidata Q550302 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q550302
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q550302

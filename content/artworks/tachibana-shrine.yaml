@@ -1,0 +1,54 @@
+public_id: 123923
+title: Tachibana Shrine
+names:
+  - text: Lady Tachibana Shrine
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q66769241
+  - lang: ja
+    role: translation
+    text: 橘夫人厨子
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q66769241
+institution: horyu-ji
+location: [135.73531, 34.61506]
+wikidata_id: Q66769241
+metadata:
+  sources: [Wikidata Q66769241 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/ikaruga
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/59/Tachibana_Shrine_%28Asahi_Shimbunsha_1942%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tachibana_Shrine_(Asahi_Shimbunsha_1942).jpg
+    license: Public domain
+    credit: Photographer for the Asahi Shimbunsha publication
+provenance:
+  - owner: person/agata-no-inukai-no-michiyo
+    method: commission
+    label: commissioning attributed to Lady Tachibana, mother of Empress Kōmyō, by the monk Kenshin (1230s)
+    certainty: possible
+    sources:
+      - url: https://en.wikipedia.org/wiki/Tachibana_Shrine
+        note: attributes its commissioning to  Lady Tachibana, the mother of Empress Kōmyō (the shrine may have been bestowed upon Hōryū-ji by Kōmyō on her mother's death in 733)
+        source: wikipedia-en-tachibana-shrine
+        accessed: 2026-11-24
+  - owner: institution/horyu-ji
+    acquired: 747 or earlier
+    place: ikaruga
+    label: listed in the temple inventory of 747; perhaps given by Empress Kōmyō on her mother's death in 733; long on the altar of the Kondō, now in the Gallery of Temple Treasures (Daihōzōin)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/236
+        note: 所有者名 ： 法隆寺
+        source: kunishitei-201-236
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Tachibana_Shrine
+        note: A terminus ante quem is provided by the first documentary evidence for its existence, mention in the temple inventory of 747 … it is understood that the two shrines were located on the great altar of the Kondō for many centuries, until their modern relocation to the Gallery of Temple Treasures.
+        source: wikipedia-en-tachibana-shrine
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q66769241

@@ -1,0 +1,232 @@
+public_id: 124625
+title_lang: en
+title: Portrait of Tieleman Roosterman
+names:
+  - lang: nl
+    role: translation
+    text: Portret van Tieleman Roosterman (1597-1672)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17861783
+  - lang: fr
+    role: translation
+    text: Portrait de Tieleman Roosterman (1597-1672)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17861783
+  - lang: de
+    role: translation
+    text: Porträt von Tieleman Roosterman
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17861783
+creator: frans-hals
+created: 1634
+materials: [oil paint, canvas]
+dimensions: [117, 87]
+institution: cleveland-museum-of-art
+inventory_number: "1999.173"
+web_url: https://clevelandart.org/art/1999.173
+provenance_status: d_seized
+provenance_status_note: Confiscated by the Nazis from Alphonse von Rothschild, Vienna, 1938; stored at Kremsmünster and Altaussee, released to the Austrian government in May 1946; recovered by his widow and 'donated' to the Kunsthistorisches Museum; restituted to the Rothschild heirs in 1999.
+wikidata_id: Q17861783
+metadata:
+  sources: [Wikidata Q17861783 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-24
+        property: P1071
+        wikidata: Q17861783
+  - type: depicts_person
+    to: person/tieleman-roosterman
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q17861783
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Clevelandart_1999.173.jpg/1280px-Clevelandart_1999.173.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Clevelandart_1999.173.jpg
+    license: CC0
+    credit: Frans Hals
+provenance:
+  - owner: person/friedrich-jacob-gsell
+    acquired: 1866 or earlier
+    place: vienna
+    label: born in Bischofweiler (Alsace), settled in Vienna c. 1850
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: Friedrich Jacob Gsell (b. 1811 or 1812 in Bischofweiler [Alsace], settled in Vienna circa 1850, died 1871) [probably by 1866]
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner_label: Künstlerhaus, Vienna [Georg Plach]
+    role: agent
+    acquired: 1872-03-14
+    method: auction
+    direct: true
+    place: vienna
+    label: Friedrich Jacob Gsell sale, 14 March 1872 and following days, lot 40 ("Ein Bravourstück des genialen Meisters"), sold for 15,200 fl.
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: ([Georg Plach] Künstlerhause, Vienna, Friedrich Jacob Gsell sale, March 14, 1872 (and successive days), lot 40 ["Ein Bravourstück des genialen Meisters"; sold for 15,200 fl. to Plach, probably on behalf of Baron Anselm von Rothschild).
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner: person/georg-plach
+    role: agent
+    acquired: 1872-03-14
+    method: auction
+    direct: true
+    place: vienna
+    label: bought at the sale, probably on behalf of Anselm von Rothschild
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: sold for 15,200 fl. to Plach, probably on behalf of Baron Anselm von Rothschild
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner: person/anselm-von-rothschild
+    acquired: 1872
+    ended: 1874
+    method: auction
+    direct: true
+    place: vienna
+    label: inv. no. AR866
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: Baron Anselm Mayer von Rothschild (1803-1874), Vienna (inv. no. AR866) [1872 - 1874]
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner: person/albert-salomon-von-rothschild
+    acquired: 1874
+    ended: 1911
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: Baron Albert von Rothschild (1844-1911), Vienna [1874 - 1911]
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner: person/alphonse-von-rothschild
+    acquired: 1911
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: Baron Alphonse von Rothschild (1878-1942), Vienna [1911 - 1938]
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner_label: the Nazis
+    role: possessor
+    acquired: 1938
+    ended: 1946-05
+    method: confiscation
+    direct: true
+    label: stored initially at Kremsmünster (?), intended for the Tiroler Landesmuseum Ferdinandeum, Innsbruck; c. 1944 moved to the Altaussee salt mines
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: In the possession of the Nazis. Stored initially at Kremsmünster (?); intended for the Tiroler Landesmuseum Ferdinandeum, Innsbruck, Austria [from 1938]
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner_label: salt mine at Altaussee
+    role: custodian
+    acquired: c. 1944
+    ended: 1946-05
+    direct: true
+    label: moved there from Kremsmünster while in Nazi possession; stored until released to the Austrian government
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: While in the possession of the Nazis, moved from Kremsmünster to the salt mines at Alt Aussee, where it was stored until released to the Austrian government in May 1946. [c. 1944 - May 1946]
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner_label: Austrian government
+    role: custodian
+    acquired: 1946-05
+    ended: 1947
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: stored until released to the Austrian government in May 1946.
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner: person/clarice-de-rothschild
+    acquired: 1947
+    method: restitution
+    direct: true
+    label: recovered by Alphonse von Rothschild's widow
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: Recovered by Alphonse von Rothschild's widow, Clarice von Rothschild (1894-1967), and "donated" by her for display at the Kunsthistorisches Museum, Vienna (inv. no. 9009) [1947 - 1999]
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner: institution/kunsthistorisches-museum-wien
+    acquired: 1947
+    ended: 1999
+    method: forced_gift
+    direct: true
+    place: vienna
+    label: "\"donated\" (the museum's quotation marks) by Clarice von Rothschild for display; inv. no. 9009"
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: and "donated" by her for display at the Kunsthistorisches Museum, Vienna (inv. no. 9009) [1947 - 1999]
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner_label: heirs of Barons Alphonse and Louis von Rothschild
+    acquired: 1999
+    method: restitution
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: Restituted to the Heirs of Barons Alphonse and Louis von Rothschild [1999]
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1999-07-08
+    method: auction
+    direct: true
+    place: london
+    label: Heirs of the Barons Alphonse and Louis von Rothschild sale, no. 219
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: (Christie's, London, Heirs of the Barons Alphonse and Louis von Rothschild sale, July 8, 1999, no. 219, to the Cleveland Museum of Art.)
+        source: cma-1999-173
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1999-07-08
+    method: auction
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund
+    sources:
+      - url: https://clevelandart.org/art/1999.173
+        note: The Cleveland Museum of Art, Cleveland, OH [1999-]
+        source: cma-1999-173
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q17861783
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q17861783
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q17861783
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q17861783
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q17861783
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q17861783

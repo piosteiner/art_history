@@ -1,0 +1,262 @@
+public_id: 123088
+title_lang: en
+title: The Alba Madonna
+names:
+  - lang: en
+    role: original
+    text: Alba Madonna
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q254923
+  - lang: nl
+    role: translation
+    text: Alba-madonna
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q254923
+  - lang: fr
+    role: translation
+    text: La Madone d'Alba
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q254923
+  - lang: de
+    role: translation
+    text: "Madonna Alba, Szene: Maria mit Christuskind und Johannes dem Täufer, Tondo"
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q254923
+  - lang: it
+    role: translation
+    text: Madonna d'Alba
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q254923
+  - lang: es
+    role: translation
+    text: Virgen de la Casa de Alba
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q254923
+  - lang: ja
+    role: translation
+    text: アルバの聖母
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q254923
+  - lang: zh
+    role: translation
+    text: 阿爾巴聖母
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q254923
+  - lang: ru
+    role: translation
+    text: Мадонна Альба
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q254923
+creator: raphael
+created: c. 1510
+created_span: uncertain
+materials: [oil paint, panel, transferred on canvas]
+dimensions: [98, 98]
+institution: national-gallery-of-art
+inventory_number: 1937.1.24
+wikidata_id: Q254923
+metadata:
+  sources: [Wikidata Q254923 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q254923
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-11-23
+        property: P135
+        wikidata: Q254923
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Raphael%2C_The_Alba_Madonna%2C_c._1510%2C_NGA_26.jpg/1280px-Raphael%2C_The_Alba_Madonna%2C_c._1510%2C_NGA_26.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raphael,_The_Alba_Madonna,_c._1510,_NGA_26.jpg
+    license: CC0
+    credit: Raphael
+provenance:
+  - owner: person/paolo-giovio
+    label: appointed to the Bishopric of Nocera by Clement VII in 1528
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: Possibly Paolo Giovio, appointed to the Bishopric of Nocera by Clement VII in 1528;
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner: institution/chiesa-di-monte-oliveto-nocera-de-pagani
+    direct: true
+    label: possibly from Paolo Giovio
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: possibly from him to Chiesa di Monte Oliveto, Nocera de'Pagani;
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner: person/gaspar-mendez-de-haro
+    acquired: 1686
+    method: purchase
+    direct: true
+    place: naples
+    label: Conde-Duque de Olivares, Marqués del Carpio and Viceroy of Naples
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: sold 1686 to Gasparo de Haro y Guzman, Conde-Duque de Olivares, Marqués del Carpio and Viceroy of Naples [d. 1687];
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner: person/catalina-mendez-de-haro-y-guzman
+    method: inheritance
+    direct: true
+    label: his daughter, later Duquesa de Alba
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: by inheritance to his daughter, Catalina Méndez de Haro y Guzmán, later Duquesa de Alba;
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner_label: Duques de Alba
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: by inheritance to the Duques de Alba;
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner: person/maria-teresa-de-silva-13th-duchess-of-alba
+    ended: 1802
+    method: inheritance
+    direct: true
+    label: "María del Pilar Teresa Cayetana de Silva y Alvarez de Toledo, Duquesa de Alba; Sanlúcar, near Seville; Barcia, Catálogo … Duque de Berwick y de Alba, 1911: 260"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: "by inheritance to María del Pilar Teresa Cayetana de Silva y Alvarez de Toledo, Duquesa de Alba [d. 1802], Sanlúcar, near Seville;[1] — [1] See A. Barcia, Catalogo de la collecion de pinturas del Excmo. Sr. Duque de Berwick y de Alba, 1911: 260."
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner: person/edmund-de-bourke
+    method: purchase
+    direct: true
+    label: Count Edmund de Bourke, Danish Ambassador to Spain; sold by the Duchess's heirs
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: sold by her heirs to Count Edmund de Bourke, Danish Ambassador to Spain;
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner: person/w-g-coesvelt
+    acquired: 1820
+    method: purchase
+    direct: true
+    place: london
+    label: "recorded in Anna Jameson, Collection of Pictures of W. G. Coesvelt, Esq., London, 1836: VII, 24"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: "sold 1820 to William G. Coesvelt, London;[2] — [2] Recorded in Mrs. Anna Jameson, Collection of Pictures of W. G. Coesvelt, Esq., London, 1836: VII, 24."
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner_label: M. Labensky
+    role: agent
+    acquired: 1836
+    method: purchase
+    direct: true
+    label: bought for Czar Nicholas I
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: sold 1836 to (M. Labensky) for Czar Nicholas I of Russia [1796-1855], Saint Petersburg;
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner: person/nicholas-i-of-russia
+    acquired: 1836
+    method: purchase
+    direct: true
+    place: saint-petersburg
+    label: bought through M. Labensky
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: sold 1836 to (M. Labensky) for Czar Nicholas I of Russia [1796-1855], Saint Petersburg;
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    label: "Bruiningk and Somoff, Ermitage Imperial, Catalogue de la galerie des tableaux, 1891: 1:137"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: "Imperial Hermitage Gallery, Saint Petersburg;[3] — [3] According to E.  Bruiningk and A. Somoff, Ermitage Imperial, Catalogue de la galerie des tableaux, Saint Petersburg, 1891: 1:137."
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1931-04
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: purchased April 1931 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1931-04
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: purchased April 1931 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York) by Andrew W. Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1931-06-05
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: deeded 5 June 1931 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[4]
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.26.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-24
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q254923
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q254923
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q254923
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q254923
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q254923
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q254923

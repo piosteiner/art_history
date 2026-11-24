@@ -1,0 +1,129 @@
+public_id: 123085
+title_lang: en
+title: Madonna and Child, with Saints Peter and John the Evangelist, and Man of Sorrows
+names:
+  - text: Madonna and Child with Saints Peter and John the Evangelist Triptych
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q46624212
+  - lang: en
+    role: original
+    text: Madonna and Child, with Saints Peter and John the Evangelist, and Man of Sorrows Triptych
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q46624212
+creator: nardo-di-cione
+created: c. 1360
+created_span: uncertain
+materials: [tempera, panel]
+dimensions: [76, 66.4]
+institution: national-gallery-of-art
+inventory_number: 1939.1.261.a-c
+web_url: https://www.nga.gov/collection/art-object-page.204932.html
+provenance_status: a_clear
+provenance_status_note: Henry Goldman, New York, 1923 until January 1937; Duveen Brothers; Samuel H. Kress Foundation 1937; NGA 1939.
+wikidata_id: Q46624212
+metadata:
+  sources: [Wikidata Q46624212 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Nardo_di_Cione_-_Madonna_and_Child%2C_with_Saints_Peter_and_John_the_Evangelist%2C_and_Man_of_Sorrows_%28entire_triptych%29_-_1939.1.261.a-c_-_National_Gallery_of_Art.jpg/1280px-thumbnail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nardo_di_Cione_-_Madonna_and_Child,_with_Saints_Peter_and_John_the_Evangelist,_and_Man_of_Sorrows_(entire_triptych)_-_1939.1.261.a-c_-_National_Gallery_of_Art.jpg
+    license: Public domain
+    credit: Nardo di Cione
+provenance:
+  - owner: person/gustav-adolf-wilhelm-von-ingenheim
+    acquired_label: in the first half of the nineteenth century
+    label: acquired probably in Italy; he bought pictures in Italy and received others as gifts from the king of Prussia (Offner 1960)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.204932.html
+        note: Gustav Adolf Wilhelm von Ingenheim [1789-1855], who acquired it in the first half of the nineteenth century, probably in Italy;[1]
+        source: nga-1939-1-261-a-c
+        accessed: 2026-11-24
+  - owner_label: Ingenheim family, Schloss Reisewitz, Silesia
+    ended: 1922
+    method: inheritance
+    direct: true
+    label: Schloss Reisewitz, Silesia
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.204932.html
+        note: Ingenheim family, Schloss Reisewitz, Silesia;
+        source: nga-1939-1-261-a-c
+        accessed: 2026-11-24
+  - owner: institution/galerie-a-s-drey
+    role: dealer
+    acquired: 1922
+    method: purchase
+    direct: true
+    place: munich
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.204932.html
+        note: sold 1922 to (A.S. Drey, Munich);
+        source: nga-1939-1-261-a-c
+        accessed: 2026-11-24
+  - owner: person/henry-goldman
+    acquired: 1923
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.204932.html
+        note: sold 1923 to Henry Goldman [1856-1937], New York;[2]
+        source: nga-1939-1-261-a-c
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1937-01
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: London, New York and Paris; one of nine paintings and one sculpture Goldman sold to Duveen
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.204932.html
+        note: sold January 1937 to (Duveen Brothers, Inc., London, New York, and Paris);[3] — Letter, Henry Goldman to Duveen Brothers, 5 January 1937 … Goldman confirms the sale to the company of nine paintings and one sculpture
+        source: nga-1939-1-261-a-c
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1937
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.204932.html
+        note: sold 1937 to the Samuel H. Kress Foundation, New York;[4]
+        source: nga-1939-1-261-a-c
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1939
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.204932.html
+        note: gift 1939 to NGA.
+        source: nga-1939-1-261-a-c
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q46624212
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q46624212
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q46624212
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q46624212
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q46624212
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q46624212

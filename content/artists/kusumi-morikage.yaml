@@ -1,0 +1,18 @@
+public_id: 124260
+name: Kusumi Morikage
+given_name: Kusumi
+family_name: Morikage
+birth: 1620
+death: 1690
+wikidata_id: Q3200664
+metadata:
+  sources: [Wikidata Q3200664 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q3200664
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q3200664

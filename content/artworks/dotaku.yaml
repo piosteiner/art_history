@@ -1,0 +1,55 @@
+public_id: 122947
+title_lang: en
+title: Dōtaku
+created: 100/200
+kind: metalwork
+medium: cast bronze
+dimensions: [97.8, 48.9]
+institution: cleveland-museum-of-art
+inventory_number: "1916.1102"
+web_url: https://clevelandart.org/art/1916.1102
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1916.1102/1916.1102_web.jpg
+    source_url: https://clevelandart.org/art/1916.1102
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/john-strong-newberry
+    place: new-haven
+    label: passed to his son Arthur St. John Newberry
+    sources:
+      - url: https://clevelandart.org/art/1916.1102
+        note: John Strong Newberry [1822–1892], New Haven, CT, to his son Arthur St. John Newberry
+        source: cma-1916-1102
+        accessed: 2026-11-24
+  - owner: person/arthur-st-john-newberry
+    ended: 1912
+    direct: true
+    place: cleveland
+    label: bequeathed to his wife
+    sources:
+      - url: https://clevelandart.org/art/1916.1102
+        note: Arthur St. John Newberry [1854–1912], Cleveland, OH, by bequest to his wife [?–1912]
+        source: cma-1916-1102
+        accessed: 2026-11-24
+  - owner: person/emma-paige-eells-newberry
+    acquired: 1912
+    method: bequest
+    direct: true
+    place: cleveland
+    label: Mrs. Arthur St. John Newberry; given to the Cleveland Museum of Art
+    sources:
+      - url: https://clevelandart.org/art/1916.1102
+        note: Mrs. Arthur St. John [Emma Paige Eells] Newberry [1857–1932], Cleveland, OH, given to the Cleveland Museum of Art [1912–1916]
+        source: cma-1916-1102
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1916
+    method: gift
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1916.1102
+        note: The Cleveland Museum of Art, Cleveland, OH [1916–] — Gift of Mrs. Arthur St. John Newberry
+        source: cma-1916-1102
+        accessed: 2026-11-24

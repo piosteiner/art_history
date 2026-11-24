@@ -1,0 +1,77 @@
+public_id: 122929
+title_lang: en
+title: Low Waterfall in a Wooded Landscape with a Dead Beech Tree
+creator: jacob-van-ruisdael
+created: c. 1660–1670
+created_span: uncertain
+kind: oil painting
+medium: oil on canvas
+dimensions: [99.2, 131]
+institution: cleveland-museum-of-art
+inventory_number: "1967.63"
+web_url: https://clevelandart.org/art/1967.63
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1967.63/1967.63_web.jpg
+    source_url: https://clevelandart.org/art/1967.63
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner_label: Freiherren von Ketteler
+    acquired_label: probably by the mid-eighteenth century
+    place: warendorf
+    label: first at Schloss Harkotten near Warendorf; later at Schloss Ehringerfeld near Büren, Westphalia, 1904
+    sources:
+      - url: https://clevelandart.org/art/1967.63
+        note: Freiherren von Ketteler (first at Schloss Harkotten near Warendorf, probably by mid-eighteenth century; later at Schloss Ehringerfeld near Buren, Westphalia, 1904);
+        source: cma-1967-63
+        accessed: 2026-11-24
+  - owner: person/j-j-van-leeuwen-boomkamp
+    acquired_label: "1929"
+    place: naarden
+    sources:
+      - url: https://clevelandart.org/art/1967.63
+        note: J. J. van Leeuwen Boomkamp, Naarden, Holland, 1929;
+        source: cma-1967-63
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1966-11-30
+    method: auction
+    place: london
+    label: sale, Sotheby's, London, 30 November 1966, no. 21
+    sources:
+      - url: https://clevelandart.org/art/1967.63
+        note: "(sale: Sotheby’s London, November 30, 1966, no. 21; to Legatt);"
+        source: cma-1967-63
+        accessed: 2026-11-24
+  - owner: institution/leggatt-brothers
+    role: dealer
+    acquired: 1966-11-30
+    method: auction
+    direct: true
+    place: london
+    label: buyer named 'Legatt' in the museum's record
+    sources:
+      - url: https://clevelandart.org/art/1967.63
+        note: "(sale: Sotheby’s London, November 30, 1966, no. 21; to Legatt);"
+        source: cma-1967-63
+        accessed: 2026-11-24
+  - owner: person/frederick-mont
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://clevelandart.org/art/1967.63
+        note: "[Frederick Mont, New York], sold to the Cleveland Museum of Art, 1967."
+        source: cma-1967-63
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1967
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Mr. and Mrs. William H. Marlatt Fund
+    sources:
+      - url: https://clevelandart.org/art/1967.63
+        note: "[Frederick Mont, New York], sold to the Cleveland Museum of Art, 1967."
+        source: cma-1967-63
+        accessed: 2026-11-24

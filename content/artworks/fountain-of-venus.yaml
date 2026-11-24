@@ -1,0 +1,124 @@
+public_id: 122868
+title_lang: en
+title: Fountain of Venus
+creator: francois-boucher
+created: 1756
+kind: oil painting
+medium: oil on canvas
+dimensions: [233, 215]
+institution: cleveland-museum-of-art
+inventory_number: "1979.55"
+web_url: https://clevelandart.org/art/1979.55
+provenance_status: d_seized
+provenance_status_note: Confiscated from Maurice de Rothschild's Paris mansion by the ERR on 6 September 1940 (ERR no. R 252), selected for Hitler's Linz collection (Linz no. 1583); its path from the Thürntal repository back to the Rothschild family is unknown.
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1979.55/1979.55_web.jpg
+    source_url: https://clevelandart.org/art/1979.55
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/edmond-james-de-rothschild
+    acquired_label: likely in the late nineteenth century
+    ended: 1934
+    place: paris
+    label: provenance before him unknown; the work is not in Ananoff's catalogues
+    sources:
+      - url: https://clevelandart.org/art/1979.55
+        note: Baron Edmond de Rothschild [1845-1934], Paris, by descent to his son, Maurice de Rothschild [Until 1934] — The provenance of the Boucher painting prior to Baron Edmond de Rothschild, who likely acquired it in the late nineteenth century, is unknown.
+        source: cma-1979-55
+        accessed: 2026-11-24
+  - owner: person/maurice-edmond-charles-de-rothschild
+    acquired: 1934
+    method: inheritance
+    direct: true
+    place: paris
+    label: by descent from his father; kept in his Paris mansion
+    sources:
+      - url: https://clevelandart.org/art/1979.55
+        note: Maurice de Rothschild [1881-1957], Paris, confiscated by the Einsatzstab Reichsleiter Rosenberg [1934-1940] — Maurice’s collection, housed in his Paris mansion, was seized by the Einsatzstab Reichsleiter Rosenberg on September 6, 1940.
+        source: cma-1979-55
+        accessed: 2026-11-24
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    acquired: 1940-09-06
+    method: confiscation
+    direct: true
+    place: paris
+    label: seized from Maurice de Rothschild's collection; taken to the Jeu de Paume as ERR no. R 252, "Brunnendekoration mit Quellnymphe"
+    sources:
+      - url: https://clevelandart.org/art/1979.55
+        note: The Boucher was confiscated from Maurice’s collection in Paris in early September 1940 by the Einsatzstab Reichsleiter Rosenberg. The painting, titled in ERR records “Brunnendekoration mit Quellnymphe” [“Fountain decoration with nymph at a spring”], was taken to the Jeu de Paume and assigned ERR no. 252.
+        source: cma-1979-55
+        accessed: 2026-11-24
+  - owner: person/adolf-hitler
+    role: possessor
+    acquired: 1941-02-05
+    method: transfer
+    direct: true
+    label: selected at the Jeu de Paume for the Linz collection, Linz no. 1583; too large for the train of 8 February 1941 — sent to Füssen or received at the Führerbau, Munich, 20 March 1941 (records disagree)
+    sources:
+      - url: https://clevelandart.org/art/1979.55
+        note: On February 5, 1941, Hitler selected the Boucher for the Linz collection from among the works exhibited at the Jeu de Paume; the painting was designated Linz no. 1583. … the two Bouchers, as well as four tapestries, all from the Rothschild collection, were too large to be accommodated on the train and were instead sent to Füssen … Another document, however, says that the statement that these six works were sent to Füssen is erroneous, claiming instead that these items (Linz nos. 1582-1587) were in fact received at the Führerbau on March 20, 1941
+        source: cma-1979-55
+        accessed: 2026-11-24
+  - owner_label: Kremsmünster repository
+    role: custodian
+    acquired: 1944-10-17
+    method: transfer
+    place: kremsmunster
+    label: wartime repository for the Linz collection, K-no. 3
+    sources:
+      - url: https://clevelandart.org/art/1979.55
+        note: The Boucher, however, was instead shipped to Kremsmünster on October 17, 1944 … The List of the large-sized paintings transferred from Kremsmünster to the repository Thürntal (LF V I5/569) contains “K-no. 3/Linz no. 1583, Boucher, Wall-decoration with nymphs, canvas, signed, 267 x 220,”
+        source: cma-1979-55
+        accessed: 2026-11-24
+  - owner_label: Thürntal Castle repository
+    role: custodian
+    method: transfer
+    direct: true
+    label: repository for large Linz objects, in the Soviet zone; listed among the 100 Thürntal pictures (K-nr. 3); later trail unknown — possibly returned to France by the Soviets
+    sources:
+      - url: https://clevelandart.org/art/1979.55
+        note: documenting the painting’s presence at Kremsmünster and subsequent transfer to Thürntal … At this point, the painting’s trail goes cold. The Linz documentation indicates the painting was in France at the end of the war, having arrived there from Thürntal; however, its path from Thürntal to France is unknown at this point.
+        source: cma-1979-55
+        accessed: 2026-11-24
+  - owner: person/maurice-edmond-charles-de-rothschild
+    acquired_label: sometime after the war
+    label: back with the Rothschild family, probably Maurice
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1979.55
+        note: the painting undoubtedly made its way back to the family, probably to Maurice, sometime after the war.
+        source: cma-1979-55
+        accessed: 2026-11-24
+  - owner_label: member of the Rothschild family (anonymous)
+    ended: 1974
+    label: after Maurice's death in 1957 possibly his widow Noémie Halphen (1888–1968) or his son Edmond Adolphe de Rothschild (1926–1997)
+    sources:
+      - url: https://clevelandart.org/art/1979.55
+        note: Rothschild Family, to P. & D. Colnaghi [Until 1974] — his gallery had in 1974 purchased the painting from a member of the Rothschild family who wished to remain anonymous … After Maurice died in 1957, the Boucher may have passed to his widow, Noémie Halphen (1888-1968) or to his son, Edmond Adolphe de Rothschild (1926-1997), the latter of whom may have sold it to Colnaghi.
+        source: cma-1979-55
+        accessed: 2026-11-24
+  - owner: institution/p-d-colnaghi-co-ltd
+    role: dealer
+    acquired: 1974
+    method: purchase
+    direct: true
+    place: london
+    label: Colnaghi's file mentions a Galleria Bernini, Liechtenstein (unconfirmed) and Sotheby's (erroneous); treated by Robert Shepherd, later additions removed
+    sources:
+      - url: https://clevelandart.org/art/1979.55
+        note: (P. & D. Colnaghi, London, sold to the Cleveland Museum of Art) [1974-1979] — Colnaghi’s (partially damaged) file on the painting suggests that the Boucher came to the UK from a Lichtenstein entity named the Galleria Bernini, but the museum has been unable to confirm the exact nature of its involvement
+        source: cma-1979-55
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1979-09
+    method: purchase
+    direct: true
+    place: cleveland
+    label: bought by Sherman Lee; invoice of 28 September 1979 as "Cupidon offrant une pomme à Venus"
+    sources:
+      - url: https://clevelandart.org/art/1979.55
+        note: The eventual purchase of the painting by Lee took place in September 1979; an invoice dated September 28, 1979 lists the Rothschild provenance and titles the painting, “Cupidon offrant une pomme à Venus.”
+        source: cma-1979-55
+        accessed: 2026-11-24

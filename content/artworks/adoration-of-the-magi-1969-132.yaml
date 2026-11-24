@@ -1,0 +1,96 @@
+public_id: 122885
+title_lang: en
+title: Adoration of the Magi
+creator: guido-reni
+created: 1642
+kind: oil painting
+medium: oil on canvas
+dimensions: [367.3, 268.6]
+institution: cleveland-museum-of-art
+inventory_number: "1969.132"
+web_url: https://clevelandart.org/art/1969.132
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1969.132/1969.132_web.jpg
+    source_url: https://clevelandart.org/art/1969.132
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/giuseppe-reni
+    ended: 1645-04-21
+    method: inheritance
+    label: the artist's heir; received the final payment of 34 scudi from Cardinal Francesco Barberini (Archivio Barberini, mandato no. 2666)
+    sources:
+      - url: https://clevelandart.org/art/1969.132
+        note: A receipt dated April 21, 1645, documenting the final payment of 34 scudi to Giuseppe Reni, the artist’s heir, records the acquisition of the painting by the Barberini family
+        source: cma-1969-132
+        accessed: 2026-11-24
+  - owner: person/francesco-barberini
+    acquired: 1645-04-21
+    method: purchase
+    direct: true
+    place: rome
+    label: Cardinal Francesco Barberini, Palazzo Barberini; unfinished, so not in the Barberini inventories until 1844
+    sources:
+      - url: https://clevelandart.org/art/1969.132
+        note: Cardinal Francesco Barberini [1597 –1679] by inheritance within the Barberini family, Barberini Palace, Rome, by descent to the Barberini-Colonna di Sciarra collection [1645-1812] — … “To Giuseppe Reni thirty-four scudi are [paid] for the remaining and whole payment of the price of a painting, done by Guido Reni, which represents the representation of the Magi … this day, April 21, 1645” … Due to its unfinished state, the painting was not included in the official inventories of the Barberini collection until 1844
+        source: cma-1969-132
+        accessed: 2026-11-24
+  - owner_label: Barberini family, Palazzo Barberini, Rome
+    ended: 1812
+    method: inheritance
+    direct: true
+    place: rome
+    label: by inheritance within the Barberini family until the division of 1812
+    sources:
+      - url: https://clevelandart.org/art/1969.132
+        note: Cardinal Francesco Barberini [1597 –1679] by inheritance within the Barberini family, Barberini Palace, Rome, by descent to the Barberini-Colonna di Sciarra collection [1645-1812]
+        source: cma-1969-132
+        accessed: 2026-11-24
+  - owner_label: Barberini-Colonna di Sciarra collection, Rome
+    acquired: 1812
+    ended: 1880
+    method: inheritance
+    direct: true
+    place: rome
+    label: Barberini collection split 1812; fidecommesso number F92 (c. 1816); Casa Barberini inventory 1844, no. 464 "Venuta dei Magi"; divided 1880 at the death of Prince Carlo Felice Barberini-Colonna di Sciarra
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1969.132
+        note: Barberini-Colonna di Sciarra collection, Rome, by descent to the Corsini collection [Probably 1812-1880] — In 1812 the Barberini collection was split between the Barberini and Colonna di Sciarra branches of the family … The Casa Barberini inventory of 1844 lists the painting, “Venuta dei Magi,” as by Reni (no. 464). The “F92” inscribed in the lower left corner of the painting is the fidecommesso number
+        source: cma-1969-132
+        accessed: 2026-11-24
+  - owner_label: Corsini collection, Florence
+    acquired: 1880
+    method: inheritance
+    direct: true
+    place: florence
+    label: through the daughters of Prince Carlo Felice Barberini-Colonna di Sciarra, Anna (1840–1911, m. Prince Tommaso Corsini) and Luisa (1844–1906, m. Pietro Francesco Corsini); sold by Princess Corsini to Colnaghi
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1969.132
+        note: Corsini Collection, Florence, to Colnaghi [Probably 1880-by 1968] — When Prince Carlo Felice Barberini-Colonna di Sciarra, Duca di Castelvecchio, died in 1880, his collection was divided between his two daughters, Anna [1840-1911], who married Prince Tommaso Corsini, and Luisa [1844-1906], who married Tommaso’s younger brother, Pietro Francesco Corsini. It was probably at this time that the paintings entered the Corsini collection in Florence.
+        source: cma-1969-132
+        accessed: 2026-11-24
+  - owner: institution/p-d-colnaghi-co-ltd
+    role: dealer
+    acquired: 1968 or earlier
+    method: purchase
+    direct: true
+    place: london
+    label: acquired from Princess Corsini, date not recorded, likely by December 1968 (Roderic Thesiger's letter to Sherman Lee)
+    sources:
+      - url: https://clevelandart.org/art/1969.132
+        note: (P.&D. Colnaghi & Co., Ltd., London), sold to the Cleveland Museum of Art [by 1968-1969] — Colnaghi’s records do not indicate the date they acquired the painting from Princess Corsini, but it was likely by December 1968, when Roderic Thesiger of Colnaghi wrote to Sherman Lee about the painting.
+        source: cma-1969-132
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1969
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund, inv. 1969.132
+    sources:
+      - url: https://clevelandart.org/art/1969.132
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1969-]
+        source: cma-1969-132
+        accessed: 2026-11-24

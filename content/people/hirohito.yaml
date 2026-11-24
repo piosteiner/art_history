@@ -24,6 +24,16 @@ description_md: Emperor of Japan; the era of his reign is [[showa-era-1926|Shōw
 wikidata_id: Q34479
 metadata:
   sources: [Wikidata Q34479 (retrieved 2026-11-02)]
+relationships:
+  - type: child_of
+    to: person/emperor-taisho
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q34479
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q157052
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/44/Hirohito_in_dress_uniform.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Hirohito_in_dress_uniform.jpg

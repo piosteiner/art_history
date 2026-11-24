@@ -1,0 +1,43 @@
+public_id: 123931
+title: Three-storied Pagoda, Kōjō-ji
+names:
+  - lang: ja
+    role: translation
+    text: 向上寺三重塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020645
+created: 1432
+institution: kojo-ji-temple
+location: [133.0867, 34.30688]
+wikidata_id: Q107020645
+metadata:
+  sources: [Wikidata Q107020645 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/onomichi
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/K%C5%8Dj%C5%8D-ji_Pagoda.jpg/1280px-K%C5%8Dj%C5%8D-ji_Pagoda.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:K%C5%8Dj%C5%8D-ji_Pagoda.jpg
+    license: CC BY-SA 4.0
+    credit: Fabimaru
+provenance:
+  - owner: institution/kojo-ji-temple
+    acquired: 1432
+    method: creation
+    place: onomichi
+    label: built Eikyō 4 (1432, ink inscription) for the Zen temple founded 1403 with Guchū Shūkyū as first abbot; patrons Nobumoto and Nobumasa, probably of the Ikuchi family (Wikipedia); never thoroughly repaired
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3188
+        note: 向上寺は応永十年（一四〇三）仏通寺の愚中周及（一三二三～一四〇九）を開山として創立された禅宗寺院である。 … 塔は本堂裏の山腹にあり、永享四年（一四三二）の建立である（墨書）。 … 所有者名 ： 向上寺
+        source: kunishitei-102-3188
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E5%90%91%E4%B8%8A%E5%AF%BA
+        note: 1432年(永享4年)には生口氏所縁と推察される信元と信昌を造塔本願檀那として三重塔(国宝)が建立されている。
+        source: wikipedia-ja-kojo-ji
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020645

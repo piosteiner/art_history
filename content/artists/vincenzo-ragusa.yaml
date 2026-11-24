@@ -39,6 +39,15 @@ relationships:
       - note: Taught modelling, bronze casting and armatures at the Kōbu Bijutsu Gakkō (Technical Fine Arts School) in Tokyo from 1876 until its closure in 1882, then returned to Italy; ran a foundry in his own house there.
         source: history-of-japanese-art
         locator: pp. 356–357
+  - type: married_to
+    to: artist/kiyohara-tama
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q1750511
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q1750525
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Vincenzo_Ragusa.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Vincenzo_Ragusa.jpg

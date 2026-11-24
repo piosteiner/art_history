@@ -1,0 +1,120 @@
+public_id: 123025
+title_lang: en
+title: Saint Francis Receiving the Stigmata
+names:
+  - lang: de
+    role: translation
+    text: Der heilige Franziskus empfängt die Stigmata
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3947109
+  - lang: it
+    role: translation
+    text: San Francesco riceve le stigmate
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q3947109
+creator: domenico-veneziano
+created: 1445
+materials: [tempera, panel]
+dimensions: [27.5, 30.5]
+institution: national-gallery-of-art
+inventory_number: 1939.1.140
+provenance_status: a_clear
+provenance_status_note: With Count Alessandro Contini Bonacossi until December 1933, then the Samuel H. Kress Foundation, New York, until its gift to the NGA in 1939.
+wikidata_id: Q3947109
+metadata:
+  sources: [Wikidata Q3947109 (retrieved 2026-11-23)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/24/The_Stigmatization_of_St_Francis_%28predella_1%29%2C_washington.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Stigmatization_of_St_Francis_(predella_1),_washington.jpg
+    license: Public domain
+    credit: Domenico Veneziano
+provenance:
+  - owner: institution/santa-lucia-de-magnoli
+    ended_label: probably until the early 1800s
+    place: florence
+    label: "part of the altarpiece (predella): on the main altar (cited 1677, as by Andrea del Castagno), probably until restoration 1712–1715; in the sacristy by 1728; on the third altar right of the nave by 1762; no longer in the church by 1827"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.281.html
+        note: Main altar of the church of Santa Lucia de' Magnoli, Florence, probably until the early 18th century.[1] Sacristy of the same church, by 1728.[2] Third altar on the right of the nave of the same church, by 1762 and probably until the early 1800s.[3] — [3] … leads one to suppose that by this date [1827] it was no longer in the church.
+        source: nga-1939-1-140
+        accessed: 2026-11-24
+  - owner: person/osvald-siren
+    place: stockholm
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.281.html
+        note: Possibly Osvald Sirén [1879-1977], Stockholm;
+        source: nga-1939-1-140
+        accessed: 2026-11-24
+  - owner: institution/kunsthandlung-julius-bohler
+    role: dealer
+    acquired: 1921-05-06
+    method: purchase
+    direct: true
+    place: munich
+    label: probably the 'Picture of Two Saints. Stigmatizing of St. Francis…' bought from Sirén that day (Böhler records); Gronau's expertise of 10 August 1921
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.281.html
+        note: purchased 6 May 1921 by (Julius Böhler, Munich);[4] — [4] According to the Getty Provenance Index, the NGA painting is probably the same painting as a "Picture of Two Saints. Stigmatizing of St. Francis in a hilly mountain landscape," listed in the Böhler records as acquired from Sirén on that date.
+        source: nga-1939-1-140
+        accessed: 2026-11-24
+  - owner: person/alessandro-contini-bonacossi
+    role: dealer
+    acquired: 1921-09-17
+    method: purchase
+    direct: true
+    place: florence
+    label: Rome and Florence; bought on Roberto Longhi's advice; lent to the 1930 exhibition in London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.281.html
+        note: "sold 17 September 1921 to (Count Alessandro Contini Bonacossi, Rome and Florence);[5] — [5] … Longhi himself (1925: 31) states clearly that the purchaser was, on his advice, Count Contini Bonacossi. Contini lent the picture to the 1930 exhibition in London."
+        source: nga-1939-1-140
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1933-12
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: bill of sale dated 27 December 1933
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.281.html
+        note: purchased December 1933 by the Samuel H. Kress Foundation, New York;[6] — [6] The bill of sale for the painting is dated 27 December 1933
+        source: nga-1939-1-140
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1939
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.281.html
+        note: gift 1939 to NGA.
+        source: nga-1939-1-140
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q3947109
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q3947109
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q3947109
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q3947109
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q3947109
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q3947109

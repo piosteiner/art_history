@@ -1,0 +1,249 @@
+public_id: 125224
+title_lang: en
+title: Stack of Wheat (Thaw, Sunset)
+names:
+  - lang: de
+    role: translation
+    text: Heuhaufen bei Sonnenuntergang
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20266903
+parent: haystacks
+creator: claude-monet
+created: 1890
+materials: [oil paint, canvas]
+dimensions: [64.4, 92.5]
+institution: art-institute-of-chicago
+inventory_number: "1983.166"
+provenance_status: a_clear
+provenance_status_note: In stock with Durand-Ruel, New York, from 1915 until its sale to André Weil, Paris, on 9 January 1948 (Durand-Ruel stock books).
+wikidata_id: Q20266903
+metadata:
+  sources: [Wikidata Q20266903 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Claude_Monet_-_Stack_of_Wheat_%28Thaw%2C_Sunset%29_-_1983.166_-_Art_Institute_of_Chicago.jpg/1280px-Claude_Monet_-_Stack_of_Wheat_%28Thaw%2C_Sunset%29_-_1983.166_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Stack_of_Wheat_(Thaw,_Sunset)_-_1983.166_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: artist/claude-monet
+    acquired: 1890/1891
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: The artist (d. 1926);
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1891-09
+    method: purchase
+    direct: true
+    label: possibly sold to "Hamman", director of Roland Knoedler's Paris gallery, as agent for Knoedler and Company, New York (Wildenstein 1996)
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: possibly sold to "Hamman," the director of Roland Knoedler’s gallery, Paris, as agent for Knoedler and Company, New York, Sept. 1891 [per Wildenstein 1996. According to the Frick Collection’s online “Archives Directory for the History of Collecting in America,” Hamman was the director of the Paris gallery];
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    co_owners: [institution/boussod-valadon-cie]
+    role: dealer
+    acquired: 1893-04-11
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Knoedler sale, Chickering Hall, New York, 11 April 1893, lot 77; Durand-Ruel, New York, and Boussod, Valadon in half-shares; DR New York stock no. 1060
+    price:
+      amount: 6000
+      currency: AFRF
+      note: annotated catalogues also note $1,200 and $1,250
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: sold at the Knoedler, New York, sale, Chickering Hall, New York, Apr. 11, 1893, lot 77, to Durand-Ruel, New York, and Boussod, Valadon et Cie., Paris, in half-shares, for 6,000 francs [per Durand-Ruel, New York, stock book for 1888–93 (no. 1060, as Meules, le dégel, soleil couchant) … annotated copies of the sale catalogue in the curatorial object file indicate that Durand-Ruel and Boussod et Valadon purchased the painting in half shares, along with two price notations, $1,200 and $1250];
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    co_owners: [institution/boussod-valadon-cie]
+    role: dealer
+    acquired: 1899
+    method: purchase
+    direct: true
+    place: paris
+    label: Durand-Ruel, New York's half share sold to Durand-Ruel, Paris, on 30 September or 13 November 1899 (the stock books differ); DR Paris stock no. 5503
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: half share sold by Durand-Ruel, New York, to Durand-Ruel, Paris, Sept. 30, 1899 or Nov. 13, 1899 [per Durand-Ruel, New York stock book for 1894–1905 (no. 1060 …) and Durand-Ruel, Paris stock book for 1901–13 (no. 5503, Meules au soleil couchant) … The Paris and New York Durand-Ruel stock books record different dates for the sale];
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: institution/boussod-valadon-cie
+    role: dealer
+    acquired: 1903-05-27
+    method: purchase
+    direct: true
+    place: paris
+    label: Durand-Ruel's half share sold to Boussod, Valadon, then the sole owner
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: half share sold to Boussod, Valadon et Cie., Paris, May 27, 1903 [… An additional letter from the Durand-Ruel Archives clarifies that the painting became solely owned by Boussod, Valadon et Cie at this time …]
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner_label: Rosenberg, Paris
+    acquired: 1903
+    place: paris
+    label: Wildenstein 1996
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: Rosenberg, Paris, 1903 [per Wildenstein 1996];
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1908-01-11
+    method: purchase
+    direct: true
+    place: paris
+    label: DR Paris stock book 1901–13, no. 8601, as Meules, soleil couchant
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: sold to Durand-Ruel, Paris, Jan. 11, 1908 [this and the following per Durand-Ruel, Paris, stock book for 1901–13 (no. 8601, as Meules, soleil couchant) …];
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1915
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: sold to Durand-Ruel, New York, on 11 November or 9 December 1915 (the stock books differ); DR New York stock no. 3899
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: sold to Durand-Ruel, New York, Nov. 11, 1915 or Dec. 9, 1915 [… Durand-Ruel, New York stock book for 1904–24 (no. 3899, as Meules, le dégel, soleil couchant) … The Paris and New York Durand-Ruel stock books record different dates for the sale];
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: person/andre-weil
+    acquired: 1948-01-09
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: sold to André Weil, Paris, Jan. 9, 1948.
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1982 or earlier
+    place: new-york-city
+    label: Wildenstein, New York and Paris (Wildenstein 1996; Rachel Adler to the Art Institute, 27 June 2002)
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: Wildenstein, New York and Paris, by 1982 [per Wildenstein 1996 and this and the two following per Rachel Adler to the Art Institute of Chicago, June 27, 2002, e-mail correspondence, in curatorial object file];
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: person/mercedes-eraso-de-rodriguez-landaeta
+    acquired: 1982 or earlier
+    method: purchase
+    direct: true
+    place: caracas
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: sold to Mercedes Eraso de Rodríguez Landaeta, Caracas, Venezuela, by 1982.
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: institution/rachel-adler-fine-art
+    role: dealer
+    acquired: August 1982 or earlier
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: Rachel Adler Fine Art, New York, by Aug. 1982;
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: institution/james-goodman-gallery
+    role: dealer
+    acquired: 1982-08
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: fax from Patricia H. Tompkins, James Goodman Gallery, 21 June 2002
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: sold to James Goodman Gallery, New York, Aug. 1982 [per fax from Patricia H. Tompkins, James Goodman Gallery, to the Art Institute of Chicago, June 21, 2002, copy in curatorial file];
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: institution/stephen-hahn-gallery
+    role: dealer
+    acquired: 1983-02-07
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: sold to Stephen Hahn Gallery, New York, Feb. 7, 1983 [per telephone conversation between Stephen Hahn and the Art Institute of Chicago, May 14, 2002 …];
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: institution/stephen-hahn-gallery
+    co_owners: [institution/acquavella-galleries]
+    role: dealer
+    acquired: 1983-02-07
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: half share sold to Acquavella Galleries
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: half share sold to Acquavella Galleries, New York, Feb. 7, 1983 [per telephone conversation between Gail Edmondson, Acquavella Galleries, and the Art Institute of Chicago, Sept. 16, 1998 …];
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: person/daniel-c-searle
+    acquired: 1983-02-07
+    method: purchase
+    direct: true
+    place: winnetka
+    label: Art Dealers Association of America document, 26 September 1991; Mr. and Mrs. Daniel C. Searle
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: sold to Daniel C. Searle, Winnetka, Ill., Feb. 7, 1983 [per Art Dealers Association of America document, Sept. 26, 1991, in curatorial object file];
+        source: aic-1983-166
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1983/1991
+    method: gift
+    direct: true
+    place: chicago
+    label: given by Mr. and Mrs. Daniel C. Searle in undivided fractional interests beginning in 1983; the final fractional interest received in 1991
+    sources:
+      - url: https://www.artic.edu/artworks/100191
+        note: given by Mr. and Mrs. Daniel C. Searle, Winnetka, Ill., to the Art Institute of Chicago, beginning in 1983 [The painting was given to the Art Institute of Chicago in undivided fractional interests beginning in 1983. The Art Institute received the final fractional interest for 100 percent ownership in 1991].
+        source: aic-1983-166
+        accessed: 2026-11-24
+sources:
+  parent:
+    - accessed: 2026-11-24
+      property: P179
+      wikidata: Q20266903
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20266903
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20266903
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20266903
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20266903
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20266903
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20266903

@@ -1,0 +1,21 @@
+public_id: 123020
+name: Henry Stuart, Duke of Gloucester
+kind: person
+birth: 1640-07-08
+death: 1660-09-18
+wikidata_id: Q2561668
+metadata:
+  sources: [Wikidata Q2561668 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q2561668
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q2561668
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q2561668

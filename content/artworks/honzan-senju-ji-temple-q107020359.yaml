@@ -1,0 +1,37 @@
+public_id: 124920
+title_lang: en
+title: Miei-dō of Senju-ji
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 専修寺御影堂
+institution: senju-ji-temple
+location: [136.5035, 34.76221]
+wikidata_id: Q107020359
+metadata:
+  sources: [Wikidata Q107020359 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tsu
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Honzan-Senju-ji_Mieido.JPG/1280px-Honzan-Senju-ji_Mieido.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Honzan-Senju-ji_Mieido.JPG
+    license: Public domain
+    credit: Abasaa
+provenance:
+  - owner: institution/senju-ji-temple
+    acquired: 1659/1666
+    method: creation
+    place: tsu
+    label: rebuilt from 1659, the year after the Tōdō lords of Tsu donated land to enlarge the precinct (1658); largely complete by 1666; owner today the religious corporation Senju-ji
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1292
+        note: 万治元年（一六五八）に津藩主藤堂家の寄進による寺地拡大を契機に諸堂が順次整えられ、現在に至っている。御影堂の再建は、寺地を拡大した翌年の万治二年に始まり、寛文六年（一六六六）に概ね完成したとみられる。 … 所有者名 ： 宗教法人専修寺
+        source: kunishitei-102-1292
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020359

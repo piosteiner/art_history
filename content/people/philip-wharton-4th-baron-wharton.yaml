@@ -1,0 +1,21 @@
+public_id: 122975
+name: Philip Wharton, 4th Baron Wharton
+kind: person
+birth: 1613-04-18
+death: 1696-02-04
+wikidata_id: Q303401
+metadata:
+  sources: [Wikidata Q303401 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q303401
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q303401
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q303401

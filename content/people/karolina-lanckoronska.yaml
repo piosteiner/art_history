@@ -18,6 +18,16 @@ death: 2002-08-25
 wikidata_id: Q468466
 metadata:
   sources: [Wikidata Q468466 (retrieved 2026-10-19)]
+relationships:
+  - type: child_of
+    to: person/karol-lanckoronski
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q468466
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q328245
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/4c/Karolina_Lanckoro%C5%84ska.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Karolina_Lanckoro%C5%84ska.jpg

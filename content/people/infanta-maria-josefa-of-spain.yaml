@@ -19,6 +19,15 @@ relationships:
       - accessed: 2026-10-30
         property: P20
         wikidata: Q604419
+  - type: child_of
+    to: person/charles-iii-of-spain
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q36234
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q604419
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/d8/Mengs_-_Infanta_Maria_Josefa.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Mengs_-_Infanta_Maria_Josefa.jpg

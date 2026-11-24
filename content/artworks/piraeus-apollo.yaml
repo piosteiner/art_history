@@ -1,0 +1,90 @@
+public_id: 123173
+title: Piraeus Apollo
+names:
+  - lang: fr
+    role: translation
+    text: Apollon du Pirée
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7197669
+  - lang: it
+    role: translation
+    text: Apollo del Pireo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7197669
+  - lang: es
+    role: translation
+    text: Apolo del Pireo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7197669
+  - lang: ja
+    role: translation
+    text: ピレウスのアポローン
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7197669
+  - lang: zh
+    role: translation
+    text: 比雷埃夫斯的阿波罗
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7197669
+  - lang: ru
+    role: translation
+    text: Аполлон Пирейский
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q7197669
+materials: [bronze]
+dimensions: [192]
+institution: archaeological-museum-of-piraeus
+wikidata_id: Q7197669
+metadata:
+  sources: [Wikidata Q7197669 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/7262_-_Piraeus_Arch._Museum%2C_Athens_-_The_Piraeus_Apollo_-_Photo_by_Giovanni_Dall%27Orto%2C_Nov_14_2009.jpg/1280px-7262_-_Piraeus_Arch._Museum%2C_Athens_-_The_Piraeus_Apollo_-_Photo_by_Giovanni_Dall%27Orto%2C_Nov_14_2009.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:7262_-_Piraeus_Arch._Museum,_Athens_-_The_Piraeus_Apollo_-_Photo_by_Giovanni_Dall%27Orto,_Nov_14_2009.jpg
+    license: Attribution
+    credit: G.dallorto
+provenance:
+  - owner: person/ioannis-papadimitriou
+    acquired: 1959-07
+    method: find
+    place: piraeus
+    label: discovered in the ancient harbour of Piraeus with the Piraeus Athena and the Piraeus Artemis; excavated by John Papadimitriou
+    sources:
+      - url: https://en.wikipedia.org/wiki/Piraeus_Apollo
+        note: The sculpture was discovered in the ancient harbor of Piraeus in July 1959, along with the Piraeus Athena and Piraeus Artemis. It was excavated by John Papadimitriou.
+        source: wikipedia-en-piraeus-apollo
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/Απόλλων_του_Πειραιά
+        note: Το γλυπτό ανακαλύφθηκε στο αρχαίο λιμάνι του Πειραιά τον Ιούλιο του 1959, μαζί με την Αθηνά του Πειραιά και την Άρτεμις του Πειραιά.
+        source: wikipedia-el-apollon-tou-peiraia
+        accessed: 2026-11-24
+  - owner: institution/archaeological-museum-of-piraeus
+    place: piraeus
+    label: on exhibition; when it came to the museum is not stated
+    sources:
+      - url: https://en.wikipedia.org/wiki/Piraeus_Apollo
+        note: The Piraeus Apollo is an ancient Greek bronze sculpture … exhibited now at the Archaeological Museum of Piraeus, Athens.
+        source: wikipedia-en-piraeus-apollo
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/Απόλλων_του_Πειραιά
+        note: Τώρα, εκτίθεται τώρα στο Αρχαιολογικό Μουσείο του Πειραιά.
+        source: wikipedia-el-apollon-tou-peiraia
+        accessed: 2026-11-24
+sources:
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q7197669
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q7197669
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q7197669

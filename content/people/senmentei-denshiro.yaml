@@ -1,0 +1,24 @@
+public_id: 122767
+name_lang: ja-Latn
+name: Senmentei Denshirō
+names:
+  - lang: ja
+    role: original
+    text: 扇面亭伝四郎
+  - lang: ja
+    role: alternative
+    text: 扇屋伝四郎
+    note: Ōgiya Denshirō, trade name in colophons
+kind: person
+occupations: [fan dealer, organiser of shogakai, compiler]
+active: 1815/1838
+description_md: Senmentei (扇面亭), ‘the fan-face shop’, was the shop name of the Edo fan dealer Ōgiya Denshirō (扇屋伝四郎) [[source/koyama-2026-ryogoku-yanagibashi-shogakai|p. 35]]. Terakado Seiken’s *Edo hanjōki* (1832) describes ‘Senmentei, father and son’ as masters of the forms of literary gatherings whom everyone planning one consulted first [[source/washihara-2015-bakumatsuki-bunjin-seikei|p. 102]]. The essay collection *Kiyū shōran* (preface 1830) says that the shop had first sold fans at *kyōka* poetry meetings, then came to the *[[term/shogakai|shogakai]]*, until whoever held one had to ask Senmentei and the poet Kikuchi Gozan to run it [[source/campbell-1987-tenpoki-zengo-shogakai|p. 60]]. Robert Campbell calls him a professional organiser to whom hosts left the planning and running of their gatherings; at exhibitions of new works his shop also collected the scrolls [[source/campbell-1987-tenpoki-zengo-shogakai|pp. 48, 50–51]]. He printed single-sheet calendars of the masters’ New Year gatherings, one of them annotated 1838 [[source/campbell-1987-tenpoki-zengo-shogakai|p. 59, n. 3]]. Koyama Shūko supposes that the invitation to Kita Buichi’s *shogakai* at the Kawachiya was also printed through him [[source/koyama-2026-ryogoku-yanagibashi-shogakai|p. 35]]. Under the name Senmentei he compiled Edo’s first directory of living scholars and artists, the *Edo tōji shoka jinmeiroku* (江戸當時諸家人名録), published in 1815 by Ōgiya Denshirō with the bookseller Nishimura Sōshichi [[source/senmentei-1815-edo-toji-shoka-jinmeiroku|colophon]]. A second series followed in 1818, compiled by Senmentei and collated by Nishimura’s Sōzandō [[source/senmentei-1818-edo-toji-shoka-jinmeiroku-nihen|frames 6, 25]]. *Edo hanjōki* adds that this directory in two volumes sold in the provinces [[source/washihara-2015-bakumatsuki-bunjin-seikei|p. 102]]. In 1838 the leading literati planned a cartel to control all *shogakai*; Campbell suggests Senmentei was its twenty-third member [[source/campbell-1987-tenpoki-zengo-shogakai|p. 61]]. A satire of about 1845 mocked the Confucian Tōjō Kindai for holding *shogakai* and ‘making a directory in league with Senmentei’ [[source/campbell-1987-tenpoki-zengo-shogakai|p. 67]].
+sources:
+  active:
+    - source: senmentei-1815-edo-toji-shoka-jinmeiroku
+      locator: colophon
+      accessed: 2026-11-23
+  occupations:
+    - source: campbell-1987-tenpoki-zengo-shogakai
+      locator: pp. 48, 50–51, 60
+      accessed: 2026-11-23

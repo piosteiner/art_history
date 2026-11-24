@@ -11,6 +11,16 @@ biography_md: |-
 wikidata_id: Q716519
 metadata:
   sources: [Wikidata Q716519 (retrieved 2026-11-09)]
+relationships:
+  - type: sibling_of
+    to: artist/benedetto-da-maiano
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q675619
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q716519
 sources:
   birth:
     - accessed: 2026-11-09

@@ -1,0 +1,72 @@
+public_id: 123863
+title_lang: de
+title: Gott Shiva als Mann, der zur Hälfte eine Frau ist
+attribution_label: Anonymous
+created: 1101/1300
+kind: relief
+medium: Granit
+dimensions: [68]
+institution: museum-rietberg
+inventory_number: RVI 225
+web_url: https://rietberg.ch/sammlungen/rvi-225
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Shiva_as_Ardhanarishvara_Museum_Rietberg_RVI_225.jpg/1280px-Shiva_as_Ardhanarishvara_Museum_Rietberg_RVI_225.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shiva_as_Ardhanarishvara_Museum_Rietberg_RVI_225.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: Urheber*in unbekannt
+    acquired_label: 12./13. Jh.
+    method: creation
+    place: tamil-nadu
+    label: made by an unknown maker in Tamil Nadu, Chola dynasty, 12th/13th century
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-225
+        note: "12./13. Jh.: Urheber*in unbekannt in Tamil Nadu"
+        source: rietberg-rvi-225
+        accessed: 2026-11-24
+  - owner: institution/galerie-rene-jaquerod
+    role: dealer
+    label: Galerie René Jaquerod, Pully and Zürich, dealer; inventory book III/186
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-225
+        note: |-
+          Galerie René Jaquerod, Pully und Zürich, Händler*in
+          Inventarbuch III/186
+        source: rietberg-rvi-225
+        accessed: 2026-11-24
+  - owner: person/max-bangerter-2
+    acquired: before 7 September 1964
+    label: circumstances of acquisition unknown; letter of thanks from Elsy Leuzinger to Max Bangerter, 7 September 1964
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-225
+        note: |-
+          vor 07.09.1964: Max Bangerter, Erwerbsumstände unbekannt
+          MRZ SAr S.3-3-2, Geschenke und Legate, "B": Dankesschreiben von Elsy Leuzinger an Max Bangerter vom 07.09.1964.
+        source: rietberg-rvi-225
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    role: custodian
+    acquired: 1964-08-26
+    place: zurich
+    label: received on loan in Zürich/Montreux; loan confirmation by Elsy Leuzinger
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-225
+        note: |-
+          26.08.1964: Museum Rietberg, Zürich, als Leihgabe erhalten in Zürich/Montreux
+          MRZ SAr S.3-3-2, Geschenke und Legate, "B": Bestägigung der Leihgaben von Elsy Leuzinger
+        source: rietberg-rvi-225
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1967-01-13
+    method: gift
+    direct: true
+    place: zurich
+    label: gift of Max Bangerter; deed of gift, January 1967
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-225
+        note: |-
+          13.01.1967: Museum Rietberg, Zürich, als Geschenk erhalten in Zürich
+          MRZ SAr, S.3-3-2: Geschenke und Legate, "B": Schenkungsbestätigung von Max Bangerter an Elsy Leuzinger vom Januar 1967.
+        source: rietberg-rvi-225
+        accessed: 2026-11-24

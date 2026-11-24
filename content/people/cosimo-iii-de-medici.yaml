@@ -45,6 +45,15 @@ relationships:
       - accessed: 2026-10-31
         property: P40
         wikidata: Q314558
+  - type: child_of
+    to: person/vittoria-della-rovere
+    sources:
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q47292
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q60139
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/a/a7/Volterrano%2C_Cosimo_III_de%27_Medici_in_grand_ducal_robes_%28Warsaw_Royal_Castle%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Volterrano,_Cosimo_III_de%27_Medici_in_grand_ducal_robes_(Warsaw_Royal_Castle).jpg

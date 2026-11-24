@@ -1,0 +1,22 @@
+public_id: 127681
+name: High Legh
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-2.451, 53.352]
+wikidata_id: Q2673596
+metadata:
+  sources: [Wikidata Q2673596 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2673596
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2673596
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2673596

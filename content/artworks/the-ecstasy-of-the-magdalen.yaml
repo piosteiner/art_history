@@ -1,0 +1,158 @@
+public_id: 122836
+title_lang: en
+title: The Ecstasy of the Magdalen
+creator: giulio-cesare-procaccini
+created: 1616/1620
+created_label: c. 17th century
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [213.8, 143.6]
+institution: national-gallery-of-art
+inventory_number: 2002.12.1
+wikidata_id: Q20176956
+metadata:
+  sources: [Wikidata Q20176956 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Ecstasy_of_the_Magdalen_NGA.jpg/1280px-Ecstasy_of_the_Magdalen_NGA.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ecstasy_of_the_Magdalen_NGA.jpg
+    license: Public domain
+    credit: Giulio Cesare Procaccini
+provenance:
+  - owner: person/gian-carlo-doria
+    method: commission
+    place: genoa
+    label: very likely 'una madalena rapita da angeli del procasino' (inventory 1617–1621, no. 436, 150 scudi) and no. 437 of the inventory after his death (600 scudi)
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.121887.html
+        note: Probably commissioned by Gian Carlo Doria [d. 1625], Genoa.[1] — [1] … The inventory made between 1617-1621 included a work titled una madalena rapita da angeli del procasino (no. 436), valued at 150 scudi … The last of the inventories, made after Doria's death in 1625 and before 1641, also describes a picture (no. 437) as La Madalena rapita dagli angeli del Procaccino, valued at 600 scudi … it is very likely this was the NGA canvas.
+        source: nga-2002-12-1
+        accessed: 2026-11-24
+  - owner: person/gonzalo-de-ulloa
+    place: madrid
+    label: 9th Count of Adanero; assembled the Adanero collection in the second half of the 19th century
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.121887.html
+        note: Gonzalo de Ulloa, 9th Count of Adanero [1831-1882], Madrid; — The Adenero collection … was assembled during the second half of the 19th century by Gonzalo de Ulloa and passed down in the family.
+        source: nga-2002-12-1
+        accessed: 2026-11-24
+  - owner: person/jose-maria-de-ulloa
+    method: inheritance
+    direct: true
+    place: madrid
+    label: his brother, 8th Marquis of Castro Serna
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.121887.html
+        note: by inheritance to his brother, José María de Ulloa, 8th Marquis of Castro Serna [1839-1905], Madrid;
+        source: nga-2002-12-1
+        accessed: 2026-11-24
+  - owner: person/alvaro-de-ulloa
+    acquired: after 1905
+    method: inheritance
+    direct: true
+    place: madrid
+    label: his grandson, 11th Count of Adanero; probably no. 1629 'Una Matrona con dos niños' (125 pesetas) of the inventory after José María's death, assigned to Álvaro
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.121887.html
+        note: "by inheritance to his grandson, Álvaro de Ulloa, 11th count of Adanero [1889-1948], Madrid; — no. 1629 on the inventory is a painting whose size and subject seems to match the NGA canvas: \"1629. Otro cuadro de la Escuela Italiana, cuyo asunto es 'Una Matrona con dos niños' … tasado en ciento veinticinco pesetas. [Álvaro de Ulloa]\""
+        source: nga-2002-12-1
+        accessed: 2026-11-24
+  - owner: institution/junta-de-incautacion-y-proteccion-del-tesoro-artistico
+    role: possessor
+    acquired_label: during the Spanish Civil War
+    ended: 1939-06
+    method: confiscation
+    place: madrid
+    label: seized with other works of the Adanero collection by the Republican government's board; photographed 1936 (Archivo de Recuperación del Patrimonio Artístico)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.121887.html
+        note: During the Spanish Civil War, the painting was seized, along with other works in the Adanero collection, by the Junta de Incautación y Protección del Patrimonio Artístico (Board of Seizure and Protection of Artistic Heritage), which was established by the Republican government.
+        source: nga-2002-12-1
+        accessed: 2026-11-24
+  - owner: person/alvaro-de-ulloa
+    acquired: 1939-06
+    method: restitution
+    direct: true
+    place: madrid
+    label: returned after the end of the civil war; restitution file of 23 June 1939, no. 76 (Archivo de la Guerra, IPCE, SDPAN-130-22)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.121887.html
+        note: The painting was returned to Álvaro de Ulloa in June 1939, after the end of the civil war. See no. 76 on the list of paintings in the restitution file, "Expediente de devolución de Álvaro María de Ulloa y Fernández-Durán, conde de Adanero," 23 June 1939
+        source: nga-2002-12-1
+        accessed: 2026-11-24
+  - owner: person/gonzalo-de-ulloa-2
+    method: inheritance
+    direct: true
+    place: madrid
+    label: "his son, 12th Count of Adanero; until at least 1965 (Pérez Sánchez's dissertation, 1965: with the Counts of Adanero)"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.121887.html
+        note: by inheritance to his son Gonzalo de Ulloa, 12th count of Adanero [1925-1971 ], until at least 1965.[2]
+        source: nga-2002-12-1
+        accessed: 2026-11-24
+  - owner: institution/caylus-anticuario
+    role: dealer
+    acquired_label: by c. 1990
+    place: madrid
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.121887.html
+        note: (Caylus Anticuario, Madrid), by c. 1990;[3]
+        source: nga-2002-12-1
+        accessed: 2026-11-24
+  - owner_label: private collection, Boston
+    acquired_label: some ten years before December 2001
+    method: purchase
+    direct: true
+    place: boston
+    label: bought from Caylus by the American owner (Nicholas H. J. Hall, letter of 19 December 2001)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.121887.html
+        note: private collection, Boston; — [3] According to Nicholas H. J. Hall (letter of 19 December 2001 …), the painting had been purchased by the American owner at that time some ten years earlier from Caylus.
+        source: nga-2002-12-1
+        accessed: 2026-11-24
+  - owner: institution/hall-knight-ltd
+    role: agent
+    direct: true
+    place: new-york-city
+    label: on consignment; New York and London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.121887.html
+        note: consigned to (Hall & Knight Ltd., New York and London);
+        source: nga-2002-12-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 2002-02-08
+    method: purchase
+    direct: true
+    place: washington-d-c
+    label: Patrons' Permanent Fund
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.121887.html
+        note: purchased 8 February 2002 by NGA.
+        source: nga-2002-12-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20176956
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20176956
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20176956
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20176956
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20176956
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20176956

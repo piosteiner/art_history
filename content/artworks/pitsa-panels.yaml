@@ -1,0 +1,112 @@
+public_id: 123155
+title: Pitsa panels
+names:
+  - text: Pitsa tablets
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1236852
+  - lang: fr
+    role: translation
+    text: Tablettes de bois de Pitsa
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1236852
+  - lang: de
+    role: translation
+    text: Pitsa Tafeln
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1236852
+  - lang: it
+    role: translation
+    text: tavole di Pitsà
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1236852
+  - lang: es
+    role: translation
+    text: Paneles de Pitsa
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1236852
+  - lang: zh
+    role: translation
+    text: 皮薩板
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1236852
+  - lang: ru
+    role: translation
+    text: Таблички из Пицы
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1236852
+materials: [wood]
+institution: national-archaeological-museum-of-athens
+wikidata_id: Q1236852
+metadata:
+  sources: [Wikidata Q1236852 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b6/Greekreligion-animalsacrifice-corinth-6C-BCE.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Greekreligion-animalsacrifice-corinth-6C-BCE.jpg
+    license: Public domain
+    credit: Unknown author
+provenance:
+  - owner_label: cave sanctuary of the Nymphs near Pitsa
+    acquired: -550/-500
+    method: creation
+    place: entry-2
+    label: four votive panels commissioned by different people and deposited in the cave, perhaps after display elsewhere; found stacked about 60 m from the entrance
+    sources:
+      - url: https://en.wikipedia.org/wiki/Pitsa_panels
+        note: They are presumed to be the remains of four different works, rather than a series, which were all votive offerings commissioned by different people, and deposited in a cave regarded as a holy place, perhaps after being displayed elsewhere.
+        source: wikipedia-en-pitsa-panels
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Pitsa-Tafeln
+        note: Es handelt sich um Votivgaben an Nymphen.
+        source: wikipedia-de-pitsa-tafeln
+        accessed: 2026-11-24
+  - owner: person/anastasios-orlandos
+    acquired: 1934
+    method: find
+    place: entry-2
+    label: excavation of the cave near the village of Pitsa, Corinthia, directed by M. Mitsos and A. Orlandos; with M. Mitsos
+    sources:
+      - url: https://en.wikipedia.org/wiki/Pitsa_panels
+        note: The four panels, two of them highly fragmentary, were discovered during the 1930s in a cave near the village of Pitsa, in the vicinity of Sicyon.
+        source: wikipedia-en-pitsa-panels
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Pitsa-Tafeln
+        note: Die Pitsa-Tafeln wurden 1934 in der Höhle von Pitsa nahe dem Dorf Ano Pitsa, das im Westen der Korinthia im heutigen Griechenland liegt, gefunden.
+        source: wikipedia-de-pitsa-tafeln
+        accessed: 2026-11-24
+      - url: https://www.archaeology.wiki/?p=45363
+        note: The excavations took place in 1934 … directed by Μ. Mitsos and Α. Orlandos … a cave near the village Pitsa, Corinthia, Peloponnese.
+        source: archaeology-wiki-cave-at-pitsa
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    method: transfer
+    place: athens
+    label: inventory 16464–16467; copies by Émile Gilliéron fils on display, the originals kept in climate-controlled storage
+    sources:
+      - url: https://en.wikipedia.org/wiki/Pitsa_panels
+        note: They are the earliest surviving examples of Greek panel painting, and are now in the National Archaeological Museum of Athens, with the catalogue numbers NAMA 16464 to 16467.
+        source: wikipedia-en-pitsa-panels
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Pitsa-Tafeln
+        note: Die im Museum ausgestellten Tafeln sind jedoch Kopien, die der Schweizer Maler und Restaurator Emile Gilliéron fils anfertigte. Die Originale werden unter klimatisierten Bedingungen gelagert, um sie vor dem Zerfall zu bewahren. Sie tragen die Inventarnummern 16464–16467.
+        source: wikipedia-de-pitsa-tafeln
+        accessed: 2026-11-24
+      - url: https://ancient-greece.org/?p=25231
+        note: The four wooden plaques (16464-67) were found in 1934 near ancient Sikyon, in a cave above the village of Pitsa in Corinthia.
+        source: ancient-greece-org-nam-172
+        accessed: 2026-11-24
+sources:
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q1236852
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q1236852

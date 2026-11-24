@@ -1,0 +1,68 @@
+public_id: 123858
+title_lang: de
+title: Bärenmaske
+attribution_label: Anonymous
+created: mid 19th century
+created_span: uncertain
+kind: mask
+medium: Holz, bemalt
+dimensions: [25, 17, 19]
+institution: museum-rietberg
+inventory_number: RNA 206
+web_url: https://rietberg.ch/sammlungen/rna-206
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Tlingit_bear_mask_Museum_Rietberg_RNA_206.jpg/1280px-Tlingit_bear_mask_Museum_Rietberg_RNA_206.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tlingit_bear_mask_Museum_Rietberg_RNA_206.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired_label: mid-19th century
+    method: creation
+    label: "made in Alaska (Tlingit; record: Sitka Borough)"
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-206
+        note: "Mitte 19. Jh.: Urheber*in unbekannt in Alaska"
+        source: rietberg-rna-206
+        accessed: 2026-11-24
+  - owner: person/george-thornton-emmons
+    acquired: c. 1900
+    place: sitka
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-206
+        note: "um 1900: George Thornton Emmons (1852–1945), Erwerbsumstände unbekannt in Sitka, USA"
+        source: rietberg-rna-206
+        accessed: 2026-11-24
+  - owner: institution/museum-of-the-american-indian-heye-foundation
+    place: new-york-city
+    label: undated
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-206
+        note: Heye Foundation, Museum of American Indian, New York
+        source: rietberg-rna-206
+        accessed: 2026-11-24
+  - owner: person/charles-ratton
+    place: paris
+    label: undated
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-206
+        note: Charles Ratton, Paris
+        source: rietberg-rna-206
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired_label: date unknown
+    label: date and circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-206
+        note: "unbekannter Zeitpunkt: Eduard von der Heydt (1882–1964), Erwerbsumstände unbekannt"
+        source: rietberg-rna-206
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    method: gift
+    label: gift of Eduard von der Heydt (credit line; no date given)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rna-206
+        note: "Creditline: Geschenk Eduard von der Heydt"
+        source: rietberg-rna-206
+        accessed: 2026-11-24

@@ -9,6 +9,16 @@ death: 1924-12-25
 wikidata_id: Q94914499
 metadata:
   sources: [Wikidata Q94914499 (retrieved 2026-10-19)]
+relationships:
+  - type: sibling_of
+    to: person/hermann-eissler
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q94914499
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q51131634
 identifiers:
   gnd: "127766758"
   rkd: "449301"

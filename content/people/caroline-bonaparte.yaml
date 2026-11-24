@@ -23,6 +23,16 @@ death: 1839-05-18
 wikidata_id: Q152782
 metadata:
   sources: [Wikidata Q152782 (retrieved 2026-10-20)]
+relationships:
+  - type: sibling_of
+    to: person/napoleon
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q517
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q152782
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Caroline_Bonaparte_%281782-1839%29_%28A%29.jpg/1280px-Caroline_Bonaparte_%281782-1839%29_%28A%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Caroline_Bonaparte_(1782-1839)_(A).jpg

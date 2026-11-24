@@ -1,0 +1,16 @@
+public_id: 124839
+name: Nainsukh
+birth: 1710
+death: 1778
+wikidata_id: Q1252229
+metadata:
+  sources: [Wikidata Q1252229 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q1252229
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q1252229

@@ -1,0 +1,42 @@
+public_id: 125226
+title_lang: en
+title: The Customs House at Varengeville
+creator: claude-monet
+created: 1897
+materials: [oil paint, canvas]
+dimensions: [65.6, 92.8]
+institution: art-institute-of-chicago
+inventory_number: "1933.1149"
+wikidata_id: Q20266927
+metadata:
+  sources: [Wikidata Q20266927 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Monet_-_The_Customs_House_at_Varengeville%2C_1897.jpg/1280px-Monet_-_The_Customs_House_at_Varengeville%2C_1897.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Monet_-_The_Customs_House_at_Varengeville,_1897.jpg
+    license: CC BY-SA 4.0
+    credit: Claude Monet
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20266927
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20266927
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20266927
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20266927
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20266927
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20266927

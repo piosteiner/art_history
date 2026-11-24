@@ -1,0 +1,57 @@
+public_id: 124050
+title: Three-storied Pagoda, Saimyoji
+names:
+  - lang: ja
+    role: translation
+    text: 西明寺三重塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020395
+created: 1275/1332
+institution: saimyo-ji
+location: [136.2852, 35.18313]
+wikidata_id: Q107020395
+metadata:
+  sources: [Wikidata Q107020395 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/kora
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Saimyoji_Kora_Shiga_pref16bs3900.jpg/1280px-Saimyoji_Kora_Shiga_pref16bs3900.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Saimyoji_Kora_Shiga_pref16bs3900.jpg
+    license: CC BY 2.5
+    credit: 663highland
+provenance:
+  - owner: institution/saimyo-ji
+    acquired: 1275/1332
+    method: creation
+    place: kora
+    label: built in the late Kamakura period (date from its style); interior paintings by painters of the Kose school (temple); repaired in the Tenna era (1681–84); owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1511
+        note: 建立年代は明らかではないが、様式上鎌倉時代後期頃の建立になるものと推定される。その後江戸時代には相当に破損していたらしく、天和年間（一六八一～八四）頃に修理が行われた。 … 所有者名 ： 西明寺 所有者種別 ： 寺院
+        source: kunishitei-102-1511
+        accessed: 2026-11-24
+      - url: https://saimyouji.com/history/
+        note: 三重塔 国宝 鎌倉時代後期飛騨の匠が建立した純和様建築で本堂と同じく釘を使用していない。 … 初層内部の壁画は巨勢派の画家が画いたもの
+        source: saimyoji-ryaku-engi
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1571
+    place: kora
+    label: "spared when the temple was burned on Oda Nobunaga's order by Niwa Nagahide and Kawajiri Hidetaka (temple's account: monks burned the lodgings near the gate so the whole temple seemed to burn)"
+    sources:
+      - url: https://saimyouji.com/history/
+        note: 戦国時代に織田信長は比叡山を焼き打ちしてその直後に当寺も焼き打ちをしましたが、幸に国宝一号指定の本堂、三重塔、二天門が火難を免れ現在しています。
+        source: saimyoji-ryaku-engi
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%A5%BF%E6%98%8E%E5%AF%BA_%28%E6%BB%8B%E8%B3%80%E7%9C%8C%E7%94%B2%E8%89%AF%E7%94%BA%29&oldid=111639306
+        note: 当寺は信長の家臣である丹羽長秀と河尻秀隆によって焼き討ちされる運命にあった。しかし、寺僧の機知により、山門近くの房舎を激しく燃やして全山焼失のように見せかけたため、山奥に位置する本堂や三重塔は焼失をまぬがれたという
+        source: wikipedia-ja-saimyo-ji-kora
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020395

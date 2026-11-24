@@ -1,0 +1,11 @@
+public_id: 123119
+name: severe style
+kind: movement
+wikidata_id: Q1777842
+metadata:
+  sources: [Wikidata Q1777842 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q1777842

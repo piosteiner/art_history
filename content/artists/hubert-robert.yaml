@@ -1,0 +1,18 @@
+public_id: 125119
+name: Hubert Robert
+given_name: Hubert
+family_name: Robert
+birth: 1733-05-22
+death: 1808-04-15
+wikidata_id: Q548205
+metadata:
+  sources: [Wikidata Q548205 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q548205
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q548205

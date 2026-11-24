@@ -1,0 +1,169 @@
+public_id: 122805
+title_lang: en
+title: Portrait of a Woman with an Ostrich-Feather Fan
+names:
+  - lang: nl
+    role: translation
+    text: Portret van een vrouw met een waaier van struisvogelveren
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177427
+  - lang: de
+    role: translation
+    text: Porträt einer Frau mit einem Straußenfederfächer
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177427
+  - lang: it
+    role: translation
+    text: Ritratto di donna con ventaglio di piume di struzzo
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177427
+  - lang: ja
+    role: translation
+    text: ダチョウの羽根の扇を持つ女性の肖像
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177427
+creator: rembrandt
+created: 1656
+materials: [oil paint, canvas]
+dimensions: [99.5, 83]
+institution: national-gallery-of-art
+inventory_number: 1942.9.68
+wikidata_id: Q20177427
+metadata:
+  sources: [Wikidata Q20177427 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/margrieta-wijnants
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20177427
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Rembrandt_Harmensz._van_Rijn_107.jpg/1280px-Rembrandt_Harmensz._van_Rijn_107.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_107.jpg
+    license: Public domain
+    credit: Attributed to Rembrandt
+provenance:
+  - owner: person/gerard-hoet-jr
+    place: the-hague
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1207.html
+        note: Possibly Gerard Hoet, Jr. [d. 1760], The Hague;
+        source: nga-1942-9-68
+        accessed: 2026-11-24
+  - owner: person/ottho-van-thol
+    co_owners: [person/huibert-keetelaar, person/pierre-yver]
+    role: agent
+    acquired: 1760-08-25
+    ended: 1760-08-25
+    method: auction
+    direct: true
+    place: the-hague
+    label: 'possibly the sale, The Hague, 25 August 1760, no. 50: "Een dito Vrouws-Pourtrait: de weergaa" (Hoet/Terwesten, Catalogus, 3: 225)'
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1207.html
+        note: 'possibly (sale, by Ottho Van Thol, Huibert Keetelaar, and Pierre Yver, The Hague, 25 August 1760, no. 50).[1] — [1] … 3: 225, no. 50. The painting is listed as: "Een dito Vrouws-Pourtrait: de weergaa, door denzelven; van de eige groote."'
+        source: nga-1942-9-68
+        accessed: 2026-11-24
+  - owner: person/nikolai-borisovich-yusupov
+    acquired: 1803 or earlier
+    place: saint-petersburg
+    label: seen in 1803 by Heinrich Christoph von Reimers in the family's palace on the Fontanka, Saint Petersburg (with its pendant NGA 1942.9.67); moved in 1811 to the Arkhangelskoye estate near Moscow
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1207.html
+        note: Prince Nicolai Borisovich Yusupov [1751-1831], Saint Petersburg and Moscow, by 1803;[2] — [2] … Reimers … visited the collection in 1803 when it was housed in the family's palace on the Fontanka River in Saint Petersburg; his description of it, published in 1805, mentions the Gallery's painting, and its pendant NGA 1942.9.67.
+        source: nga-1942-9-68
+        accessed: 2026-11-24
+  - owner: person/boris-nikolaievich-yusupov
+    method: inheritance
+    direct: true
+    place: moscow
+    label: at Arkhangelskoye, where it survived Napoleon's invasion of 1812; returned in 1837 to the new family palace on the Moika, Saint Petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1207.html
+        note: by inheritance to his son, Prince Boris Nicolaiovich Yusupov [1794-1849], Moscow and Saint Petersburg; — [4] … moved in 1811 from Saint Petersburg to the family's Arkhangelskoye estate near Moscow, where it survived Napoleon's invasion of Russia during 1812, and was returned again to Saint Petersburg in 1837 to a new family palace on the Moika River.
+        source: nga-1942-9-68
+        accessed: 2026-11-24
+  - owner: person/nikolai-borisovich-yusupov-2
+    method: inheritance
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1207.html
+        note: by inheritance to his son, Prince Nicolai Borisovich Yusupov [1827-1891], Saint Petersburg;
+        source: nga-1942-9-68
+        accessed: 2026-11-24
+  - owner: person/zinaida-yusupova
+    method: inheritance
+    direct: true
+    place: saint-petersburg
+    label: the collection was hers; heir after 1908 her second son, Felix; the Moika palace collection largely seized by the Bolsheviks after 1917, these two Rembrandts not
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1207.html
+        note: by inheritance to his daughter, Princess Zinaida [Zenaida] Nikolaievna Yusupova [1861-1939], Saint Petersburg, Yalta, and London;[3] — [3] … The Yusupov art collection, however, was hers, and, after the death in 1908 of her first son, Nicolai, the heir to it became her second son, Felix.
+        source: nga-1942-9-68
+        accessed: 2026-11-24
+  - owner: person/felix-yusupov
+    role: agent
+    acquired_label: before April 1919
+    method: transfer
+    direct: true
+    place: london
+    label: smuggled out of the Moika Palace before April 1919, when the family left Yalta on a British ship; taken to London and sold there in 1921 as her son and heir
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1207.html
+        note: sold 1921 by her son and heir, Prince Felix Felixovich Yusupov [1887-1967],[4] — [4] … The two Rembrandt paintings, however, were smuggled out of the Moika Palace at some point prior to April 1919, when Prince Felix Felixovich Yusupov, his wife and parents, and other members of the Russian nobility left Yalta aboard a British ship. The paintings were taken by the prince to London, where negotiations for their sale began.
+        source: nga-1942-9-68
+        accessed: 2026-11-24
+  - owner: person/joseph-e-widener
+    acquired: 1921
+    method: purchase
+    direct: true
+    label: bought with funds of the Estate of Peter A. B. Widener; in Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1207.html
+        note: sold 1921 … to Joseph E. Widener; inheritance from Estate of Peter A. B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park, Pennsylvania, after purchase by funds of the Estate;
+        source: nga-1942-9-68
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1942
+    method: gift
+    direct: true
+    place: washington-d-c
+    label: inheritance from the Estate of Peter A. B. Widener by gift through power of appointment of Joseph E. Widener
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1207.html
+        note: gift 1942 to NGA.
+        source: nga-1942-9-68
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177427
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177427
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177427
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177427
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177427
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177427

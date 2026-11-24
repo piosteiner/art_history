@@ -1,0 +1,230 @@
+public_id: 123007
+title_lang: en
+title: Dunes by the Sea
+names:
+  - lang: nl
+    role: translation
+    text: Duinen aan zee
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20804651
+  - lang: fr
+    role: translation
+    text: Dunes par la mer
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20804651
+  - lang: de
+    role: translation
+    text: Dünen am Meer
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20804651
+  - lang: es
+    role: translation
+    text: Dunas junto al mar
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20804651
+creator: jacob-van-ruisdael
+created: 1648
+materials: [oil paint, panel]
+dimensions: [45, 61]
+institution: national-gallery-of-art
+inventory_number: 2017.55.1
+web_url: http://www.christies.com/lotfinder/paintings/jacob-isaacksz-van-ruisdael-dunes-by-the-5800680-details.aspx
+wikidata_id: Q20804651
+metadata:
+  sources: [Wikidata Q20804651 (retrieved 2026-11-23)]
+relationships:
+  - type: created_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-23
+        property: P1071
+        wikidata: Q20804651
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b6/Jacob_van_Ruisdael_-_Dunes_by_the_Sea.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_van_Ruisdael_-_Dunes_by_the_Sea.jpg
+    license: Public domain
+    credit: Jacob van Ruisdael
+provenance:
+  - owner_label: Richter Oelrich, Bremen
+    acquired: c. 1820
+    place: bremen
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: Richter Oelrich, Bremen, c. 1820;
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner: person/bernhard-hausmann
+    acquired: 1828
+    method: purchase
+    direct: true
+    place: hanover
+    label: bought in Bremen for 100 Thaler (the main text's "1928" is 1828 per the footnote)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: purchased 1928 by Bernhard Hausmann [1784-1873], Hanover;[1] — ‘_Dunes by the Sea_’, purchased in 1828 in Bremen for 100 Thaler
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner: person/george-v-of-hanover
+    acquired: 1857-10-01
+    method: purchase
+    direct: true
+    place: hanover
+    label: private sale of Hausmann's complete collection for 48,000 Thaler in annual instalments of 5,000; it stayed in Hausmann's house until his death (13 May 1873), open to the public as the 'George V Collection of Paintings'; GR monogram on the reverse
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: private sale 1 October 1857 to King George V of Hanover [1819-1878];[2] — The complete collection of paintings was sold to [King George V of Hannover] on 1 October 1857 for the … price of 48,000 Thaler, payable in annual installments of 5,000 Thaler, but it was to remain in Hausmann’s house until further notice.
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner: institution/kingdom-of-prussia
+    role: possessor
+    acquired: 1866
+    ended: 1893
+    method: confiscation
+    place: hanover
+    label: the royal collection confiscated by the State of Prussia after the annexation of Hanover and placed under the Fideikommiss-Galerie des Gesamthauses Braunschweig und Lüneburg; stayed at Hausmann's residence until May 1873
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: From 1866 until 1893, the royal collection was confiscated by the State of Prussia following the annexation of Hanover, and placed under the control of the Fideikommiss-Galerie des Gesamthauses Braunschwieg und Lüneburg. Despite the confiscation, from 1866 until Hausmann’s death in May 1873, the collection remained at his residence.
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner: person/ernest-augustus-crown-prince-of-hanover
+    method: inheritance
+    direct: true
+    label: his son, Ernest August II, Crown Prince of Hanover and 3rd Duke of Cumberland
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: by inheritance to his son, Ernest August II, Crown Prince of Hanover and 3rd Duke of Cumberland [1845-1923];[3]
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner: institution/landesmuseum-hannover
+    role: custodian
+    acquired: 1893
+    place: hanover
+    label: long-term loan as part of the "Cumberland-Galerie"; 1905 catalogue no. 357 (Hofstede de Groot 1912 wrongly lists the museum as owner)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: "From 1893, the painting was on long-term loan to the Provinzial-Museum Hannover as part of the “Cumberland-Galerie.” See _Katalog der zur Fideikommiss-Galerie … im Provinzial-Museum_, Hanover, 1905: 118, no. 357"
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner: person/ernest-augustus-crown-prince-of-hanover
+    role: estate
+    direct: true
+    label: his estate
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: (his estate sale, Rudolph Lepke Kunst-Auctions-Haus, Berlin, 31 March 1925, no. 63, sold for 16,500 Reichsmarks).
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner: institution/rudolph-lepke-s-kunst-auctions-haus
+    role: agent
+    acquired: 1925-03-31
+    method: auction
+    direct: true
+    place: berlin
+    label: estate sale, 31 March 1925, no. 63, sold for 16,500 Reichsmarks (buyer not named)
+    price:
+      amount: 16500
+      currency: RM
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: (his estate sale, Rudolph Lepke Kunst-Auctions-Haus, Berlin, 31 March 1925, no. 63, sold for 16,500 Reichsmarks).
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner_label: art market, Düsseldorf
+    role: dealer
+    place: dusseldorf
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: art market, Düsseldorf.
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner_label: private collection, Cologne
+    acquired_label: in 1948
+    place: cologne
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: private collection, Cologne, in 1948;
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner: institution/k-waterman-gallery
+    role: dealer
+    acquired_label: in 1982
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: (Kunsthandel K. & V. Waterman, Amsterdam), in 1982;
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner: person/norman-hascoe
+    co_owners: [person/suzanne-hascoe]
+    acquired: 1983
+    method: purchase
+    direct: true
+    place: greenwich-2
+    label: Greenwich, Connecticut
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: purchased 1983 by Norman and Suzanne Hascoe, Greenwich, Connecticut;
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 2014-06-04
+    method: auction
+    direct: true
+    place: new-york-city
+    label: sale, New York, 4 June 2014, no. 38
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: (sale, Christie, Manson & Woods, New York, 4 June 2014, no. 38);
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner: institution/richard-green-fine-paintings
+    role: dealer
+    direct: true
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: (Richard Green Fine Paintings, London);
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 2017-05
+    method: purchase
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.210038.html
+        note: purchased May 2017 by NGA.
+        source: nga-2017-55-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20804651
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20804651
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20804651
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20804651
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20804651
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20804651

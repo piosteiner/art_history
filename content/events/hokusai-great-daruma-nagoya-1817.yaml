@@ -1,0 +1,16 @@
+public_id: 122704
+name: Hokusai's Great Daruma in Nagoya
+kind: performance
+period: 1817
+period_label: Bunka 14, 10th month, 5th day (1817) (lunar calendar)
+place: nagoya
+description_md: On the 5th day of the tenth month of 1817 [[artist/katsushika-hokusai|Hokusai]] painted a half-length Daruma on 120 mats of paper in the precinct of the Nishi Kakesho in [[place/nagoya|Nagoya]], announced beforehand by a printed handbill as *[[term/sekiga|sekiga]]* [[source/kato-hokusai-kyokuhitsu-daruma|§ 1817]]. The upper half was then hoisted between two posts so that the lower half could be painted, and the picture was left on show the next day [[source/kato-hokusai-kyokuhitsu-daruma|§ 1817, Owari meisho zue furoku]].
+sources:
+  place:
+    - source: kato-hokusai-kyokuhitsu-daruma
+      locator: § 1817
+      accessed: 2026-11-23
+  period:
+    - source: kato-hokusai-kyokuhitsu-daruma
+      locator: § 1817
+      accessed: 2026-11-23

@@ -1,0 +1,151 @@
+public_id: 125219
+title_lang: en
+title: View of Delphi with a Procession
+names:
+  - lang: fr
+    role: original
+    text: Vue de Delphes avec une procession
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20274952
+creator: claude-lorrain
+created: 1673
+materials: [oil paint, canvas]
+dimensions: [102, 127]
+institution: art-institute-of-chicago
+inventory_number: "1941.1020"
+wikidata_id: Q20274952
+metadata:
+  sources: [Wikidata Q20274952 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Claude_Lorrain_-_View_of_Delphi_with_a_Procession_-_1941.1020_-_Art_Institute_of_Chicago.jpg/1280px-Claude_Lorrain_-_View_of_Delphi_with_a_Procession_-_1941.1020_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Lorrain_-_View_of_Delphi_with_a_Procession_-_1941.1020_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Claude Lorrain
+provenance:
+  - owner: person/camillo-massimi
+    acquired: 1673
+    ended: 1676
+    method: commission
+    place: rome
+    label: Cardinal Carlo Camillo Massimi; commissioned with Coast View with Perseus and the Origin of Coral (LV 184), presumably to accompany LV 86 and LV 99; Liber Veritatis LV 182
+    sources:
+      - url: https://www.artic.edu/artworks/43145
+        note: Commissioned along with Coast View with Perseus and the Origin of Coral (LV 184) by Cardinal Carlo Camillo Massimi (died 1676), Rome, 1673, presumably to accompany two other paired paintings by Claude … [according to inscriptions that accompany the drawing after the painting in Claude’s “Liber Veritatis” (LV 182) that read “CLAVDIO fecit IV / Roma 1673” and “quadro facto per leminmo e Reve.ro / sigre Cardinale Massimo / A Roma 1673”];
+        source: aic-1941-1020
+        accessed: 2026-11-24
+  - owner: person/fabio-camillo-massimi
+    acquired: 1676
+    method: inheritance
+    direct: true
+    place: rome
+    label: at the cardinal's death to his younger brother (Röthlisberger 1979, vol. 1, p. 240)
+    sources:
+      - url: https://www.artic.edu/artworks/43145
+        note: at his death to his younger brother, Fabio Camillo Massimi [according to Röthlisberger 1979, vol. 1, p. 240, under LV 86].
+        source: aic-1941-1020
+        accessed: 2026-11-24
+  - owner: person/john-drummond-1st-earl-of-melfort
+    acquired: 1690 or earlier
+    place: london
+    label: possibly sold Whitehall, London, 21 June 1693 (suggested by Röthlisberger 1979)
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/43145
+        note: Possibly John Drummond, first earl of Melfort, London, by 1690; possibly sold Whitehall, London, June 21, 1693 [suggested by Röthlisberger 1979, vol. 1, pp. 239–41, under LV 86, pp. 428–31, LV 182 …].
+        source: aic-1941-1020
+        accessed: 2026-11-24
+  - owner: person/humphrey-edwin
+    acquired: 1746 or earlier
+    label: probably sold by his widow, c. 1750 (Röthlisberger 1979, vol. 1, p. 430)
+    sources:
+      - url: https://www.artic.edu/artworks/43145
+        note: Humphrey Edwin, by 1746; probably sold by his widow, c. 1750 [according to Röthlisberger 1979, vol. 1, p. 430, under LV 182].
+        source: aic-1941-1020
+        accessed: 2026-11-24
+  - owner_label: Earls of Derby
+    acquired: 1854 or earlier
+    label: certainly by 1854, when lent to an exhibition in London
+    sources:
+      - url: https://www.artic.edu/artworks/43145
+        note: In the possession of the Earls of Derby, certainly by 1854 when it was lent to London 1854;
+        source: aic-1941-1020
+        accessed: 2026-11-24
+  - owner: person/edward-stanley-17th-earl-of-derby
+    method: inheritance
+    direct: true
+    label: Edward George Villiers, seventeenth earl of Derby, by descent
+    sources:
+      - url: https://www.artic.edu/artworks/43145
+        note: by descent to Edward George Villiers, seventeenth earl of Derby;
+        source: aic-1941-1020
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1940-07-26
+    method: auction
+    direct: true
+    place: london
+    label: sale, Christie's, London, 26 July 1940, no. 9, as Priests Proceeding with a Sacrificial Bull towards a Fortified City
+    sources:
+      - url: https://www.artic.edu/artworks/43145
+        note: sold Christie’s London, July 26, 1940, no. 9, to Rothschild for £126, as Priests Proceeding with a Sacrificial Bull towards a Fortified City
+        source: aic-1941-1020
+        accessed: 2026-11-24
+  - owner_label: Rothschild
+    acquired: 1940-07-26
+    method: auction
+    direct: true
+    label: price and buyer according to an annotated copy of the sale catalogue
+    price:
+      amount: 126
+      currency: GBP
+    sources:
+      - url: https://www.artic.edu/artworks/43145
+        note: to Rothschild for £126 … [price and buyer according to an annotated copy of the sale catalogue, Christie’s, London].
+        source: aic-1941-1020
+        accessed: 2026-11-24
+  - owner: institution/arnold-seligmann-rey-co
+    role: dealer
+    acquired: 1941 or earlier
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/43145
+        note: Arnold Seligmann, Rey, and Co., New York, by 1941;
+        source: aic-1941-1020
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1941
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/43145
+        note: purchased by the Art Institute, 1941.
+        source: aic-1941-1020
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20274952
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20274952
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20274952
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20274952
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20274952
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20274952

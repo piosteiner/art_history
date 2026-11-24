@@ -92,6 +92,15 @@ relationships:
       - accessed: 2026-11-12
         property: P135
         wikidata: Q44054
+  - type: married_to
+    to: person/maria-marc
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q784160
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q44054
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Franz_Marc_1913_cropped.jpg/1280px-Franz_Marc_1913_cropped.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Franz_Marc_1913_cropped.jpg

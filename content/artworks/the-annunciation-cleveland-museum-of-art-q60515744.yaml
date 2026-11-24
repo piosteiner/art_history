@@ -1,0 +1,108 @@
+public_id: 124953
+title_lang: en
+title: The Annunciation
+names:
+  - text: Annunciation (Cleveland)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q60515744
+creator: paolo-veronese
+attribution_label: Paolo Veronese and workshop
+created: c. 1580
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [150, 133.4]
+institution: cleveland-museum-of-art
+inventory_number: "1950.251"
+web_url: https://clevelandart.org/art/1950.251
+wikidata_id: Q60515744
+metadata:
+  sources: [Wikidata Q60515744 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Paolo_Veronese_-_The_Annunciation_-_1950.251_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Paolo_Veronese_-_The_Annunciation_-_1950.251_-_Cleveland_Museum_of_Art.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paolo_Veronese_-_The_Annunciation_-_1950.251_-_Cleveland_Museum_of_Art.tif
+    license: CC0
+    credit: Paolo Veronese
+provenance:
+  - owner_label: Balboni collection, Venice
+    ended: 1913
+    place: venice
+    label: Balboni may be Carlo Balboni, a dealer in Venice
+    sources:
+      - url: https://clevelandart.org/art/1950.251
+        note: "Balboni collection, Venice, probably sold to Leopold Koppel [date: Until 1913] — Max J. Friedlaender's handwritten inventory of Leopold Koppel's collection, apparently the earliest documentation for the Veronese, states that Koppel purchased the painting in 1913 from Balboni in Venice. Balboni may refer to Carlo Balboni, a dealer in Venice"
+        source: cma-1950-251
+        accessed: 2026-11-24
+  - owner: person/leopold-koppel
+    acquired: 1913
+    ended: 1933
+    method: purchase
+    direct: true
+    place: berlin
+    label: purchase recorded in Max J. Friedländer's handwritten inventory of Koppel's collection; the expected gift to the Kaiser-Friedrich-Museum never materialized
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1950.251
+        note: "Leopold Koppel [1854-1933], Berlin, by descent to his son, Albert Koppel [date: Probably 1913-1933] — Koppel purchased the painting in 1913 from Balboni in Venice. … The donation never materialized, however, as the Koppel famly had to leave Germany when Hitler came to power."
+        source: cma-1950-251
+        accessed: 2026-11-24
+  - owner: person/albert-koppel
+    acquired: 1933
+    ended_label: c. 1950
+    method: inheritance
+    direct: true
+    place: toronto
+    label: the family had to leave Germany when Hitler came to power; went to Switzerland, then settled in Toronto (footnote calls him Alfred)
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1950.251
+        note: "Albert Koppel, Switzerland and Toronto, Ontario, consigned to Rosenberg & Stiebel [date: Probably 1933 - c. 1950] — After leaving Germany, Alfred Koppel went to Switzerland before settling in Toronto."
+        source: cma-1950-251
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: agent
+    acquired_label: consigned c. 1950
+    direct: true
+    place: new-york-city
+    label: consigned by Koppel; Saemy Rosenberg had visited Koppel in Toronto during the war and it was agreed R&S would sell his collection
+    sources:
+      - url: https://clevelandart.org/art/1950.251
+        note: "(Rosenberg & Stiebel, New York, sold to the Cleveland Museum of Art) [date: Until 1950] — Saemy Rosenberg visited Koppel in Toronto during the war and it was determined that Rosenberg & Stiebel would sell Koppel's collection"
+        source: cma-1950-251
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1950
+    method: purchase
+    direct: true
+    place: cleveland
+    label: Gift of the Hanna Fund
+    sources:
+      - url: https://clevelandart.org/art/1950.251
+        note: "The Cleveland Museum of Art, Cleveland, Ohio [date: 1950-]"
+        source: cma-1950-251
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60515744
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60515744
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q60515744
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60515744
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60515744
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60515744

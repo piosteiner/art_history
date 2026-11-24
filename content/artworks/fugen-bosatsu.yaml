@@ -1,0 +1,96 @@
+public_id: 124117
+title_lang: en
+title: Fugen Bosatsu(Samantabhadra)
+names:
+  - text: Bodhisattva Fugen
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28803631
+  - text: Samantabhadra
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28803631
+  - lang: en
+    role: original
+    text: Fugen Bosatsu
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28803631
+  - lang: ja
+    role: translation
+    text: 普賢菩薩像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q28803631
+created: 12th century
+created_span: uncertain
+materials: [silk, Iwaenogu]
+dimensions: [159.1, 74.5]
+institution: tokyo-national-museum
+inventory_number: A-1
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-1
+wikidata_id: Q28803631
+metadata:
+  sources: [Wikidata Q28803631 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Fugen_Bosatsu%28Samantabhadra%29_-_Google_Art_Project.jpg/1280px-Fugen_Bosatsu%28Samantabhadra%29_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fugen_Bosatsu(Samantabhadra)_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: unknown artist
+provenance:
+  - owner_label: an old temple in Yamato (Nara)
+    ended: 1878
+    place: nara
+    label: an unnamed old temple of Yamato, by oral tradition and a Meiji-period plate caption; earlier history unknown
+    certainty: probable
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&content_base_id=100141&content_part_id=000&content_pict_id=0
+        note: 伝来については、明治11年に奈良のある古刹（こさつ）から博物館の一小吏・山辺某が十何円かで購入したという内容が関係者に口伝えのような形で伝えられるのみで、購入以前の伝来は知られていない。
+        source: emuseum-100141
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%99%AE%E8%B3%A2%E8%8F%A9%E8%96%A9%E5%83%8F_(%E6%9D%B1%E4%BA%AC%E5%9B%BD%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E6%9C%AC)&oldid=107542240
+        note: ただし明治期の図版解説には「大和の某古刹」に伝来したと記すものがあり
+        source: wikipedia-ja-fugen-tnm
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 1878
+    method: purchase
+    direct: true
+    place: tokyo
+    label: bought for the Museum (forerunner of the Imperial Museum) by a minor museum official, one Yamabe, for a little over ten yen (oral tradition); painting no. 1 of the museum's register and National Treasure no. 1 (1951)
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&content_base_id=100141&content_part_id=000&content_pict_id=0
+        note: 伝来については、明治11年に奈良のある古刹（こさつ）から博物館の一小吏・山辺某が十何円かで購入したという内容が関係者に口伝えのような形で伝えられるのみで、購入以前の伝来は知られていない。 … 台帳番号（列品（れっぴん）番号）は絵画の1番であり、昭和25年制定の文化財保護法にもとづく国宝指定でも絵画の1番
+        source: emuseum-100141
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%99%AE%E8%B3%A2%E8%8F%A9%E8%96%A9%E5%83%8F_(%E6%9D%B1%E4%BA%AC%E5%9B%BD%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%E6%9C%AC)&oldid=107542240
+        note: 本作品は帝国博物館の前身となる博物館が1878年に購入し蔵品に加えたものだが、それ以前の伝来や購入経緯は公的な記録が残っていない。 … 溝口禎次郎が博物館に残した手記には、博物館の山辺某という小吏が購入にあたったこと
+        source: wikipedia-ja-fugen-tnm
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/1
+        note: 国宝指定年月日 ： 1951.06.09(昭和26.06.09) … 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-1
+        accessed: 2026-11-24
+identifiers:
+  emuseum: "100141"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q28803631
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q28803631
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q28803631
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q28803631
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q28803631

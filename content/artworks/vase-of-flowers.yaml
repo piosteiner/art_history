@@ -1,0 +1,97 @@
+public_id: 122898
+title_lang: en
+title: Vase of Flowers
+creator: odilon-redon
+created: c. 1905
+created_span: uncertain
+kind: oil painting
+medium: oil on fabric
+dimensions: [73, 59]
+institution: cleveland-museum-of-art
+inventory_number: "1935.233"
+web_url: https://clevelandart.org/art/1935.233
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1935.233/1935.233_web.jpg
+    source_url: https://clevelandart.org/art/1935.233
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/georges-bernheim
+    role: dealer
+    acquired: 1929 or earlier
+    place: paris
+    label: in stock January 1929, stock no. A498
+    sources:
+      - url: https://clevelandart.org/art/1935.233
+        note: (Georges Bernheim, Paris, France, January 1929, stock no. A498, sold to Knoedler & Co.)
+        source: cma-1935-233
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1929-09
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: stock no. A1021
+    sources:
+      - url: https://clevelandart.org/art/1935.233
+        note: (Knoedler & Co., New York, NY, September 1929, stock no. A1021, sold to George C. Lee)
+        source: cma-1935-233
+        accessed: 2026-11-24
+  - owner: person/george-c-lee
+    acquired: 1929
+    ended: 1929-11
+    method: purchase
+    direct: true
+    label: returned to Knoedler by Mrs. G. C. Lee, November 1929
+    sources:
+      - url: https://clevelandart.org/art/1935.233
+        note: (Knoedler & Co., New York, NY, September 1929, stock no. A1021, sold to George C. Lee) — Mrs. G. C. Lee returned to Knoedler & Co., New York, NY (stock number A1021) November 1929
+        source: cma-1935-233
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    co_owners: [person/etienne-bignou]
+    role: dealer
+    acquired: 1929-11
+    direct: true
+    place: new-york-city
+    label: returned by Mrs. G. C. Lee; held jointly by Knoedler and E. Bignou, stock no. A1021, from January 1930 A1171
+    sources:
+      - url: https://clevelandart.org/art/1935.233
+        note: Mrs. G. C. Lee returned to Knoedler & Co., New York, NY (stock number A1021) November 1929, held jointly with E. Bignou. (Knoedler & Co., New York, NY, January 1930, stock number A1171,  jointly with E. Bignou, sold to Mrs. R.T. Wilson)
+        source: cma-1935-233
+        accessed: 2026-11-24
+  - owner_label: Mrs. R. T. Wilson (1875–1947), New York
+    acquired: 1930-01
+    ended: 1930-05
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: returned to Knoedler, May 1930
+    sources:
+      - url: https://clevelandart.org/art/1935.233
+        note: Mrs. R.T. Wilson [1875-1947], New York, NY returned to Knoedler & Co., May 1930
+        source: cma-1935-233
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1930-05
+    direct: true
+    place: new-york-city
+    label: returned by Mrs. R. T. Wilson
+    sources:
+      - url: https://clevelandart.org/art/1935.233
+        note: (M. Knoedler & Co., New York, NY, December 1935, sold to the Cleveland Museum of Art)
+        source: cma-1935-233
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1935-12
+    method: gift
+    direct: true
+    place: cleveland
+    label: "sold by Knoedler to the museum, December 1935; credit line: Gift of Roberta Holden Bole"
+    sources:
+      - url: https://clevelandart.org/art/1935.233
+        note: (M. Knoedler & Co., New York, NY, December 1935, sold to the Cleveland Museum of Art) The Cleveland Museum of Art, Cleveland, OH [1935-] — Gift of Roberta Holden Bole
+        source: cma-1935-233
+        accessed: 2026-11-24

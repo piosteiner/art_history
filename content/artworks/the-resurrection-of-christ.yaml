@@ -1,0 +1,119 @@
+public_id: 122878
+title_lang: en
+title: The Resurrection of Christ
+creator: johann-konig
+created: 1622
+kind: oil painting
+medium: oil on copper
+dimensions: [61, 46]
+institution: cleveland-museum-of-art
+inventory_number: "2017.192"
+web_url: https://clevelandart.org/art/2017.192
+images:
+  - url: https://openaccess-cdn.clevelandart.org/2017.192/2017.192_web.jpg
+    source_url: https://clevelandart.org/art/2017.192
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/joseph-von-waldburg-zeil-wurzach
+    acquired: 1796 or earlier
+    ended: 1813
+    label: Count Joseph Franz Anton Wunibald Andreas Saturnin, Truchsess zu Waldburg-Zeil-Wurzach; the Truchsessian collection, in Cologne, Wurzach and Vienna
+    sources:
+      - url: https://clevelandart.org/art/2017.192
+        note: Count Joseph Franz Anton Wunibald Andreas Saturnin, Truchseß [Steward] zu Waldburg-Zeil-Wurzach [1748–1813], Cologne, Wurzach and Vienna by 1796, until 1813
+        source: cma-2017-192
+        accessed: 2026-11-24
+  - owner: person/ludwig-i-grand-duke-of-hesse
+    acquired: 1814/1820
+    method: purchase
+    place: darmstadt
+    label: among 81 paintings bought from the Truchsessian collection
+    sources:
+      - url: https://clevelandart.org/art/2017.192
+        note: Among 81 paintings purchased from the Truchsessian collection by Ludwig I, Landgrave of Hesse-Darmstadt and Grand Duke of Hesse and by Rhine [1753–1830] [between 1814 and 1820]
+        source: cma-2017-192
+        accessed: 2026-11-24
+  - owner: institution/grossherzogliches-museum-darmstadt
+    acquired: 1820
+    ended: 1830/1854
+    method: gift
+    direct: true
+    place: darmstadt
+    label: presented by Ludwig I; deaccessioned between 1830 and 1854
+    sources:
+      - url: https://clevelandart.org/art/2017.192
+        note: Presented by Ludwig I to the Großherzogliches Museum, Darmstadt, 1820 … Deaccessioned from the Großherzogliches Museum, Darmstadt, between 1830 and 1854
+        source: cma-2017-192
+        accessed: 2026-11-24
+  - owner: person/wilhelm-kreis
+    acquired_label: probably by the 1920s
+    ended: 1955
+    place: dusseldorf
+    sources:
+      - url: https://clevelandart.org/art/2017.192
+        note: Collection Wilhelm Kreis [1873–1955], Düsseldorf, probably by the 1920s
+        source: cma-2017-192
+        accessed: 2026-11-24
+  - owner: person/helmut-arntz
+    acquired: 1955
+    ended: 2007
+    method: bequest
+    direct: true
+    label: bequeathed by his uncle and godfather Wilhelm Kreis
+    sources:
+      - url: https://clevelandart.org/art/2017.192
+        note: Bequeathed by Wilhelm Kreis to his nephew and godson, Helmut Arntz [1912–2007] [1955-2007]
+        source: cma-2017-192
+        accessed: 2026-11-24
+  - owner: person/joachim-arntz
+    acquired: 2007
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2017.192
+        note: By descent to his son, Joachim Arntz, by whom sold [2007-2012]
+        source: cma-2017-192
+        accessed: 2026-11-24
+  - owner: institution/kunsthaus-lempertz
+    role: agent
+    acquired: 2012-11-17
+    method: auction
+    direct: true
+    place: cologne
+    label: sale, Lempertz, Cologne, 17 November 2012, no. 1126
+    sources:
+      - url: https://clevelandart.org/art/2017.192
+        note: (Lempertz, Cologne, November 17, 2012, no. 1126, sold to a consortium of dealers including Konrad Bernheimer [Colnaghi] and Otto Naumann)
+        source: cma-2017-192
+        accessed: 2026-11-24
+  - owner_label: consortium of dealers including Konrad Bernheimer (Colnaghi) and Otto Naumann
+    role: dealer
+    acquired: 2012-11-17
+    method: auction
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/2017.192
+        note: sold to a consortium of dealers including Konrad Bernheimer [Colnaghi] and Otto Naumann
+        source: cma-2017-192
+        accessed: 2026-11-24
+  - owner: institution/p-d-colnaghi-co-ltd
+    co_owners: [institution/bernheimer-fine-old-masters]
+    role: dealer
+    acquired: 2012
+    label: Colnaghi, London / Bernheimer Fine Old Masters, Munich [2014]
+    sources:
+      - url: https://clevelandart.org/art/2017.192
+        note: (Colnaghi, London / Bernheimer Fine Old Masters, Munich [2014]) [2012-2014]
+        source: cma-2017-192
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 2017
+    method: purchase
+    place: cleveland
+    label: Leonard C. Hanna Jr. Fund (accession 2017.192)
+    sources:
+      - url: https://clevelandart.org/art/2017.192
+        note: CMA 2017.192 · Leonard C. Hanna Jr. Fund
+        source: cma-2017-192
+        accessed: 2026-11-24

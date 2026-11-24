@@ -1,0 +1,18 @@
+public_id: 125206
+name: Bernard d'Agesci
+given_name: Bernard
+family_name: d'Agesci
+birth: 1756-03-11
+death: 1828
+wikidata_id: Q2898765
+metadata:
+  sources: [Wikidata Q2898765 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2898765
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q2898765

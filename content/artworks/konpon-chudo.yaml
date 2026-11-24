@@ -1,0 +1,64 @@
+public_id: 123924
+title: Konpon Chūdō
+names:
+  - text: Konponchūdō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q15717263
+  - lang: fr
+    role: translation
+    text: Konpon Chudō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q15717263
+  - lang: ja
+    role: translation
+    text: 延暦寺根本中堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q15717263
+  - lang: zh
+    role: translation
+    text: 延曆寺根本中堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q15717263
+created: 1640/1642
+materials: [wood]
+institution: enryaku-ji-temple
+location: [135.8409, 35.07049]
+wikidata_id: Q15717263
+metadata:
+  sources: [Wikidata Q15717263 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/otsu
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Enryakuji_Konponchudo04n4272.jpg/1280px-Enryakuji_Konponchudo04n4272.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Enryakuji_Konponchudo04n4272.jpg
+    license: CC BY 2.5
+    credit: 663highland
+provenance:
+  - owner: institution/enryaku-ji-temple
+    acquired: 1640/1642
+    method: creation
+    place: otsu
+    label: main hall of the temple founded by Saichō in 788 (Ichijō Shikan-in), rebuilt many times; the present hall rebuilt by order of Tokugawa Iemitsu, completed 1642 (Kan'ei 17 = 1640 in the national database)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1320
+        note: 根本中堂は延暦年間（七八二～八〇六）延暦寺創建とともに造られ、もとは小規模な堂三棟であったが、のちこれを合わせて一棟の根本中堂とした。現在の根本中堂は寛永十七年（一六四〇）の再建で … 所有者名 ： 延暦寺
+        source: kunishitei-102-1320
+        accessed: 2026-11-24
+      - url: https://www.hieizan.or.jp/grounds/toudou.html
+        note: 延暦寺を開いた伝教大師最澄が延暦７年（788）に創建した一乗止観院（いちじょうしかんいん）が元であり、その後何回も災害に遭いましたが、復興の度に規模も大きくなりました。現在の姿は徳川家光公の命で寛永19年（1642）に竣工したものです。
+        source: enryakuji-toudou
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q15717263
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q15717263

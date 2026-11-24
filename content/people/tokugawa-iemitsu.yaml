@@ -21,6 +21,16 @@ death: 1651-06-08
 wikidata_id: Q314481
 metadata:
   sources: [Wikidata Q314481 (retrieved 2026-11-01)]
+relationships:
+  - type: sibling_of
+    to: person/tofukumon-in
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q314481
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q911334
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Iemitu.jpg/1280px-Iemitu.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Iemitu.jpg

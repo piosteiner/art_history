@@ -1,0 +1,23 @@
+public_id: 122806
+name: Margrieta Wijnants
+given_name: Margrieta
+family_name: Wijnants
+kind: person
+birth: 1620/1629
+death: 1660/1669
+wikidata_id: Q58326741
+metadata:
+  sources: [Wikidata Q58326741 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q58326741
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q58326741
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q58326741

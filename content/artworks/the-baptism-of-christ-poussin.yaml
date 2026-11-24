@@ -1,0 +1,248 @@
+public_id: 123215
+title_lang: en
+title: The Baptism of Christ
+names:
+  - text: Baptism of Christ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20177193
+  - lang: fr
+    role: translation
+    text: Le Baptême
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20177193
+  - lang: de
+    role: translation
+    text: Taufe
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20177193
+  - lang: ru
+    role: translation
+    text: Крещение Христа
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20177193
+creator: nicolas-poussin
+created: 1641/1642
+created_label: c. 1640s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [95.5, 121]
+institution: national-gallery-of-art
+inventory_number: 1946.7.14
+web_url: https://www.wga.hu/frames-e.html?/html/p/poussin/3a/1sacram3.html
+wikidata_id: Q20177193
+metadata:
+  sources: [Wikidata Q20177193 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/jesus-christ
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20177193
+  - type: depicts_person
+    to: person/john-the-baptist
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20177193
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4b/Seven_Sacraments_-_Baptism_%28I%29_1642_Nicolas_Poussin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Seven_Sacraments_-_Baptism_(I)_1642_Nicolas_Poussin.jpg
+    license: Public domain
+    credit: Nicolas Poussin
+provenance:
+  - owner: person/cassiano-dal-pozzo
+    method: commission
+    place: rome
+    label: one of the Seven Sacraments; hung in the Stanza de' Sagramenti of his palazzo in Via dei Chiavari
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: Commissioned by Cavaliere Cassiano dal Pozzo [d. 1657], Rome; — [1] The Seven Sacraments series, of which this painting was a part, hung in the main room of Cassiano's 16th century Roman palazzo on the via dei Chiavari, designated the Stanza de' Sagramenti
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: person/carlo-antonio-dal-pozzo
+    method: inheritance
+    direct: true
+    place: rome
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: by inheritance to his brother, Carlo Antonio dal Pozzo [d. 1689], Rome;
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: person/gabriele-dal-pozzo
+    method: inheritance
+    direct: true
+    place: rome
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: by inheritance to his son, Gabriele dal Pozzo [d. 1695], Rome;
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: person/cosimo-antonio-dal-pozzo
+    method: inheritance
+    direct: true
+    place: rome
+    label: recorded in the Palazzo Doria Pamphili in 1733 and 1739 while still his
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: by inheritance to his son, Cosimo Antonio dal Pozzo [died c. 1739], Rome; — The painting was recorded as being in the Palazzo Doria Pamphili in 1733 and 1739, but it must have still been owned by Pozzo, as it passed to his daughter at his death.
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner_label: Marchese del Bufalo, Rome
+    role: custodian
+    ended: 1730/1732
+    ended_label: returned when the debt was paid, February 1730 or February 1732
+    direct: true
+    place: rome
+    label: pledged by Cosimo Antonio dal Pozzo for a debt; Bufalo offered the Seven Sacraments to Louis XV in 1729
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: pledged by Pozzo to Marchese del Bufalo, Rome, as payment for debt [Bufalo offered his set of Poussin's Seven Sacraments to King Louis XV of France in 1729 when Bufalo ran into financial difficulties]; returned to Cosimo Antonio dal Pozzo, Rome, when debt paid, in either February 1730 or February 1732;[1]
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: person/maria-laura-dal-pozzo-boccapaduli
+    method: inheritance
+    direct: true
+    place: rome
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: by inheritance to his daughter, Maria Laura dal Pozzo Boccapaduli;
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner_label: Boccapaduli family, Rome
+    method: inheritance
+    direct: true
+    place: rome
+    label: tried to sell the series to Sir Robert Walpole; export licence refused by the Pope
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: by inheritance to the Boccapaduli family, Rome, who attempted to sell the series to Sir Robert Walpole [d. 1745], but export license was denied by the Pope;
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: person/james-byres
+    role: agent
+    acquired: 1785
+    direct: true
+    place: rome
+    label: sold for the Boccapaduli family; copies substituted in Rome so the originals could be smuggled out of Italy
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: sold 1785 for the Boccapaduli family by (James Byres, Rome)[2] — [2] Byres arranged for copies to be substituted for the originals in Rome so that the originals could be smuggled out of Italy.
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: person/charles-manners-4th-duke-of-rutland
+    acquired: 1785
+    method: purchase
+    direct: true
+    label: Belvoir Castle, Grantham, Leicestershire
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: to Charles Manners, 4th duke of Rutland [1754-1787], Belvoir Castle, Grantham, Leicestershire;
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: person/john-henry-manners-5th-duke-of-rutland
+    method: inheritance
+    direct: true
+    label: Belvoir Castle; a story that George IV gave it after the fire of 1816 is in error
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: by inheritance to his son, John Henry Manners, 5th duke of Rutland [1778-1857], Belvoir Castle;[3] — [3] … states that the painting "was presented by George IV to the fifth Duke of Rutland as a substitute for the Sacrament of Penance, which is supposed to have been burnt in the disastrous fire of 1816." There is no evidence that George IV ever owned the painting, so this statement must be in error.
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: person/charles-cecil-john-manners-6th-duke-of-rutland
+    method: inheritance
+    direct: true
+    label: Belvoir Castle
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: by inheritance to his son, Charles Cecil John Manners, 6th duke of Rutland [1815-1888], Belvoir Castle;
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: person/john-james-robert-manners-7th-duke-of-rutland
+    method: inheritance
+    direct: true
+    label: Belvoir Castle
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: by inheritance to his son, John James Robert Manners, 7th duke of Rutland [1818-1906], Belvoir Castle;
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: person/henry-john-brinsley-manners-8th-duke-of-rutland
+    method: inheritance
+    direct: true
+    label: Belvoir Castle
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: by inheritance to his son, Henry John Brinsley Manners, 8th duke of Rutland [1852-1925], Belvoir Castle;
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: person/john-henry-montagu-manners-9th-duke-of-rutland
+    method: inheritance
+    direct: true
+    label: Belvoir Castle
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: by inheritance to his son, John Henry Montagu Manners, 9th duke of Rutland [1886-1940], Belvoir Castle;
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1939
+    method: purchase
+    direct: true
+    label: Paris, New York and London; purchase year confirmed by Joseph Baillio of Wildenstein
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: sold 1939 to (Wildenstein & Co., Inc., Paris, New York, and London);
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1944-12
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: memorandum of agreement for ten paintings, 28 December 1944
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: sold December 1944 to the Samuel H. Kress Foundation, New York;[4] — [4] … The "memorandum of agreement" between Wildenstein and the Kress Foundation for the purchase of ten paintings, including this one, is dated 28 December 1944
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1946
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.32692.html
+        note: gift 1946 to NGA.
+        source: nga-1946-7-14
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20177193
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20177193
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20177193
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20177193
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20177193
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20177193

@@ -1,0 +1,13 @@
+public_id: 124244
+name: Jiang Zongba
+given_name: Jiang
+family_name: Zongba
+kind: person
+wikidata_id: Q10513839
+metadata:
+  sources: [Wikidata Q10513839 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q10513839

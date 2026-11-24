@@ -1,0 +1,122 @@
+public_id: 122987
+title_lang: en
+title: Francesco Sforza
+materials: [oil paint, panel]
+institution: national-gallery-of-art
+inventory_number: 1942.9.4
+wikidata_id: Q20174276
+metadata:
+  sources: [Wikidata Q20174276 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Francesco_Sforza_G-000304.jpg/1280px-Francesco_Sforza_G-000304.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francesco_Sforza_G-000304.jpg
+    license: Public domain
+    credit: North Italian 15th Century Francesco Sforza
+provenance:
+  - owner: person/antonio-barberini
+    place: rome
+    label: Cardinal; 1671 inventory at his death, as Mantegna; possibly already in a 1641 Barberini inventory
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1141.html
+        note: Cardinal Antonio Barberini [1607-1671], Rome;[1] — [1] A 1671 inventory made at the death of Cardinal Antonio Barberini includes … "Un altro [ritratto] d'Un huomo Armato con Berrettone rosso in Capo di Andrea Mantegna"
+        source: nga-1942-9-4
+        accessed: 2026-11-24
+  - owner: person/carlo-barberini
+    method: inheritance
+    direct: true
+    place: rome
+    label: Cardinal; inheritance possibly through Antonio's brother Francesco (d. 1679); inventory of 1692–1704
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1141.html
+        note: by inheritance to Cardinal Carlo Barberini [1630-1704], Rome; — [1] The inheritance from Antonio to Carlo Barberini may have been through Antonio's brother, Francesco, who died in 1679.
+        source: nga-1942-9-4
+        accessed: 2026-11-24
+  - owner: person/cornelia-costanza-barberini
+    method: inheritance
+    direct: true
+    label: Carlo's grandniece; by inheritance through the Barberini family
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1141.html
+        note: by inheritance through the Barberini family to Carlo's grandniece, Cornelia Costanza [1716-1797];
+        source: nga-1942-9-4
+        accessed: 2026-11-24
+  - owner_label: Colonna di Sciarra family, Rome
+    direct: true
+    place: rome
+    label: by Cornelia Costanza's marriage; collection divided 1812, the painting passed to the Carbognano branch
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1141.html
+        note: by her marriage, into the Colonna di Sciarra family; collection divided in 1812 and painting passed into the Carbognano branch of the family;
+        source: nga-1942-9-4
+        accessed: 2026-11-24
+  - owner: person/maffeo-barberini-colonna-di-sciarra
+    ended: c. 1895
+    method: inheritance
+    direct: true
+    place: rome
+    label: Principe di Carbognano; brought to Paris Dec. 1891–Jan. 1892, sold there c. 1895 (legal obstacles probably delayed the sale)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1141.html
+        note: by inheritance to Maffeo Barberini Colonna di Sciarra, Principe di Carbognano [1850-1925], Rome; sold c. 1895 in Paris.[2] — [2] Prince Sciarra had several of his paintings brought to Paris between December 1891 and January 1892 … Legal obstacles probably prevented Sciarra from selling the painting until 1895 or 1896
+        source: nga-1942-9-4
+        accessed: 2026-11-24
+  - owner: person/leo-nardus
+    role: dealer
+    label: Suresnes, France, and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1141.html
+        note: (Leo Nardus [1868-1955], Suresnes, France, and New York);
+        source: nga-1942-9-4
+        accessed: 2026-11-24
+  - owner: person/peter-a-b-widener
+    acquired: 1898
+    method: purchase
+    direct: true
+    label: Lynnewood Hall, Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1141.html
+        note: sold 1898 to Peter A.B. Widener, Lynnewood Hall, Elkins Park, Pennsylvania;[3]
+        source: nga-1942-9-4
+        accessed: 2026-11-24
+  - owner: person/peter-a-b-widener
+    role: estate
+    method: inheritance
+    direct: true
+    label: estate of Peter A. B. Widener; Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1141.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park;
+        source: nga-1942-9-4
+        accessed: 2026-11-24
+  - owner: person/joseph-e-widener
+    method: inheritance
+    direct: true
+    label: inheritance from the estate of Peter A. B. Widener by gift through power of appointment; Elkins Park, Pennsylvania
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1141.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park;
+        source: nga-1942-9-4
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1942
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1141.html
+        note: gift 1942 to NGA.
+        source: nga-1942-9-4
+        accessed: 2026-11-24
+sources:
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20174276
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20174276
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20174276

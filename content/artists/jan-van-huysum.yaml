@@ -1,0 +1,18 @@
+public_id: 122800
+name: Jan van Huysum
+given_name: Jan
+family_name: van Huysum
+birth: 1682-04-15
+death: 1749-02-08
+wikidata_id: Q527869
+metadata:
+  sources: [Wikidata Q527869 (retrieved 2026-11-23)]
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q527869
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q527869

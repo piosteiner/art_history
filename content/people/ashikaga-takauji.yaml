@@ -1,0 +1,23 @@
+public_id: 124163
+name: Ashikaga Takauji
+given_name: Ashikaga
+family_name: Takauji
+kind: person
+birth: 1305
+death: 1358-06-15
+wikidata_id: Q297107
+metadata:
+  sources: [Wikidata Q297107 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q297107
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q297107
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q297107

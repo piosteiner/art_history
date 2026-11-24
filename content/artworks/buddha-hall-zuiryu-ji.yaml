@@ -1,0 +1,49 @@
+public_id: 123990
+title: Buddha Hall, Zuiryu-ji
+names:
+  - lang: fr
+    role: translation
+    text: pavillon de Bouddha
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020333
+  - lang: ja
+    role: translation
+    text: 瑞龍寺仏殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020333
+created: 1659
+institution: zuiryu-ji-takaoka
+location: [137.0108, 36.73559]
+wikidata_id: Q107020333
+metadata:
+  sources: [Wikidata Q107020333 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/takaoka
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/%E7%91%9E%E9%BE%8D%E5%AF%BA_-_panoramio_%284%29.jpg/1280px-%E7%91%9E%E9%BE%8D%E5%AF%BA_-_panoramio_%284%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E7%91%9E%E9%BE%8D%E5%AF%BA_-_panoramio_(4).jpg
+    license: CC BY 3.0
+    credit: くろふね
+provenance:
+  - owner: institution/zuiryu-ji-takaoka
+    acquired: 1659
+    method: creation
+    place: takaoka
+    label: Buddha hall (butsuden) completed 1659 (ridge tablet) in the rebuilding of the temple begun by Maeda Toshitsune for Maeda Toshinaga's memorial temple; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/710
+        note: 仏殿は、万治二年（一六五九）の建立で、方三間の主体部に一間通りの裳階が取り付く、中世以来の典型的な禅宗様の手法を用いた建物である。 … 所有者名 ： 瑞龍寺 所有者種別 ： 寺院
+        source: kunishitei-102-710
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%91%9E%E9%BE%8D%E5%AF%BA_(%E9%AB%98%E5%B2%A1%E5%B8%82)&oldid=111488685
+        note: 国宝。棟札により万治2年（1659年）の竣工とわかる。 … 前田利常は承応3年（1654年）から瑞龍院の伽藍の本格的整備に着手した。建築工事は、前田藩お抱えの大工頭・山上善右衛門嘉広（代々「善右衛門」を名乗る）が棟梁となって進められた。
+        source: wikipedia-ja-zuiryu-ji-takaoka
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020333

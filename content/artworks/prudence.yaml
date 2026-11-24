@@ -1,0 +1,105 @@
+public_id: 122959
+title_lang: en
+title: Prudence
+creator: bonino-da-campione
+created: c. 1357
+created_span: uncertain
+materials: [marble]
+dimensions: [67.7, 19.1, 15.2]
+institution: national-gallery-of-art
+inventory_number: 1960.5.6
+wikidata_id: Q63854569
+metadata:
+  sources: [Wikidata Q63854569 (retrieved 2026-11-23)]
+images:
+  - url: https://api.nga.gov/iiif/8361c6f0-11af-4493-bc42-b2badd7110ab/full/!1200,1200/0/default.jpg
+    source_url: https://www.nga.gov/collection/art-object-page.46014.html
+    license: CC0
+    credit: National Gallery of Art
+provenance:
+  - owner: person/stefano-bardini
+    place: florence
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46014.html
+        note: Stefano Bardini [1836-1922], Florence.[1]
+        source: nga-1960-5-6
+        accessed: 2026-11-24
+  - owner: person/johann-ii-prince-of-liechtenstein
+    acquired: 1896 or earlier
+    place: vienna
+    label: in Bode's catalogue of the Liechtenstein gallery (1896)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46014.html
+        note: "Prince Johan II of Liechtenstein [1840-1929], Vienna, by 1896;[2] — Bode, Wilhelm von, Die Fürstlich Leichtensteinsche Gemäldegalerie, Vienna, 1896: 130."
+        source: nga-1960-5-6
+        accessed: 2026-11-24
+  - owner: person/franz-i-prince-of-liechtenstein
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46014.html
+        note: Prince Franz I of Liechtenstein [1853-1938];
+        source: nga-1960-5-6
+        accessed: 2026-11-24
+  - owner: person/franz-joseph-ii-prince-of-liechtenstein
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46014.html
+        note: Prince Franz Josef II of Liechtenstein [1906-1989];
+        source: nga-1960-5-6
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    acquired: 1953-04-02
+    direct: true
+    place: new-york-city
+    label: letters from the Director of the Liechtenstein Collection, 2 April 1953 (Seligmann Records, Archives of American Art, Box 244)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46014.html
+        note: acquired 2 April 1953 by (J. Seligmann & Co., New York);[3] — See letters to Jacques Seligmann & Company from the Director of the Liechtenstein Collection, dated 2 April 1953
+        source: nga-1960-5-6
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1954
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46014.html
+        note: purchased 1954 by the Samuel H. Kress Foundation, New York;
+        source: nga-1960-5-6
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1960
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46014.html
+        note: gift 1960 to NGA.
+        source: nga-1960-5-6
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q63854569
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q63854569
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q63854569
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q63854569
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q63854569
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q63854569

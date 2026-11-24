@@ -1,0 +1,77 @@
+public_id: 123935
+title_lang: en
+title: Main Hall (Kondō) of Fudō-in
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 不動院金堂
+created: 1540
+institution: fudo-in
+location: [132.4711, 34.42695]
+wikidata_id: Q107020648
+metadata:
+  sources: [Wikidata Q107020648 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/hiroshima
+    period: 1540
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Fudoin_Kondo.jpg/1280px-Fudoin_Kondo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fudoin_Kondo.jpg
+    license: CC BY-SA 3.0
+    credit: Mnd
+provenance:
+  - owner: person/ouchi-yoshitaka
+    acquired: c. 1540
+    method: commission
+    place: yamaguchi-2
+    label: by tradition a building Ōuchi Yoshitaka had erected in Yamaguchi; dated c. 1540 by the ceiling painting signed by the monk Eii in Tenbun 9 (1540)
+    certainty: possible
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3104
+        note: 金堂はこのとき、かつて大内義隆が山口に建立した建物を移建したと伝える。その建立年代は明らかでないが、天井絵に天文九年（一五四〇）僧永怡画の銘があり、様式手法からみてもこの頃の竣工とみてよい。
+        source: kunishitei-102-3104
+        accessed: 2026-11-24
+      - url: http://www.megaegg.ne.jp/~fudouin/bunkazai/kondou.html
+        note: 大内義隆が周防山口に建てたものを安国寺恵瓊が移建し、仏殿にしたと伝えられています。
+        source: fudoin-official-kondo
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E4%B8%8D%E5%8B%95%E9%99%A2_%28%E5%BA%83%E5%B3%B6%E5%B8%82%29
+        note: 関口欣也（建築史）によって、戦国時代末期の天正年間（1573－1592年）に、当時の往職の安国寺恵瓊（あんこくじえけい）によって山口市の香積寺（現在の瑠璃光寺）から移築されたことが明らかにされた。これ以前は、禅宗寺院で大内氏の菩提寺であった凌雲寺からの移築とされていた。
+        source: wikipedia-ja-fudo-in-hiroshima
+        accessed: 2026-11-24
+  - owner: institution/fudo-in
+    acquired: 1573/1592
+    method: transfer
+    direct: true
+    place: hiroshima
+    label: moved to the Aki Ankoku-ji (called Fudō-in since the Edo period) by its abbot Ankokuji Ekei in the Tenshō era (1573–92) and made its Buddha hall; owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3104
+        note: 天正年間（一五七三～九二）恵瓊が住職となって復興につとめた。金堂はこのとき、かつて大内義隆が山口に建立した建物を移建したと伝える。 … なお、安国寺は近世になって本坊の名をとって不動院と称するようになった。 … 所有者名 ： 不動院 所有者種別 ： 寺院
+        source: kunishitei-102-3104
+        accessed: 2026-11-24
+      - url: http://www.megaegg.ne.jp/~fudouin/bunkazai/kondou.html
+        note: 大内義隆が周防山口に建てたものを安国寺恵瓊が移建し、仏殿にしたと伝えられています。
+        source: fudoin-official-kondo
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1945-08-06
+    place: hiroshima
+    label: "atomic bombing of Hiroshima, about 3.9 km from the hypocentre: part of the hall's roof blown off, the building survived"
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E4%B8%8D%E5%8B%95%E9%99%A2_%28%E5%BA%83%E5%B3%B6%E5%B8%82%29
+        note: 1945年8月6日、広島市への原子爆弾投下により被爆。ここは爆心地から約3.90kmに位置した。爆風により金堂の屋根の一部が吹き飛び、本堂の柱の1本が中央から折れたものの、全体では倒壊は免れている。
+        source: wikipedia-ja-fudo-in-hiroshima
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107020648
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020648

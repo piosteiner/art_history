@@ -1,0 +1,55 @@
+public_id: 123846
+title_lang: de
+title: Stehender Bodhisattva
+attribution_label: Anonymous
+created: c. 700
+created_span: uncertain
+kind: sculpture
+medium: Sandstein
+dimensions: [98]
+institution: museum-rietberg
+inventory_number: RCH 134
+web_url: https://rietberg.ch/sammlungen/rch-134
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Tang_Stehender_Bodhisattva_Museum_Rietberg_RCH_134.jpg/1280px-Tang_Stehender_Bodhisattva_Museum_Rietberg_RCH_134.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tang_Stehender_Bodhisattva_Museum_Rietberg_RCH_134.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: c. 700
+    method: creation
+    place: taiyuan-city
+    label: made for Cave 14, Tianlongshan Grottoes, Tang dynasty
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-134
+        note: "um 700: Urheber*in unbekannt, Urheber*in, Höhle 14, Tianlongshan-Grotten, Taiyuan, Provinz Shanxi, China"
+        source: rietberg-rch-134
+        accessed: 2026-11-24
+  - owner: person/c-t-loo
+    role: dealer
+    acquired: before 1935
+    label: possibly in Paris ("Paris (?)"); inventory card
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-134
+        note: "vor 1935: C. T. Loo (1880–1957), Händler*in, Paris (?) Inventarkarte"
+        source: rietberg-rch-134
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: before 1935
+    label: collector
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-134
+        note: "vor 1935: Eduard von der Heydt (1882–1964), Sammler*in"
+        source: rietberg-rch-134
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1952/1956
+    method: gift
+    place: zurich
+    label: gift of Eduard von der Heydt (beneficiary); entered the museum 22 February 1956, from the Buffalo Museum of Science
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-134
+        note: "1952–1956: Museum Rietberg, Begünstigte*r, Zürich Zugang: 22.2.1956, aus dem Buffalo Museum of Science"
+        source: rietberg-rch-134
+        accessed: 2026-11-24

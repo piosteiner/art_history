@@ -1,0 +1,94 @@
+public_id: 122899
+title_lang: en
+title: Symbolic Head
+creator: odilon-redon
+created: c. 1890
+created_span: uncertain
+kind: oil painting
+medium: oil on paper mounted on canvas
+dimensions: [53.3, 38]
+institution: cleveland-museum-of-art
+inventory_number: "1988.91"
+web_url: https://clevelandart.org/art/1988.91
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1988.91/1988.91_web.jpg
+    source_url: https://clevelandart.org/art/1988.91
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/gustave-fayet
+    acquired_label: before 1925
+    place: beziers
+    label: listed as “Gustave Fayet?” first owner in the Wildenstein catalogue raisonné; the reason for the doubt is unknown
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1988.91
+        note: Possibly Gustave Fayet [1865-1925], Béziers — The Wildenstein catalogue raisonné of Redon’s oeuvre lists “Gustave Fayet?” as the first owner of the CMA picture.
+        source: cma-1988-91
+        accessed: 2026-11-24
+  - owner: person/jacques-dubourg
+    role: dealer
+    place: paris
+    label: how Dubourg acquired it is unknown, possibly from Fayet's collection; possibly the “Jeune Homme en Buste” he lent to Les origines de l'art contemporain, Rennes, 1951
+    sources:
+      - url: https://clevelandart.org/art/1988.91
+        note: (Jacques Dubourg [1897-1981], Paris, sold to Knoedler & Co.) — Dubourg, an art dealer, sold the Redon to Knoedler & Co. on October 20, 1954. The circumstances of Dubourg’s acquisition of the Redon are unknown.
+        source: cma-1988-91
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1954-10-20
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: stock no. A5851
+    sources:
+      - url: https://clevelandart.org/art/1988.91
+        note: Dubourg, an art dealer, sold the Redon to Knoedler & Co. on October 20, 1954. … Knoedler sold the Redon (stock number A5851) to Mildred Andrews Putnam on February 20, 1956.
+        source: cma-1988-91
+        accessed: 2026-11-24
+  - owner: person/mildred-andrews-putnam
+    acquired: 1956-02-20
+    ended: 1984
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1988.91
+        note: Knoedler sold the Redon (stock number A5851) to Mildred Andrews Putnam on February 20, 1956. Mildred Andrews Putnam [1890/92-1984], Cleveland, OH, by descent to her son, Peter Andrews Putnam
+        source: cma-1988-91
+        accessed: 2026-11-24
+  - owner: person/peter-andrews-putnam
+    acquired: 1984
+    ended: 1987-12-07
+    method: inheritance
+    direct: true
+    place: cleveland
+    label: by descent from his mother; on loan to the museum at his death
+    sources:
+      - url: https://clevelandart.org/art/1988.91
+        note: Peter Andrews Putnam [1925-1987], Cleveland, OH, given to the Cleveland Museum of Art — At the time of Putnam’s death on December 7, 1987, the Redon, along with four other paintings and two drawings, had been on loan to CMA.
+        source: cma-1988-91
+        accessed: 2026-11-24
+  - owner: person/peter-andrews-putnam
+    role: estate
+    acquired: 1987-12-07
+    method: inheritance
+    direct: true
+    label: distributed from his estate and given to the museum in the name of his mother's fund
+    sources:
+      - url: https://clevelandart.org/art/1988.91
+        note: After his death, these artworks were distributed from his estate and then given permanently to the Museum in the name of his mother’s fund.
+        source: cma-1988-91
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1988
+    method: gift
+    direct: true
+    place: cleveland
+    label: Gift of the Mildred Andrews Fund
+    sources:
+      - url: https://clevelandart.org/art/1988.91
+        note: The Cleveland Museum of Art, Cleveland, OH [1988-] — Gift of the Mildred Andrews Fund
+        source: cma-1988-91
+        accessed: 2026-11-24

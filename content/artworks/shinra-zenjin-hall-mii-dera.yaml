@@ -1,0 +1,69 @@
+public_id: 124037
+title: Shinra Zenjin Hall, Mii-dera
+names:
+  - lang: ja
+    role: translation
+    text: 園城寺新羅善神堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020367
+created: c. 1347
+created_span: uncertain
+institution: mii-dera
+location: [135.8526, 35.0194]
+wikidata_id: Q107020367
+metadata:
+  sources: [Wikidata Q107020367 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/otsu
+    period: c. 1347
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Miidera_Shinrazenjindo1.jpg/1280px-Miidera_Shinrazenjindo1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Miidera_Shinrazenjindo1.jpg
+    license: CC BY-SA 3.0
+    credit: KENPEI
+provenance:
+  - owner: institution/mii-dera
+    acquired: c. 1347
+    method: creation
+    place: otsu
+    label: Shinra shrine, a guardian shrine of Onjō-ji (Mii-dera); by tradition built by Ashikaga Takauji in 1340, but a document of 1347 lists the Shinra shrine among the works then in progress
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1330
+        note: 貞観二年（八六〇）の勧請と伝え、園城寺の鎮守の一つである。現在の建物は暦応三年（一三四〇）足利尊氏の造営と伝えるが、貞和三年（一三四七）の文書に堂塔工程を記したものがあり、そのうちに新羅社も含まれているから、実際には、その頃造営があったのであろう。 … 所有者名 ： 園城寺
+        source: kunishitei-102-1330
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%9C%92%E5%9F%8E%E5%AF%BA&oldid=111672295
+        note: "[[貞和]]3年（[[1347年]]）1月には[[足利尊氏]]により金堂や新羅善神堂（[[国宝]]）などが再建されている"
+        source: wikipedia-ja-onjo-ji
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1595-11
+    place: otsu
+    label: Toyotomi Hideyoshi orders the temple's lands confiscated (kessho); most halls torn down or moved, the Shinra Zenjin-dō among the few left; revival permitted 1598
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%9C%92%E5%9F%8E%E5%AF%BA&oldid=111672295
+        note: "[[文禄]]4年（[[1595年]]）11月、当寺は突如として秀吉の怒りに触れ、闕所（寺領の没収、事実上の廃寺）を命じられた … 残ったものは新羅善神堂、三尾社本殿、護法善神堂の他は上光院などいくつかの子院のみであった。 … [[慶長]]3年（[[1598年]]）になり、秀吉は自らの死の直前になって当寺の再興をようやく許可している。"
+        source: wikipedia-ja-onjo-ji
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1873
+    place: otsu
+    label: most of the northern precinct taken over as army land; the Shinra Zenjin-dō (renamed from Shinra-sha in the Meiji separation of Buddhas and kami) and Hōmyō-in remain
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%9C%92%E5%9F%8E%E5%AF%BA&oldid=111672295
+        note: "[[1873年]]（[[明治]]6年）には北院の大半となる20万平方メートルが[[大日本帝国陸軍|陸軍]]用地として[[軍部]]に接収されてしまい … 多くの子院が廃寺となって新羅善神堂と法明院を残し北院は廃絶してしまった。 … かつては新羅社や新羅明神と呼ばれていたが、明治時代の[[神仏分離]]によって名称を新羅善神堂に改めた。"
+        source: wikipedia-ja-onjo-ji
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107020367
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020367

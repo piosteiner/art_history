@@ -1,0 +1,104 @@
+public_id: 122584
+name: Santō Kyōden
+names:
+  - lang: ja
+    role: original
+    text: 山東京伝
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - text: Kyōden
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - text: Denzō
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - text: Seiseisai
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - text: Seisai, Santō Kyōden Rissai
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - text: Iwase Samuru
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - text: Rissai
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - text: Kitao Masanobu
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - text: Santōan
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - text: Masanobu Kitao
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - text: Santo Kyoden
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - text: Santou Kyouden
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - text: Kita Masanobu
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - lang: zh
+    role: translation
+    text: 三東京傳
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+  - lang: ru
+    role: translation
+    text: Кёдэн Санто
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q938347
+birth: 1761-09-13
+death: 1816-10-27
+wikidata_id: Q938347
+metadata:
+  sources: [Wikidata Q938347 (retrieved 2026-11-23)]
+relationships:
+  - type: participated_in
+    to: event/santo-kyoden-shogakai-1792
+    label: host
+    sources:
+      - source: koyama-2026-ryogoku-yanagibashi-shogakai
+        locator: p. 33, n. 5
+        accessed: 2026-11-23
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/%E5%B1%B1%E6%9D%B1%E4%BA%AC%E5%82%B3.jpg/1280px-%E5%B1%B1%E6%9D%B1%E4%BA%AC%E5%82%B3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%B1%B1%E6%9D%B1%E4%BA%AC%E5%82%B3.jpg
+    license: Public domain
+    credit: Hannah
+identifiers:
+  bnf: 12215908f
+  gnd: "118794515"
+  idref: "067009263"
+  kulturnav: 5330f9d2-e12f-43a3-b9f0-a31bb3be97b4
+  lc: n82073773
+  ulan: "500121368"
+  viaf: "59133304"
+sources:
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q938347
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q938347

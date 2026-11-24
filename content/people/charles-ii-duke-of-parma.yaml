@@ -25,6 +25,24 @@ relationships:
       - accessed: 2026-10-30
         property: P20
         wikidata: Q352200
+  - type: child_of
+    to: person/louis-of-parma-king-of-etruria
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q352200
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q444290
+  - type: child_of
+    to: person/maria-luisa-i-duchess-of-lucca
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q233587
+      - accessed: 2026-11-23
+        property: P25
+        wikidata: Q352200
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Ritratto_di_Carlo_Ludovico_di_Borbone.jpg/1280px-Ritratto_di_Carlo_Ludovico_di_Borbone.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Ritratto_di_Carlo_Ludovico_di_Borbone.jpg

@@ -1,0 +1,52 @@
+public_id: 123934
+title: Buddha Hall, Kōzan-ji
+names:
+  - lang: ja
+    role: translation
+    text: 功山寺仏殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020651
+created: 1320
+institution: kozan-ji-shimonoseki
+location: [130.9819, 33.99561]
+wikidata_id: Q107020651
+metadata:
+  sources: [Wikidata Q107020651 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/shimonoseki
+    period: 1320
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/04/Kozanji_Temple_%28Shimonoseki%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kozanji_Temple_(Shimonoseki).JPG
+    license: CC BY-SA 3.0
+    credit: Wiki708 at Japanese Wikipedia
+provenance:
+  - owner: institution/kozan-ji-shimonoseki
+    acquired: 1320
+    method: creation
+    place: shimonoseki
+    label: pillars raised on the 5th day of the 4th month of Gen'ō 2 (1320), per an ink inscription on the inner altar pillar; the temple, founded 1327 as Chōfuku-ji, was renamed Kōzan-ji in 1650; owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3198
+        note: 功山寺は嘉暦二年（一三二七）、虚庵玄寂の開創になる寺院で、当初は長福寺と称した。仏殿の内陣来迎柱の上部には「此堂元応二年（一三二〇）卯月五日柱立」の墨書がある。 … 所有者名 ： 功山寺 所有者種別 ： 寺院
+        source: kunishitei-102-3198
+        accessed: 2026-11-24
+      - url: http://kouzanji.org/Files/treasure2.html
+        note: 寺伝に嘉歴2年(1327)創建とあるが、仏殿の南側来迎柱の上部に「此堂元応2年(1320)卯月5日柱立」の墨書があり
+        source: kouzanji-official-treasure
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E5%8A%9F%E5%B1%B1%E5%AF%BA
+        note: 嘉暦2年（1327年）、虚庵玄寂を開山として臨済宗の長福寺として創建された。開基は北条時仲と推定されている。なお、仏殿の建立は上記創建年より早い元応2年（1320年）である。 … 慶長7年（1602年）、長府藩主毛利秀元が金岡用兼を招聘し、曹洞宗の笑山寺として再興した。慶安3年（1650年）、秀元の没後、功山寺に改名された。
+        source: wikipedia-ja-kozan-ji-shimonoseki
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107020651
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020651

@@ -1,0 +1,146 @@
+public_id: 122979
+title_lang: en
+title: Joseph Accused by Potiphar's Wife
+names:
+  - lang: nl
+    role: translation
+    text: Potiphars vrouw klaagt Jozef aan bij haar man
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q21485158
+  - lang: fr
+    role: translation
+    text: Joseph accusé par la femme de Potiphar
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q21485158
+attribution_label: workshop of Rembrandt
+created: 1655
+materials: [oil paint, canvas]
+dimensions: [105.7, 97.8]
+institution: national-gallery-of-art
+inventory_number: 1937.1.79
+web_url: http://www.rembrandtdatabase.org/Rembrandt/painting/49265/joseph-accused-by-the-wife-of-potiphar
+provenance_status: a_clear
+provenance_status_note: Andrew W. Mellon bought it from the Hermitage in January 1931 and deeded it on 1 May 1937 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
+wikidata_id: Q21485158
+metadata:
+  sources: [Wikidata Q21485158 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Joseph_Accused_by_Potiphar%27s_Wife.jpg/1280px-Joseph_Accused_by_Potiphar%27s_Wife.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joseph_Accused_by_Potiphar%27s_Wife.jpg
+    license: Public domain
+    credit: Workshop of Rembrandt
+provenance:
+  - owner: person/gerard-hoet
+    place: the-hague
+    label: Gerard Hoet Jr. (the younger), dealer
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.86.html
+        note: Gerard Hoet, Jr. [d.1760], The Hague;
+        source: nga-1937-1-79
+        accessed: 2026-11-24
+  - owner: person/arnoldus-franken
+    role: agent
+    acquired: 1760-08-25
+    method: auction
+    direct: true
+    place: the-hague
+    label: Hoet's sale, The Hague, 25–26 August 1760, no. 44, as a 'kapitaal en uitmuntend stuk'
+    price:
+      amount: 100
+      currency: NLG
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.86.html
+        note: (his sale, by Arnoldus Franken, The Hague, 25-26 August 1760, no. 44).[1] — [1] … described as a "kapitaal en uitmuntend stuk," sold for 100 florins.
+        source: nga-1937-1-79
+        accessed: 2026-11-24
+  - owner: person/johann-ernst-gotzkowsky
+    place: berlin
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.86.html
+        note: Johann Ernst Gotzkowsky [1710-1775], Berlin;
+        source: nga-1937-1-79
+        accessed: 2026-11-24
+  - owner: person/catherine-ii-of-russia
+    acquired: 1763
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.86.html
+        note: acquired in 1763 by Catherine II, empress of Russia [1729-1796], Saint Petersburg;
+        source: nga-1937-1-79
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.86.html
+        note: Imperial Hermitage Gallery, Saint  Petersburg;
+        source: nga-1937-1-79
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: dealer
+    acquired: 1931-01
+    method: purchase
+    direct: true
+    label: sale from the Hermitage to Mellon through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York); as a painting by Rembrandt; Knoedler sales book, January 1931 (Getty Research Institute, 2012.M.54)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.86.html
+        note: sold January 1931, as a painting by Rembrandt, through (Matthiesen Gallery, Berlin, P. & D. Colnaghi & Co., London, and M. Knoedler & Co., New York)
+        source: nga-1937-1-79
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1931-01
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.; as a painting by Rembrandt; Knoedler sales book, January 1931 (Getty Research Institute, 2012.M.54)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.86.html
+        note: sold January 1931, as a painting by Rembrandt, through (…) to Andrew W. Mellon, Pittsburgh and Washington; — An entry from a January 1931 Knoedler sales book confirms the sale to Mellon
+        source: nga-1937-1-79
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1937-05-01
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded by Andrew W. Mellon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.86.html
+        note: deeded 1 May 1937 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;[2]
+        source: nga-1937-1-79
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.86.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-79
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q21485158
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q21485158
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q21485158
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q21485158
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q21485158

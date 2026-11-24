@@ -37,6 +37,16 @@ death: 1762-07-12
 wikidata_id: Q492998
 metadata:
   sources: [Wikidata Q492998 (retrieved 2026-11-01)]
+relationships:
+  - type: child_of
+    to: person/yeongjo-of-joseon
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q485009
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q492998
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/81/%EC%82%AC%EB%8F%84%EC%84%B8%EC%9E%90.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%EC%82%AC%EB%8F%84%EC%84%B8%EC%9E%90.jpg

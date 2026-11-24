@@ -1,0 +1,162 @@
+public_id: 122963
+title_lang: en
+title: Bagpipe Player
+names:
+  - lang: nl
+    role: original
+    text: De doedelzakspeler
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177033
+  - lang: de
+    role: translation
+    text: Dudelsackspieler
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177033
+creator: hendrick-ter-brugghen
+created: 1624
+materials: [oil paint, canvas]
+dimensions: [100.7, 82.9]
+institution: national-gallery-of-art
+inventory_number: 2009.24.1
+web_url: https://www.sothebys.com/en/auctions/ecatalogue/2009/important-old-master-paintings-including-european-works-of-art-n08516/lot.40.html
+provenance_status: d_seized
+provenance_status_note: Herbert von Klemperer was forced to surrender the painting when he left Germany in 1938; sold at Lange, Berlin, November 1938, to the Wallraf-Richartz-Museum; restituted to his heirs in July 2008.
+wikidata_id: Q20177033
+metadata:
+  sources: [Wikidata Q20177033 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Hendrick_ter_Brugghen_-_Bagpipe_Player_-_Google_Art_Project.jpg/1280px-Hendrick_ter_Brugghen_-_Bagpipe_Player_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hendrick_ter_Brugghen_-_Bagpipe_Player_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Hendrick ter Brugghen
+provenance:
+  - owner: person/aernout-van-lingen
+    acquired: 1676 or earlier
+    place: province-of-utrecht
+    label: member of the Utrecht city council; his 1676 inventory lists 'Een saakpijp van Ter Brugghen'
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.144298.html
+        note: 'Possibly Aernout van Lingen, Utrecht, by 1676.[1] — The inventory of Aernout van Lingen, "raad in de Vroedshap," which was made in Utrecht in 1676, lists: "Een saakpijp van Ter Brugghen."'
+        source: nga-2009-24-1
+        accessed: 2026-11-24
+  - owner_label: Glenz, Berlin
+    role: dealer
+    acquired_label: in 1915
+    place: berlin
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.144298.html
+        note: probably with (Glenz, Berlin), in 1915;[2]
+        source: nga-2009-24-1
+        accessed: 2026-11-24
+  - owner: person/gustav-klemperer-von-klemenau
+    direct: true
+    place: dresden
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.144298.html
+        note: possibly Gustav Klemperer Edler von Klemenau [1852-1926], Dresden;
+        source: nga-2009-24-1
+        accessed: 2026-11-24
+  - owner: person/herbert-von-klemperer
+    ended: 1938
+    direct: true
+    place: berlin
+    label: his son; forced to surrender the painting when he left Germany in 1938
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.144298.html
+        note: his son, Dr. Herbert von Klemperer [1878-1951], Berlin;[3] — Dr. Klemperer was forced to surrender the painting when he left Germany in 1938.
+        source: nga-2009-24-1
+        accessed: 2026-11-24
+  - owner: institution/h-w-lange
+    role: agent
+    acquired: 1938-11-18
+    method: auction
+    direct: true
+    place: berlin
+    label: sale, Lange, Berlin, 18–19 November 1938, no. 151, after Klemperer was forced to surrender the painting
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.144298.html
+        note: (sale, Lange, Berlin, 18-19 November 1938, no. 151);
+        source: nga-2009-24-1
+        accessed: 2026-11-24
+  - owner: institution/wallraf-richartz-museum
+    method: auction
+    direct: true
+    place: cologne
+    label: inv. no. 2613
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.144298.html
+        note: acquired by Wallraf-Richartz-Museum, Cologne, inv. no. 2613;
+        source: nga-2009-24-1
+        accessed: 2026-11-24
+  - owner_label: heirs of Herbert von Klemperer
+    acquired: 2008-07
+    method: restitution
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.144298.html
+        note: restituted July 2008 to Klemperer's heirs;
+        source: nga-2009-24-1
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 2009-01-09
+    method: auction
+    direct: true
+    place: new-york-city
+    label: sale, New York, 9 January 2009, no. 40
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.144298.html
+        note: (sale, Sotheby's, New York, 9 January 2009, no. 40);
+        source: nga-2009-24-1
+        accessed: 2026-11-24
+  - owner: person/johnny-van-haeften
+    co_owners: [institution/galerie-otto-naumann, institution/bernheimer-fine-old-masters]
+    role: dealer
+    direct: true
+    label: "jointly: Johnny Van Haeften Ltd., London; Otto Naumann, New York; Bernheimer Fine Art Ltd., Munich"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.144298.html
+        note: (Johnny Van Haeften Ltd., London; Otto Naumann, New York; Bernheimer Fine Art Ltd., Munich);
+        source: nga-2009-24-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 2009-04
+    method: purchase
+    direct: true
+    place: washington-d-c
+    label: Paul Mellon Fund and Greg and Candy Fazakerley Fund
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.144298.html
+        note: purchased April 2009 by NGA.
+        source: nga-2009-24-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177033
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177033
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177033
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177033
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177033
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177033

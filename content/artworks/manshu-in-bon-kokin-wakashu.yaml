@@ -1,0 +1,24 @@
+public_id: 124529
+title: Manshu-in-bon Kokin Wakashū
+names:
+  - lang: ja
+    role: translation
+    text: 曼殊院本古今和歌集
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11515236
+created: 11th century
+created_span: uncertain
+wikidata_id: Q11515236
+metadata:
+  sources: [Wikidata Q11515236 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Manshuin_Kokinshu.jpg/1280px-Manshuin_Kokinshu.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Manshuin_Kokinshu.jpg
+    license: Public domain
+    credit: Japanese calligraphers of the Heian and Kamakura periods; I created the files
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11515236

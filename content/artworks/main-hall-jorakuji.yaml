@@ -1,0 +1,47 @@
+public_id: 124054
+title: Main Hall, Jorakuji
+names:
+  - lang: ja
+    role: translation
+    text: 常楽寺本堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020398
+created: 1360
+institution: joraku-ji
+location: [136.0486, 34.99007]
+wikidata_id: Q107020398
+metadata:
+  sources: [Wikidata Q107020398 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/konan
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/061220_Joraku-ji_Konan_Shiga_pref_Japan04s5.jpg/1280px-061220_Joraku-ji_Konan_Shiga_pref_Japan04s5.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:061220_Joraku-ji_Konan_Shiga_pref_Japan04s5.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+provenance:
+  - owner: institution/joraku-ji
+    acquired: 1360
+    method: creation
+    place: konan
+    label: rebuilt soon after the fire of 26 March 1360 (Enbun 5), on the initiative of the monk Kankei; major repair in the late Muromachi period; the temple (by tradition founded in the Wadō era) is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1457
+        note: その後延文五年三月二十六日火災のため堂塔はことごとく焼失したという。ここにおいて僧観慶が再興を志し、間もなく再建をみたと思われるのが現在の本堂である。 … 所有者名 ： 常楽寺 所有者種別 ： 寺院
+        source: kunishitei-102-1457
+        accessed: 2026-11-24
+      - url: https://www.eonet.ne.jp/~jo-rakuji/engi.html
+        note: 延文５年（1360） 落雷により本堂・諸堂は全焼。 … 延文５年 僧侶観慶によ本堂が再建
+        source: jorakuji-engi
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%B8%B8%E6%A5%BD%E5%AF%BA_%28%E6%B9%96%E5%8D%97%E5%B8%82%29&oldid=111639326
+        note: 延文5年（1360年）に落雷によって本堂や諸堂は全焼し本尊も消失してしまうが、同年のうちに観慶らによって本堂（国宝）が再建される
+        source: wikipedia-ja-joraku-ji-konan
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020398

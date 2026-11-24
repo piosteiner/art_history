@@ -1,0 +1,234 @@
+public_id: 125114
+title_lang: es
+title: San Juan Bautista mostrando a Jesús
+names:
+  - lang: en
+    role: translation
+    text: Saint John the Baptist Pointing to Christ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268649
+  - lang: it
+    role: translation
+    text: san giovanni battista indica cristo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20268649
+creator: bartolome-esteban-murillo
+created: c. 1655
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [270.2, 184.5]
+institution: art-institute-of-chicago
+inventory_number: "1960.2"
+wikidata_id: Q20268649
+metadata:
+  sources: [Wikidata Q20268649 (retrieved 2026-11-24)]
+relationships:
+  - type: depicts_person
+    to: person/jesus-christ
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20268649
+  - type: depicts_person
+    to: person/john-the-baptist
+    sources:
+      - accessed: 2026-11-24
+        property: P180
+        wikidata: Q20268649
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Bartolom%C3%A9_Est%C3%A9ban_Murillo_-_Saint_John_the_Baptist_Pointing_to_Christ_-_1960.2_-_Art_Institute_of_Chicago.jpg/1280px-Bartolom%C3%A9_Est%C3%A9ban_Murillo_-_Saint_John_the_Baptist_Pointing_to_Christ_-_1960.2_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Est%C3%A9ban_Murillo_-_Saint_John_the_Baptist_Pointing_to_Christ_-_1960.2_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Bartolomé Esteban Murillo
+provenance:
+  - owner: institution/convent-of-san-leandro-seville
+    method: commission
+    place: seville
+    label: painted for the refectory of the Augustinian convent, with three other scenes of the life of St John the Baptist and one of St Augustine washing Christ's feet
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: Painted for the refectory of the Augustinian convent of San Leandro, Seville, together with three other paintings of the life of St. John the Baptist and a one of Saint Augustine washing Christ’s feet [see correspondence of Francisco de Bruna and the Conde del Aguila, about 1781 published by Carriazo 1929, p. 180];
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: person/antonio-bravo
+    acquired: 1812-06-23
+    method: purchase
+    direct: true
+    place: seville
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: sold by the convent to Antonio Bravo, Seville, 23 June 1812 [manuscript catalogue, Bravo Collection, University of Seville, according to Baticle and Marinas 1981];
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: person/aniceto-bravo
+    direct: true
+    place: seville
+    label: brother of Antonio Bravo
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: his brother, Aniceto Bravo, sold together with an unknown Murillo and three other paintings to Luis Bouisson
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: person/luis-bouisson
+    role: agent
+    acquired: September 1837 or earlier
+    method: purchase
+    direct: true
+    label: bought with an unknown Murillo and three other paintings for M. Dauzat, probably on behalf of Baron Taylor for King Louis-Philippe
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: sold together with an unknown Murillo and three other paintings to Luis Bouisson for M. Dauzat, probably on behalf of Baron Taylor for the collection of King Louis-Philippe of France, by September 1837 [see Angulo Íñiguez 1981, p. 21 and Baticle and Marinas 1981];
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: person/louis-philippe-i
+    acquired: 1838 or earlier
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and London; Notice des tableaux 1838
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: Louis-Philippe, Paris and London, by 1838 (d. 1850) [according to Notice des tableaux..., 1838];
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner_label: heirs of Louis-Philippe
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: his heirs, sold Christie’s, London, 6-21 May 1853, no. 74, for £660
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1853
+    method: auction
+    direct: true
+    place: london
+    label: "Louis-Philippe sale, 6–21 May 1853, no. 74; buyer: Farrer for a Manchester client (Illustrated London News) or Steward/Stewand/Towend (auctioneer's book)"
+    price:
+      amount: 660
+      currency: GBP
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: "his heirs, sold Christie’s, London, 6-21 May 1853, no. 74, for £660 [there is some confusion about the buyer at the Louis-Philippe sale: though the Illustrated London News, 21 May 1853, p. 400 states that it was bought by Farrer for a client in Manchester, the copy of the auctioneer’s book in Christie’s archives appears to be marked to Steward, Stewand or Towend …]"
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: person/thomas-townend
+    method: auction
+    place: manchester
+    label: of Manchester and later Brighton; probably the buyer at the 1853 sale
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: since the painting was later in the collection of Thomas Townend, Manchester, both may be correct; there is no evidence that it was ever in the collection of the duc de Montpensier as reported by Tubino 1864 and Roberts 1897]; Thomas Townend (d. 1865) of Manchester and later Brighton,
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: person/elizabeth-shepherd-townend-hall
+    acquired: 1865 or earlier
+    ended: 1883-02
+    method: inheritance
+    direct: true
+    label: daughter of Thomas Townend; Syndale, Kent
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: presumably by descent to his daughter Elizabeth Shepherd Townend Hall (d. Feb. 1883), Syndale, Kent by 1865 until 1883;
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    not_sold: true
+    acquired: 1883-07-14
+    method: auction
+    direct: true
+    place: london
+    label: "offered as from the estate of Thomas Townend, Brighton, no. 73; bought in at 110 guineas (annotated catalogue: £115.10 to Purvis)"
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: offered for sale as from the estate of Thomas Townend, Brighton, Christie’s, London, 14 July 1883, no. 73, bought in at 110 guineas [73 written in chalk and a stencilled 130S, both on the back of the painting, confirm that it was in this sale; …; annotated catalog says £115.10 to Purvis];
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: person/blanche-mary-townend-hall-bullen
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: by descent to Blanche Mary Townend Hall Bullen (d. 1886);
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: person/john-bullen-symes-bullen
+    acquired: 1886
+    method: inheritance
+    direct: true
+    label: Major; husband of Blanche Mary Townend Hall Bullen
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: on her death to her husband Major John Bullen Symes Bullen, whom she had married on 26 June 1884 [this geneology clarified in a letter of 24 June 2002 from Arthur Percival, the Faversham Society, …];
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: person/john-fitzherbert-symes-bullen
+    method: inheritance
+    direct: true
+    label: Lt.-Colonel; of Catherston Leweston, Dorset
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: by descent to Lt.-Colonel John Fitzherbert Symes Bullen of Catherston-Leweston, Dorset [according to Soria 1960 and Bullen’s daughter, Jennie Loriston-Clarke, who remembered seeing it in the hall of her father's home; …].
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: institution/appleby-brothers
+    role: dealer
+    acquired: June 1954 or earlier
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: Appleby Brothers, London, by June 1954 [according to Burlington Magazine 1954];
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1954-07-19
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: sold by Appleby Brothers to Agnew’s, London, 19 July 1954 [according to letter of 3 September 1998 from Christopher Kingzett in curatorial file];
+        source: aic-1960-2
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1960
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/11392
+        note: sold to Art Institute of Chicago, 1960.
+        source: aic-1960-2
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20268649
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20268649
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20268649
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20268649
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20268649
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20268649

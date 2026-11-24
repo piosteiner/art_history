@@ -1,0 +1,18 @@
+public_id: 124651
+name: Andrea del Sarto
+given_name: Andrea
+family_name: del Sarto
+birth: 1486-07-25
+death: 1530-10-09
+wikidata_id: Q5571
+metadata:
+  sources: [Wikidata Q5571 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q5571
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q5571

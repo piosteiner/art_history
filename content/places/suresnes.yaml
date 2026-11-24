@@ -1,0 +1,47 @@
+public_id: 127897
+name: Suresnes
+names:
+  - lang: ja
+    role: translation
+    text: シュレンヌ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q193929
+  - lang: zh
+    role: translation
+    text: 叙雷讷
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q193929
+  - lang: ko
+    role: translation
+    text: 쉬렌
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q193929
+  - lang: ru
+    role: translation
+    text: Сюрен
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q193929
+kind: settlement
+parent: hauts-de-seine
+country_code: FR
+location: [2.22694, 48.87111]
+wikidata_id: Q193929
+metadata:
+  sources: [Wikidata Q193929 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q193929
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q193929
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q193929

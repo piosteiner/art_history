@@ -1,0 +1,68 @@
+public_id: 124440
+title: Seven-Branched Sword
+names:
+  - text: Shichishitō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q912125
+  - text: Shichishi-tō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q912125
+  - text: Nanatsusaya no Tachi
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q912125
+  - text: Chiljido
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q912125
+  - lang: fr
+    role: translation
+    text: épée à sept branches
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q912125
+  - lang: de
+    role: translation
+    text: Siebenarmiges Schwert
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q912125
+  - lang: ja
+    role: translation
+    text: 七支刀
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q912125
+  - lang: ko
+    role: translation
+    text: 칠지도
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q912125
+  - lang: ru
+    role: translation
+    text: Меч с семью ветвями
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q912125
+created: 369
+institution: isonokami-jingu
+wikidata_id: Q912125
+metadata:
+  sources: [Wikidata Q912125 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ae/Seven-Branched_Sword.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Seven-Branched_Sword.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q912125
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q912125

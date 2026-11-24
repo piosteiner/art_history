@@ -20,5 +20,19 @@ relationships:
     notes_md: head of the Tawaraya school, devoted to the revival of the Rinpa style (Mason p. 289)
   - type: associated_with
     to: movement/ukiyo-e
+  - type: participated_in
+    to: event/hokusai-great-daruma-gokokuji-1804
+    label: painter
+    sources:
+      - source: kato-hokusai-kyokuhitsu-daruma
+        locator: § 1804
+        accessed: 2026-11-23
+  - type: participated_in
+    to: event/hokusai-great-daruma-nagoya-1817
+    label: painter
+    sources:
+      - source: kato-hokusai-kyokuhitsu-daruma
+        locator: § 1817
+        accessed: 2026-11-23
 identifiers:
   dome: "4165"

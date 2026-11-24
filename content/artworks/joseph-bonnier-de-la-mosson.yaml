@@ -1,0 +1,199 @@
+public_id: 123064
+title_lang: en
+title: Joseph Bonnier de la Mosson
+names:
+  - lang: nl
+    role: translation
+    text: Portret van Joseph Bonnier de la Mosson (1702-1744)
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20177951
+creator: jean-marc-nattier
+created: 1745
+materials: [oil paint, canvas]
+dimensions: [137.9, 105.4]
+institution: national-gallery-of-art
+inventory_number: 1961.9.30
+wikidata_id: Q20177951
+metadata:
+  sources: [Wikidata Q20177951 (retrieved 2026-11-23)]
+relationships:
+  - type: depicts_person
+    to: person/joseph-bonnier-de-la-mosson
+    sources:
+      - accessed: 2026-11-23
+        property: P180
+        wikidata: Q20177951
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Joseph_Bonnier_de_la_Mosson_1745_by_Nattier.jpg/1280px-Joseph_Bonnier_de_la_Mosson_1745_by_Nattier.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joseph_Bonnier_de_la_Mosson_1745_by_Nattier.jpg
+    license: Public domain
+    credit: Jean-Marc Nattier
+provenance:
+  - owner_label: Duc de Mailly
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: Duc de Mailly;
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner: person/theodore-richard
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: Théodore Richard [1782-1859], Paris;
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1858-03-19
+    method: auction
+    direct: true
+    place: paris
+    label: his sale, 19–20 and 22 March 1858, no. 176, sitter misidentified as Portrait of Bouffon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: (his sale, Hôtel Drouot, Paris, 19-20 and 22 March 1858, no. 176, with sitter misidentified as _Portrait of Bouffon_).
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1877-03-27
+    method: auction
+    place: paris
+    label: sale, 27 March 1877, no. 42, sitter misidentified as Portrait of Bouffon
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: (sale, Hôtel Drouot, Paris, 27 March 1877, no. 42, with sitter misidentified as _Portrait of Bouffon_);
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner: person/gustave-rothan
+    acquired: 1877-03-27
+    method: auction
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: Gustave Rothan;
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1890-05-29
+    method: auction
+    direct: true
+    place: paris
+    label: his sale, 29–31 May 1890, no. 176, as Portrait of a Man
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: (his sale, Galerie Georges Petit, Paris, 29-31 May 1890, no. 176, as _Portrait of a Man_);
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner: person/louis-cahen-d-anvers
+    acquired: 1900 or earlier
+    place: paris
+    label: "\"L. Cahen d'Anvers\", in all probability the banker comte Louis-Raphaël Cahen d'Anvers"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: L. Cahen d'Anvers,[1] Paris, by 1900; — [1] In all probability, the French banker comte Louis-Raphaël Cahen d'Anvers (1837-1922)
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner_label: A. de Rothschild
+    acquired: 1906 or earlier
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: A. de Rothschild, by 1906;
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner: institution/thomas-agnew-sons-ltd
+    role: dealer
+    acquired: 1936-05-04 or earlier
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: (Thos. Agnew and Sons, Ltd., London), by 4 May 1936;
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner_label: comte X...
+    direct: true
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: comte X...;
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner: institution/galerie-charpentier
+    role: agent
+    acquired: 1937-03-18
+    method: auction
+    direct: true
+    place: paris
+    label: his sale, 18 March 1937, lot A
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: (his sale, Galerie Jean Charpentier, Paris, 18 March 1937, lot A);
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner_label: Damidot
+    acquired: 1937-03-18
+    method: auction
+    direct: true
+    label: reported in the Gazette de l'Hôtel Drouot, 20 March 1937
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: "purchased by Damidot.[2] — [2] This was reported in the _Gazette de l'Hôtel Drouot_, 20 March 1937: 1."
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner: institution/galerie-cailleux
+    role: dealer
+    acquired: 1952 or earlier
+    place: paris
+    label: lent to the 1952 exhibition at the Galerie Charpentier, Paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: (Galerie Cailleux, Paris), by 1952;[3] — [3] The painting was lent by Cailleux to the 1952 exhibition at the Galerie Charpentier in Paris.
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1954-02-09
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: purchased 9 February 1954 by the Samuel H. Kress Foundation, New York;[4]
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1961
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46129.html
+        note: gift 1961 to NGA.
+        source: nga-1961-9-30
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20177951
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20177951
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20177951
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20177951
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20177951
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20177951

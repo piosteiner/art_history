@@ -1,0 +1,266 @@
+public_id: 124628
+title_lang: en
+title: Mme. Dufresne
+creator: pierre-paul-prud-hon
+created: c. 1816
+created_span: uncertain
+dimensions: [23.8, 17.5]
+institution: cleveland-museum-of-art
+inventory_number: "1964.292"
+web_url: https://clevelandart.org/art/1964.292
+wikidata_id: Q60469200
+metadata:
+  sources: [Wikidata Q60469200 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Pierre-Paul_Prud%27hon_-_Mme._Dufresne_-_1964.292_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Pierre-Paul_Prud%27hon_-_Mme._Dufresne_-_1964.292_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Paul_Prud%27hon_-_Mme._Dufresne_-_1964.292_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Pierre-Paul Prud'hon
+provenance:
+  - owner: artist/pierre-paul-prud-hon
+    acquired: c. 1816
+    ended: 1823
+    method: creation
+    label: studio of the artist
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: Studio of the artist [c. 1816 - 1823]
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: person/charles-boulanger-de-boisfremont
+    acquired: 1823-02-11
+    ended: 1838
+    method: bequest
+    direct: true
+    label: friend and student of Prud'hon, bequeathed "tous [ses] portefeuilles de dessins, études, etc."; not in the estate sale of 13 May 1823
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: On February 11, 1823, five days before his death, Prud'hon bequeathed to Boisfremont, his friend and student, “tous [ses] portefeuilles de dessins, études, etc.” The CMA painting was likely among these works
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner_label: Madame Henri Power, née de Boisfremont
+    acquired: 1838
+    ended: 1864
+    method: bequest
+    direct: true
+    label: daughter of Boisfremont (d. 1864)
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: Probably Henri Power [d. 1864], probably to Charles Boulanger de Boisfremont fils [Probably 1838 - 1864] — When Boisfremont died in 1838, he bequeathed his portfolios of works by Prud'hon to his daughter, Madame Henri Power (née de Boisfremont)
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: person/charles-boulanger-de-boisfremont-fils
+    acquired: 1864
+    ended: 1870
+    method: inheritance
+    direct: true
+    label: son of Boisfremont; upheld against Prud'hon's heirs by the Tribunal civil de la Seine, May 1868
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: Probably Charles Boulanger de Boisfremont fils [Probably 1864 - 1870] — In May of 1868, the Tribunal civil de la Seine (1er chamber) ruled in favor of Boisfremont’s son
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1870-04-09
+    method: auction
+    direct: true
+    place: paris
+    label: Boisfremont fils sale, no. 8
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: (Boisfremont fils sale, Hôtel Drouot, Paris, April 9, 1870, no. 8, sold to Monsieur de Norzy)
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner_label: Monsieur de Norzy
+    acquired: 1870-04-09
+    method: auction
+    direct: true
+    label: price per Goncourt (1876); not in de Norzy's sale of 20 May 1873
+    price:
+      amount: 310
+      currency: AFRF
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: Monsieur de Norzy [1870 - by 1874] — Goncourt records in 1876 that Monsieur de Norzy purchased the Prud'hon at the Boisfremont sale for ff 310.
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner_label: M. Jeanne-Deslandes
+    acquired: 1874 or earlier
+    label: lender to the 1874 Exposition des oeuvres de Prud'hon; exact name unclear
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: M. Jeanne-Deslandes [By 1874] — the 1874 Exposition des oeuvres de Prud'hon records the current owner as M. Jeanne-Deslandes.
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1886-04-24
+    method: auction
+    place: paris
+    label: sale, no. 52
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: (Sale, Hôtel Drouot, Paris, April 24, 1886, no. 52)
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: person/henri-rochefort
+    acquired: 1887 or earlier
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: Collection Henri Rochefort [1831-1913], Paris [By 1887]
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: person/paul-cheramy
+    place: paris
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: Paul-Arthur Chéramy [1840-1912], Paris [Until 1908]
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    not_sold: true
+    acquired: 1908-05-05
+    method: auction
+    direct: true
+    place: paris
+    label: Chéramy sale, 5–7 May 1908, no. 95; bought in
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: (Chéramy sale, Galerie Georges Petit, Paris, May 5-7, 1908, no. 95, bought in) — The Prud'hon failed to sell in this auction and was included in Chéramy’s estate sale five years later.
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: person/paul-cheramy
+    acquired: 1908
+    ended: 1912
+    direct: true
+    place: paris
+    label: kept after the unsold 1908 sale
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: Probably Paul-Arthur Chéramy [1840-1912], Paris [1908-1912]
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1913-04-14
+    method: auction
+    direct: true
+    place: paris
+    label: Chéramy estate sale, 14–16 April 1913, no. 391
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: (Chéramy estate sale, Hôtel Drouot, Paris, April 14-16, 1913, no. 391, sold to Jacob)
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner_label: Jacob
+    acquired: 1913
+    method: auction
+    direct: true
+    label: dealer or collector of unknown identity, written in as buyer in Drouot's annotated catalogue
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: Jacob [1913-] — “Jacob,” a dealer or collector of unknown identity, is written in as the buyer in Hôtel Drouot’s annotated copy of the Chéramy estate catalogue.
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: person/david-david-weill
+    acquired: 1922 or earlier
+    ended_label: at least until 1937
+    place: paris
+    label: lent to exhibitions 1922–1937; his label on the stretcher
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: David David-Weill [1871-1952], Paris [By 1922 - at least 1937] — David-Weill certainly had the painting from 1922 until 1937, as he is listed as the lender of the painting to several exhibitions within that period.
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: person/irwin-laughlin
+    ended_label: probably until 1941
+    place: washington-d-c
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: Irwin Laughlin [1871-1941], Washington, D.C. [Probably until 1941]
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1959-06-10
+    method: auction
+    place: london
+    label: Laughlin sale, lot 123; "Betts" named as buyer in the price list
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: (Laughlin sale, Sotheby's, London, June 10, 1959, lot 123, possibly sold to Betts on behalf of Clifford Duits)
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner_label: Betts
+    role: agent
+    acquired: 1959-06-10
+    method: auction
+    direct: true
+    label: possibly buying on behalf of Clifford Duits; perhaps Anthony J. Betts
+    certainty: possible
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: However, in the price list accompanying the Laughlin sale catalogue, “Betts” is listed as the buyer. [...] so it is certainly possible that Betts was buying on behalf of Duits.
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: person/clifford-duits
+    role: dealer
+    acquired: 1959-06-10
+    direct: true
+    place: london
+    label: "Duits records (Getty Research Institute): acquired on the date of the Laughlin sale; seller not recorded"
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: The Duits records at the Getty Research Institute show that Duits acquired the Prud'hon on June 10, 1959 – the date of the Laughlin sale.
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: person/severance-a-millikin
+    co_owners: [person/greta-millikin]
+    acquired: 1963
+    ended: 1964
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: Severance A. [1895-1989] and Greta Millikin [1903-1989], Cleveland, OH, given to the Cleveland Museum of Art [1963-1964]
+        source: cma-1964-292
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1964
+    method: gift
+    direct: true
+    place: cleveland
+    label: Severance and Greta Millikin Collection
+    sources:
+      - url: https://clevelandart.org/art/1964.292
+        note: The Cleveland Museum of Art, Cleveland, OH [1964-]
+        source: cma-1964-292
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q60469200
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q60469200
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q60469200
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q60469200
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q60469200

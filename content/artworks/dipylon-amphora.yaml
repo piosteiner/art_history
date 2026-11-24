@@ -1,0 +1,136 @@
+public_id: 123150
+title: Dipylon amphora
+names:
+  - text: Athens 804
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q331805
+  - lang: nl
+    role: translation
+    text: Dipylon-Amphora
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q331805
+  - lang: fr
+    role: translation
+    text: amphore du Dipylon
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q331805
+  - lang: it
+    role: translation
+    text: Vaso del Dipylon
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q331805
+  - lang: es
+    role: translation
+    text: ánfora de Dípilon
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q331805
+  - lang: ja
+    role: translation
+    text: ディピュロンのアンフォラ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q331805
+  - lang: ru
+    role: translation
+    text: Дипилонская амфора
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q331805
+creator: dipylon-master
+materials: [ceramic]
+dimensions: [155]
+institution: national-archaeological-museum-of-athens
+inventory_number: "804"
+wikidata_id: Q331805
+metadata:
+  sources: [Wikidata Q331805 (retrieved 2026-11-24)]
+relationships:
+  - type: associated_with
+    to: movement/geometrische-kunst
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q331805
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Attica%2C_anfora_funeraria_monumentale_detta_vaso_del_dipylon%2C_attr._a_un_omonimo_pittore%2C_tardo_periodo_geometrico%2C_760-750_ac_ca.%2C_dal_kerameikos%2C_01%2C_n._804.jpg/1280px-thumbnail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Attica,_anfora_funeraria_monumentale_detta_vaso_del_dipylon,_attr._a_un_omonimo_pittore,_tardo_periodo_geometrico,_760-750_ac_ca.,_dal_kerameikos,_01,_n._804.jpg
+    license: CC BY-SA 4.0
+    credit: Francesco Bini
+provenance:
+  - owner_label: woman's grave, Dipylon cemetery, Kerameikos
+    acquired: -760/-750
+    method: creation
+    place: athens
+    label: grave vase marking a woman's grave; made by the Dipylon Master, probably also its potter; perhaps brought to the findspot after the Persian destruction of the city
+    sources:
+      - url: https://de.wikipedia.org/wiki/Dipylon-Amphora
+        note: Die monumentale, 1,55 Meter hohe Bauchhenkel-Amphora … war eine Grabvase und kennzeichnete das Grab einer Frau. … Möglicherweise kam die Vase nach der Zerstörung der Stadt durch die Perser 490 v. Chr. dorthin und stand zuvor auf einem Grab.
+        source: wikipedia-de-dipylon-amphora
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Dipylon_Amphora
+        note: The Dipylon Amphora (also known as Athens 804) is a large Ancient Greek painted vase, made around 760–750 BC
+        source: wikipedia-en-dipylon-amphora
+        accessed: 2026-11-24
+  - owner_label: excavation at the Dipylon cemetery, Kerameikos
+    method: find
+    place: athens
+    label: found intact on an aristocratic gravesite near the Dipylon Gate; date and excavator not reliably given in the sources read
+    sources:
+      - url: https://de.wikipedia.org/wiki/Dipylon-Amphora
+        note: Die Dipylon-Vase wurde in Athen am später errichteten Dipylon-Tor gefunden, in der Nähe des Friedhofes auf dem Kerameikos.
+        source: wikipedia-de-dipylon-amphora
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Dipylon_Amphora
+        note: The Dipylon Amphora was found intact on an aristocratic gravesite at the Dipylon cemetery, near the Dipylon Gate, in Kerameikos, the ancient potters' quarter on the northwest side of the ancient city of Athens.
+        source: wikipedia-en-dipylon-amphora
+        accessed: 2026-11-24
+  - owner: institution/national-archaeological-museum-of-athens
+    method: transfer
+    place: athens
+    label: inventory 804
+    sources:
+      - url: https://de.wikipedia.org/wiki/Dipylon-Amphora
+        note: Das Stück befindet sich heute im Archäologischen Nationalmuseum Athen. [Inventarnummer 804.]
+        source: wikipedia-de-dipylon-amphora
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Dipylon_Amphora
+        note: The Dipylon Amphora (also known as Athens 804) … is now held by the National Archaeological Museum, Athens.
+        source: wikipedia-en-dipylon-amphora
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1940/1941
+    place: athens
+    label: the museum's antiquities concealed in 1940–41 (clay works packed and taken to air-raid shelters); uncovered after the war, first halls reopened 1947 — the page does not name this work
+    certainty: probable
+    sources:
+      - url: https://www.namuseum.gr/en/to-moyseio/istoria-toy-moyseioy/the-rescue-of-the-statues/
+        note: «When the occupation army entered the capital in April 1941, the task of concealing the ancient treasures of the National Museum had already been completed» … Sculptures, bronze and clay artworks had been packed and transported to various raid shelters in Athens … the large statues had been deposited in large trenches that were dug in the floor of the museum halls. … To uncover the buried antiquities was the main priority after the end of the war.
+        source: nam-athens-rescue-of-the-statues
+        accessed: 2026-11-24
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q331805
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q331805
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q331805
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q331805
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q331805

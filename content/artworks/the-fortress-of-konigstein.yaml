@@ -1,0 +1,203 @@
+public_id: 122886
+title_lang: en
+title: The Fortress of Königstein
+names:
+  - lang: de
+    role: translation
+    text: Festung Königstein
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q19681644
+creator: bernardo-bellotto
+created: 1750s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [133, 235.7]
+institution: national-gallery-of-art
+inventory_number: 1993.8.1
+wikidata_id: Q19681644
+metadata:
+  sources: [Wikidata Q19681644 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Bernardo_Bellotto%2C_il_Canaletto_-_Festung_K%C3%B6nigstein_%28National_Gallery_of_Art%29.jpg/1280px-Bernardo_Bellotto%2C_il_Canaletto_-_Festung_K%C3%B6nigstein_%28National_Gallery_of_Art%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernardo_Bellotto,_il_Canaletto_-_Festung_K%C3%B6nigstein_(National_Gallery_of_Art).jpg
+    license: Public domain
+    credit: Bernardo Bellotto
+provenance:
+  - owner: person/augustus-iii
+    acquired_label: commissioned 1756–1758
+    method: commission
+    place: dresden
+    label: one of five views for the Stallgebäude of the royal palace; commission interrupted by the Seven Years' War, never delivered
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: Commissioned by Augustus III, king of Poland and elector of Saxony [1696-1763].[1] — Five views of Königstein were commissioned and executed on canvases of the same size and format between 1756 and 1758. … the paintings were never delivered to the royal collection.
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner: person/henry-temple-2nd-viscount-palmerston
+    acquired: 1790s
+    place: london
+    label: one of three Königstein views; Hanover Square house; recorded c. 1796 as 'View of Keenigsteen' by 'Cannaletti'
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: Henry Temple, 2nd viscount Palmerston [1739-1802], London;[2] — acquired three Königstein paintings in the 1790s
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner: person/henry-john-temple-3rd-viscount-palmerston
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: by inheritence to his son Henry John Temple, 3rd viscount Palmerston [1784-1865], London;
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner: institution/foster-s
+    role: agent
+    acquired: 1850-11-05
+    method: auction
+    direct: true
+    place: london
+    label: sale, Foster's, London, 5 November 1850, no. 290
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: (sale, Foster’s, London, 5 November 1850, no. 290);[3]
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner_label: Anderson
+    role: agent
+    acquired: 1850-11-05
+    method: auction
+    direct: true
+    place: london
+    label: bought at the Foster's sale; probably the agent purchasing for the 4th Earl Beauchamp
+    price:
+      amount: 99.75
+      currency: GBP
+      note: £99 15s
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: (Anderson); — a copy of the 1850 Foster’s sale catalogue marked as having been sold for 99 pounds, 15 shillings to “Anderson” … Anderson was probably the agent purchasing for Henry, 4th Earl Beauchamp (1784-1863).
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner: person/henry-4th-earl-beauchamp
+    method: purchase
+    direct: true
+    place: madresfield
+    label: Madresfield Court, Worcestershire
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: Henry, 4th earl Beauchamp [1784-1863], Madresfield Court, Worcestershire;[4]
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner: person/henry-5th-earl-beauchamp
+    method: inheritance
+    direct: true
+    place: madresfield
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: The painting presumably descended to his son, Henry, 5th earl Beauchamp (1829-1866);
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner: person/frederick-6th-earl-beauchamp
+    method: inheritance
+    direct: true
+    place: madresfield
+    label: an earl Beauchamp named as owner in Scharf's 1875 Knowsley Hall catalogue
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: his brother, Frederick, 6th earl Beauchamp (1830-1891); — The painting is mentioned as belonging to the earl Beauchamp in an 1875 catalogue of the collection of the earls of Derby.
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner: person/william-7th-earl-beauchamp
+    method: inheritance
+    direct: true
+    place: madresfield
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: his son, William, 7th earl Beauchamp (1872-1938);
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner: person/william-8th-earl-beauchamp
+    method: inheritance
+    direct: true
+    place: madresfield
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: his son, William, 8th earl Beauchamp (1903-1979);
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner: person/else-countess-beauchamp
+    method: inheritance
+    direct: true
+    place: madresfield
+    label: wife of the 8th Earl
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: by inheritance to Else, countess Beauchamp [1895-1989];[5]
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner: institution/sotheby-s
+    role: agent
+    acquired: 1991-12-11
+    method: auction
+    direct: true
+    place: london
+    label: sale, Sotheby's, London, 11 December 1991, no. 18
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: (sale, Sotheby's, London, 11 December 1991, no. 18);
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner: institution/bernheimer-fine-arts-ltd
+    co_owners: [institution/meissner-fine-art-ltd]
+    role: dealer
+    acquired: 1991-12-11
+    method: auction
+    direct: true
+    place: london
+    label: Bernheimer of London and Munich, Meissner of Zurich and London
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: (Bernheimer Fine Arts Ltd., London and Munich, and Meissner Fine Art Ltd., Zurich and London);
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1993-06-03
+    method: purchase
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.80924.html
+        note: sold 3 June 1993 to NGA.
+        source: nga-1993-8-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q19681644
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q19681644
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q19681644
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q19681644
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q19681644
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q19681644

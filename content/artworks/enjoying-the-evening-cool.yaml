@@ -1,0 +1,99 @@
+public_id: 124261
+title: Enjoying the Evening Cool
+names:
+  - text: Family Enjoying the Evening Cool
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045368
+  - text: Cooling Off
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045368
+  - text: Enjoying the Evening Cool under a Gourd Trellis
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045368
+  - text: Enjoying the Evening Cool under a Trellis of Evening Glory
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045368
+  - text: Enjoying the Evening Cool under an Evening Glory Trellis
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045368
+  - text: Enjoying the Evening Cool under an Arbor
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045368
+  - text: Enjoying the Evening Cool under the Moonflower Trellis
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045368
+  - lang: ja
+    role: translation
+    text: 納涼図屏風
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107045368
+creator: kusumi-morikage
+created: 17th century
+created_span: uncertain
+institution: tokyo-national-museum
+inventory_number: A-11878
+location: [139.7756, 35.71994]
+wikidata_id: Q107045368
+metadata:
+  sources: [Wikidata Q107045368 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/tokyo
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Family_enjoying_the_evening_cool.jpg/1280px-Family_enjoying_the_evening_cool.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Family_enjoying_the_evening_cool.jpg
+    license: Public domain
+    credit: Kusumi Morikage
+provenance:
+  - owner: artist/kusumi-morikage
+    acquired: 17th century
+    method: creation
+    label: two-panel screen; the TNM reads such scenes of country life as admonitory pictures made to a samurai's order; presumably painted in Morikage's Kanazawa (Kaga) years
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100160
+        note: 作者の守景は生没年など不詳であり謎めいた江戸時代初期の絵師である。 … つまりこの絵は武士の注文によって描かれたものであり … 江戸時代・17世紀
+        source: emuseum-100160
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=109941264
+        note: 後に[[金沢]]に向かい、当地で充実した制作活動を送った … 守景の代表作である『夕顔棚納涼図屏風』（[[東京国立博物館]]蔵）や『四季耕作図屏風』…はこの時期の作品と推定され
+        source: wikipedia-ja-109941264
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    place: tokyo
+    label: owner today (National Institutes for Cultural Heritage; National Treasure since 22 November 1952); date and way of acquisition not stated
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100160
+        note: 東京国立博物館 | A-11878
+        source: emuseum-100160
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/70
+        note: 国宝指定年月日 ： 1952.11.22(昭和27.11.22) … 保管施設の名称 ： 東京国立博物館 | 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-70
+        accessed: 2026-11-24
+identifiers:
+  emuseum: "100160"
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q107045368
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107045368
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107045368
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q107045368

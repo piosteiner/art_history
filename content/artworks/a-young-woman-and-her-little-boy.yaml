@@ -1,0 +1,102 @@
+public_id: 123039
+title_lang: en
+title: A Young Woman and Her Little Boy
+names:
+  - lang: de
+    role: translation
+    text: Porträt einer jungen Frau mit ihrem Sohn
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20176299
+creator: bronzino
+created: c. 1540
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [99.5, 76]
+institution: national-gallery-of-art
+inventory_number: 1942.9.6
+wikidata_id: Q20176299
+metadata:
+  sources: [Wikidata Q20176299 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Agnolo_Bronzino_-_A_Young_Woman_and_Her_Little_Boy_-_Google_Art_Project.jpg/1280px-Agnolo_Bronzino_-_A_Young_Woman_and_Her_Little_Boy_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Agnolo_Bronzino_-_A_Young_Woman_and_Her_Little_Boy_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Bronzino
+provenance:
+  - owner: person/achille-seilliere
+    ended: 1873
+    place: paris
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1143.html
+        note: "Possibly Baron Achille Seillière, Paris, until 1873;[1] — [1] Fern Rusk Shapley, Catalogue of the Italian Paintings, 2 vols., Washington, D.C., 1979: 1:92."
+        source: nga-1942-9-6
+        accessed: 2026-11-24
+  - owner: person/jeanne-seilliere
+    acquired: 1873 or earlier
+    ended_label: until at least 1896
+    method: inheritance
+    direct: true
+    place: paris
+    label: probably by inheritance; Princesse de Sagan, later Duchesse de Talleyrand-Périgord; recorded by Berenson 1896
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1143.html
+        note: probably by inheritance to Jeanne Marguérite Seillière, Princesse de Sagan, [later Duchesse de Talleyrand-Périgord], Paris, probably by 1873 until at least 1896.[2] — [2] According to B. Berenson, Florentine Painters of the Renaissance, New York, 1896.
+        source: nga-1942-9-6
+        accessed: 2026-11-24
+  - owner: institution/cottier-and-co
+    role: dealer
+    label: London and New York
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1143.html
+        note: (Cottier and Co., London and New York);
+        source: nga-1942-9-6
+        accessed: 2026-11-24
+  - owner: person/peter-a-b-widener
+    acquired: 1905
+    method: purchase
+    direct: true
+    label: Lynnewood Hall, Elkins Park, Pennsylvania (date from Edith Standen's notes)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1143.html
+        note: sold 1905 to Peter A.B. Widener, Lynnewood Hall, Elkins Park, Pennsylvania;[3] — [3] According to notes by Edith Standen, Widener collection curator, in NGA curatorial records.
+        source: nga-1942-9-6
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1942
+    method: gift
+    direct: true
+    place: washington-d-c
+    label: from the Estate of Peter A. B. Widener by gift through power of appointment of Joseph E. Widener
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.1143.html
+        note: inheritance from Estate of Peter A.B. Widener by gift through power of appointment of Joseph E. Widener, Elkins Park, Pennsylvania; gift 1942 to NGA.
+        source: nga-1942-9-6
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20176299
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20176299
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20176299
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20176299
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20176299
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20176299

@@ -1,0 +1,18 @@
+public_id: 124836
+name: Gong Xian
+given_name: Gong
+family_name: Xian
+birth: 1618
+death: 1689
+wikidata_id: Q3110482
+metadata:
+  sources: [Wikidata Q3110482 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q3110482
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q3110482

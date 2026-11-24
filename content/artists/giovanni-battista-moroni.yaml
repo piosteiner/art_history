@@ -1,0 +1,18 @@
+public_id: 125064
+name: Giovanni Battista Moroni
+given_name: Giovanni Battista
+family_name: Moroni
+birth: 1525
+death: 1578-02-05
+wikidata_id: Q504949
+metadata:
+  sources: [Wikidata Q504949 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q504949
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q504949

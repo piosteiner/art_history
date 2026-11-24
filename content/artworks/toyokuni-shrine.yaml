@@ -1,0 +1,58 @@
+public_id: 124563
+title: Toyokuni Shrine
+names:
+  - lang: nl
+    role: translation
+    text: Toyokuni-shrijn
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q709822
+  - lang: fr
+    role: translation
+    text: Toyokuni-jinja
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q709822
+  - lang: ja
+    role: translation
+    text: 豊国神社
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q709822
+  - lang: zh
+    role: translation
+    text: 豐國神社
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q709822
+  - lang: ko
+    role: translation
+    text: 도요쿠니 신사
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q709822
+created: 1599
+location: [135.773, 34.9914]
+wikidata_id: Q709822
+metadata:
+  sources: [Wikidata Q709822 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+    period: 1599
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Toyokuni_jinja01s1024.jpg/1280px-Toyokuni_jinja01s1024.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Toyokuni_jinja01s1024.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  viaf: "145882393"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q709822
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q709822

@@ -1,0 +1,22 @@
+public_id: 126237
+name: Greenwich
+kind: settlement
+parent: connecticut
+country_code: US
+location: [-73.62846, 41.02649]
+wikidata_id: Q49202
+metadata:
+  sources: [Wikidata Q49202 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q49202
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q49202
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q49202

@@ -33,6 +33,15 @@ relationships:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q260102
+  - type: child_of
+    to: person/alfred-escher
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q117524
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q115569
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Lydia_Welti_Escher.jpg/1280px-Lydia_Welti_Escher.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Lydia_Welti_Escher.jpg

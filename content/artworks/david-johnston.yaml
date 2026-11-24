@@ -1,0 +1,143 @@
+public_id: 123075
+title_lang: en
+title: David Johnston
+names:
+  - lang: ru
+    role: translation
+    text: Дэвид Джонстон
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20182326
+creator: pierre-paul-prud-hon
+created: 1808
+materials: [oil paint, canvas]
+dimensions: [54.6, 46.4]
+institution: national-gallery-of-art
+inventory_number: 1961.9.84
+wikidata_id: Q20182326
+metadata:
+  sources: [Wikidata Q20182326 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/David_Johnston_sc1121.jpg/1280px-David_Johnston_sc1121.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:David_Johnston_sc1121.jpg
+    license: Public domain
+    credit: Pierre-Paul Prud'hon
+provenance:
+  - owner: person/david-johnston
+    place: bordeaux
+    label: said to have been the original owner; the sitter
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46183.html
+        note: The portrait's original owner is said to have been the sitter [1789-1854], Bordeaux, France;
+        source: nga-1961-9-84
+        accessed: 2026-11-24
+  - owner_label: Johnston family, Bordeaux
+    ended: 1913
+    method: inheritance
+    direct: true
+    place: bordeaux
+    label: by descent; remained with the family until 1913 according to Charles Sterling (1937)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46183.html
+        note: "by descent to the Johnston family, Bordeaux.[1] — [1] Information that the picture remained with the Johnston family until its purchase for the duc de Trévise in 1913 was first published by Charles Sterling in Chefs-d-oeuvre de l'art français (Exh. cat. Palais National des Arts, Paris, 1937: 105, no. 211)."
+        source: nga-1961-9-84
+        accessed: 2026-11-24
+  - owner: person/edouard-mortier-de-trevise
+    acquired: 1913
+    method: purchase
+    place: paris
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46183.html
+        note: Edouard-Napoléon-Cesar-Edmond Mortier, duc de Trévise [1883-1946], Paris, in 1913; — [1] … until its purchase for the duc de Trévise in 1913
+        source: nga-1961-9-84
+        accessed: 2026-11-24
+  - owner: institution/galerie-charpentier
+    role: agent
+    not_sold: true
+    acquired: 1938-05-19
+    method: auction
+    direct: true
+    place: paris
+    label: Trévise sale, Hôtel Jean Charpentier, Paris, 19 May 1938, no. 36; bought in
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46183.html
+        note: (his sale, Hôtel Jean Charpentier, Paris, 19 May 1938, no. 36); bought in for the family by (Robert Lebel [1901-1986], Paris);
+        source: nga-1961-9-84
+        accessed: 2026-11-24
+  - owner: person/robert-lebel
+    role: agent
+    acquired: 1938-05-19
+    method: auction
+    direct: true
+    place: paris
+    label: bought in for the Trévise family; Lebel was one of the experts at the sale
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46183.html
+        note: bought in for the family by (Robert Lebel [1901-1986], Paris);[2] — [2] An annotated copy of Trévise sale catalogue gives Lebel, one of the experts at the sale, as the buyer.
+        source: nga-1961-9-84
+        accessed: 2026-11-24
+  - owner_label: sole survivor of the duc de Trévise
+    method: inheritance
+    direct: true
+    label: bought in by the family at the 1938 sale; Weitzner bought it from the duc's sole survivor
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46183.html
+        note: Julius Weitzner wrote to Dr. Suida at the Kress Foundation that the painting was bought in by the family, and that he (Weitzner) "purchased it from the sole survivor of the Duc de Trevise" (letter, 21 March 1952, copy in NGA curatorial files)
+        source: nga-1961-9-84
+        accessed: 2026-11-24
+  - owner: person/julius-h-weitzner
+    role: dealer
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46183.html
+        note: (Julius H. Weitzner [1896-1986], New York); … he (Weitzner) "purchased it from the sole survivor of the Duc de Trevise"
+        source: nga-1961-9-84
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1952
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46183.html
+        note: sold 1952 to the Samuel H. Kress Foundation, New York;[3]
+        source: nga-1961-9-84
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1961
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46183.html
+        note: gift 1961 to NGA.
+        source: nga-1961-9-84
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20182326
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20182326
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20182326
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20182326
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20182326
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20182326

@@ -1,0 +1,23 @@
+public_id: 122978
+name: Andrzej Rej
+given_name: Andrzej
+family_name: Rej
+kind: person
+birth: c. 1584
+death: 1641-02-13
+wikidata_id: Q973365
+metadata:
+  sources: [Wikidata Q973365 (retrieved 2026-11-23)]
+sources:
+  kind:
+    - accessed: 2026-11-23
+      property: P31
+      wikidata: Q973365
+  birth:
+    - accessed: 2026-11-23
+      property: P569
+      wikidata: Q973365
+  death:
+    - accessed: 2026-11-23
+      property: P570
+      wikidata: Q973365

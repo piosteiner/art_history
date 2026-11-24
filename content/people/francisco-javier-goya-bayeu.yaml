@@ -18,6 +18,16 @@ death: 1854-03-12
 wikidata_id: Q43372023
 metadata:
   sources: [Wikidata Q43372023 (retrieved 2026-10-19)]
+relationships:
+  - type: child_of
+    to: artist/francisco-goya
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q43372023
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q5432
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/3/32/Francisco_Javier_Goya_y_Bayeu_%28Museo_de_Zaragoza%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Francisco_Javier_Goya_y_Bayeu_(Museo_de_Zaragoza).jpg

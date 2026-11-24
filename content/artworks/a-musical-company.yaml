@@ -1,0 +1,59 @@
+public_id: 122869
+title_lang: en
+title: A Musical Company
+creator: jacob-ochtervelt
+created: c. 1668
+created_span: uncertain
+kind: oil painting
+medium: oil on canvas
+dimensions: [58.5, 48.9]
+institution: cleveland-museum-of-art
+inventory_number: "1991.23"
+web_url: https://clevelandart.org/art/1991.23
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1991.23/1991.23_web.jpg
+    source_url: https://clevelandart.org/art/1991.23
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: person/rudolf-von-gutmann
+    acquired_label: probably early twentieth century (date and circumstances unknown)
+    place: vienna
+    label: Naumann's claim of a purchase on the Paris art market in the 1850s unconfirmed; hidden by the family lawyer Karl Josef Steger, it escaped Nazi confiscation
+    sources:
+      - url: https://clevelandart.org/art/1991.23
+        note: Baron Rudolf von Gutmann [1880-1966], sold to Dr. Karl Josef Steger [Probably early twentieth century - after 1945] — the Ochtervelt was among a group of artworks belonging to Gutmann that the family lawyer, Dr. Karl Josef Steger, hid, and it therefore escaped confiscation.
+        source: cma-1991-23
+        accessed: 2026-11-24
+  - owner: person/karl-josef-steger
+    acquired: after 1947
+    method: purchase
+    direct: true
+    place: vienna
+    label: sold to him by the Gutmanns in thanks for managing their postwar restitution proceedings; date unknown
+    sources:
+      - url: https://clevelandart.org/art/1991.23
+        note: Dr. Karl Josef Steger, Vienna, sold to Otto Naumann, Ltd. and Galerie Sanct Lucas [After 1947 -1990] — To show their appreciation for his management of their postwar restitution proceedings, the Gutmanns sold to Steger some pieces from their collection, including the Ochtervelt
+        source: cma-1991-23
+        accessed: 2026-11-24
+  - owner: institution/galerie-otto-naumann
+    co_owners: [institution/galerie-sanct-lucas]
+    role: dealer
+    acquired: 1990
+    method: purchase
+    direct: true
+    sources:
+      - url: https://clevelandart.org/art/1991.23
+        note: (Otto Naumann, Ltd. and Galerie Sanct Lucas, sold to the Cleveland Museum of Art) [1990-1991] — Naumann/Galerie Sanct Lucas purchased the Ochtervelt in 1990 from a Viennese private collector, who Roman Herzig, director of Galerie Sanct Lucas, recalled was Dr. Steger.
+        source: cma-1991-23
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1991
+    method: purchase
+    direct: true
+    place: cleveland
+    sources:
+      - url: https://clevelandart.org/art/1991.23
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1991-]
+        source: cma-1991-23
+        accessed: 2026-11-24

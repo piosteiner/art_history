@@ -1,0 +1,68 @@
+public_id: 123840
+title_lang: de
+title: Gesichtsmaske
+attribution_label: Anonymous
+institution: museum-rietberg
+inventory_number: RME 1
+web_url: https://rietberg.ch/sammlungen/rme-1
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Maske_Torres_Strait_Museum_Rietberg_RME_1.jpg/1280px-Maske_Torres_Strait_Museum_Rietberg_RME_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maske_Torres_Strait_Museum_Rietberg_RME_1.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: 19th century
+    method: creation
+    place: queensland
+    label: made in the Torres Strait Islands, Queensland
+    sources:
+      - url: https://rietberg.ch/sammlungen/rme-1
+        note: "19. Jh.: Urheber*in unbekannt, in Queensland"
+        source: rietberg-rme-1
+        accessed: 2026-11-24
+  - owner: person/arthur-speyer
+    acquired: before 1936
+    place: berlin
+    label: Arthur Speyer II; circumstances of acquisition unknown; Schlothauer, Die Sammlung Nell Walden in der Schweiz 1932–1945, p. 42
+    sources:
+      - url: https://rietberg.ch/sammlungen/rme-1
+        note: |-
+          vor 1936: Arthur Speyer II. (1894–1958), Erwerbsumstände unbekannt
+          Schlothauer, Andreas: Die Sammlung Nell Walden in der Schweiz 1932 - 1945, S. 42.
+        source: rietberg-rme-1
+        accessed: 2026-11-24
+  - owner: person/nell-walden
+    acquired: before 1936
+    method: purchase
+    direct: true
+    place: berlin
+    label: from Arthur Speyer, Berlin (Zeller, Jahrbuch des Bernischen Historischen Museums 1936, p. 124); Leuzinger inventory
+    sources:
+      - url: https://rietberg.ch/sammlungen/rme-1
+        note: |-
+          vor 1936: Nell Walden (1887–1975), angekauft, in Berlin
+          Zeller, Rudolf: "Die ethnographische Abteilung", in Jahrbuch des Bernischen HIstorischen Museums 1936, S. 124: "die aus Schildpatt gefertigte Maske aus der Torresstasse [...], die aus dem Besitz von Arthur Speyer in Berlin in die Sammlung Nell Walden gelangt ist". Ausserdem: Inventar Leuzinger
+        source: rietberg-rme-1
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: 1945
+    method: purchase
+    place: bern
+    label: bought in Bern (Zeller, Jahrbuch des Bernischen Historischen Museums 1945, p. 189)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rme-1
+        note: |-
+          1945: Eduard von der Heydt (1882–1964), angekauft in Bern
+          Zeller, Rudolf: "Die ethnographische Abteilung", in Jahrbuch des Bernischen HIstorischen Museums 1945, S. 189: "Dr. E. von der Heydt, Ascona [...] eine grössere Anzahl derselben anzukaufen [...] Vorallem seien erwähnt die kostbare Schildpatt-Maske von der Torresstrasse".
+        source: rietberg-rme-1
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1953
+    method: gift
+    label: gift of Eduard von der Heydt
+    sources:
+      - url: https://rietberg.ch/sammlungen/rme-1
+        note: "1953: Museum Rietberg, als Geschenk erhalten"
+        source: rietberg-rme-1
+        accessed: 2026-11-24

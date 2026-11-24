@@ -1,0 +1,44 @@
+public_id: 124328
+title: Statue of Yakushi Nyorai
+names:
+  - lang: ja
+    role: translation
+    text: 法隆寺金堂薬師如来像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q48962419
+  - lang: ru
+    role: translation
+    text: Будда-целитель
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q48962419
+created: 7th century
+created_span: uncertain
+institution: horyu-ji
+location: [135.7343, 34.6147]
+wikidata_id: Q48962419
+metadata:
+  sources: [Wikidata Q48962419 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/ikaruga
+    period: 7th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Yakushi_Nyorai_Kondo_Horyuji.jpg/1280px-Yakushi_Nyorai_Kondo_Horyuji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yakushi_Nyorai_Kondo_Horyuji.jpg
+    license: Public domain
+    credit: 東京美術学校
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q48962419
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q48962419
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q48962419

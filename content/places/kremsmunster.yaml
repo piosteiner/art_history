@@ -1,0 +1,22 @@
+public_id: 123646
+name: Kremsmünster
+kind: settlement
+parent: oberosterreich
+country_code: AT
+location: [14.13083, 48.055]
+wikidata_id: Q580868
+metadata:
+  sources: [Wikidata Q580868 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q580868
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q580868
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q580868

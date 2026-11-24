@@ -27,6 +27,33 @@ relationships:
       - accessed: 2026-10-30
         property: P20
         wikidata: Q2063433
+  - type: child_of
+    to: person/ernst-von-mendelssohn-bartholdy
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q1360879
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q2063433
+  - type: married_to
+    to: person/charlotte-von-wesdehlen
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q2063433
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q99452326
+  - type: married_to
+    to: person/elsa-von-mendelssohn-bartholdy
+    sources:
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q94927156
+      - accessed: 2026-11-23
+        property: P26
+        wikidata: Q2063433
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Paul_v_Mendelssohn-Bartholdy_1909_M.L..jpg/1280px-Paul_v_Mendelssohn-Bartholdy_1909_M.L..jpg
     source_url: https://commons.wikimedia.org/wiki/File:Paul_v_Mendelssohn-Bartholdy_1909_M.L..jpg

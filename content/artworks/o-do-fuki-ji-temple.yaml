@@ -1,0 +1,47 @@
+public_id: 123906
+title: Ō-dō, Fuki-ji Temple
+names:
+  - lang: ja
+    role: translation
+    text: 富貴寺大堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020671
+created: 1086/1184
+institution: fuki-ji-temple
+location: [131.5285, 33.53787]
+wikidata_id: Q107020671
+metadata:
+  sources: [Wikidata Q107020671 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/bungo-takada
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/%E5%AF%8C%E8%B2%B4%E5%AF%BA%E5%A4%A7%E5%A0%82.JPG/1280px-%E5%AF%8C%E8%B2%B4%E5%AF%BA%E5%A4%A7%E5%A0%82.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E8%B2%B4%E5%AF%BA%E5%A4%A7%E5%A0%82.JPG
+    license: CC BY-SA 4.0
+    credit: JNN360
+provenance:
+  - owner: institution/fuki-ji-temple
+    acquired: 1086/1184
+    method: creation
+    place: bungo-takada
+    label: main (Amida) hall, late Heian; by temple tradition founded by Ninmon in 718; probably founded in the 12th century by the chief-priest family of Usa Hachiman as its prayer temple; old ridge beam inscribed 1353; the oldest surviving building in Kyushu; owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3597
+        note: 富貴寺は寺伝によれば仁聞の開基になり、養老二年（七一八）の建立というが、現本堂は平安時代後期の手法を示している。 … 文和二年（一三五三）の墨書を有する旧棟木が残っている … 九州地方における最古の遺構である。 所有者名 ： 富貴寺
+        source: kunishitei-102-3597
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E5%AF%8C%E8%B2%B4%E5%AF%BA
+        note: 宇佐神宮大宮司の到津（いとうづ）家に伝わる貞応2年（1223年）作成の古文書のなかに「蕗浦阿弥陀寺（富貴寺のこと）は当家歴代の祈願所である」旨の記載があり、12世紀前半 - 中頃、宇佐八幡大宮司家によって創建されたものと推定されている。
+        source: wikipedia-ja-fuki-ji
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Fuki-ji
+        note: Fuki-ji, like many other temples on the Kunisaki Peninsula, claims to have been founded in 718 by a monk named Ninmon
+        source: wikipedia-en-fuki-ji
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020671

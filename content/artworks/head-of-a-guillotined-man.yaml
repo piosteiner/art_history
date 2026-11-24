@@ -1,0 +1,153 @@
+public_id: 125205
+title_lang: en
+title: Head of a Guillotined Man
+names:
+  - lang: fr
+    role: translation
+    text: Tête d'un homme guillotiné
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20275900
+creator: theodore-gericault
+created: 1818/1819
+created_label: c. 1810s
+created_span: uncertain
+materials: [oil paint, panel]
+dimensions: [41, 38]
+institution: art-institute-of-chicago
+inventory_number: "1992.628"
+wikidata_id: Q20275900
+metadata:
+  sources: [Wikidata Q20275900 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Jean_Louis_Andr%C3%A9_Th%C3%A9odore_G%C3%A9ricault_-_Head_of_a_Guillotined_Man_-_1992.628_-_Art_Institute_of_Chicago.jpg/1280px-Jean_Louis_Andr%C3%A9_Th%C3%A9odore_G%C3%A9ricault_-_Head_of_a_Guillotined_Man_-_1992.628_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean_Louis_Andr%C3%A9_Th%C3%A9odore_G%C3%A9ricault_-_Head_of_a_Guillotined_Man_-_1992.628_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Théodore Géricault
+provenance:
+  - owner: artist/theodore-gericault
+    role: estate
+    place: paris
+    label: the artist's estate
+    sources:
+      - url: https://www.artic.edu/artworks/119264
+        note: The artist’s estate sale, Hôtel de Buillion, November 2-3, 1824
+        source: aic-1992-628
+        accessed: 2026-11-24
+  - owner_label: Hôtel de Bullion
+    role: agent
+    acquired: 1824-11
+    method: auction
+    direct: true
+    place: paris
+    label: the artist's estate sale, 2–3 November 1824; possibly no. 17 or the handwritten 'trois têtes de guillotinés … 270 (frs.)' in the British Museum copy
+    sources:
+      - url: https://www.artic.edu/artworks/119264
+        note: The artist’s estate sale, Hôtel de Buillion, November 2-3, 1824 [possibly no. 17, “Dix études de diverses parties du corps humain” or handwritten addition to a copy of the catalogue in the British Museum, “trois têtes de guillotinés peints peu de temps après...270 (frs.)”; see Eitner 1959].
+        source: aic-1992-628
+        accessed: 2026-11-24
+  - owner: person/auguste-boulard
+    ended: 1897
+    place: paris
+    label: the painter
+    sources:
+      - url: https://www.artic.edu/artworks/119264
+        note: The painter Auguste Boulard (died 1897), Paris;
+        source: aic-1992-628
+        accessed: 2026-11-24
+  - owner: person/auguste-boulard
+    role: estate
+    acquired: 1897
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/119264
+        note: his estate sale, Pairs, Hôtel Drouot, April 9–10, 1900, no. 130.
+        source: aic-1992-628
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1900-04
+    method: auction
+    direct: true
+    place: paris
+    label: Boulard estate sale, 9–10 April 1900, no. 130
+    sources:
+      - url: https://www.artic.edu/artworks/119264
+        note: his estate sale, Pairs, Hôtel Drouot, April 9–10, 1900, no. 130.
+        source: aic-1992-628
+        accessed: 2026-11-24
+  - owner: person/edouard-mortier-de-trevise
+    acquired: 1924 or earlier
+    ended_label: until at least 1937
+    place: paris
+    label: lent to exhibitions in Paris 1924 and 1937
+    sources:
+      - url: https://www.artic.edu/artworks/119264
+        note: Édouard Napoléon César Edmond Mortier, duc de Trévise (died 1946), Paris, from at least 1924 until at least 1937 [lent by to Paris 1924 and Paris 1937].
+        source: aic-1992-628
+        accessed: 2026-11-24
+  - owner: person/pierre-dubaut
+    acquired: 1952 or earlier
+    label: lent to London 1952; may have acquired it directly from the duc de Trévise
+    sources:
+      - url: https://www.artic.edu/artworks/119264
+        note: Pierre Dubaut (died 1968) by 1952 [lent by him to London, 1952 and later exhibitions; Dubaut may have acquired it directly from the Duc de Trévise, since they were co-authors of Paris 1924 and Dubaut was the author of Paris 1937];
+        source: aic-1992-628
+        accessed: 2026-11-24
+  - owner: person/jacqueline-dubaut-bellonte
+    method: inheritance
+    direct: true
+    place: paris
+    label: by descent, his niece
+    sources:
+      - url: https://www.artic.edu/artworks/119264
+        note: by descent to his niece Jacqueline Dubaut- Bellonte, Paris;
+        source: aic-1992-628
+        accessed: 2026-11-24
+  - owner: institution/galerie-du-fleuve
+    role: agent
+    acquired: 1992
+    method: purchase
+    direct: true
+    label: her gallery; sale to the Art Institute
+    sources:
+      - url: https://www.artic.edu/artworks/119264
+        note: purchased by the Art Institute through her gallery, Galerie du Fleuve, 1992.
+        source: aic-1992-628
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1992
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/119264
+        note: purchased by the Art Institute through her gallery, Galerie du Fleuve, 1992.
+        source: aic-1992-628
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20275900
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20275900
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20275900
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20275900
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20275900
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20275900

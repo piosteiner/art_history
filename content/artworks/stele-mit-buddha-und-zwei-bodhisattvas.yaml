@@ -1,0 +1,58 @@
+public_id: 123856
+title_lang: de
+title: Stele mit Buddha und zwei Bodhisattvas
+attribution_label: Anonymous
+created: early 6th century
+created_span: uncertain
+kind: relief
+medium: Kalkstein
+dimensions: [205, 105]
+institution: museum-rietberg
+inventory_number: RCH 109
+web_url: https://rietberg.ch/sammlungen/rch-109
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Wei_Stele_Museum_Rietberg_RCH_109_img01.jpg/1280px-Wei_Stele_Museum_Rietberg_RCH_109_img01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wei_Stele_Museum_Rietberg_RCH_109_img01.jpg
+    license: Public domain
+    credit: Andreas Praefcke
+provenance:
+  - owner_label: unknown maker
+    acquired: early 6th century
+    method: creation
+    label: made in China (Northern Wei dynasty)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-109
+        note: "Nördliche Wei-Dynastie, frühes 6. Jh.: Urheber*in unbekannt in China"
+        source: rietberg-rch-109
+        accessed: 2026-11-24
+  - owner: person/c-t-loo
+    role: dealer
+    acquired: 1925/1930
+    label: circumstances of acquisition unknown; inventory card
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-109
+        note: |-
+          1925–1930: C. T. Loo (1880–1957), Erwerbsumstände unbekannt
+          Inventarkarte
+        source: rietberg-rch-109
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: 1925/1930
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-109
+        note: "1925–1930: Eduard von der Heydt (1882–1964), Erwerbsumstände unbekannt"
+        source: rietberg-rch-109
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1952/1965
+    method: gift
+    place: zurich
+    label: gift of Eduard von der Heydt
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-109
+        note: |-
+          1952–1965: Museum Rietberg, als Geschenk erhalten in Zürich
+          Creditline: Geschenk Eduard von der Heydt
+        source: rietberg-rch-109
+        accessed: 2026-11-24

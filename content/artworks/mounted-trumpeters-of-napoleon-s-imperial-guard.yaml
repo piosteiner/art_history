@@ -1,0 +1,114 @@
+public_id: 123006
+title_lang: en
+title: Mounted Trumpeters of Napoleon's Imperial Guard
+names:
+  - lang: nl
+    role: translation
+    text: Drie bereden trompetters van Napoleons Keizerlijke Garde
+    sources:
+      - accessed: 2026-11-23
+        wikidata: Q20183414
+creator: theodore-gericault
+created: 1813/1814
+created_label: c. 1810s
+created_span: uncertain
+materials: [oil paint, canvas]
+dimensions: [60.4, 49.6]
+institution: national-gallery-of-art
+inventory_number: 1972.25.1
+wikidata_id: Q20183414
+metadata:
+  sources: [Wikidata Q20183414 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Mounted_Trumpeters_of_Napoleon%27s_Imperial_Guard_A23506.jpg/1280px-Mounted_Trumpeters_of_Napoleon%27s_Imperial_Guard_A23506.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mounted_Trumpeters_of_Napoleon%27s_Imperial_Guard_A23506.jpg
+    license: Public domain
+    credit: Théodore Géricault
+provenance:
+  - owner: person/edouard-mortier-de-trevise
+    acquired: 1937 or earlier
+    label: duc de Trévise; probably acquired between 1924 and 1937; lent to the Gericault exhibition, Galerie Bernheim-Jeune, Paris, 1937, no. 30; earlier history unknown
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53161.html
+        note: Édouard Napoléon César Edmond Mortier, duc de Trévise [1883-1946], by 1937;[1] — The painting had its first public exhibition as no. 30 of the Gericault exhibition held at the Galerie Bernheim Jeune in Paris in 1937. … suggests that he acquired _Trumpeters_ sometime between 1924 and 1937. Its earlier history is not known.
+        source: nga-1972-25-1
+        accessed: 2026-11-24
+  - owner: institution/galerie-charpentier
+    role: agent
+    not_sold: true
+    acquired: 1938-05-19
+    method: auction
+    direct: true
+    place: paris
+    label: sale, Galerie Charpentier, Paris, 19 May 1938, no. 25, bought in
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53161.html
+        note: (sale, Galerie Charpentier, Paris, 19 May 1938, no 25, bought in);
+        source: nga-1972-25-1
+        accessed: 2026-11-24
+  - owner: person/jean-budes-de-guebriant
+    method: gift
+    direct: true
+    place: buenos-aires
+    label: given by the duc de Trévise to "his relative" the Comte de Guébriant, probably Jean (the only one with a Buenos Aires address), son of the duc's sister
+    certainty: probable
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53161.html
+        note: given to his relative, probably Jean, Comte Budes de Guébriant [b. 1911], Buenos Aires;[2]
+        source: nga-1972-25-1
+        accessed: 2026-11-24
+  - owner: person/francisco-gowland-llobet
+    method: purchase
+    direct: true
+    place: buenos-aires
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53161.html
+        note: sold to Francisco Gowland Llobet, Buenos Aires;
+        source: nga-1972-25-1
+        accessed: 2026-11-24
+  - owner: institution/galerie-schmit
+    role: agent
+    acquired: 1971
+    direct: true
+    place: paris
+    label: on consignment
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53161.html
+        note: on consignment 1971 to (Galerie Schmit, Paris);
+        source: nga-1972-25-1
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1972-07-19
+    method: purchase
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.53161.html
+        note: purchased 19 July 1972 by NGA.
+        source: nga-1972-25-1
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-23
+      property: P571
+      wikidata: Q20183414
+  creator:
+    - accessed: 2026-11-23
+      property: P170
+      wikidata: Q20183414
+  materials:
+    - accessed: 2026-11-23
+      property: P186
+      wikidata: Q20183414
+  dimensions:
+    - accessed: 2026-11-23
+      property: P2048
+      wikidata: Q20183414
+  institution:
+    - accessed: 2026-11-23
+      property: P195
+      wikidata: Q20183414
+  inventory_number:
+    - accessed: 2026-11-23
+      property: P217
+      wikidata: Q20183414

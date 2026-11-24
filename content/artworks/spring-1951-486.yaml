@@ -1,0 +1,110 @@
+public_id: 122923
+title_lang: en
+title: Spring
+creator: jean-baptiste-pater
+created: c. 1720–1736
+created_span: uncertain
+kind: oil painting
+medium: oil on canvas
+dimensions: [65, 53.7]
+institution: cleveland-museum-of-art
+inventory_number: "1951.486"
+web_url: https://clevelandart.org/art/1951.486
+images:
+  - url: https://openaccess-cdn.clevelandart.org/1951.486/1951.486_web.jpg
+    source_url: https://clevelandart.org/art/1951.486
+    license: CC0
+    credit: The Cleveland Museum of Art
+provenance:
+  - owner: artist/jean-baptiste-pater
+    ended: 1736
+    method: creation
+    place: paris
+    label: probably one of two unfinished oval Seasons for the prince de Carignan left in Pater's studio at his death
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1951.486
+        note: When Pater died in 1736, two unfinished oval Seasons painted for the prince de Carignan remained in the artist’s studio.
+        source: cma-1951-486
+        accessed: 2026-11-24
+  - owner: person/victor-amadeus-prince-of-carignano
+    acquired: 1736
+    ended: 1741
+    method: commission
+    direct: true
+    place: paris
+    label: claimed from Pater's estate by his agent Louis-Jacques Landrin on 13 August 1736; four oval Seasons in his dining room
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1951.486
+        note: "Probably Victor-Amédée, prince de Carignan [1690-1741], Paris, France [1736-1741] — They were claimed soon thereafter by Louis-Jacques Landrin, Carignan’s agent, as was stipulated in Pater’s scellé après décès: “le 13 août, de Louis-Jacques Landrin, avocat au Parlement…chargé de pouvoir de Son Altesse Serenss. Monsigneur le Pce de Carignan, réclamant ‘deux tableaux sur toille …, représentant les Saisons, commandés par Son Altesse au deffunt Pater …’” Carignan had four oval Seasons installed in his dining room."
+        source: cma-1951-486
+        accessed: 2026-11-24
+  - owner: person/victor-amadeus-prince-of-carignano
+    role: estate
+    acquired: 1741
+    ended: 1743
+    method: inheritance
+    direct: true
+    place: paris
+    label: held in trust; Carignan sales of 1742 and 1743 (four oval Seasons as Watteau) — whereabouts after the sales unknown
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1951.486
+        note: Held in trust by the Estate of the prince de Carignan [1741-1743] — In Carignan’s sales of 1742 and 1743, these are attributed to Watteau; however, according to art historian Rochelle Ziskin, they were partly—or, more likely, entirely—by Pater.
+        source: cma-1951-486
+        accessed: 2026-11-24
+  - owner_label: Mantacheff collection, St. Petersburg
+    place: saint-petersburg
+    label: most likely Alexander Mantacheff (d. 1911); the family's belief that the four Paters had belonged to the duc de Choiseul is doubted
+    sources:
+      - url: https://clevelandart.org/art/1951.486
+        note: Mantacheff collection, St. Petersburg, sold to Wildenstein & Co [Until 1910] — It was most likely Alexander Mantacheff (d. 1911) who owned the Paters, although his son, Leon, who lived in Moscow and Paris, was also a collector (active in the 1910s). … the Mantacheffs believed that the four Paters were in the collection of the Duc de Choiseul … The Choiseul provenance is dubious
+        source: cma-1951-486
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1910
+    method: purchase
+    direct: true
+    place: paris
+    label: with its pendants Summer, Autumn and Winter; with Wildenstein certainly by 1928 (Ingersoll-Smouse catalogue)
+    sources:
+      - url: https://clevelandart.org/art/1951.486
+        note: (Wildenstein & Co., Paris, France, sold to Henry G. Dalton) [Probably 1910-1928] — Wildenstein disclosed that Spring and Summer, as well as Autumn and Winter were acquired by Wildenstein from the Mantacheff collection in 1910. Wildenstein certainly had both Spring and Summer by 1928
+        source: cma-1951-486
+        accessed: 2026-11-24
+  - owner: person/henry-g-dalton
+    acquired: c. 1928
+    ended: 1939
+    method: purchase
+    direct: true
+    place: cleveland
+    label: date probable
+    sources:
+      - url: https://clevelandart.org/art/1951.486
+        note: Henry G. Dalton [1862-1939], Cleveland, OH, by descent to his nephew, Harry D. Kendrick [Probably c. 1928-1939]
+        source: cma-1951-486
+        accessed: 2026-11-24
+  - owner: person/harry-d-kendrick
+    acquired: 1939
+    method: inheritance
+    direct: true
+    place: cleveland
+    label: by descent from his uncle Henry G. Dalton (date probable)
+    sources:
+      - url: https://clevelandart.org/art/1951.486
+        note: Harry D. Kendrick [1894-1958], Cleveland, OH, given to the Cleveland Museum of Art [Probably 1939-1951]
+        source: cma-1951-486
+        accessed: 2026-11-24
+  - owner: institution/cleveland-museum-of-art
+    acquired: 1951
+    method: gift
+    direct: true
+    place: cleveland
+    label: gift of Harry D. Kendrick
+    sources:
+      - url: https://clevelandart.org/art/1951.486
+        note: The Cleveland Museum of Art, Cleveland, Ohio [1951-]
+        source: cma-1951-486
+        accessed: 2026-11-24

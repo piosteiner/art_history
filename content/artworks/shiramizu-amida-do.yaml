@@ -1,0 +1,79 @@
+public_id: 123900
+title: Shiramizu Amida-dō
+names:
+  - lang: fr
+    role: translation
+    text: Ganjō-ji
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3095180
+  - lang: ja
+    role: translation
+    text: 白水阿弥陀堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3095180
+  - lang: zh
+    role: translation
+    text: 白水阿彌陀堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3095180
+created: 1160
+institution: ganjo-ji-temple
+location: [140.8372, 37.03651]
+wikidata_id: Q3095180
+metadata:
+  sources: [Wikidata Q3095180 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/iwaki
+    period: 1160
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c1/Shiramizu_amidadou.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shiramizu_amidadou.jpg
+    license: CC BY-SA 3.0
+    credit: Wiiii at Japanese Wikipedia
+provenance:
+  - owner: person/tokuhime
+    acquired: 1160
+    method: commission
+    place: iwaki
+    label: built by Tokuni (Tokuhime) of the Ōshū Fujiwara for the soul of her husband Iwaki Norimichi, as the temple Muryōji-in, by tradition (Iwaki shiryō) — modelled on the Konjikidō of Chūson-ji
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/204
+        note: 願成寺は、藤原秀衡の妹徳尼が夫である磐城(福島県および宮城県の一部)の豪族岩城則通の冥福を祈って永暦元年(一一六〇)に建てた無量寺院に始まると伝える(磐城史料)。
+        source: kunishitei-102-204
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%99%BD%E6%B0%B4%E9%98%BF%E5%BC%A5%E9%99%80%E5%A0%82
+        note: 白水阿弥陀堂は、平安時代末期の1160年（永暦元年）に、岩城則道（岩城氏の祖）の妻・徳姫（藤原清衡の娘）によって建立された。徳姫は、夫・則道の菩提を弔うために寺を建てて「願成寺」と名付け、その一角に阿弥陀堂を建立した。
+        source: wikipedia-ja-shiramizu-amida-do
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Shiramizu_Amidad%C5%8D
+        note: The temple of Ganjō-ji was built in 1160 by Princess Tokuhime, daughter of Fujiwara no Kiyohira of the Hiraizumi Fujiwara clan, as a memorial temple for her husband, Iwaki Norimichi.
+        source: wikipedia-en-shiramizu-amidado
+        accessed: 2026-11-24
+  - owner: institution/ganjo-ji-temple
+    direct: true
+    place: iwaki
+    label: the temple she founded (Shingon, Chizan school); the hall was made an imperial prayer temple by the retired emperor Go-Toba, and the Tokugawa gave the temple 10 koku; owner of the hall today (the garden and pond belong mostly to Iwaki City)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/204
+        note: 所有者名 ： 願成寺
+        source: kunishitei-102-204
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%99%BD%E6%B0%B4%E9%98%BF%E5%BC%A5%E9%99%80%E5%A0%82
+        note: 阿弥陀堂はその後、後鳥羽上皇により勅願寺とされた。江戸時代には、徳川将軍家より寺領10石を与えられるなど、歴代の為政者に保護され、現在に至っている。 … 堂は近くに所在する願成寺の所有である。ただし、池を含む浄土庭園の大部分はいわき市の所有・管理になる。
+        source: wikipedia-ja-shiramizu-amida-do
+        accessed: 2026-11-24
+identifiers:
+  viaf: "251800664"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3095180
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3095180

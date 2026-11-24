@@ -23,6 +23,8 @@ web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arr
 description_md: |-
   The artwork went on auction in October 2026.
   Under this circumstance the artwork was revealed for the first time after 60 years.[[source/bbc-van-gogh-hong-kong-60-years]]
+
+  At Sotheby’s in New York on 18 November 2026 it sold for $190.4 million with fees ($165 million hammer), an auction record for Van Gogh, to William Acquavella of Acquavella Galleries, bidding in the room.[[source/porterfield-2026-van-gogh-record]]
 wikidata_id: Q26221216
 metadata:
   sources: [Wikidata Q26221216 (retrieved 2026-10-18)]
@@ -311,7 +313,6 @@ provenance:
     check_after: 2026-11-18
   - owner: institution/sotheby-s
     role: agent
-    not_sold: true
     acquired: 2026-11-18
     method: auction
     direct: true
@@ -319,9 +320,32 @@ provenance:
     label: evening sale N12368, 18 November 2026, lot 5
     sources:
       - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
-        note: "Sotheby’s result: not sold"
+        note: the lot in this sale (the page shows the result only to logged-in visitors)
         source: sothebys-n12368-lot-5
         accessed: 2026-11-19
+      - note: "all 12 lots sold: “six of the collection’s 12 lots hammered below their low estimates, while five sold within or at their estimate ranges. Just one work exceeded expectations: the final lot”"
+        source: porterfield-2026-van-gogh-record
+        accessed: 2026-11-23
+  - owner_label: Private collection
+    acquired: 2026-11-18
+    method: auction
+    direct: true
+    place: new-york-city
+    label: bought at Sotheby’s, 18 November 2026, by William Acquavella (Acquavella Galleries), bidding in the room — whether for a client is not reported
+    price:
+      amount: 190430000
+      currency: USD
+      note: with buyer’s premium; hammer price $165m — an auction record for Van Gogh
+    sources:
+      - note: “$190.4m with fees”, “hammered at $165m”, “going to a bidder in the room—William Acquavella, the head of Acquavella Galleries”
+        source: porterfield-2026-van-gogh-record
+        accessed: 2026-11-23
+      - note: $190.4m with fees, hammer $165m; bought by “the New York dealer Bill Acquavella”
+        source: brady-2026-soft-market
+        accessed: 2026-11-23
+      - note: 190.430.000 dólares
+        source: ise-2026-blaquier-arrieta
+        accessed: 2026-11-23
 numbers:
   - number: F751
     source: de-la-faille-1970

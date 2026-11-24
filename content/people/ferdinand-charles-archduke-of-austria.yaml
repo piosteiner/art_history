@@ -36,6 +36,16 @@ death: 1662-12-30
 wikidata_id: Q560021
 metadata:
   sources: [Wikidata Q560021 (retrieved 2026-10-19)]
+relationships:
+  - type: sibling_of
+    to: person/vittoria-della-rovere
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q560021
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q60139
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/c0/Frans_Luycx_-_Ferdinand_Charles%2C_Archduke_of_Further_Austria.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Frans_Luycx_-_Ferdinand_Charles,_Archduke_of_Further_Austria.jpg

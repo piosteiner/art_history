@@ -1,0 +1,59 @@
+public_id: 126875
+name: Kyiv
+names:
+  - lang: ja
+    role: translation
+    text: キーウ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1899
+  - lang: zh
+    role: translation
+    text: 基辅
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1899
+  - lang: ko
+    role: translation
+    text: 키예프
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1899
+  - lang: fr
+    role: translation
+    text: Kiev
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1899
+  - lang: de
+    role: translation
+    text: Kiew
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1899
+  - lang: ru
+    role: translation
+    text: Киев
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1899
+kind: settlement
+parent: ukraine
+country_code: UA
+location: [30.52361, 50.45]
+wikidata_id: Q1899
+metadata:
+  sources: [Wikidata Q1899 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1899
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1899
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1899

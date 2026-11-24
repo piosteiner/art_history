@@ -1,0 +1,47 @@
+public_id: 124080
+title: Golden hall, Kanshinji
+names:
+  - lang: ja
+    role: translation
+    text: 観心寺金堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q107020410
+created: 1346/1369
+institution: kanshin-ji-temple
+location: [135.5985, 34.43737]
+wikidata_id: Q107020410
+metadata:
+  sources: [Wikidata Q107020410 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/kawachinagano
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Kanshinji_Kondou.jpg/1280px-Kanshinji_Kondou.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kanshinji_Kondou.jpg
+    license: CC BY-SA 3.0
+    credit: Original uploader was Ｈｉｒｏ２００６ at ja.wikipedia
+provenance:
+  - owner: institution/kanshin-ji-temple
+    acquired: 1346/1369
+    method: creation
+    place: kawachinagano
+    label: main hall rebuilt in the Shōhei era, before 1378 (Tenju 4); the temple says Emperor Go-Daigo ordered it c. 1334 with Kusunoki Masashige as commissioner; repaired under Toyotomi Hideyori and often since (restoration completed 1984); the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/2185
+        note: 今の金堂(従来元水と呼ばれていた)は天授四年（一三七八）以前に再興されたもので、室町時代前期に属する。… 年代 ： 正平 西暦 ： 1346-1369 … 所有者名 ： 観心寺
+        source: kunishitei-102-2185
+        accessed: 2026-11-24
+      - note: Interior of the kondo, Kanshinji, Osaka, with Kongokai (Diamond World) Mandara seen to the east (at left) of the altar.
+        source: history-of-japanese-art
+        locator: pp. 124–125, fig. 151
+        accessed: 2026-11-24
+      - url: https://www.kanshinji.com/rekisi.html
+        note: 後醍醐天皇は当寺を厚く信任され、建武新政後(1334年頃)、 楠木正成 を奉行として金堂外陣造営の勅を出され、 現在の金堂ができた。… 室町時代初期に建立され、豊臣秀頼の時、江戸時代の中期、明治の初め、昭和の初め等たびたび修理し、昭和五十九年に昭和大修理の落慶をみた。
+        source: kanshinji-rekisi
+        accessed: 2026-11-24
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107020410

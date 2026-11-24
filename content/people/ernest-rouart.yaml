@@ -36,6 +36,15 @@ relationships:
       - accessed: 2026-11-04
         property: P20
         wikidata: Q7127637
+  - type: child_of
+    to: person/henri-rouart
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q1606016
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q7127637
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/6/6a/Ernest_Rouart_1900.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Ernest_Rouart_1900.jpg

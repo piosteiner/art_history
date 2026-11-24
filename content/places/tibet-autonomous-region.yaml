@@ -1,0 +1,16 @@
+public_id: 124866
+name: Tibet Autonomous Region
+kind: site
+location: [86.94028, 31.70556]
+wikidata_id: Q17269
+metadata:
+  sources: [Wikidata Q17269 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q17269
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q17269

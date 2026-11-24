@@ -1,0 +1,119 @@
+public_id: 123157
+title: Derveni krater
+names:
+  - lang: fr
+    role: translation
+    text: Cratère de Derveni
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3002227
+  - lang: de
+    role: translation
+    text: Derveni-Krater
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3002227
+  - lang: it
+    role: translation
+    text: Cratere di Derveni
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3002227
+  - lang: es
+    role: translation
+    text: Cratera de Derveni
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3002227
+  - lang: ru
+    role: translation
+    text: Кратер из Дервени
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3002227
+created: -320
+materials: [bronze]
+dimensions: [90.5]
+institution: archaeological-museum-of-thessaloniki
+inventory_number: inv. B1
+wikidata_id: Q3002227
+metadata:
+  sources: [Wikidata Q3002227 (retrieved 2026-11-24)]
+relationships:
+  - type: associated_with
+    to: movement/hellenistic-art
+    sources:
+      - accessed: 2026-11-24
+        property: P135
+        wikidata: Q3002227
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Crat%C3%A8re_de_Derveni_0001.jpg/1280px-Crat%C3%A8re_de_Derveni_0001.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Crat%C3%A8re_de_Derveni_0001.jpg
+    license: CC BY-SA 2.5
+    credit: © Michael Greenhalgh
+provenance:
+  - owner_label: tomb B, Derveni — burial of Astiouneios, son of Anaxagoras, of Larissa
+    acquired: 4th century BCE
+    label: at Derveni near Thessaloniki; used as the funerary urn of a Thessalian aristocrat whose name is engraved on it; held the burnt bones of a man and a younger woman
+    sources:
+      - url: https://en.wikipedia.org/wiki/Derveni_Krater
+        note: "The krater was discovered buried, as a funerary urn for a Thessalian aristocrat whose name is engraved on the vase: Astiouneios, son of Anaxagoras, from Larissa."
+        source: wikipedia-en-derveni-krater
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Derveni-Krater
+        note: Der Krater wurde 1962 in Grab Β von Derveni entdeckt. Die Gräber von Derveni werden in die zweite Hälfte des 4. Jahrhunderts v. Chr. datiert.
+        source: wikipedia-de-derveni-krater
+        accessed: 2026-11-24
+  - owner: institution/greek-archaeological-service
+    acquired: 1962
+    method: find
+    label: graves found in January 1962 when the Thessaloniki–Kavala road was widened; excavated January–August 1962 under C. I. Makaronas, supervised by Petros Themelis; krater found 16 January 1962 (el)
+    sources:
+      - url: https://en.wikipedia.org/wiki/Derveni_Krater
+        note: The Derveni Krater is a volute krater, the most elaborate of its type, discovered in 1962 in a tomb at Derveni, not far from Thessaloniki
+        source: wikipedia-en-derveni-krater
+        accessed: 2026-11-24
+      - url: https://www.cambridge.org/core/books/derveni-papyrus/find/FD4B19F34E99503F2F95FEC033C9AA31
+        note: during the widening of the national road leading from Thessalonica to Kavala … The following day another similar but even larger cist grave came to light 4.5 metres away. … undertook a systematic excavation of the graves and the surrounding area between January and August 1962 … under the direction of C. I.Makaronas and under the supervision of Petris Themelis … the stunning bronze krater with a Dionysiac scene found in tomb B
+        source: betegh-2004-derveni-papyrus-the-find
+        accessed: 2026-11-24
+      - url: https://el.wikipedia.org/wiki/%CE%9A%CF%81%CE%B1%CF%84%CE%AE%CF%81%CE%B1%CF%82_%CF%84%CE%BF%CF%85_%CE%94%CE%B5%CF%81%CE%B2%CE%B5%CE%BD%CE%AF%CE%BF%CF%85
+        note: Ο κρατήρας του Δερβενίου είναι οστεοφυλάκιο και τεφροδόχο σκεύος που ανευρέθη,στις 16 Ιανουαρίου 1962, μέσα σ΄ ένα κιβωτιόσχημο τάφο, κοντά στο Δερβένι, 9,5 χλμ. βορειοδυτικά της Θεσσαλονίκης.
+        source: wikipedia-el-krateras-tou-derveniou
+        accessed: 2026-11-24
+  - owner: institution/archaeological-museum-of-thessaloniki
+    method: transfer
+    place: thessaloniki
+    label: inventory B1
+    sources:
+      - url: https://en.wikipedia.org/wiki/Derveni_Krater
+        note: Inv. B1, Archaeological Museum of Thessaloniki. … displayed at the Archaeological Museum of Thessaloniki.
+        source: wikipedia-en-derveni-krater
+        accessed: 2026-11-24
+      - url: https://de.wikipedia.org/wiki/Derveni-Krater
+        note: Heute befindet er sich im Archäologischen Museum von Thessaloniki.
+        source: wikipedia-de-derveni-krater
+        accessed: 2026-11-24
+identifiers:
+  viaf: "186060388"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3002227
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3002227
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3002227
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3002227
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q3002227

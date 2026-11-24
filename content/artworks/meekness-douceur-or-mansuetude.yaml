@@ -1,0 +1,66 @@
+public_id: 125243
+title_lang: en
+title: Meekness
+names:
+  - lang: en
+    role: original
+    text: Meekness (Douceur or Mansuétude)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20274512
+  - lang: fr
+    role: translation
+    text: La Mansuétude
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20274512
+  - lang: de
+    role: translation
+    text: Sanftmut
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q20274512
+parent: beatitudes
+creator: eustache-le-sueur
+created: 1650
+materials: [oil paint, panel]
+dimensions: [100.7, 67]
+institution: art-institute-of-chicago
+inventory_number: "1974.233"
+wikidata_id: Q20274512
+metadata:
+  sources: [Wikidata Q20274512 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Eustache_Le_Sueur_-_Meekness_-_1974.233_-_Art_Institute_of_Chicago.jpg/1280px-Eustache_Le_Sueur_-_Meekness_-_1974.233_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eustache_Le_Sueur_-_Meekness_-_1974.233_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Eustache Le Sueur
+sources:
+  parent:
+    - accessed: 2026-11-24
+      property: P179
+      wikidata: Q20274512
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q20274512
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q20274512
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q20274512
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q20274512
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q20274512
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q20274512

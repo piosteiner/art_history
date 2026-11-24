@@ -1,0 +1,18 @@
+public_id: 125211
+name: Frans Pourbus the Younger
+given_name: Frans, the Younger
+family_name: Pourbus
+birth: 1569
+death: 1622-02-19
+wikidata_id: Q934540
+metadata:
+  sources: [Wikidata Q934540 (retrieved 2026-11-24)]
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q934540
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q934540

@@ -27,6 +27,15 @@ relationships:
       - accessed: 2026-10-18
         property: P20
         wikidata: Q467167
+  - type: sibling_of
+    to: person/alphonse-james-de-rothschild
+    sources:
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q467167
+      - accessed: 2026-11-23
+        property: P3373
+        wikidata: Q2494198
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/2a/%D7%94%D7%91%D7%A8%D7%95%D7%9F_%28_%D7%90%D7%93%D7%9E%D7%95%D7%A0%D7%93_%D7%93%D7%94_%D7%A8%D7%95%D7%98%D7%A9%D7%99%D7%9C%D7%93_%D6%BC1934_-_1845%D7%82-JNF012590.jpeg
     source_url: https://commons.wikimedia.org/wiki/File:%D7%94%D7%91%D7%A8%D7%95%D7%9F_(_%D7%90%D7%93%D7%9E%D7%95%D7%A0%D7%93_%D7%93%D7%94_%D7%A8%D7%95%D7%98%D7%A9%D7%99%D7%9C%D7%93_%D6%BC1934_-_1845%D7%82-JNF012590.jpeg

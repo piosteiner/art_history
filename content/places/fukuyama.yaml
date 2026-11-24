@@ -1,0 +1,41 @@
+public_id: 123932
+name: Fukuyama
+names:
+  - lang: ja
+    role: original
+    text: 福山市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q661038
+  - lang: ko
+    role: translation
+    text: 후쿠야마시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q661038
+  - lang: ru
+    role: translation
+    text: Фукуяма
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q661038
+kind: settlement
+parent: japan
+country_code: JP
+location: [133.36231, 34.48586]
+wikidata_id: Q661038
+metadata:
+  sources: [Wikidata Q661038 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q661038
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q661038
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q661038

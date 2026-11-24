@@ -29,6 +29,15 @@ relationships:
       - accessed: 2026-11-04
         property: P27
         wikidata: Q64354
+  - type: child_of
+    to: person/julius-freund
+    sources:
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q64354
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q19287233
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/49/Gis%C3%A8le-Freund.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Gis%C3%A8le-Freund.jpg

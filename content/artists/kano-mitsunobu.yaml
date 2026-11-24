@@ -32,6 +32,15 @@ relationships:
       - accessed: 2026-11-02
         property: P19
         wikidata: Q3192786
+  - type: child_of
+    to: artist/kano-eitoku
+    sources:
+      - accessed: 2026-11-23
+        property: P40
+        wikidata: Q536696
+      - accessed: 2026-11-23
+        property: P22
+        wikidata: Q3192786
 identifiers:
   gnd: "1059733757"
   lc: n79037078
