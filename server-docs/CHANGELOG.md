@@ -2,6 +2,49 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-24
+
+### Content: 624 new artworks with their provenance (NGA, Cleveland, Chicago, Rietberg, Greece, Japan)
+- **What:** 624 artworks (audited, sources `wikidata` / `script`): National Gallery of Art 133, Cleveland Museum of Art
+  122, Museum Rietberg 72, Art Institute of Chicago 68, Greece 28 (National Archaeological Museum Athens 13,
+  Heraklion 4, Acropolis Museum 3, Delphi 2, Olympia 2, Piraeus, Thessaloniki, National Gallery Athens, the Dormition
+  icon in Ermoupoli), Japan 201
+  (National Treasures — buildings of temples, shrines and castles as works of their institution, sculpture, emaki,
+  calligraphy, swords, mirrors; Tokyo/Kyoto/Nara National Museums and the temples themselves). Chosen for an
+  interesting provenance; **every one has a picture that may be shown** (owner 2026-11-23: no works with only
+  private reference images) — museum CC0 images (NGA, Cleveland, Chicago), Wikimedia Commons with the photographer's
+  licence; Rietberg's own pictures are not free, so only its works with a CC0/public-domain photo on Commons (the
+  Reinhart uploads, Praefcke). New entries made with `scripts/from-wikidata.js` (fix: the first image that is neither
+  blocked nor declined, not always the first) or from the museum's own record (works without a Wikidata item).
+- **Provenance:** 4,539 steps on 620 works, each cited to the museum's record (a `web` source per record) or for Japan
+  to Mason's *History of Japanese Art* with pages, the Agency for Cultural Affairs' register (kunishitei) and the
+  temples' pages; holders linked to ours by Wikidata item (checked against the query service) or by name + life
+  dates, else created (people ~1,200, institutions ~350, places ~200, sources ~990 in all since 2026-11-23). Nazi-era
+  steps with their seizure/restitution roles; `provenance_status` set where the museum states it; creation dates and
+  current holders taken from the steps where the work had none. The five series wholes (Haystacks, Waterloo Bridge,
+  Beatitudes, Deeds of the Zen Masters, Jardins publics) have no steps of their own.
+- **Clean-up the same day:** four duplicate works merged into the older entries (Yumedono Kannon, Shōtoku Taishi eden,
+  Murasaki Shikibu nikki emaki, Jingo-ji Yakushi); holders merged (George Hibbert, Paul Demidoff of San Donato,
+  Charles H. Worcester, the duc de Trévise, Galerie Bachstitz; the person "A. S. Drey" → Galerie A. S. Drey; Leonard
+  C. Hanna Jr., Charles Ratton, Ernst Curtius, John Murray Scott); parts under their wholes (Matsumoto Castle's five
+  buildings, Hikone's keep, Ippen hijiri-e vol. 7, the Galitzin triptych's centre, two NGA triptychs, the Takamatsuzuka
+  murals, the Konjikidō statues); dates after the kunishitei register (Haguro-san pagoda 1372, Ōura Church 1864);
+  Takashina Takakane active c. 1309–1330 (not his life), Li Di c. 1100 – after 1197, Cardinal Francesco II Barberini
+  (1662–1738, Q2662344) told apart; readable slugs for the `-qNNN` / `national-treasure-q…` works (old ones redirect);
+  wrong holders from Wikidata P195 corrected (Mellon/Kress "collections" → NGA; the Syros icon → its church).
+  `fill-from-wikidata.js` run over the new institutions without a place and people without dates that have an item.
+- **Why:** owner 2026-11-23 ("roughly 600 new artworks … with complete provenance and relationships … at least 200
+  from Japan"). **Revert:** the entries carry `created_at` 2026-11-23/24 and audit rows with source script/wikidata —
+  delete by those; the merges via the history pages.
+
+### Content: Van Gogh family; Kunsthaus Zürich corrections
+- **What:** Theo van Gogh (Q317188) and Vincent Willem van Gogh (Q2185351) got their items; relationships with
+  Wikidata citations: Vincent – Theo siblings, Theo – Johanna married, Vincent Willem child of Theo and of Johanna,
+  nephew of Vincent. "C. M. van Gogh" (the Kunsthaus's holder until 1908) not linked — uncle Cornelis Marinus or the
+  firm, unclear. Two Kunsthaus works (`chaumieres-a-chaponval`, `cabanes-blanches-aux-saintes-maries`) named the
+  nephew Vincent Willem as owner but were linked to the painter: steps relinked.
+- **Why:** owner 2026-11-24. **Revert:** the entries' history pages.
+
 ## 2026-11-23
 
 ### Site: people show their portraits

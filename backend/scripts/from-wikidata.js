@@ -83,7 +83,9 @@ async function takeAll(plan) {
     }
     else choices[`take.${row.key}`] = 'take';
   }
-  if (plan.images.length) choices['img.0'] = 'add';
+  // the first image the review would suggest: not one whose work is still protected (`blocked`, 2026-11-08) or declined
+  const img = plan.images.findIndex((x) => !x.declined && !x.blocked);
+  if (img >= 0) choices[`img.${img}`] = 'add';
   for (const x of plan.identifiers || []) choices[`idf.${x.code}`] = 'take';
   return choices;
 }
