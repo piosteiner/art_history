@@ -116,7 +116,8 @@ export function provenanceChains(nodes: GraphNode[], edges: GraphEdge[], { chain
 export function familyKind(rels: GraphEdge[]): { kind: 'parent'; parent: string } | { kind: 'spouse' | 'sibling' | 'relative' } | null {
   const child = rels.find((r) => r.type === 'child_of');
   if (child) return { kind: 'parent', parent: child.target };
-  if (!rels.every((r) => r.category === 'family')) return null;
+  // a family tie stays one beside other links (Theo was Vincent's brother and his patron; a son inherited the works)
+  if (!rels.some((r) => r.category === 'family')) return null;
   if (rels.some((r) => r.type === 'married_to')) return { kind: 'spouse' };
   if (rels.some((r) => r.type === 'sibling_of')) return { kind: 'sibling' };
   return { kind: 'relative' };
@@ -129,7 +130,11 @@ export function sharedParentSiblings(edges: GraphEdge[]) {
   return (e: GraphEdge) => e.type === 'sibling_of' && [...(parents.get(e.source) ?? [])].some((p) => parents.get(e.target)?.has(p));
 }
 
-/** One edge per pair of entries. The pair's category is that of its first relationship (the API sorts by importance). */
+/**
+ * One edge per pair of entries. The pair's category is that of its first relationship (the API sorts by importance),
+ * except that a family tie outranks every other (Theo, Vincent's brother and patron, is drawn as his brother) and a
+ * stored relationship outranks the provenance.
+ */
 export function mergeEdges(edges: GraphEdge[]): GEdge[] {
   const byPair = new Map<string, GEdge>();
   for (const e of edges) {
@@ -141,6 +146,7 @@ export function mergeEdges(edges: GraphEdge[]): GEdge[] {
       continue;
     }
     m.rels.push(e);
+    if (e.category === 'family' || (m.category === 'provenance' && e.category !== 'provenance')) m.category = e.category;
     if (e.symmetric || e.beside || flowFrom(e) !== m.source) m.directed = false;
     m.uncertain &&= !!e.certainty && e.certainty !== 'attested';   // uncertain only if every link is
     m.implied &&= e.end_basis === 'implied';

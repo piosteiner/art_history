@@ -609,7 +609,7 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 
 /* network graph */
 :root { --c-influence: #b4462b; --c-education: #3d6fb6; --c-collaboration: #5e8c3a; --c-membership: #8a8172;
-  --c-patronage: #8a4f9e; --c-depiction: #c2577f; --c-family: #b5651d; --c-provenance: #a0702a; --c-polity: var(--polity);
+  --c-patronage: #8a4f9e; --c-depiction: #c2577f; --c-family: #1a9a8a; --c-provenance: #a0702a; --c-polity: var(--polity);
   --n-artist: #b4462b; --n-artwork: #c08a1e; --n-movement: #2f6f73; --n-institution: #3d6fb6; --n-person: #8a4f9e;
   --n-polity: var(--polity); --n-place: #8a8172; --c-event: #d4237a; --n-event: #d4237a; }
 .graph-controls { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; align-items: center; margin: .4rem 0 .4rem; }
@@ -646,7 +646,7 @@ svg.graph:active { cursor: grabbing; }
 .edge.uncertain { stroke-dasharray: 5 4; }
 .edge.implied { stroke-dasharray: 2 4; stroke-opacity: .4; } /* provenance: the period's end is only implied */
 .edge.beside { stroke-dasharray: 1 4; stroke-linecap: round; stroke-width: 1.6; } /* a custodian or agent beside a work's owners */
-.edge.family-sibling, .edge.family-relative { stroke-dasharray: 6 3; }
+.edge.family-relative { stroke-dasharray: 9 3 2 3; } /* dash-dot: not the dashes of an uncertain link; siblings solid */
 .arrowhead { fill: var(--cat); }
 .node circle { fill: var(--n); stroke: var(--surface); stroke-width: 2; }
 .node.root circle { stroke: var(--text); stroke-width: 2.5; }

@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-24
 
+### Site: family lines in the network look like family
+- **What:** around Vincent van Gogh his family seemed missing: the family colour (`--c-family` #b5651d) was all but
+  the provenance colour (#a0702a), sibling/relative lines were dashed like "not certain", and a pair with another link
+  besides (Theo: brother and patron) lost the family style (`familyKind()` wanted every link to be family). Now family
+  is teal (#1a9a8a), siblings solid, other relatives dash-dotted; a family tie decides the pair's line and category
+  (`mergeEdges`, `familyKind` in `frontend/src/graph-group.ts`), the other links stay listed in the side panel; legend
+  sentence extended. Test `network: a family tie decides the line beside other links`.
+- **Why:** owner 2026-11-24. **Revert:** the commit.
+
 ### Content: 624 new artworks with their provenance (NGA, Cleveland, Chicago, Rietberg, Greece, Japan)
 - **What:** 624 artworks (audited, sources `wikidata` / `script`): National Gallery of Art 133, Cleveland Museum of Art
   122, Museum Rietberg 72, Art Institute of Chicago 68, Greece 28 (National Archaeological Museum Athens 13,

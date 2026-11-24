@@ -3907,6 +3907,17 @@ test('network: a work\'s owners as one chain, other works\' transfers left out; 
   await expect.poll(async () => (await y("Ferdinando II de' Medici")) - (await y("Cosimo II de' Medici")), { timeout: 15000 }).toBeGreaterThan(60);
 });
 
+test('network: a family tie decides the line beside other links (2026-11-24)', async ({ page }) => {
+  const edge = (text: string) => page.locator('svg.graph path.edge', { has: page.locator('title', { hasText: text }) });
+  await page.goto('/graph/artists/vincent-van-gogh');
+  // Theo was Vincent's brother and his patron: drawn as brothers, in the family colour, not dashed like "not certain"
+  const theo = edge('Vincent van Gogh sibling of Theo van Gogh');
+  await expect(theo).toHaveClass(/cat-family/);
+  await expect(theo).toHaveClass(/family-sibling/);
+  await expect(theo).not.toHaveClass(/uncertain/);
+  await expect(edge('Vincent van Gogh relative of Vincent Willem van Gogh')).toHaveClass(/family-relative/);
+});
+
 test('network: every name shown in a small network (2026-11-23)', async ({ page }) => {
   await page.goto('/graph/events/tani-buncho-manpachiro-gathering-1792');
   await expect(page.locator('svg.graph .node').first()).toBeVisible();

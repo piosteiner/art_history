@@ -179,7 +179,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       </div>
       <p class="muted small">${walked.nodes.length} entries, ${raw.length} links${truncated ? ' (cut off at 500 entries: choose fewer steps or kinds of links)' : ''}${nodes.some((n) => n.bundle) ? '; entries of one kind with the same links are bundled — click a bundle to list or open it' : ''}.
         <strong>${VIEW_LABEL[view]}:</strong> ${VIEW_HELP[view]}.
-        Click an entry for details, double-click to center the network on it; dashed = not certain, faded and dashed = end of the period only implied; arrows show what passes on (teacher → student, Hokusai → Van Gogh for an influence, artist → work); a work's owners follow one another — work → first owner → the next …, a dotted line to whoever held it for them; families as a family tree: parents above their children, a double line between spouses.</p>
+        Click an entry for details, double-click to center the network on it; dashed = not certain, faded and dashed = end of the period only implied; arrows show what passes on (teacher → student, Hokusai → Van Gogh for an influence, artist → work); a work's owners follow one another — work → first owner → the next …, a dotted line to whoever held it for them; families (teal) as a family tree: parents above their children, a double line between spouses, dash-dotted to other relatives.</p>
       <div class="graph-wrap">
         <svg class="graph view-${view}" role="img" aria-label="Network graph"></svg>
         <aside class="graph-info" aria-live="polite"></aside>
