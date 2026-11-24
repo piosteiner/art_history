@@ -357,7 +357,8 @@ test('searches read exclusions and plain words; a misspelt word is corrected (AP
 });
 
 test('search page: a hit in a provenance links to the artwork\'s provenance', async ({ page }) => {
-  await page.goto('/search?q=confiscation');
+  // with the place of the seizure: "confiscation" alone has dozens of hits since the import of 2026-11-24
+  await page.goto('/search?q=confiscation+chambord');
   const hit = page.locator('#items .text-hit', { hasText: 'La Petite Irène' });
   await expect(hit.locator('.tag-matched')).toHaveText('provenance');
   // the passage marks every word that matched — with the synonyms (API 102) also "seized"
