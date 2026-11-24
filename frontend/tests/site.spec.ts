@@ -3919,6 +3919,55 @@ test('network: a family tie decides the line beside other links (2026-11-24)', a
   await expect(edge('Vincent van Gogh relative of Vincent Willem van Gogh')).toHaveClass(/family-relative/);
 });
 
+test('network, Arrange (2026-11-24): an entry drags its branch along, a later one moves alone; hide, fold, kept in the browser', async ({ page }) => {
+  await page.goto('/graph/artists/vincent-van-gogh?view=arrange');
+  const node = (id: string) => page.locator(`svg.graph .node[data-id="${id}"]`);
+  const at = async (id: string) => {
+    const m = /translate\(([-\d.e]+),([-\d.e]+)\)/.exec((await node(id).getAttribute('transform'))!)!;
+    return { x: Number(m[1]), y: Number(m[2]) };
+  };
+  const theo = 'person/theo-van-gogh', jo = 'person/johanna-van-gogh-bonger';
+  await expect(node(theo)).toBeVisible();
+  await page.locator('svg.graph').scrollIntoViewIfNeeded();
+  const drag = async (id: string, dx: number, dy: number) => {
+    const b = (await node(id).locator('circle').boundingBox())!;
+    await page.mouse.move(b.x + b.width / 2, b.y + b.height / 2);
+    await page.mouse.down();
+    await page.mouse.move(b.x + b.width / 2 + dx / 2, b.y + b.height / 2 + dy / 2, { steps: 4 });
+    await page.mouse.move(b.x + b.width / 2 + dx, b.y + b.height / 2 + dy, { steps: 4 });
+    await page.mouse.up();
+  };
+  // Theo, reached from Vincent, takes Johanna (reached through Theo) with him
+  const [t0, j0] = [await at(theo), await at(jo)];
+  await drag(theo, 60, 40);
+  const [t1, j1] = [await at(theo), await at(jo)];
+  expect(t1.x - t0.x).toBeGreaterThan(10);
+  expect(j1.x - j0.x).toBeCloseTo(t1.x - t0.x, 3);
+  expect(j1.y - j0.y).toBeCloseTo(t1.y - t0.y, 3);
+  // Johanna moves alone: Theo stays
+  await drag(jo, -50, 30);
+  expect(await at(theo)).toEqual(t1);
+  const j2 = await at(jo);
+  expect(j2.x).toBeLessThan(j1.x - 10);
+  // right-click: hide her; the side panel lists her to bring her back
+  await node(jo).locator('circle').click({ button: 'right' });
+  await page.locator('.arrange-menu button', { hasText: 'Hide this entry' }).click();
+  await expect(node(jo)).toHaveClass(/gone/);
+  await page.locator('.arrange-hidden button', { hasText: 'Show' }).first().click();
+  await expect(node(jo)).not.toHaveClass(/gone/);
+  // fold away Theo's branch: Johanna goes, Theo carries a "+N"
+  await node(theo).locator('circle').click({ button: 'right' });
+  await page.locator('.arrange-menu button', { hasText: 'Fold away its branch' }).click();
+  await expect(node(jo)).toHaveClass(/gone/);
+  await expect(node(theo).locator('text.fold-badge')).toHaveText(/^\+\d+$/);
+  // kept in this browser: after a reload still folded, Theo where he was put
+  await page.reload();
+  await expect(node(jo)).toHaveClass(/gone/);
+  expect(await at(theo)).toEqual({ x: Math.round(t1.x), y: Math.round(t1.y) });
+  await page.locator('.graph-info [data-reset]').click();
+  await expect(node(jo)).not.toHaveClass(/gone/);
+});
+
 test('network: every name shown in a small network (2026-11-23)', async ({ page }) => {
   await page.goto('/graph/events/tani-buncho-manpachiro-gathering-1792');
   await expect(page.locator('svg.graph .node').first()).toBeVisible();

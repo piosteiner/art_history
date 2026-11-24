@@ -23,11 +23,12 @@ export type Node = GNode & SimulationNodeDatum & { degree: number };
 export type Edge = Omit<GEdge, 'source' | 'target'> & { source: Node | string; target: Node | string; index?: number };
 export const radius = (n: Node) => (n.depth === 0 ? 13 : n.bundle ? 9 + 2.2 * Math.sqrt(n.bundle.members.length) : 6 + Math.min(n.degree, 8));
 
-export const VIEWS = ['free', 'rings', 'outline', 'timeline', 'matrix'] as const;
+export const VIEWS = ['free', 'arrange', 'rings', 'outline', 'timeline', 'matrix'] as const;
 export type View = (typeof VIEWS)[number];
-export const VIEW_LABEL: Record<View, string> = { free: 'Free', rings: 'Rings', outline: 'Outline', timeline: 'Timeline', matrix: 'Matrix' };
+export const VIEW_LABEL: Record<View, string> = { free: 'Free', arrange: 'Arrange', rings: 'Rings', outline: 'Outline', timeline: 'Timeline', matrix: 'Matrix' };
 export const VIEW_HELP: Record<View, string> = {
   free: 'entries pull on each other like springs: clusters show, the layout changes every time',
+  arrange: 'a tree you lay out yourself: drag an entry and everything reached through it comes along (the entries before it stay); right-click an entry — or use the side panel — to hide it, fold away its branch or spread the branch out; kept in this browser',
   rings: 'the centre in the middle, its links on the first ring in sectors by kind of link, the next step outside; links across the rings curve through the middle',
   outline: 'a mind map: the centre, then one branch per kind of link, then their links in turn; each entry appears once, links between branches are listed in the side panel',
   timeline: 'entries on a time axis in rows by kind — a life, a reign or a period as a bar, a work at its date; arcs are the links (undated entries at the right)',
@@ -61,7 +62,7 @@ const short = (s: string, max = 34) => (s.length > max ? `${s.slice(0, max - 1)}
 
 /** A spanning tree from the centre (breadth first): each entry hangs on the entry it was first reached from; the
  *  centre's children sorted by kind of link, the rest by date. */
-function spanningTree(ctx: LayoutCtx) {
+export function spanningTree(ctx: Pick<LayoutCtx, 'root' | 'nodes' | 'edges' | 'catOrder'>) {
   const { root, nodes, edges, catOrder } = ctx;
   const adj = new Map<Node, { n: Node; e: Edge }[]>(nodes.map((n) => [n, []]));
   for (const e of edges) {
@@ -99,12 +100,12 @@ function nodeGroup(g: G, nodes: Node[], cls = '') {
   sel.append('title').text((n) => (n.bundle ? `${n.name} (click to list them)` : `${n.name} (${TYPE_LABEL[n.type]}${n.period ? `, ${n.period.label}` : ''})`));
   return sel;
 }
-function edgeTitle<T extends SVGElement>(sel: Selection<T, Edge, SVGGElement, unknown>) {
+export function edgeTitle<T extends SVGElement>(sel: Selection<T, Edge, SVGGElement, unknown>) {
   sel.append('title').text((e) => e.rels.slice(0, 6).map((r) => `${nameIn(e, r.source)} ${r.label} ${nameIn(e, r.target)}${r.period ? ` ${r.period.label}` : ''}`).join('\n')
     + (e.rels.length > 6 ? `\n… ${e.rels.length - 6} more` : ''));
 }
 const nameIn = (e: Edge, id: string) => (S(e).id === id ? S(e).name : T(e).id === id ? T(e).name : id.split('/')[1] ?? id);
-const edgeClass = (e: Edge) => `edge cat-${e.category}${e.uncertain ? ' uncertain' : ''}${e.implied ? ' implied' : ''}`;
+export const edgeClass = (e: Edge) => `edge cat-${e.category}${e.uncertain ? ' uncertain' : ''}${e.implied ? ' implied' : ''}`;
 
 // ---- rings ----------------------------------------------------------------------------------------------------
 export function rings(ctx: LayoutCtx): Drawn {
@@ -385,4 +386,4 @@ export function matrix(ctx: LayoutCtx): Drawn {
   return { nodeSel: both as unknown as Drawn['nodeSel'], linkSel: linkSel as unknown as Drawn['linkSel'], fit: { anchor: 'top-left', min: 0.7 } };
 }
 
-export const LAYOUTS: Record<Exclude<View, 'free'>, (ctx: LayoutCtx) => Drawn> = { rings, outline, timeline, matrix };
+export const LAYOUTS: Record<Exclude<View, 'free' | 'arrange'>, (ctx: LayoutCtx) => Drawn> = { rings, outline, timeline, matrix };

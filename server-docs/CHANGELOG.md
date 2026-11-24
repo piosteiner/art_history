@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-24
 
+### Site: network view "Arrange" — a tree laid out by hand
+- **What:** a sixth view (`?view=arrange`, `frontend/src/views/graph-arrange.ts`): Obsidian-like dots with names
+  below; laid out as a radial tree (the spanning tree the tree views share — `spanningTree()` now exported), loosened
+  once and then still. Dragging an entry moves everything reached through it ("earlier takes later along"), a later
+  entry moves alone; right-click / long-press or the side panel: hide an entry, fold away its branch ("+N"), spread a
+  branch out again, lay out the whole tree again; hidden entries listed in the side panel with Show / Show all /
+  "Start the arrangement over". Hover marks the path back to the centre; links outside the tree faint until their
+  entry is hovered or selected; names fade below 35 % zoom; names don't take the mouse (the dots are the handles).
+  Kept per centre in localStorage (`graph-arrange:v1:<type/slug>` — positions, hidden, folded; a convenience: without
+  storage it starts fresh). Test `network, Arrange (2026-11-24)`.
+- **Why:** owner 2026-11-24. **Revert:** the commit.
+
 ### Content: 18 world's fairs (data, audited)
 - **What:** events of kind "world's fair" for London 1851, Paris 1855, London 1862, Paris 1867 (updated), Vienna 1873,
   Philadelphia 1876, Paris 1878 (updated), 1889, Chicago 1893, Paris 1900, St. Louis 1904, Paris 1925, Barcelona 1929,

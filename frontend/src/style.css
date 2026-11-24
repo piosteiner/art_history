@@ -626,7 +626,7 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 .cat-influence { --cat: var(--c-influence); } .cat-education { --cat: var(--c-education); }
 .cat-collaboration { --cat: var(--c-collaboration); } .cat-family { --cat: var(--c-family); } .cat-membership { --cat: var(--c-membership); }
 .cat-patronage { --cat: var(--c-patronage); } .cat-depiction { --cat: var(--c-depiction); } .cat-provenance { --cat: var(--c-provenance); } .cat-polity { --cat: var(--c-polity); } .cat-event { --cat: var(--c-event); }
-.graph-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 1rem; align-items: start; }
+.graph-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 1rem; align-items: start; position: relative; }
 @media (max-width: 860px) { .graph-wrap { grid-template-columns: minmax(0, 1fr); } }
 svg.graph {
   width: 100%; height: min(70vh, 640px); background: var(--surface); border: 1px solid var(--line);
@@ -667,6 +667,27 @@ svg.graph:active { cursor: grabbing; }
 .graph-links li { font-size: .88rem; }
 /* 2026-11-23: names of minor entries only on hover or beside the one in focus; bundles of entries linked to one other */
 .node.quiet text.name { opacity: 0; transition: opacity .15s; }
+/* Arrange (graph-arrange.ts): an Obsidian-like tree to lay out by hand */
+svg.view-arrange .edge { stroke-width: 1.3; stroke-opacity: .5; }
+svg.view-arrange .edge.tree { stroke-opacity: .75; }
+svg.view-arrange .edge:not(.tree):not(.lit):not(.path-to-centre) { stroke-opacity: .1; }
+svg.view-arrange .edge.lit { stroke-opacity: .9; }
+svg.view-arrange .edge.path-to-centre { stroke-width: 3; stroke-opacity: 1; }
+svg.view-arrange .node text.name { font-size: 11px; transition: opacity .15s; pointer-events: none; } /* the dots are the handles: a name below one must not take another's drag */
+svg.view-arrange.names-far .node:not(.root):not(.selected):not(.near):not(:hover) text.name { opacity: 0; }
+svg.view-arrange .node { cursor: grab; }
+svg.view-arrange .node:active { cursor: grabbing; }
+.node.gone, .edge.gone { display: none; }
+.node text.fold-badge { font-size: 10px; font-weight: 700; fill: var(--accent); }
+.arrange-menu { position: absolute; z-index: 20; min-width: 200px; max-width: 260px; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: 0 6px 20px rgba(0, 0, 0, .25); padding: .3rem 0; font-size: .9rem; }
+.arrange-menu-head { padding: .3rem .8rem; color: var(--muted); font-size: .8rem; border-bottom: 1px solid var(--line); margin-bottom: .2rem;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.arrange-menu button { display: block; width: 100%; text-align: left; font: inherit; color: var(--text); background: none; border: 0;
+  padding: .35rem .8rem; cursor: pointer; }
+.arrange-menu button:hover, .arrange-menu button:focus-visible { background: var(--picked-bg); }
+.arrange-hidden li { display: flex; gap: .4rem; align-items: baseline; flex-wrap: wrap; }
+.arrange-hidden li .button-link { margin-left: auto; }
 .node.quiet:hover text.name, .node.quiet.near text.name, .node.quiet.selected text.name { opacity: 1; }
 .node.bundle circle { fill: var(--surface); stroke: var(--n); stroke-width: 2.5; stroke-dasharray: 4 2.5; }
 .node.bundle text.count { font-size: 11px; font-weight: 700; fill: var(--text); stroke: none; }
@@ -678,7 +699,7 @@ svg.graph:active { cursor: grabbing; }
 .graph-examples li { padding: .15rem 0; }
 /* other views (2026-11-23): rings, outline, timeline, matrix — src/views/graph-layouts.ts */
 .graph-views button { min-width: 4.2rem; }
-svg.graph:not(.view-free) .node text.name { pointer-events: auto; } /* the names are what one clicks there (the matrix has no dots) */
+svg.graph:not(.view-free):not(.view-arrange) .node text.name { pointer-events: auto; } /* the names are what one clicks there (the matrix has no dots) */
 .sector { fill: none; stroke: var(--cat); stroke-width: 7; stroke-opacity: .55; stroke-linecap: round; }
 .sector-label { font-size: 11px; font-weight: 700; fill: var(--cat); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; }
 .edge.cross { stroke-width: 1 !important; stroke-opacity: .28; }

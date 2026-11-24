@@ -24,6 +24,7 @@ const CATEGORY_LABEL: Record<string, string> = {
 };
 
 import { LAYOUTS, radius, VIEW_HELP, VIEW_LABEL, VIEWS, type Drawn, type Edge, type Node, type View } from './graph-layouts';
+import { arrange, type ArrangeApi } from './graph-arrange';
 // Readable networks (2026-11-23, tried on screenshots of van Gogh, Japonisme, Hokusai, Bührle, the Kunsthaus and
 // The Starry Night): owners pass on no provenance, one line per pair, bundles, names only for the main entries (the
 // rest on hover or around the selected one), a free layout — rings by distance crowded everything into one corner.
@@ -203,6 +204,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     let linkSel: Drawn['linkSel'];
     let sim: ReturnType<typeof forceSimulation<Node>> | null = null;
     let fitHow: Drawn['fit'] = { anchor: 'centre', min: 0 };
+    let arr: ArrangeApi | null = null;
     if (view === 'free') {
       // family as a family tree: no arrows — parents above their children on an elbow line, spouses side by side on a
       // double line, siblings on one row (2026-11-23, owner: "family relationships should be portrayed in a family style")
@@ -333,7 +335,13 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
         e.source = byId.get(e.source as string)!;
         e.target = byId.get(e.target as string)!;
       }
-      const d = LAYOUTS[view]({ viewport, nodes, edges, root, catOrder: GRAPH_CATEGORIES, catLabel: CATEGORY_LABEL, width });
+      const lctx = { viewport, nodes, edges, root, catOrder: GRAPH_CATEGORIES, catLabel: CATEGORY_LABEL, width };
+      let d: Drawn;
+      if (view === 'arrange') {
+        const a = arrange({ ...lctx, height, menuHost: main.querySelector<HTMLElement>('.graph-wrap')! });
+        arr = a.api;
+        d = a;
+      } else d = LAYOUTS[view](lctx);
       nodeSel = d.nodeSel;
       linkSel = d.linkSel;
       fitHow = d.fit;
@@ -342,7 +350,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     // ---- zoom, pan, drag ----
     const zoomer: ZoomBehavior<SVGSVGElement, unknown> = zoom<SVGSVGElement, unknown>().scaleExtent([0.2, 4])
       .filter((ev: Event) => (ev.type === 'wheel' ? true : !(ev as MouseEvent).button))
-      .on('zoom', (ev) => viewport.attr('transform', ev.transform.toString()));
+      .on('zoom', (ev) => { viewport.attr('transform', ev.transform.toString()); arr?.onZoom(ev.transform.k); });
     svg.call(zoomer).on('dblclick.zoom', null);
     function fit() {
       if (view !== 'free') {   // the drawing's own box, framed as the view asks
@@ -450,7 +458,21 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       a.rel = 'noopener';
     });
     function showInfo(n: Node | null) {
-      if (!n) return render(info, html`<p class="muted">Click an entry to see its links here.</p>`);
+      if (n && arr && !arr.visible(n)) n = selected = null;
+      if (!n) {
+        if (!arr) return render(info, html`<p class="muted">Click an entry to see its links here.</p>`);
+        const away = arr.hidden();
+        render(info, html`<p class="muted">Click an entry to see its links here. Drag an entry to move it with everything reached through it; right-click it to hide it or fold away its branch.</p>
+          ${away.length ? html`<h3>Hidden (${away.length})</h3><ul class="plain-list arrange-hidden">${away.map((m) => html`<li>${m.name}
+            <span class="muted">${arr!.folded(m) && arr!.visible(m) ? `branch of ${arr!.branchSize(m)} folded` : ''}</span>
+            <button type="button" class="button-link" data-show="${m.id}">Show</button></li>`)}</ul>
+            <p class="graph-actions"><button type="button" class="button-link" data-show-all>Show all</button></p>` : ''}
+          <p class="graph-actions"><button type="button" class="button-link" data-reset>Start the arrangement over</button></p>`);
+        info.querySelectorAll<HTMLButtonElement>('[data-show]').forEach((b) => b.addEventListener('click', () => arr!.show(b.dataset.show!)));
+        info.querySelector('[data-show-all]')?.addEventListener('click', () => arr!.showAll());
+        info.querySelector('[data-reset]')!.addEventListener('click', () => { arr!.reset(); fit(); });
+        return;
+      }
       if (n.bundle) {
         const b = n.bundle;
         render(info, html`<h2>${n.name}</h2>
@@ -478,14 +500,29 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
         <p class="muted">${TYPE_LABEL[n.type]}${n.kind ? ` · ${n.kind}` : ''}${n.period ? ` · ${n.period.label}` : ''}</p>
         <p class="graph-actions"><a class="button-link" href="${href(n.type, n.slug)}">Open page ↗</a>
           ${n !== root ? html`<a class="button-link" data-here href="${recenter(n)}">Center the network here</a>` : ''}</p>
+        ${arr ? html`<p class="graph-actions arrange-actions">${n !== root ? html`<button type="button" class="button-link" data-arr="hide">Hide</button>` : ''}
+          ${arr.branchSize(n) ? html`<button type="button" class="button-link" data-arr="fold">${arr.folded(n) ? `Show its branch (${arr.branchSize(n)})` : `Fold away its branch (${arr.branchSize(n)})`}</button>
+          <button type="button" class="button-link" data-arr="spread">${n === root ? 'Lay out the whole tree again' : 'Spread its branch out'}</button>` : ''}</p>` : ''}
         <ul class="plain-list graph-links">${mine.flatMap((e) => {
           const other = ((e.source as Node) === n ? e.target : e.source) as Node;
           return other.bundle ? [html`<li class="cat-${e.category}"><i class="line swatch"></i>${other.name} <span class="muted">· ${CATEGORY_LABEL[e.category] ?? e.category}</span></li>`]
             : e.rels.map(relRow);
         })}</ul>`);
+      if (arr) {
+        const a = arr, m = n;
+        info.querySelectorAll<HTMLButtonElement>('[data-arr]').forEach((b) => b.addEventListener('click', () => {
+          if (b.dataset.arr === 'hide') a.hide(m);
+          else if (b.dataset.arr === 'fold') a.toggleBranch(m);
+          else a.spread(m);
+        }));
+      }
       newTabs();
     }
 
+    arr?.onChange(() => {
+      if (selected && !arr!.visible(selected)) { selected = null; nodeSel.classed('selected', false); focus(null); }
+      showInfo(selected);
+    });
     showInfo(null);
     document.title = `Network around ${root.name} · Art History`;
     return () => {
