@@ -19,7 +19,7 @@ Format: date — what — why — how to revert.
     Clarke, 9th Bt (1764–1832), the 10th (b. 1818) a step of his own from 1832 (probable; the museum names the 10th
     for 1803–1840). Philip II portrait: the 7th Duke of Norfolk (b. 1655) "1655 or later" (museum: from 1652).
   - **Places:** Benin City's parent was Tokyo (Wikidata's "Edo State" matched to Edo = Tokyo) — removed with its
-    citation; Veracruz in Mexico (P17).
+    citation; Veracruz (the state, kind region — was "site") in Mexico (P17), its Wikidata point off the coast acknowledged.
   - Event "1795–1820 in Western Fashion" title case. Phaistos disc: the image was a replica (Commons: "not an exact
     copy") — now the original, sides A and B (C messier / Bammesk, CC BY-SA 4.0).
   - **Provenance ends with another holder:** 13 owned by a city / prefecture / the state / Kintetsu with a last
