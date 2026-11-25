@@ -4,6 +4,37 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-25
 
+### Content: World Folklore Names — people now, glossary terms after migration 260; Grimoire names
+- **What:** the owner's list "World Folklore Names" (myths, legends, folklore, saints and biblical subjects, an art
+  reference; 1,089 entries after splitting) extracted, then checked entry by entry before anything went in:
+  identity against its own Wikipedia article and Wikidata item (namesakes, list articles, disambiguations, redirects
+  removed — 92 subjects have no article of their own and get no Wikidata id), every factual statement against a read
+  source (Wikipedia, primary texts in translation — Ovid, Ganguli, Afanasyev, the Kalevala, ETCSL, the Popol Vuh,
+  Shanhaijing … —, museum pages, Theoi, Mason and Portal for Japanese and Korean subjects with pages), each famous work's
+  attribution and current holder. 691 text changes (corrected, version named, or cut where no source supports it),
+  151 works corrected, unidentifiable ones left out. Game references removed from everything for this site.
+  - **People (done):** real people, saints and biblical figures as person entries, like the existing ones: 169 new from
+    their Wikidata items with `scripts/from-wikidata.js` (dates checked against the entry first), plus Namatjira and
+    Kngwarray as artists; the checked text as `description_md` / `biography_md` where an entry had none (186 + 3).
+    Tutankhamun entered without dates (Wikidata contradicts itself, 1324/1343 BC; auto-created → Quality). Our Judith
+    text went to the existing Judith (another Wikidata item of the same figure); Saints James the Elder/the Less and
+    Joseph told apart from Jacob and Joseph (`--different`).
+  - **Glossary (prepared, waits for deploy):** migration 260 adds the category "mythology and legend". 882 terms: myth
+    figures/creatures/stories 724 (+ "iconography" where they are art subjects), Christian/Buddhist/allegorical themes 102
+    (iconography), figures still worshipped 43 (religion — not filed as mythology), Indigenous art traditions 13 (art style);
+    23 existing terms only get a text where they have none (Cerberus, Kannon, Jizō …). Each definition cited to its
+    Wikipedia article (a `wikipedia-en-…` source per article), Mason/Portal with pages, and up to three further sites the
+    check read; famous works link to our artworks where we have them (53 terms, 68 works). One term without any source
+    left out. SQL tested on dev (rolled back).
+  - **Grimoire (other project, done):** 520 "Legendary names" in its Names section (story, culture, work, region, fits,
+    link), 40 marked "Not for games" with the list's reason — hidden unless asked for, never picked, never offered to
+    campaigns. Grimoire commit 7c53b40 (local repo, no remote).
+- **Why:** owner 2026-11-25 ("both the glossary entries and the possible links and the grimoire addition"; "make sure
+  everything follows our high academic standard").
+- **Revert:** people — audit rows of 2026-11-25 source `wikidata`/`script` for these entries (history pages);
+  Grimoire — `DELETE FROM entries WHERE kind='names' AND json_extract(data,'$.source')='World Folklore Names'` (backup
+  of the DB before the import in the session scratchpad).
+
 ### Data: Quality findings, second round — changed-since-cited, museum pages, creators, duplicates
 - **What:** (audit source `sql` / `script`, user 1; checks done by Claude)
   - **Changed since cited (82 → 0):** 75 confirmed as "Yes, it still does" after comparing with the source — 51 place
