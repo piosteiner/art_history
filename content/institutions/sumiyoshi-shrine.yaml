@@ -1,3 +1,29 @@
 public_id: 126669
 name: Sumiyoshi Shrine
+place: shimonoseki
+location: [130.95654, 33.99978]
+address: 山口県下関市一の宮住吉一丁目11-1
 wikidata_id: Q11381858
+metadata:
+  sources: [Wikidata Q11381858 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Sumiyoshi-jinja_%28Shimonoseki%29_Haiden.JPG/1280px-Sumiyoshi-jinja_%28Shimonoseki%29_Haiden.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Sumiyoshi-jinja_(Shimonoseki)_Haiden.JPG
+    license: CC BY-SA 3.0
+    credit: ChiefHira
+identifiers:
+  lc: no2011147278
+  viaf: "183797324"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11381858
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11381858
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11381858

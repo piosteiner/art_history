@@ -27,6 +27,12 @@ relationships:
       - accessed: 2026-11-04
         property: P20
         wikidata: Q47310686
+  - type: founded
+    to: institution/galerie-cailleux
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q50990573
 identifiers:
   bnf: 12533992m
   gnd: 116297253X

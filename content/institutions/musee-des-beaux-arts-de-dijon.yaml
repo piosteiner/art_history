@@ -1,3 +1,44 @@
 public_id: 129199
 name: Musée des Beaux-Arts de Dijon
+kind: museum
+founded: 1787
+place: dijon
+location: [5.04267, 47.3216]
+address: Palais des États de Bourgogne, place de la Libération, 21000 Dijon
+website_url: https://beaux-arts.dijon.fr
 wikidata_id: Q1955739
+metadata:
+  sources: [Wikidata Q1955739 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Dijon_-_Musee_des_Beaux_arts.jpg/1280px-Dijon_-_Musee_des_Beaux_arts.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dijon_-_Musee_des_Beaux_arts.jpg
+    license: CC BY-SA 2.5
+    credit: Christophe.Finot
+identifiers:
+  bnf: "118649638"
+  gnd: 1015899-6
+  idref: "026393883"
+  lc: n50051163
+  ulan: "500306762"
+  viaf: "124290561"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1955739
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1955739
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q1955739
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1955739
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1955739

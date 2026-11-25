@@ -8,6 +8,8 @@ names:
       - accessed: 2026-11-24
         wikidata: Q107045329
 parent: deeds-of-the-zen-masters
+created: 14th century
+created_span: uncertain
 institution: ishibashi-foundation-art-research-center
 web_url: https://www.artizon.museum/collection/category/detail/199
 location: [139.3817, 35.60021]
@@ -28,6 +30,28 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Detached_Segment_from_The_Deeds_of_the_Zen_Masters.jpg
     license: Public domain
     credit: Indara (Yintuoluo)
+provenance:
+  - owner_label: Yintuoluo (Indra)
+    acquired: 14th century
+    method: creation
+    label: fragment of a handscroll of Zen encounters (Deeds of the Zen Masters) painted by Yintuoluo with an inscription by Chushi Fanqi
+    sources:
+      - url: https://web.archive.org/web/20211202025948/https://www.artizon.museum/collection/category/detail/199
+        note: 因陀羅《禅機図断簡　丹霞焼仏図》元時代　14世紀　紙本墨画 … 《寒山拾得図》（東京国立博物館）、《布袋図》（根津美術館）、《智常禅師図》（静嘉堂文庫美術館）、《智常李渤図》（畠山記念館）とあわせ、もとはひとつの巻物として伝来したと考えられます。いずれも絵は因陀羅、賛は楚石梵琦。
+        source: artizon-danxia-burning-buddhist-statues
+        accessed: 2026-11-24
+  - owner: institution/ishibashi-foundation-art-research-center
+    place: machida
+    label: owned by the Ishibashi Foundation, kept at its Art Research Center in Machida; how and when it came there is not stated
+    sources:
+      - url: https://web.archive.org/web/20211202025948/https://www.artizon.museum/collection/category/detail/199
+        note: © Artizon Museum, Ishibashi Foundation … 因陀羅《禅機図断簡　丹霞焼仏図》
+        source: artizon-danxia-burning-buddhist-statues
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/100
+        note: 保管施設の名称：石橋財団アートリサーチセンター 所有者名：公益財団法人石橋財団
+        source: kunishitei-201-100
+        accessed: 2026-11-24
 sources:
   parent:
     - accessed: 2026-11-24

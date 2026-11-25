@@ -16,6 +16,121 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Monet_-_Waterloo_Bridge,_Gray_Weather,_1900.jpg
     license: CC BY-SA 4.0
     credit: Claude Monet
+provenance:
+  - owner: artist/claude-monet
+    acquired: 1900
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/103139
+        note: The artist (d. 1926);
+        source: aic-1984-1173
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1904-05-11
+    method: purchase
+    direct: true
+    place: paris
+    label: stock book 1901–13, no. 7643, as La Tamise, Waterloo Bridge, temps couvert, 1901
+    price:
+      amount: 9000
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/103139
+        note: sold to Durand-Ruel, Paris, May 11, 1904, for 9,000 francs [this and the following per Durand-Ruel, Paris, stock book for 1901–13 (no. 7643, as La Tamise, Waterloo Bridge, temps couvert, 1901
+        source: aic-1984-1173
+        accessed: 2026-11-24
+  - owner: person/paul-cassirer
+    role: dealer
+    acquired: 1904-11-28
+    method: purchase
+    direct: true
+    place: berlin
+    price:
+      amount: 11500
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/103139
+        note: sold to Paul Cassirer, Berlin, Nov. 28, 1904, for 11,500 francs.
+        source: aic-1984-1173
+        accessed: 2026-11-24
+  - owner: person/albrecht-guttmann
+    acquired: 1917-05-18 or earlier
+    place: berlin
+    sources:
+      - url: https://www.artic.edu/artworks/103139
+        note: Albrecht Guttmann, Berlin, by May 18, 1917 [this and the following per Cassirer and Helbing 1917];
+        source: aic-1984-1173
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    co_owners: [institution/hugo-helbing]
+    role: agent
+    acquired: 1917-05-18
+    method: auction
+    direct: true
+    place: berlin
+    label: Albrecht Guttmann sale, lot 69
+    sources:
+      - url: https://www.artic.edu/artworks/103139
+        note: sold at the Albrecht Guttmann, Berlin, sale, Paul Cassirer (Berlin) and Hugo Helbing (Munich), Berlin, May 18, 1917, lot 69.
+        source: aic-1984-1173
+        accessed: 2026-11-24
+  - owner: person/howard-young
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/103139
+        note: Howard Young, New York [this and the two following per Art Dealers Association of America, report, Mar. 8, 1995, curatorial object file].
+        source: aic-1984-1173
+        accessed: 2026-11-24
+  - owner: person/bertha-palmer
+    place: chicago
+    label: as Berthe Honoré Palmer
+    sources:
+      - url: https://www.artic.edu/artworks/103139
+        note: Berthe Honoré Palmer, Chicago.
+        source: aic-1984-1173
+        accessed: 2026-11-24
+  - owner: institution/anderson-gallery-chicago
+    role: dealer
+    acquired: c. 1927
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/103139
+        note: Anderson Gallery, Chicago, c. 1927 [see previous and further corroborated by a telephone conversation between Courtney Donnell, Art Institute of Chicago, and Jeanne Hansell (daughter of Mrs. Mortimer B. Harris), March 1999
+        source: aic-1984-1173
+        accessed: 2026-11-24
+  - owner: person/william-redfield
+    acquired: c. 1927
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/103139
+        note: sold to William Redfield, Chicago, c. 1927 [this and the following per Jeanne Hansell (daughter of Mrs. Mortimer B. Harris), relayed to Courtney Donnell, Art Institute of Chicago, March 1999 telephone conversation
+        source: aic-1984-1173
+        accessed: 2026-11-24
+  - owner: person/ethel-r-harris
+    acquired: c. 1930
+    method: gift
+    direct: true
+    place: chicago
+    label: his sister
+    sources:
+      - url: https://www.artic.edu/artworks/103139
+        note: given to his sister, Ethel R. Harris, Chicago, c. 1930;
+        source: aic-1984-1173
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1984
+    method: gift
+    direct: true
+    place: chicago
+    label: given in undivided fractional interests from 1984; the last share in 2000
+    sources:
+      - url: https://www.artic.edu/artworks/103139
+        note: given to the Art Institute of Chicago, beginning in 1984 [The painting was given to the Art Institute of Chicago in undivided fractional interests beginning in 1984. The Art Institute received the final fractional interest for one hundred percent ownership in 2000].
+        source: aic-1984-1173
+        accessed: 2026-11-24
 sources:
   parent:
     - accessed: 2026-11-24

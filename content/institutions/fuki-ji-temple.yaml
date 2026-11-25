@@ -1,3 +1,38 @@
 public_id: 127514
 name: Fuki-ji Temple
+kind: temple
+founded: 718
+place: bungo-takada
+location: [131.52875, 33.53772]
+address: 大分県豊後高田市田染字蕗2395
 wikidata_id: Q3090693
+metadata:
+  sources: [Wikidata Q3090693 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/%E5%AF%8C%E8%B2%B4%E5%AF%BA_%E5%A4%A7%E5%A0%82.JPG/1280px-%E5%AF%8C%E8%B2%B4%E5%AF%BA_%E5%A4%A7%E5%A0%82.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E8%B2%B4%E5%AF%BA_%E5%A4%A7%E5%A0%82.JPG
+    license: CC BY-SA 4.0
+    credit: JNN360
+identifiers:
+  viaf: "254175598"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3090693
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3090693
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3090693
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3090693
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3090693

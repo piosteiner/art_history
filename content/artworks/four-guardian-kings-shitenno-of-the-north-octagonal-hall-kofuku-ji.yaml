@@ -1,0 +1,55 @@
+public_id: 124990
+title_lang: en
+title: Four Guardian Kings (Shitennō) of the North Octagonal Hall, Kōfuku-ji
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 興福寺北円堂四天王像
+created: 791
+institution: kofuku-ji
+wikidata_id: Q107046080
+metadata:
+  sources: [Wikidata Q107046080 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Kofukuji_Monastery_Shitenno_of_Hokuendo_%28Jikokuten%29_%28244%29.jpg/1280px-Kofukuji_Monastery_Shitenno_of_Hokuendo_%28Jikokuten%29_%28244%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kofukuji_Monastery_Shitenno_of_Hokuendo_(Jikokuten)_(244).jpg
+    license: Public domain
+    credit: Imperial Japanese Commission to the Panama-Pacific International Exposition
+provenance:
+  - owner: institution/daian-ji
+    acquired: 791
+    method: creation
+    place: nara
+    label: wood-core dry-lacquer figures made in the 4th month of Enryaku 10 (791) as the Four Kings of Daian-ji, according to the 1285 repair inscription
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/264
+        note: 増長天、多聞天像台座裏面の弘安八年興福寺僧経玄の修理銘に、大安寺四天王像、延暦十年四月造立とある
+        source: kunishitei-201-264
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%88%88%E7%A6%8F%E5%AF%BA&oldid=111607028
+        note: 弘安8年（1285年）の修理銘によると、本来は大安寺のもので、延暦10年（791年）に造立されたという。
+        source: wikipedia-ja-kofuku-ji
+        accessed: 2026-11-24
+  - owner: institution/kofuku-ji
+    acquired: 1285 or earlier
+    place: nara
+    label: repaired 1285 (Kōan 8) by the Kōfuku-ji monk Kyōgen; now in the North Octagonal Hall, not the hall's original set (Unkei's Shitennō of 1210–12 are lost)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/264
+        note: 年代 ： 791／修理銘 1285 … 弘安八年興福寺僧経玄の修理銘 … 所有者名 ： 興福寺
+        source: kunishitei-201-264
+        accessed: 2026-11-24
+      - note: a Miroku Butsu … that was originally attended by a large retinue of two bodhisattvas, Shitenno (Four Guardian Kings), and two Indian rakan … Of these only the Miroku and the two standing rakan … have survived the centuries
+        source: history-of-japanese-art
+        locator: p. 189
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%88%88%E7%A6%8F%E5%AF%BA&oldid=111607028
+        note: なお、本来は現在中金堂に安置されている四天王像が、北円堂の本来像ではないだろうかと判断する学説が根強い。
+        source: wikipedia-ja-kofuku-ji
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107046080

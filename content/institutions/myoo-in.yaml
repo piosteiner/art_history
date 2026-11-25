@@ -1,3 +1,37 @@
 public_id: 126551
 name: Myōō-in
+kind: temple
+founded: 807
+place: fukuyama
+location: [133.346, 34.4787]
+address: 広島県福山市草戸町1473番地
+website_url: http://www.chisan.net/myooin/
 wikidata_id: Q2363723
+metadata:
+  sources: [Wikidata Q2363723 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/My%C5%8D-%C5%8D-in_%28Fukuyama%29%2C_Five-storied_Pagoda_and_Main_Hall_001.jpg/1280px-My%C5%8D-%C5%8D-in_%28Fukuyama%29%2C_Five-storied_Pagoda_and_Main_Hall_001.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:My%C5%8D-%C5%8D-in_(Fukuyama),_Five-storied_Pagoda_and_Main_Hall_001.jpg
+    license: CC BY-SA 4.0
+    credit: Naokijp
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2363723
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2363723
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q2363723
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q2363723
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2363723

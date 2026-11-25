@@ -20,6 +20,13 @@ relationships:
   - type: participated_in
     to: event/1867-paris-world-s-fair
     label: representing the shogun
+    sources:
+      - url: https://ndl.go.jp/exposition/e/s1/1867-1.html
+        source: national-diet-library-eiichi-shibusawa-part-1-expositions-held-in-and-before-1900-expositi
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Tokugawa_Akitake
+        source: wikipedia-en-tokugawa-akitake
+        accessed: 2026-11-24
   - type: participated_in
     to: event/tokugawa-akitake-mission
     label: head, representing the shogun

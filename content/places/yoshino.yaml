@@ -1,0 +1,41 @@
+public_id: 129516
+name: Yoshino
+names:
+  - lang: ja
+    role: original
+    text: 吉野町
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1203731
+  - lang: ko
+    role: translation
+    text: 요시노초
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1203731
+  - lang: ru
+    role: translation
+    text: Йосино
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1203731
+kind: settlement
+parent: nara-prefecture
+country_code: JP
+location: [135.85758, 34.396]
+wikidata_id: Q1203731
+metadata:
+  sources: [Wikidata Q1203731 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1203731
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1203731
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1203731

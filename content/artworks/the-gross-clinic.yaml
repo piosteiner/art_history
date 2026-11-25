@@ -1,0 +1,91 @@
+public_id: 130202
+title_lang: en
+title: Portrait of Dr. Samuel D. Gross (The Gross Clinic)
+names:
+  - lang: en
+    role: original
+    text: The Gross Clinic
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1213936
+  - lang: pl
+    role: original
+    text: Klinika Grossa
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1213936
+  - lang: fr
+    role: translation
+    text: La Clinique du docteur Gross
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1213936
+  - lang: de
+    role: translation
+    text: Die Klinik Gross
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1213936
+  - lang: es
+    role: translation
+    text: La clínica Gross
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1213936
+  - lang: ja
+    role: translation
+    text: グロス・クリニック
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1213936
+  - lang: zh
+    role: translation
+    text: 葛羅斯診所
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1213936
+  - lang: ru
+    role: translation
+    text: Клиника Гросса
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1213936
+creator: thomas-eakins
+created: 1875
+materials: [oil paint, canvas]
+dimensions: [243.8, 198.1]
+institution: philadelphia-museum-of-art
+inventory_number: 2007-1-1
+wikidata_id: Q1213936
+metadata:
+  sources: [Wikidata Q1213936 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Thomas_Eakins%2C_American_-_Portrait_of_Dr._Samuel_D._Gross_%28The_Gross_Clinic%29_-_Google_Art_Project.jpg/1280px-Thomas_Eakins%2C_American_-_Portrait_of_Dr._Samuel_D._Gross_%28The_Gross_Clinic%29_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Thomas_Eakins,_American_-_Portrait_of_Dr._Samuel_D._Gross_(The_Gross_Clinic)_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Thomas Eakins, American, 1844 - 1916 (1844 - 1916) – Artist/Maker (American) Born in Philadelphia, Pennsylvania, United States. Died in Philadelphia, Pennsylvania, United States. Details on Google Art Project
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1213936
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q1213936
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q1213936
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q1213936
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q1213936
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q1213936

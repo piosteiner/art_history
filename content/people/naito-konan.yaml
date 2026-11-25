@@ -1,0 +1,48 @@
+public_id: 129772
+name: Naitō Konan
+names:
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 内藤 虎次郎
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3138959
+kind: person
+birth: 1866-08-27
+death: 1934-06-26
+wikidata_id: Q3138959
+metadata:
+  sources: [Wikidata Q3138959 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q3138959
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fb/NAITO_KONANN19340409.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:NAITO_KONANN19340409.JPG
+    license: Public domain
+    credit: ASUKAEN
+identifiers:
+  bnf: "150331203"
+  gnd: "138228825"
+  idref: "126060738"
+  lc: n81132491
+  nlk: KAC200412095
+  viaf: "120789979"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3138959
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q3138959
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q3138959

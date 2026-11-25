@@ -1,0 +1,75 @@
+public_id: 130233
+name: Stéphen Sauvestre
+given_name: Stéphen
+family_name: Sauvestre
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Charles Léon Stéphen Sauvestre
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q778243
+  - text: Eugène Stéphen Sauvestre
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q778243
+  - lang: nl
+    role: translation
+    text: Stephen Sauvestre
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q778243
+  - lang: de
+    role: translation
+    text: Charles Léon Stephen Sauvestre
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q778243
+  - lang: zh
+    role: translation
+    text: 斯蒂芬·索韦斯特
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q778243
+  - lang: ru
+    role: translation
+    text: Стефан Совестр
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q778243
+birth: 1847-12-26
+death: 1919-06-18
+wikidata_id: Q778243
+metadata:
+  sources: [Wikidata Q778243 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/exposition-universelle-of-1889
+    label: architect
+    notes_md: Designed the Eiffel Tower's arches and decoration
+    sources:
+      - url: https://en.wikipedia.org/wiki/Eiffel_Tower
+        source: wikipedia-en-eiffel-tower
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/09/Dessin_Stephen_Sauvestre.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Dessin_Stephen_Sauvestre.JPG
+    license: Public domain
+    credit: d'après photographie de M. Gerschel
+identifiers:
+  bnf: 15150099z
+  gnd: "1119752485"
+  idref: "166782599"
+  lc: no2016010376
+  ulan: "500186104"
+  viaf: "96680614"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q778243
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q778243

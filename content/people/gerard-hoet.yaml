@@ -2,4 +2,48 @@ public_id: 125874
 name: Gerard Hoet
 given_name: Gerard
 family_name: Hoet
+kind: person
+birth: 1698-03-06
+death: 1760
 wikidata_id: Q29701799
+metadata:
+  sources: [Wikidata Q29701799 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q29701799
+  - type: born_in
+    to: place/utrecht
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q29701799
+  - type: died_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q29701799
+identifiers:
+  gnd: "1011455978"
+  idref: "144291010"
+  lc: nr2003031634
+  rkd: "38841"
+  ulan: "500078813"
+  viaf: "31942341"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q29701799
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q29701799
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q29701799

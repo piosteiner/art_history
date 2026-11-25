@@ -6,6 +6,13 @@ death: 728-11-29
 wikidata_id: Q11609975
 metadata:
   sources: [Wikidata Q11609975 (retrieved 2026-11-24)]
+relationships:
+  - type: founded
+    to: institution/oka-dera
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q3349998
 sources:
   kind:
     - accessed: 2026-11-24

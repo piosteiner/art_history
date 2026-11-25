@@ -1,0 +1,63 @@
+public_id: 130218
+title: Atomium
+names:
+  - lang: ja
+    role: translation
+    text: アトミウム
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q180901
+  - lang: zh
+    role: translation
+    text: 原子球塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q180901
+  - lang: ko
+    role: translation
+    text: 아토미움
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q180901
+  - lang: ru
+    role: translation
+    text: Атомиум
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q180901
+creator: andre-waterkeyn
+created: 1955
+dimensions: [10200]
+location: [4.34139, 50.895]
+wikidata_id: Q180901
+metadata:
+  sources: [Wikidata Q180901 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/brussels
+    period: 1955
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Laeken_Atomium_06.jpg/1280px-Laeken_Atomium_06.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Laeken_Atomium_06.jpg
+    license: CC BY-SA 4.0
+    credit: Zairon
+identifiers:
+  gnd: 6521933-8
+  viaf: "140590435"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q180901
+  creator:
+    - url: https://en.wikipedia.org/wiki/Atomium
+      source: wikipedia-en-atomium
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q180901
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q180901

@@ -59,7 +59,8 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q430626
-created: 1863
+created: 1864
+institution: roman-catholic-archdiocese-of-nagasaki
 location: [129.87028, 32.73417]
 wikidata_id: Q430626
 metadata:
@@ -73,13 +74,39 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Oura_Cathedral_20180623.jpg
     license: CC0
     credit: Houjyou-Minori
+provenance:
+  - owner: institution/paris-foreign-missions-society
+    acquired: 1862/1864
+    method: creation
+    place: nagasaki
+    label: begun 1862 by Father Louis Furet, completed 1864 under Bernard Petitjean, built by Japanese carpenters (master builder Koyama Hidenoshin); dedicated to the 26 Martyrs 19 February 1865; enlarged in brick, all Gothic, 1875–79
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3522
+        note: 同会所属のフュレー（Furet）によって文久二年（一八六二）に創始され、元治元年（一八六四）に竣工した。この堂は、慶長二年（一五九七）長崎において殉教した日本二十六聖人のために献げられたもので、天主堂竣成の翌慶応元年（一八六五）にその献堂式が挙げられた。… 明治七～八年に改修を加えて拡張し … 創建の時から始終工事に奔走したのは仏人プディジャン（Petitjean）であるが、工技の実際はわが国の工匠の手になるものである。
+        source: kunishitei-102-3522
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%A4%A7%E6%B5%A6%E5%A4%A9%E4%B8%BB%E5%A0%82&oldid=111533709
+        note: 1864年（元治元年）12月29日、大浦天主堂が竣工。… 2月19日（1月24日）- 献堂式を挙行。… 建築施工は天草御領島出身の小山秀之進が大工棟梁として施工 … 1875年（明治8年） - 1879年（明治12年） - 天主堂の大規模な増改築を実施。
+        source: wikipedia-ja-oura-tenshudo
+        accessed: 2026-11-24
+  - owner: institution/roman-catholic-archdiocese-of-nagasaki
+    place: nagasaki
+    label: cathedral of the Diocese (now Archdiocese) of Nagasaki from 1891 until 1 January 1962 (see moved to Urakami); the archdiocese is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3522
+        note: 所有者名 ： カトリック長崎大司教区 所有者種別 ： 法人
+        source: kunishitei-102-3522
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%A4%A7%E6%B5%A6%E5%A4%A9%E4%B8%BB%E5%A0%82&oldid=111533709
+        note: 1891年（明治24年） - カトリック長崎司教区（現・カトリック長崎大司教区）の司教座聖堂 … 1962年（昭和37年）1月1日 - カトリック長崎大司教区の司教座聖堂が浦上教会に変更される。
+        source: wikipedia-ja-oura-tenshudo
+        accessed: 2026-11-24
 identifiers:
   viaf: "255514751"
 sources:
   created:
-    - accessed: 2026-11-24
-      property: P571
-      wikidata: Q430626
+    - note: "Register: 年代/西暦 1864"
+      source: kunishitei-102-3522
   location:
     - accessed: 2026-11-24
       property: P625

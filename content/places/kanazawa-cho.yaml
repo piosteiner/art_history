@@ -1,0 +1,16 @@
+public_id: 130185
+name: Kanazawa-chō
+kind: site
+location: [139.62927, 35.34322]
+wikidata_id: Q97189250
+metadata:
+  sources: [Wikidata Q97189250 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q97189250
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q97189250

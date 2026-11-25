@@ -1,0 +1,46 @@
+public_id: 124988
+title_lang: en
+title: Clay Standing Statues of the Twelve Divine Generals, Shin-Yakushiji
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 十二神将立像
+created: 729/749
+institution: shin-yakushiji
+wikidata_id: Q107045974
+metadata:
+  sources: [Wikidata Q107045974 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/%E5%B0%8F%E5%B7%9D%E6%99%B4%E6%9A%98%E6%92%AE%E5%BD%B1%E3%80%8A%E5%8D%81%E4%BA%8C%E7%A5%9E%E5%B0%86%E7%AB%8B%E5%83%8F_%E8%BF%B7%E4%BC%81%E7%BE%85%EF%BC%88%E4%BC%90%E6%8A%98%E7%BE%85%EF%BC%89%E3%80%8B8%E4%B8%96%E7%B4%80%E3%80%81%E5%A5%88%E8%89%AF%E6%99%82%E4%BB%A3%E3%80%81%E6%96%B0%E8%96%AC%E5%B8%AB%E5%AF%BA%E3%80%81%E5%A5%88%E8%89%AF.jpg/1280px-%E5%B0%8F%E5%B7%9D%E6%99%B4%E6%9A%98%E6%92%AE%E5%BD%B1%E3%80%8A%E5%8D%81%E4%BA%8C%E7%A5%9E%E5%B0%86%E7%AB%8B%E5%83%8F_%E8%BF%B7%E4%BC%81%E7%BE%85%EF%BC%88%E4%BC%90%E6%8A%98%E7%BE%85%EF%BC%89%E3%80%8B8%E4%B8%96%E7%B4%80%E3%80%81%E5%A5%88%E8%89%AF%E6%99%82%E4%BB%A3%E3%80%81%E6%96%B0%E8%96%AC%E5%B8%AB%E5%AF%BA%E3%80%81%E5%A5%88%E8%89%AF.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%B0%8F%E5%B7%9D%E6%99%B4%E6%9A%98%E6%92%AE%E5%BD%B1%E3%80%8A%E5%8D%81%E4%BA%8C%E7%A5%9E%E5%B0%86%E7%AB%8B%E5%83%8F_%E8%BF%B7%E4%BC%81%E7%BE%85%EF%BC%88%E4%BC%90%E6%8A%98%E7%BE%85%EF%BC%89%E3%80%8B8%E4%B8%96%E7%B4%80%E3%80%81%E5%A5%88%E8%89%AF%E6%99%82%E4%BB%A3%E3%80%81%E6%96%B0%E8%96%AC%E5%B8%AB%E5%AF%BA%E3%80%81%E5%A5%88%E8%89%AF.jpg
+    license: Public domain
+    credit: Ogawa Seiyō
+provenance:
+  - owner_label: Iwabuchi-dera, foot of Mt Takamado (tradition)
+    acquired: 729/749
+    method: creation
+    place: nara
+    label: made in the Tenpyō era (ink inscription 'Tenpyō' on a pedestal board); a tradition says they were moved from Iwabuchi-dera — how they were made is not known
+    certainty: possible
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/232
+        note: "年代 ： 729～749 … 附名称 : 木造台座裏桟 附員数 : 二枚 附ト書 : 各に天平の墨書がある"
+        source: kunishitei-201-232
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%96%B0%E8%96%AC%E5%B8%AB%E5%AF%BA&oldid=110015429
+        note: これらの像は高円山麓にあった岩淵寺から移されたとする伝承もあるが、造立の事情は明らかでない。作風や、12躯のうち1躯の台座裏桟から「天平」云々の墨書が見出されたことなどから、天平期の作と見なされている。
+        source: jawiki-shin-yakushiji
+        accessed: 2026-11-24
+  - owner: institution/shin-yakushiji
+    place: nara
+    label: round the main image in the Main Hall; one of the twelve (Kubira) fell in an earthquake late in the Edo period, replaced 1931 by Hosoya Jiraku and not designated
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/232
+        note: 員数 ： 11躯 … 所有者名 ： 新薬師寺
+        source: kunishitei-201-232
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%96%B0%E8%96%AC%E5%B8%AB%E5%AF%BA&oldid=110015429
+        note: 12躯のうちの1躯（宮毘羅（くびら）大将像、寺伝では波夷羅（はいら）大将像）のみは江戸時代末期の地震で倒壊し、1931年（昭和6年）に細谷而楽が補作したもので、国宝指定外である
+        source: jawiki-shin-yakushiji
+        accessed: 2026-11-24

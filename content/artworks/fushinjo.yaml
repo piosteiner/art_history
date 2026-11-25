@@ -25,6 +25,58 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Huushincho_1.jpg
     license: Public domain
     credit: Hachiro Onoue
+provenance:
+  - owner: person/kukai
+    acquired: 810/812
+    method: creation
+    label: letters written by Kūkai in reply to Saichō; dated by day but not year, placed 810–812; originally five letters, three survive
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=風信帖&oldid=107193640
+        note: 風信帖（ふうしんじょう）は、空海が最澄に宛てた尺牘（せきとく）3通の総称である。… 3通とも日付はあるが年紀はなく、弘仁元年（810年）から3年（812年）まで諸説ある。
+        source: jawiki-fushinjo
+        accessed: 2026-11-24
+  - owner: person/saicho
+    acquired: 810/812
+    method: gift
+    direct: true
+    place: otsu
+    label: received by Saichō at Hieizan-ji (Enryaku-ji); the second letter has no addressee (Saichō or Fujiwara no Fuyutsugu)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=風信帖&oldid=107193640
+        note: 高雄山寺（または乙訓寺）にいた空海が、比叡山寺（延暦寺）の最澄に宛てた書状が『風信帖』である
+        source: jawiki-fushinjo
+        accessed: 2026-11-24
+  - owner: institution/enryaku-ji-temple
+    place: otsu
+    label: kept at Hieizan-ji (Enryaku-ji)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=風信帖&oldid=107193640
+        note: 現在、『風信帖』が東寺に所蔵されている理由は、比叡山寺から東寺に寄進されたことによる
+        source: jawiki-fushinjo
+        accessed: 2026-11-24
+  - owner: institution/to-ji
+    method: gift
+    direct: true
+    place: kyoto
+    label: donated by Hieizan-ji to Tō-ji (Kyōō Gokoku-ji); the deed of donation and covering letter are designated with it; National Treasure 1951
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=風信帖&oldid=107193640
+        note: 現在、『風信帖』が東寺に所蔵されている理由は、比叡山寺から東寺に寄進されたことによる
+        source: jawiki-fushinjo
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/809
+        note: 所有者名 ： 宗教法人教王護国寺 … 附指定 寄進状並送状 二通
+        source: kunishitei-201-809
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1592
+    label: of the five letters one was stolen, and one was presented on the 9th day of the 4th month of Tenshō 20 to the regent Toyotomi Hidetsugu at his request (colophon)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=風信帖&oldid=107193640
+        note: もとは5通あったが、1通は盗まれ、1通は関白豊臣秀次の所望により、天正20年（1592年）4月9日に献上したことが巻末の奥書に記されている
+        source: jawiki-fushinjo
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

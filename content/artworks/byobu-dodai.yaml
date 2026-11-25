@@ -22,6 +22,81 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Ono_no_Michikaze_-_By%C5%8Dbu_dodai.jpg
     license: Public domain
     credit: Ono no Michikaze
+provenance:
+  - owner: artist/ono-no-michikaze
+    acquired: 928
+    method: creation
+    place: kyoto
+    label: draft by Ono no Michikaze of poems by Ōe no Asatsuna for six palace screens ordered by Emperor Daigo, Enchō 6 (928)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011963
+        note: 本書巻は、延長六年(九二八)に醍醐天皇(八八五～九三〇)の勅命によって大江朝綱(八八六～九五七)が作った漢詩を小野道風(八九四～九六六)が屏風に貼る色紙形に清書するために試し書きした土代(下書き)である。
+        source: kunishitei-201-00011963
+        accessed: 2026-11-24
+  - owner_label: wife of a scroll mounter (kyōji)
+    ended: 1140-10-22
+    label: sold by her together with Fujiwara no Yukinari's Hakushi shikan (colophon of Fujiwara no Sadanobu)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011963
+        note: 保延六年(一一四〇)十月二十二日の朝、定信が経師の妻から本書と「白氏詩巻」を買い求めたことが知られる。
+        source: kunishitei-201-00011963
+        accessed: 2026-11-24
+  - owner: person/fujiwara-no-sadanobu
+    acquired: 1140-10-22
+    method: purchase
+    direct: true
+    label: calligrapher of the Sesonji line; his colophon records the purchase and identifies the hand as Michikaze's ('十八枚也、道風手')
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011963
+        note: 世尊寺流の祖藤原行成より五代目の子孫である藤原定信(一〇八八～？)による「屏風土代」奥書 … 保延六年(一一四〇)十月二十二日の朝、定信が経師の妻から本書と「白氏詩巻」を買い求めた
+        source: kunishitei-201-00011963
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=109874595
+        note: 保延六年十月廿二日、買得之。子細見大納言殿御本奥而已。十八枚也。道風手
+        source: jawiki-109874595
+        accessed: 2026-11-24
+  - owner: person/inoue-kaoru
+    label: when it came to him is not known
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=109874595
+        note: 時期は不明であるが本書は井上馨の所蔵となり、やがて大正天皇に献上され御物となり、現在は三の丸尚蔵館に収蔵されている
+        source: jawiki-109874595
+        accessed: 2026-11-24
+  - owner_label: Marquis Inoue family
+    ended: 1925
+    label: the Inoue marquis's house (the article links Inoue Katsunosuke, Kaoru's heir) presented it in 1925
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111826663
+        note: 『屏風土代』 - 小野道風筆、928年（延長6年）。井上馨旧蔵。1925年（大正14年）井上侯爵家より献上。
+        source: jawiki-111826663
+        accessed: 2026-11-24
+  - owner: person/emperor-taisho
+    acquired: 1925
+    method: gift
+    direct: true
+    place: tokyo
+    label: presented to Emperor Taishō; became imperial property (gyobutsu)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=109874595
+        note: やがて大正天皇に献上され御物となり
+        source: jawiki-109874595
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111826663
+        note: 1925年（大正14年）井上侯爵家より献上。
+        source: jawiki-111826663
+        accessed: 2026-11-24
+  - owner: institution/museum-of-the-imperial-collections
+    place: tokyo
+    label: "in the Museum of the Imperial Collections (opened 1993 for imperial works donated to the State; run by the National Institutes for Cultural Heritage since October 2023); owner: the State, in the custody of the Agency for Cultural Affairs; National Treasure 2021"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011963
+        note: 所在地 ： 東京都千代田区千代田1-1 保管施設の名称 ： 皇居三の丸尚蔵館 所有者名 ： 国（文化庁保管）
+        source: kunishitei-201-00011963
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=109874595
+        note: 現在は三の丸尚蔵館に収蔵されている
+        source: jawiki-109874595
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

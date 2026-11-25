@@ -1,40 +1,44 @@
 public_id: 101204
-name: 1878 Paris World's Fair
+name: Exposition Universelle of 1878
 names:
-  - World's Fair of 1878
-  - 1878 World's Fair
-  - Expo 1878
-  - Paris Universal Exposition of 1878
-  - lang: nl
-    role: translation
-    text: Exposition Universelle in 1878
   - lang: fr
-    role: translation
+    role: original
     text: Exposition universelle de 1878
-  - lang: de
-    role: translation
-    text: Weltausstellung Paris 1878
-  - lang: it
-    role: translation
-    text: Esposizione Universale del 1878
-  - lang: es
-    role: translation
-    text: Exposición Universal de París de 1878
-  - lang: ja
-    role: translation
-    text: 1878年パリ万国博覧会
-  - lang: zh
-    role: translation
-    text: 1878年巴黎世界博覽會
-  - lang: ru
-    role: translation
-    text: Всемирная выставка 1878 года
-period: 1878
+kind: world's fair
+period: 1 May – 10 November 1878
 place: paris
 location: [2.28825, 48.86222]
+description_md: |-
+  The exposition was held to celebrate France's recovery after the Franco-Prussian War of 1870–71,[[source/wikipedia-en-exposition-universelle-1878]] and was meant to raise the profile of the [[polity/french-third-republic|Third Republic]] and show its revival as a centre of world culture.[[source/national-diet-library-third-paris-international-exposition-of-1878-part-1-expositions-held]] Germany was the only major country not represented, although a few German paintings were shown.[[source/wikipedia-en-exposition-universelle-1878]] President Mac-Mahon received ambassadors and foreign princes at the Trocadéro.[[source/wikipedia-fr-exposition-universelle-de-1878]] A popular feature was a "negro village" of 400 indigenous people, a human zoo, and a colonial pavilion was also built.[[source/wikipedia-en-exposition-universelle-1878]][[source/national-diet-library-third-paris-international-exposition-of-1878-part-1-expositions-held]]
+
+  The fair occupied the Champ de Mars and the Chaillot hill.[[source/wikipedia-fr-exposition-universelle-de-1878]][[source/wikipedia-en-exposition-universelle-1878]] On the hill the architect [[artist/gabriel-davioud|Gabriel Davioud]] and the engineer [[artist/jules-bourdais|Jules Bourdais]] built the [[artwork/palais-du-trocadero|Palais du Trocadéro]], a "Moorish" palace with towers of 76 metres, which stood until 1937; its "Continents" statues and three of its four animal statues now stand in front of the Musée d'Orsay.[[source/wikipedia-fr-exposition-universelle-de-1878]][[source/wikipedia-en-exposition-universelle-1878]] Henri de Dion designed the Gallery of Machines.[[source/wikipedia-en-exposition-universelle-1878]]
+
+  The centre of the main palace on the Champ de Mars was given over to the fine arts and the City of Paris.[[source/wikipedia-fr-exposition-universelle-de-1878]] Jan Matejko won a gold award for painting with *The Hanging of the Sigismund Bell*, *Union of Lublin* and *Wacław Wilczek*.[[source/wikipedia-en-exposition-universelle-1878]] Japan showed a pavilion on the Rue des Nations and a farm in the Trocadéro gardens, and Émile Guimet fitted out two of its rooms.[[source/wikipedia-fr-exposition-universelle-de-1878]] [[person/hayashi-tadamasa|Hayashi Tadamasa]] came to the fair as an interpreter and stayed in Paris as a dealer in Japanese art.[[source/artsandculture-google-com-hayashi-tadamasa-the-paris-art-dealer-who-promoted-japonisme-goo]] In 1879 government leaders involved in Japan's participation in the expositions formed the Ryūchikai to promote traditional arts and to take advantage of the Western craze for things Japanese stimulated at the world fairs.[[source/history-of-japanese-art|p. 363]] The completed head of the [[artwork/statue-of-liberty|Statue of Liberty]] was shown to the public during the fair, in the Trocadéro garden according to the English Wikipedia, on the Champ de Mars according to the French.[[source/wikipedia-en-exposition-universelle-1878]][[source/wikipedia-fr-exposition-universelle-de-1878]]
 wikidata_id: Q1165690
 metadata:
   sources: [Wikidata Q1165690 (retrieved 2026-10-19)]
+relationships:
+  - type: concerns
+    to: polity/french-third-republic
+    sources:
+      - source: wikipedia-en-exposition-universelle-1878
+        accessed: 2026-11-24
+      - source: national-diet-library-third-paris-international-exposition-of-1878-part-1-expositions-held
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/palais-du-trocadero
+    sources:
+      - source: wikipedia-fr-exposition-universelle-de-1878
+        accessed: 2026-11-24
+      - source: wikipedia-en-exposition-universelle-1878
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/statue-of-liberty
+    sources:
+      - source: wikipedia-en-exposition-universelle-1878
+        accessed: 2026-11-24
+      - source: wikipedia-fr-exposition-universelle-de-1878
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/The_Trocadero%2C_Exposition_Universal%2C_1900%2C_Paris%2C_France.jpg/1280px-The_Trocadero%2C_Exposition_Universal%2C_1900%2C_Paris%2C_France.jpg
     source_url: https://commons.wikimedia.org/wiki/File:The_Trocadero,_Exposition_Universal,_1900,_Paris,_France.jpg
@@ -43,14 +47,22 @@ images:
 identifiers:
   gnd: 805476-9
 sources:
+  kind:
+    - source: wikipedia-en-exposition-universelle-1878
   place:
     - accessed: 2026-10-19
       property: P276
       wikidata: Q1165690
+    - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1878)
+      source: wikipedia-en-exposition-universelle-1878
+      accessed: 2026-11-24
   period:
-    - accessed: 2026-10-19
-      property: P585
-      wikidata: Q1165690
+    - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1878)
+      source: wikipedia-en-exposition-universelle-1878
+      accessed: 2026-11-24
+    - url: https://fr.wikipedia.org/wiki/Exposition_universelle_de_1878
+      source: wikipedia-fr-exposition-universelle-de-1878
+      accessed: 2026-11-24
   location:
     - accessed: 2026-10-19
       property: P625

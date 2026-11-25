@@ -14,6 +14,19 @@ death: 774-01-14
 wikidata_id: Q720819
 metadata:
   sources: [Wikidata Q720819 (retrieved 2026-11-01)]
+relationships:
+  - type: founded
+    to: institution/ishiyama-dera-temple
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q1082791
+  - type: founded
+    to: institution/joraku-ji
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q11481425
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/d0/R%C5%8Dben_%28Todaiji%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:R%C5%8Dben_(Todaiji).jpg

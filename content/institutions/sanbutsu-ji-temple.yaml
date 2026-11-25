@@ -1,3 +1,39 @@
 public_id: 127508
 name: Sanbutsu-ji Temple
+kind: temple
+founded: 706
+place: misasa
+location: [133.95576, 35.39932]
+address: 鳥取県東伯郡三朝町三徳1010
+website_url: https://www.mitokusan.jp/
 wikidata_id: Q3471689
+metadata:
+  sources: [Wikidata Q3471689 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Sanbutsu-ji%2C_hondou.jpg/1280px-Sanbutsu-ji%2C_hondou.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sanbutsu-ji,_hondou.jpg
+    license: CC0
+    credit: Saigen Jiro
+identifiers:
+  viaf: "259959021"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3471689
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3471689
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3471689
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3471689
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3471689

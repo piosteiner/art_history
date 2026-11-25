@@ -1,3 +1,39 @@
 public_id: 127491
 name: Ishiyama-dera Temple
+kind: temple
+founded: 747
+place: otsu
+location: [135.90562, 34.96042]
+address: 滋賀県大津市石山寺1-1-1
+website_url: https://www.ishiyamadera.or.jp/
 wikidata_id: Q1082791
+metadata:
+  sources: [Wikidata Q1082791 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Ishiyamadera45n4272.jpg/1280px-Ishiyamadera45n4272.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ishiyamadera45n4272.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  viaf: "678146998521818942160"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1082791
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1082791
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q1082791
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1082791
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1082791

@@ -1,3 +1,33 @@
 public_id: 126372
 name: Königliche Gemäldegalerie Kassel
+kind: museum
+place: kassel
+location: [9.41611, 51.315]
+website_url: https://museum-kassel.de/
+collection_url: https://museum-kassel.de/en/research-and-collections/collections
 wikidata_id: Q1501219
+metadata:
+  sources: [Wikidata Q1501219 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Schloss_Wilhelmsh%C3%B6he_001.jpg/1280px-Schloss_Wilhelmsh%C3%B6he_001.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Schloss_Wilhelmsh%C3%B6he_001.jpg
+    license: CC BY-SA 2.5
+    credit: Nikanos
+identifiers:
+  gnd: 2053888-1
+  idref: "146051785"
+  lc: n96112770
+  viaf: "190230555"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1501219
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1501219
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1501219

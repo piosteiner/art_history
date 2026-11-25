@@ -1,3 +1,45 @@
 public_id: 127622
 name: Bernardo de Sandoval y Rojas
+kind: person
+birth: 1546-04-30
+death: 1618-12-07
 wikidata_id: Q823077
+metadata:
+  sources: [Wikidata Q823077 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q823077
+  - type: died_in
+    to: place/toledo
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q823077
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/36/Luis_Trist%C3%A1n_-_Bernardo_de_Sandoval_y_Rojas%2C_1619.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Luis_Trist%C3%A1n_-_Bernardo_de_Sandoval_y_Rojas,_1619.jpg
+    license: Public domain
+    credit: Luis Tristán
+identifiers:
+  bnf: 17903565c
+  gnd: "130535567"
+  idref: "077595092"
+  lc: no2001054931
+  viaf: "30648365"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q823077
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q823077
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q823077

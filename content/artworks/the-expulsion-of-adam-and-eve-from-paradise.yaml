@@ -26,6 +26,143 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Benjamin_West_-_The_Expulsion_of_Adam_and_Eve_from_Paradise_-_1984.175_-_Art_Institute_of_Chicago.jpg
     license: Public domain
     credit: Benjamin West
+provenance:
+  - owner: artist/benjamin-west
+    acquired: 1791
+    ended: 1820
+    method: creation
+    label: painted 1791, retouched 1803; owned by the artist until his death
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: Benjamin West (d. 1820);
+        source: aic-1984-175
+        accessed: 2026-11-24
+  - owner: person/raphael-lamar-west
+    co_owners: [person/benjamin-west-jr]
+    acquired: 1820
+    method: inheritance
+    direct: true
+    label: the artist's sons
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: by descent to his sons, Raphael Lamar West and Benjamin West Jr.;
+        source: aic-1984-175
+        accessed: 2026-11-24
+  - owner: person/george-robins
+    role: agent
+    acquired: 1829-05-22
+    method: auction
+    direct: true
+    place: london
+    label: sale, Robins, London, 22–25 May 1829, no. 88 (von Erffa and Staley 1986, no. 233)
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: sold Robins, London, May 22–25, 1829, no. 88, to Hayes for 43 gns [von Erffa and Staley 1986, p. 286, no. 233].
+        source: aic-1984-175
+        accessed: 2026-11-24
+  - owner_label: Hayes
+    acquired: 1829-05
+    method: auction
+    direct: true
+    label: bought at the Robins sale for 43 guineas
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: to Hayes for 43 gns
+        source: aic-1984-175
+        accessed: 2026-11-24
+  - owner: institution/henry-graves-and-son
+    role: dealer
+    place: london
+    label: according to the mount of a photograph at the Frick Art Reference Library
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: Possibly Henry Graves and Son, London [information on mount of a photograph at the Frick Art Reference Library].
+        source: aic-1984-175
+        accessed: 2026-11-24
+  - owner: person/samuel-putnam-avery
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: Samuel Putnam Avery, New York;
+        source: aic-1984-175
+        accessed: 2026-11-24
+  - owner: person/thomas-b-clarke
+    acquired: 1891 or earlier
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: sold by Avery to Thomas B. Clarke, New York, by 1891;
+        source: aic-1984-175
+        accessed: 2026-11-24
+  - owner: institution/american-art-galleries
+    role: agent
+    acquired: 1899-02-14
+    method: auction
+    direct: true
+    place: new-york-city
+    label: Clarke sale, American Art Galleries, New York, 14–18 February 1899, no. 355
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: sold American Art Galleries, New York, February 14–18, 1899, no. 355, to Harry W. Watrous for $200 [von Erffa and Staley 1986, p. 286, no. 233];
+        source: aic-1984-175
+        accessed: 2026-11-24
+  - owner: person/harry-w-watrous
+    acquired: 1899-02
+    ended_label: to at least 1922
+    method: auction
+    direct: true
+    label: lent by him to the Brooklyn Museum exhibition 1922
+    price:
+      amount: 200
+      currency: USD
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: to Harry W. Watrous for $200 [von Erffa and Staley 1986, p. 286, no. 233]; Harry W. Watrous to at least 1922 [lent by him to the Brooklyn Museum exhibition 1922];
+        source: aic-1984-175
+        accessed: 2026-11-24
+  - owner: institution/newhouse-gallery
+    role: dealer
+    method: purchase
+    direct: true
+    place: st-louis
+    label: letter of 15 April 1994 from Joan Pope of Newhouse Galleries
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: sold by Watrous to M. A. Newhouse and Son, St. Louis [letter of 15 April, 1994 from Joan Pope of Newhourse Galleries in curatorial file];
+        source: aic-1984-175
+        accessed: 2026-11-24
+  - owner: person/george-f-harding-jr
+    acquired: 1926
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: sold by Newhouse to George F. Harding, Jr. (d. 1939), Chicago, 1926;
+        source: aic-1984-175
+        accessed: 2026-11-24
+  - owner: institution/george-f-harding-museum
+    method: bequest
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: bequeathed to the George F. Harding Museum, Chicago;
+        source: aic-1984-175
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1982
+    method: transfer
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/102227
+        note: transferred to the Art Institute, 1982.
+        source: aic-1984-175
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

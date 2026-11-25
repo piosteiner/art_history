@@ -2,4 +2,44 @@ public_id: 123790
 name: Heinrich Thyssen-Bornemisza
 given_name: Heinrich
 family_name: Thyssen-Bornemisza
+kind: person
+birth: 1875-10-31
+death: 1947-06-26
 wikidata_id: Q65299
+metadata:
+  sources: [Wikidata Q65299 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q65299
+  - type: died_in
+    to: place/lugano
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q65299
+identifiers:
+  bnf: "119584347"
+  dodis: P2300
+  gnd: "118642812"
+  hls: "043967"
+  idref: "027573168"
+  lc: n79084263
+  rkd: "346760"
+  viaf: "35249969"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q65299
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q65299
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q65299

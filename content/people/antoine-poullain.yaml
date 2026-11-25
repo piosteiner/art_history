@@ -2,4 +2,26 @@ public_id: 126329
 name: Antoine Poullain
 given_name: Antoine
 family_name: Poullain
+kind: person
+death: 1780
 wikidata_id: Q33653922
+metadata:
+  sources: [Wikidata Q33653922 (retrieved 2026-11-24)]
+relationships:
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q33653922
+identifiers:
+  rkd: "433109"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q33653922
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q33653922

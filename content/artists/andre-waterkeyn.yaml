@@ -1,0 +1,50 @@
+public_id: 130241
+name: André Waterkeyn
+given_name: André
+family_name: Waterkeyn
+names:
+  - lang: ja
+    role: translation
+    text: アンドレ・ワーテルケイン
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q523346
+  - lang: zh
+    role: translation
+    text: 安德烈·瓦特凯因
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q523346
+birth: 1917-08-23
+death: 2005-10-04
+wikidata_id: Q523346
+metadata:
+  sources: [Wikidata Q523346 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/expo-58
+    label: architect
+    notes_md: Engineer-designer of the Atomium
+    sources:
+      - url: https://en.wikipedia.org/wiki/Atomium
+        source: wikipedia-en-atomium
+        accessed: 2026-11-24
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Andre_WATERKEYN.jpg/1280px-Andre_WATERKEYN.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andre_WATERKEYN.jpg
+    license: CC BY-SA 3.0
+    credit: Patrick Waterkeyn
+identifiers:
+  lc: nr2005013994
+  rkd: "82997"
+  ulan: "500287129"
+  viaf: "267046819"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q523346
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q523346

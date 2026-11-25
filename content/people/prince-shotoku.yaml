@@ -37,6 +37,13 @@ death: 622-04-11
 wikidata_id: Q263972
 metadata:
   sources: [Wikidata Q263972 (retrieved 2026-11-01)]
+relationships:
+  - type: founded
+    to: institution/jodo-ji-temple
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q3191227
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/9e/Prince_Shotoku_with_Two_Princes_by_Kano_Osanobu_1842.png
     source_url: https://commons.wikimedia.org/wiki/File:Prince_Shotoku_with_Two_Princes_by_Kano_Osanobu_1842.png

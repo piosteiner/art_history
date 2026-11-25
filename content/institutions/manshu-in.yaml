@@ -1,0 +1,39 @@
+public_id: 130084
+name: Manshu-in
+kind: temple
+founded: 7th century
+place: kyoto
+location: [135.80306, 35.04882]
+address: 京都市左京区一乗寺竹ノ内町42
+website_url: https://www.manshuinmonzeki.jp/
+wikidata_id: Q3076940
+metadata:
+  sources: [Wikidata Q3076940 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Manshuin_Temple%2C_Kyoto_-_garden.JPG/1280px-Manshuin_Temple%2C_Kyoto_-_garden.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Manshuin_Temple,_Kyoto_-_garden.JPG
+    license: CC BY-SA 3.0
+    credit: Daderot
+identifiers:
+  viaf: "258175351"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3076940
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3076940
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3076940
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3076940
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3076940

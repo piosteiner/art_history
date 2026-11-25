@@ -1,0 +1,30 @@
+public_id: 130201
+name: Thomas Eakins
+given_name: Thomas
+family_name: Eakins
+birth: 1844-07-25
+death: 1916-06-25
+wikidata_id: Q214905
+metadata:
+  sources: [Wikidata Q214905 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/centennial-exhibition
+    label: exhibited
+    notes_md: The Gross Clinic, rejected by the art jury, shown in the Army hospital exhibit.
+    sources:
+      - url: https://www.philamuseum.org/objects/299524
+        source: philadelphia-museum-of-thomas-eakins-portrait-of-dr-samuel-d-gross-the-gross-clinic-1875-p
+        accessed: 2026-11-24
+      - url: https://www.pafa.org/museum/collection/item/portrait-dr-samuel-d-gross-gross-clinic
+        source: pennsylvania-academy-of-thomas-eakins-portrait-of-dr-samuel-d-gross-the-gross-clinic-1875
+        accessed: 2026-11-24
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q214905
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q214905

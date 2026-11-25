@@ -1,0 +1,64 @@
+public_id: 130195
+title: Galerie des Machines
+names:
+  - lang: nl
+    role: translation
+    text: Palais des Machines
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1596758
+  - lang: de
+    role: translation
+    text: Maschinenhalle Paris
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1596758
+  - lang: es
+    role: translation
+    text: Galería de las máquinas
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1596758
+  - lang: ko
+    role: translation
+    text: 기계관
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1596758
+creator: victor-contamin
+created: 1889
+location: [2.30183, 48.85359]
+wikidata_id: Q1596758
+metadata:
+  sources: [Wikidata Q1596758 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/paris
+    period: 1889
+  - type: co_creator
+    to: artist/ferdinand-dutert
+    label: architect
+    sources:
+      - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1889)
+        source: wikipedia-en-exposition-universelle-1889
+        accessed: 2026-11-24
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/CLC_528_-_PARIS_-_Galerie_des_Machines.JPG/1280px-CLC_528_-_PARIS_-_Galerie_des_Machines.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:CLC_528_-_PARIS_-_Galerie_des_Machines.JPG
+    license: Public domain
+    credit: Scanné par Claude Shoshany
+identifiers:
+  viaf: "223360948"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1596758
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q1596758
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1596758

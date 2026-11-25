@@ -48,6 +48,122 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_The_Ancestors_of_Tehamana_OR_Tehamana_Has_Many_Parents_(Merahi_metua_no_Tehamana)_-_Google_Art_Project.jpg
     license: Public domain
     credit: Paul Gauguin
+provenance:
+  - owner: artist/paul-gauguin
+    acquired: 1893
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/60812
+        note: Gauguin Sale, Paris, Hôtel Drouot, February 18, 1895, lot 32; bought in for 300 francs; given by the artist to Daniel de Monfreid
+        source: aic-1980-613
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    not_sold: true
+    acquired: 1895-02-18
+    method: auction
+    direct: true
+    place: paris
+    label: Gauguin Sale, Hôtel Drouot, Paris, 18 February 1895, lot 32; bought in
+    price:
+      amount: 300
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/60812
+        note: Gauguin Sale, Paris, Hôtel Drouot, February 18, 1895, lot 32; bought in for 300 francs;
+        source: aic-1980-613
+        accessed: 2026-11-24
+  - owner: person/daniel-de-monfreid
+    ended: 1929
+    method: gift
+    direct: true
+    place: paris
+    label: given by the artist
+    sources:
+      - url: https://www.artic.edu/artworks/60812
+        note: given by the artist to Daniel de Monfreid (died 1929), Paris;
+        source: aic-1980-613
+        accessed: 2026-11-24
+  - owner_label: Mme Daniel de Monfreid
+    acquired: 1929
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/60812
+        note: by descent to Mme Daniel de Monfreid, Paris;
+        source: aic-1980-613
+        accessed: 2026-11-24
+  - owner: person/agnes-huc-de-monfreid
+    method: inheritance
+    direct: true
+    label: her daughter, Mme Huc de Monfreid
+    sources:
+      - url: https://www.artic.edu/artworks/60812
+        note: by descent to her daughter, Mme Huc de Monfreid;
+        source: aic-1980-613
+        accessed: 2026-11-24
+  - owner: institution/jacques-seligmann-co-inc
+    role: dealer
+    acquired: 1937
+    method: purchase
+    direct: true
+    place: paris
+    label: Jacques Seligmann, Paris and New York (New York 1937; Vogue 1937)
+    sources:
+      - url: https://www.artic.edu/artworks/60812
+        note: sold to Jacques Seligmann, Paris and New York, 1937 [see New York 1937 and Vogue 1937].
+        source: aic-1980-613
+        accessed: 2026-11-24
+  - owner: person/stephen-c-clark
+    acquired: 1938 or earlier
+    place: new-york-city
+    label: Rewald 1938
+    sources:
+      - url: https://www.artic.edu/artworks/60812
+        note: Stephen C. Clark, New York by 1938 [see Rewald 1938].
+        source: aic-1980-613
+        accessed: 2026-11-24
+  - owner: person/chauncey-mccormick
+    co_owners: [person/marion-deering-mccormick]
+    acquired: 1955 or earlier
+    place: chicago
+    label: Mr. and Mrs. Chauncey McCormick (Chicago 1955)
+    sources:
+      - url: https://www.artic.edu/artworks/60812
+        note: Mr. and Mrs. Chauncey McCormick, Chicago by 1955 [see Chicago 1955];
+        source: aic-1980-613
+        accessed: 2026-11-24
+  - owner: person/charles-deering-mccormick
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/60812
+        note: by descent to Mr. Charles Deering McCormick;
+        source: aic-1980-613
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    role: custodian
+    acquired: 1970
+    ended: 1980
+    direct: true
+    place: chicago
+    label: on extended loan from Charles Deering McCormick
+    sources:
+      - url: https://www.artic.edu/artworks/60812
+        note: on extended loan to the Art Institute, 1970;
+        source: aic-1980-613
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1980
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/60812
+        note: given to the Art Institute, 1980.
+        source: aic-1980-613
+        accessed: 2026-11-24
 identifiers:
   wpi: "71674"
 sources:

@@ -90,6 +90,14 @@ relationships:
       - accessed: 2026-10-28
         property: P135
         wikidata: Q203643
+  - type: participated_in
+    to: event/a-century-of-progress-international-exposition
+    label: exhibited
+    notes_md: Whistler's Mother shown 1933–34
+    sources:
+      - url: https://en.wikipedia.org/wiki/Whistler%27s_Mother
+        source: wikipedia-en-whistlers-mother
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/James_A._McNeill_Whistler%2C_half-length_portrait_LCCN2002736830_%28detail%29.jpg/1280px-James_A._McNeill_Whistler%2C_half-length_portrait_LCCN2002736830_%28detail%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:James_A._McNeill_Whistler,_half-length_portrait_LCCN2002736830_(detail).jpg

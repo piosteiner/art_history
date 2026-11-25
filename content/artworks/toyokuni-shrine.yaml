@@ -32,6 +32,7 @@ names:
       - accessed: 2026-11-24
         wikidata: Q709822
 created: 1599
+institution: toyokuni-shrine
 location: [135.773, 34.9914]
 wikidata_id: Q709822
 metadata:
@@ -45,6 +46,60 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Toyokuni_jinja01s1024.jpg
     license: CC BY 2.5
     credit: 663highland
+provenance:
+  - owner: institution/toyokuni-shrine
+    acquired: 1599
+    method: creation
+    place: kyoto
+    label: founded on Amidagamine for the deified Toyotomi Hideyoshi (d. 1598) by his last wish, as Toyokuni-byō; divine name Toyokuni Daimyōjin and first rank from the court; shrine consecrated 18 April 1599; run by the Yoshida and Hagiwara families
+    sources:
+      - url: https://toyokuni-kyoto.jp/shrine.html
+        note: 当社は慶長四（一五九九）年、前年に薨去された太閤豊臣秀吉公を奉祀する為、朝廷より正一位豊国大明神の神階神号を賜り、東山阿弥陀ケ峯に創建されました。
+        source: toyokuni-kyoto-shrine
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1746
+        note: 豊国廟は、慶長四年（一五九九）豊臣秀吉の遺命によって、秀吉を祀るために創建された
+        source: kunishitei-102-1746
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%B1%8A%E5%9B%BD%E7%A5%9E%E7%A4%BE_(%E4%BA%AC%E9%83%BD%E5%B8%82)&oldid=111351988
+        note: 4月18日、遷宮の儀が行われ、社は豊国社と命名され … 豊国社の運営には吉田家が深くかかわり、吉田兼見が社務を統括した
+        source: wikipedia-ja-toyokuni-shrine-kyoto
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1615
+    label: after the fall of the Toyotomi (Summer Siege of Osaka), worship abolished by order of Tokugawa Ieyasu, Hideyoshi's divine name withdrawn; buildings left to decay (kept at Kōdai-in's request); the shrine-temple passed to Myōhō-in 1619
+    sources:
+      - url: https://toyokuni-kyoto.jp/shrine.html
+        note: 元和元(一六一五)年豊臣氏滅亡後、幕府の命で廃祀されましたが
+        source: toyokuni-kyoto-shrine
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1746
+        note: その後元和元年（一六一五）徳川氏により破壊され、まったく荒廃した。
+        source: kunishitei-102-1746
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%B1%8A%E5%9B%BD%E7%A5%9E%E7%A4%BE_(%E4%BA%AC%E9%83%BD%E5%B8%82)&oldid=111351988
+        note: 秀吉の正室であった北政所の懇願で社殿と廟所（豊国廟）は残されたものの、以後一切の修理を禁止され、朽ち果てるままに放置されることとなった … 元和5年（1619年）に妙法院へ移されている。
+        source: wikipedia-ja-toyokuni-shrine-kyoto
+        accessed: 2026-11-24
+  - owner: institution/toyokuni-shrine
+    acquired: 1880
+    method: creation
+    place: kyoto
+    label: revived by order of Emperor Meiji (1868), bekkaku kanpeisha 1873; new buildings on the site of the Great Buddha Hall of Hōkō-ji (land taken by the Meiji government) 1880; Karamon moved here from Konchi-in; owner today
+    sources:
+      - url: https://toyokuni-kyoto.jp/shrine.html
+        note: 明治元年、明治天皇は祭祀の復興を命ぜられ、同六年別格官幣社に列し、同十三年方広寺大仏殿跡地に社殿を造営し再興されました。 … 南禅寺金地院から移築されました。
+        source: toyokuni-kyoto-shrine
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1746
+        note: 現在の豊国神社の社殿は明治初年方広寺跡に再建されたものである。 唐門は伏見城の遺構と伝え、最初二条城にあったのを金地院に移し、さらに明治時代の再建の際に現地に移したという。 … 所有者名 ： 豊国神社
+        source: kunishitei-102-1746
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%B1%8A%E5%9B%BD%E7%A5%9E%E7%A4%BE_(%E4%BA%AC%E9%83%BD%E5%B8%82)&oldid=111351988
+        note: 現在の敷地の大部分はかつて京の大仏を安置する方広寺の寺領であったが、明治新政府により収公され、最終的に豊国神社境内となった … 1880年（明治13年）、方広寺大仏殿跡地の現在地に社殿が完成し、遷座が行われた
+        source: wikipedia-ja-toyokuni-shrine-kyoto
+        accessed: 2026-11-24
 identifiers:
   viaf: "145882393"
 sources:

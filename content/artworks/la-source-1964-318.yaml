@@ -9,8 +9,83 @@ dimensions: [46.4, 54.6, 27.9]
 institution: art-institute-of-chicago
 inventory_number: "1964.318"
 web_url: https://www.artic.edu/artworks/20669
+provenance_status: d_seized
+provenance_status_note: Confiscated by the Nazis from Oscar Bondy, Vienna, 1939, for Hitler's projected museum at Linz; restituted to his widow Elizabeth Bondy, New York, 1946.
 images:
   - url: https://www.artic.edu/iiif/2/d4176776-8e50-006d-06d3-d746bab1f5e1/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/20669
     license: CC0
     credit: Art Institute of Chicago, Gift of Mr. and Mrs. Leopold Blumka
+provenance:
+  - owner: artist/albert-ernest-carrier-belleuse
+    role: estate
+    place: paris
+    label: the artist's estate
+    sources:
+      - url: https://www.artic.edu/artworks/20669
+        note: Sold, the artist’s estate sale, Hôtel Drouot, Paris, December 19–23, 1887, lot 108.
+        source: aic-1964-318
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1887-12-19
+    method: auction
+    direct: true
+    place: paris
+    label: the artist's estate sale, Hôtel Drouot, Paris, 19–23 December 1887, lot 108
+    sources:
+      - url: https://www.artic.edu/artworks/20669
+        note: Sold, the artist’s estate sale, Hôtel Drouot, Paris, December 19–23, 1887, lot 108.
+        source: aic-1964-318
+        accessed: 2026-11-24
+  - owner: person/oscar-bondy
+    acquired: 1939 or earlier
+    place: vienna
+    label: copy of inventory, reproduced in Lillie 2003, p. 224
+    sources:
+      - url: https://www.artic.edu/artworks/20669
+        note: Oscar Bondy, Vienna, by 1939 [according to copy of inventory, reproduced in Lillie 2003, p. 224];
+        source: aic-1964-318
+        accessed: 2026-11-24
+  - owner: person/adolf-hitler
+    role: possessor
+    acquired: 1939
+    method: confiscation
+    direct: true
+    place: vienna
+    label: confiscated by the Nazis for Hitler's projected museum at Linz
+    sources:
+      - url: https://www.artic.edu/artworks/20669
+        note: confiscated by the Nazis for Hitler’s projected museum at Linz, 1939 [see source cited above];
+        source: aic-1964-318
+        accessed: 2026-11-24
+  - owner: person/elizabeth-bondy
+    acquired: 1946
+    method: restitution
+    direct: true
+    place: new-york-city
+    label: Oscar Bondy's widow; restitution receipt of 25 April 1946 (Ardelia Hall Records, RG 260, Box 286; Lillie 2003, p. 244)
+    sources:
+      - url: https://www.artic.edu/artworks/20669
+        note: restituted to Oscar’s widow, Elizabeth Bondy, New York, 1946 [according to Lillie 2003, p. 244; see also restitution receipt, April 25, 1946, Ardelia Hall Records, RG 260, Box 286, copy in curatorial file].
+        source: aic-1964-318
+        accessed: 2026-11-24
+  - owner: person/victoria-blumka
+    co_owners: [person/leopold-blumka]
+    acquired: before 1964
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/20669
+        note: Victoria and Leopold Blumka, New York, before 1964;
+        source: aic-1964-318
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1964
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/20669
+        note: given to the Art Institute, 1964.
+        source: aic-1964-318
+        accessed: 2026-11-24

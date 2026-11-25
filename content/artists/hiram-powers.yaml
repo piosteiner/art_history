@@ -1,0 +1,27 @@
+public_id: 130189
+name: Hiram Powers
+given_name: Hiram
+family_name: Powers
+birth: 1805-06-29
+death: 1873-06-27
+wikidata_id: Q2572996
+metadata:
+  sources: [Wikidata Q2572996 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/great-exhibition-of-1851
+    label: exhibited
+    notes_md: The Greek Slave (marble), centrepiece of the US exhibit.
+    sources:
+      - url: https://interactive.britishart.yale.edu/mapping-the-greek-slave/776/first-version-exhibited-at-the-great-exhibition-london-1851
+        source: yale-center-for-first-version-exhibited-at-the-great-exhibition-london-1851-yale-cente
+        accessed: 2026-11-24
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2572996
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q2572996

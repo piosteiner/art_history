@@ -1,3 +1,30 @@
 public_id: 126630
 name: Ichikawa Ryōzō
+kind: person
+birth: 1844-12-08
+death: 1908-02-15
 wikidata_id: Q11480446
+metadata:
+  sources: [Wikidata Q11480446 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q11480446
+identifiers:
+  viaf: "258471685"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11480446
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q11480446
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q11480446

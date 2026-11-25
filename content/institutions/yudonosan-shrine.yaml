@@ -1,3 +1,29 @@
 public_id: 127449
 name: Yudonosan Shrine
+place: tsuruoka
+location: [139.98609, 38.54156]
+address: 山形県鶴岡市田麦俣字六十里山7
+website_url: http://www.dewasanzan.jp/publics/index/52/
 wikidata_id: Q11563607
+metadata:
+  sources: [Wikidata Q11563607 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Yudonosan_Torii_gate_2006-A.jpg/1280px-Yudonosan_Torii_gate_2006-A.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yudonosan_Torii_gate_2006-A.jpg
+    license: CC BY 3.0
+    credit: Crown of Lenten rose
+identifiers:
+  viaf: "13146707092200790988"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11563607
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11563607
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11563607

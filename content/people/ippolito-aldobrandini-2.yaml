@@ -2,4 +2,45 @@ public_id: 127583
 name: Ippolito Aldobrandini
 given_name: Ippolito
 family_name: Aldobrandini
+kind: person
+birth: 1596
+death: 1638-07-19
 wikidata_id: Q1050128
+metadata:
+  sources: [Wikidata Q1050128 (retrieved 2026-11-24)]
+relationships:
+  - type: born_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q1050128
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q1050128
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Ippolito_Aldobrandini_%28d._1638%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ippolito_Aldobrandini_(d._1638).jpg
+    license: Public domain
+    credit: Unknown contemporary author
+identifiers:
+  bnf: 16296264f
+  gnd: "1089633815"
+  idref: "075039362"
+  viaf: "494145858081823021956"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1050128
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q1050128
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q1050128

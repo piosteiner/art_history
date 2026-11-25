@@ -1,0 +1,70 @@
+public_id: 130221
+title: Philips Pavilion
+names:
+  - lang: nl
+    role: translation
+    text: Philips paviljoen
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2915963
+  - lang: fr
+    role: translation
+    text: Pavillon Philips
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2915963
+  - lang: es
+    role: translation
+    text: Pabellón Philips
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2915963
+  - lang: ja
+    role: translation
+    text: フィリップス・パビリオン
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2915963
+  - lang: ru
+    role: translation
+    text: Павильон Philips
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2915963
+creator: le-corbusier
+created: 1958
+location: [4.34639, 50.89222]
+wikidata_id: Q2915963
+metadata:
+  sources: [Wikidata Q2915963 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/brussels
+    period: 1958
+  - type: co_creator
+    to: artist/iannis-xenakis
+    label: project manager, form of the pavilion
+    sources:
+      - url: https://en.wikipedia.org/wiki/Philips_Pavilion
+        source: wikipedia-en-philips-pavilion
+        accessed: 2026-11-24
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Expo58_building_Philips.jpg/1280px-Expo58_building_Philips.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Expo58_building_Philips.jpg
+    license: CC BY-SA 3.0
+    credit: Wouter Hagens
+identifiers:
+  viaf: "184148570531824311112"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q2915963
+  creator:
+    - url: https://en.wikipedia.org/wiki/Philips_Pavilion
+      source: wikipedia-en-philips-pavilion
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2915963

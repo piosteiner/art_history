@@ -1,3 +1,31 @@
 public_id: 126592
 name: Konren-ji
+kind: temple
+place: nishio
+location: [137.07296, 34.80932]
+address: 愛知県西尾市吉良町饗庭七度ヶ入1
 wikidata_id: Q11647847
+metadata:
+  sources: [Wikidata Q11647847 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Konrenji2.jpg/1280px-Konrenji2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Konrenji2.jpg
+    license: CC BY-SA 4.0
+    credit: Bariston
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11647847
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11647847
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11647847
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11647847

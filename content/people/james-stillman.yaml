@@ -2,4 +2,43 @@ public_id: 127561
 name: James Stillman
 given_name: James
 family_name: Stillman
+kind: person
+birth: 1850-06-09
+death: 1918-03-15
 wikidata_id: Q3161428
+metadata:
+  sources: [Wikidata Q3161428 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q3161428
+  - type: died_in
+    to: place/manhattan
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q3161428
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b7/Portrait_of_James_Stillman.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_James_Stillman.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  lc: nr00027934
+  viaf: "26904430"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3161428
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q3161428
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q3161428

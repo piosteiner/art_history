@@ -81,6 +81,19 @@ relationships:
     to: movement/japonisme
   - type: associated_with
     to: movement/post-impressionism
+  - type: sibling_of
+    to: person/theo-van-gogh
+    sources:
+      - accessed: 2026-11-24
+        property: P3373
+        wikidata: Q5582
+  - type: relative_of
+    to: person/vincent-willem-van-gogh
+    label: nephew
+    sources:
+      - accessed: 2026-11-24
+        property: P1038
+        wikidata: Q5582
 identifiers:
   dome: "401"
   gnd: "118540416"

@@ -1,3 +1,11 @@
 public_id: 125834
 name: Adolo
+kind: person
 wikidata_id: Q103827598
+metadata:
+  sources: [Wikidata Q103827598 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q103827598

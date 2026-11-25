@@ -34,6 +34,87 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Gong_Xian._Thousand_peaks_and_ten_thousand_valleys._Museum_Rietberg.(mounting).jpg
     license: CC BY-SA 4.0
     credit: Gong Xian
+provenance:
+  - owner: artist/gong-xian
+    acquired: c. 1670
+    method: creation
+    label: painted by Gong Xian
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-1172
+        note: "um 1670: Gong Xian (1619-1689), Urheber/in des Werks"
+        source: rietberg-rch-1172
+        accessed: 2026-11-24
+  - owner: person/luo-tianchi
+    acquired_label: unbekannter Zeitpunkt
+    label: collector (also wrote the colophon); date unknown; no catalogue of his collection known
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-1172
+        note: |-
+          unbekannter Zeitpunkt: Luo Tianchi (1805–1866), Sammler/in
+          Kim (Juli 2022):
+          Luo Tianchi 羅天池 (1805–1866) Sammlungskatalog?
+          Aug. 2022:
+          Soweit ersichtlich gibt es keine Hinweise auf einen Sammlungskatalog.
+        source: rietberg-rch-1172
+        accessed: 2026-11-24
+  - owner: person/guan-mianjun
+    acquired: before 1928
+    label: collector; recorded in his catalogue San qiu ge shu hua lu, Beijing 1928, vol. 1, pp. 86b–87b
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-1172
+        note: |-
+          vor 1928– ?: Guan Mianjun (1871–1933), Sammler/in
+          Brinker, The Masterpiece, 2003
+          erwähnt in:  Guan Mianjun, San qiu ge shu hua lu (A Catalogue of Calligraphy and Painting from the Hall of Three Autumns), 2. Bde., Beijing: Cangwu Guanshi, 1928, Bd. 1, S. 86b–87b.
+        source: rietberg-rch-1172
+        accessed: 2026-11-24
+  - owner: person/c-c-wang
+    acquired_label: unbekannter Zeitpunkt
+    label: collector; date unknown (Yang 2010, no. 144; Silbergeld 1987, fig. 6)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-1172
+        note: |-
+          unbekannter Zeitpunkt: C. C. Wang (1907–2003), Sammler/in
+          Kim (Juli 2022):
+          vgl. Kathleen Yang, Through a Chinese Connoisseur’s Eye: Private Notes of C.C. Wang, Beijing: Zhonghua Book Company, 2010, S. 346, Nr. 144;
+        source: rietberg-rch-1172
+        accessed: 2026-11-24
+  - owner: person/walter-hochstadter
+    role: dealer
+    acquired: before 1958
+    place: new-york-city
+    label: dealer; published as Coll. Walter Höchstädter, New York, by Sickman and Soper 1956
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-1172
+        note: |-
+          vor 1958: Walter Höchstädter (1914–2007), Händler/in
+          Publiziert als Collection Walter Hochstadter in: 
+          Sickman und Soper, The Art and Architecture of China, 1956, S. 196 (als Coll. Walter Höchstädter, New York)
+        source: rietberg-rch-1172
+        accessed: 2026-11-24
+  - owner: person/charles-a-drenowatz
+    acquired: 1961
+    ended: 1985
+    method: purchase
+    direct: true
+    label: bought from Walter Höchstädter before July 1961 (letter to Osvald Sirén, 28 July 1961)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-1172
+        note: |-
+          1961–1985: Charles A. Drenowatz (1908–1979), Sammler/in
+          Erworben von Walter Höchstädter vor Juli 1961
+          Vgl. Brief Drenowatz an Osvald Sirén, 28.7.61, File A: 20, Sirén Archive, MFEA, Stockholm
+        source: rietberg-rch-1172
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    method: gift
+    place: zurich
+    label: gift of Charles A. Drenowatz (credit line)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rch-1172
+        note: Creditline | Geschenk Charles A. Drenowatz
+        source: rietberg-rch-1172
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

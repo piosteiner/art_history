@@ -89,6 +89,14 @@ relationships:
       - accessed: 2026-11-02
         property: P135
         wikidata: Q151580
+  - type: participated_in
+    to: event/paris-international-exposition-1937
+    label: exhibited
+    notes_md: Mercury Fountain
+    sources:
+      - url: https://calder.org/works/unusual-project/mercury-fountain-1937
+        source: calder-foundation-mercury-fountain-1937-calder-foundation
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Alexander_Calder_1968.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Alexander_Calder_1968.jpg

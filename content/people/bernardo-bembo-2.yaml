@@ -2,4 +2,41 @@ public_id: 127994
 name: Bernardo Bembo
 given_name: Bernardo
 family_name: Bembo
+kind: person
+birth: 1433-10-28
+death: 1519-06-07
 wikidata_id: Q462026
+metadata:
+  sources: [Wikidata Q462026 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q462026
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Hans_Memling_-_Bernardo_Bembo%2C_staatsman_en_ambassadeur_van_Veneti%C3%AB_-_Royal_Museum_of_Fine_Arts_Antwerp.jpg/1280px-Hans_Memling_-_Bernardo_Bembo%2C_staatsman_en_ambassadeur_van_Veneti%C3%AB_-_Royal_Museum_of_Fine_Arts_Antwerp.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Memling_-_Bernardo_Bembo,_staatsman_en_ambassadeur_van_Veneti%C3%AB_-_Royal_Museum_of_Fine_Arts_Antwerp.jpg
+    license: Public domain
+    credit: Hans Memling
+identifiers:
+  bnf: 12068079w
+  gnd: 12898113X
+  idref: "028951549"
+  lc: n85350179
+  ulan: "500114861"
+  viaf: "28137730"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q462026
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q462026
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q462026

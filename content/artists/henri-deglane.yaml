@@ -1,0 +1,64 @@
+public_id: 130621
+name: Henri Deglane
+given_name: Henri
+family_name: Deglane
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Henri Adolphe Auguste Deglane
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3130936
+  - text: Henri-Adolphe-Auguste Deglane
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3130936
+  - text: A. A. Henri Deglane
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3130936
+  - lang: ja
+    role: translation
+    text: アンリ・ドグラーヌ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3130936
+  - lang: zh
+    role: translation
+    text: 亨利·德格拉纳
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3130936
+birth: 1855-12-10
+death: 1931-05-13
+wikidata_id: Q3130936
+metadata:
+  sources: [Wikidata Q3130936 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/exposition-universelle-of-1900
+    label: architect
+    notes_md: Grand Palais (main body)
+    sources:
+      - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1900)
+        source: wikipedia-en-exposition-universelle-1900
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/Henri_Deglane%2C_1905_ou_avant.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_Deglane,_1905_ou_avant.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  idref: "167398539"
+  ulan: "500186105"
+  viaf: "173078058"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q3130936
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q3130936

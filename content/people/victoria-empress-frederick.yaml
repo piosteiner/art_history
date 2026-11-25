@@ -1,3 +1,62 @@
 public_id: 129336
 name: Victoria, Empress Frederick
+names:
+  - kind: birth
+    lang: en
+    role: former
+    text: Victoria Adelaide Mary Louisa
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q116728
+kind: person
+birth: 1840-11-21
+death: 1901-08-05
 wikidata_id: Q116728
+metadata:
+  sources: [Wikidata Q116728 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q116728
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q116728
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q116728
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/80/Empress_Viktoria_of_Germany_%281840-1901%29.png
+    source_url: https://commons.wikimedia.org/wiki/File:Empress_Viktoria_of_Germany_(1840-1901).png
+    license: Public domain
+    credit: Thomas Heinrich Voigt
+identifiers:
+  bnf: 11574398z
+  dodis: P32852
+  gnd: "118626868"
+  idref: "074100610"
+  lc: n81043124
+  rkd: "80886"
+  ulan: "500009430"
+  viaf: "89807131"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q116728
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q116728
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q116728

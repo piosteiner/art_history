@@ -1,0 +1,74 @@
+public_id: 130220
+title: Tower of the Sun
+names:
+  - lang: fr
+    role: translation
+    text: tour du Soleil
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3275446
+  - lang: es
+    role: translation
+    text: Torre del Sol
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3275446
+  - lang: ja
+    role: translation
+    text: 太陽の塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3275446
+  - lang: zh
+    role: translation
+    text: 太陽之塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3275446
+  - lang: ko
+    role: translation
+    text: 태양의 탑
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3275446
+  - lang: ru
+    role: translation
+    text: Башня Солнца
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3275446
+creator: taro-okamoto
+created: 1970-02
+materials: [steel reinforced concrete]
+dimensions: [7000]
+location: [135.532, 34.8096]
+wikidata_id: Q3275446
+metadata:
+  sources: [Wikidata Q3275446 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/suita
+    period: 1970-02
+identifiers:
+  viaf: "258294233"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3275446
+  creator:
+    - url: https://en.wikipedia.org/wiki/Tower_of_the_Sun
+      source: wikipedia-en-tower-of-the-sun
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3275446
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3275446
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3275446

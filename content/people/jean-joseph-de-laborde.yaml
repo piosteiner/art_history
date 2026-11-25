@@ -2,4 +2,47 @@ public_id: 127653
 name: Jean-Joseph de Laborde
 given_name: Jean-Joseph
 family_name: de Laborde
+kind: person
+birth: 1724-01-29
+death: 1794-04-18
 wikidata_id: Q1355148
+metadata:
+  sources: [Wikidata Q1355148 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q1355148
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q1355148
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0f/Jeanjosephdelaborde.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Jeanjosephdelaborde.jpeg
+    license: Public domain
+    credit: Unidentified painter
+identifiers:
+  bnf: 12815623j
+  gnd: "124680135"
+  idref: "085808431"
+  lc: no91021771
+  rkd: "452730"
+  viaf: "294857211"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1355148
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q1355148
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q1355148

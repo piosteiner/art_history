@@ -1,3 +1,39 @@
 public_id: 127451
 name: Eihō-ji
+kind: temple
+founded: 1313
+place: tajimi
+location: [137.13024, 35.34677]
+address: 岐阜県多治見市虎渓山町1-40
+website_url: https://kokeizan.or.jp/
 wikidata_id: Q3049365
+metadata:
+  sources: [Wikidata Q3049365 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Kokeizan-teien.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kokeizan-teien.jpg
+    license: Public domain
+    credit: Y.Torayama
+identifiers:
+  viaf: "251199067"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3049365
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3049365
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3049365
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3049365
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3049365

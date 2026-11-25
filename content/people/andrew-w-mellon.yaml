@@ -15,6 +15,12 @@ metadata:
   sources: [Wikidata Q446858 (retrieved 2026-10-09)]
 relationships:
   - type: founded
+    to: institution/andrew-w-mellon-collection
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q46596638
+  - type: founded
     to: institution/national-gallery-of-art
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/AWMellon.jpg/1280px-AWMellon.jpg

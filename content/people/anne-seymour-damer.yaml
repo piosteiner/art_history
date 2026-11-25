@@ -2,4 +2,49 @@ public_id: 127928
 name: Anne Seymour Damer
 given_name: Anne Seymour
 family_name: Damer
+kind: person
+birth: 1748-11-08
+death: 1828-05-28
 wikidata_id: Q1246573
+metadata:
+  sources: [Wikidata Q1246573 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-great-britain
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q1246573
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q1246573
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Anne_Seymour_Damer_%28n%C3%A9e_Conway%29_by_Sir_Joshua_Reynolds.jpg/1280px-Anne_Seymour_Damer_%28n%C3%A9e_Conway%29_by_Sir_Joshua_Reynolds.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anne_Seymour_Damer_(n%C3%A9e_Conway)_by_Sir_Joshua_Reynolds.jpg
+    license: Public domain
+    credit: Joshua Reynolds
+identifiers:
+  bnf: "165441091"
+  gnd: "140368124"
+  idref: "119154765"
+  kulturnav: f7b09af3-5260-4c7d-b902-8506d292c60b
+  lc: nr00003596
+  rkd: "455554"
+  ulan: "500105950"
+  viaf: "31832695"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1246573
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q1246573
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q1246573

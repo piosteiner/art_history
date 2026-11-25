@@ -1,0 +1,89 @@
+public_id: 130227
+name: Karl von Hasenauer
+given_name: Karl
+family_name: von Hasenauer
+names:
+  - lang: de
+    role: original
+    text: Carl von Hasenauer
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q84541
+  - text: Karl Freiherr von Hasenauer
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q84541
+  - text: Carl Hasenauer
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q84541
+  - text: Freiherr von Hasenauer Karl
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q84541
+  - text: Carl, Freiherr von Hasenauer
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q84541
+  - text: Karl Hasenauer
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q84541
+  - text: Karl von, Freiherr Hasenauer
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q84541
+  - text: Hasenauer
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q84541
+  - text: Baron Karl von Hasenauer
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q84541
+  - lang: ja
+    role: translation
+    text: カール・フォン・ハゼナウアー
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q84541
+  - lang: ru
+    role: translation
+    text: Карл фон Хазенауэр
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q84541
+birth: 1833-07-20
+death: 1894-01-04
+wikidata_id: Q84541
+metadata:
+  sources: [Wikidata Q84541 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/vienna-worlds-fair-of-1873
+    label: architect
+    notes_md: Architectural direction (Rotunde), with Gustav von Korompay and Gustav Gugitz.
+    sources:
+      - url: https://de.wikipedia.org/wiki/Weltausstellung_1873
+        source: wikipedia-de-weltausstellung-1873
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/57/Karl-von-Hasenauer-1880-2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Karl-von-Hasenauer-1880-2.jpg
+    license: Public domain
+    credit: "derivative work: Alberto Fernandez Fernandez (talk) Karl-von-Hasenauer-1880.jpg: n/a"
+identifiers:
+  gnd: "118546597"
+  lc: n2004063647
+  rkd: "36374"
+  ulan: "500020365"
+  viaf: "5684656"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q84541
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q84541

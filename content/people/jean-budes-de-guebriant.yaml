@@ -2,4 +2,29 @@ public_id: 126964
 name: Jean Budes de Guébriant
 given_name: Jean Budes
 family_name: de Guébriant
+kind: person
+birth: 1911-04-22
+death: 2001
 wikidata_id: Q72963405
+metadata:
+  sources: [Wikidata Q72963405 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q72963405
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q72963405
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q72963405
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q72963405

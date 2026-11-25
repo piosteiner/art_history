@@ -1,0 +1,100 @@
+public_id: 130240
+name: Iannis Xenakis
+given_name: Iannis
+family_name: Xenakis
+names:
+  - lang: el
+    role: original
+    text: Ιάννης Ξενάκης
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q152880
+  - text: Iannēs Xenakēs
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q152880
+  - text: Giannēs Xenakēs
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q152880
+  - text: IAnnis Ksenakis
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q152880
+  - text: Jannis Xenakis
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q152880
+  - text: Yannis Xenakis
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q152880
+  - text: Ianisu Kusenakisu
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q152880
+  - text: Giannis Klearchou Xenakis
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q152880
+  - lang: ja
+    role: translation
+    text: ヤニス・クセナキス
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q152880
+  - lang: zh
+    role: translation
+    text: 伊阿尼斯·泽纳基斯
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q152880
+  - lang: ko
+    role: translation
+    text: 이안니스 크세나키스
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q152880
+  - lang: ru
+    role: translation
+    text: Янис Ксенакис
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q152880
+birth: 1922-05-29
+death: 2001-02-04
+wikidata_id: Q152880
+metadata:
+  sources: [Wikidata Q152880 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/expo-58
+    label: architect
+    notes_md: Project manager and form of the Philips Pavilion; composed Concret PH
+    sources:
+      - url: https://en.wikipedia.org/wiki/Philips_Pavilion
+        source: wikipedia-en-philips-pavilion
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/58/XenakisMDaniel_crop.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:XenakisMDaniel_crop.jpg
+    license: CC BY 2.5
+    credit: The Friends of Xenakis (permission link)
+identifiers:
+  bnf: 13901310h
+  gnd: "118771566"
+  idref: "027200558"
+  kulturnav: ff02f4d0-8086-4c8a-83b7-78d07675ad5c
+  lc: n50053095
+  rkd: "229143"
+  ulan: "500120376"
+  viaf: "14960000"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q152880
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q152880

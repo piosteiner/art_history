@@ -1,3 +1,39 @@
 public_id: 126693
 name: Kōjō-ji Temple
+kind: temple
+founded: 1403
+place: onomichi
+location: [133.08683, 34.30656]
+address: 広島県尾道市瀬戸田町瀬戸田57
+website_url: https://www.genets.co.jp/u1/KOJOJI/
 wikidata_id: Q11415863
+metadata:
+  sources: [Wikidata Q11415863 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Koujyouji_sanjyuunotou.jpg/1280px-Koujyouji_sanjyuunotou.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Koujyouji_sanjyuunotou.jpg
+    license: CC BY-SA 3.0
+    credit: Carpkazu
+identifiers:
+  viaf: "260257294"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11415863
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11415863
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11415863
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11415863
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11415863

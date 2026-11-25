@@ -41,6 +41,14 @@ relationships:
       - accessed: 2026-11-03
         property: P737
         wikidata: Q316531
+  - type: participated_in
+    to: event/paris-international-exposition-1937
+    label: exhibited
+    notes_md: Sculpture La Montserrat
+    sources:
+      - url: https://www.museunacional.cat/en/node/143568
+        source: museu-nacional-dart-the-pavilion-of-the-spanish-republic-in-paris-museu-nacional-dart-de-c
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/0d/Julio_Gonz%C3%A1lez_%281912%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Julio_Gonz%C3%A1lez_(1912).jpg

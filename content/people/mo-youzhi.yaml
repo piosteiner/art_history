@@ -1,0 +1,71 @@
+public_id: 129766
+name: Mo Youzhi
+given_name: Mo
+family_name: Youzhi
+names:
+  - kind: art_name
+    role: alternative
+    text: 郘亭
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q10506830
+  - kind: art_name
+    role: alternative
+    text: 郘庭
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q10506830
+  - kind: art_name
+    role: alternative
+    text: 眲
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q10506830
+  - kind: art_name
+    role: alternative
+    text: 眲叟
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q10506830
+  - kind: art_name
+    role: alternative
+    text: 影山草堂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q10506830
+kind: person
+birth: 1811-06-24
+death: 1871-10-27
+wikidata_id: Q10506830
+metadata:
+  sources: [Wikidata Q10506830 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/qing-dynasty
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q10506830
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4e/%E8%8E%AB%E5%8F%8B%E8%8A%9D.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E8%8E%AB%E5%8F%8B%E8%8A%9D.jpg
+    license: Public domain
+    credit: 叶公绰辑，杨鹏秋摹绘。
+identifiers:
+  gnd: "1029585008"
+  idref: "178524522"
+  lc: nr89017523
+  viaf: "51536701"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q10506830
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q10506830
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q10506830

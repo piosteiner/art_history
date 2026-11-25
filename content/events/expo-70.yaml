@@ -1,0 +1,49 @@
+public_id: 130620
+name: Expo '70
+names:
+  - lang: ja
+    role: original
+    text: 日本万国博覧会
+  - lang: ja-Latn
+    role: original
+    text: Nihon Bankoku Hakuran-kai
+kind: world's fair
+period: 1970-03-15/1970-09-13
+place: suita
+location: [135.53522, 34.80861]
+description_md: |-
+  Expo '70 was the first world's fair held in Japan and in Asia.[[source/wikipedia-en-expo-70]] It was a symbol of [[polity/japan|Japan]]'s postwar high growth, by then the world's second-largest economy, and a national project comparable to the Tokyo Olympics of 1964.[[source/wikipedia-ja-66a394d04d]] The mobilisation of artists for a state event drew criticism, and some students protested that the fair diverted attention from the revision of the US–Japan Security Treaty (Anpo) in 1970.[[source/wikipedia-ja-66a394d04d]] The rivals of the Cold War competed on the site: the Soviet pavilion by Mikhail Posokhin was the tallest of the fair, and the American air-supported dome by Davis Brody and David H. Geiger showed a Moon rock brought back by Apollo 12.[[source/wikipedia-en-expo-70]]
+
+  The fair occupied 330 hectares of the Senri Hills in Suita, now the Expo Commemoration Park.[[source/wikipedia-en-expo-70]] [[artist/kenzo-tange|Tange Kenzō]] drew up the master plan with Nishiyama Uzō and designed the Big Roof over the Festival Plaza.[[source/wikipedia-en-expo-70]] Metabolist ideas appeared throughout the site, as in Kikutake Kiyonori's Expo Tower.[[source/wikipedia-en-expo-70]][[source/wikipedia-ja-66a394d04d]] With about 64 million visitors the fair held the record until Shanghai 2010.[[source/wikipedia-en-expo-70]][[source/wikipedia-ja-66a394d04d]]
+
+  The Expo drew attention for unusual works by Japanese avant-garde artists, most famously [[artist/taro-okamoto|Okamoto Tarō]]'s [[artwork/tower-of-the-sun|Tower of the Sun]].[[source/wikipedia-en-expo-70]] Okamoto produced the theme exhibition;[[source/wikipedia-ja-66a394d04d]] his tower, about 70 metres tall, formed the centre of the Theme Pavilion and pierced the Big Roof, with a Golden Mask for the future, the Face of the Sun for the present and a Black Sun for the past, and a Tree of Life 41 metres high inside.[[source/wikipedia-en-tower-of-the-sun]] It was registered as a Tangible Cultural Property in 2020 and recommended for designation as an Important Cultural Property in 2025.[[source/wikipedia-en-tower-of-the-sun]][[source/agency-for-cultural-koho-hodo-oshirase-hodohappyo-94214501-html]] Experiments in Art and Technology made the Pepsi Pavilion with more than 75 artists and engineers, wrapped in Nakaya Fujiko's fog sculpture, with Robert Breer's kinetic *Floats* on its terrace.[[source/wikipedia-en-experiments-in-art-and-technology]] The fair's art museum pavilion later housed the National Museum of Art, Osaka, until 2004.[[source/wikipedia-en-expo-70]][[source/wikipedia-ja-66a394d04d]]
+wikidata_id: Q1119956
+relationships:
+  - type: concerns
+    to: polity/japan
+    sources:
+      - source: wikipedia-ja-66a394d04d
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/tower-of-the-sun
+    sources:
+      - source: wikipedia-en-expo-70
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: wikipedia-en-expo-70
+  place:
+    - url: https://en.wikipedia.org/wiki/Expo_%2770
+      source: wikipedia-en-expo-70
+      accessed: 2026-11-24
+  period:
+    - url: https://en.wikipedia.org/wiki/Expo_%2770
+      source: wikipedia-en-expo-70
+      accessed: 2026-11-24
+    - url: https://ja.wikipedia.org/wiki/日本万国博覧会
+      source: wikipedia-ja-66a394d04d
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1119956

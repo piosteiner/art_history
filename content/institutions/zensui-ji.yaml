@@ -1,3 +1,39 @@
 public_id: 126703
 name: Zensui-ji
+kind: temple
+founded: 8th century
+place: konan
+location: [136.11256, 35.00644]
+address: 滋賀県湖南市岩根3518
+website_url: https://www.zensuiji.jp/
 wikidata_id: Q11418946
+metadata:
+  sources: [Wikidata Q11418946 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/81/Shiga_Zensuiji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shiga_Zensuiji.jpg
+    license: Public domain
+    credit: Yusuke
+identifiers:
+  viaf: "256608166"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11418946
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11418946
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11418946
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11418946
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11418946

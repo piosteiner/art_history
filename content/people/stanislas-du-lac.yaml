@@ -2,4 +2,60 @@ public_id: 127433
 name: Stanislas Du Lac
 given_name: Stanislas
 family_name: Du Lac
+names:
+  - kind: birth
+    lang: fr
+    role: former
+    text: Stanislas Paul Maurice Marie du Lac de Fugères
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3496721
+kind: person
+birth: 1835-11-21
+death: 1909-08-30
 wikidata_id: Q3496721
+metadata:
+  sources: [Wikidata Q3496721 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q3496721
+  - type: born_in
+    to: place/former-10th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q3496721
+  - type: died_in
+    to: place/7th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q3496721
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d9/Du_Lac%2C_Stanislas_%28La_Croix%2C_1909-09-05%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Du_Lac,_Stanislas_(La_Croix,_1909-09-05).jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "135120364"
+  gnd: "122775562"
+  idref: "050388800"
+  lc: n2002090723
+  viaf: "54302909"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3496721
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q3496721
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q3496721

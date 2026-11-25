@@ -1,3 +1,39 @@
 public_id: 127881
 name: Hōgon-ji Temple
+kind: temple
+founded: 724
+place: nagahama
+location: [136.14323, 35.42112]
+address: 〒526-0124　滋賀県長浜市早崎町1664
+website_url: https://www.chikubushima.jp/
 wikidata_id: Q3080736
+metadata:
+  sources: [Wikidata Q3080736 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Hogonji114520.jpg/1280px-Hogonji114520.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hogonji114520.jpg
+    license: CC BY 2.1 jp
+    credit: 日:Jnn
+identifiers:
+  viaf: "255516141"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3080736
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3080736
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3080736
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3080736
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3080736

@@ -1,23 +1,65 @@
 public_id: 116718
-name: Paris International Exposition of 1937
+name: International Exposition of Art and Technology in Modern Life
 names:
   - lang: fr
     role: original
-    text: Exposition Internationale des Arts et Techniques dans la Vie Moderne
+    text: Exposition internationale des arts et techniques dans la vie moderne
     sources:
       - accessed: 2026-11-07
         wikidata: Q1165755
+kind: world's fair
 period: 1937-05-25/1937-11-25
 place: paris
 location: [2.28825, 48.86222]
+description_md: |-
+  The exposition took place during the Spanish Civil War; in autumn 1936 the government of the [[polity/second-spanish-republic|Second Spanish Republic]] considered taking part “indispensable” despite the war.[[source/wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne]][[source/museo-nacional-centro-the-endurance-of-the-pavilion-of-1937-repensar-guernica]] Its pavilion, inaugurated in July 1937, was the mouthpiece in Europe for the Republican cause, seeking international backing against fascism.[[source/museu-nacional-dart-the-pavilion-of-the-spanish-republic-in-paris-museu-nacional-dart-de-c]][[source/calder-foundation-mercury-fountain-1937-calder-foundation]] The organisers placed the pavilions of the [[polity/soviet-union|Soviet Union]] and [[polity/nazi-germany|Nazi Germany]] opposite one another, probably hoping to underline the contrast between two warring systems, but the effect was the opposite: both were neoclassical and monumental, and they looked alike.[[source/golomstock-1990|pp. 132–137]] Their architects, Albert Speer and [[artist/boris-iofan|Boris Iofan]], each received a gold medal.[[source/wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne]][[source/wikipedia-en-worker-and-kolkhoz-woman]]
+
+  The exposition covered 101 hectares at the Trocadéro, on the Champ-de-Mars and along the Seine, with 45 nations taking part.[[source/wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne]] Two museum buildings were built for it, the Palais de Chaillot and the Palais de Tokyo.[[source/wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne]] [[artist/le-corbusier|Le Corbusier]] and [[artist/pierre-jeanneret|Pierre Jeanneret]] showed their canvas Pavillon des Temps Nouveaux, and Alvar Aalto's Finnish pavilion was built entirely of timber.[[source/wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne]]
+
+  [[artist/pablo-picasso|Pablo Picasso]] painted [[artwork/guernica|Guernica]] for the Spanish pavilion between 1 May and 4 June 1937; the Republic's government acquired it from him that year.[[source/museo-nacional-centro-guernica]] The pavilion by [[artist/josep-lluis-sert|Josep Lluís Sert]] and Luis Lacasa also showed [[artist/alexander-calder|Alexander Calder]]'s *Mercury Fountain*, [[artist/joan-miro|Joan Miró]]'s mural *The Catalan Peasant in Revolt (The Reaper)*, since lost, and [[artist/julio-gonzalez|Julio González]]'s *La Montserrat*.[[source/museu-nacional-dart-the-pavilion-of-the-spanish-republic-in-paris-museu-nacional-dart-de-c]] Calder, the only foreign artist in the pavilion, used mercury from Almadén as a symbol of Republican resistance to fascism.[[source/calder-foundation-mercury-fountain-1937-calder-foundation]] [[artist/vera-mukhina|Vera Mukhina]]'s realist sculpture [[artwork/worker-and-kolkhoz-woman|Worker and Kolkhoz Woman]] soared up from the Soviet pavilion,[[source/cioli-ricciardi-schiera-2019|p. 104]] a group of stainless steel 24.5 metres high.[[source/wikipedia-en-worker-and-kolkhoz-woman]] [[artist/josef-thorak|Josef Thorak]]'s *Comradeship* stood outside Speer's German pavilion.[[source/wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne]] [[person/marcello-piacentini|Marcello Piacentini]] designed the Italian pavilion, where [[artist/mario-sironi|Mario Sironi]]'s *Fascist Work* was installed.[[source/braun-2000|p. 183, fig. 128; p. 185, fig. 129]] Another source names Sironi's work there as the mosaic *Corporative Italy*.[[source/wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne]] [[artist/raoul-dufy|Raoul Dufy]]'s [[artwork/la-fee-electricite|La Fée Électricité]], 250 plywood panels covering 600 square metres, depicted the scientists and inventors of electricity in the Pavilion of Light and Electricity.[[source/guggenheim-museum-bilbao-the-spirit-of-electricity-guggenheim-museum-bilbao]]
 wikidata_id: Q1165755
 metadata:
   sources: [Wikidata Q1165755 (retrieved 2026-11-07)]
 relationships:
   - type: concerns
+    to: artwork/guernica
+    sources:
+      - source: museo-nacional-centro-guernica
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/la-fee-electricite
+    sources:
+      - source: guggenheim-museum-bilbao-the-spirit-of-electricity-guggenheim-museum-bilbao
+        accessed: 2026-11-24
+  - type: concerns
+    to: polity/nazi-germany
+    sources:
+      - source: golomstock-1990
+        locator: pp. 132–137
+        accessed: 2026-11-24
+  - type: concerns
+    to: polity/second-spanish-republic
+    sources:
+      - source: wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne
+        accessed: 2026-11-24
+      - source: museo-nacional-centro-the-endurance-of-the-pavilion-of-1937-repensar-guernica
+        accessed: 2026-11-24
+  - type: concerns
+    to: polity/soviet-union
+    sources:
+      - source: golomstock-1990
+        locator: pp. 132–137
+        accessed: 2026-11-24
+  - type: concerns
     to: artwork/thorak-the-family
   - type: concerns
     to: artwork/worker-and-kolkhoz-woman
+    sources:
+      - source: cioli-ricciardi-schiera-2019
+        locator: p. 104
+        accessed: 2026-11-24
+      - source: wikipedia-en-worker-and-kolkhoz-woman
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Paris-Expo-1937-carte_postale-00.jpg/1280px-Paris-Expo-1937-carte_postale-00.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Paris-Expo-1937-carte_postale-00.jpg
@@ -26,10 +68,15 @@ images:
 identifiers:
   gnd: 515523-X
 sources:
+  kind:
+    - source: wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne
   place:
     - accessed: 2026-11-07
       property: P276
       wikidata: Q1165755
+    - url: https://en.wikipedia.org/wiki/Exposition_Internationale_des_Arts_et_Techniques_dans_la_Vie_Moderne
+      source: wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne
+      accessed: 2026-11-24
   period:
     - accessed: 2026-11-07
       property: P585

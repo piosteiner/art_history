@@ -1,3 +1,14 @@
 public_id: 126947
 name: Galerie Cazeau-Béraudière
+kind: gallery
 wikidata_id: Q45329158
+metadata:
+  sources: [Wikidata Q45329158 (retrieved 2026-11-24)]
+identifiers:
+  lc: nr2004027119
+  viaf: "144590328"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q45329158

@@ -1,3 +1,28 @@
 public_id: 127519
 name: Ōsasahara Shrine
+place: yasu
+location: [136.06585, 35.07649]
+address: 滋賀県野洲市大篠原2375
 wikidata_id: Q11438451
+metadata:
+  sources: [Wikidata Q11438451 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Shiga_Oosasahara.jpg/1280px-Shiga_Oosasahara.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shiga_Oosasahara.jpg
+    license: Public domain
+    credit: Yusuke.ogawa at Japanese Wikipedia
+identifiers:
+  viaf: "256972742"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11438451
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11438451
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11438451

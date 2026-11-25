@@ -1,0 +1,25 @@
+public_id: 129497
+name: Vincent Claude Laurent-Richard
+given_name: Vincent Claude
+family_name: Laurent-Richard
+kind: person
+birth: 1811
+death: 1886
+wikidata_id: Q98854369
+metadata:
+  sources: [Wikidata Q98854369 (retrieved 2026-11-24)]
+identifiers:
+  gnd: "1247149579"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q98854369
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q98854369
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q98854369

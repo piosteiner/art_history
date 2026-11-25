@@ -33,6 +33,9 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q846393
+created: late 7th century
+created_span: uncertain
+institution: government-of-japan
 location: [135.805, 34.4512]
 wikidata_id: Q846393
 metadata:
@@ -45,6 +48,52 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Kitora_201611a.jpg
     license: CC BY-SA 4.0
     credit: 8-hachiro
+provenance:
+  - owner_label: unknown occupant, probably a member of Emperor Tenmu's or Empress Jitō's imperial family
+    acquired: late 7th century
+    method: creation
+    place: asuka
+    label: "round tomb with a painted stone chamber (Four Gods, zodiac figures, star chart); occupant unknown (proposed: Abe no Miushi, Prince Takechi and others)"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/401/3293
+        note: キトラ古墳は，奈良県明日香村の西南部，檜前の地に築造された，７世紀末頃の終末期古墳である。… キトラ古墳は，古墳の位置や石室の構造などから見て，天武・持統朝の皇族の墓であると推定され
+        source: kunishitei-401-3293
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E3%82%AD%E3%83%88%E3%83%A9%E5%8F%A4%E5%A2%B3&oldid=111440165
+        note: 遣唐使が日本に帰国（704年）する以前の7世紀末から8世紀初め頃に作られた古墳であると見られている。
+        source: wikipedia-ja-kitora-kofun
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1983
+    place: asuka
+    label: murals discovered by NHK's survey with a fibrescope through the robbers' hole; further camera surveys by Asuka village 1998
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/401/3293
+        note: 昭和５８年にＮＨＫにより，墳丘の電磁波探査とファイバースコープを用いた石槨の調査が実施され，壁画古墳であることが判明した。
+        source: kunishitei-401-3293
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E3%82%AD%E3%83%88%E3%83%A9%E5%8F%A4%E5%A2%B3&oldid=111440165
+        note: 1983年11月7日、石室内の彩色壁画に玄武が発見され
+        source: wikipedia-ja-kitora-kofun
+        accessed: 2026-11-24
+  - owner: institution/agency-for-cultural-affairs
+    role: custodian
+    acquired: 2004
+    place: asuka
+    label: murals detached from the chamber 2004–2010 because of mould and kept in the Agency's conservation facility in the Shijin no Yakata (opened 2016); chamber resealed 2013
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E3%82%AD%E3%83%88%E3%83%A9%E5%8F%A4%E5%A2%B3&oldid=111440165
+        note: 文化庁は2004年8月より、損傷の激しいものから順次剥ぎ取り作業を開始。… 2010年11月までに剥ぎ取り作業を完了 … 同館の1階は文化庁キトラ古墳壁画保存管理施設となっており
+        source: wikipedia-ja-kitora-kofun
+        accessed: 2026-11-24
+  - owner: institution/government-of-japan
+    label: the murals (National Treasure 2019) are owned by the State, under the Ministry of Education, Culture, Sports, Science and Technology
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011875
+        note: 名称 ： キトラ古墳壁画 … 国宝指定年月日 ： 2019.07.23(令和1.07.23) … 所有者名 ： 国（文部科学省所管）
+        source: kunishitei-201-00011875
+        accessed: 2026-11-24
 identifiers:
   viaf: "256304627"
 sources:

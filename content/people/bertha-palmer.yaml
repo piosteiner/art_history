@@ -2,4 +2,56 @@ public_id: 129203
 name: Bertha Palmer
 given_name: Bertha
 family_name: Palmer
+names:
+  - kind: birth
+    lang: en
+    role: former
+    text: Bertha Matilde Honoré
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q474672
+kind: person
+birth: 1849-05-22
+death: 1918-05-05
 wikidata_id: Q474672
+metadata:
+  sources: [Wikidata Q474672 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q474672
+  - type: participated_in
+    to: event/worlds-columbian-exposition
+    label: organiser
+    notes_md: Spearheaded the Woman's Building and the Cassatt commission
+    sources:
+      - url: https://www.wbez.org/arts/2026/10/29/painter-mary-cassatt-missing-mural-1893-worlds-fair-chicago-art-institute
+        source: wbez-org-painter-mary-cassatt-created-a-masterpiece-for-the-1893-worlds-fair-in
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e6/Bertha_Honore_Palmer.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bertha_Honore_Palmer.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 10682830g
+  gnd: "133973379"
+  lc: n97105937
+  ulan: "500323640"
+  viaf: "45507373"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q474672
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q474672
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q474672

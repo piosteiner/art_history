@@ -1,14 +1,64 @@
 public_id: 116220
-name: 1867 Paris World’s Fair
+name: Exposition Universelle of 1867
 names:
   - lang: fr
     role: original
     text: Exposition universelle de 1867
-kind: world’s fair
+kind: world's fair
 period: 1 April – 3 November 1867
 place: paris
-description_md: The second world’s fair in Paris, decreed by Napoleon III in 1864 and held on the Champ de Mars from 1 April to 3 November 1867.[[source/wikipedia-en-exposition-universelle-1867]] It was the first in which Japan formally took part:[[source/wikipedia-en-first-japanese-embassy-to-europe-1862]] the shogunate sent the [[event/tokugawa-akitake-mission|Tokugawa Akitake Mission]],[[source/wikipedia-en-tokugawa-akitake]] and for the first time Japan showed works of art in a national pavilion, many of them from the Satsuma and Saga domains. The fair brought many visitors into contact with Japanese art, and French artists took up the influence that grew into [[movement/japonisme|Japonisme]].[[source/wikipedia-en-exposition-universelle-1867]]
+location: [2.2979, 48.8561]
+description_md: |-
+  [[person/napoleon-iii|Napoleon III]] decreed the exposition in 1864 and held it to rival the London exhibitions; it is seen as the culmination of the [[polity/second-french-empire|Second Empire]], held during the renovation of Paris.[[source/wikipedia-en-exposition-universelle-1867]][[source/national-diet-library-second-paris-international-exposition-of-1867-part-1-expositions-hel]] Frédéric Le Play was commissioner general and directed the commission with [[person/prince-napoleon|Prince Napoléon]].[[source/wikipedia-fr-exposition-universelle-de-1867]] Its visitors included Tsar Alexander II and Wilhelm I of Prussia with Bismarck and Moltke,[[source/wikipedia-en-exposition-universelle-1867]][[source/wikipedia-fr-exposition-universelle-de-1867]] and Krupp's 50-tonne cast-steel breech-loading gun showed the rapid progress of steel artillery shortly before the Franco-Prussian War.[[source/wikipedia-en-exposition-universelle-1867]] Japan took part officially for the first time: the [[polity/tokugawa-shogunate|Tokugawa shogunate]] sent [[person/tokugawa-akitake|Tokugawa Akitake]], younger brother of the shogun Yoshinobu, while the Satsuma and Saga domains showed exhibits of their own.[[source/national-diet-library-eiichi-shibusawa-part-1-expositions-held-in-and-before-1900-expositi]][[source/national-diet-library-vienna-international-exposition-and-japonism-part-1-expositions-held]]
+
+  The main palace on the Champ de Mars was an oval of 490 by 380 metres with concentric galleries arranged by subject, built from 1865 under the engineer Jean-Baptiste Krantz with the architect Léopold Hardy; [[artist/gustave-eiffel|Gustave Eiffel]] was responsible for its gallery of machines.[[source/wikipedia-fr-exposition-universelle-de-1867]] Auguste Mariette designed an Egyptian exhibit of ancient monuments.[[source/wikipedia-en-exposition-universelle-1867]]
+
+  Fine art occupied the palace's first gallery, where [[artist/jean-baptiste-carpeaux|Jean-Baptiste Carpeaux]] showed his marble *Ugolino and His Sons*.[[source/wikipedia-fr-exposition-universelle-de-1867]][[source/wikipedia-en-ugolino-and-his-sons-carpeaux]] Left out of the official art programme, [[artist/edouard-manet|Édouard Manet]] built his own pavilion near the Alma, with a printed catalogue of his pictures,[[source/nasjonalmuseet-xc9-douard-manet-view-of-the-1867-exposition-universelle-x2013-nasjona]][[source/internet-archive-catalogue-des-tableaux-de-m-edouard-manet-exposes-avenue-de-lalma-en-1]][[source/wikipedia-en-edouard-manet]] and painted [[artwork/view-of-the-1867-exposition-universelle|View of the 1867 Exposition Universelle]] from the height near it, looking over the Champ de Mars.[[source/nasjonalmuseet-xc9-douard-manet-view-of-the-1867-exposition-universelle-x2013-nasjona]] [[artist/gustave-courbet|Gustave Courbet]] likewise held his own exhibition in a separate pavilion on the place de l'Alma, with little success.[[source/universalis-fr-courbet-et-son-public-reperes-chronologiques-encyclopedie-universalis]] Satsuma wares were by then among Japan's most identifiable craft exports at the expositions,[[source/history-of-japanese-art|pp. 351–353]] and the Japanese exhibits of the shogunate, Satsuma and Saga triggered the popularity of [[movement/japonisme|Japonisme]].[[source/national-diet-library-second-paris-international-exposition-of-1867-part-1-expositions-hel]][[source/national-diet-library-vienna-international-exposition-and-japonism-part-1-expositions-held]]
+
+  The second world’s fair in Paris, decreed by Napoleon III in 1864 and held on the Champ de Mars from 1 April to 3 November 1867.[[source/wikipedia-en-exposition-universelle-1867]] It was the first in which Japan formally took part:[[source/wikipedia-en-first-japanese-embassy-to-europe-1862]] the shogunate sent the [[event/tokugawa-akitake-mission|Tokugawa Akitake Mission]],[[source/wikipedia-en-tokugawa-akitake]] and for the first time Japan showed works of art in a national pavilion, many of them from the Satsuma and Saga domains. The fair brought many visitors into contact with Japanese art, and French artists took up the influence that grew into [[movement/japonisme|Japonisme]].[[source/wikipedia-en-exposition-universelle-1867]]
 wikidata_id: Q1345539
 relationships:
   - type: concerns
     to: movement/japonisme
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 351–353
+        accessed: 2026-11-24
+      - source: national-diet-library-second-paris-international-exposition-of-1867-part-1-expositions-hel
+        accessed: 2026-11-24
+      - source: wikipedia-en-first-japanese-embassy-to-europe-1862
+        accessed: 2026-11-24
+      - source: wikipedia-en-tokugawa-akitake
+        accessed: 2026-11-24
+  - type: concerns
+    to: polity/second-french-empire
+    sources:
+      - source: wikipedia-en-exposition-universelle-1867
+        accessed: 2026-11-24
+      - source: national-diet-library-second-paris-international-exposition-of-1867-part-1-expositions-hel
+        accessed: 2026-11-24
+  - type: concerns
+    to: polity/tokugawa-shogunate
+    sources:
+      - source: national-diet-library-eiichi-shibusawa-part-1-expositions-held-in-and-before-1900-expositi
+        accessed: 2026-11-24
+      - source: national-diet-library-vienna-international-exposition-and-japonism-part-1-expositions-held
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/view-of-the-1867-exposition-universelle
+    sources:
+      - source: nasjonalmuseet-xc9-douard-manet-view-of-the-1867-exposition-universelle-x2013-nasjona
+        accessed: 2026-11-24
+      - source: internet-archive-catalogue-des-tableaux-de-m-edouard-manet-exposes-avenue-de-lalma-en-1
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: wikipedia-en-exposition-universelle-1867
+  place:
+    - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1867)
+      source: wikipedia-en-exposition-universelle-1867
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1345539

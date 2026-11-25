@@ -24,6 +24,130 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Anthonis_Mor_-_Portrait_of_a_Seated_Woman_-_1941.29_-_Art_Institute_of_Chicago.jpg
     license: Public domain
     credit: Antonis Mor
+provenance:
+  - owner: person/richard-worsley
+    acquired: 1804 or earlier
+    ended: 1805
+    label: Sir Richard Worsley, Bart., Appuldurcombe, Isle of Wight; as pendant to a Portrait of a Seated Man (Worsley 1804)
+    sources:
+      - url: https://www.artic.edu/artworks/40599
+        note: Sir Richard Worsley, Bart. (d. 1805), Appuldurcombe, Isle of Wight, by 1804, as pendant to a Portrait of a Seated Man [Worsley 1804];
+        source: aic-1941-29
+        accessed: 2026-11-24
+  - owner: person/henrietta-anna-maria-charlotte-bridgeman
+    co_owners: [person/charles-anderson-pelham-1st-earl-of-yarborough]
+    acquired: 1805
+    method: inheritance
+    direct: true
+    place: london
+    label: by descent to Worsley's niece, who in 1806 married Charles, 2nd Baron Yarborough (created Earl of Yarborough 1837); Brocklesby Park, Lincolnshire, and London (Waagen 1854 and 1857)
+    sources:
+      - url: https://www.artic.edu/artworks/40599
+        note: by descent to his niece Henrietta Anna Maria Charlotte Bridgeman, who in 1806 married Charles, 2nd Baron Yarborough (1781–1846; created Earl of Yarborough 1837), Brocklesby Park, Lincolnshire, and London [Waagen 1854 and 1857;
+        source: aic-1941-29
+        accessed: 2026-11-24
+  - owner: person/charles-anderson-pelham-4th-earl-of-yarborough
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/40599
+        note: by descent to Charles, 4th Earl of Yarborough.
+        source: aic-1941-29
+        accessed: 2026-11-24
+  - owner: person/robert-langton-douglas
+    place: london
+    label: according to undated notes by Katherine Moore, Knoedler
+    sources:
+      - url: https://www.artic.edu/artworks/40599
+        note: Robert Langton Douglas, London [according to undated notes, Katherine Moore, Knoedler, to Barry Hannegan, North Carolina Museum of Art, copy in curatorial file].
+        source: aic-1941-29
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1916-10
+    place: new-york-city
+    label: Knoedler stock no. 13970
+    sources:
+      - url: https://www.artic.edu/artworks/40599
+        note: Knoedler, New York, Oct. 1916 [notes cited above [according to notes cited above, this transaction had Knoedler stock number 13970
+        source: aic-1941-29
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1918-07
+    ended: 1918-12
+    direct: true
+    place: pittsburgh
+    sources:
+      - url: https://www.artic.edu/artworks/40599
+        note: Andrew W. Mellon, Pittsburgh, July–Dec. 1918;
+        source: aic-1941-29
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1918
+    direct: true
+    place: new-york-city
+    label: Knoedler stock no. 14555
+    sources:
+      - url: https://www.artic.edu/artworks/40599
+        note: Knoedler, New York, 1918 [notes cited above; this transaction had Knoedler stock number 14555];
+        source: aic-1941-29
+        accessed: 2026-11-24
+  - owner: person/j-horace-harding
+    acquired: 1925
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: lent this portrait and its pendant to London 1927
+    sources:
+      - url: https://www.artic.edu/artworks/40599
+        note: sold to J. Horace Harding (d. 1929), New York, 1925 [Harding lent this portrait and its pendant to London 1927];
+        source: aic-1941-29
+        accessed: 2026-11-24
+  - owner_label: Estate of Mrs. J. Horace Harding
+    role: estate
+    direct: true
+    label: lent through Saint James O'Toole Galleries, New York, to the 1940–41 exhibition
+    sources:
+      - url: https://www.artic.edu/artworks/40599
+        note: estate of Mrs. J. Horace Harding [With Knoedler from September to December 1937 (no. CA1151), and lent through Saint James O’Toole Galleries, New York, to the 1940–41 exhibition];
+        source: aic-1941-29
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: agent
+    acquired: 1937-09
+    ended: 1937-12
+    direct: true
+    place: new-york-city
+    label: with Knoedler for the Harding estate (no. CA1151)
+    sources:
+      - url: https://www.artic.edu/artworks/40599
+        note: With Knoedler from September to December 1937 (no. CA1151)
+        source: aic-1941-29
+        accessed: 2026-11-24
+  - owner: institution/parke-bernet
+    role: agent
+    acquired: 1941-03-01
+    method: auction
+    direct: true
+    place: new-york-city
+    label: sale, Parke-Bernet Galleries, New York, 1 March 1941, no. 57
+    sources:
+      - url: https://www.artic.edu/artworks/40599
+        note: sold, Parke-Bernet Galleries, New York, Mar. 1, 1941, no. 57, to Knoedler as agent for the Art Institute.
+        source: aic-1941-29
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1941-03-01
+    method: auction
+    direct: true
+    place: chicago
+    label: bought at the Parke-Bernet sale through Knoedler as agent
+    sources:
+      - url: https://www.artic.edu/artworks/40599
+        note: to Knoedler as agent for the Art Institute.
+        source: aic-1941-29
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

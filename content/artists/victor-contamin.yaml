@@ -1,0 +1,27 @@
+public_id: 130194
+name: Victor Contamin
+given_name: Victor
+family_name: Contamin
+birth: 1840-06-11
+death: 1893-06-23
+wikidata_id: Q2522270
+metadata:
+  sources: [Wikidata Q2522270 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/exposition-universelle-of-1889
+    label: architect
+    notes_md: Engineer of the Galerie des Machines
+    sources:
+      - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1889)
+        source: wikipedia-en-exposition-universelle-1889
+        accessed: 2026-11-24
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2522270
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q2522270

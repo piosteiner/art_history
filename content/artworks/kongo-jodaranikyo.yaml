@@ -20,6 +20,7 @@ names:
 created: 686
 materials: [hemp paper]
 dimensions: [46, 26.1]
+institution: agency-for-cultural-affairs
 wikidata_id: Q3198667
 metadata:
   sources: [Wikidata Q3198667 (retrieved 2026-11-24)]
@@ -28,6 +29,55 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Kongo-badarani_2.jpg
     license: Public domain
     credit: Hachiro Onoue
+provenance:
+  - owner_label: Lay Buddhist confraternity (chishiki) of Shiki district, Kawachi province
+    acquired: 686
+    method: commission
+    place: yao
+    label: copied in the 5th month of the hinoe-inu year (686) for the confraternity of Shiki district, Kawachi, for their ancestors and all beings; teaching monk Hōrin
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=金剛場陀羅尼経&oldid=109342532
+        note: 歳次丙戌年五月、川内国志貴評内知識、為七世父母及一切衆生、敬造金剛場陀羅経一部、藉此善因往生浄土終成正覚。教化僧宝林。… 本経の書写年次は大宝令以前の686年（朱鳥元年）とするのが定説である
+        source: jawiki-kongo-jodaranikyo
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/582
+        note: 奥書歳次丙戌年五月川内国志貴評内知識云々 … 年代 ： 686
+        source: kunishitei-201-582
+        accessed: 2026-11-24
+  - owner: institution/horyu-ji
+    place: ikaruga
+    label: thought to have been kept at Hōryū-ji, as it bears the black seal 'Hōryū-ji issaikyō'
+    certainty: probable
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=金剛場陀羅尼経&oldid=109342532
+        note: 「法隆寺一切経」の黒印があることから法隆寺に伝来していたと考えられるが
+        source: jawiki-kongo-jodaranikyo
+        accessed: 2026-11-24
+  - owner_label: Private collection, Kyoto
+    label: left the temple and came into private hands; known as the 'Ogawa copy' (Ogawa-bon)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=金剛場陀羅尼経&oldid=109342532
+        note: 巷間に流出して個人蔵となっていた。2005年に文化庁が京都市の個人から5億4000万円で購入した
+        source: jawiki-kongo-jodaranikyo
+        accessed: 2026-11-24
+  - owner: institution/agency-for-cultural-affairs
+    acquired: 2005
+    method: purchase
+    direct: true
+    place: kyoto
+    label: bought by the Agency for Cultural Affairs from a private owner in Kyoto; state property; National Treasure 1951
+    price:
+      amount: 540000000
+      currency: JPY
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=金剛場陀羅尼経&oldid=109342532
+        note: 2005年に文化庁が京都市の個人から5億4000万円で購入した
+        source: jawiki-kongo-jodaranikyo
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/582
+        note: 所有者名 ： 国（文化庁） … 国宝指定年月日 ： 1951.06.09
+        source: kunishitei-201-582
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

@@ -1,0 +1,41 @@
+public_id: 130079
+name: Yao
+names:
+  - lang: ja
+    role: original
+    text: 八尾市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q490872
+  - lang: ko
+    role: translation
+    text: 야오시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q490872
+  - lang: ru
+    role: translation
+    text: Яо
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q490872
+kind: settlement
+parent: osaka-prefecture
+country_code: JP
+location: [135.60083, 34.62692]
+wikidata_id: Q490872
+metadata:
+  sources: [Wikidata Q490872 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q490872
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q490872
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q490872

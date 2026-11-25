@@ -8,6 +8,13 @@ death: 1278-08-20
 wikidata_id: Q357988
 metadata:
   sources: [Wikidata Q357988 (retrieved 2026-11-24)]
+relationships:
+  - type: founded
+    to: institution/kencho-ji-temple
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q1396078
 sources:
   kind:
     - accessed: 2026-11-24

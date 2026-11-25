@@ -1,3 +1,31 @@
 public_id: 127919
 name: Tsukubusuma Shrine
+place: nagahama
+location: [136.14419, 35.42062]
+address: 滋賀県長浜市早崎町1665
+website_url: https://www.chikubusima.or.jp/
 wikidata_id: Q11643470
+metadata:
+  sources: [Wikidata Q11643470 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Tsukubusuma_Shrine.jpg/1280px-Tsukubusuma_Shrine.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tsukubusuma_Shrine.jpg
+    license: CC BY-SA 4.0
+    credit: HAL-Guandu
+identifiers:
+  gnd: 7693416-0
+  lc: no2014034499
+  viaf: "251277929"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11643470
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11643470
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11643470

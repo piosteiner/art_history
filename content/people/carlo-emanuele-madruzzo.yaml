@@ -2,4 +2,39 @@ public_id: 127555
 name: Carlo Emanuele Madruzzo
 given_name: Carlo Emanuele
 family_name: Madruzzo
+kind: person
+birth: 1599-11-07
+death: 1658-12-15
 wikidata_id: Q3659304
+metadata:
+  sources: [Wikidata Q3659304 (retrieved 2026-11-24)]
+relationships:
+  - type: died_in
+    to: place/trento-2
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q3659304
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b3/Madruzzo_Carl_Emanuele.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Madruzzo_Carl_Emanuele.jpg
+    license: Public domain
+    credit: zeitgenössischer Maler
+identifiers:
+  bnf: "162655752"
+  gnd: "137896743"
+  lc: n87941749
+  viaf: "86065730"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3659304
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q3659304
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q3659304

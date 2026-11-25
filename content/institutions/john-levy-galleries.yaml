@@ -1,3 +1,13 @@
 public_id: 127670
 name: John Levy Galleries
+kind: gallery
 wikidata_id: Q76515973
+metadata:
+  sources: [Wikidata Q76515973 (retrieved 2026-11-24)]
+identifiers:
+  ulan: "500434179"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q76515973

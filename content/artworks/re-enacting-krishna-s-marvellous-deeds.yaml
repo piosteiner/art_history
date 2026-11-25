@@ -14,6 +14,7 @@ dimensions: [27.5, 35.5]
 institution: museum-rietberg
 inventory_number: REF 38
 web_url: https://rietberg.ch/sammlungen/ref-38
+on_loan: true
 wikidata_id: Q141854605
 metadata:
   sources: [Wikidata Q141854605 (retrieved 2026-11-24)]
@@ -22,6 +23,65 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Re-Enacting_Krishna%27s_marvellous_Deeds,_Folio_from_the_Bhagavata_Purana_series.jpg
     license: Public domain
     credit: Ascribed to a Master of the first generation after Nainsukh
+provenance:
+  - owner_label: Meister der ersten Generation nach Manaku und Nainsukh von Guler
+    acquired: 1780/1785
+    method: creation
+    label: painted by a master of the first generation after Manaku and Nainsukh of Guler (Pahari), c. 1780–1785, in Guler, India
+    sources:
+      - url: https://rietberg.ch/sammlungen/ref-38
+        note: "um 1780–1785: Meister der ersten Generation nach Manaku und Nainsukh von Guler in Indien"
+        source: rietberg-ref-38
+        accessed: 2026-11-24
+  - owner: institution/spink-son
+    role: agent
+    acquired_label: vor 05.04.1982
+    ended: 1982-04-23
+    place: london
+    label: on consignment (Spink and Son Ltd), until 23 April 1982
+    sources:
+      - url: https://rietberg.ch/sammlungen/ref-38
+        note: "vor 05.04.1982–23.04.1982: Spink and Son Ltd, London, in Kommission erhalten in London"
+        source: rietberg-ref-38
+        accessed: 2026-11-24
+  - owner: person/wendy-findlay
+    acquired: before 1990
+    label: circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/ref-38
+        note: "vor 1990: Wendy Findlay, Erwerbsumstände unbekannt"
+        source: rietberg-ref-38
+        accessed: 2026-11-24
+  - owner: institution/francesca-galloway-indian-islamic-art
+    role: agent
+    acquired: before 1990
+    label: on consignment
+    sources:
+      - url: https://rietberg.ch/sammlungen/ref-38
+        note: "vor 1990: Francesca Galloway Indian & Islamic Art (1992), in Kommission erhalten"
+        source: rietberg-ref-38
+        accessed: 2026-11-24
+  - owner: person/eberhard-fischer
+    co_owners: [person/barbara-fischer]
+    acquired: 1990
+    method: purchase
+    place: london
+    label: bought in London
+    sources:
+      - url: https://rietberg.ch/sammlungen/ref-38
+        note: "1990: Eberhard und Barbara Fischer, angekauft in London"
+        source: rietberg-ref-38
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    role: custodian
+    acquired: 1990
+    place: zurich
+    label: "permanent loan from Eberhard and Barbara Fischer (credit line: Dauerleihgabe)"
+    sources:
+      - url: https://rietberg.ch/sammlungen/ref-38
+        note: "1990: Museum Rietberg, als Leihgabe erhalten"
+        source: rietberg-ref-38
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

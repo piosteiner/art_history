@@ -1,0 +1,83 @@
+public_id: 129435
+name: Yamagata Prefecture
+names:
+  - lang: ja
+    role: original
+    text: 山形県
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q125863
+  - lang: zh
+    role: translation
+    text: 山形县
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q125863
+  - lang: ko
+    role: translation
+    text: 야마가타현
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q125863
+  - lang: fr
+    role: translation
+    text: Préfecture de Yamagata
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q125863
+  - lang: de
+    role: translation
+    text: Präfektur Yamagata
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q125863
+  - lang: it
+    role: translation
+    text: Prefettura di Yamagata
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q125863
+  - lang: nl
+    role: translation
+    text: Prefectuur Yamagata
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q125863
+  - lang: es
+    role: translation
+    text: Prefectura de Yamagata
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q125863
+  - lang: ru
+    role: translation
+    text: Ямагата
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q125863
+  - lang: pt
+    role: translation
+    text: Prefeitura de Yamagata
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q125863
+kind: settlement
+parent: japan
+country_code: JP
+location: [140.36356, 38.24044]
+wikidata_id: Q125863
+metadata:
+  sources: [Wikidata Q125863 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q125863
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q125863
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q125863

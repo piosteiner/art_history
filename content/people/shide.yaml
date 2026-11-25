@@ -4,6 +4,20 @@ kind: person
 wikidata_id: Q752964
 metadata:
   sources: [Wikidata Q752964 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/tang-dynasty
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q752964
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/de/ShiDe_by_Yan_Hui.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ShiDe_by_Yan_Hui.jpg
+    license: Public domain
+    credit: Yan Hui（late 13th-century Chinese painter）
+identifiers:
+  viaf: "305217727"
 sources:
   kind:
     - accessed: 2026-11-24

@@ -1,3 +1,29 @@
 public_id: 127924
 name: Namura Shrine
+place: ryuo
+location: [136.12792, 35.06486]
+address: 滋賀県蒲生郡竜王町大字綾戸467
+website_url: https://namurajinjya.ryuoh.org/
 wikidata_id: Q11616123
+metadata:
+  sources: [Wikidata Q11616123 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Shiga_Namura1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shiga_Namura1.jpg
+    license: Public domain
+    credit: Yusuke.ogawa at Japanese Wikipedia
+identifiers:
+  viaf: "256609383"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11616123
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11616123
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11616123

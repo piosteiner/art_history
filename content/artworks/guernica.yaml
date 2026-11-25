@@ -1,0 +1,71 @@
+public_id: 130215
+title_lang: en
+title: Guernica
+names:
+  - lang: ja
+    role: translation
+    text: ゲルニカ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q175036
+  - lang: zh
+    role: translation
+    text: 格尔尼卡
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q175036
+  - lang: ko
+    role: translation
+    text: 게르니카
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q175036
+  - lang: ru
+    role: translation
+    text: Герника
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q175036
+creator: pablo-picasso
+created: 1937
+materials: [oil paint, canvas]
+dimensions: [349, 776]
+institution: museo-nacional-centro-de-arte-reina-sofia
+inventory_number: DE00050
+web_url: http://www.museoreinasofia.es/en/collection/artwork/guernica
+wikidata_id: Q175036
+metadata:
+  sources: [Wikidata Q175036 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Mural_del_%22Guernica%22_de_Picasso.jpg/1280px-Mural_del_%22Guernica%22_de_Picasso.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mural_del_%22Guernica%22_de_Picasso.jpg
+    license: CC BY-SA 4.0
+    credit: Jules Verne Times Two
+identifiers:
+  gnd: 4103358-9
+  viaf: "184003393"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q175036
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q175036
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q175036
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q175036
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q175036
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q175036

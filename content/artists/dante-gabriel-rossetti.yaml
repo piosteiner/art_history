@@ -79,6 +79,14 @@ relationships:
       - accessed: 2026-11-10
         property: P112
         wikidata: Q184814
+  - type: participated_in
+    to: event/international-exhibition-of-1862
+    label: exhibited
+    notes_md: Panels 'Music' and 'Gardening' on King René's Honeymoon Cabinet.
+    sources:
+      - url: https://collections.vam.ac.uk/item/O78937/king-ren%C3%A9s-honeymoon-cabinet-cabinet-seddon-john-pollard/king-ren%C3%A9s-honeymoon-cabinet-cabinet-seddon-john-pollard
+        source: victoria-and-albert-king-renes-honeymoon-cabinet-prinsep-val-burne-jones-edward-coley-sir
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/-Dante_Gabriel_Rossetti-_MET_DP-386-287_%28cropped%29.jpg/1280px--Dante_Gabriel_Rossetti-_MET_DP-386-287_%28cropped%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:-Dante_Gabriel_Rossetti-_MET_DP-386-287_(cropped).jpg

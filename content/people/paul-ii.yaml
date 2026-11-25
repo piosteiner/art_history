@@ -1,3 +1,60 @@
 public_id: 123651
 name: Paul II
+names:
+  - kind: birth
+    lang: it
+    role: former
+    text: Pietro Barbo
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q102605
+kind: person
+birth: 1417-03-04
+death: 1471-08-04
 wikidata_id: Q102605
+metadata:
+  sources: [Wikidata Q102605 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q102605
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q102605
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q102605
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/37/Portrait_of_Paolo_II.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Paolo_II.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12146375m
+  gnd: 11923212X
+  idref: "029946034"
+  lc: n82080187
+  ulan: "500257568"
+  viaf: "316406291"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q102605
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q102605
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q102605

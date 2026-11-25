@@ -1,0 +1,47 @@
+public_id: 130182
+name: Shōnai
+names:
+  - lang: ja
+    role: original
+    text: 庄内町
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1348827
+  - lang: zh
+    role: translation
+    text: 庄內町
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1348827
+  - lang: ko
+    role: translation
+    text: 쇼나이마치
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1348827
+  - lang: ru
+    role: translation
+    text: Сёнай
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1348827
+kind: settlement
+parent: japan
+country_code: JP
+location: [139.90472, 38.84989]
+wikidata_id: Q1348827
+metadata:
+  sources: [Wikidata Q1348827 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1348827
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1348827
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1348827

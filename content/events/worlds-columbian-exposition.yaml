@@ -1,0 +1,55 @@
+public_id: 130562
+name: World's Columbian Exposition
+names:
+  - lang: en
+    role: original
+    text: World's Columbian Exposition
+kind: world's fair
+period: 1 May – 30 October 1893
+place: chicago
+location: [-87.58, 41.79]
+description_md: |-
+  The fair commemorated the 400th anniversary of Columbus's arrival in the New World,[[source/national-diet-library-chicago-international-exposition-of-1893-part-1-expositions-held-in]] and President Grover Cleveland gave the opening-day address on 1 May 1893.[[source/the-american-presidency-grover-cleveland-second-term-event-timeline-the-american-presidenc]] The ethnological "villages" of the Midway Plaisance were inspired by those of the 1889 Paris exposition, and historians argue that people of colour were largely confined to the Midway while the White City reflected "white male power".[[source/wikipedia-en-worlds-columbian-exposition]] Ida B. Wells published a pamphlet with Frederick Douglass, Irvine Garland Penn and Ferdinand Lee Barnett protesting against the exclusion of African Americans from the fair and urging a boycott of its "Colored People's Day"; Haiti named Douglass its delegate.[[source/duke-university-libraries-the-reason-why-the-colored-american-is-not-in-the-worlds-columbi]][[source/wikipedia-en-worlds-columbian-exposition]] Korea began to take part in international exhibitions at Chicago, and its participants were amazed at the quality and variety of other countries' products.[[source/portal-2000|p. 169]]
+
+  The main buildings of the "White City" in Jackson Park were built in a unified neo-classical style under Daniel Burnham as Director of Works, with grounds by Frederick Law Olmsted; Louis Sullivan's Transportation Building was the exception.[[source/national-diet-library-chicago-international-exposition-of-1893-part-1-expositions-held-in]][[source/wikipedia-en-worlds-columbian-exposition]] [[artist/daniel-chester-french|Daniel Chester French]]'s [[artwork/statue-of-the-republic|Statue of the Republic]], about 65 feet high and of temporary materials, was the symbol of the fair.[[source/wikipedia-en-statue-of-the-republic]] [[polity/empire-of-japan|Japan]] sent the [[artwork/ho-o-den|Ho-o-den]], modelled by Masamichi Kuru on the Phoenix Hall of the Byōdō-in, as a gift to the city.[[source/national-diet-library-ho-o-den-phoenix-palace-part-1-expositions-held-in-and-before-1900-e]][[source/chicago-history-museum-sakura-and-shinto-in-chicago-chicago-history-museum]]
+
+  The Palace of Fine Arts by Charles B. Atwood, built on a permanent brick substructure, showed paintings, prints, drawings, sculpture and metalwork from around the world; it survives as the Museum of Science and Industry.[[source/wikipedia-en-museum-of-science-and-industry-chicago]][[source/wikipedia-en-worlds-columbian-exposition]] The Ho-o-den presented Japanese art of the Heian, Muromachi and Edo periods, with interiors by the Tokyo Fine Arts School and objects chosen by the Imperial Museum.[[source/national-diet-library-ho-o-den-phoenix-palace-part-1-expositions-held-in-and-before-1900-e]] The Woman's Building, spearheaded by [[person/bertha-palmer|Bertha Palmer]],[[source/wbez-org-painter-mary-cassatt-created-a-masterpiece-for-the-1893-worlds-fair-in]] was designed by Sophia Hayden and decorated entirely by women; it carried [[artist/mary-cassatt|Mary Cassatt]]'s mural *Modern Woman* and Mary MacMonnies's *Primitive Woman*.[[source/wikipedia-en-the-womans-building-chicago]] Cassatt's mural was lost after the fair.[[source/wikipedia-en-the-womans-building-chicago]][[source/wbez-org-painter-mary-cassatt-created-a-masterpiece-for-the-1893-worlds-fair-in]] After the fair the Penn Museum bought 57 Korean objects "from Korean Commissioner".[[source/penn-museum-purchased-from-korean-commissioner-worlds-columbian-exposition-1893-cr]]
+wikidata_id: Q285406
+relationships:
+  - type: concerns
+    to: polity/empire-of-japan
+    sources:
+      - source: national-diet-library-ho-o-den-phoenix-palace-part-1-expositions-held-in-and-before-1900-e
+        accessed: 2026-11-24
+      - source: chicago-history-museum-sakura-and-shinto-in-chicago-chicago-history-museum
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/ho-o-den
+    sources:
+      - source: national-diet-library-ho-o-den-phoenix-palace-part-1-expositions-held-in-and-before-1900-e
+        accessed: 2026-11-24
+      - source: chicago-history-museum-sakura-and-shinto-in-chicago-chicago-history-museum
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/statue-of-the-republic
+    sources:
+      - source: wikipedia-en-statue-of-the-republic
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: wikipedia-en-worlds-columbian-exposition
+  place:
+    - url: https://en.wikipedia.org/wiki/World%27s_Columbian_Exposition
+      source: wikipedia-en-worlds-columbian-exposition
+      accessed: 2026-11-24
+  period:
+    - url: https://en.wikipedia.org/wiki/World%27s_Columbian_Exposition
+      source: wikipedia-en-worlds-columbian-exposition
+      accessed: 2026-11-24
+    - url: https://ndl.go.jp/exposition/e/s1/1893.html
+      source: national-diet-library-chicago-international-exposition-of-1893-part-1-expositions-held-in
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q285406

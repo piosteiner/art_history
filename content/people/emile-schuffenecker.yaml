@@ -27,6 +27,14 @@ relationships:
       - accessed: 2026-10-30
         property: P737
         wikidata: Q286456
+  - type: participated_in
+    to: event/exposition-universelle-of-1889
+    label: exhibited
+    notes_md: 20 works at the Volpini exhibition; found the venue
+    sources:
+      - url: https://en.wikipedia.org/wiki/The_Volpini_Exhibition,_1889
+        source: wikipedia-en-the-volpini-exhibition-1889
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/9e/Schuffenecker_self_portrait.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Schuffenecker_self_portrait.jpg

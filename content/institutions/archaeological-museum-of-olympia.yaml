@@ -2,15 +2,38 @@ public_id: 123120
 name: Archaeological Museum of Olympia
 kind: museum
 founded: 1882
+place: ancient-olympia-municipality
+location: [21.62939, 37.64342]
+website_url: http://odysseus.culture.gr/h/1/eh151.jsp?obj_id=7126
 wikidata_id: Q637038
 metadata:
   sources: [Wikidata Q637038 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Archaeological_Museum_of_Olympia_by_Joy_of_Museums.jpg/1280px-Archaeological_Museum_of_Olympia_by_Joy_of_Museums.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Archaeological_Museum_of_Olympia_by_Joy_of_Museums.jpg
+    license: CC BY-SA 4.0
+    credit: Joyofmuseums
+identifiers:
+  bnf: 14537781n
+  gnd: 16005111-3
+  idref: "136254446"
+  lc: n2009024079
+  ulan: "500304136"
+  viaf: "129238286"
 sources:
   kind:
     - accessed: 2026-11-23
       property: P31
       wikidata: Q637038
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q637038
   founded:
     - accessed: 2026-11-23
       property: P571
+      wikidata: Q637038
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q637038

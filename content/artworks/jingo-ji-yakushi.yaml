@@ -1,5 +1,10 @@
 public_id: 107194
 title: Standing Yakushi, Jingoji
+names:
+  - lang: ja
+    role: translation
+    text: 薬師如来立像
+  - Statue of Yakushi Nyorai
 attribution_label: Anonymous
 created: c. 793
 created_span: uncertain
@@ -9,12 +14,54 @@ materials: [hinoki wood]
 dimensions: [170.3]
 institution: jingo-ji
 description_md: Probably the main image of Jinganji, the temple vowed by [[person/wake-no-kiyomaro]] and completed by 793, moved to Jingoji on Mount Takao in 824, where [[person/kukai]] held the first Shingon initiation ([[kanjo]]) in Japan in 812, for [[person/saicho]] among others. The healing Buddha is life-size and heavy-set, the drapery cut in deep folds; he holds a medicine jar in his left hand and makes the fear-not gesture with his right. The left shoulder is slightly higher, so that he seems to turn, and his heavy features give him a brooding, strange presence. Carved from a single block of [[hinoki-wood]] ([[ichiboku-zukuri]]) without hollowing, so that cracks have formed; traces of paint remain on lips, eyes and curls. An austere statement of religious renewal in the tradition of Indian and Chinese plain-wood sculpture. [[source/history-of-japanese-art|p. 133, fig. 160]]
+wikidata_id: Q107046793
+metadata:
+  sources: [Wikidata Q107046793 (retrieved 2026-11-24)]
 relationships:
   - type: associated_with
     to: movement/early-heian-period
     sources:
       - source: history-of-japanese-art
         locator: p. 133, fig. 160
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6d/Yakushi_Nyorai_Jingoji2.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Yakushi_Nyorai_Jingoji2.JPG
+    license: Public domain
+    credit: "Annoted Photographer: Manshichi Sakamoto"
+provenance:
+  - owner_label: Jingan-ji (temple of Wake no Kiyomaro)
+    acquired: c. 793
+    method: creation
+    label: single-block hinoki statue, thought to be the main icon of Jingan-ji, the temple pledged by Wake no Kiyomaro and completed by 793; another theory places it at Takaosan-ji
+    certainty: probable
+    sources:
+      - note: A standing Yakushi image in Jingoji is thought to be the main icon of Kiyomaro's previous Jinganji, probably completed by 793 and subsequently moved to the later structure of Jingoji (Fig. 160).
+        source: history-of-japanese-art
+        locator: p. 132
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/w/index.php?oldid=1381365073
+        note: A newer theory by historians Nakano Tadaaki and Nagaoka Ryūsaku uses the timeline of the publication of the Kōnin shizaichō … which points to Takaosan-ji as the origin of the statue.
+        source: enwiki-1381365073
+        accessed: 2026-11-24
+  - owner: institution/jingo-ji
+    acquired: 824
+    method: transfer
+    direct: true
+    place: kyoto
+    label: Jingan-ji moved to Mount Takao and merged with Takaosan-ji as Jingo-ji; the Yakushi became its main image; in the Kondō rebuilt in 1935 (earlier in the Bishamon-dō); shown in Tokyo in 2024, its first time out of the temple
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/164
+        note: 所在都道府県 ： 京都府 … 所有者名 ： 神護寺
+        source: kunishitei-201-164
+        accessed: 2026-11-24
+      - note: The temple he built, Jinganji, was completed by 793, but in 824 it was moved to the slopes of Mount Takao and renamed Jingoji.
+        source: history-of-japanese-art
+        locator: p. 132
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111415509
+        note: 寺号を「神護国祚真言寺（じんごこくそしんごんじ）」として神護寺が成立している。… 神願寺の本尊である薬師如来立像（国宝）もこの地に移されて当寺の本尊となっている
+        source: jawiki-111415509
+        accessed: 2026-11-24
 sources:
   kind:
     - source: history-of-japanese-art
@@ -28,6 +75,9 @@ sources:
   materials:
     - source: history-of-japanese-art
       locator: p. 133, fig. 160
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q107046793
   dimensions:
     - source: history-of-japanese-art
       locator: p. 133, fig. 160

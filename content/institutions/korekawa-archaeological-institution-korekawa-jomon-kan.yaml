@@ -1,11 +1,34 @@
 public_id: 124311
 name: Korekawa Archaeological Institution (Korekawa Jōmon Kan)
 kind: museum
+place: hachinohe
+location: [141.48836, 40.47556]
+address: 青森県八戸市大字是川字横山1
+website_url: https://www.korekawa-jomon.jp/english-toppage/
 wikidata_id: Q11391172
 metadata:
   sources: [Wikidata Q11391172 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Korekawajomonkan.jpg/1280px-Korekawajomonkan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Korekawajomonkan.jpg
+    license: CC BY-SA 3.0
+    credit: Wakkubox
+identifiers:
+  viaf: "251397910"
 sources:
   kind:
     - accessed: 2026-11-24
       property: P31
+      wikidata: Q11391172
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11391172
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11391172
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q11391172

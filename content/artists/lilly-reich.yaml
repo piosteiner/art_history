@@ -1,0 +1,65 @@
+public_id: 130239
+name: Lilly Reich
+given_name: Lilly
+family_name: Reich
+names:
+  - lang: ja
+    role: translation
+    text: リリー・ライヒ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q64648
+  - lang: zh
+    role: translation
+    text: 莉莉·赖希
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q64648
+  - lang: ko
+    role: translation
+    text: 릴리 라이히
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q64648
+  - lang: ru
+    role: translation
+    text: Лили Райх
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q64648
+birth: 1885-06-16
+death: 1947-12-14
+wikidata_id: Q64648
+metadata:
+  sources: [Wikidata Q64648 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/barcelona-international-exposition
+    label: architect
+    notes_md: Co-designer of the German Pavilion and Barcelona chair
+    sources:
+      - url: https://miesbcn.com/the-pavilion/
+        source: fundacio-mies-van-the-pavilion-fundacio-mies-van-der-rohe
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f2/Lillyreich04.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lillyreich04.jpg
+    license: CC BY-SA 3.0
+    credit: design TOP 100
+identifiers:
+  bnf: 15862012z
+  gnd: "118837818"
+  idref: "130443999"
+  lc: n88167231
+  rkd: "254195"
+  ulan: "500248275"
+  viaf: "42634917"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q64648
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q64648

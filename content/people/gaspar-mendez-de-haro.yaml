@@ -2,4 +2,61 @@ public_id: 128732
 name: Gaspar Méndez de Haro
 given_name: Gaspar Méndez
 family_name: de Haro
+names:
+  - kind: birth
+    lang: es
+    role: former
+    text: Gaspar de Haro y Fernández de Córdoba
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q380763
+kind: person
+birth: 1629-06-01
+death: 1687-11-16
 wikidata_id: Q380763
+metadata:
+  sources: [Wikidata Q380763 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q380763
+  - type: born_in
+    to: place/naples
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q380763
+  - type: died_in
+    to: place/naples
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q380763
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Retrato_de_Gaspar_de_Haro%2C_VII_marqu%C3%A9s_del_Carpio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Retrato_de_Gaspar_de_Haro,_VII_marqu%C3%A9s_del_Carpio.jpg
+    license: Public domain
+    credit: Arnold Van Westerhout
+identifiers:
+  bnf: "165733821"
+  gnd: "124997678"
+  idref: "146699971"
+  lc: no2010050544
+  rkd: "365442"
+  viaf: "25551534"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q380763
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q380763
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q380763

@@ -2,4 +2,62 @@ public_id: 123652
 name: Anselm von Rothschild
 given_name: Anselm
 family_name: von Rothschild
+kind: person
+birth: 1803-01-29
+death: 1874-07-27
 wikidata_id: Q569582
+metadata:
+  sources: [Wikidata Q569582 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/austrian-empire
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q569582
+  - type: nationality
+    to: polity/cisleithania
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q569582
+  - type: born_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q569582
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q569582
+  - type: lived_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-24
+        property: P551
+        wikidata: Q569582
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2e/Anselm_Salomon_Rothschild.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anselm_Salomon_Rothschild.jpg
+    license: Public domain
+    credit: Friedrich Lieder (1780-1859)
+identifiers:
+  bnf: "162783116"
+  gnd: "116641606"
+  viaf: "30292929"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q569582
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q569582
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q569582

@@ -6,6 +6,19 @@ death: 1276-12-07
 wikidata_id: Q596360
 metadata:
   sources: [Wikidata Q596360 (retrieved 2026-11-24)]
+relationships:
+  - type: founded
+    to: institution/kanagawa-prefectural-kanazawa-bunko
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q3192586
+  - type: founded
+    to: institution/shomyo-ji
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q11596183
 sources:
   kind:
     - accessed: 2026-11-24

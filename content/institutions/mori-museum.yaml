@@ -2,15 +2,39 @@ public_id: 124209
 name: Mōri Museum
 kind: museum
 founded: 1916
+place: hofu
+location: [131.58746, 34.06337]
+address: 〒747-0023　山口県防府市多々良1-15-1
+website_url: https://mohri-museum.com
 wikidata_id: Q11547697
 metadata:
   sources: [Wikidata Q11547697 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Hofu_Mouri_Residence_and_Museum.JPG/1280px-Hofu_Mouri_Residence_and_Museum.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Hofu_Mouri_Residence_and_Museum.JPG
+    license: CC BY-SA 3.0
+    credit: TT mk2
+identifiers:
+  lc: nr90013873
+  viaf: "137640579"
 sources:
   kind:
     - accessed: 2026-11-24
       property: P31
       wikidata: Q11547697
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11547697
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11547697
   founded:
     - accessed: 2026-11-24
       property: P571
+      wikidata: Q11547697
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q11547697

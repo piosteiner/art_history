@@ -1,0 +1,35 @@
+public_id: 130208
+title: Ho-O-Den
+names:
+  - text: Hōōden
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17216904
+  - text: Hōō-den
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17216904
+  - lang: ja
+    role: translation
+    text: 鳳凰殿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17216904
+attribution_label: Kuru Masamichi (design)
+created: 1894
+wikidata_id: Q17216904
+metadata:
+  sources: [Wikidata Q17216904 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e1/The_Japanese_pavillion_Ho-o-den_01%2C_World%27s_Columbian_Exposition_1893.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Japanese_pavillion_Ho-o-den_01,_World%27s_Columbian_Exposition_1893.jpg
+    license: Public domain
+    credit: Unknown author
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q17216904
+  attribution_label:
+    - source: national-diet-library-ho-o-den-phoenix-palace-part-1-expositions-held-in-and-before-1900-e
+      accessed: 2026-11-24

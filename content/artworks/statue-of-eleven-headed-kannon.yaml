@@ -9,6 +9,7 @@ names:
         wikidata: Q107046081
 created: 760s
 created_span: uncertain
+institution: shorin-ji-temple
 wikidata_id: Q107046081
 metadata:
   sources: [Wikidata Q107046081 (retrieved 2026-11-24)]
@@ -17,6 +18,36 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Eleven-faced_Kannon_Shorinji.JPG
     license: Public domain
     credit: OGAWA SEIYOU
+provenance:
+  - owner: institution/daigorin-ji
+    acquired: 760s
+    method: creation
+    place: sakurai
+    label: made in the 760s in the Tōdai-ji image workshop (patron probably Prince Chinu, a grandson of Emperor Tenmu); principal image of Daigorin-ji (Ōmiwa-dera), oldest jingū-ji of Ōmiwa Shrine
+    sources:
+      - url: https://www.shorinji-temple.jp/about/kokuho-juichimenkannon/
+        note: 760年代に東大寺の造仏所で造られ、その願主は智努王（天武天皇の孫）とする説が有力です。… 十一面観音は、もとは三輪山の神宮寺の一つ「大御輪寺（だいごりんじ）」の仏さまでした。大御輪寺は大神神社の最も古い神宮寺として奈良時代中頃に設けられ、十一面観音はその本尊として祀られてきました。
+        source: shorinji-kokuho-juichimenkannon
+        accessed: 2026-11-24
+  - owner: institution/shorin-ji-temple
+    acquired: 1868
+    method: transfer
+    direct: true
+    place: sakurai
+    label: moved by abbot Daishin on Keiō 4, 5th month 16th day (lunar calendar), to escape the anti-Buddhist movement after the separation of Shinto and Buddhism; first shown 1887 by Ernest Fenollosa
+    sources:
+      - url: https://www.shorinji-temple.jp/about/kokuho-juichimenkannon/
+        note: 明治政府の神仏分離令による廃仏毀釈を免れるため、慶応4年（1868）5月16日、大御輪寺と親交の深かった聖林寺に移されたといわれています。当時の住職は高僧 大心（聖林寺再興七世）でした。… 明治20年（1887）、アメリカの哲学者フェノロサによって秘仏の禁が解かれ
+        source: shorinji-kokuho-juichimenkannon
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/185
+        note: 木心乾漆十一面観音立像 … 時代 ： 奈良 … 所有者名 ： 聖林寺
+        source: kunishitei-201-185
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%81%96%E6%9E%97%E5%AF%BA&oldid=107266277
+        note: 明治の神仏分離令の際に、大神神社（三輪明神）神宮寺の一つである大御輪寺（だいごりんじ、おおみわでら。現・大直禰子神社）本尊の十一面観音像が聖林寺に移管されている
+        source: wikipedia-ja-shorin-ji
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

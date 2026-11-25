@@ -2,15 +2,43 @@ public_id: 123111
 name: Heraklion Archaeological Museum
 kind: museum
 founded: 1883
+place: heraklion-municipality
+location: [25.1375, 35.33917]
+address: Xanthoudidou 2
+website_url: http://heraklionmuseum.gr/
 wikidata_id: Q636972
 metadata:
   sources: [Wikidata Q636972 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Building_of_the_Archaeological_Museum_of_Heraklion%2C_061381.jpg/1280px-Building_of_the_Archaeological_Museum_of_Heraklion%2C_061381.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Building_of_the_Archaeological_Museum_of_Heraklion,_061381.jpg
+    license: CC BY-SA 4.0
+    credit: Zde
+identifiers:
+  bnf: 12330476x
+  gnd: 2068055-7
+  idref: "032234279"
+  lc: n89629636
+  ulan: "500300551"
+  viaf: "158400708"
 sources:
   kind:
     - accessed: 2026-11-23
       property: P31
       wikidata: Q636972
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q636972
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q636972
   founded:
     - accessed: 2026-11-23
       property: P571
+      wikidata: Q636972
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q636972

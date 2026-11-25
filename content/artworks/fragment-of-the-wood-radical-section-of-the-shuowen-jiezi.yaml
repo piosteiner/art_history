@@ -1,0 +1,148 @@
+public_id: 124985
+title_lang: en
+title: Fragment of the Wood Radical Section of the Shuowen Jiezi
+title_status: own
+names:
+  - lang: ja
+    role: translation
+    text: 説文解字木部残巻
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q97186932
+  - lang: ja
+    role: original
+    text: 說文解字木部殘卷
+created: c. 820
+created_span: uncertain
+institution: kyo-u-library
+location: [135.4791, 34.72212]
+wikidata_id: Q97186932
+metadata:
+  sources: [Wikidata Q97186932 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/osaka
+    period: c. 820
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9e/Shuowen_Jiezi_Takeda.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shuowen_Jiezi_Takeda.jpg
+    license: Public domain
+    credit: Unknown author
+provenance:
+  - owner_label: unknown copyist, Tang dynasty
+    acquired: c. 820
+    method: creation
+    label: Tang manuscript; dated 820 (Yuanhe 15) by Mo Youzhi and Liu Yusong from avoided characters, though another avoided character may point later
+    certainty: probable
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%AA%AC%E6%96%87%E6%9C%A8%E9%83%A8%E6%AE%8B%E5%B7%BB&oldid=109752832
+        note: 莫友芝・劉毓崧などは、これを根拠として同書が執筆されたのは憲宗の代、元和15年（820年）に書写されたものであると論じている … それ以降の書写とも考えられる
+        source: jawiki-setsumon-mokubu-zankan
+        accessed: 2026-11-24
+  - owner_label: collectors of the Song to Ming periods (seals)
+    acquired_label: Song to Ming dynasties
+    label: seals of the Song to Ming periods; colophon of appraisal by Mi Youren; remounted by Yu Song in 1225 (Baoqing 1)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%AA%AC%E6%96%87%E6%9C%A8%E9%83%A8%E6%AE%8B%E5%B7%BB&oldid=109752832
+        note: 宋代から明代にかけての諸印が押されている。南宋の米友仁が審定の跋2行を記しているほか、宝慶初年（1225年）に兪松なる人物が表装を行った旨も記入されている
+        source: jawiki-setsumon-mokubu-zankan
+        accessed: 2026-11-24
+  - owner: person/zhang-lianchen
+    acquired: 1862 or earlier
+    label: magistrate of Yi county
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%AA%AC%E6%96%87%E6%9C%A8%E9%83%A8%E6%AE%8B%E5%B7%BB&oldid=109752832
+        note: 清代の同治元年（1862年）、黟県の県宰である張廉臣が蔵していたものを莫友芝が譲り受けた
+        source: jawiki-setsumon-mokubu-zankan
+        accessed: 2026-11-24
+  - owner: person/mo-youzhi
+    acquired: 1862
+    ended: 1871
+    direct: true
+    label: received from Zhang Lianchen in Tongzhi 1; published it in his Tang-manuscript study
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%AA%AC%E6%96%87%E6%9C%A8%E9%83%A8%E6%AE%8B%E5%B7%BB&oldid=109752832
+        note: 同治元年（1862年）、黟県の県宰である張廉臣が蔵していたものを莫友芝が譲り受けた。彼は『唐写本説文解字木部箋異』を執筆し
+        source: jawiki-setsumon-mokubu-zankan
+        accessed: 2026-11-24
+  - owner: person/mo-shengsun
+    acquired: 1871
+    method: inheritance
+    direct: true
+    label: Mo Youzhi's son; dismissed from office, sold it out of hardship
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%AA%AC%E6%96%87%E6%9C%A8%E9%83%A8%E6%AE%8B%E5%B7%BB&oldid=109752832
+        note: 同治十年（1871年）に莫友芝が死去したのち、同書はその子である莫縄孫の手にわたった。…生活苦に陥ったため『木部残巻』を売却せざるを得なくなった
+        source: jawiki-setsumon-mokubu-zankan
+        accessed: 2026-11-24
+  - owner: person/xu-zhijing
+    method: purchase
+    direct: true
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%AA%AC%E6%96%87%E6%9C%A8%E9%83%A8%E6%AE%8B%E5%B7%BB&oldid=109752832
+        note: 当初徐致靖の手にわたった同書は
+        source: jawiki-setsumon-mokubu-zankan
+        accessed: 2026-11-24
+  - owner: person/duanfang
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%AA%AC%E6%96%87%E6%9C%A8%E9%83%A8%E6%AE%8B%E5%B7%BB&oldid=109752832
+        note: 当初徐致靖の手にわたった同書は端方、完顔景賢、白堅などの所蔵となり
+        source: jawiki-setsumon-mokubu-zankan
+        accessed: 2026-11-24
+  - owner: person/wanyan-jingxian
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%AA%AC%E6%96%87%E6%9C%A8%E9%83%A8%E6%AE%8B%E5%B7%BB&oldid=109752832
+        note: 端方、完顔景賢、白堅などの所蔵となり
+        source: jawiki-setsumon-mokubu-zankan
+        accessed: 2026-11-24
+  - owner: person/bai-jian
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%AA%AC%E6%96%87%E6%9C%A8%E9%83%A8%E6%AE%8B%E5%B7%BB&oldid=109752832
+        note: 端方、完顔景賢、白堅などの所蔵となり
+        source: jawiki-setsumon-mokubu-zankan
+        accessed: 2026-11-24
+  - owner: person/naito-konan
+    acquired: 1926-02
+    ended: 1934
+    label: in his library (the Kyōni Sansō books)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%AA%AC%E6%96%87%E6%9C%A8%E9%83%A8%E6%AE%8B%E5%B7%BB&oldid=109752832
+        note: 昭和元年（1926年）の2月に内藤湖南が入手した
+        source: jawiki-setsumon-mokubu-zankan
+        accessed: 2026-11-24
+  - owner: person/takeda-chobei-vi
+    acquired: after 1934
+    place: osaka
+    label: Naitō Konan's books passed to him after Naitō's death
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%AA%AC%E6%96%87%E6%9C%A8%E9%83%A8%E6%AE%8B%E5%B7%BB&oldid=109752832
+        note: 昭和9年（1935年）に内藤湖南が死去したのち、その蔵書は六代目武田長兵衛のもとに渡った
+        source: jawiki-setsumon-mokubu-zankan
+        accessed: 2026-11-24
+  - owner: institution/kyo-u-library
+    acquired: 1977
+    method: transfer
+    place: osaka
+    label: Takeda Chōbei's old books transferred to the Takeda Science Foundation (its Kyo-U Library); the foundation is the registered owner; National Treasure 1951
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%AA%AC%E6%96%87%E6%9C%A8%E9%83%A8%E6%AE%8B%E5%B7%BB&oldid=109752832
+        note: 昭和52年（1977年）、『説文木部残巻』を含む武田長兵衛収蔵の古典籍は武田科学振興財団に移管された
+        source: jawiki-setsumon-mokubu-zankan
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/592
+        note: 所在地 ： 大阪市中央区道修町2-3-6 保管施設の名称 ： 財団法人武田科学振興財団 所有者名 ： 公益財団法人武田科学振興財団
+        source: kunishitei-201-592
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q97186932
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q97186932
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q97186932

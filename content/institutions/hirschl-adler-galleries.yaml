@@ -1,3 +1,16 @@
 public_id: 129382
 name: Hirschl & Adler Galleries
+kind: gallery
 wikidata_id: Q18545007
+metadata:
+  sources: [Wikidata Q18545007 (retrieved 2026-11-24)]
+identifiers:
+  idref: "097692506"
+  lc: n50058114
+  ulan: "500444368"
+  viaf: "152413019"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q18545007

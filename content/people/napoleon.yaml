@@ -56,6 +56,12 @@ relationships:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q338330
+  - type: founded
+    to: institution/royal-museums-of-fine-arts-of-belgium
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q377500
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/1280px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg

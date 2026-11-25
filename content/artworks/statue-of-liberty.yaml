@@ -1,0 +1,118 @@
+public_id: 130199
+title_lang: en
+title: Liberty Enlightening The World
+names:
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Lady Liberty
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q9202
+  - lang: fr
+    role: original
+    text: La Liberté éclairant le monde
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q9202
+  - lang: en
+    role: original
+    text: Statue of Liberty
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q9202
+  - lang: nl
+    role: translation
+    text: Vrijheidsbeeld
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q9202
+  - lang: fr
+    role: original
+    text: statue de la Liberté
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q9202
+  - lang: de
+    role: translation
+    text: Freiheitsstatue
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q9202
+  - lang: it
+    role: translation
+    text: Statua della Libertà
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q9202
+  - lang: es
+    role: translation
+    text: Estatua de la Libertad
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q9202
+  - lang: ja
+    role: translation
+    text: 自由の女神像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q9202
+  - lang: zh
+    role: translation
+    text: 自由女神像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q9202
+  - lang: ko
+    role: translation
+    text: 자유의 여신상
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q9202
+  - lang: ru
+    role: translation
+    text: Статуя Свободы
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q9202
+creator: frederic-auguste-bartholdi
+created: 1886
+materials: [copper, steel, concrete, granite, gold leaf]
+dimensions: [4600]
+location: [-74.04443, 40.68921]
+wikidata_id: Q9202
+metadata:
+  sources: [Wikidata Q9202 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/new-york-city
+    period: 1886
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Statue_of_Liberty_and_a_sightseeing_boat%2C_Liberty_Island%2C_New_York.jpg/1280px-Statue_of_Liberty_and_a_sightseeing_boat%2C_Liberty_Island%2C_New_York.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Statue_of_Liberty_and_a_sightseeing_boat,_Liberty_Island,_New_York.jpg
+    license: CC BY-SA 4.0
+    credit: Christian David
+identifiers:
+  gnd: 4122611-2
+  viaf: "237749661"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q9202
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q9202
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q9202
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q9202
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q9202

@@ -25,6 +25,9 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045230
+created: late 7th century
+created_span: uncertain
+institution: jindai-ji
 wikidata_id: Q107045230
 metadata:
   sources: [Wikidata Q107045230 (retrieved 2026-11-24)]
@@ -33,3 +36,44 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Statue_of_sitting_Gautama_Buddha,_Jindai-ji.jpg
     license: Public domain
     credit: Unknown author
+provenance:
+  - owner_label: unknown maker, probably in the Kinai region
+    acquired: late 7th century
+    method: creation
+    label: bronze seated Shaka (Hakuhō Buddha), late 7th century; thought to have been made in the Kinai region before Jindai-ji was founded
+    certainty: probable
+    sources:
+      - url: https://www.city.chofu.lg.jp/100200/p073023.html
+        note: 7世紀後半ないし末の飛鳥時代後期(美術史上の区分では白鳳時代)につくられたと推定される … 深大寺の開創より前に文化の中心であった畿内地域で製作され、その後、深大寺の本尊として迎えられたとも考えられています。
+        source: chofu-jindaiji-hakuhobutsu
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/4673
+        note: いわゆる白鳳仏の特色をよく示し、７世紀後半～末の作とみられる。
+        source: kunishitei-201-4673
+        accessed: 2026-11-24
+  - owner: institution/jindai-ji
+    place: chofu
+    label: possibly received as the temple's main image (honzon); the temple is the owner today
+    sources:
+      - url: https://www.city.chofu.lg.jp/100200/p073023.html
+        note: その後、深大寺の本尊として迎えられたとも考えられています。
+        source: chofu-jindaiji-hakuhobutsu
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/4673
+        note: 所有者名 ： 深大寺
+        source: kunishitei-201-4673
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1909
+    place: chofu
+    label: found by Shibata Jōe, assistant at Tokyo University, lying behind the altar of the Ganzan Daishi hall (rebuilt 1867 after the fire of 1865); now in the Shaka-dō
+    sources:
+      - url: https://www.city.chofu.lg.jp/100200/p073023.html
+        note: この像が発見されたのは、明治42(1909)年のことです。当時、友人と深大寺を訪れていた東京大学の助手であった柴田常恵(じょうえ)は、元三大師(がんざんだいし)堂内の須弥壇(しゅみだん)の奥に横たえて置かれていたこの像を偶然発見しました。
+        source: chofu-jindaiji-hakuhobutsu
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=深大寺&oldid=111782419
+        note: 1909年（明治42年）に元三大師堂の壇の下から発見されたもので、現在は釈迦堂に安置。
+        source: jawiki-jindai-ji
+        accessed: 2026-11-24

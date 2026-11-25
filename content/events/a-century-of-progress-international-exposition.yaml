@@ -1,0 +1,46 @@
+public_id: 130593
+name: A Century of Progress International Exposition
+names:
+  - lang: en
+    role: original
+    text: A Century of Progress International Exposition
+kind: world's fair
+period: 27 May 1933 – 31 October 1934
+place: chicago
+location: [-87.61, 41.86]
+description_md: |-
+  The fair was planned before the crash of 1929 and opened during the Great Depression; a bond of ten million dollars issued on 28 October 1929, the day before the crash, was paid off by its close in 1934.[[source/wikipedia-en-century-of-progress]] It was driven by the need to stimulate spending in the Depression and opened as the geopolitical unrest that would lead to the Second World War was beginning.[[source/architecture-org-1933-1934-century-of-progress-exposition-chicago-architecture-center]][[source/exhibits-library-illinois-a-century-of-progress-international-exposition-illinois-digital]] President Franklin D. Roosevelt, who saw the fair as supporting the goals of the New Deal, visited it on 2 October 1933.[[source/wikipedia-en-century-of-progress]] Fascist Italy gave Chicago the Balbo Monument in honour of Italo Balbo's transatlantic flight of 1933; it still stands near Soldier Field.[[source/wikipedia-en-century-of-progress]]
+
+  The fair lay on Northerly Island and the lakefront of Lake Michigan between 12th and 39th streets.[[source/wikipedia-en-century-of-progress]][[source/architecture-org-1933-1934-century-of-progress-exposition-chicago-architecture-center]] Paul Philippe Cret and Raymond Hood led its architectural commission.[[source/wikipedia-en-century-of-progress]] Its multicoloured Art Deco and Moderne buildings, the “Rainbow City”, broke with the Beaux-Arts “White City” of 1893; Frank Lloyd Wright, who had been left out of the planning, called the style a sham.[[source/wikipedia-en-century-of-progress]][[source/architecture-org-1933-1934-century-of-progress-exposition-chicago-architecture-center]] The Sky Ride, a transporter bridge, was the fair's architectural symbol, and the Travel and Transport Building had the earliest catenary roof in the United States.[[source/wikipedia-en-century-of-progress]] George Fred Keck's House of Tomorrow, a twelve-sided house with a steel frame and a glass curtain wall, was radical for its time.[[source/wikipedia-en-century-of-progress]][[source/architecture-org-1933-1934-century-of-progress-exposition-chicago-architecture-center]]
+
+  The Art Institute of Chicago accompanied the fair with a loan exhibition of paintings and sculpture from American collections from 1 June to 1 November 1933;[[source/max-beckmann-org-chicago-art-institute-1933-max-beckmann]][[source/degas-catalogue-com-a-century-of-progress-exhibition-of-paintings-and-sculpture-chicago-il]] it included two paintings by [[artist/max-beckmann|Max Beckmann]], *Landschaft bei Frankfurt mit Fabrik* and *Bildnis einer alten Schauspielerin*.[[source/max-beckmann-org-chicago-art-institute-1933-max-beckmann]] Separately, in May 1933 Weidemann of Goebbels' ministry in [[polity/nazi-germany|Germany]] drew the ire of the Combat League by sending works by Emil Nolde and Ernst Barlach to an international exhibition of ecclesiastical art at the fair.[[source/fulda-soika-2014|p. 188]] [[artist/james-mcneill-whistler|James McNeill Whistler]]'s [[artwork/whistler-s-mother|Arrangement in Grey and Black No. 1]] was shown at the Century of Progress in 1933–34.[[source/wikipedia-en-whistlers-mother]]
+
+  Two seasons: 27 May – 12 November 1933 and 26 May – 31 October 1934.[[source/wikipedia-en-century-of-progress]]
+wikidata_id: Q300347
+relationships:
+  - type: concerns
+    to: polity/nazi-germany
+    sources:
+      - source: fulda-soika-2014
+        locator: p. 188
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/whistler-s-mother
+    sources:
+      - source: wikipedia-en-whistlers-mother
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: wikipedia-en-century-of-progress
+  place:
+    - url: https://en.wikipedia.org/wiki/Century_of_Progress
+      source: wikipedia-en-century-of-progress
+      accessed: 2026-11-24
+  period:
+    - url: https://en.wikipedia.org/wiki/Century_of_Progress
+      source: wikipedia-en-century-of-progress
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q300347

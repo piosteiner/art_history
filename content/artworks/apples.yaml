@@ -41,6 +41,137 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Henri_matisse,_mele,_1916.jpg
     license: CC BY-SA 4.0
     credit: Francesco Bini
+provenance:
+  - owner: artist/henri-matisse
+    acquired: 1916
+    method: creation
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/64001
+        note: The artist, Paris;
+        source: aic-1948-563
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1916-11-13
+    method: purchase
+    direct: true
+    place: paris
+    label: Dauberville 1995
+    sources:
+      - url: https://www.artic.edu/artworks/64001
+        note: sold to Galerie Bernheim-Jeune, Paris, Nov. 13, 1916 [Dauberville 1995];
+        source: aic-1948-563
+        accessed: 2026-11-24
+  - owner: person/henri-bernstein
+    acquired: 1917-01-15
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/64001
+        note: sold to Henry Bernstein (1876–1953), Paris, Jan. 15, 1917 [Paris 1993];
+        source: aic-1948-563
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1917-12-13
+    method: purchase
+    direct: true
+    place: paris
+    label: sold back to Bernheim-Jeune
+    sources:
+      - url: https://www.artic.edu/artworks/64001
+        note: sold back to Galerie Bernheim-Jeune, Paris, Dec. 13. 1917 [Paris 1993].
+        source: aic-1948-563
+        accessed: 2026-11-24
+  - owner: person/marius-de-zayas
+    acquired: May 1919 or earlier
+    place: new-york-city
+    label: according to de Zayas's invoice to John Quinn of 26 December 1919 (John Quinn Papers, New York Public Library)
+    sources:
+      - url: https://www.artic.edu/artworks/64001
+        note: Marius de Zayas (1880–1961), New York, by May 1919 [this and the following according to Marius de Zayas to John Quinn, invoice dated Dec. 26, 1919, John Quinn Papers, Manuscripts and Archives Division, New York Public Library, copy in curatorial object file];
+        source: aic-1948-563
+        accessed: 2026-11-24
+  - owner: person/john-quinn
+    acquired_label: after 26 December 1919
+    ended: 1924
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/64001
+        note: sold to John Quinn (1870–1924), New York, after Dec. 26, 1919];
+        source: aic-1948-563
+        accessed: 2026-11-24
+  - owner: person/john-quinn
+    role: estate
+    acquired: 1924
+    method: inheritance
+    direct: true
+    place: new-york-city
+    label: John Quinn Estate
+    sources:
+      - url: https://www.artic.edu/artworks/64001
+        note: John Quinn Estate, 1924;
+        source: aic-1948-563
+        accessed: 2026-11-24
+  - owner: institution/american-art-association
+    role: agent
+    acquired: 1927-02-09
+    method: auction
+    direct: true
+    place: new-york-city
+    label: sale, American Art Association, New York, 9–11 February 1927, lot 126
+    sources:
+      - url: https://www.artic.edu/artworks/64001
+        note: sold, American Art Association, New York, Feb. 9–11, 1927, lot 126, to F. Valentine Dudensing (1892–1967), New York;
+        source: aic-1948-563
+        accessed: 2026-11-24
+  - owner: person/f-valentine-dudensing
+    acquired: 1927-02
+    method: auction
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/64001
+        note: to F. Valentine Dudensing (1892–1967), New York;
+        source: aic-1948-563
+        accessed: 2026-11-24
+  - owner: person/pierre-matisse
+    role: dealer
+    acquired: 1931-06-16 or earlier
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Pierre Matisse Gallery; letter from Pierre Matisse, 21 October 1974
+    sources:
+      - url: https://www.artic.edu/artworks/64001
+        note: sold to Pierre Matisse (1900–1989), New York (Pierre Matisse Gallery), by June 16, 1931 [this and the following according to letter from Pierre Matisse, Oct. 21, 1974, copy in curatorial object file];
+        source: aic-1948-563
+        accessed: 2026-11-24
+  - owner: person/samuel-abraham-marx
+    co_owners: [person/florene-may-schoenborn]
+    acquired: 1940-12
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/64001
+        note: sold to Samuel A. Marx (1885–1964) and Florene May Schoenborn (1903–1995), Chicago,  Dec. 1940;
+        source: aic-1948-563
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1948-12-14
+    method: gift
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/64001
+        note: given to the Art Institute of Chicago, Dec. 14, 1948.
+        source: aic-1948-563
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

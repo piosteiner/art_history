@@ -2,15 +2,44 @@ public_id: 123124
 name: Acropolis Museum
 kind: museum
 founded: 2009
+place: athens
+location: [23.72847, 37.96842]
+address: Διονυσίου Αρεοπαγίτου 15
+website_url: https://www.theacropolismuseum.gr/
+collection_url: https://www.theacropolismuseum.gr/exereynisi-syllogon
 wikidata_id: Q421084
 metadata:
   sources: [Wikidata Q421084 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/View_of_the_Acropolis_Museum_from_the_Acropolis_in_Athens.jpg/1280px-View_of_the_Acropolis_Museum_from_the_Acropolis_in_Athens.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:View_of_the_Acropolis_Museum_from_the_Acropolis_in_Athens.jpg
+    license: CC BY-SA 4.0
+    credit: Yair-haklai
+identifiers:
+  bnf: "123311274"
+  gnd: 2125241-5
+  idref: "032242328"
+  lc: n88275239
+  ulan: "500306463"
+  viaf: "127357675"
 sources:
   kind:
     - accessed: 2026-11-23
       property: P31
       wikidata: Q421084
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q421084
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q421084
   founded:
     - accessed: 2026-11-23
       property: P571
+      wikidata: Q421084
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q421084

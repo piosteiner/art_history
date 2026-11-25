@@ -1,3 +1,38 @@
 public_id: 126675
 name: Taisan-ji
+kind: temple
+founded: 587
+place: matsuyama
+location: [132.715, 33.8851]
+address: 愛媛県松山市太山寺町1730
 wikidata_id: Q3514066
+metadata:
+  sources: [Wikidata Q3514066 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Ryuunzan_Taisanji_04.JPG/1280px-Ryuunzan_Taisanji_04.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Ryuunzan_Taisanji_04.JPG
+    license: CC BY-SA 3.0
+    credit: Reggaeman
+identifiers:
+  viaf: "257004812"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3514066
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3514066
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3514066
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3514066
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3514066

@@ -1,0 +1,178 @@
+public_id: 130236
+name: Le Corbusier
+names:
+  - kind: birth
+    lang: fr
+    role: former
+    text: Charles-Édouard Jeanneret-Gris
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - kind: pseudonym
+    role: alternative
+    text: for Charles Édouard Jeanneret-Gris
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Charles Édouard Jeanneret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Edouard Jeanneret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Le Corbusier-Saugnier
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Le Korbi︠u︡zʹe
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Le Corbusier Jeanneret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Kebiyi
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Corbusier Le
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Corbu
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Charles Edouard Jeanneret-Gris
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Charles Edouard Jeanneret- Gris
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Charles Edouard Jeanneret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Charles-Edouard Jeanneret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Charles Édouard Jeanneret-Gris
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Corb
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Charles Jeanneret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Corbusier
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Édouard Le Corbusier
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Le Corbusier (Charles-Édouard Jeanneret)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Charles-Edouard Jeanneret-Gris
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - text: Charles Edouard Jenneret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - lang: ja
+    role: translation
+    text: ル・コルビュジエ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - lang: zh
+    role: translation
+    text: 勒·柯布西耶
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - lang: ko
+    role: translation
+    text: 르 코르뷔지에
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+  - lang: ru
+    role: translation
+    text: Ле Корбюзье
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q4724
+birth: 1887-10-06
+death: 1965-08-27
+wikidata_id: Q4724
+metadata:
+  sources: [Wikidata Q4724 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/expo-58
+    label: architect
+    notes_md: Philips Pavilion
+    sources:
+      - url: https://en.wikipedia.org/wiki/Philips_Pavilion
+        source: wikipedia-en-philips-pavilion
+        accessed: 2026-11-24
+      - url: https://atomium.be/expo58
+        source: atomium-expo-58
+        accessed: 2026-11-24
+  - type: participated_in
+    to: event/international-exhibition-of-modern-decorative-and-industrial-arts
+    label: architect
+    notes_md: Pavillon de l'Esprit Nouveau (with Pierre Jeanneret; directed L'Esprit Nouveau with Ozenfant)
+    sources:
+      - url: https://en.wikipedia.org/wiki/International_Exhibition_of_Modern_Decorative_and_Industrial_Arts
+        source: wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts
+        accessed: 2026-11-24
+  - type: participated_in
+    to: event/paris-international-exposition-1937
+    label: architect
+    notes_md: Pavillon des Temps Nouveaux (canvas tent, with Pierre Jeanneret)
+    sources:
+      - url: https://en.wikipedia.org/wiki/Exposition_Internationale_des_Arts_et_Techniques_dans_la_Vie_Moderne
+        source: wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne
+        accessed: 2026-11-24
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Le_Corbusier_%281964%29.jpg/1280px-Le_Corbusier_%281964%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Le_Corbusier_(1964).jpg
+    license: CC0
+    credit: Joop van Bilsen for Anefo
+identifiers:
+  bnf: "119115569"
+  dodis: P13616
+  gnd: "118676873"
+  hls: "019085"
+  idref: "027304612"
+  lc: n79021788
+  rkd: "48519"
+  sikart: "4000293"
+  ulan: "500027041"
+  viaf: "56612471"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q4724
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q4724

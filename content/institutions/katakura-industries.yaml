@@ -1,3 +1,29 @@
 public_id: 127695
 name: Katakura Industries
+kind: company
+founded: 1943
+place: tokyo
+website_url: https://www.katakura.co.jp/
 wikidata_id: Q11569525
+metadata:
+  sources: [Wikidata Q11569525 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Nichirei_Akashicho_Building%2C_at_Akashicho%2C_Chuo%2C_Tokyo_%282019-01-02%29.jpg/1280px-Nichirei_Akashicho_Building%2C_at_Akashicho%2C_Chuo%2C_Tokyo_%282019-01-02%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nichirei_Akashicho_Building,_at_Akashicho,_Chuo,_Tokyo_(2019-01-02).jpg
+    license: CC BY-SA 4.0
+    credit: Lombroso
+identifiers:
+  viaf: "312908432"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11569525
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11569525
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11569525

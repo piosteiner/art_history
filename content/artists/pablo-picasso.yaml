@@ -177,6 +177,22 @@ relationships:
       - accessed: 2026-11-23
         property: P25
         wikidata: Q5593
+  - type: participated_in
+    to: event/exposition-universelle-of-1900
+    label: exhibited
+    notes_md: "'Last Moments' in the Spanish pavilion; came to Paris in late October 1900"
+    sources:
+      - url: https://museupicassobcn.cat/en/whats-on/exhibition/feasting-paris-picasso-1900-1907
+        source: museupicassobcn-cat-feasting-paris-picasso-1900-1907
+        accessed: 2026-11-24
+  - type: participated_in
+    to: event/paris-international-exposition-1937
+    label: exhibited
+    notes_md: Guernica in the Spanish pavilion
+    sources:
+      - url: https://www.museoreinasofia.es/en/collection/artwork/guernica-0
+        source: museo-nacional-centro-guernica
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/98/Pablo_picasso_1.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Pablo_picasso_1.jpg

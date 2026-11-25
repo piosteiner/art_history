@@ -1,5 +1,22 @@
 public_id: 124481
 name: Suda Hachiman Shrine
+place: hashimoto
+location: [135.64556, 34.33319]
+website_url: https://sudahachimanjinjya.org/
 wikidata_id: Q10961321
 metadata:
   sources: [Wikidata Q10961321 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Suda-hachiman-jinja_haiden.jpg/1280px-Suda-hachiman-jinja_haiden.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Suda-hachiman-jinja_haiden.jpg
+    license: CC BY-SA 3.0
+    credit: KENPEI
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q10961321
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q10961321

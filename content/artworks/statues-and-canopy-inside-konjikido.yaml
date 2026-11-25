@@ -11,8 +11,10 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107044816
+parent: chuson-ji-konjikido
 created: 12th century
 created_span: uncertain
+institution: konjiki-in-chuson-ji
 wikidata_id: Q107044816
 metadata:
   sources: [Wikidata Q107044816 (retrieved 2026-11-24)]
@@ -21,6 +23,48 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Interior_of_Konjikido,_Chusonji_(62).jpg
     license: Public domain
     credit: Imperial Japanese Commission to the Panama-Pacific International Exposition
+provenance:
+  - owner: person/fujiwara-no-kiyohira
+    acquired: 1124
+    method: commission
+    place: hiraizumi
+    label: the Konjikidō built by Kiyohira and his wife and clan (ridgepole 1124); central-altar images for Kiyohira (d. 1128), the side altars' for Motohira (d. c. 1157) and Hidehira (d. 1187)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/10640
+        note: 天治元年（一一二四）八月二十日建立の旨を記す棟木銘によれば、金色堂は藤原清衡とその正室等一族により建立された。清衡（大治三年〈一一二八〉没）の遺骸が納められた中壇上には阿弥陀三尊、六地蔵、二天王各像が安置され、次いで二代基衡（保元二年〈一一五七〉ころ没）、三代秀衡（文治三年〈一一八七〉没）の各遺骸も両脇の左右壇に納められその上に同じ構成の諸像が置かれた。
+        source: kunishitei-201-10640
+        accessed: 2026-11-24
+      - note: a single Amida hall at Chusonji, the Konjikido (Gold-colored Hall) … has survived at Hiraizumi (Fig. 185). When it was completed in 1124 … The moya … contains an altar with an Amida surrounded by the bodhisattvas Kannon and Seishi, six statues of Jizo, and two armor-clad guardian figures (Fig. 186). When Kiyohira died in 1128, his embalmed body was entombed inside the altar. Two similar structures … serve as the tombs for his son Motohira and his grandson Hidehira
+        source: history-of-japanese-art
+        locator: pp. 152–153
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired_label: more than a hundred years before 1738 (Edo period)
+    method: theft
+    place: hiraizumi
+    label: one Amida image stolen; the smaller Amida now on the right altar was probably brought in from elsewhere to replace it
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/10640
+        note: さらに元文三年（一七三八）から一〇〇年余前に阿弥陀像が盗まれるという事態も出来している。… 右壇阿弥陀像は盗難に遭った像の代わりに置かれたものと推測される
+        source: kunishitei-201-10640
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%B0%8A%E5%AF%BA%E9%87%91%E8%89%B2%E5%A0%82&oldid=108614809
+        note: 右壇の阿弥陀如来像は金色堂本来の像でなく、後世他所から移入された像であると見なされている。江戸時代に阿弥陀如来像のうちの1躯が盗難に遭ったことも記録されている（平泉雑記）。
+        source: wikipedia-ja-chuson-ji-konjikido
+        accessed: 2026-11-24
+  - owner: institution/konjiki-in-chuson-ji
+    place: hiraizumi
+    label: "owner today: Konjiki-in, the religious corporation of Chūson-ji that owns the Konjikidō"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/10640
+        note: 所在都道府県 ： 岩手県 … 所有者名 ： 金色院
+        source: kunishitei-201-10640
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E4%B8%AD%E5%B0%8A%E5%AF%BA%E9%87%91%E8%89%B2%E5%A0%82&oldid=108614809
+        note: 堂の所有者は宗教法人金色院である。
+        source: wikipedia-ja-chuson-ji-konjikido
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

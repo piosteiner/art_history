@@ -8,8 +8,173 @@ medium: Marble
 institution: art-institute-of-chicago
 inventory_number: "1996.79"
 web_url: https://www.artic.edu/artworks/144965
+provenance_status: d_seized
+provenance_status_note: Confiscated by the Nazis from Alphonse Mayer von Rothschild, Vienna, 1938; taken to the Zentral-Depot in the Neue Burg and to Altaussee; recovered 1945 and restituted to his widow Clarice de Rothschild by 5 December 1947.
 images:
   - url: https://www.artic.edu/iiif/2/fae6d055-fe95-17e2-a00a-c2307ace531c/full/843,/0/default.jpg
     source_url: https://www.artic.edu/artworks/144965
     license: CC0
     credit: Art Institute of Chicago
+provenance:
+  - owner: person/anne-marie-louise-thomas-de-domangeville
+    acquired: 1780
+    method: commission
+    place: paris
+    label: commissioned by the sitter, later Comtesse de Pange
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: Commissioned by Anne-Marie-Louise Thomas de Domangeville de Sérilly (1762–1799; later Comtesse de Pange), Paris;
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner: institution/revolutionary-tribunal-paris
+    role: possessor
+    acquired: 1794
+    ended: 1796
+    method: confiscation
+    direct: true
+    place: paris
+    label: research report by Jean Montague Massengale
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: confiscated by the Revolutionary Tribunal, Paris, 1794 [this and the following according to research report by Jean Montague Massengale; in curatorial object file];
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner: person/anne-marie-louise-thomas-de-domangeville
+    acquired: 1796
+    ended: 1799
+    method: restitution
+    direct: true
+    label: returned to the Comtesse de Pange
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: returned to the Comtesse de Pange, 1796;
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner_label: the de Pange family
+    acquired: 1799
+    method: inheritance
+    direct: true
+    label: by descent through the family, Passy-sur-Yonne
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: by descent through the family, Passy-sur-Yonne, France.
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner: person/nathaniel-mayer-von-rothschild
+    acquired: 1899 or earlier
+    ended: 1905
+    place: vienna
+    label: Rothschild 1903
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: Nathaniel Mayer von Rothschild (1836–1905), Vienna, by 1899 [Rothschild 1903];
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner: person/alphonse-von-rothschild
+    acquired: 1905
+    method: inheritance
+    direct: true
+    place: vienna
+    label: his nephew
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: by descent to his nephew, Baron Alphonse Mayer von Rothschild (1878–1942), Vienna, 1905;
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner_label: the Nazis
+    role: possessor
+    acquired: 1938
+    method: confiscation
+    direct: true
+    place: vienna
+    label: AR 1080, Zentral Depot Karteien
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: confiscated by the Nazis, 1938 [the bust was first taken to the Zentral-Depot, Neue Burg, Vienna to be inventoried. This and the following according to AR 1080, Zentral Depot Karteien; copy in curatorial object file];
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner: institution/zentraldepot-fur-beschlagnahmte-sammlungen
+    role: custodian
+    acquired: 1938
+    method: transfer
+    direct: true
+    place: vienna
+    label: Zentral-Depot, Neue Burg, Vienna — taken there first to be inventoried
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: the bust was first taken to the Zentral-Depot, Neue Burg, Vienna to be inventoried.
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner_label: Altaussee salt mine
+    role: custodian
+    acquired: 1945 or earlier
+    ended: 1945
+    method: transfer
+    direct: true
+    label: transferred to Altaussee; recovered by Allied troops, 1945
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: transferred to Altaussee, Austria, by 1945; recovered by Allied troops, 1945;
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner: person/clarice-de-rothschild
+    acquired: 1947-12-05 or earlier
+    method: restitution
+    direct: true
+    place: new-york-city
+    label: Alphonse Mayer von Rothschild's widow, born Sebag-Montefiore
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: restituted to Alphonse Mayer von Rothschild’s widow, Clarice de Rothschild (1894–1967; born Sebag-Montefiore), New York, by Dec. 5, 1947.
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    acquired: 1947
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: With Rosenberg & Stiebel, New York, 1947.
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner_label: Private collection, United States
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: Private collection, United States.
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner: person/jean-montague-massengale
+    label: Norton, CT
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: Jean Montague Massengale, Norton, CT;
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner: person/john-e-massengale-iii
+    co_owners: [institution/jean-montague-massengale-charitable-trust]
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: by descent to John E. Massengale III and the Jean Montague Massengale Charitable Trust;
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner: institution/rosenberg-stiebel-inc
+    role: dealer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: with Rosenberg & Stiebel, New York;
+        source: aic-1996-79
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1996
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/144965
+        note: sold to the Art Institute of Chicago, 1996.
+        source: aic-1996-79
+        accessed: 2026-11-24

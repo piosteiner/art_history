@@ -1,0 +1,77 @@
+public_id: 130242
+name: Tarō Okamoto
+names:
+  - lang: ja
+    role: original
+    text: 岡本太郎
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q983942
+  - text: Taro Okamoto
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q983942
+  - text: Taro Okamato
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q983942
+  - text: Okamoto Tarō
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q983942
+  - text: Tarou Okamoto
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q983942
+  - lang: ko
+    role: translation
+    text: 오카모토 다로
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q983942
+  - lang: ru
+    role: translation
+    text: Таро Окамото
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q983942
+birth: 1911-02-26
+death: 1996-01-07
+wikidata_id: Q983942
+metadata:
+  sources: [Wikidata Q983942 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/expo-70
+    label: exhibited
+    notes_md: Theme exhibition producer; Tower of the Sun
+    sources:
+      - url: https://ja.wikipedia.org/wiki/日本万国博覧会
+        source: wikipedia-ja-66a394d04d
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Tower_of_the_Sun
+        source: wikipedia-en-tower-of-the-sun
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c3/Tar%C5%8D_Okamoto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tar%C5%8D_Okamoto.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 11918063w
+  gnd: 14140616X
+  idref: "027051994"
+  lc: n81061637
+  nlk: KAC200310049
+  rkd: "99782"
+  ulan: "500041100"
+  viaf: "64009967"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q983942
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q983942

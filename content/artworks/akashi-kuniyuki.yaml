@@ -17,6 +17,59 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:%E5%A4%AA%E5%88%80_%E6%98%8E%E7%9F%B3%E5%9B%BD%E8%A1%8C,_Tachi,_Akashi_Kuniyuki.jpg
     license: CC BY-SA 4.0
     credit: SLIMHANNYA
+provenance:
+  - owner: artist/kuniyuki
+    acquired_label: late Kamakura period
+    method: creation
+    place: yamashiro-province
+    label: by Rai Kuniyuki, effective founder of the Rai school of Yamashiro
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%98%8E%E7%9F%B3%E5%9B%BD%E8%A1%8C
+        note: 鎌倉時代後期、山城国来派の実質的な祖である刀工・国行によって作られた刀である。
+        source: wikipedia-ja-akashi-kuniyuki
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/388
+        note: 時代 ： 鎌倉 … 作者 ： 国行 … 来国行の作で作風をよく示し、地刃が健全である。
+        source: kunishitei-201-388
+        accessed: 2026-11-24
+  - owner_label: Matsudaira family of the Akashi domain
+    place: akashi
+    label: handed down in the Akashi Matsudaira family (lords of Akashi, Harima), hence its name; how they got it is unknown
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%98%8E%E7%9F%B3%E5%9B%BD%E8%A1%8C
+        note: 明石国行の名前は、播磨国明石藩主である明石松平家に代々伝わっていたことに由来する。明石国行の来歴には不詳の点が多く、どのような経緯で明石松平家に伝来したかは明らかではない。
+        source: wikipedia-ja-akashi-kuniyuki
+        accessed: 2026-11-24
+  - owner: person/matsudaira-naohide
+    acquired: 1937 or earlier
+    method: inheritance
+    label: viscount, of the Akashi Matsudaira house; National Treasure (old law) in his name 25 May 1937
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%98%8E%E7%9F%B3%E5%9B%BD%E8%A1%8C
+        note: 明治維新以降も明石松平家に伝来し、1937年（昭和12年）5月25日に子爵松平直頴の所有名義で、当時の国宝保存法に基づく旧国宝に指定された。
+        source: wikipedia-ja-akashi-kuniyuki
+        accessed: 2026-11-24
+  - owner: person/fujisawa-otoyasu
+    acquired_label: after 1937
+    label: owner of the publisher Gyōsei and noted sword collector
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%98%8E%E7%9F%B3%E5%9B%BD%E8%A1%8C
+        note: その後、明石松平家を出て、出版社・ぎょうせいの社主であり、著明な刀剣コレクターでもあった藤澤乙安のコレクションに加えられた。
+        source: wikipedia-ja-akashi-kuniyuki
+        accessed: 2026-11-24
+  - owner: institution/japanese-sword-museum
+    method: gift
+    place: tokyo
+    label: his collection given after his death to the Nihon Bijutsu Tōken Hozon Kyōkai (NBTHK), which keeps it in its Japanese Sword Museum, Sumida, Tokyo
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%98%8E%E7%9F%B3%E5%9B%BD%E8%A1%8C
+        note: 藤澤の没後、明石国行を含む同人のコレクションは公益財団法人日本美術刀剣保存協会に寄贈され、東京都墨田区にある刀剣博物館に収蔵されている。
+        source: wikipedia-ja-akashi-kuniyuki
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/388
+        note: 保管施設の名称 ： 刀剣博物館 所有者名 ： 公益財団法人日本美術刀剣保存協会
+        source: kunishitei-201-388
+        accessed: 2026-11-24
 sources:
   creator:
     - accessed: 2026-11-24

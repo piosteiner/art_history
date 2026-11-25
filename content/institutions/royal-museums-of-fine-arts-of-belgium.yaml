@@ -1,3 +1,44 @@
 public_id: 125697
 name: Royal Museums of Fine Arts of Belgium
+kind: museum
+founded: 1801
+place: brussels
+location: [4.35824, 50.84168]
+address: Regentschapsstraat 3 (Oldmasters, Fin-de-Siècle en Modern Museum)
+website_url: http://www.fine-arts-museum.be
+collection_url: https://www.fine-arts-museum.be/nl/de-collectie/
 wikidata_id: Q377500
+metadata:
+  sources: [Wikidata Q377500 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Royal_Museums_of_Fine_Arts_of_Belgium_20180629.jpg/1280px-Royal_Museums_of_Fine_Arts_of_Belgium_20180629.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Royal_Museums_of_Fine_Arts_of_Belgium_20180629.jpg
+    license: CC BY-SA 4.0
+    credit: Suicasmo
+identifiers:
+  bnf: 11877622s
+  gnd: 37656-5
+  idref: 02654959X
+  lc: n83200296
+  viaf: "125290757"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q377500
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q377500
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q377500
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q377500
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q377500

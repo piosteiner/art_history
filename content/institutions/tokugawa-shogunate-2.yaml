@@ -1,3 +1,31 @@
 public_id: 126648
 name: Tokugawa shogunate
+kind: government agency
+founded: 1603-03-24
+dissolved: 1867-11-09
+place: musashi-province
+location: [139.77444, 35.68389]
 wikidata_id: Q205662
+metadata:
+  sources: [Wikidata Q205662 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q205662
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q205662
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q205662
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q205662
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q205662

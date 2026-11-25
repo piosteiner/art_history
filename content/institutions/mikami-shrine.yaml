@@ -1,3 +1,29 @@
 public_id: 127921
 name: Mikami Shrine
+place: yasu
+location: [136.02739, 35.04981]
+address: 滋賀県野洲市三上838
+website_url: http://www.mikami-jinja.jp/
 wikidata_id: Q11488762
+metadata:
+  sources: [Wikidata Q11488762 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Mikami-jinja_keidai-2.JPG/1280px-Mikami-jinja_keidai-2.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Mikami-jinja_keidai-2.JPG
+    license: CC0
+    credit: Saigen Jiro
+identifiers:
+  viaf: "252091271"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11488762
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11488762
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11488762

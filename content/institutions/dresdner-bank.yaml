@@ -1,3 +1,38 @@
 public_id: 128352
 name: Dresdner Bank
+kind: company
+founded: 1872-11-12
+dissolved: 2009-05-11
+place: dresden
+website_url: http://www.dresdner-bank.de/
 wikidata_id: Q1258529
+metadata:
+  sources: [Wikidata Q1258529 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Silvertower.jpg/1280px-Silvertower.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Silvertower.jpg
+    license: CC BY-SA 3.0
+    credit: User:Melkom
+identifiers:
+  bnf: 13612025n
+  gnd: 63008-1
+  idref: "055826032"
+  lc: n81114443
+  viaf: "127265120"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1258529
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1258529
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1258529
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q1258529

@@ -79,6 +79,21 @@ relationships:
       - accessed: 2026-11-10
         property: P135
         wikidata: Q182589
+  - type: participated_in
+    to: event/great-exhibition-of-1851
+    notes_md: Later said he refused to attend on grounds of taste.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Great_Exhibition
+        source: wikipedia-en-great-exhibition
+        accessed: 2026-11-24
+  - type: participated_in
+    to: event/international-exhibition-of-1862
+    label: exhibited
+    notes_md: Painted the St George Cabinet; his firm's first public display.
+    sources:
+      - url: https://collections.vam.ac.uk/item/O8144
+        source: victoria-and-albert-st-george-cabinet-morris-william-webb-philip-speakman-v-a-explore-the
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/William_Morris_age_53.jpg/1280px-William_Morris_age_53.jpg
     source_url: https://commons.wikimedia.org/wiki/File:William_Morris_age_53.jpg

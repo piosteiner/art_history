@@ -1,3 +1,39 @@
 public_id: 127479
 name: Kongōrin-ji Temple
+kind: temple
+founded: 741
+place: aisho
+location: [136.28306, 35.16125]
+address: 滋賀県愛知郡愛荘町松尾寺874
+website_url: http://kongourinji.jp/
 wikidata_id: Q11646547
+metadata:
+  sources: [Wikidata Q11646547 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f1/Kongourinji_hondou_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kongourinji_hondou_01.jpg
+    license: CC BY-SA 3.0
+    credit: VanishingDuck at Japanese Wikipedia
+identifiers:
+  viaf: "632146998403618941298"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11646547
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11646547
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11646547
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11646547
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11646547

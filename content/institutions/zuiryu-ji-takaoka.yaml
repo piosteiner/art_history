@@ -1,3 +1,39 @@
 public_id: 126878
 name: Zuiryū-ji (Takaoka)
+kind: temple
+founded: 1613
+place: takaoka
+location: [137.0105, 36.7356]
+address: 富山県高岡市関本町35
+website_url: https://www.zuiryuji.jp/
 wikidata_id: Q11573977
+metadata:
+  sources: [Wikidata Q11573977 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Zuiryuji_Temple_2010-08-29_01.jpg/1280px-Zuiryuji_Temple_2010-08-29_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Zuiryuji_Temple_2010-08-29_01.jpg
+    license: CC BY-SA 3.0
+    credit: 柑橘類 (talk)
+identifiers:
+  viaf: "257518754"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11573977
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11573977
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11573977
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11573977
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11573977

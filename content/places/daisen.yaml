@@ -1,0 +1,41 @@
+public_id: 129838
+name: Daisen
+names:
+  - lang: ja
+    role: original
+    text: 大仙市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q695920
+  - lang: ko
+    role: translation
+    text: 다이센시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q695920
+  - lang: ru
+    role: translation
+    text: Даисен
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q695920
+kind: settlement
+parent: japan
+country_code: JP
+location: [140.47544, 39.45306]
+wikidata_id: Q695920
+metadata:
+  sources: [Wikidata Q695920 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q695920
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q695920
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q695920

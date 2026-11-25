@@ -149,6 +149,14 @@ relationships:
       - accessed: 2026-10-13
         property: P135
         wikidata: Q5577
+  - type: participated_in
+    to: event/new-york-worlds-fair
+    label: exhibited
+    notes_md: Dream of Venus pavilion
+    sources:
+      - url: https://www.queensmuseum.org/salvador-dali-dream-of-venus
+        source: queens-museum-salvador-dali-dream-of-venus
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/6/65/Dali_Harcourt_1936.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Dali_Harcourt_1936.jpg

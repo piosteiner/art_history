@@ -1,0 +1,16 @@
+public_id: 130206
+name: National Museum of Art, Architecture and Design
+kind: museum
+founded: 2003-04-28
+wikidata_id: Q1132918
+metadata:
+  sources: [Wikidata Q1132918 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1132918
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1132918

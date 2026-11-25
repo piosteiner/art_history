@@ -1,3 +1,37 @@
 public_id: 126531
 name: Kōzan-ji (Shimonoseki)
+kind: temple
+founded: 1327
+place: shimonoseki
+location: [130.96174, 33.97699]
+address: 山口県下関市長府川端1丁目2-3
+website_url: http://kouzanji.org/
 wikidata_id: Q1088510
+metadata:
+  sources: [Wikidata Q1088510 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/04/Kozanji_Temple_%28Shimonoseki%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kozanji_Temple_(Shimonoseki).JPG
+    license: CC BY-SA 3.0
+    credit: Wiki708 at Japanese Wikipedia
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1088510
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1088510
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q1088510
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1088510
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1088510

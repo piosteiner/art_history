@@ -15,6 +15,7 @@ names:
       - accessed: 2026-11-24
         wikidata: Q16536566
 creator: el-greco
+attribution_label: El Greco and workshop
 created: 1608/1614
 created_label: c. 1600s
 created_span: uncertain
@@ -30,6 +31,109 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Le_Repas_chez_Simon.jpg
     license: Public domain
     credit: User:Thomon
+provenance:
+  - owner: artist/el-greco
+    ended: 1614
+    method: creation
+    place: toledo
+    label: possibly still his at his death; no work of this subject in his estate inventory
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/65509
+        note: Possibly in the artist’s possession at the time of his death, 1614 [three versions of this subject were recorded in the 1621 inventory of all the goods owned by El Greco’s son, Jorge Manuel Theotocopoulos, who was his father’s sole heir; however, no work of this subject appears in El Greco’s own estate inventory; see San Román 1927];
+        source: aic-1949-397
+        accessed: 2026-11-24
+  - owner: artist/jorge-manuel-theotocopuli
+    acquired: 1614
+    method: inheritance
+    direct: true
+    place: toledo
+    label: his son and sole heir; three versions of the subject in his 1621 inventory, items 123–25
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/65509
+        note: possibly by descent to his son, Jorge Manuel Theotocopoulos (d. 1631), Toledo [the 1621 inventory of Jorge Manuel’s possessions, transcribed in San Román 1927, includes entries for three versions of this subject, listed as items 123–25]..
+        source: aic-1949-397
+        accessed: 2026-11-24
+  - owner_label: Guinea, Bilbao
+    place: bilbao
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/65509
+        note: Probably Guinea, Bilbao.
+        source: aic-1949-397
+        accessed: 2026-11-24
+  - owner_label: Plasencia, Bilbao
+    acquired_label: before 1908
+    place: bilbao
+    label: according to Cossío 1908; cannot be verified
+    sources:
+      - url: https://www.artic.edu/artworks/65509
+        note: Plasencia, Bilbao, before 1908 [according to Cossío 1908; this information cannot be verified, however].
+        source: aic-1949-397
+        accessed: 2026-11-24
+  - owner: person/alexandre-berthier
+    acquired: 1908 or earlier
+    place: paris
+    label: Prince of Wagram
+    sources:
+      - url: https://www.artic.edu/artworks/65509
+        note: Alexandre Berthier, Prince of Wagram, Paris, by 1908 [Cossio 1908 and Mayer 1926];
+        source: aic-1949-397
+        accessed: 2026-11-24
+  - owner: institution/galerie-miethke
+    role: dealer
+    acquired: 1911 or earlier
+    direct: true
+    place: vienna
+    sources:
+      - url: https://www.artic.edu/artworks/65509
+        note: Galerie H. O. Miethke, Vienna, by 1911 Mayer 1911, p. 84];
+        source: aic-1949-397
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1914 or earlier
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/65509
+        note: sold to Durand-Ruel, New York, by 1914 [Kehrer 1914, p. 93; Mayer 1914].
+        source: aic-1949-397
+        accessed: 2026-11-24
+  - owner: person/joseph-winterbotham-jr
+    acquired: 1929-02-07 or earlier
+    place: burlington
+    label: Burlington, Vermont; Art News 1929
+    sources:
+      - url: https://www.artic.edu/artworks/65509
+        note: Joseph Winterbotham, Jr., Burlington, Vt., Feb. 7, 1929 [Art News 1929];
+        source: aic-1949-397
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    role: custodian
+    acquired: 1930
+    method: transfer
+    direct: true
+    place: chicago
+    label: lent by Winterbotham
+    sources:
+      - url: https://www.artic.edu/artworks/65509
+        note: on loan to the Art Institute in 1930 [Bulletin of the Art Institute of Chicago 1930];
+        source: aic-1949-397
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1949
+    method: purchase
+    direct: true
+    place: chicago
+    label: Winterbotham Fund
+    sources:
+      - url: https://www.artic.edu/artworks/65509
+        note: acquired by the Art Institute as a purchase of the Winterbotham Fund, 1949.
+        source: aic-1949-397
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

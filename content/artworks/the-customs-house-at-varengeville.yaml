@@ -15,6 +15,102 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Monet_-_The_Customs_House_at_Varengeville,_1897.jpg
     license: CC BY-SA 4.0
     credit: Claude Monet
+provenance:
+  - owner: artist/claude-monet
+    acquired: 1897
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/16542
+        note: The artist (d. 1926);
+        source: aic-1933-1149
+        accessed: 2026-11-24
+  - owner: institution/allard-noel
+    role: dealer
+    acquired: 1899-02
+    method: purchase
+    direct: true
+    place: paris
+    label: per Monet's account book (ventes janvier–juillet 1899)
+    price:
+      amount: 6000
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/16542
+        note: sold to Galerie Allard et Noel, Feb. 1899, for 6,000 francs [per Monet’s livre de comptes, ventes janvier–juillet 1899, photocopy of this page in curatorial object file].
+        source: aic-1933-1149
+        accessed: 2026-11-24
+  - owner: person/maurice-masson
+    acquired: 1911-02-27 or earlier
+    place: paris
+    label: per Bernheim-Jeune exhibition catalogue, 1911
+    sources:
+      - url: https://www.artic.edu/artworks/16542
+        note: Maurice Masson, Paris, by Feb. 27, 1911 [per Bernheim-Jeune, exh. cat., 1911];
+        source: aic-1933-1149
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1911-06-22
+    method: auction
+    direct: true
+    place: paris
+    label: Maurice Masson sale, lot 23
+    sources:
+      - url: https://www.artic.edu/artworks/16542
+        note: sold at the Maurice Masson, Paris, sale, Hôtel Drouot, Paris, June 22, 1911, lot 23,
+        source: aic-1933-1149
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1911-06-22
+    method: auction
+    direct: true
+    place: paris
+    label: Paris stock book 1901–13, no. 9648, as La cabane du douanier
+    price:
+      amount: 9020
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/16542
+        note: to Durand-Ruel, Paris, for 9,020 francs [per Hôtel Drouot, sale cat., June 22, 1911; see also Durand-Ruel, Paris, stock book for 1901–13 (no. 9648, as La cabane du douanier)
+        source: aic-1933-1149
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1913
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: Durand-Ruel New York, 21 July or 6 August 1913 (the Paris and New York stock books differ); New York stock book 1904–24, no. 3668, as La cabane de douaniers
+    sources:
+      - url: https://www.artic.edu/artworks/16542
+        note: "sold to Durand-Ruel, New York, July 21, 1913 or Aug. 6, 1913 [The Paris and New York Durand-Ruel stock books record different dates for the sale: … “Sold to DR New York on 21 July 1913.” … “Purchased by DR New York on 6 August 1913 as La cabane de douaniers.”"
+        source: aic-1933-1149
+        accessed: 2026-11-24
+  - owner: person/martin-antoine-ryerson
+    acquired: 1914-02-10
+    method: purchase
+    direct: true
+    place: chicago
+    label: bought with Monet's Waterloo Bridge, London (no. 3646) and Les nymphéas, paysage d'eau (no. 3768); receipt for the three, $20,000
+    price:
+      amount: 7500
+      currency: USD
+    sources:
+      - url: https://www.artic.edu/artworks/16542
+        note: sold to Martin A. Ryerson (d. 1932), Chicago, Feb. 10, 1914 for $7,500 [per Durand-Ruel, New York, stock book for 1904–24 (no. 3668, as La cabane de douaniers) … see also purchase receipt on Durand-Ruel letterhead, dated February 10, 1914
+        source: aic-1933-1149
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1933
+    method: bequest
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/16542
+        note: bequeathed to the Art Institute of Chicago, 1933.
+        source: aic-1933-1149
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

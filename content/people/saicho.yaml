@@ -19,6 +19,19 @@ death: 822-06-30
 wikidata_id: Q449943
 metadata:
   sources: [Wikidata Q449943 (retrieved 2026-11-01)]
+relationships:
+  - type: founded
+    to: institution/enryaku-ji-temple
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q917195
+  - type: founded
+    to: institution/manshu-in
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q3076940
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/%E6%9C%80%E6%BE%84%E5%83%8F_%E4%B8%80%E4%B9%97%E5%AF%BA%E8%94%B5_%E5%B9%B3%E5%AE%89%E6%99%82%E4%BB%A3.jpg/1280px-%E6%9C%80%E6%BE%84%E5%83%8F_%E4%B8%80%E4%B9%97%E5%AF%BA%E8%94%B5_%E5%B9%B3%E5%AE%89%E6%99%82%E4%BB%A3.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%E6%9C%80%E6%BE%84%E5%83%8F_%E4%B8%80%E4%B9%97%E5%AF%BA%E8%94%B5_%E5%B9%B3%E5%AE%89%E6%99%82%E4%BB%A3.jpg

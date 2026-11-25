@@ -1,0 +1,27 @@
+public_id: 130198
+name: Frédéric Auguste Bartholdi
+given_name: Frédéric Auguste
+family_name: Bartholdi
+birth: 1834-08-02
+death: 1904-10-04
+wikidata_id: Q223274
+metadata:
+  sources: [Wikidata Q223274 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/centennial-exhibition
+    label: exhibited
+    notes_md: Arm and torch of the Statue of Liberty.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Centennial_Exposition
+        source: wikipedia-en-centennial-exposition
+        accessed: 2026-11-24
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q223274
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q223274

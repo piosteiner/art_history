@@ -1,3 +1,19 @@
 public_id: 129304
 name: Kintetsu Group Holdings
+founded: 1944-06-01
+place: osaka
+website_url: http://www.kintetsu-g-hd.co.jp/
 wikidata_id: Q19758662
+metadata:
+  sources: [Wikidata Q19758662 (retrieved 2026-11-24)]
+identifiers:
+  viaf: "315945769"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q19758662
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q19758662

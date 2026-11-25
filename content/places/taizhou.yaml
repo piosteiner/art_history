@@ -1,0 +1,41 @@
+public_id: 129810
+name: Taizhou
+names:
+  - lang: ja
+    role: translation
+    text: 台州市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q58273
+  - lang: ko
+    role: translation
+    text: 타이저우시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q58273
+  - lang: ru
+    role: translation
+    text: Тайчжоу
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q58273
+kind: settlement
+parent: people-s-republic-of-china
+country_code: CN
+location: [121.42213, 28.6583]
+wikidata_id: Q58273
+metadata:
+  sources: [Wikidata Q58273 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q58273
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q58273
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q58273

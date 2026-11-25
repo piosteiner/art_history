@@ -28,6 +28,52 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Muqi_(Mokkei)_-_Fishing_Village_at_Sunset.jpg
     license: Public domain
     credit: Muqi
+provenance:
+  - owner: artist/mu-qi
+    acquired: 13th century
+    method: creation
+    label: one of the Eight Views of the Xiao and Xiang, originally part of a handscroll; the national register says 'attributed to Muqi'
+    sources:
+      - url: https://www.nezu-muse.or.jp/jp/collection/detail.php?id=10390
+        note: 牧谿(もっけい)筆 中国・南宋時代 13世紀 … 中国江南地方、瀟水(しょうすい)と湘江(しょうこう)周辺の８つの景勝を描いた「瀟湘八景(しょうしょうはっけい)図」のうちの1図。
+        source: nezu-10390
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/101
+        note: 紙本墨画漁村夕照図〈伝牧谿筆／〉 … 時代：南宋 … 作者：伝牧谿
+        source: kunishitei-201-101
+        accessed: 2026-11-24
+  - owner: person/ashikaga-yoshimitsu
+    label: bears his collector's seal 'Dōyū'; thought to have cut the handscroll into hanging scrolls for display
+    sources:
+      - url: https://www.nezu-muse.or.jp/jp/collection/detail.php?id=10390
+        note: 同様に足利義満の鑑蔵印「道有(どうゆう)」が捺され、法量も一致する作品が他に３幅現存し、もとは八景を備えた画巻を、義満が座敷飾りのために切断したものと考えられている。
+        source: nezu-10390
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/101
+        note: 「道有」の鑑蔵印がある
+        source: kunishitei-201-101
+        accessed: 2026-11-24
+  - owner_label: rulers and daimyo families (e.g. Tokugawa Ieyasu, Matsudaira Fumai)
+    acquired: 1728 or earlier
+    label: "said of the set as a whole: it passed through the hands of Tokugawa Ieyasu, Matsudaira Fumai and others; in July 1728 Tokugawa Yoshimune gathered the scrolls then divided among daimyo houses"
+    certainty: possible
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E7%89%A7%E8%B0%BF
+        note: 足利義満によって8幅の掛物に改装され、徳川家康や松平不昧など、時の権力者や文化人の所蔵を経て伝来した。徳川吉宗は1728年7月、当時大名家に分蔵されていた八景図を一堂に集め賞玩を試みている
+        source: wikipedia-ja-muqi
+        accessed: 2026-11-24
+  - owner: institution/nezu-museum
+    place: tokyo
+    label: how and when it came to the museum (founded 1940 on Nezu Kaichirō I's collection) is not stated
+    sources:
+      - url: https://www.nezu-muse.or.jp/jp/collection/detail.php?id=10390
+        note: 国宝 漁村夕照図 … [10390]
+        source: nezu-10390
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/101
+        note: 保管施設の名称：公益財団法人根津美術館 所有者名：公益財団法人根津美術館
+        source: kunishitei-201-101
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

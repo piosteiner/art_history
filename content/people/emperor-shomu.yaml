@@ -28,6 +28,12 @@ wikidata_id: Q349263
 metadata:
   sources: [Wikidata Q349263 (retrieved 2026-11-01)]
 relationships:
+  - type: founded
+    to: institution/hogon-ji-temple
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q3080736
   - type: married_to
     to: person/empress-komyo
     sources:

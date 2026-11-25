@@ -1,0 +1,93 @@
+public_id: 125004
+title_lang: en
+title: Bronze Head of Buddha (former main image of the Lecture Hall of Yamada-dera), Kōfuku-ji
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 興福寺仏頭
+created: 685
+institution: kofuku-ji
+wikidata_id: Q107045995
+metadata:
+  sources: [Wikidata Q107045995 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/08/Buddha_Head_Yamadadera.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Buddha_Head_Yamadadera.JPG
+    license: Public domain
+    credit: Anonymous
+provenance:
+  - owner: institution/yamada-dera
+    acquired: 685
+    method: creation
+    place: sakurai
+    label: head of the jōroku bronze Yakushi, main image of the Lecture Hall of Yamada-dera; cast from 678, eyes opened on the 25th day of the 3rd month, Tenmu 14 (685)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/277
+        note: 天武天皇十三年（六八五）山田寺講堂本尊として製作されたが
+        source: kunishitei-201-277
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111177398
+        note: 天武天皇7年（678年）には「丈六仏像を鋳造」とあり、同天皇14年（685年）3月25日（石川麻呂の命日）にはその丈六仏像が開眼されている。この仏像は講堂に安置された薬師如来と考えられ
+        source: jawiki-111177398
+        accessed: 2026-11-24
+  - owner: institution/kofuku-ji
+    role: possessor
+    acquired: 1187
+    method: theft
+    place: nara
+    label: monk-soldiers of Kōfuku-ji broke into Yamada-dera and carried off the Yakushi triad as main image of Kōfuku-ji's Eastern Golden Hall (Tōkondō), recorded in Kujō Kanezane's Gyokuyō
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111177398
+        note: 『玉葉』（九条兼実の日記）によれば、文治3年（1187年）に興福寺の僧兵が山田寺に押し入り、講堂本尊の薬師三尊像を強奪して興福寺東金堂の本尊に据えたと記録されている。
+        source: jawiki-111177398
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/277
+        note: 鎌倉初期興福寺東金堂に移され
+        source: kunishitei-201-277
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1411
+    place: nara
+    label: the Eastern Golden Hall burned (fire spread from lightning at the five-storied pagoda); only the head survived and was stored inside the pedestal of the new main image
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/277
+        note: 後五重塔の雷火に類焼し、頭部のみが僅かに難を免がれた。
+        source: kunishitei-201-277
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111177398
+        note: この薬師如来像は応永18年（1411年）の東金堂の火災の際に焼け落ち、かろうじて焼け残った頭部だけが、その後新しく造られた本尊像の台座内に格納されていた。
+        source: jawiki-111177398
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1937
+    place: nara
+    label: the head rediscovered inside the pedestal; unknown until then
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111177398
+        note: この仏頭は昭和12年（1937年）に再発見されるまでその存在は知られていなかった
+        source: jawiki-111177398
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=110543508
+        note: 台座に納められていたが1937年に発見された。
+        source: jawiki-110543508
+        accessed: 2026-11-24
+  - owner: institution/kofuku-ji
+    place: nara
+    label: Kōfuku-ji is the registered owner; shown in its National Treasure Museum (Kokuhōkan)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/277
+        note: 所在都道府県 ： 奈良県 … 所有者名 ： 興福寺
+        source: kunishitei-201-277
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=110543508
+        note: 奈良県 奈良市 興福寺国宝館
+        source: jawiki-110543508
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107045995

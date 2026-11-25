@@ -9,6 +9,7 @@ names:
         wikidata: Q11515236
 created: 11th century
 created_span: uncertain
+institution: manshu-in
 wikidata_id: Q11515236
 metadata:
   sources: [Wikidata Q11515236 (retrieved 2026-11-24)]
@@ -17,6 +18,64 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Manshuin_Kokinshu.jpg
     license: Public domain
     credit: Japanese calligraphers of the Heian and Kamakura periods; I created the files
+provenance:
+  - owner_label: Unknown scribe (traditionally Fujiwara no Yukinari)
+    acquired: 11th century
+    method: creation
+    label: Kokin wakashū, book 17 only, copied in the 11th century; traditionally attributed to Fujiwara no Yukinari
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=曼殊院本古今和歌集&oldid=107193839
+        note: 巻第十七のみの残巻である。巻子本。書写は11世紀と推定される。伝称筆者は藤原行成。
+        source: jawiki-manshuin-bon-kokin-wakashu
+        accessed: 2026-11-24
+  - owner: person/emperor-sutoku
+    label: "'the book of the Shin-in' (Retired Emperor Sutoku), per the colophon of 1299"
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=曼殊院本古今和歌集&oldid=107193839
+        note: 新院御本自勝浄 僧正至勝穢十三代相伝 其後為妻女被譲畢 正安第一之暦孟秋初日之候 右金吾記 … 新院は崇徳院で、正安元年（1299年）の8月に右金吾（右衛門督）だったのは藤原嗣実である。…崇徳院から勝浄に渡り勝穢まで13代相伝、その後嗣実夫人に譲られたことが分かる。
+        source: jawiki-manshuin-bon-kokin-wakashu
+        accessed: 2026-11-24
+  - owner_label: Sōjō Shōjō and his successors to Shōe (13 generations)
+    method: inheritance
+    direct: true
+    label: passed from Sutoku to the priest Shōjō and handed down for thirteen generations to Shōe
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=曼殊院本古今和歌集&oldid=107193839
+        note: 新院御本自勝浄 僧正至勝穢十三代相伝 其後為妻女被譲畢 正安第一之暦孟秋初日之候 右金吾記 … 新院は崇徳院で、正安元年（1299年）の8月に右金吾（右衛門督）だったのは藤原嗣実である。…崇徳院から勝浄に渡り勝穢まで13代相伝、その後嗣実夫人に譲られたことが分かる。
+        source: jawiki-manshuin-bon-kokin-wakashu
+        accessed: 2026-11-24
+  - owner_label: Wife of Fujiwara no Tsugizane
+    acquired: 1299
+    method: gift
+    direct: true
+    label: given to the wife of Fujiwara no Tsugizane (Uemon no kami); colophon dated the first day of the 7th month of Shōan 1
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=曼殊院本古今和歌集&oldid=107193839
+        note: 新院御本自勝浄 僧正至勝穢十三代相伝 其後為妻女被譲畢 正安第一之暦孟秋初日之候 右金吾記 … 新院は崇徳院で、正安元年（1299年）の8月に右金吾（右衛門督）だったのは藤原嗣実である。…崇徳院から勝浄に渡り勝穢まで13代相伝、その後嗣実夫人に譲られたことが分かる。
+        source: jawiki-manshuin-bon-kokin-wakashu
+        accessed: 2026-11-24
+  - owner: institution/manshu-in
+    place: kyoto
+    label: handed down at the Manshu-in, Sakyō-ku, Kyoto; National Treasure 1952
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=曼殊院本古今和歌集&oldid=107193839
+        note: 京都市左京区の曼殊院に伝来した『古今和歌集』の古写本。
+        source: jawiki-manshuin-bon-kokin-wakashu
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/629
+        note: 国宝指定年月日 ： 1952.03.27 … 所有者名 ： 曼殊院
+        source: kunishitei-201-629
+        accessed: 2026-11-24
+  - owner: institution/kyoto-national-museum
+    role: custodian
+    direct: true
+    place: kyoto
+    label: on deposit at the Kyoto National Museum
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=曼殊院本古今和歌集&oldid=107193839
+        note: 曼殊院蔵、京都国立博物館に寄託。
+        source: jawiki-manshuin-bon-kokin-wakashu
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

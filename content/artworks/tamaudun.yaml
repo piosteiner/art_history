@@ -37,6 +37,49 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Tamaudun01s3s4592.jpg
     license: CC BY 2.5
     credit: 663highland
+provenance:
+  - owner: person/sho-shin
+    acquired: 1501
+    method: commission
+    place: naha
+    label: royal mausoleum of the Second Shō dynasty built by King Shō Shin to rebury his father Shō En; badly damaged in 1945, mostly restored 1974
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3647
+        note: 玉陵は，首里城の西側に位置する琉球第二尚王統の王陵で，三代尚真王により1501年に築造された。
+        source: kunishitei-102-3647
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/w/index.php?title=Tamaudun&oldid=1381284733
+        note: was built in 1501 by King Shō Shin, the third king (reigned 1477–1527), to bury his father, King Shō En … Shō Shin (1465–1526)
+        source: wikipedia-en-tamaudun
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%8E%89%E9%99%B5&oldid=111282282
+        note: 現在見られる大部分は第二次世界大戦後の昭和49年（1974年）に復元されたものである。
+        source: wikipedia-ja-tamaudun
+        accessed: 2026-11-24
+  - owner: person/hiroshi-sho
+    ended: 1992
+    method: inheritance
+    label: held by the Shō family; Hiroshi Shō, great-grandson of the last king Shō Tai, gave it away in 1992
+    sources:
+      - url: https://en.wikipedia.org/w/index.php?title=Tamaudun&oldid=1381284733
+        note: In 1992 Hiroshi Shō, the great-grandson of Shō Tai, the last king of the Ryūkyū Kingdom, donated Tamaudun and the royal gardens of Shikina-en to the City of Naha.
+        source: wikipedia-en-tamaudun
+        accessed: 2026-11-24
+  - owner: place/naha
+    acquired: 1992
+    method: gift
+    direct: true
+    place: naha
+    label: given by Hiroshi Shō to the City of Naha; owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3647
+        note: 所在地 ： 沖縄県那覇市首里金城町一丁目3番 … 所有者名 ： 那覇市 所有者種別 ： 市区町村
+        source: kunishitei-102-3647
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%8E%89%E9%99%B5&oldid=111282282
+        note: 1992年に尚裕によって那覇市に寄贈された
+        source: wikipedia-ja-tamaudun
+        accessed: 2026-11-24
 identifiers:
   viaf: "253633396"
 sources:

@@ -15,6 +15,13 @@ death: 2021-01-29
 wikidata_id: Q77595649
 metadata:
   sources: [Wikidata Q77595649 (retrieved 2026-11-02)]
+relationships:
+  - type: founded
+    to: institution/richard-l-feigen-co
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q18592375
 identifiers:
   gnd: "122761375"
   idref: "147637082"

@@ -2,4 +2,45 @@ public_id: 127828
 name: Nigel Capel Cure
 given_name: Nigel Capel
 family_name: Cure
+kind: person
+birth: 1908-09-28
+death: 2004-08-08
 wikidata_id: Q6840274
+metadata:
+  sources: [Wikidata Q6840274 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q6840274
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    period: 1927-04-12
+    period_label: until 12 April 1927
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q6840274
+  - type: born_in
+    to: place/kensington
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q6840274
+identifiers:
+  viaf: "3979153596637451900000"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q6840274
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q6840274
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q6840274

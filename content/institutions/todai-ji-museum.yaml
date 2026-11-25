@@ -1,0 +1,25 @@
+public_id: 129873
+name: Tōdai-ji Museum
+place: nara
+location: [135.83929, 34.68621]
+website_url: https://www.todaiji.or.jp/information/museum/
+wikidata_id: Q123143686
+metadata:
+  sources: [Wikidata Q123143686 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Todaiji_Culture_Center.JPG/1280px-Todaiji_Culture_Center.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Todaiji_Culture_Center.JPG
+    license: Public domain
+    credit: Abasaa
+identifiers:
+  lc: no2024070138
+  viaf: "36171973978918031423"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q123143686
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q123143686

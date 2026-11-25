@@ -2,15 +2,40 @@ public_id: 124471
 name: Saitama Prefectural Museum of the Sakitama Ancient Burial Mounds
 kind: museum
 founded: 1969
+place: gyoda
+location: [139.47559, 36.12493]
+address: 〒361-0025　埼玉県行田市埼玉4834
+website_url: https://sakitama-muse.spec.ed.jp/
 wikidata_id: Q5017775
 metadata:
   sources: [Wikidata Q5017775 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Saitamaprefecturalmusuemofsakitamaancientburialmound-outside-may2011.jpg/1280px-Saitamaprefecturalmusuemofsakitamaancientburialmound-outside-may2011.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Saitamaprefecturalmusuemofsakitamaancientburialmound-outside-may2011.jpg
+    license: CC BY-SA 3.0
+    credit: Nesnad
+identifiers:
+  idref: "198407858"
+  lc: no2025045120
+  viaf: "257056098"
 sources:
   kind:
     - accessed: 2026-11-24
       property: P31
       wikidata: Q5017775
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q5017775
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q5017775
   founded:
     - accessed: 2026-11-24
       property: P571
+      wikidata: Q5017775
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q5017775

@@ -1,0 +1,58 @@
+public_id: 130530
+name: Vienna World's Fair of 1873
+names:
+  - lang: de
+    role: original
+    text: Weltausstellung 1873 Wien
+kind: world's fair
+period: 1 May – 2 November 1873
+place: vienna
+location: [16.3956, 48.2161]
+description_md: |-
+  The fair commemorated the 25th year of [[person/franz-joseph-i-of-austria|Franz Joseph I]] as emperor; he signed its decree on 24 May 1870.[[source/wikipedia-en-1873-vienna-worlds-fair]][[source/wikipedia-de-weltausstellung-1873]] It was meant to restore Austria's self-confidence after the defeats of 1859 and 1866; 33 reigning princes visited Vienna during the fair, and the Schönbrunn Convention between the three emperors was concluded there on 6 June 1873.[[source/wikipedia-de-weltausstellung-1873]] It was the first world's fair in the German-speaking world, and Morocco, Egypt, Tunisia, the Ottoman Empire and Persia exhibited for the first time.[[source/bundesministerium-fur-wirtschaft-150-jahre-wiener-weltausstellung-1873]] The stock-exchange crash shortly after the opening and a cholera epidemic kept visitors far below the 20 million hoped for and left a deficit of 14,866,921 gulden.[[source/wikipedia-de-weltausstellung-1873]][[source/wikipedia-en-1873-vienna-worlds-fair]]
+
+  The grounds in the Prater centred on the [[artwork/rotunde|Rotunde]], then the largest dome building in the world, which burnt down on 17 September 1937.[[source/wikipedia-de-weltausstellung-1873]][[source/wikipedia-en-1873-vienna-worlds-fair]][[source/bundesministerium-fur-wirtschaft-150-jahre-wiener-weltausstellung-1873]] The sources credit its design differently: the German Wikipedia names [[artist/karl-von-hasenauer|Carl von Hasenauer]] as architectural director, the English Wikipedia the Scottish engineer [[artist/john-scott-russell|John Scott Russell]].[[source/wikipedia-de-weltausstellung-1873]][[source/wikipedia-en-1873-vienna-worlds-fair]] Franz Schmoranz Jr. designed an Egyptian pavilion for the Khedive, whose "Arab Room" was installed at the Museum of Art and Industry from 1883 to 1931.[[source/mak-museum-of-the-1873-vienna-worlds-fair-revisited-exhibition-at-the-mak-mak-museum]]
+
+  It was the first international exposition at which the Meiji government of [[polity/empire-of-japan|Japan]] officially took part,[[source/national-diet-library-international-patent-system-part-1-expositions-held-in-and-before-19]] part of its efforts to improve Japan's status in the world.[[source/history-of-japanese-art|pp. 344–345]] Its adviser, the German chemist Gottfried Wagener, chose refined crafts over machine products, and Japan's displays of ukiyo-e, industrial art, a Shinto shrine and a garden increased the popularity of [[movement/japonisme|Japonisme]].[[source/national-diet-library-vienna-international-exposition-and-japonism-part-1-expositions-held]][[source/national-diet-library-vienna-international-exposition-of-1873-part-1-expositions-held-in-a]][[source/mak-museum-of-the-1873-vienna-worlds-fair-revisited-exhibition-at-the-mak-mak-museum]] The Japonisme set off in Vienna shaped art, among it Jugendstil, and crafts in Austria.[[source/bundesministerium-fur-wirtschaft-150-jahre-wiener-weltausstellung-1873]] The Japanese government gave many works to European museums, among them the k.k. Österreichisches Museum für Kunst und Industrie, today's MAK.[[source/mak-museum-of-the-1873-vienna-worlds-fair-revisited-exhibition-at-the-mak-mak-museum]] Art was shown in a Kunsthalle and in northern and southern art pavilions; the southern pavilion survives as the Prater ateliers.[[source/wikipedia-de-weltausstellung-1873]]
+wikidata_id: Q871508
+relationships:
+  - type: concerns
+    to: polity/empire-of-japan
+    sources:
+      - source: national-diet-library-international-patent-system-part-1-expositions-held-in-and-before-19
+        accessed: 2026-11-24
+      - source: history-of-japanese-art
+        locator: pp. 344–345
+        accessed: 2026-11-24
+  - type: concerns
+    to: movement/japonisme
+    sources:
+      - source: national-diet-library-vienna-international-exposition-and-japonism-part-1-expositions-held
+        accessed: 2026-11-24
+      - source: national-diet-library-vienna-international-exposition-of-1873-part-1-expositions-held-in-a
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/rotunde
+    sources:
+      - source: wikipedia-de-weltausstellung-1873
+        accessed: 2026-11-24
+      - source: wikipedia-en-1873-vienna-worlds-fair
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: wikipedia-de-weltausstellung-1873
+  place:
+    - url: https://de.wikipedia.org/wiki/Weltausstellung_1873
+      source: wikipedia-de-weltausstellung-1873
+      accessed: 2026-11-24
+  period:
+    - url: https://de.wikipedia.org/wiki/Weltausstellung_1873
+      source: wikipedia-de-weltausstellung-1873
+      accessed: 2026-11-24
+    - url: https://ndl.go.jp/exposition/e/s1/1873.html
+      source: national-diet-library-vienna-international-exposition-of-1873-part-1-expositions-held-in-a
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q871508

@@ -1,0 +1,108 @@
+public_id: 130213
+title: German Pavilion, Barcelona
+names:
+  - text: Barcelona Pavilion
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q807915
+  - text: Mies van der Rohe Pavillion
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q807915
+  - lang: nl
+    role: translation
+    text: Barcelona-paviljoen
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q807915
+  - lang: fr
+    role: translation
+    text: pavillon allemand de Barcelone
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q807915
+  - lang: de
+    role: translation
+    text: Barcelona-Pavillon
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q807915
+  - lang: it
+    role: translation
+    text: Padiglione di Barcellona
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q807915
+  - lang: es
+    role: translation
+    text: Pabellón alemán, Barcelona
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q807915
+  - lang: ja
+    role: translation
+    text: バルセロナ・パビリオン
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q807915
+  - lang: zh
+    role: translation
+    text: 1929年巴塞罗那世界博览会德国馆
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q807915
+  - lang: ko
+    role: translation
+    text: 바르셀로나 독일관
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q807915
+  - lang: ru
+    role: translation
+    text: Павильон Германии (Барселона)
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q807915
+creator: ludwig-mies-van-der-rohe
+created: 1928
+materials: [travertine, onyx, marble]
+location: [2.15, 41.37056]
+wikidata_id: Q807915
+metadata:
+  sources: [Wikidata Q807915 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/barcelona
+    period: 1928
+  - type: co_creator
+    to: artist/lilly-reich
+    label: co-designer
+    sources:
+      - url: https://miesbcn.com/the-pavilion/
+        source: fundacio-mies-van-the-pavilion-fundacio-mies-van-der-rohe
+        accessed: 2026-11-24
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/The_Barcelona_Pavilion%2C_Barcelona%2C_2010.jpg/1280px-The_Barcelona_Pavilion%2C_Barcelona%2C_2010.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Barcelona_Pavilion,_Barcelona,_2010.jpg
+    license: CC BY 3.0
+    credit: Ashley Pomeroy at English Wikipedia
+identifiers:
+  gnd: 4386701-7
+  viaf: "316750733"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q807915
+  creator:
+    - url: https://miesbcn.com/the-pavilion/
+      source: fundacio-mies-van-the-pavilion-fundacio-mies-van-der-rohe
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q807915
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q807915

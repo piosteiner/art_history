@@ -1,0 +1,28 @@
+public_id: 130117
+name: Yamada-dera
+founded: 640s
+place: sakurai
+location: [135.83, 34.48444]
+wikidata_id: Q3571406
+metadata:
+  sources: [Wikidata Q3571406 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/25/Yamadadera_sisekihi01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yamadadera_sisekihi01.jpg
+    license: CC BY-SA 3.0
+    credit: VanishingDuck
+identifiers:
+  viaf: "256244149"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3571406
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3571406
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3571406

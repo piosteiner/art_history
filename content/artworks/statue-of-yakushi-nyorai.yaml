@@ -29,6 +29,22 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Yakushi_Nyorai_Kondo_Horyuji.jpg
     license: Public domain
     credit: 東京美術学校
+provenance:
+  - owner: institution/horyu-ji
+    acquired: 601/700
+    acquired_label: "607 by the halo inscription; most scholars: a later 7th-century replacement"
+    method: creation
+    place: ikaruga
+    label: the inscription on the halo names Tori Busshi's Yakushi of 607 for Prince Shōtoku's Wakakusadera (later Hōryū-ji); the present statue is probably a replacement after the fire of 670; in the Golden Hall, owned by the temple today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/202
+        note: 時代 ： 飛鳥 年代 ： 607 … 光背裏面に丁卯年仕奉の銘がある … 保管施設の名称 ： 法隆寺 所有者名 ： 法隆寺
+        source: kunishitei-201-202
+        accessed: 2026-11-24
+      - note: Tori Busshi's Yakushi of 607 was created as the principal image for Prince Shotoku's newly established Wakakusadera. It is represented today by a seated image enshrined in the kondo of Wakakusadera's successor, the Horyuji (Fig. 85). … Most scholars have now concluded that it is a work of Horyuji's rebuilding, and in replacement of the Busshi original, which was possibly lost or damaged beyond repair in the fire that destroyed Wakakusadera in 670.
+        source: history-of-japanese-art
+        locator: pp. 71–72, 80
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

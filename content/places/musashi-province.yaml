@@ -1,0 +1,16 @@
+public_id: 130186
+name: Musashi Province
+kind: site
+location: [139.40917, 35.80611]
+wikidata_id: Q907398
+metadata:
+  sources: [Wikidata Q907398 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q907398
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q907398

@@ -2,4 +2,22 @@ public_id: 128018
 name: Roger Harenc
 given_name: Roger
 family_name: Harenc
+kind: person
+birth: 1693
+death: 1763-06-10
 wikidata_id: Q75908264
+metadata:
+  sources: [Wikidata Q75908264 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q75908264
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q75908264
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q75908264

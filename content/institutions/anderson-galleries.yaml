@@ -1,3 +1,32 @@
 public_id: 128280
 name: Anderson Galleries
+kind: gallery
+founded: 1887
+dissolved: 1934
+place: new-york-city
 wikidata_id: Q72940895
+metadata:
+  sources: [Wikidata Q72940895 (retrieved 2026-11-24)]
+identifiers:
+  gnd: 125366-9
+  idref: "192976842"
+  lc: n80020593
+  ulan: "500360311"
+  viaf: "144788178"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q72940895
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q72940895
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q72940895
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q72940895

@@ -15,6 +15,9 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045991
+created: late 7th century
+created_span: uncertain
+institution: horyu-ji
 wikidata_id: Q107045991
 metadata:
   sources: [Wikidata Q107045991 (retrieved 2026-11-24)]
@@ -23,3 +26,34 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Yumetagae_Kannon.JPG
     license: Public domain
     credit: Unknown, Photo:Tokyo Bijutsu Gakkō
+provenance:
+  - owner_label: unknown maker
+    acquired: late 7th century
+    method: creation
+    label: bronze standing Kannon, late Asuka (Hakuhō) period; named for the belief that it turns bad dreams into good
+    certainty: probable
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/221
+        note: 時代 ： 飛鳥 … 解説文： 飛鳥時代の作品。
+        source: kunishitei-201-221
+        accessed: 2026-11-24
+      - url: https://www.mlit.go.jp/tagengo-db/en/R1-00183.html
+        note: Known as Yumechigai (“Dream-Changer”), this 86.9-centimeter bronze statue from the late Asuka period (593-710) was given this name because this manifestation of Kannon is said to change bad dreams to good.
+        source: jta-r1-00183
+        accessed: 2026-11-24
+  - owner: institution/horyu-ji
+    place: ikaruga
+    label: formerly the main image of the Eden (picture hall) of the Tōin; now in the Great Treasure Gallery (Daihōzō-in, built 1998); Hōryū-ji is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/221
+        note: 所有者名 ： 法隆寺
+        source: kunishitei-201-221
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=法隆寺&oldid=111669701
+        note: 観音菩薩立像（夢違観音、国宝） - 飛鳥時代後期（白鳳期）、銅造。元は東院絵殿の本尊。
+        source: jawiki-horyu-ji
+        accessed: 2026-11-24
+      - url: https://www.mlit.go.jp/tagengo-db/en/R1-00182.html
+        note: 1998年に建立され … 東西の宝蔵には、夢違観音像、玉虫厨子 … 橘夫人厨子 … など、名宝の数々が安置されている。
+        source: jta-r1-00182
+        accessed: 2026-11-24

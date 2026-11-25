@@ -1,0 +1,39 @@
+public_id: 129424
+name: Jindai-ji
+kind: temple
+founded: 733
+place: chofu-2
+location: [139.55047, 35.66753]
+address: 東京都調布市深大寺元町五丁目15番地1
+website_url: https://www.jindaiji.or.jp/
+wikidata_id: Q500736
+metadata:
+  sources: [Wikidata Q500736 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Jindai-ji_in_Chofu%2C_Tokyo_002.jpg/1280px-Jindai-ji_in_Chofu%2C_Tokyo_002.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jindai-ji_in_Chofu,_Tokyo_002.jpg
+    license: CC BY-SA 3.0
+    credit: 掬茶
+identifiers:
+  viaf: "251146619"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q500736
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q500736
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q500736
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q500736
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q500736

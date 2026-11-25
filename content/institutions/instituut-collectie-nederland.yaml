@@ -1,3 +1,26 @@
 public_id: 126235
 name: Instituut Collectie Nederland
+kind: research institute
+founded: 1996
+dissolved: 2010
 wikidata_id: Q2066737
+metadata:
+  sources: [Wikidata Q2066737 (retrieved 2026-11-24)]
+identifiers:
+  gnd: 10001225-5
+  idref: "129314641"
+  lc: n98086281
+  viaf: "129186511"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2066737
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q2066737
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q2066737

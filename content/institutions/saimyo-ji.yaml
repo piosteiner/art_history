@@ -1,3 +1,37 @@
 public_id: 127909
 name: Saimyō-ji
+kind: temple
+founded: 836
+place: kora
+location: [136.28428, 35.18397]
+address: 滋賀県犬上郡甲良町大字池寺26
+website_url: https://saimyouji.com/
 wikidata_id: Q11628433
+metadata:
+  sources: [Wikidata Q11628433 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Saimyouji_temple_%2C_%E8%A5%BF%E6%98%8E%E5%AF%BA_%E6%9C%AC%E5%A0%82_-_panoramio.jpg/1280px-Saimyouji_temple_%2C_%E8%A5%BF%E6%98%8E%E5%AF%BA_%E6%9C%AC%E5%A0%82_-_panoramio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Saimyouji_temple_,_%E8%A5%BF%E6%98%8E%E5%AF%BA_%E6%9C%AC%E5%A0%82_-_panoramio.jpg
+    license: CC BY 3.0
+    credit: z tanuki
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11628433
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11628433
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11628433
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11628433
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11628433

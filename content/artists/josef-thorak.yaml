@@ -48,6 +48,15 @@ biography_md: |-
 wikidata_id: Q686396
 metadata:
   sources: [Wikidata Q686396 (retrieved 2026-11-07)]
+relationships:
+  - type: participated_in
+    to: event/paris-international-exposition-1937
+    label: exhibited
+    notes_md: Sculpture Comradeship outside the German pavilion
+    sources:
+      - url: https://en.wikipedia.org/wiki/Exposition_Internationale_des_Arts_et_Techniques_dans_la_Vie_Moderne
+        source: wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/f6/Fritz_Erler_-_Professor_Josef_Thorak%2C_1939.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Fritz_Erler_-_Professor_Josef_Thorak,_1939.jpg

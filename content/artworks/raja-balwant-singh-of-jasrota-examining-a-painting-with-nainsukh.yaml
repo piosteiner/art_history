@@ -29,6 +29,57 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Raja_Balwant_Singh_of_Jasrota_examining_a_painting_with_Nainsukh.jpg
     license: Public domain
     credit: Nainsukh
+provenance:
+  - owner: artist/nainsukh
+    acquired: 1730/1760
+    method: creation
+    label: painted by Nainsukh of Guler at Jasrota
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-1551
+        note: "1730–1760: Nainsukh von Guler (um 1710–1778), Urheber*in, Jasrota, Indien"
+        source: rietberg-rvi-1551
+        accessed: 2026-11-24
+  - owner: person/durgi-raina
+    acquired: before 1920
+    place: jammu
+    label: Pacca Danga Market, Jammu (Archer 1973, p. 198)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-1551
+        note: |-
+          vor 1920: Durgi Raina, Pacca Danga Market, Jammu, Indien
+          Archer 1973, p. 198
+        source: rietberg-rvi-1551
+        accessed: 2026-11-24
+  - owner: person/radha-krishna-jalan
+    acquired: c. 1920
+    label: Archer 1973, p. 198; Archer 1952, pp. 54 and 95
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-1551
+        note: |-
+          um 1920: Radha Krishna  Jalan (1882–1954)
+          Archer 1973, p. 198, Archer 1952 p. 54 und 95
+        source: rietberg-rvi-1551
+        accessed: 2026-11-24
+  - owner: person/ravi-sikri
+    acquired_label: vor 11.12.1990
+    label: family member (Familienangehörige*r); purchases 1990
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-1551
+        note: |-
+          vor 11.12.1990: Ravi Sikri, Familienangehörige*r
+          Ankäufe 1990
+        source: rietberg-rvi-1551
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1990-12-11
+    method: purchase
+    direct: true
+    label: bought in Baltimore, USA, with funds from Balthasar and Nanni Reinhart, Eberhard and Barbara Fischer (credit line)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rvi-1551
+        note: "11.12.1990: Museum Rietberg, Käufer*in, Baltimore, USA"
+        source: rietberg-rvi-1551
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

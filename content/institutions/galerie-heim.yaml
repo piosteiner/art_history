@@ -1,3 +1,20 @@
 public_id: 128237
 name: Galerie Heim
+kind: gallery
+place: paris
 wikidata_id: Q47484096
+metadata:
+  sources: [Wikidata Q47484096 (retrieved 2026-11-24)]
+identifiers:
+  bnf: 10125759j
+  lc: n50064177
+  viaf: "159417982"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q47484096
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q47484096

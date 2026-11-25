@@ -1,0 +1,41 @@
+public_id: 129833
+name: Hashimoto
+names:
+  - lang: ja
+    role: original
+    text: 橋本市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q842098
+  - lang: ko
+    role: translation
+    text: 하시모토시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q842098
+  - lang: ru
+    role: translation
+    text: Хасимото
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q842098
+kind: settlement
+parent: wakayama-prefecture
+country_code: JP
+location: [135.60522, 34.31464]
+wikidata_id: Q842098
+metadata:
+  sources: [Wikidata Q842098 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q842098
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q842098
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q842098

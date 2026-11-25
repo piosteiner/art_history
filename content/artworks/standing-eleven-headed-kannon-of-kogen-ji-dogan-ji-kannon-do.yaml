@@ -1,0 +1,73 @@
+public_id: 124995
+title_lang: en
+title: Standing Eleven-Headed Kannon of Kōgen-ji (Dōgan-ji Kannon-dō)
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 向源寺十一面観音立像
+created: 9th century
+created_span: uncertain
+institution: kogen-ji-temple
+wikidata_id: Q107045574
+metadata:
+  sources: [Wikidata Q107045574 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Kwannondo_Temple_Eleven-Head_Kwannon_%28278%29.jpg/1280px-Kwannondo_Temple_Eleven-Head_Kwannon_%28278%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kwannondo_Temple_Eleven-Head_Kwannon_(278).jpg
+    license: Public domain
+    credit: Imperial Japanese Commission to the Panama-Pacific International Exposition
+provenance:
+  - owner_label: Dōgan-ji, Takatsuki
+    acquired: 9th century
+    method: creation
+    place: nagahama
+    label: carved for Dōgan-ji; temple legend attributes it to Taichō in 736 at Emperor Shōmu's order, but its style dates it to the early Heian period, 9th century
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111422331
+        note: 寺伝では泰澄作とされるが、像容に密教思想の影響がみられることから、実際の制作年代は平安初期、西暦では9世紀とされている。
+        source: jawiki-111422331
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/227
+        note: 時代 ： 平安 … 解説文： 平安時代の作品。
+        source: kunishitei-201-227
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1570
+    place: nagahama
+    label: the temple buildings burned in the Azai–Oda war (Battle of Anegawa); the priest Kōen and villagers buried the statue and so saved it
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111422331
+        note: 元亀元年（1570年）、浅井・織田の戦火のために堂宇は焼失した。しかし観音を篤く信仰する住職巧円や近隣の住民は、観音像を土中に埋蔵して難を逃れ
+        source: jawiki-111422331
+        accessed: 2026-11-24
+  - owner_label: villagers of Dōgan-ji (Kannon-dō)
+    acquired: 1571
+    place: nagahama
+    label: a hall built the next year by Iguchi, a retainer of the Azai; unattended and without a sect, the hall and statue were kept by the villagers as common property; named owner 'Kannon-dō' at the 1897 designation
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111422331
+        note: 翌年には浅井氏家臣の井口氏が当地に堂宇を建てて釈迦如来坐像・胎蔵大日如来坐像と共に安置したという。堂宇は無住・無宗派で、近隣の住民が氏仏として大切に管理護持してきた。 … 十一面観音像は村の共有物であったが
+        source: jawiki-111422331
+        accessed: 2026-11-24
+  - owner: institution/kogen-ji-temple
+    acquired: 1900
+    method: transfer
+    direct: true
+    place: nagahama
+    label: as a designated national treasure it could not stay village property and came under the neighbouring Kōgen-ji (Jōdo Shinshū); the Kannon-dō formally became Kōgen-ji's in 1942; statue in the Jiun-kaku storehouse since 1974
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111422331
+        note: 十一面観音像は村の共有物であったが、国宝となった以上は村では所有出来ず、明治33年（1900年）、隣地にある向源寺の管理下に入った。 … 昭和17年（1942年）には宗教団体法の規定に基づき、向源寺飛地境内観音堂は正式に向源寺の所属となった
+        source: jawiki-111422331
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/227
+        note: 所在都道府県 ： 滋賀県 … 所有者名 ： 向源寺
+        source: kunishitei-201-227
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107045574

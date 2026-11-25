@@ -1,0 +1,45 @@
+public_id: 130222
+title: Pavillon de l'Esprit Nouveau
+names:
+  - text: Pavilion of the Esprit Nouveau
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q63323633
+  - lang: it
+    role: translation
+    text: Padiglione dell'Esprit Nouveau
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q63323633
+  - lang: zh
+    role: translation
+    text: 新精神馆
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q63323633
+creator: le-corbusier
+location: [2.31149, 48.86563]
+wikidata_id: Q63323633
+metadata:
+  sources: [Wikidata Q63323633 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/paris
+  - type: co_creator
+    to: artist/pierre-jeanneret
+    label: co-designer
+    sources:
+      - url: https://en.wikipedia.org/wiki/Pavillon_de_l%27Esprit_Nouveau
+        source: wikipedia-en-pavillon-de-lesprit-nouveau
+        accessed: 2026-11-24
+identifiers:
+  viaf: "307513909"
+sources:
+  creator:
+    - url: https://en.wikipedia.org/wiki/Pavillon_de_l%27Esprit_Nouveau
+      source: wikipedia-en-pavillon-de-lesprit-nouveau
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q63323633

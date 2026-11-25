@@ -1,3 +1,31 @@
 public_id: 126886
 name: Heim Gallery
+kind: gallery
+founded: 1966-06
+dissolved: 1989
+place: london
 wikidata_id: Q47484047
+metadata:
+  sources: [Wikidata Q47484047 (retrieved 2026-11-24)]
+identifiers:
+  bnf: 12898235t
+  idref: "084094184"
+  lc: n50065712
+  viaf: "126006605"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q47484047
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q47484047
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q47484047
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q47484047

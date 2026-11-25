@@ -1,3 +1,26 @@
 public_id: 127619
 name: Ganjō-ji Temple
+kind: temple
+place: iwaki
+location: [140.8346, 37.0358]
+address: 福島県いわき市内郷白水町広畑219
 wikidata_id: Q107017288
+metadata:
+  sources: [Wikidata Q107017288 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q107017288
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q107017288
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q107017288
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107017288

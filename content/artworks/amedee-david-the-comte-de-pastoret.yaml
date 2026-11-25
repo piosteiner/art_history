@@ -47,6 +47,118 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Jean_Auguste_Dominique_Ingres_-_Am%C3%A9d%C3%A9e-David,_the_Comte_de_Pastoret_-_1971.452_-_Art_Institute_of_Chicago.jpg
     license: Public domain
     credit: Jean-Auguste-Dominique Ingres
+provenance:
+  - owner: person/amedee-david-de-pastoret
+    ended: 1857
+    label: the sitter; later Marquis de Pastoret
+    sources:
+      - url: https://www.artic.edu/artworks/111317
+        note: Amédée-David, the Comte de Pastoret (1791–1857; later Marquis de Pastoret);
+        source: aic-1971-452
+        accessed: 2026-11-24
+  - owner: person/louise-alphonsine-alexandre-de-neufermeil-de-montry
+    acquired: 1857
+    ended: 1866
+    method: inheritance
+    direct: true
+    label: his widow, the Comtesse Amédée de Pastoret
+    sources:
+      - url: https://www.artic.edu/artworks/111317
+        note: by descent to his widow, the Comtesse Amédée de Pastoret (1795–1866; born Louise-Alphonsine Alexandre de Neufermeil de Montry);
+        source: aic-1971-452
+        accessed: 2026-11-24
+  - owner: person/marie-de-pastoret
+    acquired: 1866
+    ended: 1890
+    method: inheritance
+    direct: true
+    place: paris
+    label: their daughter, the Marquise du Plessis-Bellière (born Marie-Jeanne-Louise-Thérèse de Pastoret), Château de Moreuil and Paris
+    sources:
+      - url: https://www.artic.edu/artworks/111317
+        note: by descent to their daughter, Madame la Marquise du Plessis-Bellière (1817–1890; born Marie-Jeanne-Louise-Thérèse de Pastoret), Château de Moreuil and Paris;
+        source: aic-1971-452
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1897-05-10
+    method: auction
+    direct: true
+    place: paris
+    label: estate sale of the Marquise du Plessis-Bellière, Hôtel Drouot, Paris, 10–11 May 1897, lot 85 (annotated catalogue; Lapauze, “Ingres chez Degas”, 1918)
+    sources:
+      - url: https://www.artic.edu/artworks/111317
+        note: sold, her estate sale, Hôtel Drouot, Paris, May 10–11, 1897, lot 85 to Edgar Degas [annotated sale catalogue in curatorial object file. See also Lapause, “Ingres chez Degas” (1918)];
+        source: aic-1971-452
+        accessed: 2026-11-24
+  - owner: artist/edgar-degas
+    acquired: 1897-05
+    ended: 1917
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/111317
+        note: lot 85 to Edgar Degas [annotated sale catalogue in curatorial object file. See also Lapause, “Ingres chez Degas” (1918)]; Edgar Degas (1834–1917), Paris;
+        source: aic-1971-452
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1918-03-26
+    method: auction
+    direct: true
+    place: paris
+    label: Degas estate sale, Galerie Georges Petit, Paris, 26–27 March 1918, lot 52
+    sources:
+      - url: https://www.artic.edu/artworks/111317
+        note: sold, his estate sale, Galerie Georges Petit, Paris, Mar. 26–27, 1918, lot 52 to David David-Weill [annotated sale catalogue in curatorial object file];
+        source: aic-1971-452
+        accessed: 2026-11-24
+  - owner: person/david-david-weill
+    acquired: 1918-03
+    ended: 1952
+    method: auction
+    direct: true
+    place: neuilly-sur-seine
+    sources:
+      - url: https://www.artic.edu/artworks/111317
+        note: David David-Weill (1871–1952), Neuilly, France;
+        source: aic-1971-452
+        accessed: 2026-11-24
+  - owner: person/flora-david-weill
+    acquired: 1952
+    method: inheritance
+    direct: true
+    place: neuilly-sur-seine
+    label: his widow, Madame David David-Weill, born Flora Raphaël (Paris 1967; Camesasca 1968)
+    sources:
+      - url: https://www.artic.edu/artworks/111317
+        note: by descent to his widow, Madame David David-Weill, Neuilly, France (born Flora Raphaël) [Paris 1967; Camesasca 1968];
+        source: aic-1971-452
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired_label: possibly 1968
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: receipt of objects no. 22424 records the painting as received from Wildenstein
+    sources:
+      - url: https://www.artic.edu/artworks/111317
+        note: sold to Wildenstein and Company, New York, possibly 1968 [receipt of objects no. 22424 lists that the painting was received from Wildenstein; Board of Trustees meeting minutes, June 21, 1971];
+        source: aic-1971-452
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1971
+    method: purchase
+    direct: true
+    place: chicago
+    label: Board of Trustees meeting, 21 June 1971
+    sources:
+      - url: https://www.artic.edu/artworks/111317
+        note: sold to the Art Institute of Chicago, 1971.
+        source: aic-1971-452
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

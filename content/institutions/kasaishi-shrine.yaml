@@ -1,0 +1,26 @@
+public_id: 130102
+name: Kasaishi Shrine
+place: ohtawara
+location: [140.12202, 36.81895]
+address: 栃木県大田原市湯津上430
+wikidata_id: Q107030065
+metadata:
+  sources: [Wikidata Q107030065 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Kasaishi-jinja%2C_shaden.jpg/1280px-Kasaishi-jinja%2C_shaden.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kasaishi-jinja,_shaden.jpg
+    license: CC0
+    credit: Saigen Jiro
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q107030065
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q107030065
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107030065

@@ -1,0 +1,39 @@
+public_id: 129736
+name: Kōtoku-in Temple
+kind: temple
+founded: 1252
+place: kamakura
+location: [139.53572, 35.31686]
+address: 神奈川県鎌倉市長谷４丁目２番28号
+website_url: https://www.kotoku-in.jp/en/
+wikidata_id: Q672056
+metadata:
+  sources: [Wikidata Q672056 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/230128_Kamakura_Daibutsu_Japan01s3.jpg/1280px-230128_Kamakura_Daibutsu_Japan01s3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:230128_Kamakura_Daibutsu_Japan01s3.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+identifiers:
+  viaf: "294037984"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q672056
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q672056
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q672056
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q672056
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q672056

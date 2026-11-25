@@ -1,3 +1,36 @@
 public_id: 127905
 name: Jōraku-ji
+kind: temple
+founded: 8th century
+place: konan
+location: [136.04857, 34.99013]
+address: 滋賀県湖南市西寺6丁目5-1
 wikidata_id: Q11481425
+metadata:
+  sources: [Wikidata Q11481425 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/061220_Joraku-ji_Konan_Shiga_pref_Japan04s5.jpg/1280px-061220_Joraku-ji_Konan_Shiga_pref_Japan04s5.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:061220_Joraku-ji_Konan_Shiga_pref_Japan04s5.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11481425
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11481425
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11481425
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11481425
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11481425

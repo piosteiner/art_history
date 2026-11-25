@@ -112,6 +112,25 @@ relationships:
       - accessed: 2026-11-23
         property: P3373
         wikidata: Q34618
+  - type: participated_in
+    to: event/1867-paris-world-s-fair
+    label: exhibited
+    notes_md: Showed at the fair and in his own pavilion on the place de l'Alma.
+    sources:
+      - url: https://www.universalis.fr/encyclopedie/courbet-et-son-public-reperes-chronologiques/
+        source: universalis-fr-courbet-et-son-public-reperes-chronologiques-encyclopedie-universalis
+        accessed: 2026-11-24
+  - type: participated_in
+    to: event/exposition-universelle-of-1855
+    label: exhibited
+    notes_md: Eleven works accepted; The Painter's Studio rejected; own Pavillon du Réalisme with about forty works.
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Exposition_universelle_de_1855
+        source: wikipedia-fr-exposition-universelle-de-1855
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/The_Painter%27s_Studio
+        source: wikipedia-en-the-painters-studio
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Gustave_Courbet%2C_photograph_Atelier_Nadar%2C_c._1860s.jpg/1280px-Gustave_Courbet%2C_photograph_Atelier_Nadar%2C_c._1860s.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet,_photograph_Atelier_Nadar,_c._1860s.jpg

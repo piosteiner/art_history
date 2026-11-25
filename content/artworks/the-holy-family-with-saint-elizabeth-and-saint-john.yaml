@@ -66,6 +66,223 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_The_Holy_Family_with_Saints_Elizabeth_and_John_the_Baptist_-_1967.229_-_Art_Institute_of_Chicago.jpg
     license: Public domain
     credit: Peter Paul Rubens
+provenance:
+  - owner: person/jacques-langlier
+    place: paris
+    label: acquired it in three pieces and had it conserved by the successors to Godefroid (annotation in the Poullain sale catalogue, Philadelphia Museum of Art)
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: Jacques Langlier, Paris, who acquired it in three pieces and had it conserved by the successors to Godefroid before selling it to Antoine Poullain for 24,000 fr
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: person/antoine-poullain
+    method: purchase
+    direct: true
+    place: paris
+    label: bought from Langlier for 24,000 fr
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: before selling it to Antoine Poullain for 24,000 fr [annotation in the copy of the Poullain sale in the Philadelphia Museum of Art; … ]; Antoine Poullain, Paris;
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: person/jean-baptiste-pierre-lebrun
+    role: agent
+    acquired: 1780-03-15
+    method: auction
+    direct: true
+    place: paris
+    label: Poullain sale, J. B. P. Lebrun, Paris, 15 March 1780, lot 22
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: sold J. B. P. Lebrun, Paris, March 15, 1780, lot 22 for 11,000 fr. to Orsay [according to annotated catalogue cited above and catalogue of the Orsay sale];
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner_label: Comte d'Orsay
+    acquired: 1780-03-15
+    method: auction
+    direct: true
+    place: paris
+    label: bought at the Poullain sale for 11,000 fr.
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: lot 22 for 11,000 fr. to Orsay [according to annotated catalogue cited above and catalogue of the Orsay sale]; Comte d’Orsay, Paris,
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: artist/pierre-francois-basan
+    role: agent
+    acquired: 1790-04-14
+    method: auction
+    direct: true
+    place: paris
+    label: Orsay sale, Basan, Paris, 14 April 1790, lot 65 (Rooses 1886, p. 301)
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: Comte d’Orsay, Paris, sold Basan, Paris, 14 April 1790, lot 65 [see also Rooses, 1886, p. 301].
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    label: taken to England, remained unsold and returned to Paris (Smith 1830, p. 246, under no. 837)
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: The painting was taken to England but remained unsold and was returned to Paris [according to Smith 1830, p. 246, under no. 837].
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: person/nicolas-lerouge
+    place: paris
+    label: the name Castalan or Catalan is also mentioned as the consigner (Rooses 1886, p. 301)
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: Nicolas Lerouge; Paris, offered for sale January 16, 1816, lot 19, but bought in [according to annotated sale cat. at the Johnson Collection, Philadelphia Museum of Art (the name Castalan or Catalan is also mentioned as the consigner, see Rooses 1886, p. 301)];
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner_label: sale, Paris, 16 January 1816
+    role: agent
+    not_sold: true
+    acquired: 1816-01-16
+    method: auction
+    direct: true
+    place: paris
+    label: offered for sale, Paris, 16 January 1816, lot 19, bought in (annotated catalogue, Johnson Collection, Philadelphia Museum of Art)
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: offered for sale January 16, 1816, lot 19, but bought in
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: person/sebastien-erard
+    place: paris
+    label: Chevalier Sebastian Erard
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: Chevalier Sebastian Erard;
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: person/sebastien-erard
+    role: estate
+    ended: 1832-08-07
+    method: inheritance
+    direct: true
+    place: paris
+    label: estate sale, Château de la Muette, 7 August 1832, lot 126, for 6,020 fr. to Hope
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: his estate sale, Château de la Muette, August 7, 1832, lot no. 126, for 6,020 fr. to Hope [according to catalogue of Hope sale];
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: person/william-williams-hope
+    acquired: 1832-08-07
+    method: auction
+    direct: true
+    label: Rushton Hall, Northamptonshire
+    price:
+      amount: 6020
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: for 6,020 fr. to Hope [according to catalogue of Hope sale]; William Williams Hope, Rushton Hall, Northamptonshire;
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1858-05-11
+    method: auction
+    direct: true
+    place: paris
+    label: Hope sale, Hôtel des Commissaires-Priseurs, Paris, 11 May 1858, lot 7 (annotated catalogue, Frick Art Reference Library)
+    price:
+      amount: 4200
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: sold, Hôtel des Commissaries-Priseurs, Paris, May 11, 1858, lot no. 7 for 4200 fr. [annotated catalogue at the Frick Art Reference Library].
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner_label: M. Thirion, Paris
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: M. Thirion, Paris;
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1907-06-10
+    method: auction
+    direct: true
+    place: paris
+    label: sale, Galerie Georges Petit, Paris, 10 June 1907, lot 17 (Weitzner's letter of 2 May 1967); often confused with the larger canvas version (Rooses no. 227)
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: sold Galerie Georges Petit, Paris, June 10, 1907, lot 17 for 59,000 fr. to de Jonghe [according to letter of May 2, 1967 from Julius Weitzner to Charles Cunningham in curatorial file, Paris;
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: person/s-de-jonghe
+    acquired: 1907-06-10
+    method: auction
+    direct: true
+    place: paris
+    label: partner of George Blumenthal at Lazard Frères; died c. 1943
+    price:
+      amount: 59000
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: S. de Jonghe, Paris (died c. 1943), who sent it to George Blumenthal in New York in 1938
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: person/george-blumenthal
+    role: custodian
+    acquired: 1938
+    direct: true
+    place: new-york-city
+    label: sent to him by de Jonghe, his partner at Lazard Frères (Weitzner letter)
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: who sent it to George Blumenthal in New York in 1938 [according to Weitzner letter cited above, noting that Blumenthal was de Jonghe’s partner at Lazard Frères];
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: institution/alavoine-and-company
+    role: agent
+    acquired_label: on de Jonghe's death (c. 1943)
+    direct: true
+    label: transferred for sale on de Jonghe's death
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: transferred on de Jonghe’s death to Alavoine and Company for sale [letter of Julius Weitzner cited above];
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: person/julius-h-weitzner
+    acquired: 1946 or earlier
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: London and New York; lent to Los Angeles 1946
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: sold to Julius H. Weitzner, London and New York by 1946 [he lent it to Los Angeles 1946];
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: person/marjorie-weitzner-gambino
+    method: gift
+    direct: true
+    place: rome
+    label: his daughter
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: given to his daughter Marjorie Weitzner Gambino, Rome,
+        source: aic-1967-229
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1967
+    method: purchase
+    direct: true
+    place: chicago
+    label: sold on Marjorie Weitzner Gambino's behalf
+    sources:
+      - url: https://www.artic.edu/artworks/27310
+        note: and sold on her behalf to the Art Institute, 1967.
+        source: aic-1967-229
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

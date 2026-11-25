@@ -1,3 +1,20 @@
 public_id: 127649
 name: Sächsischer Kunstverein
+founded: 1828
+dissolved: 1946
 wikidata_id: Q15444780
+metadata:
+  sources: [Wikidata Q15444780 (retrieved 2026-11-24)]
+identifiers:
+  gnd: 508973-6
+  lc: no2010099823
+  viaf: "147233933"
+sources:
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q15444780
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q15444780

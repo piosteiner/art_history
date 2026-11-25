@@ -96,6 +96,17 @@ relationships:
       - accessed: 2026-11-23
         property: P26
         wikidata: Q40599
+  - type: participated_in
+    to: event/1867-paris-world-s-fair
+    label: exhibited
+    notes_md: Own pavilion near the Alma; painted View of the 1867 Exposition Universelle.
+    sources:
+      - url: https://nasjonalmuseet.no/en/collection/object/NG.M.01293
+        source: nasjonalmuseet-xc9-douard-manet-view-of-the-1867-exposition-universelle-x2013-nasjona
+        accessed: 2026-11-24
+      - url: https://archive.org/details/cataloguedestabl00mane
+        source: internet-archive-catalogue-des-tableaux-de-m-edouard-manet-exposes-avenue-de-lalma-en-1
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/%C3%89douard_Manet%2C_en_buste%2C_de_face_-_Nadar.jpg/1280px-%C3%89douard_Manet%2C_en_buste%2C_de_face_-_Nadar.jpg
     source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet,_en_buste,_de_face_-_Nadar.jpg

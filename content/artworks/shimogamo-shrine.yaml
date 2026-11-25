@@ -53,6 +53,8 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q701620
+created: 678
+institution: shimogamo-shrine
 location: [135.77301, 35.03907]
 wikidata_id: Q701620
 metadata:
@@ -65,6 +67,21 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Shimogamo_01.jpg
     license: CC BY-SA 3.0
     credit: Mochi at Japanese Wikipedia
+provenance:
+  - owner: institution/shimogamo-shrine
+    acquired: 678
+    method: creation
+    place: kyoto
+    label: buildings first recorded 678 (Hakuhō 6); rebuilding every 21 years fixed 1036; present East and West Honden rebuilt 1863 (National Treasures 1953); owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1646
+        note: 通称下鴨神社で、上賀茂神社と同様な社歴をもっている。白鳳六年（六七八）の造営以後たびたび造替修理の記録がみられ、長元九年（一〇三六）に二十一年毎の式年造替が定められたという。 … 現在の両本殿は上賀茂神社と同じく文久三年（一八六三）に造替されたものである。 … 所有者名 ： 賀茂御祖神社
+        source: kunishitei-102-1646
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%B3%80%E8%8C%82%E5%BE%A1%E7%A5%96%E7%A5%9E%E7%A4%BE&oldid=111090040
+        note: 『本朝月令』によると、天武天皇6年（677年）に高野川と加茂川の合流する河合の地域に社殿を造営したのが当社の始まりであるという … 井上光貞の説でも、奈良時代前期まで「賀茂社」といえば現在の上賀茂神社だけで
+        source: wikipedia-ja-shimogamo-shrine
+        accessed: 2026-11-24
 identifiers:
   viaf: "154050955"
 sources:

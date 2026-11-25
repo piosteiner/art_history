@@ -1,0 +1,56 @@
+public_id: 130217
+title_lang: fr
+title: La Fée Electricité
+names:
+  - lang: en
+    role: translation
+    text: La Fée Électricité
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3209311
+  - lang: zh
+    role: translation
+    text: 电气精灵
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3209311
+creator: raoul-dufy
+created: 1937
+materials: [oil paint]
+dimensions: [1000, 6000]
+institution: musee-d-art-moderne-de-paris
+inventory_number: AMVP 1
+web_url: http://parismuseescollections.paris.fr/en/node/205925
+wikidata_id: Q3209311
+metadata:
+  sources: [Wikidata Q3209311 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Raoul_dufy%2C_la_fata_elettricit%C3%A0%2C_1937%2C_03.jpg/1280px-Raoul_dufy%2C_la_fata_elettricit%C3%A0%2C_1937%2C_03.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raoul_dufy,_la_fata_elettricit%C3%A0,_1937,_03.jpg
+    license: CC BY-SA 4.0
+    credit: Francesco Bini
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3209311
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q3209311
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q3209311
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q3209311
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q3209311
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q3209311

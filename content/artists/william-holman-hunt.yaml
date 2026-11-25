@@ -104,6 +104,14 @@ relationships:
       - accessed: 2026-11-10
         property: P112
         wikidata: Q184814
+  - type: participated_in
+    to: event/exposition-universelle-of-1855
+    label: exhibited
+    notes_md: Exhibited in the British fine-art section.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1855)
+        source: wikipedia-en-exposition-universelle-1855
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/7/70/William_Holman_Hunt_-_Selfportrait.jpg
     source_url: https://commons.wikimedia.org/wiki/File:William_Holman_Hunt_-_Selfportrait.jpg

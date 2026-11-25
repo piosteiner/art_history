@@ -1,0 +1,117 @@
+public_id: 130193
+title: Eiffel Tower
+names:
+  - text: the Eiffel Tower
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q243
+  - lang: nl
+    role: translation
+    text: Eiffeltoren
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q243
+  - lang: fr
+    role: translation
+    text: tour Eiffel
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q243
+  - lang: de
+    role: translation
+    text: Eiffelturm
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q243
+  - lang: it
+    role: translation
+    text: torre Eiffel
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q243
+  - lang: ja
+    role: translation
+    text: エッフェル塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q243
+  - lang: zh
+    role: translation
+    text: 埃菲尔铁塔
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q243
+  - lang: ko
+    role: translation
+    text: 에펠탑
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q243
+  - lang: ru
+    role: translation
+    text: Эйфелева башня
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q243
+creator: gustave-eiffel
+created: 1887-01-28
+materials: [wrought iron, steel, puddled iron]
+dimensions: [33000]
+location: [2.29448, 48.8583]
+wikidata_id: Q243
+metadata:
+  sources: [Wikidata Q243 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/paris
+    period: 1887-01-28
+  - type: co_creator
+    to: artist/emile-nouguier
+    label: structural engineer
+    sources:
+      - url: https://en.wikipedia.org/wiki/Eiffel_Tower
+        source: wikipedia-en-eiffel-tower
+        accessed: 2026-11-24
+  - type: co_creator
+    to: artist/maurice-koechlin
+    label: structural engineer
+    sources:
+      - url: https://en.wikipedia.org/wiki/Eiffel_Tower
+        source: wikipedia-en-eiffel-tower
+        accessed: 2026-11-24
+  - type: co_creator
+    to: artist/stephen-sauvestre
+    label: "architect: arches and decoration"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Eiffel_Tower
+        source: wikipedia-en-eiffel-tower
+        accessed: 2026-11-24
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/1280px-Tour_Eiffel_Wikimedia_Commons.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg
+    license: Public domain
+    credit: Benh LIEU SONG
+identifiers:
+  gnd: 4102872-7
+  viaf: "236835198"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q243
+  creator:
+    - url: https://en.wikipedia.org/wiki/Eiffel_Tower
+      source: wikipedia-en-eiffel-tower
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q243
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q243
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q243

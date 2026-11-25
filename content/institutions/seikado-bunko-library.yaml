@@ -2,15 +2,34 @@ public_id: 124231
 name: Seikadō Bunko Library
 kind: library
 founded: 1892
+place: tokyo
+location: [139.61917, 35.62278]
+website_url: https://www.seikado.or.jp/about/about_bunko/
 wikidata_id: Q3329573
 metadata:
   sources: [Wikidata Q3329573 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Seikado_Bunko_2009.jpg/1280px-Seikado_Bunko_2009.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Seikado_Bunko_2009.jpg
+    license: CC BY-SA 3.0
+    credit: Wiiii
+identifiers:
+  lc: n82029142
+  viaf: "126687502"
 sources:
   kind:
     - accessed: 2026-11-24
       property: P31
       wikidata: Q3329573
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3329573
   founded:
     - accessed: 2026-11-24
       property: P571
+      wikidata: Q3329573
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q3329573

@@ -1,0 +1,61 @@
+public_id: 130224
+title: The Crystal Palace
+names:
+  - text: Crystal Palace
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q202902
+  - lang: ja
+    role: translation
+    text: 水晶宮
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q202902
+  - lang: ko
+    role: translation
+    text: 수정궁
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q202902
+  - lang: ru
+    role: translation
+    text: Хрустальный дворец
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q202902
+creator: joseph-paxton
+created: 1851-05-01
+materials: [glass, iron, cast iron, wood]
+location: [-0.07579, 51.42229]
+wikidata_id: Q202902
+metadata:
+  sources: [Wikidata Q202902 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/london
+    period: 1851-05-01
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Crystal_Palace_from_the_northeast_from_Dickinson%27s_Comprehensive_Pictures_of_the_Great_Exhibition_of_1851._1854.jpg/1280px-Crystal_Palace_from_the_northeast_from_Dickinson%27s_Comprehensive_Pictures_of_the_Great_Exhibition_of_1851._1854.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Crystal_Palace_from_the_northeast_from_Dickinson%27s_Comprehensive_Pictures_of_the_Great_Exhibition_of_1851._1854.jpg
+    license: Public domain
+    credit: Dickinson Brothers
+identifiers:
+  gnd: 4361287-8
+  viaf: "315685430"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q202902
+  creator:
+    - url: https://www.vam.ac.uk/articles/the-great-exhibition-of-1851
+      source: victoria-and-albert-the-foundation-of-the-v-as-collections-the-great-exhibition-of-1851-mi
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q202902
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q202902

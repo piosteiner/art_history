@@ -2,4 +2,39 @@ public_id: 128318
 name: Otto Thott
 given_name: Otto
 family_name: Thott
+kind: person
+birth: 1703-10-13
+death: 1785-09-10
 wikidata_id: Q3364550
+metadata:
+  sources: [Wikidata Q3364550 (retrieved 2026-11-24)]
+relationships:
+  - type: died_in
+    to: place/copenhagen
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q3364550
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/08/Otto_Thott_%28greve%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Otto_Thott_(greve).JPG
+    license: Public domain
+    credit: Orf3us
+identifiers:
+  gnd: "120551497"
+  lc: n85083686
+  rkd: "463237"
+  viaf: "45135115"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3364550
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q3364550
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q3364550

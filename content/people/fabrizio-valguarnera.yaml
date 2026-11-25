@@ -2,4 +2,21 @@ public_id: 126152
 name: Fabrizio Valguarnera
 given_name: Fabrizio
 family_name: Valguarnera
+kind: person
+death: 1632-01-02
 wikidata_id: Q21714539
+metadata:
+  sources: [Wikidata Q21714539 (retrieved 2026-11-24)]
+identifiers:
+  gnd: "121411893"
+  rkd: "455849"
+  viaf: "42693324"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q21714539
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q21714539

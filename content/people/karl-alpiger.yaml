@@ -2,4 +2,22 @@ public_id: 129184
 name: Karl Alpiger
 given_name: Karl
 family_name: Alpiger
+kind: person
+birth: 1876
+death: 20th century
 wikidata_id: Q129896955
+metadata:
+  sources: [Wikidata Q129896955 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q129896955
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q129896955
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q129896955

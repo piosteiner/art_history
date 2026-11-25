@@ -1,0 +1,16 @@
+public_id: 130214
+name: Museo Nacional Centro de Arte Reina Sofía
+kind: museum
+founded: 1992
+wikidata_id: Q460889
+metadata:
+  sources: [Wikidata Q460889 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q460889
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q460889

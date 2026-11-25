@@ -1,0 +1,34 @@
+public_id: 129752
+name: Agency for Cultural Affairs
+founded: 1968-06-15
+place: kyoto
+location: [135.75611, 35.02056]
+website_url: https://www.bunka.go.jp
+wikidata_id: Q1009519
+metadata:
+  sources: [Wikidata Q1009519 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Agency_for_Cultural_Affairs_Kyoto_Buildings_20230413.jpg/1280px-Agency_for_Cultural_Affairs_Kyoto_Buildings_20230413.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Agency_for_Cultural_Affairs_Kyoto_Buildings_20230413.jpg
+    license: CC BY 4.0
+    credit: Agency for Cultural Affairs, Government of Japan
+identifiers:
+  bnf: "118685456"
+  gnd: 1034330-1
+  idref: "026437880"
+  lc: n80050761
+  ulan: "500309651"
+  viaf: "140716033"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1009519
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1009519
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1009519

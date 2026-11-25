@@ -1,3 +1,23 @@
 public_id: 125750
 name: British Army
+founded: 1707
+website_url: https://www.army.mod.uk/
 wikidata_id: Q222595
+metadata:
+  sources: [Wikidata Q222595 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Coyote_Tactical_Support_Vehicle_%28TSV%29_MOD_45152541.jpg/1280px-Coyote_Tactical_Support_Vehicle_%28TSV%29_MOD_45152541.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Coyote_Tactical_Support_Vehicle_(TSV)_MOD_45152541.jpg
+    license: OGL v1.0
+    credit: Andrew Linnett
+identifiers:
+  bnf: 10125134j
+  gnd: 1004366-4
+  idref: "114627134"
+  lc: n79063282
+  viaf: "124946906"
+sources:
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q222595

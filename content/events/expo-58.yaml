@@ -1,0 +1,71 @@
+public_id: 130614
+name: Expo 58
+names:
+  - lang: fr
+    role: original
+    text: Exposition universelle et internationale de Bruxelles
+  - lang: nl
+    role: original
+    text: Wereldtentoonstelling van Brussel
+kind: world's fair
+period: 1958-04-17/1958-10-19
+place: brussels
+location: [4.34389, 50.89667]
+description_md: |-
+  Expo 58 was the first world's fair after the Second World War.[[source/museum-of-modern-reluctantly-global-fifty-years-of-modern-art-at-the-1958-brussels-expo]] At the foot of the Atomium the [[polity/soviet-union|Soviet Union]] and the [[polity/united-states|United States]] “mocked each other in a symbolic confrontation”, the one with Sputnik, the other with the American Dream.[[source/atomium-expo-58]] The Soviet pavilion, with prototypes of Sputnik, won a Grand Prix, while Edward Durell Stone's American pavilion showed the Circarama film *America the Beautiful*.[[source/wikipedia-en-expo-58]] The Belgian Congo section included a “village indigène”, one of the notable “human zoos” of the twentieth century, in which the Ministry of Colonies exhibited 598 Congolese; they protested in mid-July and demanded to be sent home.[[source/wikipedia-en-expo-58]] The historian Maarten Couttenier calls these displays colonial propaganda; after abuse from visitors the Congolese chose to leave, showing that by 1958 they had a voice.[[source/rtbf-be-avec-son-x27-zoo-humain-x27-l-x27-expo-x27-58-n-x27-a-pas-laisse-que-d]]
+
+  [[polity/belgium|Belgium]] and 44 countries took part on the Heysel plateau in Brussels.[[source/atomium-expo-58]][[source/wikipedia-en-expo-58]] King Baudouin opened the fair with a call for world peace and social and economic progress.[[source/wikipedia-en-expo-58]] Its centrepiece, the [[artwork/atomium|Atomium]] by the engineer [[artist/andre-waterkeyn|André Waterkeyn]] and the architects André and Jean Polak, enlarged the unit cell of an iron crystal about 165 billion times; meant to last six months, it still stands.[[source/wikipedia-en-atomium]]
+
+  The main art exhibition, *50 ans d'art moderne* at the Palais international des beaux-arts, showed 348 works by 240 artists from 36 countries under Émile Langui.[[source/museum-of-modern-reluctantly-global-fifty-years-of-modern-art-at-the-1958-brussels-expo]] Soviet museums lent works by Matisse, Picasso, Cézanne, Gauguin and van Gogh from the Shchukin and Morozov collections on condition that [[movement/socialist-realism|Socialist Realist]] works, among them one by [[artist/vera-mukhina|Vera Mukhina]], were shown too, alongside American Abstract Expressionism; it was one of the largest showings of Socialist Realism in the West during the Cold War.[[source/museum-of-modern-reluctantly-global-fifty-years-of-modern-art-at-the-1958-brussels-expo]] The [[artwork/philips-pavilion|Philips Pavilion]] by the office of [[artist/le-corbusier|Le Corbusier]], with [[artist/iannis-xenakis|Iannis Xenakis]] as project manager, played Edgard Varèse's *Poème électronique* through hundreds of loudspeakers and became a landmark of electronic music and multimedia art; it was demolished on 30 January 1959.[[source/wikipedia-en-philips-pavilion]]
+wikidata_id: Q74035
+relationships:
+  - type: concerns
+    to: artwork/atomium
+    sources:
+      - source: wikipedia-en-atomium
+        accessed: 2026-11-24
+  - type: concerns
+    to: polity/belgium
+    sources:
+      - source: atomium-expo-58
+        accessed: 2026-11-24
+      - source: wikipedia-en-expo-58
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/philips-pavilion
+    sources:
+      - source: wikipedia-en-philips-pavilion
+        accessed: 2026-11-24
+  - type: concerns
+    to: movement/socialist-realism
+    sources:
+      - source: museum-of-modern-reluctantly-global-fifty-years-of-modern-art-at-the-1958-brussels-expo
+        accessed: 2026-11-24
+  - type: concerns
+    to: polity/soviet-union
+    sources:
+      - source: atomium-expo-58
+        accessed: 2026-11-24
+  - type: concerns
+    to: polity/united-states
+    sources:
+      - source: atomium-expo-58
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: wikipedia-en-expo-58
+  place:
+    - url: https://en.wikipedia.org/wiki/Expo_58
+      source: wikipedia-en-expo-58
+      accessed: 2026-11-24
+  period:
+    - url: https://en.wikipedia.org/wiki/Expo_58
+      source: wikipedia-en-expo-58
+      accessed: 2026-11-24
+    - url: https://atomium.be/expo58
+      source: atomium-expo-58
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q74035

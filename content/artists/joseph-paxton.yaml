@@ -1,0 +1,67 @@
+public_id: 130225
+name: Joseph Paxton
+given_name: Joseph
+family_name: Paxton
+names:
+  - text: Sir Joseph Paxton
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q318372
+  - text: Sir Paxton
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q318372
+  - lang: ja
+    role: translation
+    text: ジョセフ・パクストン
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q318372
+  - lang: zh
+    role: translation
+    text: 约瑟夫·帕克斯顿
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q318372
+  - lang: ru
+    role: translation
+    text: Джозеф Пакстон
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q318372
+birth: 1804-08-03
+death: 1865-06-08
+wikidata_id: Q318372
+metadata:
+  sources: [Wikidata Q318372 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/great-exhibition-of-1851
+    label: architect
+    notes_md: Designed the Crystal Palace (sketch 11 June 1850, accepted 15 July 1850).
+    sources:
+      - url: https://www.vam.ac.uk/articles/the-great-exhibition-of-1851
+        source: victoria-and-albert-the-foundation-of-the-v-as-collections-the-great-exhibition-of-1851-mi
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4f/Joseph_Paxton_by_Octavius_Oakley%2C_c1850.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joseph_Paxton_by_Octavius_Oakley,_c1850.jpg
+    license: Public domain
+    credit: Octavius Oakley (1800-1867)
+identifiers:
+  bnf: 12566672h
+  gnd: "118790021"
+  idref: "069509549"
+  lc: n80132081
+  rkd: "62204"
+  ulan: "500032820"
+  viaf: "15565873"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q318372
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q318372

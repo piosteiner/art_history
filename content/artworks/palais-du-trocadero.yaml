@@ -1,0 +1,80 @@
+public_id: 130197
+title: Palais du Trocadéro
+names:
+  - text: Palais du Trocadero
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q123256
+  - lang: it
+    role: translation
+    text: Palazzo del Trocadéro
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q123256
+  - lang: es
+    role: translation
+    text: Palacio del Trocadero
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q123256
+  - lang: ja
+    role: translation
+    text: シャイヨ宮
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q123256
+  - lang: zh
+    role: translation
+    text: 夏乐宫
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q123256
+  - lang: ru
+    role: translation
+    text: Дворец Трокадеро
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q123256
+creator: gabriel-davioud
+created: 1843
+dimensions: [8250]
+location: [2.28722, 48.86278]
+wikidata_id: Q123256
+metadata:
+  sources: [Wikidata Q123256 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/paris
+    period: 1843
+  - type: co_creator
+    to: artist/jules-bourdais
+    label: engineer
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Exposition_universelle_de_1878
+        source: wikipedia-fr-exposition-universelle-de-1878
+        accessed: 2026-11-24
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/The_Trocadero%2C_Exposition_Universal%2C_1900%2C_Paris%2C_France.jpg/1280px-The_Trocadero%2C_Exposition_Universal%2C_1900%2C_Paris%2C_France.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Trocadero,_Exposition_Universal,_1900,_Paris,_France.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: 7523455-5
+  viaf: "134165748"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q123256
+  creator:
+    - url: https://fr.wikipedia.org/wiki/Exposition_universelle_de_1878
+      source: wikipedia-fr-exposition-universelle-de-1878
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q123256
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q123256

@@ -1,0 +1,18 @@
+public_id: 129853
+name: American Art Galleries
+kind: gallery
+place: new-york-city
+wikidata_id: Q18565755
+metadata:
+  sources: [Wikidata Q18565755 (retrieved 2026-11-24)]
+identifiers:
+  viaf: "130495622"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q18565755
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q18565755

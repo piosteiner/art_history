@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107046082
+institution: toshodai-ji
 wikidata_id: Q107046082
 metadata:
   sources: [Wikidata Q107046082 (retrieved 2026-11-24)]
@@ -15,3 +16,18 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Thousand_armed_Kannon_Tosyodaiji.JPG
     license: Public domain
     credit: NEIRAKU-HAKKO-SYO
+provenance:
+  - owner: institution/toshodai-ji
+    acquired_label: 2nd half of the 8th century (Nara period)
+    method: creation
+    place: nara
+    label: dry lacquer over a wooden core; one of the images flanking the Birushana Buddha in the kondō (Golden Hall); the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/201
+        note: 木心乾漆千手観音立像（金堂安置） … 時代 ： 奈良 … 所有者名 ： 唐招提寺
+        source: kunishitei-201-201
+        accessed: 2026-11-24
+      - note: "Two sculptures stylistically close the Nara period: an eleven-headed, thousand-armed Kannon (Fig. 122) and a standing Yakushi (Fig. 123), both of which flank the Birushana Buddha in the kondō of Tōshōdaiji. … 122 Thousand-Armed Kannon, in the kondō, Tōshōdaiji. 2nd half of the 8th century. Dry lacquer over wood … And in 759 the first steps towards the building of Toshodaiji were taken."
+        source: history-of-japanese-art
+        locator: p. 96, fig. 122; pp. 70–71
+        accessed: 2026-11-24

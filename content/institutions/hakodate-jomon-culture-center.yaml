@@ -1,11 +1,27 @@
 public_id: 124299
 name: Hakodate Jōmon Culture Center
 kind: museum
+place: hakodate
+location: [140.94475, 41.92792]
+website_url: http://www.hjcc.jp/
 wikidata_id: Q28685000
 metadata:
   sources: [Wikidata Q28685000 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Michinoeki_jyoumonRoman.JPG/1280px-Michinoeki_jyoumonRoman.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Michinoeki_jyoumonRoman.JPG
+    license: CC BY-SA 4.0
+    credit: アラツク
 sources:
   kind:
     - accessed: 2026-11-24
       property: P31
+      wikidata: Q28685000
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q28685000
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q28685000

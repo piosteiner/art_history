@@ -1,0 +1,59 @@
+public_id: 130230
+name: Jules Bourdais
+given_name: Jules
+family_name: Bourdais
+names:
+  - text: Jules Desire Bourdais
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1649168
+  - text: Jules Désiré Bourdais
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1649168
+  - lang: es
+    role: translation
+    text: Jules-Désiré Bourdais
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1649168
+  - lang: zh
+    role: translation
+    text: 朱尔·布尔代
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1649168
+birth: 1835-04-06
+death: 1915-06-02
+wikidata_id: Q1649168
+metadata:
+  sources: [Wikidata Q1649168 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/1878-paris-world-s-fair
+    label: architect
+    notes_md: Engineer of the Palais du Trocadéro
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Exposition_universelle_de_1878
+        source: wikipedia-fr-exposition-universelle-de-1878
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/df/Bourdais%2C_Jules_Desire.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bourdais,_Jules_Desire.jpg
+    license: Public domain
+    credit: Truchelut
+identifiers:
+  bnf: "149722284"
+  gnd: "128571985"
+  idref: "113820194"
+  ulan: "500071038"
+  viaf: "42893194"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q1649168
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q1649168

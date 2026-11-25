@@ -2,4 +2,46 @@ public_id: 127582
 name: Lucrezia d'Este
 given_name: Lucrezia
 family_name: d'Este
+kind: person
+birth: 1535-12-26
+death: 1598
 wikidata_id: Q3839040
+metadata:
+  sources: [Wikidata Q3839040 (retrieved 2026-11-24)]
+relationships:
+  - type: born_in
+    to: place/ferrara
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q3839040
+  - type: died_in
+    to: place/ferrara
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q3839040
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2c/Ambito_Marchigiano_-_Lucrezia_d%27Este%2C_duchessa_di_Urbino.png
+    source_url: https://commons.wikimedia.org/wiki/File:Ambito_Marchigiano_-_Lucrezia_d%27Este,_duchessa_di_Urbino.png
+    license: Public domain
+    credit: Unidentified painter
+identifiers:
+  bnf: "121051781"
+  gnd: "119002809"
+  idref: "029420601"
+  lc: n88056115
+  viaf: "10646292"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3839040
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q3839040
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q3839040

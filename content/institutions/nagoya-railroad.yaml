@@ -1,0 +1,24 @@
+public_id: 130075
+name: Nagoya Railroad
+founded: 1921-06-13
+place: japan
+website_url: https://top.meitetsu.co.jp/
+wikidata_id: Q30850
+metadata:
+  sources: [Wikidata Q30850 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/MEITETSU_Department_Store_-_Head_Store_-_01.JPG/1280px-MEITETSU_Department_Store_-_Head_Store_-_01.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:MEITETSU_Department_Store_-_Head_Store_-_01.JPG
+    license: CC BY 3.0
+    credit: JKT-c
+identifiers:
+  viaf: "311116845"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q30850
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q30850

@@ -2,15 +2,38 @@ public_id: 123156
 name: Archaeological Museum of Thessaloniki
 kind: museum
 founded: 1912
+place: thessaloniki-municipal-unit
+location: [22.95389, 40.625]
+website_url: http://www.amth.gr/
 wikidata_id: Q2658285
 metadata:
   sources: [Wikidata Q2658285 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a4/Macedonian_Museums-89-Arx_Thessaloniknhs-396.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Macedonian_Museums-89-Arx_Thessaloniknhs-396.jpg
+    license: CC BY-SA 3.0
+    credit: Prof. Vlasis Vlasidis
+identifiers:
+  bnf: 11956196g
+  gnd: 1084729-7
+  idref: "027544125"
+  lc: n85254822
+  ulan: "500309587"
+  viaf: "136548222"
 sources:
   kind:
     - accessed: 2026-11-24
       property: P31
       wikidata: Q2658285
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2658285
   founded:
     - accessed: 2026-11-24
       property: P571
+      wikidata: Q2658285
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q2658285

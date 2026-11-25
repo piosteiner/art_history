@@ -1,0 +1,40 @@
+public_id: 129827
+name: Shōrin-ji Temple
+kind: temple
+founded: 712
+place: sakurai
+location: [135.85183, 34.49169]
+address: 奈良県桜井市下692
+website_url: http://www.shorinji-temple.jp/
+wikidata_id: Q11611064
+metadata:
+  sources: [Wikidata Q11611064 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Shorinji03s3200.jpg/1280px-Shorinji03s3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shorinji03s3200.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  lc: no2018082118
+  viaf: "257369015"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11611064
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11611064
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11611064
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11611064
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11611064

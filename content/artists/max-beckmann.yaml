@@ -128,6 +128,14 @@ relationships:
       - accessed: 2026-11-12
         property: P135
         wikidata: Q164683
+  - type: participated_in
+    to: event/a-century-of-progress-international-exposition
+    label: exhibited
+    notes_md: Two paintings (Landschaft bei Frankfurt mit Fabrik; Bildnis einer alten Schauspielerin) in the Art Institute's Century of Progress exhibition 1933
+    sources:
+      - url: https://max-beckmann.org/research/ausstellungen/chicago-art-institute-1933
+        source: max-beckmann-org-chicago-art-institute-1933-max-beckmann
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/f1/Max_Beckmann_1928%2C_by_Hugo_Erfurth.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Max_Beckmann_1928,_by_Hugo_Erfurth.jpg

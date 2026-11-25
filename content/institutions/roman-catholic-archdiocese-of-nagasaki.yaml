@@ -1,0 +1,25 @@
+public_id: 129795
+name: Roman Catholic Archdiocese of Nagasaki
+founded: 1887
+place: nagasaki
+website_url: https://www.nagasaki.catholic.jp/
+wikidata_id: Q266031
+metadata:
+  sources: [Wikidata Q266031 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8d/Urakami_tenshudo_Alex_K_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Urakami_tenshudo_Alex_K_1.jpg
+    license: CC BY-SA 3.0
+    credit: Alex Tora
+identifiers:
+  lc: n87919491
+  viaf: "157203349"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q266031
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q266031

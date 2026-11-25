@@ -37,6 +37,39 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Huineng_with_rod.jpg
     license: Public domain
     credit: Zhiweng
+provenance:
+  - owner: artist/zhi-weng
+    acquired_label: Southern Song dynasty
+    method: creation
+    label: bears the seal 'Zhiweng' (直翁) and an inscription by the Chan monk Yanxi Guangwen
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/54
+        note: 紙本墨画六祖挟担図「直翁」の印がある … 国：中国 時代：南宋 … 偃谿黄聞の賛がある
+        source: kunishitei-201-54
+        accessed: 2026-11-24
+  - owner: institution/daitokyu-kinen-bunko
+    place: tokyo
+    label: library foundation set up by Gotō Keita in 1949; the painting is one of its National Treasures; how and when it came there is not stated
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E4%BA%94%E5%B3%B6%E7%BE%8E%E8%A1%93%E9%A4%A8
+        note: 国宝（大東急記念文庫所管）※以下は大東急記念文庫所属の国宝・重要文化財の一覧である（所有者は公益財団法人五島美術館） … 六祖挟担図 紙本墨画 1幅 … 五島が1949年（昭和24年）に創設した、大東急記念文庫がある。
+        source: wikipedia-ja-gotoh-museum
+        accessed: 2026-11-24
+  - owner: institution/gotoh-museum
+    acquired: 2011-03-01
+    method: transfer
+    direct: true
+    place: tokyo
+    label: the Daitōkyū Kinen Bunko foundation merged into the Gotoh Museum
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/54
+        note: 保管施設の名称：財団法人五島美術館 所有者名：財団法人五島美術館
+        source: kunishitei-201-54
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E4%BA%94%E5%B3%B6%E7%BE%8E%E8%A1%93%E9%A4%A8
+        note: 財団法人大東急記念文庫は、以前は五島美術館とは別個の法人であったが、2011年3月1日、大東急記念文庫は五島美術館に吸収合併された
+        source: wikipedia-ja-gotoh-museum
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

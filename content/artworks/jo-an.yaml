@@ -18,6 +18,7 @@ names:
       - accessed: 2026-11-24
         wikidata: Q4924573
 created: 1618
+institution: nagoya-railroad
 location: [136.94235, 35.38799]
 wikidata_id: Q4924573
 metadata:
@@ -31,6 +32,70 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Joan_in_Urakuen,_Gomonsaki_Inuyama_Inuyama_City_2023.jpg
     license: CC BY-SA 4.0
     credit: Tomio344456
+provenance:
+  - owner: institution/shoden-in-kennin-ji
+    acquired: c. 1618
+    ended: 1873
+    method: creation
+    place: kyoto
+    label: tea room built c. 1618 for Oda Urakusai (1547–1621) in the Shōden-in, the sub-temple of Kennin-ji he had revived; kept as Shōden-in's tea room until the Meiji Restoration
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1240
+        note: 如庵は織田有楽斎（一五四七～一六二一）が再興した建仁寺正伝院の中に元和四年（一六一八）に建てられた茶室である。
+        source: kunishitei-102-1240
+        accessed: 2026-11-24
+      - url: https://www.mitsuipr.com/history/columns/026/
+        note: 如庵は創建から明治維新に至るまでの二百数十年間、正伝院所有の茶室として維持されたが、その後は転々と移築が繰り返される数奇な運命をたどっていく。
+        source: mitsuipr-columns-026
+        accessed: 2026-11-24
+  - owner_label: residents of Gion-machi, Kyoto
+    acquired: 1873
+    method: purchase
+    place: kyoto
+    label: sold off when Kyoto Prefecture took the Shōden-in site; shown to the public as the "Urakukan"
+    sources:
+      - url: https://www.mitsuipr.com/history/columns/026/
+        note: 明治6年（1873）、京都府は窮民産業所を設立するため、正伝院の地を府に引き渡すことを命じた。それに伴い、如庵とその付属施設は売却の対象となった。一時期は京都市祇園町の有志らが所有者となり、「有楽館」と名付けて保存公開されていた
+        source: mitsuipr-columns-026
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E5%A6%82%E5%BA%B5
+        note: 明治6年（1873年）に正伝院は永源庵跡地に移転したが、その際に、祇園町の有志に払い下げられた。
+        source: wikipedia-ja-jo-an
+        accessed: 2026-11-24
+  - owner_label: Mitsui family, North house (Sōryōke), head Mitsui Takamune (1857–1948)
+    acquired: 1908
+    ended: 1970
+    method: purchase
+    place: tokyo
+    label: bought with its shoin and roji and moved to the Mitsui main residence at Imai-chō, Tokyo; moved 1937–41 to Takamune's villa Jōzansō at Ōiso (Kanagawa)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1240
+        note: 明治時代の末年、路地及び書院とともに三井家の所有となり、東京の邸内に移されたが、昭和十三年神奈川県下に移築
+        source: kunishitei-102-1240
+        accessed: 2026-11-24
+      - url: https://www.mitsuipr.com/history/columns/026/
+        note: 有楽館の諸施設のうち最も主要な「如庵」「書院」「露地」を三井北家が買い取り、それらは同年、東京今井町（現港区六本木）の三井本邸に移築された。… 昭和11年（1936）に計画され、翌12年（1937）からはじまった移築作業は、高棟の指揮の下に5年という歳月をかけて慎重に行われていった。… 大磯の城山荘は昭和45年（1970）に三井家の所有から離れることになる。
+        source: mitsuipr-columns-026
+        accessed: 2026-11-24
+  - owner: institution/nagoya-railroad
+    acquired: 1970
+    method: purchase
+    place: inuyama
+    label: changed owners when the Mitsui villa at Ōiso was given up; moved 1972 by Meitetsu, under Horiguchi Sutemi, to the Urakuen garden of the Meitetsu Inuyama Hotel; owner today
+    certainty: probable
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1240
+        note: さらに同四十七年現在の地に移された。… 所有者名 ： 名古屋鉄道株式会社 所有者種別 ： 法人
+        source: kunishitei-102-1240
+        accessed: 2026-11-24
+      - url: https://www.mitsuipr.com/history/columns/026/
+        note: 同時に城山荘内の如庵や書院も所有者が代わり、名古屋鉄道の管理の下、愛知県の犬山市に移築された。
+        source: mitsuipr-columns-026
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E5%A6%82%E5%BA%B5
+        note: 昭和47年（1972年）に、名古屋鉄道によって堀口捨己の指揮の下で現在地に移築されている。
+        source: wikipedia-ja-jo-an
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

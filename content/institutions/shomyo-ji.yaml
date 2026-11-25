@@ -1,3 +1,40 @@
 public_id: 128872
 name: Shōmyō-ji
+kind: temple
+founded: 1258
+place: kanazawa-cho
+location: [139.63039, 35.34418]
+address: 神奈川県横浜市金沢区金沢町212番地1
+website_url: http://www.city.yokohama.lg.jp/kyoiku/bunkazai/sekai/shoumyouji.html
 wikidata_id: Q11596183
+metadata:
+  sources: [Wikidata Q11596183 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Shomyo-ji.jpg/1280px-Shomyo-ji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shomyo-ji.jpg
+    license: CC BY-SA 3.0
+    credit: Wiiii
+identifiers:
+  lc: n84194119
+  viaf: "251207386"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11596183
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11596183
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11596183
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11596183
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11596183

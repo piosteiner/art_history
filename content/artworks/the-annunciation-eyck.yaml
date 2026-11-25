@@ -62,7 +62,7 @@ created_label: c. 1430s
 created_span: uncertain
 materials: [oil paint, panel, transferred on canvas]
 dimensions: [90.2, 34.1]
-institution: andrew-w-mellon-collection
+institution: national-gallery-of-art
 inventory_number: 1937.1.39
 wikidata_id: Q2734881
 metadata:
@@ -85,6 +85,118 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Annunciation_-_Jan_van_Eyck_-_1434_-_NG_Wash_DC.jpg
     license: Public domain
     credit: Jan van Eyck
+provenance:
+  - owner: institution/chartreuse-de-champmol
+    place: dijon
+    label: said (Nieuwenhuys 1843) to have been painted for Philip the Good for a religious foundation in Dijon; possibly the Annunciation described in the Prior's room in 1791 (Reinach 1927)
+    certainty: possible
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46.html
+        note: Possibly the Chartreuse de Champmol, near Dijon.[1] — [1] … the possibility that 1937.1.39 is identical with the painting mentioned as being in the Chartreuse de Champmol.
+        source: nga-1937-1-39
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1819
+    method: auction
+    place: paris
+    label: sale, Paris, 1819
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46.html
+        note: Sale, Paris, 1819.
+        source: nga-1937-1-39
+        accessed: 2026-11-24
+  - owner: person/christianus-johannes-nieuwenhuys
+    role: dealer
+    place: brussels
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46.html
+        note: (Charles J. Nieuwenhuys, Brussels).
+        source: nga-1937-1-39
+        accessed: 2026-11-24
+  - owner: person/william-ii-of-the-netherlands
+    ended: 1849
+    place: brussels
+    label: King of the Netherlands; in Brussels until 1841, then in The Hague, where a gallery was built for his works of art
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46.html
+        note: William II, King of the Netherlands [d. 1849], in Brussels until 1841, thereafter The Hague;[2] — [2] … in 1841 the works of art were transported from Brussels to a gallery built for them in The Hague.
+        source: nga-1937-1-39
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1850-08-12
+    method: auction
+    direct: true
+    place: the-hague
+    label: sale, The Hague, 12 August 1850, no. 1
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46.html
+        note: (sale, The Hague, 12 August 1850, no. 1);
+        source: nga-1937-1-39
+        accessed: 2026-11-24
+  - owner: person/nicholas-i-of-russia
+    acquired: 1850-08-12
+    method: auction
+    direct: true
+    place: saint-petersburg
+    label: bought by the agent Bruni for the Czar (Getty Provenance Index, from the Getty Museum's copy of the sale catalogue)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46.html
+        note: bought by Bruni for Czar Nicholas I of Russia [1796-1855], Saint Petersburg; — [3] The Getty Provenance Index lists The J. Paul Getty Museum's copy of the auction catalogue as its source for the name of the agent Bruni
+        source: nga-1937-1-39
+        accessed: 2026-11-24
+  - owner: institution/hermitage-museum-st-petersburg
+    direct: true
+    place: saint-petersburg
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46.html
+        note: Imperial Hermitage Museum, Saint Petersburg;[3]
+        source: nga-1937-1-39
+        accessed: 2026-11-24
+  - owner: institution/matthiesen-gallery-berlin
+    co_owners: [institution/p-d-colnaghi-co-ltd, institution/m-knoedler-co]
+    role: agent
+    acquired: 1930-06
+    direct: true
+    label: sold from the Hermitage through Matthiesen (Berlin), Colnaghi (London) and Knoedler (New York)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46.html
+        note: purchased June 1930 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York)
+        source: nga-1937-1-39
+        accessed: 2026-11-24
+  - owner: person/andrew-w-mellon
+    acquired: 1930-06
+    method: purchase
+    direct: true
+    place: pittsburgh
+    label: Pittsburgh and Washington, D.C.
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46.html
+        note: purchased June 1930 through (Matthiesen Gallery, Berlin; P. & D. Colnaghi & Co., London; and M. Knoedler & Co., New York) by Andrew W.  Mellon, Pittsburgh and Washington, D.C.;
+        source: nga-1937-1-39
+        accessed: 2026-11-24
+  - owner: institution/a-w-mellon-educational-and-charitable-trust
+    acquired: 1931-06-05
+    method: gift
+    direct: true
+    place: pittsburgh
+    label: deeded to the trust
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46.html
+        note: deeded 5 June 1931 to The A.W. Mellon Educational and Charitable Trust, Pittsburgh;
+        source: nga-1937-1-39
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1937
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.46.html
+        note: gift 1937 to NGA.
+        source: nga-1937-1-39
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

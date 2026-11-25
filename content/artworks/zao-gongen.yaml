@@ -20,6 +20,7 @@ names:
       - accessed: 2026-11-24
         wikidata: Q107045219
 created: 1001-05-11
+institution: soji-ji-nishiarai-daishi
 wikidata_id: Q107045219
 metadata:
   sources: [Wikidata Q107045219 (retrieved 2026-11-24)]
@@ -28,6 +29,58 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Cast_bronze_plaque_with_line-engraved_Za%C5%8D_Gongen(Central_part)_(Nishiarai_Daishi).jpg
     license: Public domain
     credit: Unknown author
+provenance:
+  - owner_label: Mibu □, scribe of the Bureau of Skilled Artisans (Takumi-ryō)
+    acquired: 1001
+    acquired_label: 10th day of the 4th month, Chōhō 3 (1001)
+    method: creation
+    label: cast bronze plaque engraved with Zaō Gongen; the inscription names its maker or donor, a scribe of the Takumi-ryō named Mibu (last character lost)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/300
+        note: また「長保三年辛丑四月十日辛亥内匠寮史生壬生□」の籠字銘を刻す。… 年代 ： 長保3 西暦 ： 1001
+        source: kunishitei-201-300
+        accessed: 2026-11-24
+  - owner_label: Kinpusen (Mount Kinpu), Yoshino
+    method: find
+    place: yoshino
+    label: excavated on Kinpusen, Yoshino (date not given)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/300
+        note: もとは奈良県吉野群の金峯山から発掘されたものであるが
+        source: kunishitei-201-300
+        accessed: 2026-11-24
+  - owner_label: a benefactor (unnamed)
+    ended: 1905
+    label: an unnamed benefactor who gave it to Sōji-ji
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/300
+        note: 伝来・その他参考となるべき事項 ： 明治38年篤志家より寄進
+        source: kunishitei-201-300
+        accessed: 2026-11-24
+  - owner: institution/soji-ji-nishiarai-daishi
+    acquired: 1905
+    method: gift
+    direct: true
+    place: tokyo
+    label: given to Sōji-ji (Nishiarai Daishi, Adachi, Tokyo) in Meiji 38; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/300
+        note: 明治38年に当寺に寄進された。… 所有者名 ： 総持寺
+        source: kunishitei-201-300
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%B8%BD%E6%8C%81%E5%AF%BA%20%28%E8%B6%B3%E7%AB%8B%E5%8C%BA%29&oldid=111541388
+        note: 鋳銅刻画蔵王権現像 - 平安時代。東京国立博物館に寄託。
+        source: wikipedia-ja-soji-ji-adachi
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    role: custodian
+    place: tokyo
+    label: deposited with the Tokyo National Museum (date not given)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%B8%BD%E6%8C%81%E5%AF%BA%20%28%E8%B6%B3%E7%AB%8B%E5%8C%BA%29&oldid=111541388
+        note: 文化財 = 鋳銅刻画蔵王権現像（国宝、東京国立博物館寄託） … 鋳銅刻画蔵王権現像 - 平安時代。東京国立博物館に寄託。
+        source: wikipedia-ja-soji-ji-adachi
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

@@ -21,6 +21,68 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Urheber*in_unbekannt_Votiv_Joch_(Ballspiel)_Museum_Rietberg_2022.00391-3.jpg
     license: CC0
     credit: Museum Rietberg
+provenance:
+  - owner_label: Urheber*in unbekannt
+    acquired_label: um 500–900
+    method: creation
+    label: made by an unknown maker of the El Tajín culture, Veracruz, c. 500–900; then whereabouts unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/2022-391
+        note: |-
+          um 500–900: Unbekannte*r Urheber*in, Veracruz, Mexiko
+          [...]
+          Verbleib unbekannt
+        source: rietberg-2022-391
+        accessed: 2026-11-24
+  - owner: institution/alt-amerika-arts-primitifs
+    role: dealer
+    acquired_label: vor 02.11.1988
+    place: zurich
+    label: dealer (invoice of 2 November 1988)
+    sources:
+      - url: https://rietberg.ch/sammlungen/2022-391
+        note: |-
+          vor 02.11.1988: Alt-Amerika Arts Primitifs, Zürich, Händler/in
+          Rechnung vom 02.11.1988
+        source: rietberg-2022-391
+        accessed: 2026-11-24
+  - owner: person/marco-cereghetti
+    acquired: 1988-11-02
+    method: purchase
+    direct: true
+    place: zurich
+    label: collector; invoice of 2 November 1988
+    sources:
+      - url: https://rietberg.ch/sammlungen/2022-391
+        note: |-
+          02.11.1988: Dr. Marco Cereghetti, Sammler/in, Zürich
+          Rechnung vom 02.11.1988
+        source: rietberg-2022-391
+        accessed: 2026-11-24
+  - owner: person/christine-baltzer-bader
+    acquired: 2021-06-15
+    method: inheritance
+    label: family member (Familienangehörige/r) — heir of Dr. Marco Cereghetti per the credit line; Basel/Liestal
+    sources:
+      - url: https://rietberg.ch/sammlungen/2022-391
+        note: |-
+          15.06.2021: Dr. Christine Baltzer-Bader (1954), Familienangehörige/r, Basel/Liestal
+          Emailverkehr mit Dr. Christine Baltzer-Bader vom 11.01.2022
+        source: rietberg-2022-391
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 2022-09-21
+    method: gift
+    direct: true
+    place: zurich
+    label: gift of the heirs of Dr. Marco Cereghetti (credit line)
+    sources:
+      - url: https://rietberg.ch/sammlungen/2022-391
+        note: |-
+          21.09.2022: Museum Rietberg, Begünstigte/r, Zürich
+          Emailverkehr mit Dr. Christine Baltzer-Bader vom 21.09.2022
+        source: rietberg-2022-391
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

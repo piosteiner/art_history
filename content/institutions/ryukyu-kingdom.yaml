@@ -1,0 +1,27 @@
+public_id: 130138
+name: Ryukyu Kingdom
+founded: 1429
+dissolved: 1879
+place: naha
+location: [127.68333, 26.2]
+wikidata_id: Q28025
+metadata:
+  sources: [Wikidata Q28025 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bf/King_Sho_Shin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:King_Sho_Shin.jpg
+    license: Public domain
+    credit: Shō Genko, 1748-1841
+sources:
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q28025
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q28025
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q28025

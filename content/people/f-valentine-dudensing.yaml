@@ -1,0 +1,14 @@
+public_id: 129716
+name: F. Valentine Dudensing
+given_name: F. Valentine
+family_name: Dudensing
+birth: 1892
+death: 1967
+wikidata_id: Q20751651
+relationships:
+  - type: founded
+    to: institution/valentine-gallery
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q72882472

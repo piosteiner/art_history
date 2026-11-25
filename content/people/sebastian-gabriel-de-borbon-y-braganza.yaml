@@ -1,3 +1,52 @@
 public_id: 127644
 name: Sebastián Gabriel de Borbón y Braganza
+names:
+  - kind: birth
+    lang: es
+    role: former
+    text: Sebastián Gabriel de Borbón y Braganza
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2603194
+kind: person
+birth: 1811-11-04
+death: 1875-01-11
 wikidata_id: Q2603194
+metadata:
+  sources: [Wikidata Q2603194 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q2603194
+  - type: born_in
+    to: place/rio-de-janeiro
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q2603194
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9a/Sebasti%C3%A1n_Gabriel_de_Borb%C3%B3n_%28Museo_del_Romanticismo_de_Madrid%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Sebasti%C3%A1n_Gabriel_de_Borb%C3%B3n_(Museo_del_Romanticismo_de_Madrid).JPG
+    license: Public domain
+    credit: Luis Ferrant y Llausás
+identifiers:
+  gnd: "1023758024"
+  lc: no2025034090
+  ulan: "500037377"
+  viaf: "89433684"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2603194
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2603194
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q2603194

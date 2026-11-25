@@ -1,0 +1,63 @@
+public_id: 130538
+name: Centennial Exhibition
+names:
+  - lang: en
+    role: original
+    text: International Exhibition of Arts, Manufactures, and Products of the Soil and Mine
+  - lang: en
+    role: original
+    text: Centennial International Exhibition
+kind: world's fair
+period: 1876-05-10/1876-11-10
+place: philadelphia
+location: [-75.2092, 39.9794]
+description_md: |-
+  The exhibition commemorated the 100th anniversary of the Declaration of Independence and was the first official world's fair in the [[polity/united-states|United States]].[[source/national-diet-library-philadelphia-international-exposition-of-1876-part-1-expositions-hel]][[source/wikipedia-en-centennial-exposition]] It was organised by volunteer groups with funds raised mainly by the private sector; Joseph R. Hawley presided over the commission and Alfred T. Goshorn was director general.[[source/national-diet-library-philadelphia-international-exposition-of-1876-part-1-expositions-hel]][[source/wikipedia-en-centennial-exposition]] President Ulysses S. Grant opened it with Emperor Pedro II of Brazil by starting the Corliss engine in Machinery Hall.[[source/wikipedia-en-centennial-exposition]][[source/national-diet-library-philadelphia-international-exposition-of-1876-part-1-expositions-hel]] The Women's Pavilion was the first structure at an international exposition to highlight women's work.[[source/wikipedia-en-centennial-exposition]]
+
+  The fair stood in West Fairmount Park along the Schuylkill River.[[source/wikipedia-en-centennial-exposition]] Its chief designer, Herman J. Schwarzmann, drew on Vienna 1873 for Memorial Hall, the Moorish-style Horticultural Hall and the landscaping, while Henry Pettit and Joseph M. Wilson designed the Main Exhibition Building, demolished in 1881.[[source/wikipedia-en-centennial-exposition]] Japan showed a house and garden, with one of the first bonsai shown outside Japan, and a bazaar.[[source/wikipedia-en-centennial-exposition]][[source/national-diet-library-philadelphia-international-exposition-of-1876-part-1-expositions-hel]]
+
+  Memorial Hall was built as the art gallery, an early monumental Beaux-Arts building in the United States, and so much art was submitted that an annex was built.[[source/wikipedia-en-memorial-hall-philadelphia]] The Philadelphia Museum of Art developed from collections shown at the Centennial; it opened in Memorial Hall in 1877 as the Pennsylvania Museum and School of Industrial Art.[[source/philadelphiaencyclopedia-org-philadelphia-museum-of-art-encyclopedia-of-greater-philadelph]][[source/wikipedia-en-memorial-hall-philadelphia]] [[artist/thomas-eakins|Thomas Eakins]] painted [[artwork/the-gross-clinic|The Gross Clinic]] for the Centennial; the art jury rejected it, and it was shown in a model U.S. Army field hospital instead.[[source/philadelphia-museum-of-thomas-eakins-portrait-of-dr-samuel-d-gross-the-gross-clinic-1875-p]][[source/pennsylvania-academy-of-thomas-eakins-portrait-of-dr-samuel-d-gross-the-gross-clinic-1875]] [[artist/edmonia-lewis|Edmonia Lewis]]'s marble [[artwork/the-death-of-cleopatra|The Death of Cleopatra]] was first exhibited there, to great acclaim.[[source/smithsonian-american-art-the-death-of-cleopatra-smithsonian-american-art-museum]] Visitors paid 50 cents to climb to the balcony of the right arm and torch of [[artist/frederic-auguste-bartholdi|Frédéric Auguste Bartholdi]]'s [[artwork/statue-of-liberty|Statue of Liberty]], funding its pedestal.[[source/wikipedia-en-centennial-exposition]]
+wikidata_id: Q984109
+relationships:
+  - type: concerns
+    to: artwork/statue-of-liberty
+    sources:
+      - source: wikipedia-en-centennial-exposition
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/the-death-of-cleopatra
+    sources:
+      - source: smithsonian-american-art-the-death-of-cleopatra-smithsonian-american-art-museum
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/the-gross-clinic
+    sources:
+      - source: philadelphia-museum-of-thomas-eakins-portrait-of-dr-samuel-d-gross-the-gross-clinic-1875-p
+        accessed: 2026-11-24
+      - source: pennsylvania-academy-of-thomas-eakins-portrait-of-dr-samuel-d-gross-the-gross-clinic-1875
+        accessed: 2026-11-24
+  - type: concerns
+    to: polity/united-states
+    sources:
+      - source: national-diet-library-philadelphia-international-exposition-of-1876-part-1-expositions-hel
+        accessed: 2026-11-24
+      - source: wikipedia-en-centennial-exposition
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: national-diet-library-philadelphia-international-exposition-of-1876-part-1-expositions-hel
+  place:
+    - url: https://ndl.go.jp/exposition/e/s1/1876.html
+      source: national-diet-library-philadelphia-international-exposition-of-1876-part-1-expositions-hel
+      accessed: 2026-11-24
+  period:
+    - url: https://ndl.go.jp/exposition/e/s1/1876.html
+      source: national-diet-library-philadelphia-international-exposition-of-1876-part-1-expositions-hel
+      accessed: 2026-11-24
+    - url: https://en.wikipedia.org/wiki/Centennial_Exposition
+      source: wikipedia-en-centennial-exposition
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q984109

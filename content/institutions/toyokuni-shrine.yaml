@@ -1,3 +1,33 @@
 public_id: 127880
 name: Toyokuni Shrine
+founded: 1599
+place: kyoto
+location: [135.773, 34.9914]
+address: 京都府京都市東山区大和大路正面茶屋町530
 wikidata_id: Q709822
+metadata:
+  sources: [Wikidata Q709822 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Toyokuni_jinja01s1024.jpg/1280px-Toyokuni_jinja01s1024.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Toyokuni_jinja01s1024.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  lc: nr2005004604
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q709822
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q709822
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q709822
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q709822

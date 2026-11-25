@@ -1,0 +1,55 @@
+public_id: 130506
+name: Exposition Universelle of 1855
+names:
+  - lang: fr
+    role: original
+    text: Exposition universelle des produits de l'agriculture, de l'industrie et des beaux-arts de Paris 1855
+kind: world's fair
+period: 1855-05-15/1855-11-15
+place: paris
+location: [2.3142, 48.8669]
+description_md: |-
+  The exposition was led by Emperor [[person/napoleon-iii|Napoleon III]], who wanted it to demonstrate the legitimacy of his regime, and it helped the [[polity/second-french-empire|Second Empire]] gain official acknowledgment.[[source/national-diet-library-first-paris-international-exposition-of-1855-part-1-expositions-held]] It was held to compete with London's Great Exhibition of 1851.[[source/national-diet-library-first-paris-international-exposition-of-1855-part-1-expositions-held]][[source/wikipedia-en-exposition-universelle-1855]] [[person/prince-napoleon|Prince Napoléon]] presided over the imperial commission, with François Barthélemy Arlès-Dufour as secretary general; Queen Victoria visited with Prince Albert, as did the kings of Portugal and Piedmont.[[source/wikipedia-fr-exposition-universelle-de-1855]] Large-scale exhibits from overseas colonies were shown, and the fair, with fewer visitors than London, ended with a loss.[[source/national-diet-library-first-paris-international-exposition-of-1855-part-1-expositions-held]]
+
+  Its main hall, the Palais de l'Industrie on the Champs-Élysées by the architect Jean-Marie-Victor Viel and the engineer Alexis Barrault, measured 260 by 105 metres and was meant to surpass the Crystal Palace; it was demolished in 1897 to make way for the [[artwork/grand-palais|Grand Palais]].[[source/wikipedia-en-palais-de-lindustrie]] Élias Robert's sculpture group *France Crowning Art and Industry* crowned the building.[[source/wikipedia-en-exposition-universelle-1855]]
+
+  Fine art had a building of its own, Hector Lefuel's Palais des Beaux-Arts on the avenue Montaigne, which showed 4,979 works by 2,176 artists from 28 nations.[[source/wikipedia-en-exposition-universelle-1855]][[source/wikipedia-fr-exposition-universelle-de-1855]] The jury awarded 16 medals of honour in the fine arts; [[artist/jean-auguste-dominique-ingres|Jean-Auguste-Dominique Ingres]] was made grand officer and [[artist/eugene-delacroix|Eugène Delacroix]] commander of the Légion d'honneur.[[source/wikipedia-fr-exposition-universelle-de-1855]] [[artist/william-holman-hunt|William Holman Hunt]] and [[artist/john-everett-millais|John Everett Millais]] exhibited in the British section.[[source/wikipedia-en-exposition-universelle-1855]] Eleven of [[artist/gustave-courbet|Gustave Courbet]]'s entries were accepted but [[artwork/the-painter-s-studio|The Painter's Studio]] was not; with Alfred Bruyas's help he showed about forty works in his own Pavillon du Réalisme beside the official exhibition, a forerunner of the Salon des Refusés.[[source/wikipedia-en-the-painters-studio]][[source/wikipedia-fr-exposition-universelle-de-1855]][[source/wikipedia-en-exposition-universelle-1855]] Charles Baudelaire wrote three articles on the exhibition, later collected in *Curiosités esthétiques*.[[source/wikipedia-en-exposition-universelle-1855]]
+wikidata_id: Q1114964
+relationships:
+  - type: concerns
+    to: artwork/grand-palais
+    sources:
+      - source: wikipedia-en-palais-de-lindustrie
+        accessed: 2026-11-24
+      - source: wikipedia-en-exposition-universelle-1855
+        accessed: 2026-11-24
+  - type: concerns
+    to: polity/second-french-empire
+    sources:
+      - source: national-diet-library-first-paris-international-exposition-of-1855-part-1-expositions-held
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/the-painter-s-studio
+    sources:
+      - source: wikipedia-en-the-painters-studio
+        accessed: 2026-11-24
+      - source: wikipedia-fr-exposition-universelle-de-1855
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: national-diet-library-first-paris-international-exposition-of-1855-part-1-expositions-held
+  place:
+    - url: https://ndl.go.jp/exposition/e/s1/1855.html
+      source: national-diet-library-first-paris-international-exposition-of-1855-part-1-expositions-held
+      accessed: 2026-11-24
+  period:
+    - url: https://ndl.go.jp/exposition/e/s1/1855.html
+      source: national-diet-library-first-paris-international-exposition-of-1855-part-1-expositions-held
+      accessed: 2026-11-24
+    - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1855)
+      source: wikipedia-en-exposition-universelle-1855
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1114964

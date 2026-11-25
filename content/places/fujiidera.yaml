@@ -1,0 +1,41 @@
+public_id: 130112
+name: Fujiidera
+names:
+  - lang: ja
+    role: original
+    text: 藤井寺市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q634011
+  - lang: ko
+    role: translation
+    text: 후지이데라시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q634011
+  - lang: ru
+    role: translation
+    text: Фудзиидера
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q634011
+kind: settlement
+parent: osaka-prefecture
+country_code: JP
+location: [135.59747, 34.57422]
+wikidata_id: Q634011
+metadata:
+  sources: [Wikidata Q634011 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q634011
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q634011
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q634011

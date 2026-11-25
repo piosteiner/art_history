@@ -43,6 +43,47 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Shizutani_school_the_hall_and_shosai.JPG
     license: CC BY-SA 3.0
     credit: by Reggaeman
+provenance:
+  - owner: person/ikeda-mitsumasa
+    acquired: 1670
+    method: commission
+    place: bizen
+    label: school for commoners of the Okayama domain, planned 1666, built from 1670 by Tsuda Nagatada; lecture hall rebuilt and roofed with tiles 1701, stone wall the same year
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3053
+        note: 閑谷学校は寛文六年（一六六六）岡山藩主池田光政が領内庶民子弟教育のためはじめたもので、光政自身巡検でこの地の閑静を愛で、津田永忠に命じて同八年手習所を設けて発足した。… 講堂も元禄十四年（一七〇一）に再築、上棟した。これが現在の建物で、この年四周の石塀も築かれている。
+        source: kunishitei-102-3053
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%96%91%E8%B0%B7%E5%AD%A6%E6%A0%A1&oldid=111816542
+        note: 1670年（寛文10年）、池田光政は津田永忠に閑谷学校の建設を命じた。津田は閑谷に転居し建設が始まる。1674年までの4年間に、学房・飲室・講堂・聖堂などが完成した
+        source: wikipedia-ja-shizutani-gakko
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/w/index.php?title=Shizutani%20School&oldid=1339764085
+        note: The Lecture Hall was completed by Ikeda Tsunamasa (Mitsumasa's son), the Lord of Bizen Province, in 1701.
+        source: wikipedia-en-shizutani-school
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1870
+    place: bizen
+    label: closed in the domain reform of 1870; reopened as Shizutani Seisha 1873–1877, as Shizutani-kō (private school) from 1884, run by the prefecture from 1921, closed as a school 1964
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%96%91%E8%B0%B7%E5%AD%A6%E6%A0%A1&oldid=111816542
+        note: 1870年（明治3年）の藩政改革によって同年9月閉鎖される。… 1921年（大正10年）4月には県営となり『岡山県閑谷中学校』となった。… 1964年（昭和39年）4月、学校の統合と合理化のために閑谷校舎が閉鎖され
+        source: wikipedia-ja-shizutani-gakko
+        accessed: 2026-11-24
+  - owner: place/okayama-prefecture
+    place: bizen
+    label: owner of the lecture hall (National Treasure 1953) today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3053
+        note: 所在地 ： 岡山県備前市閑谷 保管施設の名称 ： 所有者名 ： 岡山県 所有者種別 ： 都道府県
+        source: kunishitei-102-3053
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/401/2242
+        note: 寛文６年、岡山藩主池田光政が領内庶民子弟教養のため創めたもので、一部変改の跡はあるが、聖廟、講堂、小斎、習芸斎、文庫、門、石塀、石橋、石門等の主要部が極めてよく遺存している。
+        source: kunishitei-401-2242
+        accessed: 2026-11-24
 identifiers:
   viaf: "268235128"
 sources:

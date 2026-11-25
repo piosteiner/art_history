@@ -1,0 +1,27 @@
+public_id: 129451
+name: Vincent Donjeux
+given_name: Vincent
+family_name: Donjeux
+kind: person
+death: 1793-03-10
+wikidata_id: Q107972327
+metadata:
+  sources: [Wikidata Q107972327 (retrieved 2026-11-24)]
+relationships:
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q107972327
+identifiers:
+  rkd: "440265"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q107972327
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q107972327

@@ -2,4 +2,46 @@ public_id: 127431
 name: Jean-Toussaint Arrighi de Casanova
 given_name: Jean-Toussaint Arrighi
 family_name: de Casanova
+kind: person
+birth: 1778-03-08
+death: 1853-03-22
 wikidata_id: Q961910
+metadata:
+  sources: [Wikidata Q961910 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q961910
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q961910
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f8/Jean-Thomas_Arrighi_de_Casanova.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Thomas_Arrighi_de_Casanova.jpg
+    license: Public domain
+    credit: Unidentified painter
+identifiers:
+  bnf: 13508866h
+  gnd: "122314085"
+  idref: "135334837"
+  lc: no2010014905
+  viaf: "32875144"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q961910
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q961910
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q961910

@@ -1,0 +1,53 @@
+public_id: 130499
+name: Great Exhibition of 1851
+names:
+  - lang: en
+    role: original
+    text: Great Exhibition of the Works of Industry of All Nations
+kind: world's fair
+period: 1 May – 15 October 1851
+place: london
+location: [-0.17, 51.5031]
+description_md: |-
+  The exhibition was initiated by the Society of Arts under the presidency of Prince Albert, and Parliament created a Royal Commission for it on 3 January 1850.[[source/victoria-and-albert-the-foundation-of-the-v-as-collections-the-great-exhibition-of-1851-mi]] Its main motive was for [[polity/united-kingdom-of-great-britain-and-ireland|Britain]] to make clear to the world its role as industrial leader, and it was partly a response to the French Industrial Exposition of 1844.[[source/wikipedia-en-great-exhibition]] Foreign display space was allocated according to each nation's trade with Britain, and over 30 territories of the British Empire exhibited; India's textiles were especially admired.[[source/victoria-and-albert-the-foundation-of-the-v-as-collections-the-great-exhibition-of-1851-mi]] The Koh-i-Noor diamond was one of the most popular attractions of the India exhibit.[[source/wikipedia-en-great-exhibition]] The exhibition marked the birth of a Western, capitalist and colonial model of exhibition, the mass spectacle of large international exhibitions, which remained a reference point for over a century.[[source/falcucci-2021|p. 676]]
+
+  It was held in Hyde Park in the [[artwork/crystal-palace-hyde-park|Crystal Palace]], a building of glass and iron designed by [[artist/joseph-paxton|Joseph Paxton]], inspired by his Lily House at Chatsworth, with Charles Fox as structural engineer.[[source/victoria-and-albert-the-foundation-of-the-v-as-collections-the-great-exhibition-of-1851-mi]][[source/wikipedia-en-great-exhibition]] Built in about seven months with 293,655 panes of glass by Chance Brothers, it was re-erected at Sydenham in 1854 and destroyed by fire in 1936.[[source/victoria-and-albert-the-foundation-of-the-v-as-collections-the-great-exhibition-of-1851-mi]][[source/wikipedia-en-great-exhibition]]
+
+  The exhibition had four sections; Fine Art was curated by Owen Jones, who also designed the building's controversial interior colour scheme.[[source/victoria-and-albert-the-foundation-of-the-v-as-collections-the-great-exhibition-of-1851-mi]] Pugin's Gothic Medieval Court, with work by George Myers, John Gregory Crace, Minton, John Hardman and Thomas Willement, "attracted huge attention".[[source/victoria-and-albert-the-medieval-court-v-a-explore-the-collections]] [[artist/hiram-powers|Hiram Powers]]'s marble [[artwork/the-greek-slave|The Greek Slave]] became the major attraction of the United States exhibit and was recorded in many prints and engravings;[[source/yale-center-for-first-version-exhibited-at-the-great-exhibition-london-1851-yale-cente]] the sources differ on which marble version was shown, the Yale project naming the first, the V&A the replica now in the Corcoran.[[source/yale-center-for-first-version-exhibited-at-the-great-exhibition-london-1851-yale-cente]][[source/victoria-and-albert-the-greek-slave-powers-hiram-v-a-explore-the-collections]] The Board of Trade bought 244 objects from the exhibition for the Government School of Design, and these became the foundation collections of the V&A.[[source/victoria-and-albert-the-foundation-of-the-v-as-collections-the-great-exhibition-of-1851-mi]] [[artist/william-morris|William Morris]] later said he had refused to attend on grounds of taste.[[source/wikipedia-en-great-exhibition]]
+wikidata_id: Q273095
+relationships:
+  - type: concerns
+    to: artwork/crystal-palace-hyde-park
+    sources:
+      - source: victoria-and-albert-the-foundation-of-the-v-as-collections-the-great-exhibition-of-1851-mi
+        accessed: 2026-11-24
+      - source: wikipedia-en-great-exhibition
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/the-greek-slave
+    sources:
+      - source: yale-center-for-first-version-exhibited-at-the-great-exhibition-london-1851-yale-cente
+        accessed: 2026-11-24
+  - type: concerns
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - source: wikipedia-en-great-exhibition
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: national-diet-library-first-london-international-exposition-of-1851-part-1-expositions-hel
+  place:
+    - url: https://ndl.go.jp/exposition/e/s1/1851.html
+      source: national-diet-library-first-london-international-exposition-of-1851-part-1-expositions-hel
+      accessed: 2026-11-24
+  period:
+    - url: https://ndl.go.jp/exposition/e/s1/1851.html
+      source: national-diet-library-first-london-international-exposition-of-1851-part-1-expositions-hel
+      accessed: 2026-11-24
+    - url: https://en.wikipedia.org/wiki/Great_Exhibition
+      source: wikipedia-en-great-exhibition
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q273095

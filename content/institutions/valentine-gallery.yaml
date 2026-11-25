@@ -1,3 +1,31 @@
 public_id: 123795
 name: Valentine Gallery
+kind: gallery
+founded: 1926-02-08
+place: new-york-city
+address: 43 East 57th Street NY
 wikidata_id: Q72882472
+metadata:
+  sources: [Wikidata Q72882472 (retrieved 2026-11-24)]
+identifiers:
+  gnd: "1200660005"
+  lc: n85327673
+  ulan: "500304370"
+  viaf: "153680829"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q72882472
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q72882472
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q72882472
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q72882472

@@ -1,0 +1,22 @@
+public_id: 130181
+name: Thessaloniki Municipal Unit
+kind: settlement
+parent: greece
+country_code: GR
+location: [22.9556, 40.6256]
+wikidata_id: Q21422680
+metadata:
+  sources: [Wikidata Q21422680 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q21422680
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q21422680
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q21422680

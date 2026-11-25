@@ -47,6 +47,14 @@ relationships:
       - accessed: 2026-11-03
         property: P135
         wikidata: Q45205
+  - type: participated_in
+    to: event/paris-international-exposition-1937
+    label: exhibited
+    notes_md: La Fée Électricité, Pavilion of Light and Electricity
+    sources:
+      - url: https://guggenheim-bilbao.eus/en/did-you-know/the-spirit-of-electricity
+        source: guggenheim-museum-bilbao-the-spirit-of-electricity-guggenheim-museum-bilbao
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Raoul_Dufy%2C_portrait_photograph.jpg/1280px-Raoul_Dufy%2C_portrait_photograph.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Raoul_Dufy,_portrait_photograph.jpg

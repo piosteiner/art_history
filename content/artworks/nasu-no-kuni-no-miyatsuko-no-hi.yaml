@@ -17,6 +17,7 @@ names:
         wikidata: Q11642908
 created: 700
 materials: [granite]
+institution: kasaishi-shrine
 web_url: https://www.city.ohtawara.tochigi.jp/docs/2013082778383/
 wikidata_id: Q11642908
 metadata:
@@ -26,6 +27,49 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Nasunokuninomiyatsukonohi-2.jpg
     license: Public domain
     credit: 乙川某
+provenance:
+  - owner_label: Nasu no Oshimaro and others (successors of Nasu no Atai Idai)
+    acquired: 700
+    method: creation
+    place: ohtawara
+    label: stele set up in memory of Nasu no Atai Idai, governor of Nasu, who died in 700, by his successor Oshimaro and others
+    sources:
+      - url: https://www.city.ohtawara.tochigi.jp/docs/2013082778383/
+        note: 庚子（かのえね）の年（700）に亡くなったため後継者の意斯麻呂（おしまろ）らが、碑を立てて故人を偲び祀ったということなどが記されています。
+        source: ohtawara-nasu-no-kuni-no-miyatsuko-no-hi
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=那須国造碑&oldid=109342558
+        note: 那須直葦提の事績を息子の意志麻呂らが顕彰するために、700年に建立されたものである。
+        source: jawiki-nasu-no-kuni-no-miyatsuko-no-hi
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1676
+    method: find
+    place: ohtawara
+    label: the travelling monk Enjun told Ōgane Shigesada, headman of Oguchi village, of an old stele buried in the grass at Yuzukami; Shigesada examined it and described it in his Nasu-ki
+    sources:
+      - url: https://www.city.ohtawara.tochigi.jp/docs/2013082778383/
+        note: 延宝4年（1676）、水戸藩領武茂郷小口村（現那珂川町）の里正（りせい）の大金重貞（おおがねしげさだ）は、旅の僧円順から湯津上村内の草むらに埋もれた古碑の話を聞きます。重貞はその碑を調べ自身の著作「那須記」に記し
+        source: ohtawara-nasu-no-kuni-no-miyatsuko-no-hi
+        accessed: 2026-11-24
+  - owner: institution/kasaishi-shrine
+    acquired: 1691/1692
+    place: ohtawara
+    label: Tokugawa Mitsukuni, lord of Mito, had a stele hall built for its protection (1691–92; now the Kasaishi Shrine, where the stele is worshipped); National Treasure 1952
+    sources:
+      - url: https://www.city.ohtawara.tochigi.jp/docs/2013082778383/
+        note: 光圀は石碑の保存顕彰のため元禄4年（1691）には碑堂の建立を開始し、… 同年6月には完成した碑堂に自ら参詣しました。… 所在地 大田原市湯津上429 笠石神社 保持者 笠石神社
+        source: ohtawara-nasu-no-kuni-no-miyatsuko-no-hi
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=那須国造碑&oldid=109342558
+        note: 水戸藩主の徳川光圀が笠石神社を創建して碑の保護を命じた。… 現在、笠石神社の神体として祀られ崇敬されている。
+        source: jawiki-nasu-no-kuni-no-miyatsuko-no-hi
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/833
+        note: 国宝指定年月日 ： 1952.11.22 … 所有者名 ： 笠石神社
+        source: kunishitei-201-833
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

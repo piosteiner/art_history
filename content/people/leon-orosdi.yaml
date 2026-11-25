@@ -2,4 +2,40 @@ public_id: 127667
 name: Léon Orosdi
 given_name: Léon
 family_name: Orosdi
+kind: person
+birth: 1855-05-07
+death: 1922-12-11
 wikidata_id: Q136987667
+metadata:
+  sources: [Wikidata Q136987667 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/austria-hungary
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q136987667
+  - type: nationality
+    to: polity/france
+    period: 1890-07-01
+    period_label: from 1 July 1890
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q136987667
+identifiers:
+  gnd: 108056490X
+  viaf: "34145193380470460800"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q136987667
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q136987667
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q136987667

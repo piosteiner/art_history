@@ -1,3 +1,41 @@
 public_id: 129327
 name: Kenchō-ji Temple
+kind: temple
+founded: 1253
+place: kamakura
+location: [139.55535, 35.33179]
+address: 神奈川県鎌倉市山ノ内8
+website_url: https://www.kenchoji.com/
 wikidata_id: Q1396078
+metadata:
+  sources: [Wikidata Q1396078 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Kenchoji_Sanmon_2009.jpg/1280px-Kenchoji_Sanmon_2009.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kenchoji_Sanmon_2009.jpg
+    license: CC BY-SA 3.0
+    credit: Wiiii
+identifiers:
+  gnd: "1170436420"
+  lc: n80165989
+  viaf: "148927846"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1396078
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1396078
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q1396078
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1396078
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1396078

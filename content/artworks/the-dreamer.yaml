@@ -36,6 +36,151 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Jean_Antoine_Watteau_-_The_Dreamer_(La_R%C3%AAveuse)_-_1960.305_-_Art_Institute_of_Chicago.jpg
     license: Public domain
     credit: Jean-Antoine Watteau
+provenance:
+  - owner: person/pierre-maurice-haranger
+    place: paris
+    label: abbé, canon of Saint-Germain-l'Auxerrois; based on Mariette's notes (BnF)
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: Possibly the abbé Pierre Maurice Haranger (died 1735), canon of Saint-Germain-l’Auxerrois, Paris; [based on Pierre Jean Mariette, Notes, Mss. IX, fol. 191[9] Bibliotehèque Nationale, Paris; see Wise 1996].
+        source: aic-1960-305
+        accessed: 2026-11-24
+  - owner_label: Comte du Barry, Paris
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: Comte du Barry, Paris;
+        source: aic-1960-305
+        accessed: 2026-11-24
+  - owner: person/pierre-remy
+    co_owners: [person/jean-baptiste-pierre-lebrun]
+    role: agent
+    acquired: 1774-11-21
+    method: auction
+    direct: true
+    place: paris
+    label: du Barry sale, no. 132; Gabriel de Saint-Aubin's sketch in his copy of the catalogue (Petit Palais)
+    price:
+      amount: 190
+      currency: LIV
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: sold Remy and Le Brun, Paris, November 21 and following, 1774, no. 132, for 190 livres [supported by Gabriel de Saint-Aubin’s sketch in his copy of the sale catalogue in the Musée du Petit Palais, Paris].
+        source: aic-1960-305
+        accessed: 2026-11-24
+  - owner: person/anne-pierre-de-montesquiou-fezensac
+    place: paris
+    label: marquis de Montesquiou
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: Anne Pierre, marquis de Montesquiou, Paris;
+        source: aic-1960-305
+        accessed: 2026-11-24
+  - owner: person/jean-baptiste-pierre-lebrun
+    role: agent
+    acquired: 1788-12-09
+    method: auction
+    direct: true
+    place: paris
+    label: Montesquiou sale, no. 214, as a lady in Turkish costume, on panel
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: sold Le Brun, Paris, December 9 and following, 1788, no. 214 [une dame ajustée dans le costume Turc …
+        source: aic-1960-305
+        accessed: 2026-11-24
+  - owner: person/jules-burat
+    acquired: 1866 or earlier
+    place: paris
+    label: "Eudel 1886: acquired 1865"
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: Jules Burat (died 1885), Paris, by 1866; … [Eudel 1886 states that Burat acquired the picture in 1865
+        source: aic-1960-305
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1885-04-28
+    method: auction
+    direct: true
+    place: paris
+    label: Burat sale, no. 109, as Lancret (engraving by Léon Gaucherel)
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: sold Galerie Georges Petit, Paris, April 28 - 29, 1885, no. 109 (ill. with engraving by Léon Gaucherel), as Lancret,
+        source: aic-1960-305
+        accessed: 2026-11-24
+  - owner: person/vincent-claude-laurent-richard
+    acquired: 1885-04-28
+    method: auction
+    direct: true
+    place: paris
+    price:
+      amount: 7000
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: to Laurent-Richard for Fr 7,000 [… price and buyer at the Burat sale are given in a annotated catalogue of the Frick Art Reference Library]. Vincent Claude Laurent-Richard (died 1886), Paris;
+        source: aic-1960-305
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1886-05-28
+    method: auction
+    direct: true
+    place: paris
+    label: Laurent-Richard sale, no. 29, as Lancret
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: sold Galerie Georges Petit, May 28-29, 1886, no. 29 (ill. with engraving by Gaucherel), as Lancret,
+        source: aic-1960-305
+        accessed: 2026-11-24
+  - owner: person/willy-blumenthal
+    acquired: 1886-05-28
+    ended_label: to at least 1929
+    method: auction
+    direct: true
+    place: paris
+    price:
+      amount: 6200
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: to Blumenthal for Fr 6,200 [see Rosenberg in Paris/Washington/Berlin 1984, no. P26; the price is given in an annotated catalogue at the Frick Art Reference Library]; Willy Blumenthal, (died 1937) Paris, to at least 1929 [Dacier, Hérold, and Vuaflart 1929, p. 178].
+        source: aic-1960-305
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1935
+    method: purchase
+    place: paris
+    label: through an intermediary
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: Acquired by Wildenstein, Paris, though an intermediary, 1935;
+        source: aic-1960-305
+        accessed: 2026-11-24
+  - owner: institution/wildenstein-co
+    role: dealer
+    acquired: 1938
+    method: transfer
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: transferred to Wildenstein, New York, 1938 [information kindly supplied by Ah-Whang Hsia, Wildenstein, letter of July 18, 2006 in curatorial file];
+        source: aic-1960-305
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1960
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/12007
+        note: sold to the Art Institute, 1960.
+        source: aic-1960-305
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

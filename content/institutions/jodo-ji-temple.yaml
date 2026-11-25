@@ -1,3 +1,39 @@
 public_id: 126599
 name: Jōdo-ji Temple
+kind: temple
+founded: 616
+place: onomichi
+location: [133.21031, 34.41217]
+address: 広島県尾道市東久保町20-28
+website_url: https://ermjp.com/j/temple/
 wikidata_id: Q3191227
+metadata:
+  sources: [Wikidata Q3191227 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Onomichi_Jodoji_05.JPG/1280px-Onomichi_Jodoji_05.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Onomichi_Jodoji_05.JPG
+    license: CC BY-SA 3.0
+    credit: by Reggaeman
+identifiers:
+  viaf: "252092092"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3191227
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3191227
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3191227
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3191227
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3191227

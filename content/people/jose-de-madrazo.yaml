@@ -1,0 +1,49 @@
+public_id: 129420
+name: José de Madrazo
+given_name: José
+family_name: de Madrazo
+kind: person
+birth: 1781-04-22
+death: 1859-05-08
+wikidata_id: Q2343934
+metadata:
+  sources: [Wikidata Q2343934 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q2343934
+  - type: died_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q2343934
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Autorretrato_%28Jos%C3%A9_de_Madrazo%29.jpg/1280px-Autorretrato_%28Jos%C3%A9_de_Madrazo%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Autorretrato_(Jos%C3%A9_de_Madrazo).jpg
+    license: Public domain
+    credit: José de Madrazo y Agudo
+identifiers:
+  bnf: "149587961"
+  gnd: "117518360"
+  idref: 06693866X
+  lc: n84126545
+  rkd: "130431"
+  ulan: "500004738"
+  viaf: "163181098"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2343934
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2343934
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q2343934

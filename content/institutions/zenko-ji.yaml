@@ -1,3 +1,39 @@
 public_id: 127494
 name: Zenkō-ji
+kind: temple
+founded: 644
+place: nagano
+location: [138.18778, 36.66167]
+address: 長野県長野市元善町491
+website_url: https://www.zenkoji.jp/
 wikidata_id: Q189640
+metadata:
+  sources: [Wikidata Q189640 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/ZenkojiWP.jpg/1280px-ZenkojiWP.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ZenkojiWP.jpg
+    license: Public domain
+    credit: Fg2
+identifiers:
+  viaf: "294485326"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q189640
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q189640
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q189640
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q189640
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q189640

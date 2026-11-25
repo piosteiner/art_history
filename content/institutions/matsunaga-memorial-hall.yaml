@@ -1,3 +1,41 @@
 public_id: 129341
 name: Matsunaga Memorial Hall
+kind: museum
+founded: 1980-10-01
+place: odawara
+location: [139.14147, 35.24903]
+address: 〒250-0034　神奈川県小田原市板橋941番地1
+website_url: https://www.city.odawara.kanagawa.jp/public-i/facilities/matsunaga/
 wikidata_id: Q11531611
+metadata:
+  sources: [Wikidata Q11531611 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/R%C5%8Dky%C5%8Ds%C5%8D.jpg/1280px-R%C5%8Dky%C5%8Ds%C5%8D.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:R%C5%8Dky%C5%8Ds%C5%8D.jpg
+    license: CC BY-SA 3.0
+    credit: Wiiii
+identifiers:
+  lc: n84239170
+  ulan: "500303829"
+  viaf: "129062240"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11531611
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11531611
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11531611
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11531611
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11531611

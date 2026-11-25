@@ -1,3 +1,47 @@
 public_id: 126699
 name: Buraku-ji
+names:
+  - kind: nickname
+    lang: ja-Hani
+    role: alternative
+    text: 柴折薬師
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q11633773
+kind: temple
+founded: 724
+place: otoyo
+location: [133.72711, 33.79208]
+address: 高知県長岡郡大豊町寺内314
+website_url: https://www.burakuji.jp/
 wikidata_id: Q11633773
+metadata:
+  sources: [Wikidata Q11633773 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Burakuji_06.JPG/1280px-Burakuji_06.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Burakuji_06.JPG
+    license: CC BY-SA 3.0
+    credit: Reggaeman
+identifiers:
+  viaf: "253623372"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11633773
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11633773
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11633773
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11633773
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11633773

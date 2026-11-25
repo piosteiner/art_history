@@ -1,0 +1,55 @@
+public_id: 130571
+name: Exposition Universelle of 1900
+names:
+  - lang: fr
+    role: original
+    text: Exposition universelle de 1900
+kind: world's fair
+period: 1900-04-14/1900-11-12
+place: paris
+location: [2.2975, 48.85638888888889]
+description_md: |-
+  Planned from 1892 with Alfred Picard as commissioner-general, the exposition was opened by President Émile Loubet on 14 April 1900 to sum up the century.[[source/wikipedia-en-exposition-universelle-1900]][[source/wikipedia-fr-exposition-universelle-de-1900]] Pavilions on the Trocadéro hill presented France as a colonial power, and the colonies and protectorates of France, the Netherlands, Britain and Portugal were shown without being counted as nations.[[source/wikipedia-en-exposition-universelle-1900]][[source/wikipedia-fr-exposition-universelle-de-1900]] An "Exposition nègre" of photographs by Frances Benjamin Johnston, partly organised by Booker T. Washington and W. E. B. Du Bois, answered the colonial displays.[[source/wikipedia-fr-exposition-universelle-de-1900]] In August 1900 the Chinese pavilion was disrupted by the Boxer Rebellion, and a Chinese procession was attacked by Parisians.[[source/wikipedia-en-exposition-universelle-1900]] Germany and the United States used the fair to show their advance in heavy industry,[[source/national-diet-library-fifth-paris-international-exposition-of-1900-part-1-expositions-held]][[source/wikipedia-en-exposition-universelle-1900]] and Korea took part as well.[[source/portal-2000|p. 169]]
+
+  The fair spread over the Champ de Mars, the Trocadéro, the Invalides, the Champs-Élysées and both banks of the Seine, with an annex in the Bois de Vincennes.[[source/wikipedia-en-exposition-universelle-1900]][[source/national-diet-library-fifth-paris-international-exposition-of-1900-part-1-expositions-held]] The [[artwork/grand-palais|Grand Palais]] by [[artist/henri-deglane|Henri Deglane]] and Albert Thomas, the Petit Palais by Charles Girault and the Pont Alexandre III survive, as do 86 of Hector Guimard's Métro entrances and La Ruche, built from the fair's materials.[[source/wikipedia-en-exposition-universelle-1900]][[source/wikipedia-fr-exposition-universelle-de-1900]]
+
+  The Grand Palais housed the Centennale of French art from 1800 to 1889 and the Décennale of 1889 to 1900, the Petit Palais a retrospective of French art to 1800, and the [[movement/impressionism|Impressionists]] received official recognition.[[source/wikipedia-fr-exposition-universelle-de-1900]] The fair gave [[movement/art-nouveau|Art Nouveau]] international attention, with Siegfried Bing's pavilion "L'Art Nouveau", René Lalique, Fouquet and Guimard.[[source/national-diet-library-fifth-paris-international-exposition-of-1900-part-1-expositions-held]][[source/wikipedia-en-exposition-universelle-1900]] [[artist/auguste-rodin|Auguste Rodin]]'s own pavilion at the Place de l'Alma brought him even greater renown and visitors from all over the world.[[source/musee-rodin-rodin-and-modernism-musee-rodin]] In the Austrian pavilion [[artist/gustav-klimt|Gustav Klimt]]'s faculty painting *Philosophy* received a gold medal.[[source/klimt-foundation-klimt-cradle-of-modernism-raquo-gustav-klimt-datenbank]] [[artist/pablo-picasso|Pablo Picasso]]'s *Last Moments* hung in the Spanish pavilion, and the nineteen-year-old came to Paris in late October 1900 to see it;[[source/museupicassobcn-cat-feasting-paris-picasso-1900-1907]] he later painted *La Vie* over it.[[source/cleveland-museum-of-a-life-before-la-vie-cleveland-museum-of-art]] [[person/hayashi-tadamasa|Hayashi Tadamasa]] was general commissioner of the Japanese art section.[[source/wikipedia-en-hayashi-tadamasa]]
+wikidata_id: Q753646
+relationships:
+  - type: concerns
+    to: movement/art-nouveau
+    sources:
+      - source: national-diet-library-fifth-paris-international-exposition-of-1900-part-1-expositions-held
+        accessed: 2026-11-24
+      - source: wikipedia-en-exposition-universelle-1900
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/grand-palais
+    sources:
+      - source: wikipedia-en-exposition-universelle-1900
+        accessed: 2026-11-24
+      - source: wikipedia-fr-exposition-universelle-de-1900
+        accessed: 2026-11-24
+  - type: concerns
+    to: movement/impressionism
+    sources:
+      - source: wikipedia-fr-exposition-universelle-de-1900
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: wikipedia-en-exposition-universelle-1900
+  place:
+    - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1900)
+      source: wikipedia-en-exposition-universelle-1900
+      accessed: 2026-11-24
+  period:
+    - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1900)
+      source: wikipedia-en-exposition-universelle-1900
+      accessed: 2026-11-24
+    - url: https://fr.wikipedia.org/wiki/Exposition_universelle_de_1900
+      source: wikipedia-fr-exposition-universelle-de-1900
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q753646

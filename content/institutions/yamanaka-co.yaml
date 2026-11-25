@@ -1,3 +1,14 @@
 public_id: 126426
 name: Yamanaka & Co.
+kind: gallery
 wikidata_id: Q78158819
+metadata:
+  sources: [Wikidata Q78158819 (retrieved 2026-11-24)]
+identifiers:
+  lc: nr94000704
+  viaf: "154050257"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q78158819

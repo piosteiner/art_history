@@ -1,5 +1,12 @@
 public_id: 124525
 name: Kyo-U Library
+place: osaka
+website_url: https://www.takeda-sci.or.jp/kyou/
 wikidata_id: Q131417186
 metadata:
   sources: [Wikidata Q131417186 (retrieved 2026-11-24)]
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q131417186

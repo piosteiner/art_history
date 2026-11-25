@@ -1,3 +1,37 @@
 public_id: 126960
 name: Myōtsū-ji
+kind: temple
+founded: 806
+place: obama
+location: [135.80444, 35.45361]
+address: 福井県小浜市門前5-22
+website_url: https://myotsuji.jimdofree.com/
 wikidata_id: Q3331935
+metadata:
+  sources: [Wikidata Q3331935 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/65/Myotsuji_and_pagoda.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Myotsuji_and_pagoda.jpg
+    license: Public domain
+    credit: おはぐろ蜻蛉 at Japanese Wikipedia
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3331935
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3331935
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3331935
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3331935
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3331935

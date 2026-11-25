@@ -1,0 +1,40 @@
+public_id: 129781
+name: Shin-Yakushiji
+kind: temple
+founded: 747
+place: nara
+location: [135.84617, 34.67588]
+address: 奈良県奈良市高畑町1352
+website_url: http://www.shinyakushiji.or.jp/
+wikidata_id: Q3080305
+metadata:
+  sources: [Wikidata Q3080305 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/83/Shin-Yakushiji_2002.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Shin-Yakushiji_2002.JPG
+    license: CC BY-SA 3.0
+    credit: Dddeco at Japanese Wikipedia
+identifiers:
+  gnd: "1148797009"
+  viaf: "254778282"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3080305
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3080305
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3080305
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3080305
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3080305

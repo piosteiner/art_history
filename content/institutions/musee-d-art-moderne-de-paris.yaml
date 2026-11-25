@@ -1,0 +1,16 @@
+public_id: 130216
+name: Musée d'art moderne de Paris
+kind: museum
+founded: 1935
+wikidata_id: Q857276
+metadata:
+  sources: [Wikidata Q857276 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q857276
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q857276

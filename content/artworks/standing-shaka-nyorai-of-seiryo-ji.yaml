@@ -1,0 +1,66 @@
+public_id: 124991
+title_lang: en
+title: Standing Shaka Nyorai of Seiryō-ji
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 清凉寺木造釈迦如来立像
+created: 985
+institution: seiryo-ji
+wikidata_id: Q107046734
+metadata:
+  sources: [Wikidata Q107046734 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Seiryoji_Monastery_Sakya_%28315%29.jpg/1280px-Seiryoji_Monastery_Sakya_%28315%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Seiryoji_Monastery_Sakya_(315).jpg
+    license: Public domain
+    credit: Imperial Japanese Commission to the Panama-Pacific International Exposition
+provenance:
+  - owner: person/chonen
+    acquired: 985
+    method: commission
+    place: taizhou
+    label: copy of the Udayana sandalwood Shaka, carved 21 July–18 August 985 (Yongxi 2) at Kaiyuan-si, Taizhou, by the brothers Zhang Yanjiao and Zhang Yanxi for the Japanese monk Chōnen
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%B8%85%E5%87%89%E5%AF%BA%E6%9C%A8%E9%80%A0%E9%87%88%E8%BF%A6%E5%A6%82%E6%9D%A5%E7%AB%8B%E5%83%8F&oldid=111496837
+        note: 製作は北宋時代（雍熙2年・985年）で、製作者は張延皎と張延襲。入宋した奝然が日本に請来し
+        source: jawiki-seiryoji-shaka
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/258
+        note: 背板裏に大宋国台州張延皎并弟延襲雕、反花座表に唐国台州開元寺、僧保寧の刻銘がある
+        source: kunishitei-201-258
+        accessed: 2026-11-24
+  - owner: person/chonen
+    acquired: 986
+    direct: true
+    place: kyoto
+    label: brought back to Japan 986; carried into Kyoto 987 and shown at Rendai-ji, Kitano, where nobles came to see it
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%B8%85%E5%87%89%E5%AF%BA%E6%9C%A8%E9%80%A0%E9%87%88%E8%BF%A6%E5%A6%82%E6%9D%A5%E7%AB%8B%E5%83%8F&oldid=111496837
+        note: 奝然は清凉寺本尊と共に寛和2年（986年）に帰朝した。帰朝の翌年に人夫に担がれて京都に入った清凉寺本尊は熱狂的に迎えられ…北野蓮台寺に仮安置されると
+        source: jawiki-seiryoji-shaka
+        accessed: 2026-11-24
+      - note: the Shaka statue brought to Japan in 987 by a Chinese monk, Chonen, now installed in Seiryoji in Kyoto
+        source: history-of-japanese-art
+        locator: p. 133
+        accessed: 2026-11-24
+  - owner: institution/seiryo-ji
+    acquired: 991
+    direct: true
+    place: kyoto
+    label: installed in the Shaka Hall built within Seika-ji at Saga; named Seiryō-ji after Chōnen's death (1016); its main image since; Kaikei repaired it 1218
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%B8%85%E5%87%89%E5%AF%BA%E6%9C%A8%E9%80%A0%E9%87%88%E8%BF%A6%E5%A6%82%E6%9D%A5%E7%AB%8B%E5%83%8F&oldid=111496837
+        note: 正暦2年（991年）に嵯峨棲霞寺内に建てられた釈迦堂に安置された … 奝然の死後に弟子盛算の訴えによって清凉寺と称することが許された
+        source: jawiki-seiryoji-shaka
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/258
+        note: 蓮弁葺軸底に建保六年大仏師法眼快慶修造の墨書銘がある … 所有者名 ： 清凉寺
+        source: kunishitei-201-258
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107046734

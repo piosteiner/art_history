@@ -1,0 +1,41 @@
+public_id: 129728
+name: Machida
+names:
+  - lang: ja
+    role: original
+    text: 町田市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q210628
+  - lang: ko
+    role: translation
+    text: 마치다시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q210628
+  - lang: ru
+    role: translation
+    text: Матида
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q210628
+kind: settlement
+parent: tokyo
+country_code: JP
+location: [139.43861, 35.54667]
+wikidata_id: Q210628
+metadata:
+  sources: [Wikidata Q210628 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q210628
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q210628
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q210628

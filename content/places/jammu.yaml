@@ -1,0 +1,47 @@
+public_id: 129468
+name: Jammu
+names:
+  - lang: ja
+    role: translation
+    text: ジャンムー
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q255455
+  - lang: zh
+    role: translation
+    text: 查谟
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q255455
+  - lang: ko
+    role: translation
+    text: 잠무
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q255455
+  - lang: ru
+    role: translation
+    text: Джамму
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q255455
+kind: settlement
+parent: india
+country_code: IN
+location: [74.85, 32.73333]
+wikidata_id: Q255455
+metadata:
+  sources: [Wikidata Q255455 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q255455
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q255455
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q255455

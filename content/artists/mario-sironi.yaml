@@ -59,6 +59,14 @@ metadata:
 relationships:
   - type: member_of
     to: movement/novecento-italiano
+  - type: participated_in
+    to: event/paris-international-exposition-1937
+    label: exhibited
+    notes_md: Mosaic Corporative Italy in the Italian pavilion
+    sources:
+      - url: https://en.wikipedia.org/wiki/Exposition_Internationale_des_Arts_et_Techniques_dans_la_Vie_Moderne
+        source: wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/Mario_Sironi_Composizione.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Mario_Sironi_Composizione.jpg

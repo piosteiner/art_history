@@ -1,0 +1,34 @@
+public_id: 130200
+title: Rotunde
+creator: karl-von-hasenauer
+location: [16.4094, 48.2122]
+wikidata_id: Q684352
+metadata:
+  sources: [Wikidata Q684352 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/vienna
+  - type: co_creator
+    to: artist/john-scott-russell
+    label: engineer, credited with the design in another source
+    sources:
+      - url: https://en.wikipedia.org/wiki/1873_Vienna_World%27s_Fair
+        source: wikipedia-en-1873-vienna-worlds-fair
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/42/Rotunde_vienna_kramer.png
+    source_url: https://commons.wikimedia.org/wiki/File:Rotunde_vienna_kramer.png
+    license: Public domain
+    credit: Oscar Kramer
+identifiers:
+  gnd: "1069195863"
+  viaf: "7935149068466665730009"
+sources:
+  creator:
+    - url: https://de.wikipedia.org/wiki/Weltausstellung_1873
+      source: wikipedia-de-weltausstellung-1873
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q684352

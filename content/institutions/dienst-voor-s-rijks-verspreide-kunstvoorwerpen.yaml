@@ -1,3 +1,19 @@
 public_id: 126233
 name: Dienst voor 's Rijks Verspreide Kunstvoorwerpen
+founded: 1949
+dissolved: 1984
 wikidata_id: Q28045660
+metadata:
+  sources: [Wikidata Q28045660 (retrieved 2026-11-24)]
+identifiers:
+  lc: n79087865
+  viaf: "126030941"
+sources:
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q28045660
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q28045660

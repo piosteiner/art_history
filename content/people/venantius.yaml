@@ -4,6 +4,11 @@ kind: person
 wikidata_id: Q97764245
 metadata:
   sources: [Wikidata Q97764245 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Puccio_di_Simone_and_Allegretto_Nuzi_-_Saint_Venantius_%28right_panel%29_-_1937.1.6.c_-_National_Gallery_of_Art.jpg/1280px-Puccio_di_Simone_and_Allegretto_Nuzi_-_Saint_Venantius_%28right_panel%29_-_1937.1.6.c_-_National_Gallery_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Puccio_di_Simone_and_Allegretto_Nuzi_-_Saint_Venantius_(right_panel)_-_1937.1.6.c_-_National_Gallery_of_Art.jpg
+    license: Public domain
+    credit: Allegretto Nuzi / Puccio di Simone
 sources:
   kind:
     - accessed: 2026-11-23

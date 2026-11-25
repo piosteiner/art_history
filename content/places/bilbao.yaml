@@ -1,0 +1,53 @@
+public_id: 129500
+name: Bilbao
+names:
+  - lang: ja
+    role: translation
+    text: ビルバオ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q8692
+  - lang: zh
+    role: translation
+    text: 毕尔巴鄂
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q8692
+  - lang: ko
+    role: translation
+    text: 빌바오
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q8692
+  - lang: ru
+    role: translation
+    text: Бильбао
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q8692
+  - lang: pt
+    role: translation
+    text: Bilbau
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q8692
+kind: settlement
+parent: spain
+country_code: ES
+location: [-2.935, 43.26306]
+wikidata_id: Q8692
+metadata:
+  sources: [Wikidata Q8692 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q8692
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q8692
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q8692

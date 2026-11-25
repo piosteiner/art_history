@@ -1,0 +1,54 @@
+public_id: 130580
+name: International Exhibition of Modern Decorative and Industrial Arts
+names:
+  - lang: fr
+    role: original
+    text: Exposition internationale des arts décoratifs et industriels modernes
+kind: world's fair
+period: 1925-04-28/1925-11-08
+place: paris
+location: [2.31361, 48.8636]
+description_md: |-
+  The exhibition was proposed by the Société des Artistes Décorateurs and agreed by the Chamber of Deputies in 1912 for 1915; the First World War delayed it, and it was postponed to 1922, to 1924 and finally to 1925.[[source/wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts]] Germany was not invited because of its role in the war, whereas Austria and Hungary were, and the exhibition was also meant to honour the Allied countries.[[source/wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts]] The [[polity/soviet-union|Soviet Union]] was invited although France had not yet recognised its government, while the United States declined to take part; the American Commerce Department nevertheless sent a commission, whose report of 1926 said that the country had misunderstood the exhibition's purpose.[[source/wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts]]
+
+  The exhibition spread over the Esplanade des Invalides and both banks of the Seine, with its main entrance on the Place de la Concorde, designed by Pierre Patout with ornamental gates by Edgar Brandt.[[source/wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts]] Josef Hoffmann built the Austrian pavilion and Victor Horta the Belgian one; the tower of Robert Mallet-Stevens's Pavilion of Tourism, the tallest structure of the exhibition, foreshadowed the International Style with its ornament-free lines, and René Lalique's illuminated crystal fountain was one of its landmarks.[[source/wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts]]
+
+  Art Deco, which became dominant after the exhibition,[[source/moure-cecchini-2016|p. 10]] took its name from the exhibition's title.[[source/wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts]] The exhibition witnessed the triumph of the Déco style and, to a certain extent, of [[movement/futurism|Futurism]].[[source/cioli-ricciardi-schiera-2019|pp. 168–169]] Beside Émile-Jacques Ruhlmann's Hôtel du Collectionneur, with its Art Deco furniture in coordinated rooms, stood the unornamented concrete, steel and glass [[artwork/pavillon-de-l-esprit-nouveau|Pavillon de l'Esprit Nouveau]] by [[artist/le-corbusier|Le Corbusier]] and [[artist/pierre-jeanneret|Pierre Jeanneret]], which the organisers tried to hide behind a fence until Le Corbusier appealed to the Ministry of Fine Arts.[[source/wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts]][[source/wikipedia-en-pavillon-de-lesprit-nouveau]] A model home with an open plan and built-in furniture, it also showed the Plan Voisin and cubist sculptures by Jacques Lipchitz.[[source/wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts]][[source/wikipedia-en-pavillon-de-lesprit-nouveau]] Konstantin Melnikov's wooden Soviet pavilion, with an interior including a Workers' Club by Alexander Rodchenko,[[source/wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts]] was regarded as one of the most progressive buildings at the fair.[[source/wikipedia-en-konstantin-melnikov]]
+wikidata_id: Q1384763
+relationships:
+  - type: concerns
+    to: movement/futurism
+    sources:
+      - source: cioli-ricciardi-schiera-2019
+        locator: pp. 168–169
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/pavillon-de-l-esprit-nouveau
+    sources:
+      - source: wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts
+        accessed: 2026-11-24
+      - source: wikipedia-en-pavillon-de-lesprit-nouveau
+        accessed: 2026-11-24
+  - type: concerns
+    to: polity/soviet-union
+    sources:
+      - source: wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts
+  place:
+    - url: https://en.wikipedia.org/wiki/International_Exhibition_of_Modern_Decorative_and_Industrial_Arts
+      source: wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts
+      accessed: 2026-11-24
+  period:
+    - url: https://en.wikipedia.org/wiki/International_Exhibition_of_Modern_Decorative_and_Industrial_Arts
+      source: wikipedia-en-international-exhibition-of-modern-decorative-and-industrial-arts
+      accessed: 2026-11-24
+    - url: https://www.wikidata.org/wiki/Q1384763
+      source: wikidata-international-exhibition-of-modern-decorative-and-industrial-arts-wiki
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1384763

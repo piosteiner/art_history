@@ -1,0 +1,61 @@
+public_id: 130207
+title_lang: nb
+title: Fra Verdensutstillingen i Paris i 1867
+names:
+  - lang: en
+    role: translation
+    text: View of the 1867 Exposition Universelle
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q55422279
+  - lang: fr
+    role: translation
+    text: L'Exposition universelle, Paris 1867
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q55422279
+  - lang: de
+    role: translation
+    text: Blick auf die Weltausstellung von 1867
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q55422279
+creator: edouard-manet
+created: 1867
+materials: [oil paint, canvas]
+dimensions: [108, 196, 2.5]
+institution: national-museum-of-art-architecture-and-design
+inventory_number: NG.M.01293
+wikidata_id: Q55422279
+metadata:
+  sources: [Wikidata Q55422279 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/%C3%89douard_Manet_-_Fra_Verdensutstillingen_i_Paris_i_1867_-_Google_Art_Project.jpg/1280px-%C3%89douard_Manet_-_Fra_Verdensutstillingen_i_Paris_i_1867_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_Fra_Verdensutstillingen_i_Paris_i_1867_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Édouard Manet
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q55422279
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q55422279
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q55422279
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q55422279
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q55422279
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q55422279

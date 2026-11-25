@@ -3,3 +3,26 @@ name: Napoléon III
 birth: 1808
 death: 1873
 wikidata_id: Q7721
+relationships:
+  - type: participated_in
+    to: event/1867-paris-world-s-fair
+    label: organiser
+    notes_md: Decreed and hosted the exposition.
+    sources:
+      - url: https://ndl.go.jp/exposition/e/s1/1867.html
+        source: national-diet-library-second-paris-international-exposition-of-1867-part-1-expositions-hel
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1867)
+        source: wikipedia-en-exposition-universelle-1867
+        accessed: 2026-11-24
+  - type: participated_in
+    to: event/exposition-universelle-of-1855
+    label: organiser
+    notes_md: Emperor; led the exposition; requested the Bordeaux wine classification.
+    sources:
+      - url: https://ndl.go.jp/exposition/e/s1/1855.html
+        source: national-diet-library-first-paris-international-exposition-of-1855-part-1-expositions-held
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1855)
+        source: wikipedia-en-exposition-universelle-1855
+        accessed: 2026-11-24

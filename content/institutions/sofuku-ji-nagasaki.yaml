@@ -1,3 +1,39 @@
 public_id: 126891
 name: Sōfuku-ji (Nagasaki)
+kind: temple
+founded: 1629
+place: nagasaki
+location: [129.88368, 32.74226]
+address: 長崎県長崎市鍛冶屋町
 wikidata_id: Q63208
+metadata:
+  sources: [Wikidata Q63208 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cf/Nagasaki-Sofukuji-Daiyuhoden-M5601.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nagasaki-Sofukuji-Daiyuhoden-M5601.jpg
+    license: Public domain
+    credit: Fg2
+identifiers:
+  lc: no2018155386
+  viaf: "254778380"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q63208
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q63208
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q63208
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q63208
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q63208

@@ -1,3 +1,22 @@
 public_id: 126062
 name: Nishina Shinmei Shrine
+place: omachi
+location: [137.87903, 36.44994]
+website_url: https://www.sinmeigu.jp/
 wikidata_id: Q3342145
+metadata:
+  sources: [Wikidata Q3342145 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Nishina-3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nishina-3.jpg
+    license: CC BY-SA 3.0
+    credit: 江戸村のとくぞう
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3342145
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3342145

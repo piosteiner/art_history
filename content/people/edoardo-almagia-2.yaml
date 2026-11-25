@@ -2,4 +2,30 @@ public_id: 127613
 name: Edoardo Almagià
 given_name: Edoardo
 family_name: Almagià
+kind: person
+birth: 1928
 wikidata_id: Q117841867
+metadata:
+  sources: [Wikidata Q117841867 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/italy
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q117841867
+  - type: nationality
+    to: polity/konigreich-italien
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q117841867
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q117841867
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q117841867

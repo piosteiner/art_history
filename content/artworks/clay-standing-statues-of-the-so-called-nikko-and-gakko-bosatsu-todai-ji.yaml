@@ -1,0 +1,49 @@
+public_id: 124989
+title_lang: en
+title: Clay Standing Statues of the So-called Nikkō and Gakkō Bosatsu, Tōdai-ji
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 伝日光菩薩・伝月光菩薩
+created: 8th century
+created_span: uncertain
+institution: todai-ji
+wikidata_id: Q107045978
+metadata:
+  sources: [Wikidata Q107045978 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fa/Gakko_Bosatsu_Hokkedo.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Gakko_Bosatsu_Hokkedo.JPG
+    license: Public domain
+    credit: OGAWA SEIYOU
+provenance:
+  - owner: institution/todai-ji
+    acquired: 8th century
+    method: creation
+    place: nara
+    label: mid-8th-century clay figures in the Hokkedō, probably made in the government atelier; their origin is unknown and the names Nikkō/Gakkō are later (first in the Genroku era) — perhaps Bonten and Taishakuten
+    sources:
+      - note: 109 Nikko, in the Hokkedō, Tōdaiji. Mid-8th century. Clay with remains of paint … Scholars today consider that … these two images were probably not originally intended to be Nikko and Gakko, but instead are representations of Bonten and Taishakuten.
+        source: history-of-japanese-art
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%B1%E5%A4%A7%E5%AF%BA%E6%B3%95%E8%8F%AF%E5%A0%82&oldid=109083415
+        note: 本尊が立つ八角仏壇上の左右に脇侍のように立っていた像で … その伝来は不明であり、「日光・月光菩薩」という名称も本来のものではない。…元禄年間 (1688年 - 1704年)の『東大寺諸伽藍略録』が初出である。
+        source: jawiki-todaiji-hokkedo
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/194
+        note: 時代 ： 奈良 … 所有者名 ： 東大寺
+        source: kunishitei-201-194
+        accessed: 2026-11-24
+  - owner: institution/todai-ji-museum
+    role: custodian
+    acquired: 2011
+    method: transfer
+    direct: true
+    place: nara
+    label: moved from the Hokkedō to the temple's new museum with seismic isolation when it opened; Tōdai-ji remains the owner
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%B1%E5%A4%A7%E5%AF%BA%E6%B3%95%E8%8F%AF%E5%A0%82&oldid=109083415
+        note: 2011年以降、日光菩薩像、月光菩薩像、吉祥天像、弁才天像、不動明王二童子像、地蔵菩薩像は法華堂から免震装置を備えた東大寺ミュージアムに移され
+        source: jawiki-todaiji-hokkedo
+        accessed: 2026-11-24

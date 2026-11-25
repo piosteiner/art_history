@@ -23,6 +23,13 @@ death: 760-07-27
 wikidata_id: Q837932
 metadata:
   sources: [Wikidata Q837932 (retrieved 2026-11-01)]
+relationships:
+  - type: founded
+    to: institution/shin-yakushiji
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q3080305
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/27/Empress_K%C5%8Dmy%C5%8D_by_simomura_kanzan.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Empress_K%C5%8Dmy%C5%8D_by_simomura_kanzan.jpg

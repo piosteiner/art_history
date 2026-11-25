@@ -8,6 +8,8 @@ names:
       - accessed: 2026-11-24
         wikidata: Q11598454
 creator: yasutsuna
+created: 10th–12th century
+created_span: uncertain
 institution: tokyo-national-museum
 inventory_number: F-19931
 web_url: https://emuseum.nich.go.jp/detail?content_base_id=100186&content_part_id=001&content_pict_id=001&langId=ja&webView=null
@@ -23,6 +25,177 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Tachi_Sword_-_Dojikiri_Yasutsuna.jpg
     license: CC BY-SA 4.0
     credit: Kakidai
+provenance:
+  - owner: artist/yasutsuna
+    acquired: 10th–12th century
+    method: creation
+    label: made by the swordsmith Yasutsuna of Hōki (western Tottori); in Hōki Province
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100186&content_part_id=0&content_pict_id=0
+        note: 伯耆安綱 (ほうきやすつな) 1口 長80.0 反2.7 平安時代・10～12世紀 … 作者の安綱は平安時代の伯耆国（鳥取県西部）の刀鍛冶
+        source: emuseum-100186
+        accessed: 2026-11-24
+  - owner_label: Ashikaga shogunal family
+    acquired_label: Muromachi period
+    label: said to have been held by the Ashikaga shoguns (identified by some with the sword 'Onikiri' given to Ashikaga Yoshiharu in 1538)
+    certainty: possible
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E7%AB%A5%E5%AD%90%E5%88%87
+        note: 本刀は室町時代には足利将軍家が所蔵していたとされておる。
+        source: wikipedia-ja-dojigiri
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/D%C5%8Djigiri
+        note: Dōjigiri was presented to Oda Nobunaga, the leading late sixteenth century general (1534-82), by the Ashikaga family.
+        source: wikipedia-en-dojigiri
+        accessed: 2026-11-24
+  - owner: person/oda-nobunaga
+    method: gift
+    label: presented by the Ashikaga family (English Wikipedia after Satō Kanzan; not in the museum's text)
+    certainty: possible
+    sources:
+      - url: https://en.wikipedia.org/wiki/D%C5%8Djigiri
+        note: Dōjigiri was presented to Oda Nobunaga, the leading late sixteenth century general (1534-82), by the Ashikaga family.  Subsequently it was the property, in turn, of Toyotomi Hideyoshi and Tokugawa Ieyasu.
+        source: wikipedia-en-dojigiri
+        accessed: 2026-11-24
+  - owner: person/toyotomi-hideyoshi
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100186&content_part_id=0&content_pict_id=0
+        note: 豊臣秀吉、徳川家康・秀忠が所持し、越前藩主の松平忠直に贈られ、のちに津山藩（岡山県）の松平家に伝わった。
+        source: emuseum-100186
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/301
+        note: 『享保名物帳』に記載されるところによると、豊臣秀吉の所有で徳川秀忠より越前松平家に伝来したと伝えられ
+        source: kunishitei-201-301
+        accessed: 2026-11-24
+  - owner: person/tokugawa-ieyasu
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100186&content_part_id=0&content_pict_id=0
+        note: 豊臣秀吉、徳川家康・秀忠が所持し
+        source: emuseum-100186
+        accessed: 2026-11-24
+  - owner: person/tokugawa-hidetada
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100186&content_part_id=0&content_pict_id=0
+        note: 豊臣秀吉、徳川家康・秀忠が所持し
+        source: emuseum-100186
+        accessed: 2026-11-24
+  - owner: person/matsudaira-tadanao
+    method: gift
+    place: fukui-prefecture
+    label: given when Hidetada's daughter Katsuhime (Takada-sama) married Tadanao, lord of Echizen (per the Kyōhō meibutsuchō)
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100186&content_part_id=0&content_pict_id=0
+        note: 越前藩主の松平忠直に贈られ
+        source: emuseum-100186
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%AB%A5%E5%AD%90%E5%88%87
+        note: 秀忠公御物。高田様越前へ御入輿の刻三位宰相忠直卿へ被進、御長男光長卿へ御伝へ也。
+        source: wikipedia-ja-dojigiri
+        accessed: 2026-11-24
+  - owner: person/matsudaira-mitsunaga
+    ended: 1680
+    method: inheritance
+    place: joetsu
+    label: passed to Tadanao's eldest son, lord of Takada (Echigo; today Jōetsu), dispossessed after the Echigo disturbance in 1680
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E7%AB%A5%E5%AD%90%E5%88%87
+        note: 高田様越前へ御入輿の刻三位宰相忠直卿へ被進、御長男光長卿へ御伝へ也。… 延宝8年（1680年）5月、越後騒動により松平光長は改易・流罪となり、家財・什器・宝物類は一切が徳川将軍家により押収された。
+        source: wikipedia-ja-dojigiri
+        accessed: 2026-11-24
+  - owner_label: Tokugawa shogunate
+    role: custodian
+    acquired: 1681
+    method: confiscation
+    label: Mitsunaga's goods seized after his attainder; inventories of Takada Castle drawn up October 1681
+    certainty: probable
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E7%AB%A5%E5%AD%90%E5%88%87
+        note: 延宝8年（1680年）5月、越後騒動により松平光長は改易・流罪となり、家財・什器・宝物類は一切が徳川将軍家により押収された。… 童子切もこの時に将軍家の管理下に移ったと見られる。
+        source: wikipedia-ja-dojigiri
+        accessed: 2026-11-24
+  - owner_label: Hon'ami family (sword polishers), Edo
+    role: custodian
+    acquired: c. 1687
+    place: tokyo
+    label: sent for polishing (rust had formed during Mitsunaga's exile); later returned to the Matsudaira family
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E7%AB%A5%E5%AD%90%E5%88%87
+        note: 貞享4年（1687）頃、松平光長の流罪中に童子切は長らく手入れされず、刀身に胡麻を散らしたような錆（胡麻錆）が生じたとされる。このため、本阿弥家に送られ研磨が行われた。
+        source: wikipedia-ja-dojigiri
+        accessed: 2026-11-24
+  - owner_label: Matsudaira family of the Tsuyama domain
+    method: inheritance
+    place: tsuyama
+    label: kept in the great hall of Tsuyama Castle; saved from the castle fire of 20 January 1809
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100186&content_part_id=0&content_pict_id=0
+        note: のちに津山藩（岡山県）の松平家に伝わった。
+        source: emuseum-100186
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%AB%A5%E5%AD%90%E5%88%87
+        note: こののち、童子切は津山松平家に伝来し、平時は津山城本丸大広間に奉安し
+        source: wikipedia-ja-dojigiri
+        accessed: 2026-11-24
+  - owner: person/matsudaira-yasuharu
+    acquired: 1933 or earlier
+    method: inheritance
+    place: tokyo
+    label: viscount, head of the former Tsuyama Matsudaira house; National Treasure (old law) in his name 23 January 1933; sold after the Second World War
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E7%AB%A5%E5%AD%90%E5%88%87
+        note: 明治以降も津山松平家の家宝として継承され、昭和8年（1933年）1月23日付で、子爵松平康春の所有名義により国宝保存法に基づく旧国宝に指定された。… 第二次世界大戦後、松平康春は … 経済的困難に直面し、売却を決意した。
+        source: wikipedia-ja-dojigiri
+        accessed: 2026-11-24
+  - owner: person/tamari-sannosuke
+    acquired: after 1945
+    method: purchase
+    label: kendō master (also known as Tamari Yoshiaki), with funds from Watanabe Saburō (1880–1951) of Nihon Tokushukō; after Watanabe's death his son Watanabe Seiichirō claimed ownership in court
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E7%AB%A5%E5%AD%90%E5%88%87
+        note: その後、剣道九段範士で玉利嘉章の名でも知られる玉利三之助が、日本特殊鋼社長の渡辺三郎の資金援助を受けて取得した。… その後、渡辺三郎が逝去すると、息子の渡辺誠一郎は童子切の所有権を主張し、玉利との間で返還訴訟となった。
+        source: wikipedia-ja-dojigiri
+        accessed: 2026-11-24
+  - owner_label: court bailiff (shikkōri), Tokyo
+    role: custodian
+    ended: 1963-03
+    place: tokyo
+    label: held by a court bailiff during the ownership lawsuit (Tokyo District Court, Tokyo High Court) between Tamari and Watanabe Seiichirō; settled 8 March 1963
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E7%AB%A5%E5%AD%90%E5%88%87
+        note: 係争中は執行吏保管のもと、刀剣鑑定家によって定期的な手入れが行われた。… 昭和38年（1963年）3月8日、東京地方裁判所が判決を下し、双方が和解した。
+        source: wikipedia-ja-dojigiri
+        accessed: 2026-11-24
+  - owner: institution/national-commission-for-the-protection-of-cultural-properties
+    acquired: 1963-03-30
+    method: purchase
+    place: tokyo
+    label: bought by the Japanese state (20 million yen to Tamari, 6 million to Watanabe Seiichirō) and handed over by Tamari; shown at the Tokyo National Museum from November 1963
+    price:
+      amount: 26000000
+      currency: JPY
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E7%AB%A5%E5%AD%90%E5%88%87
+        note: 同月30日、童子切は国が2600万円で買い上げることが決まり、玉利三之助が2000万円、渡辺誠一郎が600万円と両者で分配を経て、玉利から文化財保護委員会へ引き渡された。
+        source: wikipedia-ja-dojigiri
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 1968-06
+    method: transfer
+    place: tokyo
+    label: formally entered the Tokyo National Museum's collection (kept there before); owner today the National Institutes for Cultural Heritage
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100186&content_part_id=0&content_pict_id=0
+        note: 東京国立博物館 F-19931
+        source: emuseum-100186
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%AB%A5%E5%AD%90%E5%88%87
+        note: 昭和43年（1968年）6月には、童子切は正式に東京国立博物館の所蔵となった（それ以前から同館で保管されている）。
+        source: wikipedia-ja-dojigiri
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/301
+        note: 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-301
+        accessed: 2026-11-24
 sources:
   creator:
     - accessed: 2026-11-24

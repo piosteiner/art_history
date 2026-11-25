@@ -1,3 +1,35 @@
 public_id: 125825
 name: Völkerkundemuseum der Universität Zürich
+kind: museum
+place: zurich
+location: [8.53432, 47.37081]
+address: Pelikanstrasse 40, 8001 Zürich
+website_url: https://www.musethno.uzh.ch/de.html
 wikidata_id: Q2536345
+metadata:
+  sources: [Wikidata Q2536345 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/14/Ausstellungseinblick-VMZ.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ausstellungseinblick-VMZ.jpg
+    license: CC BY-SA 3.0
+    credit: Kathrin Leuenberger
+identifiers:
+  gnd: 1021685-6
+  idref: 02925616X
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2536345
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2536345
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q2536345
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2536345

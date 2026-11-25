@@ -11,6 +11,9 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045989
+created: late 7th century
+created_span: uncertain
+institution: horyu-ji
 wikidata_id: Q107045989
 metadata:
   sources: [Wikidata Q107045989 (retrieved 2026-11-24)]
@@ -19,3 +22,41 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Amida_Triad_LadyTatibana_Horyuji.JPG
     license: Public domain
     credit: OGAWA SEIYOU(1894-1960) a famous photographer in Japan
+provenance:
+  - owner_label: unknown maker
+    acquired: late 7th century
+    method: creation
+    label: bronze Amida triad on lotus thrones, second half of the 7th century, in a wooden shrine (zushi)
+    sources:
+      - url: https://www.mlit.go.jp/tagengo-db/en/R1-00187.html
+        note: Lady Tachibana may have prayed before this wooden altar-shrine containing a remarkably detailed bronze Amida triad that dates back to the second half of the seventh century.
+        source: jta-r1-00187
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/235
+        note: 員数 ： 3躯 … 時代 ： 飛鳥
+        source: kunishitei-201-235
+        accessed: 2026-11-24
+  - owner: person/agata-no-inukai-no-michiyo
+    label: by tradition the private devotional image (nenjibutsu) of Lady Tachibana (Tachibana no Michiyo), mother of Empress Kōmyō
+    certainty: possible
+    sources:
+      - url: https://www.mlit.go.jp/tagengo-db/en/R1-00187.html
+        note: Lady Tachibana was the mother of Empress Komyo (701–760) … Lady Tachibana may have prayed before this wooden altar-shrine … 橘三千代（橘夫人、生年不詳～733年）… この木製の厨子を拝んでいたのが橘三千代とされている。
+        source: jta-r1-00187
+        accessed: 2026-11-24
+  - owner: institution/horyu-ji
+    place: ikaruga
+    label: formerly kept in the Golden Hall (Kondō); now in the Great Treasure Gallery (Daihōzō-in, built 1998); Hōryū-ji is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/235
+        note: 所有者名 ： 法隆寺
+        source: kunishitei-201-235
+        accessed: 2026-11-24
+      - url: https://www.mlit.go.jp/tagengo-db/en/R1-00182.html
+        note: The Great Treasure Gallery was built in 1998 … The other is the Tachibana altar, named after its owner, Lady Tachibana.
+        source: jta-r1-00182
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=法隆寺&oldid=111669701
+        note: 阿弥陀三尊像及び厨子（橘夫人厨子、国宝） - 飛鳥時代後期（白鳳期）。やはり金堂に安置されていたもの。
+        source: jawiki-horyu-ji
+        accessed: 2026-11-24

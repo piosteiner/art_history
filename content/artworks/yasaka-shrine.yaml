@@ -54,6 +54,7 @@ names:
       - accessed: 2026-11-24
         wikidata: Q692714
 created: 656
+institution: yasaka-shrine
 location: [135.77853, 35.00365]
 wikidata_id: Q692714
 metadata:
@@ -67,6 +68,30 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Kyoto_Yasaka-jinja_B%C3%BChne_%26_Nebentor_2.jpg
     license: CC BY-SA 4.0
     credit: Zairon
+provenance:
+  - owner: institution/yasaka-shrine
+    acquired: 656
+    method: creation
+    place: kyoto
+    label: founded, by one shrine tradition, 656 by Iri-shi, envoy from Goguryeo; by another, 876 by the Nara monk Ennyo; called Gion-sha / Gion Kanshin-in, a branch of Kōfuku-ji, then of Enryaku-ji until 1571; renamed Yasaka Shrine 1868; owner today
+    certainty: possible
+    sources:
+      - url: https://www.yasaka-jinja.or.jp/about/history/
+        note: 斉明天皇2年（656）に高麗より来朝した伊利之(いりし)が新羅国の牛頭山(ごずさん)に座した素戔嗚尊(すさのをのみこと)を当地 … に奉斎したことにはじまる。 … 貞観18年（876）南都の僧・円如(えんにょ)が当地にお堂を建立し … 古くは興福寺、その後比叡山延暦寺の末寺（末社）であった祇園社（八坂神社）ですが、元亀2年（1571）織田信長による比叡山焼き討ちにより比叡山の支配から 離れ
+        source: yasaka-jinja-history
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1791
+        note: 現在の本殿は四代将軍徳川家綱により，承応三年（一六五四）の建立である。 … 所有者名 ： 宗教法人八坂神社
+        source: kunishitei-102-1791
+        accessed: 2026-11-24
+      - note: Summer festivals such as the Gion date back to the Heian period, and were instituted in response to the rash of diseases that broke out in the city during the humid summer months.
+        source: history-of-japanese-art
+        locator: pp. 172–173
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%9D%82%E7%A5%9E%E7%A4%BE&oldid=111631887
+        note: 慶応4年=明治元年（1868年）の神仏分離令により「八坂神社」と改名された … 承応3年（1654年）には幕府によって本殿が再建されている
+        source: wikipedia-ja-yasaka-shrine
+        accessed: 2026-11-24
 identifiers:
   viaf: "155220504"
 sources:

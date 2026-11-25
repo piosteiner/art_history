@@ -1,3 +1,32 @@
 public_id: 125802
 name: Daihō-ji Temple
+kind: temple
+place: aoki
+location: [138.14889, 36.38139]
+address: 長野県小県郡青木村当郷2052
+website_url: https://www.daihoujitemple.com/
 wikidata_id: Q11437203
+metadata:
+  sources: [Wikidata Q11437203 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/18/Daihouji-aoki.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Daihouji-aoki.JPG
+    license: CC BY-SA 3.0
+    credit: ja:User:Masanori88
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11437203
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11437203
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11437203
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11437203

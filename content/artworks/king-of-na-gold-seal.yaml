@@ -51,6 +51,95 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:King_of_Na_gold_seal.jpg
     license: Public domain
     credit: "Original uploader: User:金翅大鹏鸟 at zh.wikipedia"
+provenance:
+  - owner_label: ruler of Na (Wa)
+    acquired: 57
+    method: gift
+    label: golden seal conferred by Emperor Guangwu of Han on the embassy from the ruler of Na in 57 CE (Hou Hanshu)
+    sources:
+      - url: https://bunkazai.city.fukuoka.lg.jp/cultural_properties/detail/313
+        note: 『後漢書』東夷伝に、「建武中元二年（西暦57年）、東夷倭奴國、奉貢朝賀す、使人自ら大夫と称す、倭國の極南界なり、光武、賜うに印綬を以てす」とある漢印そのものであることを説き
+        source: fukuoka-bunkazai-313
+        accessed: 2026-11-24
+      - note: records mention of an embassy arriving in 57 C.E. from a ruler of Na (JAP. Wa) who craved recognition by the Emperor Guangwu (r. 25-58) as the supreme ruler of Na. This the emperor conferred in the form of a golden seal.
+        source: history-of-japanese-art
+        locator: p. 28
+        accessed: 2026-11-24
+  - owner: person/jinbei
+    acquired: 1784
+    method: find
+    place: fukuoka
+    label: found under a large stone at Kanonosaki, Shikanoshima, by the farmer Jinbei (or his labourers Hideji and Kihei); reported to Tsuda Genjirō, magistrate of Naka district
+    sources:
+      - url: https://bunkazai.city.fukuoka.lg.jp/cultural_properties/detail/313
+        note: 「漢委奴国王」金印は、天明4年（1784）に志賀島（現在、福岡市東区）の叶崎(かなのさき)というところで二人持ほどの石の下から発見された。発見者は百姓甚兵衛である（あるいは秀治と喜平ともいい、この2人は甚兵衛の傭人ともいう）。
+        source: fukuoka-bunkazai-313
+        accessed: 2026-11-24
+  - owner_label: Kuroda family, lords of the Fukuoka domain
+    acquired: 1784
+    direct: true
+    place: fukuoka
+    label: identified by Kamei Nanmei (Kin'in ben) and placed in the Kuroda domain's storehouse
+    sources:
+      - url: https://bunkazai.city.fukuoka.lg.jp/cultural_properties/detail/313
+        note: 金印を最初に鑑定したのは、当時の黒田藩西学問所、甘棠館の館長亀井南冥である。… 南冥の努力により、金印は黒田藩庫に納められ、永く保存されることになる。
+        source: fukuoka-bunkazai-313
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    role: custodian
+    acquired_label: after the Meiji Restoration, when the Kuroda family moved to Tokyo
+    ended: 1978
+    place: tokyo
+    label: deposited by the Kuroda family for a long time
+    sources:
+      - url: https://bunkazai.city.fukuoka.lg.jp/cultural_properties/detail/313
+        note: 永く東京国立博物館に寄託されていたが、福岡市美術館の開館にともない、1978年に黒田家から福岡市に寄贈された。
+        source: fukuoka-bunkazai-313
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%BC%A2%E5%A7%94%E5%A5%B4%E5%9B%BD%E7%8E%8B%E5%8D%B0&oldid=111824502
+        note: 福岡藩主黒田家に伝えられたものとして明治維新後に黒田家が東京へ移った際に東京国立博物館に寄託された。
+        source: wikipedia-ja-kan-no-wa-no-na-no-koku-o-in
+        accessed: 2026-11-24
+  - owner: place/fukuoka
+    acquired: 1978
+    method: gift
+    direct: true
+    place: fukuoka
+    label: given by the Kuroda family (Kuroda Shigeko, widow of Marquis Kuroda Nagamichi) to the City of Fukuoka for the opening of the Fukuoka Art Museum; owner today
+    sources:
+      - url: https://bunkazai.city.fukuoka.lg.jp/cultural_properties/detail/313
+        note: 福岡市美術館の開館にともない、1978年に黒田家から福岡市に寄贈された。 … 所 有 者 福岡市
+        source: fukuoka-bunkazai-313
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%BC%A2%E5%A7%94%E5%A5%B4%E5%9B%BD%E7%8E%8B%E5%8D%B0&oldid=111824502
+        note: 福岡市美術館の開設に際して1978年（昭和53年）に黒田茂子（黒田長礼元侯爵夫人）から福岡市に寄贈され
+        source: wikipedia-ja-kan-no-wa-no-na-no-koku-o-in
+        accessed: 2026-11-24
+  - owner: institution/fukuoka-art-museum
+    role: custodian
+    acquired: 1979
+    ended: 1990
+    place: fukuoka
+    label: on permanent display
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%BC%A2%E5%A7%94%E5%A5%B4%E5%9B%BD%E7%8E%8B%E5%8D%B0&oldid=111824502
+        note: 1979年（昭和54年）から福岡市美術館、1990年（平成2年）から福岡市博物館で常設展示されている。
+        source: wikipedia-ja-kan-no-wa-no-na-no-koku-o-in
+        accessed: 2026-11-24
+  - owner: institution/fukuoka-city-museum
+    role: custodian
+    acquired: 1990
+    place: fukuoka
+    label: on permanent display
+    sources:
+      - url: https://bunkazai.city.fukuoka.lg.jp/cultural_properties/detail/313
+        note: 所 在 地 福岡市早良区百道浜３－１－１　福岡市博物館
+        source: fukuoka-bunkazai-313
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%BC%A2%E5%A7%94%E5%A5%B4%E5%9B%BD%E7%8E%8B%E5%8D%B0&oldid=111824502
+        note: 1990年（平成2年）から福岡市博物館で常設展示されている。
+        source: wikipedia-ja-kan-no-wa-no-na-no-koku-o-in
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

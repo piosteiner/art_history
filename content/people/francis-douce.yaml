@@ -2,4 +2,42 @@ public_id: 123723
 name: Francis Douce
 given_name: Francis
 family_name: Douce
+kind: person
+birth: 1757
+death: 1834-03-30
 wikidata_id: Q5480752
+metadata:
+  sources: [Wikidata Q5480752 (retrieved 2026-11-24)]
+relationships:
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q5480752
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ab/Francis_Douce.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francis_Douce.jpg
+    license: Public domain
+    credit: James Barry
+identifiers:
+  bnf: 11972838p
+  gnd: "123960584"
+  idref: "027753107"
+  lc: n85248223
+  rkd: "449210"
+  ulan: "500084985"
+  viaf: "69848690"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q5480752
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q5480752
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q5480752

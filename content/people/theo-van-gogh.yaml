@@ -9,6 +9,7 @@ active: 1880/1890
 description_md: |-
   Art dealer in Paris (Goupil & Cie, later Boussod, Valadon & Cie) and Vincent's younger brother[[source/wikipedia-en-theo-van-gogh-art-dealer|“a Dutch art dealer and a younger brother of Vincent van Gogh” · “By 1884, he was transferred to the Paris main office, which in 1884 took the name of Boussod, Valadon & Cie”]].
   Supported Vincent financially for the whole of his career; their correspondence is the main source on his life[[source/wikipedia-en-theo-van-gogh-art-dealer|“Beginning in the winter of 1880–1881, he sent painting materials as well as monthly financial support to his brother Vincent”]][[source/wikipedia-en-vincent-van-gogh|“His younger brother Theo supported him financially, and the two kept up a long correspondence by letter”]].
+wikidata_id: Q317188
 relationships:
   - type: born_in
     to: place/zundert
@@ -18,9 +19,22 @@ relationships:
     period: 1891-01-25
   - type: worked_in
     to: place/paris
+  - type: married_to
+    to: person/johanna-van-gogh-bonger
+    sources:
+      - accessed: 2026-11-24
+        property: P26
+        wikidata: Q2554450
   - type: patron_of
     to: artist/vincent-van-gogh
     period: 1880/1890
+  - type: participated_in
+    to: event/exposition-universelle-of-1889
+    notes_md: Refused, for his brother Vincent, Gauguin's proposal to show six of Vincent's paintings at the Volpini exhibition
+    sources:
+      - url: https://en.wikipedia.org/wiki/The_Volpini_Exhibition,_1889
+        source: wikipedia-en-the-volpini-exhibition-1889
+        accessed: 2026-11-24
 sources:
   birth:
     - url: https://collection.kunsthaus.ch/de/collection/item/1316/

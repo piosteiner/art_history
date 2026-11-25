@@ -1,5 +1,11 @@
 public_id: 107541
 title: Murasaki Shikibu nikki emaki (Gotō scroll)
+names:
+  - lang: ja
+    role: translation
+    text: 五島本紫式部日記絵巻
+  - The Murasaki Shikibu Diary Emaki
+creator: fujiwara-nobuzane
 attribution_label: Anonymous
 created: 13th century
 created_span: uncertain
@@ -8,8 +14,14 @@ medium: Handscroll, colour on paper
 materials: [paper]
 dimensions: [21]
 institution: gotoh-museum
+location: [139.6355, 35.61229]
 description_md: One of four surviving scrolls illustrating the diary of [[person/murasaki-shikibu]], now in several collections and covering only about fifteen per cent of the text; perhaps the set begun in 1233 by courtiers around the ex-emperor Go Horikawa, mentioned in Fujiwara no Teika’s diary. Two drunken courtiers try to get into her room one moonlit night, and she holds the shutters closed. The compositions follow the Heian Genji scrolls, but the figures express themselves directly and the [[tsukuri-e]] is applied with less care. [[source/history-of-japanese-art|p. 183, fig. 212]]
+wikidata_id: Q107045331
+metadata:
+  sources: [Wikidata Q107045331 (retrieved 2026-11-24)]
 relationships:
+  - type: created_in
+    to: place/tokyo
   - type: associated_with
     to: movement/kamakura-period
     sources:
@@ -20,6 +32,96 @@ relationships:
     sources:
       - source: history-of-japanese-art
         locator: p. 183, fig. 212
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/35/Murasaki_Shikibu_Diary_Emakimono_%28Gotoh_Museum%29_6.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Murasaki_Shikibu_Diary_Emakimono_(Gotoh_Museum)_6.jpg
+    license: Public domain
+    credit: attributed to Fujiwara Nobuzane (illustrations) and Kujō Yoshitsune (calligraphy)
+provenance:
+  - owner_label: unknown court painter (traditionally Fujiwara no Nobuzane)
+    acquired: 13th century
+    method: creation
+    label: early Kamakura period, originally about ten scrolls; text traditionally by Gokyōgoku Yoshitsune, pictures by Fujiwara no Nobuzane — not established; possibly the scroll of the 1233 project of Go-Horikawa's circle
+    sources:
+      - url: https://www.gotoh-museum.or.jp/collection/shikibu/
+        note: 「紫式部日記絵巻」は、それを約250年後の鎌倉時代前期に絵巻にした作品。もとは全10巻程度の巻物であったと推定。江戸時代以前の伝来は不明。… 詞書の筆者を鎌倉時代の能書後京極良経（1169～1206）、絵の筆者を鎌倉時代の絵師藤原信実（？～1233～1266～？）と伝えるが、詳細は不明。
+        source: gotoh-museum-murasaki-shikibu-diary
+        accessed: 2026-11-24
+      - note: in 1233 a group of noblemen centered on the insei ex-emperor Go Horikawa (1212-34; r. 1222-32) launched a project to make new emaki of the Genji monogatari and an illustrated version of Murasaki's diary … Such an emaki of the diary has survived to the present day, although it has not been established whether or not it is the same one … 212 Illustration from Murasaki Shikibu nikki emaki … 13th century … Gotō Art Museum, Tokyo.
+        source: history-of-japanese-art
+        locator: p. 183, fig. 212
+        accessed: 2026-11-24
+  - owner_label: a daimyo family of western Japan (perhaps the Matsudaira of Saijō, Iyo)
+    label: provenance before 1920 unknown; the pictures were printed with the Hisamatsu scroll in Mizuno Tadanaka's Tankaku sōsho, hence thought kept by a western daimyo family
+    certainty: possible
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E7%B4%AB%E5%BC%8F%E9%83%A8%E6%97%A5%E8%A8%98%E7%B5%B5%E5%B7%BB
+        note: 伝来は不明だが、絵のみが水野忠央の『丹鶴叢書』壬子帙に旧久松家本と共に木版で収められており、西国の大名家（伊予西条松平藩か）が秘蔵していたとみられる。
+        source: wikipedia-ja-murasaki-shikibu-nikki-emaki
+        accessed: 2026-11-24
+  - owner: person/morikawa-kan-ichiro
+    acquired: 1920
+    method: purchase
+    place: nagoya
+    label: found the scroll of five sections (the 'former Morikawa scroll'); some sources say 1919; the Gotoh's three sections are its 1st, 2nd and 4th
+    sources:
+      - url: https://www.gotoh-museum.or.jp/collection/shikibu/
+        note: 五島美術館が収蔵する三段分は、大正9年（1920）に名古屋の森川勘一郎（1887～1980）が発見した巻子本（全五段）の内の第一・二・四段目にあたる。
+        source: gotoh-museum-murasaki-shikibu-diary
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%B4%AB%E5%BC%8F%E9%83%A8%E6%97%A5%E8%A8%98%E7%B5%B5%E5%B7%BB
+        note: 元は1920年（大正9年）名古屋の森川勘一郎（如春庵）が発見した巻子本1巻 … 森川は、手持ちの古美術コレクションを整理してこの絵巻を購入したという。
+        source: wikipedia-ja-murasaki-shikibu-nikki-emaki
+        accessed: 2026-11-24
+  - owner: person/masuda-takashi
+    acquired: 1932
+    method: purchase
+    direct: true
+    label: Masuda cut off the 5th section on buying (left with Morikawa), the 3rd in 1933 (now Tokyo National Museum); the remaining three sections were mounted as six framed panels in 1934
+    sources:
+      - url: https://www.gotoh-museum.or.jp/collection/shikibu/
+        note: 昭和7年（1932）、益田鈍翁（1848～1938）が購入する際に第五段目を切断、森川家に残し（現在、個人蔵）、さらに翌年、鈍翁は第三段目を切り離し掛軸に改装（現在、東京国立博物館蔵）、残りの三段分はその翌年額装となり
+        source: gotoh-museum-murasaki-shikibu-diary
+        accessed: 2026-11-24
+  - owner_label: Takanashi family
+    acquired: after 1945
+    label: after the war, in the collection of the businessman Takanashi Nizaburō
+    sources:
+      - url: https://www.gotoh-museum.or.jp/collection/shikibu/
+        note: 戦後、高梨家を経て五島美術館が収蔵することとなった。
+        source: gotoh-museum-murasaki-shikibu-diary
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E4%BA%94%E5%B3%B6%E7%BE%8E%E8%A1%93%E9%A4%A8
+        note: 名品の『源氏物語絵巻』や『紫式部日記絵巻』は、戦前の大収集家益田孝（鈍翁）の収集品で、戦後、実業家高梨仁三郎のコレクションに入っていたのを、美術館公開を決意した五島がコレクションを強化・補強する目的で死の直前に入手したものである
+        source: wikipedia-ja-gotoh-museum
+        accessed: 2026-11-24
+  - owner: person/goto-keita
+    acquired: 1959 or earlier
+    method: purchase
+    direct: true
+    label: bought shortly before his death to strengthen the collection for his planned museum
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E4%BA%94%E5%B3%B6%E7%BE%8E%E8%A1%93%E9%A4%A8
+        note: 名品の『源氏物語絵巻』や『紫式部日記絵巻』は、戦前の大収集家益田孝（鈍翁）の収集品で、戦後、実業家高梨仁三郎のコレクションに入っていたのを、美術館公開を決意した五島がコレクションを強化・補強する目的で死の直前に入手したものである
+        source: wikipedia-ja-gotoh-museum
+        accessed: 2026-11-24
+  - owner: institution/gotoh-museum
+    acquired_label: the museum opened in 1960; date of this work's transfer not stated
+    place: tokyo
+    label: museum opened 1960 on Gotō Keita's collection; the national register names Tokyu Corporation (東急株式会社) as owner and the Gotoh Museum as keeper
+    sources:
+      - url: https://www.gotoh-museum.or.jp/collection/shikibu/
+        note: 戦後、高梨家を経て五島美術館が収蔵することとなった。
+        source: gotoh-museum-murasaki-shikibu-diary
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/132
+        note: 保管施設の名称：公益財団法人五島美術館 所有者名：東急株式会社
+        source: kunishitei-201-132
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E4%BA%94%E5%B3%B6%E7%BE%8E%E8%A1%93%E9%A4%A8
+        note: 五島の没した翌年の1960年（昭和35年）に、東急を中心に … の出資により開館した。
+        source: wikipedia-ja-gotoh-museum
+        accessed: 2026-11-24
 sources:
   kind:
     - source: history-of-japanese-art
@@ -30,6 +132,14 @@ sources:
   created:
     - source: history-of-japanese-art
       locator: p. 183, fig. 212
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q107045331
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q107045331
   materials:
     - source: history-of-japanese-art
       locator: p. 183, fig. 212
@@ -39,3 +149,6 @@ sources:
   institution:
     - source: history-of-japanese-art
       locator: p. 183, fig. 212
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q107045331

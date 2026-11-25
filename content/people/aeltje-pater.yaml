@@ -6,6 +6,18 @@ kind: person
 wikidata_id: Q17351632
 metadata:
   sources: [Wikidata Q17351632 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q17351632
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Frans_Hals_-_Portrait_of_a_Woman%2C_possibly_Aeltje_Dircksdr._Pater_-_1948.137_-_Cleveland_Museum_of_Art.tiff/lossy-page1-1280px-Frans_Hals_-_Portrait_of_a_Woman%2C_possibly_Aeltje_Dircksdr._Pater_-_1948.137_-_Cleveland_Museum_of_Art.tiff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portrait_of_a_Woman,_possibly_Aeltje_Dircksdr._Pater_-_1948.137_-_Cleveland_Museum_of_Art.tiff
+    license: Public domain
+    credit: Frans Hals
 sources:
   kind:
     - accessed: 2026-11-24

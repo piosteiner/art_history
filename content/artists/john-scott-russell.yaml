@@ -1,0 +1,58 @@
+public_id: 130228
+name: John Scott Russell
+given_name: John Scott
+family_name: Russell
+names:
+  - lang: ja
+    role: translation
+    text: ジェー・スコット・ラッセル
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q138545
+  - lang: zh
+    role: translation
+    text: 約翰·史考特·羅素
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q138545
+  - lang: ru
+    role: translation
+    text: Джон Скотт Рассел
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q138545
+birth: 1808-05-09
+death: 1882-06-08
+wikidata_id: Q138545
+metadata:
+  sources: [Wikidata Q138545 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/vienna-worlds-fair-of-1873
+    label: architect
+    notes_md: Scottish engineer credited with the Rotunde design (en.wikipedia).
+    sources:
+      - url: https://en.wikipedia.org/wiki/1873_Vienna_World%27s_Fair
+        source: wikipedia-en-1873-vienna-worlds-fair
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/03/Russell_J_Scott.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Russell_J_Scott.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "167076445"
+  gnd: "116711094"
+  idref: "183155394"
+  lc: no97000810
+  ulan: "500078335"
+  viaf: "45061037"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q138545
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q138545

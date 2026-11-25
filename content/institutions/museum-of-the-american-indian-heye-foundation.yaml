@@ -1,3 +1,28 @@
 public_id: 125744
 name: Museum of the American Indian, Heye Foundation
+kind: museum
+founded: 1916
+dissolved: 1989
 wikidata_id: Q138795685
+metadata:
+  sources: [Wikidata Q138795685 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/47/Building_of_the_Museum_of_the_American_Indian%2C_Heye_Foundation._N.Y._182_%284109519920%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Building_of_the_Museum_of_the_American_Indian,_Heye_Foundation._N.Y._182_(4109519920).jpg
+    license: No restrictions
+    credit: Smithsonian Institution from United States
+identifiers:
+  lc: n79122093
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q138795685
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q138795685
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q138795685

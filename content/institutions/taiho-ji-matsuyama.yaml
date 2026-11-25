@@ -1,3 +1,36 @@
 public_id: 126607
 name: Taihō-ji (Matsuyama)
+kind: temple
+founded: 701
+place: matsuyama
+location: [132.742, 33.8417]
+address: 〒790-0062 愛媛県松山市南江戸五丁目10番1号
 wikidata_id: Q3513973
+metadata:
+  sources: [Wikidata Q3513973 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Koshozan_Taihoji_03.JPG/1280px-Koshozan_Taihoji_03.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Koshozan_Taihoji_03.JPG
+    license: CC BY-SA 3.0
+    credit: Reggaeman
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3513973
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3513973
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3513973
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3513973
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3513973

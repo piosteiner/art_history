@@ -1,6 +1,7 @@
 public_id: 125247
 title_lang: en
 title: Prancing Horse
+attribution_label: follower of Jean Louis André Théodore Géricault
 created: 1808/1812
 created_label: c. 19th century
 created_span: uncertain
@@ -15,6 +16,92 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Jean_Louis_Andr%C3%A9_Th%C3%A9odore_G%C3%A9ricault_-_Prancing_Horse_-_1944.687_-_Art_Institute_of_Chicago.jpg
     license: Public domain
     credit: Follower of Théodore Géricault
+provenance:
+  - owner: artist/eugene-delacroix
+    place: paris
+    certainty: possible
+    sources:
+      - url: https://www.artic.edu/artworks/51541
+        note: Possibly Eugène Delacroix, Paris [according to Paris 1924 exh. cat. and Paris 1937 exh. cat.].
+        source: aic-1944-687
+        accessed: 2026-11-24
+  - owner_label: M. Foynard, Paris
+    place: paris
+    label: Richard Goetz (letter, 1937) bought all his Géricaults of that time from Foynard before World War I
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/51541
+        note: Probably M. Foynard, Paris [according to letter from Richard Goetz, December 14, 1937, … asserting that he acquired all the Géricaults he purchased in this period from Monsieur Foynard before World War I];
+        source: aic-1944-687
+        accessed: 2026-11-24
+  - owner: person/richard-goetz
+    acquired: 1922 or earlier
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/51541
+        note: Richard Goetz, Paris, by 1922;
+        source: aic-1944-687
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1922-02-23
+    method: auction
+    direct: true
+    place: paris
+    label: sale of Richard Goetz's sequestered property, no. 150
+    sources:
+      - url: https://www.artic.edu/artworks/51541
+        note: sold with his sequestered property Hotel Drouot, Paris, February 23, 1922, no. 150.
+        source: aic-1944-687
+        accessed: 2026-11-24
+  - owner: person/edouard-mortier-de-trevise
+    acquired: 1924 or earlier
+    ended_label: until at least 1937
+    place: paris
+    label: duc de Trévise
+    sources:
+      - url: https://www.artic.edu/artworks/51541
+        note: Édouard Napoléon César Edmond Mortier, duc de Trévise (died 1946), Paris, by 1924 until at least 1937 [see Paris 1924 exh. cat. and Paris 1937 exh. cat.];
+        source: aic-1944-687
+        accessed: 2026-11-24
+  - owner: person/robert-lebel
+    role: agent
+    method: purchase
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/51541
+        note: sold by him, probably with Robert Lebel as agent,
+        source: aic-1944-687
+        accessed: 2026-11-24
+  - owner: person/richard-goetz
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/51541
+        note: to Richard Goetz, New York [see letter from Eric Turquin, February 7, 2002, in curatorial file].
+        source: aic-1944-687
+        accessed: 2026-11-24
+  - owner: person/j-b-neumann
+    acquired: 1944 or earlier
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/51541
+        note: J. B. Neumann, New York by 1944;
+        source: aic-1944-687
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1944
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/51541
+        note: sold to the Art Institute, 1944.
+        source: aic-1944-687
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

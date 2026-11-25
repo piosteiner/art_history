@@ -1,3 +1,29 @@
 public_id: 126652
 name: Ministry of the Army
+founded: 1872
+dissolved: 1945
+place: tokyo
 wikidata_id: Q702383
+metadata:
+  sources: [Wikidata Q702383 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/08/Japanese_Army_HQ_Ichigaya.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japanese_Army_HQ_Ichigaya.jpg
+    license: Public domain
+    credit: MChew
+identifiers:
+  lc: nr2002023000
+  viaf: "252079185"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q702383
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q702383
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q702383

@@ -28,6 +28,25 @@ death: 835-04-26
 wikidata_id: Q222227
 metadata:
   sources: [Wikidata Q222227 (retrieved 2026-11-01)]
+relationships:
+  - type: founded
+    to: institution/motoyama-ji
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q3325310
+  - type: founded
+    to: institution/myoo-in
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q2363723
+  - type: founded
+    to: institution/soji-ji-nishiarai-daishi
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q11608171
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/80/Kukai2.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kukai2.jpg

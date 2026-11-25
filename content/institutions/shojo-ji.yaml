@@ -1,0 +1,38 @@
+public_id: 129787
+name: Shōjō-ji
+kind: temple
+founded: 807
+place: yugawa
+location: [139.87008, 37.56333]
+address: 福島県河沼郡湯川村勝常代舞1764
+wikidata_id: Q3482783
+metadata:
+  sources: [Wikidata Q3482783 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Shojoji_Yakushi_Hall.jpg/1280px-Shojoji_Yakushi_Hall.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shojoji_Yakushi_Hall.jpg
+    license: CC BY-SA 3.0
+    credit: Original uploader was Qwert1234 at ja.wikipedia
+identifiers:
+  viaf: "254474638"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3482783
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3482783
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3482783
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3482783
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3482783

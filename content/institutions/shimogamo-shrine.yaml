@@ -1,0 +1,29 @@
+public_id: 130135
+name: Shimogamo Shrine
+place: kyoto
+location: [135.77301, 35.03907]
+address: 京都府京都市左京区下鴨泉川町59
+website_url: https://www.shimogamo-jinja.or.jp/
+wikidata_id: Q701620
+metadata:
+  sources: [Wikidata Q701620 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/64/Shimogamo_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shimogamo_01.jpg
+    license: CC BY-SA 3.0
+    credit: Mochi at Japanese Wikipedia
+identifiers:
+  lc: nr94011162
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q701620
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q701620
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q701620

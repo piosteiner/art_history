@@ -2,4 +2,51 @@ public_id: 127939
 name: Gerrit Braamcamp
 given_name: Gerrit
 family_name: Braamcamp
+kind: person
+birth: 1699-11-18
+death: 1771-06-17
 wikidata_id: Q2427237
+metadata:
+  sources: [Wikidata Q2427237 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q2427237
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q2427237
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q2427237
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Jacob_Xavery_and_Reinier_Vinkeles_-_Portrait_of_Gerrit_Braamcamp_with_items_from_his_collection_RP-P-OB-62.723.jpg/1280px-Jacob_Xavery_and_Reinier_Vinkeles_-_Portrait_of_Gerrit_Braamcamp_with_items_from_his_collection_RP-P-OB-62.723.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_Xavery_and_Reinier_Vinkeles_-_Portrait_of_Gerrit_Braamcamp_with_items_from_his_collection_RP-P-OB-62.723.jpg
+    license: Public domain
+    credit: Reinier Vinkeles
+identifiers:
+  gnd: "1023567490"
+  idref: "232280479"
+  rkd: "434210"
+  viaf: "173026444"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2427237
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2427237
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q2427237

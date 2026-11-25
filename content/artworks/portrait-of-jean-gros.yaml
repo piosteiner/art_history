@@ -37,6 +37,139 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Rogier_van_der_Weyden_-_Portrait_of_Jean_Gros_-_1933.1051a_-_Art_Institute_of_Chicago.jpg
     license: Public domain
     credit: Rogier van der Weyden
+provenance:
+  - owner: person/isaac-joseph-de-meyer
+    acquired: 1859 or earlier
+    ended: 1861
+    place: bruges
+    label: Dr. Isaac Joseph de Meyer (Weale 1859)
+    sources:
+      - url: https://www.artic.edu/artworks/16298
+        note: Dr. Isaac Joseph de Meyer (d. 1861), Bruges, by 1859 [Weale 1859];
+        source: aic-1933-1051
+        accessed: 2026-11-24
+  - owner: person/august-de-meyer
+    method: inheritance
+    direct: true
+    place: bruges
+    label: Dr. August de Meyer, his son
+    sources:
+      - url: https://www.artic.edu/artworks/16298
+        note: his son, Dr. August de Meyer, Bruges.
+        source: aic-1933-1051
+        accessed: 2026-11-24
+  - owner: person/rodolphe-kann
+    acquired: 1899 or earlier
+    ended: 1905
+    method: purchase
+    place: paris
+    label: according to Friedländer 1899
+    sources:
+      - url: https://www.artic.edu/artworks/16298
+        note: Sold to Rodolphe Kann (d. 1905), Paris, by 1899 [according to Friedländer 1899];
+        source: aic-1933-1051
+        accessed: 2026-11-24
+  - owner_label: heirs of Rodolphe Kann
+    acquired: 1905
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/16298
+        note: his heirs;
+        source: aic-1933-1051
+        accessed: 2026-11-24
+  - owner: institution/duveen-brothers
+    role: dealer
+    acquired: 1907
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and New York (information supplied by Guy Bauman)
+    sources:
+      - url: https://www.artic.edu/artworks/16298
+        note: sold to Duveen, Paris and New York, 1907 [information supplied by Guy Bauman];
+        source: aic-1933-1051
+        accessed: 2026-11-24
+  - owner: institution/dowdeswell-and-dowdeswell-ltd
+    role: dealer
+    acquired: 1912-02
+    method: purchase
+    direct: true
+    place: london
+    label: Kleinberger stock card, Department of European Painting, Metropolitan Museum of Art
+    sources:
+      - url: https://www.artic.edu/artworks/16298
+        note: sold to Dowdeswell and Dowdeswell, London, Feb. 1912 [Kleinberger stock card, Department of European Painting, Metropolitan Museum of Art, New York];
+        source: aic-1933-1051
+        accessed: 2026-11-24
+  - owner: institution/galerie-f-kleinberger
+    role: dealer
+    acquired: 1912-03-01
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and New York (Kleinberger stock card)
+    sources:
+      - url: https://www.artic.edu/artworks/16298
+        note: sold to Kleinberger, Paris and New York, Mar. 1, 1912 [Kleinberger stock card cited above];
+        source: aic-1933-1051
+        accessed: 2026-11-24
+  - owner: person/benjamin-altman
+    acquired: 1912-07-03
+    ended: 1912-11-16
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/16298
+        note: sold to Benjamin Altman, New York, July 3, 1912;
+        source: aic-1933-1051
+        accessed: 2026-11-24
+  - owner: institution/galerie-f-kleinberger
+    role: dealer
+    acquired: 1912-11-16
+    method: purchase
+    direct: true
+    label: bought back from Altman (Kleinberger stock card)
+    sources:
+      - url: https://www.artic.edu/artworks/16298
+        note: bought back by Kleinberger, Nov. 16, 1912 [Kleinberger stock card];
+        source: aic-1933-1051
+        accessed: 2026-11-24
+  - owner: person/martin-antoine-ryerson
+    acquired: 1913-06-20
+    ended: 1932
+    method: purchase
+    direct: true
+    place: chicago
+    label: bill of sale, Art Institute Archives
+    sources:
+      - url: https://www.artic.edu/artworks/16298
+        note: sold to Martin A. Ryerson (d. 1932), Chicago, June 20, 1913 [bill of sale, Art Institute Archives];
+        source: aic-1933-1051
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    role: custodian
+    acquired: 1913
+    ended: 1933
+    place: chicago
+    label: on loan from Martin A. Ryerson
+    sources:
+      - url: https://www.artic.edu/artworks/16298
+        note: on loan to the Art Institute from 1913;
+        source: aic-1933-1051
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1933
+    method: bequest
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/16298
+        note: bequeathed to the Art Institute, 1933.
+        source: aic-1933-1051
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

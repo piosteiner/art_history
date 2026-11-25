@@ -108,6 +108,14 @@ relationships:
       - accessed: 2026-10-28
         property: P135
         wikidata: Q30755
+  - type: participated_in
+    to: event/exposition-universelle-of-1900
+    label: exhibited
+    notes_md: Own exhibition pavilion at the Place de l'Alma
+    sources:
+      - url: https://www.musee-rodin.fr/en/rodin-and-modernism
+        source: musee-rodin-rodin-and-modernism-musee-rodin
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/95/Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg

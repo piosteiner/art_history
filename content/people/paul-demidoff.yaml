@@ -2,3 +2,52 @@ public_id: 127659
 name: Paul Demidoff
 given_name: Paul
 family_name: Demidoff
+kind: person
+birth: 1839-10-21
+death: 1885-01-29
+wikidata_id: Q2520950
+metadata:
+  sources: [Wikidata Q2520950 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q2520950
+  - type: born_in
+    to: place/weimar
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q2520950
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q2520950
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ea/Paul_Demidoff%2C_Prince_of_San_Donato%2C_by_Gustave_Ricard.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Demidoff,_Prince_of_San_Donato,_by_Gustave_Ricard.jpg
+    license: Public domain
+    credit: Louis Gustave Ricard
+identifiers:
+  gnd: "130812560"
+  idref: "226313379"
+  lc: no2014112752
+  ulan: "500436774"
+  viaf: "62663026"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2520950
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2520950
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q2520950

@@ -26,6 +26,75 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Akihagi-j%C5%8D_2.jpg
     license: Public domain
     credit: Ono no Michikaze
+provenance:
+  - owner_label: Unknown scribes (traditionally Ono no Michikaze and Fujiwara no Yukinari)
+    acquired_label: Heian period, 11th–12th century
+    method: creation
+    label: 48 waka in sōgana and copies of 11 letters of Wang Xizhi on 21 joined sheets; first sheet and the rest by different hands; on the back a Tang(?) copy of the Huainan Honglie commentary
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100169&content_part_id=0
+        note: 伝小野道風筆 … 平安時代・11～12世紀 … 1紙目と2紙目以降は料紙の大きさも違い、書写された筆者や時期も違っていると考えられる
+        source: emuseum-100169
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=秋萩帖&oldid=106206353
+        note: 伝称筆者は小野道風及び藤原行成。書写年代は不明だが10世紀ないしは11世紀か。
+        source: jawiki-akihagi-jo
+        accessed: 2026-11-24
+  - owner: person/emperor-fushimi
+    acquired_label: Kamakura period
+    label: Emperor Fushimi set his monogram (kaō) on the sheet joins on the back
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100169&content_part_id=0
+        note: 鎌倉時代に伏見天皇は、「白氏詩巻」（No.26）と同様に「秋萩帖」の紙背紙継ぎ部分に花押を捺している。
+        source: emuseum-100169
+        accessed: 2026-11-24
+  - owner_label: Fushimi-no-miya family
+    method: inheritance
+    label: passed from Emperor Fushimi through the Fushimi-no-miya princely house
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=秋萩帖&oldid=106206353
+        note: 伏見天皇から伏見家をへて霊元天皇に伝わる。
+        source: jawiki-akihagi-jo
+        accessed: 2026-11-24
+  - owner: person/emperor-reigen
+    label: a box was made under Emperor Reigen to hold it together with Fujiwara no Yukinari's Hakushi shikan
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100169&content_part_id=0
+        note: そしてこの二巻は、霊元天皇の下で一緒に収める箱が作られた。
+        source: emuseum-100169
+        accessed: 2026-11-24
+  - owner_label: Arisugawa-no-miya family
+    method: gift
+    direct: true
+    label: given to Emperor Reigen's son, of the Arisugawa-no-miya house
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100169&content_part_id=0
+        note: その後、霊元天皇の皇子（有栖川宮家）に譲られ、
+        source: emuseum-100169
+        accessed: 2026-11-24
+  - owner_label: Takamatsu-no-miya family
+    method: inheritance
+    direct: true
+    label: the Takamatsu-no-miya house, successor of the Arisugawa-no-miya
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100169&content_part_id=0
+        note: 有栖川宮家を継承した高松宮家から国有となった。
+        source: emuseum-100169
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    method: transfer
+    direct: true
+    place: tokyo
+    label: became state property; Tokyo National Museum, B-2532, owned by the National Institutes for Cultural Heritage; National Treasure 1957
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100169&content_part_id=0
+        note: 有栖川宮家を継承した高松宮家から国有となった。… 東京国立博物館 B-2532
+        source: emuseum-100169
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/745
+        note: 国宝指定年月日 ： 1957.02.19 … 保管施設の名称 ： 東京国立博物館 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-745
+        accessed: 2026-11-24
 sources:
   location:
     - accessed: 2026-11-24

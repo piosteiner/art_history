@@ -1,3 +1,39 @@
 public_id: 126557
 name: Rurikō-ji
+kind: temple
+founded: 1471
+place: yamaguchi-2
+location: [131.47178, 34.18983]
+address: 山口県山口市香山町7-1
 wikidata_id: Q11573988
+metadata:
+  sources: [Wikidata Q11573988 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/140720_Ruriko-ji_Yamaguchi_Yamaguchi_pref_Japan02s3.jpg/1280px-140720_Ruriko-ji_Yamaguchi_Yamaguchi_pref_Japan02s3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:140720_Ruriko-ji_Yamaguchi_Yamaguchi_pref_Japan02s3.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  lc: n84112869
+  viaf: "127892598"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11573988
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11573988
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11573988
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11573988
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11573988

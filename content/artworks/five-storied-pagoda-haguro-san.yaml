@@ -17,7 +17,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q11610424
-created: 10th century
+created: 1372
 created_span: uncertain
 dimensions: [2920]
 institution: gassan-shrine
@@ -64,9 +64,8 @@ provenance:
         accessed: 2026-11-24
 sources:
   created:
-    - accessed: 2026-11-24
-      property: P571
-      wikidata: Q11610424
+    - note: "Register: 年代/西暦 1372"
+      source: kunishitei-102-199
   location:
     - accessed: 2026-11-24
       property: P625

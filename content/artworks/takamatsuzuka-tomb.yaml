@@ -33,7 +33,9 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q1039675
+created: 694/710
 materials: [tuff]
+institution: government-of-japan
 location: [135.80647, 34.46222]
 wikidata_id: Q1039675
 metadata:
@@ -46,6 +48,75 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Takamatsuzuka_2014.JPG
     license: CC BY-SA 4.0
     credit: 8-hachiro
+provenance:
+  - owner_label: burial of an unidentified member of the court
+    acquired: 694/710
+    method: creation
+    place: asuka
+    label: two-tiered round mound with a stone chamber painted with the sun, moon, constellations, the Four Directional animals and groups of men and women; built in the Fujiwara-kyō period (dated by the 2005 excavation)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%AB%98%E6%9D%BE%E5%A1%9A%E5%8F%A4%E5%A2%B3&oldid=111261310
+        note: 藤原京期（694年 - 710年）に築造された終末期古墳で、直径23 m（下段）及び18 m（上段）、高さ5mの二段式の円墳である。
+        source: wikipedia-ja-takamatsuzuka-kofun
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/157
+        note: 本壁画は、日月星宿図・四神図・人物図からなる … 制作時は七世紀末～八世紀初めが考えられる。
+        source: kunishitei-201-157
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired_label: Kamakura period
+    method: theft
+    label: "tomb robbed: robbers' hole in the south wall, the Vermilion Bird of the south wall and the sun and moon foil lost"
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%AB%98%E6%9D%BE%E5%A1%9A%E5%8F%A4%E5%A2%B3&oldid=111261310
+        note: 古墳は鎌倉時代頃に盗掘を受けており、石室の南壁には盗掘孔が開けられていたが、壁画の彩色は鮮やかに残り、盗掘をまぬがれた副葬品の一部もこの時検出された。
+        source: wikipedia-ja-takamatsuzuka-kofun
+        accessed: 2026-11-24
+      - note: It had been looted in the distant past and as a result the surface of the south-entry wall has been badly damaged.
+        source: history-of-japanese-art
+        locator: p. 38
+        accessed: 2026-11-24
+  - owner: institution/imperial-household-agency
+    role: custodian
+    label: listed as an imperial tomb (once identified with Emperor Monmu) until dropped from the list, which allowed the 1972 excavation
+    sources:
+      - note: The Takamatsu Tomb near Asuka, south of Nara, once identified with Emperor Monmu (r. 697–707), was permitted to be excavated in 1972 after the Imperial Household Agency dropped it from the list of Imperial tombs.
+        source: history-of-japanese-art
+        locator: p. 38
+        accessed: 2026-11-24
+  - owner: place/asuka
+    co_owners: [institution/kashihara-archaeological-institute]
+    acquired: 1972-03-01
+    method: find
+    place: asuka
+    label: excavation paid for and run by Asuka village, dug by the Kashihara institute under Sueji Masao (Kansai and Ryūkoku universities, Amaboshi Yoshinori); painted chamber found 21 March 1972
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%AB%98%E6%9D%BE%E5%A1%9A%E5%8F%A4%E5%A2%B3&oldid=111261310
+        note: 高松塚古墳の発掘調査は、1972年3月1日から開始された。… 明日香村が資金を捻出し奈良県立橿原考古学研究所が発掘調査することになった。発掘は明日香村が事業主体となり、橿原考古学研究所が実際の発掘を担当した。… 石室が検出され、鮮やかに彩色された壁画が発見されたのは同年3月21日のことである。
+        source: wikipedia-ja-takamatsuzuka-kofun
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/w/index.php?title=Takamatsuzuka_Tomb&oldid=1373495638
+        note: The Nara Prefectural Kashihara Archaeological Institute began archaeological excavations from March 1972 together with researchers and students from Kansai University and Ryukoku University.
+        source: wikipedia-en-takamatsuzuka-tomb
+        accessed: 2026-11-24
+  - owner: institution/agency-for-cultural-affairs
+    role: custodian
+    acquired: 1972
+    place: asuka
+    label: conservation of the murals from 1972; the chamber dismantled 2006–07 and its stones moved to a repair facility in the Asuka Historical National Government Park, repair finished March 2020; mound restored and opened 2009
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%AB%98%E6%9D%BE%E5%A1%9A%E5%8F%A4%E5%A2%B3&oldid=111261310
+        note: 極彩色壁画の出現は … トップニュースとなり、文化庁はさっそく壁画の保存対策および研究調査にとりかかった。… 石室はいったん解体・搬出した後、この修理施設へ移され、修復が行われることになった。… 2020年3月26日、12年かけた壁画の修復が終わった。
+        source: wikipedia-ja-takamatsuzuka-kofun
+        accessed: 2026-11-24
+  - owner: institution/government-of-japan
+    label: the State (Ministry of Education) owns the murals (National Treasure, 4 walls, designated 17 April 1974); the owner of the mound itself is not stated
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/157
+        note: 国宝指定年月日 ： 1974.04.17(昭和49.04.17) … 所有者名 ： 国（文部科学省所管）
+        source: kunishitei-201-157
+        accessed: 2026-11-24
 identifiers:
   viaf: "253039866"
 sources:

@@ -2,4 +2,46 @@ public_id: 128836
 name: Arabella Huntington
 given_name: Arabella
 family_name: Huntington
+kind: person
+birth: 1850-06-01
+death: 1924-09-16
 wikidata_id: Q623711
+metadata:
+  sources: [Wikidata Q623711 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q623711
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q623711
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Arabella_Huntington.jpg/1280px-Arabella_Huntington.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arabella_Huntington.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 16742689r
+  gnd: "1031984089"
+  idref: "187513929"
+  lc: nr92034569
+  viaf: "63874157"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q623711
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q623711
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q623711

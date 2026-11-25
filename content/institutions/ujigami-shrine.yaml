@@ -1,0 +1,29 @@
+public_id: 130155
+name: Ujigami Shrine
+place: uji
+location: [135.81146, 34.89209]
+address: 京都府宇治市宇治山田59
+website_url: https://ujikamijinja.amebaownd.com/
+wikidata_id: Q583589
+metadata:
+  sources: [Wikidata Q583589 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Ujigami-jinja%2C_honden.jpg/1280px-Ujigami-jinja%2C_honden.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ujigami-jinja,_honden.jpg
+    license: CC0
+    credit: Saigen Jiro
+identifiers:
+  lc: nr2002014349
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q583589
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q583589
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q583589

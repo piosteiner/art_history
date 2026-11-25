@@ -16,6 +16,7 @@ names:
 created: 13th century
 created_span: uncertain
 materials: [wood, paint, rock crystal]
+institution: kofuku-ji
 wikidata_id: Q61726970
 metadata:
   sources: [Wikidata Q61726970 (retrieved 2026-11-24)]
@@ -24,6 +25,31 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Kongorikishi_Kofukuji_2.jpg
     license: Public domain
     credit: Nara National Museum 奈良帝室博物館 (Showa 8 - 1933)
+provenance:
+  - owner: institution/kofuku-ji
+    acquired: 13th century
+    method: creation
+    place: nara
+    label: one of the pair of Kongō Rikishi (吽形) made for Kōfuku-ji's West Golden Hall (Saikondō) in the Kamakura period, attributed by some to Jōkei; repair inscription of 1288 (Shōō 1) on the Ungyō; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/199
+        note: 名称 ： 木造金剛力士立像 … 員数 ： 2躯 … 時代 ： 鎌倉 年代 ： 修理銘　1288 … 吽形像の納入紙片及び足〓に正応元年の修理銘がある … 所有者名 ： 興福寺
+        source: kunishitei-201-199
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%88%88%E7%A6%8F%E5%AF%BA&oldid=111607028
+        note: 木造金剛力士立像（国宝） - もと西金堂安置。鎌倉時代の作。定慶作とする説もある
+        source: wikipedia-ja-kofuku-ji
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1717-01-04
+    place: nara
+    label: the West Golden Hall burned (fire from the lecture hall) and was never rebuilt; the Kongō Rikishi survived and are now in the temple's National Treasure Hall (Kokuhōkan, 1959)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%88%88%E7%A6%8F%E5%AF%BA&oldid=111607028
+        note: 江戸時代の享保2年（1717年）1月4日に講堂からの出火によって中金堂や南円堂と共に焼失した。この時は資金難のために再建は叶わず … ただ、堂内に納められていた寺宝には焼失を免れて今日まで伝えられているものが少なくない。… 金剛力士像（伝。定慶作。今は国宝館に安置。）
+        source: wikipedia-ja-kofuku-ji
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

@@ -1,0 +1,47 @@
+public_id: 129750
+name: Gyoda
+names:
+  - lang: ja
+    role: original
+    text: 行田市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q860659
+  - lang: ko
+    role: translation
+    text: 교다시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q860659
+  - lang: fr
+    role: translation
+    text: Gyōda
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q860659
+  - lang: ru
+    role: translation
+    text: Гёда
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q860659
+kind: settlement
+parent: japan
+country_code: JP
+location: [139.45564, 36.13889]
+wikidata_id: Q860659
+metadata:
+  sources: [Wikidata Q860659 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q860659
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q860659
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q860659

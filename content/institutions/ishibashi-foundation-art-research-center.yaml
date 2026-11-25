@@ -1,11 +1,29 @@
 public_id: 124226
 name: Ishibashi Foundation Art Research Center
 founded: 2015-05
+place: machida
+location: [139.38194, 35.60028]
+website_url: https://www.artizon.museum/arc/
 wikidata_id: Q28687315
 metadata:
   sources: [Wikidata Q28687315 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/83/Ishibashi_Foundation_Art_Research_Center.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ishibashi_Foundation_Art_Research_Center.jpg
+    license: CC BY-SA 3.0
+    credit: machiro
+identifiers:
+  viaf: "8150565642506252018"
 sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q28687315
   founded:
     - accessed: 2026-11-24
       property: P571
+      wikidata: Q28687315
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q28687315

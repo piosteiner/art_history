@@ -9,12 +9,13 @@ names:
       - accessed: 2026-11-23
         wikidata: Q9396825
 creator: titian
+attribution_label: Titian and workshop
 created: 1540s
 created_span: uncertain
 materials: [oil paint, canvas]
 dimensions: [237.6, 263]
-institution: samuel-h-kress-collection
-inventory_number: K-2066
+institution: national-gallery-of-art
+inventory_number: 1957.14.6
 wikidata_id: Q9396825
 metadata:
   sources: [Wikidata Q9396825 (retrieved 2026-11-23)]
@@ -36,6 +37,79 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Titian_and_Workshop,_Saint_John_the_Evangelist_on_Patmos,_c._1553-1555,_NGA_43725.jpg
     license: CC0
     credit: Titian and workshop
+provenance:
+  - owner: institution/scuola-di-san-giovanni-evangelista
+    method: commission
+    place: venice
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43725.html
+        note: Commissioned by the Scuola di San Giovanni Evangelista, Venice;
+        source: nga-1957-14-6
+        accessed: 2026-11-24
+  - owner: institution/gallerie-dell-accademia-venice
+    acquired: 1806
+    method: confiscation
+    direct: true
+    place: venice
+    label: confiscated by the state and transferred to the Gallerie dell'Accademia (Zanotto 1834; Moschini Marconi 1955, 1962)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43725.html
+        note: confiscated 1806 by the state, and transferred to the Gallerie dell'Accademia, Venice;
+        source: nga-1957-14-6
+        accessed: 2026-11-24
+  - owner_label: Barbini, Turin
+    role: dealer
+    acquired: 1818
+    method: exchange
+    direct: true
+    place: metropolitan-city-of-turin
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43725.html
+        note: exchanged 1818 with (Barbini, Turin).[1]
+        source: nga-1957-14-6
+        accessed: 2026-11-24
+  - owner: person/bertalazione-d-arache
+    acquired: 1885 or earlier
+    place: metropolitan-city-of-turin
+    label: Count Bertalazione d'Arache (Cadorin 1885, p. 18)
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43725.html
+        note: Count Bertalazione d'Arache, Turin, by 1885.[2]
+        source: nga-1957-14-6
+        accessed: 2026-11-24
+  - owner: person/alessandro-contini-bonacossi
+    role: dealer
+    place: florence
+    label: described in a draft for the Count's signature as from "my personal collection in Florence"
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43725.html
+        note: (Count Alessandro Contini Bonacossi, Florence); … In a draft of one of the documents prepared for the Count's signature in connection with the offer this painting is described as one "which came from my personal collection in Florence."
+        source: nga-1957-14-6
+        accessed: 2026-11-24
+  - owner: institution/samuel-h-kress-foundation
+    acquired: 1954
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: offer of 7 June 1954 for sixteen paintings (as St. John the Evangelist (Ceiling) by Titian) accepted 30 June 1954; final payment early 1957, after the Count's death
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43725.html
+        note: sold 1954 to the Samuel H. Kress Foundation, New York;[3] — On 7 June 1954 the Kress Foundation made an offer to Contini Bonacossi for sixteen paintings, including the NGA painting which was listed as St. John the Evangelist (Ceiling) by Titian. … The Count accepted the offer on 30 June 1954; the final payment for the purchase was ultimately made in early 1957, after the Count's death in 1955.
+        source: nga-1957-14-6
+        accessed: 2026-11-24
+  - owner: institution/national-gallery-of-art
+    acquired: 1957
+    method: gift
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://www.nga.gov/collection/art-object-page.43725.html
+        note: gift 1957 to NGA.
+        source: nga-1957-14-6
+        accessed: 2026-11-24
+numbers:
+  - number: K-2066
+    label: Samuel H. Kress Collection number
 sources:
   created:
     - accessed: 2026-11-23

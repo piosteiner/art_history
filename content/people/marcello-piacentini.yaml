@@ -40,6 +40,15 @@ description_md: |-
 wikidata_id: Q1382978
 metadata:
   sources: [Wikidata Q1382978 (retrieved 2026-11-07)]
+relationships:
+  - type: participated_in
+    to: event/paris-international-exposition-1937
+    label: architect
+    notes_md: Italian pavilion exterior
+    sources:
+      - url: https://en.wikipedia.org/wiki/Exposition_Internationale_des_Arts_et_Techniques_dans_la_Vie_Moderne
+        source: wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/21/MarcelloPiacentini1900.jpg
     source_url: https://commons.wikimedia.org/wiki/File:MarcelloPiacentini1900.jpg

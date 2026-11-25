@@ -36,6 +36,70 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Kano_Eitoku_002.jpg
     license: Public domain
     credit: Kanō Eitoku
+provenance:
+  - owner: artist/kano-eitoku
+    acquired: 16th century
+    method: creation
+    label: Momoyama period; probably first painted as a wall painting (tokonoma wall) and soon remounted as a six-panel screen; Kanō Tan'yū later certified it as Eitoku's
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011962
+        note: 時代：桃山 … 作者：狩野永徳 … 制作当初は床壁貼付であったとみられる。しかしながら完成後、比較的短期間のうちに六曲屛風に改装されたようで
+        source: kunishitei-201-11962
+        accessed: 2026-11-24
+  - owner_label: Mōri family, Hagi domain
+    acquired: 1639 or earlier
+    place: hagi
+    label: kept in Hagi Castle in 1639; said to be the camp screen Hideyoshi gave Mōri Terumoto in 1582 as a pledge of peace — modern oral tradition only; Kanō Tsunenobu later added a left screen
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011962
+        note: 毛利家―皇室（明治21年献上）―国（平成元年寄贈） … 本作は萩藩毛利家に伝来した。そもそも天正十年（一五八二）に中国大返しに臨む羽柴秀吉から講和の証として毛利輝元へ贈られた陣屋屛風であったと言われるが、近代の口伝の域を出ない。… 寛永十六年（一六三九）には … 片隻の状態で萩城内に保管されていた。
+        source: kunishitei-201-11962
+        accessed: 2026-11-24
+  - owner: institution/ministry-of-the-imperial-household
+    acquired: 1888
+    method: gift
+    direct: true
+    place: tokyo
+    label: presented to the Imperial House by the Mōri family
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011962
+        note: 毛利家―皇室（明治21年献上）
+        source: kunishitei-201-11962
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%8B%A9%E9%87%8E%E6%B0%B8%E5%BE%B3
+        note: "[[明治]]期に毛利家から[[皇室]]に献上された。"
+        source: wikipedia-ja-kano-eitoku
+        accessed: 2026-11-24
+  - owner: institution/government-of-japan
+    acquired: 1989-06
+    method: gift
+    direct: true
+    place: tokyo
+    label: given to the State after Emperor Shōwa's death by his heirs (Akihito and Empress Kōjun); in the custody of the Agency for Cultural Affairs; National Treasure 2021
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011962
+        note: 皇室（明治21年献上）―国（平成元年寄贈） … 所有者名：国（文化庁保管）
+        source: kunishitei-201-11962
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%9A%87%E5%B1%85%E4%B8%89%E3%81%AE%E4%B8%B8%E5%B0%9A%E8%94%B5%E9%A4%A8
+        note: 昭和天皇崩御後の1989年（平成元年）6月に遺族の明仁と香淳皇后から寄贈され国庫に帰属した美術品を保存、研究、公開するための施設として … 1993年（平成5年）11月3日に開館した
+        source: wikipedia-ja-sannomaru-shozokan-2
+        accessed: 2026-11-24
+  - owner: institution/museum-of-the-imperial-collections
+    role: custodian
+    acquired: 1993
+    method: transfer
+    place: tokyo
+    label: kept at the Sannomaru Shōzōkan, opened 3 November 1993 for the works given to the State in 1989; run by the Imperial Household Agency until October 2023, since then by the National Institutes for Cultural Heritage
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011962
+        note: 保管施設の名称：皇居三の丸尚蔵館 所有者名：国（文化庁保管）
+        source: kunishitei-201-11962
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E7%9A%87%E5%B1%85%E4%B8%89%E3%81%AE%E4%B8%B8%E5%B0%9A%E8%94%B5%E9%A4%A8
+        note: 2023年（令和5年）年10月に管理運営を宮内庁から独立行政法人国立文化財機構に移管され、同機構を所管する文化庁が収蔵品の管理を行う体制に改められた。
+        source: wikipedia-ja-sannomaru-shozokan-2
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

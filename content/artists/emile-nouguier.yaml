@@ -1,0 +1,52 @@
+public_id: 130232
+name: Émile Nouguier
+given_name: Émile
+family_name: Nouguier
+names:
+  - text: Emile Nouguier
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q286254
+  - lang: zh
+    role: translation
+    text: 埃米尔·努吉耶
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q286254
+  - lang: ru
+    role: translation
+    text: Эмиль Нужье
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q286254
+birth: 1841-02-17
+death: 1897-11-13
+wikidata_id: Q286254
+metadata:
+  sources: [Wikidata Q286254 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/exposition-universelle-of-1889
+    label: architect
+    notes_md: Structural engineer of the Eiffel Tower
+    sources:
+      - url: https://en.wikipedia.org/wiki/Eiffel_Tower
+        source: wikipedia-en-eiffel-tower
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/59/Emile_Toussaint_Michel_Nouguier.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Emile_Toussaint_Michel_Nouguier.jpg
+    license: CC BY-SA 4.0
+    credit: GTravaillant
+identifiers:
+  lc: no2016010481
+  viaf: "158145541776696601259"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q286254
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q286254

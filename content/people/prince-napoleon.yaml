@@ -35,6 +35,26 @@ death: 1891-03-17
 wikidata_id: Q434077
 metadata:
   sources: [Wikidata Q434077 (retrieved 2026-10-20)]
+relationships:
+  - type: participated_in
+    to: event/1867-paris-world-s-fair
+    label: organiser
+    notes_md: President of the imperial commission.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1867)
+        source: wikipedia-en-exposition-universelle-1867
+        accessed: 2026-11-24
+      - url: https://fr.wikipedia.org/wiki/Exposition_universelle_de_1867
+        source: wikipedia-fr-exposition-universelle-de-1867
+        accessed: 2026-11-24
+  - type: participated_in
+    to: event/exposition-universelle-of-1855
+    label: organiser
+    notes_md: President of the imperial commission.
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Exposition_universelle_de_1855
+        source: wikipedia-fr-exposition-universelle-de-1855
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Napol%C3%A9on-J%C3%A9r%C3%B4me_Bonaparte_%28cropped%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Napol%C3%A9on-J%C3%A9r%C3%B4me_Bonaparte_(cropped).jpg

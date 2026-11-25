@@ -26,6 +26,49 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Koyagire_1stVolume_fragment.jpg
     license: Public domain
     credit: Unknown author
+provenance:
+  - owner_label: three unnamed court calligraphers
+    acquired: mid 11th century
+    method: creation
+    label: "oldest surviving manuscript of the Kokin wakashū, 20 scrolls copied by three hands (attributed: Fujiwara no Yukitsune, Minamoto no Kaneyuki, a third uncertain); traditionally ascribed to Ki no Tsurayuki"
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=108824893
+        note: 『古今和歌集』の勅撰より約150年後の11世紀中期に書写されたもので、当初は20巻からなっていた。 … 全20巻を3人で分担書写したいわゆる寄合書（よりあいがき）である。
+        source: jawiki-108824893
+        accessed: 2026-11-24
+  - owner_label: Konoe family
+    label: said to have belonged to the Konoe family
+    certainty: probable
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=108824893
+        note: 高野切本古今和歌集は元々近衛家の所蔵であったものが豊臣秀吉の手を経て高野山文殊院に伝来したとされ
+        source: jawiki-108824893
+        accessed: 2026-11-24
+  - owner: person/toyotomi-hideyoshi
+    label: said to have passed through Hideyoshi's hands
+    certainty: probable
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=108824893
+        note: 豊臣秀吉の手を経て
+        source: jawiki-108824893
+        accessed: 2026-11-24
+  - owner_label: Monju-in, Mount Kōya
+    place: koya
+    label: said to have come down at Monju-in on Mount Kōya, hence the name Kōya-gire ('Kōya fragments')
+    certainty: probable
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=108824893
+        note: 高野山文殊院に伝来したとされ、このことから「高野切」の名が付いたと考えられる。
+        source: jawiki-108824893
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    label: "cut up and dispersed: complete scrolls survive of vol. 5 (private), vol. 8 (Mōri Museum, Yamaguchi) and vol. 20 (Kōchi Prefecture), all National Treasures; fragments of vols. 1, 2, 3, 9, 18, 19 in many collections"
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=108824893
+        note: このうち、巻五（個人蔵）、巻八（山口・毛利博物館蔵）、巻二十（高知県蔵）の3巻のみが巻物として完存し（3巻とも国宝、ただし第五巻は二首が切り取られて断簡として現存）、巻一、二、三、九、十八、十九は断簡として各所に分蔵されている。
+        source: jawiki-108824893
+        accessed: 2026-11-24
 identifiers:
   viaf: "177020318"
 sources:

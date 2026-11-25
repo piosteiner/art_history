@@ -26,6 +26,47 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:%E5%B0%8F%E5%B7%9D%E6%99%B4%E6%9A%98%E6%92%AE%E5%BD%B1%E3%80%8A%E4%B8%8D%E7%A9%BA%E7%BE%82%E7%B4%A2%E8%A6%B3%E9%9F%B3%E7%AB%8B%E5%83%8F%E3%80%8B8%E4%B8%96%E7%B4%80%E3%80%81%E5%A5%88%E8%89%AF%E6%99%82%E4%BB%A3%E3%80%81%E6%9D%B1%E5%A4%A7%E5%AF%BA%E3%80%81%E5%A5%88%E8%89%AF.jpg
     license: Public domain
     credit: Ogawa Seiyō
+provenance:
+  - owner: institution/todai-ji
+    acquired: 740s
+    method: creation
+    place: nara
+    label: central image of the Hokkedō, probably from the official atelier under Kuninaka no Kimimaro; the Tōdaiji yōroku has the hall built and the image installed by Rōben in 733
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/190
+        note: 乾漆不空羂索観音立像（法華堂安置） … 時代 ： 奈良 … 所有者名 ： 東大寺
+        source: kunishitei-201-190
+        accessed: 2026-11-24
+      - note: The central image is of dry-lacquer and is a Fukukenjaku Kannon … this Kannon is thought to have been made in the 740s, in response to a decree from Emperor Shomu that provincial temples should install statues of the divinity. … the figure was made in the official government-controlled Buddhist atelier under the direction of Kuninaka Kimimaro
+        source: history-of-japanese-art
+        locator: pp. 86–88
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%B1%E5%A4%A7%E5%AF%BA%E4%B8%8D%E7%A9%BA%E7%BE%82%E7%B4%A2%E8%A6%B3%E9%9F%B3%E7%AB%8B%E5%83%8F&oldid=110003632
+        note: （略）天平五年歳次癸酉建立也。良弁僧正安置不空羂索観音菩薩像（略）。是僧正本尊也 … と、733年（天平5年）に法華堂が立てられ、本尊が安置されたとある
+        source: wikipedia-ja-todaiji-fukukenjaku-kannon
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1937-02-12
+    method: theft
+    place: nara
+    label: the silver Amida image and some jewels of the crown stolen from the Hokkedō (noticed 7 March 1937); recovered in September 1943
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%B1%E5%A4%A7%E5%AF%BA%E4%B8%8D%E7%A9%BA%E7%BE%82%E7%B4%A2%E8%A6%B3%E9%9F%B3%E7%AB%8B%E5%83%8F&oldid=110003632
+        note: この宝冠は、1937年（昭和12年）2月12日に盗難被害に遭った。盗まれたのは宝冠そのものではなく、中心にある銀製の化仏と一部の宝玉だった。… 9月14日、丙は田万の自宅で化仏を東大寺の清水管長に見せ、清水もそれが化仏に間違いないと確認した。
+        source: wikipedia-ja-todaiji-fukukenjaku-kannon
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1947-06
+    ended: 1950-10-26
+    place: tokyo
+    label: the crown (not the statue) deposited with the Tokyo National Museum for repair; back at Tōdai-ji 26 October 1950, on the statue again after August 1952
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%9D%B1%E5%A4%A7%E5%AF%BA%E4%B8%8D%E7%A9%BA%E7%BE%82%E7%B4%A2%E8%A6%B3%E9%9F%B3%E7%AB%8B%E5%83%8F&oldid=110003632
+        note: 宝冠の修理は、1947年（昭和22年）から始まった。この年6月に東京国立博物館に寄託され、1949年（昭和24年）1月から作業が開始された。同年7月ごろに完成をみた宝冠が東大寺への帰還を果たしたのは、1950年（昭和25年）10月26日になってからであった。
+        source: wikipedia-ja-todaiji-fukukenjaku-kannon
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

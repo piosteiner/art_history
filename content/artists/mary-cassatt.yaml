@@ -65,6 +65,17 @@ relationships:
       - accessed: 2026-11-03
         property: P135
         wikidata: Q173223
+  - type: participated_in
+    to: event/worlds-columbian-exposition
+    label: exhibited
+    notes_md: Mural 'Modern Woman' for the Woman's Building; also listed among the painters exhibiting
+    sources:
+      - url: https://en.wikipedia.org/wiki/The_Woman%27s_Building_(Chicago)
+        source: wikipedia-en-the-womans-building-chicago
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/World%27s_Columbian_Exposition
+        source: wikipedia-en-worlds-columbian-exposition
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/1914_Mary_Cassatt.jpg/1280px-1914_Mary_Cassatt.jpg
     source_url: https://commons.wikimedia.org/wiki/File:1914_Mary_Cassatt.jpg

@@ -2,4 +2,37 @@ public_id: 127590
 name: Hans-Dietrich Gronau
 given_name: Hans-Dietrich
 family_name: Gronau
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Hans-Dietrich Otto Fritz Gronau
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q52769978
+kind: person
+birth: 1951-03-09
 wikidata_id: Q52769978
+metadata:
+  sources: [Wikidata Q52769978 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q52769978
+identifiers:
+  gnd: "138612498"
+  idref: "260877085"
+  lc: n86024414
+  viaf: "109986920"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q52769978
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q52769978

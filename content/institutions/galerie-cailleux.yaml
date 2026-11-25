@@ -1,3 +1,16 @@
 public_id: 126697
 name: Galerie Cailleux
+kind: gallery
 wikidata_id: Q50990573
+metadata:
+  sources: [Wikidata Q50990573 (retrieved 2026-11-24)]
+identifiers:
+  bnf: 11876280m
+  idref: "026532255"
+  lc: n79109982
+  viaf: "156695016"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q50990573

@@ -142,6 +142,17 @@ relationships:
       - accessed: 2026-10-18
         property: P135
         wikidata: Q23380
+  - type: participated_in
+    to: event/exposition-universelle-of-1855
+    label: exhibited
+    notes_md: Exhibited; made grand officer of the Légion d'honneur.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1855)
+        source: wikipedia-en-exposition-universelle-1855
+        accessed: 2026-11-24
+      - url: https://fr.wikipedia.org/wiki/Exposition_universelle_de_1855
+        source: wikipedia-fr-exposition-universelle-de-1855
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/94/Ingres%2C_Self-portrait.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Ingres,_Self-portrait.jpg

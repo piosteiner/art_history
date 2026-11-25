@@ -1,3 +1,39 @@
 public_id: 126602
 name: Motoyama-ji
+kind: temple
+founded: 807
+place: mitoyo
+location: [133.69406, 34.13967]
+address: 香川県三豊市豊中町本山甲1445番地
+website_url: https://motoyamaji.wixsite.com/shippouzan
 wikidata_id: Q3325310
+metadata:
+  sources: [Wikidata Q3325310 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/MotoyamaJi%2CKagawa-01.jpg/1280px-MotoyamaJi%2CKagawa-01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MotoyamaJi,Kagawa-01.jpg
+    license: CC BY-SA 3.0
+    credit: Toto-tarou
+identifiers:
+  viaf: "252390311"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3325310
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3325310
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3325310
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3325310
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3325310

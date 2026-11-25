@@ -2,4 +2,50 @@ public_id: 127647
 name: María Cristina de Borbón
 given_name: María Cristina
 family_name: de Borbón
+kind: person
+birth: 1833-06-05
+death: 1902-01-18
 wikidata_id: Q2584497
+metadata:
+  sources: [Wikidata Q2584497 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q2584497
+  - type: born_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q2584497
+  - type: died_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q2584497
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ea/Infanta_Maria_Cristina_of_Spain_%281833-1902%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Infanta_Maria_Cristina_of_Spain_(1833-1902).jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "1351707566"
+  ulan: "500037228"
+  viaf: "95915212"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q2584497
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q2584497
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q2584497

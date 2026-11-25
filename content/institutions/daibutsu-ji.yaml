@@ -1,3 +1,32 @@
 public_id: 128751
 name: Daibutsu-ji
+kind: temple
+place: takaoka
+location: [137.01722, 36.74564]
+address: 富山県高岡市大手町11番29号
+website_url: https://www.takaokadaibutsu.xyz/enjoy_yard
 wikidata_id: Q11432372
+metadata:
+  sources: [Wikidata Q11432372 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Daibutsu_Temple_1-1.jpg/1280px-Daibutsu_Temple_1-1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Daibutsu_Temple_1-1.jpg
+    license: CC BY-SA 3.0
+    credit: 柑橘類 (talk)
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11432372
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11432372
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11432372
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11432372

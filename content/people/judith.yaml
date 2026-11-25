@@ -4,6 +4,15 @@ kind: person
 wikidata_id: Q26454627
 metadata:
   sources: [Wikidata Q26454627 (retrieved 2026-11-23)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/89/August_Riedel_Judith_1840.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:August_Riedel_Judith_1840.jpg
+    license: Public domain
+    credit: August Riedel
+identifiers:
+  gnd: "118558544"
+  lc: n50039280
+  viaf: "59876107"
 sources:
   kind:
     - accessed: 2026-11-23

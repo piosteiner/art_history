@@ -2,4 +2,53 @@ public_id: 126350
 name: Gian Carlo Doria
 given_name: Gian Carlo
 family_name: Doria
+kind: person
+birth: 1576
+death: 1625
 wikidata_id: Q26222316
+metadata:
+  sources: [Wikidata Q26222316 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-genoa
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q26222316
+  - type: born_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q26222316
+  - type: died_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q26222316
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f6/Simon_Vouet_-_Prince_Giovan_Carlo_Doria_-_WGA25354.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Simon_Vouet_-_Prince_Giovan_Carlo_Doria_-_WGA25354.jpg
+    license: Public domain
+    credit: Simon Vouet
+identifiers:
+  gnd: "124378331"
+  idref: "074777505"
+  lc: nr2003000237
+  rkd: "445394"
+  ulan: "500112289"
+  viaf: "10777969"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q26222316
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q26222316
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q26222316

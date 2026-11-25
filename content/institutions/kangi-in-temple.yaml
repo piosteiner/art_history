@@ -1,3 +1,39 @@
 public_id: 125882
 name: Kangi-in Temple
+kind: temple
+founded: 1179
+place: kumagaya
+location: [139.3745, 36.22843]
+address: 埼玉県熊谷市妻沼1627
+website_url: http://www.ksky.ne.jp/~shouden/
 wikidata_id: Q11545320
+metadata:
+  sources: [Wikidata Q11545320 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Menuma_Shouden_Kangi-in_07.jpg/1280px-Menuma_Shouden_Kangi-in_07.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Menuma_Shouden_Kangi-in_07.jpg
+    license: CC BY 3.0
+    credit: tak1701d
+identifiers:
+  viaf: "251206221"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11545320
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11545320
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11545320
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11545320
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11545320

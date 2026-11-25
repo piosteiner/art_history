@@ -69,6 +69,17 @@ relationships:
       - accessed: 2026-10-28
         property: P135
         wikidata: Q182791
+  - type: participated_in
+    to: event/1867-paris-world-s-fair
+    label: exhibited
+    notes_md: Marble Ugolino and His Sons.
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Exposition_universelle_de_1867
+        source: wikipedia-fr-exposition-universelle-de-1867
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Ugolino_and_His_Sons_(Carpeaux)
+        source: wikipedia-en-ugolino-and-his-sons-carpeaux
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Jean-Baptiste_Carpeaux_self-portrait_-_Fontaine_2000_p25.jpg/1280px-Jean-Baptiste_Carpeaux_self-portrait_-_Fontaine_2000_p25.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Carpeaux_self-portrait_-_Fontaine_2000_p25.jpg

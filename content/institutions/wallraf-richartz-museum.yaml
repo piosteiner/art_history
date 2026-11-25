@@ -1,3 +1,43 @@
 public_id: 125742
 name: Wallraf-Richartz-Museum
+kind: museum
+founded: 1824
+place: cologne
+location: [6.95861, 50.9375]
+address: Obenmarspforten 40
+website_url: http://wallraf.museum
 wikidata_id: Q700959
+metadata:
+  sources: [Wikidata Q700959 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Koeln_wallraff_richartz_mus.jpg/1280px-Koeln_wallraff_richartz_mus.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Koeln_wallraff_richartz_mus.jpg
+    license: CC BY-SA 3.0
+    credit: Hans Peter Schaefer - http://www.reserv-a-rt.de
+identifiers:
+  gnd: 10073784-5
+  idref: "026443961"
+  lc: n50047761
+  ulan: "500305277"
+  viaf: "154206223"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q700959
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q700959
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q700959
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q700959
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q700959

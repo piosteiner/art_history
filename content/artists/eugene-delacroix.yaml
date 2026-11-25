@@ -126,6 +126,17 @@ relationships:
       - accessed: 2026-10-28
         property: P135
         wikidata: Q33477
+  - type: participated_in
+    to: event/exposition-universelle-of-1855
+    label: exhibited
+    notes_md: Exhibited; made commander of the Légion d'honneur.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1855)
+        source: wikipedia-en-exposition-universelle-1855
+        accessed: 2026-11-24
+      - url: https://fr.wikipedia.org/wiki/Exposition_universelle_de_1855
+        source: wikipedia-fr-exposition-universelle-de-1855
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Autoportrait_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_25.jpg/1280px-Autoportrait_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_25.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Autoportrait_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_25.jpg

@@ -1,3 +1,34 @@
 public_id: 123877
 name: Samuel H. Kress Foundation
+kind: foundation
+founded: 1929
+place: new-york-city
+location: [-73.95752, 40.77511]
+website_url: https://www.kressfoundation.org/
 wikidata_id: Q30272990
+metadata:
+  sources: [Wikidata Q30272990 (retrieved 2026-11-24)]
+identifiers:
+  bnf: 13557486t
+  gnd: 5008918-3
+  idref: "032051840"
+  lc: n50059075
+  ulan: "500304334"
+  viaf: "152536521"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q30272990
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q30272990
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q30272990
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q30272990

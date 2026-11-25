@@ -1,0 +1,44 @@
+public_id: 130514
+name: International Exhibition of 1862
+names:
+  - lang: en
+    role: original
+    text: International Exhibition of 1862
+  - lang: en
+    role: original
+    text: London International Exhibition on Industry and Art
+kind: world's fair
+period: 1 May – 15 November 1862
+place: london
+location: [-0.1759, 51.5004]
+description_md: |-
+  Planned for 1861, the exhibition was delayed by the Italian War of Independence and by the American Civil War, which caused a cotton shortage.[[source/wikipedia-en-1862-international-exhibition]] Queen Victoria, still in mourning for Prince Albert, did not attend; the Duke of Cambridge presided at the opening and Earl Granville, chairman of the commissioners, gave the opening address.[[source/wikipedia-en-1862-international-exhibition]] Japan had no official exhibits: the Japanese items were lent by Rutherford Alcock, the first British diplomatic representative to Japan, and the Takenouchi embassy attended the opening as official guests.[[source/national-diet-library-japanese-embassy-part-1-expositions-held-in-and-before-1900-expositi]]
+
+  The exhibition stood in South Kensington, on ground later occupied by the Natural History, Science and Victoria and Albert museums.[[source/wikipedia-en-1862-international-exhibition]] Its building, designed by Captain Francis Fowke of the Royal Engineers and built in eleven months, had two glass domes and picture galleries lit evenly without glare; its materials were later reused for Alexandra Palace.[[source/wikipedia-en-1862-international-exhibition]] The exhibition was larger than that of 1851 in cost, area, duration and exhibitors, but its finances were unfavourable and it could not match the public memory of the [[artwork/crystal-palace-hyde-park|Crystal Palace]].[[source/national-diet-library-second-london-international-exposition-of-1862-part-1-expositions-he]]
+
+  The Japanese section, assembled largely by Alcock with Captain F. Howard Vyse, gave the British public a large display of Japanese objects; Fuchibe Tokuzō of the Japanese embassy judged them "old bric-a-brac", while European audiences praised them.[[source/victoria-and-albert-jardiniere-unknown-v-a-explore-the-collections]][[source/national-diet-library-japanese-embassy-part-1-expositions-held-in-and-before-1900-expositi]] Arthur Lasenby Liberty was inspired by the exhibition to open a business in oriental goods.[[source/wikipedia-en-1862-international-exhibition]] Morris, Marshall, Faulkner & Co. made its first public showing there, with the *St George Cabinet* designed by Philip Webb and painted by [[artist/william-morris|William Morris]], and attracted much notice.[[source/victoria-and-albert-st-george-cabinet-morris-william-webb-philip-speakman-v-a-explore-the]][[source/wikipedia-en-1862-international-exhibition]] In the Medieval Court William Burges showed *The Wines and Beers Sideboard*, bought there by the South Kensington Museum for £40.[[source/victoria-and-albert-the-wines-and-beers-sideboard-poynter-edward-john-sir-burges-william-v]] John Pollard Seddon's *King René's Honeymoon Cabinet*, with panels by [[artist/dante-gabriel-rossetti|Dante Gabriel Rossetti]], [[artist/edward-burne-jones|Edward Burne-Jones]], Ford Madox Brown and Morris, was shown in the furniture class.[[source/victoria-and-albert-king-renes-honeymoon-cabinet-prinsep-val-burne-jones-edward-coley-sir]]
+wikidata_id: Q1372700
+relationships:
+  - type: concerns
+    to: artwork/crystal-palace-hyde-park
+    sources:
+      - source: national-diet-library-second-london-international-exposition-of-1862-part-1-expositions-he
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: national-diet-library-second-london-international-exposition-of-1862-part-1-expositions-he
+  place:
+    - url: https://ndl.go.jp/exposition/e/s1/1862.html
+      source: national-diet-library-second-london-international-exposition-of-1862-part-1-expositions-he
+      accessed: 2026-11-24
+  period:
+    - url: https://ndl.go.jp/exposition/e/s1/1862.html
+      source: national-diet-library-second-london-international-exposition-of-1862-part-1-expositions-he
+      accessed: 2026-11-24
+    - url: https://en.wikipedia.org/wiki/1862_International_Exhibition
+      source: wikipedia-en-1862-international-exhibition
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1372700

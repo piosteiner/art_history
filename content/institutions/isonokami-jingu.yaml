@@ -1,5 +1,30 @@
 public_id: 124439
 name: Isonokami Jingū
+place: tenri
+location: [135.85167, 34.59788]
+address: 奈良県天理市布留町
+website_url: https://www.isonokami.jp/
 wikidata_id: Q708859
 metadata:
   sources: [Wikidata Q708859 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Isonokami_Jingu_Haiden1.jpg/1280px-Isonokami_Jingu_Haiden1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Isonokami_Jingu_Haiden1.jpg
+    license: CC BY-SA 4.0
+    credit: Zeter114514
+identifiers:
+  lc: n85227308
+  viaf: "127912742"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q708859
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q708859
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q708859

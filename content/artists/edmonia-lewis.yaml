@@ -1,0 +1,27 @@
+public_id: 130203
+name: Edmonia Lewis
+given_name: Edmonia
+family_name: Lewis
+birth: 1844-07-04
+death: 1907-09-17
+wikidata_id: Q512065
+metadata:
+  sources: [Wikidata Q512065 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/centennial-exhibition
+    label: exhibited
+    notes_md: The Death of Cleopatra (marble).
+    sources:
+      - url: https://americanart.si.edu/collections/search/artwork/?id=33878
+        source: smithsonian-american-art-the-death-of-cleopatra-smithsonian-american-art-museum
+        accessed: 2026-11-24
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q512065
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q512065

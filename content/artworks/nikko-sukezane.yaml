@@ -8,6 +8,9 @@ names:
       - accessed: 2026-11-24
         wikidata: Q107044842
 creator: sukezane
+created: 13th century
+created_span: uncertain
+institution: nikko-toshogu
 wikidata_id: Q107044842
 metadata:
   sources: [Wikidata Q107044842 (retrieved 2026-11-24)]
@@ -16,6 +19,56 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Tachi_Sword_-_Sukezane(Nikko)_01.jpg
     license: CC BY-SA 4.0
     credit: Kakidai
+provenance:
+  - owner: artist/sukezane
+    acquired: 13th century
+    method: creation
+    label: by Sukezane of the Fukuoka Ichimonji school (Bizen), mid-Kamakura period; he later worked for the shogunate in Kamakura; in Bizen Province
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/290
+        note: 時代 ： 鎌倉 … 作者 ： 助真 … 助真は、備前国福岡一文字派の刀工で、後に鎌倉幕府に召され相州鍛冶の基礎を築いた一人といわれる。
+        source: kunishitei-201-290
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E6%97%A5%E5%85%89%E5%8A%A9%E7%9C%9F
+        note: 本作は鎌倉時代中期に活躍した福岡一文字派の刀工である助真によって作られた太刀である。
+        source: wikipedia-ja-nikko-sukezane
+        accessed: 2026-11-24
+  - owner: person/kato-kiyomasa
+    place: kumamoto-prefecture
+    label: first lord of Kumamoto
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/290
+        note: 伝来・その他参考となるべき事項 ： 加藤清正－徳川家康－東照宮
+        source: kunishitei-201-290
+        accessed: 2026-11-24
+  - owner: person/tokugawa-ieyasu
+    acquired: 1609
+    method: gift
+    place: shizuoka
+    label: presented by Kiyomasa on the betrothal of his daughter Yasohime to Ieyasu's tenth son Tokugawa Yorinobu; one of Ieyasu's favourite swords (at Sunpu, today Shizuoka)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/290
+        note: 加藤清正－徳川家康－東照宮
+        source: kunishitei-201-290
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E6%97%A5%E5%85%89%E5%8A%A9%E7%9C%9F
+        note: 元々は初代肥後熊本藩主である加藤清正が所持していたものであり、1609年（慶長14年）に徳川家康の十男である徳川頼宣（当時駿府藩主、後に紀州藩主）が、清正の娘である八十姫（やそひめ）と婚約した際に、清正から家康へと献上されたものである。
+        source: wikipedia-ja-nikko-sukezane
+        accessed: 2026-11-24
+  - owner: institution/nikko-toshogu
+    acquired: after 1616
+    method: gift
+    place: nikko
+    label: dedicated to the shrine of the deified Ieyasu after his death; survived a fire in the Bunka era; kept in the inner sanctuary until 1945; owner today (Nikkō Tōshō-gū Treasure House)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/290
+        note: 加藤清正－徳川家康－東照宮 … 所有者名 ： 東照宮
+        source: kunishitei-201-290
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E6%97%A5%E5%85%89%E5%8A%A9%E7%9C%9F
+        note: 家康の愛刀として大切にされており、家康没後は日光東照宮に奉納されたことからこの名前が付いたものと考えられる。
+        source: wikipedia-ja-nikko-sukezane
+        accessed: 2026-11-24
 sources:
   creator:
     - accessed: 2026-11-24

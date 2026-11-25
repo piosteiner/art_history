@@ -2,15 +2,43 @@ public_id: 123183
 name: National Gallery of Athens
 kind: museum
 founded: 1900-04-10
+place: athens
+location: [23.77825, 37.98672]
+address: 50 av. Vassileos Konstantinou
+website_url: http://www.nationalgallery.gr
 wikidata_id: Q1167467
 metadata:
   sources: [Wikidata Q1167467 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/National_Art_Gallery_building_in_Athens.jpg/1280px-National_Art_Gallery_building_in_Athens.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:National_Art_Gallery_building_in_Athens.jpg
+    license: CC BY-SA 4.0
+    credit: Leeturtle
+identifiers:
+  bnf: 12129095q
+  gnd: 2087027-9
+  idref: "029729750"
+  lc: n83035322
+  ulan: "500306493"
+  viaf: "140822610"
 sources:
   kind:
     - accessed: 2026-11-24
       property: P31
       wikidata: Q1167467
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1167467
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q1167467
   founded:
     - accessed: 2026-11-24
       property: P571
+      wikidata: Q1167467
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q1167467

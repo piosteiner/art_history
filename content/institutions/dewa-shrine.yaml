@@ -1,3 +1,29 @@
 public_id: 127448
 name: Dewa Shrine
+place: tsuruoka
+location: [139.98135, 38.70255]
+address: 山形県鶴岡市羽黒町手向字羽黒山
+website_url: http://www.dewasanzan.jp/publics/index/55/
 wikidata_id: Q11395802
+metadata:
+  sources: [Wikidata Q11395802 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagurosan_Gohaiden_2006.jpg/1280px-Hagurosan_Gohaiden_2006.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hagurosan_Gohaiden_2006.jpg
+    license: CC BY 3.0
+    credit: Crown of Lenten rose
+identifiers:
+  viaf: "255113277"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11395802
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11395802
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11395802

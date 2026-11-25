@@ -7,6 +7,9 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045976
+created: 9th century
+created_span: uncertain
+institution: horyu-ji
 wikidata_id: Q107045976
 metadata:
   sources: [Wikidata Q107045976 (retrieved 2026-11-24)]
@@ -22,3 +25,34 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Dosen_Yumedono_Horyuji.jpg
     license: Public domain
     credit: 東京美術学校
+provenance:
+  - owner_label: unknown sculptor
+    acquired: 9th century
+    method: creation
+    label: clay seated portrait of the priest Dōsen (797?–873?), who restored the Yumedono (repairs 859); early Heian period
+    certainty: probable
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/238
+        note: 時代 ： 平安 … 解説文： 平安時代の作品。
+        source: kunishitei-201-238
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=法隆寺&oldid=111669701
+        note: 道詮律師坐像（国宝） - 平安時代初期の作。この時代の仏像はほとんどが木彫であるが、本像は珍しい塑造である。道詮は荒廃していた東院の復興に尽力した人物である。
+        source: jawiki-horyu-ji
+        accessed: 2026-11-24
+  - owner: institution/horyu-ji
+    place: ikaruga
+    label: in the Yumedono (Hall of Dreams) of the Tōin, beside the main image; Hōryū-ji is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/238
+        note: 所有者名 ： 法隆寺
+        source: kunishitei-201-238
+        accessed: 2026-11-24
+      - url: https://www.mlit.go.jp/tagengo-db/en/R1-00191.html
+        note: Other important statues in the hall are … a Heian period (794–1185) clay sculpture of the priest Dosen Risshi, who oversaw the restoration of the Hall during the Heian period.
+        source: jta-r1-00191
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=道詮&oldid=109117830
+        note: その功績から道詮律師像（塑像:国宝）が、夢殿の本尊脇に侍している。
+        source: jawiki-dosen
+        accessed: 2026-11-24

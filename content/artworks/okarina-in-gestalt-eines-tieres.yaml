@@ -21,6 +21,63 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Urheber*in_unbekannt_Okarina_in_Gestalt_eines_Tieres_Museum_Rietberg_RMA_0144.jpg
     license: CC0
     credit: Museum Rietberg
+provenance:
+  - owner_label: Urheber*in unbekannt
+    acquired_label: 600–900
+    method: creation
+    label: made by an unknown maker in Mexico, Classic Veracruz culture, 600–900
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-144
+        note: "Klassische Veracruz-Kultur, 600–900: Urheber*in unbekannt, in Mexiko"
+        source: rietberg-rma-144
+        accessed: 2026-11-24
+  - owner: person/endre-ungar
+    co_owners: [person/elda-ungar]
+    acquired_label: unbekannter Zeitpunkt
+    label: collection of Endre and Elda Ungar; date and circumstances of acquisition unknown
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-144
+        note: "unbekannter Zeitpunkt: Endre und Elda Ungar, Erwerbsumstände unbekannt"
+        source: rietberg-rma-144
+        accessed: 2026-11-24
+  - owner_label: Erbengemeinschaft Dr. Endre Ungar
+    acquired: 1979
+    method: inheritance
+    direct: true
+    label: heirs of Dr. Endre Ungar (community of heirs), by inheritance
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-144
+        note: |-
+          1979: Erbengemeinschaft Dr. Endre Ungar, durch Erbgang erworben
+          MRZ Archiv: S.0001-0003, Inventarbuch III, S. 235-236
+        source: rietberg-rma-144
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    role: custodian
+    acquired: 1980-12
+    ended: 1996
+    place: zurich
+    label: on loan from the Ungar heirs
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-144
+        note: |-
+          12.1980: Museum Rietberg, als Leihgabe erhalten in Zürich
+          MRZ Archiv: S.0001-0003, Inventarbuch III, S.235-236.
+        source: rietberg-rma-144
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: 1996
+    method: gift
+    direct: true
+    place: zurich
+    label: "anonymous gift (credit line: Anonymes Geschenk); Ungar collection"
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-144
+        note: |-
+          1996: Museum Rietberg, als Geschenk erhalten in Zürich
+          MRZ Archiv: S.0001-0003, Inventarbuch III, S. 326 und MRZ Archiv: S.0005-0019, Sammlung Endre und Elda Ungar.
+        source: rietberg-rma-144
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

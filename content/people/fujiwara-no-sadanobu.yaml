@@ -1,0 +1,33 @@
+public_id: 130055
+name: Fujiwara no Sadanobu
+given_name: Fujiwara no
+family_name: Sadanobu
+kind: person
+birth: 1088
+death: 1156-02-17
+wikidata_id: Q11623167
+metadata:
+  sources: [Wikidata Q11623167 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q11623167
+identifiers:
+  lc: n78083786
+  viaf: "226434678"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11623167
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q11623167
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q11623167

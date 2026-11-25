@@ -1,0 +1,38 @@
+public_id: 129793
+name: Paris Foreign Missions Society
+kind: association
+founded: 1658
+place: paris
+location: [2.32278, 48.85194]
+website_url: https://missionsetrangeres.com/
+wikidata_id: Q482622
+metadata:
+  sources: [Wikidata Q482622 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/24/MEP_in_Paris.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MEP_in_Paris.jpg
+    license: CC BY-SA 3.0
+    credit: PHGCOM
+identifiers:
+  bnf: "118704843"
+  gnd: 5013983-6
+  idref: "026460483"
+  lc: n85068617
+  viaf: "149661818"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q482622
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q482622
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q482622
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q482622

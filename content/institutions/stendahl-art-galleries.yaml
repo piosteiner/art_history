@@ -1,3 +1,30 @@
 public_id: 129401
 name: Stendahl Art Galleries
+kind: gallery
+founded: 1911
+place: los-angeles
+address: 7055 Hillside Av.
 wikidata_id: Q72967373
+metadata:
+  sources: [Wikidata Q72967373 (retrieved 2026-11-24)]
+identifiers:
+  gnd: 10088905-0
+  idref: "168084112"
+  ulan: "500440822"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q72967373
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q72967373
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q72967373
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q72967373

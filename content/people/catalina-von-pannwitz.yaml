@@ -2,4 +2,43 @@ public_id: 124047
 name: Catalina von Pannwitz
 given_name: Catalina
 family_name: von Pannwitz
+names:
+  - kind: birth
+    lang: de
+    role: former
+    text: Catalina Roth
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q17278484
+kind: person
+birth: 1876-09-03
+death: 1959-05-20
 wikidata_id: Q17278484
+metadata:
+  sources: [Wikidata Q17278484 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q17278484
+  - type: died_in
+    to: place/england
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q17278484
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q17278484
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q17278484
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q17278484

@@ -1,3 +1,14 @@
 public_id: 126378
 name: Van Diemen-Lilienfeld Galleries
+kind: gallery
 wikidata_id: Q78082026
+metadata:
+  sources: [Wikidata Q78082026 (retrieved 2026-11-24)]
+identifiers:
+  lc: nr00013758
+  viaf: "146465217"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q78082026

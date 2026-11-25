@@ -244,6 +244,17 @@ relationships:
       - accessed: 2026-10-29
         property: P135
         wikidata: Q37693
+  - type: participated_in
+    to: event/exposition-universelle-of-1889
+    label: exhibited
+    notes_md: 17 works at the Volpini exhibition beside the fair (not in the official show); en Wikipedia also lists him among visitors of the fair
+    sources:
+      - url: https://en.wikipedia.org/wiki/The_Volpini_Exhibition,_1889
+        source: wikipedia-en-the-volpini-exhibition-1889
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1889)
+        source: wikipedia-en-exposition-universelle-1889
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Paul_Gauguin_1891.png/1280px-Paul_Gauguin_1891.png
     source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_1891.png

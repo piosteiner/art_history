@@ -27,6 +27,68 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E5%8C%85%E5%B9%B3,_Okanehira.jpg
     license: CC BY-SA 4.0
     credit: SLIMHANNYA
+provenance:
+  - owner: artist/kanehira
+    acquired: 12th century
+    method: creation
+    label: by Kanehira of the Ko-Bizen school, signed 'Bizen no kuni Kanehira saku'; in Bizen Province
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100187&content_part_id=0&content_pict_id=0
+        note: 古備前包平 (こびぜんかねひら) 1口 長89.2 反3.5 平安時代・12世紀
+        source: emuseum-100187
+        accessed: 2026-11-24
+  - owner: person/ikeda-terumasa
+    label: "his favourite sword (Wikipedia: whether it reached the Ikeda in his time or under his grandson Ikeda Mitsumasa is uncertain)"
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100187&content_part_id=0&content_pict_id=0
+        note: 池田輝政（いけだてるまさ）の愛刀で、長く岡山藩主池田家に伝来した。
+        source: emuseum-100187
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/297
+        note: 『享保名物帳』などに所載され、池田三左衛門輝政の愛刀として岡山池田家に伝来した。
+        source: kunishitei-201-297
+        accessed: 2026-11-24
+  - owner_label: Ikeda family, lords of Okayama
+    ended: 1967
+    method: inheritance
+    place: okayama
+    label: handed down in the Ikeda family, shown each year at the family's armour ceremony
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100187&content_part_id=0&content_pict_id=0
+        note: 長く岡山藩主池田家に伝来した。
+        source: emuseum-100187
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/297
+        note: 備前池田家伝来
+        source: kunishitei-201-297
+        accessed: 2026-11-24
+  - owner: institution/ministry-of-education-japan
+    acquired: 1967
+    method: purchase
+    place: tokyo
+    label: bought from the Ikeda family by the Ministry of Education and placed in the Tokyo National Museum
+    price:
+      amount: 65000000
+      currency: JPY
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%8C%85%E5%B9%B3
+        note: 長らく池田家に伝来していたが、1967年（昭和42年）に文部省（当時）が6,500万円で買い上げ、以後は東京国立博物館に収蔵されている。
+        source: wikipedia-ja-o-kanehira
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 1967
+    method: transfer
+    place: tokyo
+    label: in the museum since the purchase; owner today the National Institutes for Cultural Heritage
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100187&content_part_id=0&content_pict_id=0
+        note: 東京国立博物館 F-19932
+        source: emuseum-100187
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/297
+        note: 保管施設の名称 ： 東京国立博物館 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-297
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

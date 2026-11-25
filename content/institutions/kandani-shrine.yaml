@@ -1,3 +1,32 @@
 public_id: 126611
 name: Kandani Shrine
+founded: 812
+place: sakaide
+location: [133.91649, 34.32486]
+address: 香川県坂出市神谷町621
+website_url: https://kandani.sakura.ne.jp/wp/
 wikidata_id: Q11590885
+metadata:
+  sources: [Wikidata Q11590885 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/59/Kandani_Shrine.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kandani_Shrine.JPG
+    license: CC BY-SA 3.0
+    credit: by Reggaeman
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11590885
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11590885
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11590885
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11590885

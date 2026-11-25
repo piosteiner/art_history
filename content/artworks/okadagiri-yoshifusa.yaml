@@ -14,6 +14,8 @@ names:
       - accessed: 2026-11-24
         wikidata: Q107045184
 creator: yoshifusa
+created: 13th century
+created_span: uncertain
 institution: tokyo-national-museum
 location: [139.7756, 35.71994]
 wikidata_id: Q107045184
@@ -27,6 +29,53 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Tachi,_Fukuoka_Ichimonji_%22Okadagiri%22_Yoshifusa.jpg
     license: CC BY-SA 4.0
     credit: SLIMHANNYA
+provenance:
+  - owner: artist/yoshifusa
+    acquired: 13th century
+    method: creation
+    label: made by Yoshifusa of the Fukuoka Ichimonji school of Bizen province, mid-Kamakura period
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100179&content_part_id=0
+        note: 作者の吉房は、備前国（岡山県東南部）福岡一文字派（ふくおかいちもんじは）の刀工で、助真（すけざね）、則房（のりふさ）とともに鎌倉時代中期に活躍した。… 鎌倉時代・13世紀
+        source: emuseum-100179
+        accessed: 2026-11-24
+  - owner: person/oda-nobukatsu
+    acquired: 1584 or earlier
+    label: with this sword, according to the story behind its name, Oda Nobukatsu cut down his retainer Okada Shigetaka during the Komaki–Nagakute campaign of 1584 ('Okadagiri')
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100179&content_part_id=0
+        note: 天正12年（1584）の小牧長久手の戦のとき、織田信雄（おだのぶかつ）がこの刀で家臣の岡田助三郎重孝を斬ったということから「岡田切（おかだぎり）」の号で知られる。
+        source: emuseum-100179
+        accessed: 2026-11-24
+  - owner: person/masuda-takashi
+    label: presented by Masuda Takashi to Emperor Meiji
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=岡田切吉房&oldid=106383007
+        note: "[[益田孝]]から[[明治天皇]]に献上された旧[[御物]]で"
+        source: jawiki-okadagiri-yoshifusa
+        accessed: 2026-11-24
+  - owner: person/emperor-meiji
+    method: gift
+    direct: true
+    label: imperial property (gyobutsu); later no longer imperial property ('former gyobutsu')
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=岡田切吉房&oldid=106383007
+        note: "[[益田孝]]から[[明治天皇]]に献上された旧[[御物]]で、現在は東京国立博物館が所蔵している"
+        source: jawiki-okadagiri-yoshifusa
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    method: transfer
+    place: tokyo
+    label: Tokyo National Museum, F-141; owned by the National Institutes for Cultural Heritage; National Treasure 1955 (former National Treasure 1949)
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100179&content_part_id=0
+        note: 東京国立博物館 F-141
+        source: emuseum-100179
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/454
+        note: 保管施設の名称 ： 東京国立博物館 所有者名 ： 独立行政法人国立文化財機構 … 重文指定年月日 ： 1949.02.18 … 国宝指定年月日 ： 1955.02.02
+        source: kunishitei-201-454
+        accessed: 2026-11-24
 sources:
   creator:
     - accessed: 2026-11-24

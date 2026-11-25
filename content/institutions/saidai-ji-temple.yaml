@@ -1,0 +1,41 @@
+public_id: 129823
+name: Saidai-ji Temple
+kind: temple
+founded: 765
+place: nara
+location: [135.7795, 34.69362]
+address: 奈良県奈良市西大寺芝町1丁目1-5
+website_url: http://saidaiji.or.jp/
+wikidata_id: Q1203935
+metadata:
+  sources: [Wikidata Q1203935 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Saidai-ji_Nara_Japan08bs3.jpg/1280px-Saidai-ji_Nara_Japan08bs3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Saidai-ji_Nara_Japan08bs3.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  idref: "176142819"
+  lc: n83202677
+  viaf: "305438664"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1203935
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1203935
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q1203935
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1203935
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1203935

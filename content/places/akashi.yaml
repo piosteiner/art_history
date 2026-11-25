@@ -1,0 +1,41 @@
+public_id: 130046
+name: Akashi
+names:
+  - lang: ja
+    role: original
+    text: 明石市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q26406
+  - lang: ko
+    role: translation
+    text: 아카시시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q26406
+  - lang: ru
+    role: translation
+    text: Акаси
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q26406
+kind: settlement
+parent: hyogo
+country_code: JP
+location: [134.99722, 34.64314]
+wikidata_id: Q26406
+metadata:
+  sources: [Wikidata Q26406 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q26406
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q26406
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q26406

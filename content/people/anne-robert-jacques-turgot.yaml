@@ -1,0 +1,53 @@
+public_id: 129450
+name: Anne Robert Jacques Turgot
+given_name: Anne Robert Jacques
+family_name: Turgot
+kind: person
+birth: 1727-05-10
+death: 1781-03-18
+wikidata_id: Q221303
+metadata:
+  sources: [Wikidata Q221303 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q221303
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q221303
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q221303
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e1/Graincourt%2C_attributed_to_-_Turgot_-_Versailles_MV_3923.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Graincourt,_attributed_to_-_Turgot_-_Versailles_MV_3923.jpg
+    license: Public domain
+    credit: Attributed to Antoine Graincourt
+identifiers:
+  bnf: "119272595"
+  gnd: "118763202"
+  idref: "027747247"
+  lc: n50051803
+  viaf: "12316007"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q221303
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q221303
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q221303

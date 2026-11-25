@@ -1,0 +1,16 @@
+public_id: 130180
+name: Ancient Olympia Municipality
+kind: site
+location: [21.66667, 37.66667]
+wikidata_id: Q3252409
+metadata:
+  sources: [Wikidata Q3252409 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3252409
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3252409

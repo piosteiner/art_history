@@ -5,3 +5,19 @@ family_name: Tadamasa
 birth: 1853
 death: 1906
 wikidata_id: Q2413731
+relationships:
+  - type: participated_in
+    to: event/1878-paris-world-s-fair
+    notes_md: Came to the fair as an interpreter, then stayed in Paris and opened a dealership in Japanese art
+    sources:
+      - url: https://artsandculture.google.com/event/g11h0pzvmm2
+        source: artsandculture-google-com-hayashi-tadamasa-the-paris-art-dealer-who-promoted-japonisme-goo
+        accessed: 2026-11-24
+  - type: participated_in
+    to: event/exposition-universelle-of-1900
+    label: commissioner
+    notes_md: General commissioner of the Japanese art section
+    sources:
+      - url: https://en.wikipedia.org/wiki/Hayashi_Tadamasa
+        source: wikipedia-en-hayashi-tadamasa
+        accessed: 2026-11-24

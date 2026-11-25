@@ -31,6 +31,52 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Genji_screen_1.jpg
     license: Public domain
     credit: Tawara Sōtatsu
+provenance:
+  - owner: artist/tawara-sotatsu
+    acquired: 1631
+    method: creation
+    place: kyoto
+    label: pair of six-panel screens signed 'Hokkyō Sōtatsu'
+    sources:
+      - url: https://web.archive.org/web/20241212083541/https://www.seikado.or.jp/collection_index/collection01/
+        note: 俵屋宗達 源氏物語関屋澪標図屛風 江戸時代、寛永8年（1631） 紙本金地着色 … 「法橋宗達」の落款があり、江戸時代初期、京都で活躍した俵屋宗達（？〜1642以前）の代表作である。
+        source: seikado-national-treasures
+        accessed: 2026-11-24
+  - owner: institution/daigo-ji
+    ended: c. 1896
+    place: kyoto
+    label: how and when the temple received the screens is not stated
+    sources:
+      - url: https://web.archive.org/web/20241212083541/https://www.seikado.or.jp/collection_index/collection01/
+        note: 明治29年（1896）頃、京都・醍醐寺より岩﨑家の所有となった。
+        source: seikado-national-treasures
+        accessed: 2026-11-24
+  - owner_label: Iwasaki family (Iwasaki Yanosuke)
+    acquired: c. 1896
+    direct: true
+    place: tokyo
+    label: collected by Iwasaki Yanosuke, the head of his collection of paintings
+    sources:
+      - url: https://web.archive.org/web/20241212083541/https://www.seikado.or.jp/collection_index/collection01/
+        note: 明治29年（1896）頃、京都・醍醐寺より岩﨑家の所有となった。
+        source: seikado-national-treasures
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E9%9D%99%E5%98%89%E5%A0%82%E6%96%87%E5%BA%AB
+        note: また俵屋宗達筆の『源氏物語関屋及澪標（せきやおよびみおつくし）図』屏風を筆頭とする書画・刀剣なども数多く集めた。
+        source: wikipedia-ja-seikado-bunko
+        accessed: 2026-11-24
+  - owner: institution/seikado-bunko-library
+    place: tokyo
+    label: owned by the Seikadō Foundation (公益財団法人静嘉堂); date of transfer from the family not stated (the foundation received the Iwasaki works after 1945 and 1975)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/9
+        note: 保管施設の名称：公益財団法人静嘉堂 所有者名：公益財団法人静嘉堂
+        source: kunishitei-201-9
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E9%9D%99%E5%98%89%E5%A0%82%E6%96%87%E5%BA%AB
+        note: 1945年に小弥太が没すると、財団はその美術品コレクションから国宝・重要文化財ほかを故人の遺志により夫人の孝子から受贈する。夫人が1975年に没すると、岩﨑忠雄により、岩崎家に残っていた収蔵品全点と鑑賞室等の施設が財団に移管され公開に至る
+        source: wikipedia-ja-seikado-bunko
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

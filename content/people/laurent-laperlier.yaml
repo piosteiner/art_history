@@ -2,4 +2,39 @@ public_id: 127663
 name: Laurent Laperlier
 given_name: Laurent
 family_name: Laperlier
+kind: person
+birth: 1805-02-06
+death: 1878-05-13
 wikidata_id: Q126098091
+metadata:
+  sources: [Wikidata Q126098091 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q126098091
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q126098091
+identifiers:
+  gnd: 12425229X
+  idref: "194967204"
+  viaf: "25531480"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q126098091
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q126098091
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q126098091

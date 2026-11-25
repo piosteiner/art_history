@@ -1,0 +1,47 @@
+public_id: 130179
+name: William II of the Netherlands
+kind: person
+birth: 1792-12-06
+death: 1849-03-17
+wikidata_id: Q154287
+metadata:
+  sources: [Wikidata Q154287 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q154287
+  - type: born_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q154287
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/King_Willem_II.jpg/1280px-King_Willem_II.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:King_Willem_II.jpg
+    license: Public domain
+    credit: Nicolaas Pieneman
+identifiers:
+  bnf: 14953525r
+  gnd: "100718337"
+  idref: "086129988"
+  lc: n92059716
+  rkd: "349540"
+  ulan: "500373138"
+  viaf: "266543706"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q154287
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q154287
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q154287

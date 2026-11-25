@@ -1,3 +1,41 @@
 public_id: 129285
 name: Kokawa-dera
+kind: temple
+founded: 770
+place: kinokawa
+location: [135.40591, 34.28096]
+address: 和歌山県紀の川市粉河2787
+website_url: https://www.kokawadera.org/
 wikidata_id: Q5358314
+metadata:
+  sources: [Wikidata Q5358314 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Kokawadera09s3872.jpg/1280px-Kokawadera09s3872.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kokawadera09s3872.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  gnd: "1060233983"
+  lc: n82129762
+  viaf: "132549530"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q5358314
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q5358314
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q5358314
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q5358314
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q5358314

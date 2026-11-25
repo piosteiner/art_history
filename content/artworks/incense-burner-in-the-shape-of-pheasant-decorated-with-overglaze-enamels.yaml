@@ -37,6 +37,70 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Incense_burners_in_the_shape_of_pheasant_decorated_with_overglaze_enamels(male_and_female).jpg
     license: CC BY-SA 4.0
     credit: 掬茶
+provenance:
+  - owner: artist/nonomura-ninsei
+    acquired: 17th century
+    method: creation
+    label: made by Ninsei (Edo period); his seal-mark 仁清 stamped inside
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/307
+        note: 時代 ： 江戸 … 作者 ： 仁清 … 底裏に「仁清」の　幕印を捺す。
+        source: kunishitei-201-307
+        accessed: 2026-11-24
+      - url: https://www.pref.ishikawa.lg.jp/kyoiku/bunkazai/kougeihin/1.html
+        note: 色絵雉香炉  仁清作（1合）|江戸時代前期 … この作品にも、背部と腹部の内側に、それぞれに仁清の刻印を押している。
+        source: ishikawa-pref-bunkazai-kogeihin-1
+        accessed: 2026-11-24
+  - owner_label: an old Kanazawa family
+    place: kanazawa
+    label: descent given by the Agency's database as 'old Kanazawa family – Ishikawa Prefecture'
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/307
+        note: 伝来・その他参考となるべき事項 ： 金沢旧家－石川県
+        source: kunishitei-201-307
+        accessed: 2026-11-24
+  - owner: person/yamakawa-shotaro
+    ended: 1958
+    place: kanazawa
+    label: Yamakawa Shōtarō of Kanazawa; whether he is the 'old Kanazawa family' of the Agency's record is not stated
+    sources:
+      - url: https://bijutsutecho.com/exhibitions/4530
+        note: 石川県立美術館は … 1958年に山川庄太郎から野々村仁清の《色絵雉香炉》（国宝）の寄贈を受け、翌年には石川県美術館として兼六園に開設。
+        source: bijutsutecho-exhibitions-4530
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%89%B2%E7%B5%B5%E9%9B%89%E9%A6%99%E7%82%89&oldid=108765813
+        note: 1958年に金沢市在住の山川庄太郎から石川県に寄贈され、石川県立美術館に収められている。
+        source: wikipedia-ja-iroe-kiji-koro
+        accessed: 2026-11-24
+  - owner: place/ishikawa-prefecture
+    acquired: 1958
+    method: gift
+    direct: true
+    place: kanazawa
+    label: given to Ishikawa Prefecture, the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/307
+        note: 伝来・その他参考となるべき事項 ： 金沢旧家－石川県 … 所有者名 ： 石川県
+        source: kunishitei-201-307
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%89%B2%E7%B5%B5%E9%9B%89%E9%A6%99%E7%82%89&oldid=108765813
+        note: 1958年に金沢市在住の山川庄太郎から石川県に寄贈され
+        source: wikipedia-ja-iroe-kiji-koro
+        accessed: 2026-11-24
+  - owner: institution/ishikawa-prefectural-museum-of-art
+    role: custodian
+    acquired: 1959
+    place: kanazawa
+    label: kept at the prefecture's museum, opened in 1959 as the Ishikawa Prefectural Art Museum in Kenrokuen; new building 1983
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/307
+        note: 保管施設の名称 ： 石川県立美術館 所有者名 ： 石川県
+        source: kunishitei-201-307
+        accessed: 2026-11-24
+      - url: https://bijutsutecho.com/exhibitions/4530
+        note: 翌年には石川県美術館として兼六園に開設。83年、新美術館として現在の場所に移転
+        source: bijutsutecho-exhibitions-4530
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

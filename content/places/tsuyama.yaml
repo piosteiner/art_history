@@ -1,0 +1,41 @@
+public_id: 130066
+name: Tsuyama
+names:
+  - lang: ja
+    role: original
+    text: 津山市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q841125
+  - lang: ko
+    role: translation
+    text: 쓰야마시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q841125
+  - lang: ru
+    role: translation
+    text: Цуяма
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q841125
+kind: settlement
+parent: japan
+country_code: JP
+location: [134.00447, 35.06911]
+wikidata_id: Q841125
+metadata:
+  sources: [Wikidata Q841125 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q841125
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q841125
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q841125

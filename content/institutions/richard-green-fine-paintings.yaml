@@ -1,3 +1,30 @@
 public_id: 126905
 name: Richard Green Fine Paintings
+kind: gallery
+founded: 1955
+place: london
+address: 147 New Bond Street
+website_url: https://www.richardgreen.com
 wikidata_id: Q62400958
+metadata:
+  sources: [Wikidata Q62400958 (retrieved 2026-11-24)]
+identifiers:
+  lc: n85818632
+  viaf: "128583193"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q62400958
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q62400958
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q62400958
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q62400958

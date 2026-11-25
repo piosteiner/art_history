@@ -1,0 +1,39 @@
+public_id: 129477
+name: Oka-dera
+kind: temple
+founded: 663
+place: asuka
+location: [135.82837, 34.47179]
+address: 奈良県高市郡明日香村岡806
+website_url: https://www.okadera3307.com/
+wikidata_id: Q3349998
+metadata:
+  sources: [Wikidata Q3349998 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Okadera_Asuka_Nara_pref24n3900.jpg/1280px-Okadera_Asuka_Nara_pref24n3900.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Okadera_Asuka_Nara_pref24n3900.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  gnd: "1045597929"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3349998
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3349998
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3349998
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3349998
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3349998

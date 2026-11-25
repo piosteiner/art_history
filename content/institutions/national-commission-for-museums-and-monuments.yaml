@@ -1,3 +1,16 @@
 public_id: 125726
 name: National Commission for Museums and Monuments
+location: [7.50098, 9.05917]
 wikidata_id: Q25041160
+metadata:
+  sources: [Wikidata Q25041160 (retrieved 2026-11-24)]
+identifiers:
+  gnd: 16171895-4
+  idref: "073387428"
+  lc: n86006997
+  viaf: "149676248"
+sources:
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q25041160

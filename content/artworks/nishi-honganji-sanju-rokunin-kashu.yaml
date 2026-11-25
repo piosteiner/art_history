@@ -24,6 +24,63 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:36poets_collection_SHIGEYUKI.JPG
     license: Public domain
     credit: Unknown author
+provenance:
+  - owner: person/emperor-shirakawa
+    acquired: 1112
+    method: gift
+    place: kyoto
+    label: made by about twenty calligraphers (among them Fujiwara no Sadazane and Fujiwara no Sadanobu) to be presented at Retired Emperor Shirakawa's 60th-birthday celebration, 18th day of the 3rd month of Ten'ei 3 (accepted view of Kyūsojin Hitaku)
+    certainty: probable
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=西本願寺本三十六人家集&oldid=110911211
+        note: 天永3年（1112年）3月18日の白河法皇六十の賀に進上するものとして制作されたという久曾神昇の推定が定説になっている。筆者は…書風から20人と推定されている。
+        source: jawiki-nishi-honganji-sanjurokunin-kashu
+        accessed: 2026-11-24
+      - note: In one compilation of poetry dating to around 1112, each verse of the poem has become a complete mixture of kana and hiragana … This particular collection is known as the Sanju rokunin kashu
+        source: history-of-japanese-art
+        locator: pp. 110–111
+        accessed: 2026-11-24
+  - owner: institution/sanjusangen-do
+    acquired: 1252 or earlier
+    place: kyoto
+    label: in the treasure house of the Rengeō-in in 1252 (Kenchō 4), according to a colophon transmitted in a later copy (Imperial Household Archives)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=西本願寺本三十六人家集&oldid=110911211
+        note: 建長4年には蓮華王院の宝蔵にあった
+        source: jawiki-nishi-honganji-sanjurokunin-kashu
+        accessed: 2026-11-24
+  - owner: person/emperor-go-nara
+    acquired: 1549 or earlier
+    label: whereabouts unknown after 1252; in the hands of Emperor Go-Nara
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=西本願寺本三十六人家集&oldid=110911211
+        note: その後の所在は不明であるが、天文18年（1549年）1月20日（旧暦）に後奈良天皇から本願寺証如に与えられた。
+        source: jawiki-nishi-honganji-sanjurokunin-kashu
+        accessed: 2026-11-24
+  - owner: institution/nishi-hongan-ji
+    acquired: 1549
+    method: gift
+    direct: true
+    place: osaka
+    label: given by Emperor Go-Nara to Shōnyo of the Hongan-ji, then at Ishiyama (Osaka), 20th day of the 1st month of Tenbun 18; the emperor's letter (nyōbō hōsho) is designated with it; forgotten from the mid-Edo period, rediscovered at the Hongan-ji in August 1896 by Ōguchi Shūgyo
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=西本願寺本三十六人家集&oldid=110911211
+        note: 天文18年（1549年）1月20日（旧暦）に後奈良天皇から本願寺証如に与えられた。国宝の付属指定とされる「後奈良天皇宸翰女房奉書」はこの伝来に関わる資料である。… 大口周魚が明治29年（1896年）8月大谷光尊の依頼で本願寺の古書調査をし、江戸時代中期以降、存在が忘れ去られていた本願寺本を再発見した
+        source: jawiki-nishi-honganji-sanjurokunin-kashu
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/580
+        note: 三十六人家集 … 37帖 … 所有者名 ： 本願寺 … 附指定 後奈良天皇宸翰女房奉書
+        source: kunishitei-201-580
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1929
+    label: the Ise-shū and the second volume of the Tsurayuki-shū taken apart into single leaves ('Ishiyama-gire', named by Masuda Takashi) and sold by Ōtani Kōzui to fund a Buddhist women's college
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=西本願寺本三十六人家集&oldid=110911211
+        note: 伊勢集と貫之集下は、昭和4年（1929年）に冊子の形を解体して一葉ずつの断簡に分割された。これは宗教女子大学（現在の武蔵野大学）設立の資金に当てるために、大谷光瑞が益田鈍翁らの助言を得て実行された
+        source: jawiki-nishi-honganji-sanjurokunin-kashu
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

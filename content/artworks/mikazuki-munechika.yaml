@@ -32,6 +32,112 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Mikazuki_Munechika_haki-omote.jpg
     license: CC BY 4.0
     credit: 国立文化財機構
+provenance:
+  - owner: artist/sanjo-munechika
+    acquired: 10th–12th century
+    method: creation
+    place: kyoto
+    label: by Sanjō Munechika, said to have lived at Sanjō in Kyoto in the Eien era (987–89); signed 'Sanjō'
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100192&content_part_id=0&content_pict_id=0
+        note: 三条宗近 (さんじょうむねちか) 1口 … 平安時代・10～12世紀 … 作者の宗近は、永延年間（987-89）に京都の三条に住んだと伝えられる刀工
+        source: emuseum-100192
+        accessed: 2026-11-24
+  - owner: person/kodai-in
+    ended: 1624
+    label: Toyotomi Hideyoshi's principal wife (Nene); earlier owners are only legend
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100192&content_part_id=0&content_pict_id=0
+        note: 豊臣秀吉の正室、高台院が所持し、その遺品として徳川秀忠に贈られ、徳川家に伝来した。
+        source: emuseum-100192
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/298
+        note: 高台院遺物－徳川秀忠－徳川将軍家伝来
+        source: kunishitei-201-298
+        accessed: 2026-11-24
+  - owner: person/tokugawa-hidetada
+    acquired: 1624
+    method: bequest
+    place: tokyo
+    label: given to him as a keepsake from Kōdai-in's estate after her death
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100192&content_part_id=0&content_pict_id=0
+        note: その遺品として徳川秀忠に贈られ
+        source: emuseum-100192
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E4%B8%89%E6%97%A5%E6%9C%88%E5%AE%97%E8%BF%91
+        note: 高台院が死去したのちに1624年（寛永元年）に遺品として徳川秀忠に贈られ、以来徳川将軍家の所蔵となってからである。
+        source: wikipedia-ja-mikazuki-munechika
+        accessed: 2026-11-24
+  - owner_label: Tokugawa shogunal family
+    method: inheritance
+    place: tokyo
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100192&content_part_id=0&content_pict_id=0
+        note: 徳川家に伝来した。
+        source: emuseum-100192
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/298
+        note: 高台院遺物－徳川秀忠－徳川将軍家伝来
+        source: kunishitei-201-298
+        accessed: 2026-11-24
+  - owner: person/tokugawa-iesato
+    acquired: 1929 or earlier
+    method: inheritance
+    label: 16th head of the Tokugawa house; National Treasure (old law) in his name 23 January 1933; later left the family at an unknown date
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E4%B8%89%E6%97%A5%E6%9C%88%E5%AE%97%E8%BF%91
+        note: 1929年（昭和4年）の時点で … 当時の所有者であった徳川家16代家達 … 1933年（昭和8年）1月23日付で徳川家達公爵名義にて国宝保存法に基づく旧国宝（現在の重要文化財）に指定される。
+        source: wikipedia-ja-mikazuki-munechika
+        accessed: 2026-11-24
+  - owner: person/nakajima-kiyoichi
+    label: second president of Nakajima Aircraft; one account has the sword pass from the Tokugawa via a moneylender straight to Watanabe
+    certainty: probable
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E4%B8%89%E6%97%A5%E6%9C%88%E5%AE%97%E8%BF%91
+        note: その後、時期は不明ながら徳川将軍家から流出し、中島飛行機（現在のSUBARU）の2代目社長である中島喜代一、ついで“特殊鋼開発の父”として知られる渡邊三郎の手に渡ったことが知られている。
+        source: wikipedia-ja-mikazuki-munechika
+        accessed: 2026-11-24
+  - owner: person/watanabe-saburo
+    acquired_label: c. 1937 or 1946 (accounts differ)
+    ended: 1951-01
+    label: metallurgist and industrialist ('father of special steel', Nihon Tokushukō); died 8 January 1951
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E4%B8%89%E6%97%A5%E6%9C%88%E5%AE%97%E8%BF%91
+        note: 徳川将軍家流出後の伝来については諸説あり、終戦後に徳川将軍家から金融業者を経て渡邉の許へ渡ったとする説や、1937年（昭和12年）頃 … 中島が譲ったという説、1946年（昭和21年）に新宿にある骨董屋にて … 渡邉が偶然発見して購入したという説もある。
+        source: wikipedia-ja-mikazuki-munechika
+        accessed: 2026-11-24
+  - owner: person/watanabe-seiichiro
+    acquired: 1951
+    method: inheritance
+    label: Watanabe Saburō's son; National Treasure (new law) in his name 9 June 1951
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E4%B8%89%E6%97%A5%E6%9C%88%E5%AE%97%E8%BF%91
+        note: その後、1951年（昭和26年）6月9日付で渡辺の息子・誠一郎名義にて文化財保護法に基づく国宝に指定されている。
+        source: wikipedia-ja-mikazuki-munechika
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%AA%A0%E4%B8%80%E9%83%8E_(%E5%AE%9F%E6%A5%AD%E5%AE%B6)
+        note: 渡辺 誠一郎（渡邊 誠一郎、わたなべ せいいちろう、1924年（大正13年）1月6日 - 2001年（平成13年）8月20日）は、日本の実業家。… 父親の渡辺三郎から引き継いだ「三日月宗近（国宝
+        source: wikipedia-ja-watanabe-seiichiro
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 1992-11
+    method: gift
+    place: tokyo
+    label: given by Watanabe Seiichirō, following his father's wish, with eleven other swords (incl. Kikkō Sadamune and Nakigitsune)
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=ja&webView=&content_base_id=100192&content_part_id=0&content_pict_id=0
+        note: 東京国立博物館 F-20103
+        source: emuseum-100192
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/wiki/%E4%B8%89%E6%97%A5%E6%9C%88%E5%AE%97%E8%BF%91
+        note: 1992年（平成4年）11月、誠一郎は父の遺志を汲んで亀甲貞宗や鳴狐なども含む12振の名刀とともに東京国立博物館に寄贈し同館の所蔵となる。
+        source: wikipedia-ja-mikazuki-munechika
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/298
+        note: 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-298
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

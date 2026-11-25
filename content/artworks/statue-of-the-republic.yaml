@@ -1,0 +1,49 @@
+public_id: 130210
+title: Statue of the Republic
+names:
+  - lang: fr
+    role: translation
+    text: Statue de la République
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2378921
+  - lang: es
+    role: translation
+    text: Estatua de La República
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2378921
+  - lang: zh
+    role: translation
+    text: 共和国雕像
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2378921
+  - lang: ko
+    role: translation
+    text: 공화국 동상
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2378921
+creator: daniel-chester-french
+location: [-87.5799, 41.7796]
+wikidata_id: Q2378921
+metadata:
+  sources: [Wikidata Q2378921 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/chicago
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/2004-08-08_1580x2800_chicago_republic.jpg/1280px-2004-08-08_1580x2800_chicago_republic.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:2004-08-08_1580x2800_chicago_republic.jpg
+    license: Public domain
+    credit: J. Crocker
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q2378921
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2378921

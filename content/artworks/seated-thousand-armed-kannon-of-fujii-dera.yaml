@@ -1,0 +1,43 @@
+public_id: 124996
+title_lang: en
+title: Seated Thousand-Armed Kannon of Fujii-dera
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 葛井寺千手観音坐像
+created: 725
+institution: fujii-dera-temple
+wikidata_id: Q107045588
+metadata:
+  sources: [Wikidata Q107045588 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Thousand_armed_Kannon_Fujii_dera.jpg/1280px-Thousand_armed_Kannon_Fujii_dera.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Thousand_armed_Kannon_Fujii_dera.jpg
+    license: Public domain
+    credit: Association of Cultural Properties、Japan
+provenance:
+  - owner: institution/fujii-dera-temple
+    acquired: 725
+    method: commission
+    place: fujiidera
+    label: dry-lacquer main image of the temple; by tradition made in 725 for Emperor Shōmu by Keimon'e and Keishukun and consecrated by Gyōki; one theory dates it to after 740; Nara period per the designation
+    certainty: possible
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/214
+        note: 時代 ： 奈良 … 所有者名 ： 葛井寺
+        source: kunishitei-201-214
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111530250
+        note: 神亀2年（725年）、聖武天皇が42歳のときに自身の厄除けを祈願して稽文會と稽主勲に造らせ、行基によって開眼法要が営まれたと伝えられる。 … 葛井寺像は藤原広嗣の乱鎮圧を祈念して造立されたものであるとする説もある
+        source: jawiki-111530250
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=110543508
+        note: 奈良時代、8世紀中頃 … 大阪府 藤井寺市 葛井寺本堂
+        source: jawiki-110543508
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107045588

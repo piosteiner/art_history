@@ -15,6 +15,113 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Juan_de_Zurbar%C3%A1n_-_Flowers_and_Fruit_in_a_China_Bowl_-_1947.511_-_Art_Institute_of_Chicago.jpg
     license: Public domain
     credit: anonymous
+provenance:
+  - owner: person/jose-de-madrazo
+    acquired: 1856 or earlier
+    place: madrid
+    label: Madrazo catalogue no. 449
+    sources:
+      - url: https://www.artic.edu/artworks/111059
+        note: Don José de Madrazo y Agudo (died 1859), Madrid by 1856 [Madrazo cat. 449];
+        source: aic-1947-511
+        accessed: 2026-11-24
+  - owner_label: heirs of José de Madrazo
+    acquired: 1859
+    method: inheritance
+    direct: true
+    place: madrid
+    sources:
+      - url: https://www.artic.edu/artworks/111059
+        note: sold by his heirs to Don José de Salamanca, Marqués de Salamanca, Madrid in 1861
+        source: aic-1947-511
+        accessed: 2026-11-24
+  - owner: person/jose-de-salamanca-y-mayol
+    acquired: 1861
+    method: purchase
+    direct: true
+    place: madrid
+    label: Marqués de Salamanca
+    sources:
+      - url: https://www.artic.edu/artworks/111059
+        note: sold by his heirs to Don José de Salamanca, Marqués de Salamanca, Madrid in 1861 [see Alaminos López and Salas Vázquez 1998, p. 169].
+        source: aic-1947-511
+        accessed: 2026-11-24
+  - owner_label: Condesa de Montarco, Madrid
+    acquired: 1905 or earlier
+    place: madrid
+    label: lent by her to an exhibition in Madrid, 1905
+    sources:
+      - url: https://www.artic.edu/artworks/111059
+        note: Condesa de Montarco, Madrid by 1905 [lent by her to Madrid 1905; see also handwritten annotation in stretcher].
+        source: aic-1947-511
+        accessed: 2026-11-24
+  - owner_label: art market
+    acquired: June 1933 or earlier
+    label: photographs numbered N3939 with expertises by Tancred Borenius (June 1933) and August L. Mayer (22 October 1934)
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/111059
+        note: Art market, probably by June 1933 [photographs both inscribed with the number N3939, bear expertises by Tancred Borenius of June 1933 and August L. Mayer of October 22, 1934; photos in curatorial file].
+        source: aic-1947-511
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1935
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/111059
+        note: Knoedler and Co., New York, 1935 [according to New York 1955, cat. 21].
+        source: aic-1947-511
+        accessed: 2026-11-24
+  - owner: institution/arnold-seligmann-rey-co
+    role: dealer
+    acquired: 1936 or earlier
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/111059
+        note: Arnold Seligmann, Rey and Company, New York, by 1936 [this and the following according to Brummer Gallery Records, object inventory card N3939
+        source: aic-1947-511
+        accessed: 2026-11-24
+  - owner: institution/brummer-galleries
+    role: dealer
+    acquired: 1936-05-26
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: inventory card N3939
+    price:
+      amount: 7000
+      currency: USD
+    sources:
+      - url: https://www.artic.edu/artworks/111059
+        note: sold to Brummer Gallery, New York, May 26, 1936, for $7,000;
+        source: aic-1947-511
+        accessed: 2026-11-24
+  - owner: institution/e-a-silberman-galleries
+    role: dealer
+    acquired: 1947-06-25
+    method: purchase
+    direct: true
+    place: new-york-city
+    price:
+      amount: 20000
+      currency: USD
+      note: for a lot of several works
+    sources:
+      - url: https://www.artic.edu/artworks/111059
+        note: sold to E. and A. Silberman Galleries, New York, June 25, 1947, as part of a lot for $20,000;
+        source: aic-1947-511
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1947
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/111059
+        note: purchased by the Art Institute, 1947.
+        source: aic-1947-511
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

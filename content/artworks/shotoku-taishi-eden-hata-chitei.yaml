@@ -1,5 +1,17 @@
 public_id: 107203
 title: Shōtoku taishi eden (Pictorial biography of Prince Shōtoku)
+names:
+  - Illustrated Biography of Prince Regent Shotoku
+  - lang: fr
+    role: translation
+    text: Ｌ'enfer du nuage noir
+  - lang: ja
+    role: translation
+    text: 延久本聖徳太子絵伝
+  - lang: ko
+    role: translation
+    text: 쇼토쿠태자 회전
+  - Illustrated Biography of Prince Shotoku
 creator: hata-no-chitei
 created: 1069
 kind: painting
@@ -10,6 +22,9 @@ institution: tokyo-national-museum
 inventory_number: N-1
 web_url: https://colbase.nich.go.jp/collection_items/tnm/N-1?locale=en
 description_md: Ten paintings on silk made in 1069 by [[artist/hata-no-chitei]], an itinerant painter from Settsu, for the walls of the picture hall (edono) in the eastern precinct of Hōryūji, now remounted as panels. They tell the life of [[person/prince-shotoku]] in a geographical rather than chronological order, each episode labelled in a cartouche and set in pockets of space between mountains and trees. This section shows Shitennōji surrounded by low land, and, above, the prince crossing the Japan Sea to China in a flying chariot. Chinese pictorial conventions combine with a recognition of the difference between Chinese and Japanese mountains — a stage in the Japanization of secular painting. [[source/history-of-japanese-art|p. 113, fig. 138]]
+wikidata_id: Q28803778
+metadata:
+  sources: [Wikidata Q28803778 (retrieved 2026-11-24)]
 relationships:
   - type: depicts_person
     to: person/prince-shotoku
@@ -33,8 +48,67 @@ images:
     source_url: https://colbase.nich.go.jp/collection_items/tnm/N-1
     license: CC BY 4.0
     credit: Tokyo National Museum, ColBase
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Hatano_Chitei_-_Illustrated_Biography_of_Prince_Shotoku_-_Google_Art_Project.jpg/1280px-Hatano_Chitei_-_Illustrated_Biography_of_Prince_Shotoku_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hatano_Chitei_-_Illustrated_Biography_of_Prince_Shotoku_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Hatano Chitei (901 - 1200) Details on Google Art Project
+provenance:
+  - owner: institution/horyu-ji
+    acquired: 1069
+    ended: 1878
+    method: commission
+    place: ikaruga
+    label: painted Feb.–May 1069 by Hata no Chitei on the sliding doors of the Picture Hall (Edono) of the East Precinct; remounted as folding screens in the Edo period (a copy took its place in the hall in 1787)
+    sources:
+      - url: https://emuseum.nich.go.jp/detail?langId=en&webView=&content_base_id=100205&content_part_id=0&content_pict_id=0
+        note: These paintings were originally on fixed doors that adorned the Picture Hall in the East Precinct of Hôryû-ji Temple. They were remounted as freestanding screens in the Edo period (1615-1868) … Hata no Chitei, an artist from Settsu Province (present-day Osaka Prefecture), painted them during the second to fifth month of Enkyû 1 (1069).
+        source: emuseum-100205-en
+        accessed: 2026-11-24
+      - note: the earliest extant pictorial biography is the one originally made for the prince's temple, Horyuji. This was painted in 1069 on silk panels attached to three walls of the edono (picture hall) in the eastern precinct by Hata Chitei, an itinerant painter from Settsu province.
+        source: history-of-japanese-art
+        locator: p. 112
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=110018100
+        note: 天明七年（1787年）に、損傷の激しさを理由に吉村法眼周圭充貞による模写本と入れ替えられ、二面ごとに二曲一隻の屏風に改装され
+        source: jawiki-110018100
+        accessed: 2026-11-24
+  - owner: institution/ministry-of-the-imperial-household
+    acquired: 1878-02-18
+    ended: 1949
+    method: gift
+    direct: true
+    label: presented with over 300 Hōryū-ji treasures to the Imperial Household (gyobutsu); the temple received 10,000 yen; kept at the museum in Ueno from 1882
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/147
+        note: 江戸時代に屏風に改装され、明治年間皇室に献納されたいわゆる法降寺献納旧御物の一つである。
+        source: kunishitei-201-147
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111611092
+        note: 1878年2月18日付けで宮内省は宝物の献納を許可することとし、法隆寺には見返りに金一万円が下賜された。 … 1882年（明治15年）、東京・上野に博物館（東京国立博物館の前身）が移転・開館すると、法隆寺宝物はそちらへ移動された。
+        source: jawiki-111611092
+        accessed: 2026-11-24
+  - owner: institution/horyu-ji-treasures-at-tokyo-national-museum
+    acquired: 1949
+    method: transfer
+    direct: true
+    place: tokyo
+    label: nationalised in 1949 with most of the Hōryū-ji gift (Ministry of Education), at the Tokyo National Museum (N-1); remounted as ten panels from 1968; owner today the National Institutes for Cultural Heritage
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111611092
+        note: 第二次大戦後の1949年に一部を除いて国有となり、それ以後、「法隆寺献納宝物」と称されている。
+        source: jawiki-111611092
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/147
+        note: 保管施設の名称 ： 東京国立博物館 所有者名 ： 独立行政法人国立文化財機構
+        source: kunishitei-201-147
+        accessed: 2026-11-24
+numbers:
+  - number: N-1
+    institution: horyu-ji-treasures-at-tokyo-national-museum
+    label: from a merged entry
 identifiers:
   colbase: tnm/N-1
+  emuseum: "100205"
   tnm: N1
 sources:
   kind:
@@ -46,19 +120,34 @@ sources:
   created:
     - source: history-of-japanese-art
       locator: p. 113, fig. 138
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q28803778
   creator:
     - source: history-of-japanese-art
       locator: p. 113, fig. 138
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q28803778
   materials:
     - source: history-of-japanese-art
       locator: p. 113, fig. 138
   dimensions:
     - source: history-of-japanese-art
       locator: p. 113, fig. 138
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q28803778
   institution:
     - source: history-of-japanese-art
       locator: p. 113, fig. 138
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q28803778
   inventory_number:
     - url: https://colbase.nich.go.jp/collection_items/tnm/N-1
       source: colbase
       accessed: 2026-11-11
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q28803778

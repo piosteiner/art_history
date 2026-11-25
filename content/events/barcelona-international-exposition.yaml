@@ -1,0 +1,44 @@
+public_id: 130586
+name: Barcelona International Exposition
+names:
+  - lang: es
+    role: original
+    text: Exposición Internacional de Barcelona
+  - lang: ca
+    role: original
+    text: Exposició Internacional de Barcelona
+kind: world's fair
+period: 1929-05-19/1930-01-15
+place: barcelona
+location: [2.15, 41.3706]
+description_md: |-
+  The architect Josep Puig i Cadafalch had promoted the exposition since 1905.[[source/wikipedia-ca-exposicio-internacional-de-barcelona-de-1929]] Its construction was largely finished in 1923, but the dictatorship of Miguel Primo de Rivera, established that year, delayed the opening to 1929.[[source/wikipedia-en-1929-barcelona-international-exposition]] Puig i Cadafalch was sidelined in 1925 for his Catalanist ideas, and the marquis de Foronda took over the organisation with Pere Domènech i Roura as director of works.[[source/wikipedia-ca-exposicio-internacional-de-barcelona-de-1929]] The regime gave the event a Spanish stamp: it named the Plaça d'Espanya and in 1928 had Puig i Cadafalch's Four Columns, a symbol of the Catalan flag, demolished; they were rebuilt in 2010–2011.[[source/wikipedia-ca-exposicio-internacional-de-barcelona-de-1929]][[source/wikipedia-es-exposicion-internacional-de-barcelona-1929]] King Alfonso XIII opened the exposition in the presence of Primo de Rivera.[[source/wikipedia-en-1929-barcelona-international-exposition]] Because the Ibero-American Exposition in Seville ran at the same time, no Spanish-American country took part, and after the Wall Street crash of October 1929 reduced participation the exposition ended with a deficit of about 180 million pesetas.[[source/wikipedia-en-1929-barcelona-international-exposition]][[source/wikipedia-ca-exposicio-internacional-de-barcelona-de-1929]]
+
+  The exposition occupied 118 hectares on Montjuïc.[[source/wikipedia-en-1929-barcelona-international-exposition]] Its main building, the Palau Nacional by Eugenio Cendoya and Enric Catà under Domènech i Roura, housed an exhibition of Spanish art, *El Arte en España*, with more than 5,000 works; it has housed the Museu Nacional d'Art de Catalunya since 1934.[[source/wikipedia-en-1929-barcelona-international-exposition]][[source/wikipedia-ca-exposicio-internacional-de-barcelona-de-1929]] Carles Buïgas built the Magic Fountain, and Ramon Reventós and Francesc Folguera, the Poble Espanyol, an open-air village of Spanish regional architecture.[[source/wikipedia-en-1929-barcelona-international-exposition]]
+
+  The exposition consolidated Noucentisme and brought avant-garde trends, especially rationalism, to Spain.[[source/wikipedia-en-1929-barcelona-international-exposition]] The [[artwork/barcelona-pavilion|German Pavilion]] by [[artist/ludwig-mies-van-der-rohe|Ludwig Mies van der Rohe]] and [[artist/lilly-reich|Lilly Reich]], built of glass, steel, Roman travertine, green Alpine marble, ancient green marble and golden onyx, served for an official reception presided over by Alfonso XIII and Queen Victoria Eugenia.[[source/fundacio-mies-van-the-pavilion-fundacio-mies-van-der-rohe]] Its only figurative decoration was Georg Kolbe's sculpture *Dawn* at one end of the small pond.[[source/fundacio-mies-van-the-pavilion-fundacio-mies-van-der-rohe]] The pavilion and the Barcelona chair designed for it, still manufactured today, became icons of modern architecture and design.[[source/fundacio-mies-van-the-pavilion-fundacio-mies-van-der-rohe]] Giovanni Muzio and Mario Sironi designed the Italian Press and Book Exhibition.[[source/braun-2000|pp. 145–146, figs. 101–102]]
+wikidata_id: Q283454
+relationships:
+  - type: concerns
+    to: artwork/barcelona-pavilion
+    sources:
+      - source: fundacio-mies-van-the-pavilion-fundacio-mies-van-der-rohe
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: wikipedia-en-1929-barcelona-international-exposition
+  place:
+    - url: https://en.wikipedia.org/wiki/1929_Barcelona_International_Exposition
+      source: wikipedia-en-1929-barcelona-international-exposition
+      accessed: 2026-11-24
+  period:
+    - url: https://en.wikipedia.org/wiki/1929_Barcelona_International_Exposition
+      source: wikipedia-en-1929-barcelona-international-exposition
+      accessed: 2026-11-24
+    - url: https://es.wikipedia.org/wiki/Exposición_Internacional_de_Barcelona_(1929)
+      source: wikipedia-es-exposicion-internacional-de-barcelona-1929
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q283454

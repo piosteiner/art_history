@@ -87,6 +87,14 @@ relationships:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q208208
+  - type: participated_in
+    to: event/exposition-universelle-of-1900
+    label: exhibited
+    notes_md: "'Philosophy' in the Austrian pavilion — gold medal (Grand Prix)"
+    sources:
+      - url: https://www.klimt-database.com/en/klimts-artworks/1898-1900/cradle-of-modernism/
+        source: klimt-foundation-klimt-cradle-of-modernism-raquo-gustav-klimt-datenbank
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/2/2e/Gustav_Klimt_1912.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_1912.jpg

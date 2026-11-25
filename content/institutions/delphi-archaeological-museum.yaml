@@ -2,15 +2,43 @@ public_id: 123116
 name: Delphi Archaeological Museum
 kind: museum
 founded: 1903
+place: municipal-unit-of-delphi
+location: [22.49984, 38.48029]
+address: Τ.Κ. 33054
+website_url: http://odysseus.culture.gr/h/1/eh155.jsp?obj_id=3404
 wikidata_id: Q636928
 metadata:
   sources: [Wikidata Q636928 (retrieved 2026-11-23)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/66/Museuarqueologicodelfos.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Museuarqueologicodelfos.jpg
+    license: CC BY-SA 2.5
+    credit: Ricardo André Frantz (User:Tetraktys)
+identifiers:
+  bnf: 12236453j
+  gnd: 5245755-2
+  idref: "031077560"
+  lc: n85090983
+  ulan: "500306710"
+  viaf: "145993304"
 sources:
   kind:
     - accessed: 2026-11-23
       property: P31
       wikidata: Q636928
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q636928
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q636928
   founded:
     - accessed: 2026-11-23
       property: P571
+      wikidata: Q636928
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q636928

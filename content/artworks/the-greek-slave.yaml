@@ -1,0 +1,56 @@
+public_id: 130190
+title: The Greek Slave
+names:
+  - text: Greek Slave
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3203228
+  - lang: fr
+    role: translation
+    text: L'Esclave grecque
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3203228
+  - lang: it
+    role: translation
+    text: La schiava greca
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3203228
+  - lang: es
+    role: translation
+    text: La esclava griega
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3203228
+  - lang: ko
+    role: translation
+    text: 그리스인 노예
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3203228
+  - lang: ru
+    role: translation
+    text: Греческая рабыня
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q3203228
+creator: hiram-powers
+location: [-1.80194, 54.59083]
+wikidata_id: Q3203228
+metadata:
+  sources: [Wikidata Q3203228 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/26/The_Greek_Slave.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Greek_Slave.jpg
+    license: Public domain
+    credit: Ragesoss
+sources:
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q3203228
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3203228

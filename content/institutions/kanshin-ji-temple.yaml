@@ -1,3 +1,40 @@
 public_id: 127869
 name: Kanshin-ji Temple
+kind: temple
+founded: 701
+place: kawachinagano
+location: [135.59833, 34.43722]
+address: 大阪府河内長野市寺元475
+website_url: https://www.kanshinji.com/
 wikidata_id: Q1088470
+metadata:
+  sources: [Wikidata Q1088470 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Kanshinji_Kondou.jpg/1280px-Kanshinji_Kondou.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kanshinji_Kondou.jpg
+    license: CC BY-SA 3.0
+    credit: Original uploader was Ｈｉｒｏ２００６ at ja.wikipedia
+identifiers:
+  lc: nr2003036970
+  viaf: "124795109"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1088470
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1088470
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q1088470
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1088470
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1088470

@@ -1,0 +1,84 @@
+public_id: 130237
+name: Pierre Jeanneret
+given_name: Pierre
+family_name: Jeanneret
+names:
+  - lang: fr
+    role: original
+    text: Pierre Andre Jeanneret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q115575
+  - text: Arnold André Pierre Jeanneret-Gris
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q115575
+  - text: Arnold André Pierre Jeanneret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q115575
+  - text: Arnold Andre Pierre Jeanneret-Gris
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q115575
+  - text: Arnold Andre Pierre Jeanneret
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q115575
+  - lang: ja
+    role: translation
+    text: ピエール・ジャンヌレ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q115575
+  - lang: zh
+    role: translation
+    text: 皮埃尔·让纳雷
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q115575
+  - lang: ru
+    role: translation
+    text: Пьер Жаннере
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q115575
+birth: 1896-03-22
+death: 1967-12-04
+wikidata_id: Q115575
+metadata:
+  sources: [Wikidata Q115575 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/international-exhibition-of-modern-decorative-and-industrial-arts
+    label: architect
+    notes_md: Co-designer of the Pavillon de l'Esprit Nouveau
+    sources:
+      - url: https://en.wikipedia.org/wiki/Pavillon_de_l%27Esprit_Nouveau
+        source: wikipedia-en-pavillon-de-lesprit-nouveau
+        accessed: 2026-11-24
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4a/Pierre_Jeanneret_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Jeanneret_(cropped).jpg
+    license: CC BY-SA 3.0
+    credit: Casa le roche
+identifiers:
+  bnf: "119749222"
+  gnd: "118557246"
+  hls: "043068"
+  idref: "027780112"
+  kulturnav: 668a8a1b-44e7-40f6-9fcb-0414edbf2040
+  lc: n82232821
+  nlk: KAC201227247
+  rkd: "264007"
+  ulan: "500004442"
+  viaf: "47554080"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q115575
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q115575

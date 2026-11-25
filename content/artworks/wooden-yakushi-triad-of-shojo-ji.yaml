@@ -1,0 +1,39 @@
+public_id: 124992
+title_lang: en
+title: Wooden Yakushi Triad of Shōjō-ji
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 勝常寺薬師三尊像
+created: 9th century
+created_span: uncertain
+institution: shojo-ji
+wikidata_id: Q107044827
+metadata:
+  sources: [Wikidata Q107044827 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Statue_of_yakushi_nyorai_of_Shojo-ji%2C_Fukushima.jpg/1280px-Statue_of_yakushi_nyorai_of_Shojo-ji%2C_Fukushima.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Statue_of_yakushi_nyorai_of_Shojo-ji,_Fukushima.jpg
+    license: Public domain
+    credit: Unknown author
+provenance:
+  - owner: institution/shojo-ji
+    acquired: early 9th century
+    method: creation
+    place: yugawa
+    label: zelkova figures made locally in the first half of the 9th century; the temple's tradition of founding by the Hossō monk Tokuitsu (Kōnin era, 810–824) is unproven, his involvement likely; the attendants now in the storehouse
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/286
+        note: その用材からは当地における製作とみられる … その製作時期は九世紀も前半にさかのぼるとみられる。… 当寺にも徳一開創の伝承があり … 所有者名 ： 勝常寺
+        source: kunishitei-201-286
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%8B%9D%E5%B8%B8%E5%AF%BA&oldid=111745079
+        note: 勝常寺は平安時代初期の弘仁年間（810年 - 824年）に法相宗の学僧・徳一（760?年 - 835?年）によって開かれたといわれている。… もとは3体とも薬師堂に安置されていたが、両脇侍像は収蔵庫に移されている。
+        source: jawiki-shojoji
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107044827

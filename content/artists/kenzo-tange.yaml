@@ -38,6 +38,14 @@ relationships:
       - accessed: 2026-11-02
         property: P19
         wikidata: Q151794
+  - type: participated_in
+    to: event/expo-70
+    label: architect
+    notes_md: Master plan (with Nishiyama Uzō) and Festival Plaza Big Roof
+    sources:
+      - url: https://en.wikipedia.org/wiki/Expo_%2770
+        source: wikipedia-en-expo-70
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Kenzo_Tange_1981.jpg/1280px-Kenzo_Tange_1981.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kenzo_Tange_1981.jpg

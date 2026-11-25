@@ -1,0 +1,83 @@
+public_id: 129431
+name: Ishikawa Prefecture
+names:
+  - lang: ja
+    role: original
+    text: 石川県
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q131281
+  - lang: zh
+    role: translation
+    text: 石川县
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q131281
+  - lang: ko
+    role: translation
+    text: 이시카와현
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q131281
+  - lang: fr
+    role: translation
+    text: Préfecture d'Ishikawa
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q131281
+  - lang: de
+    role: translation
+    text: Präfektur Ishikawa
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q131281
+  - lang: it
+    role: translation
+    text: Prefettura di Ishikawa
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q131281
+  - lang: nl
+    role: translation
+    text: Prefectuur Ishikawa
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q131281
+  - lang: es
+    role: translation
+    text: Prefectura de Ishikawa
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q131281
+  - lang: ru
+    role: translation
+    text: Исикава
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q131281
+  - lang: pt
+    role: translation
+    text: Prefeitura de Ishikawa
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q131281
+kind: settlement
+parent: japan
+country_code: JP
+location: [136.625, 36.595]
+wikidata_id: Q131281
+metadata:
+  sources: [Wikidata Q131281 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q131281
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q131281
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q131281

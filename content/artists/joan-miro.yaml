@@ -50,6 +50,14 @@ relationships:
       - accessed: 2026-11-03
         property: P135
         wikidata: Q152384
+  - type: participated_in
+    to: event/paris-international-exposition-1937
+    label: exhibited
+    notes_md: Mural The Catalan Peasant in Revolt (The Reaper), lost
+    sources:
+      - url: https://www.museunacional.cat/en/node/143568
+        source: museu-nacional-dart-the-pavilion-of-the-spanish-republic-in-paris-museu-nacional-dart-de-c
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Joan_Miro_%28cropped%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Joan_Miro_(cropped).jpg

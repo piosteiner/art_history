@@ -1,3 +1,31 @@
 public_id: 129237
 name: Anju-in
+kind: temple
+place: okayama
+location: [133.95041, 34.66322]
+address: 岡山県岡山市中区国富3-1-29
 wikidata_id: Q11450265
+metadata:
+  sources: [Wikidata Q11450265 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Anjuuin_04.JPG/1280px-Anjuuin_04.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Anjuuin_04.JPG
+    license: CC BY-SA 3.0
+    credit: Reggaeman
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11450265
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11450265
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11450265
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11450265

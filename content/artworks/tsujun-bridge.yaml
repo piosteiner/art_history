@@ -43,6 +43,34 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Tsujyunkyo.jpg
     license: CC BY-SA 3.0
     credit: masamic
+provenance:
+  - owner: person/futa-yasunosuke
+    acquired: 1854
+    method: commission
+    place: yamato
+    label: stone aqueduct bridge of the Tsūjun irrigation channel, planned by Futa Yasunosuke, headman of the Yabe tenaga (Kumamoto domain); built December 1852 – August 1854 by the Taneyama masons under Uichi
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3578
+        note: 嘉永7年（1854）に建設された石造水路橋。… 熊本藩領の手永役人と当時最高水準の技術力を誇った石工集団が、実験や藩との協議を繰り返す中で創出したものである。
+        source: kunishitei-102-3578
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%80%9A%E6%BD%A4%E6%A9%8B&oldid=110811439
+        note: 建造にあたっては地元の惣庄屋であった布田保之助が中心となって計画を立案。地元の役所・矢部手永の資金や、細川藩の資金を借り、熊本八代の種山村にあった著名な石工技術者集団種山石工に協力をあおぎ … 通潤橋の工事は、1852年（嘉永5年）12月に開始され、約1年8ヶ月の長い期間をかけて1854年（嘉永7年・安政元年）8月に完成した。
+        source: wikipedia-ja-tsujunkyo
+        accessed: 2026-11-24
+  - owner: place/yamato
+    co_owners: [institution/tsujun-district-land-improvement-district]
+    place: yamato
+    label: owned jointly today by the town of Yamato and the Tsūjun land improvement district; National Treasure 2023, the first civil-engineering structure so designated
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/3578
+        note: 所在地 ： 熊本県上益城郡山都町城原・長原、畑 … 所有者名 ： 山都町、通潤地区土地改良区 所有者種別 ： 市区町村
+        source: kunishitei-102-3578
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%80%9A%E6%BD%A4%E6%A9%8B&oldid=110811439
+        note: 2023年（令和5年）9月25日、国宝に指定された。橋など土木構造物としての国宝指定は全国初
+        source: wikipedia-ja-tsujunkyo
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

@@ -2,15 +2,36 @@ public_id: 123172
 name: Archaeological Museum of Piraeus
 kind: museum
 founded: 1935
+place: piraeus
+location: [23.64444, 37.93722]
+website_url: http://odysseus.culture.gr/h/1/eh155.jsp?obj_id=3371
 wikidata_id: Q637040
 metadata:
   sources: [Wikidata Q637040 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/7651_-_Piraeus_Arch._Museum%2C_Athens_-_Greek_theatre_-_Photo_by_Giovanni_Dall%27Orto%2C_Nov_14_2009.jpg/1280px-7651_-_Piraeus_Arch._Museum%2C_Athens_-_Greek_theatre_-_Photo_by_Giovanni_Dall%27Orto%2C_Nov_14_2009.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:7651_-_Piraeus_Arch._Museum,_Athens_-_Greek_theatre_-_Photo_by_Giovanni_Dall%27Orto,_Nov_14_2009.jpg
+    license: Attribution
+    credit: Giovanni Dall'Orto.
+identifiers:
+  gnd: 5505070-0
+  lc: no00030300
+  ulan: "500311324"
+  viaf: "135788833"
 sources:
   kind:
     - accessed: 2026-11-24
       property: P31
       wikidata: Q637040
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q637040
   founded:
     - accessed: 2026-11-24
       property: P571
+      wikidata: Q637040
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q637040

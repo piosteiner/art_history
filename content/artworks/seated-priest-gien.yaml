@@ -15,6 +15,9 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107046079
+created: 8th century
+created_span: uncertain
+institution: oka-dera
 wikidata_id: Q107046079
 metadata:
   sources: [Wikidata Q107046079 (retrieved 2026-11-24)]
@@ -30,3 +33,35 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Seated_Priest_Gien_(Oka-dera_Temple).jpg
     license: Public domain
     credit: Unknown author
+provenance:
+  - owner_label: unknown sculptor
+    acquired: 8th century
+    method: creation
+    label: wood-core dry-lacquer seated portrait of the priest Gien (643–728), Nara period
+    certainty: probable
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/269
+        note: 時代 ： 奈良 … 解説文： 奈良時代の作品。
+        source: kunishitei-201-269
+        accessed: 2026-11-24
+  - owner: institution/oka-dera
+    place: asuka
+    label: held by Oka-dera (Ryūgai-ji), the temple Gien is said to have founded; the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/269
+        note: 所有者名 ： 岡寺
+        source: kunishitei-201-269
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=岡寺&oldid=111566552
+        note: 開山 = 伝・義淵 … 木心乾漆義淵僧正坐像 - 奈良時代。
+        source: jawiki-oka-dera
+        accessed: 2026-11-24
+  - owner: institution/nara-national-museum
+    role: custodian
+    place: nara
+    label: deposited with the Nara National Museum (date not stated)
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=岡寺&oldid=111566552
+        note: 木心乾漆義淵僧正坐像 - 奈良時代。目尻が垂れ下がり、皺の多い独特の容貌 … 奈良国立博物館寄託。
+        source: jawiki-oka-dera
+        accessed: 2026-11-24

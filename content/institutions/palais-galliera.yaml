@@ -1,3 +1,43 @@
 public_id: 126889
 name: Palais Galliera
+kind: museum
+founded: 1895
+place: paris
+location: [2.29667, 48.86556]
+address: 10 avenue Pierre-Ier-de-Serbie, 75016 Paris, France
+website_url: https://www.palaisgalliera.paris.fr/
 wikidata_id: Q1632912
+metadata:
+  sources: [Wikidata Q1632912 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Mus%C3%A9e_Galliera%2C_Paris_21_July_2017.jpg/1280px-Mus%C3%A9e_Galliera%2C_Paris_21_July_2017.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Galliera,_Paris_21_July_2017.jpg
+    license: CC0
+    credit: Joe deSousa
+identifiers:
+  bnf: "118649471"
+  gnd: 4367056-8
+  idref: "026393638"
+  lc: n50055363
+  viaf: "167633766"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1632912
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1632912
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q1632912
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1632912
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1632912

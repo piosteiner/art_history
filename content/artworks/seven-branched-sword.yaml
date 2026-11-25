@@ -57,6 +57,48 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Seven-Branched_Sword.jpg
     license: Public domain
     credit: Unknown author
+provenance:
+  - owner_label: court of Paekche (Baekje)
+    acquired: 369
+    method: creation
+    label: made in Paekche for the King of Wa (inscription); 369 if the era name is read as Taihe 4 of the Eastern Jin — other readings give 362, 408 or 468
+    certainty: probable
+    sources:
+      - url: https://web.archive.org/web/20210303013836/http://www.isonokami.jp/about/c4_2.html
+        note: 「泰和（たいわ）」として東晋（とうしん）の年号「太和」（西暦366～371）の音の仮借とみる説があり、それによるとこの七支刀は西暦369年に製作されたと考えられます。… 先世以来未有此刀百済□世□奇生聖音故爲倭王旨造□□□世
+        source: isonokami-shichishito
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E4%B8%83%E6%94%AF%E5%88%80&oldid=111706778
+        note: 「泰□（和）四年（東晋の太和4年（紀元369年）にあてる説が有力）」に、百済王（近肖古王）の世子（継承者、近仇首王）が倭王のために百兵を退ける力をもった七支刀を作った、との趣旨が読み取れる。
+        source: wikipedia-ja-shichishito
+        accessed: 2026-11-24
+  - owner_label: the King of Wa (Yamato ruler)
+    acquired_label: Empress Jingū's regency, year 52, in the Nihon Shoki
+    method: gift
+    label: presented by Paekche; identified with the 'seven-branched sword' (nanatsusaya no tachi) of the Nihon Shoki
+    certainty: probable
+    sources:
+      - url: https://web.archive.org/web/20210303013836/http://www.isonokami.jp/about/c4_2.html
+        note: この七支刀は『日本書紀』に神功皇后摂政52年に百済から献上されたとみえる「七枝刀（ななつさやのたち）」にあたると推測されており
+        source: isonokami-shichishito
+        accessed: 2026-11-24
+  - owner: institution/isonokami-jingu
+    acquired_label: since antiquity
+    place: tenri
+    label: handed down at the shrine, used as a ritual 'six-pronged halberd' at rice planting; the gold-inlaid inscription found by chief priest Kan Masatomo after 1874; the shrine holds it today
+    sources:
+      - url: https://web.archive.org/web/20210303013836/http://www.isonokami.jp/about/c4_2.html
+        note: 伝世の社宝 七支刀（しちしとう） ［ 国宝 ］
+        source: isonokami-shichishito
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E4%B8%83%E6%94%AF%E5%88%80&oldid=111706778
+        note: 石上神宮ではその由来は忘れ去られ、「六叉の鉾（ろくさのほこ）」と呼び … 1874年（明治7年）、同神宮大宮司となった菅政友は … 剣身に金象嵌銘文が施されていることを発見し
+        source: wikipedia-ja-shichishito
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/w/index.php?title=Seven-Branched_Sword&oldid=1382794448
+        note: The original sword has been conserved since antiquity in the Isonokami Shrine in Nara Prefecture, Japan and is not on public display.
+        source: wikipedia-en-seven-branched-sword
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

@@ -1,3 +1,45 @@
 public_id: 127626
 name: National Gallery of Canada
+kind: museum
+founded: 1880
+place: ottawa
+location: [-75.69891, 45.42954]
+address: 380 Sussex Drive, Ottawa, ON, Canada K1N 9N4
+website_url: https://www.gallery.ca/
+collection_url: https://www.gallery.ca/collection/search-the-collection
 wikidata_id: Q1068063
+metadata:
+  sources: [Wikidata Q1068063 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Ottawa_-_ON_-_National_Gallery_of_Canada.jpg/1280px-Ottawa_-_ON_-_National_Gallery_of_Canada.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ottawa_-_ON_-_National_Gallery_of_Canada.jpg
+    license: CC BY-SA 3.0
+    credit: – Wladyslaw [Disk.]
+identifiers:
+  bnf: "118812155"
+  gnd: 1003320-8
+  idref: "029759285"
+  lc: n79043161
+  ulan: "500309817"
+  viaf: "152365555"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1068063
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1068063
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q1068063
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1068063
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1068063

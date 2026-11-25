@@ -1,0 +1,47 @@
+public_id: 130100
+name: Ohtawara
+names:
+  - lang: ja
+    role: original
+    text: 大田原市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q386322
+  - lang: ko
+    role: translation
+    text: 오타와라시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q386322
+  - lang: fr
+    role: translation
+    text: Ōtawara
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q386322
+  - lang: ru
+    role: translation
+    text: Отавара
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q386322
+kind: settlement
+parent: japan
+country_code: JP
+location: [140.01594, 36.87097]
+wikidata_id: Q386322
+metadata:
+  sources: [Wikidata Q386322 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q386322
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q386322
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q386322

@@ -1,3 +1,39 @@
 public_id: 127426
 name: Seihaku-ji
+kind: temple
+founded: 1333
+place: yamanashi
+location: [138.70833, 35.69389]
+address: 山梨県山梨市三ケ所620
+website_url: https://seihakuji.com/
 wikidata_id: Q3477895
+metadata:
+  sources: [Wikidata Q3477895 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/%E6%B8%85%E7%99%BD%E5%AF%BA%E4%BB%8F%E6%AE%BF.JPG/1280px-%E6%B8%85%E7%99%BD%E5%AF%BA%E4%BB%8F%E6%AE%BF.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:%E6%B8%85%E7%99%BD%E5%AF%BA%E4%BB%8F%E6%AE%BF.JPG
+    license: CC BY-SA 3.0
+    credit: Shouichin
+identifiers:
+  viaf: "253574928"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3477895
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3477895
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3477895
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3477895
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3477895

@@ -21,6 +21,69 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Urheber*in_unbekannt_Rattlesnake_Museum_Rietberg_RMA_0001.jpg
     license: CC0
     credit: Museum Rietberg
+provenance:
+  - owner_label: Urheber*in unbekannt
+    acquired_label: 15./16. Jh.
+    method: creation
+    label: made by an unknown Aztec maker in Mexico, 15th/16th century
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-1
+        note: "15./16. Jh.: Urheber*in unbekannt, Urheber*in, Mexiko"
+        source: rietberg-rma-1
+        accessed: 2026-11-24
+  - owner: person/alexander-von-humboldt
+    acquired: 1798/1808
+    acquired_label: um 1803–1804
+    label: circumstances of acquisition unknown (marked '?' in the record)
+    certainty: possible
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-1
+        note: |-
+          um 1803–1804: Alexander von Humboldt (1769–1859), Erwerbsumstände unbekannt (?)
+          Leuzinger, Museum Rietberg der Stadt Zürich, tiré à part, n°33, 1969, S. 44.
+        source: rietberg-rma-1
+        accessed: 2026-11-24
+  - owner: institution/ethnologisches-museum
+    acquired_label: um 1803–1804 (as given in the record)
+    place: berlin
+    label: "'via Alexander von Humboldt' according to the With inventory, not confirmed by the Berlin museum"
+    certainty: possible
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-1
+        note: |-
+          um 1803–1804: Ethnologisches Museum, Berlin (1873), Erwerbsumstände unbekannt
+          Inventar With, "über Alexander von Humboldt" - vom Vöku Berlin aber nicht bestätigt
+        source: rietberg-rma-1
+        accessed: 2026-11-24
+  - owner: person/walter-bondy
+    acquired: 1920/1930
+    acquired_label: um 1920–1930
+    label: circumstances of acquisition unknown (With inventory; auction catalogues of 1927 and 1928 still to be checked)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-1
+        note: |-
+          um 1920–1930: Walter Bondy, Erwerbsumstände unbekannt
+          Inventar With. Auktionskataloge 1927 und 1928 prüfen!
+        source: rietberg-rma-1
+        accessed: 2026-11-24
+  - owner: person/eduard-von-der-heydt
+    acquired: before 1932
+    label: collector
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-1
+        note: "vor 1932: Eduard von der Heydt (1882–1964), Sammler*in"
+        source: rietberg-rma-1
+        accessed: 2026-11-24
+  - owner: institution/museum-rietberg
+    acquired: before 1964
+    method: gift
+    place: zurich
+    label: gift of Eduard von der Heydt (credit line)
+    sources:
+      - url: https://rietberg.ch/sammlungen/rma-1
+        note: "vor 1964: Museum Rietberg, als Geschenk erhalten, in Zürich"
+        source: rietberg-rma-1
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

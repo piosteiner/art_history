@@ -21,6 +21,146 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_R%C3%AAverie_(1862).jpg
     license: Public domain
     credit: Gustave Courbet
+provenance:
+  - owner_label: Dussol
+    label: Collection Dussol
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: Collection Dussol;
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1884-03-17
+    method: auction
+    direct: true
+    place: paris
+    label: sale, Hôtel Drouot, Paris, 17 March 1884, lot 26 (La Chronique de la Curiosité 1884)
+    price:
+      amount: 1950
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: sold, Hôtel Drouot, Paris, March 17, 1884, lot 26 for 1,950 francs [according to La Chronique de la Curiosité 1884, and letter of November 13, 1987 from Stephen Hahn, in curatorial file].
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner_label: Martin
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: Martin; his estate sale, Hôtel Drouot, Paris, April 4-7, 1892, lot 26 (ill.) for 1,800 francs
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1892-04
+    method: auction
+    direct: true
+    place: paris
+    label: Martin's estate sale, Hôtel Drouot, Paris, 4–7 April 1892, lot 26 (ill.) (La Chronique de la Curiosité 1892)
+    price:
+      amount: 1800
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: his estate sale, Hôtel Drouot, Paris, April 4-7, 1892, lot 26 (ill.) for 1,800 francs [according to La Chronique de la Curiosité 1892, and letter cited above].
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner: person/theodore-duret
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: Théodore Duret [according to letter citied above and Fernier 1977].
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner: person/edouard-larcade
+    acquired: 1922 or earlier
+    place: paris
+    label: as E. Larcade; lent to Paris 1922
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: E. Larcade, 1922 [lent to Paris 1922].
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner_label: Mlle Sée, Paris
+    place: paris
+    label: Collection Mlle Sée
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: Collection Mlle Sée, Paris, until purchased jointly by Bernheim-Jeune, Paris and Paul Rosenberg & Co., Paris, on December 8, 1925
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    co_owners: [person/paul-rosenberg]
+    role: dealer
+    acquired: 1925-12-08
+    method: purchase
+    direct: true
+    place: paris
+    label: bought jointly; Bernheim-Jeune stock no. 24.513
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: purchased jointly by Bernheim-Jeune, Paris and Paul Rosenberg & Co., Paris, on December 8, 1925  [Bernheim Jeune stock no. 24.513, information from letter of July 11, 2000 from Guy-Pactrice Dauberville, Bernheim-Jeune, in curatorial file];
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner: person/alphonse-kann
+    acquired: 1931-04-08
+    method: purchase
+    direct: true
+    place: saint-germain-en-laye
+    label: St. Germain-en-Laye and London
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: sold by them to Alphonse Kann (died 1948), St. Germain-en-Laye and London on April 8, 1931 [according to Dauberville's letter cited above];
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner: person/michael-stewart
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: by descent to Michael Stewart, London;
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner: institution/arthur-tooth-sons
+    role: agent
+    acquired: 1959
+    direct: true
+    place: london
+    label: sold by Michael Stewart through Arthur Tooth (information from Madeleine Korn; Art News 1960, Fernier 1977)
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: sold by him through Arthur Tooth, London, 1959 [information supplied by Madeleine Korn; see also Art News 1960 and Fernier 1977].
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner: institution/galerie-alfred-daber
+    role: dealer
+    acquired: 1960 or earlier
+    ended_label: until at least 1975
+    place: paris
+    label: lent to Copenhagen 1960 and Paris 1975
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: Alfred Daber Galerie, Paris by 1960 until at least 1975 [lent to Copenhagen 1960 and Paris 1975].
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner: person/stephen-hahn
+    acquired: 1983 or earlier
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: Stephen Hahn, New York by 1983;
+        source: aic-1987-259
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1987
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/93342
+        note: sold to the Art Institute, 1987.
+        source: aic-1987-259
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

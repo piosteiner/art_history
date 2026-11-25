@@ -1,0 +1,39 @@
+public_id: 124997
+title_lang: en
+title: Seated Clay Miroku Buddha of Taima-dera
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 當麻寺弥勒仏坐像
+created: 7th century
+created_span: uncertain
+institution: taima-dera
+wikidata_id: Q107045979
+metadata:
+  sources: [Wikidata Q107045979 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/26/Maitreya_Buddha_Taimadera.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Maitreya_Buddha_Taimadera.JPG
+    license: Public domain
+    credit: OGAWA SEIYOU
+provenance:
+  - owner: institution/taima-dera
+    acquired: late 7th century
+    method: creation
+    place: katsuragi
+    label: "clay main image of the Golden Hall (Kondō), from the temple's founding; temple tradition: installed by Taima no Kunimi in 681; pedestal shows fire damage, probably from the 1180–81 burning of Nara"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/205
+        note: 時代 ： 飛鳥 … 所有者名 ： 当麻寺
+        source: kunishitei-201-205
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?oldid=111743361
+        note: 金堂本尊。日本最古の塑像。…如来形の弥勒像で、様式から當麻寺創建時の7世紀末頃の作と推定され … 当麻国見によって天武天皇10年（681年）に金堂に本尊として弥勒仏が祀られて現在の當麻寺が始まったという
+        source: jawiki-111743361
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107045979

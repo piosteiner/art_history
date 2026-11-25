@@ -1,0 +1,114 @@
+public_id: 130243
+name: Josep Lluís Sert
+given_name: Josep Lluís
+family_name: Sert
+names:
+  - lang: ca
+    role: original
+    text: Josep Lluís Sert i López
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - text: Jose Lluis Sert i Lopez
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - text: Josep Lluis Sert
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - text: José Lluís Sert i López
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - text: Jose Luis Sert
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - text: José Luis Sert
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - text: Jose Luis Sert i Lopez
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - text: Josep Lluis Sert López
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - text: Josep Lluis Sert Lopez
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - text: Josep Lluis Sert i Lopez
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - text: José Luis Sert i López
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - lang: ja
+    role: translation
+    text: ホセ・ルイ・セルト
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - lang: zh
+    role: translation
+    text: 何塞普‧路易‧塞特
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - lang: ko
+    role: translation
+    text: 주제프 류이스 세르트
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+  - lang: ru
+    role: translation
+    text: Хосеп Льюис Серт
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q467712
+birth: 1902-07-01
+death: 1983-03-15
+wikidata_id: Q467712
+metadata:
+  sources: [Wikidata Q467712 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/paris-international-exposition-1937
+    label: architect
+    notes_md: Spanish Republic pavilion (with Lacasa); commissioned Calder's fountain
+    sources:
+      - url: https://guernica.museoreinasofia.es/en/node/6
+        source: museo-nacional-centro-the-endurance-of-the-pavilion-of-1937-repensar-guernica
+        accessed: 2026-11-24
+      - url: https://calder.org/works/unusual-project/mercury-fountain-1937
+        source: calder-foundation-mercury-fountain-1937-calder-foundation
+        accessed: 2026-11-24
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Josep_Llu%C3%ADs_Sert_i_L%C3%B3pez_%281981%29_%28cropped%29.jpg/1280px-Josep_Llu%C3%ADs_Sert_i_L%C3%B3pez_%281981%29_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Josep_Llu%C3%ADs_Sert_i_L%C3%B3pez_(1981)_(cropped).jpg
+    license: Attribution
+    credit: Generalitat de Catalunya, Departament de la Presidència
+identifiers:
+  bnf: 14602503n
+  gnd: "118824856"
+  idref: "072471662"
+  lc: n79056383
+  rkd: "258508"
+  ulan: "500010456"
+  viaf: "98202670"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q467712
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q467712

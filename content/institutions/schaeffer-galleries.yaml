@@ -1,3 +1,30 @@
 public_id: 126093
 name: Schaeffer Galleries
+kind: gallery
+founded: 1925
+dissolved: 2000
+place: new-york-city
 wikidata_id: Q53790434
+metadata:
+  sources: [Wikidata Q53790434 (retrieved 2026-11-24)]
+identifiers:
+  idref: "261911627"
+  ulan: "500439895"
+  viaf: "203772947"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q53790434
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q53790434
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q53790434
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q53790434

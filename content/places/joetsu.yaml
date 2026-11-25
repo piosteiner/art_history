@@ -1,0 +1,47 @@
+public_id: 130065
+name: Joetsu
+names:
+  - lang: ja
+    role: original
+    text: 上越市
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q582289
+  - lang: ko
+    role: translation
+    text: 조에쓰시
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q582289
+  - lang: fr
+    role: translation
+    text: Jōetsu
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q582289
+  - lang: ru
+    role: translation
+    text: Дзёэцу
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q582289
+kind: settlement
+parent: japan
+country_code: JP
+location: [138.23608, 37.14786]
+wikidata_id: Q582289
+metadata:
+  sources: [Wikidata Q582289 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q582289
+  parent:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q582289
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q582289

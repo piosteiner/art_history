@@ -1,3 +1,36 @@
 public_id: 126565
 name: Hase-dera
+kind: temple
+founded: 686
+place: sakurai
+location: [135.90694, 34.53583]
+address: 奈良県桜井市初瀬731-1
+website_url: https://www.hasedera.or.jp/
 wikidata_id: Q1457787
+metadata:
+  sources: [Wikidata Q1457787 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Hasedera_Sakurai_Nara_pref58s5s4272.jpg/1280px-Hasedera_Sakurai_Nara_pref58s5s4272.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hasedera_Sakurai_Nara_pref58s5s4272.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  lc: no90009280
+  viaf: "153886516"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1457787
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q1457787
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1457787
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1457787

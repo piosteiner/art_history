@@ -1,0 +1,64 @@
+public_id: 130196
+title: Grand Palais
+names:
+  - lang: es
+    role: translation
+    text: Gran Palacio de París
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q457318
+  - lang: ja
+    role: translation
+    text: グラン・パレ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q457318
+  - lang: zh
+    role: translation
+    text: 巴黎大皇宫
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q457318
+  - lang: ko
+    role: translation
+    text: 그랑 팔레
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q457318
+  - lang: ru
+    role: translation
+    text: Большой дворец
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q457318
+creator: henri-deglane
+created: 1900
+location: [2.3125, 48.86611]
+wikidata_id: Q457318
+metadata:
+  sources: [Wikidata Q457318 (retrieved 2026-11-24)]
+relationships:
+  - type: created_in
+    to: place/paris
+    period: 1900
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Grand_Palais%2C_Paris_13_March_2019.jpg/1280px-Grand_Palais%2C_Paris_13_March_2019.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Grand_Palais,_Paris_13_March_2019.jpg
+    license: CC BY 2.0
+    credit: Ștefan Jurcă from Paris, France
+identifiers:
+  gnd: 4355615-2
+  viaf: "305991420"
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q457318
+  creator:
+    - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1900)
+      source: wikipedia-en-exposition-universelle-1900
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q457318

@@ -72,6 +72,15 @@ biography_md: |-
 wikidata_id: Q167816
 metadata:
   sources: [Wikidata Q167816 (retrieved 2026-11-07)]
+relationships:
+  - type: participated_in
+    to: event/paris-international-exposition-1937
+    label: architect
+    notes_md: Soviet pavilion; gold medal
+    sources:
+      - url: https://en.wikipedia.org/wiki/Exposition_Internationale_des_Arts_et_Techniques_dans_la_Vie_Moderne
+        source: wikipedia-en-exposition-internationale-des-arts-et-techniques-dans-la-vie-moderne
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Iofan_B.M._2.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Iofan_B.M._2.jpg

@@ -5,5 +5,19 @@ family_name: van Gogh
 kind: person
 birth: 1890-01-31
 death: 1978-01-28
+wikidata_id: Q2185351
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18)]
+relationships:
+  - type: child_of
+    to: person/johanna-van-gogh-bonger
+    sources:
+      - accessed: 2026-11-24
+        property: P40
+        wikidata: Q2554450
+  - type: child_of
+    to: person/theo-van-gogh
+    sources:
+      - accessed: 2026-11-24
+        property: P40
+        wikidata: Q2554450

@@ -4,6 +4,13 @@ kind: collection
 wikidata_id: Q46596638
 metadata:
   sources: [Wikidata Q46596638 (retrieved 2026-11-23)]
+relationships:
+  - type: part_of
+    to: institution/national-gallery-of-art
+    sources:
+      - accessed: 2026-11-24
+        property: P361
+        wikidata: Q46596638
 sources:
   kind:
     - accessed: 2026-11-23

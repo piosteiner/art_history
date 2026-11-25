@@ -2,4 +2,57 @@ public_id: 127675
 name: Jacques Doucet
 given_name: Jacques
 family_name: Doucet
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Antoine Jacques Doucet
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q1259209
+kind: person
+birth: 1853-02-19
+death: 1929-10-30
 wikidata_id: Q1259209
+metadata:
+  sources: [Wikidata Q1259209 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q1259209
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q1259209
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Caricature_of_Jacques_Doucet_by_Leonetto_Cappiello%2C_1903.jpg/1280px-Caricature_of_Jacques_Doucet_by_Leonetto_Cappiello%2C_1903.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caricature_of_Jacques_Doucet_by_Leonetto_Cappiello,_1903.jpg
+    license: Public domain
+    credit: Leonetto Cappiello
+identifiers:
+  bnf: 12395393p
+  gnd: "119175924"
+  idref: "033048010"
+  kulturnav: 4862900d-49d9-426c-9016-58f059a603ff
+  lc: n84059464
+  rkd: "441499"
+  ulan: "500088412"
+  viaf: "19761944"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1259209
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q1259209
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q1259209

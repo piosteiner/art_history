@@ -2,4 +2,44 @@ public_id: 127591
 name: Carmen Gronau
 given_name: Carmen
 family_name: Gronau
+kind: person
+birth: 1910-10-08
+death: 1999
 wikidata_id: Q98012717
+metadata:
+  sources: [Wikidata Q98012717 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q98012717
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q98012717
+  - type: born_in
+    to: place/freiburg-im-breisgau
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q98012717
+identifiers:
+  gnd: "1392466784"
+  viaf: "6530178467136935190004"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q98012717
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q98012717
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q98012717

@@ -6,6 +6,11 @@ kind: person
 wikidata_id: Q10513839
 metadata:
   sources: [Wikidata Q10513839 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/92/Deeds_of_the_Zen_Masters_Hotei.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Deeds_of_the_Zen_Masters_Hotei.jpg
+    license: Public domain
+    credit: Indara (因陀羅) (Yintuoluo)
 sources:
   kind:
     - accessed: 2026-11-24

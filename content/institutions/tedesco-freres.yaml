@@ -1,3 +1,26 @@
 public_id: 125993
 name: Tedesco Frères
+kind: gallery
+founded: 1846
+dissolved: 1941
+address: 21, avenue de Friedland, 75008, Paris
 wikidata_id: Q75986811
+metadata:
+  sources: [Wikidata Q75986811 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q75986811
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q75986811
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q75986811
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q75986811

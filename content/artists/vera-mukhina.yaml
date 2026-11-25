@@ -105,6 +105,22 @@ relationships:
       - accessed: 2026-11-13
         property: P802
         wikidata: Q314350
+  - type: participated_in
+    to: event/expo-58
+    label: exhibited
+    notes_md: Socialist Realist work in 50 ans d'art moderne
+    sources:
+      - url: https://post.moma.org/?p=2617
+        source: museum-of-modern-reluctantly-global-fifty-years-of-modern-art-at-the-1958-brussels-expo
+        accessed: 2026-11-24
+  - type: participated_in
+    to: event/paris-international-exposition-1937
+    label: exhibited
+    notes_md: Worker and Kolkhoz Woman on the Soviet pavilion
+    sources:
+      - url: https://en.wikipedia.org/wiki/Worker_and_Kolkhoz_Woman
+        source: wikipedia-en-worker-and-kolkhoz-woman
+        accessed: 2026-11-24
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Mikhail_Nesterov%2C_Vera_Mukhina%2C_1940%2C_Tretyakov_Gallery_26668%3B_from_goskatalog.ru.jpg/1280px-Mikhail_Nesterov%2C_Vera_Mukhina%2C_1940%2C_Tretyakov_Gallery_26668%3B_from_goskatalog.ru.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Mikhail_Nesterov,_Vera_Mukhina,_1940,_Tretyakov_Gallery_26668;_from_goskatalog.ru.jpg

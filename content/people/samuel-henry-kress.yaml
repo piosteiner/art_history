@@ -11,6 +11,12 @@ metadata:
 relationships:
   - type: founded
     to: institution/national-gallery-of-art
+  - type: founded
+    to: institution/samuel-h-kress-foundation
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q30272990
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/14/Sam_kress.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Sam_kress.jpg

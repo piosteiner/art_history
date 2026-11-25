@@ -1,3 +1,29 @@
 public_id: 126290
 name: Galleria Galatea
+kind: gallery
+founded: 1957
+dissolved: 1975
+place: turin
 wikidata_id: Q124735480
+metadata:
+  sources: [Wikidata Q124735480 (retrieved 2026-11-24)]
+identifiers:
+  idref: "253846420"
+  lc: n90648922
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q124735480
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q124735480
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q124735480
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q124735480

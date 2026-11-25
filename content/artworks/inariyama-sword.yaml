@@ -47,6 +47,54 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Inariyama_sword.JPG
     license: Public domain
     credit: Saigen Jiro
+provenance:
+  - owner: person/wowake-no-omi
+    acquired: 471
+    method: commission
+    label: made for Wowake no Omi, according to its inscription dated the xinhai year (471; some read 531), when he served Great King Wakatakeru (Yūryaku) at the Shiki palace
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%A8%B2%E8%8D%B7%E5%B1%B1%E5%8F%A4%E5%A2%B3%E5%87%BA%E5%9C%9F%E9%87%91%E9%8C%AF%E9%8A%98%E9%89%84%E5%89%A3&oldid=110589208
+        note: 其児名加差披余其児名乎獲居臣世々為杖刀人首奉事来至今獲加多支鹵大王寺在斯鬼宮時吾左治天下令作此百練利刀記吾奉事根原也 … 「辛亥年」は471年が定説であるが一部に531年説もある。
+        source: wikipedia-ja-inariyama-kofun-shutsudo-kinsakumei-tekken
+        accessed: 2026-11-24
+  - owner_label: excavators of the Inariyama Kofun
+    acquired: 1968
+    method: find
+    place: gyoda
+    label: excavated from the rear round mound of the Inariyama Kofun, Sakitama tomb group; the inscription found by X-ray in 1978
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%A8%B2%E8%8D%B7%E5%B1%B1%E5%8F%A4%E5%A2%B3%E5%87%BA%E5%9C%9F%E9%87%91%E9%8C%AF%E9%8A%98%E9%89%84%E5%89%A3&oldid=110589208
+        note: 1968年に行われた稲荷山古墳後円部の発掘調査で、画文帯環状乳神獣鏡などの副葬品とともに複数の鉄剣が出土した。そのうちの1振りについて、1978年に腐食防止のための保存処理とX線検査が行われ、両面に115文字の漢字が金象嵌されていることが判明した
+        source: wikipedia-ja-inariyama-kofun-shutsudo-kinsakumei-tekken
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/w/index.php?title=Inariyama%20Sword&oldid=1339763629
+        note: was excavated in 1968 at the Inariyama Kofun, a megalithic tomb located in Saitama Prefecture. In 1978, X-ray analysis revealed a gold-inlaid inscription
+        source: wikipedia-en-inariyama-sword
+        accessed: 2026-11-24
+  - owner: institution/agency-for-cultural-affairs
+    label: owned by the State of Japan (Agency for Cultural Affairs); National Treasure 1983 with the other finds
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%A8%B2%E8%8D%B7%E5%B1%B1%E5%8F%A4%E5%A2%B3%E5%87%BA%E5%9C%9F%E9%87%91%E9%8C%AF%E9%8A%98%E9%89%84%E5%89%A3&oldid=110589208
+        note: 現在の所有者は日本国（文化庁）で、埼玉古墳群近くの埼玉県立さきたま史跡の博物館内で、劣化を防ぐため窒素を封入したケースに保管・展示されている。
+        source: wikipedia-ja-inariyama-kofun-shutsudo-kinsakumei-tekken
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/872
+        note: 所在地 ： 埼玉県立さきたま史跡の博物館　埼玉県行田市大字埼玉4834 保管施設の名称 ： 埼玉県立さきたま史跡の博物館 所有者名 ： 国（文化庁）
+        source: kunishitei-201-872
+        accessed: 2026-11-24
+  - owner: institution/saitama-prefectural-museum-of-the-sakitama-ancient-burial-mounds
+    role: custodian
+    place: gyoda
+    label: kept and shown in a nitrogen-filled case
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%A8%B2%E8%8D%B7%E5%B1%B1%E5%8F%A4%E5%A2%B3%E5%87%BA%E5%9C%9F%E9%87%91%E9%8C%AF%E9%8A%98%E9%89%84%E5%89%A3&oldid=110589208
+        note: 埼玉古墳群近くの埼玉県立さきたま史跡の博物館内で、劣化を防ぐため窒素を封入したケースに保管・展示されている。
+        source: wikipedia-ja-inariyama-kofun-shutsudo-kinsakumei-tekken
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/872
+        note: 保管施設の名称 ： 埼玉県立さきたま史跡の博物館 所有者名 ： 国（文化庁）
+        source: kunishitei-201-872
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

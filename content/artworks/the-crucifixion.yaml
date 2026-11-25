@@ -35,6 +35,135 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Carlo_Crivelli_-_The_Crucifixion_-_1929.862_-_Art_Institute_of_Chicago.jpg
     license: Public domain
     credit: Carlo Crivelli
+provenance:
+  - owner: person/alexander-barker
+    place: london
+    label: died 1874 according to the record
+    sources:
+      - url: https://www.artic.edu/artworks/111622
+        note: Alexander Barker (died 1874) and his executors, London;
+        source: aic-1929-862
+        accessed: 2026-11-24
+  - owner_label: executors of Alexander Barker
+    role: estate
+    method: inheritance
+    direct: true
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/111622
+        note: Alexander Barker (died 1874) and his executors, London;
+        source: aic-1929-862
+        accessed: 2026-11-24
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1879-06-21
+    method: auction
+    direct: true
+    place: london
+    label: Barker sale, no. 472
+    sources:
+      - url: https://www.artic.edu/artworks/111622
+        note: sold Christie’s, London, June 21, 1879, no. 472,
+        source: aic-1929-862
+        accessed: 2026-11-24
+  - owner_label: Lesser
+    acquired: 1879-06-21
+    method: auction
+    direct: true
+    price:
+      amount: 100.8
+      currency: GBP
+      note: £100 16s
+    sources:
+      - url: https://www.artic.edu/artworks/111622
+        note: to Lesser for £100 16s [annotated catalogue at Frick Art Reference Library].
+        source: aic-1929-862
+        accessed: 2026-11-24
+  - owner: person/etienne-edmond-martin-de-beurnonville
+    place: paris
+    label: Baron E. de Beurnonville
+    sources:
+      - url: https://www.artic.edu/artworks/111622
+        note: Baron E. de Beurnonville, Paris;
+        source: aic-1929-862
+        accessed: 2026-11-24
+  - owner: person/charles-pillet
+    role: agent
+    not_sold: true
+    acquired: 1881-05-09
+    method: auction
+    direct: true
+    place: paris
+    label: Beurnonville sale, 9–16 May 1881, no. 632, bought in
+    sources:
+      - url: https://www.artic.edu/artworks/111622
+        note: offered for sale but bought in, Charles Pillet, Paris, May 9–16, 1881, no. 632;
+        source: aic-1929-862
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1883-05-21
+    method: auction
+    direct: true
+    place: paris
+    label: Beurnonville sale, 21–22 May 1883, no. 126 (Mireur 1911)
+    price:
+      amount: 2800
+      currency: AFRF
+    sources:
+      - url: https://www.artic.edu/artworks/111622
+        note: sold Hôtel Drouot, Paris, May 21–22, 1883, no.126, for Fr 2,800 [Mireur 1911].
+        source: aic-1929-862
+        accessed: 2026-11-24
+  - owner: person/joseph-spiridon
+    acquired: 1883 or earlier
+    place: rome
+    label: the 1929 sale catalogue wrongly says acquired from Beurnonville in 1876
+    certainty: probable
+    sources:
+      - url: https://www.artic.edu/artworks/111622
+        note: Joseph Spiridon, Rome, probably by 1883 [the catalogue of the 1929 Spiridon sale erroneously states that it was acquired from Beurnonville in 1876];
+        source: aic-1929-862
+        accessed: 2026-11-24
+  - owner: institution/galerie-paul-cassirer
+    co_owners: [institution/hugo-helbing]
+    role: agent
+    acquired: 1929-05-31
+    method: auction
+    direct: true
+    place: berlin
+    label: Spiridon sale, no. 15, pl. 23
+    sources:
+      - url: https://www.artic.edu/artworks/111622
+        note: sold Cassirer and Helbing, Berlin, May 31, 1929, no. 15, pl. 23,
+        source: aic-1929-862
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1929-05-31
+    method: auction
+    direct: true
+    place: london
+    label: Knoedler, London (which sold it to the Art Institute)
+    price:
+      amount: 250000
+      currency: RM
+      note: 250,000 marks
+    sources:
+      - url: https://www.artic.edu/artworks/111622
+        note: to Knoedler for 250,000 marks [annotated catalogue at Getty Center];
+        source: aic-1929-862
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1929
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/111622
+        note: sold by Knoedler, London, to Art Institute, 1929.
+        source: aic-1929-862
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

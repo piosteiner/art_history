@@ -46,6 +46,7 @@ names:
 created: 14th century
 created_span: uncertain
 materials: [Ryukyuan limestone, Fake]
+institution: government-of-japan
 location: [127.71948, 26.21703]
 wikidata_id: Q907052
 metadata:
@@ -59,6 +60,121 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Naha_Shuri_Castle51s3s4200.jpg
     license: CC BY 2.5
     credit: 663highland
+provenance:
+  - owner_label: Kings of Chūzan
+    acquired: 14th century
+    method: creation
+    place: naha
+    label: gusuku built in the middle to later 14th century (excavations) as the residence of the kings of Chūzan, one of the three kingdoms of Okinawa
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/911/42
+        note: 三山鼎立時には中山国王の居城で … これまでの発掘調査などの成果から、14世紀中葉から後半の築城であることが判明しています。
+        source: kunishitei-911-42
+        accessed: 2026-11-24
+  - owner: institution/ryukyu-kingdom
+    acquired: 1429
+    ended: 1879
+    direct: true
+    place: naha
+    label: royal castle of the Ryukyu Kingdom after the First Shō dynasty unified the three kingdoms; outer walls doubled under Shō Shin and Shō Sei (Second Shō dynasty)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/911/42
+        note: 1429年に琉球王国が成立した後は、1879年まで琉球王国の居城として王国の政治・経済・文化の中心的役割を果たしました。
+        source: kunishitei-911-42
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/401/3025
+        note: 第１尚氏による三山統一後に王城として確立した。その後、第２尚氏の尚真・尚清によって、王城東南石垣を二重にし、「継世門」を設け、今日の規模ができ上がったものであろう。
+        source: kunishitei-401-3025
+        accessed: 2026-11-24
+  - owner: institution/imperial-japanese-army
+    acquired: 1879
+    method: transfer
+    direct: true
+    place: naha
+    label: after Japan annexed the kingdom (Ryukyu Disposition, Okinawa Prefecture 1879) and King Shō Tai was made to move to Tokyo, used as barracks of the army's 6th Division (Kumamoto)
+    sources:
+      - url: https://en.wikipedia.org/w/index.php?title=Shuri_Castle&oldid=1387345659
+        note: In 1879, the kingdom was annexed by the Empire of Japan and the last king, Shō Tai, was compelled to move to Tokyo … Subsequently, the castle was used as a barracks by the Imperial Japanese Army.
+        source: wikipedia-en-shuri-castle
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%A6%96%E9%87%8C%E5%9F%8E&oldid=111876053
+        note: 琉球処分以後は、正殿など首里城の建物は政府の所在地としての役割を喪失し、日本陸軍の第6師団（熊本）の軍営として
+        source: wikipedia-ja-shuri-castle
+        accessed: 2026-11-24
+  - owner: institution/shuri-city
+    acquired: 1908
+    method: purchase
+    direct: true
+    place: naha
+    label: sold (払い下げ) to Shuri ward, later Shuri City; girls' schools on the grounds (1912); demolition of the Seiden halted 1923, made the worship hall of Okinawa Shrine and designated 1925, restored 1927–1932
+    sources:
+      - url: https://en.wikipedia.org/w/index.php?title=Shuri_Castle&oldid=1387345659
+        note: Shuri Castle was used as a military camp by the Imperial Japanese Army's 6th Division, until 1908, when Shuri City bought the castle; however, they did not have funding to renovate it.
+        source: wikipedia-en-shuri-castle
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%A6%96%E9%87%8C%E5%9F%8E&oldid=111876053
+        note: その後は首里区（後の首里市）に払い下げられ … 正殿の背後に沖縄神社を建立し、正殿を神社の拝殿と位置付けることで国の予算で修復できるよう取りはからった。 … 正殿は1925年（大正14年）に特別保護建造物（のち旧国宝）に指定された。（指定名称は「沖縄神社拝殿」）
+        source: wikipedia-ja-shuri-castle
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1945-05
+    label: "destroyed in the Battle of Okinawa: the 32nd Army's headquarters lay beneath it; shelled from 25 May 1945 (USS Mississippi), ablaze by 27 May; all wooden palace buildings lost"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/911/42
+        note: 正殿は琉球独特の宮殿建築で、戦前は国宝に指定されていましたが、第二次世界大戦で焼失し、平成4年に復元されました。
+        source: kunishitei-911-42
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/w/index.php?title=Shuri_Castle&oldid=1387345659
+        note: the American battleship Mississippi shelled it for three days and by 27 May it was ablaze.
+        source: wikipedia-en-shuri-castle
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 1950
+    label: the University of the Ryukyus established on the castle site, many remains removed or buried; it left by 1975 (en.wikipedia) or 1979 (ja.wikipedia)
+    sources:
+      - url: https://en.wikipedia.org/w/index.php?title=Shuri_Castle&oldid=1387345659
+        note: After the war, the University of the Ryukyus was established in 1950 on the castle site, where it remained until 1975.
+        source: wikipedia-en-shuri-castle
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%A6%96%E9%87%8C%E5%9F%8E&oldid=111876053
+        note: 戦後は首里城跡に琉球大学が置かれ、多くの遺構が撤去あるいは埋められた … 1979年（昭和54年）に、琉球大学が首里城跡から移転すると
+        source: wikipedia-ja-shuri-castle
+        accessed: 2026-11-24
+  - owner: institution/government-of-japan
+    acquired: 1992
+    method: commission
+    place: naha
+    label: Seiden and the central buildings reconstructed (begun November 1989) and opened 2 November 1992 as Shuri Castle Park (Okinawa Commemorative National Government Park); the buildings are state property; World Heritage 2000
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/911/42
+        note: 正殿は … 平成4年に復元されました。
+        source: kunishitei-911-42
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%A6%96%E9%87%8C%E5%9F%8E&oldid=111876053
+        note: 城郭に囲まれた国営沖縄記念公園首里城地区 … については、城壁等を沖縄県教育庁、建築施設等を国が整備し、国が運営管理を行っている … 建屋は国の所有であり
+        source: wikipedia-ja-shuri-castle
+        accessed: 2026-11-24
+  - owner: institution/okinawa-prefecture
+    role: custodian
+    acquired: 2019-02-01
+    place: naha
+    label: management and operation of the state-owned buildings passed from the state to Okinawa Prefecture
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%A6%96%E9%87%8C%E5%9F%8E&oldid=111876053
+        note: 建屋は国の所有であり、2019年（平成31年）2月1日以降、管理および運営が国から沖縄県に移管された。
+        source: wikipedia-ja-shuri-castle
+        accessed: 2026-11-24
+  - owner_label: unknown
+    role: event
+    acquired: 2019-10-31
+    label: "fire: Seiden, Hokuden and Nanden burnt with three more buildings; Seiden rebuilt from 2022, completion ceremony 22 November 2026"
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%A6%96%E9%87%8C%E5%9F%8E&oldid=111876053
+        note: 2019年（令和元年）10月31日未明の火災により、正殿を含む計6施設が焼失、2施設が一部焼失し … 2026年（令和8年）11月22日に首里城正殿の復元が完成
+        source: wikipedia-ja-shuri-castle
+        accessed: 2026-11-24
 identifiers:
   viaf: "1905149489086593810003"
 sources:

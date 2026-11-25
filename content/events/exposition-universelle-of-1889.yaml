@@ -1,0 +1,50 @@
+public_id: 130550
+name: Exposition Universelle of 1889
+names:
+  - lang: fr
+    role: original
+    text: Exposition universelle de 1889
+kind: world's fair
+period: 6 May – 31 October 1889
+place: paris
+location: [2.29416667, 48.85833333]
+description_md: |-
+  The fair marked the centenary of the French Revolution and was meant to stimulate the economy during a recession.[[source/wikipedia-en-exposition-universelle-1889]][[source/national-diet-library-fourth-paris-international-exposition-of-1889-part-1-expositions-hel]] Nearly all European monarchies, among them the United Kingdom, Germany, Austria-Hungary and Russia, boycotted it officially, though many of their citizens and firms took part privately.[[source/wikipedia-en-exposition-universelle-1889]][[source/wikipedia-fr-exposition-universelle-de-1889]] The colonial section on the Esplanade des Invalides, called the first true colonial exhibition in French history, included a "village nègre" in which some 400 people were displayed;[[source/wikipedia-fr-exposition-universelle-de-1889]][[source/wikipedia-en-exposition-universelle-1889]] the Senegalese jeweller Samba Lawbé Thiam, one of them, criticised its huts as not representing Senegal.[[source/wikipedia-en-exposition-universelle-1889]]
+
+  On the Champ de Mars, the main site, [[artist/gustave-eiffel|Gustave Eiffel]]'s firm built the [[artwork/eiffel-tower|Eiffel Tower]], its structure by [[artist/maurice-koechlin|Maurice Koechlin]] and [[artist/emile-nouguier|Émile Nouguier]], its design by [[artist/stephen-sauvestre|Stephen Sauvestre]].[[source/wikipedia-en-eiffel-tower]][[source/wikipedia-en-exposition-universelle-1889]] In 1887 artists led by Charles Garnier had protested against it in *Le Temps*; it survived and was preserved permanently in 1909.[[source/wikipedia-en-eiffel-tower]] The [[artwork/galerie-des-machines|Galerie des Machines]] by the architect [[artist/ferdinand-dutert|Ferdinand Dutert]] and the engineer [[artist/victor-contamin|Victor Contamin]], spanning 111 metres, was the fair's most admired pavilion, which Huysmans compared to a cathedral; reused in 1900, it was destroyed in 1910.[[source/wikipedia-fr-exposition-universelle-de-1889]][[source/wikipedia-en-exposition-universelle-1889]]
+
+  The Palaces of Fine Arts and of Liberal Arts, both by Jean-Camille Formigé, faced each other across a garden on the Champ de Mars.[[source/wikipedia-en-exposition-universelle-1889]] Left out of the official programme, [[artist/paul-gauguin|Paul Gauguin]] and his circle, among them [[artist/emile-bernard|Émile Bernard]] and [[person/emile-schuffenecker|Émile Schuffenecker]], who found the venue, showed about 100 paintings, prints and drawings at Volpini's Café des Arts on the Champ de Mars as the "Groupe impressionniste et synthétiste".[[source/cleveland-museum-of-an-exhibition-of-an-exhibition-cleveland-museum-of-art]][[source/cleveland-museum-of-gauguin-x27-s-volpini-suite-cleveland-museum-of-art]][[source/wikipedia-en-the-volpini-exhibition-1889]] Ignored by the press and a failure at the time, the show is now recognised as the first Symbolist exhibition.[[source/wikipedia-en-the-volpini-exhibition-1889]][[source/cleveland-museum-of-an-exhibition-of-an-exhibition-cleveland-museum-of-art]] [[person/theo-van-gogh|Theo van Gogh]] refused, for his brother Vincent, Gauguin's proposal to show six of Vincent's paintings there.[[source/wikipedia-en-the-volpini-exhibition-1889]] Gauguin's *Volpini Suite*, eleven zincographs on yellow paper named after the café owner, has motifs that recur in his later work.[[source/cleveland-museum-of-gauguin-x27-s-volpini-suite-cleveland-museum-of-art]]
+wikidata_id: Q957317
+relationships:
+  - type: concerns
+    to: artwork/eiffel-tower
+    sources:
+      - source: wikipedia-en-eiffel-tower
+        accessed: 2026-11-24
+      - source: wikipedia-en-exposition-universelle-1889
+        accessed: 2026-11-24
+  - type: concerns
+    to: artwork/galerie-des-machines
+    sources:
+      - source: wikipedia-fr-exposition-universelle-de-1889
+        accessed: 2026-11-24
+      - source: wikipedia-en-exposition-universelle-1889
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: wikipedia-en-exposition-universelle-1889
+  place:
+    - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1889)
+      source: wikipedia-en-exposition-universelle-1889
+      accessed: 2026-11-24
+  period:
+    - url: https://en.wikipedia.org/wiki/Exposition_Universelle_(1889)
+      source: wikipedia-en-exposition-universelle-1889
+      accessed: 2026-11-24
+    - url: https://ndl.go.jp/exposition/e/s1/1889.html
+      source: national-diet-library-fourth-paris-international-exposition-of-1889-part-1-expositions-hel
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q957317

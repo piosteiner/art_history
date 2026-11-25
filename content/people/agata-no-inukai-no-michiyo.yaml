@@ -2,4 +2,33 @@ public_id: 126671
 name: Agata no Inukai no Michiyo
 given_name: Agata no Inukai no
 family_name: Michiyo
+kind: person
+birth: 665
+death: 733-02-08
 wikidata_id: Q11582685
+metadata:
+  sources: [Wikidata Q11582685 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q11582685
+identifiers:
+  idref: "146713133"
+  lc: nr94039923
+  viaf: "56496553"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11582685
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q11582685
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q11582685

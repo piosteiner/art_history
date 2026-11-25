@@ -75,6 +75,14 @@ relationships:
       - accessed: 2026-11-10
         property: P135
         wikidata: Q216406
+  - type: participated_in
+    to: event/international-exhibition-of-1862
+    label: exhibited
+    notes_md: Panels 'Painting' and 'Sculpture' on King René's Honeymoon Cabinet.
+    sources:
+      - url: https://collections.vam.ac.uk/item/O78937/king-ren%C3%A9s-honeymoon-cabinet-cabinet-seddon-john-pollard/king-ren%C3%A9s-honeymoon-cabinet-cabinet-seddon-john-pollard
+        source: victoria-and-albert-king-renes-honeymoon-cabinet-prinsep-val-burne-jones-edward-coley-sir
+        accessed: 2026-11-24
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/0f/Frederick_Hollyer_portrait_of_Edward_Burne-Jones_c1882.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Frederick_Hollyer_portrait_of_Edward_Burne-Jones_c1882.jpg

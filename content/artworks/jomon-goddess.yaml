@@ -25,6 +25,41 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Nishi-no-mae_Iseki_dogu-2.JPG
     license: CC0
     credit: Saigen Jiro
+provenance:
+  - owner_label: excavation of the Nishinomae site
+    acquired: 1992-08
+    method: find
+    place: funagata
+    label: found broken in five pieces in a pottery dump, 4–6 August 1992, in excavations ahead of the Obanazawa–Shinjō road; Middle Jōmon; restored
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011534
+        note: 本件は、山形県西ノ前遺跡から出土した土偶である。… 時代 ： 縄文時代
+        source: kunishitei-201-00011534
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E7%B8%84%E6%96%87%E3%81%AE%E5%A5%B3%E7%A5%9E&oldid=107049763
+        note: 1992年6月から尾花沢新庄道路の建設ルートとなった最上小国川左岸（西ノ前遺跡内）の発掘調査が行われ、8月4日から8月6日の間に、直径約2.5メートル (m)、地下1 mの土器の捨て場とされる範囲から左足、腰、頭、胴、右足など5つに割れた土偶が次々と出土
+        source: wikipedia-ja-jomon-no-megami
+        accessed: 2026-11-24
+  - owner: place/yamagata-prefecture
+    label: "owner: Yamagata Prefecture"
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011534
+        note: 所有者名 ： 山形県
+        source: kunishitei-201-00011534
+        accessed: 2026-11-24
+  - owner: institution/yamagata-prefectural-museum
+    role: custodian
+    place: yamagata
+    label: kept at the prefecture's museum (a replica is shown at Funagata)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/00011534
+        note: 保管施設の名称 ： 山形県立博物館 所有者名 ： 山形県
+        source: kunishitei-201-00011534
+        accessed: 2026-11-24
+      - url: https://www.yamagata-museum.jp/treasures/jomon-no-megami
+        note: 国宝・縄文の女神（西ノ前遺跡出土土偶） … 山形県舟形町西ノ前遺跡の出土品で
+        source: yamagata-museum-jomon-no-megami
+        accessed: 2026-11-24
 sources:
   location:
     - accessed: 2026-11-24

@@ -1,3 +1,18 @@
 public_id: 126653
 name: Ministry of the Imperial Household
+dissolved: 1947-05-03
 wikidata_id: Q8193428
+metadata:
+  sources: [Wikidata Q8193428 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/90/Imperial_Household_Ministry_in_Meiji_Era.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Imperial_Household_Ministry_in_Meiji_Era.JPG
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  viaf: "259907331"
+sources:
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q8193428

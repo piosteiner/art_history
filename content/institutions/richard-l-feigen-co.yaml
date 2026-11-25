@@ -1,3 +1,25 @@
 public_id: 128998
 name: Richard L. Feigen & Co.
+kind: gallery
+founded: 1957
+place: new-york-city
 wikidata_id: Q18592375
+metadata:
+  sources: [Wikidata Q18592375 (retrieved 2026-11-24)]
+identifiers:
+  idref: "087498294"
+  lc: nr93005770
+  viaf: "133238301"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q18592375
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q18592375
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q18592375

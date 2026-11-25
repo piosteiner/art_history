@@ -58,6 +58,7 @@ names:
       - accessed: 2026-11-24
         wikidata: Q700448
 created: 678
+institution: kamigamo-shrine
 location: [135.75275, 35.06051]
 wikidata_id: Q700448
 metadata:
@@ -71,6 +72,25 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Kamo-wakeikazuchi-jinja24n3200.jpg
     license: CC BY 2.5
     credit: 663highland
+provenance:
+  - owner: institution/kamigamo-shrine
+    acquired: 673/686
+    method: creation
+    place: kyoto
+    label: tutelary shrine of the Kamo clan, founded before the Nara period; buildings rebuilt by Yamashiro province under Emperor Tenmu (673–686), then periodically; present Honden and Gonden rebuilt 1863 (National Treasures 1953); owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1550
+        note: 賀茂別雷神社は上賀茂神社といわれ、賀茂御祖神社（下鴨神社）とともに、その創立は奈良時代以前に遡る。 … 社殿は、天武天皇の時（六七三～六八六）山背国をして造替せしめたというのを始めとし … 現在の本殿、権殿は文久三年（一八六三）の造替になるものである。 … 所有者名 ： 賀茂別雷神社
+        source: kunishitei-102-1550
+        accessed: 2026-11-24
+      - note: In the nagare type, epitomized by the Kamigamo Shrine built north of Heian, a traditional raised building three bays wide by two bays deep is provided with a roof extending forward to shelter the stairs leading to the upper level.
+        source: history-of-japanese-art
+        locator: p. 164
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%B3%80%E8%8C%82%E5%88%A5%E9%9B%B7%E7%A5%9E%E7%A4%BE&oldid=111843479
+        note: 創建 = 伝・天武天皇6年（677年） … かつてこの地を支配していた古代氏族である賀茂氏の氏神を祀る神社として … 長元9年（1036年）に21年ごとに式年遷宮を行うよう定められる
+        source: wikipedia-ja-kamigamo-shrine
+        accessed: 2026-11-24
 identifiers:
   viaf: "260208939"
 sources:

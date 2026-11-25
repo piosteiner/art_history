@@ -2,17 +2,11 @@ public_id: 124145
 name: Takashina Takakane
 given_name: Takashina
 family_name: Takakane
-birth: 1309
-death: 1330
+active: c. 1309–1330
 wikidata_id: Q3514212
 metadata:
   sources: [Wikidata Q3514212 (retrieved 2026-11-24)]
 sources:
-  birth:
-    - accessed: 2026-11-24
-      property: P569
-      wikidata: Q3514212
-  death:
-    - accessed: 2026-11-24
-      property: P570
+  active:
+    - property: P2031
       wikidata: Q3514212

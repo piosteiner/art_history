@@ -34,6 +34,130 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:The_Rabbit-Warren,_C%C3%B4te_Saint-Denis_at_Pontoise,_Effect_of_Snow.jpg
     license: CC0
     credit: Camille Pissarro
+provenance:
+  - owner: artist/camille-pissarro
+    acquired: 1879
+    method: creation
+    sources:
+      - url: https://www.artic.edu/artworks/20530
+        note: The artist (d. 1903);
+        source: aic-1964-200
+        accessed: 2026-11-24
+  - owner: person/julie-pissarro
+    acquired: 1892 or earlier
+    method: gift
+    direct: true
+    place: paris
+    label: the artist's wife; Durand-Ruel exhibition catalogue 1892, p. 23, cat. 11
+    sources:
+      - url: https://www.artic.edu/artworks/20530
+        note: given to Julie Pissarro (artist’s wife), Paris, by 1892 [per Galeries Durand-Ruel, Exposition Camille Pissarro, exh. cat. (E. Ménard et Cie, 1892), p. 23, cat. 11];
+        source: aic-1964-200
+        accessed: 2026-11-24
+  - owner: person/ludovic-rodolphe-pissarro
+    acquired: 1904
+    method: inheritance
+    direct: true
+    place: paris
+    label: her son (Rodo)
+    sources:
+      - url: https://www.artic.edu/artworks/20530
+        note: by descent to her son, Ludovic-Rodolphe (Rodo) Pissarro, Paris, 1904 [this and the seven following per Pissarro and Snollaerts 2005];
+        source: aic-1964-200
+        accessed: 2026-11-24
+  - owner: institution/durand-ruel
+    co_owners: [institution/bernheim-jeune]
+    role: dealer
+    acquired: 1918-08-07
+    method: purchase
+    direct: true
+    place: paris
+    label: bought jointly
+    sources:
+      - url: https://www.artic.edu/artworks/20530
+        note: sold jointly to Durand-Ruel, Paris, and Bernheim-Jeune, Paris, Aug. 7, 1918;
+        source: aic-1964-200
+        accessed: 2026-11-24
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1920-03-12
+    method: purchase
+    direct: true
+    place: paris
+    label: bought Durand-Ruel's share
+    sources:
+      - url: https://www.artic.edu/artworks/20530
+        note: share sold by Durand-Ruel, Paris, to Bernheim-Jeune, Paris, Mar. 12, 1920.
+        source: aic-1964-200
+        accessed: 2026-11-24
+  - owner: institution/galerie-georges-petit
+    role: dealer
+    acquired: 1924-03-31 or earlier
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/20530
+        note: Georges Petit Paris, by Mar. 31, 1924;
+        source: aic-1964-200
+        accessed: 2026-11-24
+  - owner_label: Prat
+    acquired: 1924-03-31
+    method: purchase
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/20530
+        note: sold to Prat, Mar. 31, 1924.
+        source: aic-1964-200
+        accessed: 2026-11-24
+  - owner: person/sam-salz
+    acquired: c. 1958
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/20530
+        note: Sam Salz, New York, around 1958.
+        source: aic-1964-200
+        accessed: 2026-11-24
+  - owner: person/martin-zimet
+    co_owners: [person/sidney-zimet]
+    acquired: 1963-01-11 or earlier
+    place: new-york-city
+    sources:
+      - url: https://www.artic.edu/artworks/20530
+        note: Martin and Sidney Zimet, New York, by Jan. 11, 1963;
+        source: aic-1964-200
+        accessed: 2026-11-24
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1963-01-11
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: half share; stock book 1959–70, no. 8436, as La Gareane [sic] a Pontoise, Effet de Neige
+    sources:
+      - url: https://www.artic.edu/artworks/20530
+        note: half share sold to M. Knoedler & Co., New York, Jan. 11, 1963 [per the M. Knoedler & Co., New York, stock book for Feb. 1959–Dec. 1970 (no. 8436, as La Gareane [sic] a Pontoise, Effet de Neige), copy in curatorial object file];
+        source: aic-1964-200
+        accessed: 2026-11-24
+  - owner: person/marshall-field
+    acquired: June 1964 or earlier
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/20530
+        note: sold to Marshall Field, Chicago, by June 1964 [per Committee on Earlier Painting and Sculpture minutes, June 10, 1964, on file in Museum Registration, Art Institute of Chicago];
+        source: aic-1964-200
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1964-06
+    method: gift
+    direct: true
+    place: chicago
+    label: given in undivided fractional interests from June 1964; the last share in 1965
+    sources:
+      - url: https://www.artic.edu/artworks/20530
+        note: given to the Art Institute of Chicago, beginning in June 1964 [in undivided fractional interests, receiving final fractional interest for one hundred percent ownership in 1965].
+        source: aic-1964-200
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

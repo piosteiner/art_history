@@ -1,11 +1,36 @@
 public_id: 124513
 name: Japanese Sword Museum
 founded: 1968-05-25
+place: tokyo
+location: [139.79363, 35.69898]
+address: 東京都墨田区横網一丁目12番9号
+website_url: https://www.touken.or.jp/museum/
 wikidata_id: Q3329874
 metadata:
   sources: [Wikidata Q3329874 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Kyu_Yasuda_teien3.jpg/1280px-Kyu_Yasuda_teien3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kyu_Yasuda_teien3.jpg
+    license: CC BY-SA 4.0
+    credit: 江戸村のとくぞう
+identifiers:
+  lc: no2017120361
+  ulan: "500309688"
+  viaf: "21147266859635482295"
 sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3329874
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3329874
   founded:
     - accessed: 2026-11-24
       property: P571
+      wikidata: Q3329874
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q3329874

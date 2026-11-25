@@ -2,4 +2,53 @@ public_id: 127565
 name: Claude-Emmanuel de Pastoret
 given_name: Claude-Emmanuel
 family_name: de Pastoret
+kind: person
+birth: 1755-12-24
+death: 1840-09-28
 wikidata_id: Q372652
+metadata:
+  sources: [Wikidata Q372652 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q372652
+  - type: born_in
+    to: place/marseille
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q372652
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q372652
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/17/Claude-Emmanuel_de_Pastoret.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude-Emmanuel_de_Pastoret.jpg
+    license: Public domain
+    credit: Paul Delaroche
+identifiers:
+  bnf: 12522931z
+  gnd: "100241565"
+  idref: "086832964"
+  lc: n90709578
+  ulan: "500354511"
+  viaf: "34566988"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q372652
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q372652
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q372652

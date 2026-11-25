@@ -1,3 +1,32 @@
 public_id: 126587
 name: Fudō-in
+kind: temple
+place: hiroshima
+location: [132.47111, 34.42703]
+address: 広島県広島市東区牛田新町3-4-9
+website_url: http://www.megaegg.ne.jp/~fudouin/
 wikidata_id: Q73444
+metadata:
+  sources: [Wikidata Q73444 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Fudoin_Kondo.jpg/1280px-Fudoin_Kondo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fudoin_Kondo.jpg
+    license: CC BY-SA 3.0
+    credit: Mnd
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q73444
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q73444
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q73444
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q73444

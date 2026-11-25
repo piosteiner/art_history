@@ -1,0 +1,61 @@
+public_id: 130229
+name: Gabriel Davioud
+given_name: Gabriel
+family_name: Davioud
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Gabriel Jean Antoine Davioud
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q979605
+  - text: Gabriel-Jean-Antoine Davioud
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q979605
+  - text: Jean-Antoine-Gabriel Davioud
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q979605
+  - lang: ja
+    role: translation
+    text: ガブリエル・ダヴィヴ
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q979605
+birth: 1824-10-30
+death: 1881-04-06
+wikidata_id: Q979605
+metadata:
+  sources: [Wikidata Q979605 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/1878-paris-world-s-fair
+    label: architect
+    notes_md: Architect of the Palais du Trocadéro
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Exposition_universelle_de_1878
+        source: wikipedia-fr-exposition-universelle-de-1878
+        accessed: 2026-11-24
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Gabriel_Davioud_Vallette_Truchelut.png/1280px-Gabriel_Davioud_Vallette_Truchelut.png
+    source_url: https://commons.wikimedia.org/wiki/File:Gabriel_Davioud_Vallette_Truchelut.png
+    license: Public domain
+    credit: Maurice Vallette / Jean-Nicolas Truchelut
+identifiers:
+  bnf: "119526617"
+  gnd: "128571993"
+  idref: 02750056X
+  lc: no2012147089
+  ulan: "500018424"
+  viaf: "60138916"
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q979605
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q979605

@@ -11,6 +11,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107046087
+institution: horyu-ji
 wikidata_id: Q107046087
 metadata:
   sources: [Wikidata Q107046087 (retrieved 2026-11-24)]
@@ -19,3 +20,29 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Horyuji_Monastery_Nine-Headed_Kwannon_(255).jpg
     license: Public domain
     credit: Imperial Japanese Commission to the Panama-Pacific International Exposition
+provenance:
+  - owner_label: unknown sculptor, Tang China
+    acquired_label: Tang dynasty
+    method: creation
+    label: sandalwood-type image (danzō), unpainted fragrant wood, carved with its ornaments from a single block
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/260
+        note: 木造観音菩薩立像（九面観音） … 国 ： 中国 時代 ： 唐 … 解説文： 唐時代の作品。
+        source: kunishitei-201-260
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%B3%95%E9%9A%86%E5%AF%BA&oldid=111669701
+        note: 観音菩薩立像（九面観音、国宝） - 唐から将来の像。香木を用い、彩色を施さず白木で仕上げた、いわゆる檀像と呼ばれる像である。
+        source: wikipedia-ja-horyu-ji
+        accessed: 2026-11-24
+  - owner: institution/horyu-ji
+    place: ikaruga
+    label: brought from Tang China (date and way not stated); today in the Great Treasure Gallery (Daihōzō-in); the temple is the owner
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/260
+        note: 所有者名 ： 法隆寺
+        source: kunishitei-201-260
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%B3%95%E9%9A%86%E5%AF%BA&oldid=111669701
+        note: 観音菩薩立像（九面観音、国宝） - 唐から将来の像。… 木造観音菩薩立像（九面観音）（所在大宝蔵院）
+        source: wikipedia-ja-horyu-ji
+        accessed: 2026-11-24

@@ -93,7 +93,7 @@ provenance:
         note: "Footnote: Auktion Paul Cassirer (25.11.1930), Lot 20."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-03
-  - owner: institution/galerie-bachstitz-den-haag
+  - owner: institution/galerie-bachstitz
     co_owners: [institution/m-knoedler-co]
     role: dealer
     acquired: 1930

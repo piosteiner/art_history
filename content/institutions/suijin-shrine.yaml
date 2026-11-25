@@ -1,0 +1,26 @@
+public_id: 129839
+name: Suijin Shrine
+place: daisen
+location: [140.58722, 39.55028]
+address: 秋田県大仙市豊川字観音堂57
+wikidata_id: Q11549049
+metadata:
+  sources: [Wikidata Q11549049 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Suizinzya.JPG/1280px-Suizinzya.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Suizinzya.JPG
+    license: CC BY-SA 4.0
+    credit: らんで
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11549049
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11549049
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11549049

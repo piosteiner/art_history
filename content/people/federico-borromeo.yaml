@@ -5,3 +5,10 @@ family_name: Borromeo
 birth: 1564
 death: 1631
 wikidata_id: Q469171
+relationships:
+  - type: founded
+    to: institution/biblioteca-ambrosiana
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q815611

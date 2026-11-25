@@ -35,6 +35,212 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Eustache_Le_Sueur_-_Meekness_-_1974.233_-_Art_Institute_of_Chicago.jpg
     license: Public domain
     credit: Eustache Le Sueur
+provenance:
+  - owner: person/guillaume-brissonnet
+    acquired: 1650
+    method: commission
+    place: paris
+    label: for the chapel of his Paris town house (Guillet de Saint-Georges [1690], p. 164)
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: Commissioned by Guillaume Brissonnet  (died 1674) in 1650 for the chapel of his Paris town house  [according to Guillet de Saint-Georges [1690], p. 164];
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner: person/jean-baptiste-brissonnet
+    method: inheritance
+    direct: true
+    place: paris
+    label: his son
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: by descent to his son, Jean Baptiste Brissonnet (died 1698) [the early history of the house and its chapel decorations is recounted by Mérot 1987, pp.244-5];
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner: person/vincent-d-invault
+    acquired: 1698
+    method: purchase
+    direct: true
+    place: paris
+    label: sold with the house
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: sold with the house to Vincent d'Invault, 1698;
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner: person/jacques-turgot
+    acquired: 1714
+    method: purchase
+    direct: true
+    place: paris
+    label: maître des requêtes
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: sold to Jacques Turgot (died 1722), maître des Requêtes, 1714;
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner: person/anne-robert-jacques-turgot
+    acquired: 1757
+    method: inheritance
+    direct: true
+    place: paris
+    label: in 1775 the house was sold and the decorations dismantled
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: by descent in 1757 to Anne Robert Jacques Turgot (died 1781); in 1775 the house was sold and the decorations dismantled;
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner_label: heirs of Anne Robert Jacques Turgot, including Étienne François Turgot, marquis de Sousmont
+    acquired: 1781
+    ended_label: to at least 1784
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: at Turgot's death, the paintings passed to his heirs including Etienne François Turgot, marquis de Sousmont, to at least 1784.
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner: person/vincent-donjeux
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: Vincent Donjeux, Paris;
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner: person/jean-baptiste-pierre-lebrun
+    co_owners: [person/alexandre-joseph-paillet]
+    role: agent
+    acquired: 1793-04-29
+    method: auction
+    direct: true
+    place: paris
+    label: Donjeux sale, lot 330, with its pendant Justice
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: sold LeBrun et Paillet, Paris, April 29 and following, 1793, lot 330, with "Justice,"
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner_label: Jouberton
+    acquired: 1793-04-29
+    method: auction
+    direct: true
+    price:
+      amount: 1550
+      currency: LIV
+      note: together with Justice
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: for 1,550 livres to Jouberton.
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner_label: Lafontaine, Paris
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: Lafontaine, Paris;
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner_label: Chariot (auctioneer)
+    role: agent
+    acquired: 1821-05-28
+    method: auction
+    direct: true
+    place: paris
+    label: Lafontaine sale, 28 May–2 June 1821, lot 128, with Justice, as L'Innocence
+    price:
+      amount: 480
+      currency: AFRF
+      note: together with Justice
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: sold Chariot, Paris, May 28-June 2, 1821, lot 128 with "Justice", as "L'Innocence," for Fr 480.
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner_label: M. de Mauméjan, Paris
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: M. de Mauméjan, Paris;
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner_label: Lacoste (auctioneer)
+    role: agent
+    acquired: 1825-06-29
+    method: auction
+    direct: true
+    place: paris
+    label: Mauméjan sale, 29 June–2 July 1825, lot 40, with Justice, as L'Innocence
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: sold Lacoste, Paris, June 29-July 2, 1825, lot 40, with "Justice" as "L'Innocence."
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner: person/jean-toussaint-arrighi-de-casanova
+    place: courson-monteloup
+    label: duc de Padoue, at the château de Courson-Monteloup (Essonne)
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: Jean Toussaint Arrighi de Casanova, duc de Padoue (died 1853), château de Courson-Monteloup (Essonne);
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner: person/ernest-arrighi-de-casanova
+    method: inheritance
+    direct: true
+    place: courson-monteloup
+    label: duc de Padoue
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: by decent to Ernest Louis Hyacinthe Arrigi de Casanova, duc de Padoue (died 1888);
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner: person/ernest-de-caraman
+    method: inheritance
+    direct: true
+    place: courson-monteloup
+    label: his great-grandson, comte de Caraman, Château de Courson
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: by descent to his great grandson comte Ernest de Caraman, Châeau de Courson (died 1958) [the later descent of "Justice" and "Mansuétude" is given by Mérot 1987, p. 247].
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1967-12-04
+    method: auction
+    place: paris
+    label: lot 81, as school of Eustache Le Sueur, La Charité
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: Sold Hôtel Drouot, Paris, December 4, 1967, lot 81,
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner_label: Comte de Gramont
+    acquired: 1967-12-04
+    method: auction
+    direct: true
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: to Comte de Gramont, as school of Eustache Le Sueur, "La Charité."
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner: institution/heim-gallery
+    role: dealer
+    acquired: 1974 or earlier
+    place: london
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: Heim Gallery, London by 1974;
+        source: aic-1974-233
+        accessed: 2026-11-24
+  - owner: institution/art-institute-of-chicago
+    acquired: 1974
+    method: purchase
+    direct: true
+    place: chicago
+    sources:
+      - url: https://www.artic.edu/artworks/47159
+        note: sold to the Art Institute, 1974.
+        source: aic-1974-233
+        accessed: 2026-11-24
 sources:
   parent:
     - accessed: 2026-11-24

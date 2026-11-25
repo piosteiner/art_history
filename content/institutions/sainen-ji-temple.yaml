@@ -1,3 +1,36 @@
 public_id: 129246
 name: Sainen-ji Temple
+kind: temple
+founded: 1531
+place: tokoname
+location: [136.82584, 34.93232]
+address: 愛知県常滑市大野町9-139
 wikidata_id: Q11500150
+metadata:
+  sources: [Wikidata Q11500150 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokoname_Onomachi_Sainenji_ac_%281%29.jpg/1280px-Tokoname_Onomachi_Sainenji_ac_%281%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tokoname_Onomachi_Sainenji_ac_(1).jpg
+    license: CC BY-SA 4.0
+    credit: Asturio Cantabrio
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11500150
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11500150
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11500150
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11500150
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11500150

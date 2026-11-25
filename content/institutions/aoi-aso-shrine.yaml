@@ -1,3 +1,42 @@
 public_id: 126525
 name: Aoi Aso Shrine
+names:
+  - kind: nickname
+    lang: ja
+    role: alternative
+    text: 青井さん
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q2857960
+founded: 806-10-27
+place: hitoyoshi
+location: [130.75278, 32.21333]
+address: 熊本県人吉市上青井町118
+website_url: https://aoisan.jp/
 wikidata_id: Q2857960
+metadata:
+  sources: [Wikidata Q2857960 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Romon_Gate_of_Aoi_Aso_Shrine.jpg/1280px-Romon_Gate_of_Aoi_Aso_Shrine.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Romon_Gate_of_Aoi_Aso_Shrine.jpg
+    license: CC BY-SA 4.0
+    credit: そらみみ
+identifiers:
+  viaf: "253280284"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q2857960
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q2857960
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q2857960
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q2857960

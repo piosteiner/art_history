@@ -1,3 +1,35 @@
 public_id: 126272
 name: American Museum of Natural History
+founded: 1869-04-06
+place: new-york-city
+location: [-73.97444, 40.78083]
+website_url: http://www.amnh.org/
 wikidata_id: Q217717
+metadata:
+  sources: [Wikidata Q217717 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/14/American_Museum_of_Natural_History_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:American_Museum_of_Natural_History_02.jpg
+    license: CC BY-SA 3.0
+    credit: Gigi alt
+identifiers:
+  bnf: "122061920"
+  gnd: 1007948-8
+  idref: 03108608X
+  kulturnav: 1127ac16-18d4-4012-bb19-25c2ac8d9efd
+  lc: n79006850
+  ulan: "500303581"
+  viaf: "167627219"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q217717
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q217717
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q217717

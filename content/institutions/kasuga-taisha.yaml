@@ -1,3 +1,37 @@
 public_id: 129277
 name: Kasuga Taisha
+founded: 768
+place: nara
+location: [135.84835, 34.68134]
+address: 〒630-8212 奈良県奈良市春日野町160
+website_url: https://www.kasugataisha.or.jp/
 wikidata_id: Q714559
+metadata:
+  sources: [Wikidata Q714559 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Kasuga-taisha%2C_chumon-3.jpg/1280px-Kasuga-taisha%2C_chumon-3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kasuga-taisha,_chumon-3.jpg
+    license: CC0
+    credit: Saigen Jiro
+identifiers:
+  gnd: 108606190X
+  idref: "135786282"
+  lc: n82059071
+  viaf: "152464808"
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q714559
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q714559
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q714559
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q714559

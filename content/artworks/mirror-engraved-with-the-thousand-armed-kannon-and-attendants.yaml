@@ -1,0 +1,72 @@
+public_id: 124987
+title_lang: en
+title: Mirror Engraved with the Thousand-Armed Kannon and Attendants
+title_status: own
+names:
+  - lang: ja
+    role: original
+    text: 線刻千手観音等鏡像
+created: 11th century
+created_span: uncertain
+materials: [cupronickel]
+institution: suijin-shrine
+wikidata_id: Q107044824
+metadata:
+  sources: [Wikidata Q107044824 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/69/Suijinja_goshinkyo.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Suijinja_goshinkyo.JPG
+    license: CC BY-SA 3.0
+    credit: Morigen at Japanese Wikipedia
+provenance:
+  - owner_label: donors Ninyū, monk of Enryaku-ji, and the daughter of Minamoto no Yasushi
+    acquired: 11th century
+    method: commission
+    label: engraved by the Buddhist sculptor-monk Sūki (inscription); the mirror itself early Heian, the engraving late Heian (11th century)
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/410
+        note: 「崇紀/佛師僧/大趣具主延暦僧 仁祐 女具主藤原安女子」
+        source: kunishitei-201-410
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%B0%B4%E7%A5%9E%E7%A4%BE%20%28%E5%A4%A7%E4%BB%99%E5%B8%82%29&oldid=96301324
+        note: 作風や銘文から、鏡自体は平安時代初期、線刻は平安時代後期（11世紀）の制作と推定される。… 「延暦僧仁祐」は11世紀半ばに延暦寺で活動した同名の学僧に比定される。「藤源安女子」は「源安の娘」の意
+        source: jawiki-suijin-shrine-daisen
+        accessed: 2026-11-24
+  - owner: person/satake-yoshimoto
+    acquired: 1677
+    method: find
+    place: daisen
+    label: dug up 1.5 m deep at Minumeyachi, Nonaka village (Senboku district) while the Shimozeki irrigation channel was dug, and handed to the domain lord, who ordered it worshipped as god of the weir
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/410
+        note: 本鏡は、延宝五年に秋田県仙北郡中村三妥谷地で用水開墾工事中に発掘されたもので
+        source: kunishitei-201-410
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%B0%B4%E7%A5%9E%E7%A4%BE%20%28%E5%A4%A7%E4%BB%99%E5%B8%82%29&oldid=96301324
+        note: 1677年（延宝5年）玉川から窪堰川まで水路（下堰）を引いている途中、野中村三采女谷地（みむねやち）の地中1.5mから古鏡が発見され藩主の佐竹義処に差し出したところ、堰神として祀るようにと言われた。
+        source: jawiki-suijin-shrine-daisen
+        accessed: 2026-11-24
+  - owner: institution/suijin-shrine
+    acquired: 1677
+    method: gift
+    direct: true
+    place: daisen
+    label: Kusanagi Rizaemon, who dug the channel, founded the shrine and dedicated the mirror to it as its sacred object; kept since 2007 in a storehouse behind the main hall
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/410
+        note: 土地の人々が祠を建てて堰の神として祀るようになった … 所有者名 ： 水神社
+        source: kunishitei-201-410
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E6%B0%B4%E7%A5%9E%E7%A4%BE%20%28%E5%A4%A7%E4%BB%99%E5%B8%82%29&oldid=96301324
+        note: そのためこの水路を掘っていた草彅理左エ門が水神社を創建し奉納した。
+        source: jawiki-suijin-shrine-daisen
+        accessed: 2026-11-24
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107044824
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q107044824

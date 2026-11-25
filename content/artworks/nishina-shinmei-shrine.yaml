@@ -13,6 +13,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q3342145
+institution: nishina-shinmei-shrine
 location: [137.87903, 36.44994]
 wikidata_id: Q3342145
 metadata:
@@ -25,6 +26,22 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Nishina-3.jpg
     license: CC BY-SA 3.0
     credit: 江戸村のとくぞう
+provenance:
+  - owner: institution/nishina-shinmei-shrine
+    acquired_label: 1636 according to tradition; perhaps c. 1676
+    method: commission
+    place: omachi
+    label: Main Hall, Middle Gate and the linking tsuriya built, by tradition, by Matsudaira Naomasa, lord of Matsumoto, at the periodic rebuilding of 1636 (rebuilt every 20 years, ridge tags from 1376); the shrine owns them today
+    certainty: probable
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/957
+        note: 現在の社殿は寛永十三年（一六三六）松本藩主松平直政が式年造替に際して造営したものと伝わるが、延宝四年（一六七六）の造営文書に全柱の取替材が含まれており、修理とは特定し難く、この頃の造営と見るべきかもしれない。… 所有者名 ： 仁科神明宮 所有者種別 ： 神社
+        source: kunishitei-102-957
+        accessed: 2026-11-24
+      - url: https://www.sinmeigu.jp/bunkazai.html
+        note: 本殿は、桁行３間、 梁間２間、神明造、 桧皮葺。中門（ 御門屋 ）は四脚門、切妻造、桧皮葺。 釣屋がこれらを連結している。ともに寛永１３年（１６３６）の造営で、江戸時代初期の端整な建築である。
+        source: sinmeigu-bunkazai
+        accessed: 2026-11-24
 sources:
   location:
     - accessed: 2026-11-24

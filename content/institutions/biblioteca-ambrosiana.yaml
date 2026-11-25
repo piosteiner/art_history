@@ -1,3 +1,44 @@
 public_id: 127036
 name: Biblioteca Ambrosiana
+kind: archive
+founded: 1607
+place: milan
+location: [9.18579, 45.46348]
+address: Piazza Pio XI 2 - 20123 Milano
+website_url: https://www.ambrosiana.it/
 wikidata_id: Q815611
+metadata:
+  sources: [Wikidata Q815611 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Milan_Biblioteca_Ambrosiana_016_4839.jpg/1280px-Milan_Biblioteca_Ambrosiana_016_4839.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Milan_Biblioteca_Ambrosiana_016_4839.jpg
+    license: CC BY-SA 4.0
+    credit: Ludvig14
+identifiers:
+  bnf: 12148454d
+  gnd: 4251345-5
+  idref: "027438279"
+  lc: n79139453
+  ulan: "500302861"
+  viaf: "147341799"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q815611
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q815611
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q815611
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q815611
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q815611

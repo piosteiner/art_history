@@ -29,6 +29,7 @@ created: 13th century
 created_span: uncertain
 materials: [bronze]
 dimensions: [1335]
+institution: kotoku-in-temple
 location: [139.5357, 35.31685]
 wikidata_id: Q12366269
 metadata:
@@ -42,6 +43,59 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Kamakura_Budda_Daibutsu_front_1885.jpg
     license: CC BY-SA 3.0
     credit: Dirk Beyer
+provenance:
+  - owner_label: Great Buddha temple at Fukasawa, Kamakura
+    acquired: 1252
+    method: creation
+    place: kamakura
+    label: casting begun 1252 with funds raised by the priest Jōkō, probably with the Kamakura shogunate's support; at first in a Great Buddha hall, damaged in 1334, 1369 and 1498 and later lost
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%AB%98%E5%BE%B3%E9%99%A2&oldid=111789894
+        note: 建長4年（1252年）から「深沢里」にて金銅八丈の釈迦如来像の造立が開始されたとの記事もある。… 僧・浄光が全国を勧進して資金を集め、奈良の大仏に倣って阿弥陀如来（阿弥陀仏）として造立されたという。
+        source: wikipedia-ja-kotoku-in
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%8E%8C%E5%80%89%E5%A4%A7%E4%BB%8F&oldid=111766173
+        note: 『吾妻鏡』には、1252年（建長4年）8月に大仏の鋳造を開始したことを示す記録がある。… 『太平記』や『鎌倉大日記』には、1334年（建武元年）、1369年（応安2年）、1498年（明応7年）の災害と大仏殿の損壊に関する記述がある。
+        source: wikipedia-ja-kamakura-daibutsu
+        accessed: 2026-11-24
+  - owner: institution/kencho-ji-temple
+    role: custodian
+    acquired_label: early Edo period
+    place: kamakura
+    label: Kenchō-ji (Rinzai) administered the Buddha as its head temple for a time
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%AB%98%E5%BE%B3%E9%99%A2&oldid=111789894
+        note: 江戸時代初期に臨済宗の建長寺が本寺として管理を担っていたことがあるとの記録があり
+        source: wikipedia-ja-kotoku-in
+        accessed: 2026-11-24
+  - owner: institution/hase-dera-temple
+    role: custodian
+    acquired: 1703 or earlier
+    ended: 1712
+    place: kamakura
+    label: Hase-dera of Kamakura (Jōdo) was the head temple at the Genroku earthquake of 1703
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%AB%98%E5%BE%B3%E9%99%A2&oldid=111789894
+        note: 元禄地震時の本寺は浄土宗の長谷寺であったことが明らかになっている。 … 正徳2年（1712年）5月、これまで長谷寺が本寺として管理を行っていたのを光明寺に変更する届け出
+        source: wikipedia-ja-kotoku-in
+        accessed: 2026-11-24
+  - owner: institution/kotoku-in-temple
+    acquired: 1712
+    place: kamakura
+    label: temple revived by Yūten with funds of the Edo merchant Nojima Shinzaemon, named after his Buddhist name Kōtoku-in, under Kōmyō-ji as head temple; owner today
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%AB%98%E5%BE%B3%E9%99%A2&oldid=111789894
+        note: なお寺院名は正徳2年（1712年）に、復興計画に多大な貢献をした野島新左衛門の法名である高徳院を正式な寺院名とすることとなり、寺社奉行への届け出により正式名称として確定した
+        source: wikipedia-ja-kotoku-in
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/270
+        note: 名称 ： 銅造阿弥陀如来坐像 … 時代 ： 鎌倉 … 所在地 ： 神奈川県鎌倉市長谷4-2-28 … 所有者名 ： 高徳院
+        source: kunishitei-201-270
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%8E%8C%E5%80%89%E5%A4%A7%E4%BB%8F&oldid=111766173
+        note: 神奈川県鎌倉市長谷四丁目2番28号に所在する高徳院所有の本尊で、名称を「銅造阿弥陀如来坐像」という。
+        source: wikipedia-ja-kamakura-daibutsu
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

@@ -1,0 +1,34 @@
+public_id: 130607
+name: New York World's Fair
+names:
+  - lang: en
+    role: original
+    text: New York World's Fair
+kind: world's fair
+period: 1939-04-30/1940-10-27
+place: new-york-city
+location: [-73.84857, 40.74394]
+description_md: |-
+  The Second World War began in Europe about four months after the fair opened; several exhibits closed or were scaled back, and for the 1940 season eleven nations withdrew while more than thirty agreed to return.[[source/wikipedia-en-1939-new-york-worlds-fair]] President Roosevelt temporarily froze the assets of seven exhibitors whose countries had been invaded, several of them donated or lent their exhibits to American institutions, and the Polish government-in-exile sold most of its pavilion's contents to the Polish Museum of America.[[source/wikipedia-en-1939-new-york-worlds-fair]] Stanisław Kazimierz Ostrowski's statue of King Jagiełło from the Polish pavilion could not go home after Germany invaded Poland; it was presented to New York City on 15 July 1945 and stands in Central Park.[[source/wikipedia-en-king-jagie-o-monument]] On 4 July 1940 a time bomb at the British Pavilion killed two police officers.[[source/wikipedia-en-1939-new-york-worlds-fair]]
+
+  The fair stood in Flushing Meadows–Corona Park in Queens under the theme “The World of Tomorrow”.[[source/wikipedia-en-1939-new-york-worlds-fair]] Its theme centre was the Trylon and Perisphere, designed by Wallace Harrison with J. André Fouilhoux or, in another account, Max Abramovitz;[[source/wikipedia-en-trylon-and-perisphere]][[source/wikipedia-en-1939-new-york-worlds-fair]] the Perisphere held Henry Dreyfuss's diorama of a city of the future, *Democracity*.[[source/wikipedia-en-trylon-and-perisphere]] Norman Bel Geddes's *Futurama* for General Motors, a model of the world of 1959–60 with automated highways, covered an acre.[[source/wikipedia-en-futurama-new-york-worlds-fair]]
+
+  In 1939 the fair showed 800 contemporary American works of art from the 48 states, and its Masterpieces of Art building held hundreds of rare paintings.[[source/wikipedia-en-1939-new-york-worlds-fair]] The fair corporation employed 181 visual artists, designers and architects; about 105 murals and 174 sculptures were included, among them murals by artists of the Works Progress Administration and James Earle Fraser's 65-foot statue of George Washington.[[source/wikipedia-en-1939-new-york-worlds-fair]] In the amusement area [[artist/salvador-dali|Salvador Dalí]]'s *Dream of Venus*, with performers in an aquarium, reproductions of Leonardo's *Saint John the Baptist* and Botticelli's *Birth of Venus* and a sleeping Venus in a bed 36 feet long, is now considered one of the earliest full-scale multimedia installations.[[source/queens-museum-salvador-dali-dream-of-venus]] Alexander Rodchenko and Varvara Stepanova photographed and designed books for the Soviet pavilion.[[source/graphicarts-princeton-edu-soviet-pavilion-at-1939-new-york-world-8217-s-fair-graphic-arts]]
+
+  Two seasons: 30 April – 31 October 1939 and 11 May – 27 October 1940.[[source/wikipedia-en-1939-new-york-worlds-fair]]
+wikidata_id: Q207420
+sources:
+  kind:
+    - source: wikipedia-en-1939-new-york-worlds-fair
+  place:
+    - url: https://en.wikipedia.org/wiki/1939_New_York_World%27s_Fair
+      source: wikipedia-en-1939-new-york-worlds-fair
+      accessed: 2026-11-24
+  period:
+    - url: https://en.wikipedia.org/wiki/1939_New_York_World%27s_Fair
+      source: wikipedia-en-1939-new-york-worlds-fair
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q207420

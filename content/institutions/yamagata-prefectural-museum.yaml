@@ -2,15 +2,42 @@ public_id: 124325
 name: Yamagata Prefectural Museum
 kind: museum
 founded: 1971
+place: yamagata
+location: [140.329, 38.2544]
+address: 〒990-0826　山形県山形市霞城町1-8
+website_url: https://www.yamagata-museum.jp/
+collection_url: https://www.yamagata-museum.jp/collection
 wikidata_id: Q4707630
 metadata:
   sources: [Wikidata Q4707630 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/220430_Yamagata_Prefectural_Museum_Yamagata_Yamagata_pref_Japan01s3.jpg/1280px-220430_Yamagata_Prefectural_Museum_Yamagata_Yamagata_pref_Japan01s3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:220430_Yamagata_Prefectural_Museum_Yamagata_Yamagata_pref_Japan01s3.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+identifiers:
+  idref: "190247320"
+  lc: n82040820
+  ulan: "500311967"
+  viaf: "131368394"
 sources:
   kind:
     - accessed: 2026-11-24
       property: P31
       wikidata: Q4707630
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q4707630
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q4707630
   founded:
     - accessed: 2026-11-24
       property: P571
+      wikidata: Q4707630
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q4707630

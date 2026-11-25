@@ -47,6 +47,9 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q583589
+created: late 11th century
+created_span: uncertain
+institution: ujigami-shrine
 location: [135.81146, 34.89209]
 wikidata_id: Q583589
 metadata:
@@ -59,6 +62,25 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Ujigami-jinja,_honden.jpg
     license: CC0
     credit: Saigen Jiro
+provenance:
+  - owner: institution/ujigami-shrine
+    acquired: late 11th century
+    method: creation
+    place: uji
+    label: founding unknown; buildings put in order after the Byōdō-in's Phoenix Hall (1053); Honden of three inner shrines, later 11th to early 12th century (c. 1060 by tree-ring dating, 2004) — the oldest surviving shrine building; Haiden early Kamakura; owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1946
+        note: 創始は不明であるが、平等院鳳凰堂の完成(一〇五三)ののち宇治の地が貴族の参詣によってにぎわい、当社の社殿も整えられるようになったものらしい。 … およそ十一世紀後半から十二世紀前半にかけての造営であって、流造の、また神社建築の最古の遺構である。 … 所有者名 ： 宇治上神社
+        source: kunishitei-102-1946
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/102/1947
+        note: 時代 ： 鎌倉前期 … 所有者名 ： 宇治上神社
+        source: kunishitei-102-1947
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E5%AE%87%E6%B2%BB%E4%B8%8A%E7%A5%9E%E7%A4%BE&oldid=107200204
+        note: 明治以前は宇治上神社は「上社」・「本宮」、宇治神社は「下社」・「若宮」と呼ばれたほか、両社を合わせて「宇治離宮明神」 … 明治に入って宇治神社とは分離し … 本殿は1060年頃のものとされて「現存最古の神社建築」
+        source: wikipedia-ja-ujigami-shrine
+        accessed: 2026-11-24
 identifiers:
   viaf: "123627274"
 sources:

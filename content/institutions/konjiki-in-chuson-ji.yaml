@@ -1,0 +1,18 @@
+public_id: 129489
+name: Konjiki-in (Chūson-ji)
+place: japan
+wikidata_id: Q107019215
+metadata:
+  sources: [Wikidata Q107019215 (retrieved 2026-11-24)]
+relationships:
+  - type: part_of
+    to: institution/chuson-ji
+    sources:
+      - accessed: 2026-11-24
+        property: P361
+        wikidata: Q107019215
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q107019215

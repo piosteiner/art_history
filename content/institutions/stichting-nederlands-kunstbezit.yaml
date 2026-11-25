@@ -1,3 +1,19 @@
 public_id: 126232
 name: Stichting Nederlands Kunstbezit
+founded: 1945-06-11
+dissolved: 1951-11-01
+collection_url: https://wo2.collectienederland.nl/
 wikidata_id: Q28045665
+metadata:
+  sources: [Wikidata Q28045665 (retrieved 2026-11-24)]
+identifiers:
+  lc: n2003003296
+sources:
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q28045665
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q28045665

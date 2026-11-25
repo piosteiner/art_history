@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045992
+institution: yakushi-ji
 wikidata_id: Q107045992
 metadata:
   sources: [Wikidata Q107045992 (retrieved 2026-11-24)]
@@ -15,3 +16,30 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Sho_Kannon_Yakushiji.JPG
     license: Public domain
     credit: OGAWA SEIYOU
+provenance:
+  - owner_label: unknown maker
+    acquired_label: late 7th or 8th century
+    method: creation
+    label: bronze standing Kannon, 188.9 cm, lost-wax cast; dated variously from the late Asuka (Hakuhō) to the Nara period
+    certainty: probable
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/177
+        note: 時代 ： 飛鳥 … 解説文： 飛鳥時代の作品。
+        source: kunishitei-201-177
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=薬師寺&oldid=110410760
+        note: 像高188.9センチメートル。飛鳥時代後期（白鳳期）または奈良時代（7 - 8世紀）。… 製作年代については飛鳥時代後期（白鳳期）から奈良時代（7 - 8世紀）まで諸説ある。
+        source: jawiki-yakushi-ji
+        accessed: 2026-11-24
+  - owner: institution/yakushi-ji
+    place: nara
+    label: main image of the Tōin-dō (hall rebuilt 1285); where it was before the Middle Ages is unknown, nothing proves it was always the hall's main image; Yakushi-ji is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/177
+        note: 所有者名 ： 薬師寺
+        source: kunishitei-201-177
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=薬師寺&oldid=110410760
+        note: 東院堂本尊。… 本像の中世以前の所在は明らかでなく、当初から東院堂の本尊であったとする確証はない（現存する東院堂の建物は鎌倉時代のもの）。
+        source: jawiki-yakushi-ji
+        accessed: 2026-11-24

@@ -1,0 +1,35 @@
+public_id: 130209
+name: Daniel Chester French
+given_name: Daniel Chester
+family_name: French
+birth: 1850-04-20
+death: 1931-10-07
+wikidata_id: Q720910
+metadata:
+  sources: [Wikidata Q720910 (retrieved 2026-11-24)]
+relationships:
+  - type: participated_in
+    to: event/louisiana-purchase-exposition
+    label: exhibited
+    notes_md: Plaster reproduction of 'Alma Mater' in the Grand Sculpture Court
+    sources:
+      - url: https://en.wikipedia.org/wiki/Louisiana_Purchase_Exposition
+        source: wikipedia-en-louisiana-purchase-exposition
+        accessed: 2026-11-24
+  - type: participated_in
+    to: event/worlds-columbian-exposition
+    label: exhibited
+    notes_md: Statue of the Republic
+    sources:
+      - url: https://en.wikipedia.org/wiki/Statue_of_the_Republic
+        source: wikipedia-en-statue-of-the-republic
+        accessed: 2026-11-24
+sources:
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q720910
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q720910

@@ -5,3 +5,10 @@ family_name: Stendahl
 birth: 1888
 death: 1966
 wikidata_id: Q5325963
+relationships:
+  - type: founded
+    to: institution/stendahl-art-galleries
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q72967373

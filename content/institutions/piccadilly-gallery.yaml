@@ -1,3 +1,27 @@
 public_id: 126289
 name: Piccadilly Gallery
+kind: gallery
+founded: 1953
+dissolved: 2007
+place: city-of-westminster
+location: [-0.1421, 51.5082]
 wikidata_id: Q17017667
+metadata:
+  sources: [Wikidata Q17017667 (retrieved 2026-11-24)]
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q17017667
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q17017667
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q17017667
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q17017667

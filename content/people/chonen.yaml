@@ -1,0 +1,31 @@
+public_id: 129809
+name: Chōnen
+kind: person
+birth: 938-03-02
+death: 1016-05-01
+wikidata_id: Q11271981
+metadata:
+  sources: [Wikidata Q11271981 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q11271981
+identifiers:
+  lc: n78064651
+  viaf: "70190208"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11271981
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q11271981
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q11271981

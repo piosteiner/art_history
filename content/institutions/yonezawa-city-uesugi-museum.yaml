@@ -2,15 +2,41 @@ public_id: 124123
 name: Yonezawa City Uesugi Museum
 kind: museum
 founded: 2001
+place: yonezawa
+location: [140.10666, 37.90753]
+address: 山形県米沢市丸の内1-2-1
+website_url: https://www.denkoku-no-mori.yonezawa.yamagata.jp/uesugi.htm
+collection_url: https://www.denkoku-no-mori.yonezawa.yamagata.jp/togodb/
 wikidata_id: Q11604262
 metadata:
   sources: [Wikidata Q11604262 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Denkoku-no_Mori_%28Yonezawa_City_Uesugi_Museum%29.jpg/1280px-Denkoku-no_Mori_%28Yonezawa_City_Uesugi_Museum%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Denkoku-no_Mori_(Yonezawa_City_Uesugi_Museum).jpg
+    license: CC BY-SA 4.0
+    credit: 掬茶
+identifiers:
+  idref: "282167072"
+  lc: nr2002006925
+  viaf: "150560931"
 sources:
   kind:
     - accessed: 2026-11-24
       property: P31
       wikidata: Q11604262
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11604262
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11604262
   founded:
     - accessed: 2026-11-24
       property: P571
+      wikidata: Q11604262
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q11604262

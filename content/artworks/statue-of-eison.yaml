@@ -9,6 +9,7 @@ names:
         wikidata: Q107046084
 creator: zenshun
 created: 1280
+institution: saidai-ji-temple
 location: [135.7795, 34.69362]
 wikidata_id: Q107046084
 metadata:
@@ -28,6 +29,21 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Eison_by_Zenshun_(Saidaiji_Nara).jpg
     license: Public domain
     credit: Zenshun
+provenance:
+  - owner: institution/saidai-ji-temple
+    acquired: 1280
+    method: creation
+    place: nara
+    label: portrait of Eison, the restorer of Saidai-ji, at the age of 80, carved by the head sculptor Hokkyō Zenshun and others (inscription Kōan 3, 8th month 26th day); many deposits inside, incl. Eison's parents' remains; the temple is the owner today
+    sources:
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/4166
+        note: 木造叡尊坐像〈善春作／〉 … 年代 ： 像1280 … 作者 ： 善春 … 像内に弘安三年八月二十六日、大仏師法橋善春等の造立銘及経論要文の記がある … 所有者名 ： 西大寺
+        source: kunishitei-201-4166
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=%E8%A5%BF%E5%A4%A7%E5%AF%BA_%28%E5%A5%88%E8%89%AF%E5%B8%82%29&oldid=111811761
+        note: 木造叡尊（興正菩薩）坐像（国宝） - 堂内向かって左の間に安置される、西大寺中興の祖・叡尊の肖像彫刻。弘安3年（1280年）、叡尊80歳の時の肖像で作者は仏師善春である。
+        source: wikipedia-ja-saidai-ji-nara
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

@@ -1,3 +1,27 @@
 public_id: 128758
 name: National Institutes for Cultural Heritage
+kind: government agency
+founded: 2007-04-01
+place: tokyo
+website_url: https://www.nich.go.jp/
+collection_url: https://colbase.nich.go.jp/
 wikidata_id: Q11421271
+metadata:
+  sources: [Wikidata Q11421271 (retrieved 2026-11-24)]
+identifiers:
+  gnd: 16178599-2
+  lc: no2010167473
+  viaf: "167610025"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11421271
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11421271
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11421271

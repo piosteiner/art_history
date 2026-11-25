@@ -1,0 +1,49 @@
+public_id: 130205
+title_lang: en
+title: The Death of Cleopatra
+names:
+  - lang: it
+    role: translation
+    text: La morte di Cleopatra
+    sources:
+      - accessed: 2026-11-24
+        wikidata: Q106397116
+creator: edmonia-lewis
+created: 1876
+materials: [marble]
+dimensions: [160, 79.4, 116.8]
+institution: smithsonian-american-art-museum
+inventory_number: "1994.17"
+wikidata_id: Q106397116
+metadata:
+  sources: [Wikidata Q106397116 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/SAAM-1994.17_1.jpg/1280px-SAAM-1994.17_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:SAAM-1994.17_1.jpg
+    license: CC0
+    credit: Edmonia Lewis
+sources:
+  created:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q106397116
+  creator:
+    - accessed: 2026-11-24
+      property: P170
+      wikidata: Q106397116
+  materials:
+    - accessed: 2026-11-24
+      property: P186
+      wikidata: Q106397116
+  dimensions:
+    - accessed: 2026-11-24
+      property: P2048
+      wikidata: Q106397116
+  institution:
+    - accessed: 2026-11-24
+      property: P195
+      wikidata: Q106397116
+  inventory_number:
+    - accessed: 2026-11-24
+      property: P217
+      wikidata: Q106397116

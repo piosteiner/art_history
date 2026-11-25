@@ -1,0 +1,33 @@
+public_id: 129494
+name: Pierre Maurice Haranger
+given_name: Pierre Maurice
+family_name: Haranger
+kind: person
+birth: c. 1665
+death: 1735-05-10
+wikidata_id: Q97093244
+metadata:
+  sources: [Wikidata Q97093244 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-france
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q97093244
+identifiers:
+  ulan: "500319168"
+  viaf: "305191133"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q97093244
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q97093244
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q97093244

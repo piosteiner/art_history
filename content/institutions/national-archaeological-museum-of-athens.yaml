@@ -2,15 +2,44 @@ public_id: 123099
 name: National Archaeological Museum of Athens
 kind: museum
 founded: 1829
+place: athens
+location: [23.73222, 37.98917]
+address: 28is Oktovriou (Patission) 44
+website_url: https://www.namuseum.gr/
+collection_url: https://www.namuseum.gr/collections/
 wikidata_id: Q637187
 metadata:
   sources: [Wikidata Q637187 (retrieved 2026-11-23)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Arch%C3%A4ologisches_Nationalmuseum_Athen.jpg/1280px-Arch%C3%A4ologisches_Nationalmuseum_Athen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arch%C3%A4ologisches_Nationalmuseum_Athen.jpg
+    license: CC BY-SA 3.0 de
+    credit: Thomas Wolf, www.foto-tw.de
+identifiers:
+  bnf: "118757368"
+  gnd: 811254-X
+  idref: "026525437"
+  lc: n50073408
+  ulan: "500306491"
+  viaf: "142646507"
 sources:
   kind:
     - accessed: 2026-11-23
       property: P31
       wikidata: Q637187
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q637187
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q637187
   founded:
     - accessed: 2026-11-23
       property: P571
+      wikidata: Q637187
+  location:
+    - accessed: 2026-11-24
+      property: P625
       wikidata: Q637187

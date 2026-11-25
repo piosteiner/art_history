@@ -1,3 +1,21 @@
 public_id: 129351
 name: National Commission for the Protection of Cultural Properties
+founded: 1950-08-29
+dissolved: 1968-06-15
 wikidata_id: Q109189270
+metadata:
+  sources: [Wikidata Q109189270 (retrieved 2026-11-24)]
+identifiers:
+  idref: "200836919"
+  lc: no95053444
+  ulan: "500211218"
+  viaf: "148047647"
+sources:
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q109189270
+  dissolved:
+    - accessed: 2026-11-24
+      property: P576
+      wikidata: Q109189270

@@ -1,3 +1,17 @@
 public_id: 129280
 name: Imperial House of Japan
+founded: -660
+website_url: https://www.kunaicho.go.jp/about/
 wikidata_id: Q909452
+metadata:
+  sources: [Wikidata Q909452 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/The_Imperial_Family_of_Japan%2C_2021.jpg/1280px-The_Imperial_Family_of_Japan%2C_2021.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Imperial_Family_of_Japan,_2021.jpg
+    license: CC BY 4.0
+    credit: 日本国政府
+sources:
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q909452

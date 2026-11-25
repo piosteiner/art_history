@@ -1,0 +1,32 @@
+public_id: 130111
+name: Fujii-dera Temple
+kind: temple
+place: fujiidera
+location: [135.59656, 34.57019]
+address: 大阪府藤井寺市藤井寺1丁目16-21
+website_url: https://www.fujiidera-temple.or.jp/
+wikidata_id: Q6406788
+metadata:
+  sources: [Wikidata Q6406788 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Fujiidera_hondo1024.jpg/1280px-Fujiidera_hondo1024.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fujiidera_hondo1024.jpg
+    license: CC BY 2.5
+    credit: 663highland
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q6406788
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q6406788
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q6406788
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q6406788

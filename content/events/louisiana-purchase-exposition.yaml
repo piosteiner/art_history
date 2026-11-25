@@ -1,0 +1,48 @@
+public_id: 130576
+name: Louisiana Purchase Exposition
+names:
+  - lang: en
+    role: original
+    text: Louisiana Purchase Exposition
+kind: world's fair
+period: 1904-04-30/1904-12-01
+place: st-louis
+location: [-90.2859, 38.6385]
+description_md: |-
+  President Theodore Roosevelt opened the fair by telegraph, and David R. Francis presided over the exposition company.[[source/wikipedia-en-louisiana-purchase-exposition]] Historians emphasise race and imperialism at the fair: the Philippine Reservation displayed 1,102 Filipinos, many of whom did not survive the conditions, and Tlingit, Patagonian and Ainu people, the Mbuti man Ota Benga and Geronimo were also put on show.[[source/wikipedia-en-louisiana-purchase-exposition]] [[polity/empire-of-japan|Japan]], at war with Russia, spent about $700,000 and showed its colonial reach with a Formosa Mansion and Tea House; the Russo-Japanese War also kept European athletes from the Olympic Games held with the fair.[[source/wikipedia-en-louisiana-purchase-exposition]]
+
+  The fair occupied Forest Park and the campus of Washington University.[[source/wikipedia-en-louisiana-purchase-exposition]] Cass Gilbert designed its Festival Hall, which held the largest organ in the world at the time,[[source/wikipedia-en-louisiana-purchase-exposition]] and the [[institution/saint-louis-art-museum|Palace of Fine Art]], of limestone and brick with temporary wings and a sculpture court based on the Baths of Caracalla; it was the exposition's only permanent building and became the Saint Louis Art Museum.[[source/cassgilbertsociety-org-cass-gilbert-society-cass-gilbert-the-architect-works-palace-of-fin]][[source/wikipedia-en-louisiana-purchase-exposition]] Japan's display included a garden with a replica of the Kinkaku-ji.[[source/wikipedia-en-louisiana-purchase-exposition]]
+
+  The Art Department under Halsey C. Ives, with Charles M. Kurtz, staged an exhibition of American and foreign art; foreign governments sent their own exhibitions to the art buildings, and juries met in New York, Philadelphia, Boston and St. Louis.[[source/saint-louis-art-collection-records-of-the-art-department-louisiana-purchase-exposition]] A plaster reproduction of [[artist/daniel-chester-french|Daniel Chester French]]'s *Alma Mater* stood in the Grand Sculpture Court.[[source/wikipedia-en-louisiana-purchase-exposition]] Giulio Aristide Sartorio executed a frieze for the Italian pavilion.[[source/moure-cecchini-2016|p. 17]] Giuseppe Moretti's cast-iron *Vulcan*, made to promote Birmingham's iron industry, won a grand prize and now stands on Red Mountain in Birmingham, Alabama.[[source/encyclopediaofalabama-org-vulcan-statue-and-vulcan-park-encyclopedia-of-alabama]]
+wikidata_id: Q1520847
+relationships:
+  - type: concerns
+    to: polity/empire-of-japan
+    sources:
+      - source: wikipedia-en-louisiana-purchase-exposition
+        accessed: 2026-11-24
+  - type: concerns
+    to: institution/saint-louis-art-museum
+    sources:
+      - source: wikipedia-en-louisiana-purchase-exposition
+        accessed: 2026-11-24
+      - source: cassgilbertsociety-org-cass-gilbert-society-cass-gilbert-the-architect-works-palace-of-fin
+        accessed: 2026-11-24
+sources:
+  kind:
+    - source: wikipedia-en-louisiana-purchase-exposition
+  place:
+    - url: https://en.wikipedia.org/wiki/Louisiana_Purchase_Exposition
+      source: wikipedia-en-louisiana-purchase-exposition
+      accessed: 2026-11-24
+  period:
+    - url: https://en.wikipedia.org/wiki/Louisiana_Purchase_Exposition
+      source: wikipedia-en-louisiana-purchase-exposition
+      accessed: 2026-11-24
+    - url: https://libarchives.slam.org/repositories/2/resources/7
+      source: saint-louis-art-collection-records-of-the-art-department-louisiana-purchase-exposition
+      accessed: 2026-11-24
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1520847

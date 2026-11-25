@@ -1,0 +1,37 @@
+public_id: 129517
+name: Sōji-ji (Nishiarai Daishi)
+kind: temple
+founded: 826
+place: tokyo
+location: [139.78, 35.78014]
+address: 東京都足立区西新井1-15-1
+website_url: https://www.nishiaraidaishi.or.jp/
+wikidata_id: Q11608171
+metadata:
+  sources: [Wikidata Q11608171 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Nishiarai_Daishi_Main_Hall.JPG/1280px-Nishiarai_Daishi_Main_Hall.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Nishiarai_Daishi_Main_Hall.JPG
+    license: Public domain
+    credit: Abasaa
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q11608171
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q11608171
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q11608171
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q11608171
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q11608171

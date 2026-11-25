@@ -24,6 +24,41 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:%E8%A6%8B%E5%8A%AA%E4%B8%96%E5%8F%8B.jpg
     license: Public domain
     credit: 是澤恭三
+provenance:
+  - owner: person/kohitsu-ryohan
+    acquired_label: Edo period
+    method: creation
+    label: album of 229 old calligraphy fragments (8th–15th century) made by the Kohitsu family of appraisers; probably compiled by Kohitsu Ryōhan (as his Moshiogusa album is so similar)
+    certainty: probable
+    sources:
+      - url: https://idemitsu-museum.or.jp/collection/calligraphy/kana/01.php
+        note: 『見努世友』は、江戸時代に古筆の鑑定を専門職とした古筆家が制作した基準作で
+        source: idemitsu-minuyo-no-tomo
+        accessed: 2026-11-24
+      - url: https://ja.wikipedia.org/w/index.php?title=見努世友&oldid=99615883
+        note: 了伴編の古筆手鑑『藻塩草』と配列や所収切、附帯するものなどに共通点が見られることから、『見努世友』も了伴の手になるものと推定される。
+        source: jawiki-minuyo-no-tomo
+        accessed: 2026-11-24
+  - owner_label: Sakai family of Obama
+    place: obama
+    label: handed down in the Sakai family, lords of Obama
+    sources:
+      - url: https://idemitsu-museum.or.jp/collection/calligraphy/kana/01.php
+        note: 小浜酒井家伝来。
+        source: idemitsu-minuyo-no-tomo
+        accessed: 2026-11-24
+  - owner: institution/idemitsu-museum-of-arts
+    place: tokyo
+    label: National Treasure 1952
+    sources:
+      - url: https://idemitsu-museum.or.jp/collection/calligraphy/kana/01.php
+        note: 古筆手鑑「見努世友」 … 国宝
+        source: idemitsu-minuyo-no-tomo
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/650
+        note: 国宝指定年月日 ： 1952.11.22 … 所有者名 ： 公益財団法人出光美術館
+        source: kunishitei-201-650
+        accessed: 2026-11-24
 sources:
   location:
     - accessed: 2026-11-24

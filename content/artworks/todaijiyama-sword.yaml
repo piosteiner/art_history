@@ -35,6 +35,69 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E5%A4%A7%E5%AF%BA%E5%B1%B1%E5%8F%A4%E5%A2%B3%E5%87%BA%E5%9C%9F_%E9%87%91%E9%8C%AF%E9%8A%98%E8%8A%B1%E5%BD%A2%E9%A3%BE%E7%92%B0%E9%A0%AD%E5%A4%A7%E5%88%80.JPG
     license: Public domain
     credit: Saigen Jiro
+provenance:
+  - owner_label: unknown workshop, probably Later Han China
+    acquired: 184/189
+    method: creation
+    label: blade inscribed with the Later Han era name Zhongping (184–189); the bronze flower-shaped ring pommel was made in Japan; some scholars date the inscription to 3rd–4th-century Japan
+    certainty: probable
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E9%87%91%E8%B1%A1%E5%B5%8C%E9%8A%98%E8%8A%B1%E5%BD%A2%E9%A3%BE%E7%92%B0%E9%A0%AD%E5%A4%A7%E5%88%80
+        note: 銘文通り、中平年間の中国で製作されたと考える説では … 一方、銘文の象嵌技術、象嵌の字体、内容からみて2世紀後半の後漢時代のものとは考えられず、3世紀から4世紀の日本列島内で製作されたとの説もある。
+        source: wikipedia-ja-kinzogan-mei-hanagata-kazari-kanto-tachi
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/bsys/maindetails/201/00011754
+        note: 刀身は中国製とみられるが、柄頭に付く青銅製の花形飾環頭は国内製とみられ、本刀の来歴や性格を考えるうえで興味深い。
+        source: kunishitei-201-11754
+        accessed: 2026-11-24
+  - owner_label: person buried in the Tōdaijiyama Kofun
+    acquired: 4th century
+    place: tenri
+    label: buried as a grave good in the clay chamber of the Tōdaijiyama Kofun, a keyhole tomb built mid to late 4th century; perhaps a member of the Wani clan (hypothesis)
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E9%87%91%E8%B1%A1%E5%B5%8C%E9%8A%98%E8%8A%B1%E5%BD%A2%E9%A3%BE%E7%92%B0%E9%A0%AD%E5%A4%A7%E5%88%80
+        note: その後改めてヤマト王権の有力者の一人に再下賜され、4世紀半ばから後半頃、東大寺山古墳に副葬されたと考えられている。この有力者については和邇氏、または物部氏の一族だったのではないかと言われている。
+        source: wikipedia-ja-kinzogan-mei-hanagata-kazari-kanto-tachi
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/bsys/maindetails/201/00011754
+        note: 東大寺山古墳は奈良県天理市櫟本(いちのもと)町に所在する前方後円墳（全長約百三十メートル、古墳時代前期後半）であり、本件はその埋葬施設（粘土槨）などから出土した金錯銘(きんさくめい)花形飾環頭大刀一口 …
+        source: kunishitei-201-11754
+        accessed: 2026-11-24
+  - owner: institution/tenri-sankokan-museum
+    role: custodian
+    acquired: 1961-12
+    method: find
+    place: tenri
+    label: found in a trench beside the coffin during the excavation of Sept. 1961–Feb. 1962 (ahead of building works of Tenrikyō's Jōhō Grand Church); finds kept at the Tenri Sankōkan; inscription found 1962
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E9%87%91%E8%B1%A1%E5%B5%8C%E9%8A%98%E8%8A%B1%E5%BD%A2%E9%A3%BE%E7%92%B0%E9%A0%AD%E5%A4%A7%E5%88%80
+        note: 1961年9月に測量調査から古墳の発掘調査が始められた。… 12月に粘土槨の南北方向と東西方向にトレンチを掘ったところ、棺の東側、西側それぞれから鉄製武器が発見された。… 出土品は現地で実測図を作成した後に取り上げられ、天理参考館に保管された。発掘調査は1962年2月まで続けられ
+        source: wikipedia-ja-kinzogan-mei-hanagata-kazari-kanto-tachi
+        accessed: 2026-11-24
+  - owner: institution/agency-for-cultural-affairs
+    acquired: 1968-06-05
+    method: transfer
+    place: tokyo
+    label: placed under the Agency for Cultural Affairs (5 June 1968 and 30 May 1970) and kept in its branch office inside the Tokyo National Museum; Important Cultural Property 1972
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E9%87%91%E8%B1%A1%E5%B5%8C%E9%8A%98%E8%8A%B1%E5%BD%A2%E9%A3%BE%E7%92%B0%E9%A0%AD%E5%A4%A7%E5%88%80
+        note: 金象嵌銘花形飾環頭大刀を始めとする東大寺山古墳から出土した副葬品はその内容の重要性から、1968年6月5日及び1970年5月30日付で文化庁が管理することとなり、東京国立博物館内の文化庁分室で保管されることになった。
+        source: wikipedia-ja-kinzogan-mei-hanagata-kazari-kanto-tachi
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    acquired: 2001
+    method: transfer
+    place: tokyo
+    label: "transferred from the Agency for Cultural Affairs to the Tokyo National Museum; National Treasure 2017 (owner: National Institutes for Cultural Heritage, TNM)"
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E9%87%91%E8%B1%A1%E5%B5%8C%E9%8A%98%E8%8A%B1%E5%BD%A2%E9%A3%BE%E7%92%B0%E9%A0%AD%E5%A4%A7%E5%88%80
+        note: 東大寺山古墳の出土品は東京国立博物館の展示品として活用されるようになり、2001年には文化庁から東京国立博物館に所轄が変更となった。
+        source: wikipedia-ja-kinzogan-mei-hanagata-kazari-kanto-tachi
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/bsys/maindetails/201/00011754
+        note: 保管施設の名称 ： 東京国立博物館 所有者名 ： (独)国立文化財機構　東京国立博物館
+        source: kunishitei-201-11754
+        accessed: 2026-11-24
 identifiers:
   colbase: tnm/J-39135
   emuseum: "100619"

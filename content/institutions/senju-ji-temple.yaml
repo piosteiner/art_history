@@ -1,3 +1,29 @@
 public_id: 125860
 name: Senju-ji Temple
+kind: temple
+founded: 15th century
+place: tsu
+website_url: http://www.senjuji.or.jp/
 wikidata_id: Q107017546
+metadata:
+  sources: [Wikidata Q107017546 (retrieved 2026-11-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cf/Senjuji-temple_Nyoraido.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Senjuji-temple_Nyoraido.jpg
+    license: CC BY-SA 3.0
+    credit: Bakkai at Japanese Wikipedia
+identifiers:
+  viaf: "253245347"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q107017546
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q107017546
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q107017546

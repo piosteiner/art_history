@@ -7,6 +7,8 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045333
+created: first half of the 12th century
+created_span: uncertain
 institution: gotoh-museum
 location: [139.6355, 35.61229]
 wikidata_id: Q107045333
@@ -20,6 +22,123 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Genji_emaki_SUZUMUSHI.JPG
     license: Public domain
     credit: Anonymous
+provenance:
+  - owner_label: unknown court painters (traditionally Fujiwara no Takayoshi)
+    acquired: first half of the 12th century
+    method: creation
+    label: originally about ten scrolls made by five teams of calligraphers and painters; the 'Takayoshi Genji' attribution goes back to Sumiyoshi Hiroyuki, unproven; the Gotoh holds Suzumushi (2), Yūgiri, Minori
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%BA%90%E6%B0%8F%E7%89%A9%E8%AA%9E%E7%B5%B5%E5%B7%BB
+        note: 本絵巻物が製作されたのは12世紀前中期の成立説しかなく … 「詞書」も「絵」も作者は不明。
+        source: wikipedia-ja-genji-monogatari-emaki
+        accessed: 2026-11-24
+      - note: Today only twenty Genji pictures survive, but it is assumed that originally all fifty-four chapters were illustrated … the total number of scrolls in the set was about ten. … five teams worked on the project … 1st half of the 12th century.
+        source: history-of-japanese-art
+        locator: pp. 116–117
+        accessed: 2026-11-24
+      - url: https://www.gotoh-museum.or.jp/collection/genji/
+        note: 「詞書」も「絵」も作者は不明。「詞書」の書風の違いから、五つのグループによる分担制作か。 「絵」の筆者を平安時代の優れた宮廷絵師であった藤原隆能（？～1126～74？）と伝える
+        source: gotoh-museum-genji-emaki
+        accessed: 2026-11-24
+  - owner_label: Hachisuka family, Awa (Tokushima) domain
+    acquired_label: known there from the early Edo period
+    label: one scroll in the Hachisuka family; earlier history unknown (Yotsutsuji suggests it came by marriage from the Takatsukasa family in the 19th century); left the family at the end of the Edo period / Meiji Restoration
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%BA%90%E6%B0%8F%E7%89%A9%E8%AA%9E%E7%B5%B5%E5%B7%BB
+        note: 明治維新に際して蜂須賀家の手を離れた五島本（四辻秀紀 2010, quoted in Wikipedia）
+        source: wikipedia-ja-genji-monogatari-emaki
+        accessed: 2026-11-24
+      - url: https://www.gotoh-museum.or.jp/collection/genji/
+        note: 江戸時代初期に、3巻が尾張徳川家に、1巻が阿波蜂須賀家に伝来していたことがわかっているが、それ以前の古い伝来は不明。… 蜂須賀家本は江戸時代末期に民間に流出
+        source: gotoh-museum-genji-emaki
+        accessed: 2026-11-24
+  - owner: person/furukawa-mitsura
+    direct: true
+    label: first of three owners in the early Meiji years
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%BA%90%E6%B0%8F%E7%89%A9%E8%AA%9E%E7%B5%B5%E5%B7%BB
+        note: その後、古川躬行、蜷川式胤、柏木貨一朗と所蔵者を転々とし（四辻秀紀 2010, quoted in Wikipedia）
+        source: wikipedia-ja-genji-monogatari-emaki
+        accessed: 2026-11-24
+  - owner: person/ninagawa-noritane
+    direct: true
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%BA%90%E6%B0%8F%E7%89%A9%E8%AA%9E%E7%B5%B5%E5%B7%BB
+        note: その後、古川躬行、蜷川式胤、柏木貨一朗と所蔵者を転々とし（四辻秀紀 2010, quoted in Wikipedia）
+        source: wikipedia-ja-genji-monogatari-emaki
+        accessed: 2026-11-24
+  - owner: person/kashiwagi-kaichiro
+    direct: true
+    label: antiquarian and dealer (Kashiwagi Tankō); another account has the Hachisuka sell it to him with other works c. 1887
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%BA%90%E6%B0%8F%E7%89%A9%E8%AA%9E%E7%B5%B5%E5%B7%BB
+        note: その後、古川躬行、蜷川式胤、柏木貨一朗と所蔵者を転々とし（四辻秀紀 2010, quoted in Wikipedia）
+        source: wikipedia-ja-genji-monogatari-emaki
+        accessed: 2026-11-24
+  - owner: person/masuda-takashi
+    acquired: 1912 or earlier
+    direct: true
+    label: acquired by the end of Meiji; had Tanaka Shinbi remount it as framed panels (1932, like the Tokugawa scrolls)
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%BA%90%E6%B0%8F%E7%89%A9%E8%AA%9E%E7%B5%B5%E5%B7%BB
+        note: 明治末年には益田孝（鈍翁一八四八～一九三八）が入手、徳川本三巻の額面仕立てへの改装に準じて田中親美に額面に改めさせている。（四辻秀紀 2010, quoted in Wikipedia）
+        source: wikipedia-ja-genji-monogatari-emaki
+        accessed: 2026-11-24
+      - url: https://www.gotoh-museum.or.jp/collection/genji/
+        note: 両方とも昭和7年（1932）、保存上の配慮から詞書と絵を離し、巻物の状態から桐箱製の額装に改めた。
+        source: gotoh-museum-genji-emaki
+        accessed: 2026-11-24
+  - owner: person/setsu-inosuke
+    role: dealer
+    acquired: after 1945
+    direct: true
+    label: after the war, left the Masuda family through Setsu Inosuke
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%BA%90%E6%B0%8F%E7%89%A9%E8%AA%9E%E7%B5%B5%E5%B7%BB
+        note: 戦後に至り益田家を離れた五島本は、瀬津伊之助を経て高梨仁三郎（四辻秀紀 2010, quoted in Wikipedia）
+        source: wikipedia-ja-genji-monogatari-emaki
+        accessed: 2026-11-24
+  - owner: person/takanashi-nizaburo
+    direct: true
+    label: businessman, founder of Tokyo Coca-Cola Bottling
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%BA%90%E6%B0%8F%E7%89%A9%E8%AA%9E%E7%B5%B5%E5%B7%BB
+        note: 瀬津伊之助を経て高梨仁三郎、さらに五島慶太（一八八二～一九五九）の有となり（四辻秀紀 2010, quoted in Wikipedia）
+        source: wikipedia-ja-genji-monogatari-emaki
+        accessed: 2026-11-24
+      - url: https://www.gotoh-museum.or.jp/collection/
+        note: 美術館の設立計画が具体化すると、国宝「源氏物語絵巻」をはじめとする高梨仁三郎（たかなしにさぶろう）氏のコレクション … が一括購入されます。
+        source: gotoh-museum-collection
+        accessed: 2026-11-24
+  - owner: person/goto-keita
+    acquired: 1959 or earlier
+    method: purchase
+    direct: true
+    label: bought with Takanashi's collection as the museum plan took shape
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%BA%90%E6%B0%8F%E7%89%A9%E8%AA%9E%E7%B5%B5%E5%B7%BB
+        note: さらに五島慶太（一八八二～一九五九）の有となり（四辻秀紀 2010, quoted in Wikipedia）
+        source: wikipedia-ja-genji-monogatari-emaki
+        accessed: 2026-11-24
+      - url: https://www.gotoh-museum.or.jp/collection/
+        note: 美術館の設立計画が具体化すると、国宝「源氏物語絵巻」をはじめとする高梨仁三郎（たかなしにさぶろう）氏のコレクション、および守屋孝蔵（もりやこうぞう）氏の古鏡コレクションが一括購入されます。昭和35年（1960）、これらの蒐集品を中核として、五島美術館は開館を迎えました。
+        source: gotoh-museum-collection
+        accessed: 2026-11-24
+  - owner: institution/gotoh-museum
+    acquired: 1960
+    method: gift
+    direct: true
+    place: tokyo
+    label: given at the museum's founding; the national register names Tokyu Corporation (東急株式会社) as owner and the Gotoh Museum as keeper
+    sources:
+      - url: https://ja.wikipedia.org/wiki/%E6%BA%90%E6%B0%8F%E7%89%A9%E8%AA%9E%E7%B5%B5%E5%B7%BB
+        note: 昭和三十五年（一九六〇）五島美術館の設立に伴ってこれに寄付され、今日に至っている。（四辻秀紀 2010, quoted in Wikipedia）
+        source: wikipedia-ja-genji-monogatari-emaki
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/37
+        note: 保管施設の名称：公益財団法人五島美術館 所有者名：東急株式会社
+        source: kunishitei-201-37
+        accessed: 2026-11-24
 sources:
   location:
     - accessed: 2026-11-24

@@ -1,3 +1,42 @@
 public_id: 128874
 name: Kanagawa Prefectural Kanazawa-Bunko
+kind: museum
+founded: 1275
+place: kanazawa-cho
+location: [139.62875, 35.34391]
+address: 神奈川県横浜市金沢区金沢町142
+website_url: https://www.pen-kanagawa.ed.jp/kanazawabunko/kanazawa.htm
 wikidata_id: Q3192586
+metadata:
+  sources: [Wikidata Q3192586 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E7%AB%8B%E9%87%91%E6%B2%A2%E6%96%87%E5%BA%AB_-_panoramio_%281%29.jpg/1280px-%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E7%AB%8B%E9%87%91%E6%B2%A2%E6%96%87%E5%BA%AB_-_panoramio_%281%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E7%AB%8B%E9%87%91%E6%B2%A2%E6%96%87%E5%BA%AB_-_panoramio_(1).jpg
+    license: CC BY 3.0
+    credit: ex-h20g-fan
+identifiers:
+  gnd: 7586130-6
+  idref: "132747022"
+  lc: n82125693
+  viaf: "148948877"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q3192586
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q3192586
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q3192586
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q3192586
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q3192586

@@ -1,3 +1,45 @@
 public_id: 128913
 name: Toledo Museum of Art
+kind: museum
+founded: 1901
+place: toledo-2
+location: [-83.55944, 41.65833]
+address: 2445 Monroe Street
+website_url: https://www.toledomuseum.org/
+collection_url: http://emuseum.toledomuseum.org
 wikidata_id: Q1743116
+metadata:
+  sources: [Wikidata Q1743116 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Toledo_Museum_of_Art_exterior_02.jpg/1280px-Toledo_Museum_of_Art_exterior_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Toledo_Museum_of_Art_exterior_02.jpg
+    license: CC BY-SA 4.0
+    credit: Ɱ
+identifiers:
+  bnf: 11885166r
+  gnd: 50294-7
+  idref: "032828853"
+  lc: n79046209
+  ulan: "500245395"
+  viaf: "146435543"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q1743116
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q1743116
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q1743116
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q1743116
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q1743116

@@ -1,3 +1,40 @@
 public_id: 126589
 name: Enryaku-ji Temple
+kind: temple
+founded: 788
+place: otsu
+location: [135.84111, 35.07056]
+address: 滋賀県大津市坂本本町4220
+website_url: https://www.hieizan.or.jp/
 wikidata_id: Q917195
+metadata:
+  sources: [Wikidata Q917195 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Enryakuji_Konponchudo02s5s3200.jpg/1280px-Enryakuji_Konponchudo02s5s3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Enryakuji_Konponchudo02s5s3200.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  lc: n81110714
+  viaf: "270146998404418941217"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q917195
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q917195
+  address:
+    - accessed: 2026-11-24
+      property: P6375
+      wikidata: Q917195
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q917195
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q917195

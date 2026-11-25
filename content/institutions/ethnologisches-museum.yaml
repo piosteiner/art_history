@@ -1,3 +1,45 @@
 public_id: 125921
 name: Ethnologisches Museum
+kind: museum
+founded: 1886
+place: berlin
+location: [13.40278, 52.5175]
+website_url: http://www.smb.museum/museen-einrichtungen/ethnologisches-museum/home.html
+collection_url: https://recherche.smb.museum/?language=de&limit=15&sort=relevance&controls=none&collectionKey=EM*
 wikidata_id: Q688353
+metadata:
+  sources: [Wikidata Q688353 (retrieved 2026-11-24)]
+relationships:
+  - type: part_of
+    to: institution/staatliche-museen-zu-berlin
+    sources:
+      - accessed: 2026-11-24
+        property: P361
+        wikidata: Q688353
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Humboldt_Forum-9148.jpg/1280px-Humboldt_Forum-9148.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Humboldt_Forum-9148.jpg
+    license: CC BY-SA 4.0
+    credit: GodeNehler
+identifiers:
+  gnd: 10000578-0
+  idref: "067180841"
+  lc: no00080000
+  viaf: "150002086"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q688353
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q688353
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q688353
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q688353

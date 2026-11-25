@@ -1,3 +1,29 @@
 public_id: 124138
 name: Bernheimer Fine Old Masters
+kind: gallery
+founded: 1864
+place: munich
+location: [11.5764, 48.1427]
+website_url: http://www.bernheimer.com/index-en.html
 wikidata_id: Q826483
+metadata:
+  sources: [Wikidata Q826483 (retrieved 2026-11-24)]
+identifiers:
+  gnd: 1222285-9
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q826483
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q826483
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q826483
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q826483

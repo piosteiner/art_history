@@ -2,4 +2,50 @@ public_id: 123653
 name: Nathaniel de Rothschild
 given_name: Nathaniel
 family_name: de Rothschild
+kind: person
+birth: 1836-10-26
+death: 1905-06-13
 wikidata_id: Q89219
+metadata:
+  sources: [Wikidata Q89219 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/austria-hungary
+    sources:
+      - accessed: 2026-11-24
+        property: P27
+        wikidata: Q89219
+  - type: born_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-11-24
+        property: P19
+        wikidata: Q89219
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-11-24
+        property: P20
+        wikidata: Q89219
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Baron_Nathaniel_Rothschild_1884_Th._Mayerhofer.png/1280px-Baron_Nathaniel_Rothschild_1884_Th._Mayerhofer.png
+    source_url: https://commons.wikimedia.org/wiki/File:Baron_Nathaniel_Rothschild_1884_Th._Mayerhofer.png
+    license: Public domain
+    credit: Theodor Mayerhofer
+identifiers:
+  bnf: "161333219"
+  gnd: 12244826X
+  viaf: "59966228"
+sources:
+  kind:
+    - accessed: 2026-11-24
+      property: P31
+      wikidata: Q89219
+  birth:
+    - accessed: 2026-11-24
+      property: P569
+      wikidata: Q89219
+  death:
+    - accessed: 2026-11-24
+      property: P570
+      wikidata: Q89219

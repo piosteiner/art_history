@@ -48,6 +48,46 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Sumida_Hatiman_Mirror.JPG
     license: Public domain
     credit: ASUKAEN
+provenance:
+  - owner_label: Shima (斯麻), named in the inscription
+    acquired_label: "8th month of a (gui)wei year: 443 or 503 (also read 491, 515)"
+    method: commission
+    label: made for Shima, who sent Kawachi no Atai and Imasuri to make it from 200 kan of fine copper; Shima has been identified as King Muryeong of Baekje on the 503 reading
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%9A%85%E7%94%B0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%E4%BA%BA%E7%89%A9%E7%94%BB%E5%83%8F%E9%8F%A1&oldid=108705168
+        note: 従来は「癸未年」を冒頭として読む説が主流であり、「癸未年」を、西暦443年とする説、503年とする説のうち、鏡の型式等から503年説が優勢であったが … その結果、491年や、515年に比定する説もある。
+        source: wikipedia-ja-suda-hachiman-jinja-jinbutsu-gazokyo
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/w/index.php?title=Suda%20Hachiman%20Shrine%20Mirror&oldid=1371722436
+        note: Sima, wishing for longevity, sent two persons to make this mirror from 200 han of brand-new and fine bronze. The year gui-wei likely corresponds to 443 or 503.
+        source: wikipedia-en-suda-hachiman-shrine-mirror
+        accessed: 2026-11-24
+  - owner: institution/suda-hachiman-shrine
+    acquired: 1838 or earlier
+    place: hashimoto
+    label: handed down at the shrine; first recorded in the Kii no kuni meisho zue (1838); where and when it was found is unknown
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%9A%85%E7%94%B0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%E4%BA%BA%E7%89%A9%E7%94%BB%E5%83%8F%E9%8F%A1&oldid=108705168
+        note: 近世の地誌類にもこの鏡についての記載があることから、古い時代に出土したものであることは確かだが、正確な出土年代や出土地は定かでない。
+        source: wikipedia-ja-suda-hachiman-jinja-jinbutsu-gazokyo
+        accessed: 2026-11-24
+      - url: https://en.wikipedia.org/w/index.php?title=Suda%20Hachiman%20Shrine%20Mirror&oldid=1371722436
+        note: The earliest record of this mirror is from the 3rd volume of the Kii no kuni meisho zue published in 1838. According to this text, the mirror had been passed down and treasured at the Suda Hachiman shrine.
+        source: wikipedia-en-suda-hachiman-shrine-mirror
+        accessed: 2026-11-24
+  - owner: institution/tokyo-national-museum
+    role: custodian
+    place: tokyo
+    label: deposited by the shrine
+    sources:
+      - url: https://ja.wikipedia.org/w/index.php?title=%E9%9A%85%E7%94%B0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%E4%BA%BA%E7%89%A9%E7%94%BB%E5%83%8F%E9%8F%A1&oldid=108705168
+        note: 鏡は東京国立博物館に寄託されている。
+        source: wikipedia-ja-suda-hachiman-jinja-jinbutsu-gazokyo
+        accessed: 2026-11-24
+      - url: https://kunishitei.bunka.go.jp/heritage/detail/201/834
+        note: 名称 ： 人物画象鏡 … 時代 ： 古墳 … ト書 ： 癸未年八月在銘 … 所在地 ： 東京国立博物館　東京都台東区上野公園13-9 保管施設の名称 ： 東京国立博物館
+        source: kunishitei-201-834
+        accessed: 2026-11-24
 sources:
   created:
     - accessed: 2026-11-24

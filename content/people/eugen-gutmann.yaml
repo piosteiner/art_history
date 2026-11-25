@@ -5,3 +5,10 @@ family_name: Gutmann
 birth: 1840
 death: 1925
 wikidata_id: Q1372556
+relationships:
+  - type: founded
+    to: institution/dresdner-bank
+    sources:
+      - accessed: 2026-11-24
+        property: P112
+        wikidata: Q1258529

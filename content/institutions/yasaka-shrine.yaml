@@ -1,0 +1,30 @@
+public_id: 130159
+name: Yasaka Shrine
+founded: 656
+place: kyoto
+location: [135.77853, 35.00365]
+website_url: https://www.yasaka-jinja.or.jp/
+wikidata_id: Q692714
+metadata:
+  sources: [Wikidata Q692714 (retrieved 2026-11-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Kyoto_Yasaka-jinja_B%C3%BChne_%26_Nebentor_2.jpg/1280px-Kyoto_Yasaka-jinja_B%C3%BChne_%26_Nebentor_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kyoto_Yasaka-jinja_B%C3%BChne_%26_Nebentor_2.jpg
+    license: CC BY-SA 4.0
+    credit: Zairon
+identifiers:
+  idref: "131203894"
+  lc: nr95005587
+sources:
+  place:
+    - accessed: 2026-11-24
+      property: P131
+      wikidata: Q692714
+  founded:
+    - accessed: 2026-11-24
+      property: P571
+      wikidata: Q692714
+  location:
+    - accessed: 2026-11-24
+      property: P625
+      wikidata: Q692714
