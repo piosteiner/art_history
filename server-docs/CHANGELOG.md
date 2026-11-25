@@ -2,6 +2,20 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-25
+
+### Data: Blaquier-Arrieta sale — Sotheby's last corrections entered (sale watcher, feedback 9 and 10)
+- **What:** the two watcher notes of 17/18 November, never entered until now. Lot 5 (*Chestnut Trees in Blossom*):
+  Sotheby's now names **Hedwig Fischer** (Samuel Fischer's widow, inheritance 1934) instead of Brigitte and Gottfried
+  Bermann Fischer — step 8 relinked to her (new person from Wikidata Q94763749, spouse of Samuel Fischer Q95541,
+  mother of Brigitte; `from-wikidata.js --links`), Gottfried's co-ownership removed, his deposit with Cassirer
+  Amsterdam since 1932/33 in the label; the Kapferer step's quote updated. Lot 4 (*Le Jardin des Tuileries*): Stránský
+  "acquired by June 1917" (was undated), Jos Hessel now "(possibly)" → certainty possible. Citation notes quote the
+  new wording (the old one kept for lot 5), accessed 2026-11-24. The result steps of lots 4, 9 and 12 said "the price
+  is not reported" beside a price — label shortened. Feedback 9 and 10 done. (Audit source `sql`.)
+- **Why:** owner 2026-11-25 ("did we update all infos from the Blaquier-Arrieta auction?").
+- **Revert:** the works' history pages; delete person `hedwig-fischer`.
+
 ## 2026-11-24
 
 ### Site: network view "Arrange" — a tree laid out by hand

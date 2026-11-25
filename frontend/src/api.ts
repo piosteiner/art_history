@@ -124,6 +124,15 @@ export function saveView(query: string): Promise<string> {
   }
   return p;
 }
+/** A shared arrangement of the network's Arrange view (API 259): its short code, the same for the same arrangement. */
+export interface ArrangementState { pos: Record<string, [number, number]>; hidden: string[]; folded: string[]; name?: string }
+export async function saveArrangement(root: string, state: ArrangementState): Promise<string> {
+  const res = await fetch(`${BASE}/arrangements`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ root, state }) });
+  const body = await res.json().catch(() => null);
+  if (!res.ok) throw new ApiError(res.status, body?.error ?? 'internal_error', body?.message ?? res.statusText, body);
+  return (body as { id: string }).id;
+}
+export const getArrangement = (id: string) => get<{ id: string; root: string; state: ArrangementState }>(`/arrangements/${encodeURIComponent(id)}`);
 /** The query behind a short address (renamed entries followed). */
 export const getView = (id: string) => get<{ id: string; query: string }>(`/views/${encodeURIComponent(id)}`);
 

@@ -390,6 +390,60 @@ router.post('/views', express.text({ type: '*/*', limit: '24kb' }), async (req, 
     client.release();
   }
 });
+// Shared arrangements of the network's Arrange view (migration 259): POST /v1/arrangements {root, state} → 201 {id};
+// GET /v1/arrangements/:id → {id, root, state}. The state is what the site keeps per centre: pos {entry: [x, y]},
+// hidden [entries], folded [entries], name. Only that shape is stored — whole numbers, entry ids, a short name —
+// under the start map links' rate limit (anonymous like them: the address is only held in memory).
+const ENTRY_ID = /^[^\s"'<>\\]{1,400}$/;
+function canonicalArrangement(b) {
+  const root = typeof b.root === 'string' ? b.root : '';
+  if (!/^[a-z]+\/[^/\s]{1,200}$/.test(root)) throw badRequest('root: an entry, e.g. "artist/vincent-van-gogh"');
+  const st = b.state && typeof b.state === 'object' && !Array.isArray(b.state) ? b.state : null;
+  if (!st || !st.pos || typeof st.pos !== 'object') throw badRequest('state: {pos, hidden, folded}');
+  const ids = (list, what) => {
+    if (list === undefined) return [];
+    if (!Array.isArray(list) || list.length > 2000 || !list.every((x) => typeof x === 'string' && ENTRY_ID.test(x))) throw badRequest(`state.${what}: a list of entries`);
+    return [...new Set(list)].sort();
+  };
+  const pos = {};
+  const keys = Object.keys(st.pos);
+  if (!keys.length || keys.length > 2000) throw badRequest('state.pos: 1 to 2,000 entries');
+  for (const k of keys) {
+    const v = st.pos[k];
+    if (!ENTRY_ID.test(k) || !Array.isArray(v) || v.length !== 2 || !v.every((x) => Number.isFinite(x) && Math.abs(x) < 1e6)) throw badRequest('state.pos: {entry: [x, y]}');
+    pos[k] = v.map(Math.round);
+  }
+  const name = typeof st.name === 'string' ? st.name.trim().slice(0, 80) : '';
+  return { root, state: { pos, hidden: ids(st.hidden, 'hidden'), folded: ids(st.folded, 'folded'), ...(name ? { name } : {}) } };
+}
+router.post('/arrangements', express.json({ limit: '256kb' }), async (req, res) => {
+  if (tooMany(req.ip)) return res.status(429).json({ error: 'too_many', message: 'too many new links — try again in a few minutes' });
+  const { root, state } = canonicalArrangement(req.body && typeof req.body === 'object' ? req.body : {});
+  const client = await apiPool.connect();
+  try {
+    await client.query('BEGIN READ WRITE');
+    const { rows: [r] } = await client.query('SELECT save_shared_arrangement($1, $2) AS id', [root, JSON.stringify(state)]);
+    await client.query('COMMIT');
+    res.status(201).json({ id: r.id, root });
+  } catch (err) {
+    await client.query('ROLLBACK').catch(() => {});
+    throw err;
+  } finally {
+    client.release();
+  }
+});
+router.get('/arrangements/:id', async (req, res) => {
+  if (!/^[0-9a-f]{8,64}$/.test(req.params.id)) throw notFound('no such arrangement');
+  const { rows: [a] } = await apiPool.query('SELECT id, root, state, last_used < current_date AS stale FROM shared_arrangements WHERE id = $1', [req.params.id]);
+  if (!a) throw notFound('no such arrangement');
+  if (a.stale) {  // remember that it is still used (once a day)
+    apiPool.connect().then(async (c) => {
+      try { await c.query('BEGIN READ WRITE'); await c.query('UPDATE shared_arrangements SET last_used = current_date WHERE id = $1', [a.id]); await c.query('COMMIT'); } catch { await c.query('ROLLBACK').catch(() => {}); } finally { c.release(); }
+    }).catch(() => {});
+  }
+  res.json({ id: a.id, root: a.root, state: a.state });
+});
+
 // Feedback from visitors (migration 141): POST /v1/feedback {kind, message, page_url, page_title, elements, email,
 // viewport, website} → 201 {id}. Written through submit_feedback() — the API can't read feedback. `website` is a field
 // people don't see: filled in, it was a bot (answered 201 all the same, nothing stored). At most 10 per 10 minutes and
