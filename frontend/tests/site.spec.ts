@@ -3968,6 +3968,50 @@ test('network, Arrange (2026-11-24): an entry drags its branch along, a later on
   await expect(node(jo)).not.toHaveClass(/gone/);
 });
 
+test('network, Arrange: shared as a link (API 259) — opened as it was, kept off this browser\'s own arrangement until changed', async ({ page }) => {
+  // the API's /v1/arrangements stood in for (it may not be deployed where the tests read from)
+  let stored: { root: string; state: { pos: Record<string, [number, number]>; hidden: string[]; folded: string[] } } | null = null;
+  await page.route(/\/v1\/arrangements(\/[^/?]+)?$/, async (route) => {
+    if (route.request().method() === 'POST') {
+      stored = route.request().postDataJSON();
+      return route.fulfill({ status: 201, contentType: 'application/json', headers: { 'Access-Control-Allow-Origin': '*' }, body: JSON.stringify({ id: 'abcd1234', root: stored!.root }) });
+    }
+    return route.fulfill({ contentType: 'application/json', headers: { 'Access-Control-Allow-Origin': '*' }, body: JSON.stringify({ id: 'abcd1234', ...stored }) });
+  });
+  await page.goto('/graph/artists/vincent-van-gogh?view=arrange');
+  const node = (id: string) => page.locator(`svg.graph .node[data-id="${id}"]`);
+  const at = async (id: string) => {
+    const m = /translate\(([-\d.e]+),([-\d.e]+)\)/.exec((await node(id).getAttribute('transform'))!)!;
+    return { x: Math.round(Number(m[1])), y: Math.round(Number(m[2])) };
+  };
+  const theo = 'person/theo-van-gogh';
+  await expect(node(theo)).toBeVisible();
+  await page.locator('svg.graph').scrollIntoViewIfNeeded();
+  const b = (await node(theo).locator('circle').boundingBox())!;
+  await page.mouse.move(b.x + b.width / 2, b.y + b.height / 2);
+  await page.mouse.down();
+  await page.mouse.move(b.x + b.width / 2 + 80, b.y + b.height / 2 + 50, { steps: 6 });
+  await page.mouse.up();
+  const moved = await at(theo);
+  await page.locator('.graph-info [data-share]').click();
+  await expect(page.locator('.arrange-share input')).toHaveValue(/[?&]arr=abcd1234$/);
+  expect(stored!.root).toBe('artist/vincent-van-gogh');
+  expect(stored!.state.pos[theo]).toEqual([moved.x, moved.y]);
+  // this browser's own arrangement started over; the link still shows the shared one
+  await page.locator('.graph-info [data-reset]').click();
+  const fresh = await at(theo);
+  expect(fresh).not.toEqual(moved);
+  await page.goto('/graph/artists/vincent-van-gogh?view=arrange&arr=abcd1234');
+  await expect(node(theo)).toBeVisible();
+  expect(await at(theo)).toEqual(moved);
+  await expect(page.locator('.graph-info .arrange-shared')).toContainText('shared by a link');
+  // only looked at, not changed: the own arrangement is still the fresh one
+  await page.locator('.graph-info a', { hasText: 'Show your own arrangement' }).click();
+  await expect(page).not.toHaveURL(/arr=/);
+  await expect(node(theo)).toBeVisible();
+  expect(await at(theo)).toEqual(fresh);
+});
+
 test('network: every name shown in a small network (2026-11-23)', async ({ page }) => {
   await page.goto('/graph/events/tani-buncho-manpachiro-gathering-1792');
   await expect(page.locator('svg.graph .node').first()).toBeVisible();

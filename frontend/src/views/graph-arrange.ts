@@ -10,9 +10,12 @@
 //   - hovering an entry marks its path back to the centre; names fade when zoomed far out.
 //   - the arrangement (positions, hidden, folded) is kept in this browser per centre — localStorage, a convenience
 //     only: without it the view works the same and starts fresh.
+//   - shared as a link (2026-11-25, API 259 /v1/arrangements): `&arr=<code>` opens someone's arrangement; it stays off
+//     this browser's own arrangement until the visitor changes it — then it becomes theirs.
 import { drag } from 'd3-drag';
 import { forceCollide, forceLink, forceManyBody, forceSimulation } from 'd3-force';
 import type { Selection } from 'd3-selection';
+import type { ArrangementState } from '../api';
 import { familyKind } from '../graph-group';
 import { href, TYPE_LABEL } from '../html';
 import { edgeClass, edgeTitle, radius, spanningTree, type Drawn, type Edge, type LayoutCtx, type Node } from './graph-layouts';
@@ -30,13 +33,17 @@ export interface ArrangeApi {
   spread(n: Node): void;
   /** forget the arrangement: laid out afresh, nothing hidden */
   reset(): void;
+  /** where everything is, what is hidden and folded — what a shared link stores */
+  state(): ArrangementState;
+  /** still the arrangement a link opened, unchanged (not kept in this browser) */
+  fromLink(): boolean;
   hidden(): Node[];
   visible(n: Node): boolean;
   onChange(fn: () => void): void;
   onZoom(k: number): void;
 }
 
-interface Saved { pos: Record<string, [number, number]>; hidden: string[]; folded: string[] }
+type Saved = ArrangementState;
 const KEY = (root: Node) => `graph-arrange:v1:${root.id}`;
 const load = (root: Node): Saved | null => {
   try { const s = localStorage.getItem(KEY(root)); return s ? JSON.parse(s) as Saved : null; } catch { return null; }
@@ -48,7 +55,7 @@ const store = (root: Node, s: Saved | null) => {
 const S = (e: Edge) => e.source as Node;
 const T = (e: Edge) => e.target as Node;
 
-export function arrange(ctx: LayoutCtx & { height: number; menuHost: HTMLElement }): Drawn & { api: ArrangeApi } {
+export function arrange(ctx: LayoutCtx & { height: number; menuHost: HTMLElement; shared?: Saved | null }): Drawn & { api: ArrangeApi } {
   const { viewport, nodes, edges, root, width, height } = ctx;
   const { parent, children } = spanningTree(ctx);
   // entries the walk didn't reach from the centre (a family member joined later) hang on the centre
@@ -105,7 +112,8 @@ export function arrange(ctx: LayoutCtx & { height: number; menuHost: HTMLElement
     sim.tick(120);
     for (const n of nodes) { n.fx = n.fy = undefined; n.vx = n.vy = 0; }
   }
-  const saved = load(root);
+  let linked = !!ctx.shared?.pos[root.id];   // opened from a shared link, not changed yet
+  const saved = linked ? ctx.shared! : load(root);
   if (saved && saved.pos[root.id]) {
     saved.hidden.forEach((id) => hidden.add(id));
     saved.folded.forEach((id) => foldedSet.add(id));
@@ -125,10 +133,15 @@ export function arrange(ctx: LayoutCtx & { height: number; menuHost: HTMLElement
     [root.x, root.y] = saved.pos[root.id];
     placeNew(root);
   } else freshLayout();
-  const save = () => store(root, {
-    pos: Object.fromEntries(nodes.map((n) => [n.id, [Math.round(n.x!), Math.round(n.y!)]])),
+  const state = (): Saved => ({
+    pos: Object.fromEntries(nodes.map((n) => [n.id, [Math.round(n.x!), Math.round(n.y!)] as [number, number]])),
     hidden: [...hidden], folded: [...foldedSet],
   });
+  // a change makes a linked arrangement the visitor's own; until then this browser's own one is left as it was
+  const save = (changed = true) => {
+    if (changed) linked = false;
+    if (!linked) store(root, state());
+  };
 
   // ---- drawing ----------------------------------------------------------------------------------------------------
   const kindOf = new Map(edges.map((e) => [e, familyKind(e.rels)]));
@@ -165,25 +178,33 @@ export function arrange(ctx: LayoutCtx & { height: number; menuHost: HTMLElement
     });
   }
   const listeners: (() => void)[] = [];
-  function update() {
+  function update(changed = true) {
     nodeSel.classed('gone', (n) => !visible(n));
     linkSel.classed('gone', (e) => !visible(S(e)) || !visible(T(e)));
     nodeSel.select<SVGTextElement>('text.fold-badge').text((n) => (foldedSet.has(n.id) && size(n) ? `+${size(n)}` : ''));
-    save();
+    save(changed);
     listeners.forEach((f) => f());
   }
   place();
-  update();
+  update(false);
 
   // dragging: the entry and everything reached through it, by the same step; the entries before it stay
   let moving: Node[] = [];
+  let dragged = false;
   nodeSel.call(drag<SVGAElement, Node>()
-    .on('start', (_ev, n) => { moving = [n, ...branch(n)]; })
+    .on('start', (_ev, n) => { moving = [n, ...branch(n)]; dragged = false; })
     .on('drag', (ev) => {
+      dragged = true;
       for (const m of moving) { m.x! += ev.dx; m.y! += ev.dy; }
       place();
     })
-    .on('end', () => { moving = []; save(); }));
+    .on('end', () => {
+      moving = [];
+      if (!dragged) return;   // a click
+      const was = linked;
+      save();
+      if (was) listeners.forEach((f) => f());   // the panel stops calling it a shared arrangement
+    }));
 
   // the path back to the centre, on hover
   const pathTo = (n: Node) => { const out = new Set<Edge>(); for (let x = parent.get(n); x && x.e; x = parent.get(x.p)) out.add(x.e); return out; };
@@ -263,6 +284,8 @@ export function arrange(ctx: LayoutCtx & { height: number; menuHost: HTMLElement
       place();
       update();
     },
+    state,
+    fromLink: () => linked,
     hidden: () => nodes.filter((n) => hidden.has(n.id) || foldedSet.has(n.id)),
     visible,
     onChange(fn) { listeners.push(fn); },

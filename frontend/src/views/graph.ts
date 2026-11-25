@@ -1,6 +1,6 @@
 // The network around one entry (/v1/graph/<type>/<slug>): who influenced whom, studied where, belonged to which
 // movement, was supported by which patron, made which work, owned it after whom (provenance) … laid out with d3-force.
-// /graph/artists/vincent-van-gogh (?depth=1–4, ?categories=…)
+// /graph/artists/vincent-van-gogh (?depth=1–4, ?categories=…, ?view=…, &arr=<code> a shared Arrange layout)
 //   click a node: details and its links in the side panel · double-click: center the network on it
 //   Ctrl/Cmd/middle click: open its page in a new tab · drag nodes · wheel/pinch zooms, drag the background pans
 import { drag } from 'd3-drag';
@@ -8,7 +8,7 @@ import { forceCollide, forceLink, forceManyBody, forceSimulation, forceX, forceY
 import { select } from 'd3-selection';
 import { reducedMotion } from '../theme';
 import { zoom, zoomIdentity, type ZoomBehavior } from 'd3-zoom';
-import { getGraph, getVocabulary, listAll, PLURAL } from '../api';
+import { getArrangement, getGraph, getVocabulary, listAll, PLURAL, saveArrangement, type ArrangementState } from '../api';
 import { escape, href, html, impliedEnd, link, render, TYPE_LABEL } from '../html';
 import type { Category, GraphEdge, GraphNode, Plural } from '../types';
 import { bundle, familyKind, mergeEdges, provenanceChains, pruneProvenance, sharedParentSiblings } from '../graph-group';
@@ -86,6 +86,10 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
   const chosenCats = params.get('categories')?.split(',').filter((c): c is Category => (GRAPH_CATEGORIES as string[]).includes(c)) ?? null;
   const view: View = (VIEWS as readonly string[]).includes(params.get('view') ?? '') ? params.get('view') as View : 'free';
   const open = new Set<string>();   // bundles opened by a click
+  // a shared arrangement (?arr=): used until the visitor changes it, then theirs is kept in the browser as usual
+  const arrCode = view === 'arrange' ? params.get('arr') : null;
+  let shared: ArrangementState | null = null;
+  let sharedMissing = false;
   const creators = new Map<string, { id: string; name: string }>();
   let stop: (() => void) | undefined;
 
@@ -98,9 +102,13 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       // family links alone, four generations out, around a person or an artist
       const familyTypes = vocab.filter((v) => v.category === 'family').map((v) => v.code);
       const withFamily = cats.includes('family') && ['people', 'artists'].includes(plural) && familyTypes.length > 0;
-      const [g, works, fam] = await Promise.all([getGraph(plural, slug, depth, types), listAll('artworks').catch(() => null),
-        withFamily ? getGraph(plural, slug, 4, familyTypes).catch(() => null) : null]);
+      const [g, works, fam, arrangement] = await Promise.all([getGraph(plural, slug, depth, types), listAll('artworks').catch(() => null),
+        withFamily ? getGraph(plural, slug, 4, familyTypes).catch(() => null) : null,
+        arrCode ? getArrangement(arrCode).catch(() => null) : null]);
       if (!current()) return;
+      // a code for another centre (the entry renamed, a link edited by hand) or gone: the view as usual, with a note
+      if (arrangement && arrangement.root === g.root) shared = arrangement.state;
+      else sharedMissing = !!arrCode;
       creators.clear();
       for (const w of works?.data ?? []) if (w.creator) creators.set(`artwork/${w.slug}`, { id: `artist/${w.creator.slug}`, name: w.creator.name });
       const redraw = () => {
@@ -338,7 +346,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       const lctx = { viewport, nodes, edges, root, catOrder: GRAPH_CATEGORIES, catLabel: CATEGORY_LABEL, width };
       let d: Drawn;
       if (view === 'arrange') {
-        const a = arrange({ ...lctx, height, menuHost: main.querySelector<HTMLElement>('.graph-wrap')! });
+        const a = arrange({ ...lctx, height, menuHost: main.querySelector<HTMLElement>('.graph-wrap')!, shared });
         arr = a.api;
         d = a;
       } else d = LAYOUTS[view](lctx);
@@ -462,7 +470,13 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       if (!n) {
         if (!arr) return render(info, html`<p class="muted">Click an entry to see its links here.</p>`);
         const away = arr.hidden();
-        render(info, html`<p class="muted">Click an entry to see its links here. Drag an entry to move it with everything reached through it; right-click it to hide it or fold away its branch.</p>
+        const own = location.pathname + location.search.replace(/[?&]arr=[^&]*/, '').replace(/^&/, '?');
+        render(info, html`${arr.fromLink() ? html`<p class="arrange-shared">An arrangement shared by a link. Changing it makes it your own, kept in this browser
+            (in place of your own arrangement of this network, if you have one). <a href="${own}" data-here>Show your own arrangement</a></p>`
+          : sharedMissing ? html`<p class="arrange-shared">The shared arrangement of this link wasn't found — this is the network as usual.</p>` : ''}
+          <p class="muted">Click an entry to see its links here. Drag an entry to move it with everything reached through it; right-click it to hide it or fold away its branch.</p>
+          <p class="graph-actions"><button type="button" class="button-link" data-share>Share this arrangement</button></p>
+          <div class="arrange-share" hidden><input type="text" readonly aria-label="Link to this arrangement"> <span class="muted" aria-live="polite"></span></div>
           ${away.length ? html`<h3>Hidden (${away.length})</h3><ul class="plain-list arrange-hidden">${away.map((m) => html`<li>${m.name}
             <span class="muted">${arr!.folded(m) && arr!.visible(m) ? `branch of ${arr!.branchSize(m)} folded` : ''}</span>
             <button type="button" class="button-link" data-show="${m.id}">Show</button></li>`)}</ul>
@@ -471,6 +485,30 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
         info.querySelectorAll<HTMLButtonElement>('[data-show]').forEach((b) => b.addEventListener('click', () => arr!.show(b.dataset.show!)));
         info.querySelector('[data-show-all]')?.addEventListener('click', () => arr!.showAll());
         info.querySelector('[data-reset]')!.addEventListener('click', () => { arr!.reset(); fit(); });
+        info.querySelector<HTMLButtonElement>('[data-share]')!.addEventListener('click', async (ev) => {
+          const b = ev.currentTarget as HTMLButtonElement;
+          const box = info.querySelector<HTMLElement>('.arrange-share')!;
+          const input = box.querySelector('input')!;
+          const msg = box.querySelector('span')!;
+          b.disabled = true;
+          try {
+            const code = await saveArrangement(root.id, arr!.state());
+            const u = new URL(location.href);
+            u.searchParams.set('arr', code);
+            input.value = u.toString();
+            input.hidden = false;
+            box.hidden = false;
+            input.select();
+            msg.textContent = '';
+            navigator.clipboard?.writeText(input.value).then(() => { msg.textContent = 'Link copied.'; }, () => { msg.textContent = 'Copy the link.'; });
+          } catch (err) {
+            box.hidden = false;
+            input.hidden = true;
+            msg.textContent = err instanceof Error ? `Couldn't share it: ${err.message}` : "Couldn't share it.";
+          } finally {
+            b.disabled = false;
+          }
+        });
         return;
       }
       if (n.bundle) {
@@ -520,6 +558,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     }
 
     arr?.onChange(() => {
+      if (!arr!.fromLink()) shared = null;   // changed: theirs now — a redraw (a bundle opened) keeps their version
       if (selected && !arr!.visible(selected)) { selected = null; nodeSel.classed('selected', false); focus(null); }
       showInfo(selected);
     });

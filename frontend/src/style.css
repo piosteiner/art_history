@@ -688,6 +688,9 @@ svg.view-arrange .node:active { cursor: grabbing; }
 .arrange-menu button:hover, .arrange-menu button:focus-visible { background: var(--picked-bg); }
 .arrange-hidden li { display: flex; gap: .4rem; align-items: baseline; flex-wrap: wrap; }
 .arrange-hidden li .button-link { margin-left: auto; }
+.arrange-shared { border-left: 3px solid var(--line); padding: .3rem .6rem; font-size: .9em; }
+.arrange-share { margin: -.3rem 0 .8rem; }
+.arrange-share input { width: 100%; font-size: .85em; }
 .node.quiet:hover text.name, .node.quiet.near text.name, .node.quiet.selected text.name { opacity: 1; }
 .node.bundle circle { fill: var(--surface); stroke: var(--n); stroke-width: 2.5; stroke-dasharray: 4 2.5; }
 .node.bundle text.count { font-size: 11px; font-weight: 700; fill: var(--text); stroke: none; }

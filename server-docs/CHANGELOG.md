@@ -4,7 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-25
 
-### Backend: shared arrangements of the network's Arrange view (migration 259) — committed, not deployed
+### Site: share an arrangement of the network's Arrange view as a link
+- **What:** the side panel of the Arrange view (nothing selected) has "Share this arrangement": the layout goes to
+  `POST /v1/arrangements` (below), the link `…?view=arrange&arr=<code>` is copied and shown. Opening it shows that
+  layout with a note "An arrangement shared by a link"; it is not written to the visitor's browser until they change
+  it (then it becomes theirs, in place of their own for that network), "Show your own arrangement" drops `arr`. A code
+  for another centre or gone: the usual view and a note. `frontend/src/views/graph-arrange.ts` (`shared`, `state()`,
+  `fromLink()`), `views/graph.ts`, `style.css`; test `network, Arrange: shared as a link` (API stood in for).
+  Deployed with migration 259 (`backend/deploy.sh`).
+- **Why:** owner 2026-11-25 ("yes" to building the button for 259). **Revert:** the commit; the API stays harmless.
+
+### Backend: shared arrangements of the network's Arrange view (migration 259)
 - **What:** table `shared_arrangements` (code = SHA-256 prefix of centre + jsonb state, like `shared_views`; anonymous,
   `last_used`), `save_shared_arrangement()`; API `POST /v1/arrangements` {root, state: pos/hidden/folded/name} → code,
   `GET /v1/arrangements/:id`; site `saveArrangement()`/`getArrangement()` in `frontend/src/api.ts` — no button in
