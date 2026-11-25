@@ -152,7 +152,7 @@ export interface EntryHint { type: EntityType; slug: string; name: string; subti
 
 export interface GlossaryHint { name: string; category: TermCategory; definition: string | null }
 export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'art style' | 'format' | 'object type' | 'group of works' | 'mounting' | 'performing arts' | 'heritage designation' | 'calendar' | 'literary genre'
-  | 'religion' | 'philosophy' | 'aesthetics' | 'politics' | 'society' | 'language' | 'arts and customs' | 'other';  // 234: style → art style, seven new  // group of works: API 131, mounting: 133, performing arts: 145, heritage designation: 165
+  | 'religion' | 'philosophy' | 'aesthetics' | 'politics' | 'society' | 'language' | 'arts and customs' | 'mythology and legend' | 'other';  // 260: mythology and legend  // 234: style → art style, seven new  // group of works: API 131, mounting: 133, performing arts: 145, heritage designation: 165
 
 // ---- countries and polities ---------------------------------------------------------------------
 
