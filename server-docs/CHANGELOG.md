@@ -11,7 +11,7 @@ Format: date — what — why — how to revert.
   it (then it becomes theirs, in place of their own for that network), "Show your own arrangement" drops `arr`. A code
   for another centre or gone: the usual view and a note. `frontend/src/views/graph-arrange.ts` (`shared`, `state()`,
   `fromLink()`), `views/graph.ts`, `style.css`; test `network, Arrange: shared as a link` (API stood in for).
-  Deployed with migration 259 (`backend/deploy.sh`).
+  Needs `backend/deploy.sh` (migration 259 + routes) — until then the button answers "Couldn't share it".
 - **Why:** owner 2026-11-25 ("yes" to building the button for 259). **Revert:** the commit; the API stays harmless.
 
 ### Backend: shared arrangements of the network's Arrange view (migration 259)
