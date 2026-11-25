@@ -4,6 +4,34 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-25
 
+### Data: Quality findings worked through (errors and small warning groups)
+- **What:** (audit source `sql` / `script`)
+  - **Artists without dates** (23 Nov Cleveland/AIC import, no Wikidata item): 21 linked to their items after checking
+    profession and that the work's date lies in the life (Coorte, Vernet, Tullio Lombardo, Vien the elder — not the
+    younger —, Reni, Lely, Blake, Bonnat, Aved, Pater, Sansovino, Cesati, Juan de la Huerta, Caterino Veneziano, Gerard
+    David, Nisaradi = Nasiruddin of the 1605 Chawand Ragamala, Jiao Bingzhen, Carrier-Belleuse, Jacques de Baerze,
+    Caffieri, Lawrence) and filled by `fill-from-wikidata.js --no-create`. Wikidata's birth/death for Caterino
+    Veneziano (born 1400, works 1375–79), Jacques de Baerze (1400–1500, works 1390s) and Cesati (floruit as birth) not
+    taken. "Frans Pourbus" merged into Frans Pourbus the Younger (the 1611 Louis XIII). Thomas Lawrence was already
+    a person (Q312096, collector in 3 provenances): converted to an artist, the new artist merged into it (address
+    kept). Left: Hanasaki Toshiyoshi, Jan Crocq (no item); the Japanese/Greek makers whose items have no dates.
+  - **Holders before birth:** Cleveland Rubens *Diana and Her Nymphs* — the 1798 and 1803 buyer was Sir Simon H.
+    Clarke, 9th Bt (1764–1832), the 10th (b. 1818) a step of his own from 1832 (probable; the museum names the 10th
+    for 1803–1840). Philip II portrait: the 7th Duke of Norfolk (b. 1655) "1655 or later" (museum: from 1652).
+  - **Places:** Benin City's parent was Tokyo (Wikidata's "Edo State" matched to Edo = Tokyo) — removed with its
+    citation; Veracruz in Mexico (P17).
+  - Event "1795–1820 in Western Fashion" title case. Phaistos disc: the image was a replica (Commons: "not an exact
+    copy") — now the original, sides A and B (C messier / Bammesk, CC BY-SA 4.0).
+  - **Provenance ends with another holder:** 13 owned by a city / prefecture / the state / Kintetsu with a last
+    custodian step at the museum, and two owned by the NICH and kept at the TNM — acknowledged ("checked: …").
+    Shōtoku taishi eden (4830): owner after 1949 the state (was the Hōryū-ji Treasures collection entry), owner today
+    the NICH as its own step (Cultural Heritage Online citation moved there); the collection entry `part_of` the TNM
+    (cited ja.wikipedia). Not touched: the two Benin works at the Rietberg (does each stay there on loan?).
+  - "Sōzan shobō shujin" acknowledged (a pen name). Unconnected entries: Gossaert (not his two death places — Wikidata
+    has Antwerp and Breda), Itten, Laurana, Allen Memorial, Karl With filled from Wikidata.
+- **Why:** owner 2026-11-25 ("are there some [quality issues] that you can solve yourself?").
+- **Revert:** the entries' history pages; `DELETE FROM quality_acks WHERE acked_at::date = '2026-11-25' AND acked_by = 1`.
+
 ### Site: share an arrangement of the network's Arrange view as a link
 - **What:** the side panel of the Arrange view (nothing selected) has "Share this arrangement": the layout goes to
   `POST /v1/arrangements` (below), the link `…?view=arrange&arr=<code>` is copied and shown. Opening it shows that
