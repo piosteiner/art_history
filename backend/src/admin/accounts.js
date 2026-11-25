@@ -27,7 +27,9 @@ async function signupSettings(db = adminPool) {
       coalesce((SELECT (value #>> '{}')::boolean FROM site_settings WHERE key = 'signup_open'), false) AS open,
       coalesce((SELECT (value #>> '{}')::int FROM site_settings WHERE key = 'signup_daily_limit'), 50) AS daily_limit,
       (SELECT count(*)::int FROM admin_users WHERE created_via = 'signup'
-         AND created_at >= (now() AT TIME ZONE 'Europe/Zurich')::date AT TIME ZONE 'Europe/Zurich') AS today`);
+         -- since midnight in Zurich: date_trunc with a zone gives that instant (a date AT TIME ZONE was read as a local
+         -- time an hour off, so sign-ups between midnight and 1 am counted as none)
+         AND created_at >= date_trunc('day', now(), 'Europe/Zurich')) AS today`);
   return s;
 }
 
