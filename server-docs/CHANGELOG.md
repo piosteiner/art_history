@@ -4,6 +4,40 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-25
 
+### Data: Quality findings, second round — changed-since-cited, museum pages, creators, duplicates
+- **What:** (audit source `sql` / `script`, user 1; checks done by Claude)
+  - **Changed since cited (82 → 0):** 75 confirmed as "Yes, it still does" after comparing with the source — 51 place
+    parents (each an ancestor of the place in Wikidata's P131/P17 chain), merged targets (Rotterdam, Nagoya, Kress/Mellon
+    → NGA, Manshu-in), Wikidata values that still support the value (L'Angélus 1857–1859 via P1319/P1326, materials
+    narrowed by the owner, Karl With's occupations, tebako, A10471 ≙ A-10471 …). 7 citations deleted because the source
+    says something else: Li Di's death (Wikidata 1197, ours "after 1197"), the Shōtoku taishi eden's size (Wikidata
+    190 × 140, Mason p. 113 cited for ours), the Syros icon's holder (Wikidata: Agios Nikolaos), Kajikazawa's materials
+    (now empty), Jingo-ji Yakushi materials (Wikidata "wood", Mason cites hinoki), Hungarian Revolution's place (Wikidata:
+    the People's Republic, ours Budapest), Norman Conquest's kind (Wikidata: conquest, ours war).
+  - **Museum pages (993 → 801):** 184 `web_url` from Wikidata — P973 or the museum's own identifier (NGA P4683 all 109,
+    Art Institute P4610 all 59, Met, Belvedere, KHM, Prado, Uffizi, MoMA, Philadelphia, Fitzwilliam, SMB, Cleveland,
+    kunishitei, Athens via odysseus.culture.gr) whenever its host is the holder's site; 8 Tokyo/Kyoto National Museum
+    works → ColBase (numbers checked in Japan Search's ColBase records, titles agree; e-Museum links not used).
+  - **Creators (241 → 113):** from the museums' own data — Cleveland open-access API (incl. "copy after" Van Dyck /
+    Kubo Shunman, Leap Frog executed by Gérard after Moitte's design → `co_creator` "designer"), Art Institute API,
+    NGA open data `attribution` (labels "Anonymous, North Italian" …) — each cited to the work's museum-record source;
+    Wikidata P170 "unknown value" → "Anonymous", qualified attributions → "attributed to …"/"possibly …", series
+    wholes → their painter (Monet, Vuillard, Le Sueur); the Agency's register (kunishitei) for 64 art objects: maker
+    from 作者/名称 (Ike no Taiga, Takashina Takakane, Yintuoluo ×4, Kūkai as label, Zhang Yanjiao and Zhang Yanxi,
+    "Li of Shucheng"), else "Anonymous" (the register's maker field is empty). New artists from Wikidata: Antoine-François
+    Gérard, Jean Guillaume Moitte, Juan de Zurbarán, Tamura Suiō (active from Cleveland's record), Yintuoluo; Hasegawa
+    Yasumasa by name (auto-created, no item). Buildings left: the register has no maker field for them.
+  - **Possible duplicates (198 → 2):** merged — 8 sources (one Wikipedia article in two URL forms), 18 people (same dates
+    or the museums' texts: Bembo's two diptych panels, Cardinal Ippolito and Olimpia Aldobrandini after NGA/AIC, the
+    Vienna Rothschilds after Cleveland's text, Grosvenors, Demidovs, Contini Bonacossi, Hamilton, Komor, Bangerter,
+    Gsell, Setsu Inosuke, Friedrich II of Anhalt, Victoria Sackville-West), institutions Manjuin → Manshu-in, Tokugawa
+    shogunate (slug `tokugawa-shogunate` kept); Yamagata Prefecture kind settlement → region. 69 pairs acknowledged
+    "not the same — …" with the reason (different encyclopedias on one Kotobank page, register vs Wikipedia, separate
+    buildings of one shrine, different generations in one chain …). Left: Monet's *Le Pont de Waterloo* (Kunsthaus) vs
+    the Waterloo Bridge series — probably a part of it, no source at hand.
+- **Why:** owner 2026-11-25 ("all 4 please"). **Revert:** audit rows of 2026-11-25 with source `sql`/`merge`/`script`
+  (history pages; merges via the restore of the removed rows), acks by `issue_key`.
+
 ### Data: Quality findings worked through (errors and small warning groups)
 - **What:** (audit source `sql` / `script`)
   - **Artists without dates** (23 Nov Cleveland/AIC import, no Wikidata item): 21 linked to their items after checking
