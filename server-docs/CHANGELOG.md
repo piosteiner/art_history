@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-25
 
+### Backend: shared arrangements of the network's Arrange view (migration 259) — committed, not deployed
+- **What:** table `shared_arrangements` (code = SHA-256 prefix of centre + jsonb state, like `shared_views`; anonymous,
+  `last_used`), `save_shared_arrangement()`; API `POST /v1/arrangements` {root, state: pos/hidden/folded/name} → code,
+  `GET /v1/arrangements/:id`; site `saveArrangement()`/`getArrangement()` in `frontend/src/api.ts` — no button in
+  `graph-arrange.ts` yet. E2E `arrangements.spec.js` (passes, as do views/api-grants and the unit tests; migration
+  applied in dev only). Went to GitHub by mistake in commit `858ed690` titled "--help" (`scripts/save.sh` has no
+  options — it commits everything); kept, as it is complete and harmless until deployed.
+- **Why:** owner 2026-11-24 (a link that shows others the same arrangement). **Revert:** revert the routes and the
+  api.ts functions; after a deploy `DROP TABLE shared_arrangements; DROP FUNCTION save_shared_arrangement,
+  shared_arrangement_hash` in a new migration.
+
 ### Data: Blaquier-Arrieta sale — Sotheby's last corrections entered (sale watcher, feedback 9 and 10)
 - **What:** the two watcher notes of 17/18 November, never entered until now. Lot 5 (*Chestnut Trees in Blossom*):
   Sotheby's now names **Hedwig Fischer** (Samuel Fischer's widow, inheritance 1934) instead of Brigitte and Gottfried
