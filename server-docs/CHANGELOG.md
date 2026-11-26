@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-26
 
+### Data: one holder twice in a provenance — namesakes and notes from the Kunsthaus import (2026-11-12) taken apart
+- **What:** (audit source `sql`, user 1; each checked against the Kunsthaus page cited by the step)
+  - *Die Gotthardpost*: the line "Im Auftrag des Direktoriums der Schweizerischen Nordostbahn als Geschenk für Alfred
+    Escher entstanden" had become a step of its own beside "Alfred Escher, Geschenk" — one step now (the note as its label).
+  - Heirs of the same name had been matched to the person they inherited from: *Bodmer und Füssli vor der Büste Homers*
+    (commissioner 1778 "Heinrich Escher zum Wollenhof" ≠ Heinrich Escher-Escher, *1776 — new person, method commission,
+    the unsourced end 1778 cleared), Signac *Canal de la Giudecca* and van Gogh *Deux paysannes* (Bernhard Koehler's son,
+    1882–1964 — new; the father's dates 1849–1927 added), Rembrandt *Selbstbildnis* (Sir Frederick Lucas Cook, existing),
+    *Paesaggio serale* (John Frecheville Ramsden, 1877–1958 — new), Caspar Wolf *Felshöhle mit Wasserfall* (Jan Carel
+    Elias Graaf van Lynden, 1912–2003 — new). New people from the page, dates cited, `auto_created` via provenance.
+  - Füssli *Die drei Eidgenossen beim Schwur auf dem Rütli*: "Kanton Zürich" twice (Rathaus 1781–1989; inv. no.) → one
+    step "inv. no. 1300_12; in the Rathaus Zürich until 1989".
+  - Checked all 37 provenances with one holder in two consecutive owner steps; the rest are right (co-owners' halves,
+    different anonymous private collections, returns settled with heirs, finds in two campaigns). Left as the source
+    has it: *François Gauzi* — Gauzi 1886–1931, then "Sammlung François Gauzi" undated until 1937 or later.
+- **Why:** owner 2026-11-26 ("here we have alfred escher twice").
+- **Revert:** history pages of the steps and people (audit 2026-11-26, source `sql`).
+
 ### Content: World Folklore Names — the texts linked to each other
 - **What:** in the folklore texts (glossary terms, people, artists of the list: 626 of 1,067 texts changed) the first
   mention of every other entry is now a `[[…]]` link — 1,316 links to terms, people and artists (Ariadne → Theseus,
