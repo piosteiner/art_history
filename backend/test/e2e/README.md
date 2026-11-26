@@ -12,7 +12,7 @@ npx playwright show-trace test/e2e/.results/<…>/trace.zip   # what the browser
 ```
 
 - **Isolated:** each worker has its own shard (`env.js`): database `arthistory_test` + server :3006, `arthistory_test_1` +
-  :3008 (`arthistory_test_2` + :3009 for a third) — created once with `db/setup.sh <name>`, reset before every run
+  :3021 (`arthistory_test_2` + :3022 for a third; 3008 and 3009 belong to other projects since 2026-11-13) — created once with `db/setup.sh <name>`, reset before every run
   (`reset.sql`) and filled from the frozen sample `fixtures/content/` (not the live `content/` snapshot); two users with
   passwords generated per run (stored in the OS temp dir, never in the repo). Dev (`arthistory_dev`, :3011) and
   production are never touched. The fixture server (:3017 — :3007 belongs to another project since 2026-11-10) is shared. Use `API` / `BASE` from `helpers.js` — never a port.
