@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-26
 
+### Data: Lydia Welti-Escher died in Champel, not just "Geneva"
+- **What:** new place Champel (district of Geneva, `from-wikidata.js place Q2948668`); her `died_in` (18767) now points
+  there, cited to the HLS article (new source `hls-welti-escher-lydia`, Bähler 2012: "12.12.1891 Champel (Gemeinde
+  Genf)") and the Kunsthaus (*Die Gotthardpost*: "+1891 Champel"); the Wikidata citation (P20 = Geneva only) removed.
+  Champel belonged to the commune of Plainpalais until 1931 — the place hierarchy puts it in Geneva as today.
+- **Why:** owner 2026-11-26 ("the kunsthaus says that lydia welti-escher died in champel not geneva, right?").
+- **Revert:** history page of the relationship; delete place `champel` and source `hls-welti-escher-lydia`.
+
 ### Data: one holder twice in a provenance — namesakes and notes from the Kunsthaus import (2026-11-12) taken apart
 - **What:** (audit source `sql`, user 1; each checked against the Kunsthaus page cited by the step)
   - *Die Gotthardpost*: the line "Im Auftrag des Direktoriums der Schweizerischen Nordostbahn als Geschenk für Alfred
