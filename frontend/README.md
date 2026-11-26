@@ -239,7 +239,7 @@ The case's working description never reaches the API. Test: `tests/site.spec.ts`
 
 ## Provenance numbers in the list
 Each step in the provenance list shows its number from the map (API `step`, 2026-11-26) in the map's own bubble
-(`prov-stop prov-num`) on the rail — counted as `provenance_stops()` counts: the chain's order, events (• notes) not
+(`prov-num`, styled like the map's `prov-stop` — its own class, so map code and tests never find list bubbles as map markers) on the rail — counted as `provenance_stops()` counts: the chain's order, events (• notes) not
 numbered. Agents and custodians get a smaller bubble, computed lines (the artist's) a hollow one.
 
 ## Sources for facts (API migrations 049/050)

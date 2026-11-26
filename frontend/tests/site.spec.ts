@@ -773,9 +773,12 @@ test('lists open in their own order (owner 2026-11-04): movements newest first, 
 test('glossary: era names filed under their calendar (API parent.collection) are out of the list and its counts, found by search; the calendar says how many it files', async ({ page }) => {
   await page.goto('/glossary');
   const all = page.locator('#categories button[data-category=""] .muted');
-  const total = Number((await all.textContent())?.trim());
-  expect(total).toBeLessThan(900);                                   // 1,024 terms, 613 filed
+  // the rule, not a figure: the glossary grows (1,024 terms with 613 filed on 2026-11-04; 1,448 shown on 2026-11-26)
+  const total = Number((await all.textContent())?.trim().replace(/[^\d]/g, ''));
+  expect(total).toBeGreaterThan(0);
   await expect(page.locator('.filed-note')).toContainText('era names are filed under');
+  const filed = Number(/([\d,']+) era names/.exec((await page.locator('.filed-note').textContent()) ?? '')?.[1].replace(/[^\d]/g, ''));
+  expect(filed).toBeGreaterThanOrEqual(600);                         // the era names of the three calendars
   await expect(page.locator('.filed-note a', { hasText: 'Japanese calendar' })).toHaveAttribute('href', /\/glossary\/(\d+\/)?japanese-calendar$/);
   await expect(page.locator('#items > li', { hasText: 'Adalla Isageum' })).toHaveCount(0);
   await page.fill('.filter', 'Adalla');

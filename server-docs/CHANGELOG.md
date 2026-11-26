@@ -10,6 +10,11 @@ Format: date — what — why — how to revert.
   and passed on the 23rd and 25th; daytime runs pass. At 03:23–03:43 the server also runs another project's daily update
   (03:20, cron) and the art history backup (03:30, dump + restore check) — the likely cause (the run logs need a GitHub
   login, so not read). Between about 00:05 and 03:15 UTC nothing runs.
+- **Found afterwards (same day):** a real cause too — the site test "glossary: era names filed …" expected fewer than
+  900 terms in the glossary list (1,024 with 613 filed on 2026-11-04); the live glossary shows 1,448 now, so every run
+  against the live API failed there. The test now checks the rule (count shown, ≥ 600 era names filed, a filed term
+  only found by search). And the new provenance-list bubbles had reused the map markers' class `prov-stop`, which the map
+  tests select — now their own class `prov-num` with the same look.
 - **Revert:** the cron line back to `17 3 * * *`.
 
 ### Provenance list numbered like the map
