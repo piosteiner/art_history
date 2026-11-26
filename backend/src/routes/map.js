@@ -303,8 +303,10 @@ async function provenanceRoute(artworkId) {
   const posOf = new Map(r.stops.map((f) => [f.properties.step, f.properties.position]));
   for (const seg of r.segments) {
     const [from, to] = [posOf.get(seg.properties.from_step), posOf.get(seg.properties.to_step)];
-    seg.properties.gaps = seg.properties.move ? [] : gaps.filter((g) => g.before_position !== null && g.before_position >= from
-      && (g.after_position === null || g.after_position <= to))
+    // a gap at the end (nothing known after the last holder, after_position null) lies after the last stop: on no
+    // segment — it had landed on every one ("? 2026" all over the Arlequin's map, 2026-11-26); listed beside only
+    seg.properties.gaps = seg.properties.move ? [] : gaps.filter((g) => g.before_position !== null && g.after_position !== null
+      && g.before_position >= from && g.after_position <= to)
       .map(({ before_position: _b, after_position: _a, ...g }) => g);
   }
   return { type: 'FeatureCollection', features: [...r.stops, ...r.segments], unplaced: r.unplaced,

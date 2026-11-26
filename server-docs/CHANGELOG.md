@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-26
 
+### Map: a gap at the end of a provenance no longer lands on every segment
+- **What:** `src/routes/map.js` (`/v1/map/artworks/:slug`): a segment's gaps are those between its two stops — a gap
+  after the last holder (`after_position` null) now goes on no segment (listed beside the map only). It had matched
+  every segment: Cézanne's *Arlequin* (sold 18 Nov 2026, nothing after) showed "? 2026" on lines all over Europe and the
+  Atlantic. Test in `test/e2e/provenance-coverage.spec.js`. Data: place Buenos Aires `kind` region → settlement (like
+  Berlin, Vienna, Mexico City, Washington — a city that is also a first-level division; its stop was drawn as "only the
+  region known"), its Wikidata citation renewed.
+- **Why:** owner: the Arlequin's provenance map looked messy.
+- **Revert:** the filter's `g.after_position !== null` condition; audit_log for the place.
+
+## 2026-11-26
+
 ### Data: Lydia Welti-Escher born in Enge and died in Champel, not just "Zürich" and "Geneva"
 - **Birth:** new place Enge (district of Zürich, `from-wikidata.js place Q648218`, kind set to district); `born_in`
   (18766) points there, cited to the HLS ("10.7.1858 Enge (heute Gemeinde Zürich)"); Wikidata citation (P19 = Zürich)

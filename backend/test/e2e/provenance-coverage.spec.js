@@ -52,6 +52,13 @@ test('gaps where no holder is known: API, list filter, map, admin bar and lines,
   const london = map.features.find((f) => f.properties.layer === 'provenance_stop' && f.properties.place.slug === 'test-cov-london').properties.step;
   const seg = map.features.find((f) => f.properties.layer === 'provenance_segment' && f.properties.to_step === london);
   expect(seg.properties.gaps.map((g) => [g.period.from_year, g.in_1933_1945])).toEqual([[1934, true]]);
+  // a gap at the end (the museum's holding recorded as ended, nothing after) is listed beside, on no segment
+  sql(`UPDATE provenance SET ended = year_range(1970), ended_label = '1970' WHERE artwork_id = ${W} AND position = 4`);
+  const after = (await api(request, '/map/artworks/test-cov-w')).provenance;
+  expect(after.gaps.some((g) => g.after === null && g.period.from_year === 1971)).toBe(true);
+  expect(after.features.filter((f) => f.properties.layer === 'provenance_segment')
+    .flatMap((f) => f.properties.gaps).some((g) => g.after === null)).toBe(false);
+  sql(`UPDATE provenance SET ended = NULL, ended_label = NULL WHERE artwork_id = ${W} AND position = 4`);
 
   // the admin page: the bar, and the gaps as lines of the table, after the step they follow
   await userA.goto('/artworks/test-cov-w');
