@@ -1543,6 +1543,22 @@ test('provenance: owners in order, implied ends and undocumented handovers marke
   await expect(page.locator('.rel-list', { hasText: 'First Owner' })).toHaveCount(0); // under Provenance only
 });
 
+test('provenance steps carry their number from the map in the map\'s bubble; an event (no number) keeps its dot', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    b.provenance = [
+      step(0, { type: 'person', slug: 'first-owner', name: 'First Owner' }, { step: 2, period: year(1926, 1952), end_basis: 'recorded' }),
+      step(1, null, { step: null, role: 'event', owner_label: 'Theft', method: 'theft', period: year(1950) }),
+      step(2, { type: 'institution', slug: 'some-museum', name: 'Some Museum' }, { step: 3, method: 'gift', direct: true, period: year(1952, null), end_basis: 'ongoing' }),
+    ];
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const steps = page.locator('.provenance-list > li');
+  await expect(page.locator('.provenance-list .prov-num')).toHaveText(['2', '3']);
+  await expect(steps.filter({ hasText: 'First Owner' }).locator('.prov-num')).toHaveAttribute('title', 'Step 2 on the map');
+  await expect(steps.filter({ hasText: 'Some Museum' })).toHaveClass(/numbered/);
+  await expect(page.locator('.provenance-list li:not(.numbered) .prov-num')).toHaveCount(0);
+});
+
 test('a holder’s page: works held one line each (own and estate periods), then whom it acquired from and passed on to', async ({ page }) => {
   await page.goto('/people/emil-georg-buhrle');
   const held = page.locator('.rel-holdings');

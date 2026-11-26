@@ -314,6 +314,11 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; min-height: 6
   background: var(--c-provenance);
 }
 .provenance-owner .muted { margin-left: .3rem; font-size: .9rem; }
+/* the step's number as on the map (owner 2026-11-26): the map's bubble on the rail instead of the dot */
+.provenance-step.numbered > .provenance-owner::before { display: none; }
+.prov-stop.prov-num { position: absolute; left: calc(-1.4rem - 1px); top: .15rem; transform: translateX(-50%); cursor: default; z-index: 1; }
+.prov-stop.prov-num.hollow { background: var(--bg); }
+.provenance-step.custody .prov-stop.prov-num { left: calc(-2.6rem - 1px); top: .1rem; min-width: 17px; height: 17px; font-size: 9.5px; padding: 0 4px; }
 .provenance-step.implied .provenance-owner, .provenance-step.implied .provenance-how { font-style: italic; }
 .provenance-step.implied .provenance-owner::before { background: var(--bg); box-shadow: inset 0 0 0 2px var(--c-provenance); } /* computed, not recorded: a hollow dot */
 /* agents and custodians (API 074): held alongside the owner — indented, muted, a small dot on the rail */

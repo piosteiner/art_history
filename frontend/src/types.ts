@@ -466,6 +466,8 @@ export interface ProvenanceNumberHit {
 export interface ProvenanceStep {
   kind?: 'creation' | 'step' | 'loan'; implied?: boolean;
   position: number;
+  /** Its number on the map's provenance (API, 2026-11-26): the chain's order, events left out — null for an event. */
+  step?: number | null;
   owner: (EntryRef & { name_then?: NameThen | null }) | null; // an entry on this site (with its name then, 152), else only described:
   owner_label: string | null; owner_name: string | null;
   /** Further owners of the same step ("Leo Stein and Gertrude Stein"). */

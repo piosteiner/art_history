@@ -532,6 +532,9 @@ const EXTRAS = {
     })(),
     provenance: (await apiPool.query(`
       SELECT p.kind, p.kind <> 'step' AS implied, p.position,
+             -- its number on the map (owner 2026-11-26: the same bubbles in the list): counted as provenance_stops() does
+             -- — the chain's order, events (• notes) left out
+             CASE WHEN p.role IS DISTINCT FROM 'event' THEN row_number() OVER (PARTITION BY p.role IS DISTINCT FROM 'event' ORDER BY p.position, p.kind, p.id) END AS step,
              CASE WHEN p.owner_id IS NOT NULL THEN jsonb_build_object('type', p.owner_type, 'slug', o.slug, 'public_id', o.public_id, 'name', o.name,
                -- 152: the holder's former name in use then (at the acquisition, else during the holding)
                'name_then', (SELECT jsonb_build_object('text', ruby_plain(nt.text), 'lang', nt.lang, 'period', range_json(nt.period, nt.period_label), 'kind', nt.kind, 'note', nt.note)

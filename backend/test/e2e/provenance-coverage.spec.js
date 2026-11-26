@@ -52,6 +52,13 @@ test('gaps where no holder is known: API, list filter, map, admin bar and lines,
   const london = map.features.find((f) => f.properties.layer === 'provenance_stop' && f.properties.place.slug === 'test-cov-london').properties.step;
   const seg = map.features.find((f) => f.properties.layer === 'provenance_segment' && f.properties.to_step === london);
   expect(seg.properties.gaps.map((g) => [g.period.from_year, g.in_1933_1945])).toEqual([[1934, true]]);
+  // the list's numbers are the map's (2026-11-26): every placed stop's step equals the detail's step at that position
+  const detail = (await api(request, '/artworks/test-cov-w')).provenance;
+  const byPos = new Map(detail.map((s) => [s.position, s.step]));
+  const stops = map.features.filter((f) => f.properties.layer === 'provenance_stop');
+  expect(stops.length).toBeGreaterThan(1);
+  for (const f of stops) expect(byPos.get(f.properties.position)).toBe(f.properties.step);
+  expect(detail.map((s) => s.step)).toEqual(detail.map((_, i) => i + 1));   // no events here: 1, 2, 3 … in the chain's order
   // a gap at the end (the museum's holding recorded as ended, nothing after) is listed beside, on no segment
   sql(`UPDATE provenance SET ended = year_range(1970), ended_label = '1970' WHERE artwork_id = ${W} AND position = 4`);
   const after = (await api(request, '/map/artworks/test-cov-w')).provenance;
