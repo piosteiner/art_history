@@ -704,6 +704,10 @@ svg.view-arrange .node:active { cursor: grabbing; }
 .graph-search input { width: 100%; font: inherit; padding: .55rem .8rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); color: var(--text); }
 .graph-search-results { margin: .3rem 0 0; }
 .graph-search-results li { padding: .2rem 0; }
+/* a hit says what it is, with a small picture (2026-11-26) */
+.graph-search-results li.graph-hit { display: flex; gap: .6rem; align-items: center; padding: .3rem 0; border-bottom: 1px solid var(--line); }
+.graph-hit-img { flex: none; width: 48px; height: 48px; object-fit: cover; border-radius: 3px; background: var(--surface); }
+.graph-hit-text { display: flex; flex-direction: column; min-width: 0; }
 .graph-examples li { padding: .15rem 0; }
 /* other views (2026-11-23): rings, outline, timeline, matrix — src/views/graph-layouts.ts */
 .graph-views button { min-width: 4.2rem; }

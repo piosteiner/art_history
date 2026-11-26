@@ -46,7 +46,7 @@ export interface SortOption {
 export { fold } from './fold';
 import { fold } from './fold';
 import { parseQuery, type ParsedQuery } from './query';
-import { wholeKind } from './series';
+import { partLabel, partWord, wholeKind } from './series';
 
 /** The words a hit must have (src/query.ts: exclusions, "phrases" and connecting words aside). */
 export const queryWords = (query: string) => parseQuery(query).words;
@@ -280,7 +280,12 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       const l = located(a, 'created_in_polity');
       return {
         slug: a.slug, name: displayName(a).text,
-        meta: [a.is_group || a.parts ? wholeKind(a) : '', [creatorNames(a), a.created?.label].filter(Boolean).join(', ')].filter(Boolean).join(' · '),
+        // a part says of which whole and where it is (owner 2026-11-26: two impressions of one print and the edition
+        // itself read alike in a list of hits): "Impression 1 in Portrait of … · Museum of Fine Arts Boston"
+        meta: [a.is_group || a.parts ? wholeKind(a) : '',
+          a.part_of ? `${partLabel(a.part_number, partWord(a.part_of)) || 'Part'} in ${a.part_of.title}` : '',
+          a.part_of ? (a.holders?.now ?? []).map((h) => h.name).join(', ') : '',
+          [creatorNames(a), a.created?.label].filter(Boolean).join(', ')].filter(Boolean).join(' · '),
         fields: [],
         sorts: {
           // grouped under the series title, in number order (zero-padded so 3 comes before 21)

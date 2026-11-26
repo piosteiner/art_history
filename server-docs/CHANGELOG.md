@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-26
 
+### Site: search hits say what they are; the network's search like the header's
+- **What:** `frontend/src/catalog.ts` — an artwork that is part of a whole says so in its hit line ("Impression 1 in
+  Portrait of Hagiwara Sakutarō · Museum of Fine Arts Boston · Onchi Kōshirō, 1943"; wholes already said "Edition · …");
+  `views/graph.ts` — the network's start search shows that line, a small picture and the entry's preview on hover
+  (`previews.ts`: a link may name its entry with `data-preview`, for links to /graph/…). Test in `tests/site.spec.ts`.
+- **Why:** owner: in the network's search the edition and its two impressions read alike, with no hover.
+- **Revert:** the three files.
+
 ### Nightly site build moved to 02:17 UTC
 - **What:** `.github/workflows/pages.yml` schedule `17 3 * * *` → `17 2 * * *`.
 - **Why:** the nightly run failed in "npm test" (the site's tests against the live API) on 18–22, 24 and 26 November

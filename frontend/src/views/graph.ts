@@ -9,7 +9,7 @@ import { select } from 'd3-selection';
 import { reducedMotion } from '../theme';
 import { zoom, zoomIdentity, type ZoomBehavior } from 'd3-zoom';
 import { getArrangement, getGraph, getVocabulary, listAll, PLURAL, saveArrangement, type ArrangementState } from '../api';
-import { escape, href, html, impliedEnd, link, render, TYPE_LABEL } from '../html';
+import { escape, href, html, impliedEnd, link, previewImg, render, TYPE_LABEL } from '../html';
 import type { Category, GraphEdge, GraphNode, Plural } from '../types';
 import { bundle, familyKind, mergeEdges, provenanceChains, pruneProvenance, sharedParentSiblings } from '../graph-group';
 import { findAll } from '../search';
@@ -59,10 +59,15 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
         if (q.length < 2) return render(list, html``);
         const { local, similar } = await findAll(q);
         if (mine !== asked) return;
-        const hits = [...local.map(({ e }) => ({ type: e.type, slug: e.slug, name: e.name })), ...similar.map((h) => ({ type: h.type, slug: h.slug, name: h.name }))]
+        // as in the header: what each hit is ("Impression 1 in … · Museum of Fine Arts Boston · Onchi Kōshirō, 1943"),
+        // a small picture, and the entry's preview on hover (owner 2026-11-26: alike titles were indistinguishable)
+        const image = (item: unknown) => ((item ?? {}) as { image_url?: string | null }).image_url ?? null;
+        const hits = [...local.map(({ e }) => ({ type: e.type, slug: e.slug, name: e.name, meta: e.meta, image: image(e.item) })),
+          ...similar.map((h) => ({ type: h.type, slug: h.slug, name: h.name, meta: h.subtitle || [h.kind, h.period?.label].filter(Boolean).join(' · '), image: h.image_url ?? null }))]
           .filter((h) => !NO_GRAPH.has(h.type)).slice(0, 12);
-        render(list, hits.length ? html`${hits.map((h) => html`<li><a href="/graph/${PLURAL[h.type]}/${encodeURIComponent(h.slug)}">${h.name}</a>
-          <span class="muted">${TYPE_LABEL[h.type]}</span></li>`)}` : html`<li class="muted">Nothing found.</li>`);
+        render(list, hits.length ? html`${hits.map((h) => html`<li class="graph-hit">${previewImg(h.image, h.type === 'artwork' ? h.slug : null, 48, 'graph-hit-img')}
+          <span class="graph-hit-text"><a href="/graph/${PLURAL[h.type]}/${encodeURIComponent(h.slug)}" data-preview="${h.type}/${h.slug}">${h.name}</a>
+          <span class="muted small">${TYPE_LABEL[h.type]}${h.meta ? ` · ${h.meta}` : ''}</span></span></li>`)}` : html`<li class="muted">Nothing found.</li>`);
       }, 200);
     });
     main.querySelector('form')!.addEventListener('submit', (ev) => {

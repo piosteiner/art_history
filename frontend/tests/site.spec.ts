@@ -663,6 +663,14 @@ test('network grouping (2026-11-23): bundles that list and open, provenance and 
   await page.goto('/graph');
   await page.locator('.graph-search input').fill('Hokusai');
   await expect(page.locator('.graph-search-results a[href="/graph/artists/katsushika-hokusai"]')).toBeVisible();
+  // a hit says what it is (2026-11-26): a part names its whole; the link names the entry it previews on hover
+  await page.locator('.graph-search input').fill('Great Wave off Kanagawa');
+  const wave = page.locator('.graph-search-results li.graph-hit', { has: page.locator('a[href="/graph/artworks/the-great-wave-off-kanagawa"]') });
+  await expect(wave).toContainText('Artwork');
+  await expect(wave).toContainText(/in Thirty-six Views of Mount Fuji/i);
+  await expect(wave.locator('a')).toHaveAttribute('data-preview', 'artwork/the-great-wave-off-kanagawa');
+  await wave.locator('a').hover();
+  await expect(page.locator('.glossary-popover')).toBeVisible();
   expect(errors).toEqual([]);
 });
 

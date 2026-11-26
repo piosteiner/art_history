@@ -32,6 +32,8 @@ export function knownPreviews(entries: Record<string, EntryHint> | undefined) {
 /** "artist/paul-gauguin" for a link that should get a preview, else null. */
 function refOf(a: Element | null): string | null {
   if (!(a instanceof HTMLAnchorElement) || a.matches(OWN_POPOVER) || a.closest(NOT_HERE) || a.target) return null;
+  // a link to something else about an entry (the network's search hits → /graph/…) names its entry: data-preview="type/slug"
+  if (a.dataset.preview) return a.dataset.preview;
   const raw = a.getAttribute('href');
   if (!raw?.startsWith('/') || raw.startsWith('//')) return null;
   const url = new URL(raw, location.origin);
