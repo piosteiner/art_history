@@ -2,9 +2,17 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-11-26
+
+### Fix: sign-up daily limit counted from 1 am (commit e09e8847)
+- **What:** `signupSettings()` in `src/admin/accounts.js` counts today's sign-ups from `date_trunc('day', now(),
+  'Europe/Zurich')`; before, `(now() AT TIME ZONE …)::date AT TIME ZONE …` read the date as a local time an hour late,
+  so between midnight and 1 am the limit never closed (found by e2e `accounts.spec.js` during the deploy of 260).
+- **Why:** the daily limit must hold all day. **Revert:** `git revert e09e8847` + deploy.
+
 ## 2026-11-25
 
-### Content: World Folklore Names — people now, glossary terms after migration 260; Grimoire names
+### Content: World Folklore Names — people, 858 glossary terms (migration 260), Grimoire names
 - **What:** the owner's list "World Folklore Names" (myths, legends, folklore, saints and biblical subjects, an art
   reference; 1,089 entries after splitting) extracted, then checked entry by entry before anything went in:
   identity against its own Wikipedia article and Wikidata item (namesakes, list articles, disambiguations, redirects
@@ -19,19 +27,24 @@ Format: date — what — why — how to revert.
     Tutankhamun entered without dates (Wikidata contradicts itself, 1324/1343 BC; auto-created → Quality). Our Judith
     text went to the existing Judith (another Wikidata item of the same figure); Saints James the Elder/the Less and
     Joseph told apart from Jacob and Joseph (`--different`).
-  - **Glossary (prepared, waits for deploy):** migration 260 adds the category "mythology and legend". 882 terms: myth
-    figures/creatures/stories 724 (+ "iconography" where they are art subjects), Christian/Buddhist/allegorical themes 102
-    (iconography), figures still worshipped 43 (religion — not filed as mythology), Indigenous art traditions 13 (art style);
+  - **Glossary (done, imported 2026-11-26 after the deploy of 260):** migration 260 adds the category "mythology and
+    legend". 858 new terms: myth figures/creatures/stories 719 (+ "iconography" where they are art subjects),
+    Christian/Buddhist/allegorical themes 97 (iconography), figures still worshipped 29 (religion — not filed as
+    mythology; the rest of the list's sacred figures were already terms or became people), Indigenous art traditions 13
+    (art style); 1,051 citations;
     23 existing terms only get a text where they have none (Cerberus, Kannon, Jizō …). Each definition cited to its
     Wikipedia article (a `wikipedia-en-…` source per article), Mason/Portal with pages, and up to three further sites the
     check read; famous works link to our artworks where we have them (53 terms, 68 works). One term without any source
-    left out. SQL tested on dev (rolled back).
+    left out, and after the import two compilations without a source ("Common Japanese symbols", "The Kiss (allegories of
+    love)") deleted again. SQL tested on dev (rolled back); kept in `/home/ubuntu/folklore-import/` with the list of
+    corrections.
   - **Grimoire (other project, done):** 520 "Legendary names" in its Names section (story, culture, work, region, fits,
     link), 40 marked "Not for games" with the list's reason — hidden unless asked for, never picked, never offered to
     campaigns. Grimoire commit 7c53b40 (local repo, no remote).
 - **Why:** owner 2026-11-25 ("both the glossary entries and the possible links and the grimoire addition"; "make sure
   everything follows our high academic standard").
-- **Revert:** people — audit rows of 2026-11-25 source `wikidata`/`script` for these entries (history pages);
+- **Revert:** glossary — `DELETE FROM glossary WHERE metadata->>'list' = 'World Folklore Names' AND created_at::date
+  = '2026-11-25'` (citations go with them; the 23 filled texts via their history pages); people — audit rows of 2026-11-25 source `wikidata`/`script` for these entries (history pages);
   Grimoire — `DELETE FROM entries WHERE kind='names' AND json_extract(data,'$.source')='World Folklore Names'` (backup
   of the DB before the import in the session scratchpad).
 
