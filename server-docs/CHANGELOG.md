@@ -4,6 +4,28 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-26
 
+### Content (data, audited, source 'script'): Louvre records, the Nike, glossary translations, an edition, Yasukuni
+- **Louvre:** for the 23 works the Louvre holds, its record in collections.louvre.fr (JSON; from a link or Wikidata
+  P9394): "View at …" → the record's page where it was the old louvre.fr notice (7 works), inventory number and every
+  further number cited to the record when the record lists it exactly (27 numbers; one bibliography entry per record).
+  *Rampin Rider*: no record found. Scratchpad `louvre-records.js`.
+- **Nike of Samothrace** (from its Louvre record): height 564 cm (was 245, Wikidata), further measurements statue /
+  ship's prow / plinth, medium and materials Parian + Lartos marble (new term `lartos-marble`), `created_in` Rhodes
+  (possible, dated), a description (Louvre record; Marinetti's 1909 manifesto after Cioli et al. p. 176). Place
+  `rhodes` created from Q43048 — a first attempt took Q128087 (Lesbos) and was deleted at once, nothing linked to it.
+- **Glossary:** 250 names (de/fr/it/es) for 127 terms of materials, object types, techniques … from the Getty AAT
+  (data.getty.edu; terms linked via Wikidata P1014 or the reconciliation service with the sense checked), singular forms
+  only, each cited to the AAT record (source `getty-aat`); wrong senses and odd names left out by hand. 244 terms keep
+  no translation (Japanese/Korean ware names, and materials the AAT match rejected). Scratchpad `aat-translations.js`.
+- **Onchi, Portrait of Hagiwara Sakutarō:** an edition (new whole, kind "edition", 7 impressions per Mason p. 386)
+  with the Boston impression (no. 1) and Mason's (private collection, Tokyo, no. 2); six citations of the Boston one and
+  one name of Dürer's *Adam und Eva* that pointed at the right MFA pages but were filed under van Gogh's *Berceuse*
+  source now have their own sources.
+- **Renoir, En Canot** (Sotheby's feedback no. 7): Paris beside Limoges for Haviland, Hessel "c. 1918"; feedback 7, 8 done.
+- **Yasukuni Shrine:** institution from Q242803 with a cited text (shrine site, Nippon.com, UPI, Al Jazeera, Korea Times,
+  Wikipedia; Kushner p. 18), founded by Emperor Meiji (cited). Scratchpad `yasukuni-build.js`.
+- **Revert:** audit_log (source 'script', 2026-11-26).
+
 ### Site tests: 30 s per expectation (was 15)
 - **What:** `frontend/playwright.config.ts` — `expect.timeout` 15 → 30 s, test timeout 45 → 60 s.
 - **Why:** the 13:52 build failed in one test only (read from GitHub's annotations, no login needed): the search page
