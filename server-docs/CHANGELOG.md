@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-26
 
+### Nightly site build moved to 02:17 UTC
+- **What:** `.github/workflows/pages.yml` schedule `17 3 * * *` → `17 2 * * *`.
+- **Why:** the nightly run failed in "npm test" (the site's tests against the live API) on 18–22, 24 and 26 November
+  and passed on the 23rd and 25th; daytime runs pass. At 03:23–03:43 the server also runs another project's daily update
+  (03:20, cron) and the art history backup (03:30, dump + restore check) — the likely cause (the run logs need a GitHub
+  login, so not read). Between about 00:05 and 03:15 UTC nothing runs.
+- **Revert:** the cron line back to `17 3 * * *`.
+
 ### Provenance list numbered like the map
 - **What:** the detail's provenance steps carry `step` (`src/routes/entities.js`: `row_number()` over the chain in
   `provenance_stops()`' order, events left out — they have no stop); the site draws it in the map's bubble on the

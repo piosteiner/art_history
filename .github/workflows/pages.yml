@@ -8,9 +8,11 @@ on:
     branches: [main]
     paths: ['frontend/**', '.github/workflows/pages.yml']
   workflow_dispatch:
-  # daily: new or changed content gets its own page (title, preview image) and the tests check the live API
+  # daily: new or changed content gets its own page (title, preview image) and the tests check the live API.
+  # 02:17 UTC, not 03:17 (2026-11-26): from 03:20 the server runs another project's nightly update and from 03:30 the
+  # art history backup (dump + restore check) — the tests against the live API failed on most nights then.
   schedule:
-    - cron: '17 3 * * *'
+    - cron: '17 2 * * *'
 
 permissions:
   contents: read
