@@ -4,7 +4,10 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-26
 
-### Data: Lydia Welti-Escher died in Champel, not just "Geneva"
+### Data: Lydia Welti-Escher born in Enge and died in Champel, not just "Zürich" and "Geneva"
+- **Birth:** new place Enge (district of Zürich, `from-wikidata.js place Q648218`, kind set to district); `born_in`
+  (18766) points there, cited to the HLS ("10.7.1858 Enge (heute Gemeinde Zürich)"); Wikidata citation (P19 = Zürich)
+  removed. Enge was a commune of its own until 1893. Revert: history page; delete place `enge`.
 - **What:** new place Champel (district of Geneva, `from-wikidata.js place Q2948668`); her `died_in` (18767) now points
   there, cited to the HLS article (new source `hls-welti-escher-lydia`, Bähler 2012: "12.12.1891 Champel (Gemeinde
   Genf)") and the Kunsthaus (*Die Gotthardpost*: "+1891 Champel"); the Wikidata citation (P20 = Geneva only) removed.
