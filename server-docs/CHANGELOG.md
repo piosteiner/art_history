@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-26
 
+### Site tests: 30 s per expectation (was 15)
+- **What:** `frontend/playwright.config.ts` — `expect.timeout` 15 → 30 s, test timeout 45 → 60 s.
+- **Why:** the 13:52 build failed in one test only (read from GitHub's annotations, no login needed): the search page
+  still said "Searching…" after 15 s for "painting". First use loads every list (≈ 7 MB) and the full-text search for
+  "painting" takes ≈ 3 s now (`/v1/search/text`; to be checked against the perf budget). Not an error in the site.
+- **Revert:** the two numbers.
+
 ### Site: search hits say what they are; the network's search like the header's
 - **What:** `frontend/src/catalog.ts` — an artwork that is part of a whole says so in its hit line ("Impression 1 in
   Portrait of Hagiwara Sakutarō · Museum of Fine Arts Boston · Onchi Kōshirō, 1943"; wholes already said "Edition · …");

@@ -6,8 +6,8 @@ const PORT = 5180;
 
 export default defineConfig({
   testDir: 'tests',
-  timeout: 45_000,
-  expect: { timeout: 15_000 },
+  timeout: 60_000,   // 45 s until 2026-11-26: the header search loads every list (≈ 7 MB) on first use, 15–20 s on the CI runner
+  expect: { timeout: 30_000 },
   retries: process.env.CI ? 1 : 0,
   // in CI also 'github': failures become annotations on the run, readable without signing in
   reporter: process.env.CI ? [['list'], ['github'], ['html', { open: 'never' }]] : 'list',
