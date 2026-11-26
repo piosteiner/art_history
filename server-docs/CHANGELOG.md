@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-26
 
+### Content: World Folklore Names — the texts linked to each other
+- **What:** in the folklore texts (glossary terms, people, artists of the list: 626 of 1,067 texts changed) the first
+  mention of every other entry is now a `[[…]]` link — 1,316 links to terms, people and artists (Ariadne → Theseus,
+  Dionysus, Titian …). Rules (script in `/home/ubuntu/folklore-import/`, `links.sql`): people/artists only by their full
+  name; a term's other names too (Venus → Aphrodite); never part of a longer name ("Joseph Noel Paton", "National
+  Gallery of Victoria"), a museum in brackets, a title in italics, the entry's own name or an ordinary word at a
+  sentence's start; ambiguous names left out (Thalia, Hotei); "Joseph" beside Mary/Jesus = Saint Joseph; other figures
+  of the same name kept apart (Pygmalion's Galatea, Cassandra's Ajax the Lesser, Bellerophon's father Glaucus,
+  Pirithous's Hippodamia, Saturn the planet). Pointers into the owner's document ("see Part 19", "Ref 4") removed.
+- **Why:** owner 2026-11-26 ("the first mentioning would be great to be linked in each entry").
+- **Revert:** the history pages (audit source `script`, 2026-11-26) of these entries.
+
 ### Fix: sign-up daily limit counted from 1 am (commit e09e8847)
 - **What:** `signupSettings()` in `src/admin/accounts.js` counts today's sign-ups from `date_trunc('day', now(),
   'Europe/Zurich')`; before, `(now() AT TIME ZONE …)::date AT TIME ZONE …` read the date as a local time an hour late,
