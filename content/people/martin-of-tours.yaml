@@ -1,0 +1,120 @@
+public_id: 130753
+name: Martin of Tours
+names:
+  - lang: fr
+    role: original
+    text: Martin de Tours
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+  - text: Sanctus Martinus Turonensis
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+  - text: Martinus Turonensis
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+  - text: Saint Martin
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+  - text: St. Martin
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+  - lang: nl
+    role: translation
+    text: Martinus van Tours
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+  - lang: de
+    role: translation
+    text: Martin von Tours
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+  - lang: it
+    role: translation
+    text: Martino di Tours
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+  - lang: es
+    role: translation
+    text: Martín de Tours
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+  - lang: ja
+    role: translation
+    text: トゥールのマルティヌス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+  - lang: zh
+    role: translation
+    text: 都爾的瑪爾定
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+  - lang: ko
+    role: translation
+    text: 투르의 마르티누스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+  - lang: ru
+    role: translation
+    text: Мартин Турский
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133704
+kind: person
+occupations: [soldier, Catholic bishop, bishop, monk]
+birth: 316
+death: 397-11-09
+description_md: |-
+  A Roman soldier who, in a hard winter, cut his military cloak in half with his sword to share it with a beggar. That night, he dreamed of Christ wearing the half cloak.
+
+  **In art:** A soldier on horseback cutting his cloak with a sword for a nearly naked beggar.
+
+  **Famous works**
+
+  - [[artist/el-greco]], *Saint Martin and the Beggar* (1597–1599, National Gallery of Art, Washington)
+  - [[artist/simone-martini]], *Saint Martin* chapel frescoes (Lower Basilica, Assisi)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q133704
+metadata:
+  sources: [Wikidata Q133704 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Simone_Martini_040.jpg/1280px-Simone_Martini_040.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Simone_Martini_040.jpg
+    license: Public domain
+    credit: Simone Martini
+identifiers:
+  bnf: "119423647"
+  gnd: "118578308"
+  idref: "027366464"
+  lc: n50080635
+  ulan: "500357034"
+  viaf: "73825464"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q133704
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q133704
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q133704
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q133704

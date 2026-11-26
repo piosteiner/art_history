@@ -1,0 +1,186 @@
+public_id: 130783
+name: Saint Eustace
+names:
+  - lang: grc
+    role: original
+    text: Εὐστάθιος Πλακίδας
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Saint Eustathios
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Agios Efstathios
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Eustace
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Eustathios
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Efstathios
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Eustathius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Saint Eustathius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: St Eustathius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: St Eustace
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: St Eustathios
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: St Efstathios
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Eustache
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: St Eustache
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Eustachius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: St Eustachius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Eustaquio
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: St Eustaquio
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Eustace of Rome
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: St Eustace of Rome
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Eusthathius of Rome
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: St Eustathius of Rome
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Eustachio
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: St Eustachio
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Eustachio of Rome
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: St Eustachio of Rome
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Eustathios Plakidas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Eustathius Placidas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - text: Placidus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - lang: nl
+    role: translation
+    text: Eustachius van Rome
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - lang: fr
+    role: translation
+    text: Eustache de Rome
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - lang: es
+    role: translation
+    text: Eustaquio de Roma
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - lang: ja
+    role: translation
+    text: エウスタキウス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - lang: zh
+    role: translation
+    text: 歐斯大爵
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+  - lang: ru
+    role: translation
+    text: Великомученик Евстафий
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q218921
+occupations: [military officer]
+description_md: |-
+  Two hunters with the same legend: while hunting a stag, they saw a crucifix shining between its antlers, and converted.
+
+  **In art:** A hunter kneeling before a stag with a crucifix between its antlers.
+
+  **Famous works**
+
+  - [[artist/albrecht-durer]], *Saint Eustace* (engraving)
+  - Pisanello, *The Vision of Saint Eustace* (National Gallery, London)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q218921
+metadata:
+  sources: [Wikidata Q218921 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0c/Saint_Eustace%2C_Cretan_school%2C_17_c..jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Saint_Eustace,_Cretan_school,_17_c..jpg
+    license: Public domain
+    credit: Cretan School
+identifiers:
+  gnd: "118638963"
+  lc: n84049799
+  viaf: "13706836"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q218921

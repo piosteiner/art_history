@@ -12,6 +12,16 @@ names:
     text: Cerbero
 category: iconography
 definition: three-headed dog that guards the underworld in Greek mythology
+description_md: |-
+  [[charon]] is the ferryman who rows the souls of the dead across the river Styx (or Acheron), for a coin placed in the corpse's mouth. Cerberus is the three-headed dog who guards the gates. [[heracles]] dragged him into daylight as his last labour.
+
+  **In art:** A three-headed dog, often with snakes for a tail.
+
+  **Famous works**
+
+  - Eagle Painter, *Caeretan hydria with Heracles and Cerberus* (Louvre)
+
+  *From:* Greek mythology · Ancient Greek
 wikidata_id: Q83496
 metadata:
   sources: [Wikidata Q83496 (retrieved 2026-10-06)]
@@ -24,3 +34,5 @@ sources:
   definition:
     - accessed: 2026-10-06
       wikidata: Q83496
+    - source: wikipedia-en-cerberus
+      accessed: 2026-11-25

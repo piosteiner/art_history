@@ -166,18 +166,17 @@ provenance:
         place: berlin
         number: "82"
         document: Paul Cassirer, Vincent van Gogh Gemälde (as “Blühende Kastanienbäume”)
-  - owner: person/brigitte-bermann-fischer
-    co_owners: [person/gottfried-bermann]
+  - owner: person/hedwig-fischer
     acquired: 1934
     method: inheritance
     direct: true
     place: berlin
-    label: Berlin-Grunewald and Vienna; on deposit with Paul Cassirer, Amsterdam, since 1932/33
+    label: Berlin-Grunewald; widow of Samuel Fischer; on deposit with Paul Cassirer, Amsterdam, by Gottfried Bermann Fischer since 1932/33
     sources:
       - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
-        note: "Sotheby’s, provenance: “Brigitte and Gottfried Bermann-Fischer (né Bermann), Berlin Grunewald and Vienna (acquired by descent from the above in 1934)”"
+        note: "Sotheby’s, provenance: “Hedwig Fischer, Berlin Grunewald (widow of the above; by inheritance from the above in 1934)” — until 17 November 2026 the page named “Brigitte and Gottfried Bermann-Fischer (né Bermann), Berlin Grunewald and Vienna (acquired by descent from the above in 1934)”"
         source: sothebys-n12368-lot-5
-        accessed: 2026-10-31
+        accessed: 2026-11-24
     records:
       - kind: exhibition
         date: 1933/1934
@@ -198,9 +197,9 @@ provenance:
     label: through Paul Cassirer, Amsterdam
     sources:
       - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/vincent-van-gogh-chataigner-en-fleurs-roses-et?locale=en
-        note: "Sotheby’s, provenance: “Henriette and Marcel Kapferer, Paris (acquired from the above in 1936 through Paul Cassirer, Amsterdam, with whom it was on deposit since 1932/33)”"
+        note: "Sotheby’s, provenance: “Henriette and Marcel Kapferer, Paris (acquired from the above in 1936 through Paul Cassirer, Amsterdam, with whom it was on deposit by Gottfried Bermann Fischer since 1932/33)”"
         source: sothebys-n12368-lot-5
-        accessed: 2026-10-31
+        accessed: 2026-11-24
     records:
       - kind: exhibition
         date: "1937"

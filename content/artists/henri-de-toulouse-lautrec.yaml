@@ -66,6 +66,12 @@ relationships:
       - accessed: 2026-11-02
         property: P737
         wikidata: Q82445
+  - type: student_of
+    to: artist/leon-bonnat
+    sources:
+      - accessed: 2026-11-25
+        property: P802
+        wikidata: Q170259
   - type: associated_with
     to: movement/post-impressionism
     sources:

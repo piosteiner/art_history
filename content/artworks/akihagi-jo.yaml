@@ -11,6 +11,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q11595807
+attribution_label: Anonymous
 institution: tokyo-national-museum
 inventory_number: B-2532
 web_url: https://colbase.nich.go.jp/collection_items/tnm/B-2532
@@ -108,3 +109,6 @@ sources:
     - accessed: 2026-11-24
       property: P217
       wikidata: Q11595807
+  attribution_label:
+    - source: kunishitei-201-745
+      accessed: 2026-11-25

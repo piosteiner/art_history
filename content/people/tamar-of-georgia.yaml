@@ -1,0 +1,121 @@
+public_id: 130656
+name: Tamar of Georgia
+names:
+  - kind: birth
+    lang: ka
+    role: alternative
+    text: თამარ მეფე
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - text: Tamar mepe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - text: Tamar the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - text: Queen Tamar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - text: Queen Tamara
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - text: King Tamar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - lang: nl
+    role: translation
+    text: Tamara van Georgië
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - lang: fr
+    role: translation
+    text: Tamar Ire
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - lang: de
+    role: translation
+    text: Tamar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - lang: it
+    role: translation
+    text: Tamara di Georgia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - lang: es
+    role: translation
+    text: Tamar I de Georgia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - lang: ja
+    role: translation
+    text: タマル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - lang: zh
+    role: translation
+    text: 塔瑪爾女王
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - lang: ko
+    role: translation
+    text: 타마르
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+  - lang: ru
+    role: translation
+    text: Тамара
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244007
+kind: person
+occupations: [politician]
+birth: 1166
+death: 1213-01-25
+description_md: |-
+  She ruled (1184–1213) at the height of Georgian power, and was officially called king (*mepe*). The great Georgian epic *The Knight in the Panther's Skin* by Shota Rustaveli was dedicated to her.
+
+  *From:* Georgian
+wikidata_id: Q244007
+metadata:
+  sources: [Wikidata Q244007 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Betania_Monastery%2C_Tamar.jpg/1280px-Betania_Monastery%2C_Tamar.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Betania_Monastery,_Tamar.jpg
+    license: Public domain
+    credit: 13th century painter
+identifiers:
+  gnd: 11954363X
+  lc: n87854982
+  viaf: "262713404"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q244007
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q244007
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q244007
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q244007

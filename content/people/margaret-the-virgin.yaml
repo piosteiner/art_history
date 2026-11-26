@@ -1,0 +1,141 @@
+public_id: 130761
+name: Margaret the Virgin
+given_name: Margaret the
+family_name: Virgin
+names:
+  - lang: grc
+    role: original
+    text: Μαρίνα
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - text: Margaret of Antioch
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - text: Saint Margaret
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - text: Saint Margaret of Antioch
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - text: St. Margaret
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - text: Margaret the Dragon Slayer
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - text: Maid of Antioch
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - text: Marina of Antioch
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - text: Margarete the Dragon Slayer
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - lang: nl
+    role: translation
+    text: Margaretha van Antiochië
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - lang: fr
+    role: translation
+    text: Marguerite d'Antioche
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - lang: de
+    role: translation
+    text: Margareta von Antiochia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - lang: it
+    role: translation
+    text: Margherita di Antiochia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - lang: es
+    role: translation
+    text: Margarita de Antioquía
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - lang: ja
+    role: translation
+    text: アンティオキアのマルガリタ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - lang: zh
+    role: translation
+    text: 童貞瑪加利大
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - lang: ko
+    role: translation
+    text: 안티오케이아의 마르가리타
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+  - lang: ru
+    role: translation
+    text: Маргарита Антиохийская
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297742
+kind: person
+occupations: [memoirist]
+birth: c. 292
+death: c. 307
+description_md: |-
+  A virgin martyr who, in one version (which the Golden Legend itself calls apocryphal), was swallowed by the Devil in the form of a dragon. The cross she held irritated its stomach, and she burst out unharmed. Patron saint of childbirth.
+
+  **In art:** A young woman stepping out of or standing over a dragon, holding a cross.
+
+  **Famous works**
+
+  - [[artist/raphael]] and workshop, *Saint Margaret* (Louvre and Vienna)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q297742
+metadata:
+  sources: [Wikidata Q297742 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/81/St.Marina_the_Martyr_holding_a_devil.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:St.Marina_the_Martyr_holding_a_devil.jpg
+    license: Public domain
+    credit: died more than 70 years ago
+identifiers:
+  gnd: "119072866"
+  hls: "012780"
+  lc: n84051884
+  viaf: "37718719"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q297742
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q297742
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q297742
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q297742

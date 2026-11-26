@@ -1,0 +1,73 @@
+public_id: 130677
+name: Songtsän Gampo
+given_name: Songtsän
+family_name: Gampo
+names:
+  - lang: nl
+    role: translation
+    text: Songtsen Gampo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q320122
+  - lang: ja
+    role: translation
+    text: ソンツェン・ガンポ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q320122
+  - lang: zh
+    role: translation
+    text: 松赞干布
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q320122
+  - lang: ko
+    role: translation
+    text: 송짼감뽀
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q320122
+  - lang: ru
+    role: translation
+    text: Сонгцэн Гампо
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q320122
+kind: person
+occupations: [politician, writer, Tertön]
+birth: 604
+death: 650
+description_md: |-
+  Songtsen Gampo (7th century) united Tibet. According to tradition, his Chinese wife, [[person/princess-wencheng]], and his Nepali wife, Princess [[person/bhrikuti]], brought Buddhism and famous Buddha statues to Lhasa, where they're kept in the Jokhang and Ramoche temples.
+
+  *From:* Tibetan
+wikidata_id: Q320122
+metadata:
+  sources: [Wikidata Q320122 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/ca/King_Songsten_Gampo%27s_statue_in_his_meditation_cave_at_Yerpa.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:King_Songsten_Gampo%27s_statue_in_his_meditation_cave_at_Yerpa.jpg
+    license: CC BY-SA 3.0
+    credit: The original uploader was John Hill at English Wikipedia.
+identifiers:
+  gnd: "123625467"
+  idref: "086258184"
+  lc: n82145457
+  viaf: "33353502"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q320122
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q320122
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q320122
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q320122

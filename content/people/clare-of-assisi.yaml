@@ -1,0 +1,146 @@
+public_id: 130778
+name: Clare of Assisi
+names:
+  - kind: birth
+    lang: it
+    role: former
+    text: Chiara Scifi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - text: Saint Clara
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - text: Clara
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - text: Saint Clare of Assisi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - text: Chiara Offreduccio
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - text: Clair
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - text: Claire
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - text: Saint Clare
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - text: St. Clare
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - text: St. Clare of Assisi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - lang: nl
+    role: translation
+    text: Clara van Assisi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - lang: fr
+    role: translation
+    text: Claire d'Assise
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - lang: de
+    role: translation
+    text: Klara von Assisi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - lang: it
+    role: translation
+    text: Chiara d'Assisi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - lang: es
+    role: translation
+    text: Clara de Asís
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - lang: ja
+    role: translation
+    text: アッシジのキアラ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - lang: zh
+    role: translation
+    text: 亚西西的嘉勒
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - lang: ko
+    role: translation
+    text: 아시시의 클라라
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+  - lang: ru
+    role: translation
+    text: Клара Ассизская
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q191107
+kind: person
+occupations: [nun, author, religious writer, founder of Catholic religious community, mystic, philosopher, Poor Clare nun]
+birth: 1194-07-23
+death: 1253-08-18
+description_md: |-
+  Clare was [[person/francis-of-assisi]]'s follower who founded the Poor Clares. According to legend, she drove away invading soldiers by holding up the Eucharist.
+
+  **In art:** Clare as a nun holding a monstrance.
+
+  **Famous works**
+
+  - [[artist/simone-martini]], *Saint Clare* (Lower Basilica, Assisi)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q191107
+metadata:
+  sources: [Wikidata Q191107 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Simone_Martini_047.jpg/1280px-Simone_Martini_047.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Simone_Martini_047.jpg
+    license: Public domain
+    credit: Simone Martini
+identifiers:
+  bnf: "118966777"
+  gnd: "118562746"
+  idref: "026786672"
+  lc: n83027242
+  ulan: "500450155"
+  viaf: "8754769"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q191107
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q191107
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q191107
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q191107

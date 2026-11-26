@@ -67,6 +67,7 @@ names:
     sources:
       - accessed: 2026-11-23
         wikidata: Q465338
+attribution_label: Anonymous
 created: -1700/-1100
 created_label: c. 1700 BCE
 created_span: uncertain
@@ -79,9 +80,11 @@ wikidata_id: Q465338
 metadata:
   sources: [Wikidata Q465338 (retrieved 2026-11-23)]
 images:
-  - url: https://upload.wikimedia.org/wikipedia/commons/3/3d/PhaistosDiskLarge.jpg
-    source_url: https://commons.wikimedia.org/wiki/File:PhaistosDiskLarge.jpg
-    license: CC BY-SA 3.0
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/ff/Phaistos_Disc_-_side_A_%28top%29%2C_side_B_%28bottom%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Phaistos_Disc_-_side_A_(top),_side_B_(bottom).jpg
+    license: CC BY-SA 4.0
+    credit: C messier; crop and composite by Bammesk
+    caption: Side A (top) and side B (bottom), Heraklion Archaeological Museum
 provenance:
   - owner: person/luigi-pernier
     acquired: 1908-07-03
@@ -127,4 +130,8 @@ sources:
   inventory_number:
     - accessed: 2026-11-23
       property: P217
+      wikidata: Q465338
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q465338

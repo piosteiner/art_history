@@ -15,6 +15,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107046079
+attribution_label: Anonymous
 created: 8th century
 created_span: uncertain
 institution: oka-dera
@@ -65,3 +66,7 @@ provenance:
         note: 木心乾漆義淵僧正坐像 - 奈良時代。目尻が垂れ下がり、皺の多い独特の容貌 … 奈良国立博物館寄託。
         source: jawiki-oka-dera
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-269
+      accessed: 2026-11-25

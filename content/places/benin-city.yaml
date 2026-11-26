@@ -44,7 +44,6 @@ names:
       - accessed: 2026-11-24
         wikidata: Q320704
 kind: settlement
-parent: tokyo
 country_code: NG
 location: [5.6145, 6.3176]
 wikidata_id: Q320704
@@ -54,10 +53,6 @@ sources:
   kind:
     - accessed: 2026-11-24
       property: P31
-      wikidata: Q320704
-  parent:
-    - accessed: 2026-11-24
-      property: P131
       wikidata: Q320704
   location:
     - accessed: 2026-11-24

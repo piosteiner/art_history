@@ -2,11 +2,61 @@ public_id: 125060
 name: Jan Gossaert
 given_name: Jan
 family_name: Gossaert
+names:
+  - kind: pseudonym
+    role: alternative
+    text: Mabuse
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q346952
 birth: 1478
 death: 1532-10-11
 wikidata_id: Q346952
 metadata:
   sources: [Wikidata Q346952 (retrieved 2026-11-24)]
+relationships:
+  - type: nationality
+    to: polity/holy-roman-empire
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q346952
+  - type: worked_in
+    to: place/antwerp
+    period: 1503/1507
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q346952
+  - type: worked_in
+    to: place/rome
+    period: 1508/1509
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q346952
+  - type: worked_in
+    to: place/utrecht
+    period: 1517/1524
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q346952
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Jan_Gossart_-_Portrait_of_a_Man_%28Self-Portrait%29%2C_circa_1520-1525%2C_1951.6.jpg/1280px-Jan_Gossart_-_Portrait_of_a_Man_%28Self-Portrait%29%2C_circa_1520-1525%2C_1951.6.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Gossart_-_Portrait_of_a_Man_(Self-Portrait),_circa_1520-1525,_1951.6.jpg
+    license: Public domain
+    credit: Jan Gossaert
+identifiers:
+  bnf: "121770373"
+  dome: "5644"
+  gnd: "118696602"
+  idref: 06168323X
+  kulturnav: 3eff18fb-d521-4097-82fa-c06679bb1f12
+  lc: nr92039086
+  rkd: "32898"
+  ulan: "500009353"
+  viaf: "74123543"
 sources:
   birth:
     - accessed: 2026-11-24

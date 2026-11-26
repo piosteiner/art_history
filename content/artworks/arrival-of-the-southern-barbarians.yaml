@@ -8,6 +8,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q60465474
+attribution_label: Anonymous, Japanese
 created: c. 1600
 created_span: uncertain
 institution: cleveland-museum-of-art
@@ -70,3 +71,6 @@ sources:
     - accessed: 2026-11-24
       property: P217
       wikidata: Q60465474
+  attribution_label:
+    - source: cma-1960-193
+      accessed: 2026-11-25

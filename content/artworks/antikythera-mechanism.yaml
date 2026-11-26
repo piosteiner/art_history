@@ -55,6 +55,7 @@ names:
     sources:
       - accessed: 2026-11-23
         wikidata: Q182324
+attribution_label: Anonymous
 materials: [bronze]
 institution: national-archaeological-museum-of-athens
 web_url: http://odysseus.culture.gr/h/4/eh430.jsp?obj_id=5582
@@ -123,4 +124,8 @@ sources:
   institution:
     - accessed: 2026-11-23
       property: P195
+      wikidata: Q182324
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q182324

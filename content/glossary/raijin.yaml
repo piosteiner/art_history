@@ -10,6 +10,20 @@ names:
     text: 雷神
 category: iconography
 definition: god of lightning, thunder, and storms in Japanese mythology
+description_md: |-
+  The Shinto-Buddhist gods of thunder and wind. Raijin beats a ring of drums to make thunder; [[fujin]] carries the winds in a bag over his shoulders.
+
+  **In art:** Two muscular demon-like figures flying on clouds, one with a circle of drums, the other with a billowing bag.
+
+  **Famous works**
+
+  - [[artist/tawara-sotatsu|Tawaraya Sōtatsu]], *Wind God and Thunder God* (pair of two-panel screens, after 1621, Kennin-ji, Kyoto; deposited at the Kyoto National Museum)
+  - [[artist/ogata-korin]], *Wind God and Thunder God* (copy, Tokyo National Museum)
+  - *Raijin and Fūjin statues* (Sanjūsangen-dō, Kyoto)
+
+  **Held sacred today:** The Shinto gods (kami) are still worshipped today.
+
+  *From:* Japanese (Shinto-Buddhist)
 wikidata_id: Q12808082
 metadata:
   sources: [Wikidata Q12808082 (retrieved 2026-11-02)]
@@ -26,3 +40,8 @@ sources:
   definition:
     - accessed: 2026-11-02
       wikidata: Q12808082
+    - source: wikipedia-en-raijin
+      accessed: 2026-11-25
+    - source: history-of-japanese-art
+      locator: pp. 271–272
+      accessed: 2026-11-25

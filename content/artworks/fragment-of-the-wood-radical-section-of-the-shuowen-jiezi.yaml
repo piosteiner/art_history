@@ -12,6 +12,7 @@ names:
   - lang: ja
     role: original
     text: 說文解字木部殘卷
+attribution_label: Anonymous
 created: c. 820
 created_span: uncertain
 institution: kyo-u-library
@@ -146,3 +147,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q97186932
+  attribution_label:
+    - source: kunishitei-201-592
+      accessed: 2026-11-25

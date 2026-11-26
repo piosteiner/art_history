@@ -25,6 +25,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q2921458
+attribution_label: Anonymous
 materials: [ignimbrite]
 location: [131.76248, 33.09011]
 wikidata_id: Q2921458
@@ -74,3 +75,6 @@ sources:
     - accessed: 2026-11-24
       property: P186
       wikidata: Q2921458
+  attribution_label:
+    - source: kunishitei-201-285
+      accessed: 2026-11-25

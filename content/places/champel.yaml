@@ -1,0 +1,29 @@
+public_id: 132571
+name: Champel
+names:
+  - lang: ru
+    role: translation
+    text: Шампель
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q2948668
+kind: district
+parent: geneva
+country_code: CH
+location: [6.15806, 46.18889]
+wikidata_id: Q2948668
+metadata:
+  sources: [Wikidata Q2948668 (retrieved 2026-11-26)]
+sources:
+  kind:
+    - accessed: 2026-11-26
+      property: P31
+      wikidata: Q2948668
+  parent:
+    - accessed: 2026-11-26
+      property: P131
+      wikidata: Q2948668
+  location:
+    - accessed: 2026-11-26
+      property: P625
+      wikidata: Q2948668

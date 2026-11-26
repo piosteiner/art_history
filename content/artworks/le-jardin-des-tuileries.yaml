@@ -85,20 +85,22 @@ provenance:
         source: sothebys-n12368-lot-4
         accessed: 2026-10-31
   - owner: person/josef-stransky
+    acquired: June 1917 or earlier
     place: new-york-city
     sources:
       - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
-        note: "Sotheby’s, provenance: “Joseph Stránský, New York”"
+        note: "Sotheby’s, provenance: “Joseph Stránský, New York (acquired by June 1917)”"
         source: sothebys-n12368-lot-4
-        accessed: 2026-10-31
+        accessed: 2026-11-24
   - owner: person/jos-hessel
     role: dealer
     place: paris
+    certainty: possible
     sources:
       - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
-        note: "Sotheby’s, provenance: “Jos Hessel, Paris”"
+        note: "Sotheby’s, provenance: “(possibly) Jos Hessel, Paris”"
         source: sothebys-n12368-lot-4
-        accessed: 2026-10-31
+        accessed: 2026-11-24
   - owner: person/julie-goujon-reinach
     acquired: c. 1937
     method: purchase
@@ -214,7 +216,7 @@ provenance:
     method: auction
     direct: true
     place: new-york-city
-    label: bought at Sotheby’s, 18 November 2026 — the buyer is not named; the price is not reported
+    label: bought at Sotheby’s, 18 November 2026 — the buyer is not named
     price:
       amount: 20200000
       currency: USD

@@ -1,0 +1,39 @@
+public_id: 130661
+name: Mekatilili wa Menza
+given_name: Mekatilili wa
+family_name: Menza
+names:
+  - text: Mnyazi wa Menza
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q6810551
+kind: person
+occupations: [independence activist]
+birth: 1840
+death: 1925
+description_md: |-
+  In 1913–1914, she rallied the Giriama people to resist British colonial taxes and forced labour, dancing the *kifudu* funeral dance to call people to a meeting. She was arrested in October 1913 and exiled to Kisii; some accounts say she escaped and walked over 1,000 kilometres home (colonial records say she returned five years later).
+
+  *From:* Giriama (Mijikenda)
+wikidata_id: Q6810551
+metadata:
+  sources: [Wikidata Q6810551 (retrieved 2026-11-25)]
+identifiers:
+  viaf: "309880732"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q6810551
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q6810551
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q6810551
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q6810551

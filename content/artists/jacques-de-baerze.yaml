@@ -2,3 +2,21 @@ public_id: 123939
 name: Jacques de Baerze
 given_name: Jacques
 family_name: de Baerze
+wikidata_id: Q1864311
+relationships:
+  - type: nationality
+    to: polity/burgundian-netherlands
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q1864311
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Baertz-saintsetmartyrs.jpg/1280px-Baertz-saintsetmartyrs.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Baertz-saintsetmartyrs.jpg
+    license: CC BY-SA 3.0
+    credit: Anne97432
+identifiers:
+  gnd: "118646311"
+  rkd: "134537"
+  ulan: "500030095"
+  viaf: "95867375"

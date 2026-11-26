@@ -1,0 +1,79 @@
+public_id: 130803
+name: Minamoto no Yoshitsune
+names:
+  - lang: ja
+    role: original
+    text: 源義経
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q310445
+  - lang: es
+    role: translation
+    text: Ushiwakamaru
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q310445
+  - lang: zh
+    role: translation
+    text: 源義經
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q310445
+  - lang: ko
+    role: translation
+    text: 미나모토노 요시쓰네
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q310445
+  - lang: ru
+    role: translation
+    text: Минамото-но Ёсицунэ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q310445
+kind: person
+occupations: [samurai, bushi, military personnel]
+birth: 1159
+death: 1189-06-22
+description_md: |-
+  The tragic hero of the Genpei War, the brilliant younger half-brother of the first shogun, who later turned against him and hunted him to his death. As a boy, he was said to have been trained in swordsmanship by the tengu king Sōjōbō on Mount Kurama. He's the master of [[benkei]].
+
+  **In art:** A slender young warrior practising with long-nosed, winged tengu in a mountain forest, or fighting Benkei on Gojō Bridge.
+
+  **Famous works**
+
+  - [[artist/tsukioka-yoshitoshi|Tsukioka Yoshitoshi]], *Ushiwaka Learns the Martial Arts on Mt. Kurama* (1880)
+  - [[artist/kawanabe-kyosai]], *tengu pictures* (e.g. *The Great Tengu Does Calligraphy*, from *Kyōsai hyakuzu*, c. 1863–66)
+
+  *From:* The Tale of the Heike · Japanese
+wikidata_id: Q310445
+metadata:
+  sources: [Wikidata Q310445 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Minamoto_no_Yoshitsune.jpg/1280px-Minamoto_no_Yoshitsune.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Minamoto_no_Yoshitsune.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "131661899"
+  gnd: 11945789X
+  idref: "035087633"
+  lc: n81050520
+  viaf: "47572043"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q310445
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q310445
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q310445
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q310445

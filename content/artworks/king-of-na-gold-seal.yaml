@@ -35,6 +35,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q2975212
+attribution_label: Anonymous
 created: 57
 materials: [gold, silver, copper]
 institution: fukuoka-city-museum
@@ -157,3 +158,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q2975212
+  attribution_label:
+    - source: kunishitei-201-850
+      accessed: 2026-11-25

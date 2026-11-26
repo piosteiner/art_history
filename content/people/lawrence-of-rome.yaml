@@ -1,0 +1,136 @@
+public_id: 130754
+name: Lawrence of Rome
+names:
+  - lang: la
+    role: original
+    text: Laurentius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - text: St. Lawrence the Martyr
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - text: Laurence of Rome
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - text: Lars
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - text: Saint Lawrence
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - text: St. Lawrence
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - text: Saint Lawrence the Martyr
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - text: Lawrence the Martyr
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - lang: nl
+    role: translation
+    text: Laurentius van Rome
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - lang: fr
+    role: translation
+    text: Laurent de Rome
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - lang: de
+    role: translation
+    text: Laurentius von Rom
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - lang: it
+    role: translation
+    text: San Lorenzo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - lang: es
+    role: translation
+    text: Lorenzo de Roma
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - lang: ja
+    role: translation
+    text: ローマのラウレンティウス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - lang: zh
+    role: translation
+    text: 圣洛伦佐
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - lang: ko
+    role: translation
+    text: 라우렌시오
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+  - lang: ru
+    role: translation
+    text: Святой Лаврентий
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q17590
+kind: person
+occupations: [latin catholic deacon, deacon]
+birth: 225-12-31
+death: 258-08-10
+description_md: |-
+  A deacon of Rome martyred in 258, according to tradition by being roasted alive on a gridiron. According to legend ([[person/ambrose]]; the Golden Legend), he joked to his persecutor, "Turn me over, I'm done on this side."
+
+  **In art:** A young deacon in a rich vestment (*dalmatic*) holding a gridiron.
+
+  **Famous works**
+
+  - [[artist/titian]], *The Martyrdom of Saint Lawrence* (Gesuiti, Venice, and El Escorial)
+  - Bernini, *The Martyrdom of Saint Lawrence* (Uffizi, Florence)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q17590
+metadata:
+  sources: [Wikidata Q17590 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/St._Laurentius_in_Dorfkirche_St._Laurentius_in_Hornstorf.jpg/1280px-St._Laurentius_in_Dorfkirche_St._Laurentius_in_Hornstorf.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:St._Laurentius_in_Dorfkirche_St._Laurentius_in_Hornstorf.jpg
+    license: CC BY-SA 4.0
+    credit: Burkhard Mücke
+identifiers:
+  bnf: "144998835"
+  gnd: "119320827"
+  lc: n85202412
+  viaf: "30344146"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q17590
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q17590
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q17590
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q17590

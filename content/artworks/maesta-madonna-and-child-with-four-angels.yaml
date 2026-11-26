@@ -8,6 +8,7 @@ materials: [tempera, panel]
 dimensions: [230, 141.5]
 institution: national-gallery-of-art
 inventory_number: 1961.9.77
+web_url: https://www.nga.gov/collection/art-object-page.46176.html
 wikidata_id: Q20172954
 metadata:
   sources: [Wikidata Q20172954 (retrieved 2026-11-23)]
@@ -101,7 +102,7 @@ provenance:
         note: (Ettore Sestieri, Rome), by 1951;[4]
         source: nga-1961-9-77
         accessed: 2026-11-24
-  - owner: person/alessandro-contini-bonacossi-2
+  - owner: person/alessandro-contini-bonacossi
     role: dealer
     acquired: 1953 or earlier
     direct: true

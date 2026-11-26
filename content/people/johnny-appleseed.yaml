@@ -1,0 +1,71 @@
+public_id: 130681
+name: Johnny Appleseed
+given_name: Johnny
+family_name: Appleseed
+names:
+  - text: John Chapman
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q369675
+  - lang: ja
+    role: translation
+    text: ジョニー・アップルシード
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q369675
+  - lang: zh
+    role: translation
+    text: 苹果佬约翰尼
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q369675
+  - lang: ko
+    role: translation
+    text: 조니 애플시드
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q369675
+  - lang: ru
+    role: translation
+    text: Джонни Эпплсид
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q369675
+kind: person
+occupations: [missionary, real estate developer, botanist, fruit grower]
+birth: 1774-09-26
+death: 1845-03-18
+description_md: |-
+  John Chapman (1774–1845) walked barefoot across Pennsylvania, Ohio and Indiana planting apple-tree nurseries. According to 19th-century accounts, he wore a coffee sack with holes cut for head and arms and a tin pot as a hat. He was kind to animals and was a deeply religious man.
+
+  *From:* American
+wikidata_id: Q369675
+metadata:
+  sources: [Wikidata Q369675 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Johnny_Appleseed_photograph_cropped.png/1280px-Johnny_Appleseed_photograph_cropped.png
+    source_url: https://commons.wikimedia.org/wiki/File:Johnny_Appleseed_photograph_cropped.png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "170288460"
+  gnd: "123497434"
+  lc: n81144565
+  viaf: "62456510"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q369675
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q369675
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q369675
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q369675

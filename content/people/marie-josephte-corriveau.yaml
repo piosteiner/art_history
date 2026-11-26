@@ -1,0 +1,72 @@
+public_id: 130683
+name: Marie-Josephte Corriveau
+given_name: Marie-Josephte
+family_name: Corriveau
+names:
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: La Corriveau
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3291969
+  - text: Marie Josephe Corriveau
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3291969
+  - text: Marie-Josephe Corriveau
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3291969
+  - text: Marie-Josephte Corrivaux
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3291969
+  - text: La Corrivaux
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3291969
+  - text: Josephte Corriveau-Dodier
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3291969
+kind: person
+occupations: [peasant]
+birth: 1733-01/1733-02
+birth_label: c. 1733
+death: 1763-04-18
+description_md: |-
+  Marie-Josephte Corriveau was hanged in 1763 for killing her second husband. Her body was displayed in an iron cage at a crossroads near Quebec City. Legends grew that she'd killed seven husbands and that she haunted travellers from her cage.
+
+  *From:* French-Canadian
+wikidata_id: Q3291969
+metadata:
+  sources: [Wikidata Q3291969 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/30/La_Corriveau_%28Simpson%29.png
+    source_url: https://commons.wikimedia.org/wiki/File:La_Corriveau_(Simpson).png
+    license: Public domain
+    credit: Charles Walter Simpson (1878-1942)
+identifiers:
+  bnf: "122478533"
+  gnd: "119519127"
+  idref: "188202862"
+  lc: n83012126
+  viaf: "27883389"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q3291969
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q3291969
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q3291969
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q3291969

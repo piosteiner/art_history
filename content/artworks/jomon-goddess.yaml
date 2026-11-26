@@ -11,6 +11,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q28693146
+attribution_label: Anonymous
 institution: yamagata-prefectural-museum
 web_url: http://megami.town.funagata.yamagata.jp/
 location: [140.3396, 38.25548]
@@ -69,3 +70,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q28693146
+  attribution_label:
+    - source: kunishitei-201-00011534
+      accessed: 2026-11-25

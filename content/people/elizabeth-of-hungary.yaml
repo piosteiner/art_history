@@ -1,0 +1,154 @@
+public_id: 130770
+name: Elizabeth of Hungary
+names:
+  - text: Saint Elizabeth
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Saint Elizabeth of Hungary
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Elisabetta d'Ungheria
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Isabel de la Casa de los Arpaád
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Erzsébet Magyarorszaági
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Sankt Elisabeth Von Ungarn
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Elisabeth of Thuringia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Ersebeth
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Arpádházi Szent Erzsébet
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Zent Ersebeth
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Isabel de la Casa de los Arpaad
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Erzsebet Magyarorszaagi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Arpadhazi Szent Erzsebet
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - text: Saint Elisabeth of Hungary
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - lang: nl
+    role: translation
+    text: Elisabeth van Thüringen
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - lang: fr
+    role: translation
+    text: Élisabeth de Hongrie
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - lang: de
+    role: translation
+    text: Elisabeth von Thüringen
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - lang: es
+    role: translation
+    text: Isabel de Hungría
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - lang: ja
+    role: translation
+    text: エルジェーベト
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - lang: zh
+    role: translation
+    text: 聖麗莎
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - lang: ko
+    role: translation
+    text: 헝가리의 엘리자베트
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+  - lang: ru
+    role: translation
+    text: Елизавета Венгерская
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159862
+kind: person
+occupations: [philanthropist, nurse]
+birth: 1207-07-14
+death: 1231-11-24
+description_md: |-
+  A 13th-century princess who gave her wealth to the poor. In a later legend, when her husband caught her carrying bread to the poor in her cloak, she opened it and the bread had turned into roses.
+
+  **In art:** A crowned woman with roses in her apron, or feeding beggars.
+
+  **Famous works**
+
+  - [[artist/simone-martini]], *Saint Elizabeth* (Lower Basilica, Assisi)
+  - Elisabethkirche (Marburg)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q159862
+metadata:
+  sources: [Wikidata Q159862 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Marburg_Elisabethkirche_Elisabethschrein_Elisabethfigur.jpg/1280px-Marburg_Elisabethkirche_Elisabethschrein_Elisabethfigur.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Marburg_Elisabethkirche_Elisabethschrein_Elisabethfigur.jpg
+    license: CC BY-SA 4.0
+    credit: Heinrich Stürzl
+identifiers:
+  bnf: 11948833s
+  gnd: "118529927"
+  idref: "027449580"
+  lc: n50047894
+  ulan: "500340694"
+  viaf: "20471603"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q159862
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q159862
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q159862
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q159862

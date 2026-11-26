@@ -1,6 +1,7 @@
 public_id: 122983
 title_lang: en
 title: Venus
+attribution_label: Anonymous, Milanese (model attributed to Francesco Brambilla the Younger)
 created: 1580/1590
 created_label: c. 1580
 created_span: uncertain
@@ -8,6 +9,7 @@ materials: [bronze]
 dimensions: [166, 44, 33.7]
 institution: national-gallery-of-art
 inventory_number: 1937.1.132
+web_url: https://www.nga.gov/collection/art-object-page.139.html
 wikidata_id: Q63809881
 metadata:
   sources: [Wikidata Q63809881 (retrieved 2026-11-23)]
@@ -158,3 +160,6 @@ sources:
     - accessed: 2026-11-23
       property: P217
       wikidata: Q63809881
+  attribution_label:
+    - source: nga-1937-1-132
+      accessed: 2026-11-25

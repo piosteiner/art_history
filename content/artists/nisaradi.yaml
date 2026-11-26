@@ -1,2 +1,11 @@
 public_id: 123844
 name: Nisaradi
+active: 1585/1609
+wikidata_id: Q59344422
+metadata:
+  sources: [Wikidata Q59344422 (retrieved 2026-11-25)]
+sources:
+  active:
+    - accessed: 2026-11-25
+      property: P1317
+      wikidata: Q59344422

@@ -7,6 +7,7 @@ created_span: uncertain
 dimensions: [47, 34]
 institution: art-institute-of-chicago
 inventory_number: "2007.246"
+web_url: https://www.artic.edu/artworks/190405
 wikidata_id: Q20266384
 metadata:
   sources: [Wikidata Q20266384 (retrieved 2026-11-24)]
@@ -52,7 +53,7 @@ provenance:
         note: by descent to his nephew Cardinal Ippolito Aldobrandini (died 1638), Rome and Frascati, no. 42 in 1626 Aldobrandini inventory, “Un quadro con S luca che sta ritrahendo la Mad.a di mano di Raffael d’Urbino del n. 61”
         source: aic-2007-246
         accessed: 2026-11-24
-  - owner: person/olimpia-aldobrandini-2
+  - owner: person/olimpia-aldobrandini
     method: inheritance
     direct: true
     place: rome

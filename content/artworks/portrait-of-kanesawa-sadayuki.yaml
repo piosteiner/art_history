@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045376
+attribution_label: Anonymous
 institution: shomyo-ji
 wikidata_id: Q107045376
 metadata:
@@ -51,3 +52,7 @@ provenance:
         note: ※国宝・重要文化財の大部分は隣接する神奈川県立金沢文庫が管理している
         source: ja-wikipedia-shomyoji-yokohama
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-152
+      accessed: 2026-11-25

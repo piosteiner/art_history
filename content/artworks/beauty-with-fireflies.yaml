@@ -1,6 +1,7 @@
 public_id: 124768
 title_lang: en
 title: Beauty with Fireflies
+attribution_label: copy after Kubo Shunman
 created: 1800/1825
 created_label: c. 19th century
 created_span: uncertain
@@ -72,3 +73,6 @@ sources:
     - accessed: 2026-11-24
       property: P217
       wikidata: Q60482465
+  attribution_label:
+    - source: cma-2015-85
+      accessed: 2026-11-25

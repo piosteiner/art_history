@@ -1,10 +1,12 @@
 public_id: 122862
 title_lang: en
 title: Ciborium for the Sacrament
+attribution_label: Anonymous, Florentine, possibly after a model by Desiderio da Settignano (stem); dome, enclosure and base Florentine, 19th century
 materials: [marble]
 dimensions: [322.1, 80.8, 69.9]
 institution: national-gallery-of-art
 inventory_number: 1952.5.100
+web_url: https://www.nga.gov/collection/art-object-page.41715.html
 provenance_status: d_seized
 provenance_status_note: Appears to have been part of Alphons de Rothschild's Vienna collection confiscated by the Nazis in 1938 and stored at the Kunsthistorisches Museum; returned to the Rothschilds by 1951.
 wikidata_id: Q63809404
@@ -51,7 +53,7 @@ provenance:
         note: sold c. 1880 to Nathaniel de Rothschild [1836-1905], Vienna;[1]
         source: nga-1952-5-100
         accessed: 2026-11-24
-  - owner: person/alphons-de-rothschild
+  - owner: person/alphonse-von-rothschild
     method: inheritance
     direct: true
     place: vienna
@@ -141,3 +143,6 @@ sources:
     - accessed: 2026-11-23
       property: P217
       wikidata: Q63809404
+  attribution_label:
+    - source: nga-1952-5-100
+      accessed: 2026-11-25

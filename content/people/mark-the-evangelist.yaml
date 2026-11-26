@@ -1,0 +1,110 @@
+public_id: 130729
+name: Mark the Evangelist
+given_name: Mark the
+family_name: Evangelist
+names:
+  - lang: arc
+    role: original
+    text: ܡܪܩܘܣ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q31966
+  - text: Marcus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q31966
+  - text: Saint Mark
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q31966
+  - text: Mark
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q31966
+  - text: Markus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q31966
+  - lang: fr
+    role: translation
+    text: Marc
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q31966
+  - lang: it
+    role: translation
+    text: Marco
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q31966
+  - lang: es
+    role: translation
+    text: Marcos el Evangelista
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q31966
+  - lang: ja
+    role: translation
+    text: マルコ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q31966
+  - lang: zh
+    role: translation
+    text: 約翰‧馬可
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q31966
+  - lang: ko
+    role: translation
+    text: 복음사가 마르코
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q31966
+  - lang: ru
+    role: translation
+    text: апостол Марк
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q31966
+kind: person
+occupations: [presbyter, evangelist]
+birth: c. 12
+death: 68-04-23
+description_md: |-
+  The authors of the four Gospels: Matthew, Mark, Luke and John.
+
+  **In art:** His symbol from the vision of Ezekiel is a winged lion.
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q31966
+metadata:
+  sources: [Wikidata Q31966 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Caxias_museumunicipal4.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caxias_museumunicipal4.jpg
+    license: CC BY-SA 3.0
+    credit: Ricardo André Frantz (User:Tetraktys)
+identifiers:
+  bnf: 12544621q
+  gnd: "118578030"
+  idref: "034721770"
+  lc: n50044098
+  viaf: "264405984"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q31966
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q31966
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q31966
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q31966

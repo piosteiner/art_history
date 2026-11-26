@@ -14,6 +14,7 @@ materials: [oil paint, canvas]
 dimensions: [255.3, 158]
 institution: cleveland-museum-of-art
 inventory_number: "1961.220"
+web_url: https://www.clevelandart.org/art/1961.220
 wikidata_id: Q60465933
 metadata:
   sources: [Wikidata Q60465933 (retrieved 2026-11-24)]
@@ -157,7 +158,7 @@ sources:
       property: P571
       wikidata: Q60465933
   creator:
-    - accessed: 2026-11-24
+    - accessed: 2026-11-25
       property: P170
       wikidata: Q60465933
   materials:

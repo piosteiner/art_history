@@ -1,0 +1,47 @@
+public_id: 130624
+name: Antoine-François Gérard
+given_name: Antoine-François
+family_name: Gérard
+names:
+  - text: Antoine-François Gerard
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q15968107
+  - text: M. Girard
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q15968107
+  - text: François Antoine Gérard
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q15968107
+  - text: Girard
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q15968107
+  - text: Gerard
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q15968107
+  - text: Antoine François Gérard
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q15968107
+birth: 1760
+death: 1843-09-16
+wikidata_id: Q15968107
+metadata:
+  sources: [Wikidata Q15968107 (retrieved 2026-11-25)]
+identifiers:
+  rkd: "434059"
+  ulan: "500332811"
+  viaf: "309814686"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q15968107
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q15968107

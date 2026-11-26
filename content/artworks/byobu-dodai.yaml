@@ -68,7 +68,7 @@ provenance:
     sources:
       - url: https://ja.wikipedia.org/w/index.php?oldid=111826663
         note: 『屏風土代』 - 小野道風筆、928年（延長6年）。井上馨旧蔵。1925年（大正14年）井上侯爵家より献上。
-        source: jawiki-111826663
+        source: wikipedia-ja-sannomaru-shozokan
         accessed: 2026-11-24
   - owner: person/emperor-taisho
     acquired: 1925
@@ -83,7 +83,7 @@ provenance:
         accessed: 2026-11-24
       - url: https://ja.wikipedia.org/w/index.php?oldid=111826663
         note: 1925年（大正14年）井上侯爵家より献上。
-        source: jawiki-111826663
+        source: wikipedia-ja-sannomaru-shozokan
         accessed: 2026-11-24
   - owner: institution/museum-of-the-imperial-collections
     place: tokyo

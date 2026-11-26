@@ -1,0 +1,98 @@
+public_id: 130635
+name: Dihya
+names:
+  - lang: ber
+    role: original
+    text: ⴷⵉⵀⵢⴰ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q284295
+  - text: Dahiyah
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q284295
+  - text: Kahina
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q284295
+  - text: Al-Kahina
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q284295
+  - text: Daya
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q284295
+  - text: Dehiya
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q284295
+  - text: Dahya
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q284295
+  - text: Damya
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q284295
+  - lang: de
+    role: translation
+    text: Kāhinah
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q284295
+  - lang: ja
+    role: translation
+    text: カーヒナ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q284295
+  - lang: zh
+    role: translation
+    text: 卡西奈
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q284295
+  - lang: ru
+    role: translation
+    text: Дакия аль-Кахина
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q284295
+kind: person
+occupations: [monarch]
+birth: 668
+death: 703
+description_md: |-
+  Dihya was a real Amazigh queen of the late 7th century (died 703), known by her enemies as *al-Kahina*, "the priestess" (soothsayer), because she was said to foresee the future. She united Berber tribes in the Aurès Mountains and defeated an invading army in battle, holding them back for years. In the end, she was defeated at El Jem in 703 and killed. Legend says she saw her defeat coming and sent her sons to the other side to save them. She's a powerful symbol of resistance in North Africa today.
+
+  *From:* history and legend · Amazigh (Berber)
+wikidata_id: Q284295
+metadata:
+  sources: [Wikidata Q284295 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/42/Dihya_Berber_Queen_of_the_Aur%C3%A8s_by_Vernet-Lecomte.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dihya_Berber_Queen_of_the_Aur%C3%A8s_by_Vernet-Lecomte.jpg
+    license: Public domain
+    credit: Émile Vernet-Lecomte
+identifiers:
+  gnd: "122131061"
+  lc: nr92033192
+  viaf: "44149196548774792550"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q284295
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q284295
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q284295
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q284295

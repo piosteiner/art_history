@@ -1,12 +1,14 @@
 public_id: 123202
 title_lang: en
 title: The Holy Kinship
+attribution_label: Anonymous, South German (Swabian or Franconian)
 created: 1480/1490
 created_label: c. 1480
 created_span: uncertain
 dimensions: [128, 112.5, 27]
 institution: national-gallery-of-art
 inventory_number: 2002.13.1
+web_url: https://www.nga.gov/collection/art-object-page.123018.html
 wikidata_id: Q63861614
 metadata:
   sources: [Wikidata Q63861614 (retrieved 2026-11-24)]
@@ -72,3 +74,6 @@ sources:
     - accessed: 2026-11-24
       property: P217
       wikidata: Q63861614
+  attribution_label:
+    - source: nga-2002-13-1
+      accessed: 2026-11-25

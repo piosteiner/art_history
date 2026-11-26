@@ -14,11 +14,13 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q28803791
+attribution_label: Anonymous
 created: 13th century
 created_span: uncertain
 dimensions: [4.22, 95.29]
 institution: tokyo-national-museum
 inventory_number: A-9976
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-9976?locale=en
 wikidata_id: Q28803791
 metadata:
   sources: [Wikidata Q28803791 (retrieved 2026-11-24)]
@@ -109,4 +111,8 @@ sources:
   inventory_number:
     - accessed: 2026-11-24
       property: P217
+      wikidata: Q28803791
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q28803791

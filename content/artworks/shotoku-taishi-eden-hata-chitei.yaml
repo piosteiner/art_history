@@ -87,17 +87,22 @@ provenance:
         note: 1878年2月18日付けで宮内省は宝物の献納を許可することとし、法隆寺には見返りに金一万円が下賜された。 … 1882年（明治15年）、東京・上野に博物館（東京国立博物館の前身）が移転・開館すると、法隆寺宝物はそちらへ移動された。
         source: jawiki-111611092
         accessed: 2026-11-24
-  - owner: institution/horyu-ji-treasures-at-tokyo-national-museum
+  - owner: institution/government-of-japan
     acquired: 1949
     method: transfer
     direct: true
     place: tokyo
-    label: nationalised in 1949 with most of the Hōryū-ji gift (Ministry of Education), at the Tokyo National Museum (N-1); remounted as ten panels from 1968; owner today the National Institutes for Cultural Heritage
+    label: nationalised in 1949 with most of the Hōryū-ji gift (Ministry of Education), since then the "Hōryū-ji Treasures" at the Tokyo National Museum (N-1); remounted as ten panels from 1968
     sources:
       - url: https://ja.wikipedia.org/w/index.php?oldid=111611092
         note: 第二次大戦後の1949年に一部を除いて国有となり、それ以後、「法隆寺献納宝物」と称されている。
         source: jawiki-111611092
         accessed: 2026-11-24
+  - owner: institution/national-institutes-for-cultural-heritage
+    method: transfer
+    direct: true
+    label: "owner today: the National Institutes for Cultural Heritage, which runs the national museums; kept at the Tokyo National Museum (Gallery of Hōryū-ji Treasures)"
+    sources:
       - url: https://kunishitei.bunka.go.jp/heritage/detail/201/147
         note: 保管施設の名称 ： 東京国立博物館 所有者名 ： 独立行政法人国立文化財機構
         source: kunishitei-201-147
@@ -135,13 +140,10 @@ sources:
   dimensions:
     - source: history-of-japanese-art
       locator: p. 113, fig. 138
-    - accessed: 2026-11-24
-      property: P2048
-      wikidata: Q28803778
   institution:
     - source: history-of-japanese-art
       locator: p. 113, fig. 138
-    - accessed: 2026-11-24
+    - accessed: 2026-11-25
       property: P195
       wikidata: Q28803778
   inventory_number:

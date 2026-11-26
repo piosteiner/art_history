@@ -1,0 +1,64 @@
+public_id: 130625
+name: Jean Guillaume Moitte
+given_name: Jean Guillaume
+family_name: Moitte
+names:
+  - text: Jean-Guillaume Moitte
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3172432
+  - text: Moitte
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3172432
+  - text: Moitte fils Sculpteur
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3172432
+  - text: M. Moette
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3172432
+  - text: le Sculpteur Moitte
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3172432
+  - lang: zh
+    role: translation
+    text: 让-纪尧姆·穆瓦特
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3172432
+  - lang: ru
+    role: translation
+    text: Жан-Гийом Муатт
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3172432
+birth: 1746-11-11
+death: 1810-05-02
+wikidata_id: Q3172432
+metadata:
+  sources: [Wikidata Q3172432 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Portrait_de_Jean-Guillaume_Moitte_%281746-1810%29%2C_sculpteur%2C_S411.jpg/1280px-Portrait_de_Jean-Guillaume_Moitte_%281746-1810%29%2C_sculpteur%2C_S411.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_de_Jean-Guillaume_Moitte_(1746-1810),_sculpteur,_S411.jpg
+    license: CC0
+    credit: David d'Angers, Pierre-Jean (Angers, 12–03–1788 - Paris, 05–01–1856), sculpteur
+identifiers:
+  bnf: "124487495"
+  gnd: "119091879"
+  idref: 03364036X
+  lc: nr93021358
+  rkd: "56585"
+  ulan: "500008594"
+  viaf: "46855390"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q3172432
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q3172432

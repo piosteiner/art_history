@@ -8,11 +8,13 @@ names:
     sources:
       - accessed: 2026-11-23
         wikidata: Q20176757
+attribution_label: Anonymous, French
 created: 1572
 materials: [oil paint, canvas]
 dimensions: [188.6, 102.2]
 institution: national-gallery-of-art
 inventory_number: 1961.9.55
+web_url: https://www.nga.gov/collection/art-object-page.46154.html
 wikidata_id: Q20176757
 metadata:
   sources: [Wikidata Q20176757 (retrieved 2026-11-23)]
@@ -161,3 +163,6 @@ sources:
     - accessed: 2026-11-23
       property: P217
       wikidata: Q20176757
+  attribution_label:
+    - source: nga-1961-9-55
+      accessed: 2026-11-25

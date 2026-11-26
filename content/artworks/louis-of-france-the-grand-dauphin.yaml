@@ -16,6 +16,7 @@ materials: [marble]
 dimensions: [79, 75.1, 34]
 institution: national-gallery-of-art
 inventory_number: 1960.5.7
+web_url: https://www.nga.gov/collection/art-object-page.46015.html
 wikidata_id: Q63854530
 metadata:
   sources: [Wikidata Q63854530 (retrieved 2026-11-23)]
@@ -58,7 +59,7 @@ provenance:
         note: by inheritance to her adviser and secretary, Sir John Murray Scott, 1st bt. [1847-1912], London and Paris;
         source: nga-1960-5-7
         accessed: 2026-11-24
-  - owner: person/victoria-sackville-west
+  - owner: person/victoria-sackville-west-lady-sackville
     method: inheritance
     direct: true
     place: paris

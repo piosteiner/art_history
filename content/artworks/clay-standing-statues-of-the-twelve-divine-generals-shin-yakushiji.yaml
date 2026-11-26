@@ -6,6 +6,7 @@ names:
   - lang: ja
     role: original
     text: 十二神将立像
+attribution_label: Anonymous
 created: 729/749
 institution: shin-yakushiji
 wikidata_id: Q107045974
@@ -44,3 +45,7 @@ provenance:
         note: 12躯のうちの1躯（宮毘羅（くびら）大将像、寺伝では波夷羅（はいら）大将像）のみは江戸時代末期の地震で倒壊し、1931年（昭和6年）に細谷而楽が補作したもので、国宝指定外である
         source: jawiki-shin-yakushiji
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-232
+      accessed: 2026-11-25

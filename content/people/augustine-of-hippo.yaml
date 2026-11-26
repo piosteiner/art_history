@@ -1,0 +1,167 @@
+public_id: 130757
+name: Augustine of Hippo
+names:
+  - lang: la
+    role: original
+    text: Aurelius Augustinus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: Saint Austin
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: St Augustine
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: Saint Augustine
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: St Augustine of Hippo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: Saint Augustine of Hippo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: Augustinus, Aurelius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: Augustinus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: Aurelius Augustine
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: Aurelius Augustinus Hipponensis
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: St. Augustine of Hippo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: bishop of Hippo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: St. Augoustinos
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: St. Augustine
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - text: Augustine
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - lang: nl
+    role: translation
+    text: Augustinus van Hippo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - lang: fr
+    role: translation
+    text: Augustin d’Hippone
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - lang: de
+    role: translation
+    text: Augustinus von Hippo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - lang: it
+    role: translation
+    text: Agostino d'Ippona
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - lang: es
+    role: translation
+    text: Agustín de Hipona
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - lang: ja
+    role: translation
+    text: アウグスティヌス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - lang: zh
+    role: translation
+    text: 奥古斯丁
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - lang: ko
+    role: translation
+    text: 아우구스티누스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+  - lang: ru
+    role: translation
+    text: Аврелий Августин
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q8018
+kind: person
+occupations: [philosopher, theologian, autobiographer, music theorist, preacher, historian, poet, writer, Catholic priest, titular bishop, Catholic bishop, Church Fathers, Doctor of the Church, cleric, bishop]
+birth: 354-11-14
+death: 430-08-29
+description_md: |-
+  A North African bishop and the great theologian of the early Church, author of the *Confessions* and *The City of God*. In legend, he met a child on a beach trying to pour the sea into a hole, showing how impossible it is to understand God completely.
+
+  **In art:** A bishop with a book, a flaming heart, or in his study.
+
+  **Famous works**
+
+  - Botticelli, *Saint Augustine in His Study* (Ognissanti, Florence)
+  - [[artist/vittore-carpaccio]], *The Vision of Saint Augustine* (Scuola di San Giorgio degli Schiavoni, Venice)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q8018
+metadata:
+  sources: [Wikidata Q8018 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Saint_Augustine_by_Philippe_de_Champaigne.jpg/1280px-Saint_Augustine_by_Philippe_de_Champaigne.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Saint_Augustine_by_Philippe_de_Champaigne.jpg
+    license: Public domain
+    credit: Philippe de Champaigne
+identifiers:
+  bnf: 11889551s
+  gnd: "118505114"
+  idref: "027280896"
+  lc: n80126290
+  nlk: KAC199601187
+  ulan: "500104317"
+  viaf: "66806872"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q8018
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q8018
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q8018
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q8018

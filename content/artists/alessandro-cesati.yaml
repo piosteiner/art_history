@@ -2,3 +2,20 @@ public_id: 122927
 name: Alessandro Cesati
 given_name: Alessandro
 family_name: Cesati
+wikidata_id: Q3609923
+relationships:
+  - type: nationality
+    to: polity/italy
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q3609923
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Alessandro_cesati%2C_didone%2C_regina_di_cartagine%2C_1550_circa.JPG/1280px-Alessandro_cesati%2C_didone%2C_regina_di_cartagine%2C_1550_circa.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Alessandro_cesati,_didone,_regina_di_cartagine,_1550_circa.JPG
+    license: CC BY-SA 3.0
+    credit: sailko
+identifiers:
+  gnd: "124411592"
+  ulan: "500068265"
+  viaf: "96154468"

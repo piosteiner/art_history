@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q105296161
+attribution_label: Anonymous
 created: 8th century
 created_span: uncertain
 materials: [wood, lacquer, silver, jade, amber, glass, pearl, quartz]
@@ -88,3 +89,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q105296161
+  attribution_label:
+    - source: kunishitei-201-190
+      accessed: 2026-11-25

@@ -58,6 +58,7 @@ names:
     sources:
       - accessed: 2026-11-23
         wikidata: Q1518432
+attribution_label: possibly Praxiteles
 created: c. 330 BCE
 created_span: uncertain
 materials: [Parian marble]
@@ -149,4 +150,8 @@ sources:
   institution:
     - accessed: 2026-11-23
       property: P195
+      wikidata: Q1518432
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q1518432

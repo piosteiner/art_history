@@ -1,12 +1,14 @@
 public_id: 125252
 title_lang: en
 title: Flowers and Fruit in a China Bowl
+creator: juan-de-zurbaran
 created: c. 1645
 created_span: uncertain
 materials: [oil paint, canvas]
 dimensions: [82.6, 108.6]
 institution: art-institute-of-chicago
 inventory_number: "1947.511"
+web_url: https://www.artic.edu/artworks/111059
 wikidata_id: Q20275514
 metadata:
   sources: [Wikidata Q20275514 (retrieved 2026-11-24)]
@@ -127,6 +129,9 @@ sources:
     - accessed: 2026-11-24
       property: P571
       wikidata: Q20275514
+  creator:
+    - source: aic-1947-511
+      accessed: 2026-11-25
   materials:
     - accessed: 2026-11-24
       property: P186

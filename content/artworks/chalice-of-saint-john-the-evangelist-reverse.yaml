@@ -15,6 +15,7 @@ materials: [oil paint, panel]
 dimensions: [31.2, 24.4]
 institution: national-gallery-of-art
 inventory_number: 1952.5.46.b
+web_url: https://www.nga.gov/collection/art-object-page.41660.html
 wikidata_id: Q20173944
 metadata:
   sources: [Wikidata Q20173944 (retrieved 2026-11-23)]
@@ -31,7 +32,7 @@ images:
     license: Public domain
     credit: Hans Memling
 provenance:
-  - owner: person/bernardo-bembo
+  - owner: person/bernardo-bembo-2
     label: Venice or Verona
     certainty: probable
     sources:
@@ -48,7 +49,7 @@ provenance:
         note: Probably his son, Cardinal Pietro Bembo [1470-1547], Padua.[1] — [1] … Marcantonio Michiel's notes on what seems to be this diptych name the owner as the poet Pietro Bembo, another son of Bernardo … Pietro Bembo's paintings were then in Padua.
         source: nga-1952-5-46-b
         accessed: 2026-11-24
-  - owner: person/nicolai-nikitich-demidov
+  - owner: person/nikolai-demidov
     place: florence
     label: Prince of San Donato, near Florence; according to the catalogue of the Demidov sale, 3 March 1870, no. 204
     sources:

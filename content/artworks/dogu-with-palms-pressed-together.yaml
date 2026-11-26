@@ -11,6 +11,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q85757303
+attribution_label: Anonymous
 institution: korekawa-archaeological-institution-korekawa-jomon-kan
 web_url: https://www.korekawa-jomon.jp/parmanent_dogu/
 location: [141.4884, 40.47548]
@@ -74,3 +75,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q85757303
+  attribution_label:
+    - source: kunishitei-201-00011333
+      accessed: 2026-11-25

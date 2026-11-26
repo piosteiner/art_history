@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045333
+attribution_label: Anonymous
 created: first half of the 12th century
 created_span: uncertain
 institution: gotoh-museum
@@ -88,7 +89,7 @@ provenance:
         note: 両方とも昭和7年（1932）、保存上の配慮から詞書と絵を離し、巻物の状態から桐箱製の額装に改めた。
         source: gotoh-museum-genji-emaki
         accessed: 2026-11-24
-  - owner: person/setsu-inosuke
+  - owner: person/inosuke-setsu
     role: dealer
     acquired: after 1945
     direct: true
@@ -148,3 +149,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q107045333
+  attribution_label:
+    - source: kunishitei-201-37
+      accessed: 2026-11-25

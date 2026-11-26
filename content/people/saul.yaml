@@ -1,0 +1,79 @@
+public_id: 130719
+name: Saul
+names:
+  - lang: hbo
+    role: original
+    text: שאול
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q28730
+  - text: Shaul
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q28730
+  - lang: fr
+    role: translation
+    text: Saül
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q28730
+  - lang: es
+    role: translation
+    text: Saúl
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q28730
+  - lang: ja
+    role: translation
+    text: サウル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q28730
+  - lang: zh
+    role: translation
+    text: 掃羅王
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q28730
+  - lang: ko
+    role: translation
+    text: 사울
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q28730
+  - lang: ru
+    role: translation
+    text: Саул
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q28730
+occupations: [politician, monarch]
+description_md: |-
+  The first king of Israel. Tormented by dark moods, he was soothed by the young [[person/david]] playing the harp, but grew jealous of him and threw a spear at him. Before his last battle, he secretly consulted the Witch of Endor, who summoned the ghost of the prophet Samuel.
+
+  **In art:** A brooding king listening to a youth playing a harp, or a witch raising a ghost.
+
+  **Famous works**
+
+  - [[artist/rembrandt]], *Saul and David* (Mauritshuis)
+  - [[artist/salvator-rosa]], *Saul and the Witch of Endor* (Louvre)
+  - [[artist/william-blake]], *The Witch of Endor Raising the Spirit of Samuel* (1783, New York Public Library)
+
+  *From:* Hebrew Bible, Books of Samuel · Hebrew Bible
+wikidata_id: Q28730
+metadata:
+  sources: [Wikidata Q28730 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Saul_and_David_by_Rembrandt_Mauritshuis_621.jpg/1280px-Saul_and_David_by_Rembrandt_Mauritshuis_621.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Saul_and_David_by_Rembrandt_Mauritshuis_621.jpg
+    license: Public domain
+    credit: Rembrandt or workshop
+identifiers:
+  gnd: "118605836"
+  lc: n80079616
+  viaf: "13100048"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q28730

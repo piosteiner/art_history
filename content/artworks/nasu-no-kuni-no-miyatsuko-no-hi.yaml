@@ -15,6 +15,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q11642908
+attribution_label: Anonymous
 created: 700
 materials: [granite]
 institution: kasaishi-shrine
@@ -79,3 +80,6 @@ sources:
     - accessed: 2026-11-24
       property: P186
       wikidata: Q11642908
+  attribution_label:
+    - source: kunishitei-201-833
+      accessed: 2026-11-25

@@ -1,0 +1,68 @@
+public_id: 130669
+name: Lê Thái Tổ
+given_name: Lê Thái
+family_name: Tổ
+names:
+  - lang: vi
+    role: original
+    text: Lê Lợi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1195391
+  - lang: ja
+    role: translation
+    text: 黎利
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1195391
+  - lang: ko
+    role: translation
+    text: 후 레 태조
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1195391
+  - lang: ru
+    role: translation
+    text: Ле Лой
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1195391
+kind: person
+occupations: [sovereign, military personnel, monarch]
+birth: 1384-09-10
+death: 1433
+description_md: |-
+  Lê Lợi drove the Chinese Ming out of Vietnam (1418–1427) with a magic sword given to him by the Dragon King. After his victory, while he was boating on a lake in Hanoi, a giant golden turtle rose up and took the sword back. The lake is now called Hoàn Kiếm, "Lake of the Returned Sword".
+
+  *From:* Vietnamese
+wikidata_id: Q1195391
+metadata:
+  sources: [Wikidata Q1195391 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Le_Loi_statue.JPG/1280px-Le_Loi_statue.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Le_Loi_statue.JPG
+    license: CC BY-SA 3.0
+    credit: Nguyễn Thanh Quang
+identifiers:
+  bnf: 14561806b
+  gnd: "132208482"
+  idref: "083818103"
+  lc: n90659665
+  viaf: "44542460"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q1195391
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q1195391
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q1195391
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q1195391

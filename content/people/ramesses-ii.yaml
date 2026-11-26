@@ -1,0 +1,108 @@
+public_id: 130648
+name: Ramesses II
+names:
+  - text: Ramses
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+  - text: Ozymandias
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+  - text: Rameses
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+  - text: Ramesses the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+  - text: Ramses II
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+  - text: Ramses the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+  - lang: fr
+    role: translation
+    text: Ramsès II
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+  - lang: de
+    role: translation
+    text: Ramses II.
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+  - lang: es
+    role: translation
+    text: Ramsés II
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+  - lang: ja
+    role: translation
+    text: ラムセス2世
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+  - lang: zh
+    role: translation
+    text: 拉美西斯二世
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+  - lang: ko
+    role: translation
+    text: 람세스 2세
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+  - lang: ru
+    role: translation
+    text: Рамсес II
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1523
+kind: person
+occupations: [statesperson, pharaoh]
+birth: c. 1303 BCE
+death: -1213
+description_md: |-
+  He reigned for 66 years (1279–1213 BC), fought the Hittites at Kadesh, and built Abu Simbel. His Greek name, Ozymandias, inspired Shelley's poem about a broken statue in the desert: "Look on my works, ye Mighty, and despair!"
+
+  *From:* Ancient Egyptian
+wikidata_id: Q1523
+metadata:
+  sources: [Wikidata Q1523 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Colossal_bust_of_Ramesses_II_in_the_British_Museum.jpg/1280px-Colossal_bust_of_Ramesses_II_in_the_British_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Colossal_bust_of_Ramesses_II_in_the_British_Museum.jpg
+    license: CC BY-SA 4.0
+    credit: Unknown artist
+identifiers:
+  bnf: 11952902j
+  gnd: "118598171"
+  idref: "027503658"
+  lc: n50054443
+  viaf: "7363190"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q1523
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q1523
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q1523
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q1523

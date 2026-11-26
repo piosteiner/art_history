@@ -6,6 +6,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q115509788
+attribution_label: attributed to Nainsukh
 created: 1745/1750
 created_label: c. 1740s
 created_span: uncertain
@@ -100,4 +101,8 @@ sources:
   inventory_number:
     - accessed: 2026-11-24
       property: P217
+      wikidata: Q115509788
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q115509788

@@ -1,0 +1,90 @@
+public_id: 130703
+name: Jonah
+names:
+  - lang: he
+    role: original
+    text: יוֹנָה
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2468262
+  - text: Younas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2468262
+  - text: Jonas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2468262
+  - lang: nl
+    role: translation
+    text: Jona
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2468262
+  - lang: it
+    role: translation
+    text: Giona
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2468262
+  - lang: es
+    role: translation
+    text: Jonás
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2468262
+  - lang: ja
+    role: translation
+    text: ヨナ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2468262
+  - lang: zh
+    role: translation
+    text: 約拿
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2468262
+  - lang: ko
+    role: translation
+    text: 요나
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2468262
+  - lang: ru
+    role: translation
+    text: Иона
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2468262
+occupations: [preacher]
+description_md: |-
+  A prophet who fled from God's command and was swallowed by a great fish (later called a whale). After three days, it spat him out alive. Christians saw it as a symbol of Christ's resurrection.
+
+  **In art:** A man being thrown from a ship into the jaws of a sea monster, or spat out on a shore. Very common in early Christian catacomb art.
+
+  **Famous works**
+
+  - [[artist/michelangelo]], *Jonah* (Sistine Chapel ceiling, above the altar)
+  - Pieter Lastman, *Jonah and the Whale* (Düsseldorf)
+
+  *From:* Hebrew Bible, Book of Jonah · Hebrew Bible
+wikidata_id: Q2468262
+metadata:
+  sources: [Wikidata Q2468262 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/27/Jonah.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jonah.jpg
+    license: Public domain
+    credit: 18 century icon painter
+identifiers:
+  bnf: 11934593n
+  gnd: "118639951"
+  idref: "027266893"
+  lc: n79026841
+  viaf: "2147905176379092423"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q2468262

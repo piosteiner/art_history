@@ -2,6 +2,16 @@ public_id: 100802
 name: Triton
 category: iconography
 definition: Greek god, messenger of the sea
+description_md: |-
+  Triton is the son of [[poseidon]], a merman who calms or stirs the sea by blowing a conch shell.
+
+  **In art:** A merman blowing a shell.
+
+  **Famous works**
+
+  - Bernini, *Triton Fountain* (Piazza Barberini, Rome)
+
+  *From:* Greek mythology · Ancient Greek
 wikidata_id: Q148030
 metadata:
   sources: [Wikidata Q148030 (retrieved 2026-10-18)]
@@ -16,3 +26,5 @@ sources:
   definition:
     - accessed: 2026-10-18
       wikidata: Q148030
+    - source: wikipedia-en-triton-mythology
+      accessed: 2026-11-25

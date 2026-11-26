@@ -1,0 +1,146 @@
+public_id: 130687
+name: Hannibal
+names:
+  - text: Ḥannibaʿl
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Ḥannobaʿal
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Hannibal son of Hamilcar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Ḥannibaʿal
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Ḥanniba'al
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Annibal
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Hannibal the Barcid
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Hannibal Barca
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Ḥannoba'al
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Hanibal
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Hannibal, son of Hamilcar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Gannibal
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Ḥanniba'l
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Annibas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - text: Annibale
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - lang: nl
+    role: translation
+    text: Hannibal Barkas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - lang: es
+    role: translation
+    text: Aníbal Barca
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - lang: ja
+    role: translation
+    text: ハンニバル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - lang: zh
+    role: translation
+    text: 汉尼拔
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - lang: ko
+    role: translation
+    text: 한니발 바르카
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+  - lang: ru
+    role: translation
+    text: Ганнибал
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36456
+kind: person
+occupations: [politician, military leader]
+birth: -247
+death: -183
+description_md: |-
+  The great Carthaginian general who, in 218 BC, led an army with war elephants across the Alps to invade Italy and came close to defeating Rome.
+
+  **In art:** An army struggling through snowy mountain passes, often with elephants.
+
+  **Famous works**
+
+  - J.M.W. Turner, *Snow Storm: Hannibal and His Army Crossing the Alps* (Tate)
+  - [[artist/francisco-goya|Francisco de Goya]], *Hannibal the Conqueror Viewing Italy from the Alps for the First Time* (Museo del Prado, Madrid)
+
+  *From:* history · Carthaginian
+wikidata_id: Q36456
+metadata:
+  sources: [Wikidata Q36456 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ef/Mommsen_p265.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mommsen_p265.jpg
+    license: Public domain
+    credit: Fratelli Alinari
+identifiers:
+  bnf: 11960266k
+  gnd: "118545655"
+  idref: 02759680X
+  lc: n50034033
+  ulan: "500354945"
+  viaf: "41819384"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q36456
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q36456
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q36456
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q36456

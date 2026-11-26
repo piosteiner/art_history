@@ -1,6 +1,7 @@
 public_id: 124681
 title_lang: en
 title: The Game of Leap Frog
+creator: antoine-francois-gerard
 created: 1785
 institution: cleveland-museum-of-art
 inventory_number: "1944.237"
@@ -8,6 +9,13 @@ web_url: https://clevelandart.org/art/1944.237
 wikidata_id: Q79901016
 metadata:
   sources: [Wikidata Q79901016 (retrieved 2026-11-24)]
+relationships:
+  - type: co_creator
+    to: artist/jean-guillaume-moitte
+    label: designer
+    sources:
+      - source: cma-1944-237
+        accessed: 2026-11-25
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Jean_Guillaume_Moitte_-_The_Game_of_Leap_Frog_-_1944.237_-_Cleveland_Museum_of_Art.tif/lossy-page1-1280px-Jean_Guillaume_Moitte_-_The_Game_of_Leap_Frog_-_1944.237_-_Cleveland_Museum_of_Art.tif.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Jean_Guillaume_Moitte_-_The_Game_of_Leap_Frog_-_1944.237_-_Cleveland_Museum_of_Art.tif
@@ -70,6 +78,9 @@ sources:
     - accessed: 2026-11-24
       property: P571
       wikidata: Q79901016
+  creator:
+    - source: cma-1944-237
+      accessed: 2026-11-25
   institution:
     - accessed: 2026-11-24
       property: P195

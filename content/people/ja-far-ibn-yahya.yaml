@@ -1,0 +1,83 @@
+public_id: 130640
+name: Ja'far ibn Yahya
+given_name: Ja'far ibn
+family_name: Yahya
+names:
+  - lang: ar
+    role: original
+    text: جعفر
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2269030
+  - lang: fr
+    role: translation
+    text: Jafar ben Yahya
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2269030
+  - lang: de
+    role: translation
+    text: Dscha'far ibn Yahya
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2269030
+  - lang: it
+    role: translation
+    text: Ja'far ibn Yahya al-Barmaki
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2269030
+  - lang: es
+    role: translation
+    text: Djafar ibn Yahya
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2269030
+  - lang: ja
+    role: translation
+    text: ジャアファル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2269030
+  - lang: zh
+    role: translation
+    text: 贾法尔·伊本·叶海亚
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2269030
+  - lang: ru
+    role: translation
+    text: Джафар ибн Яхья
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2269030
+kind: person
+occupations: [politician]
+birth: 760
+death: 803-01-31
+description_md: |-
+  Harun (ruled 786–809) appears in many stories, going out at night in disguise with his vizier Ja'far and his executioner Masrur to see how his people lived. Ja'far was real too; Harun had him executed in 803.
+
+  *From:* One Thousand and One Nights · Arabic, Persian, Indian and Egyptian
+wikidata_id: Q2269030
+metadata:
+  sources: [Wikidata Q2269030 (retrieved 2026-11-25)]
+identifiers:
+  viaf: "291460921"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q2269030
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q2269030
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q2269030
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q2269030

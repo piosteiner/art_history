@@ -1,0 +1,71 @@
+public_id: 130705
+name: Esther
+names:
+  - lang: hbo
+    role: original
+    text: אסתר
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q732413
+  - text: Queen Esther
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q732413
+  - text: Ester
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q732413
+  - lang: ja
+    role: translation
+    text: エステル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q732413
+  - lang: zh
+    role: translation
+    text: 以斯帖
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q732413
+  - lang: ko
+    role: translation
+    text: 에스테르
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q732413
+  - lang: ru
+    role: translation
+    text: Есфирь
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q732413
+occupations: [politician]
+description_md: |-
+  A Jewish woman who became queen of Persia. When the king's minister Haman plotted to kill all the Jews, she risked her life by appearing before the king uninvited, and saved her people. The festival of Purim celebrates her.
+
+  **In art:** A queen fainting or kneeling before a king, who holds out his sceptre to her.
+
+  **Famous works**
+
+  - [[artist/artemisia-gentileschi]], *Esther before Ahasuerus* (Metropolitan Museum)
+  - [[artist/rembrandt]], *Ahasuerus and Haman at the Feast of Esther* (Moscow)
+
+  *From:* Hebrew Bible, Book of Esther · Hebrew Bible
+wikidata_id: Q732413
+metadata:
+  sources: [Wikidata Q732413 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Hugues_Merle%2C_Queen_Esther%2C_1875.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hugues_Merle,_Queen_Esther,_1875.jpg
+    license: Public domain
+    credit: Hugues Merle
+identifiers:
+  bnf: 12135170w
+  gnd: "118682431"
+  lc: n79109094
+  viaf: "37710366"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q732413

@@ -2,3 +2,14 @@ public_id: 112068
 name: Bernhard Koehler
 given_name: Bernhard
 family_name: Koehler
+birth: 1849
+death: 1927
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-26
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-11-26

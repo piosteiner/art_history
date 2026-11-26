@@ -1,0 +1,76 @@
+public_id: 130790
+name: Verena
+names:
+  - text: Saint Verena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q437896
+  - lang: fr
+    role: translation
+    text: Vérène de Zurzach
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q437896
+  - lang: it
+    role: translation
+    text: Verena di Zurzach
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q437896
+  - lang: ko
+    role: translation
+    text: 베레나
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q437896
+  - lang: ru
+    role: translation
+    text: Верена Фивейская
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q437896
+kind: person
+occupations: [nun]
+birth: c. 260
+death: c. 344
+description_md: |-
+  Verena was a holy woman from the Theban Legion's circle who lived as a hermit near Solothurn and at Zurzach in Aargau, where she cared for the sick.
+
+  **In art:** Verena with a comb and a water jug.
+
+  **Famous works**
+
+  - Verena Gorge (*Verenaschlucht*, near Solothurn)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q437896
+metadata:
+  sources: [Wikidata Q437896 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Barmherzigkeit_der_Hl_Verena_1524.jpg/1280px-Barmherzigkeit_der_Hl_Verena_1524.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Barmherzigkeit_der_Hl_Verena_1524.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "180209961"
+  gnd: "118768042"
+  hls: "010226"
+  lc: nb2012017488
+  viaf: "64803306"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q437896
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q437896
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q437896
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q437896

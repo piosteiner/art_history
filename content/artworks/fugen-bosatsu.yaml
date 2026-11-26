@@ -22,6 +22,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q28803631
+attribution_label: Anonymous
 created: 12th century
 created_span: uncertain
 materials: [silk, Iwaenogu]
@@ -93,4 +94,8 @@ sources:
   inventory_number:
     - accessed: 2026-11-24
       property: P217
+      wikidata: Q28803631
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q28803631

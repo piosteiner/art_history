@@ -1,0 +1,32 @@
+public_id: 130628
+name: Yintuoluo
+names:
+  - text: Fanyin Tuoluo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q68997513
+  - text: Ren Fanyin
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q68997513
+  - text: Indara
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q68997513
+  - lang: ja
+    role: translation
+    text: 因陀羅
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q68997513
+  - lang: zh
+    role: translation
+    text: 因陀罗
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q68997513
+wikidata_id: Q68997513
+metadata:
+  sources: [Wikidata Q68997513 (retrieved 2026-11-25)]
+identifiers:
+  viaf: "259955821"

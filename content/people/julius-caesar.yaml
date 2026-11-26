@@ -1,0 +1,118 @@
+public_id: 130689
+name: Julius Caesar
+given_name: Julius
+family_name: Caesar
+names:
+  - lang: la
+    role: original
+    text: GAIVS IVLIVS CAESAR
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1048
+  - lang: la
+    role: original
+    text: DIVVS IVLIVS
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1048
+  - text: Divine Julius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1048
+  - lang: fr
+    role: translation
+    text: Jules César
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1048
+  - lang: de
+    role: translation
+    text: Gaius Iulius Caesar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1048
+  - lang: it
+    role: translation
+    text: Gaio Giulio Cesare
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1048
+  - lang: es
+    role: translation
+    text: Julio César
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1048
+  - lang: ja
+    role: translation
+    text: ガイウス・ユリウス・カエサル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1048
+  - lang: zh
+    role: translation
+    text: 凯撒
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1048
+  - lang: ko
+    role: translation
+    text: 율리우스 카이사르
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1048
+  - lang: ru
+    role: translation
+    text: Гай Юлий Цезарь
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1048
+kind: person
+occupations: [orator, memoirist, ruler, historian, poet, ancient Roman priest, politician, military personnel, military leader, writer]
+birth: -100
+birth_label: c. 100 BCE
+death: -44
+description_md: |-
+  Julius Caesar, the general and dictator assassinated in 44 BC.
+
+  **In art:** Caesar in a laurel wreath, in triumph processions, or crossing the Rubicon.
+
+  **Famous works**
+
+  - [[artist/andrea-mantegna]], *The Triumphs of Caesar* (Hampton Court Palace)
+
+  *From:* history · Ancient Roman
+wikidata_id: Q1048
+metadata:
+  sources: [Wikidata Q1048 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg/1280px-Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Retrato_de_Julio_C%C3%A9sar_(26724093101)_(cropped).jpg
+    license: Public domain
+    credit: Ángel M. Felicísimo from Mérida, España
+identifiers:
+  bnf: 11894764p
+  gnd: "118518275"
+  hls: "010301"
+  idref: "027303136"
+  lc: n79021400
+  nlk: KAC199638731
+  ulan: "500077373"
+  viaf: "286265178"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q1048
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q1048
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q1048
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q1048

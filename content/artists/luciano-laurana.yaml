@@ -7,6 +7,20 @@ death: 1479
 wikidata_id: Q712650
 metadata:
   sources: [Wikidata Q712650 (retrieved 2026-11-09)]
+relationships:
+  - type: died_in
+    to: place/pesaro
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q712650
+identifiers:
+  gnd: "118835491"
+  idref: "082086656"
+  lc: n96099722
+  rkd: "48303"
+  ulan: "500007368"
+  viaf: "89166778"
 sources:
   birth:
     - accessed: 2026-11-09

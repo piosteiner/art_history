@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045976
+attribution_label: Anonymous
 created: 9th century
 created_span: uncertain
 institution: horyu-ji
@@ -56,3 +57,7 @@ provenance:
         note: その功績から道詮律師像（塑像:国宝）が、夢殿の本尊脇に侍している。
         source: jawiki-dosen
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-238
+      accessed: 2026-11-25

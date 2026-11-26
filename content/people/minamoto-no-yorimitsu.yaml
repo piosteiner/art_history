@@ -1,0 +1,70 @@
+public_id: 130804
+name: Minamoto no Yorimitsu
+names:
+  - lang: ja
+    role: original
+    text: 源頼光
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q590523
+  - lang: zh
+    role: translation
+    text: 源賴光
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q590523
+  - lang: ko
+    role: translation
+    text: 미나모토노 요리미쓰
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q590523
+  - lang: ru
+    role: translation
+    text: Минамото-но Ёримицу
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q590523
+kind: person
+occupations: [military leader, military commander]
+birth: 948
+death: 1021-09-04
+description_md: |-
+  The hero Minamoto no Raikō (Yorimitsu) and his four companions (including [[kintaro]]) disguised themselves as mountain priests (yamabushi), drugged [[shuten-doji]] with poisoned sake and cut off his head. Raikō also killed the giant earth spider *Tsuchigumo*.
+
+  **In art:** Warriors fighting a giant spider in a web, or a demon's head biting a warrior's helmet.
+
+  **Famous works**
+
+  - [[artist/kano-motonobu]], *Shuten-dōji emaki* (Suntory Museum of Art)
+  - [[artist/utagawa-kuniyoshi]], *Minamoto Raikō and the Earth Spider*
+
+  *From:* folklore · Japanese
+wikidata_id: Q590523
+metadata:
+  sources: [Wikidata Q590523 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cf/Minamoto_Yorimitsu.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Minamoto_Yorimitsu.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  lc: n88289811
+  viaf: "60654514"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q590523
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q590523
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q590523
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q590523

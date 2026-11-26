@@ -1,0 +1,120 @@
+public_id: 130773
+name: Benedict of Nursia
+names:
+  - text: St. Benedict
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+  - text: Saint Benedict of Nursia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+  - text: Saint Benedict
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+  - text: Bengt
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+  - lang: nl
+    role: translation
+    text: Benedictus van Nursia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+  - lang: fr
+    role: translation
+    text: Benoît de Nursie
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+  - lang: de
+    role: translation
+    text: Benedikt von Nursia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+  - lang: it
+    role: translation
+    text: Benedetto da Norcia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+  - lang: es
+    role: translation
+    text: Benito de Nursia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+  - lang: ja
+    role: translation
+    text: ヌルシアのベネディクトゥス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+  - lang: zh
+    role: translation
+    text: 圣本笃
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+  - lang: ko
+    role: translation
+    text: 누르시아의 베네딕토
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+  - lang: ru
+    role: translation
+    text: Бенедикт Нурсийский
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44265
+kind: person
+occupations: [writer, theologian, religious, hermit]
+birth: 480-03-04
+death: 547-03-25
+description_md: |-
+  Benedict, by a later tradition the twin brother of [[person/scholastica]], is called the father of Western monasticism. Benedict wrote the *Rule of Saint Benedict* around 530 and founded Monte Cassino. Monks who resented his strict rule tried to poison his wine, but the cup shattered when he blessed it.
+
+  **In art:** A monk in a black habit with a book of the Rule, a broken cup with a snake, or a raven.
+
+  **Famous works**
+
+  - [[artist/luca-signorelli]] and Sodoma, *Life of Saint Benedict* frescoes (Monte Oliveto Maggiore, Tuscany)
+
+  *From:* Gregory the Great, Dialogues · Christian
+wikidata_id: Q44265
+metadata:
+  sources: [Wikidata Q44265 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Fra_Angelico_031.jpg/1280px-Fra_Angelico_031.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fra_Angelico_031.jpg
+    license: Public domain
+    credit: Fra Angelico
+identifiers:
+  bnf: "118911827"
+  gnd: "118508911"
+  idref: "027281264"
+  lc: n79034826
+  nlk: KAC199701248
+  ulan: "500372052"
+  viaf: "100179656"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q44265
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q44265
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q44265
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q44265

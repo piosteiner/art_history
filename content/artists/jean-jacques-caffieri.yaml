@@ -2,3 +2,63 @@ public_id: 123942
 name: Jean-Jacques Caffieri
 given_name: Jean-Jacques
 family_name: Caffieri
+birth: 1725-04-29/1725-04
+birth_label: c. April 1725
+death: 1792-06-22
+wikidata_id: Q3107836
+metadata:
+  sources: [Wikidata Q3107836 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q3107836
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-25
+        property: P19
+        wikidata: Q3107836
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q3107836
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q3107836
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q3107836
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7c/Adolf_Ulrik_Wertm%C3%BCller%2C_Portrait_of_Jean-Jacques_Caffieri_%281784%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Adolf_Ulrik_Wertm%C3%BCller,_Portrait_of_Jean-Jacques_Caffieri_(1784).jpg
+    license: Public domain
+    credit: Adolf Ulrik Wertmüller
+identifiers:
+  bnf: 14970961d
+  gnd: "123230829"
+  idref: "181621827"
+  kulturnav: f9d51a31-53dd-4a0b-b27b-74e8623e16a1
+  lc: nr90007812
+  rkd: "14697"
+  ulan: "500014899"
+  viaf: "67368373"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q3107836
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q3107836

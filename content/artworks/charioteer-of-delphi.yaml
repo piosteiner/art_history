@@ -54,6 +54,7 @@ names:
     sources:
       - accessed: 2026-11-23
         wikidata: Q1230882
+attribution_label: Anonymous
 created: -478
 materials: [bronze]
 dimensions: [182]
@@ -140,4 +141,8 @@ sources:
   institution:
     - accessed: 2026-11-23
       property: P195
+      wikidata: Q1230882
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q1230882

@@ -1,0 +1,79 @@
+public_id: 130759
+name: Joachim
+names:
+  - text: Saint Joachim
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314700
+  - text: St. Joachim
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314700
+  - text: St Joachim
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314700
+  - lang: it
+    role: translation
+    text: Gioacchino
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314700
+  - lang: es
+    role: translation
+    text: San Joaquín
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314700
+  - lang: ja
+    role: translation
+    text: ヨアキム
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314700
+  - lang: zh
+    role: translation
+    text: 若雅
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314700
+  - lang: ko
+    role: translation
+    text: 요아킴
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314700
+  - lang: ru
+    role: translation
+    text: Святой Иоаким
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314700
+occupations: [shepherd]
+description_md: |-
+  The parents of the [[person/mary|Virgin Mary]], according to tradition. After many years of childlessness, they were told by an angel they would have a child, and met joyfully at the Golden Gate of Jerusalem.
+
+  **In art:** An older couple embracing at a city gate.
+
+  **Famous works**
+
+  - [[artist/giotto]], *Meeting at the Golden Gate* (Scrovegni Chapel)
+
+  *From:* Christian tradition (Protoevangelium of James); Golden Legend · Christian
+wikidata_id: Q314700
+metadata:
+  sources: [Wikidata Q314700 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8d/Giotto_-_Expulsion_of_Joachim_from_the_Temple_detail3_Joachim_-_Cappella_degli_Scrovegni.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giotto_-_Expulsion_of_Joachim_from_the_Temple_detail3_Joachim_-_Cappella_degli_Scrovegni.jpg
+    license: Public domain
+    credit: Giotto
+identifiers:
+  gnd: "118712160"
+  kulturnav: e86b9fb8-5382-430b-8698-9d524d837137
+  viaf: "45097032"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q314700

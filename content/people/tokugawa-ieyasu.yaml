@@ -24,7 +24,7 @@ metadata:
   sources: [Wikidata Q171977 (retrieved 2026-11-01)]
 relationships:
   - type: founded
-    to: institution/tokugawa-shogunate-2
+    to: institution/tokugawa-shogunate
     sources:
       - accessed: 2026-11-24
         property: P112

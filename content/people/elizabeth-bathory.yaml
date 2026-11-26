@@ -1,0 +1,120 @@
+public_id: 130654
+name: Elizabeth Báthory
+given_name: Elizabeth
+family_name: Báthory
+names:
+  - lang: hu
+    role: original
+    text: Báthory Erzsébet
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - text: The Blood Countess
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - text: Erzsebet Bathory
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - text: Elizabeth Bathory
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - text: Erzsébet Báthory
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - text: Alžbeta Bátoriová
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - text: Alzbeta Batoriova
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - text: Elizabeth Bathori
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - lang: nl
+    role: translation
+    text: Elisabeth Báthory
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - lang: fr
+    role: translation
+    text: Élisabeth Báthory
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - lang: es
+    role: translation
+    text: Isabel Báthory
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - lang: ja
+    role: translation
+    text: バートリ・エルジェーベト
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - lang: zh
+    role: translation
+    text: 巴托里·伊莉莎白
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - lang: ko
+    role: translation
+    text: 바토리 에르제베트
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+  - lang: ru
+    role: translation
+    text: Елизавета Батори
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170846
+kind: person
+occupations: [land owner, aristocrat]
+birth: 1560-08-17
+death: 1614-08-21
+description_md: |-
+  A powerful Hungarian noblewoman (1560–1614) accused of torturing and killing many young servant girls. Legend says she bathed in their blood to stay young. She was walled up in her castle at Čachtice. Some historians think the case against her was exaggerated by political enemies.
+
+  *From:* Hungarian
+wikidata_id: Q170846
+metadata:
+  sources: [Wikidata Q170846 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Elizabeth_Bathory_Portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Elizabeth_Bathory_Portrait.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 11970254s
+  gnd: "118653490"
+  idref: "084334924"
+  lc: n82134611
+  viaf: "3264288"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q170846
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q170846
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q170846
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q170846

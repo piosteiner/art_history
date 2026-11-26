@@ -1,0 +1,76 @@
+public_id: 130638
+name: Enheduanna
+names:
+  - text: Enheduana
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232505
+  - text: En-hedu-ana
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232505
+  - lang: de
+    role: translation
+    text: En-hedu-anna
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232505
+  - lang: it
+    role: translation
+    text: Enḫeduanna
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232505
+  - lang: ja
+    role: translation
+    text: エンヘドゥアンナ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232505
+  - lang: zh
+    role: translation
+    text: 安海度亚娜
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232505
+  - lang: ko
+    role: translation
+    text: 엔헤두안나
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232505
+  - lang: ru
+    role: translation
+    text: Энхедуанна
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232505
+kind: person
+occupations: [poet, writer, priest, philosopher]
+description_md: |-
+  She was the daughter of King Sargon of Akkad, about 2300 BC, and the high priestess of the moon god at Ur. Hymns to the goddess Inanna are attributed to her, and she is celebrated as the earliest writer in the world whose name we know, though some scholars doubt that she composed them.
+
+  *From:* Mesopotamian (Sumerian, Babylonian, Assyrian)
+wikidata_id: Q232505
+metadata:
+  sources: [Wikidata Q232505 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3d/Enheduanna%2C_daughter_of_Sargon_of_Akkad.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Enheduanna,_daughter_of_Sargon_of_Akkad.jpg
+    license: CC0
+    credit: Mefman00
+identifiers:
+  bnf: 14578789g
+  gnd: "119490536"
+  idref: "147580714"
+  lc: n82055064
+  viaf: "10094476"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q232505
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q232505

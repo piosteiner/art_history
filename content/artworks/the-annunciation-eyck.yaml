@@ -64,6 +64,7 @@ materials: [oil paint, panel, transferred on canvas]
 dimensions: [90.2, 34.1]
 institution: national-gallery-of-art
 inventory_number: 1937.1.39
+web_url: https://www.nga.gov/collection/art-object-page.46.html
 wikidata_id: Q2734881
 metadata:
   sources: [Wikidata Q2734881 (retrieved 2026-11-24)]
@@ -215,7 +216,7 @@ sources:
       property: P2048
       wikidata: Q2734881
   institution:
-    - accessed: 2026-11-24
+    - accessed: 2026-11-25
       property: P195
       wikidata: Q2734881
   inventory_number:

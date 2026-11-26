@@ -1,0 +1,35 @@
+public_id: 130679
+name: Bhrikuti
+names:
+  - text: Bhr̥kuti
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q855075
+  - lang: ja
+    role: translation
+    text: ブリクティー・デーヴィー
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q855075
+  - lang: zh
+    role: translation
+    text: 尺尊公主
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q855075
+description_md: |-
+  [[person/songtsan-gampo|Songtsen Gampo]] (7th century) united Tibet. According to tradition, his Chinese wife, [[person/princess-wencheng]], and his Nepali wife, Princess Bhrikuti, brought Buddhism and famous Buddha statues to Lhasa, where they're kept in the Jokhang and Ramoche temples.
+
+  *From:* Nepali (Licchavi)
+wikidata_id: Q855075
+metadata:
+  sources: [Wikidata Q855075 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1b/Bhrikuti_Devi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bhrikuti_Devi.jpg
+    license: Public domain
+    credit: Ernst Stavro Blofeld
+identifiers:
+  gnd: 12019676X
+  lc: n82155614
+  viaf: "37741660"

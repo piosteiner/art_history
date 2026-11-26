@@ -1,0 +1,88 @@
+public_id: 130710
+name: Rebecca
+names:
+  - text: Rebecka
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40520
+  - text: Rivka
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40520
+  - text: Rebekah
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40520
+  - text: Rivkah
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40520
+  - text: Rebeccah
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40520
+  - lang: nl
+    role: translation
+    text: Rebekka
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40520
+  - lang: fr
+    role: translation
+    text: Rébecca
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40520
+  - lang: es
+    role: translation
+    text: Rebeca
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40520
+  - lang: ja
+    role: translation
+    text: リベカ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40520
+  - lang: zh
+    role: translation
+    text: 利百加
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40520
+  - lang: ko
+    role: translation
+    text: 리브가
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40520
+  - lang: ru
+    role: translation
+    text: Ревекка
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40520
+description_md: |-
+  Rebecca was chosen as [[binding-of-isaac|Isaac]]'s wife when she offered water to Abraham's servant and his camels at a well.
+
+  **In art:** A young woman at a well offering water from a jug to a traveller, with camels.
+
+  **Famous works**
+
+  - [[artist/nicolas-poussin]], *Eliezer and Rebecca* (Louvre)
+  - [[artist/bartolome-esteban-murillo]], *Rebecca and Eliezer* (Prado)
+
+  *From:* Hebrew Bible, Genesis · Hebrew Bible
+wikidata_id: Q40520
+metadata:
+  sources: [Wikidata Q40520 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Benjamin_West_-_Isaac%27s_servant_tying_the_bracelet_on_Rebecca%27s_arm_-_Google_Art_Project_%28cropped%29.jpg/1280px-Benjamin_West_-_Isaac%27s_servant_tying_the_bracelet_on_Rebecca%27s_arm_-_Google_Art_Project_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Benjamin_West_-_Isaac%27s_servant_tying_the_bracelet_on_Rebecca%27s_arm_-_Google_Art_Project_(cropped).jpg
+    license: Public domain
+    credit: Benjamin West
+identifiers:
+  gnd: "118836870"
+  lc: n85192112
+  viaf: "12146951309115370849"

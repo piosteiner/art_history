@@ -1,0 +1,135 @@
+public_id: 130655
+name: Vlad the Impaler
+given_name: Vlad the
+family_name: Impaler
+names:
+  - lang: ro
+    role: original
+    text: Vlad al III-lea Țepeș
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - text: Vlad III the Impaler
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - text: Vlad Dracula
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - text: Vlad III Dracula
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - text: Vladimir Tepes
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - text: Vlad Tepes
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - text: Vlad Țepeș
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - text: Vlad Drăculești
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - text: Vlad Draculea
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - text: Vlad III Dracul 'the Impaler'
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - lang: fr
+    role: translation
+    text: Vlad III l'Empaleur
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - lang: de
+    role: translation
+    text: Vlad III. Drăculea
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - lang: it
+    role: translation
+    text: Vlad III di Valacchia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - lang: es
+    role: translation
+    text: Vlad el Empalador
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - lang: ja
+    role: translation
+    text: ヴラド・ツェペシュ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - lang: zh
+    role: translation
+    text: 弗拉德三世
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - lang: ko
+    role: translation
+    text: 블라드 체페슈
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+  - lang: ru
+    role: translation
+    text: Влад III Цепеш
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43715
+kind: person
+occupations: [ruler]
+birth: 1428/1431
+birth_label: c. 1431
+death: 1476-12-23
+description_md: |-
+  Vlad III (1428/31 – 1476/77) fought the Ottoman Empire and was famous for impaling his enemies on stakes. His father belonged to the Order of the Dragon (*Dracul*), so he was called Drăculea, "son of the Dragon". Bram Stoker used the name for his vampire in 1897. In Romania, many people see him as a hero who defended his country.
+
+  *From:* Romanian
+wikidata_id: Q43715
+metadata:
+  sources: [Wikidata Q43715 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Vlad_%C5%A2epe%C5%9F%2C_the_Impaler%2C_Prince_of_Wallachia_%281456-1462%29_%28died_1477%29.jpg/1280px-Vlad_%C5%A2epe%C5%9F%2C_the_Impaler%2C_Prince_of_Wallachia_%281456-1462%29_%28died_1477%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vlad_%C5%A2epe%C5%9F,_the_Impaler,_Prince_of_Wallachia_(1456-1462)_(died_1477).jpg
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  bnf: 11948734v
+  gnd: "118627333"
+  idref: "027448266"
+  lc: n88633447
+  viaf: "62341705"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q43715
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q43715
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q43715
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q43715

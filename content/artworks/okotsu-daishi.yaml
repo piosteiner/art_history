@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045577
+attribution_label: Anonymous
 created: late 9th century
 created_span: uncertain
 institution: mii-dera
@@ -34,7 +35,7 @@ provenance:
     sources:
       - url: https://ja.wikipedia.org/w/index.php?title=園城寺&oldid=111672295
         note: 荼毘に付した円珍の遺骨を納めるところから「御骨大師」と呼ばれて寺内で尊崇され … 中尊大師像より古く、9世紀末、円珍没後まもない頃の作と思われる。
-        source: jawiki-onjo-ji
+        source: wikipedia-ja-onjo-ji
         accessed: 2026-11-24
       - url: https://kunishitei.bunka.go.jp/heritage/detail/201/208
         note: 時代 ： 平安
@@ -46,7 +47,7 @@ provenance:
     sources:
       - url: https://ja.wikipedia.org/w/index.php?title=園城寺&oldid=111672295
         note: 唐院大師堂内、中尊大師像の向かって左の厨子内に安置する。秘仏で、特別な行事の時以外、開扉はされない。
-        source: jawiki-onjo-ji
+        source: wikipedia-ja-onjo-ji
         accessed: 2026-11-24
       - url: https://kunishitei.bunka.go.jp/heritage/detail/201/208
         note: 所有者名 ： 園城寺
@@ -62,5 +63,9 @@ provenance:
     sources:
       - url: https://ja.wikipedia.org/w/index.php?title=園城寺&oldid=111672295
         note: 文禄4年（1595年）11月、当寺は突如として秀吉の怒りに触れ、闕所（寺領の没収、事実上の廃寺）を命じられた … 本尊の弥勒菩薩像や智証大師坐像、黄不動尊などは元園城寺長吏の道澄が自ら住持を務める照高院 … に避難させ … 照高院に避難させていた弥勒菩薩像、智証大師坐像、黄不動尊などを園城寺闕所の際にも存続が許されて残っていた上光院に移している。
-        source: jawiki-onjo-ji
+        source: wikipedia-ja-onjo-ji
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-208
+      accessed: 2026-11-25

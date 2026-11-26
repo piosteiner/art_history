@@ -6,6 +6,7 @@ names:
   - lang: ja
     role: original
     text: 向源寺十一面観音立像
+attribution_label: Anonymous
 created: 9th century
 created_span: uncertain
 institution: kogen-ji-temple
@@ -70,4 +71,8 @@ sources:
   created:
     - accessed: 2026-11-24
       property: P571
+      wikidata: Q107045574
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q107045574

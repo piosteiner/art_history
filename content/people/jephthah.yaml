@@ -1,0 +1,101 @@
+public_id: 130718
+name: Jephthah
+names:
+  - text: Jephte
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+  - text: Jephtha
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+  - text: Jephthah the Gileadite
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+  - text: Jeptha (Judges)
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+  - lang: nl
+    role: translation
+    text: Jefta
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+  - lang: fr
+    role: translation
+    text: Jephté
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+  - lang: de
+    role: translation
+    text: Jiftach
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+  - lang: it
+    role: translation
+    text: Iefte
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+  - lang: es
+    role: translation
+    text: Jefté
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+  - lang: ja
+    role: translation
+    text: エフタ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+  - lang: zh
+    role: translation
+    text: 耶弗他
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+  - lang: ko
+    role: translation
+    text: 입다
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+  - lang: ru
+    role: translation
+    text: Иеффай
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1133523
+occupations: [biblical judge, judge]
+description_md: |-
+  Jephthah vowed that if he won a battle, he would sacrifice the first thing to come out of his house. When he returned, his only daughter ran out to greet him, dancing.
+
+  **In art:** A girl dancing with a tambourine before a horrified father.
+
+  **Famous works**
+
+  - [[artist/charles-le-brun]], *The Sacrifice of Jephthah* (Uffizi)
+
+  *From:* Hebrew Bible, Judges · Hebrew Bible
+wikidata_id: Q1133523
+metadata:
+  sources: [Wikidata Q1133523 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ad/Jephthah-Jephte.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jephthah-Jephte.jpg
+    license: Public domain
+    credit: Published by Guillaume Rouille(1518?-1589)
+identifiers:
+  gnd: "118834339"
+  lc: n87805118
+  viaf: "126248939"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q1133523

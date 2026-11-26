@@ -1,0 +1,89 @@
+public_id: 130736
+name: Simon the Zealot
+given_name: Simon the
+family_name: Zealot
+names:
+  - text: Simon the Apostle
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q12871
+  - text: Saint Simon
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q12871
+  - text: Simon Zelotes
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q12871
+  - lang: nl
+    role: translation
+    text: Simon
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q12871
+  - lang: fr
+    role: translation
+    text: Simon le Zélote
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q12871
+  - lang: it
+    role: translation
+    text: Simone il Cananeo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q12871
+  - lang: es
+    role: translation
+    text: Simón el Zelote
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q12871
+  - lang: ja
+    role: translation
+    text: 熱心党のシモン
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q12871
+  - lang: zh
+    role: translation
+    text: 奮銳黨的西門
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q12871
+  - lang: ko
+    role: translation
+    text: 사도 시몬
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q12871
+  - lang: ru
+    role: translation
+    text: Симон Кананит
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q12871
+occupations: [missionary]
+description_md: |-
+  One of the apostles. His attribute: a saw.
+
+  **In art:** A saw.
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q12871
+metadata:
+  sources: [Wikidata Q12871 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Ribera-san_simon.jpg/1280px-Ribera-san_simon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ribera-san_simon.jpg
+    license: Public domain
+    credit: Jusepe de Ribera
+identifiers:
+  gnd: "129724106"
+  lc: no2009158140
+  viaf: "57699747"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q12871

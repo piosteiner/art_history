@@ -250,12 +250,12 @@ sources:
       source: musee-d-orsay-collections
       accessed: 2026-11-17
   created:
-    - accessed: 2026-10-20
+    - accessed: 2026-11-25
       property: P571
       wikidata: Q2571560
     - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
       source: musee-d-orsay-collections
-      accessed: 2026-10-20
+      accessed: 2026-11-25
   creator:
     - accessed: 2026-10-20
       property: P170

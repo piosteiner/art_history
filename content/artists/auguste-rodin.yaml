@@ -90,6 +90,12 @@ relationships:
       - accessed: 2026-10-28
         property: P737
         wikidata: Q30755
+  - type: student_of
+    to: artist/albert-ernest-carrier-belleuse
+    sources:
+      - accessed: 2026-11-25
+        property: P802
+        wikidata: Q2143726
   - type: studied_at
     to: institution/ecole-nationale-superieure-des-arts-decoratifs
     sources:

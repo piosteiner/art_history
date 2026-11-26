@@ -1,0 +1,103 @@
+public_id: 130695
+name: Moses
+names:
+  - lang: he
+    role: original
+    text: מֹשֶׁה
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9077
+  - text: Moshe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9077
+  - text: Moshe Rabbeinu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9077
+  - lang: nl
+    role: translation
+    text: Mozes
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9077
+  - lang: fr
+    role: translation
+    text: Moïse
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9077
+  - lang: de
+    role: translation
+    text: Mose
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9077
+  - lang: it
+    role: translation
+    text: Mosè
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9077
+  - lang: es
+    role: translation
+    text: Moisés
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9077
+  - lang: ja
+    role: translation
+    text: モーセ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9077
+  - lang: zh
+    role: translation
+    text: 摩西
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9077
+  - lang: ko
+    role: translation
+    text: 모세
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9077
+  - lang: ru
+    role: translation
+    text: Моисей
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9077
+occupations: [military leader, religious leader, legislator, thaumaturge, herder, ruler]
+description_md: |-
+  Born to Hebrew parents in Egypt, where the Israelites were enslaved, he was set adrift on the Nile in a basket and found by the Pharaoh's daughter. God spoke to him from a burning bush and sent him to free his people. After ten plagues struck Egypt, he led the Israelites out, parted the Red Sea, and on Mount Sinai received the Ten Commandments. When he came down, he found the people worshipping a Golden Calf and smashed the stone tablets.
+
+  **In art:** A bearded old man holding two stone tablets, often with two horns or rays of light on his head (from the Latin Vulgate's rendering of the Hebrew word qaran, "shone", as "horned"). Also as a baby in a basket among the reeds.
+
+  **Famous works**
+
+  - [[artist/michelangelo]], *Moses* (San Pietro in Vincoli, Rome)
+  - [[artist/rembrandt]], *Moses Breaking the Tablets of the Law* (Berlin)
+  - [[artist/nicolas-poussin]], *The Finding of Moses* (Louvre)
+  - [[artist/sandro-botticelli]], *The Trials of Moses* (Sistine Chapel wall)
+
+  *From:* Hebrew Bible, Exodus · Hebrew Bible
+wikidata_id: Q9077
+metadata:
+  sources: [Wikidata Q9077 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/38/Seleznikha_church_-_prophet_Moses_%2818_c.%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Seleznikha_church_-_prophet_Moses_(18_c.).jpg
+    license: Public domain
+    credit: 18 century icon painter
+identifiers:
+  bnf: 17005935g
+  gnd: "118641190"
+  lc: n79058331
+  viaf: "805492"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q9077

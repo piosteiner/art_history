@@ -2,3 +2,31 @@ public_id: 122870
 name: Adriaen Coorte
 given_name: Adriaen
 family_name: Coorte
+birth: 1665
+death: 1707
+wikidata_id: Q367798
+metadata:
+  sources: [Wikidata Q367798 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q367798
+identifiers:
+  bnf: 15931619b
+  gnd: "129703230"
+  lc: n78002432
+  rkd: "18185"
+  ulan: "500120682"
+  viaf: "3559870"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q367798
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q367798

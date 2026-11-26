@@ -2,3 +2,11 @@ public_id: 126143
 name: Elisabeth Severance Prentiss
 given_name: Elisabeth Severance
 family_name: Prentiss
+wikidata_id: Q60903290
+relationships:
+  - type: founded
+    to: institution/allen-memorial-art-museum
+    sources:
+      - accessed: 2026-11-25
+        property: P112
+        wikidata: Q3816734

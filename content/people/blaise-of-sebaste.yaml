@@ -1,0 +1,122 @@
+public_id: 130786
+name: Blaise of Sebaste
+names:
+  - lang: el
+    role: original
+    text: Βλάσιος
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - text: Saint Blaise
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - text: Blasius of Sebaste
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - text: St. Blasius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - text: St. Blaise
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - lang: nl
+    role: translation
+    text: Blasius van Sebaste
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - lang: fr
+    role: translation
+    text: Blaise de Sébaste
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - lang: de
+    role: translation
+    text: Blasius von Sebaste
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - lang: it
+    role: translation
+    text: Biagio di Sebaste
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - lang: es
+    role: translation
+    text: Blas de Sebaste
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - lang: ja
+    role: translation
+    text: ブラシウス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - lang: zh
+    role: translation
+    text: 伯拉削
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - lang: ko
+    role: translation
+    text: 블라시우스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+  - lang: ru
+    role: translation
+    text: Власий Севастийский
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q151967
+kind: person
+occupations: [physician, anchorite, Catholic priest, diplomat, bishop]
+birth: 3rd century
+death: 316
+description_md: |-
+  Blaise, a bishop, saved a boy choking on a fishbone, and his blessing for sore throats uses two crossed candles.
+
+  **In art:** A bishop with two crossed candles.
+
+  **Famous works**
+
+  - *Basilica of the Fourteen Holy Helpers* (Vierzehnheiligen, Bavaria)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q151967
+metadata:
+  sources: [Wikidata Q151967 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Saint_Blaise_Louvre_OAR504.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Saint_Blaise_Louvre_OAR504.jpg
+    license: Public domain
+    credit: Unknown artist
+identifiers:
+  gnd: "119471345"
+  lc: n86062161
+  viaf: "88762504"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q151967
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q151967
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q151967
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q151967

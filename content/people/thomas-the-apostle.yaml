@@ -1,0 +1,138 @@
+public_id: 130733
+name: Thomas the Apostle
+given_name: Thomas the
+family_name: Apostle
+names:
+  - text: Apostle, Saint Thomas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - text: St. Thomas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - text: Doubting Thomas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - text: Saint Thomas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - text: Didymos
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - text: Apostle, Saint Didymos Judas Thomas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - text: St. Thomas the Apostle
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - text: the Apostle, Saint Thomas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - text: Saint Thomas the Apostle
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - text: Didymus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - text: Te'oma
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - lang: nl
+    role: translation
+    text: Tomas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - lang: fr
+    role: translation
+    text: Thomas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - lang: it
+    role: translation
+    text: Tommaso
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - lang: es
+    role: translation
+    text: Tomás el Apóstol
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - lang: ja
+    role: translation
+    text: トマス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - lang: zh
+    role: translation
+    text: 多馬
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - lang: ko
+    role: translation
+    text: 사도 토마스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+  - lang: ru
+    role: translation
+    text: Фома
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43669
+kind: person
+occupations: [missionary, apostle]
+birth: 1st century
+death: 72-07-01
+description_md: |-
+  One of the apostles. His attribute: a builder's square or a spear.
+
+  **In art:** A builder's square or a spear.
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q43669
+metadata:
+  sources: [Wikidata Q43669 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/The_Incredulity_of_Saint_Thomas-Caravaggio_%281601-2%29.jpg/1280px-The_Incredulity_of_Saint_Thomas-Caravaggio_%281601-2%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Incredulity_of_Saint_Thomas-Caravaggio_(1601-2).jpg
+    license: Public domain
+    credit: Caravaggio
+identifiers:
+  bnf: "131792525"
+  gnd: "118622099"
+  lc: n50078850
+  ulan: "500348955"
+  viaf: "52482426"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q43669
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q43669
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q43669
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q43669

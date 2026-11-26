@@ -122,7 +122,7 @@ provenance:
         note: (Coxe, Burrel & Foster, London, Bryan sale, May 17, 1798, no. 42, sold to Simon H. Clarke)
         source: cma-1959-190
         accessed: 2026-11-24
-  - owner: person/sir-simon-clarke
+  - owner: person/simon-h-clarke
     co_owners: [person/george-hibbert]
     acquired: 1798
     method: auction
@@ -170,16 +170,28 @@ provenance:
         note: (Sale, Greenwood & Co., London, Feb. 19, 1803, probably sold to Simon H. Clarke) — "Clarke" is written in as the buyer for the CMA painting
         source: cma-1959-190
         accessed: 2026-11-24
-  - owner: person/simon-haughton-clarke
+  - owner: person/simon-h-clarke
     acquired: 1803
-    ended: 1840
+    ended: 1832
     method: auction
     direct: true
-    label: Sir Simon H. Clarke, 10th Baronet, Oakhill, Hertfordshire (the museum names the 10th Baronet from 1803)
+    label: Sir Simon H. Clarke, 9th Baronet, Oakhill, Hertfordshire — the museum names the 10th Baronet (1818–1849) from 1803; the 1803 buyer can only be the 9th, who died in 1832
     certainty: probable
     sources:
       - url: https://clevelandart.org/art/1959.190
         note: Sir Simon H. Clarke, 10th Baronet Clarke [1818-1849], Oakhill, Hertfordshire [1803-1840]
+        source: cma-1959-190
+        accessed: 2026-11-24
+  - owner: person/simon-haughton-clarke
+    acquired: 1832
+    ended: 1840-05-08
+    method: inheritance
+    direct: true
+    label: Sir Simon H. Clarke, 10th Baronet, Oakhill — named by the museum for 1803–1840; born 1818, he can only have held it after the 9th Baronet's death in 1832
+    certainty: probable
+    sources:
+      - url: https://clevelandart.org/art/1959.190
+        note: Sir Simon H. Clarke, 10th Baronet Clarke [1818-1849], Oakhill, Hertfordshire [1803-1840] — the years of his ownership after the 9th Baronet's death (1832) follow from the dates the museum gives
         source: cma-1959-190
         accessed: 2026-11-24
   - owner: institution/christie-manson-woods-ltd

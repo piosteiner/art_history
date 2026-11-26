@@ -25,6 +25,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q12366269
+attribution_label: Anonymous
 created: 13th century
 created_span: uncertain
 materials: [bronze]
@@ -113,3 +114,6 @@ sources:
     - accessed: 2026-11-24
       property: P2048
       wikidata: Q12366269
+  attribution_label:
+    - source: kunishitei-201-270
+      accessed: 2026-11-25

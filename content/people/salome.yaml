@@ -1,0 +1,100 @@
+public_id: 130726
+name: Salome
+names:
+  - lang: he
+    role: original
+    text: שלומית‎
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q228896
+  - lang: grc
+    role: original
+    text: Σαλώμη
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q228896
+  - text: the daughter of Herodias
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q228896
+  - text: Salome III
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q228896
+  - text: Daughter of Herodias
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q228896
+  - lang: nl
+    role: translation
+    text: Salomé II
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q228896
+  - lang: fr
+    role: translation
+    text: Salomé
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q228896
+  - lang: it
+    role: translation
+    text: Salomè
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q228896
+  - lang: ja
+    role: translation
+    text: サロメ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q228896
+  - lang: zh
+    role: translation
+    text: 莎乐美
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q228896
+  - lang: ko
+    role: translation
+    text: 살로메
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q228896
+  - lang: ru
+    role: translation
+    text: Саломея
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q228896
+occupations: [consort]
+description_md: |-
+  The daughter of Herodias. She danced so beautifully for her stepfather King Herod that he promised her anything. Prompted by her mother, she asked for the head of [[person/john-the-baptist]] on a platter.
+
+  **In art:** A young woman dancing, or holding a platter with a severed head. A favourite subject of the Symbolists.
+
+  **Famous works**
+
+  - Gustave Moreau, *The Apparition* (Musée d'Orsay)
+  - [[artist/titian]], *Salome* (Galleria Doria Pamphilj)
+  - [[artist/caravaggio]], *Salome with the Head of John the Baptist* (National Gallery, London)
+  - Aubrey Beardsley, illustrations for [[person/oscar-wilde]]'s *Salome*
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q228896
+metadata:
+  sources: [Wikidata Q228896 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Salome_with_the_Baptist%27s_head_-_Charles_Mellin.jpg/1280px-Salome_with_the_Baptist%27s_head_-_Charles_Mellin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Salome_with_the_Baptist%27s_head_-_Charles_Mellin.jpg
+    license: Public domain
+    credit: Charles Mellin
+identifiers:
+  gnd: 11892141X
+  lc: n82090881
+  viaf: "3820112"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q228896

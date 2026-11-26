@@ -1,0 +1,85 @@
+public_id: 130717
+name: Gideon
+names:
+  - lang: he
+    role: original
+    text: גִּדְעוֹן בֶּן יוֹאָשׁ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q176125
+  - text: Gedeon
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q176125
+  - lang: fr
+    role: translation
+    text: Gédéon
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q176125
+  - lang: it
+    role: translation
+    text: Gedeone
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q176125
+  - lang: es
+    role: translation
+    text: Gedeón
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q176125
+  - lang: ja
+    role: translation
+    text: ギデオン
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q176125
+  - lang: zh
+    role: translation
+    text: 基甸
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q176125
+  - lang: ko
+    role: translation
+    text: 기드온
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q176125
+  - lang: ru
+    role: translation
+    text: Гедеон
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q176125
+occupations: [judge]
+description_md: |-
+  Gideon asked God for signs, such as dew falling only on a fleece, and defeated a huge army with just 300 men carrying trumpets and torches hidden in jars.
+
+  **In art:** A soldier kneeling by a fleece.
+
+  **Famous works**
+
+  - [[artist/nicolas-poussin]], *Gideon Battling the Midianites* (Vatican Pinacoteca)
+
+  *From:* Hebrew Bible, Judges · Hebrew Bible
+wikidata_id: Q176125
+metadata:
+  sources: [Wikidata Q176125 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/34/Gideon-judge.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gideon-judge.jpg
+    license: Public domain
+    credit: Published by Guillaume Rouille (1518?-1589)
+identifiers:
+  bnf: "170005951"
+  gnd: "118539132"
+  idref: "199501920"
+  lc: n50028015
+  viaf: "122338963"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q176125

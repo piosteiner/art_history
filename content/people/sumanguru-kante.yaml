@@ -1,0 +1,64 @@
+public_id: 130637
+name: Sumanguru Kanté
+given_name: Sumanguru
+family_name: Kanté
+names:
+  - text: Soumaoro Kante
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2975296
+  - lang: nl
+    role: translation
+    text: Soumaoro Kanté
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2975296
+  - lang: ja
+    role: translation
+    text: スマングル・カンテ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2975296
+  - lang: zh
+    role: translation
+    text: 苏曼古鲁
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2975296
+  - lang: ru
+    role: translation
+    text: Сумангуру Кваннте
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2975296
+kind: person
+occupations: [ruler]
+birth: 13th century
+death: 13th century
+description_md: |-
+  Soumaoro Kanté was the blacksmith-sorcerer king of Sosso in the Epic of Sundiata. He was said to be invulnerable thanks to powerful magic, with a secret chamber full of fetishes. Sundiata could only beat him after learning his secret weakness: an arrow tipped with the spur of a white rooster. Struck by it, he fled into the mountains of Koulikoro and vanished.
+
+  *From:* Epic of Sundiata · Sosso (West Africa)
+wikidata_id: Q2975296
+metadata:
+  sources: [Wikidata Q2975296 (retrieved 2026-11-25)]
+identifiers:
+  lc: no2022093553
+  viaf: "36166002753375022965"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q2975296
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q2975296
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q2975296
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q2975296

@@ -1,0 +1,85 @@
+public_id: 130720
+name: Absalom
+names:
+  - text: Avshalom
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q205372
+  - text: Avshalom Ben-David
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q205372
+  - text: Absalom son of David
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q205372
+  - lang: de
+    role: translation
+    text: Abschalom
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q205372
+  - lang: it
+    role: translation
+    text: Assalonne
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q205372
+  - lang: es
+    role: translation
+    text: Absalón
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q205372
+  - lang: ja
+    role: translation
+    text: アブサロム
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q205372
+  - lang: zh
+    role: translation
+    text: 押沙龙
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q205372
+  - lang: ko
+    role: translation
+    text: 압살롬
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q205372
+  - lang: ru
+    role: translation
+    text: Авессалом
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q205372
+occupations: [ruler, rebel, murderer]
+description_md: |-
+  [[person/david]]'s handsome rebel son, who led a revolt against his father. Fleeing on a mule after his defeat, his head (in tradition, his long hair) caught in the branches of an oak, leaving him hanging there, and he was killed by David's general. David wept: "O Absalom, my son, my son!"
+
+  **In art:** A young man hanging by his hair from a tree as soldiers stab him with spears.
+
+  **Famous works**
+
+  - Medieval manuscripts and Renaissance prints
+
+  *From:* Hebrew Bible, Books of Samuel · Hebrew Bible
+wikidata_id: Q205372
+metadata:
+  sources: [Wikidata Q205372 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Absalom_Albert_Weisgerber.jpg/1280px-Absalom_Albert_Weisgerber.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Absalom_Albert_Weisgerber.jpg
+    license: Public domain
+    credit: Albert Weisgerber
+identifiers:
+  gnd: "120527057"
+  lc: n88240985
+  viaf: "5764680"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q205372

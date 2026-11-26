@@ -1,0 +1,79 @@
+public_id: 130636
+name: Sunjata Keïta
+given_name: Sunjata
+family_name: Keïta
+names:
+  - text: Sundiata Keita
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q175772
+  - lang: nl
+    role: translation
+    text: Sundiata Keïta
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q175772
+  - lang: fr
+    role: translation
+    text: Soundiata Keïta
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q175772
+  - lang: it
+    role: translation
+    text: Sundjata Keïta
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q175772
+  - lang: ja
+    role: translation
+    text: スンジャータ・ケイタ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q175772
+  - lang: zh
+    role: translation
+    text: 松迪亚塔
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q175772
+  - lang: ru
+    role: translation
+    text: Сундиата Кейта
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q175772
+kind: person
+occupations: [monarch]
+birth: c. 1190
+death: c. 1255
+description_md: |-
+  Sundiata Keita is the hero of the Epic of Sundiata, passed down for centuries by *griots*, West African oral historians. As a child he could not walk and was mocked by the court, and his family was driven into exile. One day, he pulled himself up on an iron staff so heavy it bent, and stood. He grew into a great leader, returned to defeat the sorcerer-king [[person/sumanguru-kante|Soumaoro Kanté]], and founded the Mali Empire in the 13th century.
+
+  *From:* Epic of Sundiata · Mandinka (West Africa)
+wikidata_id: Q175772
+metadata:
+  sources: [Wikidata Q175772 (retrieved 2026-11-25)]
+identifiers:
+  bnf: 12182206c
+  gnd: "102415609"
+  idref: "030400325"
+  lc: n84202678
+  viaf: "97952490"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q175772
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q175772
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q175772
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q175772

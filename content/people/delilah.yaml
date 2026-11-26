@@ -1,0 +1,66 @@
+public_id: 130697
+name: Delilah
+names:
+  - text: Delila
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q937827
+  - lang: fr
+    role: translation
+    text: Dalila
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q937827
+  - lang: ja
+    role: translation
+    text: デリラ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q937827
+  - lang: zh
+    role: translation
+    text: 大利拉
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q937827
+  - lang: ko
+    role: translation
+    text: 데릴라
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q937827
+  - lang: ru
+    role: translation
+    text: Далила
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q937827
+occupations: [spy]
+description_md: |-
+  The Philistines bribed [[person/samson]]'s lover Delilah to discover his secret, and she had his hair cut while he slept.
+
+  **In art:** A strong man asleep in a woman's lap as his hair is cut.
+
+  **Famous works**
+
+  - Rubens, *Samson and Delilah* (National Gallery, London)
+  - [[artist/andrea-mantegna]], *Samson and Delilah* (National Gallery, London)
+
+  *From:* Hebrew Bible, Judges · Hebrew Bible
+wikidata_id: Q937827
+metadata:
+  sources: [Wikidata Q937827 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/30/Alexandre_Cabanel_-_Samson_and_Delilah.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Alexandre_Cabanel_-_Samson_and_Delilah.jpeg
+    license: Public domain
+    credit: Alexandre Cabanel
+identifiers:
+  gnd: "119372193"
+  lc: n85105275
+  viaf: "70359989"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q937827

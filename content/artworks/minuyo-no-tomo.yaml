@@ -11,6 +11,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q11630153
+attribution_label: Anonymous
 institution: idemitsu-museum-of-arts
 location: [139.7607, 35.67659]
 wikidata_id: Q11630153
@@ -68,3 +69,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q11630153
+  attribution_label:
+    - source: kunishitei-201-650
+      accessed: 2026-11-25

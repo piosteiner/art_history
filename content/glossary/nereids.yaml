@@ -2,6 +2,12 @@ public_id: 100800
 name: Nereids
 category: iconography
 definition: sea nymphs in Greek mythology, daughters of Nereus
+description_md: |-
+  The Nereids are the fifty sea nymphs, daughters of the old sea god Nereus. The most famous is [[thetis]], mother of [[achilles]].
+
+  **In art:** Sea nymphs riding dolphins and sea monsters.
+
+  *From:* Greek mythology · Ancient Greek
 wikidata_id: Q54230
 metadata:
   sources: [Wikidata Q54230 (retrieved 2026-10-18)]
@@ -14,3 +20,5 @@ sources:
   definition:
     - accessed: 2026-10-18
       wikidata: Q54230
+    - source: wikipedia-en-nereids
+      accessed: 2026-11-25

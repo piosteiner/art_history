@@ -1,0 +1,57 @@
+public_id: 130802
+name: Taira no Atsumori
+names:
+  - lang: ja
+    role: original
+    text: 平敦盛
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2284163
+  - lang: ko
+    role: translation
+    text: 다이라노 아쓰모리
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2284163
+kind: person
+occupations: [samurai]
+birth: 1169
+death: 1184-03-27
+description_md: |-
+  The warrior Kumagai Naozane beheaded the young Taira flute player Atsumori, then became a monk out of grief.
+
+  **In art:** A warrior calling back a young rider from the sea.
+
+  **Famous works**
+
+  - *Battle of Ichi-no-Tani* (screens, various, Edo period)
+
+  *From:* The Tale of the Heike · Japanese
+wikidata_id: Q2284163
+metadata:
+  sources: [Wikidata Q2284163 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2c/Portrait_of_Taira_no_Atsumori.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Taira_no_Atsumori.jpg
+    license: Public domain
+    credit: 狩野安信
+identifiers:
+  lc: n85357082
+  viaf: "33459493"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q2284163
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q2284163
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q2284163
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q2284163

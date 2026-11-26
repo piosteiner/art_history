@@ -1,9 +1,11 @@
 public_id: 122987
 title_lang: en
 title: Francesco Sforza
+attribution_label: Anonymous, North Italian
 materials: [oil paint, panel]
 institution: national-gallery-of-art
 inventory_number: 1942.9.4
+web_url: https://www.nga.gov/collection/art-object-page.1141.html
 wikidata_id: Q20174276
 metadata:
   sources: [Wikidata Q20174276 (retrieved 2026-11-23)]
@@ -120,3 +122,6 @@ sources:
     - accessed: 2026-11-23
       property: P217
       wikidata: Q20174276
+  attribution_label:
+    - source: nga-1942-9-4
+      accessed: 2026-11-25

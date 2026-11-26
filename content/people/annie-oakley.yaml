@@ -1,0 +1,78 @@
+public_id: 130684
+name: Annie Oakley
+given_name: Annie
+family_name: Oakley
+names:
+  - kind: birth
+    lang: en
+    role: former
+    text: Phoebe Ann Mosey
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230935
+  - text: Phoebe Ann Moses
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230935
+  - lang: ja
+    role: translation
+    text: アニー・オークレイ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230935
+  - lang: zh
+    role: translation
+    text: 安妮·歐克麗
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230935
+  - lang: ko
+    role: translation
+    text: 애니 오클리
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230935
+  - lang: ru
+    role: translation
+    text: Энни Оукли
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230935
+kind: person
+occupations: [circus performer, stunt performer]
+birth: 1860-08-13
+death: 1926-11-03
+description_md: |-
+  Annie Oakley (1860–1926) was an incredible sharpshooter who starred in Buffalo Bill's Wild West show; she could split a playing card edge-on at 30 paces. [[person/calamity-jane]] (about 1852–1903) was a frontierswoman and scout who told many tall tales about herself.
+
+  *From:* American
+wikidata_id: Q230935
+metadata:
+  sources: [Wikidata Q230935 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/46/Annie_Oakley.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Annie_Oakley.jpg
+    license: Public domain
+    credit: Stacy Co., Brooklyn, N.Y.
+identifiers:
+  gnd: "122550412"
+  idref: "076454177"
+  lc: n79003296
+  viaf: "898169"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q230935
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q230935
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q230935
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q230935

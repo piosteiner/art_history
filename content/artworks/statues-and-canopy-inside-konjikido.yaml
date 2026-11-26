@@ -12,6 +12,7 @@ names:
       - accessed: 2026-11-24
         wikidata: Q107044816
 parent: chuson-ji-konjikido
+attribution_label: Anonymous
 created: 12th century
 created_span: uncertain
 institution: konjiki-in-chuson-ji
@@ -70,3 +71,6 @@ sources:
     - accessed: 2026-11-24
       property: P571
       wikidata: Q107044816
+  attribution_label:
+    - source: kunishitei-201-10640
+      accessed: 2026-11-25

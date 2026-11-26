@@ -1,0 +1,136 @@
+public_id: 130795
+name: Frederick Barbarossa
+given_name: Frederick
+family_name: Barbarossa
+names:
+  - lang: de
+    role: original
+    text: Friedrich I Rotbart
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - text: Frederick I Barbarossa
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - text: Holy Roman Emperor Frederick I
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - text: Barbarossa
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - text: Aënobarbus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - text: Fridericus I Aënobarbus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - text: Fridericus Aënobarbus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - lang: nl
+    role: translation
+    text: Keizer Frederik I Barbarossa
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - lang: fr
+    role: translation
+    text: Frédéric Barberousse
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - lang: de
+    role: original
+    text: Friedrich I. Barbarossa
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - lang: it
+    role: translation
+    text: Federico Barbarossa
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - lang: es
+    role: translation
+    text: Federico I Barbarroja
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - lang: ja
+    role: translation
+    text: フリードリヒ1世
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - lang: zh
+    role: translation
+    text: 腓特烈一世
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - lang: ko
+    role: translation
+    text: 프리드리히 1세
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+  - lang: ru
+    role: translation
+    text: Фридрих I Барбаросса
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q79789
+kind: person
+occupations: [politician]
+birth: 1122-12
+death: 1190-06-17
+description_md: |-
+  The real German emperor [[person/frederick-i-of-prussia|Frederick I]] (died 1190), called Barbarossa for his red beard. Legend says he isn't dead but asleep in a cave in the Kyffhäuser mountains in Thuringia, his beard growing through the stone table, until Germany needs him again.
+
+  **In art:** An old emperor asleep at a table inside a mountain, with ravens circling outside.
+
+  **Famous works**
+
+  - Bruno Schmitz (architect), *Kyffhäuser Monument* (Kyffhäuser, Thuringia, 1890–1896)
+
+  *From:* German legend · German
+wikidata_id: Q79789
+metadata:
+  sources: [Wikidata Q79789 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/72/1170_M%C3%BCnze_Deutsches_Reich_Friedrich_I..jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1170_M%C3%BCnze_Deutsches_Reich_Friedrich_I..jpg
+    license: CC BY-SA 4.0
+    credit: Münzstätte Frankfurt a.M.
+identifiers:
+  bnf: 12488571m
+  gnd: "118535757"
+  hls: "029199"
+  idref: "034094296"
+  lc: n50047907
+  ulan: "500329612"
+  viaf: "66596013"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q79789
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q79789
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q79789
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q79789

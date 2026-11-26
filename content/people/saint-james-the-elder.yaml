@@ -1,0 +1,172 @@
+public_id: 130806
+name: Saint James the Elder
+names:
+  - text: James the Major
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: James, son of Zebedee
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: St James the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: Saint James the Greater
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: Santiago
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: Saint James the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: St. James
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: Big James
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: St. James the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: Saint James
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: St. James the Greater
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: St. James the Apostle
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: St James
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: Jakob
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: Saint Jacques
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: James
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: James the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: Saint Jacob
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - text: St. James the Elder
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - lang: nl
+    role: translation
+    text: Jakobus de Meerdere
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - lang: fr
+    role: translation
+    text: Jacques de Zébédée
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - lang: de
+    role: translation
+    text: Jakobus der Ältere
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - lang: it
+    role: translation
+    text: Giacomo il Maggiore
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - lang: es
+    role: translation
+    text: Santiago el Mayor
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - lang: ja
+    role: translation
+    text: ヤコブ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - lang: zh
+    role: translation
+    text: 雅各
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - lang: ko
+    role: translation
+    text: 야고보
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+  - lang: ru
+    role: translation
+    text: Иаков Зеведеев
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43999
+kind: person
+occupations: [fisher, missionary, apostle]
+birth: 1st century
+death: 44
+description_md: |-
+  One of the apostles. His attribute: a pilgrim's hat, staff and scallop shell (patron of Santiago de Compostela).
+
+  **In art:** A pilgrim's hat, staff and scallop shell (patron of Santiago de Compostela).
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q43999
+metadata:
+  sources: [Wikidata Q43999 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Dijon_fine_arts_museum_mg_1626.jpg/1280px-Dijon_fine_arts_museum_mg_1626.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dijon_fine_arts_museum_mg_1626.jpg
+    license: CC BY-SA 2.0 fr
+    credit: anonymous
+identifiers:
+  gnd: "118556800"
+  lc: n80004184
+  viaf: "289664662"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q43999
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q43999
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q43999
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q43999

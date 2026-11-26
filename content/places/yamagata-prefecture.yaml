@@ -61,7 +61,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q125863
-kind: settlement
+kind: region
 parent: japan
 country_code: JP
 location: [140.36356, 38.24044]
@@ -70,7 +70,7 @@ metadata:
   sources: [Wikidata Q125863 (retrieved 2026-11-24)]
 sources:
   kind:
-    - accessed: 2026-11-24
+    - accessed: 2026-11-25
       property: P31
       wikidata: Q125863
   parent:

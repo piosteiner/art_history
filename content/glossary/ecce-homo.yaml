@@ -1,6 +1,7 @@
 public_id: 100079
 name: ecce homo
 category: iconography
+definition: 'Pontius Pilate presenting the scourged, thorn-crowned Christ to the crowd: "Behold the man".'
 description_md: '"Dieser Terminus, dessen Übersetzung "Welch einer Mensch" bedeutet, bezeichnet die Zurschaustellung von Jesus Christus mit Dornenkrone, Rohrstab, Purpurmantel und gefesselten Händen und bezieht sich auf den Ausspruch des Pilatus während der Verurteilung Jesu (Joh. 19,5)"[[source/kretschmer-lexikon-symbole-2019|92]]'
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Augustins_-Ecce_homo_-_Wenzel_Coebergher.jpg/1280px-Augustins_-Ecce_homo_-_Wenzel_Coebergher.jpg
@@ -11,3 +12,10 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Melker_Altar_-_Ecce_homo.JPG
     license: Public domain
     credit: Jörg Breu the Elder
+sources:
+  definition:
+    - source: wikipedia-en-ecce-homo
+      accessed: 2026-11-25
+    - url: https://www.biblegateway.com/passage/?version=NRSVUE&search=Matthew+27
+      source: biblegateway-com
+      accessed: 2026-11-25

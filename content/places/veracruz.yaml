@@ -1,14 +1,20 @@
 public_id: 124841
 name: Veracruz
-kind: site
+kind: region
+parent: mexico
 location: [-96.05562, 19.83936]
 wikidata_id: Q60130
 metadata:
   sources: [Wikidata Q60130 (retrieved 2026-11-24)]
 sources:
   kind:
-    - accessed: 2026-11-24
+    - note: 'Wikidata P31: federal state of Mexico (Q15149663) — "site" was a mapping slip'
+      accessed: 2026-11-25
       property: P31
+      wikidata: Q60130
+  parent:
+    - accessed: 2026-11-25
+      property: P17
       wikidata: Q60130
   location:
     - accessed: 2026-11-24

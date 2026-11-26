@@ -2,3 +2,15 @@ public_id: 122938
 name: Caterino Veneziano
 given_name: Caterino
 family_name: Veneziano
+wikidata_id: Q4217193
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q4217193
+identifiers:
+  rkd: "350286"
+  ulan: "500019418"
+  viaf: "95800560"

@@ -6,6 +6,7 @@ names:
   - lang: ja
     role: original
     text: 勝常寺薬師三尊像
+attribution_label: Anonymous
 created: 9th century
 created_span: uncertain
 institution: shojo-ji
@@ -37,3 +38,6 @@ sources:
     - accessed: 2026-11-24
       property: P571
       wikidata: Q107044827
+  attribution_label:
+    - source: kunishitei-201-286
+      accessed: 2026-11-25

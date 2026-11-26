@@ -16,6 +16,7 @@ materials: [oil paint, canvas]
 dimensions: [237.6, 263]
 institution: national-gallery-of-art
 inventory_number: 1957.14.6
+web_url: https://www.nga.gov/collection/art-object-page.43725.html
 wikidata_id: Q9396825
 metadata:
   sources: [Wikidata Q9396825 (retrieved 2026-11-23)]
@@ -128,10 +129,10 @@ sources:
       property: P2048
       wikidata: Q9396825
   institution:
-    - accessed: 2026-11-23
+    - accessed: 2026-11-25
       property: P195
       wikidata: Q9396825
   inventory_number:
-    - accessed: 2026-11-23
+    - accessed: 2026-11-25
       property: P217
       wikidata: Q9396825

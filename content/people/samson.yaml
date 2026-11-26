@@ -1,0 +1,85 @@
+public_id: 130696
+name: Samson
+names:
+  - lang: he
+    role: original
+    text: שמשון
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214648
+  - text: Shimshon‎
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214648
+  - lang: nl
+    role: translation
+    text: Simson
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214648
+  - lang: it
+    role: translation
+    text: Sansone
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214648
+  - lang: es
+    role: translation
+    text: Sansón
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214648
+  - lang: ja
+    role: translation
+    text: サムソン
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214648
+  - lang: zh
+    role: translation
+    text: 參孫
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214648
+  - lang: ko
+    role: translation
+    text: 삼손
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214648
+  - lang: ru
+    role: translation
+    text: Самсон
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214648
+occupations: [warrior, Nazirite, biblical judge]
+description_md: |-
+  Samson was an Israelite hero whose supernatural strength came from his uncut hair. He tore apart a lion with his bare hands and killed a thousand Philistines with a donkey's jawbone. The Philistines bribed his lover [[person/delilah]] to discover his secret, and she had his hair cut while he slept. They blinded and imprisoned him. In the end, his hair grew back, and he pulled down the pillars of their temple, killing himself and all the Philistines inside.
+
+  **In art:** A strong man asleep in a woman's lap as his hair is cut, wrestling a lion, or pushing apart two pillars.
+
+  **Famous works**
+
+  - Rubens, *Samson and Delilah* (National Gallery, London)
+  - [[artist/rembrandt]], *The Blinding of Samson* (Städel, Frankfurt)
+  - [[artist/andrea-mantegna]], *Samson and Delilah* (National Gallery, London)
+
+  *From:* Hebrew Bible, Judges · Hebrew Bible
+wikidata_id: Q214648
+metadata:
+  sources: [Wikidata Q214648 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Sans%C3%B3n%2C_de_Joaqu%C3%ADn_Espalter_%28Museo_del_Prado%29.jpg/1280px-Sans%C3%B3n%2C_de_Joaqu%C3%ADn_Espalter_%28Museo_del_Prado%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sans%C3%B3n,_de_Joaqu%C3%ADn_Espalter_(Museo_del_Prado).jpg
+    license: Public domain
+    credit: Joaquim Espalter i Rull
+identifiers:
+  gnd: "118605283"
+  lc: n80045116
+  viaf: "156690359"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q214648

@@ -57,7 +57,7 @@ provenance:
         note: "Footnote: Auktion Christie London 28.05.1827, S. 7, Lot 90, https://archive.org/details/frick-31072001230384/mode/2up (22.04.2026)."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-03
-  - owner: person/thomas-lawrence
+  - owner: artist/thomas-lawrence
     acquired: 1827-05-28
     ended: 1830 or earlier
     method: purchase
@@ -70,7 +70,7 @@ provenance:
         note: "Footnote: Auktion Christie, wie oben Fussnote 3; Knowles 1831, Bd. 1, S. 205; Schiff 1978, S. 96/97, Nr. 119."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-11-03
-  - owner: person/thomas-lawrence
+  - owner: artist/thomas-lawrence
     role: estate
     acquired: 1830
     method: inheritance

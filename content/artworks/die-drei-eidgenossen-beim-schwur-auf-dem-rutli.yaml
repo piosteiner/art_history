@@ -71,19 +71,9 @@ provenance:
         accessed: 2026-11-12
   - owner: place/canton-of-zurich
     acquired: 1781
-    ended: 1989
     direct: true
     place: zurich
-    label: Zürich, Rathaus Zürich
-    sources:
-      - url: https://collection.kunsthaus.ch/de/collection/item/1641/
-        source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-11-12
-  - owner: place/canton-of-zurich
-    acquired: 1781
-    direct: true
-    place: zurich
-    label: inv. no. 1300_12
+    label: inv. no. 1300_12; in the Rathaus Zürich until 1989
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/1641/
         source: kunsthaus-zurich-sammlung-online

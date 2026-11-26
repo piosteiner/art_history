@@ -25,6 +25,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045230
+attribution_label: Anonymous
 created: late 7th century
 created_span: uncertain
 institution: jindai-ji
@@ -77,3 +78,7 @@ provenance:
         note: 1909年（明治42年）に元三大師堂の壇の下から発見されたもので、現在は釈迦堂に安置。
         source: jawiki-jindai-ji
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-4673
+      accessed: 2026-11-25

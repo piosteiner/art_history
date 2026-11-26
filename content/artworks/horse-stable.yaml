@@ -8,6 +8,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q60513917
+attribution_label: Anonymous, Japanese
 created: 1500/1525
 created_label: c. 16th century
 created_span: uncertain
@@ -82,3 +83,6 @@ sources:
     - accessed: 2026-11-24
       property: P217
       wikidata: Q60513917
+  attribution_label:
+    - source: cma-1934-373
+      accessed: 2026-11-25

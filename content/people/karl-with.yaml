@@ -3,12 +3,31 @@ name: Karl With
 given_name: Karl
 family_name: With
 kind: person
-occupations: [art historian, university teacher]
+occupations: [art historian, university teacher, writer]
 birth: 1891-06-22
 death: 1980-12-18
 wikidata_id: Q1733464
 metadata:
   sources: [Wikidata Q1733464 (retrieved 2026-11-06)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q1733464
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q1733464
+  - type: died_in
+    to: place/los-angeles
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q1733464
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Portret_van_Karl_With%2C_RP-F-1996-282.jpg/1280px-Portret_van_Karl_With%2C_RP-F-1996-282.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Portret_van_Karl_With,_RP-F-1996-282.jpg
@@ -36,6 +55,9 @@ sources:
       property: P570
       wikidata: Q1733464
   occupations:
-    - accessed: 2026-11-06
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q1733464
+    - accessed: 2026-11-25
       property: P106
       wikidata: Q1733464

@@ -2,3 +2,30 @@ public_id: 123859
 name: Jiao Bingzhen
 given_name: Jiao
 family_name: Bingzhen
+birth: 1689
+death: 1726
+wikidata_id: Q2341628
+metadata:
+  sources: [Wikidata Q2341628 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/qing-dynasty
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q2341628
+identifiers:
+  bnf: 14546684c
+  gnd: "130074659"
+  idref: "077904346"
+  lc: n2004024292
+  viaf: "47000777"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q2341628
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q2341628

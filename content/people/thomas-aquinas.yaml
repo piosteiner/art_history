@@ -1,0 +1,144 @@
+public_id: 130776
+name: Thomas Aquinas
+given_name: Thomas
+family_name: Aquinas
+names:
+  - lang: la
+    role: original
+    text: Thomas Aquinos
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - lang: it
+    role: original
+    text: Tommaso d'Aquino
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - text: St Thomas Aquinas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - text: Aquinas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - text: Angelic Doctor
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - text: Dumb Ox
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - text: Saint Thomas Aquinas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - text: Thomas of Aquino
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - text: Saint Thomas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - text: St. Thomas Aquinas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - lang: nl
+    role: translation
+    text: Thomas van Aquino
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - lang: fr
+    role: translation
+    text: Thomas d’Aquin
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - lang: de
+    role: translation
+    text: Thomas von Aquin
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - lang: es
+    role: translation
+    text: Tomás de Aquino
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - lang: ja
+    role: translation
+    text: トマス・アクィナス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - lang: zh
+    role: translation
+    text: 托马斯·阿奎那
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - lang: ko
+    role: translation
+    text: 토마스 아퀴나스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+  - lang: ru
+    role: translation
+    text: Фома Аквинский
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q9438
+kind: person
+occupations: [theologian, Latin Catholic priest, philosopher, writer, Catholic theologian, friar, theology teacher, university teacher, professor of philosophy, monk]
+birth: 1225
+death: 1274-03-14
+description_md: |-
+  Thomas Aquinas was the order's greatest theologian.
+
+  **In art:** Thomas Aquinas as a stout friar with a sun on his chest, a book and a dove.
+
+  **Famous works**
+
+  - [[artist/francisco-de-zurbaran]], *The Apotheosis of Saint Thomas Aquinas* (Museo de Bellas Artes, Seville)
+
+  *From:* history · Christian
+wikidata_id: Q9438
+metadata:
+  sources: [Wikidata Q9438 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/St-thomas-aquinasFXD.jpg/1280px-St-thomas-aquinasFXD.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:St-thomas-aquinasFXD.jpg
+    license: Public domain
+    credit: Carlo Crivelli
+identifiers:
+  bnf: 11926496p
+  gnd: "118622110"
+  idref: "027161129"
+  lc: n78095790
+  nlk: KAC199627355
+  ulan: "500330859"
+  viaf: "100910150"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q9438
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q9438
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q9438
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q9438

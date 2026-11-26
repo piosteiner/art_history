@@ -1,0 +1,81 @@
+public_id: 130678
+name: Princess Wencheng
+names:
+  - text: Wencheng Kongjo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q256555
+  - lang: nl
+    role: translation
+    text: Wencheng
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q256555
+  - lang: de
+    role: translation
+    text: Wen Cheng
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q256555
+  - lang: es
+    role: translation
+    text: Princesa Wencheng
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q256555
+  - lang: ja
+    role: translation
+    text: 文成公主
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q256555
+  - lang: ko
+    role: translation
+    text: 문성공주
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q256555
+  - lang: ru
+    role: translation
+    text: Принцесса Вэньчэн
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q256555
+kind: person
+occupations: [politician]
+birth: 628
+death: 680
+description_md: |-
+  [[person/songtsan-gampo|Songtsen Gampo]] (7th century) united Tibet. According to tradition, his Chinese wife, Princess Wencheng, and his Nepali wife, Princess [[person/bhrikuti]], brought Buddhism and famous Buddha statues to Lhasa, where they're kept in the Jokhang and Ramoche temples.
+
+  *From:* Chinese (Tang)
+wikidata_id: Q256555
+metadata:
+  sources: [Wikidata Q256555 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f1/Wencheng.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wencheng.jpg
+    license: CC BY-SA 3.0
+    credit: The original uploader was TibetInfopage at German Wikipedia.
+identifiers:
+  gnd: "122367960"
+  idref: "182576000"
+  lc: n89266842
+  viaf: "3352501"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q256555
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q256555
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q256555
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q256555

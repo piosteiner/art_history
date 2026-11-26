@@ -5,6 +5,34 @@ names:
     sources:
       - accessed: 2026-11-13
         wikidata: Q3816734
+  - text: Allen Art Museum
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3816734
+  - lang: es
+    role: translation
+    text: Museo de Arte Allen Memorial
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3816734
+  - lang: ja
+    role: translation
+    text: アレン記念美術館
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3816734
+  - lang: zh
+    role: translation
+    text: 艾伦纪念艺术博物馆
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3816734
+  - lang: ru
+    role: translation
+    text: Мемориальный художественный музей Аллена
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3816734
 kind: museum
 founded: 1917
 place: oberlin

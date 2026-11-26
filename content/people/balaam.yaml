@@ -1,0 +1,75 @@
+public_id: 130713
+name: Balaam
+names:
+  - text: Bil'am
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q574641
+  - text: Bilaam
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q574641
+  - text: Bilam
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q574641
+  - lang: nl
+    role: translation
+    text: Bileam
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q574641
+  - lang: ja
+    role: translation
+    text: バラム
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q574641
+  - lang: zh
+    role: translation
+    text: 巴蘭
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q574641
+  - lang: ko
+    role: translation
+    text: 발람
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q574641
+  - lang: ru
+    role: translation
+    text: Валаам
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q574641
+occupations: [oracle]
+description_md: |-
+  The prophet Balaam was riding to curse the Israelites when his donkey refused to go on, because it could see an angel with a sword blocking the road. Balaam beat it, and the donkey spoke to him.
+
+  **In art:** A man beating a donkey that has fallen to its knees, with an angel standing in front of them.
+
+  **Famous works**
+
+  - [[artist/rembrandt]], *Balaam's Ass* (Musée Cognacq-Jay, Paris)
+
+  *From:* Hebrew Bible, Numbers · Hebrew Bible
+wikidata_id: Q574641
+metadata:
+  sources: [Wikidata Q574641 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/P1150002_Cognacq-Jay_Rembrandt_anesse_de_Balaam_rwk.jpg/1280px-P1150002_Cognacq-Jay_Rembrandt_anesse_de_Balaam_rwk.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:P1150002_Cognacq-Jay_Rembrandt_anesse_de_Balaam_rwk.jpg
+    license: Public domain
+    credit: Rembrandt
+identifiers:
+  bnf: 13163369h
+  gnd: 11866316X
+  idref: "031168558"
+  lc: n82220567
+  viaf: "123915857"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q574641

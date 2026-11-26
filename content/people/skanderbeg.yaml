@@ -1,0 +1,86 @@
+public_id: 130657
+name: Skanderbeg
+names:
+  - lang: sq
+    role: original
+    text: Skënderbeu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q160614
+  - text: Scanderbeg
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q160614
+  - text: Gjergj Kastrioti
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q160614
+  - lang: fr
+    role: translation
+    text: Gjergj Kastriot Skanderbeg
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q160614
+  - lang: ja
+    role: translation
+    text: スカンデルベグ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q160614
+  - lang: zh
+    role: translation
+    text: 斯坎德培
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q160614
+  - lang: ko
+    role: translation
+    text: 스칸데르베그
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q160614
+  - lang: ru
+    role: translation
+    text: Скандербег
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q160614
+kind: person
+occupations: [aristocrat, statesperson, military commander, military leader, national hero]
+birth: 1405-05-06
+death: 1468-01-17
+description_md: |-
+  Gjergj Kastrioti (1405–1468) was taken as a hostage by the Ottomans and trained as a commander, where he was given the name Iskender Bey after Alexander the Great. He changed sides, returned home, and resisted the Ottoman Empire for 25 years. His goat-headed helmet is in a Vienna museum.
+
+  *From:* Albanian
+wikidata_id: Q160614
+metadata:
+  sources: [Wikidata Q160614 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/77/Skanderbeg_by_Antonio_Maria_Crespi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Skanderbeg_by_Antonio_Maria_Crespi.jpg
+    license: Public domain
+    credit: Antonio Maria Crespi Castoldi
+identifiers:
+  bnf: 11973635b
+  gnd: 11861486X
+  idref: "027763447"
+  lc: n50016935
+  viaf: "54941270"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q160614
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q160614
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q160614
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q160614

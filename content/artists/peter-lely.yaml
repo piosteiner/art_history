@@ -2,3 +2,77 @@ public_id: 122891
 name: Peter Lely
 given_name: Peter
 family_name: Lely
+names:
+  - kind: birth
+    lang: nl
+    role: former
+    text: Pieter van der Faes
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q161336
+birth: 1618-09-14
+death: 1680-11-30
+wikidata_id: Q161336
+metadata:
+  sources: [Wikidata Q161336 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q161336
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q161336
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q161336
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q161336
+  - type: worked_in
+    to: place/london
+    period: 1641/1680
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q161336
+  - type: associated_with
+    to: movement/baroque-painting
+    sources:
+      - accessed: 2026-11-25
+        property: P135
+        wikidata: Q161336
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Peter_Lely%2C_by_Peter_Lely.jpg/1280px-Peter_Lely%2C_by_Peter_Lely.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Peter_Lely,_by_Peter_Lely.jpg
+    license: Public domain
+    credit: Peter Lely
+identifiers:
+  bnf: "149666029"
+  gnd: "124016626"
+  idref: "066835186"
+  kulturnav: 45d9b88d-26be-46b3-b59a-e1980ce872ea
+  lc: n85028378
+  rkd: "49235"
+  ulan: "500002184"
+  viaf: "47033545"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q161336
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q161336

@@ -2,3 +2,62 @@ public_id: 122881
 name: Joseph-Marie Vien
 given_name: Joseph-Marie
 family_name: Vien
+birth: 1716-06-18
+death: 1809-03-27
+wikidata_id: Q647934
+metadata:
+  sources: [Wikidata Q647934 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q647934
+  - type: born_in
+    to: place/montpellier
+    sources:
+      - accessed: 2026-11-25
+        property: P19
+        wikidata: Q647934
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q647934
+  - type: studied_at
+    to: institution/academie-royale-de-peinture-et-de-sculpture
+    sources:
+      - accessed: 2026-11-25
+        property: P69
+        wikidata: Q647934
+  - type: member_of
+    to: institution/academie-royale-de-peinture-et-de-sculpture
+    sources:
+      - accessed: 2026-11-25
+        property: P463
+        wikidata: Q647934
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/37/JMVien.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:JMVien.jpg
+    license: Public domain
+    credit: Joseph-Siffred Duplessis
+identifiers:
+  bnf: 12109720b
+  gnd: "118914014"
+  idref: "029478529"
+  kulturnav: a0263cc2-a4d6-4aa3-ad89-248294924667
+  lc: nr89004810
+  rkd: "80924"
+  ulan: "500018830"
+  viaf: "36948789"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q647934
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q647934

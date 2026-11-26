@@ -1,0 +1,44 @@
+public_id: 132573
+name: Enge
+names:
+  - lang: zh
+    role: translation
+    text: 恩格区
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q648218
+  - lang: ko
+    role: translation
+    text: 엥게
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q648218
+  - lang: ru
+    role: translation
+    text: Энге
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q648218
+kind: district
+parent: zurich
+country_code: CH
+location: [8.53172, 47.3641]
+wikidata_id: Q648218
+metadata:
+  sources: [Wikidata Q648218 (retrieved 2026-11-26)]
+identifiers:
+  gnd: 4109074-3
+  hls: "003116"
+sources:
+  kind:
+    - accessed: 2026-11-26
+      property: P31
+      wikidata: Q648218
+  parent:
+    - accessed: 2026-11-26
+      property: P131
+      wikidata: Q648218
+  location:
+    - accessed: 2026-11-26
+      property: P625
+      wikidata: Q648218

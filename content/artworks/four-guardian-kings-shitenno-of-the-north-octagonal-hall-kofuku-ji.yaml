@@ -6,6 +6,7 @@ names:
   - lang: ja
     role: original
     text: 興福寺北円堂四天王像
+attribution_label: Anonymous
 created: 791
 institution: kofuku-ji
 wikidata_id: Q107046080
@@ -53,3 +54,6 @@ sources:
     - accessed: 2026-11-24
       property: P571
       wikidata: Q107046080
+  attribution_label:
+    - source: kunishitei-201-264
+      accessed: 2026-11-25

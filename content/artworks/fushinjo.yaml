@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q5295451
+attribution_label: Kūkai (Kōbō Daishi)
 created: 810s
 created_span: uncertain
 institution: to-ji
@@ -86,3 +87,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q5295451
+  attribution_label:
+    - source: kunishitei-201-809
+      accessed: 2026-11-25

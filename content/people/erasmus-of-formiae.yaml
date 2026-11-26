@@ -1,0 +1,121 @@
+public_id: 130785
+name: Erasmus of Formiae
+names:
+  - text: Erasmus of Formia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - text: Erasmus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - text: St. Erasmus of Formia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - text: Saint Erasmus of Formia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - text: Saint Elmo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - text: Elmo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - text: St. Elmo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - text: Erasmus of Formiæ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - text: Saint Erasmus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - lang: nl
+    role: translation
+    text: Erasmus van Formiae
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - lang: fr
+    role: translation
+    text: Érasme de Formia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - lang: de
+    role: translation
+    text: Erasmus von Antiochia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - lang: it
+    role: translation
+    text: Erasmo di Formia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - lang: es
+    role: translation
+    text: Erasmo de Formia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - lang: ja
+    role: translation
+    text: エラスムス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - lang: zh
+    role: translation
+    text: 聖伊拉斯莫
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - lang: ko
+    role: translation
+    text: 포르미아의 에라스무스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+  - lang: ru
+    role: translation
+    text: Святой Эразм
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q359878
+occupations: [presbyter, Catholic bishop]
+description_md: |-
+  Two of the Fourteen Holy Helpers, a group of saints invoked together, especially in Germany. Erasmus (Elmo), patron of sailors, had his intestines wound out on a windlass, according to the traditional account.
+
+  **In art:** A bishop with a windlass winding his intestines.
+
+  **Famous works**
+
+  - [[artist/nicolas-poussin]], *The Martyrdom of Saint Erasmus* (Vatican Pinacoteca)
+  - *Basilica of the Fourteen Holy Helpers* (Vierzehnheiligen, Bavaria)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q359878
+metadata:
+  sources: [Wikidata Q359878 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Falkensteiner_Retabel_Drehfl%C3%BCgel_rechts_au%C3%9Fen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Falkensteiner_Retabel_Drehfl%C3%BCgel_rechts_au%C3%9Fen.jpg
+    license: Public domain
+    credit: Master of Messkirch
+identifiers:
+  gnd: "118879294"
+  viaf: "74651168"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q359878

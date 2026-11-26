@@ -8,5 +8,6 @@ metadata:
   sources: [Wikidata Q3514212 (retrieved 2026-11-24)]
 sources:
   active:
-    - property: P2031
+    - accessed: 2026-11-25
+      property: P2031
       wikidata: Q3514212

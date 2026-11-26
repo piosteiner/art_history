@@ -1,0 +1,121 @@
+public_id: 130772
+name: Saint Roch
+names:
+  - text: Saint Rochus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - text: Rochus of Montpellier
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - text: St. Roche
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - text: Saint Roche
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - text: St. Roch
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - text: St Roch
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - lang: nl
+    role: translation
+    text: Rochus van Montpellier
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - lang: fr
+    role: translation
+    text: Roch de Montpellier
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - lang: de
+    role: translation
+    text: Rochus von Montpellier
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - lang: it
+    role: translation
+    text: san Rocco
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - lang: es
+    role: translation
+    text: Roque de Montpellier
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - lang: ja
+    role: translation
+    text: ロクス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - lang: zh
+    role: translation
+    text: 蒙彼利埃的罗克
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - lang: ko
+    role: translation
+    text: 로코
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+  - lang: ru
+    role: translation
+    text: Святой Рох
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q152457
+kind: person
+birth: c. 1293
+death: 1327-08-24
+description_md: |-
+  A 14th-century pilgrim who cared for plague victims and caught the plague himself. He hid in the woods, where a dog brought him bread each day. Invoked against the plague, along with Sebastian.
+
+  **In art:** A pilgrim with a staff and scallop shell, lifting his robe to show a plague sore on his thigh, with a dog holding bread.
+
+  **Famous works**
+
+  - Tintoretto, *Saint Roch* scenes (church of San Rocco, beside the Scuola Grande di San Rocco, Venice)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q152457
+metadata:
+  sources: [Wikidata Q152457 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Heilige_Rochus_door_Christus_aangesteld_tot_patroon_van_de_pestlijders_-_Peter_Paul_Rubens_-_Sint-Martinuskerk_Aalst.jpg/1280px-Heilige_Rochus_door_Christus_aangesteld_tot_patroon_van_de_pestlijders_-_Peter_Paul_Rubens_-_Sint-Martinuskerk_Aalst.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Heilige_Rochus_door_Christus_aangesteld_tot_patroon_van_de_pestlijders_-_Peter_Paul_Rubens_-_Sint-Martinuskerk_Aalst.jpg
+    license: Public domain
+    credit: Peter Paul Rubens
+identifiers:
+  bnf: "119405002"
+  gnd: "118601652"
+  idref: 02734214X
+  lc: n88167232
+  viaf: "288888994"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q152457
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q152457
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q152457

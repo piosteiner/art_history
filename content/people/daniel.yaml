@@ -1,0 +1,72 @@
+public_id: 130704
+name: Daniel
+names:
+  - text: Beltshazzar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q171724
+  - lang: nl
+    role: translation
+    text: Daniël
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q171724
+  - lang: it
+    role: translation
+    text: Daniele
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q171724
+  - lang: ja
+    role: translation
+    text: ダニエル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q171724
+  - lang: zh
+    role: translation
+    text: 但以理
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q171724
+  - lang: ko
+    role: translation
+    text: 다니엘
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q171724
+  - lang: ru
+    role: translation
+    text: Даниил
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q171724
+occupations: [religious leader, prophet]
+description_md: |-
+  A Jewish noble at the court of Babylon, famous for interpreting dreams. When he kept praying to God despite a royal ban, he was thrown into a den of lions, but an angel shut their mouths. He also read the mysterious writing that appeared on the wall at King Belshazzar's feast, predicting the fall of Babylon ("the writing on the wall").
+
+  **In art:** A man praying calmly among lions, or a terrified king at a banquet as a hand writes glowing words on the wall.
+
+  **Famous works**
+
+  - Rubens, *Daniel in the Lions' Den* (Washington)
+  - [[artist/rembrandt]], *Belshazzar's Feast* (National Gallery, London)
+
+  *From:* Hebrew Bible, Book of Daniel · Hebrew Bible
+wikidata_id: Q171724
+metadata:
+  sources: [Wikidata Q171724 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Michelangelo_Buonarroti_026.jpg/1280px-Michelangelo_Buonarroti_026.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Michelangelo_Buonarroti_026.jpg
+    license: Public domain
+    credit: Michelangelo
+identifiers:
+  gnd: "118678752"
+  lc: n50082264
+  viaf: "79399026"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q171724

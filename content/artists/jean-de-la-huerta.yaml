@@ -2,3 +2,52 @@ public_id: 122935
 name: Jean de la Huerta
 given_name: Jean
 family_name: de la Huerta
+birth: 1413
+death: 1462
+wikidata_id: Q1885156
+metadata:
+  sources: [Wikidata Q1885156 (retrieved 2026-11-25)]
+relationships:
+  - type: died_in
+    to: place/macon
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q1885156
+  - type: worked_in
+    to: place/doubs
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q1885156
+  - type: worked_in
+    to: place/seville
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q1885156
+  - type: worked_in
+    to: place/zaragoza
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q1885156
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Gisan_Jean_Sans_Peur1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gisan_Jean_Sans_Peur1.jpg
+    license: CC BY-SA 3.0
+    credit: Claus de Werve, Jean de la Huerta (1443-1455) et Antoine Le Moiturier (1466-1470)
+identifiers:
+  lc: no2008053356
+  rkd: "457656"
+  ulan: "500036378"
+  viaf: "62743001"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q1885156
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q1885156

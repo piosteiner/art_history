@@ -21,10 +21,6 @@ images:
 identifiers:
   gnd: 4302751-9
 sources:
-  kind:
-    - accessed: 2026-11-13
-      property: P31
-      wikidata: Q200485
   period:
     - accessed: 2026-11-13
       property: P585

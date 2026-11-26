@@ -13,6 +13,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q11628488
+attribution_label: Anonymous
 created: c. 1112
 created_span: uncertain
 institution: nishi-hongan-ji
@@ -90,3 +91,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q11628488
+  attribution_label:
+    - source: kunishitei-201-580
+      accessed: 2026-11-25

@@ -1,0 +1,84 @@
+public_id: 130796
+name: Lady Godiva
+names:
+  - lang: ang
+    role: original
+    text: Godgifu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q106077
+  - text: Godiva
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q106077
+  - text: Godiva, Countess of Leicester
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q106077
+  - text: Godiva (?)
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q106077
+  - lang: ja
+    role: translation
+    text: ゴダイヴァ夫人
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q106077
+  - lang: zh
+    role: translation
+    text: 戈黛娃夫人
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q106077
+  - lang: ko
+    role: translation
+    text: 고다이바 부인
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q106077
+  - lang: ru
+    role: translation
+    text: Леди Годива
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q106077
+kind: person
+birth: c. 990
+death: 1067-09-16
+description_md: |-
+  An 11th-century English noblewoman who, according to legend, rode naked through the streets of Coventry, covered only by her long hair, to persuade her husband to lower the town's heavy taxes. Everyone stayed indoors except, in later versions, one man, "Peeping Tom", who was struck blind (or dead).
+
+  **In art:** A nude woman with long hair riding a white horse through an empty town.
+
+  **Famous works**
+
+  - John Collier, *Lady Godiva* (1897, Herbert Art Gallery and Museum, Coventry)
+
+  *From:* English legend · English
+wikidata_id: Q106077
+metadata:
+  sources: [Wikidata Q106077 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/74/Lady_Godiva_by_John_Collier.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lady_Godiva_by_John_Collier.jpg
+    license: Public domain
+    credit: John Collier
+identifiers:
+  gnd: "143176099"
+  idref: "072620412"
+  lc: n84070043
+  viaf: "108149196682074792988"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q106077
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q106077
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q106077

@@ -1,0 +1,97 @@
+public_id: 130665
+name: Túpac Amaru II
+given_name: Túpac, II
+family_name: Amaru
+names:
+  - kind: birth
+    lang: es
+    role: former
+    text: José Gabriel Condorcanqui Noguera
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q315937
+  - text: José Gabriel Tupac-Amaru
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q315937
+  - text: José Gabriel Túpac Amaru
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q315937
+  - text: Tupac Amaru II
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q315937
+  - text: José Gabriel Condorcanqui
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q315937
+  - lang: de
+    role: translation
+    text: Tupaq Amaru II.
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q315937
+  - lang: ja
+    role: translation
+    text: ホセ・ガブリエル・コンドルカンキ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q315937
+  - lang: zh
+    role: translation
+    text: 何塞·加夫列尔·孔多尔坎基
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q315937
+  - lang: ko
+    role: translation
+    text: 투팍 아마루 2세
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q315937
+  - lang: ru
+    role: translation
+    text: Тупак Амару II
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q315937
+kind: person
+occupations: [politician, revolutionary, indigenous leader, rebel]
+birth: 1738-03-10
+death: 1781-05-18
+description_md: |-
+  The first Túpac Amaru was the last Inca ruler, executed by the Spanish in 1572. Two hundred years later, José Gabriel Condorcanqui took his name and led the largest uprising against Spanish rule before the wars of independence (1780–1781). The rapper Tupac Shakur was named after Túpac Amaru II.
+
+  *From:* Andean (Quechua)
+wikidata_id: Q315937
+metadata:
+  sources: [Wikidata Q315937 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Acuarela_de_T%C3%BApac_Amaru_II_crop.jpg/1280px-Acuarela_de_T%C3%BApac_Amaru_II_crop.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Acuarela_de_T%C3%BApac_Amaru_II_crop.jpg
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  bnf: "119647182"
+  gnd: "118521764"
+  idref: "027650316"
+  lc: n50053310
+  viaf: "84037753"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q315937
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q315937
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q315937
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q315937

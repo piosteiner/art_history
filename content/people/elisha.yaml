@@ -1,0 +1,88 @@
+public_id: 130723
+name: Elisha
+names:
+  - text: St. Elisha
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q206238
+  - text: Saint Elisha
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q206238
+  - lang: nl
+    role: translation
+    text: Elisa
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q206238
+  - lang: fr
+    role: translation
+    text: Élisée
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q206238
+  - lang: de
+    role: translation
+    text: Elischa
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q206238
+  - lang: it
+    role: translation
+    text: Eliseo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q206238
+  - lang: ja
+    role: translation
+    text: エリシャ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q206238
+  - lang: zh
+    role: translation
+    text: 以利沙
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q206238
+  - lang: ko
+    role: translation
+    text: 엘리사
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q206238
+  - lang: ru
+    role: translation
+    text: Елисей
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q206238
+occupations: [thaumaturge, preacher]
+description_md: |-
+  [[person/elijah]]'s successor, who caught his master's cloak as he rose to heaven. He performed many miracles: parting the Jordan, raising a dead child, and curing the general Naaman of leprosy by having him bathe in the river seven times.
+
+  **In art:** A bald prophet receiving a cloak from a chariot of fire, or a soldier bathing in a river.
+
+  **Famous works**
+
+  - Pieter de Grebber, *Elisha Refusing the Gifts of Naaman* (Frans Hals Museum, Haarlem)
+
+  *From:* Hebrew Bible, Books of Kings · Hebrew Bible
+wikidata_id: Q206238
+metadata:
+  sources: [Wikidata Q206238 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b2/Elisha-Eliseus.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Elisha-Eliseus.jpg
+    license: Public domain
+    credit: 18 century icon painter
+identifiers:
+  gnd: "118688685"
+  idref: "030393094"
+  lc: n80162588
+  viaf: "198212449"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q206238

@@ -1,0 +1,117 @@
+public_id: 130743
+name: Penitent Thief
+given_name: Penitent
+family_name: Thief
+names:
+  - text: Dismas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - text: Good Thief
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - text: Saint Dismas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - text: St. Dismas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - text: St Dismas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - text: wise thief
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - text: grateful thief
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - lang: nl
+    role: translation
+    text: Dismas van Jeruzalem
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - lang: fr
+    role: translation
+    text: Le bon Larron
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - lang: it
+    role: translation
+    text: Disma
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - lang: es
+    role: translation
+    text: Buen Ladrón
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - lang: ja
+    role: translation
+    text: ディスマス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - lang: zh
+    role: translation
+    text: 懺悔的囚犯
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - lang: ko
+    role: translation
+    text: 회개하는 도둑
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+  - lang: ru
+    role: translation
+    text: Благоразумный разбойник
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q355121
+kind: person
+occupations: [robber]
+death: 33
+description_md: |-
+  Dismas, the Good Thief crucified next to Christ, repented and was promised paradise; Gestas, the other, mocked Jesus.
+
+  **In art:** The good thief usually hangs on Christ's right, turned towards him.
+
+  *From:* New Testament; Christian tradition · Christian
+wikidata_id: Q355121
+metadata:
+  sources: [Wikidata Q355121 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Museo_del_Duomo_-_Milan_-_Vitrage_-_Penitent_Thief.jpg/1280px-Museo_del_Duomo_-_Milan_-_Vitrage_-_Penitent_Thief.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Museo_del_Duomo_-_Milan_-_Vitrage_-_Penitent_Thief.jpg
+    license: CC BY-SA 4.0
+    credit: Vassia Atanassova - Spiritia
+identifiers:
+  bnf: 12044044v
+  gnd: "120162520"
+  idref: "028648277"
+  lc: nr91025514
+  viaf: "5755058"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q355121
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q355121
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q355121

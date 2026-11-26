@@ -1,0 +1,89 @@
+public_id: 130662
+name: Ranavalona I
+names:
+  - text: Ramavo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q169794
+  - text: Ranavalomanjaka
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q169794
+  - text: Ranavalona I of Imerina
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q169794
+  - lang: fr
+    role: translation
+    text: Ranavalona Ire
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q169794
+  - lang: de
+    role: translation
+    text: Ranavalona I.
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q169794
+  - lang: ja
+    role: translation
+    text: ラナヴァルナ1世
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q169794
+  - lang: zh
+    role: translation
+    text: 腊纳瓦洛娜一世
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q169794
+  - lang: ko
+    role: translation
+    text: 라나발로나 1세
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q169794
+  - lang: ru
+    role: translation
+    text: Ранавалуна I
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q169794
+kind: person
+occupations: [politician, head of state]
+birth: c. 1788
+death: 1861-08-16
+description_md: |-
+  She ruled Madagascar from 1828 to 1861, threw out European missionaries, and fought off French and British attacks. She's remembered both as a cruel ruler and as a defender of Malagasy independence.
+
+  *From:* Malagasy (Merina)
+wikidata_id: Q169794
+metadata:
+  sources: [Wikidata Q169794 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c1/Ranavalona_I.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ranavalona_I.jpg
+    license: Public domain
+    credit: Philippe-Auguste Ramanankirahina (1860-1915)
+identifiers:
+  gnd: "120805138"
+  idref: "034911510"
+  lc: n97105082
+  viaf: "3311287"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q169794
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q169794
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q169794
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q169794

@@ -1,0 +1,101 @@
+public_id: 130644
+name: K'inich Janaab' Pakal
+given_name: K'inich Janaab'
+family_name: Pakal
+names:
+  - text: Pacal
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q371384
+  - text: Pacal the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q371384
+  - text: Pakal
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q371384
+  - text: Pakal the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q371384
+  - lang: nl
+    role: translation
+    text: Pacal de Grote
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q371384
+  - lang: fr
+    role: translation
+    text: K'inich Janaab' Pakal Ier
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q371384
+  - lang: de
+    role: translation
+    text: K'inich Janaab' Pakal I.
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q371384
+  - lang: ja
+    role: translation
+    text: パカル大王
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q371384
+  - lang: zh
+    role: translation
+    text: 巴加尔二世
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q371384
+  - lang: ko
+    role: translation
+    text: 키니치 하나브 파칼
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q371384
+  - lang: ru
+    role: translation
+    text: Пакаль
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q371384
+kind: person
+occupations: [Ajaw]
+birth: 603-03-23
+death: 683-08-28
+description_md: |-
+  He ruled from age 12 for 68 years (615–683). His tomb in the Temple of the Inscriptions was found in 1952 with a jade death mask and a carved stone lid showing him falling into or rising from the underworld. Some people have claimed it shows an astronaut in a spaceship.
+
+  *From:* Maya
+wikidata_id: Q371384
+metadata:
+  sources: [Wikidata Q371384 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/K%27inich_Janaab_Pakal_I.jpg/1280px-K%27inich_Janaab_Pakal_I.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:K%27inich_Janaab_Pakal_I.jpg
+    license: CC BY-SA 2.0
+    credit: Jami Dwyer
+identifiers:
+  gnd: "133175073"
+  idref: "155606891"
+  lc: n2005089841
+  viaf: "65188527"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q371384
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q371384
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q371384
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q371384

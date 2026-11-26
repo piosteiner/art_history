@@ -11,6 +11,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045989
+attribution_label: Anonymous
 created: late 7th century
 created_span: uncertain
 institution: horyu-ji
@@ -60,3 +61,7 @@ provenance:
         note: 阿弥陀三尊像及び厨子（橘夫人厨子、国宝） - 飛鳥時代後期（白鳳期）。やはり金堂に安置されていたもの。
         source: jawiki-horyu-ji
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-235
+      accessed: 2026-11-25

@@ -1,0 +1,77 @@
+public_id: 130716
+name: Yael
+names:
+  - lang: hbo
+    role: original
+    text: יעל
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q954820
+  - text: Jael
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q954820
+  - text: Ya'el
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q954820
+  - lang: nl
+    role: translation
+    text: Jaël
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q954820
+  - lang: fr
+    role: translation
+    text: Yaël
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q954820
+  - lang: it
+    role: translation
+    text: Giaele
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q954820
+  - lang: zh
+    role: translation
+    text: 雅亿
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q954820
+  - lang: ko
+    role: translation
+    text: 야엘
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q954820
+  - lang: ru
+    role: translation
+    text: Иаиль
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q954820
+description_md: |-
+  Sisera fled and took refuge in the tent of a woman named Jael, who gave him milk, waited until he fell asleep, and drove a tent peg through his head.
+
+  **In art:** A woman holding a hammer and tent peg over a sleeping soldier.
+
+  **Famous works**
+
+  - [[artist/artemisia-gentileschi]], *Jael and Sisera* (Budapest)
+  - Lucas van Leyden, *Jael Killing Sisera* (woodcut)
+
+  *From:* Hebrew Bible, Judges · Hebrew Bible
+wikidata_id: Q954820
+metadata:
+  sources: [Wikidata Q954820 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/28/Tissot_Jael_Smote_Sisera%2C_and_Slew_Him.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tissot_Jael_Smote_Sisera,_and_Slew_Him.jpg
+    license: Public domain
+    credit: James Tissot
+identifiers:
+  bnf: 17779059m
+  gnd: 105871158X
+  lc: n86019801
+  viaf: "103199668"

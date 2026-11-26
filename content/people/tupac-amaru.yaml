@@ -1,0 +1,89 @@
+public_id: 130664
+name: Túpac Amaru
+given_name: Túpac
+family_name: Amaru
+names:
+  - text: Thupa Amaro
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q296269
+  - text: Thupaq Amaru
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q296269
+  - text: Tupac Amaru
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q296269
+  - text: Túpac Amaru I
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q296269
+  - lang: de
+    role: translation
+    text: Túpac Amaru I.
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q296269
+  - lang: ja
+    role: translation
+    text: トゥパク・アマル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q296269
+  - lang: zh
+    role: translation
+    text: 圖帕克·阿馬魯
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q296269
+  - lang: ko
+    role: translation
+    text: 투팍 아마루
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q296269
+  - lang: ru
+    role: translation
+    text: Тупак Амару
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q296269
+kind: person
+occupations: [sovereign, Vilcabamba Inca]
+birth: 1545
+death: 1572-10-04
+description_md: |-
+  The first Túpac Amaru was the last Inca ruler, executed by the Spanish in 1572. Two hundred years later, [[person/tupac-amaru-ii|José Gabriel Condorcanqui]] took his name and led the greatest Indigenous uprising against Spanish rule (1780–1781). The rapper Tupac Shakur was named after Túpac Amaru II.
+
+  *From:* Inca
+wikidata_id: Q296269
+metadata:
+  sources: [Wikidata Q296269 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/68/TupacamaruI.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:TupacamaruI.JPG
+    license: Public domain
+    credit: Cuzco School / Unidentified painter
+identifiers:
+  gnd: "118802941"
+  idref: "170695212"
+  lc: no00075051
+  viaf: "2016193"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q296269
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q296269
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q296269
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q296269

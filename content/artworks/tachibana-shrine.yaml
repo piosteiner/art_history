@@ -11,6 +11,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q66769241
+attribution_label: Anonymous
 institution: horyu-ji
 location: [135.73531, 34.61506]
 wikidata_id: Q66769241
@@ -52,3 +53,6 @@ sources:
     - accessed: 2026-11-24
       property: P625
       wikidata: Q66769241
+  attribution_label:
+    - source: kunishitei-201-236
+      accessed: 2026-11-25

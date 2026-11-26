@@ -52,6 +52,7 @@ names:
     sources:
       - accessed: 2026-11-23
         wikidata: Q2667065
+attribution_label: Anonymous
 created: -340/-330
 materials: [bronze]
 institution: national-archaeological-museum-of-athens
@@ -126,4 +127,8 @@ sources:
   institution:
     - accessed: 2026-11-23
       property: P195
+      wikidata: Q2667065
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q2667065

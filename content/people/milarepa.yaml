@@ -1,0 +1,71 @@
+public_id: 130676
+name: Milarepa
+names:
+  - text: Mi-la-ras-pa
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q58431
+  - lang: fr
+    role: translation
+    text: Milarépa
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q58431
+  - lang: ja
+    role: translation
+    text: ミラレパ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q58431
+  - lang: zh
+    role: translation
+    text: 密勒日巴尊者
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q58431
+  - lang: ru
+    role: translation
+    text: Миларепа
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q58431
+kind: person
+occupations: [poet, writer, translator]
+birth: 1040
+death: 1135
+description_md: |-
+  As a young man, he used black magic to take revenge on relatives who stole his family's land, causing a house to collapse and killing many people. Full of regret, he became a disciple of the teacher Marpa, who made him build and tear down stone towers again and again. He meditated in caves, ate only nettles until his skin turned green, and wrote beautiful songs.
+
+  *From:* Tibetan
+wikidata_id: Q58431
+metadata:
+  sources: [Wikidata Q58431 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Bhutanese_painted_thanka_of_Milarepa_%281052-1135%29%2C_Late_19th-early_20th_Century%2C_Dhodeydrag_Gonpa%2C_Thimphu%2C_Bhutan.jpg/1280px-Bhutanese_painted_thanka_of_Milarepa_%281052-1135%29%2C_Late_19th-early_20th_Century%2C_Dhodeydrag_Gonpa%2C_Thimphu%2C_Bhutan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bhutanese_painted_thanka_of_Milarepa_(1052-1135),_Late_19th-early_20th_Century,_Dhodeydrag_Gonpa,_Thimphu,_Bhutan.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 12086494t
+  gnd: "118582399"
+  idref: "029185610"
+  lc: n80034328
+  nlk: KAC201842688
+  viaf: "173200978"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q58431
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q58431
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q58431
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q58431

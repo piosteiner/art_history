@@ -1,0 +1,125 @@
+public_id: 130801
+name: Su Shi
+names:
+  - kind: art_name
+    role: alternative
+    text: 东坡居士
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - kind: art_name
+    role: alternative
+    text: 铁冠道人
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - kind: art_name
+    role: alternative
+    text: 東坡居士
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - lang: zh-Hant
+    role: original
+    text: 蘇軾
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - lang: zh-Hans
+    role: original
+    text: 苏轼
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - text: Su Dongpo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - text: Zizhan
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - text: Su Shih
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - text: Dongpo jushi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - text: zi Zizhan
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - text: hao Dongpo jushi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - text: Su Tung-p'o
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - text: Wenzhong
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - lang: ko
+    role: translation
+    text: 소식
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+  - lang: ru
+    role: translation
+    text: Су Ши
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q36020
+kind: person
+occupations: [poet, writer, painter, pharmacist, calligrapher, historian, scholar, politician, musician, essayist, philosopher, prose writer]
+birth: 1037-01-14
+death: 1101-08-31
+description_md: |-
+  Su Dongpo (1037–1101) wrote the famous *Odes on the Red Cliff* after a boat trip by moonlight.
+
+  **In art:** A small boat at night below a towering cliff.
+
+  **Famous works**
+
+  - Wu Yuanzhi, *Red Cliff* (National Palace Museum, Taipei)
+  - Qiao Zhongchang, *Illustration to the Second Prose Poem on the Red Cliff* (Nelson-Atkins Museum)
+
+  *From:* Chinese
+wikidata_id: Q36020
+metadata:
+  sources: [Wikidata Q36020 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/98/Su_shi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Su_shi.jpg
+    license: Public domain
+    credit: Zhao Mengfu
+identifiers:
+  bnf: 12074309s
+  gnd: "118619780"
+  idref: "029032199"
+  lc: n80115817
+  nlk: KAC199631702
+  ulan: "500123267"
+  viaf: "96591338"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q36020
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q36020
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q36020
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q36020

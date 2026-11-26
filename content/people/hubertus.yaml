@@ -1,0 +1,136 @@
+public_id: 130782
+name: Hubertus
+names:
+  - text: St. Hubert
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - text: Bishop of Liège Saint Hubert
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - text: Saint, Bishop of Maastricht Hubert
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - text: Saint Hubert
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - text: Saint, Bishop of Liège Hubertus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - text: Hubert
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - text: Hubertus of Liège
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - text: Saint, Bishop of Liège Hubert
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - text: Hubertus of Liege
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - text: Bishop of Liege Saint Hubert
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - text: Hubert of Liège
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - lang: nl
+    role: translation
+    text: Hubertus van Luik
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - lang: fr
+    role: translation
+    text: Hubert de Liège
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - lang: de
+    role: translation
+    text: Hubertus von Lüttich
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - lang: it
+    role: translation
+    text: Uberto di Liegi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - lang: es
+    role: translation
+    text: Huberto de Lieja
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - lang: ja
+    role: translation
+    text: フルベルトゥス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - lang: zh
+    role: translation
+    text: 圣胡贝图斯
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+  - lang: ru
+    role: translation
+    text: Святой Губерт
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q159834
+kind: person
+occupations: [Catholic priest, Catholic bishop]
+birth: 650/659
+birth_label: c. 650s
+death: 727-06-03
+description_md: |-
+  Two hunters with the same legend: while hunting a stag, they saw a crucifix shining between its antlers, and converted (Hubert's version is borrowed from Eustace's legend and was attached to him only in the 15th century). Hubert is the patron saint of hunters.
+
+  **In art:** A hunter kneeling before a stag with a crucifix between its antlers.
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q159834
+metadata:
+  sources: [Wikidata Q159834 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Hubert_de_Lieja-Delcour.jpg/1280px-Hubert_de_Lieja-Delcour.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hubert_de_Lieja-Delcour.jpg
+    license: CC BY-SA 3.0
+    credit: Flamenc
+identifiers:
+  gnd: "118554131"
+  lc: n93045286
+  ulan: "500338567"
+  viaf: "70602369"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q159834
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q159834
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q159834
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q159834

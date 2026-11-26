@@ -1,0 +1,86 @@
+public_id: 130809
+name: James, son of Alphaeus
+names:
+  - text: James the Less
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44047
+  - text: James the Lesser
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44047
+  - text: Little James
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44047
+  - lang: nl
+    role: translation
+    text: Jakobus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44047
+  - lang: fr
+    role: translation
+    text: Jacques d'Alphée
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44047
+  - lang: de
+    role: translation
+    text: Jakobus, Sohn des Alphäus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44047
+  - lang: it
+    role: translation
+    text: Giacomo d'Alfeo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44047
+  - lang: es
+    role: translation
+    text: Santiago el de Alfeo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44047
+  - lang: ja
+    role: translation
+    text: ヤコブ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44047
+  - lang: zh
+    role: translation
+    text: 雅各
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44047
+  - lang: ko
+    role: translation
+    text: 야고보
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44047
+  - lang: ru
+    role: translation
+    text: Иаков Алфеев
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44047
+description_md: |-
+  One of the apostles. His attribute: a fuller's club.
+
+  **In art:** A fuller's club.
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q44047
+metadata:
+  sources: [Wikidata Q44047 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/%28Albi%29_Saint_Jacques_le_Mineur_1620_-_Georges_de_La_Tour_Inv.169.jpg/1280px-%28Albi%29_Saint_Jacques_le_Mineur_1620_-_Georges_de_La_Tour_Inv.169.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:(Albi)_Saint_Jacques_le_Mineur_1620_-_Georges_de_La_Tour_Inv.169.jpg
+    license: Public domain
+    credit: Didier Descouens
+identifiers:
+  gnd: 11871161X
+  viaf: "6768156133216958430002"

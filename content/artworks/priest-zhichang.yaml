@@ -8,6 +8,7 @@ names:
       - accessed: 2026-11-24
         wikidata: Q107045343
 parent: deeds-of-the-zen-masters
+creator: yintuoluo
 created: 14th century
 created_span: uncertain
 institution: seikado-bunko-library
@@ -67,6 +68,9 @@ sources:
     - accessed: 2026-11-24
       property: P179
       wikidata: Q107045343
+  creator:
+    - source: kunishitei-201-90
+      accessed: 2026-11-25
   location:
     - accessed: 2026-11-24
       property: P625

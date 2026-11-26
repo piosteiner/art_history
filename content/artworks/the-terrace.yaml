@@ -1,11 +1,13 @@
 public_id: 125126
 title_lang: en
 title: The Terrace
+attribution_label: Anonymous, Dutch (Delft)
 created: c. 1660
 created_span: uncertain
 materials: [oil paint, canvas]
 institution: art-institute-of-chicago
 inventory_number: "1948.81"
+web_url: https://www.artic.edu/artworks/62460
 wikidata_id: Q20275199
 metadata:
   sources: [Wikidata Q20275199 (retrieved 2026-11-24)]
@@ -213,3 +215,6 @@ sources:
     - accessed: 2026-11-24
       property: P217
       wikidata: Q20275199
+  attribution_label:
+    - source: aic-1948-81
+      accessed: 2026-11-25

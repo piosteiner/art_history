@@ -8,6 +8,7 @@ names:
       - accessed: 2026-11-24
         wikidata: Q107045329
 parent: deeds-of-the-zen-masters
+creator: yintuoluo
 created: 14th century
 created_span: uncertain
 institution: ishibashi-foundation-art-research-center
@@ -57,6 +58,9 @@ sources:
     - accessed: 2026-11-24
       property: P179
       wikidata: Q107045329
+  creator:
+    - source: kunishitei-201-100
+      accessed: 2026-11-25
   location:
     - accessed: 2026-11-24
       property: P625

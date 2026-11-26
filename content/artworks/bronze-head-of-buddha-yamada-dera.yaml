@@ -6,6 +6,7 @@ names:
   - lang: ja
     role: original
     text: 興福寺仏頭
+attribution_label: Anonymous
 created: 685
 institution: kofuku-ji
 wikidata_id: Q107045995
@@ -91,3 +92,6 @@ sources:
     - accessed: 2026-11-24
       property: P571
       wikidata: Q107045995
+  attribution_label:
+    - source: kunishitei-201-277
+      accessed: 2026-11-25

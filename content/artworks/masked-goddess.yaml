@@ -17,6 +17,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045454
+attribution_label: Anonymous
 institution: togariishi-jomon-archaeological-museum
 location: [138.2339, 36.01358]
 wikidata_id: Q107045454
@@ -66,3 +67,6 @@ sources:
     - accessed: 2026-11-24
       property: P625
       wikidata: Q107045454
+  attribution_label:
+    - source: kunishitei-201-00011237
+      accessed: 2026-11-25

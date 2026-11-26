@@ -1,10 +1,17 @@
 public_id: 130084
 name: Manshu-in
+names:
+  - Manshuin
+  - lang: ja
+    role: original
+    text: "{曼殊院|まんしゅいん}"
+  - Manjuin
 kind: temple
 founded: 7th century
 place: kyoto
 location: [135.80306, 35.04882]
 address: 京都市左京区一乗寺竹ノ内町42
+description_md: A Tendai temple in the north-east of Kyoto, which keeps a twelfth-century copy of the Yellow Fudō of Onjōji. [[source/history-of-japanese-art|p. 139, fig. 168]]
 website_url: https://www.manshuinmonzeki.jp/
 wikidata_id: Q3076940
 metadata:

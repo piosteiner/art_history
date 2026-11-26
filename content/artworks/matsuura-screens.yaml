@@ -17,6 +17,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107046198
+attribution_label: Anonymous
 created: 1624/1644
 dimensions: [153, 363]
 institution: museum-yamato-bunkakan
@@ -87,3 +88,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q107046198
+  attribution_label:
+    - source: kunishitei-201-107
+      accessed: 2026-11-25

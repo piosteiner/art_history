@@ -1,0 +1,87 @@
+public_id: 130793
+name: Dante Alighieri
+given_name: Dante
+family_name: Alighieri
+names:
+  - kind: birth
+    lang: mul
+    role: former
+    text: Dante da Alaghiero degli Alaghieri
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1067
+  - lang: ja
+    role: translation
+    text: ダンテ・アリギエーリ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1067
+  - lang: zh
+    role: translation
+    text: 但丁·阿利吉耶里
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1067
+  - lang: ko
+    role: translation
+    text: 단테 알리기에리
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1067
+  - lang: ru
+    role: translation
+    text: Данте Алигьери
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1067
+kind: person
+occupations: [poet, writer, prose writer, politician, philosopher, political theorist, intellectual, linguist, theologian]
+birth: c. 1265
+death: 1321-09-22
+description_md: |-
+  Dante Alighieri, the poet of the *Divine Comedy* (early 14th century), described his journey through Hell (*Inferno*), Purgatory and Paradise. [[beatrice]], the woman he loved from afar, guides him through Paradise.
+
+  **In art:** A man in a red robe and laurel wreath, with [[person/virgil]] in Hell.
+
+  **Famous works**
+
+  - [[artist/sandro-botticelli]], *Map of Hell* and *Divine Comedy* drawings (Vatican Library and Kupferstichkabinett, Berlin)
+  - Henry Holiday, *Dante and Beatrice* (1883; Walker Art Gallery, Liverpool)
+  - [[artist/eugene-delacroix]], *The Barque of Dante* (1822; Louvre)
+  - [[artist/auguste-rodin]], *The Gates of Hell* (Musée Rodin)
+
+  *From:* Dante, Divine Comedy · Italian
+wikidata_id: Q1067
+metadata:
+  sources: [Wikidata Q1067 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6f/Portrait_de_Dante.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_de_Dante.jpg
+    license: Public domain
+    credit: Sandro Botticelli
+identifiers:
+  bnf: "118985852"
+  gnd: "118523708"
+  idref: "026811081"
+  lc: n78095495
+  nlk: KAC199606278
+  rkd: "424139"
+  ulan: "500265888"
+  viaf: "97105654"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q1067
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q1067
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q1067
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q1067

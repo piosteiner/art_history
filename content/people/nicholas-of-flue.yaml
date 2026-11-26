@@ -1,0 +1,96 @@
+public_id: 130766
+name: Nicholas of Flüe
+names:
+  - text: Nicholas of Fluee
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q115550
+  - lang: nl
+    role: translation
+    text: Nicolaas van Flüe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q115550
+  - lang: fr
+    role: translation
+    text: Nicolas de Flue
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q115550
+  - lang: de
+    role: translation
+    text: Niklaus von Flüe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q115550
+  - lang: it
+    role: translation
+    text: Nicola di Flüe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q115550
+  - lang: es
+    role: translation
+    text: Nicolás de Flüe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q115550
+  - lang: ja
+    role: translation
+    text: フルーエの聖ニコラス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q115550
+  - lang: zh
+    role: translation
+    text: 弗呂的聖尼各老
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q115550
+  - lang: ru
+    role: translation
+    text: Николай из Флюэ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q115550
+kind: person
+occupations: [hermit, magistrate, politician, judge, mystic, writer]
+birth: 1417
+death: 1487-03-30
+description_md: |-
+  Saint Nicholas of Flüe (Bruder Klaus), a 15th-century hermit from Obwalden and patron saint of Switzerland.
+
+  *From:* history · Christian
+wikidata_id: Q115550
+metadata:
+  sources: [Wikidata Q115550 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f1/Nicholas-Flue.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nicholas-Flue.jpg
+    license: Public domain
+    credit: User Geogre on en.wikipedia
+identifiers:
+  bnf: 11984388j
+  dodis: P4955
+  gnd: "118588087"
+  hls: "010224"
+  idref: "027901750"
+  lc: n50083311
+  viaf: "29782027"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q115550
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q115550
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q115550
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q115550

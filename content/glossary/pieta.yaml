@@ -9,6 +9,16 @@ names:
     text: Marienklage
 category: iconography
 definition: biblical and artistic theme of the Virgin Mary cradling the dead body of Jesus
+description_md: |-
+  Mary holds her dead son's body in her lap (*Pietà*, "pity").
+
+  **In art:** A seated woman holding a dead man across her knees.
+
+  **Famous works**
+
+  - [[artist/michelangelo]], *Pietà* (St Peter's Basilica, his only signed work) and *Rondanini Pietà* (Milan)
+
+  *From:* New Testament, Gospels · Christian
 wikidata_id: Q223689
 metadata:
   sources: [Wikidata Q223689 (retrieved 2026-11-04)]
@@ -27,3 +37,5 @@ sources:
   definition:
     - accessed: 2026-11-04
       wikidata: Q223689
+    - source: wikipedia-en-pieta
+      accessed: 2026-11-25

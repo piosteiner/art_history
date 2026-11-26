@@ -1,0 +1,57 @@
+public_id: 130647
+name: Imhotep
+names:
+  - lang: ja
+    role: translation
+    text: イムホテプ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131171
+  - lang: zh
+    role: translation
+    text: 印何闐
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131171
+  - lang: ko
+    role: translation
+    text: 임호테프
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131171
+  - lang: ru
+    role: translation
+    text: Имхотеп
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131171
+kind: person
+occupations: [architect, engineer, astronomer, physician, master builder, writer]
+description_md: |-
+  He is credited with building the first pyramid, the Step Pyramid of Djoser, about 2650 BC. Two thousand years later, the Egyptians worshipped him as a god of medicine, and the Greeks identified him with [[asclepius]].
+
+  *From:* Ancient Egyptian
+wikidata_id: Q131171
+metadata:
+  sources: [Wikidata Q131171 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Imhotep-E_3639-IMG_4607-gradient.jpg/1280px-Imhotep-E_3639-IMG_4607-gradient.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Imhotep-E_3639-IMG_4607-gradient.jpg
+    license: CC BY-SA 3.0 fr
+    credit: Rama
+identifiers:
+  bnf: "119944761"
+  gnd: "118555529"
+  idref: "096159073"
+  lc: no2005090540
+  ulan: "500125211"
+  viaf: "59875989"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q131171
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q131171

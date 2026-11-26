@@ -61,6 +61,7 @@ materials: [oil paint, oak panel]
 dimensions: [34, 25.5]
 institution: national-gallery-of-art
 inventory_number: 1937.1.44
+web_url: https://www.nga.gov/collection/art-object-page.51.html
 provenance_status: a_clear
 provenance_status_note: Bought by Andrew W. Mellon in December 1926; deeded 30 March 1932 to The A.W. Mellon Educational and Charitable Trust, which gave it to the NGA in 1937.
 wikidata_id: Q2439462
@@ -103,7 +104,7 @@ provenance:
         note: Friedrich I, Duke of Anhalt [d. 1904];[2] — [2] Bruges, Hôtel de Gouvernement Provincial, 1902, Exposition des primitifs flamands et d'art ancien, no. 108, lists the Duke as the current owner.
         source: nga-1937-1-44
         accessed: 2026-11-24
-  - owner: person/friedrich-ii-duke-of-anhalt-2
+  - owner: person/friedrich-ii-duke-of-anhalt
     direct: true
     place: worlitz
     label: Gotisches Haus, Wörlitz, and Herzogliches Schloss, Dessau

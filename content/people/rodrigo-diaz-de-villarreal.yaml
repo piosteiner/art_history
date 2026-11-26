@@ -1,0 +1,107 @@
+public_id: 130794
+name: Rodrigo Díaz de Villarreal
+given_name: Rodrigo Díaz
+family_name: de Villarreal
+names:
+  - kind: birth
+    lang: la
+    role: former
+    text: Ruderico Didaz
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43958
+  - kind: pseudonym
+    role: alternative
+    text: El Campeador
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43958
+  - kind: pseudonym
+    role: alternative
+    text: El Cid
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43958
+  - kind: pseudonym
+    role: alternative
+    text: El Cid Campeador (Main edgar)
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43958
+  - lang: es
+    role: original
+    text: Rodrigo Díaz de Vivar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43958
+  - text: El Cid Campeador
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43958
+  - lang: ja
+    role: translation
+    text: エル・シッド
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43958
+  - lang: zh
+    role: translation
+    text: 熙德
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43958
+  - lang: ko
+    role: translation
+    text: 엘 시드
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43958
+  - lang: ru
+    role: translation
+    text: Сид Кампеадор
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43958
+kind: person
+occupations: [knight, mercenary, military personnel, politician, military leader]
+birth: c. 1048
+death: 1099-05/1099-07-16
+death_label: c. 1099
+description_md: |-
+  Rodrigo Díaz de Vivar, a real Castilian knight of the 11th century, who became the hero of Spain's national epic, the *Cantar de mio Cid*. According to legend, after his death his body was set on his horse, Babieca, in his armour to lead his army to one last victory.
+
+  **Famous works**
+
+  - Anna Hyatt Huntington, *El Cid Campeador* (equestrian bronze, 1927, Hispanic Society of America, New York; further casts in Seville, Valencia, San Francisco, San Diego, Buenos Aires)
+
+  *From:* Cantar de mio Cid · Castilian
+wikidata_id: Q43958
+metadata:
+  sources: [Wikidata Q43958 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/94/Balboa_Park_El_Cid_statue_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Balboa_Park_El_Cid_statue_2.jpg
+    license: CC BY-SA 3.0
+identifiers:
+  bnf: 12000313m
+  gnd: "118838989"
+  idref: "028101545"
+  lc: n82117610
+  viaf: "22938662"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q43958
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q43958
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q43958
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q43958

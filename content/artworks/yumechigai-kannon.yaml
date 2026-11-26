@@ -15,6 +15,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045991
+attribution_label: Anonymous
 created: late 7th century
 created_span: uncertain
 institution: horyu-ji
@@ -57,3 +58,7 @@ provenance:
         note: 1998年に建立され … 東西の宝蔵には、夢違観音像、玉虫厨子 … 橘夫人厨子 … など、名宝の数々が安置されている。
         source: jta-r1-00182
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-221
+      accessed: 2026-11-25

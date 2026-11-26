@@ -11,10 +11,12 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045367
+creator: ike-taiga
 created: 18th century
 created_span: uncertain
 institution: tokyo-national-museum
 inventory_number: A-10430
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-10430?locale=en
 location: [139.7756, 35.71994]
 wikidata_id: Q107045367
 metadata:
@@ -92,6 +94,9 @@ provenance:
 identifiers:
   emuseum: "100149"
 sources:
+  creator:
+    - source: kunishitei-201-57
+      accessed: 2026-11-25
   location:
     - accessed: 2026-11-24
       property: P625

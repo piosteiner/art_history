@@ -16,17 +16,21 @@ relationships:
         property: P27
         wikidata: Q117524
   - type: born_in
-    to: place/zurich
+    to: place/enge
     sources:
-      - accessed: 2026-10-30
-        property: P19
-        wikidata: Q117524
+      - note: '"10.7.1858 Enge (heute Gemeinde Zürich)"'
+        source: hls-welti-escher-lydia
+        accessed: 2026-11-26
   - type: died_in
-    to: place/geneva
+    to: place/champel
     sources:
-      - accessed: 2026-10-30
-        property: P20
-        wikidata: Q117524
+      - note: '"12.12.1891 Champel (Gemeinde Genf)"'
+        source: hls-welti-escher-lydia
+        accessed: 2026-11-26
+      - url: https://collection.kunsthaus.ch/de/collection/item/2063/
+        note: '"Lydia Welti-Escher (*1858 Zürich, +1891 Champel)"'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-11-26
   - type: founded
     to: institution/gottfried-keller-stiftung
     sources:

@@ -6,6 +6,7 @@ names:
   - lang: ja
     role: original
     text: 清凉寺木造釈迦如来立像
+attribution_label: Zhang Yanjiao and Zhang Yanxi
 created: 985
 institution: seiryo-ji
 wikidata_id: Q107046734
@@ -64,3 +65,6 @@ sources:
     - accessed: 2026-11-24
       property: P571
       wikidata: Q107046734
+  attribution_label:
+    - source: kunishitei-201-258
+      accessed: 2026-11-25

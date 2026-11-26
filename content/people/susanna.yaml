@@ -1,0 +1,74 @@
+public_id: 130707
+name: Susanna
+names:
+  - lang: he
+    role: original
+    text: שׁוֹשַׁנָּה
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q756861
+  - lang: grc
+    role: original
+    text: Σωσάννα
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q756861
+  - text: Susannah
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q756861
+  - lang: fr
+    role: translation
+    text: Suzanne
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q756861
+  - lang: es
+    role: translation
+    text: Susana
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q756861
+  - lang: ja
+    role: translation
+    text: スザンナ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q756861
+  - lang: ko
+    role: translation
+    text: 수산나
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q756861
+  - lang: ru
+    role: translation
+    text: Сусанна
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q756861
+description_md: |-
+  A virtuous woman spied on by two old men while she bathed in her garden. When she refused their advances, they falsely accused her of adultery, and she was condemned to death. The young [[person/daniel]] saved her by questioning the elders separately and exposing their lies.
+
+  **In art:** A nude woman bathing, with two old men leering at or grabbing her.
+
+  **Famous works**
+
+  - [[artist/artemisia-gentileschi]], *Susanna and the Elders* (Pommersfelden)
+  - Tintoretto, *Susanna and the Elders* (Vienna) — [[artwork/susanna-and-the-elders]]
+  - [[artist/rembrandt]], *Susanna* (Mauritshuis)
+
+  *From:* Book of Daniel (additions) · Jewish
+wikidata_id: Q756861
+metadata:
+  sources: [Wikidata Q756861 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Francesco_Hayez_054.jpg/1280px-Francesco_Hayez_054.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francesco_Hayez_054.jpg
+    license: Public domain
+    credit: Francesco Hayez
+identifiers:
+  gnd: "118805304"
+  kulturnav: ffea2e91-a56b-4dfa-b741-84adcc0495b3
+  lc: n92004748
+  viaf: "4119887"

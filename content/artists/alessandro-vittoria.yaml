@@ -21,6 +21,13 @@ death: 1608-05-27
 wikidata_id: Q1347426
 metadata:
   sources: [Wikidata Q1347426 (retrieved 2026-10-19)]
+relationships:
+  - type: student_of
+    to: artist/jacopo-sansovino
+    sources:
+      - accessed: 2026-11-25
+        property: P802
+        wikidata: Q202267
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/e/e4/Paolo_Veronese_044.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Paolo_Veronese_044.jpg

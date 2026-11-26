@@ -1,0 +1,31 @@
+public_id: 130627
+name: Tamura Suiō
+names:
+  - text: Tamura Suiou
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q11576952
+  - text: Tamura Suio
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q11576952
+  - lang: ja
+    role: translation
+    text: 田村水鷗
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q11576952
+  - lang: ru
+    role: translation
+    text: Суио Тамура
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q11576952
+active: late 17th century–early 18th century
+wikidata_id: Q11576952
+metadata:
+  sources: [Wikidata Q11576952 (retrieved 2026-11-25)]
+sources:
+  active:
+    - source: cma-1985-275
+      accessed: 2026-11-25

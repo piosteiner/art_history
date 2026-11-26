@@ -1,0 +1,79 @@
+public_id: 130672
+name: Hershel of Ostropol
+names:
+  - lang: yi
+    role: original
+    text: הערשעלע אָסטראָפּאָלער
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1614517
+  - lang: uk
+    role: original
+    text: Гершеле Остропільський
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1614517
+  - lang: ru
+    role: original
+    text: Гершеле Острополер
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1614517
+  - text: Hershele Ostropoler
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1614517
+  - text: Hershele Ostropolyer
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1614517
+  - lang: nl
+    role: translation
+    text: Hersch Ostropoler
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1614517
+  - lang: zh
+    role: translation
+    text: 赫舍莱·奥斯特罗皮利
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1614517
+  - lang: ru
+    role: original
+    text: Герш Острополер
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1614517
+kind: person
+occupations: [cabaret performer, jester, badchen, comedian]
+birth: 1757
+death: 1811
+description_md: |-
+  A real 18th-century jester from Ukraine who became the hero of many Yiddish jokes. Poor but clever, he fooled rich misers and pompous people. Once, he told an innkeeper's wife that if he didn't feed him, he'd "do what his father did". Frightened, she fed him, then asked what his father had done. "He went to bed hungry," said Hershele.
+
+  *From:* Jewish (Yiddish, Ukraine)
+wikidata_id: Q1614517
+metadata:
+  sources: [Wikidata Q1614517 (retrieved 2026-11-25)]
+identifiers:
+  gnd: "119548534"
+  lc: n81040829
+  viaf: "297520630"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q1614517
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q1614517
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q1614517
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q1614517

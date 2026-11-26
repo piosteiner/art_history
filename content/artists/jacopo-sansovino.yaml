@@ -2,3 +2,50 @@ public_id: 122924
 name: Jacopo Sansovino
 given_name: Jacopo
 family_name: Sansovino
+birth: 1486-07-11
+death: 1570-12-07
+wikidata_id: Q202267
+metadata:
+  sources: [Wikidata Q202267 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q202267
+  - type: born_in
+    to: place/florence
+    sources:
+      - accessed: 2026-11-25
+        property: P19
+        wikidata: Q202267
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q202267
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Jacopo_Tintoretto_027.jpg/1280px-Jacopo_Tintoretto_027.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacopo_Tintoretto_027.jpg
+    license: Public domain
+    credit: Jacopo Tintoretto
+identifiers:
+  bnf: 12299923z
+  gnd: "118794485"
+  idref: "031863647"
+  kulturnav: 0da4439a-4a9c-4eb1-9a3f-147d919f20e9
+  lc: n87881471
+  rkd: "69659"
+  ulan: "500019903"
+  viaf: "77111998"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q202267
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q202267

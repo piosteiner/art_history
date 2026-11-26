@@ -1,0 +1,110 @@
+public_id: 130752
+name: Saint Christopher
+names:
+  - lang: el
+    role: original
+    text: Άγιος Χριστόφορος
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q193507
+  - text: Christopher
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q193507
+  - text: St. Christopher
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q193507
+  - lang: nl
+    role: translation
+    text: Christoffel van Lycië
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q193507
+  - lang: fr
+    role: translation
+    text: Christophe de Lycie
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q193507
+  - lang: de
+    role: translation
+    text: Christophorus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q193507
+  - lang: it
+    role: translation
+    text: San Cristoforo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q193507
+  - lang: es
+    role: translation
+    text: Cristóbal de Licia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q193507
+  - lang: ja
+    role: translation
+    text: クリストフォロス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q193507
+  - lang: zh
+    role: translation
+    text: 聖克里斯多福
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q193507
+  - lang: ko
+    role: translation
+    text: 크리스토포로스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q193507
+  - lang: ru
+    role: translation
+    text: Святой Христофор
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q193507
+kind: person
+birth: 3rd century
+death: c. 251
+description_md: |-
+  A giant who served travellers by carrying them across a dangerous river. One day, he carried a small child who grew heavier and heavier until it felt like he was carrying the whole world. The child was Christ. Patron saint of travellers.
+
+  **In art:** A giant wading through a river with a staff and a child on his shoulders. Often painted very large opposite the church door.
+
+  **Famous works**
+
+  - [[artist/hieronymus-bosch]], *Saint Christopher* (Museum Boijmans Van Beuningen, Rotterdam)
+  - [[artist/dieric-bouts]] or Dieric Bouts the Younger (attribution disputed), *Saint Christopher* (right wing of the *Pearl of Brabant* triptych, Alte Pinakothek, Munich)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q193507
+metadata:
+  sources: [Wikidata Q193507 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Konrad_Witz_004.jpg/1280px-Konrad_Witz_004.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Konrad_Witz_004.jpg
+    license: Public domain
+    credit: Konrad Witz
+identifiers:
+  gnd: "118520725"
+  lc: n50072233
+  viaf: "33245048"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q193507
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q193507
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q193507

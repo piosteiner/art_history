@@ -1,0 +1,132 @@
+public_id: 130791
+name: Charlemagne
+names:
+  - lang: mul
+    role: original
+    text: Karolus Magnus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - text: Charles I
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - text: Charles the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - text: Karl the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - text: Emperor Charlemagne
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - text: Charlemagne the Franc
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - text: Carlus Magnus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - text: Carl the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - lang: nl
+    role: translation
+    text: Karel de Grote
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - lang: de
+    role: translation
+    text: Karl der Große
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - lang: it
+    role: translation
+    text: Carlo Magno
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - lang: es
+    role: translation
+    text: Carlomagno
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - lang: ja
+    role: translation
+    text: シャルルマーニュ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - lang: zh
+    role: translation
+    text: 卡尔莱马格内
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - lang: ko
+    role: translation
+    text: 차레막네
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+  - lang: ru
+    role: translation
+    text: Карл Великий
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q3044
+kind: person
+occupations: [monarch, sovereign]
+birth: 748-04-06
+death: 814-02-01
+description_md: |-
+  Charlemagne was the real Frankish emperor (crowned AD 800), who became a legendary figure. In the *Song of Roland*, his nephew [[roland]] died fighting a huge army at the pass of Roncevaux.
+
+  **In art:** An emperor with a crown, orb and sword.
+
+  **Famous works**
+
+  - [[artist/albrecht-durer]], *Emperor Charlemagne* (Nuremberg)
+
+  *From:* The Song of Roland · Frankish
+wikidata_id: Q3044
+metadata:
+  sources: [Wikidata Q3044 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Charlemagne_denier_Mayence_812_814.jpg/1280px-Charlemagne_denier_Mayence_812_814.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Charlemagne_denier_Mayence_812_814.jpg
+    license: Public domain
+    credit: Charlemagne. Autorité émettrice de monnaie indéterminé. Atelier monétaire. Émetteur
+identifiers:
+  bnf: 11940325v
+  gnd: "118560034"
+  hls: "020775"
+  idref: "027339793"
+  lc: n79043619
+  ulan: "500097003"
+  viaf: "89643029"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q3044
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q3044
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q3044
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q3044

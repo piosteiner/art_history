@@ -1,0 +1,123 @@
+public_id: 130737
+name: Jude the Apostle
+given_name: Jude the
+family_name: Apostle
+names:
+  - text: Judas Thaddaeus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - text: Jude Thaddaeus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - text: St Jude Thaddeus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - text: Saint Jude Thaddeus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - text: Iudas Thaddaeus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - text: St Jude
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - lang: nl
+    role: translation
+    text: Judas Taddeüs
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - lang: fr
+    role: translation
+    text: Jude
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - lang: de
+    role: translation
+    text: Judas Thaddäus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - lang: it
+    role: translation
+    text: Giuda Taddeo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - lang: es
+    role: translation
+    text: Judas Tadeo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - lang: ja
+    role: translation
+    text: タダイ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - lang: zh
+    role: translation
+    text: 猶大
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - lang: ko
+    role: translation
+    text: 유다 타대오
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+  - lang: ru
+    role: translation
+    text: Апостол Фаддей
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43945
+kind: person
+occupations: [farmer, missionary]
+birth: c. 10
+death: c. 62
+description_md: |-
+  One of the apostles. His attribute: a club or halberd.
+
+  **In art:** A club or halberd.
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q43945
+metadata:
+  sources: [Wikidata Q43945 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/53/Anthonis_van_Dyck_088.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anthonis_van_Dyck_088.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+identifiers:
+  gnd: "118713337"
+  idref: "101268483"
+  lc: n94049160
+  viaf: "47556758"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q43945
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q43945
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q43945
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q43945

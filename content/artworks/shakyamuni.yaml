@@ -1,6 +1,7 @@
 public_id: 124761
 title_lang: en
 title: Shakyamuni
+attribution_label: Anonymous, Japanese
 created: c. 900
 created_span: uncertain
 institution: cleveland-museum-of-art
@@ -62,3 +63,6 @@ sources:
     - accessed: 2026-11-24
       property: P217
       wikidata: Q79939282
+  attribution_label:
+    - source: cma-1986-7
+      accessed: 2026-11-25

@@ -1,0 +1,78 @@
+public_id: 130805
+name: Ono no Komachi
+names:
+  - lang: ja
+    role: original
+    text: 小野小町
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q198984
+  - text: Ono, Komachi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q198984
+  - text: Komachi Ono
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q198984
+  - text: Ono no Komochi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q198984
+  - lang: ko
+    role: translation
+    text: 오노노 고마치
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q198984
+  - lang: ru
+    role: translation
+    text: Оно-но Комати
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q198984
+kind: person
+occupations: [poet, writer]
+birth: c. 825
+death: c. 900
+description_md: |-
+  Ono no Komachi was a 9th-century woman poet famous for her beauty and her cruelty to lovers. In legend, in old age she became a poor, ugly beggar, which made her a Buddhist lesson about impermanence. She is one of the Thirty-Six Immortal Poets (*Sanjūrokkasen*).
+
+  **In art:** An elegant court lady with long hair and twelve-layered robes, or a ragged old woman sitting on a stupa.
+
+  **Famous works**
+
+  - Yashima Gakutei and others, *Ono no Komachi* (surimono prints)
+
+  *From:* Japanese
+wikidata_id: Q198984
+metadata:
+  sources: [Wikidata Q198984 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Suzuki_Harunobu_-_The_Poetess_Ono_no_Komachi_-_1925.2046_-_Art_Institute_of_Chicago.jpg/1280px-Suzuki_Harunobu_-_The_Poetess_Ono_no_Komachi_-_1925.2046_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Suzuki_Harunobu_-_The_Poetess_Ono_no_Komachi_-_1925.2046_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Suzuki Harunobu
+identifiers:
+  bnf: 16753865r
+  gnd: "102416745"
+  idref: "035269812"
+  lc: n81108459
+  viaf: "79259186"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q198984
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q198984
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q198984
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q198984

@@ -1,0 +1,107 @@
+public_id: 130768
+name: Saint Apollonia
+names:
+  - lang: grc
+    role: original
+    text: Ἀπολλωνία
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232427
+  - text: Apollonia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232427
+  - text: Apollonia of Alexandria
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232427
+  - lang: nl
+    role: translation
+    text: Apollonia van Alexandrië
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232427
+  - lang: fr
+    role: translation
+    text: Apolline d'Alexandrie
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232427
+  - lang: de
+    role: translation
+    text: Apollonia von Alexandria
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232427
+  - lang: it
+    role: translation
+    text: Apollonia di Alessandria
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232427
+  - lang: es
+    role: translation
+    text: Apolonia de Alejandría
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232427
+  - lang: ja
+    role: translation
+    text: アポロニア
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232427
+  - lang: ko
+    role: translation
+    text: 아폴로니아
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232427
+  - lang: ru
+    role: translation
+    text: Аполлония Александрийская
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q232427
+kind: person
+birth: 2nd century
+death: 249-02-09
+death_label: c. 9 February 249
+description_md: |-
+  A virgin martyr of Alexandria (an "aged virgin" or perhaps a deaconess) whose teeth were smashed out before she leapt into the fire. Patron saint of dentists.
+
+  **In art:** A woman holding pincers gripping a tooth.
+
+  **Famous works**
+
+  - [[artist/francisco-de-zurbaran]], *Saint Apollonia* (Louvre)
+  - Jean Fouquet, *The Martyrdom of Saint Apollonia*, Hours of Étienne Chevalier (Musée Condé, Chantilly)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q232427
+metadata:
+  sources: [Wikidata Q232427 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d7/Francisco_de_Zurbar%C3%A1n_035.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n_035.jpg
+    license: Public domain
+    credit: Francisco de Zurbarán
+identifiers:
+  bnf: 12254442t
+  gnd: "119454874"
+  idref: "142808873"
+  lc: n85126180
+  viaf: "1442580"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q232427
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q232427
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q232427

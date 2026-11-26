@@ -1,0 +1,101 @@
+public_id: 130764
+name: Saint Gall
+names:
+  - text: Gallen
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q180936
+  - text: Gallus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q180936
+  - lang: nl
+    role: translation
+    text: Gallus van Zwitserland
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q180936
+  - lang: fr
+    role: translation
+    text: Gall de Suisse
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q180936
+  - lang: it
+    role: translation
+    text: San Gallo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q180936
+  - lang: es
+    role: translation
+    text: Galo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q180936
+  - lang: ja
+    role: translation
+    text: ガルス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q180936
+  - lang: zh
+    role: translation
+    text: 聖加爾
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q180936
+  - lang: ko
+    role: translation
+    text: 성 갈루스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q180936
+  - lang: ru
+    role: translation
+    text: Святой Галл
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q180936
+kind: person
+occupations: [missionary, writer, composer]
+birth: 550
+death: 645-10-16
+description_md: |-
+  Saint Gall, a monk, by tradition from Ireland, whose hermitage became the Abbey of St. Gallen; in legend a bear carried wood to his fire and was given bread in return.
+
+  **In art:** Saint Gall with a bear.
+
+  *From:* legend of St. Gallen · Christian
+wikidata_id: Q180936
+metadata:
+  sources: [Wikidata Q180936 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Rountzenheim_SteCroix_39.jpg/1280px-Rountzenheim_SteCroix_39.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rountzenheim_SteCroix_39.jpg
+    license: Public domain
+    credit: © Ralph Hammann - Wikimedia Commons
+identifiers:
+  bnf: 15110525z
+  gnd: "118537350"
+  hls: "010216"
+  idref: "167552376"
+  lc: n85385299
+  viaf: "264088963"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q180936
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q180936
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q180936
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q180936

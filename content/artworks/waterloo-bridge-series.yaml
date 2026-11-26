@@ -1,10 +1,15 @@
 public_id: 125248
 title: Waterloo Bridge series
+creator: claude-monet
 kind: series
 wikidata_id: Q3795196
 metadata:
   sources: [Wikidata Q3795196 (retrieved 2026-11-24)]
 sources:
+  creator:
+    - accessed: 2026-11-25
+      property: P170
+      wikidata: Q3795196
   title_status:
     - accessed: 2026-11-24
       wikidata: Q3795196

@@ -1,0 +1,85 @@
+public_id: 130727
+name: Judas Iscariot
+given_name: Judas
+family_name: Iscariot
+names:
+  - lang: nl
+    role: translation
+    text: Judas Iskariot
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q81018
+  - lang: fr
+    role: translation
+    text: Judas Iscariote
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q81018
+  - lang: de
+    role: translation
+    text: Judas Ischariot
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q81018
+  - lang: it
+    role: translation
+    text: Giuda Iscariota
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q81018
+  - lang: ja
+    role: translation
+    text: イスカリオテのユダ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q81018
+  - lang: zh
+    role: translation
+    text: 加略人猶大
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q81018
+  - lang: ko
+    role: translation
+    text: 이스가리옷 유다
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q81018
+  - lang: ru
+    role: translation
+    text: Иуда Искариот
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q81018
+occupations: [treasurer]
+description_md: |-
+  The apostle who betrayed Jesus for thirty pieces of silver. Filled with remorse, he hanged himself (Matthew; Acts tells of a different death).
+
+  **In art:** Often shown in yellow, with red hair, holding a money bag, sitting apart at the [[last-supper]], or hanging from a tree.
+
+  **Famous works**
+
+  - [[artist/giotto]], *The Kiss of Judas* (Scrovegni Chapel)
+  - [[artist/rembrandt]], *Judas Returning the Thirty Silver Pieces* (private collection)
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q81018
+metadata:
+  sources: [Wikidata Q81018 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d1/Almeida_J%C3%BAnior_-_Remorso_de_Judas%2C_1880.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Almeida_J%C3%BAnior_-_Remorso_de_Judas,_1880.jpg
+    license: Public domain
+    credit: José Ferraz de Almeida Júnior
+identifiers:
+  bnf: 16604390m
+  gnd: "118558536"
+  idref: "028874560"
+  lc: n82053231
+  nlk: KAC201624565
+  viaf: "78757239"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q81018

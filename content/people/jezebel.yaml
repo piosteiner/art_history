@@ -1,0 +1,88 @@
+public_id: 130724
+name: Jezebel
+names:
+  - lang: nl
+    role: translation
+    text: Izebel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q721295
+  - lang: fr
+    role: translation
+    text: Jézabel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q721295
+  - lang: de
+    role: translation
+    text: Isebel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q721295
+  - lang: it
+    role: translation
+    text: Gezabele
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q721295
+  - lang: es
+    role: translation
+    text: Jezabel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q721295
+  - lang: ja
+    role: translation
+    text: イゼベル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q721295
+  - lang: zh
+    role: translation
+    text: 耶洗別
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q721295
+  - lang: ko
+    role: translation
+    text: 이세벨
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q721295
+  - lang: ru
+    role: translation
+    text: Иезавель
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q721295
+occupations: [monarch, priest]
+description_md: |-
+  Jezebel was the wicked wife of King Ahab, who persecuted the prophets, and was thrown from a window and eaten by dogs.
+
+  **In art:** A painted queen at a window.
+
+  **Famous works**
+
+  - John Liston Byam Shaw, *Jezebel* (1896, Russell-Cotes Art Gallery & Museum, Bournemouth)
+  - Gustave Doré, Bible illustrations
+
+  *From:* Hebrew Bible, Books of Kings · Hebrew Bible
+wikidata_id: Q721295
+metadata:
+  sources: [Wikidata Q721295 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/03/John_Liston_Byam_Shaw_003.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:John_Liston_Byam_Shaw_003.jpg
+    license: Public domain
+    credit: John Byam Liston Shaw
+identifiers:
+  bnf: 17077899c
+  gnd: "118710893"
+  idref: "100808786"
+  lc: n82208006
+  viaf: "57409395"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q721295

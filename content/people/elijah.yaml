@@ -1,0 +1,173 @@
+public_id: 130702
+name: Elijah
+names:
+  - lang: he
+    role: original
+    text: אליהו
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Eliyyah
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Elijah the Prophet
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: St. Ilija
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Eliahu ha-Navi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Eliyah
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Ilyaseen
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Elijah the Tishbite from Tishby
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Eliyohu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Eliyahu Hanavi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Elija
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Elya
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Elyahu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Eliahu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: ’Ilyās
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Saint Elijah
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Elijah the Tishbite
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Eliyahu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Eliya
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: St. Elijah
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Ilya
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Prophet Elias
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Eliyyahu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - text: Eilyohu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - lang: nl
+    role: translation
+    text: Elia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - lang: fr
+    role: translation
+    text: Élie
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - lang: es
+    role: translation
+    text: Elías
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - lang: ja
+    role: translation
+    text: エリヤ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - lang: zh
+    role: translation
+    text: 以利亞
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - lang: ko
+    role: translation
+    text: 엘리야
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+  - lang: ru
+    role: translation
+    text: Илия
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q133507
+occupations: [thaumaturge, prophet]
+description_md: |-
+  A prophet who challenged the priests of Baal, was fed by ravens in the desert, and was taken up to heaven alive in a whirlwind, with a chariot and horses of fire (in art he rides the chariot).
+
+  **In art:** An old prophet fed by a raven, or rising into the sky in a flaming chariot.
+
+  **Famous works**
+
+  - Washington Allston, *Elijah in the Desert* (Boston)
+  - Giovanni Girolamo Savoldo, *Elijah Fed by the Raven* (Washington)
+
+  *From:* Hebrew Bible, Books of Kings · Hebrew Bible
+wikidata_id: Q133507
+metadata:
+  sources: [Wikidata Q133507 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Iliya_prorok_ikona_Pskov.jpg/1280px-Iliya_prorok_ikona_Pskov.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Iliya_prorok_ikona_Pskov.jpg
+    license: Public domain
+    credit: Anonimous, Pskov school
+identifiers:
+  bnf: 11944721j
+  gnd: "118529811"
+  lc: n80144651
+  viaf: "83461902"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q133507

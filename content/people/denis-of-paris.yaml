@@ -1,0 +1,120 @@
+public_id: 130762
+name: Denis of Paris
+names:
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: Apostle of the French
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+  - text: Dionysius Parisiensis
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+  - text: Saint Denis
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+  - text: St. Denis
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+  - lang: nl
+    role: translation
+    text: Dionysius van Parijs
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+  - lang: fr
+    role: translation
+    text: Denis de Paris
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+  - lang: de
+    role: translation
+    text: Dionysius von Paris
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+  - lang: it
+    role: translation
+    text: Dionigi di Parigi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+  - lang: es
+    role: translation
+    text: Dionisio de París
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+  - lang: ja
+    role: translation
+    text: パリのディオニュシウス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+  - lang: zh
+    role: translation
+    text: 聖德尼
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+  - lang: ko
+    role: translation
+    text: 파리의 디오니시우스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+  - lang: ru
+    role: translation
+    text: Дионисий Парижский
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q244380
+kind: person
+occupations: [Catholic priest, Catholic bishop]
+birth: 3rd century
+death: c. 250
+description_md: |-
+  The first bishop of Paris, beheaded on Montmartre ("mountain of martyrs", the popular derivation; the name may instead come from Mons Martis). According to legend, he picked up his own head and walked several miles, preaching a sermon.
+
+  **In art:** A bishop holding his own severed head.
+
+  **Famous works**
+
+  - Portal sculptures at Notre-Dame de Paris
+  - Henri Bellechose, *The Altarpiece of Saint Denis* (Louvre)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q244380
+metadata:
+  sources: [Wikidata Q244380 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/13/Saintdenis.gif
+    source_url: https://commons.wikimedia.org/wiki/File:Saintdenis.gif
+    license: Public domain
+    credit: Original author Urban
+identifiers:
+  gnd: "118679740"
+  lc: n79113975
+  viaf: "133681115"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q244380
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q244380
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q244380
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q244380

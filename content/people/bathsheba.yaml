@@ -1,0 +1,103 @@
+public_id: 130700
+name: Bathsheba
+names:
+  - lang: he
+    role: original
+    text: בת שבע
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+  - text: Bathshua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+  - text: Bat Sheva
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+  - text: Bethsabe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+  - lang: nl
+    role: translation
+    text: Batseba
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+  - lang: fr
+    role: translation
+    text: Bethsabée
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+  - lang: de
+    role: translation
+    text: Bathseba
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+  - lang: it
+    role: translation
+    text: Betsabea
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+  - lang: es
+    role: translation
+    text: Betsabé
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+  - lang: ja
+    role: translation
+    text: バト・シェバ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+  - lang: zh
+    role: translation
+    text: 拔示巴
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+  - lang: ko
+    role: translation
+    text: 밧세바
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+  - lang: ru
+    role: translation
+    text: Вирсавия
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q272277
+occupations: [queen consort]
+description_md: |-
+  As king, [[person/david]] saw Bathsheba bathing, took her, and had her husband killed in battle.
+
+  **In art:** Bathsheba is shown bathing, often receiving a letter.
+
+  **Famous works**
+
+  - [[artist/rembrandt]], *Bathsheba at Her Bath* (Louvre)
+
+  *From:* Hebrew Bible, Books of Samuel · Hebrew Bible
+wikidata_id: Q272277
+metadata:
+  sources: [Wikidata Q272277 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Willem_Drost_-_Batsheba_met_de_brief_van_koning_David.jpg/1280px-Willem_Drost_-_Batsheba_met_de_brief_van_koning_David.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Willem_Drost_-_Batsheba_met_de_brief_van_koning_David.jpg
+    license: Public domain
+    credit: Willem Drost
+identifiers:
+  gnd: "118507125"
+  lc: n80065667
+  viaf: "99149196317674791104"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q272277

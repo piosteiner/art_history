@@ -1,0 +1,116 @@
+public_id: 130749
+name: Agatha of Sicily
+names:
+  - text: Saint Agatha
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+  - text: Agatha of Catania
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+  - text: St. Agathe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+  - text: Agatha
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+  - lang: nl
+    role: translation
+    text: Agatha van Sicilië
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+  - lang: fr
+    role: translation
+    text: Agathe de Catane
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+  - lang: de
+    role: translation
+    text: Agatha von Catania
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+  - lang: it
+    role: translation
+    text: Sant'Agata
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+  - lang: es
+    role: translation
+    text: Águeda de Catania
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+  - lang: ja
+    role: translation
+    text: シチリアのアガタ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+  - lang: zh
+    role: translation
+    text: 西西里的阿加莎
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+  - lang: ko
+    role: translation
+    text: 카타니아의 아가타
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+  - lang: ru
+    role: translation
+    text: Святая Агафия
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q200895
+kind: person
+occupations: [Virgin]
+birth: 235-09-08
+death: 261-02-05
+description_md: |-
+  A Sicilian martyr whose breasts were cut off as part of her torture.
+
+  **In art:** A young woman holding a dish with two breasts on it, or pincers.
+
+  **Famous works**
+
+  - [[artist/francisco-de-zurbaran]], *Saint Agatha* (1630–1633, Musée Fabre, Montpellier)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q200895
+metadata:
+  sources: [Wikidata Q200895 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/41/Agatha_orthodox_icon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Agatha_orthodox_icon.jpg
+    license: Public domain
+    credit: Original author unknown; originally uploaded by Geleyns at nl.wikipedia
+identifiers:
+  gnd: "118647229"
+  lc: n88208763
+  viaf: "42631437"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q200895
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q200895
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q200895
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q200895

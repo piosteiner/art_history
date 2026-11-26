@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107046082
+attribution_label: Anonymous
 institution: toshodai-ji
 wikidata_id: Q107046082
 metadata:
@@ -31,3 +32,7 @@ provenance:
         source: history-of-japanese-art
         locator: p. 96, fig. 122; pp. 70–71
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-201
+      accessed: 2026-11-25

@@ -8,6 +8,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q20267558
+attribution_label: Anonymous, Antwerp
 created: 1515/1525
 created_label: c. 16th century
 created_span: uncertain
@@ -15,6 +16,7 @@ materials: [oil paint, panel]
 dimensions: [37.5, 54.1]
 institution: art-institute-of-chicago
 inventory_number: "1953.27"
+web_url: https://www.artic.edu/artworks/111453
 wikidata_id: Q20267558
 metadata:
   sources: [Wikidata Q20267558 (retrieved 2026-11-24)]
@@ -101,3 +103,6 @@ sources:
     - accessed: 2026-11-24
       property: P217
       wikidata: Q20267558
+  attribution_label:
+    - source: aic-1953-27
+      accessed: 2026-11-25

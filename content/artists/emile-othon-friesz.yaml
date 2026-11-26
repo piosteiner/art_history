@@ -58,6 +58,12 @@ relationships:
       - accessed: 2026-11-12
         property: P737
         wikidata: Q708482
+  - type: student_of
+    to: artist/leon-bonnat
+    sources:
+      - accessed: 2026-11-25
+        property: P802
+        wikidata: Q170259
   - type: studied_at
     to: institution/beaux-arts-de-paris
     sources:

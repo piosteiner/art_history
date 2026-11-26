@@ -9,10 +9,6 @@ metadata:
   sources: [Wikidata Q837459 (retrieved 2026-11-24)]
 sources:
   birth:
-    - accessed: 2026-11-24
+    - accessed: 2026-11-25
       property: P569
-      wikidata: Q837459
-  death:
-    - accessed: 2026-11-24
-      property: P570
       wikidata: Q837459

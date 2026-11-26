@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045576
+attribution_label: Anonymous
 created: late 10th century
 created_span: uncertain
 materials: [wood]
@@ -35,7 +36,7 @@ provenance:
     sources:
       - url: https://ja.wikipedia.org/w/index.php?title=園城寺&oldid=111672295
         note: 作風的には10世紀後半頃のものと見られ、正暦4年頃に園城寺で新たに造像されたとの見方もある。
-        source: jawiki-onjo-ji
+        source: wikipedia-ja-onjo-ji
         accessed: 2026-11-24
       - url: https://kunishitei.bunka.go.jp/heritage/detail/201/207
         note: 時代 ： 平安
@@ -47,7 +48,7 @@ provenance:
     sources:
       - url: https://ja.wikipedia.org/w/index.php?title=園城寺&oldid=111672295
         note: この像はもと比叡山内の山王院（千手院）にあったといわれ
-        source: jawiki-onjo-ji
+        source: wikipedia-ja-onjo-ji
         accessed: 2026-11-24
   - owner: institution/mii-dera
     acquired: 993
@@ -58,7 +59,7 @@ provenance:
     sources:
       - url: https://ja.wikipedia.org/w/index.php?title=園城寺&oldid=111672295
         note: 円珍派は千手院に安置されていた円珍像を持って比叡山を下ると別院であった当寺に移り、円珍像を当寺の唐院に安置して延暦寺から独立した … 唐院大師堂の中央の厨子に安置。秘仏で、毎年10月29日の円珍の命日にのみ開扉される。
-        source: jawiki-onjo-ji
+        source: wikipedia-ja-onjo-ji
         accessed: 2026-11-24
       - url: https://kunishitei.bunka.go.jp/heritage/detail/201/207
         note: 所有者名 ： 園城寺
@@ -74,10 +75,13 @@ provenance:
     sources:
       - url: https://ja.wikipedia.org/w/index.php?title=園城寺&oldid=111672295
         note: 文禄4年（1595年）11月、当寺は突如として秀吉の怒りに触れ、闕所（寺領の没収、事実上の廃寺）を命じられた … 本尊の弥勒菩薩像や智証大師坐像、黄不動尊などは元園城寺長吏の道澄が自ら住持を務める照高院 … に避難させ … 照高院に避難させていた弥勒菩薩像、智証大師坐像、黄不動尊などを園城寺闕所の際にも存続が許されて残っていた上光院に移している。
-        source: jawiki-onjo-ji
+        source: wikipedia-ja-onjo-ji
         accessed: 2026-11-24
 sources:
   materials:
     - accessed: 2026-11-24
       property: P186
       wikidata: Q107045576
+  attribution_label:
+    - source: kunishitei-201-207
+      accessed: 2026-11-25

@@ -1,0 +1,67 @@
+public_id: 130674
+name: Lapulapu
+names:
+  - text: Lapu-Lapu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q216275
+  - lang: ja
+    role: translation
+    text: ラプラプ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q216275
+  - lang: zh
+    role: translation
+    text: 拉普拉普
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q216275
+  - lang: ko
+    role: translation
+    text: 라푸라푸
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q216275
+  - lang: ru
+    role: translation
+    text: Лапулапу
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q216275
+kind: person
+occupations: [traditional leader or chief]
+birth: 1492
+death: 1542
+description_md: |-
+  In 1521, Lapulapu, a chief (datu) of Mactan, refused to submit to the Spanish expedition. His warriors killed Ferdinand Magellan in the Battle of Mactan. He's honoured in the Philippines as the first hero to resist European colonisation (a retrospective title).
+
+  *From:* Visayan (Mactan)
+wikidata_id: Q216275
+metadata:
+  sources: [Wikidata Q216275 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Lapu-Lapu_sculpture_by_Fidel_Araneta.jpg/1280px-Lapu-Lapu_sculpture_by_Fidel_Araneta.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lapu-Lapu_sculpture_by_Fidel_Araneta.jpg
+    license: CC BY 4.0
+    credit: Kozak005
+identifiers:
+  lc: no2018151958
+  viaf: "19154196721020110332"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q216275
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q216275
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q216275
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q216275

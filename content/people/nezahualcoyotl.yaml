@@ -1,0 +1,80 @@
+public_id: 130641
+name: Nezahualcóyotl
+names:
+  - text: netzahual
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q379964
+  - text: Netzahualcoyotl
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q379964
+  - lang: nl
+    role: translation
+    text: Nezahualcoyotl
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q379964
+  - lang: it
+    role: translation
+    text: Acolmiztli Nezahualcóyotl
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q379964
+  - lang: ja
+    role: translation
+    text: ネサワルコヨトル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q379964
+  - lang: zh
+    role: translation
+    text: 内萨瓦尔科约特尔
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q379964
+  - lang: ru
+    role: translation
+    text: Несауалькойотль
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q379964
+kind: person
+occupations: [poet, philosopher]
+birth: 1402-05-05
+death: 1472-06-13
+description_md: |-
+  His name means "fasting coyote". He lost his kingdom as a teenager and hid in the mountains, then won it back. He became famous as a poet, philosopher, architect and builder of aqueducts and botanical gardens. His face was on the Mexican 100-peso note.
+
+  *From:* Acolhua (Nahua)
+wikidata_id: Q379964
+metadata:
+  sources: [Wikidata Q379964 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a6/Nezahualcoyotl.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nezahualcoyotl.jpg
+    license: Public domain
+    credit: Anonymous
+identifiers:
+  bnf: "120570601"
+  gnd: "118835181"
+  idref: "028811909"
+  lc: n80149123
+  viaf: "98086423"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q379964
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q379964
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q379964
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q379964

@@ -2,3 +2,46 @@ public_id: 123937
 name: Albert-Ernest Carrier-Belleuse
 given_name: Albert-Ernest
 family_name: Carrier-Belleuse
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Albert-Ernest Carrier de Belleuse
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q2143726
+birth: 1824-06-12
+death: 1887-06-03
+wikidata_id: Q2143726
+metadata:
+  sources: [Wikidata Q2143726 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q2143726
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f3/Albert-Ernest_Carrier-Belleuse_par_Carjat_BNF_Gallica.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albert-Ernest_Carrier-Belleuse_par_Carjat_BNF_Gallica.jpg
+    license: Public domain
+    credit: Étienne Carjat
+identifiers:
+  bnf: 14639602w
+  gnd: "118668587"
+  idref: "076537994"
+  kulturnav: 791d2352-3989-47b9-8917-40cdc62f4836
+  lc: nr99035839
+  rkd: "106506"
+  ulan: "500017043"
+  viaf: "47019469"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q2143726
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q2143726

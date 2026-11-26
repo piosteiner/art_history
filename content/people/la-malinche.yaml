@@ -1,0 +1,96 @@
+public_id: 130643
+name: La Malinche
+names:
+  - lang: nah
+    role: original
+    text: Malintzin
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230314
+  - text: Marina
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230314
+  - text: Malinalli
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230314
+  - text: Malinalli Tenepal
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230314
+  - text: Doña Marina
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230314
+  - text: Donna Marina
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230314
+  - lang: de
+    role: translation
+    text: Malinche
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230314
+  - lang: ja
+    role: translation
+    text: マリンチェ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230314
+  - lang: zh
+    role: translation
+    text: 馬林切
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230314
+  - lang: ko
+    role: translation
+    text: 말린체
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230314
+  - lang: ru
+    role: translation
+    text: Малинче
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q230314
+kind: person
+occupations: [interpreter, translator, adviser]
+birth: 1500
+death: 1551
+description_md: |-
+  A Nahua girl who was sold or kidnapped into slavery among the Maya, so she spoke both languages. She was given to the Spanish in 1519 and became Cortés's interpreter, advisor and the mother of his son. In Mexico, she's seen both as a traitor and as a survivor and the mother of the Mexican people.
+
+  *From:* Nahua
+wikidata_id: Q230314
+metadata:
+  sources: [Wikidata Q230314 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ee/MOM_D093_Donna_Marina_%28La_Malinche%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MOM_D093_Donna_Marina_(La_Malinche).jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "119074222"
+  lc: n50040844
+  viaf: "57416895"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q230314
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q230314
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q230314
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q230314

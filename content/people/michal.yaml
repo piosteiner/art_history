@@ -1,0 +1,65 @@
+public_id: 130725
+name: Michal
+names:
+  - lang: he
+    role: original
+    text: מיכל
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1341397
+  - text: Michel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1341397
+  - lang: fr
+    role: translation
+    text: Mikhal
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1341397
+  - lang: it
+    role: translation
+    text: Mikal
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1341397
+  - lang: ja
+    role: translation
+    text: ミカル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1341397
+  - lang: zh
+    role: translation
+    text: 米甲
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1341397
+  - lang: ru
+    role: translation
+    text: Мелхола
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1341397
+description_md: |-
+  Michal, [[person/saul]]'s daughter and [[person/david]]'s first wife, helped David escape by lowering him from a window and putting a household idol (teraphim) in his bed.
+
+  **In art:** A woman helping a man down a rope.
+
+  **Famous works**
+
+  - Gustave Doré, Bible illustrations
+
+  *From:* Hebrew Bible, Books of Samuel · Hebrew Bible
+wikidata_id: Q1341397
+metadata:
+  sources: [Wikidata Q1341397 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Michal_lets_David_escape_%2889398919%29.jpg/1280px-Michal_lets_David_escape_%2889398919%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Michal_lets_David_escape_(89398919).jpg
+    license: Public domain
+    credit: Gustave Doré
+identifiers:
+  gnd: "119014882"
+  lc: n89135029
+  viaf: "32797318"

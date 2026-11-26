@@ -2,6 +2,12 @@ public_id: 100071
 name: Arma Christi
 category: iconography
 definition: objects associated with the Passion of Jesus Christ in Christian symbolism and art
+description_md: |-
+  The *Arma Christi* are the instruments of the Passion: the cross, nails, crown of thorns, spear, sponge, whip, dice and ladder.
+
+  **In art:** A collection of Passion objects.
+
+  *From:* Christian iconography · Christian
 wikidata_id: Q1240885
 metadata:
   sources: [Wikidata Q1240885 (retrieved 2026-10-06)]
@@ -14,3 +20,5 @@ sources:
   definition:
     - accessed: 2026-10-06
       wikidata: Q1240885
+    - source: wikipedia-en-arma-christi
+      accessed: 2026-11-25

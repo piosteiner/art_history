@@ -273,7 +273,7 @@ provenance:
     method: auction
     direct: true
     place: new-york-city
-    label: bought at Sotheby’s, 18 November 2026 — the buyer is not named; the price is not reported
+    label: bought at Sotheby’s, 18 November 2026 — the buyer is not named
     price:
       amount: 111010000
       currency: USD

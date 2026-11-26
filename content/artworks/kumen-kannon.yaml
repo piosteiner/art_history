@@ -11,6 +11,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107046087
+attribution_label: Anonymous
 institution: horyu-ji
 wikidata_id: Q107046087
 metadata:
@@ -32,7 +33,7 @@ provenance:
         accessed: 2026-11-24
       - url: https://ja.wikipedia.org/w/index.php?title=%E6%B3%95%E9%9A%86%E5%AF%BA&oldid=111669701
         note: 観音菩薩立像（九面観音、国宝） - 唐から将来の像。香木を用い、彩色を施さず白木で仕上げた、いわゆる檀像と呼ばれる像である。
-        source: wikipedia-ja-horyu-ji
+        source: jawiki-horyu-ji
         accessed: 2026-11-24
   - owner: institution/horyu-ji
     place: ikaruga
@@ -44,5 +45,9 @@ provenance:
         accessed: 2026-11-24
       - url: https://ja.wikipedia.org/w/index.php?title=%E6%B3%95%E9%9A%86%E5%AF%BA&oldid=111669701
         note: 観音菩薩立像（九面観音、国宝） - 唐から将来の像。… 木造観音菩薩立像（九面観音）（所在大宝蔵院）
-        source: wikipedia-ja-horyu-ji
+        source: jawiki-horyu-ji
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-260
+      accessed: 2026-11-25

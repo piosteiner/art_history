@@ -1,10 +1,15 @@
 public_id: 124693
 title: Jardins publics
+creator: edouard-vuillard
 kind: series
 wikidata_id: Q136092132
 metadata:
   sources: [Wikidata Q136092132 (retrieved 2026-11-24)]
 sources:
+  creator:
+    - accessed: 2026-11-25
+      property: P170
+      wikidata: Q136092132
   title_status:
     - accessed: 2026-11-24
       wikidata: Q136092132

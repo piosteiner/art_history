@@ -1,11 +1,13 @@
 public_id: 122997
 title_lang: en
 title: Giulia Orsini
+attribution_label: Anonymous, Italian
 created: 16th century
 created_span: uncertain
 materials: [bronze]
 institution: national-gallery-of-art
 inventory_number: 1957.14.1091
+web_url: https://www.nga.gov/collection/art-object-page.45200.html
 wikidata_id: Q63851195
 metadata:
   sources: [Wikidata Q63851195 (retrieved 2026-11-23)]
@@ -91,3 +93,6 @@ sources:
     - accessed: 2026-11-23
       property: P217
       wikidata: Q63851195
+  attribution_label:
+    - source: nga-1957-14-1091
+      accessed: 2026-11-25

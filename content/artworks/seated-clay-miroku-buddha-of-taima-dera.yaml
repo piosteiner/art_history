@@ -6,6 +6,7 @@ names:
   - lang: ja
     role: original
     text: 當麻寺弥勒仏坐像
+attribution_label: Anonymous
 created: 7th century
 created_span: uncertain
 institution: taima-dera
@@ -37,3 +38,6 @@ sources:
     - accessed: 2026-11-24
       property: P571
       wikidata: Q107045979
+  attribution_label:
+    - source: kunishitei-201-205
+      accessed: 2026-11-25

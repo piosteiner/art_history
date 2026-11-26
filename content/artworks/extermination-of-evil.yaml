@@ -31,6 +31,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q3007715
+attribution_label: Anonymous
 created: 12th century
 created_span: uncertain
 institution: nara-national-museum
@@ -115,4 +116,8 @@ sources:
   inventory_number:
     - accessed: 2026-11-24
       property: P217
+      wikidata: Q3007715
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q3007715

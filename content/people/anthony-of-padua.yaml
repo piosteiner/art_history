@@ -1,0 +1,179 @@
+public_id: 130777
+name: Anthony of Padua
+names:
+  - lang: la
+    role: original
+    text: Antonius Patavinus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Saint Antonius von Padua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Saint Ontōns nu Padovas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Saint Antonio da Padova
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Ontōns nu Padovas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Saint Anthony of Padua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Saint Antony of Padua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Antonio da Padova
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Saint Antoine
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: António de Lisboa
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Antoni Padewski
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Saint António de Lisboa
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Antonio de Lisboa
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Saint Antonio de Lisbon
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Anthony of Lisbon
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Anthony or Antony of Padua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: Antony of Padua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - text: St Antony of Padua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - lang: nl
+    role: translation
+    text: Antonius van Padua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - lang: fr
+    role: translation
+    text: Antoine de Padoue
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - lang: de
+    role: translation
+    text: Antonius von Padua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - lang: it
+    role: translation
+    text: Antonio di Padova
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - lang: es
+    role: translation
+    text: Antonio de Padua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - lang: ja
+    role: translation
+    text: パドヴァのアントニオ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - lang: zh
+    role: translation
+    text: 里斯本的聖安多尼
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - lang: ko
+    role: translation
+    text: 파도바의 안토니우스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+  - lang: ru
+    role: translation
+    text: Антоний Падуанский
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q167477
+kind: person
+occupations: [Catholic priest, preacher, canon, Catholic theologian, university teacher, monk]
+birth: 1195-08-22
+death: 1231-06-20
+description_md: |-
+  A popular 13th-century Franciscan preacher. When heretics in Rimini refused to listen, he preached to the fish, who lifted their heads from the water to listen. Patron saint of lost things.
+
+  **In art:** A young Franciscan monk holding the infant Christ and a lily, or preaching to fish.
+
+  **Famous works**
+
+  - [[artist/bartolome-esteban-murillo]], *The Vision of Saint Anthony of Padua* (Seville Cathedral)
+  - [[artist/donatello]], high altar of the *Basilica of Saint Anthony* (Padua)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q167477
+metadata:
+  sources: [Wikidata Q167477 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/%28Venice%29_Sant%27Antonio_da_Padova_by_Alvise_Vivarini_-_Correr_Museum.jpg/1280px-%28Venice%29_Sant%27Antonio_da_Padova_by_Alvise_Vivarini_-_Correr_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:(Venice)_Sant%27Antonio_da_Padova_by_Alvise_Vivarini_-_Correr_Museum.jpg
+    license: Public domain
+    credit: Didier Descouens
+identifiers:
+  bnf: 12111694w
+  gnd: "118503510"
+  hls: "012483"
+  idref: "029502772"
+  lc: n50051888
+  ulan: "500342642"
+  viaf: "51659098"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q167477
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q167477
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q167477
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q167477

@@ -1,0 +1,77 @@
+public_id: 130741
+name: Barabbas
+names:
+  - lang: arc
+    role: original
+    text: ישוע בר אבא‎
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q313417
+  - text: Jesus Barabbas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q313417
+  - text: Yeshua Bar-Abba
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q313417
+  - lang: it
+    role: translation
+    text: Barabba
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q313417
+  - lang: es
+    role: translation
+    text: Barrabás
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q313417
+  - lang: ja
+    role: translation
+    text: バラバ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q313417
+  - lang: zh
+    role: translation
+    text: 巴拉巴
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q313417
+  - lang: ko
+    role: translation
+    text: 바라바
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q313417
+  - lang: ru
+    role: translation
+    text: Варавва
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q313417
+occupations: [criminal]
+description_md: |-
+  Barabbas was the prisoner the crowd chose to free instead of Jesus.
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q313417
+metadata:
+  sources: [Wikidata Q313417 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/GiveUsBarabbas.png/1280px-GiveUsBarabbas.png
+    source_url: https://commons.wikimedia.org/wiki/File:GiveUsBarabbas.png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 16168698j
+  gnd: "118963821"
+  idref: "201293900"
+  lc: no97048441
+  viaf: "122738023"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q313417

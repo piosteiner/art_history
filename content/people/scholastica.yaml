@@ -1,0 +1,91 @@
+public_id: 130774
+name: Scholastica
+names:
+  - text: Saint Scholastica
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q231300
+  - lang: fr
+    role: translation
+    text: Scolastique
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q231300
+  - lang: de
+    role: translation
+    text: Scholastika von Nursia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q231300
+  - lang: it
+    role: translation
+    text: Scolastica da Norcia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q231300
+  - lang: es
+    role: translation
+    text: Escolástica de Nursia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q231300
+  - lang: ja
+    role: translation
+    text: スコラスティカ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q231300
+  - lang: zh
+    role: translation
+    text: 聖思嘉
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q231300
+  - lang: ko
+    role: translation
+    text: 스콜라스티카
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q231300
+  - lang: ru
+    role: translation
+    text: Схоластика
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q231300
+kind: person
+occupations: [nun]
+birth: 480
+death: 547-02-12
+description_md: |-
+  Benedict's sister, by a later tradition his twin, traditionally regarded as the foundress of the Benedictine nuns.
+
+  *From:* Gregory the Great, Dialogues · Christian
+wikidata_id: Q231300
+metadata:
+  sources: [Wikidata Q231300 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/SantaScolastica_Montecassino.jpg/1280px-SantaScolastica_Montecassino.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:SantaScolastica_Montecassino.jpg
+    license: CC BY-SA 2.5
+    credit: Beatrice
+identifiers:
+  gnd: "122475127"
+  viaf: "121911013"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q231300
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q231300
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q231300
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q231300

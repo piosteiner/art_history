@@ -57,10 +57,10 @@ provenance:
         source: cma-2012-53
         accessed: 2026-11-24
   - owner: person/henry-howard-7th-duke-of-norfolk
-    acquired: 1652
+    acquired: 1655 or later
     method: inheritance
     direct: true
-    label: by descent
+    label: by descent — the museum dates his ownership from 1652, before his birth (1655)
     sources:
       - url: https://clevelandart.org/art/2012.53
         note: Henry Howard, 7th Duke of Norfolk (1655-1701), by settlement to his divorced Duchess Lady Mary Mordaunt (c. 1659-1705) [1652-1700]

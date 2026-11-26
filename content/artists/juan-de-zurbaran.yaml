@@ -1,0 +1,47 @@
+public_id: 130626
+name: Juan de Zurbarán
+given_name: Juan
+family_name: de Zurbarán
+names:
+  - text: Juan Zurbaran
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q4446444
+  - text: Juan de Zurbaran
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q4446444
+  - text: Juan de Zurbaran Paez
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q4446444
+  - text: Juan Zurbarán
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q4446444
+  - lang: ru
+    role: translation
+    text: Хуан де Сурбаран
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q4446444
+birth: 1620-07
+death: 1649-06-08
+wikidata_id: Q4446444
+metadata:
+  sources: [Wikidata Q4446444 (retrieved 2026-11-25)]
+identifiers:
+  gnd: "188433627"
+  lc: no2021078175
+  rkd: "86646"
+  ulan: "500001985"
+  viaf: "95692573"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q4446444
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q4446444

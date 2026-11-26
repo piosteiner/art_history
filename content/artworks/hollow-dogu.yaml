@@ -13,6 +13,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q11366844
+attribution_label: Anonymous
 institution: hakodate-jomon-culture-center
 location: [140.7146, 41.75595]
 wikidata_id: Q11366844
@@ -95,3 +96,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q11366844
+  attribution_label:
+    - source: kunishitei-201-9985
+      accessed: 2026-11-25

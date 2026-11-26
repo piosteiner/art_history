@@ -56,6 +56,7 @@ names:
     sources:
       - accessed: 2026-11-23
         wikidata: Q1126741
+attribution_label: Anonymous
 materials: [gold]
 dimensions: [2.5, 1.7]
 institution: national-archaeological-museum-of-athens
@@ -116,4 +117,8 @@ sources:
   institution:
     - accessed: 2026-11-23
       property: P195
+      wikidata: Q1126741
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q1126741

@@ -1,0 +1,116 @@
+public_id: 130699
+name: David
+names:
+  - lang: he
+    role: original
+    text: דָּוִד
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - text: Daud re d'Israele
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - text: Dawud re d'Israele
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - text: David, King of Israel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - text: Nabi Dawud King of Israel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - text: King David
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - text: Dawid re d'Israele
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - text: David King of Israel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - text: David ben Yishai
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - text: sweet singer of Israel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - lang: nl
+    role: translation
+    text: Koning David
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - lang: it
+    role: translation
+    text: Davide
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - lang: ja
+    role: translation
+    text: ダビデ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - lang: zh
+    role: translation
+    text: 大衛
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - lang: ko
+    role: translation
+    text: 다윗
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+  - lang: ru
+    role: translation
+    text: Давид
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q41370
+occupations: [herder, ruler, poet, warlord, instrumentalist, monarch]
+description_md: |-
+  A young shepherd who killed the Philistine giant Goliath with a single stone from his sling and cut off his head. He became the greatest king of Israel and a poet, traditionally the author of the Psalms. As king, he saw [[person/bathsheba]] bathing, took her, and had her husband killed in battle.
+
+  **In art:** A youth with a sling or holding a sword and Goliath's severed head. As king, with a crown and a harp. Bathsheba is shown bathing, often receiving a letter.
+
+  **Famous works**
+
+  - [[artist/michelangelo]], *David* (Accademia, Florence)
+  - [[artist/donatello]], *David* (Bargello)
+  - Bernini, *David* (Galleria Borghese) — [[artwork/david-bernini]]
+  - [[artist/caravaggio]], *David with the Head of Goliath* (Galleria Borghese) — [[artwork/david-with-the-head-of-goliath-borghese]]
+  - [[artist/rembrandt]], *Bathsheba at Her Bath* (Louvre)
+
+  *From:* Hebrew Bible, Books of Samuel · Hebrew Bible
+wikidata_id: Q41370
+metadata:
+  sources: [Wikidata Q41370 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/King_David%2C_the_King_of_Israel.jpg/1280px-King_David%2C_the_King_of_Israel.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:King_David,_the_King_of_Israel.jpg
+    license: Public domain
+    credit: Gerard van Honthorst
+identifiers:
+  bnf: 14569207z
+  gnd: "118523929"
+  idref: "028616669"
+  lc: n79055293
+  nlk: KAC201619609
+  viaf: "28348953"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q41370

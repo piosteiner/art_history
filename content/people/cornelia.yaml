@@ -1,0 +1,87 @@
+public_id: 130688
+name: Cornelia
+names:
+  - text: Cornelia Minor Africana
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q234533
+  - text: Cornelia Africana
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q234533
+  - text: Cornelia Africana Minor
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q234533
+  - text: Cornelia Minor
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q234533
+  - lang: ja
+    role: translation
+    text: コルネリア・アフリカナ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q234533
+  - lang: zh
+    role: translation
+    text: 科尔内利亚·阿非利加娜
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q234533
+  - lang: ko
+    role: translation
+    text: 코르넬리아 아프리카나
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q234533
+  - lang: ru
+    role: translation
+    text: Корнелия
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q234533
+kind: person
+occupations: [writer]
+birth: c. 190 BCE
+death: -110
+description_md: |-
+  A noble Roman woman. When a visitor showed off her jewels and asked to see Cornelia's, she presented her two sons, saying "These are my jewels." Her sons, Tiberius and Gaius Gracchus, became famous reformers.
+
+  **In art:** A mother presenting her children to a richly dressed woman holding jewellery.
+
+  **Famous works**
+
+  - Angelica Kauffman, *Cornelia, Mother of the Gracchi* (Virginia Museum of Fine Arts, Richmond)
+
+  *From:* Valerius Maximus · Ancient Roman
+wikidata_id: Q234533
+metadata:
+  sources: [Wikidata Q234533 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Ca%27_Rezzonico_-_Cornelia_madre_dei_Gracchi_%28Inv.039%29_-_Alessandro_Varotari.jpg/1280px-Ca%27_Rezzonico_-_Cornelia_madre_dei_Gracchi_%28Inv.039%29_-_Alessandro_Varotari.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ca%27_Rezzonico_-_Cornelia_madre_dei_Gracchi_(Inv.039)_-_Alessandro_Varotari.jpg
+    license: Public domain
+    credit: Didier Descouens
+identifiers:
+  gnd: "102385661"
+  idref: "122995201"
+  lc: nr95039337
+  viaf: "26957386"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q234533
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q234533
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q234533
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q234533

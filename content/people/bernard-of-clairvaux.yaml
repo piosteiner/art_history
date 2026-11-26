@@ -1,0 +1,134 @@
+public_id: 130788
+name: Bernard of Clairvaux
+names:
+  - lang: fr
+    role: original
+    text: Bernard de Clairvaux
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - text: Saint Bernard of Clairvaux
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - text: Saint Bernard
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - text: St. Bernard of Clairvaux
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - text: St. Bernard
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - text: Bernhard
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - text: Bernardus Claraevallensis
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - text: Bernardus Claravallensis
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - lang: nl
+    role: translation
+    text: Bernardus van Clairvaux
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - lang: de
+    role: translation
+    text: Bernhard von Clairvaux
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - lang: it
+    role: translation
+    text: Bernardo di Chiaravalle
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - lang: es
+    role: translation
+    text: Bernardo de Claraval
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - lang: ja
+    role: translation
+    text: クレルヴォーのベルナルドゥス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - lang: zh
+    role: translation
+    text: 聖伯爾納鐸
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - lang: ko
+    role: translation
+    text: 클레르보의 베르나르
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+  - lang: ru
+    role: translation
+    text: Бернард Клервоский
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q188411
+kind: person
+occupations: [theologian, writer, philosopher, hymnwriter, mystic, religious, Doctor of the Church]
+birth: 1091
+death: 1153-08-27
+description_md: |-
+  Bernard of Clairvaux was a powerful 12th-century abbot and preacher, who had a vision of the [[person/mary|Virgin Mary]].
+
+  **In art:** A white-robed abbot with a white dog, writing as the Virgin appears.
+
+  **Famous works**
+
+  - [[artist/filippino-lippi]], *The Vision of Saint Bernard* (Badia Fiorentina, Florence)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q188411
+metadata:
+  sources: [Wikidata Q188411 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c8/Bernhard_von_Clairvaux_%28Initiale-B%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernhard_von_Clairvaux_(Initiale-B).jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 11891532s
+  gnd: "118509810"
+  hls: "012504"
+  idref: "026722402"
+  kulturnav: d9ae5870-3607-42b5-8462-1f5ddaf7a14a
+  lc: n79059107
+  nlk: KAC199602347
+  ulan: "500314286"
+  viaf: "59875293"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q188411
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q188411
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q188411
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q188411

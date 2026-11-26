@@ -1,0 +1,118 @@
+public_id: 130649
+name: Cleopatra
+names:
+  - lang: grc
+    role: original
+    text: Κλεοπάτρα Φιλοπάτωρ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q635
+  - text: Cleopatra Philopator
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q635
+  - text: Cleopatra VII Philopator
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q635
+  - text: Cleopatra VII
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q635
+  - text: Cleopatra VII Thea Philopator
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q635
+  - text: Kleopatra
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q635
+  - lang: fr
+    role: translation
+    text: Cléopâtre
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q635
+  - lang: de
+    role: translation
+    text: Kleopatra VII.
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q635
+  - lang: ja
+    role: translation
+    text: クレオパトラ7世
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q635
+  - lang: zh
+    role: translation
+    text: 克娄巴特拉七世
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q635
+  - lang: ko
+    role: translation
+    text: 클레오파트라 7세
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q635
+  - lang: ru
+    role: translation
+    text: Клеопатра
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q635
+kind: person
+occupations: [sovereign, monarch]
+birth: c. 69 BCE
+death: -30
+death_label: c. 30 BCE
+description_md: |-
+  She spoke many languages and was the only one of her Greek family known to have learned Egyptian. She allied with [[person/julius-caesar]] and then with Mark Antony, against Octavian. After their defeat at Actium, she died by suicide in 30 BC, according to legend from the bite of an asp.
+
+  The last queen of Ptolemaic Egypt, lover of Julius Caesar and then Mark Antony. When they were defeated by Octavian, Antony killed himself, and Cleopatra, in the best-known account, let herself be bitten by an asp (probably an Egyptian cobra) rather than be paraded through Rome; the ancient writers already said the manner of her death was uncertain.
+
+  **In art:** A queen holding a snake to her breast, or the famous banquet where she dissolved a pearl in vinegar and drank it.
+
+  **Famous works**
+
+  - Tiepolo, *The Banquet of Cleopatra* (Melbourne and Palazzo Labia, Venice)
+  - [[artist/guido-reni]], *Cleopatra*
+  - [[artist/artemisia-gentileschi]], *Cleopatra*
+  - Jean-André Rixens, *The Death of Cleopatra* (Toulouse)
+
+  *From:* Ancient Egyptian
+wikidata_id: Q635
+metadata:
+  sources: [Wikidata Q635 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3e/Kleopatra-VII.-Altes-Museum-Berlin1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kleopatra-VII.-Altes-Museum-Berlin1.jpg
+    license: Public domain
+    credit: Louis le Grand
+identifiers:
+  bnf: 11938532d
+  gnd: 11856322X
+  idref: "027316564"
+  lc: n80067160
+  nlk: KAC201624465
+  ulan: "500341470"
+  viaf: "67762941"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q635
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q635
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q635
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q635

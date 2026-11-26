@@ -1,0 +1,121 @@
+public_id: 130787
+name: Peter of Verona
+names:
+  - text: St Peter the Martyr
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - text: Saint Peter Martyr
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - text: Saint Pierre Martyr
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - text: Peter Martyr
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - text: San Pietro da Verona
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - text: San Pietro Martire
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - lang: nl
+    role: translation
+    text: Petrus van Verona
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - lang: fr
+    role: translation
+    text: Pierre de Vérone
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - lang: de
+    role: translation
+    text: Petrus von Verona
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - lang: it
+    role: translation
+    text: Pietro da Verona
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - lang: es
+    role: translation
+    text: Pedro de Verona
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - lang: ja
+    role: translation
+    text: ヴェローナの聖ペトロ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - lang: zh
+    role: translation
+    text: 维罗纳的圣伯铎
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+  - lang: ru
+    role: translation
+    text: Пётр Веронский
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q238744
+kind: person
+occupations: [presbyter, inquisitor]
+birth: 1206
+death: 1252-04-13
+description_md: |-
+  Peter of Verona, a 13th-century Dominican inquisitor, was murdered with an axe blow to the head.
+
+  **In art:** A Dominican friar with a knife or cleaver in his head.
+
+  **Famous works**
+
+  - [[artist/titian]], *The Death of Saint Peter Martyr* (destroyed by fire in 1867, known from copies)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q238744
+metadata:
+  sources: [Wikidata Q238744 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/77/Peter_Martyr_Vecchietta.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Peter_Martyr_Vecchietta.jpg
+    license: Public domain
+    credit: Vecchietta
+identifiers:
+  bnf: 15601329p
+  gnd: "118740504"
+  idref: "125240163"
+  lc: nr91037453
+  ulan: "500353897"
+  viaf: "50020551"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q238744
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q238744
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q238744
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q238744

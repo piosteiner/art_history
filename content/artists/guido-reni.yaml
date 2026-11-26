@@ -2,3 +2,126 @@ public_id: 122884
 name: Guido Reni
 given_name: Guido
 family_name: Reni
+birth: 1575-11-14
+death: 1642-08-18
+wikidata_id: Q109061
+metadata:
+  sources: [Wikidata Q109061 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/papal-states
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q109061
+  - type: born_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-11-25
+        property: P19
+        wikidata: Q109061
+  - type: died_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q109061
+  - type: worked_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q109061
+  - type: worked_in
+    to: place/modena
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q109061
+  - type: worked_in
+    to: place/ravenna
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q109061
+  - type: worked_in
+    to: place/bologna
+    period: 1599/1600
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q109061
+  - type: worked_in
+    to: place/rome
+    period: 1600/1602
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q109061
+  - type: worked_in
+    to: place/mantua
+    period: 1617/1621
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q109061
+  - type: worked_in
+    to: place/naples
+    period: 1624/1626
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q109061
+  - type: influenced_by
+    to: artist/caravaggio
+    sources:
+      - accessed: 2026-11-25
+        property: P737
+        wikidata: Q109061
+  - type: influenced_by
+    to: artist/michelangelo
+    sources:
+      - accessed: 2026-11-25
+        property: P737
+        wikidata: Q109061
+  - type: influenced_by
+    to: artist/raphael
+    sources:
+      - accessed: 2026-11-25
+        property: P737
+        wikidata: Q109061
+  - type: member_of
+    to: institution/accademia-di-san-luca
+    sources:
+      - accessed: 2026-11-25
+        property: P463
+        wikidata: Q109061
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-11-25
+        property: P135
+        wikidata: Q109061
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3c/Guido_Reni_-_Self-portrait_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Guido_Reni_-_Self-portrait_2.jpg
+    license: Public domain
+    credit: Guido Reni
+identifiers:
+  bnf: "122890896"
+  gnd: "118599712"
+  idref: 02739767X
+  kulturnav: cc883c79-a2f9-4955-8af2-892530634f40
+  lc: n80021717
+  rkd: "66290"
+  ulan: "500030334"
+  viaf: "49288294"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q109061
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q109061

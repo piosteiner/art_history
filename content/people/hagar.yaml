@@ -1,0 +1,59 @@
+public_id: 130709
+name: Hagar
+names:
+  - lang: fr
+    role: translation
+    text: Agar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214617
+  - lang: ja
+    role: translation
+    text: ハガル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214617
+  - lang: zh
+    role: translation
+    text: 夏甲
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214617
+  - lang: ko
+    role: translation
+    text: 하갈
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214617
+  - lang: ru
+    role: translation
+    text: Агарь
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q214617
+occupations: [domestic worker]
+description_md: |-
+  Hagar was the Egyptian servant of Abraham's wife Sarah, and mother of his son Ishmael. After Sarah had her own son, [[binding-of-isaac|Isaac]], she had Abraham send Hagar and the boy into the desert. When their water ran out, an angel showed Hagar a well. Ishmael is regarded as an ancestor of the Arab peoples.
+
+  **In art:** A mother and child being sent away by an old man, or a woman in despair in the desert, with an angel pointing to water.
+
+  **Famous works**
+
+  - [[artist/rembrandt]], *Abraham Dismissing Hagar and Ishmael* (etching)
+  - [[artist/giovanni-battista-tiepolo]], *Hagar and Ishmael in the Wilderness* (Scuola di San Rocco, Venice)
+  - [[artist/claude-lorrain]], *Landscape with Hagar and the Angel* (National Gallery, London)
+
+  *From:* Hebrew Bible, Genesis · Hebrew Bible
+wikidata_id: Q214617
+metadata:
+  sources: [Wikidata Q214617 (retrieved 2026-11-25)]
+identifiers:
+  gnd: "118956604"
+  idref: "059942061"
+  lc: n89651497
+  viaf: "16377729"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q214617

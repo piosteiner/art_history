@@ -1,0 +1,92 @@
+public_id: 130701
+name: Solomon
+names:
+  - lang: he
+    role: original
+    text: שְׁלֹמֹה
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q37085
+  - text: King Salomon
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q37085
+  - text: Salomon
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q37085
+  - lang: nl
+    role: translation
+    text: Salomo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q37085
+  - lang: it
+    role: translation
+    text: Salomone
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q37085
+  - lang: es
+    role: translation
+    text: Salomón
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q37085
+  - lang: ja
+    role: translation
+    text: ソロモン
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q37085
+  - lang: zh
+    role: translation
+    text: 所羅門
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q37085
+  - lang: ko
+    role: translation
+    text: 솔로몬
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q37085
+  - lang: ru
+    role: translation
+    text: Соломон
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q37085
+occupations: [monarch, prophet of Islam]
+description_md: |-
+  [[person/david]]'s son, king of Israel, famous for his wisdom and wealth, and builder of the Temple in Jerusalem. In his most famous judgement, two women claimed the same baby. He ordered it cut in half, and the true mother revealed herself by begging him to give it to the other woman instead. The Queen of Sheba travelled from afar to test his wisdom.
+
+  **In art:** A crowned king on a throne with a soldier holding a baby and a sword before two women, or receiving an exotic queen with gifts.
+
+  **Famous works**
+
+  - [[artist/nicolas-poussin]], *The Judgement of Solomon* (Louvre)
+  - [[artist/piero-della-francesca]], *The Meeting of Solomon and the Queen of Sheba* (San Francesco, Arezzo)
+  - [[artist/claude-lorrain]], *The Embarkation of the Queen of Sheba* (National Gallery, London)
+
+  *From:* Hebrew Bible, Books of Kings · Hebrew Bible
+wikidata_id: Q37085
+metadata:
+  sources: [Wikidata Q37085 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b4/Nazary_Istomin_Savin._Church_of_the_Deposition_of_the_Virgin%27s_Robe._Prophet_Solomon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nazary_Istomin_Savin._Church_of_the_Deposition_of_the_Virgin%27s_Robe._Prophet_Solomon.jpg
+    license: Public domain
+    credit: Nazary Istomin Savin
+identifiers:
+  bnf: 12095820b
+  gnd: "118605100"
+  idref: "028696670"
+  lc: n80024516
+  ulan: "500372725"
+  viaf: "100963493"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q37085

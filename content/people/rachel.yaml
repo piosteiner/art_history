@@ -1,0 +1,89 @@
+public_id: 130711
+name: Rachel
+names:
+  - text: Rackel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q207389
+  - text: Rochel Imeinu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q207389
+  - text: Rahel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q207389
+  - text: Rachel Imenu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q207389
+  - text: Rachel Imeinu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q207389
+  - text: Rochel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q207389
+  - lang: it
+    role: translation
+    text: Rachele
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q207389
+  - lang: es
+    role: translation
+    text: Raquel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q207389
+  - lang: ja
+    role: translation
+    text: ラケル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q207389
+  - lang: zh
+    role: translation
+    text: 拉结
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q207389
+  - lang: ko
+    role: translation
+    text: 라헬
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q207389
+  - lang: ru
+    role: translation
+    text: Рахиль
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q207389
+occupations: [homemaker]
+description_md: |-
+  [[person/rebecca]]'s son [[person/jacob]] fell in love with Rachel, also at a well, and worked seven years for her, but her father tricked him into marrying her older sister [[person/leah]] first, so he worked seven more years for Rachel.
+
+  **Famous works**
+
+  - [[artist/dante-gabriel-rossetti]], *Dante's Vision of Rachel and Leah* (Tate)
+
+  *From:* Hebrew Bible, Genesis · Hebrew Bible
+wikidata_id: Q207389
+metadata:
+  sources: [Wikidata Q207389 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/San_Pietro_in_Vincoli_-_Roma%2C_Rachele.jpg/1280px-San_Pietro_in_Vincoli_-_Roma%2C_Rachele.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:San_Pietro_in_Vincoli_-_Roma,_Rachele.jpg
+    license: CC BY-SA 4.0
+    credit: Luciano Tronati
+identifiers:
+  gnd: "118836889"
+  lc: n86093832
+  viaf: "16251571"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q207389

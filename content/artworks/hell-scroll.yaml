@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q16939154
+attribution_label: Anonymous
 created: 12th century
 created_span: uncertain
 institution: tokyo-national-museum
@@ -89,3 +90,6 @@ sources:
     - accessed: 2026-11-24
       property: P217
       wikidata: Q16939154
+  attribution_label:
+    - source: kunishitei-201-129
+      accessed: 2026-11-25

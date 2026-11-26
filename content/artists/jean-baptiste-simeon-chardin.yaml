@@ -7,6 +7,13 @@ death: 1779-12-06
 wikidata_id: Q207447
 metadata:
   sources: [Wikidata Q207447 (retrieved 2026-11-23)]
+relationships:
+  - type: student_of
+    to: artist/jacques-andre-joseph-aved
+    sources:
+      - accessed: 2026-11-25
+        property: P802
+        wikidata: Q489437
 sources:
   birth:
     - accessed: 2026-11-23

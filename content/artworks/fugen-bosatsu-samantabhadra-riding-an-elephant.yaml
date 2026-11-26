@@ -6,6 +6,7 @@ names:
   - lang: ja
     role: original
     text: 普賢菩薩騎象像
+attribution_label: Anonymous
 created: 12th century
 created_span: uncertain
 institution: okura-museum-of-art
@@ -59,3 +60,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q107045304
+  attribution_label:
+    - source: kunishitei-201-276
+      accessed: 2026-11-25

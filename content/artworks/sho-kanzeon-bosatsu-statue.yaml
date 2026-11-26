@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045992
+attribution_label: Anonymous
 institution: yakushi-ji
 wikidata_id: Q107045992
 metadata:
@@ -43,3 +44,7 @@ provenance:
         note: 東院堂本尊。… 本像の中世以前の所在は明らかでなく、当初から東院堂の本尊であったとする確証はない（現存する東院堂の建物は鎌倉時代のもの）。
         source: jawiki-yakushi-ji
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-177
+      accessed: 2026-11-25

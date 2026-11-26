@@ -1,10 +1,15 @@
 public_id: 124227
 title: Deeds of the Zen Masters
+creator: yintuoluo
 kind: series
 wikidata_id: Q122508220
 metadata:
   sources: [Wikidata Q122508220 (retrieved 2026-11-24)]
 sources:
+  creator:
+    - accessed: 2026-11-25
+      property: P170
+      wikidata: Q122508220
   title_status:
     - accessed: 2026-11-24
       wikidata: Q122508220

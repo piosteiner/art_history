@@ -1,0 +1,78 @@
+public_id: 130789
+name: Wendelin of Trier
+names:
+  - lang: nl
+    role: translation
+    text: Wendelinus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q389586
+  - lang: fr
+    role: translation
+    text: Wendelin
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q389586
+  - lang: it
+    role: translation
+    text: Vendelino di Treviri
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q389586
+  - lang: es
+    role: translation
+    text: Vendelino de Tréveris
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q389586
+  - lang: ja
+    role: translation
+    text: トリーアのヴェンデリン
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q389586
+  - lang: ru
+    role: translation
+    text: Венделин
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q389586
+kind: person
+occupations: [hermit, farmworker, Christian minister]
+birth: 554
+death: 617
+description_md: |-
+  Wendelin was a shepherd-hermit, patron of farmers and livestock.
+
+  **In art:** Wendelin as a shepherd with sheep.
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q389586
+metadata:
+  sources: [Wikidata Q389586 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Bremenried_St_Wendelin_Heiligenfigur_Wendelin.jpg/1280px-Bremenried_St_Wendelin_Heiligenfigur_Wendelin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bremenried_St_Wendelin_Heiligenfigur_Wendelin.jpg
+    license: CC BY 2.5
+    credit: Andreas Praefcke
+identifiers:
+  gnd: "139142592"
+  lc: n84179240
+  viaf: "55559341"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q389586
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q389586
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q389586
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q389586

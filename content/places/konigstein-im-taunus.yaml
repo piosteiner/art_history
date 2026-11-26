@@ -1,0 +1,16 @@
+public_id: 130623
+name: Königstein im Taunus
+kind: settlement
+location: [8.46354, 50.18313]
+wikidata_id: Q569661
+metadata:
+  sources: [Wikidata Q569661 (retrieved 2026-11-25)]
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q569661
+  location:
+    - accessed: 2026-11-25
+      property: P625
+      wikidata: Q569661

@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q141854605
+attribution_label: Anonymous
 created: c. 1780
 created_span: uncertain
 materials: [paper, gouache paint, gold]
@@ -102,4 +103,8 @@ sources:
   inventory_number:
     - accessed: 2026-11-24
       property: P217
+      wikidata: Q141854605
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q141854605

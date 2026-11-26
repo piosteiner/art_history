@@ -1,0 +1,101 @@
+public_id: 130693
+name: Jacob
+names:
+  - lang: hbo
+    role: original
+    text: יַעֲקֹב
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+  - text: Israel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+  - text: Ya'akov
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+  - text: Ya'aqov
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+  - text: Yaakov
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+  - text: Yisrael
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+  - text: Jacob, son of Isaac
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+  - lang: nl
+    role: translation
+    text: Jakob
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+  - lang: it
+    role: translation
+    text: Giacobbe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+  - lang: ja
+    role: translation
+    text: ヤコブ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+  - lang: zh
+    role: translation
+    text: 雅各
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+  - lang: ko
+    role: translation
+    text: 야곱
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+  - lang: ru
+    role: translation
+    text: Иаков
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q289957
+occupations: [shepherd]
+description_md: |-
+  [[binding-of-isaac|Isaac]]'s son, who tricked his twin brother Esau out of his birthright and their father's blessing. Fleeing, he dreamed of a ladder reaching to heaven with angels going up and down. Later, he wrestled all night with an angel and was renamed Israel.
+
+  **In art:** A man asleep on a stone beneath a ladder of angels, or a man wrestling with a winged figure.
+
+  **Famous works**
+
+  - José de Ribera, *Jacob's Dream* (Prado)
+  - [[artist/rembrandt]], *Jacob Wrestling with the Angel* (Berlin)
+  - [[artist/eugene-delacroix]], *Jacob Wrestling with the Angel* (Saint-Sulpice, Paris) — [[artwork/jacob-wrestling-with-the-angel-delacroix]]
+  - [[artist/paul-gauguin]], *Vision after the Sermon* (Edinburgh)
+
+  *From:* Hebrew Bible, Genesis · Hebrew Bible
+wikidata_id: Q289957
+metadata:
+  sources: [Wikidata Q289957 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Cigoli_Le_Songe_de_Jacob_Nancy_22122007.jpg/1280px-Cigoli_Le_Songe_de_Jacob_Nancy_22122007.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cigoli_Le_Songe_de_Jacob_Nancy_22122007.jpg
+    license: CC0
+    credit: Vassil
+identifiers:
+  bnf: 11947614q
+  gnd: "118556746"
+  lc: n82025275
+  viaf: "202148389276110710871"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q289957

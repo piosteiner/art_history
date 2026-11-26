@@ -1,0 +1,78 @@
+public_id: 130646
+name: Nefertiti
+names:
+  - lang: fr
+    role: translation
+    text: Néfertiti
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40930
+  - lang: de
+    role: translation
+    text: Nofretete
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40930
+  - lang: ja
+    role: translation
+    text: ネフェルティティ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40930
+  - lang: zh
+    role: translation
+    text: 娜芙蒂蒂
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40930
+  - lang: ko
+    role: translation
+    text: 네페르티티
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40930
+  - lang: ru
+    role: translation
+    text: Нефертити
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40930
+kind: person
+occupations: [queen regnant]
+birth: c. 1370 BCE
+death: c. 1330 BCE
+description_md: |-
+  With her husband, she started a revolution in religion, worshipping only the sun disk, the Aten. Nobody knows for sure how she died. Her painted limestone bust is one of the most famous artworks in the world.
+
+  *From:* Ancient Egyptian
+wikidata_id: Q40930
+metadata:
+  sources: [Wikidata Q40930 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Nofretete_Neues_Museum.jpg/1280px-Nofretete_Neues_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nofretete_Neues_Museum.jpg
+    license: CC BY-SA 3.0
+    credit: Philip Pikart
+identifiers:
+  bnf: 12098341n
+  gnd: 11858846X
+  idref: 02933506X
+  lc: n50032731
+  viaf: "16015127"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q40930
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q40930
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q40930
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q40930

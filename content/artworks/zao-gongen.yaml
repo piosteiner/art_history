@@ -19,6 +19,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045219
+attribution_label: Anonymous
 created: 1001-05-11
 institution: soji-ji-nishiarai-daishi
 wikidata_id: Q107045219
@@ -86,3 +87,6 @@ sources:
     - accessed: 2026-11-24
       property: P571
       wikidata: Q107045219
+  attribution_label:
+    - source: kunishitei-201-300
+      accessed: 2026-11-25

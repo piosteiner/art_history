@@ -1,0 +1,75 @@
+public_id: 130660
+name: Gebre Mesqel Lalibela
+given_name: Gebre Mesqel
+family_name: Lalibela
+names:
+  - text: Lalibela
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q471332
+  - lang: nl
+    role: translation
+    text: Lalibela van Ethiopië
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q471332
+  - lang: de
+    role: translation
+    text: Gebra Maskal Lalibela
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q471332
+  - lang: ja
+    role: translation
+    text: ゲブレ・メスケル・ラリベラ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q471332
+  - lang: zh
+    role: translation
+    text: 拉利貝拉
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q471332
+  - lang: ru
+    role: translation
+    text: Гебре Мескель Лалибэла
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q471332
+kind: person
+occupations: [politician]
+birth: 12th century
+death: 13th century
+description_md: |-
+  In about 1200, King Lalibela had eleven churches carved downwards into the living rock to make a "New Jerusalem". According to legend, a swarm of bees surrounded him as a newborn, which his mother took as a sign of his future power. People say angels helped carve the churches at night.
+
+  *From:* Ethiopian
+wikidata_id: Q471332
+metadata:
+  sources: [Wikidata Q471332 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/be/Gebre_Mesqel_Lalibela.png
+    source_url: https://commons.wikimedia.org/wiki/File:Gebre_Mesqel_Lalibela.png
+    license: Public domain
+    credit: unknown artist, originally made in Lalibela area, Ethiopia
+identifiers:
+  lc: no96061042
+  viaf: "61143237"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q471332
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q471332
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q471332
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q471332

@@ -1,0 +1,163 @@
+public_id: 130780
+name: Ambrose
+names:
+  - lang: la
+    role: original
+    text: Ambrosius Mediolanensis
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: St. Ambrosius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: Saint, Bishop of Milan Ambroise
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: St. Ambrose
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: Saint, Bishop of Milan Aurelio Ambrogio
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: Saint, Bishop of Milan Ambrogio
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: Saint, Bishop of Milan Ambrose
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: Saint Ambrose
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: Saint, Bishop of Milan Aurelius Ambrosius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: Saint Ambrose Bishop of Milan
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: Ambrose of Milan
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: St Ambrose
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: Ambrosius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: Saint, Bp. of Milan Ambrosius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - text: Saint, Bishop of Milan Amvrosīĭ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - lang: nl
+    role: translation
+    text: Ambrosius van Milaan
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - lang: fr
+    role: translation
+    text: Ambroise de Milan
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - lang: de
+    role: translation
+    text: Ambrosius von Mailand
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - lang: it
+    role: translation
+    text: Sant'Ambrogio
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - lang: es
+    role: translation
+    text: Ambrosio de Milán
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - lang: ja
+    role: translation
+    text: アンブロジウス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - lang: zh
+    role: translation
+    text: 安波羅修
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - lang: ko
+    role: translation
+    text: 암브로시우스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+  - lang: ru
+    role: translation
+    text: Амвросий Медиоланский
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43689
+kind: person
+occupations: [writer, philosopher, theologian, Catholic priest, politician, Catholic bishop, church musician]
+birth: c. 339
+death: 397-04-05
+description_md: |-
+  Ambrose, bishop of Milan, was so eloquent that legend says bees swarmed over his mouth as a baby.
+
+  **In art:** Ambrose as a bishop with a beehive or a whip.
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q43689
+metadata:
+  sources: [Wikidata Q43689 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9a/AmbroseOfMilan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AmbroseOfMilan.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 11888642v
+  gnd: 11850245X
+  hls: "022761"
+  idref: "026684217"
+  lc: n79029712
+  nlk: KAC199600526
+  ulan: "500285185"
+  viaf: "100227669"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q43689
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q43689
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q43689
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q43689

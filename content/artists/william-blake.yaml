@@ -2,3 +2,97 @@ public_id: 122896
 name: William Blake
 given_name: William
 family_name: Blake
+birth: 1757-11-28
+death: 1827-08-12
+wikidata_id: Q41513
+metadata:
+  sources: [Wikidata Q41513 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q41513
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q41513
+  - type: nationality
+    to: polity/kingdom-of-great-britain
+    period: 1801-01-01
+    period_label: until 1 January 1801
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q41513
+  - type: born_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-25
+        property: P19
+        wikidata: Q41513
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q41513
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q41513
+  - type: influenced_by
+    to: artist/henry-fuseli
+    sources:
+      - accessed: 2026-11-25
+        property: P737
+        wikidata: Q41513
+  - type: influenced_by
+    to: person/mary-wollstonecraft
+    sources:
+      - accessed: 2026-11-25
+        property: P737
+        wikidata: Q41513
+  - type: studied_at
+    to: institution/royal-academy-of-arts
+    period: 1779-08
+    period_label: from August 1779
+    sources:
+      - accessed: 2026-11-25
+        property: P69
+        wikidata: Q41513
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-11-25
+        property: P135
+        wikidata: Q41513
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/00/William_Blake_by_Thomas_Phillips.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:William_Blake_by_Thomas_Phillips.jpg
+    license: Public domain
+    credit: Thomas Phillips
+identifiers:
+  bnf: "118922028"
+  gnd: "118511513"
+  idref: "026730626"
+  kulturnav: 6783280e-d0b9-4fee-b6b3-d453060deed0
+  lc: n78095331
+  nlk: KAC199602679
+  rkd: "8824"
+  ulan: "500012489"
+  viaf: "54144439"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q41513
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q41513

@@ -1,0 +1,113 @@
+public_id: 130755
+name: Saint Stephen
+names:
+  - lang: grc
+    role: original
+    text: Στέφανος
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q161775
+  - text: Stephen the Protomartyr
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q161775
+  - lang: nl
+    role: translation
+    text: Stefanus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q161775
+  - lang: fr
+    role: translation
+    text: Étienne
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q161775
+  - lang: de
+    role: translation
+    text: Stephanus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q161775
+  - lang: it
+    role: translation
+    text: Stefano
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q161775
+  - lang: es
+    role: translation
+    text: Esteban
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q161775
+  - lang: ja
+    role: translation
+    text: ステファノ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q161775
+  - lang: zh
+    role: translation
+    text: 聖斯德望
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q161775
+  - lang: ko
+    role: translation
+    text: 스테파노
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q161775
+  - lang: ru
+    role: translation
+    text: Стефан Первомученик
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q161775
+kind: person
+occupations: [deacon]
+birth: c. 1
+death: c. 36
+description_md: |-
+  The first Christian martyr, stoned to death outside Jerusalem.
+
+  **In art:** A young deacon with stones on his head or in his hands, and a palm.
+
+  **Famous works**
+
+  - [[artist/fra-angelico]], *Chapel of Nicholas V* frescoes (Vatican)
+  - [[artist/rembrandt]], *The Stoning of Saint Stephen* (Lyon)
+
+  *From:* New Testament, Acts of the Apostles · Christian
+wikidata_id: Q161775
+metadata:
+  sources: [Wikidata Q161775 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Saint_Stephen_%28Carlo_Crivelli%29.jpg/1280px-Saint_Stephen_%28Carlo_Crivelli%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Saint_Stephen_(Carlo_Crivelli).jpg
+    license: Public domain
+    credit: Carlo Crivelli
+identifiers:
+  bnf: 12251678n
+  gnd: "118617826"
+  idref: 03126915X
+  lc: n82233888
+  viaf: "196955513"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q161775
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q161775
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q161775
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q161775

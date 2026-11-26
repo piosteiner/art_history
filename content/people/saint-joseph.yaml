@@ -1,0 +1,104 @@
+public_id: 130808
+name: Saint Joseph
+names:
+  - lang: he
+    role: original
+    text: יוֹסֵף
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+  - text: St. Joseph
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+  - text: St Joseph
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+  - text: Josef
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+  - text: Joseph
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+  - lang: nl
+    role: translation
+    text: Jozef van Nazareth
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+  - lang: de
+    role: translation
+    text: Josef von Nazaret
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+  - lang: it
+    role: translation
+    text: Giuseppe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+  - lang: es
+    role: translation
+    text: José de Nazaret
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+  - lang: ja
+    role: translation
+    text: ナザレのヨセフ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+  - lang: zh
+    role: translation
+    text: 聖若瑟
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+  - lang: ko
+    role: translation
+    text: 나자렛의 요셉
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+  - lang: ru
+    role: translation
+    text: Иосиф Обручник
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q128267
+occupations: [laborer, artisan, carpenter, tektōn]
+description_md: |-
+  The husband of [[person/mary]] and earthly father of Jesus, a carpenter.
+
+  **In art:** An older bearded man with carpenter's tools, a flowering staff (the sign that chose him as Mary's husband), or holding the Christ child.
+
+  **Famous works**
+
+  - Georges de La Tour, *Saint Joseph the Carpenter* (Louvre)
+  - [[artist/raphael]], *The Marriage of the Virgin* (Brera, Milan) — [[artwork/the-marriage-of-the-virgin-raphael]]
+
+  *From:* New Testament; Christian tradition · Christian
+wikidata_id: Q128267
+metadata:
+  sources: [Wikidata Q128267 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Scuola_veneta_-_Altare_di_San_Giuseppe%2C_gi%C3%A0_di_San_Marco_-_Santi_Giovanni_e_Paolo.jpg/1280px-Scuola_veneta_-_Altare_di_San_Giuseppe%2C_gi%C3%A0_di_San_Marco_-_Santi_Giovanni_e_Paolo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Scuola_veneta_-_Altare_di_San_Giuseppe,_gi%C3%A0_di_San_Marco_-_Santi_Giovanni_e_Paolo.jpg
+    license: CC BY-SA 3.0
+    credit: M0tty
+identifiers:
+  bnf: 17023179t
+  gnd: "118558382"
+  idref: "027433927"
+  lc: n79147954
+  viaf: "147328714"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q128267

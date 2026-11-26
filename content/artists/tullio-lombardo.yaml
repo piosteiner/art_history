@@ -2,3 +2,51 @@ public_id: 122876
 name: Tullio Lombardo
 given_name: Tullio
 family_name: Lombardo
+birth: c. 1455
+death: 1532-11-27
+wikidata_id: Q1350301
+metadata:
+  sources: [Wikidata Q1350301 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q1350301
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-25
+        property: P19
+        wikidata: Q1350301
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q1350301
+  - type: associated_with
+    to: movement/renaissance
+    sources:
+      - accessed: 2026-11-25
+        property: P135
+        wikidata: Q1350301
+identifiers:
+  bnf: "120486047"
+  gnd: "118780379"
+  idref: "028704304"
+  lc: n78005776
+  rkd: "129706"
+  sikart: "4029277"
+  ulan: "500004395"
+  viaf: "79399948"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q1350301
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q1350301

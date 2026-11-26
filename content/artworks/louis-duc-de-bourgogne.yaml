@@ -1,11 +1,13 @@
 public_id: 122950
 title_lang: en
 title: Louis, Duc de Bourgogne
+attribution_label: Anonymous, French
 created: 18th century
 created_span: uncertain
 materials: [marble]
 institution: national-gallery-of-art
 inventory_number: 1960.5.8
+web_url: https://www.nga.gov/collection/art-object-page.46016.html
 wikidata_id: Q63854421
 metadata:
   sources: [Wikidata Q63854421 (retrieved 2026-11-23)]
@@ -116,3 +118,6 @@ sources:
     - accessed: 2026-11-23
       property: P217
       wikidata: Q63854421
+  attribution_label:
+    - source: nga-1960-5-8
+      accessed: 2026-11-25

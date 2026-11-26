@@ -1,0 +1,118 @@
+public_id: 130767
+name: Agnes of Rome
+names:
+  - lang: la
+    role: original
+    text: Agnes Romana
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - text: Saint Agnes
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - text: Santa Inez
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - text: Saint, Martyr Agnes
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - text: Agnes
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - text: St. Agnes
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - lang: fr
+    role: translation
+    text: Agnès de Rome
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - lang: de
+    role: translation
+    text: Agnes von Rom
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - lang: it
+    role: translation
+    text: Sant'Agnese
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - lang: es
+    role: translation
+    text: Inés de Roma
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - lang: ja
+    role: translation
+    text: 聖アグネス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - lang: zh
+    role: translation
+    text: 圣阿格尼丝
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - lang: ko
+    role: translation
+    text: 아그네스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+  - lang: ru
+    role: translation
+    text: Агнесса Римская
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q210096
+kind: person
+birth: c. 291
+death: 304-01-22
+description_md: |-
+  A Roman girl of about 12 or 13, martyred for refusing to marry. When she was stripped in public, in one account her hair miraculously grew to cover her body.
+
+  **In art:** A young girl holding a lamb (*agnus* in Latin), with a palm.
+
+  **Famous works**
+
+  - José de Ribera, *Saint Agnes in Prison* (Dresden)
+  - Sant'Agnese in Agone (Piazza Navona, Rome)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q210096
+metadata:
+  sources: [Wikidata Q210096 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7c/Santa_Agnese_-_mosaico_Santa_Agnese_fuori_le_mura.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Santa_Agnese_-_mosaico_Santa_Agnese_fuori_le_mura.jpg
+    license: CC BY-SA 2.0
+    credit: Parrocchia di Santa Agnese fuori le Mura
+identifiers:
+  gnd: 114430704X
+  idref: "149384998"
+  lc: n83027222
+  ulan: "500372625"
+  viaf: "172455828"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q210096
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q210096
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q210096

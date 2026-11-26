@@ -2,3 +2,65 @@ public_id: 122874
 name: Claude-Joseph Vernet
 given_name: Claude-Joseph
 family_name: Vernet
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Claude Joseph Vernet
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q315819
+birth: 1714-08-14
+death: 1789-12-03
+wikidata_id: Q315819
+metadata:
+  sources: [Wikidata Q315819 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-france
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q315819
+  - type: born_in
+    to: place/avignon
+    sources:
+      - accessed: 2026-11-25
+        property: P19
+        wikidata: Q315819
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q315819
+  - type: member_of
+    to: institution/academie-royale-de-peinture-et-de-sculpture
+    sources:
+      - accessed: 2026-11-25
+        property: P463
+        wikidata: Q315819
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Mus%C3%A9e_Calvet_Van_Loo_Louis-Michel_Joseph_Vernet_1768.jpg/1280px-Mus%C3%A9e_Calvet_Van_Loo_Louis-Michel_Joseph_Vernet_1768.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Calvet_Van_Loo_Louis-Michel_Joseph_Vernet_1768.jpg
+    license: Public domain
+    credit: Finoskov
+identifiers:
+  bnf: 13962472t
+  dome: "2664"
+  gnd: "118966928"
+  idref: "033858357"
+  kulturnav: a8e7ef54-80ff-4d17-a663-b9deb3780cf3
+  lc: n50070309
+  rkd: "80560"
+  ulan: "500029638"
+  viaf: "14965328"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q315819
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q315819

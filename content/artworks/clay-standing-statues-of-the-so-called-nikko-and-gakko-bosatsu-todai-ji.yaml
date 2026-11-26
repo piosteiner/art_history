@@ -6,6 +6,7 @@ names:
   - lang: ja
     role: original
     text: 伝日光菩薩・伝月光菩薩
+attribution_label: Anonymous
 created: 8th century
 created_span: uncertain
 institution: todai-ji
@@ -47,3 +48,7 @@ provenance:
         note: 2011年以降、日光菩薩像、月光菩薩像、吉祥天像、弁才天像、不動明王二童子像、地蔵菩薩像は法華堂から免震装置を備えた東大寺ミュージアムに移され
         source: jawiki-todaiji-hokkedo
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-194
+      accessed: 2026-11-25

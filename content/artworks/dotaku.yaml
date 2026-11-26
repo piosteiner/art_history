@@ -1,6 +1,7 @@
 public_id: 122947
 title_lang: en
 title: Dōtaku
+attribution_label: Anonymous, Japanese
 created: 100/200
 kind: metalwork
 medium: cast bronze
@@ -53,3 +54,7 @@ provenance:
         note: The Cleveland Museum of Art, Cleveland, OH [1916–] — Gift of Mrs. Arthur St. John Newberry
         source: cma-1916-1102
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: cma-1916-1102
+      accessed: 2026-11-25

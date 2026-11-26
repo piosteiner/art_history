@@ -1,0 +1,68 @@
+public_id: 130670
+name: Bayinnaung
+names:
+  - text: King Bayinnong
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q470984
+  - text: Bayinnaung Kyawhtin Nawrahta
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q470984
+  - lang: ja
+    role: translation
+    text: バインナウン
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q470984
+  - lang: zh
+    role: translation
+    text: 莽應龍
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q470984
+  - lang: ko
+    role: translation
+    text: 바인나웅
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q470984
+  - lang: ru
+    role: translation
+    text: Байиннаун
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q470984
+kind: person
+occupations: [military leader]
+birth: 1516-01-26
+death: 1581-11-10
+description_md: |-
+  He ruled from 1550 to 1581 and conquered Burma, the Shan States, Lan Na, Siam, Lan Xang (Laos) and Manipur (now in north-east India). His empire was the largest ever in Southeast Asia, but it fell apart soon after his death.
+
+  *From:* Burmese
+wikidata_id: Q470984
+metadata:
+  sources: [Wikidata Q470984 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Pyinoolwin_--_DSA_Bayinnaung.JPG/1280px-Pyinoolwin_--_DSA_Bayinnaung.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Pyinoolwin_--_DSA_Bayinnaung.JPG
+    license: CC BY-SA 3.0
+    credit: Hybernator
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q470984
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q470984
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q470984
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q470984

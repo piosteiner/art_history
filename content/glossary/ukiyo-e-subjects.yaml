@@ -1,0 +1,28 @@
+public_id: 132505
+name: Ukiyo-e subjects
+names: [bijin-ga, yakusha-e, musha-e, meisho-e]
+category: iconography
+definition: 'The subjects of the Edo-period woodblock prints of the "floating world": beautiful women, kabuki actors, warriors and famous views.'
+description_md: |-
+  *Ukiyo-e*, "pictures of the floating world", were mass-produced woodblock prints of the Edo period. Main subjects: courtesans and beautiful women (*bijin-ga*), kabuki actors (*yakusha-e*), warriors (*musha-e*), landscapes and famous places (*meisho-e*). They strongly influenced European art (*Japonisme*), including the Impressionists and Van Gogh.
+
+  **Famous works**
+
+  - [[artist/katsushika-hokusai]], *The Great Wave off Kanagawa and Thirty-Six Views of Mount Fuji*
+  - [[artist/utagawa-hiroshige]], *The Fifty-Three Stations of the Tōkaidō*
+  - Utagawa Hiroshige, *One Hundred Famous Views of Edo* (whose Plum Park in Kameido Van Gogh copied)
+  - [[artist/kitagawa-utamaro]], *bijin-ga portraits*
+  - [[artist/toshusai-sharaku]], *actor portraits* (1794–95)
+
+  *From:* Japanese
+wikidata_id: Q185905
+metadata:
+  list: World Folklore Names
+  section: "Ref 14: Japanese Art Subjects"
+sources:
+  definition:
+    - source: wikipedia-en-ukiyo-e
+      accessed: 2026-11-25
+    - source: history-of-japanese-art
+      locator: pp. 286–287
+      accessed: 2026-11-25

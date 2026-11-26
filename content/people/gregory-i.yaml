@@ -1,0 +1,177 @@
+public_id: 130781
+name: Gregory I
+names:
+  - lang: la
+    role: original
+    text: Gregorius PP. I
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Saint Gregorius Magnus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: St Gregory I
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Saint Gregory the Dialogist
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Saint Gregory the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: St Gregory
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: St Gregory the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Gregorius Magnus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: St. Gregory the Dialogist
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Pope Gregory the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Pope Saint Gregory I
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Gregorius Anicius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Pope St. Gregory I
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: St. Gregory the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Gregory the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Pope Saint Gregory I the Great
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Saint Gregory I
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Saint Gregory
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - text: Gregory
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - lang: nl
+    role: translation
+    text: Paus Gregorius I
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - lang: fr
+    role: translation
+    text: Grégoire Ier
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - lang: de
+    role: translation
+    text: Gregor der Große
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - lang: it
+    role: translation
+    text: papa Gregorio I
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - lang: es
+    role: translation
+    text: Gregorio Magno
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - lang: ja
+    role: translation
+    text: グレゴリウス1世
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - lang: zh
+    role: translation
+    text: 教宗額我略一世
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - lang: ko
+    role: translation
+    text: 교황 그레고리오 1세
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+  - lang: ru
+    role: translation
+    text: Григорий I
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q42827
+kind: person
+occupations: [diplomat, Latin Catholic priest, writer, Doctor of the Church, monk]
+birth: c. 540
+death: 604-03-15
+description_md: |-
+  Gregory, a 6th-century pope, according to legend wrote with the Holy Spirit as a dove whispering in his ear.
+
+  **In art:** Gregory as a pope with a triple crown and a dove at his ear.
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q42827
+metadata:
+  sources: [Wikidata Q42827 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1e/Pope_Gregory_I_illustration.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pope_Gregory_I_illustration.jpg
+    license: Public domain
+    credit: anonymous
+identifiers:
+  bnf: 11886472r
+  gnd: "118541838"
+  idref: "026657929"
+  lc: n79056801
+  ulan: "500062911"
+  viaf: "100184667"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q42827
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q42827
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q42827
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q42827

@@ -31,6 +31,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q1961034
+attribution_label: Anonymous
 created: c. 1550 BCE
 created_span: uncertain
 materials: [fresco]
@@ -92,4 +93,8 @@ sources:
   institution:
     - accessed: 2026-11-24
       property: P195
+      wikidata: Q1961034
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q1961034

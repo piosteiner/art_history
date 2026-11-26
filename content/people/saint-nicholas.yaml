@@ -1,0 +1,146 @@
+public_id: 130756
+name: Saint Nicholas
+names:
+  - lang: el
+    role: original
+    text: Άγιος Νικόλαος
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - text: Nicolau
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - text: São Nicolau, o Taumaturgo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - text: Nikolaos de Mira
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - text: São Nicolau de Bari
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - text: São Nicolau de Mira
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - text: São Nicolau
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - text: Nicolau de Mira
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - text: Sanctus Nicolaus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - text: Nicolau de Bari
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - lang: nl
+    role: translation
+    text: Nicolaas van Myra
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - lang: fr
+    role: translation
+    text: Nicolas de Myre
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - lang: de
+    role: translation
+    text: Nikolaus von Myra
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - lang: it
+    role: translation
+    text: Nicola di Bari
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - lang: es
+    role: translation
+    text: Nicolás de Bari
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - lang: ja
+    role: translation
+    text: ミラのニコラオス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - lang: zh
+    role: translation
+    text: 圣尼古拉
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - lang: ko
+    role: translation
+    text: 성 니콜라우스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+  - lang: ru
+    role: translation
+    text: Николай Чудотворец
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44269
+kind: person
+occupations: [presbyter, Catholic bishop, bishop]
+birth: 3rd century
+death: 4th century
+description_md: |-
+  A 4th-century bishop of Myra, famous for his secret generosity: he threw bags of gold through a poor man's window as dowries for his three daughters. He's the origin of Santa Claus.
+
+  **In art:** A bishop with three golden balls or purses, sometimes with three children in a tub, whom he brought back to life.
+
+  **Famous works**
+
+  - [[artist/gentile-da-fabriano]], *Quaratesi Altarpiece* predella (Vatican and Washington)
+  - [[artist/fra-angelico]], *Perugia Altarpiece* predella (Vatican and Galleria Nazionale dell'Umbria, Perugia)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q44269
+metadata:
+  sources: [Wikidata Q44269 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/eb/St_Nicholas_Icon_Sinai_13th_century.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:St_Nicholas_Icon_Sinai_13th_century.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: 11961190d
+  gnd: 12918814X
+  idref: 02760859X
+  lc: n50053594
+  ulan: "500353854"
+  viaf: "6179914"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q44269
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q44269
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q44269
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q44269

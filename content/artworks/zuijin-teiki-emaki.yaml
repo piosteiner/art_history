@@ -21,6 +21,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q50439427
+attribution_label: attributed to Fujiwara Nobuzane
 created: 13th century
 created_span: uncertain
 materials: [paper, India ink, paint]
@@ -84,4 +85,8 @@ sources:
   institution:
     - accessed: 2026-11-24
       property: P195
+      wikidata: Q50439427
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q50439427

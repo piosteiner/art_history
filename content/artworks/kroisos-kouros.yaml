@@ -45,6 +45,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q775405
+attribution_label: Anonymous
 created: -540/-515
 materials: [Parian marble]
 dimensions: [194]
@@ -163,4 +164,8 @@ sources:
   inventory_number:
     - accessed: 2026-11-24
       property: P217
+      wikidata: Q775405
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q775405

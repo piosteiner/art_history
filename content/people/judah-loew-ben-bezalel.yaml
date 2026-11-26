@@ -1,0 +1,92 @@
+public_id: 130671
+name: Judah Loew ben Bezalel
+given_name: Judah Loew ben
+family_name: Bezalel
+names:
+  - lang: nl
+    role: translation
+    text: Jehoeda Löw
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q363513
+  - lang: fr
+    role: translation
+    text: Juda Loew ben Bezalel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q363513
+  - lang: de
+    role: translation
+    text: Judah Löw
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q363513
+  - lang: it
+    role: translation
+    text: Judah Loew
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q363513
+  - lang: es
+    role: translation
+    text: Rabbi Judah Loew
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q363513
+  - lang: ja
+    role: translation
+    text: イェフダ・レーヴ・ベン・ベザレル
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q363513
+  - lang: zh
+    role: translation
+    text: 犹大·勒夫·本·贝扎莱尔
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q363513
+  - lang: ru
+    role: translation
+    text: Махараль из Праги
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q363513
+kind: person
+occupations: [rabbi, mathematician, philosopher, talmudist]
+birth: c. 1520
+death: 1609-09-17
+description_md: |-
+  Judah Loew ben Bezalel (about 1520–1609) was one of the great scholars of his time. Legends grew up around him, above all that he made the [[golem-of-prague|Golem]]; his meeting with [[person/emperor-rudolf-ii]] (an audience on 23 February 1592) really happened, though legend embroidered it. His grave in Prague's Old Jewish Cemetery is still covered with notes and stones left by visitors.
+
+  *From:* Jewish (Prague)
+wikidata_id: Q363513
+metadata:
+  sources: [Wikidata Q363513 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/27/Maharal.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maharal.jpg
+    license: Public domain
+    credit: Thomazzo
+identifiers:
+  bnf: 11929500t
+  gnd: "119237865"
+  idref: "027201139"
+  lc: n50062806
+  viaf: "79038296"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q363513
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q363513
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q363513
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q363513

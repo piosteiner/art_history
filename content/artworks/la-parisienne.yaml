@@ -30,6 +30,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q1644772
+attribution_label: Anonymous
 materials: [fresco]
 dimensions: [25]
 institution: heraklion-archaeological-museum
@@ -86,4 +87,8 @@ sources:
   institution:
     - accessed: 2026-11-24
       property: P195
+      wikidata: Q1644772
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q1644772

@@ -1,0 +1,85 @@
+public_id: 130742
+name: Longinus
+names:
+  - lang: fr
+    role: translation
+    text: Longin le Centurion
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q319947
+  - lang: it
+    role: translation
+    text: Longino
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q319947
+  - lang: ja
+    role: translation
+    text: 聖ロンギヌス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q319947
+  - lang: zh
+    role: translation
+    text: 朗基努斯
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q319947
+  - lang: ko
+    role: translation
+    text: 론지노
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q319947
+  - lang: ru
+    role: translation
+    text: Лонгин Сотник
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q319947
+kind: person
+occupations: [military personnel, writer]
+birth: 1st century
+death: 1st century
+description_md: |-
+  Longinus was the Roman soldier who pierced Christ's side with a lance, and in legend became a Christian.
+
+  **In art:** A soldier with a lance at the cross, often on horseback.
+
+  **Famous works**
+
+  - Bernini, *Saint Longinus* (St Peter's Basilica, Rome)
+  - Rubens, *Le Coup de Lance* (high altarpiece of 1620 for the Récollets church, Royal Museum of Fine Arts Antwerp, KMSKA)
+
+  *From:* New Testament; Christian legend · Christian
+wikidata_id: Q319947
+metadata:
+  sources: [Wikidata Q319947 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/20/LonginusFyodorZubov.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:LonginusFyodorZubov.jpg
+    license: Public domain
+    credit: Fyodor Zubov / Фёдор Зубов (? — 1689)
+identifiers:
+  bnf: "161026051"
+  gnd: "118947397"
+  idref: "174997566"
+  lc: n90684624
+  viaf: "25401950"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q319947
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q319947
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q319947
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q319947

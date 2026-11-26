@@ -1,0 +1,75 @@
+public_id: 130682
+name: Marie Laveau
+given_name: Marie
+family_name: Laveau
+names:
+  - lang: fr
+    role: original
+    text: Marie Laveaux
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q290249
+  - text: Marie Catherine Laveau
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q290249
+  - text: Marie Catherine Laveau Paris Glapion
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q290249
+  - lang: ja
+    role: translation
+    text: マリー・ラヴュー
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q290249
+  - lang: zh
+    role: translation
+    text: 瑪莉·拉馮
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q290249
+  - lang: ru
+    role: translation
+    text: Мария ЛаВей
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q290249
+kind: person
+occupations: [occultist, hairdresser, religious leader]
+birth: 1801-09-10
+death: 1881-06-15
+description_md: |-
+  A free Creole woman (1801–1881), a hairdresser and healer, who was a famous practitioner of Louisiana Voodoo. Many legends grew up about her powers. Her reputed tomb in St. Louis Cemetery No. 1 is still a place of pilgrimage, where visitors leave offerings.
+
+  *From:* Louisiana Creole
+wikidata_id: Q290249
+metadata:
+  sources: [Wikidata Q290249 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Marie_Laveau_by_E.W._Kemble.png/1280px-Marie_Laveau_by_E.W._Kemble.png
+    source_url: https://commons.wikimedia.org/wiki/File:Marie_Laveau_by_E.W._Kemble.png
+    license: Public domain
+    credit: E. W. Kemble
+identifiers:
+  gnd: "131443674"
+  idref: "111955246"
+  lc: n82215820
+  viaf: "57745464"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q290249
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q290249
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q290249
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q290249

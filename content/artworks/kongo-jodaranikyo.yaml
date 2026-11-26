@@ -17,10 +17,12 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q3198667
+attribution_label: Anonymous
 created: 686
 materials: [hemp paper]
 dimensions: [46, 26.1]
 institution: agency-for-cultural-affairs
+web_url: https://kunishitei.bunka.go.jp/heritage/detail/201/582
 wikidata_id: Q3198667
 metadata:
   sources: [Wikidata Q3198667 (retrieved 2026-11-24)]
@@ -91,3 +93,6 @@ sources:
     - accessed: 2026-11-24
       property: P2048
       wikidata: Q3198667
+  attribution_label:
+    - source: kunishitei-201-582
+      accessed: 2026-11-25

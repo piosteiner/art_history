@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045378
+attribution_label: Anonymous
 institution: shomyo-ji
 wikidata_id: Q107045378
 metadata:
@@ -48,5 +49,9 @@ provenance:
     sources:
       - url: https://ja.wikipedia.org/w/index.php?oldid=111486752
         note: ※国宝・重要文化財の大部分は隣接する神奈川県立金沢文庫が管理している … 1930年（昭和5年）、神奈川県立金沢文庫が復興した。…称名寺から古書・古文書や文化財などが寄託された
-        source: wikipedia-ja-111486752
+        source: ja-wikipedia-shomyoji-yokohama
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: kunishitei-201-150
+      accessed: 2026-11-25

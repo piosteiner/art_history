@@ -1,0 +1,83 @@
+public_id: 130734
+name: Philip the Apostle
+given_name: Philip the
+family_name: Apostle
+names:
+  - lang: nl
+    role: translation
+    text: Filippus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43675
+  - lang: fr
+    role: translation
+    text: Philippe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43675
+  - lang: de
+    role: translation
+    text: Philippus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43675
+  - lang: it
+    role: translation
+    text: Filippo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43675
+  - lang: es
+    role: translation
+    text: Felipe el Apóstol
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43675
+  - lang: ja
+    role: translation
+    text: フィリポ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43675
+  - lang: zh
+    role: translation
+    text: 腓力
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43675
+  - lang: ko
+    role: translation
+    text: 필립보
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43675
+  - lang: ru
+    role: translation
+    text: Филипп
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43675
+occupations: [missionary]
+description_md: |-
+  One of the apostles. His attribute: a cross.
+
+  **In art:** A cross.
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q43675
+metadata:
+  sources: [Wikidata Q43675 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Georges_de_La_Tour_053.jpg/1280px-Georges_de_La_Tour_053.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Georges_de_La_Tour_053.jpg
+    license: Public domain
+    credit: La Tour, Georges de
+identifiers:
+  gnd: "119067692"
+  lc: n93096386
+  viaf: "25404645"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q43675

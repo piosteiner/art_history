@@ -14,6 +14,7 @@ created_span: uncertain
 materials: [oil paint, panel]
 institution: national-gallery-of-art
 inventory_number: 1952.5.64
+web_url: https://www.nga.gov/collection/art-object-page.41679.html
 provenance_status: d_seized
 provenance_status_note: Confiscated by the Nazis with the Rothschild collections in Austria in 1938; found at Kremsmünster, moved to Altaussee, under the Bundesdenkmalamt by August 1947 and restituted to the Rothschild family on 16 October 1947.
 wikidata_id: Q20174943
@@ -84,7 +85,7 @@ provenance:
         note: (his sale, Posonyi, Vienna, 24-28 April 1871, no. 1);
         source: nga-1952-5-64
         accessed: 2026-11-24
-  - owner: person/friedrich-jakob-gsell
+  - owner: person/friedrich-jacob-gsell
     method: auction
     direct: true
     place: vienna
@@ -106,7 +107,7 @@ provenance:
         note: (his sale, G. Plach, Vienna, 14 March 1872, no. 152);
         source: nga-1952-5-64
         accessed: 2026-11-24
-  - owner: person/nathaniel-mayer-von-rothschild
+  - owner: person/nathaniel-de-rothschild
     method: auction
     direct: true
     place: vienna
@@ -116,7 +117,7 @@ provenance:
         note: Baron Nathaniel Mayer von Rothschild [1836-1905], Vienna; — [4] … "The Baron Nathaniel de Rothschild...who owned the Francia portrait was not the one of Tring, but the one of Vienna"
         source: nga-1952-5-64
         accessed: 2026-11-24
-  - owner: person/alphons-de-rothschild
+  - owner: person/alphonse-von-rothschild
     method: inheritance
     direct: true
     place: vienna

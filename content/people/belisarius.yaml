@@ -1,0 +1,102 @@
+public_id: 130691
+name: Belisarius
+names:
+  - lang: el
+    role: original
+    text: Φλάβιος Βελισάριος
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q174943
+  - lang: la
+    role: original
+    text: Flavius Belisarius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q174943
+  - lang: fr
+    role: translation
+    text: Bélisaire
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q174943
+  - lang: de
+    role: translation
+    text: Belisar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q174943
+  - lang: it
+    role: translation
+    text: Belisario
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q174943
+  - lang: ja
+    role: translation
+    text: ベリサリウス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q174943
+  - lang: zh
+    role: translation
+    text: 贝利撒留
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q174943
+  - lang: ko
+    role: translation
+    text: 벨리사리우스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q174943
+  - lang: ru
+    role: translation
+    text: Велисарий
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q174943
+kind: person
+occupations: [politician, military officer, military leader]
+birth: c. 505
+death: 565-03-15
+description_md: |-
+  A great Byzantine general of the 6th century. According to a later legend, he was falsely accused, blinded by the emperor and reduced to begging in the streets.
+
+  **In art:** A blind old soldier begging with a helmet, guided by a child, recognised by one of his former soldiers.
+
+  **Famous works**
+
+  - [[artist/jacques-louis-david]], *Belisarius Begging for Alms* (Lille)
+
+  *From:* history and legend · Byzantine
+wikidata_id: Q174943
+metadata:
+  sources: [Wikidata Q174943 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Meister_von_San_Vitale_in_Ravenna_013.jpg/1280px-Meister_von_San_Vitale_in_Ravenna_013.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Meister_von_San_Vitale_in_Ravenna_013.jpg
+    license: Public domain
+    credit: Meister von San Vitale in Ravenna
+identifiers:
+  gnd: "118655108"
+  idref: "086812963"
+  lc: n82102951
+  ulan: "500355323"
+  viaf: "55151776783118011521"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q174943
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q174943
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q174943
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q174943

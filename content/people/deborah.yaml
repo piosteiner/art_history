@@ -1,0 +1,85 @@
+public_id: 130715
+name: Deborah
+names:
+  - text: Dvora
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q213633
+  - text: Dəḇôrā
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q213633
+  - text: Debora
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q213633
+  - text: Debbora
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q213633
+  - text: D’vorah
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q213633
+  - text: Deborah of Israel
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q213633
+  - text: Debborac
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q213633
+  - lang: fr
+    role: translation
+    text: Débora
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q213633
+  - lang: ja
+    role: translation
+    text: デボラ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q213633
+  - lang: zh
+    role: translation
+    text: 底波拉
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q213633
+  - lang: ko
+    role: translation
+    text: 데보라
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q213633
+  - lang: ru
+    role: translation
+    text: Девора
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q213633
+occupations: [justice of the peace]
+description_md: |-
+  Deborah was a prophetess and judge of Israel who led a victory against the Canaanite general Sisera.
+
+  *From:* Hebrew Bible, Judges · Hebrew Bible
+wikidata_id: Q213633
+metadata:
+  sources: [Wikidata Q213633 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/30/Deborah-judge.png
+    source_url: https://commons.wikimedia.org/wiki/File:Deborah-judge.png
+    license: Public domain
+    credit: Guillaume Rouille
+identifiers:
+  bnf: "161642734"
+  gnd: "1108794203"
+  idref: "180765183"
+  lc: n86068542
+  viaf: "50146997347218892405"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q213633

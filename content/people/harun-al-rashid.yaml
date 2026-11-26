@@ -1,0 +1,133 @@
+public_id: 130639
+name: Harun al-Rashid
+given_name: Harun
+family_name: al-Rashid
+names:
+  - lang: ar
+    role: original
+    text: هَارُون الرَشِيد
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - text: Harun ibn Muhammad ibn Abdallah
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - text: Abu Ja'far
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - text: Harun ar-Rashid
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - text: Haroun-al-Raschid
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - text: Haroun-el-Raschid
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - text: Haroun Alraſchid
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - text: Hārūn ibn al-Mahdī
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - lang: nl
+    role: translation
+    text: Haroen ar-Rashid
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - lang: fr
+    role: translation
+    text: Hâroun ar-Rachîd
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - lang: de
+    role: translation
+    text: Hārūn ar-Raschīd
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - lang: it
+    role: translation
+    text: Hārūn al-Rashīd
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - lang: es
+    role: translation
+    text: Harún al-Rashid
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - lang: ja
+    role: translation
+    text: ハールーン・アッ＝ラシード
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - lang: zh
+    role: translation
+    text: 哈伦·拉希德
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - lang: ko
+    role: translation
+    text: 하룬 알라시드
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+  - lang: ru
+    role: translation
+    text: Харун ар-Рашид
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q131002
+kind: person
+occupations: [politician, poet, caliph]
+birth: 766-02-23
+death: 809-03-28
+description_md: |-
+  Harun (ruled 786–809) appears in many stories, going out at night in disguise with his vizier Ja'far and his executioner Masrur to see how his people lived. Ja'far was real too; Harun had him executed in 803.
+
+  *From:* One Thousand and One Nights · Arabic, Persian, Indian and Egyptian
+wikidata_id: Q131002
+metadata:
+  sources: [Wikidata Q131002 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Harun_Al-Rashid_and_the_World_of_the_Thousand_and_One_Nights.jpg/1280px-Harun_Al-Rashid_and_the_World_of_the_Thousand_and_One_Nights.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Harun_Al-Rashid_and_the_World_of_the_Thousand_and_One_Nights.jpg
+    license: Public domain
+    credit: Unknown artist
+identifiers:
+  bnf: 12291753d
+  gnd: "118863096"
+  idref: "029334942"
+  kulturnav: 5d761136-95cc-40bc-a872-05d5709e7a6e
+  lc: n50028662
+  viaf: "66445928"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q131002
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q131002
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q131002
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q131002

@@ -21,6 +21,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q91239334
+attribution_label: Anonymous
 created: 6th century
 created_span: uncertain
 materials: [terracotta]
@@ -124,3 +125,6 @@ sources:
     - accessed: 2026-11-24
       property: P217
       wikidata: Q91239334
+  attribution_label:
+    - source: kunishitei-201-871
+      accessed: 2026-11-25

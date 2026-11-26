@@ -1,0 +1,86 @@
+public_id: 130765
+name: Saint Maurice
+names:
+  - text: Mauritius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q316599
+  - lang: fr
+    role: translation
+    text: Maurice d'Agaune
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q316599
+  - lang: it
+    role: translation
+    text: san Maurizio
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q316599
+  - lang: es
+    role: translation
+    text: Mauricio el Tebano
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q316599
+  - lang: ja
+    role: translation
+    text: マウリティウス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q316599
+  - lang: zh
+    role: translation
+    text: 莫里斯
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q316599
+  - lang: ru
+    role: translation
+    text: Святой Маврикий
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q316599
+kind: person
+occupations: [soldier, military personnel]
+birth: 3rd century
+death: 287
+description_md: |-
+  Saint Maurice, the African commander of the Theban Legion, martyred at Agaunum (today Saint-Maurice in Valais).
+
+  **In art:** Saint Maurice as a Black knight in armour, often with a banner.
+
+  **Famous works**
+
+  - Matthias Grünewald, *The Meeting of Saint Erasmus and Saint Maurice* (Alte Pinakothek, Munich)
+
+  *From:* Christian legend · Christian
+wikidata_id: Q316599
+metadata:
+  sources: [Wikidata Q316599 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Mauritius_Kopf.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mauritius_Kopf.jpg
+    license: Public domain
+    credit: Rabanus Flavus
+identifiers:
+  gnd: "118579274"
+  hls: "010198"
+  viaf: "77108209"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q316599
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q316599
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q316599
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q316599

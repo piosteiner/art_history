@@ -1,0 +1,155 @@
+public_id: 130775
+name: Saint Dominic
+names:
+  - text: Saint Dominic de Guzman
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - text: Saint Dominicus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - text: Domingo de, Saint Guzmán
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - text: Santo Domingo De Guzman
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - text: Dominic de Guzman
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - text: Santo Domingo de Guzmán
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - text: Saint Dominikus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - text: St. Dominic de Guzman
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - text: Domingo de, Saint Caleruega
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - text: di Guzman, Saint Domenico
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - text: de Caleruega, Saint Domingo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - text: Saint Domenico
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - text: Saint Dominique
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - lang: nl
+    role: translation
+    text: Dominicus de Guzmán
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - lang: fr
+    role: translation
+    text: Dominique de Guzmán
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - lang: de
+    role: translation
+    text: Dominikus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - lang: it
+    role: translation
+    text: Domenico di Guzmán
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - lang: es
+    role: translation
+    text: Domingo de Guzmán
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - lang: ja
+    role: translation
+    text: ドミニコ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - lang: zh
+    role: translation
+    text: 聖多明尼克
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - lang: ko
+    role: translation
+    text: 도미니크
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+  - lang: ru
+    role: translation
+    text: Святой Доминик
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q44091
+kind: person
+occupations: [Catholic priest, founder of Catholic religious community, friar]
+birth: c. 1170
+death: 1221-08-13
+description_md: |-
+  Dominic founded the Dominican order of preachers in 1216. Before he was born, his mother dreamed of a dog carrying a burning torch. The Dominicans' Latin name was punned into *Domini canes*, "the hounds of the Lord".
+
+  **In art:** Dominic in a black and white habit, with a star on his forehead and a dog with a torch.
+
+  **Famous works**
+
+  - [[artist/fra-angelico]], *Saint Dominic Adoring the Crucifixion* (San Marco, Florence)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q44091
+metadata:
+  sources: [Wikidata Q44091 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/SaintDominic.jpg/1280px-SaintDominic.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:SaintDominic.jpg
+    license: Public domain
+    credit: Claudio Coello
+identifiers:
+  bnf: 12040448c
+  gnd: "118526642"
+  idref: "028601726"
+  lc: n80040154
+  ulan: "500354832"
+  viaf: "17240904"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q44091
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q44091
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q44091
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q44091

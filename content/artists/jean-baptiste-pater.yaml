@@ -2,3 +2,62 @@ public_id: 122922
 name: Jean-Baptiste Pater
 given_name: Jean-Baptiste
 family_name: Pater
+birth: 1695-12-29
+death: 1736-07-25
+wikidata_id: Q731533
+metadata:
+  sources: [Wikidata Q731533 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q731533
+  - type: born_in
+    to: place/valenciennes
+    sources:
+      - accessed: 2026-11-25
+        property: P19
+        wikidata: Q731533
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q731533
+  - type: student_of
+    to: artist/jean-antoine-watteau
+    sources:
+      - accessed: 2026-11-25
+        property: P1066
+        wikidata: Q731533
+  - type: member_of
+    to: institution/academie-royale-de-peinture-et-de-sculpture
+    sources:
+      - accessed: 2026-11-25
+        property: P463
+        wikidata: Q731533
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/55/Jean-Baptiste_Pater_%281695-1736%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Pater_(1695-1736).jpg
+    license: Public domain
+    credit: Jean-Baptiste Pater
+identifiers:
+  bnf: 13743743j
+  gnd: "119038196"
+  idref: "123575311"
+  kulturnav: a7e041d2-7ad2-492d-9d34-97e680efc58c
+  lc: n97864343
+  rkd: "62061"
+  ulan: "500005903"
+  viaf: "54325661"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q731533
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q731533

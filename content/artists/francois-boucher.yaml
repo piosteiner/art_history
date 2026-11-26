@@ -33,6 +33,12 @@ relationships:
       - accessed: 2026-11-03
         property: P937
         wikidata: Q180932
+  - type: student_of
+    to: artist/jacques-andre-joseph-aved
+    sources:
+      - accessed: 2026-11-25
+        property: P802
+        wikidata: Q489437
   - type: member_of
     to: institution/academie-royale-de-peinture-et-de-sculpture
     sources:

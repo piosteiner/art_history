@@ -42,6 +42,7 @@ names:
     sources:
       - accessed: 2026-11-23
         wikidata: Q2668248
+attribution_label: Anonymous
 created: c. 340 BCE
 created_span: uncertain
 materials: [bronze]
@@ -115,4 +116,8 @@ sources:
   institution:
     - accessed: 2026-11-23
       property: P195
+      wikidata: Q2668248
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q2668248

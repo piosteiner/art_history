@@ -18,11 +18,13 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q28808914
+attribution_label: Anonymous
 created: 12th century
 created_span: uncertain
 dimensions: [14.79, 9.89]
 institution: tokyo-national-museum
 inventory_number: A-11529
+web_url: https://colbase.nich.go.jp/collection_items/tnm/A-11529?locale=en
 wikidata_id: Q28808914
 metadata:
   sources: [Wikidata Q28808914 (retrieved 2026-11-24)]
@@ -107,4 +109,8 @@ sources:
   inventory_number:
     - accessed: 2026-11-24
       property: P217
+      wikidata: Q28808914
+  attribution_label:
+    - accessed: 2026-11-25
+      property: P170
       wikidata: Q28808914

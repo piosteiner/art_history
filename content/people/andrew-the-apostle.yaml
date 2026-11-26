@@ -1,0 +1,113 @@
+public_id: 130730
+name: Andrew the Apostle
+given_name: Andrew the
+family_name: Apostle
+names:
+  - lang: grc
+    role: original
+    text: Ἀνδρέας
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - text: Andreas
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - text: St Andrew the Apostle
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - text: Saint Andrew
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - text: Andrew
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - text: St Andrew
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - text: Saint Andrew the Apostle
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - text: St. Andrew the Apostle
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - text: St. Andrew
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - text: Anders
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - lang: fr
+    role: translation
+    text: André
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - lang: it
+    role: translation
+    text: Andrea
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - lang: es
+    role: translation
+    text: Andrés el Apóstol
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - lang: ja
+    role: translation
+    text: アンデレ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - lang: zh
+    role: translation
+    text: 安得烈
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - lang: ko
+    role: translation
+    text: 안드레 사도
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+  - lang: ru
+    role: translation
+    text: Андрей Первозванный
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43399
+occupations: [preacher, missionary, fisher]
+description_md: |-
+  One of the apostles. His attribute: an X-shaped cross (the saltire, Scotland's flag).
+
+  **In art:** An X-shaped cross (the saltire, Scotland's flag).
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q43399
+metadata:
+  sources: [Wikidata Q43399 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Martirio_de_San_Andr%C3%A9s%2C_por_Juan_Correa_de_Vivar.jpg/1280px-Martirio_de_San_Andr%C3%A9s%2C_por_Juan_Correa_de_Vivar.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Martirio_de_San_Andr%C3%A9s,_por_Juan_Correa_de_Vivar.jpg
+    license: Public domain
+    credit: Juan Correa de Vivar
+identifiers:
+  gnd: "118502891"
+  lc: n84127122
+  viaf: "45705266"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q43399

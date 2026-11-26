@@ -11,10 +11,12 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107045369
+attribution_label: Li of Shucheng (named in Zhang Shen's colophon)
 created: 12th century
 created_span: uncertain
 institution: tokyo-national-museum
 inventory_number: TA-161
+web_url: https://colbase.nich.go.jp/collection_items/tnm/TA-161?locale=en
 location: [139.7756, 35.71994]
 wikidata_id: Q107045369
 metadata:
@@ -102,3 +104,6 @@ sources:
     - accessed: 2026-11-24
       property: P217
       wikidata: Q107045369
+  attribution_label:
+    - source: kunishitei-201-71
+      accessed: 2026-11-25

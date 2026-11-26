@@ -6,6 +6,7 @@ names:
   - lang: ja
     role: original
     text: 葛井寺千手観音坐像
+attribution_label: Anonymous
 created: 725
 institution: fujii-dera-temple
 wikidata_id: Q107045588
@@ -41,3 +42,6 @@ sources:
     - accessed: 2026-11-24
       property: P571
       wikidata: Q107045588
+  attribution_label:
+    - source: kunishitei-201-214
+      accessed: 2026-11-25

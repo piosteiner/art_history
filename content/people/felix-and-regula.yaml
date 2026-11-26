@@ -1,0 +1,77 @@
+public_id: 130763
+name: Felix and Regula
+names:
+  - text: Felix, Regula and Exuperantius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q114723
+  - lang: nl
+    role: translation
+    text: Felix en Regula
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q114723
+  - lang: fr
+    role: translation
+    text: Félix et Regula
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q114723
+  - lang: de
+    role: translation
+    text: Felix und Regula
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q114723
+  - lang: it
+    role: translation
+    text: Felice e Regola
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q114723
+  - lang: es
+    role: translation
+    text: Félix y Régula
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q114723
+  - lang: zh
+    role: translation
+    text: 菲利克斯和雷古拉
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q114723
+  - lang: ko
+    role: translation
+    text: 펠릭스와 레굴라
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q114723
+  - lang: ru
+    role: translation
+    text: Феликс и Регула
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q114723
+description_md: |-
+  Saint Felix and Saint Regula, patron saints of Zurich, who according to legend were beheaded on the banks of the Limmat and carried their own heads up the hill to where the Grossmünster now stands.
+
+  **In art:** Felix and Regula holding their heads, often with their servant Exuperantius.
+
+  **Famous works**
+
+  - Hans Leu the Elder, *Panorama of Zurich with Felix and Regula* (Swiss National Museum, Zurich)
+
+  *From:* Zurich legend · Christian
+wikidata_id: Q114723
+metadata:
+  sources: [Wikidata Q114723 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/47/Felix_und_Regula.png
+    source_url: https://commons.wikimedia.org/wiki/File:Felix_und_Regula.png
+    license: Public domain
+    credit: Hans Leu der Ältere, upload by sidonius 15:54, 22 December 2006 (UTC)
+identifiers:
+  gnd: "118686534"
+  hls: "010200"
+  viaf: "57408938"

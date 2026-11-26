@@ -83,7 +83,7 @@ provenance:
         accessed: 2026-11-24
       - url: https://ja.wikipedia.org/wiki/%E7%9A%87%E5%B1%85%E4%B8%89%E3%81%AE%E4%B8%B8%E5%B0%9A%E8%94%B5%E9%A4%A8
         note: 昭和天皇崩御後の1989年（平成元年）6月に遺族の明仁と香淳皇后から寄贈され国庫に帰属した美術品を保存、研究、公開するための施設として … 1993年（平成5年）11月3日に開館した
-        source: wikipedia-ja-sannomaru-shozokan-2
+        source: wikipedia-ja-sannomaru-shozokan
         accessed: 2026-11-24
   - owner: institution/museum-of-the-imperial-collections
     role: custodian
@@ -98,7 +98,7 @@ provenance:
         accessed: 2026-11-24
       - url: https://ja.wikipedia.org/wiki/%E7%9A%87%E5%B1%85%E4%B8%89%E3%81%AE%E4%B8%B8%E5%B0%9A%E8%94%B5%E9%A4%A8
         note: 2023年（令和5年）年10月に管理運営を宮内庁から独立行政法人国立文化財機構に移管され、同機構を所管する文化庁が収蔵品の管理を行う体制に改められた。
-        source: wikipedia-ja-sannomaru-shozokan-2
+        source: wikipedia-ja-sannomaru-shozokan
         accessed: 2026-11-24
 sources:
   created:

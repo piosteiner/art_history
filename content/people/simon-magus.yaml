@@ -1,0 +1,98 @@
+public_id: 130745
+name: Simon Magus
+given_name: Simon
+family_name: Magus
+names:
+  - lang: el
+    role: original
+    text: Σίμων ὁ μάγος
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q294795
+  - lang: fr
+    role: translation
+    text: Simon le Magicien
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q294795
+  - lang: it
+    role: translation
+    text: Simone Mago
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q294795
+  - lang: es
+    role: translation
+    text: Simón el Mago
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q294795
+  - lang: ja
+    role: translation
+    text: シモン・マグス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q294795
+  - lang: zh
+    role: translation
+    text: 西門·馬吉斯
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q294795
+  - lang: ko
+    role: translation
+    text: 시몬 마구스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q294795
+  - lang: ru
+    role: translation
+    text: Симон Волхв
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q294795
+kind: person
+occupations: [spiritual teacher, magi, heretic]
+birth: 1st century
+death: 65
+description_md: |-
+  Simon Magus was a magician who tried to buy the apostles' power (the origin of the word "simony"). In legend, he flew over Rome by magic until Peter's prayers made him fall.
+
+  **In art:** A magician falling from the sky.
+
+  **Famous works**
+
+  - [[artist/benozzo-gozzoli]], *The Fall of Simon Magus* (Royal Collection)
+
+  *From:* New Testament, Acts of the Apostles; Christian legend · Christian
+wikidata_id: Q294795
+metadata:
+  sources: [Wikidata Q294795 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Basilica_Saint-Sernin_-_Simon_Magus.jpg/1280px-Basilica_Saint-Sernin_-_Simon_Magus.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Basilica_Saint-Sernin_-_Simon_Magus.jpg
+    license: CC0
+    credit: PierreSelim
+identifiers:
+  bnf: 12889418t
+  gnd: "118765450"
+  idref: "030728789"
+  lc: no99030629
+  viaf: "215995336"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q294795
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q294795
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q294795
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q294795

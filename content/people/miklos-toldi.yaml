@@ -1,0 +1,57 @@
+public_id: 130653
+name: Miklós Toldi
+given_name: Miklós
+family_name: Toldi
+names:
+  - text: Miklos Toldi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q832614
+  - lang: es
+    role: translation
+    text: Nicolás Toldi
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q832614
+  - lang: ru
+    role: translation
+    text: Миклош Толди
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q832614
+kind: person
+occupations: [aristocrat, knight]
+birth: c. 1320
+death: 1390-11-30
+description_md: |-
+  He was a real 14th-century knight who became a legend in János Arany's poem. He could hold a heavy well-pole out straight in one hand and hurl a piece of millstone. He killed two wolves with his bare hands and beat a bragging Czech knight in a duel.
+
+  *From:* János Arany, Toldi trilogy · Hungarian
+wikidata_id: Q832614
+metadata:
+  sources: [Wikidata Q832614 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/88/Toldi_Miklos.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Toldi_Miklos.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "1077949820"
+  viaf: "180144782962572522462"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q832614
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q832614
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q832614
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q832614

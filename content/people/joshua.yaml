@@ -1,0 +1,105 @@
+public_id: 130714
+name: Joshua
+names:
+  - lang: hbo
+    role: original
+    text: יְהוֹשֻׁעַ בִּן נוּן
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - text: Joshua son of Nun
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - text: Yeshua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - text: Josua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - text: Hoshea
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - text: Josue
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - text: Yehoshua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - lang: nl
+    role: translation
+    text: Jozua
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - lang: fr
+    role: translation
+    text: Josué
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - lang: it
+    role: translation
+    text: Giosuè
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - lang: ja
+    role: translation
+    text: ヨシュア
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - lang: zh
+    role: translation
+    text: 約書亞
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - lang: ko
+    role: translation
+    text: 여호수아
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+  - lang: ru
+    role: translation
+    text: Иисус Навин
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7734
+occupations: [military leader, ruler]
+description_md: |-
+  [[person/moses]]'s successor, who led the Israelites into the Promised Land. At Jericho, the people marched around the walls for seven days blowing trumpets, until the walls collapsed. In a later battle, Joshua commanded the sun and the moon to stand still until he had won.
+
+  **In art:** Priests blowing ram's-horn trumpets as city walls fall, or a commander with his arm raised to the sky.
+
+  **Famous works**
+
+  - Lorenzo Ghiberti, *Gates of Paradise* (Florence Baptistery, Joshua panel)
+  - John Martin, *Joshua Commanding the Sun to Stand Still upon Gibeon* (Washington)
+
+  *From:* Hebrew Bible, Book of Joshua · Hebrew Bible
+wikidata_id: Q7734
+metadata:
+  sources: [Wikidata Q7734 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Collection_Motais_de_Narbonne_-_Josu%C3%A9_arr%C3%A8te_la_course_du_soleil_-_Carlo_Maratta.jpg/1280px-Collection_Motais_de_Narbonne_-_Josu%C3%A9_arr%C3%A8te_la_course_du_soleil_-_Carlo_Maratta.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Collection_Motais_de_Narbonne_-_Josu%C3%A9_arr%C3%A8te_la_course_du_soleil_-_Carlo_Maratta.jpg
+    license: Public domain
+    credit: Didier Descouens
+identifiers:
+  bnf: "170211242"
+  gnd: "118640011"
+  lc: n50038068
+  viaf: "4580147270512135700006"
+sources:
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q7734

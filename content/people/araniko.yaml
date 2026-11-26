@@ -1,0 +1,94 @@
+public_id: 130680
+name: Araniko
+names:
+  - lang: ne
+    role: original
+    text: अरनिको
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q626019
+  - text: A-ni-go
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q626019
+  - text: Arniko
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q626019
+  - text: A-ni-ko
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q626019
+  - text: A-ni-ke
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q626019
+  - text: Anige
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q626019
+  - text: Balabahu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q626019
+  - lang: ja
+    role: translation
+    text: アラニコ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q626019
+  - lang: zh
+    role: translation
+    text: 阿尼哥
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q626019
+  - lang: ko
+    role: translation
+    text: 아라니코
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q626019
+  - lang: ru
+    role: translation
+    text: Анико
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q626019
+kind: person
+occupations: [architect, painter, astronomer]
+birth: c. 1244
+death: c. 1306
+description_md: |-
+  In 1260, the young Newar artist Arniko led a group of eighty craftsmen from the Kathmandu Valley to Tibet and then to the Mongol court in China. He designed the White Pagoda in Beijing, which still stands.
+
+  *From:* Newar (Nepal)
+wikidata_id: Q626019
+metadata:
+  sources: [Wikidata Q626019 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Statue_of_Araniko_in_Miaoying_Temple.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Statue_of_Araniko_in_Miaoying_Temple.jpg
+    license: CC BY-SA 2.5
+    credit: user:smartneddy
+identifiers:
+  lc: n84103342
+  ulan: "500313543"
+  viaf: "60483625"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q626019
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q626019
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q626019
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q626019

@@ -1,0 +1,67 @@
+public_id: 130651
+name: Albert Namatjira
+given_name: Albert
+family_name: Namatjira
+names:
+  - kind: birth
+    lang: en-AU
+    role: alternative
+    text: Elea Namatjira
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q560086
+  - lang: ja
+    role: translation
+    text: アルバート・ナマジラ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q560086
+  - lang: zh
+    role: translation
+    text: 艾爾伯特·納瑪芝拉
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q560086
+  - lang: ru
+    role: translation
+    text: Альберт Наматьира
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q560086
+birth: 1902-07-28
+death: 1959-08-08
+biography_md: |-
+  Albert Namatjira (Western Arrernte, 1902–1959) became famous painting watercolour landscapes of Central Australia at Hermannsburg mission. In 1957, he was among the first Aboriginal people granted citizenship rights — a conditional citizenship: he still had limited land rights in the Northern Territory, and his family didn't get the same rights. He was convicted of supplying alcohol to another Aboriginal man and sentenced to six months in prison; after a public outcry he served less than two months on the Papunya reserve, and he died in 1959. The Hermannsburg School of watercolourists continues today.
+
+  **Famous works**
+
+  - Albert Namatjira, *watercolour landscapes of the MacDonnell Ranges* (National Gallery of Australia and others)
+
+  **Held sacred today:** Aboriginal and Torres Strait Islander visitors are warned that this page contains names and images of deceased persons. Describe his 1957 citizenship as conditional, with the discrimination he faced and his 1959 imprisonment, rather than only as an honour.
+
+  *From:* Western Arrernte
+wikidata_id: Q560086
+metadata:
+  sources: [Wikidata Q560086 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/de/Albert_Namatjira_portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Namatjira_portrait.jpg
+    license: Public domain
+    credit: Unknown author.
+identifiers:
+  bnf: 17987141w
+  gnd: "119218674"
+  idref: "075991225"
+  lc: n86112189
+  rkd: "296599"
+  ulan: "500085319"
+  viaf: "32801613"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q560086
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q560086

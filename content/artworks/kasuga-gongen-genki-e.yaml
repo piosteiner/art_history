@@ -31,6 +31,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q6374869
+creator: takashina-takakane
 created: 1309
 materials: [silk]
 institution: museum-of-the-imperial-collections
@@ -126,6 +127,9 @@ sources:
     - accessed: 2026-11-24
       property: P571
       wikidata: Q6374869
+  creator:
+    - source: kunishitei-201-00011971
+      accessed: 2026-11-25
   materials:
     - accessed: 2026-11-24
       property: P186

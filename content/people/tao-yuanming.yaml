@@ -1,0 +1,87 @@
+public_id: 130799
+name: Tao Yuanming
+names:
+  - kind: art_name
+    role: alternative
+    text: 五柳先生
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314210
+  - kind: art_name
+    role: alternative
+    text: 陶令
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314210
+  - kind: art_name
+    role: alternative
+    text: 羲皇上人
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314210
+  - lang: ja
+    role: translation
+    text: 陶淵明
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314210
+  - lang: zh
+    role: translation
+    text: 陶渊明
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314210
+  - lang: ko
+    role: translation
+    text: 도연명
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314210
+  - lang: ru
+    role: translation
+    text: Тао Юаньмин
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q314210
+kind: person
+occupations: [poet, writer]
+birth: 365-02-11
+death: 427-11-21
+description_md: |-
+  Tao Yuanming (365–427) gave up his official career to live as a farmer and loved chrysanthemums.
+
+  **In art:** A scholar picking chrysanthemums by a fence.
+
+  *From:* Chinese
+wikidata_id: Q314210
+metadata:
+  sources: [Wikidata Q314210 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fd/Taoqian1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Taoqian1.jpg
+    license: Public domain
+    credit: Chen Hongshou (1599-1652)
+identifiers:
+  bnf: "120322619"
+  gnd: "118947249"
+  idref: 02849878X
+  lc: n81074694
+  nlk: KAC200501218
+  viaf: "76331639"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q314210
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q314210
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q314210
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q314210

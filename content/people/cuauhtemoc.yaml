@@ -1,0 +1,84 @@
+public_id: 130642
+name: Cuauhtémoc
+names:
+  - text: Cuauhtemotzín
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297050
+  - text: Guatémoc
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297050
+  - text: Guatimozín
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297050
+  - lang: nl
+    role: translation
+    text: Cuauhtemoc
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297050
+  - lang: ja
+    role: translation
+    text: クアウテモック
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297050
+  - lang: zh
+    role: translation
+    text: 瓜特穆斯
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297050
+  - lang: ko
+    role: translation
+    text: 쿠아우테목
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297050
+  - lang: ru
+    role: translation
+    text: Куаутемок
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q297050
+kind: person
+occupations: [military personnel, ruler]
+birth: 1495
+death: 1525-03-10
+description_md: |-
+  His name means "descending eagle". He led the defence of Tenochtitlan against Cortés in 1521. When he was captured, the Spanish burnt his feet to make him say where the gold was hidden, but they did not find what they were looking for. He's a Mexican national hero.
+
+  *From:* Aztec (Mexica)
+wikidata_id: Q297050
+metadata:
+  sources: [Wikidata Q297050 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Relieve_de_Cuauht%C3%A9moc_%28Jes%C3%BAs_F._Contreras%29%2C_Patio_Jes%C3%BAs_F._Contreras%2C_Aguascalientes.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Relieve_de_Cuauht%C3%A9moc_(Jes%C3%BAs_F._Contreras),_Patio_Jes%C3%BAs_F._Contreras,_Aguascalientes.jpg
+    license: CC BY-SA 2.0
+    credit: México en Fotos
+identifiers:
+  bnf: "148847239"
+  gnd: "128777311"
+  idref: "131382543"
+  lc: n81056568
+  viaf: "30598235"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q297050
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q297050
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q297050
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q297050

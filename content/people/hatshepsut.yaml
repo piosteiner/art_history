@@ -1,0 +1,100 @@
+public_id: 130645
+name: Hatshepsut
+names:
+  - text: Hatchepsut
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q129234
+  - text: Hatsehpsut
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q129234
+  - text: Hatasou
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q129234
+  - text: Hatasu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q129234
+  - lang: nl
+    role: translation
+    text: Hatsjepsoet
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q129234
+  - lang: fr
+    role: translation
+    text: Hatchepsout
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q129234
+  - lang: de
+    role: translation
+    text: Hatschepsut
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q129234
+  - lang: ja
+    role: translation
+    text: ハトシェプスト
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q129234
+  - lang: zh
+    role: translation
+    text: 哈特谢普苏特
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q129234
+  - lang: ko
+    role: translation
+    text: 하트셉수트
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q129234
+  - lang: ru
+    role: translation
+    text: Хатшепсут
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q129234
+kind: person
+occupations: [statesperson]
+birth: c. 1507 BCE
+death: c. 1458 BCE
+description_md: |-
+  She ruled Egypt from about 1479 to 1458 BC and was often shown with a false beard and a man's clothing. She sent a famous expedition to the land of Punt for incense trees. Late in the reign of her successor Thutmose III and under his son, her name and images were erased from monuments.
+
+  *From:* Ancient Egyptian
+wikidata_id: Q129234
+metadata:
+  sources: [Wikidata Q129234 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/53/HatshepsutStatuette_MuseumOfFineArtsBoston.png
+    source_url: https://commons.wikimedia.org/wiki/File:HatshepsutStatuette_MuseumOfFineArtsBoston.png
+    license: CC BY-SA 2.5
+    credit: Keith Schengili-Roberts
+identifiers:
+  bnf: 11943631b
+  gnd: "118546732"
+  idref: "027382419"
+  lc: n79075097
+  viaf: "67741469"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q129234
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q129234
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q129234
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q129234

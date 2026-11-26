@@ -1,0 +1,75 @@
+public_id: 130667
+name: Trung sisters
+names:
+  - text: Trưng Trắc
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1207428
+  - text: Trưng Nhị
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1207428
+  - text: Trưng Sisters
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1207428
+  - lang: nl
+    role: translation
+    text: Trung-zussen
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1207428
+  - lang: fr
+    role: translation
+    text: Sœurs Trung
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1207428
+  - lang: de
+    role: translation
+    text: Trưng-Schwestern
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1207428
+  - lang: es
+    role: translation
+    text: hermanas Trung
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1207428
+  - lang: ja
+    role: translation
+    text: 徴姉妹
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1207428
+  - lang: zh
+    role: translation
+    text: 徵氏姐妹
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1207428
+  - lang: ko
+    role: translation
+    text: 쯩 자매
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1207428
+  - lang: ru
+    role: translation
+    text: Сёстры Чынг
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1207428
+description_md: |-
+  In AD 40, Trưng Trắc and Trưng Nhị led an uprising against Chinese Han rule; Vietnamese folk art shows them riding war elephants. They ruled as queens for three years. When they were defeated in 43, they were either executed or took their own lives; Vietnamese tradition says they drowned themselves in a river rather than surrender.
+
+  *From:* Vietnamese
+wikidata_id: Q1207428
+metadata:
+  sources: [Wikidata Q1207428 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/44/Hai_ba_trung_Dong_Ho_painting.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hai_ba_trung_Dong_Ho_painting.jpg
+    license: Public domain
+    credit: own photo

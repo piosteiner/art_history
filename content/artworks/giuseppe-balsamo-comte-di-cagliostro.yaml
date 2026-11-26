@@ -6,6 +6,7 @@ created: 1786
 materials: [marble]
 institution: national-gallery-of-art
 inventory_number: 1952.5.103
+web_url: https://www.nga.gov/collection/art-object-page.41718.html
 provenance_status: d_seized
 provenance_status_note: In Paris in 1940, confiscated by the Nazis with other parts of the Seligmann family collections; recovered and returned to France in 1947.
 wikidata_id: Q63809774
@@ -67,7 +68,7 @@ provenance:
         note: by bequest to the Wallace's secretary and adviser, Sir John Murray Scott [1847-1912], London and Paris;
         source: nga-1952-5-103
         accessed: 2026-11-24
-  - owner: person/victoria-sackville-west
+  - owner: person/victoria-sackville-west-lady-sackville
     method: bequest
     direct: true
     place: paris

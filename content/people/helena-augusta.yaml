@@ -1,0 +1,177 @@
+public_id: 130771
+name: Helena Augusta
+given_name: Helena
+family_name: Augusta
+names:
+  - lang: el
+    role: original
+    text: Φλαβία Ιουλία Ελένη
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Aelena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: St. Helen
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Saint Helena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Julia Flavia Helena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Flavia Julia Aelena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Beata Aelena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: St. Helena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Santa Helena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Flavia Helena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Julia Augusta
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Helena of Constantinople
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Sancta Helena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Flavia Aelena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Flavia Julia Helena Augusta
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Helena Chlori
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Helena of Colchester
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Helena, mother of Constantine
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - text: Beata Helena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - lang: nl
+    role: translation
+    text: Helena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - lang: fr
+    role: translation
+    text: Hélène de Constantinople
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - lang: it
+    role: translation
+    text: Flavia Giulia Elena
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - lang: es
+    role: translation
+    text: Helena de Constantinopla
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - lang: ja
+    role: translation
+    text: 聖ヘレナ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - lang: zh
+    role: translation
+    text: 聖海倫納
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - lang: ko
+    role: translation
+    text: 성녀 헬레나
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+  - lang: ru
+    role: translation
+    text: Елена Равноапостольная
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170164
+kind: person
+occupations: [politician]
+birth: c. 250
+death: 330-08-19
+description_md: |-
+  The mother of the emperor Constantine, who travelled to Jerusalem and, according to legend, found the True Cross on which Christ was crucified.
+
+  **In art:** A crowned empress holding a large cross, sometimes with nails.
+
+  **Famous works**
+
+  - [[artist/piero-della-francesca]], *The Legend of the True Cross* (San Francesco, Arezzo) — [[artwork/history-of-the-true-cross-arezzo]]
+  - [[artist/paolo-veronese]], *The Vision of Saint Helena* (National Gallery, London)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q170164
+metadata:
+  sources: [Wikidata Q170164 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/0_Statue_de_Sainte_H%C3%A9l%C3%A8ne_par_Andrea_Bolgi_-_Basilique_St-Pierre_-_Vatican.JPG/1280px-0_Statue_de_Sainte_H%C3%A9l%C3%A8ne_par_Andrea_Bolgi_-_Basilique_St-Pierre_-_Vatican.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:0_Statue_de_Sainte_H%C3%A9l%C3%A8ne_par_Andrea_Bolgi_-_Basilique_St-Pierre_-_Vatican.JPG
+    license: CC BY 3.0
+    credit: Jean-Pol GRANDMONT
+identifiers:
+  gnd: "118710117"
+  idref: "032045182"
+  lc: n85120161
+  ulan: "500372010"
+  viaf: "36905946"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q170164
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q170164
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q170164
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q170164

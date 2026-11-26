@@ -1,0 +1,169 @@
+public_id: 130690
+name: Augustus
+names:
+  - kind: birth
+    lang: la
+    role: former
+    text: C. Octavius C.f.
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - lang: la
+    role: original
+    text: Imperator Caesar Divi filius Augustus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Gaius Julius Caesar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Gaius Caesar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Caesar Octavianus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Gaius Octavius Thurinus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Gaius Octavius Caepias
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Caius Octavius Thurinus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Gaius Julius Caesar Octavianus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Octavius Caesar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Gaius Julius Caesar Octavianus Augustus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Octavianus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Caius Julius Cæsar Octavianus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Augustus Caesar
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Imperator Gaius Julius Caesar Octavianus Divi Filius Augustus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Octavian
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Gaius Octavian
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Caius Octavius
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - text: Gaius Julius Caesar Augustus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - lang: fr
+    role: translation
+    text: Auguste
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - lang: it
+    role: translation
+    text: Augusto
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - lang: ja
+    role: translation
+    text: アウグストゥス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - lang: zh
+    role: translation
+    text: 奥古斯都
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - lang: ko
+    role: translation
+    text: 아우구스투스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+  - lang: ru
+    role: translation
+    text: Октавиан Август
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q1405
+kind: person
+occupations: [politician, military personnel, ruler]
+birth: -63
+death: 14-08-17
+description_md: |-
+  His great-nephew Octavian defeated Antony and [[person/cleopatra]] and became Augustus, the first Roman emperor.
+
+  **In art:** An idealised young ruler in armour.
+
+  **Famous works**
+
+  - *Augustus of Prima Porta* (Vatican Museums)
+  - *Ara Pacis Augustae* (Rome)
+
+  *From:* history · Ancient Roman
+wikidata_id: Q1405
+metadata:
+  sources: [Wikidata Q1405 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Augustus_of_Prima_Porta_%28inv._2290%29.jpg/1280px-Augustus_of_Prima_Porta_%28inv._2290%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Augustus_of_Prima_Porta_(inv._2290).jpg
+    license: CC BY-SA 4.0
+    credit: Joel Bellviure
+identifiers:
+  bnf: 12326866z
+  gnd: "118505122"
+  hls: "010314"
+  idref: "032190026"
+  lc: n79033006
+  nlk: KAC201620721
+  ulan: "500058949"
+  viaf: "18013086"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q1405
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q1405
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q1405
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q1405

@@ -2,3 +2,68 @@ public_id: 122940
 name: Gerard David
 given_name: Gerard
 family_name: David
+birth: c. 1460
+death: 1523-08-23
+wikidata_id: Q333380
+metadata:
+  sources: [Wikidata Q333380 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/burgundian-netherlands
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q333380
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q333380
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q333380
+  - type: died_in
+    to: place/bruges
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q333380
+  - type: worked_in
+    to: place/bruges
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q333380
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-11-25
+        property: P135
+        wikidata: Q333380
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3f/Gerard_David_selfportrait_in_The_Virgin_among_the_VirginsFXD.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gerard_David_selfportrait_in_The_Virgin_among_the_VirginsFXD.jpg
+    license: Public domain
+    credit: Gerard David
+identifiers:
+  bnf: 14965680v
+  gnd: 11867109X
+  idref: 02771554X
+  kulturnav: c7d6b633-d24c-4f22-9989-5ce7c6966798
+  lc: n84222312
+  rkd: "20157"
+  ulan: "500025998"
+  viaf: "54419155"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q333380
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q333380

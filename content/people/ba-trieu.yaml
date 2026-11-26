@@ -1,0 +1,83 @@
+public_id: 130668
+name: Bà Triệu
+given_name: Bà
+family_name: Triệu
+names:
+  - text: Triệu Thị Trinh
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q269989
+  - text: Triệu Ẩu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q269989
+  - text: Lady Triệu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q269989
+  - lang: nl
+    role: translation
+    text: Trieu
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q269989
+  - lang: ja
+    role: translation
+    text: 趙氏貞
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q269989
+  - lang: zh
+    role: translation
+    text: 赵妪
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q269989
+  - lang: ko
+    role: translation
+    text: 바찌에우
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q269989
+  - lang: ru
+    role: translation
+    text: Чьеу Тхи Чинь
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q269989
+kind: person
+occupations: [rebel]
+birth: 225-10-02
+death: 248-04-04
+description_md: |-
+  A 3rd-century woman who led an uprising against Chinese rule. Legend says she was nine feet tall, with breasts so long that she threw them over her shoulders when she rode her war elephant into battle, wearing golden robes.
+
+  *From:* Vietnamese
+wikidata_id: Q269989
+metadata:
+  sources: [Wikidata Q269989 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Ba_trieu_cuoi_voi.jpg/1280px-Ba_trieu_cuoi_voi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ba_trieu_cuoi_voi.jpg
+    license: Public domain
+    credit: Nghệ nhân tranh Đông Hồ
+identifiers:
+  lc: n99265908
+  viaf: "58415037"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q269989
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q269989
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q269989
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q269989

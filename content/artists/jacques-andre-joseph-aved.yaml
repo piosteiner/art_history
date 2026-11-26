@@ -2,3 +2,106 @@ public_id: 122919
 name: Jacques André Joseph Aved
 given_name: Jacques André Joseph
 family_name: Aved
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Jacques-André-Joseph-Camelot Aved
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q489437
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: Avet le Batave
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q489437
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: le Camelot
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q489437
+birth: 1702-01-12
+death: 1766-03-04
+wikidata_id: Q489437
+metadata:
+  sources: [Wikidata Q489437 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q489437
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q489437
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q489437
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q489437
+  - type: worked_in
+    to: place/brussels
+    period: 1738/1740
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q489437
+  - type: worked_in
+    to: place/the-hague
+    period: 1750/1751
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q489437
+  - type: member_of
+    to: institution/academie-royale-de-peinture-et-de-sculpture
+    period: 1731
+    period_label: from 1731
+    sources:
+      - accessed: 2026-11-25
+        property: P463
+        wikidata: Q489437
+  - type: associated_with
+    to: movement/rococo
+    sources:
+      - accessed: 2026-11-25
+        property: P135
+        wikidata: Q489437
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a9/Aved_5.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Aved_5.jpg
+    license: Public domain
+    credit: Joseph Aved
+identifiers:
+  bnf: 12557458f
+  gnd: "132487179"
+  idref: 16687289X
+  kulturnav: ac3130fc-1d06-4e64-8941-8e7ca9eb13fe
+  lc: nr90005707
+  rkd: "3053"
+  ulan: "500022915"
+  viaf: "66581430"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q489437
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q489437

@@ -1,6 +1,7 @@
 public_id: 122933
 title_lang: en
 title: Casket
+attribution_label: Anonymous, probably North German
 created: 1100/1150
 kind: enamel
 medium: gilded copper, champlevé enamel, wood core (modern)
@@ -76,3 +77,7 @@ provenance:
         note: The Cleveland Museum of Art, Cleveland, OH [1949-]
         source: cma-1949-16
         accessed: 2026-11-24
+sources:
+  attribution_label:
+    - source: cma-1949-16
+      accessed: 2026-11-25

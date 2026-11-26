@@ -1,0 +1,130 @@
+public_id: 130792
+name: Joan of Arc
+names:
+  - lang: frm
+    role: original
+    text: Jehanne Darc
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - text: Saint Joan of Arc
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - text: Maid of Orleans
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - text: The Maid of Orléans
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - text: The Maid of Orleans
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - text: Maid of Orléans
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - text: St. Joan of Arc
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - lang: nl
+    role: translation
+    text: Jeanne d'Arc
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - lang: de
+    role: translation
+    text: Johanna von Orléans
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - lang: it
+    role: translation
+    text: Giovanna d'Arco
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - lang: es
+    role: translation
+    text: Juana de Arco
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - lang: ja
+    role: translation
+    text: ジャンヌ・ダルク
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - lang: zh
+    role: translation
+    text: 聖女貞德
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - lang: ko
+    role: translation
+    text: 잔 다르크
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+  - lang: ru
+    role: translation
+    text: Жанна д’Арк
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7226
+kind: person
+occupations: [military personnel, religious leader]
+birth: c. 1412
+death: 1431-06-08
+description_md: |-
+  A real peasant girl who, guided by the voices of saints, led the French army to victory at Orléans in 1429 and saw the king crowned. She was captured, tried for heresy and burned at the stake in 1431, and later declared a saint.
+
+  **In art:** A young woman in armour with a banner, sometimes listening to angelic voices in a garden.
+
+  **Famous works**
+
+  - Jules Bastien-Lepage, *Joan of Arc* (1879; Metropolitan Museum of Art, New York)
+  - [[artist/jean-auguste-dominique-ingres]], *Joan of Arc at the Coronation of Charles VII* (1854; Louvre)
+  - Emmanuel Frémiet, *Jeanne d'Arc* (gilded bronze equestrian statue, 1874; Place des Pyramides, Paris)
+
+  *From:* French
+wikidata_id: Q7226
+metadata:
+  sources: [Wikidata Q7226 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6e/Contemporaine_afb_jeanne_d_arc.png
+    source_url: https://commons.wikimedia.org/wiki/File:Contemporaine_afb_jeanne_d_arc.png
+    license: Public domain
+    credit: Clément de Fauquembergue
+identifiers:
+  bnf: 11945486j
+  gnd: "118557238"
+  idref: 02874005X
+  lc: n79033041
+  nlk: KAC201622355
+  ulan: "500343198"
+  viaf: "97108273"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q7226
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q7226
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q7226
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q7226

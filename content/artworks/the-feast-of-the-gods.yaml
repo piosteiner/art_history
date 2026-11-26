@@ -60,6 +60,7 @@ materials: [oil paint, canvas]
 dimensions: [170.2, 188]
 institution: national-gallery-of-art
 inventory_number: 1942.9.1
+web_url: https://www.nga.gov/collection/art-object-page.1138.html
 wikidata_id: Q15008032
 metadata:
   sources: [Wikidata Q15008032 (retrieved 2026-11-23)]
@@ -138,7 +139,7 @@ provenance:
         note: confiscated 1598 from the Castello at Ferrara by Cardinal Pietro Aldobrandini [d. 1621], Rome, when he was acting as Papal Legate and recorded in his inventory of 1603;
         source: nga-1942-9-1
         accessed: 2026-11-24
-  - owner: person/ippolito-aldobrandini
+  - owner: person/ippolito-aldobrandini-2
     method: inheritance
     direct: true
     place: rome
@@ -295,7 +296,7 @@ provenance:
         note: sold 16 June 1916 to (Thomas Agnew & Sons, London) on joint account with (Arthur J. Sulley and Co., London);[6]
         source: nga-1942-9-1
         accessed: 2026-11-24
-  - owner: person/carl-w-hamilton-2
+  - owner: person/carl-w-hamilton
     role: custodian
     acquired: 1920 or earlier
     place: new-york-city

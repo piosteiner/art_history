@@ -1,0 +1,63 @@
+public_id: 130721
+name: Job
+names:
+  - lang: de
+    role: translation
+    text: Ijob
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q179962
+  - lang: it
+    role: translation
+    text: Giobbe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q179962
+  - lang: ja
+    role: translation
+    text: ヨブ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q179962
+  - lang: zh
+    role: translation
+    text: 约伯
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q179962
+  - lang: ko
+    role: translation
+    text: 욥
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q179962
+  - lang: ru
+    role: translation
+    text: Иов Многострадальный
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q179962
+description_md: |-
+  A righteous, prosperous man whose faith Satan tested with God's permission. He lost his children, his wealth and his health, and sat covered in sores among the ashes (a dung heap in the Greek and Latin Bibles), mocked by his wife and lectured by friends, but never cursed God. In the end, everything was restored to him.
+
+  **In art:** A nearly naked man covered in sores sitting on a dung heap (after the Latin Bible), with his wife pouring water on him or friends around him.
+
+  **Famous works**
+
+  - Georges de La Tour, *Job Mocked by His Wife* (Épinal)
+  - [[artist/albrecht-durer]], *Jabach Altarpiece* (Job and his wife, Frankfurt)
+  - [[artist/william-blake]], *Illustrations of the Book of Job* (engravings)
+
+  *From:* Hebrew Bible, Book of Job · Hebrew Bible
+wikidata_id: Q179962
+metadata:
+  sources: [Wikidata Q179962 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d6/Job%2C_par_L%C3%A9on_Bonnat.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Job,_par_L%C3%A9on_Bonnat.jpg
+    license: Public domain
+    credit: Léon Bonnat
+identifiers:
+  gnd: "118551353"
+  lc: n50040036
+  viaf: "46762859"

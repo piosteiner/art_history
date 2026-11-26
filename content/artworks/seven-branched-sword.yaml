@@ -47,6 +47,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q912125
+attribution_label: Anonymous
 created: 369
 institution: isonokami-jingu
 wikidata_id: Q912125
@@ -108,3 +109,6 @@ sources:
     - accessed: 2026-11-24
       property: P195
       wikidata: Q912125
+  attribution_label:
+    - source: kunishitei-201-847
+      accessed: 2026-11-25

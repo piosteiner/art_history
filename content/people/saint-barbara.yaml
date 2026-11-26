@@ -1,0 +1,126 @@
+public_id: 130750
+name: Saint Barbara
+names:
+  - lang: el
+    role: original
+    text: Βαρβάρα
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - text: Great Martyr Barbara
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - text: Barbara of Nicomedia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - text: St. Barbara
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - text: Barbe
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - text: St Barbara
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - lang: nl
+    role: translation
+    text: Barbara van Nicomedië
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - lang: fr
+    role: translation
+    text: Barbe la grande martyre
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - lang: de
+    role: translation
+    text: Barbara von Nikomedien
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - lang: it
+    role: translation
+    text: santa Barbara
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - lang: es
+    role: translation
+    text: Bárbara de Nicomedia
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - lang: ja
+    role: translation
+    text: バルバラ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - lang: zh
+    role: translation
+    text: 白芭蕾
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - lang: ko
+    role: translation
+    text: 바르바라
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+  - lang: ru
+    role: translation
+    text: Варвара Илиопольская
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q192816
+kind: person
+occupations: [thaumaturge, prisoner]
+birth: 273
+death: 306
+description_md: |-
+  A young woman locked in a tower by her father, who later beheaded her for becoming a Christian, and was then struck dead by lightning. Patron of artillerymen, miners and firefighters.
+
+  **In art:** A woman holding a tower with three windows (for the [[holy-trinity]]), sometimes with a chalice.
+
+  **Famous works**
+
+  - [[artist/jan-van-eyck]], *Saint Barbara* (1437, unfinished, Royal Museum of Fine Arts Antwerp, KMSKA)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q192816
+metadata:
+  sources: [Wikidata Q192816 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Heilige_Barbara_van_Nicomedi%C3%AB%2C_Jan_van_Eyck%2C_1437%2C_Koninklijk_Museum_voor_Schone_Kunsten_Antwerpen%2C_410.jpg/1280px-Heilige_Barbara_van_Nicomedi%C3%AB%2C_Jan_van_Eyck%2C_1437%2C_Koninklijk_Museum_voor_Schone_Kunsten_Antwerpen%2C_410.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Heilige_Barbara_van_Nicomedi%C3%AB,_Jan_van_Eyck,_1437,_Koninklijk_Museum_voor_Schone_Kunsten_Antwerpen,_410.jpg
+    license: CC0
+    credit: Jan van Eyck
+identifiers:
+  gnd: "118506471"
+  lc: n83059080
+  viaf: "35826107"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q192816
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q192816
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q192816
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q192816

@@ -1,0 +1,117 @@
+public_id: 130746
+name: Saint Sebastian
+names:
+  - lang: la
+    role: original
+    text: Sebastianus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q183332
+  - text: St. Sebastian
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q183332
+  - text: St Sebastian
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q183332
+  - lang: nl
+    role: translation
+    text: Sint-Sebastiaan
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q183332
+  - lang: fr
+    role: translation
+    text: saint Sébastien
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q183332
+  - lang: de
+    role: translation
+    text: Sebastian
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q183332
+  - lang: it
+    role: translation
+    text: san Sebastiano
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q183332
+  - lang: es
+    role: translation
+    text: Sebastián de Milán
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q183332
+  - lang: ja
+    role: translation
+    text: セバスティアヌス
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q183332
+  - lang: zh
+    role: translation
+    text: 圣巴斯弟盎
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q183332
+  - lang: ko
+    role: translation
+    text: 세바스티아누스
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q183332
+  - lang: ru
+    role: translation
+    text: Святой Себастьян
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q183332
+kind: person
+occupations: [soldier, military officer]
+birth: c. 255
+death: 287-01-20
+description_md: |-
+  A Roman soldier and secret Christian. When discovered, he was tied to a tree or post and shot with arrows, but survived and was nursed back to health by Saint Irene, before being clubbed to death. Invoked against the plague.
+
+  **In art:** A beautiful nearly nude young man tied to a column or tree, pierced by arrows. One of the few acceptable nude male subjects in Christian art.
+
+  **Famous works**
+
+  - [[artist/andrea-mantegna]], *Saint Sebastian* (Louvre, Vienna and Ca' d'Oro)
+  - [[artist/antonello-da-messina]], *Saint Sebastian* (Dresden)
+  - [[artist/guido-reni]], *Saint Sebastian* (Capitoline Museums and Genoa)
+  - Georges de La Tour, *Saint Sebastian Tended by Irene* (Louvre)
+
+  *From:* Golden Legend · Christian
+wikidata_id: Q183332
+metadata:
+  sources: [Wikidata Q183332 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cb/Marco_Palmezzano_-_Saint_Sebastian.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Marco_Palmezzano_-_Saint_Sebastian.jpg
+    license: Public domain
+    credit: Marco Palmezzano
+identifiers:
+  bnf: 11950558k
+  gnd: "118612492"
+  viaf: "316750721"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q183332
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q183332
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q183332
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q183332

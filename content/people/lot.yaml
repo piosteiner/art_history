@@ -1,0 +1,57 @@
+public_id: 130692
+name: Lot
+names:
+  - lang: fr
+    role: translation
+    text: Loth
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40574
+  - lang: ja
+    role: translation
+    text: ロト
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40574
+  - lang: zh
+    role: translation
+    text: 羅得
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40574
+  - lang: ko
+    role: translation
+    text: 롯
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40574
+  - lang: ru
+    role: translation
+    text: Лот
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q40574
+description_md: |-
+  Lot, Abraham's nephew, escaped the destruction of the sinful cities of Sodom and Gomorrah. His wife looked back at the burning city against God's command and was turned into a pillar of salt. Later, his daughters got him drunk and conceived children by him.
+
+  **In art:** A family fleeing a burning city with a woman turning to salt, or an old man with two women and wine, often in a cave.
+
+  **Famous works**
+
+  - [[artist/albrecht-durer]], *Lot and His Daughters* (Washington)
+  - Orazio Gentileschi, *Lot and His Daughters* (several versions)
+
+  *From:* Hebrew Bible, Genesis · Hebrew Bible
+wikidata_id: Q40574
+metadata:
+  sources: [Wikidata Q40574 (retrieved 2026-11-25)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Loggia_di_raffaello%2C_04%2C_04.jpg/1280px-Loggia_di_raffaello%2C_04%2C_04.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Loggia_di_raffaello,_04,_04.jpg
+    license: Public domain
+    credit: see filename or category
+identifiers:
+  gnd: "119435128"
+  idref: "155633236"
+  lc: n95031987
+  viaf: "52498974"

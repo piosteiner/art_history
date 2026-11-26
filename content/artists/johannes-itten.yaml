@@ -36,6 +36,51 @@ death: 1967-03-25
 wikidata_id: Q123138
 metadata:
   sources: [Wikidata Q123138 (retrieved 2026-11-06)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q123138
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-25
+        property: P20
+        wikidata: Q123138
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q123138
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q123138
+  - type: worked_in
+    to: place/weimar
+    period: 1919/1922
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q123138
+  - type: worked_in
+    to: place/berlin
+    period: 1926/1934
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q123138
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-11-25
+        property: P135
+        wikidata: Q123138
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Johannes_Itten_%28retuschiert%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Johannes_Itten_(retuschiert).jpg
@@ -48,6 +93,7 @@ identifiers:
   hls: "022036"
   idref: "026931923"
   lc: n50037690
+  nlk: KAC201767068
   rkd: "41201"
   sikart: "4023401"
   ulan: "500029154"

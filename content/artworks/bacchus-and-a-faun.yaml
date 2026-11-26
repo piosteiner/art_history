@@ -1,6 +1,7 @@
 public_id: 122984
 title_lang: en
 title: Bacchus and a Faun
+attribution_label: Anonymous, probably Milanese
 created: 1580/1600
 created_label: c. 1580
 created_span: uncertain
@@ -8,6 +9,7 @@ materials: [bronze]
 dimensions: [181.5, 76, 65.2]
 institution: national-gallery-of-art
 inventory_number: 1937.1.133
+web_url: https://www.nga.gov/collection/art-object-page.140.html
 wikidata_id: Q63810086
 metadata:
   sources: [Wikidata Q63810086 (retrieved 2026-11-23)]
@@ -151,3 +153,6 @@ sources:
     - accessed: 2026-11-23
       property: P217
       wikidata: Q63810086
+  attribution_label:
+    - source: nga-1937-1-133
+      accessed: 2026-11-25

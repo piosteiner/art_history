@@ -1,0 +1,127 @@
+public_id: 130800
+name: Li Bai
+names:
+  - kind: art_name
+    role: alternative
+    text: 青蓮居士
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - kind: art_name
+    role: alternative
+    text: 酒仙翁
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - lang: zh-CN
+    role: original
+    text: 李白
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - text: Li Bei
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - text: Taibai
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - text: Li T'ai-pai
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - text: Tai Pai
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - text: Li Pai
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - text: T'ai-pai
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - text: Tai-pai
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - text: Li Po
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - text: Li Taibai
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - text: T'ai Pai
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - text: Li Tai-pai
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - text: Li Bo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - lang: ko
+    role: translation
+    text: 이백
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+  - lang: ru
+    role: translation
+    text: Ли Бо
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q7071
+kind: person
+occupations: [poet, lyricist, calligrapher, writer, philosopher]
+birth: 701-05-23
+death: 762-12-04
+description_md: |-
+  Li Bai (701–762), the great poet of wine and the moon, was said in legend to have drowned trying to embrace the moon's reflection in a river.
+
+  **In art:** A poet drinking under the moon or lying drunk.
+
+  **Famous works**
+
+  - Liang Kai, *Li Bai Walking and Chanting* (Tokyo National Museum)
+
+  *From:* Chinese
+wikidata_id: Q7071
+metadata:
+  sources: [Wikidata Q7071 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a6/%E6%9D%8E%E7%99%BD.png
+    source_url: https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E7%99%BD.png
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "119129361"
+  gnd: "118934163"
+  idref: "026989395"
+  lc: n50062078
+  nlk: KAC200104018
+  viaf: "108726426"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q7071
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q7071
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q7071
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q7071

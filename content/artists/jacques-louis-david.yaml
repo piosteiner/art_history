@@ -44,6 +44,12 @@ relationships:
       - accessed: 2026-10-28
         property: P937
         wikidata: Q83155
+  - type: student_of
+    to: artist/joseph-marie-vien
+    sources:
+      - accessed: 2026-11-25
+        property: P802
+        wikidata: Q647934
   - type: studied_at
     to: institution/academie-de-saint-luc
     sources:

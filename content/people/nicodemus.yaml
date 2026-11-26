@@ -1,0 +1,71 @@
+public_id: 130740
+name: Nicodemus
+names:
+  - text: Nicodemus (Biblical figure)
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q295084
+  - lang: nl
+    role: translation
+    text: Nikodemus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q295084
+  - lang: fr
+    role: translation
+    text: Nicodème
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q295084
+  - lang: it
+    role: translation
+    text: Nicodemo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q295084
+  - lang: ja
+    role: translation
+    text: ニコデモ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q295084
+  - lang: zh
+    role: translation
+    text: 尼哥底母
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q295084
+  - lang: ko
+    role: translation
+    text: 니고데모
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q295084
+  - lang: ru
+    role: translation
+    text: Никодим
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q295084
+description_md: |-
+  Nicodemus was a Pharisee who came to Jesus secretly at night, and later helped bury him.
+
+  **In art:** Two men talking by lamplight.
+
+  **Famous works**
+
+  - Henry Ossawa Tanner, *Nicodemus* (Pennsylvania Academy of the Fine Arts)
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q295084
+metadata:
+  sources: [Wikidata Q295084 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/78/Brooklyn_Museum_-_Nicodemus_%28Nicod%C3%A8me%29_-_James_Tissot_-_overall.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Nicodemus_(Nicod%C3%A8me)_-_James_Tissot_-_overall.jpg
+    license: Public domain
+    credit: James Tissot
+identifiers:
+  gnd: "118588001"
+  lc: n83157940
+  viaf: "25982733"

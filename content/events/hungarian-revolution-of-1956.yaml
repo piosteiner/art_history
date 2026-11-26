@@ -80,10 +80,6 @@ images:
 identifiers:
   gnd: 4127049-6
 sources:
-  place:
-    - accessed: 2026-11-07
-      property: P276
-      wikidata: Q164348
   parent:
     - accessed: 2026-11-07
       property: P361

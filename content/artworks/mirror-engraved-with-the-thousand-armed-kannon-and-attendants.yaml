@@ -6,6 +6,7 @@ names:
   - lang: ja
     role: original
     text: 線刻千手観音等鏡像
+attribution_label: Anonymous
 created: 11th century
 created_span: uncertain
 materials: [cupronickel]
@@ -70,3 +71,6 @@ sources:
     - accessed: 2026-11-24
       property: P186
       wikidata: Q107044824
+  attribution_label:
+    - source: kunishitei-201-410
+      accessed: 2026-11-25

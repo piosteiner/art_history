@@ -7,6 +7,7 @@ names:
     sources:
       - accessed: 2026-11-24
         wikidata: Q107046081
+attribution_label: Anonymous
 created: 760s
 created_span: uncertain
 institution: shorin-ji-temple
@@ -53,3 +54,6 @@ sources:
     - accessed: 2026-11-24
       property: P571
       wikidata: Q107046081
+  attribution_label:
+    - source: kunishitei-201-185
+      accessed: 2026-11-25

@@ -2,3 +2,85 @@ public_id: 122900
 name: Léon Bonnat
 given_name: Léon
 family_name: Bonnat
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Léon Joseph Florentin Bonnat
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q170259
+birth: 1833-06-20
+death: 1922-09-08
+wikidata_id: Q170259
+metadata:
+  sources: [Wikidata Q170259 (retrieved 2026-11-25)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-11-25
+        property: P27
+        wikidata: Q170259
+  - type: worked_in
+    to: place/madrid
+    period: 1848/1854
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q170259
+  - type: worked_in
+    to: place/paris
+    period: 1854/1857
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q170259
+  - type: worked_in
+    to: place/rome
+    period: 1857/1860
+    sources:
+      - accessed: 2026-11-25
+        property: P937
+        wikidata: Q170259
+  - type: student_of
+    to: person/jose-de-madrazo
+    sources:
+      - accessed: 2026-11-25
+        property: P1066
+        wikidata: Q170259
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-11-25
+        property: P69
+        wikidata: Q170259
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-11-25
+        property: P463
+        wikidata: Q170259
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/L%C3%A9on_Bonnat_-_Autoportrait.jpg/1280px-L%C3%A9on_Bonnat_-_Autoportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:L%C3%A9on_Bonnat_-_Autoportrait.jpg
+    license: Public domain
+    credit: Léon Bonnat
+identifiers:
+  bnf: 13509169v
+  dome: "3439"
+  gnd: "116241772"
+  idref: "050293931"
+  lc: n96008046
+  rkd: "10393"
+  ulan: "500016107"
+  viaf: "19835381"
+sources:
+  birth:
+    - accessed: 2026-11-25
+      property: P569
+      wikidata: Q170259
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q170259

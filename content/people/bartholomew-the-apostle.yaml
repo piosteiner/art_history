@@ -1,0 +1,135 @@
+public_id: 130732
+name: Bartholomew the Apostle
+given_name: Bartholomew the
+family_name: Apostle
+names:
+  - lang: arc
+    role: original
+    text: בר תולמי
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - text: Bartholomew
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - text: Nathanael
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - text: Saint Bartholomew
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - text: Bartolomeus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - text: St. Bartholomew
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - text: Bartholomaeus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - text: Bartholomaîos
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - text: bar-Tôlmay
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - text: Barthulmāwus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - lang: nl
+    role: translation
+    text: Bartolomeüs
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - lang: fr
+    role: translation
+    text: Barthélemy
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - lang: de
+    role: translation
+    text: Bartholomäus
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - lang: it
+    role: translation
+    text: Bartolomeo
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - lang: es
+    role: translation
+    text: Bartolomé el Apóstol
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - lang: ja
+    role: translation
+    text: バルトロマイ
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - lang: zh
+    role: translation
+    text: 巴多罗买
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - lang: ko
+    role: translation
+    text: 바르톨로메오
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+  - lang: ru
+    role: translation
+    text: Апостол Варфоломей
+    sources:
+      - accessed: 2026-11-25
+        wikidata: Q43982
+kind: person
+occupations: [presbyter]
+death: 1st century
+description_md: |-
+  One of the apostles. His attribute: a knife and his own flayed skin (the face on it in [[artist/michelangelo]]'s *Last Judgement* is generally taken to be his self-portrait).
+
+  **In art:** A knife and his own flayed skin (the face on it in Michelangelo's *[[last-judgement]]* is generally taken to be his self-portrait).
+
+  *From:* New Testament, Gospels · Christian
+wikidata_id: Q43982
+metadata:
+  sources: [Wikidata Q43982 (retrieved 2026-11-25)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/46/Matteo_di_Giovanni_003.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Matteo_di_Giovanni_003.jpg
+    license: Public domain
+    credit: Budapest Museum of Fine Arts
+identifiers:
+  gnd: "118822195"
+  lc: n86142547
+  viaf: "40174994"
+sources:
+  kind:
+    - accessed: 2026-11-25
+      property: P31
+      wikidata: Q43982
+  death:
+    - accessed: 2026-11-25
+      property: P570
+      wikidata: Q43982
+  occupations:
+    - accessed: 2026-11-25
+      property: P106
+      wikidata: Q43982

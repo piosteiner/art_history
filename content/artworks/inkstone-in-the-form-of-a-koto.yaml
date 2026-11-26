@@ -1,6 +1,7 @@
 public_id: 124708
 title_lang: en
 title: Inkstone in the Form of a Koto
+attribution_label: Anonymous, Japanese
 institution: cleveland-museum-of-art
 inventory_number: "1971.168"
 web_url: https://clevelandart.org/art/1971.168
@@ -61,3 +62,6 @@ sources:
     - accessed: 2026-11-24
       property: P217
       wikidata: Q79923894
+  attribution_label:
+    - source: cma-1971-168
+      accessed: 2026-11-25
