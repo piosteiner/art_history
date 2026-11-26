@@ -237,6 +237,11 @@ them under the title as **"Being checked"**: each case's public note (or "A ques
 checked."), since when, and the day of its last progress (`underReview()` in `src/views/detail.ts`, `.under-review`).
 The case's working description never reaches the API. Test: `tests/site.spec.ts` "open cases (API 248)".
 
+## Provenance numbers in the list
+Each step in the provenance list shows its number from the map (API `step`, 2026-11-26) in the map's own bubble
+(`prov-stop prov-num`) on the rail — counted as `provenance_stops()` counts: the chain's order, events (• notes) not
+numbered. Agents and custodians get a smaller bubble, computed lines (the artist's) a hollow one.
+
 ## Sources for facts (API migrations 049/050)
 `src/cite.ts`: after a sourced value (fact rows, relationships, provenance steps) a small marker with one letter per kind
 of source, the most reliable first — P primary · L literature · M museum/collection · D other database · W Wikidata ·

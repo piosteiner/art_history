@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-11-26
 
+### Provenance list numbered like the map
+- **What:** the detail's provenance steps carry `step` (`src/routes/entities.js`: `row_number()` over the chain in
+  `provenance_stops()`' order, events left out — they have no stop); the site draws it in the map's bubble on the
+  list's rail instead of the dot (`frontend/src/views/detail-sections.ts`, `.prov-num` in `style.css`), smaller for
+  agents and custodians, hollow for computed lines. Checked on four works with events: 57 steps, no difference. Tests:
+  `test/e2e/provenance-coverage.spec.js`, `frontend/tests/site.spec.ts`.
+- **Why:** owner: the map's numbers were not in the list next to it.
+- **Revert:** the `step` column and the bubble (the dot comes back by itself).
+
 ### Map: a gap at the end of a provenance no longer lands on every segment
 - **What:** `src/routes/map.js` (`/v1/map/artworks/:slug`): a segment's gaps are those between its two stops — a gap
   after the last holder (`after_position` null) now goes on no segment (listed beside the map only). It had matched
@@ -13,8 +22,6 @@ Format: date — what — why — how to revert.
   region known"), its Wikidata citation renewed.
 - **Why:** owner: the Arlequin's provenance map looked messy.
 - **Revert:** the filter's `g.after_position !== null` condition; audit_log for the place.
-
-## 2026-11-26
 
 ### Data: Lydia Welti-Escher born in Enge and died in Champel, not just "Zürich" and "Geneva"
 - **Birth:** new place Enge (district of Zürich, `from-wikidata.js place Q648218`, kind set to district); `born_in`
