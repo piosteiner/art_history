@@ -118,7 +118,8 @@ the detail's `entries` map (`src/glossary.ts`); every other internal link (field
 panel) from `GET /v1/previews` (`src/previews.ts`: a MutationObserver on `#app` collects the links as views render and
 fetches what isn't known in one request per 100). Mouse: after a 250 ms pause; keyboard: on focus; touch: on entry pages
 the first tap shows it. Not on the header, breadcrumbs, previous/next, buttons, list cards and rows, the explore pickers or the
-page's own link.
+page's own link. A link to something else about an entry names the entry it previews with `data-preview="type/slug"` —
+the network's search hits (2026-11-26), which point to `/graph/…`, show the entry's preview that way.
 
 ## Creators and provenance
 - Several creators (migration 028): `creators` (main first). The artwork page shows them one per line with their part
