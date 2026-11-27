@@ -1,4 +1,12 @@
 public_id: 108613
 name: relief
+names:
+  - lang: es
+    role: translation
+    text: relieve
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300047230
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: Sculpture carved or modelled projecting from a flat ground.

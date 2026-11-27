@@ -36,6 +36,14 @@ description_md: Emperor of Japan; the era of his reign is [[meiji-era|Meiji]] â€
 wikidata_id: Q174231
 metadata:
   sources: [Wikidata Q174231 (retrieved 2026-11-01)]
+relationships:
+  - type: founded
+    to: institution/yasukuni-shrine
+    period: 1869-08-06
+    sources:
+      - url: https://www.yasukuni.or.jp/english/about/
+        source: yasukuni-shrine-about-yasukuni-jinja-yasukuni-jinja
+        accessed: 2026-11-26
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Meiji_Emperor.jpg/1280px-Meiji_Emperor.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Meiji_Emperor.jpg

@@ -1,3 +1,25 @@
 public_id: 122930
 name: enamel
+names:
+  - lang: de
+    role: translation
+    text: Emailarbeit
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300178264
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: émail
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300178264
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: esmalte
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300178264
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type

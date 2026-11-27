@@ -1,3 +1,32 @@
 public_id: 123815
 name: architectural element
+names:
+  - lang: de
+    role: translation
+    text: Architekturelement
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300000885
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: éléments architectoniques
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300000885
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: elementi architettonici
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300000885
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: elemento de arquitectura
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300000885
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type

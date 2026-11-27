@@ -1,3 +1,11 @@
 public_id: 130191
 name: wrought iron
+names:
+  - lang: es
+    role: translation
+    text: hierro forjado
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011012
+        source: getty-aat
+        accessed: 2026-11-26
 category: material

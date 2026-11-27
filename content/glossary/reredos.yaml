@@ -1,5 +1,20 @@
 public_id: 115746
 name: reredos
+names:
+  - lang: it
+    role: translation
+    text: mostra d'altare
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300075947
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: reredo
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300075947
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: altarpiece, screen or decoration behind the altar in a church
 wikidata_id: Q46686

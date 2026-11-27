@@ -1,5 +1,20 @@
 public_id: 117122
 name: tin
+names:
+  - lang: fr
+    role: translation
+    text: étain
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300133748
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: estaño
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300133748
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: A soft, silvery-white metal, alloyed with copper to make bronze; in medieval art also beaten into foil and gilded on carved figures.
 description_md: |-

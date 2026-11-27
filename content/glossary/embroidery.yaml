@@ -1,4 +1,26 @@
 public_id: 107652
 name: embroidery
+names:
+  - lang: de
+    role: translation
+    text: Stickerei
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300264024
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: broderie
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300264024
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: bordado
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300264024
+        source: getty-aat
+        accessed: 2026-11-26
 category: technique
 definition: Decoration stitched into cloth with a needle and coloured thread.

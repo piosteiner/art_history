@@ -1,4 +1,33 @@
 public_id: 107903
 name: book
+names:
+  - lang: de
+    role: translation
+    text: Buch
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300028051
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: livre
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300028051
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: libro
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300028051
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: libro
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300028051
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: A bound volume of written or printed pages.

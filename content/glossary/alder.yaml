@@ -55,6 +55,13 @@ names:
     sources:
       - accessed: 2026-11-09
         wikidata: Q1355553
+  - lang: es
+    role: translation
+    text: aliso
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011918
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: wood
 definition: type of wood

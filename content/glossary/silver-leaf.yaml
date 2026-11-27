@@ -1,5 +1,13 @@
 public_id: 107665
 name: silver leaf
+names:
+  - lang: es
+    role: translation
+    text: hoja de plata
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300265199
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: silver
 definition: Silver beaten into thin sheets and laid onto a surface.

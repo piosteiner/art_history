@@ -1,5 +1,13 @@
 public_id: 105528
 name: fresco painting
+names:
+  - lang: es
+    role: translation
+    text: pintura al fresco
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300053357
+        source: getty-aat
+        accessed: 2026-11-26
 category: technique
 definition: technique of mural painting executed upon freshly laid lime plaster
 wikidata_id: Q134194

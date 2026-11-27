@@ -1,4 +1,19 @@
 public_id: 108618
 name: tablet
+names:
+  - lang: fr
+    role: translation
+    text: tablette
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300028879
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: tablilla
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300028879
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: A flat slab bearing an inscription.

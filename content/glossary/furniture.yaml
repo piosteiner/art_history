@@ -1,4 +1,26 @@
 public_id: 107158
 name: furniture
+names:
+  - lang: fr
+    role: translation
+    text: meubles
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300037680
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: mobili
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300037680
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: mueble
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300037680
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: "Movable furnishings of a room: stands, tables, chests, screens."

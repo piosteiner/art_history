@@ -1,4 +1,19 @@
 public_id: 107920
 name: tray
+names:
+  - lang: it
+    role: translation
+    text: vassoio
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300043071
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: bandeja
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300043071
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: A flat, rimmed board or dish for carrying or presenting things.

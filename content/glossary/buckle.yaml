@@ -1,4 +1,33 @@
 public_id: 108589
 name: buckle
+names:
+  - lang: de
+    role: translation
+    text: Schnalle
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300239260
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: boucle
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300239260
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: fibbia
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300239260
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: hebilla
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300239260
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: A clasp or hook for fastening a belt.

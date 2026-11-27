@@ -70,7 +70,7 @@ materials: [oil paint, canvas]
 dimensions: [330, 425]
 institution: department-of-paintings-of-the-louvre
 inventory_number: INV 3692
-web_url: http://www.louvre.fr/oeuvre-notices/le-serment-des-horaces
+web_url: https://collections.louvre.fr/ark:/53355/cl010062239
 wikidata_id: Q476458
 metadata:
   sources: [Wikidata Q476458 (retrieved 2026-10-20)]
@@ -133,6 +133,10 @@ numbers:
   - number: MR 1432
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062239
+        source: louvre-le-serment-des-horaces-entre-les-mains-de-leur-pere-mr-1432
+        accessed: 2026-11-26
 identifiers:
   gnd: 4113280-4
   viaf: "211773512"
@@ -164,3 +168,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010062239
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010062239
+      source: louvre-le-serment-des-horaces-entre-les-mains-de-leur-pere-mr-1432
+      accessed: 2026-11-26

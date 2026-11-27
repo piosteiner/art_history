@@ -4,5 +4,12 @@ names:
   - lang: ja
     role: original
     text: "{絞り|しぼり}"
+  - lang: es
+    role: translation
+    text: tinción con nudos
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300053057
+        source: getty-aat
+        accessed: 2026-11-26
 category: technique
 definition: "Shibori: dyeing cloth after binding parts of it so that they resist the dye."

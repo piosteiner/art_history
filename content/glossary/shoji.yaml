@@ -13,6 +13,13 @@ names:
   - lang: ru
     role: translation
     text: Сёдзи
+  - lang: es
+    role: translation
+    text: shoji
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300101421
+        source: getty-aat
+        accessed: 2026-11-26
 category: architecture
 definition: A sliding door or window of translucent paper on a wooden lattice.
 wikidata_id: Q1069525

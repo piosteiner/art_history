@@ -1,5 +1,20 @@
 public_id: 101525
 name: casein paint
+names:
+  - lang: fr
+    role: translation
+    text: peinture à la caséine
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300015033
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: pintura de caseína
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300015033
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: paint
 definition: A fast-drying, water-soluble paint whose binder is casein, the protein of milk, dissolved in an alkali such as lime; it dries to a matte finish.

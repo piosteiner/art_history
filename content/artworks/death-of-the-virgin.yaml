@@ -145,6 +145,10 @@ numbers:
   - number: MR 104
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062304
+        source: louvre-la-mort-de-la-vierge-mr-104
+        accessed: 2026-11-26
 sources:
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010062304
@@ -173,3 +177,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010062304
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010062304
+      source: louvre-la-mort-de-la-vierge-mr-104
+      accessed: 2026-11-26

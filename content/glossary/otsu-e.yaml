@@ -7,6 +7,13 @@ names:
   - lang: en
     role: translation
     text: Ōtsu pictures
+  - lang: es
+    role: translation
+    text: Otsu-e
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300113552
+        source: getty-aat
+        accessed: 2026-11-26
 category: art style
 definition: Cheap, roughly painted folk pictures sold to travellers on the Tōkaidō, named after the town of Ōtsu; at first Buddhist icons, later also popular and satirical subjects.
 wikidata_id: Q11437366

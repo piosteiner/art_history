@@ -1,5 +1,27 @@
 public_id: 116817
 name: lithograph
+names:
+  - lang: fr
+    role: translation
+    text: lithographie
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041379
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: litografia
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041379
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: litografía
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041379
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: print
 definition: A print made from a flat stone or plate on which the image is drawn with a greasy medium.

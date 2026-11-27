@@ -1,5 +1,13 @@
 public_id: 117091
 name: pearl
+names:
+  - lang: es
+    role: translation
+    text: perla
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011827
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: A hard, lustrous concretion of calcium carbonate formed in the soft tissue of a mollusc, valued as a gem and set in jewellery, goldsmiths' work and embroidery.
 description_md: |-

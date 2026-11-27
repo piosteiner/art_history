@@ -1,4 +1,12 @@
 public_id: 106295
 name: earthenware
+names:
+  - lang: fr
+    role: translation
+    text: poterie
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300140803
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: Pottery fired at low temperature, porous unless glazed.

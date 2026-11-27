@@ -1,4 +1,33 @@
 public_id: 108621
 name: tomb
+names:
+  - lang: de
+    role: translation
+    text: Gruft
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300005926
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: tombeau
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300005926
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: tomba
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300005926
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: tumba
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300005926
+        source: getty-aat
+        accessed: 2026-11-26
 category: architecture
 definition: A burial chamber or monument for the dead.

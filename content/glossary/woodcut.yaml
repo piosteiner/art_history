@@ -29,6 +29,13 @@ names:
   - lang: zh
     role: translation
     text: 木刻
+  - lang: es
+    role: translation
+    text: xilografía
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041405
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: relief-print
 definition: "A print from a block of wood cut along the grain: what is not to print is cut away, and the raised lines and areas are inked and printed — in a press or by rubbing the back of the paper. In East Asia, where it began, usually called woodblock printing."

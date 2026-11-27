@@ -5,5 +5,12 @@ names:
   - lang: de
     role: translation
     text: Ölgemälde
+  - lang: es
+    role: translation
+    text: pintura al óleo
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300178684
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: painting

@@ -1,3 +1,25 @@
 public_id: 124900
 name: albumen print
+names:
+  - lang: de
+    role: translation
+    text: Albuminpapierabzug
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300127121
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: épreuve à l'albumine
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300127121
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: impresión en albúmina
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300127121
+        source: getty-aat
+        accessed: 2026-11-26
 category: material

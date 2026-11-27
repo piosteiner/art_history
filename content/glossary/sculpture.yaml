@@ -8,4 +8,18 @@ names:
   - lang: de
     role: translation
     text: Plastik
+  - lang: it
+    role: translation
+    text: scultura
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300047090
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: escultura
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300047090
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type

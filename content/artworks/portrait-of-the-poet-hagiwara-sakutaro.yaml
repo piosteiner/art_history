@@ -1,8 +1,11 @@
 public_id: 100052
 title: Portrait of the Poet Hagiwara Sakutarō
 names: [Portrait of  Hagiwara Sakutarō]
+parent: onchi-portrait-of-hagiwara-sakutaro
+part_number: "1"
 creator: onchi-koshiro
 created: 1943
+kind: Japanese woodblock print
 medium: Woodblock print (ukiyo-e), ink and colour on paper
 dimensions: [55.6, 44.8]
 institution: museum-of-fine-arts-boston
@@ -16,25 +19,25 @@ images:
 sources:
   created:
     - url: http://collections.mfa.org/objects/257442/portrait-of-the-poet-hagiwara-sakutaro
-      source: mfa-lullaby-la-berceuse-48-548
+      source: mfa-portrait-of-the-poet-hagiwara-sakutaro-54-654
       accessed: 2026-11-03
   creator:
     - url: http://collections.mfa.org/objects/257442/portrait-of-the-poet-hagiwara-sakutaro
-      source: mfa-lullaby-la-berceuse-48-548
+      source: mfa-portrait-of-the-poet-hagiwara-sakutaro-54-654
       accessed: 2026-11-03
   dimensions:
     - url: http://collections.mfa.org/objects/257442/portrait-of-the-poet-hagiwara-sakutaro
-      source: mfa-lullaby-la-berceuse-48-548
+      source: mfa-portrait-of-the-poet-hagiwara-sakutaro-54-654
       accessed: 2026-11-03
   institution:
     - url: http://collections.mfa.org/objects/257442/portrait-of-the-poet-hagiwara-sakutaro
-      source: mfa-lullaby-la-berceuse-48-548
+      source: mfa-portrait-of-the-poet-hagiwara-sakutaro-54-654
       accessed: 2026-11-03
   title_status:
     - url: http://collections.mfa.org/objects/257442/portrait-of-the-poet-hagiwara-sakutaro
-      source: mfa-lullaby-la-berceuse-48-548
+      source: mfa-portrait-of-the-poet-hagiwara-sakutaro-54-654
       accessed: 2026-11-03
   inventory_number:
     - url: http://collections.mfa.org/objects/257442/portrait-of-the-poet-hagiwara-sakutaro
-      source: mfa-lullaby-la-berceuse-48-548
+      source: mfa-portrait-of-the-poet-hagiwara-sakutaro-54-654
       accessed: 2026-11-03

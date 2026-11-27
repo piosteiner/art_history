@@ -1,4 +1,12 @@
 public_id: 108191
 name: installation
+names:
+  - lang: es
+    role: translation
+    text: instalación
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300047896
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: A work of art made for a space and experienced by entering or moving through it.

@@ -1,5 +1,20 @@
 public_id: 107923
 name: vase
+names:
+  - lang: it
+    role: translation
+    text: vaso
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300132254
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: vaso
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300132254
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: vessel
 definition: A vessel for flowers.

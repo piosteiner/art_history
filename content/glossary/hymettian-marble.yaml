@@ -1,3 +1,11 @@
 public_id: 123224
 name: Hymettian marble
+names:
+  - lang: es
+    role: translation
+    text: mármol de Hymettus
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011580
+        source: getty-aat
+        accessed: 2026-11-26
 category: material

@@ -1,5 +1,20 @@
 public_id: 108199
 name: sandstone
+names:
+  - lang: fr
+    role: translation
+    text: grès
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011376
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: arenisca
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011376
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: stone
 definition: Sedimentary stone of cemented sand grains.

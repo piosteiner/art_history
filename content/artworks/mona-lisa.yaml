@@ -160,6 +160,10 @@ numbers:
   - number: MR 316
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062370
+        source: louvre-portrait-de-lisa-gherardini-epouse-de-francesco-del-giocondo-mr-316
+        accessed: 2026-11-26
 identifiers:
   gnd: 4074156-4
   viaf: "180757281"
@@ -191,3 +195,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010062370
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010062370
+      source: louvre-portrait-de-lisa-gherardini-epouse-de-francesco-del-giocondo-mr-316
+      accessed: 2026-11-26

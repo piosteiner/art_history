@@ -9,5 +9,19 @@ names:
   - lang: de
     role: translation
     text: Öl
+  - lang: fr
+    role: translation
+    text: peinture à l'huile
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300015050
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: pintura al óleo
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300015050
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: paint

@@ -165,6 +165,10 @@ numbers:
   - number: C 51
     institution: department-of-paintings-of-the-louvre
     label: register of acquisitions under Charles X
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010059199
+        source: louvre-le-radeau-de-la-meduse-c-51
+        accessed: 2026-11-26
 identifiers:
   gnd: 4304042-1
   viaf: "177932717"
@@ -196,3 +200,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010059199
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010059199
+      source: louvre-le-radeau-de-la-meduse-c-51
+      accessed: 2026-11-26

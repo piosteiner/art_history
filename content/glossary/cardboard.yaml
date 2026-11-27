@@ -8,4 +8,18 @@ names:
   - lang: de
     role: translation
     text: Pappe
+  - lang: fr
+    role: translation
+    text: carton
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300014224
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: cartulina
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300014224
+        source: getty-aat
+        accessed: 2026-11-26
 category: material

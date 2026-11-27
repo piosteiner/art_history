@@ -1,5 +1,34 @@
 public_id: 107904
 name: bottle
+names:
+  - lang: de
+    role: translation
+    text: Flasche
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300045627
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: bouteille
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300045627
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: bottiglia
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300045627
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: botella
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300045627
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: vessel
 definition: A narrow-necked vessel for liquids; in Japan above all the saké bottle (tokkuri).

@@ -1,0 +1,28 @@
+public_id: 132578
+title: Portrait of Hagiwara Sakutarō
+parts_count: 7
+creator: onchi-koshiro
+created: 1943
+kind: edition
+description_md: |-
+  The master print of [[artist/onchi-koshiro]] (1891–1955), leader of [[sosaku-hanga]], his response to the death in 1942 of his friend [[person/hagiwara-sakutaro]], the troubled nihilist poet: a three-quarter view with rumpled hair and an intense, unfocused gaze, the wrinkles like the grain of wood. Seven separately carved blocks re-inked through fifteen stages (Elizabeth de Sabato Swinton); only seven impressions. [[source/history-of-japanese-art|pp. 385–386, fig. 460]]
+
+  Two impressions are entries here: the one in the [[institution/museum-of-fine-arts-boston|Museum of Fine Arts, Boston]] and the one in a private collection in Tokyo that Mason reproduces. [[source/history-of-japanese-art|p. 386, fig. 460]]
+relationships:
+  - type: depicts_person
+    to: person/hagiwara-sakutaro
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 385–386, fig. 460
+  - type: associated_with
+    to: movement/showa-period
+    sources:
+      - source: history-of-japanese-art
+        locator: pp. 385–386, fig. 460
+sources:
+  created:
+    - source: history-of-japanese-art
+      locator: pp. 385–386, fig. 460
+  creator:
+    - source: history-of-japanese-art
+      locator: pp. 385–386, fig. 460

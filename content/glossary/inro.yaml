@@ -7,6 +7,13 @@ names:
   - lang: en
     role: translation
     text: seal case
+  - lang: fr
+    role: translation
+    text: inro
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300311058
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: A small case of several stacked compartments, usually lacquered, hung from the sash of a man’s garment by a cord with a netsuke and an ojime; at first for seals and seal ink.
 wikidata_id: Q557164

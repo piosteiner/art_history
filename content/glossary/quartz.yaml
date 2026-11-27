@@ -1,3 +1,18 @@
 public_id: 124330
 name: quartz
+names:
+  - lang: it
+    role: translation
+    text: quarzo
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011132
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: cuarzo
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011132
+        source: getty-aat
+        accessed: 2026-11-26
 category: material

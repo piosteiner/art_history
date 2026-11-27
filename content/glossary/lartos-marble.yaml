@@ -1,0 +1,8 @@
+public_id: 132625
+name: Lartos marble
+names:
+  - lang: fr
+    role: translation
+    text: marbre de Lartos
+category: material
+parent: marble

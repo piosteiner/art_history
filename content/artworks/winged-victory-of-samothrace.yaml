@@ -83,17 +83,47 @@ names:
 attribution_label: Unknown Hellenistic sculptor
 created: c. 200 BCE–175 BCE
 created_span: uncertain
-materials: [Parian marble]
-dimensions: [245]
+kind: sculpture
+medium: Parian marble (statue), Lartos marble (ship's prow and plinth)
+materials: [Parian marble, Lartos marble]
+dimensions: [564]
+other_dimensions:
+  - cm: [328]
+    part: statue
+  - cm: [200, 258, 429]
+    part: ship's prow
+  - cm: [36, 178, 467]
+    part: base
 institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
 inventory_number: Ma 2369
-web_url: http://www.louvre.fr/oeuvre-notices/victoire-de-samothrace
+web_url: https://collections.louvre.fr/ark:/53355/cl010252531
+other_web_url: https://collections.louvre.fr/en/ark:/53355/cl010252531
+other_web_name: Collection Website
 fate: partly_destroyed
 fate_note: head and arms lost
+description_md: |-
+  A Hellenistic statue of Nike, the winged goddess of victory, alighting on the prow of a warship. The Louvre dates it to the first quarter of the 2nd century BC (about 200–175 BC) and names [[place/rhodes|Rhodes]], with a question mark, as the place where it was made. The statue is of [[parian-marble|Parian marble]]; the ship's prow and the plinth are of grey [[lartos-marble|Lartos marble]].[[source/louvre-victoire-de-samothrace-ma-2369]]
+
+  [[person/charles-champoiseau|Charles Champoiseau]] excavated it in 1863 at Palaiopolis on [[place/samothrace|Samothrace]], in the sanctuary of the Great Gods. It reached the Louvre in stages, in 1864, 1879 and 1891, which is why the museum records three entry numbers beside its catalogue number Ma 2369.[[source/louvre-victoire-de-samothrace-ma-2369]]
+
+  The monument was assembled from many pieces. The bust and the wings of the statue were carved separately and attached, as were pieces of drapery at the back and on the ground; joint surfaces remain on the right arm, the left calf, the right foot and the front of the drapery. The prow is built of 16 blocks in three courses, the plinth of six slabs laid side by side, and Greek letters cut into the plinth (alpha, beta, gamma, three deltas and epsilon) marked where the slabs belonged. In all the monument stands 564 cm high, the statue alone 328 cm; the Louvre estimates the statue's weight at about 2 tonnes and the whole at about 32 tonnes.[[source/louvre-victoire-de-samothrace-ma-2369]]
+
+  The head, the neck, both arms, the left side and the back of the bust, the right wing, the right foot, the left calf and foot and the lower drapery at the back are lost. The left breast, the area of the belt, the back of the bust and the right wing were made up in plaster, and a metal frame holds the wings. One block of the prow's upper course is kept in the museum on Samothrace; the most recent restoration, in 2014, put back two fragments of feathers and nine of the prow. The statue stands in the Denon wing, on the landing named after it (room 703).[[source/louvre-victoire-de-samothrace-ma-2369]]
+
+  In the founding manifesto of [[movement/futurism|Futurism]] in 1909, [[person/filippo-tommaso-marinetti|Filippo Tommaso Marinetti]] declared "a roaring car that seems to ride on grapeshot" to be "more beautiful than the Victory of Samothrace".[[source/cioli-ricciardi-schiera-2019|p. 176]]
 wikidata_id: Q216402
 metadata:
   sources: [Wikidata Q216402 (retrieved 2026-10-20)]
 relationships:
+  - type: created_in
+    to: place/rhodes
+    period: c. 200 BCE–175 BCE
+    label: Rhodes (?) — the Louvre's record
+    certainty: possible
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010252531
+        source: louvre-victoire-de-samothrace-ma-2369
+        accessed: 2026-11-26
   - type: created_in
     to: place/paris
     period: -200/-175
@@ -137,12 +167,24 @@ numbers:
   - number: MNC 1433
     institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
     label: entry number
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010252531
+        source: louvre-victoire-de-samothrace-ma-2369
+        accessed: 2026-11-26
   - number: MNB 2118
     institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
     label: entry number
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010252531
+        source: louvre-victoire-de-samothrace-ma-2369
+        accessed: 2026-11-26
   - number: NIII 2447
     institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
     label: entry number
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010252531
+        source: louvre-victoire-de-samothrace-ma-2369
+        accessed: 2026-11-26
 identifiers:
   gnd: 4202608-8
   viaf: "190487421"
@@ -152,18 +194,22 @@ sources:
       note: "“une statue représentant la déesse Niké (la Victoire), dont il manque la tête et les bras” · “1891 : Champoiseau retourne une troisième fois à Samothrace pour essayer de retrouver la tête de la Victoire, sans succès.”"
       source: wikipedia-fr-victoire-de-samothrace
       accessed: 2026-10-30
+  medium:
+    - url: https://collections.louvre.fr/ark:/53355/cl010252531
+      source: louvre-victoire-de-samothrace-ma-2369
+      accessed: 2026-11-26
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010252531
       source: louvre-collections
       accessed: 2026-10-20
   materials:
-    - accessed: 2026-10-20
-      property: P186
-      wikidata: Q216402
+    - url: https://collections.louvre.fr/ark:/53355/cl010252531
+      source: louvre-victoire-de-samothrace-ma-2369
+      accessed: 2026-11-26
   dimensions:
-    - accessed: 2026-10-20
-      property: P2048
-      wikidata: Q216402
+    - url: https://collections.louvre.fr/ark:/53355/cl010252531
+      source: louvre-victoire-de-samothrace-ma-2369
+      accessed: 2026-11-26
   institution:
     - accessed: 2026-10-20
       property: P195
@@ -175,3 +221,10 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010252531
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010252531
+      source: louvre-victoire-de-samothrace-ma-2369
+      accessed: 2026-11-26
+  other_dimensions:
+    - url: https://collections.louvre.fr/ark:/53355/cl010252531
+      source: louvre-victoire-de-samothrace-ma-2369
+      accessed: 2026-11-26

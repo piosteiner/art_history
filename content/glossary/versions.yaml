@@ -7,5 +7,12 @@ names:
   - lang: fr
     role: translation
     text: versions
+  - lang: es
+    role: translation
+    text: versión
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300121393
+        source: getty-aat
+        accessed: 2026-11-26
 category: group of works
 definition: Several versions of one composition by the same artist — repetitions, often of another size, made for a buyer or a relative or to replace a damaged first version.

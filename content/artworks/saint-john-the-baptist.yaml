@@ -189,6 +189,10 @@ numbers:
   - number: MR 318
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062374
+        source: louvre-saint-jean-baptiste-mr-318
+        accessed: 2026-11-26
 identifiers:
   gnd: 4350399-8
   viaf: "211736301"
@@ -220,3 +224,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010062374
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010062374
+      source: louvre-saint-jean-baptiste-mr-318
+      accessed: 2026-11-26

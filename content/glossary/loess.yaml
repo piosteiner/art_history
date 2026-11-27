@@ -1,5 +1,13 @@
 public_id: 106387
 name: loess
+names:
+  - lang: de
+    role: translation
+    text: Löss
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300014336
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: A pale yellow-buff, silt-sized sediment formed by the accumulation of wind-blown dust, covering a tenth of the earth’s land.
 description_md: |-

@@ -1,5 +1,27 @@
 public_id: 102141
 name: fresco
+names:
+  - lang: de
+    role: translation
+    text: Fresko
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300177433
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: fresque
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300177433
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: affresco
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300177433
+        source: getty-aat
+        accessed: 2026-11-26
 category: technique
 parent: painting
 definition: artwork produced via the fresco painting technique

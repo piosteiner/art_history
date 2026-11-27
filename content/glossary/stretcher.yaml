@@ -8,5 +8,12 @@ names:
   - lang: fr
     role: translation
     text: châssis
+  - lang: es
+    role: translation
+    text: bastidor
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300022630
+        source: getty-aat
+        accessed: 2026-11-26
 category: mounting
 definition: The wooden frame a canvas is stretched on, behind the picture — with keys to tighten it (unlike a strainer).

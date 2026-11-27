@@ -1,0 +1,97 @@
+public_id: 132626
+name: Yasukuni Shrine
+names:
+  - text: Yasukuni Jinja
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q242803
+  - text: Tōkyō Shōkonsha
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q242803
+  - lang: nl
+    role: translation
+    text: Yasukuni-schrijn
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q242803
+  - lang: fr
+    role: translation
+    text: sanctuaire Yasukuni
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q242803
+  - lang: de
+    role: translation
+    text: Yasukuni-Schrein
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q242803
+  - lang: it
+    role: translation
+    text: Santuario Yasukuni
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q242803
+  - lang: ja
+    role: translation
+    text: 靖国神社
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q242803
+  - lang: ko
+    role: translation
+    text: 야스쿠니 신사
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q242803
+  - lang: ru
+    role: translation
+    text: Ясукуни
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q242803
+kind: Shinto shrine
+founded: 1869-08-06
+place: tokyo
+location: [139.74269, 35.69396]
+address: 東京都千代田区九段北3-1-1
+description_md: |-
+  Yasukuni Shrine in Kudankita, Chiyoda, [[place/tokyo|Tokyo]], was founded in 1869 by the will of [[person/emperor-meiji|Emperor Meiji]] as the Tōkyō Shōkonsha and renamed in 1879.[[source/yasukuni-shrine-about-yasukuni-jinja-yasukuni-jinja]] Its original aim was "to honor only those who had fallen in battle while fighting for the sake of the emperor", and it was under the jurisdiction of the Ministries of the Interior, War and the Navy.[[source/nippon-com-yasukuni-shrine-the-basics-nippon-com]] The enshrinement of the war dead passed to military control in 1887.[[source/wikipedia-en-yasukuni-shrine]] During the Second World War soldiers left for battle promising to "meet again at Yasukuni".[[source/nippon-com-yasukuni-shrine-the-basics-nippon-com]] Wartime pictures for children drew on it too: in a print promoting the war effort, a shrine gate "may allude to the Yasukuni Shrine, which is dedicated to the spirit of soldiers and others who fought and died for the Emperor".[[source/kushner-2011-drive-to-mobilize|p. 18]] The shrine states that more than 2,466,000 people who died for the nation since 1853 are enshrined, among them "Taiwanese and Korean people who died as Japanese".[[source/yasukuni-shrine-history-yasukuni-jinja]]
+
+  On 15 December 1945 the occupation authorities issued the Shinto Directive to abolish State Shinto, and the Religious Corporations Law of 1946 made Yasukuni an autonomous religious corporation.[[source/nippon-com-yasukuni-shrine-the-basics-nippon-com]] It was registered as such in September 1946.[[source/wikipedia-en-yasukuni-shrine]] [[person/hirohito|Emperor Shōwa]] visited eight times after the war, last on 21 November 1975; no emperor has visited since.[[source/nippon-com-yasukuni-shrine-the-basics-nippon-com]]
+
+  On 17 October 1978 the shrine enshrined 14 Class-A war criminals; this became public on 19 April 1979.[[source/wikipedia-ja-ipedia-org-wiki]] In July 2006 the Nihon Keizai Shimbun published a 1988 note, attributed to the former Imperial Household Agency head Tomita Tomohiko, according to which the emperor had stopped visiting because "Class-A criminals became enshrined".[[source/al-jazeera-hirohito-memo-stirs-shrine-row-news-al-jazeera]] Prime Minister Nakasone Yasuhiro visited on 15 August 1985, a day after China's first formal statement of concern about such visits; after Koizumi Jun'ichirō's visit of 15 August 2006 Beijing spoke of an "act that gravely offends the people in countries victimized by the war of aggression" and South Korea of "deep disappointment and anger".[[source/nippon-com-yasukuni-shrine-the-basics-nippon-com]] After Abe Shinzō's visit on 26 December 2013 China's foreign ministry said, "We strongly protest and seriously condemn the Japanese leader's acts", and the US Embassy said it was "disappointed".[[source/upi-u-s-disappointed-in-japanese-pm-shinzo-abes-visit-to-shrine]] In January 2025 Japan's Supreme Court rejected a request by 27 relatives to remove the names of Korean family members, citing an expired 20-year period.[[source/the-korea-korean-plaintiffs-protest-as-japanese-court-rejects-request]]
+
+  The shrine's Yūshūkan museum opened in 1882; the shrine calls it a place "to become familiar with the stories of those who sacrificed their precious lives for their country".[[source/yasukuni-shrine-yushukan-museum-yasukuni-jinja]] Nippon.com describes its exhibits as "supportive of the Japanese government's policies from the Manchurian Incident to the end of World War II".[[source/nippon-com-yasukuni-shrine-the-basics-nippon-com]] Shaun O'Dwyer writes that its narrative makes "no reference to acts of aggression, colonial acquisitions and documented atrocities".[[source/history-and-h199-yasukunishrine]] The grounds hold Okuma Ujihiro's statue of Ōmura Masujirō (1893), described as Japan's first Western-style bronze statue, and the steel Daiichi Torii, first erected in 1921 and rebuilt in 1974.[[source/wikipedia-en-yasukuni-shrine]] The Japan Meteorological Agency uses three Somei-Yoshino trees there as the reference trees for Tokyo's cherry-blossom date.[[source/wikipedia-ja-ipedia-org-wiki]]
+website_url: https://www.yasukuni.or.jp/
+wikidata_id: Q242803
+metadata:
+  sources: [Wikidata Q242803 (retrieved 2026-11-26)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/2018_Haiden_%28Yasukuni_Shrine%29.jpg/1280px-2018_Haiden_%28Yasukuni_Shrine%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:2018_Haiden_(Yasukuni_Shrine).jpg
+    license: CC BY-SA 4.0
+    credit: Kakidai
+identifiers:
+  bnf: "150816890"
+  idref: "098134027"
+  lc: n82010878
+  viaf: "279316327"
+sources:
+  place:
+    - accessed: 2026-11-26
+      property: P131
+      wikidata: Q242803
+  address:
+    - accessed: 2026-11-26
+      property: P6375
+      wikidata: Q242803
+  founded:
+    - accessed: 2026-11-26
+      property: P571
+      wikidata: Q242803
+  location:
+    - accessed: 2026-11-26
+      property: P625
+      wikidata: Q242803

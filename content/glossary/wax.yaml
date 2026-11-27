@@ -1,5 +1,27 @@
 public_id: 102170
 name: wax
+names:
+  - lang: fr
+    role: translation
+    text: cire
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300014585
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: cera
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300014585
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: cera
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300014585
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: A malleable, water-insoluble organic solid such as beeswax that melts at low heat; in art used for figurines and sculpture models, encaustic and as an additive to paint.
 description_md: |-

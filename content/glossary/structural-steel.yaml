@@ -1,5 +1,20 @@
 public_id: 116679
 name: structural steel
+names:
+  - lang: fr
+    role: translation
+    text: acier de construction
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300010931
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: acero estructural
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300010931
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: steel
 definition: Steel rolled into standard load-bearing shapes such as I-beams and channels, used as the framework of buildings — and of large sculptures.

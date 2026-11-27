@@ -7,6 +7,13 @@ names:
   - lang: en
     role: translation
     text: medium size
+  - lang: es
+    role: translation
+    text: chuban
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041286
+        source: getty-aat
+        accessed: 2026-11-26
 category: format
 definition: A medium-sized woodblock print, about a quarter of the large sheet.
 description_md: Japanese print of a standard size, about 28 by 20 centimeters (11 by 8 inches)

@@ -1,4 +1,19 @@
 public_id: 106293
 name: clay
+names:
+  - lang: fr
+    role: translation
+    text: argile
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300010439
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: arcilla
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300010439
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: Fine-grained earth that can be shaped when wet and hardens when fired.

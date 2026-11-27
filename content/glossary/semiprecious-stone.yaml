@@ -1,5 +1,20 @@
 public_id: 117207
 name: semiprecious stone
+names:
+  - lang: fr
+    role: translation
+    text: pierre semi-précieuse
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011175
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: piedra semipreciosa
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011175
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: gemstone
 definition: A gemstone outside the traditional group of precious stones (emerald, ruby, sapphire, diamond); in art history and archaeology also called hardstone.

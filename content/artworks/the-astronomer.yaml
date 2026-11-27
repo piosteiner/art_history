@@ -66,7 +66,7 @@ materials: [oil paint, canvas]
 dimensions: [50.8, 46.3, 6.7]
 institution: department-of-paintings-of-the-louvre
 inventory_number: RF 1983-28
-web_url: http://www.louvre.fr/oeuvre-notices/l-astronome
+web_url: https://collections.louvre.fr/ark:/53355/cl010064324
 wikidata_id: Q544315
 metadata:
   sources: [Wikidata Q544315 (retrieved 2026-10-20)]
@@ -358,3 +358,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010064324
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010064324
+      source: louvre-lastronome-rf-1983-28
+      accessed: 2026-11-26

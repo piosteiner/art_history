@@ -10,5 +10,19 @@ names:
   - lang: en
     role: alternative
     text: impressions
+  - lang: it
+    role: translation
+    text: edizione
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300121294
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: edición
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300121294
+        source: getty-aat
+        accessed: 2026-11-26
 category: group of works
 definition: The impressions of one print, or the casts of one model, taken from the same block, plate, stone or mould — each impression an object of its own, often in another collection.

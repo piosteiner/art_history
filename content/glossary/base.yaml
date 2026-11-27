@@ -14,5 +14,12 @@ names:
   - lang: fr
     role: translation
     text: socle
+  - lang: it
+    role: translation
+    text: basamento
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300001656
+        source: getty-aat
+        accessed: 2026-11-26
 category: mounting
 definition: What a sculpture stands on — a plinth or pedestal, made with it or later.

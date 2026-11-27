@@ -62,7 +62,7 @@ materials: [oil paint, canvas]
 dimensions: [621, 979]
 institution: department-of-paintings-of-the-louvre
 inventory_number: INV 3699
-web_url: http://www.louvre.fr/oeuvre-notices/le-sacre-ou-le-couronnement
+web_url: https://collections.louvre.fr/ark:/53355/cl010065720
 wikidata_id: Q1231009
 metadata:
   sources: [Wikidata Q1231009 (retrieved 2026-10-20)]
@@ -116,6 +116,10 @@ numbers:
   - number: MR 1437
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010065720
+        source: louvre-le-couronnement-de-lempereur-napoleon-ier-et-de-limperatrice-mr-1437
+        accessed: 2026-11-26
 sources:
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010065720
@@ -144,3 +148,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010065720
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010065720
+      source: louvre-le-couronnement-de-lempereur-napoleon-ier-et-de-limperatrice-mr-1437
+      accessed: 2026-11-26

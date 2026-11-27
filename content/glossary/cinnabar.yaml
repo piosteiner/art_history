@@ -1,5 +1,34 @@
 public_id: 106385
 name: cinnabar
+names:
+  - lang: de
+    role: translation
+    text: Zinnober
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300400883
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: cinabre
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300400883
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: cinabro
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300400883
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: cinabrio
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300400883
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: A bright scarlet mineral, mercury sulphide (HgS), ground into the red pigment vermilion; used since antiquity in the Near East, China and the Americas.
 description_md: |-

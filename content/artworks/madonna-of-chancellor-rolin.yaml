@@ -108,6 +108,10 @@ numbers:
   - number: MR 705
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010061856
+        source: louvre-la-vierge-du-chancelier-rolin-mr-705
+        accessed: 2026-11-26
 identifiers:
   gnd: 4484916-3
   viaf: "183708377"
@@ -139,3 +143,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010061856
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010061856
+      source: louvre-la-vierge-du-chancelier-rolin-mr-705
+      accessed: 2026-11-26

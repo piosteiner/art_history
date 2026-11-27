@@ -1,5 +1,34 @@
 public_id: 108189
 name: censer
+names:
+  - lang: de
+    role: translation
+    text: Weihrauchfass
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300198814
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: encensoir
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300198814
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: incensiere
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300198814
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: incensario
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300198814
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: vessel
 definition: A vessel for burning incense.

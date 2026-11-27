@@ -1,7 +1,7 @@
 public_id: 100667
 name: Buenos Aires
 names: [Ciudad de Buenos Aires]
-kind: region
+kind: settlement
 designation: federal capital
 parent: argentina
 country_code: AR
@@ -14,7 +14,7 @@ identifiers:
   gnd: 4008756-6
 sources:
   kind:
-    - accessed: 2026-10-18
+    - accessed: 2026-11-26
       property: P31
       wikidata: Q1486
   location:

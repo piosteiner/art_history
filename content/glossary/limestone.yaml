@@ -1,5 +1,20 @@
 public_id: 116691
 name: limestone
+names:
+  - lang: fr
+    role: translation
+    text: calcaire
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011286
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: caliza
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011286
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: stone
 definition: A sedimentary rock of calcium carbonate, easy to cut and carve and durable — a major building and sculptural stone from the pyramids to medieval churches.

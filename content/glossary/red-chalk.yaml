@@ -1,5 +1,20 @@
 public_id: 101424
 name: red chalk
+names:
+  - lang: fr
+    role: translation
+    text: sanguine
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300080064
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: sanguina
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300080064
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: chalk
 definition: A reddish-brown drawing chalk of red ochre (hematite), also called sanguine; popular for drawing from the late fifteenth century.

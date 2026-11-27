@@ -26,6 +26,13 @@ names:
   - lang: ru
     role: translation
     text: мрамор
+  - lang: fr
+    role: translation
+    text: marbre
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011443
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: foliated metamorphic rock of carbonatic minerals
 wikidata_id: Q40861

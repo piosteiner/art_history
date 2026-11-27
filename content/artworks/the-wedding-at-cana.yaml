@@ -125,6 +125,10 @@ numbers:
   - number: MR 384
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064382
+        source: louvre-les-noces-de-cana-mr-384
+        accessed: 2026-11-26
 identifiers:
   gnd: 4347130-4
   viaf: "193736178"
@@ -156,3 +160,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010064382
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010064382
+      source: louvre-les-noces-de-cana-mr-384
+      accessed: 2026-11-26

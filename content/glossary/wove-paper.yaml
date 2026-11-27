@@ -1,5 +1,20 @@
 public_id: 101403
 name: wove paper
+names:
+  - lang: fr
+    role: translation
+    text: papier vélin
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300014187
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: papel liso sin marcas
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300014187
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: paper
 definition: Paper formed on a mould of finely woven wire cloth, with an even surface and no chain or laid lines; in Europe from the 1750s (James Whatman, Baskerville's Virgil of 1757).

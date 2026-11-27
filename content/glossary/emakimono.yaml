@@ -7,6 +7,13 @@ names:
   - lang: en
     role: translation
     text: illustrated handscroll
+  - lang: de
+    role: translation
+    text: Emaki
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300178464
+        source: getty-aat
+        accessed: 2026-11-26
 category: format
 definition: A horizontal illustrated handscroll, unrolled from right to left, in which text and pictures tell a story; the great age of the form was the 12th and 13th centuries.
 wikidata_id: Q1190781

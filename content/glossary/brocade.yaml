@@ -10,6 +10,13 @@ names:
   - lang: it
     role: translation
     text: broccato
+  - lang: es
+    role: translation
+    text: brocado
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300227779
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: textile produced by brocading; in general, any richly figured fabric, often incorporating metal thread
 wikidata_id: Q649022

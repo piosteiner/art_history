@@ -1,6 +1,30 @@
 public_id: 132536
 name: Wampum belts
-names: [Two Row Wampum, Kaswentha, Hiawatha Belt]
+names:
+  - Two Row Wampum
+  - Kaswentha
+  - Hiawatha Belt
+  - lang: de
+    role: translation
+    text: Wampum
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300191684
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: wampum
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300191684
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: wampum
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300191684
+        source: getty-aat
+        accessed: 2026-11-26
 category: art style
 definition: Belts of white and purple shell beads made by the Haudenosaunee Confederacy and other Eastern nations to record treaties, laws and agreements — not money to them (though European colonists used loose wampum beads as currency).
 description_md: |-

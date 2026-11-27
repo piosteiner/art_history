@@ -10,6 +10,20 @@ names:
   - lang: ko
     role: translation
     text: 청동
+  - lang: it
+    role: translation
+    text: bronzo
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300010957
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: bronce
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300010957
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: alloy of copper and tin
 wikidata_id: Q34095

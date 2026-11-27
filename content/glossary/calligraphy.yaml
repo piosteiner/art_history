@@ -4,5 +4,33 @@ names:
   - lang: ja
     role: original
     text: "{書|しょ}"
+  - lang: de
+    role: translation
+    text: Kalligraphie
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300266660
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: calligraphie
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300266660
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: calligrafia
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300266660
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: caligrafía
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300266660
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: A work of the art of writing with the brush.

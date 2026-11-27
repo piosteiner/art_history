@@ -16,6 +16,13 @@ names:
   - lang: ru
     role: translation
     text: Сёин-дзукури
+  - lang: es
+    role: translation
+    text: Shoin
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300109924
+        source: getty-aat
+        accessed: 2026-11-26
 category: architecture
 definition: The residential style of the warrior class from the late Muromachi period, built around the study (shoin) with tokonoma, staggered shelves, tatami floors and sliding doors — the basis of the traditional Japanese house.
 wikidata_id: Q2576209

@@ -1,0 +1,77 @@
+public_id: 132624
+name: Rhodes
+names:
+  - text: Rhodos
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q43048
+  - text: Rodos
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q43048
+  - text: Rodou
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q43048
+  - text: Ρόδος
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q43048
+  - lang: it
+    role: translation
+    text: Rodi
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q43048
+  - lang: es
+    role: translation
+    text: Rodas
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q43048
+  - lang: ja
+    role: translation
+    text: ロドス島
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q43048
+  - lang: zh
+    role: translation
+    text: 罗得岛
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q43048
+  - lang: ko
+    role: translation
+    text: 로도스섬
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q43048
+  - lang: ru
+    role: translation
+    text: Родос
+    sources:
+      - accessed: 2026-11-26
+        wikidata: Q43048
+kind: natural
+parent: greece
+country_code: GR
+location: [27.92, 36.17]
+wikidata_id: Q43048
+metadata:
+  sources: [Wikidata Q43048 (retrieved 2026-11-26)]
+identifiers:
+  gnd: 4049859-1
+sources:
+  kind:
+    - accessed: 2026-11-26
+      property: P31
+      wikidata: Q43048
+  parent:
+    - accessed: 2026-11-26
+      property: P131
+      wikidata: Q43048
+  location:
+    - accessed: 2026-11-26
+      property: P625
+      wikidata: Q43048

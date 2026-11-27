@@ -1,5 +1,20 @@
 public_id: 117115
 name: laid paper
+names:
+  - lang: fr
+    role: translation
+    text: papier vergé
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300014184
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: papel verjurado
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300014184
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: paper
 definition: Handmade paper formed on a mould of wires, whose chain lines and laid lines show against the light — the usual European paper from the 12th to the 19th century.

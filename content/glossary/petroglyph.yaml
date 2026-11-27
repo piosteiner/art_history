@@ -1,4 +1,19 @@
 public_id: 108611
 name: petroglyph
+names:
+  - lang: de
+    role: translation
+    text: Felsbild
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300312034
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: pétroglyphe
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300312034
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: An image pecked, ground or engraved into rock.

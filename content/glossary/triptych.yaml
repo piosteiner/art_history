@@ -1,4 +1,33 @@
 public_id: 116820
 name: triptych
+names:
+  - lang: de
+    role: translation
+    text: Triptychon
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300178234
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: triptyque
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300178234
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: trittico
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300178234
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: tríptico
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300178234
+        source: getty-aat
+        accessed: 2026-11-26
 category: format
 definition: A work in three panels, the two wings beside a larger centre.

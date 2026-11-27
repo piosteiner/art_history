@@ -4,6 +4,20 @@ names:
   - lang: de
     role: translation
     text: Statue
+  - lang: it
+    role: translation
+    text: statua
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300047600
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: estatua
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300047600
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: sculpture
 definition: A free-standing sculpture of a full-length human or animal figure, carved or cast in wood, metal, stone or another durable material, typically near life size.

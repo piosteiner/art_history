@@ -1,6 +1,24 @@
 public_id: 132554
 name: Bark painting
-names: [rarrk, Yirrkala Bark Petitions, Näku Dhäruk, Yirrkala Church Panels]
+names:
+  - rarrk
+  - Yirrkala Bark Petitions
+  - Näku Dhäruk
+  - Yirrkala Church Panels
+  - lang: de
+    role: translation
+    text: Rindenbild
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300264815
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: pintura sobre corteza
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300264815
+        source: getty-aat
+        accessed: 2026-11-26
 category: art style
 definition: Painting on sheets of bark, especially in Arnhem Land, in fine cross-hatching (rarrk); in 1963 the Yolngu of Yirrkala sent Parliament two bark petitions against mining on their land.
 description_md: |-

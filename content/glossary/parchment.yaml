@@ -1,5 +1,34 @@
 public_id: 101405
 name: parchment
+names:
+  - lang: de
+    role: translation
+    text: Pergament
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011851
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: parchemin
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011851
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: pergamena
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011851
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: pergamino
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011851
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: A writing and painting material of specially prepared untanned animal skin, chiefly of sheep, calves and goats — the usual support of medieval manuscripts.
 description_md: |-

@@ -13,6 +13,13 @@ names:
   - lang: it
     role: translation
     text: chiaroscuro
+  - lang: es
+    role: translation
+    text: xilografía al claroscuro
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041410
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: woodcut
 definition: The European colour woodcut of the 16th century, printed from a key block for the lines and one or more tone blocks.

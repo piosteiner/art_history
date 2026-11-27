@@ -34,7 +34,7 @@ materials: [black basalt]
 dimensions: [225, 79, 47]
 institution: department-of-near-eastern-antiquities-of-the-louvre
 inventory_number: Sb 8
-web_url: http://www.louvre.fr/oeuvre-notices/code-de-hammurabi-roi-de-babylone
+web_url: https://collections.louvre.fr/ark:/53355/cl010174436
 region: middle_east
 wikidata_id: Q12397781
 metadata:
@@ -93,9 +93,17 @@ numbers:
   - number: AS 6064
     institution: department-of-near-eastern-antiquities-of-the-louvre
     label: other inventory number
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010174436
+        source: louvre-code-de-hammurabi-as-6064
+        accessed: 2026-11-26
   - number: Pézard et Pottier 8
     institution: department-of-near-eastern-antiquities-of-the-louvre
     label: catalogue number
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010174436
+        source: louvre-code-de-hammurabi-as-6064
+        accessed: 2026-11-26
 sources:
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010174436
@@ -120,3 +128,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010174436
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010174436
+      source: louvre-code-de-hammurabi-as-6064
+      accessed: 2026-11-26

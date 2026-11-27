@@ -14,6 +14,20 @@ names:
       - accessed: 2026-11-09
         wikidata: Q124233420
   - cedar
+  - lang: fr
+    role: translation
+    text: cèdre
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300012514
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: cedro
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300012514
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: wood
 definition: wood from Cedrus

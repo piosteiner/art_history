@@ -7,6 +7,13 @@ names:
   - lang: fr
     role: translation
     text: livre de prières
+  - lang: es
+    role: translation
+    text: devocionario
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300026476
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: book
 definition: A book of prayers and devotional readings for private or communal use, as distinct in the strict sense from service books of the liturgy.

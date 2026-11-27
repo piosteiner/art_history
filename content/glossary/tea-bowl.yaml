@@ -4,6 +4,27 @@ names:
   - lang: ja
     role: original
     text: "{茶碗|ちゃわん}"
+  - lang: de
+    role: translation
+    text: Teeschale
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300198548
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: bol à thé
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300198548
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: cuenco de té
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300198548
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: vessel
 definition: A bowl for drinking tea; in Japan the chawan of the tea ceremony.

@@ -7,5 +7,12 @@ names:
   - lang: fr
     role: translation
     text: pendants
+  - lang: es
+    role: translation
+    text: par
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300235505
+        source: getty-aat
+        accessed: 2026-11-26
 category: group of works
 definition: Two works made to hang or be seen together — pendants.

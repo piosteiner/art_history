@@ -1,4 +1,19 @@
 public_id: 108197
 name: photograph
+names:
+  - lang: fr
+    role: translation
+    text: photographie
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300046300
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: fotografía
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300046300
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: An image made with a camera on light-sensitive material or digitally.

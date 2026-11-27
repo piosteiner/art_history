@@ -1,4 +1,33 @@
 public_id: 106291
 name: bell
+names:
+  - lang: de
+    role: translation
+    text: Glocke
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041872
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: fr
+    role: translation
+    text: cloche
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041872
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: campana
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041872
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: campana
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041872
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: A hollow instrument, mostly of metal, that sounds when struck.

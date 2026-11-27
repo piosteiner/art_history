@@ -1,5 +1,20 @@
 public_id: 116678
 name: stainless steel
+names:
+  - lang: fr
+    role: translation
+    text: acier inoxydable
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300010920
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: acero inoxidable
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300010920
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: steel
 definition: Steel alloyed with at least about 10.5 % chromium, which forms a self-healing film against rust; developed around 1912–13 and used for sculpture from the 1930s.

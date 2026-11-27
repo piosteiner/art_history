@@ -7,5 +7,19 @@ names:
   - lang: fr
     role: translation
     text: série
+  - lang: it
+    role: translation
+    text: serie
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300027349
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: serie
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300027349
+        source: getty-aat
+        accessed: 2026-11-26
 category: group of works
 definition: Works an artist made as a series on one theme or in one format, each a work of its own — Hokusai’s Thirty-six Views of Mount Fuji, Goya’s Black Paintings.

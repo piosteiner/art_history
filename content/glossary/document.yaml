@@ -1,4 +1,26 @@
 public_id: 107486
 name: document
+names:
+  - lang: de
+    role: translation
+    text: Dokument
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300026030
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: documento
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300026030
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: documento
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300026030
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: A written record — a letter, decree, deed or testament — kept for its content and, in East Asia, for its calligraphy.

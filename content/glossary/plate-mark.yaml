@@ -8,5 +8,12 @@ names:
   - lang: fr
     role: translation
     text: cuvette
+  - lang: es
+    role: translation
+    text: huella de la lámina
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300178473
+        source: getty-aat
+        accessed: 2026-11-26
 category: mounting
 definition: The edge pressed into the paper by the plate of an etching or engraving — the size of the plate.

@@ -1,4 +1,19 @@
 public_id: 108198
 name: poster
+names:
+  - lang: de
+    role: translation
+    text: Plakat
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300027221
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: cartel
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300027221
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: A printed sheet announcing an event, made to be displayed in public.

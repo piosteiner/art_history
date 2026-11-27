@@ -13,6 +13,13 @@ names:
   - lang: it
     role: translation
     text: marmo di Carrara
+  - lang: es
+    role: translation
+    text: mármol de Carrara
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011576
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: marble
 definition: type of white or blue-grey veined marble from the Apuan Alps (Italy), popular for use in sculpture and building decor

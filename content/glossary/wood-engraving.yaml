@@ -7,6 +7,20 @@ names:
   - lang: fr
     role: translation
     text: gravure sur bois de bout
+  - lang: it
+    role: translation
+    text: incisione su legno
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041402
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: grabado xilográfico
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041402
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: relief-print
 definition: A relief print cut into the end grain of a hard wood with an engraver’s burin, which allows very fine lines; developed by Thomas Bewick at the end of the 18th century.

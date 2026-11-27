@@ -1,5 +1,13 @@
 public_id: 107496
 name: jar
+names:
+  - lang: es
+    role: translation
+    text: jarro
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300195347
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: vessel
 definition: A vessel with a wide body and a short neck, for storing liquids or grain.

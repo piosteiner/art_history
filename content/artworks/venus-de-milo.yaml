@@ -148,9 +148,17 @@ numbers:
   - number: LL 299
     institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
     label: entry number
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010277627
+        source: louvre-venus-de-milo-n-527
+        accessed: 2026-11-26
   - number: N 527
     institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
     label: former inventory number
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010277627
+        source: louvre-venus-de-milo-n-527
+        accessed: 2026-11-26
 identifiers:
   gnd: 4206801-0
   viaf: "195011024"
@@ -175,3 +183,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010277627
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010277627
+      source: louvre-venus-de-milo-n-527
+      accessed: 2026-11-26

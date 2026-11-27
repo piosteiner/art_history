@@ -1,5 +1,13 @@
 public_id: 106386
 name: red ocher
+names:
+  - lang: es
+    role: translation
+    text: ocre rojo
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300013554
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: An earth pigment of clay and sand coloured red by hematite (iron oxide); one of the oldest pigments, used from prehistory onwards.
 description_md: |-

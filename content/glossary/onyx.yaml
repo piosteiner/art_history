@@ -1,3 +1,18 @@
 public_id: 130212
 name: onyx
+names:
+  - lang: it
+    role: translation
+    text: onice
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011136
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: ónice
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011136
+        source: getty-aat
+        accessed: 2026-11-26
 category: material

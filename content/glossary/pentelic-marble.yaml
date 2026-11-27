@@ -1,3 +1,11 @@
 public_id: 123174
 name: Pentelic marble
+names:
+  - lang: es
+    role: translation
+    text: mármol del Pentélico
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300011599
+        source: getty-aat
+        accessed: 2026-11-26
 category: material

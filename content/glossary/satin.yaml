@@ -1,5 +1,20 @@
 public_id: 107661
 name: satin
+names:
+  - lang: de
+    role: translation
+    text: Atlas
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300132902
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: satén
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300132902
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: silk
 definition: Silk woven so that the threads float on the surface and give it a sheen.

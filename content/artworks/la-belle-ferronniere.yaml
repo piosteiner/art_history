@@ -112,6 +112,10 @@ numbers:
   - number: MR 317
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062372
+        source: louvre-portrait-de-femme-dit-a-tort-la-belle-ferronniere-mr-317
+        accessed: 2026-11-26
 identifiers:
   gnd: 7539248-3
   viaf: "182027552"
@@ -143,3 +147,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010062372
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010062372
+      source: louvre-portrait-de-femme-dit-a-tort-la-belle-ferronniere-mr-317
+      accessed: 2026-11-26

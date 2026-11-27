@@ -1,4 +1,12 @@
 public_id: 106646
 name: handscroll
+names:
+  - lang: es
+    role: translation
+    text: rollo
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300178463
+        source: getty-aat
+        accessed: 2026-11-26
 category: format
 definition: A long horizontal scroll of paper or silk, read from right to left as it is unrolled.

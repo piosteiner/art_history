@@ -1,5 +1,27 @@
 public_id: 106389
 name: azurite
+names:
+  - lang: de
+    role: translation
+    text: Azurit
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300266450
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: azzurrite
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300266450
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: azurita
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300266450
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 definition: A soft deep-blue copper mineral (basic copper carbonate), ground into a blue pigment since antiquity.
 description_md: |-

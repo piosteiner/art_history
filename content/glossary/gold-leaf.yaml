@@ -10,6 +10,13 @@ names:
   - lang: de
     role: translation
     text: Blattgold
+  - lang: es
+    role: translation
+    text: pan de oro
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300264831
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: gold
 definition: Gold hammered into extremely thin sheets (goldbeating) and laid onto a prepared surface — the basic material of gilding, gold grounds and gold screens.

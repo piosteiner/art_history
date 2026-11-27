@@ -17,7 +17,7 @@ materials: [oil paint, wood, gold]
 dimensions: [99, 59]
 institution: department-of-paintings-of-the-louvre
 inventory_number: RF 2314
-web_url: http://www.louvre.fr/oeuvre-notices/chapelle-cardon
+web_url: https://collections.louvre.fr/ark:/53355/cl010063009
 description_md: |-
   A small Marian tabernacle known as the Chapelle Cardon, made on the Lower Rhine around 1400 of painted and gilded wood, 99 cm high; it is now in the Musée du Louvre, Paris.[[source/ganz-2024-aus-dem-wald|Sitzung 8 (21.11.2024), Folie 21]]
 
@@ -75,6 +75,9 @@ sources:
     - accessed: 2026-11-09
       property: P217
       wikidata: Q27005745
+    - url: https://collections.louvre.fr/ark:/53355/cl010063009
+      source: louvre-chapelle-cardon-rf-2314
+      accessed: 2026-11-26
   attribution_label:
     - source: ganz-2024-aus-dem-wald
       locator: Sitzung 8 (21.11.2024), Folie 21

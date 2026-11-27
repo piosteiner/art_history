@@ -10,6 +10,13 @@ names:
   - lang: en
     role: alternative
     text: relief printing
+  - lang: es
+    role: translation
+    text: estampa en relieve
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300041391
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 parent: print
 definition: A print from a matrix whose raised surface carries the ink — the parts that are not to print are cut away; printed with little pressure. Woodcut, wood engraving and linocut are relief prints.

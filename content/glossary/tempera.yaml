@@ -1,5 +1,13 @@
 public_id: 100870
 name: tempera
+names:
+  - lang: es
+    role: translation
+    text: témpera
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300015062
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: paint
 definition: A fast-drying paint of pigments in a water-soluble binder, above all egg yolk (egg tempera); the main medium of European panel painting until about 1500.

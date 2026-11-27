@@ -4,6 +4,27 @@ names:
   - lang: de
     role: translation
     text: Zeichnung
+  - lang: fr
+    role: translation
+    text: dessin
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300033973
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: it
+    role: translation
+    text: disegno
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300033973
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: dibujo
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300033973
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: A work made by marking paper or another surface with lines and tones — in pen and ink, chalk, charcoal, metalpoint or brush — as a study, a design or a finished work.
 description_md: |-

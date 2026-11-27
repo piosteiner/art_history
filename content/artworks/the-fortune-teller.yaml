@@ -134,6 +134,10 @@ numbers:
   - number: MR 105
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062329
+        source: louvre-la-diseuse-de-bonne-aventure-mr-105
+        accessed: 2026-11-26
 sources:
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010062329
@@ -162,3 +166,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010062329
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010062329
+      source: louvre-la-diseuse-de-bonne-aventure-mr-105
+      accessed: 2026-11-26

@@ -1,5 +1,20 @@
 public_id: 101421
 name: black chalk
+names:
+  - lang: fr
+    role: translation
+    text: craie noire
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300080058
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: creta negra
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300080058
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: chalk
 definition: drawing material

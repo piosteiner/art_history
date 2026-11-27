@@ -1,5 +1,13 @@
 public_id: 100603
 name: building
+names:
+  - lang: es
+    role: translation
+    text: edificio
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300004792
+        source: getty-aat
+        accessed: 2026-11-26
 category: object type
 definition: a usually roofed and walled structure built for permanent use (as for a dwelling) (by Merriam Webster)
 description_md: https://www.merriam-webster.com/dictionary/building

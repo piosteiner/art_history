@@ -125,6 +125,10 @@ numbers:
   - number: MR 319
     institution: department-of-paintings-of-the-louvre
     label: former inventory number (Musée royal)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010066107
+        source: louvre-la-vierge-lenfant-jesus-et-sainte-anne-dit-la-sainte-anne-mr-319
+        accessed: 2026-11-26
 identifiers:
   gnd: 4365184-7
 sources:
@@ -158,3 +162,6 @@ sources:
     - url: https://collections.louvre.fr/ark:/53355/cl010066107
       source: louvre-collections
       accessed: 2026-10-20
+    - url: https://collections.louvre.fr/ark:/53355/cl010066107
+      source: louvre-la-vierge-lenfant-jesus-et-sainte-anne-dit-la-sainte-anne-mr-319
+      accessed: 2026-11-26

@@ -17,6 +17,20 @@ names:
   - lang: it
     role: translation
     text: guazzo
+  - lang: fr
+    role: translation
+    text: gouache
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300070114
+        source: getty-aat
+        accessed: 2026-11-26
+  - lang: es
+    role: translation
+    text: gouache
+    sources:
+      - url: http://vocab.getty.edu/page/aat/300070114
+        source: getty-aat
+        accessed: 2026-11-26
 category: material
 parent: paint
 definition: type of paint
